@@ -1,1 +1,59 @@
 benchmark_recipe,member_recipe,role,splits_used,eval_set_names,set_name,source_ref,note
+multicorpus_core7,cremad,eval,test,cremad,NA,egs3/multicorpus_core7/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_core7,cremad,train,train;valid,NA,Open License set,egs3/multicorpus_core7/cls/dataset/config.yaml,
+multicorpus_core7,emns,eval,test,emns,NA,egs3/multicorpus_core7/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_core7,emns,train,train;valid,NA,Open License set,egs3/multicorpus_core7/cls/dataset/config.yaml,
+multicorpus_core7,emodb,eval,test,emodb,NA,egs3/multicorpus_core7/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_core7,emodb,train,train;valid,NA,Open License set,egs3/multicorpus_core7/cls/dataset/config.yaml,
+multicorpus_core7,emozionalmente,eval,test,emozionalmente,NA,egs3/multicorpus_core7/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_core7,emozionalmente,train,train;valid,NA,Open License set,egs3/multicorpus_core7/cls/dataset/config.yaml,
+multicorpus_core7,enterface05,eval,test,enterface05,NA,egs3/multicorpus_core7/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_core7,enterface05,train,train;valid,NA,Open License set,egs3/multicorpus_core7/cls/dataset/config.yaml,
+multicorpus_core7,jlcorpus,eval,test,jlcorpus,NA,egs3/multicorpus_core7/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_core7,jlcorpus,train,train;valid,NA,Open License set,egs3/multicorpus_core7/cls/dataset/config.yaml,
+multicorpus_core7,meld,eval,test,meld,NA,egs3/multicorpus_core7/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_core7,meld,train,train;valid,NA,Open License set,egs3/multicorpus_core7/cls/dataset/config.yaml,
+multicorpus_core7,msppodcast,eval,test;test2,msppodcast_test;msppodcast_test2,NA,egs3/multicorpus_core7/cls/dataset/config.yaml,
+multicorpus_core7,quechua,eval,test,quechua,NA,egs3/multicorpus_core7/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_core7,quechua,train,train;valid,NA,Open License set,egs3/multicorpus_core7/cls/dataset/config.yaml,
+multicorpus_core7,subesco,eval,test,subesco,NA,egs3/multicorpus_core7/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_core7,subesco,train,train;valid,NA,Open License set,egs3/multicorpus_core7/cls/dataset/config.yaml,
+multicorpus_core7,thorsten,eval,test,thorsten,NA,egs3/multicorpus_core7/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_core7,thorsten,train,train;valid,NA,Open License set,egs3/multicorpus_core7/cls/dataset/config.yaml,
+multicorpus_full20,cremad,eval,test,cremad,NA,egs3/multicorpus_full20/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_full20,cremad,train,train;valid,NA,Open License set,egs3/multicorpus_full20/cls/dataset/config.yaml,
+multicorpus_full20,emns,eval,test,emns,NA,egs3/multicorpus_full20/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_full20,emns,train,train;valid,NA,Open License set,egs3/multicorpus_full20/cls/dataset/config.yaml,
+multicorpus_full20,emodb,eval,test,emodb,NA,egs3/multicorpus_full20/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_full20,emodb,train,train;valid,NA,Open License set,egs3/multicorpus_full20/cls/dataset/config.yaml,
+multicorpus_full20,emozionalmente,eval,test,emozionalmente,NA,egs3/multicorpus_full20/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_full20,emozionalmente,train,train;valid,NA,Open License set,egs3/multicorpus_full20/cls/dataset/config.yaml,
+multicorpus_full20,enterface05,eval,test,enterface05,NA,egs3/multicorpus_full20/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_full20,enterface05,train,train;valid,NA,Open License set,egs3/multicorpus_full20/cls/dataset/config.yaml,
+multicorpus_full20,jlcorpus,eval,test,jlcorpus,NA,egs3/multicorpus_full20/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_full20,jlcorpus,train,train;valid,NA,Open License set,egs3/multicorpus_full20/cls/dataset/config.yaml,
+multicorpus_full20,meld,eval,test,meld,NA,egs3/multicorpus_full20/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_full20,meld,train,train;valid,NA,Open License set,egs3/multicorpus_full20/cls/dataset/config.yaml,
+multicorpus_full20,msppodcast,eval,test;test2,msppodcast_test;msppodcast_test2,NA,egs3/multicorpus_full20/cls/dataset/config.yaml,
+multicorpus_full20,quechua,eval,test,quechua,NA,egs3/multicorpus_full20/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_full20,quechua,train,train;valid,NA,Open License set,egs3/multicorpus_full20/cls/dataset/config.yaml,
+multicorpus_full20,subesco,eval,test,subesco,NA,egs3/multicorpus_full20/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_full20,subesco,train,train;valid,NA,Open License set,egs3/multicorpus_full20/cls/dataset/config.yaml,
+multicorpus_full20,thorsten,eval,test,thorsten,NA,egs3/multicorpus_full20/cls/dataset/config.yaml,own test split of a training corpus
+multicorpus_full20,thorsten,train,train;valid,NA,Open License set,egs3/multicorpus_full20/cls/dataset/config.yaml,
+multicorpus_ood20,cremad,train,train;valid;test,NA,Open License set,egs3/multicorpus_ood20/cls/dataset/config.yaml,
+multicorpus_ood20,emns,train,train;valid;test,NA,Open License set,egs3/multicorpus_ood20/cls/dataset/config.yaml,
+multicorpus_ood20,emodb,train,train;valid;test,NA,Open License set,egs3/multicorpus_ood20/cls/dataset/config.yaml,
+multicorpus_ood20,emovdb,eval,train;valid;test,emovdb,Non-Commercial set,egs3/multicorpus_ood20/cls/dataset/config.yaml,
+multicorpus_ood20,emozionalmente,train,train;valid;test,NA,Open License set,egs3/multicorpus_ood20/cls/dataset/config.yaml,
+multicorpus_ood20,enterface05,train,train;valid;test,NA,Open License set,egs3/multicorpus_ood20/cls/dataset/config.yaml,
+multicorpus_ood20,iemocap,eval,train;valid;test,iemocap,Non-Commercial set,egs3/multicorpus_ood20/cls/dataset/config.yaml,
+multicorpus_ood20,jlcorpus,train,train;valid;test,NA,Open License set,egs3/multicorpus_ood20/cls/dataset/config.yaml,
+multicorpus_ood20,meld,train,train;valid;test,NA,Open License set,egs3/multicorpus_ood20/cls/dataset/config.yaml,
+multicorpus_ood20,msppodcast,eval,valid;test;test2,msppodcast_dev;msppodcast_test;msppodcast_test2,NA,egs3/multicorpus_ood20/cls/dataset/config.yaml,
+multicorpus_ood20,quechua,train,train;valid;test,NA,Open License set,egs3/multicorpus_ood20/cls/dataset/config.yaml,
+multicorpus_ood20,ravdess,eval,train;valid;test,ravdess,Non-Commercial set,egs3/multicorpus_ood20/cls/dataset/config.yaml,
+multicorpus_ood20,savee,eval,train;valid;test,savee,Non-Commercial set,egs3/multicorpus_ood20/cls/dataset/config.yaml,
+multicorpus_ood20,subesco,train,train;valid;test,NA,Open License set,egs3/multicorpus_ood20/cls/dataset/config.yaml,
+multicorpus_ood20,tess,eval,train;valid;test,tess,Non-Commercial set,egs3/multicorpus_ood20/cls/dataset/config.yaml,
+multicorpus_ood20,thorsten,train,train;valid;test,NA,Open License set,egs3/multicorpus_ood20/cls/dataset/config.yaml,

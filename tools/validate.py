@@ -239,13 +239,12 @@ def check_egs3(cols, db):
 
     branch = set(egs3.recipes())
     rec = {r["recipe"]: r for r in db["recipes"][1]}
-    # An empty recipes.csv means the table has not been filled in yet.
-    if rec and set(rec) != branch:
+    if set(rec) != branch:
         err(f"recipes.csv and {egs3.BRANCH} differ: only in csv {sorted(set(rec) - branch)}, only in branch {sorted(branch - set(rec))}")
     ds = {r["dataset_id"]: r for r in db["datasets"][1]}
     implemented = {d for d, r in ds.items() if r["espnet_status"] == "implemented"}
     for d in sorted(implemented):
-        if rec and d not in rec:
+        if d not in rec:
             err(f"datasets {d}: implemented but recipes.csv has no recipe {d}")
     for name, r in rec.items():
         if r["recipe_kind"] == "multi_corpus":
@@ -272,6 +271,55 @@ def check_egs3(cols, db):
         tl = r["token_list"]
         if name in labels and tl not in ("", "NA") and set(tl.split(";")) != labels[name]:
             err(f"recipes {name}: token_list differs from recipe_labels")
+
+
+def check_measurements(db):
+    """recipes.csv measured columns and recipe_labels counts must match measurements/*.json."""
+    import sync
+
+    rec = {r["recipe"]: r for r in db["recipes"][1]}
+    for name, r in rec.items():
+        for col, want in sync.measured(name).items():
+            if r[col] != want:
+                err(f"recipes {name} {col}: csv {r[col]!r} != measurements {want!r} (run tools/sync.py)")
+    by_recipe = {}
+    for r in db["recipe_labels"][1]:
+        by_recipe.setdefault(r["recipe"], []).append(r)
+    for name, r in rec.items():
+        if r["recipe_kind"] == "multi_corpus":
+            continue
+        rows = by_recipe.get(name)
+        if not rows:
+            err(f"recipes {name}: no recipe_labels rows")
+            continue
+        for sp in ("train", "valid", "test", "test2"):
+            vals = [x["n_" + sp] for x in rows if x["mapping_type"] != "dropped_by_recipe"]
+            if r["n_" + sp] in ("NA", "") or any(v in ("NA", "") for v in vals):
+                continue
+            if sum(int(v) for v in vals) != int(r["n_" + sp]):
+                err(f"recipe_labels {name}: n_{sp} sums to {sum(int(v) for v in vals)} != recipes.n_{sp} {r['n_' + sp]}")
+        for x in rows:
+            parts = [x["n_" + sp] for sp in ("train", "valid", "test", "test2") if x["n_" + sp] not in ("NA", "")]
+            if x["n_total"] not in ("NA", "") and sum(int(v) for v in parts) != int(x["n_total"]):
+                err(f"recipe_labels {name}/{x['label']}: n_total != sum of splits")
+
+
+def check_membership(db):
+    """benchmark_membership must equal what the multi-corpus configs imply."""
+    import egs3
+    import sync
+
+    want = [r for n in egs3.recipes() if egs3.derive(n)["recipe_kind"] == "multi_corpus" for r in sync.membership(n)]
+    key = lambda r: (r["benchmark_recipe"], r["member_recipe"], r["role"], r["splits_used"])
+    have = db["benchmark_membership"][1]
+    if sorted(map(key, have)) != sorted(map(key, want)):
+        err("benchmark_membership differs from the multi-corpus configs (run tools/sync.py)")
+        return
+    for h in have:
+        w = next(x for x in want if key(x) == key(h))
+        for c in ("eval_set_names", "set_name", "source_ref"):
+            if h[c] != w[c]:
+                err(f"benchmark_membership {key(h)} {c}: csv {h[c]!r} != config {w[c]!r}")
 
 
 # ---- 9. paths --------------------------------------------------------------
@@ -306,8 +354,10 @@ def main(argv):
     check_keys(tables, db)
     check_evidence(cols, db)
     check_paths(cols, tables, db)
+    check_measurements(db)
     if not offline:
         check_egs3(cols, db)
+        check_membership(db)
     report()
 
 
