@@ -1,0 +1,81 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 816
+ },
+ "duration_sec": {
+  "max": 8.978,
+  "median": 2.578,
+  "min": 1.213
+ },
+ "hours_total": 0.6254,
+ "measured_on": "2026-10-12",
+ "n_total": 816,
+ "output_dir": "/home/tenshi/data/emodb_espnet3",
+ "output_env_var": "EMODB_OUTPUT",
+ "recipe": "emodb",
+ "splits": {
+  "test": {
+   "hours": 0.2625,
+   "labels": {
+    "angry": 58,
+    "boredom": 50,
+    "disgust": 41,
+    "fear": 46,
+    "happy": 48,
+    "neutral": 42,
+    "sad": 47
+   },
+   "manifest_sha1": "1700332db8ba714b835770e7e2ceccdf55b029d6",
+   "n": 332,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 332
+  },
+  "train": {
+   "hours": 0.3043,
+   "labels": {
+    "angry": 66,
+    "boredom": 52,
+    "disgust": 53,
+    "fear": 63,
+    "happy": 56,
+    "neutral": 52,
+    "sad": 61
+   },
+   "manifest_sha1": "e4bc66117c87e820598af2ad98b0fc381870491b",
+   "n": 403,
+   "n_filtered": 403,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 403
+  },
+  "valid": {
+   "hours": 0.0586,
+   "labels": {
+    "angry": 13,
+    "boredom": 10,
+    "disgust": 11,
+    "fear": 13,
+    "happy": 11,
+    "neutral": 10,
+    "sad": 13
+   },
+   "manifest_sha1": "6ed966a2e0c43b9b8114c9e0cd3c077c99106c62",
+   "n": 81,
+   "n_filtered": 81,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 81
+  }
+ },
+ "token_list": [
+  "angry",
+  "fear",
+  "sad",
+  "happy",
+  "disgust",
+  "boredom",
+  "neutral"
+ ]
+}

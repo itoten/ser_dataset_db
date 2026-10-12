@@ -1,0 +1,77 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 792
+ },
+ "duration_sec": {
+  "max": 11.947,
+  "median": 5.973,
+  "min": 2.415
+ },
+ "hours_total": 1.3867,
+ "measured_on": "2026-10-12",
+ "n_total": 792,
+ "output_dir": "/home/tenshi/data/banspemo_espnet3",
+ "output_env_var": "BANSPEMO_OUTPUT",
+ "recipe": "banspemo",
+ "splits": {
+  "test": {
+   "hours": 0.2744,
+   "labels": {
+    "angry": 26,
+    "disgust": 26,
+    "fear": 26,
+    "happy": 26,
+    "sad": 26,
+    "surprise": 26
+   },
+   "manifest_sha1": "c752dbd3cd53f4d5afef3c53d02a9b8e7c423c97",
+   "n": 156,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 156
+  },
+  "train": {
+   "hours": 0.9711,
+   "labels": {
+    "angry": 93,
+    "disgust": 93,
+    "fear": 93,
+    "happy": 93,
+    "sad": 93,
+    "surprise": 93
+   },
+   "manifest_sha1": "df086ad2e9eb8c21369b53578e83232c2fb4519c",
+   "n": 558,
+   "n_filtered": 558,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 558
+  },
+  "valid": {
+   "hours": 0.1411,
+   "labels": {
+    "angry": 13,
+    "disgust": 13,
+    "fear": 13,
+    "happy": 13,
+    "sad": 13,
+    "surprise": 13
+   },
+   "manifest_sha1": "b151acfccc77c934788757b26776dc256cf6a1ca",
+   "n": 78,
+   "n_filtered": 78,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 78
+  }
+ },
+ "token_list": [
+  "angry",
+  "fear",
+  "sad",
+  "surprise",
+  "happy",
+  "disgust"
+ ]
+}

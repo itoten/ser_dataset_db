@@ -1,0 +1,73 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 35000
+ },
+ "duration_sec": {
+  "max": 8.08,
+  "median": 2.858,
+  "min": 1.139
+ },
+ "hours_total": 29.0712,
+ "measured_on": "2026-10-12",
+ "n_total": 35000,
+ "output_dir": "/home/tenshi/data/esd_espnet3",
+ "output_env_var": "ESD_OUTPUT",
+ "recipe": "esd",
+ "splits": {
+  "test": {
+   "hours": 5.8213,
+   "labels": {
+    "angry": 1400,
+    "happy": 1400,
+    "neutral": 1400,
+    "sad": 1400,
+    "surprise": 1400
+   },
+   "manifest_sha1": "a91f1a655e0c8ba1c76585e153b37b005863ee67",
+   "n": 7000,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 7000
+  },
+  "train": {
+   "hours": 20.3504,
+   "labels": {
+    "angry": 4900,
+    "happy": 4900,
+    "neutral": 4900,
+    "sad": 4900,
+    "surprise": 4900
+   },
+   "manifest_sha1": "559c39f011c16a8be42a1c41403f767d9a1791ad",
+   "n": 24500,
+   "n_filtered": 24500,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 24500
+  },
+  "valid": {
+   "hours": 2.8995,
+   "labels": {
+    "angry": 700,
+    "happy": 700,
+    "neutral": 700,
+    "sad": 700,
+    "surprise": 700
+   },
+   "manifest_sha1": "4520f5ea1c7c411517836fed631160112baea426",
+   "n": 3500,
+   "n_filtered": 3500,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 3500
+  }
+ },
+ "token_list": [
+  "neutral",
+  "angry",
+  "happy",
+  "sad",
+  "surprise"
+ ]
+}

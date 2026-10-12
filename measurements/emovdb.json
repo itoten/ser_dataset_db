@@ -1,0 +1,73 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 6893
+ },
+ "duration_sec": {
+  "max": 13.163,
+  "median": 4.727,
+  "min": 0.587
+ },
+ "hours_total": 9.4901,
+ "measured_on": "2026-10-12",
+ "n_total": 6893,
+ "output_dir": "/home/tenshi/data/emovdb_espnet3",
+ "output_env_var": "EMOVDB_OUTPUT",
+ "recipe": "emovdb",
+ "splits": {
+  "test": {
+   "hours": 1.9097,
+   "labels": {
+    "amused": 263,
+    "angry": 254,
+    "disgust": 204,
+    "neutral": 314,
+    "sleepy": 344
+   },
+   "manifest_sha1": "010967090e49038bc87271ecc54dfa9e8de79332",
+   "n": 1379,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1379
+  },
+  "train": {
+   "hours": 6.6318,
+   "labels": {
+    "amused": 922,
+    "angry": 887,
+    "disgust": 713,
+    "neutral": 1097,
+    "sleepy": 1205
+   },
+   "manifest_sha1": "7f513b1a75eeacdca3f3635a9ae6630b55d290d7",
+   "n": 4824,
+   "n_filtered": 4824,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 4824
+  },
+  "valid": {
+   "hours": 0.9486,
+   "labels": {
+    "amused": 132,
+    "angry": 127,
+    "disgust": 102,
+    "neutral": 157,
+    "sleepy": 172
+   },
+   "manifest_sha1": "8e499abca7cfa1818765d4151843d11497be4f19",
+   "n": 690,
+   "n_filtered": 690,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 690
+  }
+ },
+ "token_list": [
+  "sleepy",
+  "neutral",
+  "amused",
+  "angry",
+  "disgust"
+ ]
+}

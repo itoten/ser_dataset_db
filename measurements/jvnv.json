@@ -1,0 +1,77 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 1615
+ },
+ "duration_sec": {
+  "max": 19.779,
+  "median": 8.435,
+  "min": 3.191
+ },
+ "hours_total": 3.944,
+ "measured_on": "2026-10-12",
+ "n_total": 1615,
+ "output_dir": "/home/tenshi/data/jvnv_espnet3",
+ "output_env_var": "JVNV_OUTPUT",
+ "recipe": "jvnv",
+ "splits": {
+  "test": {
+   "hours": 0.7793,
+   "labels": {
+    "angry": 50,
+    "disgust": 52,
+    "fear": 53,
+    "happy": 56,
+    "sad": 51,
+    "surprise": 61
+   },
+   "manifest_sha1": "84251e07c5c00ffc3a6caae3f0ea8dbb17e08f7b",
+   "n": 323,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 323
+  },
+  "train": {
+   "hours": 2.7748,
+   "labels": {
+    "angry": 174,
+    "disgust": 180,
+    "fear": 186,
+    "happy": 196,
+    "sad": 180,
+    "surprise": 214
+   },
+   "manifest_sha1": "e6acef1524694673e3fdcc841e26492c329c89ae",
+   "n": 1130,
+   "n_filtered": 1130,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1130
+  },
+  "valid": {
+   "hours": 0.39,
+   "labels": {
+    "angry": 25,
+    "disgust": 26,
+    "fear": 26,
+    "happy": 28,
+    "sad": 26,
+    "surprise": 31
+   },
+   "manifest_sha1": "2011e6c01617e69e4e73d7f3b0329c8255231c8a",
+   "n": 162,
+   "n_filtered": 162,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 162
+  }
+ },
+ "token_list": [
+  "surprise",
+  "happy",
+  "fear",
+  "disgust",
+  "sad",
+  "angry"
+ ]
+}

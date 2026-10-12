@@ -1,0 +1,73 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 14182
+ },
+ "duration_sec": {
+  "max": 108.788,
+  "median": 4.617,
+  "min": 0.498
+ },
+ "hours_total": 21.2637,
+ "measured_on": "2026-10-12",
+ "n_total": 14182,
+ "output_dir": "/home/tenshi/data/thaiser_espnet3",
+ "output_env_var": "THAISER_OUTPUT",
+ "recipe": "thaiser",
+ "splits": {
+  "test": {
+   "hours": 4.1673,
+   "labels": {
+    "angry": 395,
+    "frustrated": 694,
+    "happy": 595,
+    "neutral": 834,
+    "sad": 319
+   },
+   "manifest_sha1": "a92ac0169d26cd3d5847a4397601e0441ff05a36",
+   "n": 2837,
+   "n_filtered": null,
+   "over_30s": 5,
+   "under_0.5s": 0,
+   "unique_utt": 2837
+  },
+  "train": {
+   "hours": 14.9838,
+   "labels": {
+    "angry": 1381,
+    "frustrated": 2428,
+    "happy": 2082,
+    "neutral": 2921,
+    "sad": 1116
+   },
+   "manifest_sha1": "ff12802215594376c43ae146c8dbc63a86e015cb",
+   "n": 9928,
+   "n_filtered": 9890,
+   "over_30s": 36,
+   "under_0.5s": 1,
+   "unique_utt": 9928
+  },
+  "valid": {
+   "hours": 2.1126,
+   "labels": {
+    "angry": 197,
+    "frustrated": 347,
+    "happy": 297,
+    "neutral": 417,
+    "sad": 159
+   },
+   "manifest_sha1": "308fc1a4e5256499733fd67c6fc90dc1879d8cab",
+   "n": 1417,
+   "n_filtered": 1413,
+   "over_30s": 4,
+   "under_0.5s": 0,
+   "unique_utt": 1417
+  }
+ },
+ "token_list": [
+  "neutral",
+  "frustrated",
+  "happy",
+  "angry",
+  "sad"
+ ]
+}

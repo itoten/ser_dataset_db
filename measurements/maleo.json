@@ -1,0 +1,81 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 700
+ },
+ "duration_sec": {
+  "max": 4.458,
+  "median": 3.019,
+  "min": 1.497
+ },
+ "hours_total": 0.5942,
+ "measured_on": "2026-10-12",
+ "n_total": 700,
+ "output_dir": "/home/tenshi/data/maleo_espnet3",
+ "output_env_var": "MALEO_OUTPUT",
+ "recipe": "maleo",
+ "splits": {
+  "test": {
+   "hours": 0.1189,
+   "labels": {
+    "angry": 20,
+    "disgust": 20,
+    "fear": 20,
+    "happy": 20,
+    "neutral": 20,
+    "sad": 20,
+    "surprise": 20
+   },
+   "manifest_sha1": "72ebb34d36067f9e74423cfba0a270f50ac0227f",
+   "n": 140,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 140
+  },
+  "train": {
+   "hours": 0.4157,
+   "labels": {
+    "angry": 70,
+    "disgust": 70,
+    "fear": 70,
+    "happy": 70,
+    "neutral": 70,
+    "sad": 70,
+    "surprise": 70
+   },
+   "manifest_sha1": "7d9a115ca957222133893d9b0442ea1a1587acb0",
+   "n": 490,
+   "n_filtered": 490,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 490
+  },
+  "valid": {
+   "hours": 0.0596,
+   "labels": {
+    "angry": 10,
+    "disgust": 10,
+    "fear": 10,
+    "happy": 10,
+    "neutral": 10,
+    "sad": 10,
+    "surprise": 10
+   },
+   "manifest_sha1": "4b7c2c07eff4cbc4b94c9d466bea825ce83798aa",
+   "n": 70,
+   "n_filtered": 70,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 70
+  }
+ },
+ "token_list": [
+  "angry",
+  "disgust",
+  "fear",
+  "happy",
+  "neutral",
+  "sad",
+  "surprise"
+ ]
+}

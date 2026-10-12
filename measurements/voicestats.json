@@ -1,0 +1,65 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 900
+ },
+ "duration_sec": {
+  "max": 21.37,
+  "median": 8.78,
+  "min": 3.1
+ },
+ "hours_total": 2.2834,
+ "measured_on": "2026-10-12",
+ "n_total": 900,
+ "output_dir": "/home/tenshi/data/voicestats_espnet3",
+ "output_env_var": "VOICESTATS_OUTPUT",
+ "recipe": "voicestats",
+ "splits": {
+  "test": {
+   "hours": 0.4425,
+   "labels": {
+    "angry": 60,
+    "happy": 60,
+    "neutral": 60
+   },
+   "manifest_sha1": "f652e654dd106f1810611c46bba1a22f1a595344",
+   "n": 180,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 180
+  },
+  "train": {
+   "hours": 1.613,
+   "labels": {
+    "angry": 210,
+    "happy": 210,
+    "neutral": 210
+   },
+   "manifest_sha1": "7ae4ac6937996d8a3dedd102b457bfb0fa573326",
+   "n": 630,
+   "n_filtered": 630,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 630
+  },
+  "valid": {
+   "hours": 0.228,
+   "labels": {
+    "angry": 30,
+    "happy": 30,
+    "neutral": 30
+   },
+   "manifest_sha1": "4fb528e1eda0cca11ff4bf0a4772668f1a00804d",
+   "n": 90,
+   "n_filtered": 90,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 90
+  }
+ },
+ "token_list": [
+  "angry",
+  "happy",
+  "neutral"
+ ]
+}

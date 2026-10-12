@@ -1,0 +1,85 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 1181
+ },
+ "duration_sec": {
+  "max": 12.088,
+  "median": 5.737,
+  "min": 1.228
+ },
+ "hours_total": 1.9122,
+ "measured_on": "2026-10-12",
+ "n_total": 1181,
+ "output_dir": "/home/tenshi/data/emns_espnet3",
+ "output_env_var": "EMNS_OUTPUT",
+ "recipe": "emns",
+ "splits": {
+  "test": {
+   "hours": 0.3831,
+   "labels": {
+    "angry": 25,
+    "disgust": 32,
+    "excited": 30,
+    "happy": 31,
+    "neutral": 29,
+    "sad": 29,
+    "sarcastic": 27,
+    "surprise": 30
+   },
+   "manifest_sha1": "52b6cf385a7e78882eaea83a325cc648ec9fb9a1",
+   "n": 233,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 233
+  },
+  "train": {
+   "hours": 1.1461,
+   "labels": {
+    "angry": 76,
+    "disgust": 98,
+    "excited": 90,
+    "happy": 95,
+    "neutral": 91,
+    "sad": 89,
+    "sarcastic": 85,
+    "surprise": 91
+   },
+   "manifest_sha1": "4912f79560a746de9f3da792c59810863e3534ce",
+   "n": 715,
+   "n_filtered": 715,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 715
+  },
+  "valid": {
+   "hours": 0.3829,
+   "labels": {
+    "angry": 25,
+    "disgust": 32,
+    "excited": 30,
+    "happy": 31,
+    "neutral": 29,
+    "sad": 29,
+    "sarcastic": 27,
+    "surprise": 30
+   },
+   "manifest_sha1": "442a77ebd39b3c2c2e2d7f91c59ff2b082220cf4",
+   "n": 233,
+   "n_filtered": 233,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 233
+  }
+ },
+ "token_list": [
+  "disgust",
+  "happy",
+  "surprise",
+  "neutral",
+  "excited",
+  "sad",
+  "sarcastic",
+  "angry"
+ ]
+}

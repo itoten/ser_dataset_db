@@ -1,0 +1,81 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 480
+ },
+ "duration_sec": {
+  "max": 7.139,
+  "median": 3.673,
+  "min": 1.631
+ },
+ "hours_total": 0.5119,
+ "measured_on": "2026-10-12",
+ "n_total": 480,
+ "output_dir": "/home/tenshi/data/savee_espnet3",
+ "output_env_var": "SAVEE_OUTPUT",
+ "recipe": "savee",
+ "splits": {
+  "test": {
+   "hours": 0.1055,
+   "labels": {
+    "angry": 12,
+    "disgust": 12,
+    "fear": 12,
+    "happy": 12,
+    "neutral": 24,
+    "sad": 12,
+    "surprise": 12
+   },
+   "manifest_sha1": "2f8ffc69e03914b7112039cde214fa2c204e2004",
+   "n": 96,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 96
+  },
+  "train": {
+   "hours": 0.3537,
+   "labels": {
+    "angry": 42,
+    "disgust": 42,
+    "fear": 42,
+    "happy": 42,
+    "neutral": 84,
+    "sad": 42,
+    "surprise": 42
+   },
+   "manifest_sha1": "866194788aef7aa2d443f3e2177b96afcc5f0f21",
+   "n": 336,
+   "n_filtered": 336,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 336
+  },
+  "valid": {
+   "hours": 0.0527,
+   "labels": {
+    "angry": 6,
+    "disgust": 6,
+    "fear": 6,
+    "happy": 6,
+    "neutral": 12,
+    "sad": 6,
+    "surprise": 6
+   },
+   "manifest_sha1": "808afb55943d34029bc19480870e9d82d0a9213d",
+   "n": 48,
+   "n_filtered": 48,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 48
+  }
+ },
+ "token_list": [
+  "neutral",
+  "angry",
+  "disgust",
+  "fear",
+  "happy",
+  "sad",
+  "surprise"
+ ]
+}

@@ -1,0 +1,65 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 2398
+ },
+ "duration_sec": {
+  "max": 11.835,
+  "median": 4.37,
+  "min": 1.125
+ },
+ "hours_total": 3.0246,
+ "measured_on": "2026-10-12",
+ "n_total": 2398,
+ "output_dir": "/home/tenshi/data/inesco_espnet3",
+ "output_env_var": "INESCO_OUTPUT",
+ "recipe": "inesco",
+ "splits": {
+  "test": {
+   "hours": 0.6125,
+   "labels": {
+    "angry": 152,
+    "happy": 168,
+    "sad": 160
+   },
+   "manifest_sha1": "8f4789d70ad9f81a7eaa4f7929b1d7f756cc8ed3",
+   "n": 480,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 480
+  },
+  "train": {
+   "hours": 2.1007,
+   "labels": {
+    "angry": 531,
+    "happy": 591,
+    "sad": 556
+   },
+   "manifest_sha1": "624fc927c3bfa82cfbb16b44f6a447e3e7e9120f",
+   "n": 1678,
+   "n_filtered": 1678,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1678
+  },
+  "valid": {
+   "hours": 0.3114,
+   "labels": {
+    "angry": 76,
+    "happy": 84,
+    "sad": 80
+   },
+   "manifest_sha1": "1dd28c63c80fbadda385aae70cfaacf64c9f5fd0",
+   "n": 240,
+   "n_filtered": 240,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 240
+  }
+ },
+ "token_list": [
+  "happy",
+  "sad",
+  "angry"
+ ]
+}

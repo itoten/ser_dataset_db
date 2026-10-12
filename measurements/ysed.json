@@ -1,0 +1,73 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 1432
+ },
+ "duration_sec": {
+  "max": 7.5,
+  "median": 2.273,
+  "min": 1.0
+ },
+ "hours_total": 1.0069,
+ "measured_on": "2026-10-12",
+ "n_total": 1432,
+ "output_dir": "/home/tenshi/data/ysed_espnet3",
+ "output_env_var": "YSED_OUTPUT",
+ "recipe": "ysed",
+ "splits": {
+  "test": {
+   "hours": 0.2038,
+   "labels": {
+    "angry": 57,
+    "fear": 49,
+    "happy": 59,
+    "neutral": 61,
+    "sad": 61
+   },
+   "manifest_sha1": "c9aa939fb0acc525e331d2cecd79ab00551ff36a",
+   "n": 287,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 287
+  },
+  "train": {
+   "hours": 0.704,
+   "labels": {
+    "angry": 200,
+    "fear": 171,
+    "happy": 206,
+    "neutral": 214,
+    "sad": 212
+   },
+   "manifest_sha1": "de278fabfa76c4b05bb8aa39c7a1da6702185bc6",
+   "n": 1003,
+   "n_filtered": 1003,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1003
+  },
+  "valid": {
+   "hours": 0.0991,
+   "labels": {
+    "angry": 29,
+    "fear": 24,
+    "happy": 29,
+    "neutral": 30,
+    "sad": 30
+   },
+   "manifest_sha1": "8cdd6a8b690529255566fd3968065ac3b0fddb5b",
+   "n": 142,
+   "n_filtered": 142,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 142
+  }
+ },
+ "token_list": [
+  "neutral",
+  "sad",
+  "happy",
+  "angry",
+  "fear"
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 695
+ },
+ "duration_sec": {
+  "max": 7.438,
+  "median": 2.738,
+  "min": 1.138
+ },
+ "hours_total": 0.5484,
+ "measured_on": "2026-10-12",
+ "n_total": 695,
+ "output_dir": "/home/tenshi/data/indianenglish_espnet3",
+ "output_env_var": "INDIANENGLISH_OUTPUT",
+ "recipe": "indianenglish",
+ "splits": {
+  "test": {
+   "hours": 0.1127,
+   "labels": {
+    "angry": 33,
+    "happy": 37,
+    "neutral": 35,
+    "sad": 34
+   },
+   "manifest_sha1": "6ab1390b19b15bacc1bce81ebc815eac3d8d0df0",
+   "n": 139,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 139
+  },
+  "train": {
+   "hours": 0.3773,
+   "labels": {
+    "angry": 117,
+    "happy": 131,
+    "neutral": 121,
+    "sad": 117
+   },
+   "manifest_sha1": "11ad0ce6c3c762ddc1c8af7a77ce957cf96daf1d",
+   "n": 486,
+   "n_filtered": 486,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 486
+  },
+  "valid": {
+   "hours": 0.0584,
+   "labels": {
+    "angry": 17,
+    "happy": 19,
+    "neutral": 17,
+    "sad": 17
+   },
+   "manifest_sha1": "2b4ff5a173573f627876b1653d66673c34c84e6b",
+   "n": 70,
+   "n_filtered": 70,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 70
+  }
+ },
+ "token_list": [
+  "happy",
+  "neutral",
+  "angry",
+  "sad"
+ ]
+}

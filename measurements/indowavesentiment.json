@@ -1,0 +1,73 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 300
+ },
+ "duration_sec": {
+  "max": 3.8,
+  "median": 3.0,
+  "min": 3.0
+ },
+ "hours_total": 0.2586,
+ "measured_on": "2026-10-12",
+ "n_total": 300,
+ "output_dir": "/home/tenshi/data/indowavesentiment_espnet3",
+ "output_env_var": "INDOWAVESENTIMENT_OUTPUT",
+ "recipe": "indowavesentiment",
+ "splits": {
+  "test": {
+   "hours": 0.0516,
+   "labels": {
+    "disappointed": 12,
+    "disgust": 12,
+    "happy": 12,
+    "neutral": 12,
+    "surprise": 12
+   },
+   "manifest_sha1": "4393ede6f466e1e5bdbe5eaccda0d955be5de95e",
+   "n": 60,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 60
+  },
+  "train": {
+   "hours": 0.1814,
+   "labels": {
+    "disappointed": 42,
+    "disgust": 42,
+    "happy": 42,
+    "neutral": 42,
+    "surprise": 42
+   },
+   "manifest_sha1": "eebb98363900282cb43e8e533b3c1c0a42afe8d4",
+   "n": 210,
+   "n_filtered": 210,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 210
+  },
+  "valid": {
+   "hours": 0.0256,
+   "labels": {
+    "disappointed": 6,
+    "disgust": 6,
+    "happy": 6,
+    "neutral": 6,
+    "surprise": 6
+   },
+   "manifest_sha1": "626505f79c117f735998735ff473292f6f0a1473",
+   "n": 30,
+   "n_filtered": 30,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 30
+  }
+ },
+ "token_list": [
+  "neutral",
+  "happy",
+  "surprise",
+  "disgust",
+  "disappointed"
+ ]
+}

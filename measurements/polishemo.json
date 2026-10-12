@@ -1,0 +1,65 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 450
+ },
+ "duration_sec": {
+  "max": 1.634,
+  "median": 0.819,
+  "min": 0.484
+ },
+ "hours_total": 0.1051,
+ "measured_on": "2026-10-12",
+ "n_total": 450,
+ "output_dir": "/home/tenshi/data/polishemo_espnet3",
+ "output_env_var": "POLISHEMO_OUTPUT",
+ "recipe": "polishemo",
+ "splits": {
+  "test": {
+   "hours": 0.0207,
+   "labels": {
+    "angry": 30,
+    "fear": 30,
+    "neutral": 30
+   },
+   "manifest_sha1": "bff5020d3525816a3b39d2a72f7b0f061d5d5d59",
+   "n": 90,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 90
+  },
+  "train": {
+   "hours": 0.0738,
+   "labels": {
+    "angry": 105,
+    "fear": 105,
+    "neutral": 105
+   },
+   "manifest_sha1": "5435c88911dd66c31e0fe87d423363c29c056727",
+   "n": 315,
+   "n_filtered": 313,
+   "over_30s": 0,
+   "under_0.5s": 2,
+   "unique_utt": 315
+  },
+  "valid": {
+   "hours": 0.0107,
+   "labels": {
+    "angry": 15,
+    "fear": 15,
+    "neutral": 15
+   },
+   "manifest_sha1": "6ecd0f567e1f3ecb94ee02143b394a86b94e8006",
+   "n": 45,
+   "n_filtered": 45,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 45
+  }
+ },
+ "token_list": [
+  "angry",
+  "neutral",
+  "fear"
+ ]
+}

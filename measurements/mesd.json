@@ -1,0 +1,77 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 862
+ },
+ "duration_sec": {
+  "max": 2.537,
+  "median": 0.666,
+  "min": 0.199
+ },
+ "hours_total": 0.173,
+ "measured_on": "2026-10-12",
+ "n_total": 862,
+ "output_dir": "/home/tenshi/data/mesd_espnet3",
+ "output_env_var": "MESD_OUTPUT",
+ "recipe": "mesd",
+ "splits": {
+  "test": {
+   "hours": 0.0365,
+   "labels": {
+    "angry": 29,
+    "disgust": 29,
+    "fear": 29,
+    "happy": 29,
+    "neutral": 29,
+    "sad": 29
+   },
+   "manifest_sha1": "a11e940c8b1cf152e9b8eb7b31893b66a28c5bd9",
+   "n": 174,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 30,
+   "unique_utt": 174
+  },
+  "train": {
+   "hours": 0.1196,
+   "labels": {
+    "angry": 100,
+    "disgust": 101,
+    "fear": 101,
+    "happy": 101,
+    "neutral": 100,
+    "sad": 101
+   },
+   "manifest_sha1": "669bbaee0f13ce4fa7e0beffb100c015a517827a",
+   "n": 604,
+   "n_filtered": 604,
+   "over_30s": 0,
+   "under_0.5s": 116,
+   "unique_utt": 604
+  },
+  "valid": {
+   "hours": 0.017,
+   "labels": {
+    "angry": 14,
+    "disgust": 14,
+    "fear": 14,
+    "happy": 14,
+    "neutral": 14,
+    "sad": 14
+   },
+   "manifest_sha1": "067886d39ca980c05819f9e7955d25e8150df31a",
+   "n": 84,
+   "n_filtered": 84,
+   "over_30s": 0,
+   "under_0.5s": 18,
+   "unique_utt": 84
+  }
+ },
+ "token_list": [
+  "disgust",
+  "fear",
+  "happy",
+  "sad",
+  "angry",
+  "neutral"
+ ]
+}

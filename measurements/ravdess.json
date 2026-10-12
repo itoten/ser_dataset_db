@@ -1,0 +1,85 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 1440
+ },
+ "duration_sec": {
+  "max": 5.272,
+  "median": 3.67,
+  "min": 2.936
+ },
+ "hours_total": 1.4803,
+ "measured_on": "2026-10-12",
+ "n_total": 1440,
+ "output_dir": "/home/tenshi/data/ravdess_espnet3",
+ "output_env_var": "RAVDESS_OUTPUT",
+ "recipe": "ravdess",
+ "splits": {
+  "test": {
+   "hours": 0.2913,
+   "labels": {
+    "angry": 38,
+    "calm": 38,
+    "disgust": 38,
+    "fear": 38,
+    "happy": 38,
+    "neutral": 19,
+    "sad": 38,
+    "surprise": 38
+   },
+   "manifest_sha1": "cd8a3497269e66c724e5a5fb6c202fbd7bb46dd6",
+   "n": 285,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 285
+  },
+  "train": {
+   "hours": 1.0407,
+   "labels": {
+    "angry": 135,
+    "calm": 135,
+    "disgust": 135,
+    "fear": 135,
+    "happy": 135,
+    "neutral": 67,
+    "sad": 135,
+    "surprise": 135
+   },
+   "manifest_sha1": "d8b62fe886e5856171a33c056b2fab871d40180b",
+   "n": 1012,
+   "n_filtered": 1012,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1012
+  },
+  "valid": {
+   "hours": 0.1483,
+   "labels": {
+    "angry": 19,
+    "calm": 19,
+    "disgust": 19,
+    "fear": 19,
+    "happy": 19,
+    "neutral": 10,
+    "sad": 19,
+    "surprise": 19
+   },
+   "manifest_sha1": "f9b69f12f0fde4d4c9406e5fdfa57940f370a184",
+   "n": 143,
+   "n_filtered": 143,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 143
+  }
+ },
+ "token_list": [
+  "calm",
+  "happy",
+  "sad",
+  "angry",
+  "fear",
+  "disgust",
+  "surprise",
+  "neutral"
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 7000
+ },
+ "duration_sec": {
+  "max": 6.026,
+  "median": 4.017,
+  "min": 2.752
+ },
+ "hours_total": 7.8321,
+ "measured_on": "2026-10-12",
+ "n_total": 7000,
+ "output_dir": "/home/tenshi/data/subesco_espnet3",
+ "output_env_var": "SUBESCO_OUTPUT",
+ "recipe": "subesco",
+ "splits": {
+  "test": {
+   "hours": 1.5719,
+   "labels": {
+    "angry": 200,
+    "disgust": 200,
+    "fear": 200,
+    "happy": 200,
+    "neutral": 200,
+    "sad": 200,
+    "surprise": 200
+   },
+   "manifest_sha1": "dc09d97a3be04c0adb1898df5c1b6b9e824f1fb2",
+   "n": 1400,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1400
+  },
+  "train": {
+   "hours": 4.6879,
+   "labels": {
+    "angry": 600,
+    "disgust": 600,
+    "fear": 600,
+    "happy": 600,
+    "neutral": 600,
+    "sad": 600,
+    "surprise": 600
+   },
+   "manifest_sha1": "906feecf7e2c4db25fcdd63829257ccb887f713f",
+   "n": 4200,
+   "n_filtered": 4200,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 4200
+  },
+  "valid": {
+   "hours": 1.5723,
+   "labels": {
+    "angry": 200,
+    "disgust": 200,
+    "fear": 200,
+    "happy": 200,
+    "neutral": 200,
+    "sad": 200,
+    "surprise": 200
+   },
+   "manifest_sha1": "d42c75456a953e154de8958b37319d11306cfb6c",
+   "n": 1400,
+   "n_filtered": 1400,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1400
+  }
+ },
+ "token_list": [
+  "angry",
+  "disgust",
+  "fear",
+  "happy",
+  "neutral",
+  "sad",
+  "surprise"
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 6902
+ },
+ "duration_sec": {
+  "max": 13.874,
+  "median": 3.168,
+  "min": 0.755
+ },
+ "hours_total": 6.305,
+ "measured_on": "2026-10-12",
+ "n_total": 6902,
+ "output_dir": "/home/tenshi/data/emozionalmente_espnet3",
+ "output_env_var": "EMOZIONALMENTE_OUTPUT",
+ "recipe": "emozionalmente",
+ "splits": {
+  "test": {
+   "hours": 1.2746,
+   "labels": {
+    "angry": 199,
+    "disgust": 197,
+    "fear": 177,
+    "happy": 192,
+    "neutral": 203,
+    "sad": 177,
+    "surprise": 189
+   },
+   "manifest_sha1": "dc804d6695e6f59c47fff52c092dce6dad4dd75b",
+   "n": 1334,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1334
+  },
+  "train": {
+   "hours": 3.9981,
+   "labels": {
+    "angry": 616,
+    "disgust": 598,
+    "fear": 644,
+    "happy": 615,
+    "neutral": 618,
+    "sad": 639,
+    "surprise": 636
+   },
+   "manifest_sha1": "e977eacc33bcda221adcc946665b1d405ed68899",
+   "n": 4366,
+   "n_filtered": 4366,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 4366
+  },
+  "valid": {
+   "hours": 1.0324,
+   "labels": {
+    "angry": 171,
+    "disgust": 191,
+    "fear": 165,
+    "happy": 179,
+    "neutral": 165,
+    "sad": 170,
+    "surprise": 161
+   },
+   "manifest_sha1": "19e3b3dce0b647f1a67e3a0ab82c22bfa2ab0cee",
+   "n": 1202,
+   "n_filtered": 1202,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1202
+  }
+ },
+ "token_list": [
+  "fear",
+  "sad",
+  "surprise",
+  "neutral",
+  "angry",
+  "happy",
+  "disgust"
+ ]
+}

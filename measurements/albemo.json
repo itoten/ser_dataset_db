@@ -1,0 +1,81 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 420
+ },
+ "duration_sec": {
+  "max": 10.069,
+  "median": 3.115,
+  "min": 1.195
+ },
+ "hours_total": 0.3679,
+ "measured_on": "2026-10-12",
+ "n_total": 420,
+ "output_dir": "/home/tenshi/data/albemo_espnet3",
+ "output_env_var": "ALBEMO_OUTPUT",
+ "recipe": "albemo",
+ "splits": {
+  "test": {
+   "hours": 0.0721,
+   "labels": {
+    "angry": 12,
+    "disgust": 12,
+    "fear": 12,
+    "happy": 12,
+    "neutral": 12,
+    "sad": 12,
+    "surprise": 12
+   },
+   "manifest_sha1": "020803d2ac6d5bd8b94c7493186756b779ea5791",
+   "n": 84,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 84
+  },
+  "train": {
+   "hours": 0.2586,
+   "labels": {
+    "angry": 42,
+    "disgust": 42,
+    "fear": 42,
+    "happy": 42,
+    "neutral": 42,
+    "sad": 42,
+    "surprise": 42
+   },
+   "manifest_sha1": "699405107cac2fc194b633ca3f31d64f5bde1d38",
+   "n": 294,
+   "n_filtered": 294,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 294
+  },
+  "valid": {
+   "hours": 0.0372,
+   "labels": {
+    "angry": 6,
+    "disgust": 6,
+    "fear": 6,
+    "happy": 6,
+    "neutral": 6,
+    "sad": 6,
+    "surprise": 6
+   },
+   "manifest_sha1": "5382ff4222307981e70a5033c7009d096d48cc2a",
+   "n": 42,
+   "n_filtered": 42,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 42
+  }
+ },
+ "token_list": [
+  "angry",
+  "disgust",
+  "fear",
+  "happy",
+  "neutral",
+  "sad",
+  "surprise"
+ ]
+}

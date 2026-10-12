@@ -1,0 +1,99 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 207223
+ },
+ "duration_sec": {
+  "max": 11.942,
+  "median": 5.0,
+  "min": 1.913
+ },
+ "hours_total": 314.6624,
+ "measured_on": "2026-10-12",
+ "n_total": 207223,
+ "output_dir": "/home/tenshi/data/msppodcast_espnet3",
+ "output_env_var": "MSPPODCAST_OUTPUT",
+ "recipe": "msppodcast",
+ "splits": {
+  "test": {
+   "hours": 55.8886,
+   "labels": {
+    "angry": 6985,
+    "disgust": 744,
+    "fear": 348,
+    "happy": 10947,
+    "neutral": 12457,
+    "sad": 3041,
+    "surprise": 1206
+   },
+   "manifest_sha1": "1626ac21b08aab1f468267670a1f8ff65597897b",
+   "n": 35728,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 35728
+  },
+  "test2": {
+   "hours": 16.1372,
+   "labels": {
+    "angry": 538,
+    "disgust": 141,
+    "fear": 116,
+    "happy": 2801,
+    "neutral": 6792,
+    "sad": 581,
+    "surprise": 394
+   },
+   "manifest_sha1": "c2630d8bfaf824d5368a983cdff5a33b39c9898b",
+   "n": 11363,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 11363
+  },
+  "train": {
+   "hours": 203.0242,
+   "labels": {
+    "angry": 22609,
+    "disgust": 1325,
+    "fear": 794,
+    "happy": 37048,
+    "neutral": 51151,
+    "sad": 18256,
+    "surprise": 3220
+   },
+   "manifest_sha1": "94cd9063566c80baed580329fe9aec7f6c5624a5",
+   "n": 134403,
+   "n_filtered": 134403,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 134403
+  },
+  "valid": {
+   "hours": 39.6124,
+   "labels": {
+    "angry": 5728,
+    "disgust": 534,
+    "fear": 285,
+    "happy": 7487,
+    "neutral": 8318,
+    "sad": 2352,
+    "surprise": 1025
+   },
+   "manifest_sha1": "c575f89b295bd494403f6fbae0bd0ba9a83116c1",
+   "n": 25729,
+   "n_filtered": 25729,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 25729
+  }
+ },
+ "token_list": [
+  "neutral",
+  "happy",
+  "angry",
+  "sad",
+  "surprise",
+  "disgust",
+  "fear"
+ ]
+}

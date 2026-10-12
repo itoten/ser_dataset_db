@@ -1,0 +1,81 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 3241
+ },
+ "duration_sec": {
+  "max": 30.563,
+  "median": 6.0,
+  "min": 0.379
+ },
+ "hours_total": 5.4801,
+ "measured_on": "2026-10-12",
+ "n_total": 3241,
+ "output_dir": "/home/tenshi/data/asvpesd_espnet3",
+ "output_env_var": "ASVPESD_OUTPUT",
+ "recipe": "asvpesd",
+ "splits": {
+  "test": {
+   "hours": 1.09,
+   "labels": {
+    "angry": 187,
+    "disgust": 15,
+    "fear": 20,
+    "happy": 92,
+    "neutral": 199,
+    "sad": 86,
+    "surprise": 49
+   },
+   "manifest_sha1": "34dafda042db69cdc66b4547b5f142e19cbcdbf7",
+   "n": 648,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 648
+  },
+  "train": {
+   "hours": 3.8498,
+   "labels": {
+    "angry": 654,
+    "disgust": 53,
+    "fear": 68,
+    "happy": 321,
+    "neutral": 698,
+    "sad": 303,
+    "surprise": 171
+   },
+   "manifest_sha1": "ea5e585e3e71118de4c89ee9cc707984ed98d2bc",
+   "n": 2268,
+   "n_filtered": 2262,
+   "over_30s": 1,
+   "under_0.5s": 5,
+   "unique_utt": 2268
+  },
+  "valid": {
+   "hours": 0.5403,
+   "labels": {
+    "angry": 94,
+    "disgust": 8,
+    "fear": 10,
+    "happy": 46,
+    "neutral": 100,
+    "sad": 43,
+    "surprise": 24
+   },
+   "manifest_sha1": "de69673197c6a908100920e408072467ebbe573c",
+   "n": 325,
+   "n_filtered": 324,
+   "over_30s": 0,
+   "under_0.5s": 1,
+   "unique_utt": 325
+  }
+ },
+ "token_list": [
+  "neutral",
+  "angry",
+  "happy",
+  "sad",
+  "surprise",
+  "fear",
+  "disgust"
+ ]
+}

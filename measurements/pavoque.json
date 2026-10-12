@@ -1,0 +1,73 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 5442
+ },
+ "duration_sec": {
+  "max": 20.66,
+  "median": 5.27,
+  "min": 1.24
+ },
+ "hours_total": 8.6041,
+ "measured_on": "2026-10-12",
+ "n_total": 5442,
+ "output_dir": "/home/tenshi/data/pavoque_espnet3",
+ "output_env_var": "PAVOQUE_OUTPUT",
+ "recipe": "pavoque",
+ "splits": {
+  "test": {
+   "hours": 1.711,
+   "labels": {
+    "angry": 120,
+    "happy": 117,
+    "neutral": 625,
+    "poker": 115,
+    "sad": 111
+   },
+   "manifest_sha1": "f43a3eb3fc3cbe9b73a068496d7644ca62510dfb",
+   "n": 1088,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1088
+  },
+  "train": {
+   "hours": 6.0368,
+   "labels": {
+    "angry": 421,
+    "happy": 409,
+    "neutral": 2188,
+    "poker": 402,
+    "sad": 389
+   },
+   "manifest_sha1": "2d759237d51b1517b24e61b7b71238380da36670",
+   "n": 3809,
+   "n_filtered": 3809,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 3809
+  },
+  "valid": {
+   "hours": 0.8563,
+   "labels": {
+    "angry": 60,
+    "happy": 58,
+    "neutral": 313,
+    "poker": 58,
+    "sad": 56
+   },
+   "manifest_sha1": "185bbe486f7dfebf72758ef6d09761500d265f14",
+   "n": 545,
+   "n_filtered": 545,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 545
+  }
+ },
+ "token_list": [
+  "neutral",
+  "angry",
+  "happy",
+  "poker",
+  "sad"
+ ]
+}

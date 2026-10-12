@@ -1,0 +1,81 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 936
+ },
+ "duration_sec": {
+  "max": 7.745,
+  "median": 4.41,
+  "min": 2.557
+ },
+ "hours_total": 1.1549,
+ "measured_on": "2026-10-12",
+ "n_total": 936,
+ "output_dir": "/home/tenshi/data/cafe_espnet3",
+ "output_env_var": "CAFE_OUTPUT",
+ "recipe": "cafe",
+ "splits": {
+  "test": {
+   "hours": 0.2312,
+   "labels": {
+    "angry": 29,
+    "disgust": 29,
+    "fear": 29,
+    "happy": 29,
+    "neutral": 14,
+    "sad": 29,
+    "surprise": 29
+   },
+   "manifest_sha1": "1313a115b6393eac16472cc1687eedb9fcb2da3a",
+   "n": 188,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 188
+  },
+  "train": {
+   "hours": 0.81,
+   "labels": {
+    "angry": 101,
+    "disgust": 101,
+    "fear": 101,
+    "happy": 101,
+    "neutral": 51,
+    "sad": 101,
+    "surprise": 101
+   },
+   "manifest_sha1": "519f73c431464903c968019aa8805a289c5c3b00",
+   "n": 657,
+   "n_filtered": 657,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 657
+  },
+  "valid": {
+   "hours": 0.1137,
+   "labels": {
+    "angry": 14,
+    "disgust": 14,
+    "fear": 14,
+    "happy": 14,
+    "neutral": 7,
+    "sad": 14,
+    "surprise": 14
+   },
+   "manifest_sha1": "8822c3e748fec94d19186e3b0512e4bb843a2da7",
+   "n": 91,
+   "n_filtered": 91,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 91
+  }
+ },
+ "token_list": [
+  "angry",
+  "disgust",
+  "happy",
+  "fear",
+  "surprise",
+  "sad",
+  "neutral"
+ ]
+}

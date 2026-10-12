@@ -1,0 +1,69 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 1735
+ },
+ "duration_sec": {
+  "max": 2.47,
+  "median": 0.951,
+  "min": 0.354
+ },
+ "hours_total": 0.4629,
+ "measured_on": "2026-10-12",
+ "n_total": 1735,
+ "output_dir": "/home/tenshi/data/turevdb_espnet3",
+ "output_env_var": "TUREVDB_OUTPUT",
+ "recipe": "turevdb",
+ "splits": {
+  "test": {
+   "hours": 0.093,
+   "labels": {
+    "angry": 97,
+    "calm": 82,
+    "happy": 71,
+    "sad": 97
+   },
+   "manifest_sha1": "81808529ba1dc78708e55b4741b83455f16cefa0",
+   "n": 347,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 347
+  },
+  "train": {
+   "hours": 0.323,
+   "labels": {
+    "angry": 341,
+    "calm": 285,
+    "happy": 250,
+    "sad": 338
+   },
+   "manifest_sha1": "d658a3826dff4dc5ff640aed25a85d86f38fa11e",
+   "n": 1214,
+   "n_filtered": 1212,
+   "over_30s": 0,
+   "under_0.5s": 2,
+   "unique_utt": 1214
+  },
+  "valid": {
+   "hours": 0.0468,
+   "labels": {
+    "angry": 49,
+    "calm": 41,
+    "happy": 36,
+    "sad": 48
+   },
+   "manifest_sha1": "10706296327e551938a6b1a550e5459712239a3f",
+   "n": 174,
+   "n_filtered": 174,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 174
+  }
+ },
+ "token_list": [
+  "angry",
+  "sad",
+  "calm",
+  "happy"
+ ]
+}

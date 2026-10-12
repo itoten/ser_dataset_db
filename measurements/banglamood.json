@@ -1,0 +1,85 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 3218
+ },
+ "duration_sec": {
+  "max": 7.57,
+  "median": 3.24,
+  "min": 0.52
+ },
+ "hours_total": 2.9003,
+ "measured_on": "2026-10-12",
+ "n_total": 3218,
+ "output_dir": "/home/tenshi/data/banglamood_espnet3",
+ "output_env_var": "BANGLAMOOD_OUTPUT",
+ "recipe": "banglamood",
+ "splits": {
+  "test": {
+   "hours": 0.59,
+   "labels": {
+    "angry": 122,
+    "disappointed": 68,
+    "excited": 53,
+    "fear": 90,
+    "happy": 60,
+    "neutral": 122,
+    "sad": 67,
+    "surprise": 61
+   },
+   "manifest_sha1": "b7a715c1679256df5607c2ad34172e40ec541dfa",
+   "n": 643,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 643
+  },
+  "train": {
+   "hours": 2.0236,
+   "labels": {
+    "angry": 428,
+    "disappointed": 240,
+    "excited": 187,
+    "fear": 314,
+    "happy": 210,
+    "neutral": 426,
+    "sad": 236,
+    "surprise": 212
+   },
+   "manifest_sha1": "80e44afc4c240f2f72ca168d9e1cd7f15451bbab",
+   "n": 2253,
+   "n_filtered": 2253,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 2253
+  },
+  "valid": {
+   "hours": 0.2867,
+   "labels": {
+    "angry": 61,
+    "disappointed": 34,
+    "excited": 27,
+    "fear": 45,
+    "happy": 30,
+    "neutral": 61,
+    "sad": 34,
+    "surprise": 30
+   },
+   "manifest_sha1": "4a5e7d9f6214e0dd82db72f108724c94ddc9b91a",
+   "n": 322,
+   "n_filtered": 322,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 322
+  }
+ },
+ "token_list": [
+  "angry",
+  "neutral",
+  "fear",
+  "disappointed",
+  "sad",
+  "surprise",
+  "happy",
+  "excited"
+ ]
+}

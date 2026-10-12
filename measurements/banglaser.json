@@ -1,0 +1,73 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 1467
+ },
+ "duration_sec": {
+  "max": 3.992,
+  "median": 3.307,
+  "min": 2.621
+ },
+ "hours_total": 1.374,
+ "measured_on": "2026-10-12",
+ "n_total": 1467,
+ "output_dir": "/home/tenshi/data/banglaser_espnet3",
+ "output_env_var": "BANGLASER_OUTPUT",
+ "recipe": "banglaser",
+ "splits": {
+  "test": {
+   "hours": 0.2747,
+   "labels": {
+    "angry": 61,
+    "happy": 61,
+    "neutral": 49,
+    "sad": 61,
+    "surprise": 61
+   },
+   "manifest_sha1": "5e19d437222c310167bd791915c587e0c96a71ad",
+   "n": 293,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 293
+  },
+  "train": {
+   "hours": 0.9606,
+   "labels": {
+    "angry": 214,
+    "happy": 214,
+    "neutral": 170,
+    "sad": 214,
+    "surprise": 214
+   },
+   "manifest_sha1": "63600c919e08833f7de05173bf7aa18414d6b079",
+   "n": 1026,
+   "n_filtered": 1026,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1026
+  },
+  "valid": {
+   "hours": 0.1387,
+   "labels": {
+    "angry": 31,
+    "happy": 31,
+    "neutral": 24,
+    "sad": 31,
+    "surprise": 31
+   },
+   "manifest_sha1": "9133abcc4c5682ef8ff1ca229d0e0d0b645d8350",
+   "n": 148,
+   "n_filtered": 148,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 148
+  }
+ },
+ "token_list": [
+  "happy",
+  "sad",
+  "angry",
+  "surprise",
+  "neutral"
+ ]
+}

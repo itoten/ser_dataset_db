@@ -1,0 +1,81 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 434
+ },
+ "duration_sec": {
+  "max": 6.78,
+  "median": 2.601,
+  "min": 1.045
+ },
+ "hours_total": 0.3351,
+ "measured_on": "2026-10-12",
+ "n_total": 434,
+ "output_dir": "/home/tenshi/data/oreau_espnet3",
+ "output_env_var": "OREAU_OUTPUT",
+ "recipe": "oreau",
+ "splits": {
+  "test": {
+   "hours": 0.0665,
+   "labels": {
+    "angry": 13,
+    "disgust": 13,
+    "fear": 10,
+    "happy": 12,
+    "neutral": 14,
+    "sad": 11,
+    "surprise": 12
+   },
+   "manifest_sha1": "52cd5251bc055d72ed69dbbfa7d277e19980c7c0",
+   "n": 85,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 85
+  },
+  "train": {
+   "hours": 0.2346,
+   "labels": {
+    "angry": 47,
+    "disgust": 47,
+    "fear": 36,
+    "happy": 44,
+    "neutral": 49,
+    "sad": 38,
+    "surprise": 44
+   },
+   "manifest_sha1": "043fa05de7f0be1df4b33c68cb42fb9314d0d245",
+   "n": 305,
+   "n_filtered": 305,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 305
+  },
+  "valid": {
+   "hours": 0.0341,
+   "labels": {
+    "angry": 7,
+    "disgust": 7,
+    "fear": 5,
+    "happy": 6,
+    "neutral": 7,
+    "sad": 6,
+    "surprise": 6
+   },
+   "manifest_sha1": "29d24552dc3a6ae729a7610ed6d94a4d19c9724c",
+   "n": 44,
+   "n_filtered": 44,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 44
+  }
+ },
+ "token_list": [
+  "neutral",
+  "angry",
+  "disgust",
+  "happy",
+  "surprise",
+  "sad",
+  "fear"
+ ]
+}

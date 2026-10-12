@@ -1,0 +1,93 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 2400
+ },
+ "duration_sec": {
+  "max": 3.75,
+  "median": 2.1,
+  "min": 1.2
+ },
+ "hours_total": 1.412,
+ "measured_on": "2026-10-12",
+ "n_total": 2400,
+ "output_dir": "/home/tenshi/data/jlcorpus_espnet3",
+ "output_env_var": "JLCORPUS_OUTPUT",
+ "recipe": "jlcorpus",
+ "splits": {
+  "test": {
+   "hours": 0.3448,
+   "labels": {
+    "angry": 60,
+    "anxious": 60,
+    "apologetic": 60,
+    "assertive": 60,
+    "concerned": 60,
+    "encouraging": 60,
+    "excited": 60,
+    "happy": 60,
+    "neutral": 60,
+    "sad": 60
+   },
+   "manifest_sha1": "365815433d68c38d68db6978af9647a5c5cb6e04",
+   "n": 600,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 600
+  },
+  "train": {
+   "hours": 0.8547,
+   "labels": {
+    "angry": 144,
+    "anxious": 144,
+    "apologetic": 144,
+    "assertive": 144,
+    "concerned": 144,
+    "encouraging": 144,
+    "excited": 144,
+    "happy": 144,
+    "neutral": 144,
+    "sad": 144
+   },
+   "manifest_sha1": "0e5bfae08f71e64382dea52aa04b2310b5b704bc",
+   "n": 1440,
+   "n_filtered": 1440,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1440
+  },
+  "valid": {
+   "hours": 0.2125,
+   "labels": {
+    "angry": 36,
+    "anxious": 36,
+    "apologetic": 36,
+    "assertive": 36,
+    "concerned": 36,
+    "encouraging": 36,
+    "excited": 36,
+    "happy": 36,
+    "neutral": 36,
+    "sad": 36
+   },
+   "manifest_sha1": "00f46ed249c2fbc43f6e38fd6bc411f8ca4a625d",
+   "n": 360,
+   "n_filtered": 360,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 360
+  }
+ },
+ "token_list": [
+  "angry",
+  "anxious",
+  "apologetic",
+  "assertive",
+  "concerned",
+  "encouraging",
+  "excited",
+  "happy",
+  "neutral",
+  "sad"
+ ]
+}

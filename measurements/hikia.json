@@ -1,0 +1,69 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 488
+ },
+ "duration_sec": {
+  "max": 1.751,
+  "median": 0.608,
+  "min": 0.239
+ },
+ "hours_total": 0.0872,
+ "measured_on": "2026-10-12",
+ "n_total": 488,
+ "output_dir": "/home/tenshi/data/hikia_espnet3",
+ "output_env_var": "HIKIA_OUTPUT",
+ "recipe": "hikia",
+ "splits": {
+  "test": {
+   "hours": 0.0177,
+   "labels": {
+    "angry": 21,
+    "happy": 26,
+    "neutral": 24,
+    "sad": 27
+   },
+   "manifest_sha1": "6dc9b74d33d61821022e547dc1d991dc50b31c54",
+   "n": 98,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 22,
+   "unique_utt": 98
+  },
+  "train": {
+   "hours": 0.0608,
+   "labels": {
+    "angry": 75,
+    "happy": 90,
+    "neutral": 83,
+    "sad": 93
+   },
+   "manifest_sha1": "2e9d833fa0193b7e30f207ea80197a81b0912dcf",
+   "n": 341,
+   "n_filtered": 341,
+   "over_30s": 0,
+   "under_0.5s": 70,
+   "unique_utt": 341
+  },
+  "valid": {
+   "hours": 0.0088,
+   "labels": {
+    "angry": 11,
+    "happy": 13,
+    "neutral": 12,
+    "sad": 13
+   },
+   "manifest_sha1": "09213f3652d2cf73f1553be323a20f251d2afb08",
+   "n": 49,
+   "n_filtered": 49,
+   "over_30s": 0,
+   "under_0.5s": 7,
+   "unique_utt": 49
+  }
+ },
+ "token_list": [
+  "sad",
+  "happy",
+  "neutral",
+  "angry"
+ ]
+}

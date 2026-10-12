@@ -1,0 +1,69 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 1800
+ },
+ "duration_sec": {
+  "max": 3.648,
+  "median": 2.674,
+  "min": 1.726
+ },
+ "hours_total": 1.3286,
+ "measured_on": "2026-10-12",
+ "n_total": 1800,
+ "output_dir": "/home/tenshi/data/mess_espnet3",
+ "output_env_var": "MESS_OUTPUT",
+ "recipe": "mess",
+ "splits": {
+  "test": {
+   "hours": 0.2662,
+   "labels": {
+    "angry": 90,
+    "calm": 90,
+    "happy": 90,
+    "sad": 90
+   },
+   "manifest_sha1": "a11c463ae1b42b9fe5fcc0c2460a556b75ce8310",
+   "n": 360,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 360
+  },
+  "train": {
+   "hours": 0.9299,
+   "labels": {
+    "angry": 315,
+    "calm": 315,
+    "happy": 315,
+    "sad": 315
+   },
+   "manifest_sha1": "18b13f0a07f3dabbe7aa84090e21022370148ff6",
+   "n": 1260,
+   "n_filtered": 1260,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1260
+  },
+  "valid": {
+   "hours": 0.1324,
+   "labels": {
+    "angry": 45,
+    "calm": 45,
+    "happy": 45,
+    "sad": 45
+   },
+   "manifest_sha1": "7875270a26dc2c7a98866c548258a25d20fac2aa",
+   "n": 180,
+   "n_filtered": 180,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 180
+  }
+ },
+ "token_list": [
+  "angry",
+  "calm",
+  "happy",
+  "sad"
+ ]
+}

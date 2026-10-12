@@ -1,0 +1,77 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 468
+ },
+ "duration_sec": {
+  "max": 7.198,
+  "median": 3.792,
+  "min": 1.502
+ },
+ "hours_total": 0.5024,
+ "measured_on": "2026-10-12",
+ "n_total": 468,
+ "output_dir": "/home/tenshi/data/kannada_espnet3",
+ "output_env_var": "KANNADA_OUTPUT",
+ "recipe": "kannada",
+ "splits": {
+  "test": {
+   "hours": 0.1025,
+   "labels": {
+    "angry": 16,
+    "fear": 16,
+    "happy": 16,
+    "neutral": 16,
+    "sad": 16,
+    "surprise": 16
+   },
+   "manifest_sha1": "2a04f97e42195200db1e36c9f4093628f0b3991b",
+   "n": 96,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 96
+  },
+  "train": {
+   "hours": 0.3499,
+   "labels": {
+    "angry": 54,
+    "fear": 54,
+    "happy": 54,
+    "neutral": 54,
+    "sad": 54,
+    "surprise": 54
+   },
+   "manifest_sha1": "13cfa2c2461e74ac949931163ec54d5d8bc44b16",
+   "n": 324,
+   "n_filtered": 324,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 324
+  },
+  "valid": {
+   "hours": 0.05,
+   "labels": {
+    "angry": 8,
+    "fear": 8,
+    "happy": 8,
+    "neutral": 8,
+    "sad": 8,
+    "surprise": 8
+   },
+   "manifest_sha1": "732e9fd5375bf47aa0bf3c3a6b22542edfe85c06",
+   "n": 48,
+   "n_filtered": 48,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 48
+  }
+ },
+ "token_list": [
+  "angry",
+  "sad",
+  "surprise",
+  "happy",
+  "fear",
+  "neutral"
+ ]
+}

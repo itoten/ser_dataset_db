@@ -1,0 +1,81 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 588
+ },
+ "duration_sec": {
+  "max": 13.995,
+  "median": 2.773,
+  "min": 1.291
+ },
+ "hours_total": 0.5098,
+ "measured_on": "2026-10-12",
+ "n_total": 588,
+ "output_dir": "/home/tenshi/data/emovo_espnet3",
+ "output_env_var": "EMOVO_OUTPUT",
+ "recipe": "emovo",
+ "splits": {
+  "test": {
+   "hours": 0.1016,
+   "labels": {
+    "angry": 17,
+    "disgust": 17,
+    "fear": 17,
+    "happy": 17,
+    "neutral": 17,
+    "sad": 17,
+    "surprise": 17
+   },
+   "manifest_sha1": "3e1705b97bb81af6fc2fa97803e51a228f794668",
+   "n": 119,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 119
+  },
+  "train": {
+   "hours": 0.356,
+   "labels": {
+    "angry": 59,
+    "disgust": 59,
+    "fear": 59,
+    "happy": 59,
+    "neutral": 59,
+    "sad": 59,
+    "surprise": 59
+   },
+   "manifest_sha1": "e0c81156c74f8db91ff8dad55778d8ad2dcba13d",
+   "n": 413,
+   "n_filtered": 413,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 413
+  },
+  "valid": {
+   "hours": 0.0522,
+   "labels": {
+    "angry": 8,
+    "disgust": 8,
+    "fear": 8,
+    "happy": 8,
+    "neutral": 8,
+    "sad": 8,
+    "surprise": 8
+   },
+   "manifest_sha1": "66090556316dd982dbb6879f30bf0f4c1ba3ff64",
+   "n": 56,
+   "n_filtered": 56,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 56
+  }
+ },
+ "token_list": [
+  "disgust",
+  "happy",
+  "neutral",
+  "fear",
+  "angry",
+  "surprise",
+  "sad"
+ ]
+}

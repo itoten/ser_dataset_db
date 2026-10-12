@@ -1,0 +1,73 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 2474
+ },
+ "duration_sec": {
+  "max": 3.9,
+  "median": 3.0,
+  "min": 2.0
+ },
+ "hours_total": 2.1058,
+ "measured_on": "2026-10-12",
+ "n_total": 2474,
+ "output_dir": "/home/tenshi/data/ased_espnet3",
+ "output_env_var": "ASED_OUTPUT",
+ "recipe": "ased",
+ "splits": {
+  "test": {
+   "hours": 0.4182,
+   "labels": {
+    "angry": 97,
+    "fear": 102,
+    "happy": 97,
+    "neutral": 104,
+    "sad": 94
+   },
+   "manifest_sha1": "a322d4f53f23cce314c93d132ec57898eb2b6a18",
+   "n": 494,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 494
+  },
+  "train": {
+   "hours": 1.4752,
+   "labels": {
+    "angry": 340,
+    "fear": 357,
+    "happy": 340,
+    "neutral": 366,
+    "sad": 329
+   },
+   "manifest_sha1": "57ab2fa3db59f17668af13c8a9380dee64feff52",
+   "n": 1732,
+   "n_filtered": 1732,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1732
+  },
+  "valid": {
+   "hours": 0.2124,
+   "labels": {
+    "angry": 49,
+    "fear": 51,
+    "happy": 49,
+    "neutral": 52,
+    "sad": 47
+   },
+   "manifest_sha1": "9dbd0b4df945d412dba74aa31f9471d315b003fb",
+   "n": 248,
+   "n_filtered": 248,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 248
+  }
+ },
+ "token_list": [
+  "neutral",
+  "fear",
+  "angry",
+  "happy",
+  "sad"
+ ]
+}

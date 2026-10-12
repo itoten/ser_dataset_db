@@ -1,0 +1,85 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 2399
+ },
+ "duration_sec": {
+  "max": 12.38,
+  "median": 3.97,
+  "min": 1.154
+ },
+ "hours_total": 2.9344,
+ "measured_on": "2026-10-12",
+ "n_total": 2399,
+ "output_dir": "/home/tenshi/data/thorsten_espnet3",
+ "output_env_var": "THORSTEN_OUTPUT",
+ "recipe": "thorsten",
+ "splits": {
+  "test": {
+   "hours": 0.6147,
+   "labels": {
+    "amused": 60,
+    "angry": 60,
+    "disgust": 60,
+    "drunk": 60,
+    "neutral": 60,
+    "sleepy": 60,
+    "surprise": 60,
+    "whisper": 60
+   },
+   "manifest_sha1": "cd1d47cb9fd9ef88a32e9b58e4f64012deb203b8",
+   "n": 480,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 480
+  },
+  "train": {
+   "hours": 1.756,
+   "labels": {
+    "amused": 180,
+    "angry": 180,
+    "disgust": 180,
+    "drunk": 180,
+    "neutral": 180,
+    "sleepy": 180,
+    "surprise": 180,
+    "whisper": 180
+   },
+   "manifest_sha1": "c191a6a82ca6f7443d0fd4aee8b491f3d850b6cc",
+   "n": 1440,
+   "n_filtered": 1440,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1440
+  },
+  "valid": {
+   "hours": 0.5637,
+   "labels": {
+    "amused": 60,
+    "angry": 60,
+    "disgust": 60,
+    "drunk": 60,
+    "neutral": 60,
+    "sleepy": 60,
+    "surprise": 60,
+    "whisper": 59
+   },
+   "manifest_sha1": "75303a9538740ac368bad5336b6dd021380f34f5",
+   "n": 479,
+   "n_filtered": 479,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 479
+  }
+ },
+ "token_list": [
+  "amused",
+  "angry",
+  "disgust",
+  "drunk",
+  "neutral",
+  "sleepy",
+  "surprise",
+  "whisper"
+ ]
+}

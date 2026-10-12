@@ -1,0 +1,77 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 1085
+ },
+ "duration_sec": {
+  "max": 2.0,
+  "median": 0.81,
+  "min": 0.4
+ },
+ "hours_total": 0.2721,
+ "measured_on": "2026-10-12",
+ "n_total": 1085,
+ "output_dir": "/home/tenshi/data/vivae_espnet3",
+ "output_env_var": "VIVAE_OUTPUT",
+ "recipe": "vivae",
+ "splits": {
+  "test": {
+   "hours": 0.0543,
+   "labels": {
+    "achievement": 32,
+    "angry": 35,
+    "fear": 35,
+    "pain": 37,
+    "pleasure": 40,
+    "surprise": 37
+   },
+   "manifest_sha1": "ea012fdb3a8e812da4c33b4fc6d23095bc07d1d3",
+   "n": 216,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 28,
+   "unique_utt": 216
+  },
+  "train": {
+   "hours": 0.1914,
+   "labels": {
+    "achievement": 113,
+    "angry": 122,
+    "fear": 123,
+    "pain": 130,
+    "pleasure": 142,
+    "surprise": 131
+   },
+   "manifest_sha1": "b4ca85fd95d9abf69cbc26e6118f093700126108",
+   "n": 761,
+   "n_filtered": 761,
+   "over_30s": 0,
+   "under_0.5s": 79,
+   "unique_utt": 761
+  },
+  "valid": {
+   "hours": 0.0265,
+   "labels": {
+    "achievement": 16,
+    "angry": 17,
+    "fear": 18,
+    "pain": 18,
+    "pleasure": 20,
+    "surprise": 19
+   },
+   "manifest_sha1": "8bcc0b3f59fd2ba72db71086189bee650d3267f6",
+   "n": 108,
+   "n_filtered": 108,
+   "over_30s": 0,
+   "under_0.5s": 13,
+   "unique_utt": 108
+  }
+ },
+ "token_list": [
+  "pleasure",
+  "surprise",
+  "pain",
+  "fear",
+  "angry",
+  "achievement"
+ ]
+}

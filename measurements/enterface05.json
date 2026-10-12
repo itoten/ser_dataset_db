@@ -1,0 +1,77 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 1260
+ },
+ "duration_sec": {
+  "max": 6.84,
+  "median": 2.72,
+  "min": 1.12
+ },
+ "hours_total": 0.9894,
+ "measured_on": "2026-10-12",
+ "n_total": 1260,
+ "output_dir": "/home/tenshi/data/enterface05_espnet3",
+ "output_env_var": "ENTERFACE05_OUTPUT",
+ "recipe": "enterface05",
+ "splits": {
+  "test": {
+   "hours": 0.1272,
+   "labels": {
+    "angry": 25,
+    "disgust": 25,
+    "fear": 25,
+    "happy": 25,
+    "sad": 25,
+    "surprise": 25
+   },
+   "manifest_sha1": "ea65d41db47d844441484dd3f52277825cc76f3f",
+   "n": 150,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 150
+  },
+  "train": {
+   "hours": 0.7534,
+   "labels": {
+    "angry": 160,
+    "disgust": 160,
+    "fear": 160,
+    "happy": 160,
+    "sad": 160,
+    "surprise": 160
+   },
+   "manifest_sha1": "793196658ea36299e59a10be40fa5cd1116435ee",
+   "n": 960,
+   "n_filtered": 960,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 960
+  },
+  "valid": {
+   "hours": 0.1088,
+   "labels": {
+    "angry": 25,
+    "disgust": 25,
+    "fear": 25,
+    "happy": 25,
+    "sad": 25,
+    "surprise": 25
+   },
+   "manifest_sha1": "18a168c0dd9cc02713b8edc6b002320e8c5e8d6e",
+   "n": 150,
+   "n_filtered": 150,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 150
+  }
+ },
+ "token_list": [
+  "angry",
+  "disgust",
+  "fear",
+  "happy",
+  "sad",
+  "surprise"
+ ]
+}

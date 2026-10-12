@@ -1,0 +1,73 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 880
+ },
+ "duration_sec": {
+  "max": 3.158,
+  "median": 3.019,
+  "min": 3.019
+ },
+ "hours_total": 0.7379,
+ "measured_on": "2026-10-12",
+ "n_total": 880,
+ "output_dir": "/home/tenshi/data/kbes_espnet3",
+ "output_env_var": "KBES_OUTPUT",
+ "recipe": "kbes",
+ "splits": {
+  "test": {
+   "hours": 0.1476,
+   "labels": {
+    "angry": 39,
+    "disgust": 40,
+    "happy": 37,
+    "neutral": 20,
+    "sad": 40
+   },
+   "manifest_sha1": "a8e12b7242b722e167c32940593203fd4fb22487",
+   "n": 176,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 176
+  },
+  "train": {
+   "hours": 0.5166,
+   "labels": {
+    "angry": 138,
+    "disgust": 140,
+    "happy": 128,
+    "neutral": 70,
+    "sad": 140
+   },
+   "manifest_sha1": "aaf844411b9398216b611f1fc7ae276af3738ab8",
+   "n": 616,
+   "n_filtered": 616,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 616
+  },
+  "valid": {
+   "hours": 0.0738,
+   "labels": {
+    "angry": 20,
+    "disgust": 20,
+    "happy": 18,
+    "neutral": 10,
+    "sad": 20
+   },
+   "manifest_sha1": "749282753349a3e0bf71364dcf4b9a05dc713f81",
+   "n": 88,
+   "n_filtered": 88,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 88
+  }
+ },
+ "token_list": [
+  "sad",
+  "disgust",
+  "angry",
+  "happy",
+  "neutral"
+ ]
+}

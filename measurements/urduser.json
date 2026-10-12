@@ -1,0 +1,81 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 3500
+ },
+ "duration_sec": {
+  "max": 18.704,
+  "median": 2.81,
+  "min": 0.534
+ },
+ "hours_total": 3.0424,
+ "measured_on": "2026-10-12",
+ "n_total": 3500,
+ "output_dir": "/home/tenshi/data/urduser_espnet3",
+ "output_env_var": "URDUSER_OUTPUT",
+ "recipe": "urduser",
+ "splits": {
+  "test": {
+   "hours": 0.615,
+   "labels": {
+    "angry": 100,
+    "boredom": 100,
+    "disgust": 100,
+    "fear": 100,
+    "happy": 100,
+    "neutral": 100,
+    "sad": 100
+   },
+   "manifest_sha1": "19aa869d3298534f88ca3f3118b42cdadf1e1f56",
+   "n": 700,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 700
+  },
+  "train": {
+   "hours": 2.1212,
+   "labels": {
+    "angry": 350,
+    "boredom": 350,
+    "disgust": 350,
+    "fear": 350,
+    "happy": 350,
+    "neutral": 350,
+    "sad": 350
+   },
+   "manifest_sha1": "dfccc584f444f0b0716a50b31479df90025274f0",
+   "n": 2450,
+   "n_filtered": 2450,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 2450
+  },
+  "valid": {
+   "hours": 0.3062,
+   "labels": {
+    "angry": 50,
+    "boredom": 50,
+    "disgust": 50,
+    "fear": 50,
+    "happy": 50,
+    "neutral": 50,
+    "sad": 50
+   },
+   "manifest_sha1": "2a74f57206ad1571e2e5e0fac8368a275e101820",
+   "n": 350,
+   "n_filtered": 350,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 350
+  }
+ },
+ "token_list": [
+  "angry",
+  "fear",
+  "boredom",
+  "disgust",
+  "happy",
+  "neutral",
+  "sad"
+ ]
+}

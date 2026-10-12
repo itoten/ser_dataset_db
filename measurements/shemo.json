@@ -1,0 +1,77 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 3000
+ },
+ "duration_sec": {
+  "max": 33.328,
+  "median": 3.08,
+  "min": 0.359
+ },
+ "hours_total": 3.4265,
+ "measured_on": "2026-10-12",
+ "n_total": 3000,
+ "output_dir": "/home/tenshi/data/shemo_espnet3",
+ "output_env_var": "SHEMO_OUTPUT",
+ "recipe": "shemo",
+ "splits": {
+  "test": {
+   "hours": 0.6833,
+   "labels": {
+    "angry": 212,
+    "fear": 8,
+    "happy": 40,
+    "neutral": 206,
+    "sad": 90,
+    "surprise": 45
+   },
+   "manifest_sha1": "41a564f94a5291e0aaf0bf4678eb29a2f4e50de3",
+   "n": 601,
+   "n_filtered": null,
+   "over_30s": 1,
+   "under_0.5s": 2,
+   "unique_utt": 601
+  },
+  "train": {
+   "hours": 2.4238,
+   "labels": {
+    "angry": 741,
+    "fear": 26,
+    "happy": 141,
+    "neutral": 719,
+    "sad": 314,
+    "surprise": 158
+   },
+   "manifest_sha1": "16d5ca9e810340edbc6a09f1f5e3c0362a565d53",
+   "n": 2099,
+   "n_filtered": 2092,
+   "over_30s": 1,
+   "under_0.5s": 6,
+   "unique_utt": 2099
+  },
+  "valid": {
+   "hours": 0.3194,
+   "labels": {
+    "angry": 106,
+    "fear": 4,
+    "happy": 20,
+    "neutral": 103,
+    "sad": 45,
+    "surprise": 22
+   },
+   "manifest_sha1": "83ad8ddb1945deaeaa2bc363a62dd23fc4832534",
+   "n": 300,
+   "n_filtered": 300,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 300
+  }
+ },
+ "token_list": [
+  "angry",
+  "neutral",
+  "sad",
+  "surprise",
+  "happy",
+  "fear"
+ ]
+}

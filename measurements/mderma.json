@@ -1,0 +1,69 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 1267
+ },
+ "duration_sec": {
+  "max": 51.0,
+  "median": 6.0,
+  "min": 1.0
+ },
+ "hours_total": 2.1131,
+ "measured_on": "2026-10-12",
+ "n_total": 1267,
+ "output_dir": "/home/tenshi/data/mderma_espnet3",
+ "output_env_var": "MDERMA_OUTPUT",
+ "recipe": "mderma",
+ "splits": {
+  "test": {
+   "hours": 0.4144,
+   "labels": {
+    "angry": 54,
+    "happy": 61,
+    "neutral": 62,
+    "sad": 77
+   },
+   "manifest_sha1": "56b774796774b2840bb79f9a7461d636f14f12c3",
+   "n": 254,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 254
+  },
+  "train": {
+   "hours": 1.4844,
+   "labels": {
+    "angry": 187,
+    "happy": 212,
+    "neutral": 219,
+    "sad": 269
+   },
+   "manifest_sha1": "a04941038ff14c2c6873f5b235f2a01867a12222",
+   "n": 887,
+   "n_filtered": 883,
+   "over_30s": 4,
+   "under_0.5s": 0,
+   "unique_utt": 887
+  },
+  "valid": {
+   "hours": 0.2142,
+   "labels": {
+    "angry": 27,
+    "happy": 30,
+    "neutral": 31,
+    "sad": 38
+   },
+   "manifest_sha1": "0a38276b9c64dbe5d30bbc33f72a86bce15b9c13",
+   "n": 126,
+   "n_filtered": 125,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 126
+  }
+ },
+ "token_list": [
+  "sad",
+  "neutral",
+  "happy",
+  "angry"
+ ]
+}

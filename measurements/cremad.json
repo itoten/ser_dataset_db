@@ -1,0 +1,77 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 7442
+ },
+ "duration_sec": {
+  "max": 5.005,
+  "median": 2.502,
+  "min": 1.268
+ },
+ "hours_total": 5.2567,
+ "measured_on": "2026-10-12",
+ "n_total": 7442,
+ "output_dir": "/home/tenshi/data/cremad_espnet3",
+ "output_env_var": "CREMAD_OUTPUT",
+ "recipe": "cremad",
+ "splits": {
+  "test": {
+   "hours": 0.5826,
+   "labels": {
+    "angry": 140,
+    "disgust": 140,
+    "fear": 140,
+    "happy": 140,
+    "neutral": 120,
+    "sad": 140
+   },
+   "manifest_sha1": "f80bd4413110dc8c636233fa4d3e5ad2e9417142",
+   "n": 820,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 820
+  },
+  "train": {
+   "hours": 4.0919,
+   "labels": {
+    "angry": 991,
+    "disgust": 991,
+    "fear": 991,
+    "happy": 991,
+    "neutral": 848,
+    "sad": 991
+   },
+   "manifest_sha1": "52671f56554c8c658c9b6fbc02ba0a01d0e8e0b5",
+   "n": 5803,
+   "n_filtered": 5803,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 5803
+  },
+  "valid": {
+   "hours": 0.5822,
+   "labels": {
+    "angry": 140,
+    "disgust": 140,
+    "fear": 140,
+    "happy": 140,
+    "neutral": 119,
+    "sad": 140
+   },
+   "manifest_sha1": "204e7826a242d089cf1dac178dd6d5a2f8747fdb",
+   "n": 819,
+   "n_filtered": 819,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 819
+  }
+ },
+ "token_list": [
+  "angry",
+  "disgust",
+  "fear",
+  "happy",
+  "sad",
+  "neutral"
+ ]
+}

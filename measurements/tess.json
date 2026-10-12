@@ -1,0 +1,81 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 2800
+ },
+ "duration_sec": {
+  "max": 2.985,
+  "median": 2.048,
+  "min": 1.254
+ },
+ "hours_total": 1.5984,
+ "measured_on": "2026-10-12",
+ "n_total": 2800,
+ "output_dir": "/home/tenshi/data/tess_espnet3",
+ "output_env_var": "TESS_OUTPUT",
+ "recipe": "tess",
+ "splits": {
+  "test": {
+   "hours": 0.3207,
+   "labels": {
+    "angry": 80,
+    "disgust": 80,
+    "fear": 80,
+    "happy": 80,
+    "neutral": 80,
+    "sad": 80,
+    "surprise": 80
+   },
+   "manifest_sha1": "2608199ec6df62f37a80ee3e063cf9c347f9433a",
+   "n": 560,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 560
+  },
+  "train": {
+   "hours": 1.1188,
+   "labels": {
+    "angry": 280,
+    "disgust": 280,
+    "fear": 280,
+    "happy": 280,
+    "neutral": 280,
+    "sad": 280,
+    "surprise": 280
+   },
+   "manifest_sha1": "d826b6d63982fd06a47aa5777ae66cb3f9fe937b",
+   "n": 1960,
+   "n_filtered": 1960,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1960
+  },
+  "valid": {
+   "hours": 0.1589,
+   "labels": {
+    "angry": 40,
+    "disgust": 40,
+    "fear": 40,
+    "happy": 40,
+    "neutral": 40,
+    "sad": 40,
+    "surprise": 40
+   },
+   "manifest_sha1": "a80f4588d2907f4275be4be6b558017d4e882d8f",
+   "n": 280,
+   "n_filtered": 280,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 280
+  }
+ },
+ "token_list": [
+  "angry",
+  "disgust",
+  "fear",
+  "happy",
+  "neutral",
+  "surprise",
+  "sad"
+ ]
+}

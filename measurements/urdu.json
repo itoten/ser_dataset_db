@@ -1,0 +1,69 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 400
+ },
+ "duration_sec": {
+  "max": 3.004,
+  "median": 2.0,
+  "min": 0.992
+ },
+ "hours_total": 0.2774,
+ "measured_on": "2026-10-12",
+ "n_total": 400,
+ "output_dir": "/home/tenshi/data/urdu_espnet3",
+ "output_env_var": "URDU_OUTPUT",
+ "recipe": "urdu",
+ "splits": {
+  "test": {
+   "hours": 0.0564,
+   "labels": {
+    "angry": 20,
+    "happy": 20,
+    "neutral": 20,
+    "sad": 20
+   },
+   "manifest_sha1": "e3697d91dbf016d79a46da76c451794023cd2f8a",
+   "n": 80,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 80
+  },
+  "train": {
+   "hours": 0.1943,
+   "labels": {
+    "angry": 70,
+    "happy": 70,
+    "neutral": 70,
+    "sad": 70
+   },
+   "manifest_sha1": "fd91b9760b696d0eeaa09cf826695e907034a772",
+   "n": 280,
+   "n_filtered": 280,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 280
+  },
+  "valid": {
+   "hours": 0.0267,
+   "labels": {
+    "angry": 10,
+    "happy": 10,
+    "neutral": 10,
+    "sad": 10
+   },
+   "manifest_sha1": "0f897c0f2f3ca9257f260fc9fec70d6be7a070d9",
+   "n": 40,
+   "n_filtered": 40,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 40
+  }
+ },
+ "token_list": [
+  "sad",
+  "happy",
+  "neutral",
+  "angry"
+ ]
+}

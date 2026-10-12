@@ -1,0 +1,89 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 12420
+ },
+ "duration_sec": {
+  "max": 21.828,
+  "median": 4.012,
+  "min": 0.75
+ },
+ "hours_total": 15.2402,
+ "measured_on": "2026-10-12",
+ "n_total": 12420,
+ "output_dir": "/home/tenshi/data/quechua_espnet3",
+ "output_env_var": "QUECHUA_OUTPUT",
+ "recipe": "quechua",
+ "splits": {
+  "test": {
+   "hours": 2.8039,
+   "labels": {
+    "angry": 230,
+    "boredom": 230,
+    "calm": 230,
+    "excited": 230,
+    "fear": 230,
+    "happy": 230,
+    "neutral": 230,
+    "sad": 230,
+    "sleepy": 230
+   },
+   "manifest_sha1": "6156abaa0be13b45f66345c0eda5ffef1ecc89f7",
+   "n": 2070,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 2070
+  },
+  "train": {
+   "hours": 10.2012,
+   "labels": {
+    "angry": 920,
+    "boredom": 920,
+    "calm": 920,
+    "excited": 920,
+    "fear": 920,
+    "happy": 920,
+    "neutral": 920,
+    "sad": 920,
+    "sleepy": 920
+   },
+   "manifest_sha1": "4aa354faf0ce39ac2ab2b1875ed20e6a7e79d0c3",
+   "n": 8280,
+   "n_filtered": 8280,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 8280
+  },
+  "valid": {
+   "hours": 2.2351,
+   "labels": {
+    "angry": 230,
+    "boredom": 230,
+    "calm": 230,
+    "excited": 230,
+    "fear": 230,
+    "happy": 230,
+    "neutral": 230,
+    "sad": 230,
+    "sleepy": 230
+   },
+   "manifest_sha1": "173c0d0c69c94ff085794b381fd31744ba8cbcce",
+   "n": 2070,
+   "n_filtered": 2070,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 2070
+  }
+ },
+ "token_list": [
+  "angry",
+  "boredom",
+  "calm",
+  "excited",
+  "fear",
+  "happy",
+  "neutral",
+  "sad",
+  "sleepy"
+ ]
+}

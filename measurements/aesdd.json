@@ -1,0 +1,73 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 604
+ },
+ "duration_sec": {
+  "max": 12.735,
+  "median": 3.76,
+  "min": 0.981
+ },
+ "hours_total": 0.6886,
+ "measured_on": "2026-10-12",
+ "n_total": 604,
+ "output_dir": "/home/tenshi/data/aesdd_espnet3",
+ "output_env_var": "AESDD_OUTPUT",
+ "recipe": "aesdd",
+ "splits": {
+  "test": {
+   "hours": 0.1399,
+   "labels": {
+    "angry": 24,
+    "disgust": 24,
+    "fear": 24,
+    "happy": 24,
+    "sad": 24
+   },
+   "manifest_sha1": "d48acf26a389e5dd7f5535911962065054137ccf",
+   "n": 120,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 120
+  },
+  "train": {
+   "hours": 0.4824,
+   "labels": {
+    "angry": 85,
+    "disgust": 86,
+    "fear": 84,
+    "happy": 83,
+    "sad": 86
+   },
+   "manifest_sha1": "e82fc1e3e5ca21c9d3c30039801299492d3481f3",
+   "n": 424,
+   "n_filtered": 424,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 424
+  },
+  "valid": {
+   "hours": 0.0663,
+   "labels": {
+    "angry": 12,
+    "disgust": 12,
+    "fear": 12,
+    "happy": 12,
+    "sad": 12
+   },
+   "manifest_sha1": "ee3af39fcf5afd329c0d5e9eee6773dc4714f433",
+   "n": 60,
+   "n_filtered": 60,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 60
+  }
+ },
+ "token_list": [
+  "disgust",
+  "sad",
+  "angry",
+  "fear",
+  "happy"
+ ]
+}

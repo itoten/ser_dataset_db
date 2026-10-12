@@ -1,0 +1,77 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 54760
+ },
+ "duration_sec": {
+  "max": 18.158,
+  "median": 4.574,
+  "min": 0.645
+ },
+ "hours_total": 74.859,
+ "measured_on": "2026-10-12",
+ "n_total": 54760,
+ "output_dir": "/home/tenshi/data/kazemotts_espnet3",
+ "output_env_var": "KAZEMOTTS_OUTPUT",
+ "recipe": "kazemotts",
+ "splits": {
+  "test": {
+   "hours": 5.0323,
+   "labels": {
+    "angry": 655,
+    "fear": 575,
+    "happy": 622,
+    "neutral": 681,
+    "sad": 602,
+    "surprise": 595
+   },
+   "manifest_sha1": "60bc91a85ee7096e0f5812a1a48c2e94dc1c3b54",
+   "n": 3730,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 3730
+  },
+  "train": {
+   "hours": 62.8065,
+   "labels": {
+    "angry": 7564,
+    "fear": 7671,
+    "happy": 7593,
+    "neutral": 7834,
+    "sad": 7540,
+    "surprise": 7726
+   },
+   "manifest_sha1": "42263d4cc5912f5ea6bfdc6d334c7b0751a8aa86",
+   "n": 45928,
+   "n_filtered": 45928,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 45928
+  },
+  "valid": {
+   "hours": 7.0203,
+   "labels": {
+    "angry": 840,
+    "fear": 852,
+    "happy": 844,
+    "neutral": 870,
+    "sad": 838,
+    "surprise": 858
+   },
+   "manifest_sha1": "aabd74dc532f11ae952b574ac7b0c9edc24fdd4c",
+   "n": 5102,
+   "n_filtered": 5102,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 5102
+  }
+ },
+ "token_list": [
+  "neutral",
+  "surprise",
+  "fear",
+  "happy",
+  "angry",
+  "sad"
+ ]
+}
