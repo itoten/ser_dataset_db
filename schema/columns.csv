@@ -1,0 +1,124 @@
+table,column,type,nulls,evidence,description
+datasets,dataset_id,slug,-,no,安定ID。実装済みは egs3 のレシピ名と同一。一度コミットしたら変えない
+datasets,name,text,-,no,一次資料の表記(シート由来の行ではシートの名前)
+datasets,full_title,text,empty,no,正式題名
+datasets,espnet_status,enum:espnet_status,-,status,implemented / candidate / needs_decision / deferred / excluded
+datasets,status_reason_codes,enumlist:reason_code,NA,status,implemented以外の理由コード(;区切り)。implementedは NA
+datasets,status_note,text,empty,no,状態の補足
+datasets,status_checked_on,date,empty,no,状態を最後に確認した日
+datasets,in_sheet,bool,-,no,2026-10-12 のシート原本に行があるか
+datasets,sheet_verified,enum:sheet_verified,-,no,シートの Verified 列そのまま。意味は『人が手作業で情報を確認したか』。判断には使わない
+datasets,languages,isolist,empty;unknown,yes,ISO 639-3 コード(;区切り)。mul=多言語で内訳不明、zxx=言語内容なし
+datasets,language_note,text,empty,no,変種や、言語の値をどう決めたかの補足
+datasets,recording_context,enum:recording_context,empty,yes,録音・収集の状況
+datasets,vocal_content,enum:vocal_content,empty,yes,発話か非言語発声か
+datasets,license_spdx,enum:license_spdx,empty,yes,SPDX識別子またはLicenseRef-*。記載された条件の分類で、法的解釈ではない
+datasets,license_class,enum:license_class,empty,no,license_spdx から決まる派生列(enums.csvのderived)
+datasets,license_note,text,empty,no,ライセンス原文の要点
+datasets,access_method,enum:access_method,empty,yes,入手方法
+datasets,raw_audio_available,bool,empty;unknown,yes,生の音声が配布されているか
+datasets,release_version,text,empty,no,取得した版
+datasets,doi,text,empty,no,DOI
+datasets,source_url,url,empty,no,シートの Source URL。ダウンロード元か紹介ページかは行による
+datasets,download_url,url,empty,no,ダウンロード元
+datasets,paper_url,url,empty,no,論文のURL
+datasets,n_utt_reported,int,empty;unknown,yes,一次資料(またはシート)の発話数
+datasets,hours_reported,float,empty;unknown,yes,一次資料(またはシート)の総時間
+datasets,n_speakers_reported,int,empty;unknown,yes,一次資料(またはシート)の話者数
+datasets,n_files_release_measured,int,empty;unknown;NA,yes,取得物のファイル数(私たちの実測)
+datasets,n_speakers_measured,int,empty;unknown;NA,yes,取得物の話者数(私たちの実測)
+datasets,labels_discrete_reported,list,empty;unknown;none,yes,資料のカテゴリ感情ラベル(;区切り、資料の語彙のまま)
+datasets,labels_discrete_note,text,empty,no,ラベル一覧にできない記述(シート原文など)
+datasets,n_discrete_labels_reported,int,empty;unknown,no,資料が述べるカテゴリ数
+datasets,dimensional_attributes,list,empty;unknown;none,yes,次元感情の軸(;区切り)
+datasets,dimensional_note,text,empty,no,次元感情の記述でリストにできないもの(シート原文など)
+datasets,annotations_other,text,empty,no,シートの Other Annotations(原文)
+datasets,sheet_notes,text,empty,no,シートの Notes(原文。変更禁止)
+datasets,notes,text,empty,no,自前の注記
+datasets,report_path,path,empty,no,NNレポートなど、詳細の所在
+datasets,last_updated_on,date,-,no,この行を最後に更新した日
+evidence,evidence_id,text,-,no,<dataset_id>/<field>/<2桁連番>
+evidence,dataset_id,slug,-,no,datasets の外部キー
+evidence,field,text,-,no,datasets の列名(evidence=yes の列)
+evidence,value,text,-,no,その根拠が示す値(datasets と同じ書式)
+evidence,source_type,enum:source_type,-,no,measured / primary / secondary / project_doc / sheet / user
+evidence,source_ref,text,-,no,出典(URL、ファイルパス、コミット)
+evidence,locator,text,empty,no,出典内の位置(25語以内)
+evidence,via,text,empty,no,どう取り込んだか(原本、NNレポート、計測など)
+evidence,checked_on,date,-,no,確認日
+evidence,checked_by,enum:checked_by,-,no,確認した主体
+evidence,is_canonical,bool,-,no,datasets の値と対応する根拠なら true(各 dataset×field に1行)
+evidence,status,enum:evidence_status,-,no,current / superseded / conflicting
+evidence,note,text,empty,no,補足。低順位の根拠を canonical にするときは必須
+aliases,dataset_id,slug,-,no,datasets の外部キー
+aliases,alias,text,-,no,別名
+aliases,alias_type,enum:alias_type,-,no,別名の種類
+aliases,source_ref,text,empty,no,出典
+aliases,note,text,empty,no,補足
+relations,dataset_id,slug,-,no,datasets の外部キー
+relations,relation,enum:relation_type,-,no,version_of / subset_of / contains / distinct_from / possibly_same_as
+relations,other_dataset_id,slug,-,no,相手の dataset_id
+relations,source_ref,text,empty,no,出典
+relations,note,text,empty,no,補足
+recipes,recipe,slug,-,no,egs3 のディレクトリ名
+recipes,recipe_kind,enum:recipe_kind,-,no,single_corpus / single_corpus_variant / multi_corpus
+recipes,system,text,-,no,espnet3 のシステム名(現在は cls)
+recipes,recipe_path,path,-,no,egs3/<recipe>/cls
+recipes,first_commit,text,-,no,cls 配下の config.yaml がブランチに最初に現れたコミット(旧名 wavlmasp からの改名を含む)
+recipes,first_commit_date,date,-,no,同コミットの日付
+recipes,source_env_var,text,empty;NA,no,音源の場所を指す環境変数
+recipes,output_env_var,text,empty;NA,no,出力先を指す環境変数
+recipes,config_urls,list,empty;none,no,dataset/config.yaml に書かれたURL
+recipes,split_config,text,empty;NA,no,dataset/config.yaml の分割に関する設定(JSON)
+recipes,num_classes,int,empty;NA,no,training.yaml の model.num_classes
+recipes,min_wav_duration,float,empty;NA,no,training.yaml の remove_long_short.min_wav_duration
+recipes,max_wav_duration,float,empty;NA,no,training.yaml の remove_long_short.max_wav_duration
+recipes,max_epochs,int,empty;NA,no,training.yaml の trainer.max_epochs
+recipes,max_epochs_3gpu,int,empty;NA,no,training_3gpu.yaml の trainer.max_epochs
+recipes,token_list,list,empty;NA,no,出力先の token_list(<unk>を除く)
+recipes,n_train,int,empty;NA,no,manifest/train.tsv の行数(実測)
+recipes,n_valid,int,empty;NA,no,manifest/valid.tsv の行数(実測)
+recipes,n_test,int,empty;NA,no,manifest/test.tsv の行数(実測)
+recipes,n_test2,int,empty;NA,no,manifest/test2.tsv の行数(実測)
+recipes,n_train_filtered,int,empty;NA,no,manifest_filtered/train.tsv の行数(実測)
+recipes,n_valid_filtered,int,empty;NA,no,manifest_filtered/valid.tsv の行数(実測)
+recipes,n_total,int,empty;NA,no,全 split の発話数(実測)
+recipes,hours_total,float,empty;NA,no,全 split の総時間(実測)
+recipes,dur_min_sec,float,empty;NA,no,最短の発話の秒数(実測)
+recipes,dur_max_sec,float,empty;NA,no,最長の発話の秒数(実測)
+recipes,dur_median_sec,float,empty;NA,no,発話の長さの中央値(実測)
+recipes,audio_format,text,empty;NA,no,サンプルレート/チャンネル/サブタイプごとの件数(実測)
+recipes,measured_on,date,empty;NA,no,実測日
+recipes,measurement_file,path,empty;NA,no,measurements/<recipe>.json
+recipes,dataset_id,slug,NA,no,対応する datasets の行。マルチコーパスは NA
+recipes,report_path,path,empty,no,NNレポート
+recipes,report_no,int,empty;NA,no,NNレポートの番号
+recipes,added_batch,text,empty,no,追加した時期・バッチ
+recipes,official_split_exists,bool,empty;unknown,no,コーパスが公式の分割を公表しているか
+recipes,split_method,enum:split_method,empty;unknown;NA,no,レシピの分割方法
+recipes,split_unit,text,empty;unknown;NA,no,分割の単位(話者、文など)
+recipes,speaker_overlap,bool,empty;unknown;NA,no,分割間で話者が重なるか
+recipes,recipe_exclusions_note,text,empty,no,レシピが除外するデータ
+recipes,known_issues,text,empty,no,既知の問題
+recipes,baseline_status,enum:baseline_status,empty,no,学習・評価の実施状況
+recipes,baseline_ref,text,empty,no,結果の所在
+recipes,notes,text,empty,no,自前の注記
+recipe_labels,recipe,slug,-,no,recipes の外部キー
+recipe_labels,label,text,-,no,レシピでのラベル名
+recipe_labels,source_labels,list,-,no,元のラベル名(;区切り)
+recipe_labels,common7,enum:common7,-,no,共通7ラベルのどれに当たるか(なければ none)
+recipe_labels,mapping_type,enum:mapping_type,-,no,ラベルの対応の種類
+recipe_labels,n_train,int,empty;NA,no,train の件数
+recipe_labels,n_valid,int,empty;NA,no,valid の件数
+recipe_labels,n_test,int,empty;NA,no,test の件数
+recipe_labels,n_test2,int,empty;NA,no,test2 の件数
+recipe_labels,n_total,int,empty;NA,no,全 split の件数
+recipe_labels,note,text,empty,no,補足
+benchmark_membership,benchmark_recipe,slug,-,no,マルチコーパスのレシピ
+benchmark_membership,member_recipe,slug,-,no,構成レシピ
+benchmark_membership,role,enum:bench_role,-,no,train / eval
+benchmark_membership,splits_used,list,-,no,使う split(;区切り)
+benchmark_membership,eval_set_names,list,empty;NA,no,評価セットの名前
+benchmark_membership,set_name,enum:set_name,-,no,Open License set / Non-Commercial set / NA
+benchmark_membership,source_ref,text,empty,no,出典
+benchmark_membership,note,text,empty,no,補足

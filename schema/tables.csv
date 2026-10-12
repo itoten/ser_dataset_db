@@ -1,0 +1,8 @@
+table,path,key_columns,description
+datasets,data/datasets.csv,dataset_id,1行=1データセット(正本)。値の根拠は evidence.csv
+evidence,data/evidence.csv,evidence_id,1行=datasetsの1つの値の根拠(出典・確認日・種別)
+aliases,data/aliases.csv,dataset_id;alias,データセットの別名(シート上の名前、公式名、旧ラベルなど)
+relations,data/relations.csv,dataset_id;relation;other_dataset_id,データセット間の関係(版違い、別物、同一の疑いなど)
+recipes,data/recipes.csv,recipe,1行=1 egs3 レシピ(cls)。sync列は自動、手書き列は人が記入
+recipe_labels,data/recipe_labels.csv,recipe;label,1行=レシピ×ラベル。レシピが捨てたラベルも残す
+benchmark_membership,data/benchmark_membership.csv,benchmark_recipe;member_recipe;role,ベンチマーク(マルチコーパスのレシピ)の構成レシピ
