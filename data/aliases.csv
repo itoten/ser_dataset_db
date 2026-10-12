@@ -1,11 +1,16 @@
 dataset_id,alias,alias_type,source_ref,note
 aesdd,AESDD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 3
+aesdd,Acted Emotional Speech Dynamic Database (AESDD),official_name,new_corpora/08_aesdd_report.md,
+aesdd,aesdd,recipe_dir,egs3/aesdd/cls/dataset/config.yaml (branch ser/cross-corpus),
 afew,AFEW,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 4
 albemo,AlbEmo,official_name,new_corpora/11_albemo_report.md,
 albemo,albemo,recipe_dir,egs3/albemo/cls/dataset/config.yaml (branch ser/cross-corpus),
 amigos,AMIGOS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 5
 ased,ASED,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 6
+ased,ased,recipe_dir,egs3/ased/cls/dataset/config.yaml (branch ser/cross-corpus),
 asvpesd,ASVP-ESD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 7
+asvpesd,"Audio, Speech and Vision Processing Lab Emotional Sound Database (ASVP-ESD)",official_name,new_corpora/23_asvpesd_report.md,
+asvpesd,asvpesd,recipe_dir,egs3/asvpesd/cls/dataset/config.yaml (branch ser/cross-corpus),
 audiospeechsentiment,Audio Speech Sentiment,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 8
 banglamood,BanglaMood,official_name,new_corpora/36_banglamood_report.md,
 banglamood,banglamood,recipe_dir,egs3/banglamood/cls/dataset/config.yaml (branch ser/cross-corpus),
@@ -18,6 +23,8 @@ belfast,Belfast Database,sheet_name,sheet_import/2026-10-12_ser_database_SER_Dat
 biicnnime,BIIC-NNIME,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 11
 biicpodcast,BIIC-Podcast,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 12
 cafe,CaFE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 13
+cafe,Canadian French Emotional (CaFE) speech dataset,official_name,new_corpora/01_cafe_report.md,
+cafe,cafe,recipe_dir,egs3/cafe/cls/dataset/config.yaml (branch ser/cross-corpus),
 casia,CASIA,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 14
 cheavd,CHEAVD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 17
 chsims,CH-SIMS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 15
@@ -25,28 +32,41 @@ chsims2,CH-SIMS v2.0,sheet_name,sheet_import/2026-10-12_ser_database_SER_Dataset
 cmumosei,CMU-MOSEI,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 18
 cmumosi,CMU-MOSI,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 19
 cremad,CREMA-D,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 20
+cremad,cremad,recipe_dir,egs3/cremad/cls/dataset/config.yaml (branch ser/cross-corpus),
 demos,DEMoS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 21
 des,DES,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 22
 dusha,Dusha,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 23
+dusha,Dusha: Large Raw Emotional Dataset with Aggregation Mechanism,official_name,new_corpora/28_dusha_report.md,
+dusha,dusha,recipe_dir,egs3/dusha/cls/dataset/config.yaml (branch ser/cross-corpus),
 eekk,EEKK,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 24
 eesc,EESC,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 25
 emns,EMNS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 26
+emns,emns,recipe_dir,egs3/emns/cls/dataset/config.yaml (branch ser/cross-corpus),
 emodb,EMODB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 27
+emodb,emodb,recipe_dir,egs3/emodb/cls/dataset/config.yaml (branch ser/cross-corpus),
 emofilm,EmoFilm,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 28
 emomatchspanishdb,EmoMatchSpanishDB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 29
 emosynth,EmoSynth,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 30
 emotion_origlia2010,€motion,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 2
 emovdb,EmoV-DB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 31
+emovdb,emovdb,recipe_dir,egs3/emovdb/cls/dataset/config.yaml (branch ser/cross-corpus),
 emovo,EMOVO,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 32
+emovo,EMOVO Corpus: an Italian Emotional Speech Database,official_name,new_corpora/07_emovo_report.md,
+emovo,emovo,recipe_dir,egs3/emovo/cls/dataset/config.yaml (branch ser/cross-corpus),
 emozionalmente,Emozionalmente,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 33
+emozionalmente,emozionalmente,recipe_dir,egs3/emozionalmente/cls/dataset/config.yaml (branch ser/cross-corpus),
 enterface05,eNTERFACE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 34
+enterface05,enterface05,recipe_dir,egs3/enterface05/cls/dataset/config.yaml (branch ser/cross-corpus),
 esd,ESD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 35
+esd,Emotional Speech Dataset (ESD),official_name,new_corpora/25_esd_report.md,
+esd,esd,recipe_dir,egs3/esd/cls/dataset/config.yaml (branch ser/cross-corpus),
 expresso,Expresso,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 36
 fauaibo,FAU-Aibo,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 37
 groupaffect4,GroupAffect-4,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 38
 hikia,"Hi, KIA",official_name,new_corpora/14_hikia_report.md,
 hikia,hikia,recipe_dir,egs3/hikia/cls/dataset/config.yaml (branch ser/cross-corpus),
 iemocap,IEMOCAP,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 39
+iemocap,iemocap,recipe_dir,egs3/iemocap/cls/dataset/config.yaml (branch ser/cross-corpus),
 indianenglish,Indian English Speech Emotion Dataset,official_name,new_corpora/32_indianenglish_report.md,
 indianenglish,indianenglish,recipe_dir,egs3/indianenglish/cls/dataset/config.yaml (branch ser/cross-corpus),
 indowavesentiment,IndoWaveSentiment,official_name,new_corpora/34_indowavesentiment_report.md,
@@ -55,6 +75,7 @@ inesco,INESCO,official_name,new_corpora/37_inesco_report.md,
 inesco,inesco,recipe_dir,egs3/inesco/cls/dataset/config.yaml (branch ser/cross-corpus),
 interface,INTERFACE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 40
 jlcorpus,JL-Corpus,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 41
+jlcorpus,jlcorpus,recipe_dir,egs3/jlcorpus/cls/dataset/config.yaml (branch ser/cross-corpus),
 jtes,JTES,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 42
 jvnv,JVNV,official_name,new_corpora/22_jvnv_report.md,
 jvnv,jvnv,recipe_dir,egs3/jvnv/cls/dataset/config.yaml (branch ser/cross-corpus),
@@ -78,44 +99,76 @@ mderma,MDER-MA,official_name,new_corpora/31_mderma_report.md,
 mderma,mderma,recipe_dir,egs3/mderma/cls/dataset/config.yaml (branch ser/cross-corpus),
 mead,MEAD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 49
 meld,MELD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 50
+meld,meld,recipe_dir,egs3/meld/cls/dataset/config.yaml (branch ser/cross-corpus),
 mer2023,MER2023,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 51
 mer2025,MER2025,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 52
 mer2026,MER2026,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 53
 mesd,MESD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 54
+mesd,Mexican Emotional Speech Database (MESD),official_name,new_corpora/02_mesd_report.md,
+mesd,mesd,recipe_dir,egs3/mesd/cls/dataset/config.yaml (branch ser/cross-corpus),
 mess,MESS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 55
+mess,Morgan Emotional Speech Set (MESS),official_name,new_corpora/13_mess_report.md,
+mess,mess,recipe_dir,egs3/mess/cls/dataset/config.yaml (branch ser/cross-corpus),
 mspconversation,MSP-Conversation,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 56
 mspimprov,MSP-IMPROV,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 57
 msppodcast,MSP-Podcast,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 58
+msppodcast,msppodcast,recipe_dir,egs3/msppodcast/cls/dataset/config.yaml (branch ser/cross-corpus),
 musecar,MuSe-CaR,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 59
 nemo,nEMO,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 60
+nemo,nEMO: Dataset of Emotional Speech in Polish,official_name,new_corpora/03_nemo_report.md,
+nemo,nemo,recipe_dir,egs3/nemo/cls/dataset/config.yaml (branch ser/cross-corpus),
 ogvc,OGVC,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 61
 omgemotion,OMG-Emotion,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 62
+oreau,French Emotional Speech Database - Oréau,official_name,new_corpora/05_oreau_report.md,
 oreau,Oreau,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 63
+oreau,oreau,recipe_dir,egs3/oreau/cls/dataset/config.yaml (branch ser/cross-corpus),
 pavoque,PAVOQUE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 64
+pavoque,pavoque,recipe_dir,egs3/pavoque/cls/dataset/config.yaml (branch ser/cross-corpus),
+polishemo,Emotions in Polish speech recordings,official_name,new_corpora/16_polishemo_report.md,
+polishemo,Emotions in polish speech recordings,official_name,new_corpora/16_polishemo_report.md,
 polishemo,Polish (EmoBox),sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 65
+polishemo,Polish(mostwiedzy),other_source_name,new_corpora/16_polishemo_report.md,
+polishemo,polishemo,recipe_dir,egs3/polishemo/cls/dataset/config.yaml (branch ser/cross-corpus),
 promptspeech,PromptSpeech,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 66
 quechua,Quechua-SER,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 67
+quechua,quechua,recipe_dir,egs3/quechua/cls/dataset/config.yaml (branch ser/cross-corpus),
 ravdess,RAVDESS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 68
+ravdess,ravdess,recipe_dir,egs3/ravdess/cls/dataset/config.yaml (branch ser/cross-corpus),
 recola,RECOLA,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 69
 resd,RESD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 70
+resd,Russian Emotional Speech Dialogs (RESD),official_name,new_corpora/04_resd_report.md,
+resd,resd,recipe_dir,egs3/resd/cls/dataset/config.yaml (branch ser/cross-corpus),
 ruslana,RUSLANA,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 71
 savee,SAVEE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 72
+savee,savee,recipe_dir,egs3/savee/cls/dataset/config.yaml (branch ser/cross-corpus),
 semaine,SEMAINE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 73
 sewa,SEWA,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 74
 shemo,ShEMO,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 75
+shemo,Sharif Emotional Speech Database (ShEMO),official_name,new_corpora/06_shemo_report.md,
+shemo,shemo,recipe_dir,egs3/shemo/cls/dataset/config.yaml (branch ser/cross-corpus),
 studies,STUDIES,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 76
 subesco,SUBESCO,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 77
+subesco,subesco,recipe_dir,egs3/subesco/cls/dataset/config.yaml (branch ser/cross-corpus),
 tess,TESS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 78
+tess,tess,recipe_dir,egs3/tess/cls/dataset/config.yaml (branch ser/cross-corpus),
 thaiser,Thai SER,official_name,new_corpora/26_thaiser_report.md,
 thaiser,thaiser,recipe_dir,egs3/thaiser/cls/dataset/config.yaml (branch ser/cross-corpus),
 thorsten,Thorsten-Emotional,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 79
+thorsten,thorsten,recipe_dir,egs3/thorsten/cls/dataset/config.yaml (branch ser/cross-corpus),
 turevdb,TurEV-DB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 80
+turevdb,Turkish Emotion Voice Database (TurEV-DB),official_name,new_corpora/15_turevdb_report.md,
+turevdb,turevdb,recipe_dir,egs3/turevdb/cls/dataset/config.yaml (branch ser/cross-corpus),
 urdu,URDU,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 81
+urdu,urdu,recipe_dir,egs3/urdu/cls/dataset/config.yaml (branch ser/cross-corpus),
 urduser,UrduSER,official_name,new_corpora/33_urduser_report.md,
 urduser,urduser,recipe_dir,egs3/urduser/cls/dataset/config.yaml (branch ser/cross-corpus),
 usoms,USoMS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 82
 vam,VAM,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 83
+vivae,The Variably Intense Vocalizations of Affect and Emotion Corpus (VIVAE),official_name,new_corpora/27_vivae_report.md,
 vivae,VIVAE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 84
+vivae,vivae,recipe_dir,egs3/vivae/cls/dataset/config.yaml (branch ser/cross-corpus),
 voicestats,Voice Statistics,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 85
+voicestats,voicestats,recipe_dir,egs3/voicestats/cls/dataset/config.yaml (branch ser/cross-corpus),
+voicestats,声優統計コーパス,official_name,new_corpora/17_voicestats_report.md,
 ysed,YSED,official_name,new_corpora/29_ysed_report.md,
 ysed,ysed,recipe_dir,egs3/ysed/cls/dataset/config.yaml (branch ser/cross-corpus),
