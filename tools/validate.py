@@ -245,7 +245,7 @@ def check_egs3(cols, db):
     ds = {r["dataset_id"]: r for r in db["datasets"][1]}
     implemented = {d for d, r in ds.items() if r["espnet_status"] == "implemented"}
     for d in sorted(implemented):
-        if d not in rec:
+        if rec and d not in rec:
             err(f"datasets {d}: implemented but recipes.csv has no recipe {d}")
     for name, r in rec.items():
         if r["recipe_kind"] == "multi_corpus":

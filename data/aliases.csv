@@ -1,10 +1,18 @@
 dataset_id,alias,alias_type,source_ref,note
 aesdd,AESDD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 3
 afew,AFEW,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 4
+albemo,AlbEmo,official_name,new_corpora/11_albemo_report.md,
+albemo,albemo,recipe_dir,egs3/albemo/cls/dataset/config.yaml (branch ser/cross-corpus),
 amigos,AMIGOS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 5
 ased,ASED,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 6
 asvpesd,ASVP-ESD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 7
 audiospeechsentiment,Audio Speech Sentiment,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 8
+banglamood,BanglaMood,official_name,new_corpora/36_banglamood_report.md,
+banglamood,banglamood,recipe_dir,egs3/banglamood/cls/dataset/config.yaml (branch ser/cross-corpus),
+banglaser,BanglaSER,official_name,new_corpora/20_banglaser_report.md,
+banglaser,banglaser,recipe_dir,egs3/banglaser/cls/dataset/config.yaml (branch ser/cross-corpus),
+banspemo,BanSpEmo,official_name,new_corpora/21_banspemo_report.md,
+banspemo,banspemo,recipe_dir,egs3/banspemo/cls/dataset/config.yaml (branch ser/cross-corpus),
 baum1,BAUM-1,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 9
 belfast,Belfast Database,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 10
 biicnnime,BIIC-NNIME,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 11
@@ -36,16 +44,38 @@ esd,ESD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 35
 expresso,Expresso,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 36
 fauaibo,FAU-Aibo,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 37
 groupaffect4,GroupAffect-4,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 38
+hikia,"Hi, KIA",official_name,new_corpora/14_hikia_report.md,
+hikia,hikia,recipe_dir,egs3/hikia/cls/dataset/config.yaml (branch ser/cross-corpus),
 iemocap,IEMOCAP,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 39
+indianenglish,Indian English Speech Emotion Dataset,official_name,new_corpora/32_indianenglish_report.md,
+indianenglish,indianenglish,recipe_dir,egs3/indianenglish/cls/dataset/config.yaml (branch ser/cross-corpus),
+indowavesentiment,IndoWaveSentiment,official_name,new_corpora/34_indowavesentiment_report.md,
+indowavesentiment,indowavesentiment,recipe_dir,egs3/indowavesentiment/cls/dataset/config.yaml (branch ser/cross-corpus),
+inesco,INESCO,official_name,new_corpora/37_inesco_report.md,
+inesco,inesco,recipe_dir,egs3/inesco/cls/dataset/config.yaml (branch ser/cross-corpus),
 interface,INTERFACE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 40
 jlcorpus,JL-Corpus,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 41
 jtes,JTES,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 42
+jvnv,JVNV,official_name,new_corpora/22_jvnv_report.md,
+jvnv,jvnv,recipe_dir,egs3/jvnv/cls/dataset/config.yaml (branch ser/cross-corpus),
+kannada,A Kannada Emotional Speech Dataset,official_name,new_corpora/12_kannada_report.md,
+kannada,kannada,recipe_dir,egs3/kannada/cls/dataset/config.yaml (branch ser/cross-corpus),
+kazemotts,KazEmoTTS,official_name,new_corpora/24_kazemotts_report.md,
+kazemotts,kazemotts,recipe_dir,egs3/kazemotts/cls/dataset/config.yaml (branch ser/cross-corpus),
+kbes,KBES,official_name,new_corpora/35_kbes_report.md,
+kbes,kbes,recipe_dir,egs3/kbes/cls/dataset/config.yaml (branch ser/cross-corpus),
 kemocon,K-EmoCon,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 43
 legov2,LEGOv2,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 44
 lssed,LSSED,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 45
 m3ed,M3ED,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 46
 mahnobhci,MAHNOB-HCI,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 47
+maleo,Maleo Emotion,official_name,new_corpora/30_maleo_report.md,
+maleo,maleo,recipe_dir,egs3/maleo/cls/dataset/config.yaml (branch ser/cross-corpus),
 masc,MASC,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 48
+mcaespps,MCAE-SPPS,official_name,new_corpora/19_mcaespps_report.md,
+mcaespps,mcaespps,recipe_dir,egs3/mcaespps/cls/dataset/config.yaml (branch ser/cross-corpus),
+mderma,MDER-MA,official_name,new_corpora/31_mderma_report.md,
+mderma,mderma,recipe_dir,egs3/mderma/cls/dataset/config.yaml (branch ser/cross-corpus),
 mead,MEAD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 49
 meld,MELD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 50
 mer2023,MER2023,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 51
@@ -76,10 +106,16 @@ shemo,ShEMO,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,lin
 studies,STUDIES,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 76
 subesco,SUBESCO,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 77
 tess,TESS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 78
+thaiser,Thai SER,official_name,new_corpora/26_thaiser_report.md,
+thaiser,thaiser,recipe_dir,egs3/thaiser/cls/dataset/config.yaml (branch ser/cross-corpus),
 thorsten,Thorsten-Emotional,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 79
 turevdb,TurEV-DB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 80
 urdu,URDU,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 81
+urduser,UrduSER,official_name,new_corpora/33_urduser_report.md,
+urduser,urduser,recipe_dir,egs3/urduser/cls/dataset/config.yaml (branch ser/cross-corpus),
 usoms,USoMS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 82
 vam,VAM,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 83
 vivae,VIVAE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 84
 voicestats,Voice Statistics,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 85
+ysed,YSED,official_name,new_corpora/29_ysed_report.md,
+ysed,ysed,recipe_dir,egs3/ysed/cls/dataset/config.yaml (branch ser/cross-corpus),
