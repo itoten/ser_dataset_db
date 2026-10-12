@@ -1,1 +1,4 @@
 dataset_id,relation,other_dataset_id,source_ref,note
+chsims2,version_of,chsims,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート上の名称(CH-SIMS v2.0 と CH-SIMS)による。内容の同一性は未確認
+interface,distinct_from,enterface05,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シートのNotesが『Distinct from eNTERFACE'05』と記す
+nemo,distinct_from,polishemo,new_corpora/16_polishemo_report.md,どちらもポーランド語の感情音声だが別のコーパス(polishemo の注記)
