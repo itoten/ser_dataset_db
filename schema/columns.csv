@@ -32,7 +32,7 @@ datasets,labels_discrete_note,text,empty,no,ラベル一覧にできない記述
 datasets,n_discrete_labels_reported,int,empty;unknown,no,資料が述べるカテゴリ数
 datasets,dimensional_attributes,list,empty;unknown;none,yes,次元感情の軸(;区切り)
 datasets,dimensional_note,text,empty,no,次元感情の記述でリストにできないもの(シート原文など)
-datasets,annotations_other,text,empty,no,シートの Other Annotations(原文)
+datasets,annotations_other,text,empty;none,no,シートの Other Annotations(原文)
 datasets,sheet_notes,text,empty,no,シートの Notes(原文。変更禁止)
 datasets,notes,text,empty,no,自前の注記
 datasets,report_path,path,empty,no,NNレポートなど、詳細の所在
