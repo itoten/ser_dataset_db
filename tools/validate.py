@@ -12,6 +12,7 @@ import sys
 
 import csvio
 import db as dbmod
+import views
 
 SLUG = re.compile(r"^[a-z][a-z0-9]*(_[a-z0-9]+)*$")
 TOKENS = {"unknown", "NA", "none"}
@@ -341,6 +342,13 @@ def check_paths(cols, tables, db):
                     err(f"{name} {c['column']}={v}: path not found (relative to {base})")
 
 
+def check_views(db):
+    for path, text in views.build(db).items():
+        f = csvio.ROOT / path
+        if not f.exists() or f.read_bytes().decode("utf-8") != text:
+            err(f"{path} is out of date: run python3 tools/views.py")
+
+
 def main(argv):
     offline = "--offline" in argv
     tables = csvio.tables()
@@ -355,6 +363,7 @@ def main(argv):
     check_evidence(cols, db)
     check_paths(cols, tables, db)
     check_measurements(db)
+    check_views(db)
     if not offline:
         check_egs3(cols, db)
         check_membership(db)

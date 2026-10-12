@@ -17,7 +17,7 @@ Googleスプレッドシート「ser_database」の原本を、取得したま�
 - `ESPnet Implemented` 列は取得時点でitotenさんが入れたもの。「Polish (EmoBox)」行は FALSE だが、実際は egs3 の `polishemo` と同じコーパス(EmoBox README が出典に同じ MOST Wiedzy のページを挙げている)。
 - 原本のまま残すので、この食い違いは原本では直さない。
 
-## DBへの取り込み規則(`tools/import_sheet.py` で1回だけ実行、S10で削除予定)
+## DBへの取り込み規則(取り込みスクリプトで1回だけ実行した。スクリプトは削除済みで、git履歴のコミット 041d798 に残る)
 
 シートの84行は、1行が1つの `datasets` 行になる(行の合併はない。Polish (EmoBox) は `polishemo` として1行)。
 
