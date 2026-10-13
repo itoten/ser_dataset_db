@@ -10,6 +10,7 @@ expressivespeech,contains,m3ed,https://huggingface.co/datasets/FreedomIntelligen
 hume_reaction,distinct_from,humevb,https://arxiv.org/abs/2207.05691,どちらも Hume AI。Hume-Reaction は刺激への反応の映像・音声、Hume-VB は非言語発声
 iitkgp_sehsc,distinct_from,iitkgp_sesc,https://www.iieta.org/journals/ts/paper/10.18280/ts.380631,同じ研究室のテルグ語版とヒンディー語版
 interface,distinct_from,enterface05,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シートのNotesが『Distinct from eNTERFACE'05』と記す
+javanese_ser_2black0,possibly_same_as,java_sed,https://github.com/2black0/Sound-Emotion-Recognition-Javanese-Speech-Dataset,"どちらもジャワ語の6感情(同じラベル)で、10話者×4文×6感情×7回=1,680 が KuralHub の Java-SED の件数と一致。KuralHub は話者20人とする"
 kazakh_russian_emotion,distinct_from,kazemotts,https://github.com/aaivu/KuralHub/blob/main/datasets/Kazakh/Kazakh-Russian-Emotion-Corpus.md,どちらもカザフ語。KazEmoTTS は TTS 用の別コーパス
 kesdy18,distinct_from,kemdy19,https://github.com/aaivu/KuralHub/blob/main/datasets/Korean/KESDy18.md,同じ ETRI の別コーパス(KESDy18 は2018年の感情音声、KEMDy19 は2019年のマルチモーダル)
 mmeld,version_of,meld,https://arxiv.org/abs/2203.16799,MELD の発話のテキストを4言語に訳したもの

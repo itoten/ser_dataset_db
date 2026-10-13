@@ -5,6 +5,7 @@ aesdd,AESDD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,lin
 aesdd,Acted Emotional Speech Dynamic Database (AESDD),official_name,new_corpora/08_aesdd_report.md,
 aesdd,aesdd,recipe_dir,egs3/aesdd/cls/dataset/config.yaml (branch ser/cross-corpus),
 afew,AFEW,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 4
+affectspeech,AffetSpeech,former_label,https://github.com/jeremychee4/AffectSpeech,README 内の綴り
 aihub_263,AIHub 263,other_source_name,https://www.aihub.or.kr/aihubdata/data/view.do?dataSetSn=263,
 aihub_271,AIHub 271,other_source_name,https://www.aihub.or.kr/aihubdata/data/view.do?dataSetSn=271,
 aihub_286,AIHub 286,other_source_name,https://www.aihub.or.kr/aihubdata/data/view.do?dataSetSn=286,
