@@ -27,6 +27,7 @@ reason_code,too_large,大きすぎる,
 reason_code,identity_unresolved,どのコーパスか特定できない,
 reason_code,unexamined,まだ調べていない,
 reason_code,not_individually_checked,個別には確認していない(シート取り込みの仮の理由),
+reason_code,audio_links_only,音声は配布されず、元の動画・音源へのリンクだけ,
 sheet_verified,TRUE,シートで TRUE,
 sheet_verified,FALSE,シートで FALSE,
 sheet_verified,NA,シートに行がない,
@@ -69,6 +70,7 @@ license_spdx,none_stated,ライセンスの記載が見つからない,none_stat
 license_spdx,conflicting,資料の間でライセンスが食い違う,conflicting
 license_spdx,unknown,調べたが決まらない / シートで Unknown,unknown
 license_spdx,CC-BY-NC-SA-2.0,CC Attribution-NonCommercial-ShareAlike 2.0,noncommercial
+license_spdx,CC-BY-3.0-US,Creative Commons Attribution 3.0 United States,open
 license_class,open,制限が緩い(帰属表示程度),
 license_class,noncommercial,非商用限定,
 license_class,research_only,研究目的限定,
