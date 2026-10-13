@@ -70,6 +70,7 @@ cremad,cremad,recipe_dir,egs3/cremad/cls/dataset/config.yaml (branch ser/cross-c
 crowdsourcing_smith2018,Crowdsourcing Emotional Speech,other_source_name,https://arxiv.org/html/2509.09791v1,
 csemotions,CSEMOTIONS,official_name,https://huggingface.co/datasets/AIDC-AI/CSEMOTIONS,
 dailytalk,DailyTalk,official_name,https://github.com/keonlee9420/DailyTalk,
+deeply_korean_read,SLR97,other_source_name,https://www.openslr.org/97/,
 deeply_nonverbal,SLR99,other_source_name,https://www.openslr.org/99/,
 demos,DEMoS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 21
 des,DES,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 22
@@ -86,6 +87,7 @@ eesc,Eesti emotsionaalse kõne korpus,official_name,https://metashare.ut.ee/repo
 eesc,Estonian Emotional Speech Corpus,official_name,https://doi.org/10.6084/m9.figshare.25249744,
 egyptian_hf_unresolved,Egyptian Hugging Face dataset (unidentified),other_source_name,new_corpora/99_final_report.md,
 em2ldl,EM2LDL,other_source_name,new_corpora/99_final_report.md,
+emilia_emotion,Emolia,official_name,https://huggingface.co/datasets/laion/Emolia,以前の Emilia-with-Emotion-Annotations(5リポジトリ)を置き換えた名前
 emis,EMIS,short_name,https://zenodo.org/records/19207001,
 emns,EMNS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 26
 emns,emns,recipe_dir,egs3/emns/cls/dataset/config.yaml (branch ser/cross-corpus),
@@ -93,6 +95,7 @@ emochildru,EmoChildRu,official_name,https://doi.org/10.1007/978-3-319-23132-7_18
 emodb,EMODB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 27
 emodb,Emo-DB,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
 emodb,emodb,recipe_dir,egs3/emodb/cls/dataset/config.yaml (branch ser/cross-corpus),
+emodialogcn,EmoDialogCN-21.8K,other_source_name,https://huggingface.co/datasets/EmoDialogCN/EmoDialogCN-21.8K,
 emofilm,EmoFilm,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 28
 emogator,EmoGator,official_name,https://github.com/fredbuhl/EmoGator,
 emomatchspanishdb,EmoMatchSpanishDB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 29
@@ -267,6 +270,7 @@ spanish_meacorpus,Spanish-MEACorpus-2023,other_source_name,https://github.com/NL
 speechcraft,SpeechCraft,official_name,https://github.com/thuhcsi/SpeechCraft,
 studies,STUDIES,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 76
 subesco,SUBESCO,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 77
+subesco,SUST BANGLA EMOTIONAL SPEECH CORPUS (HF sustcsenlp),other_source_name,https://huggingface.co/datasets/sustcsenlp/bn_emotion_speech_corpus,SUST の NLP グループによる HF 上の配布(CC BY 4.0)
 subesco,subesco,recipe_dir,egs3/subesco/cls/dataset/config.yaml (branch ser/cross-corpus),
 susas,LDC99S78,other_source_name,https://catalog.ldc.upenn.edu/LDC99S78,
 switchboard_sentiment,LDC2020T14,other_source_name,https://catalog.ldc.upenn.edu/LDC2020T14,
@@ -291,6 +295,7 @@ tures,TurES,short_name,https://www.researchgate.net/publication/252012056_Turkis
 turevdb,TurEV-DB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 80
 turevdb,Turkish Emotion Voice Database (TurEV-DB),official_name,new_corpora/15_turevdb_report.md,
 turevdb,turevdb,recipe_dir,egs3/turevdb/cls/dataset/config.yaml (branch ser/cross-corpus),
+ua_ser,UA-SER,official_name,https://huggingface.co/datasets/OlhaHavryliuk/UA-SER,
 uftbesd,UFTBESD,short_name,https://data.mendeley.com/datasets/h3f8pjbw73,
 urdu,URDU,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 81
 urdu,urdu,recipe_dir,egs3/urdu/cls/dataset/config.yaml (branch ser/cross-corpus),

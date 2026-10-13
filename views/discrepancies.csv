@@ -14,6 +14,7 @@ eekk,status_reason_codes,superseded,duplicate_entry,primary,access_no_direct_dow
 eesc,espnet_status,superseded,candidate,measured,excluded,project_doc,new_corpora/99_final_report.md,eesc/espnet_status/03 に置き換え
 eesc,recording_context,superseded,read_speech,primary,acted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Acted; eesc/recording_context/02 に置き換え
 eesc,status_reason_codes,superseded,unexamined,project_doc,access_no_direct_download,project_doc,new_corpora/99_final_report.md,eesc/status_reason_codes/03 に置き換え
+emilia_emotion,license_spdx,superseded,CC-BY-4.0,primary,none_stated,primary,https://huggingface.co/datasets/laion/Emilia-with-Emotion-Annotations,emilia_emotion/license_spdx/02 に置き換え
 emodb,hours_reported,superseded,1.25,primary,0.7,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,emodb/hours_reported/02 に置き換え
 emodb,license_spdx,conflicting,conflicting,project_doc,CC-BY-4.0,project_doc,corpus_metadata.md,
 emodb,license_spdx,conflicting,conflicting,project_doc,CC0-1.0,primary,https://audeering.github.io/datasets/datasets/emodb.html,
