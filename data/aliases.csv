@@ -118,6 +118,7 @@ emotional_ema,An articulatory study of emotional speech production,official_name
 emotional_ema,Emotional EMA,other_source_name,new_corpora/99_final_report.md,
 emotiontalk,EmotionTalk,official_name,https://arxiv.org/abs/2505.23018,
 emotiontts_open_db,emotiontts_open_db,other_source_name,https://github.com/emotiontts/emotiontts_open_db,
+emouerj,emoUERJ,official_name,https://zenodo.org/records/5427549,
 emouerj_sed,emouerj-sed,other_source_name,new_corpora/99_final_report.md,
 emovdb,EmoV-DB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 31
 emovdb,emovdb,recipe_dir,egs3/emovdb/cls/dataset/config.yaml (branch ser/cross-corpus),

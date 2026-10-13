@@ -5,9 +5,14 @@ anad,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,138
 asvpesd,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,131,see evidence,76,measured,n_speakers_measured,
 asvpesd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,7812,see evidence,9092,measured,n_files_release_measured,
 asvpesd,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7812,see evidence,3241,measured,recipes.n_total (asvpesd),レシピは長さ・ラベルで絞るため一致しないのが普通
+baum1,license_spdx,conflicting,conflicting,project_doc,CC-BY-4.0,primary,https://archive.ics.uci.edu/dataset/473/baum+1,
+baum1,license_spdx,conflicting,conflicting,project_doc,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; 申請時の利用条件は非商用(シート注記)。UCI の CC BY 4.0 と食い違う
+baum1,status_reason_codes,superseded,access_request_form_or_email,primary,access_request_form_or_email;not_distributable,project_doc,nc_candidates_20261010.md,baum1/status_reason_codes/03 に置き換え
+baum2,status_reason_codes,superseded,access_request_form_or_email,primary,not_distributable,project_doc,new_corpora/99_final_report.md,baum2/status_reason_codes/02 に置き換え
 beat,license_spdx,superseded,Apache-2.0,primary,LicenseRef-other,secondary,https://github.com/SuperKogito/SER-datasets,SuperKogito の記述。出典不明; beat/license_spdx/02 に置き換え
 berst,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,4526,see evidence,4523,measured,n_files_release_measured,
 cbesd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,4320,see evidence,4204,measured,n_files_release_measured,
+demos,recording_context,superseded,affect_elicitation,primary,acted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Acted; demos/recording_context/02 に置き換え
 dusha,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,303963,see evidence,160366,measured,recipes.n_total (dusha),レシピは長さ・ラベルで絞るため一致しないのが普通
 eekk,license_spdx,superseded,CC-BY-4.0,primary,LicenseRef-other,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Other; eekk/license_spdx/02 に置き換え
 eekk,status_reason_codes,superseded,duplicate_entry,primary,access_no_direct_download,project_doc,nc_candidates_20261010.md,eekk/status_reason_codes/03 に置き換え
@@ -47,12 +52,15 @@ mesd,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,864,see eviden
 mikuemobench,hours_reported,superseded,160,primary,131.2,primary,https://arxiv.org/abs/2505.15772,mikuemobench/hours_reported/02 に置き換え(新しい版)
 mikuemobench,n_utt_reported,superseded,89428,primary,65970,primary,https://arxiv.org/abs/2505.15772,mikuemobench/n_utt_reported/02 に置き換え(新しい版)
 msppodcast,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,264705,see evidence,207223,measured,recipes.n_total (msppodcast),レシピは長さ・ラベルで絞るため一致しないのが普通
+musecar,hours_reported,superseded,36,primary,36.87,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,musecar/hours_reported/02 に置き換え
+ogvc,status_reason_codes,superseded,access_signed_agreement,primary,access_request_form_or_email,project_doc,nc_candidates_20261010.md,ogvc/status_reason_codes/03 に置き換え
 pavoque,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,7334,see evidence,5442,measured,n_files_release_measured,
 pavoque,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7334,see evidence,5442,measured,recipes.n_total (pavoque),レシピは長さ・ラベルで絞るため一致しないのが普通
 quechua,n_speakers_reported,superseded,6,project_doc,7,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,quechua/n_speakers_reported/02 に置き換え
 resd,n_speakers_reported,superseded,20,primary,200,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,resd/n_speakers_reported/02 に置き換え
 rml_emotion,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,500,see evidence,720,measured,n_files_release_measured,
 shemo,recording_context,superseded,other,primary,acted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Acted; shemo/recording_context/02 に置き換え
+studies,status_reason_codes,superseded,access_signed_agreement,primary,access_request_form_or_email;access_signed_agreement,project_doc,nc_candidates_20261010.md,studies/status_reason_codes/03 に置き換え
 syntact,license_spdx,superseded,CC-BY-4.0,primary,CC-BY-SA-4.0,secondary,https://github.com/SuperKogito/SER-datasets,syntact/license_spdx/02 に置き換え
 talromur3,hours_reported,superseded,24,primary,14,primary,http://hdl.handle.net/20.500.12537/344,talromur3/hours_reported/02 に置き換え
 talromur3,n_utt_reported,superseded,21528,primary,15078,primary,http://hdl.handle.net/20.500.12537/344,talromur3/n_utt_reported/02 に置き換え
@@ -63,3 +71,4 @@ turevdb,license_spdx,conflicting,conflicting,project_doc,GPL-3.0-only,primary,ht
 turevdb,license_spdx,superseded,conflicting,project_doc,LicenseRef-other,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Other; 資料間の食い違いのため conflicting に置き換え
 urdu,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,38,see evidence,29,measured,n_speakers_measured,
 urdu,recording_context,superseded,talk_show,primary,tv_show,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: TV show; urdu/recording_context/02 に置き換え
+vam,status_reason_codes,superseded,access_signed_agreement,primary,not_individually_checked,project_doc,nc_candidates_20261010.md,vam/status_reason_codes/03 に置き換え
