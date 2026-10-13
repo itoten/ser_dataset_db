@@ -69,6 +69,8 @@ cremad,CREMA-D,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,
 cremad,cremad,recipe_dir,egs3/cremad/cls/dataset/config.yaml (branch ser/cross-corpus),
 crowdsourcing_smith2018,Crowdsourcing Emotional Speech,other_source_name,https://arxiv.org/html/2509.09791v1,
 csemotions,CSEMOTIONS,official_name,https://huggingface.co/datasets/AIDC-AI/CSEMOTIONS,
+daicwoz,DAIC-WOZ,official_name,https://dcapswoz.ict.usc.edu/,
+daicwoz,E-DAIC,other_source_name,https://dcapswoz.ict.usc.edu/,拡張版(AVEC 2019)
 dailytalk,DailyTalk,official_name,https://github.com/keonlee9420/DailyTalk,
 deeply_korean_read,SLR97,other_source_name,https://www.openslr.org/97/,
 deeply_nonverbal,SLR99,other_source_name,https://www.openslr.org/99/,
@@ -142,6 +144,7 @@ groupaffect4,GroupAffect-4,sheet_name,sheet_import/2026-10-12_ser_database_SER_D
 hesd,HESD,short_name,https://zenodo.org/records/22674064,
 hikia,"Hi, KIA",official_name,new_corpora/14_hikia_report.md,
 hikia,hikia,recipe_dir,egs3/hikia/cls/dataset/config.yaml (branch ser/cross-corpus),
+hume_reaction,Hume-Reaction,official_name,https://arxiv.org/abs/2207.05691,
 humevb,ExVo 2022,other_source_name,https://arxiv.org/abs/2205.01780,
 humevb,H-VB,short_name,https://www.competitions.hume.ai/exvo2022,
 humevb,Hume-VB,short_name,https://www.competitions.hume.ai/exvo2022,
@@ -166,11 +169,13 @@ jvnv,JVNV,official_name,new_corpora/22_jvnv_report.md,
 jvnv,jvnv,recipe_dir,egs3/jvnv/cls/dataset/config.yaml (branch ser/cross-corpus),
 kannada,A Kannada Emotional Speech Dataset,official_name,new_corpora/12_kannada_report.md,
 kannada,kannada,recipe_dir,egs3/kannada/cls/dataset/config.yaml (branch ser/cross-corpus),
+kasdimerbah_arabic,KEDAS,short_name,https://catalog.ldc.upenn.edu/LDC2023S10,第三者の文献での呼び名とみられる(Kasdi-merbah Emotional DAtabase in arabic Speech)。一次資料での確認はしていない
 kasdimerbah_arabic,LDC2023S10,other_source_name,https://catalog.ldc.upenn.edu/LDC2023S10,
 kazemotts,KazEmoTTS,official_name,new_corpora/24_kazemotts_report.md,
 kazemotts,kazemotts,recipe_dir,egs3/kazemotts/cls/dataset/config.yaml (branch ser/cross-corpus),
 kbes,KBES,official_name,new_corpora/35_kbes_report.md,
 kbes,kbes,recipe_dir,egs3/kbes/cls/dataset/config.yaml (branch ser/cross-corpus),
+keg_croatian,KEG,short_name,https://ieeexplore.ieee.org/document/6046587,
 keioesd,Keio-ESD,official_name,http://research.nii.ac.jp/src/en/Keio-ESD.html,
 kemdy19,KEMDy19,short_name,https://nanum.etri.re.kr/share/kjnoh2/KEMDy19?lang=En_us,
 kemdy20,KEMDy20,short_name,https://nanum.etri.re.kr/share/kjnoh2/KEMDy20?lang=En_us,
@@ -233,8 +238,10 @@ oreau,French Emotional Speech Database - Oréau,official_name,new_corpora/05_ore
 oreau,Oreau,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 63
 oreau,oreau,recipe_dir,egs3/oreau/cls/dataset/config.yaml (branch ser/cross-corpus),
 paraspeechcaps,PSC,short_name,https://arxiv.org/abs/2503.04713,
+passau_sfch,Passau-SFCH,official_name,https://arxiv.org/abs/2207.05691,
 pavoque,PAVOQUE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 64
 pavoque,pavoque,recipe_dir,egs3/pavoque/cls/dataset/config.yaml (branch ser/cross-corpus),
+persian_esd,Persian ESD,short_name,https://doi.org/10.3758/s13428-014-0467-x,
 polishemo,Emotions in Polish speech recordings,official_name,new_corpora/16_polishemo_report.md,
 polishemo,Emotions in polish speech recordings,official_name,new_corpora/16_polishemo_report.md,
 polishemo,Polish (EmoBox),sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 65
@@ -265,6 +272,7 @@ shemo,Sharif Emotional Speech Database (ShEMO),official_name,new_corpora/06_shem
 shemo,shemo,recipe_dir,egs3/shemo/cls/dataset/config.yaml (branch ser/cross-corpus),
 sitb_osed,Indic-Odia Speech Emotion Data,other_source_name,https://zenodo.org/records/16210020,
 sitb_osed,SITB-OSED,short_name,https://zenodo.org/records/16210020,
+slue_voxceleb,SLUE,other_source_name,https://arxiv.org/abs/2111.10367,ベンチマーク全体の名前
 spanish_meacorpus,MEACorpus,short_name,https://github.com/NLP-UMUTeam/Spanish-MEACorpus-2023,
 spanish_meacorpus,Spanish-MEACorpus-2023,other_source_name,https://github.com/NLP-UMUTeam/Spanish-MEACorpus-2023,
 speechcraft,SpeechCraft,official_name,https://github.com/thuhcsi/SpeechCraft,
@@ -297,6 +305,7 @@ turevdb,Turkish Emotion Voice Database (TurEV-DB),official_name,new_corpora/15_t
 turevdb,turevdb,recipe_dir,egs3/turevdb/cls/dataset/config.yaml (branch ser/cross-corpus),
 ua_ser,UA-SER,official_name,https://huggingface.co/datasets/OlhaHavryliuk/UA-SER,
 uftbesd,UFTBESD,short_name,https://data.mendeley.com/datasets/h3f8pjbw73,
+ulm_tsst,Ulm-TSST,official_name,https://arxiv.org/abs/2207.05691,
 urdu,URDU,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 81
 urdu,urdu,recipe_dir,egs3/urdu/cls/dataset/config.yaml (branch ser/cross-corpus),
 urduser,UrduSER,official_name,new_corpora/33_urduser_report.md,
@@ -305,6 +314,7 @@ urdusindhi_zenodo3685274,Urdu-Sindhi (Zenodo 3685274),other_source_name,new_corp
 usc_emo_mri,USC-EMO-MRI,official_name,https://zenodo.org/records/19325044,
 usoms,USoMS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 82
 utemo,UTeMo,official_name,https://data.mendeley.com/datasets/x5rmd28h73,
+uudb,UUDB,short_name,http://research.nii.ac.jp/src/en/UUDB.html,
 vam,VAM,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 83
 vam,VAM-Audio,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
 verbo,VERBO,official_name,https://sites.google.com/view/verbodatabase/home/download,

@@ -7,11 +7,13 @@ emotale,distinct_from,des,https://arxiv.org/abs/2508.14548,どちらもデンマ
 expressivespeech,contains,expresso,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,"カード: curated from Expresso, NCSSD, M3ED, MultiDialog, IEMOCAP"
 expressivespeech,contains,iemocap,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,同上
 expressivespeech,contains,m3ed,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,同上
+hume_reaction,distinct_from,humevb,https://arxiv.org/abs/2207.05691,どちらも Hume AI。Hume-Reaction は刺激への反応の映像・音声、Hume-VB は非言語発声
 iitkgp_sehsc,distinct_from,iitkgp_sesc,https://www.iieta.org/journals/ts/paper/10.18280/ts.380631,同じ研究室のテルグ語版とヒンディー語版
 interface,distinct_from,enterface05,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シートのNotesが『Distinct from eNTERFACE'05』と記す
 mmeld,version_of,meld,https://arxiv.org/abs/2203.16799,MELD の発話のテキストを4言語に訳したもの
 nemo,distinct_from,polishemo,new_corpora/16_polishemo_report.md,どちらもポーランド語の感情音声だが別のコーパス(polishemo の注記)
 nonverbaltts,contains,expresso,https://huggingface.co/datasets/deepvk/NonverbalTTS,Expresso の音声の一部を含む(カード: derived from VoxCeleb and Expresso)
+persian_esd,distinct_from,esd,https://doi.org/10.3758/s13428-014-0467-x,名前が似ているが、中英の ESD(HLT Singapore)とは別物
 ses_ed,distinct_from,ses_sd,https://www.kaggle.com/datasets/angeluxarmenta/ses-ed,同じ53人の学生による英語版。SES-SD はスペイン語版
 textrolspeech,contains,esd,https://arxiv.org/abs/2308.14430,論文 §2
 textrolspeech,contains,mead,https://arxiv.org/abs/2308.14430,論文 §2
