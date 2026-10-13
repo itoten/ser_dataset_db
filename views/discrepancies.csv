@@ -50,12 +50,14 @@ emovo,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-onl
 emovome,status_reason_codes,superseded,access_signed_agreement,primary,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,emovome/status_reason_codes/02 に置き換え
 enterface05,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1166,see evidence,1293,measured,n_files_release_measured,
 enterface05,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1166,see evidence,1260,measured,recipes.n_total (enterface05),レシピは長さ・ラベルで絞るため一致しないのが普通
+gees,status_reason_codes,superseded,access_signed_agreement,primary,access_paid_or_membership,project_doc,new_corpora/99_final_report.md,gees/status_reason_codes/02 に置き換え
 iemocap,access_method,superseded,request_form_or_email,primary,signed_agreement,project_doc,egs3/iemocap/cls/readme.md (branch ser/cross-corpus),iemocap/access_method/02 に置き換え
 iemocap,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,10039,see evidence,5571,measured,recipes.n_total (iemocap),レシピは長さ・ラベルで絞るため一致しないのが普通
 indianenglish,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1000,see evidence,747,measured,n_files_release_measured,
 indianenglish,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1000,see evidence,695,measured,recipes.n_total (indianenglish),レシピは長さ・ラベルで絞るため一致しないのが普通
 inesco,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,2400,see evidence,2399,measured,n_files_release_measured,
 inesco,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,2400,see evidence,2398,measured,recipes.n_total (inesco),レシピは長さ・ラベルで絞るため一致しないのが普通
+interface,status_reason_codes,superseded,access_signed_agreement,primary,access_no_direct_download,project_doc,nc_candidates_20261010.md,interface/status_reason_codes/03 に置き換え
 jtes,status_reason_codes,superseded,access_request_form_or_email,primary,not_individually_checked,project_doc,nc_candidates_20261010.md,jtes/status_reason_codes/03 に置き換え
 kemocon,dimensional_attributes,superseded,arousal;valence,primary,valence;arousal,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,"シート原文: valence, arousal; kemocon/dimensional_attributes/02 に置き換え"
 m3ed,labels_discrete_reported,superseded,happy;neutral;sad;disgust;anger;fear;surprise,primary,anger;disgust;fear;happiness;sadness;surprise;neutral,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,"シート原文: anger, disgust, fear, happiness, sadness, surprise, neutral; m3ed/labels_discrete_reported/02 に置き換え"
@@ -82,6 +84,7 @@ prahalabs_malayalam,status_reason_codes,superseded,redistribution_of_existing_co
 quechua,n_speakers_reported,superseded,6,project_doc,7,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,quechua/n_speakers_reported/02 に置き換え
 resd,n_speakers_reported,superseded,20,primary,200,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,resd/n_speakers_reported/02 に置き換え
 rml_emotion,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,500,see evidence,720,measured,n_files_release_measured,
+ruslana,status_reason_codes,superseded,access_no_direct_download,primary,access_paid_or_membership,project_doc,new_corpora/99_final_report.md,ruslana/status_reason_codes/03 に置き換え
 semaine,status_reason_codes,superseded,host_unreachable,measured,not_individually_checked,project_doc,nc_candidates_20261010.md,semaine/status_reason_codes/03 に置き換え
 semour,status_reason_codes,superseded,host_unreachable,measured,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,semour/status_reason_codes/02 に置き換え
 sewa,status_reason_codes,superseded,host_unreachable,measured,not_individually_checked,project_doc,nc_candidates_20261010.md,sewa/status_reason_codes/03 に置き換え
