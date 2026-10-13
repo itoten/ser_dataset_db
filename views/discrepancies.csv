@@ -11,7 +11,9 @@ baum1,status_reason_codes,superseded,access_request_form_or_email,primary,access
 baum2,status_reason_codes,superseded,access_request_form_or_email,primary,not_distributable,project_doc,new_corpora/99_final_report.md,baum2/status_reason_codes/02 に置き換え
 beat,license_spdx,superseded,Apache-2.0,primary,LicenseRef-other,secondary,https://github.com/SuperKogito/SER-datasets,SuperKogito の記述。出典不明; beat/license_spdx/02 に置き換え
 berst,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,4526,see evidence,4523,measured,n_files_release_measured,
+caves,status_reason_codes,superseded,access_request_form_or_email,primary,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,caves/status_reason_codes/02 に置き換え
 cbesd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,4320,see evidence,4204,measured,n_files_release_measured,
+codaco_german,status_reason_codes,superseded,text_only,measured,content_insufficient;redistribution_of_existing_corpus,project_doc,new_corpora/99_final_report.md,codaco_german/status_reason_codes/02 に置き換え
 demos,recording_context,superseded,affect_elicitation,primary,acted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Acted; demos/recording_context/02 に置き換え
 dusha,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,303963,see evidence,160366,measured,recipes.n_total (dusha),レシピは長さ・ラベルで絞るため一致しないのが普通
 eekk,license_spdx,superseded,CC-BY-4.0,primary,LicenseRef-other,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Other; eekk/license_spdx/02 に置き換え
@@ -29,6 +31,7 @@ emodb,n_utt_reported,superseded,816,project_doc,535,sheet,sheet_import/2026-10-1
 emofilm,access_method,superseded,signed_agreement,primary,request_form_or_email,project_doc,nc_candidates_20261010.md,emofilm/access_method/02 に置き換え
 emofilm,languages,superseded,eng;ita;spa,primary,mul,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Multilingual; emofilm/languages/02 に置き換え
 emofilm,status_reason_codes,superseded,access_signed_agreement,primary,access_request_form_or_email,project_doc,nc_candidates_20261010.md,emofilm/status_reason_codes/03 に置き換え
+emoreact,status_reason_codes,superseded,access_request_form_or_email,primary,not_distributable,project_doc,new_corpora/99_final_report.md,emoreact/status_reason_codes/02 に置き換え
 emotional_ema,espnet_status,superseded,candidate,primary,excluded,project_doc,new_corpora/99_final_report.md,emotional_ema/espnet_status/02 に置き換え
 emotional_ema,status_reason_codes,superseded,unexamined,project_doc,host_unreachable,project_doc,new_corpora/99_final_report.md,emotional_ema/status_reason_codes/02 に置き換え
 emotiontts_open_db,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,6000,see evidence,300,measured,n_files_release_measured,
@@ -64,6 +67,7 @@ pavoque,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7334,see ev
 quechua,n_speakers_reported,superseded,6,project_doc,7,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,quechua/n_speakers_reported/02 に置き換え
 resd,n_speakers_reported,superseded,20,primary,200,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,resd/n_speakers_reported/02 に置き換え
 rml_emotion,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,500,see evidence,720,measured,n_files_release_measured,
+semour,status_reason_codes,superseded,host_unreachable,measured,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,semour/status_reason_codes/02 に置き換え
 shemo,recording_context,superseded,other,primary,acted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Acted; shemo/recording_context/02 に置き換え
 studies,status_reason_codes,superseded,access_signed_agreement,primary,access_request_form_or_email;access_signed_agreement,project_doc,nc_candidates_20261010.md,studies/status_reason_codes/03 に置き換え
 syntact,license_spdx,superseded,CC-BY-4.0,primary,CC-BY-SA-4.0,secondary,https://github.com/SuperKogito/SER-datasets,syntact/license_spdx/02 に置き換え
@@ -77,3 +81,5 @@ turevdb,license_spdx,superseded,conflicting,project_doc,LicenseRef-other,sheet,s
 urdu,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,38,see evidence,29,measured,n_speakers_measured,
 urdu,recording_context,superseded,talk_show,primary,tv_show,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: TV show; urdu/recording_context/02 に置き換え
 vam,status_reason_codes,superseded,access_signed_agreement,primary,not_individually_checked,project_doc,nc_candidates_20261010.md,vam/status_reason_codes/03 に置き換え
+zamai_pashto,languages,superseded,pus;fas;eng,primary,pus,project_doc,new_corpora/99_final_report.md,zamai_pashto/languages/02 に置き換え
+zamai_pashto,status_reason_codes,superseded,text_only,measured,content_insufficient,project_doc,new_corpora/99_final_report.md,zamai_pashto/status_reason_codes/02 に置き換え
