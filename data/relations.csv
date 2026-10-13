@@ -23,5 +23,6 @@ textrolspeech,contains,mead,https://arxiv.org/abs/2308.14430,論文 §2
 textrolspeech,contains,mess,https://arxiv.org/abs/2308.14430,論文 §2
 textrolspeech,contains,savee,https://arxiv.org/abs/2308.14430,論文 §2
 textrolspeech,contains,tess,https://arxiv.org/abs/2308.14430,論文 §2
+thanushs25_tamil,possibly_same_as,meghana007_tamil,https://huggingface.co/datasets/Thanushs25/tamil-audio-emotion-classification,README と final_data/ の構成・wav 195件が同一(2026-10-14)
 tures,distinct_from,turevdb,https://doi.org/10.1186/1687-4722-2013-26,どちらもトルコ語。TurES は映画の発話、TurEV-DB は単語の演技
 urduser,distinct_from,urdu,https://data.mendeley.com/datasets/jcpfjnk5c2/4; https://github.com/siddiquelatif/URDU-Dataset,どちらもウルドゥー語だが別物。UrduSER は Mendeley の演技音声(10話者)、URDU はトーク番組からの400発話。MSP-Podcast 論文 Table I の UrduSER は urduser に当たる

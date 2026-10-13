@@ -20,6 +20,9 @@ emodb,license_spdx,conflicting,conflicting,project_doc,CC-BY-4.0,project_doc,cor
 emodb,license_spdx,conflicting,conflicting,project_doc,CC0-1.0,primary,https://audeering.github.io/datasets/datasets/emodb.html,
 emodb,license_spdx,superseded,conflicting,project_doc,CC-BY-4.0,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: CC BY 4.0; 資料間の食い違いのため conflicting に置き換え
 emodb,n_utt_reported,superseded,816,project_doc,535,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,emodb/n_utt_reported/02 に置き換え
+emofilm,access_method,superseded,signed_agreement,primary,request_form_or_email,project_doc,nc_candidates_20261010.md,emofilm/access_method/02 に置き換え
+emofilm,languages,superseded,eng;ita;spa,primary,mul,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Multilingual; emofilm/languages/02 に置き換え
+emofilm,status_reason_codes,superseded,access_signed_agreement,primary,access_request_form_or_email,project_doc,nc_candidates_20261010.md,emofilm/status_reason_codes/03 に置き換え
 emotional_ema,espnet_status,superseded,candidate,primary,excluded,project_doc,new_corpora/99_final_report.md,emotional_ema/espnet_status/02 に置き換え
 emotional_ema,status_reason_codes,superseded,unexamined,project_doc,host_unreachable,project_doc,new_corpora/99_final_report.md,emotional_ema/status_reason_codes/02 に置き換え
 emotiontts_open_db,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,6000,see evidence,300,measured,n_files_release_measured,
@@ -32,10 +35,13 @@ indianenglish,n_utt_reported vs n_files_release_measured,reported_vs_release_mea
 indianenglish,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1000,see evidence,695,measured,recipes.n_total (indianenglish),レシピは長さ・ラベルで絞るため一致しないのが普通
 inesco,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,2400,see evidence,2399,measured,n_files_release_measured,
 inesco,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,2400,see evidence,2398,measured,recipes.n_total (inesco),レシピは長さ・ラベルで絞るため一致しないのが普通
+kemocon,dimensional_attributes,superseded,arousal;valence,primary,valence;arousal,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,"シート原文: valence, arousal; kemocon/dimensional_attributes/02 に置き換え"
 mavesdb,status_reason_codes,superseded,access_signed_agreement,measured,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,mavesdb/status_reason_codes/02 に置き換え
 mderma,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1322,see evidence,1345,measured,n_files_release_measured,
 mderma,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1322,see evidence,1267,measured,recipes.n_total (mderma),レシピは長さ・ラベルで絞るため一致しないのが普通
 meld,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,13708,see evidence,13704,measured,recipes.n_total (meld),レシピは長さ・ラベルで絞るため一致しないのが普通
+mer2023,license_spdx,superseded,CC-BY-NC-4.0,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; mer2023/license_spdx/02 に置き換え
+mer2026,status_reason_codes,superseded,access_request_form_or_email,primary,access_gated,project_doc,nc_candidates_20261010.md,mer2026/status_reason_codes/03 に置き換え
 mesd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,864,see evidence,862,measured,n_files_release_measured,
 mesd,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,864,see evidence,862,measured,recipes.n_total (mesd),レシピは長さ・ラベルで絞るため一致しないのが普通
 mikuemobench,hours_reported,superseded,160,primary,131.2,primary,https://arxiv.org/abs/2505.15772,mikuemobench/hours_reported/02 に置き換え(新しい版)
