@@ -9,6 +9,11 @@ beat,license_spdx,superseded,Apache-2.0,primary,LicenseRef-other,secondary,https
 berst,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,4526,see evidence,4523,measured,n_files_release_measured,
 cbesd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,4320,see evidence,4204,measured,n_files_release_measured,
 dusha,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,303963,see evidence,160366,measured,recipes.n_total (dusha),レシピは長さ・ラベルで絞るため一致しないのが普通
+eekk,license_spdx,superseded,CC-BY-4.0,primary,LicenseRef-other,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Other; eekk/license_spdx/02 に置き換え
+eekk,status_reason_codes,superseded,duplicate_entry,primary,access_no_direct_download,project_doc,nc_candidates_20261010.md,eekk/status_reason_codes/03 に置き換え
+eesc,espnet_status,superseded,candidate,measured,excluded,project_doc,new_corpora/99_final_report.md,eesc/espnet_status/03 に置き換え
+eesc,recording_context,superseded,read_speech,primary,acted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Acted; eesc/recording_context/02 に置き換え
+eesc,status_reason_codes,superseded,unexamined,project_doc,access_no_direct_download,project_doc,new_corpora/99_final_report.md,eesc/status_reason_codes/03 に置き換え
 emodb,hours_reported,superseded,1.25,primary,0.7,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,emodb/hours_reported/02 に置き換え
 emodb,license_spdx,conflicting,conflicting,project_doc,CC-BY-4.0,project_doc,corpus_metadata.md,
 emodb,license_spdx,conflicting,conflicting,project_doc,CC0-1.0,primary,https://audeering.github.io/datasets/datasets/emodb.html,

@@ -1,5 +1,6 @@
 dataset_id,relation,other_dataset_id,source_ref,note
 chsims2,version_of,chsims,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート上の名称(CH-SIMS v2.0 と CH-SIMS)による。内容の同一性は未確認
+eekk,possibly_same_as,eesc,https://metashare.ut.ee/repository/browse/estonian-emotional-speech-corpus/f5e5fc91a0d311eebb4773db10791bcf07ff90a82bf541dbbb9ecf816da202fe/,同一と判断。META-SHARE の記録(エストニア語名 Eesti emotsionaalse kõne korpus = EEKK)が figshare 25249744(Estonian Emotional Speech Corpus)を指し、文数・話者・ラベルも一致
 emosec,contains,esd,https://zenodo.org/records/10948423,ESD の音声へのキャプション
 emosec,contains,iemocap,https://zenodo.org/records/10948423,IEMOCAP の音声へのキャプション
 emotale,distinct_from,des,https://arxiv.org/abs/2508.14548,どちらもデンマーク語。DES(1997)は別のコーパス

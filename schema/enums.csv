@@ -30,6 +30,7 @@ reason_code,not_individually_checked,個別には確認していない(シート
 reason_code,audio_links_only,音声は配布されず、元の動画・音源へのリンクだけ,
 reason_code,text_only,テキストだけで音声がない,
 reason_code,access_restricted_region,国籍・居住地で申請者を限定している,
+reason_code,duplicate_entry,DBの別の行と同じデータセット(relations で指す),
 sheet_verified,TRUE,シートで TRUE,
 sheet_verified,FALSE,シートで FALSE,
 sheet_verified,NA,シートに行がない,
