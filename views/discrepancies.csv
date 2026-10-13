@@ -24,6 +24,8 @@ mderma,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1322,see evi
 meld,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,13708,see evidence,13704,measured,recipes.n_total (meld),レシピは長さ・ラベルで絞るため一致しないのが普通
 mesd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,864,see evidence,862,measured,n_files_release_measured,
 mesd,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,864,see evidence,862,measured,recipes.n_total (mesd),レシピは長さ・ラベルで絞るため一致しないのが普通
+mikuemobench,hours_reported,superseded,160,primary,131.2,primary,https://arxiv.org/abs/2505.15772,mikuemobench/hours_reported/02 に置き換え(新しい版)
+mikuemobench,n_utt_reported,superseded,89428,primary,65970,primary,https://arxiv.org/abs/2505.15772,mikuemobench/n_utt_reported/02 に置き換え(新しい版)
 msppodcast,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,264705,see evidence,207223,measured,recipes.n_total (msppodcast),レシピは長さ・ラベルで絞るため一致しないのが普通
 pavoque,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,7334,see evidence,5442,measured,n_files_release_measured,
 pavoque,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7334,see evidence,5442,measured,recipes.n_total (pavoque),レシピは長さ・ラベルで絞るため一致しないのが普通

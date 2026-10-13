@@ -69,7 +69,7 @@
 
 ## 現状(2026-10-12)
 
-130データセット(シート由来84・シート外46)。`implemented` 53、`excluded` 75、`needs_decision` 1(`casia`)、`deferred` 1(`narrative_dialogue`)。除外のうち、シートが「申請制」と記すだけで個別には確認していないものは `status_reason_codes` が `access_*` で `status_note` に「個別には確認していない」とある。
+137データセット(シート由来84・シート外53)。`implemented` 53、`excluded` 81、`candidate` 1(`whiser`)、`needs_decision` 1(`casia`)、`deferred` 1(`narrative_dialogue`)。MSP-Podcast 論文(arXiv 2509.09791v1)の Table I の28コーパスは全て含む。除外のうち、シートが「申請制」と記すだけで個別には確認していないものは `status_reason_codes` が `access_*` で `status_note` に「個別には確認していない」とある。
 
 既知の注意:
 

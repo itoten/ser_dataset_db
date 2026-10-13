@@ -24,20 +24,26 @@ baum2,BAUM-2,other_source_name,new_corpora/99_final_report.md,
 baved,BAVED,other_source_name,new_corpora/99_final_report.md,
 belfast,Belfast Database,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 10
 biicnnime,BIIC-NNIME,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 11
+biicnnime,NNIME,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
 biicpodcast,BIIC-Podcast,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 12
 cafe,CaFE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 13
 cafe,Canadian French Emotional (CaFE) speech dataset,official_name,new_corpora/01_cafe_report.md,
 cafe,cafe,recipe_dir,egs3/cafe/cls/dataset/config.yaml (branch ser/cross-corpus),
 casia,CASIA,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 14
 caves,CAVES,other_source_name,new_corpora/99_final_report.md,
+cemo,CEMO,official_name,https://www.isca-archive.org/interspeech_2006/devillers06_interspeech.pdf,
 cheavd,CHEAVD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 17
+cheavd,CHEAVD 2.0,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
+chen_bimodal,Chen Bimodal,other_source_name,https://arxiv.org/html/2509.09791v1,
 chsims,CH-SIMS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 15
 chsims2,CH-SIMS v2.0,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 16
+cmumoseas,MOSEAS-WE1,other_source_name,https://github.com/CMU-MultiComp-Lab/CMU-MultimodalSDK,
 cmumosei,CMU-MOSEI,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 18
 cmumosi,CMU-MOSI,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 19
 codaco_german,codaco/german-emotional-speech,other_source_name,new_corpora/99_final_report.md,
 cremad,CREMA-D,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 20
 cremad,cremad,recipe_dir,egs3/cremad/cls/dataset/config.yaml (branch ser/cross-corpus),
+crowdsourcing_smith2018,Crowdsourcing Emotional Speech,other_source_name,https://arxiv.org/html/2509.09791v1,
 demos,DEMoS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 21
 des,DES,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 22
 dusha,Dusha,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 23
@@ -51,6 +57,7 @@ em2ldl,EM2LDL,other_source_name,new_corpora/99_final_report.md,
 emns,EMNS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 26
 emns,emns,recipe_dir,egs3/emns/cls/dataset/config.yaml (branch ser/cross-corpus),
 emodb,EMODB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 27
+emodb,Emo-DB,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
 emodb,emodb,recipe_dir,egs3/emodb/cls/dataset/config.yaml (branch ser/cross-corpus),
 emofilm,EmoFilm,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 28
 emomatchspanishdb,EmoMatchSpanishDB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 29
@@ -67,6 +74,7 @@ emovo,EMOVO Corpus: an Italian Emotional Speech Database,official_name,new_corpo
 emovo,emovo,recipe_dir,egs3/emovo/cls/dataset/config.yaml (branch ser/cross-corpus),
 emovome,EMOVOME,other_source_name,new_corpora/99_final_report.md,
 emozionalmente,Emozionalmente,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 33
+emozionalmente,Emozionalmente v1.1,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
 emozionalmente,emozionalmente,recipe_dir,egs3/emozionalmente/cls/dataset/config.yaml (branch ser/cross-corpus),
 enterface05,eNTERFACE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 34
 enterface05,enterface05,recipe_dir,egs3/enterface05/cls/dataset/config.yaml (branch ser/cross-corpus),
@@ -131,8 +139,10 @@ mesd,mesd,recipe_dir,egs3/mesd/cls/dataset/config.yaml (branch ser/cross-corpus)
 mess,MESS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 55
 mess,Morgan Emotional Speech Set (MESS),official_name,new_corpora/13_mess_report.md,
 mess,mess,recipe_dir,egs3/mess/cls/dataset/config.yaml (branch ser/cross-corpus),
+mikuemobench,MIKU-PAL,other_source_name,https://arxiv.org/abs/2505.15772,
 mspconversation,MSP-Conversation,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 56
 mspimprov,MSP-IMPROV,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 57
+msppodcast,MSP-PODCAST 2.0,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
 msppodcast,MSP-Podcast,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 58
 msppodcast,msppodcast,recipe_dir,egs3/msppodcast/cls/dataset/config.yaml (branch ser/cross-corpus),
 musecar,MuSe-CaR,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 59
@@ -176,11 +186,15 @@ subesco,SUBESCO,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv
 subesco,subesco,recipe_dir,egs3/subesco/cls/dataset/config.yaml (branch ser/cross-corpus),
 tess,TESS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 78
 tess,tess,recipe_dir,egs3/tess/cls/dataset/config.yaml (branch ser/cross-corpus),
+thaiser,THAI-SER,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
 thaiser,Thai SER,official_name,new_corpora/26_thaiser_report.md,
 thaiser,thaiser,recipe_dir,egs3/thaiser/cls/dataset/config.yaml (branch ser/cross-corpus),
 thanushs25_tamil,Thanushs25 tamil,other_source_name,new_corpora/99_final_report.md,
 thorsten,Thorsten-Emotional,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 79
 thorsten,thorsten,recipe_dir,egs3/thorsten/cls/dataset/config.yaml (branch ser/cross-corpus),
+tumavic,AVIC,short_name,https://www.isca-archive.org/interspeech_2010/schuller10b_interspeech.pdf,
+tumavic,Audiovisual Interest Corpus,official_name,https://www.isca-archive.org/interspeech_2010/schuller10b_interspeech.pdf,
+tumavic,TUM AVIC,short_name,https://www.isca-archive.org/interspeech_2010/schuller10b_interspeech.pdf,
 turevdb,TurEV-DB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 80
 turevdb,Turkish Emotion Voice Database (TurEV-DB),official_name,new_corpora/15_turevdb_report.md,
 turevdb,turevdb,recipe_dir,egs3/turevdb/cls/dataset/config.yaml (branch ser/cross-corpus),
@@ -191,12 +205,14 @@ urduser,urduser,recipe_dir,egs3/urduser/cls/dataset/config.yaml (branch ser/cros
 urdusindhi_zenodo3685274,Urdu-Sindhi (Zenodo 3685274),other_source_name,new_corpora/99_final_report.md,
 usoms,USoMS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 82
 vam,VAM,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 83
+vam,VAM-Audio,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
 vivae,The Variably Intense Vocalizations of Affect and Emotion Corpus (VIVAE),official_name,new_corpora/27_vivae_report.md,
 vivae,VIVAE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 84
 vivae,vivae,recipe_dir,egs3/vivae/cls/dataset/config.yaml (branch ser/cross-corpus),
 voicestats,Voice Statistics,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 85
 voicestats,voicestats,recipe_dir,egs3/voicestats/cls/dataset/config.yaml (branch ser/cross-corpus),
 voicestats,声優統計コーパス,official_name,new_corpora/17_voicestats_report.md,
+whiser,WHiSER,official_name,https://www.isca-archive.org/interspeech_2024/naini24_interspeech.pdf,
 ysed,YSED,official_name,new_corpora/29_ysed_report.md,
 ysed,ysed,recipe_dir,egs3/ysed/cls/dataset/config.yaml (branch ser/cross-corpus),
 zamai_pashto,ZamAI Pashto,other_source_name,new_corpora/99_final_report.md,

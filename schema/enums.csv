@@ -50,6 +50,7 @@ vocal_content,speech,発話,
 vocal_content,nonverbal,非言語発声のみ,
 vocal_content,speech_and_nonverbal,両方,
 vocal_content,unknown,不明,
+license_spdx,CC-BY-3.0,Creative Commons Attribution 3.0,open
 license_spdx,CC-BY-4.0,Creative Commons Attribution 4.0,open
 license_spdx,CC-BY-NC-4.0,CC Attribution-NonCommercial 4.0,noncommercial
 license_spdx,CC-BY-NC-SA-4.0,CC Attribution-NonCommercial-ShareAlike 4.0,noncommercial
