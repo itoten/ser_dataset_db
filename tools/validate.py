@@ -9,6 +9,7 @@ Exit status is 1 when any error is found; warnings do not fail the run.
 import datetime
 import re
 import sys
+import unicodedata
 
 import csvio
 import db as dbmod
@@ -32,7 +33,9 @@ def warn(msg):
 
 
 def norm_name(s):
-    return re.sub(r"[^a-z0-9]", "", s.lower())
+    # Accents are dropped (Oréau == Oreau), but letters of any script are kept.
+    s = unicodedata.normalize("NFKD", s.casefold())
+    return re.sub(r"[\W_]", "", "".join(c for c in s if not unicodedata.combining(c)))
 
 
 # ---- 1. file format -------------------------------------------------------
