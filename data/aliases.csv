@@ -10,6 +10,8 @@ aihub_466,AIHub 466,other_source_name,https://www.aihub.or.kr/aihubdata/data/vie
 aihub_637,AIHub 637,other_source_name,https://www.aihub.or.kr/aihubdata/data/view.do?dataSetSn=637,
 aihub_71631,AIHub 71631,other_source_name,https://www.aihub.or.kr/aihubdata/data/view.do?dataSetSn=71631,
 aihub_71632,AIHub 71632,other_source_name,https://www.aihub.or.kr/aihubdata/data/view.do?dataSetSn=71632,
+akace,ACE,short_name,https://aclanthology.org/2025.findings-acl.510/,
+akace,Akan Cinematic Emotions,official_name,https://github.com/sasudavid/AkaCE,
 albemo,AlbEmo,official_name,new_corpora/11_albemo_report.md,
 albemo,albemo,recipe_dir,egs3/albemo/cls/dataset/config.yaml (branch ser/cross-corpus),
 amigos,AMIGOS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 5
@@ -42,6 +44,7 @@ berst,BERSt,official_name,https://huggingface.co/datasets/Rosie-Lab/BERSt,
 biicnnime,BIIC-NNIME,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 11
 biicnnime,NNIME,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
 biicpodcast,BIIC-Podcast,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 12
+buemodb,BUEMODB,short_name,https://doi.org/10.1109/SIU.2014.6830575,
 cafe,CaFE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 13
 cafe,Canadian French Emotional (CaFE) speech dataset,official_name,new_corpora/01_cafe_report.md,
 cafe,cafe,recipe_dir,egs3/cafe/cls/dataset/config.yaml (branch ser/cross-corpus),
@@ -57,6 +60,7 @@ cmumoseas,MOSEAS-WE1,other_source_name,https://github.com/CMU-MultiComp-Lab/CMU-
 cmumosei,CMU-MOSEI,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 18
 cmumosi,CMU-MOSI,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 19
 codaco_german,codaco/german-emotional-speech,other_source_name,new_corpora/99_final_report.md,
+coraa_ser,CORAA SER,official_name,https://github.com/rmarcacini/ser-coraa-pt-br,
 cped,CPED,official_name,https://github.com/scutcyr/CPED,
 cremad,CREMA-D,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 20
 cremad,cremad,recipe_dir,egs3/cremad/cls/dataset/config.yaml (branch ser/cross-corpus),
@@ -79,6 +83,7 @@ egyptian_hf_unresolved,Egyptian Hugging Face dataset (unidentified),other_source
 em2ldl,EM2LDL,other_source_name,new_corpora/99_final_report.md,
 emns,EMNS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 26
 emns,emns,recipe_dir,egs3/emns/cls/dataset/config.yaml (branch ser/cross-corpus),
+emochildru,EmoChildRu,official_name,https://doi.org/10.1007/978-3-319-23132-7_18,
 emodb,EMODB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 27
 emodb,Emo-DB,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
 emodb,emodb,recipe_dir,egs3/emodb/cls/dataset/config.yaml (branch ser/cross-corpus),
@@ -131,6 +136,8 @@ humevb,H-VB,short_name,https://www.competitions.hume.ai/exvo2022,
 humevb,Hume-VB,short_name,https://www.competitions.hume.ai/exvo2022,
 iemocap,IEMOCAP,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 39
 iemocap,iemocap,recipe_dir,egs3/iemocap/cls/dataset/config.yaml (branch ser/cross-corpus),
+iitkgp_sehsc,IITKGP-SEHSC,official_name,https://www.iieta.org/journals/ts/paper/10.18280/ts.380631,
+iitkgp_sesc,IITKGP-SESC,official_name,https://www.iieta.org/journals/ts/paper/10.18280/ts.380631,
 indianenglish,Indian English Speech Emotion Dataset,official_name,new_corpora/32_indianenglish_report.md,
 indianenglish,indianenglish,recipe_dir,egs3/indianenglish/cls/dataset/config.yaml (branch ser/cross-corpus),
 indowavesentiment,IndoWaveSentiment,official_name,new_corpora/34_indowavesentiment_report.md,
@@ -224,6 +231,7 @@ prahalabs_malayalam,Praha-Labs malayalam,other_source_name,new_corpora/99_final_
 promptspeech,PromptSpeech,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 66
 quechua,Quechua-SER,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 67
 quechua,quechua,recipe_dir,egs3/quechua/cls/dataset/config.yaml (branch ser/cross-corpus),
+ramas,RAMAS,short_name,https://doi.org/10.7287/peerj.preprints.26688v1,
 ravdess,RAVDESS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 68
 ravdess,ravdess,recipe_dir,egs3/ravdess/cls/dataset/config.yaml (branch ser/cross-corpus),
 recanvo,ReCANVo,official_name,https://zenodo.org/records/5786860,
@@ -265,6 +273,7 @@ thorsten,thorsten,recipe_dir,egs3/thorsten/cls/dataset/config.yaml (branch ser/c
 tumavic,AVIC,short_name,https://www.isca-archive.org/interspeech_2010/schuller10b_interspeech.pdf,
 tumavic,Audiovisual Interest Corpus,official_name,https://www.isca-archive.org/interspeech_2010/schuller10b_interspeech.pdf,
 tumavic,TUM AVIC,short_name,https://www.isca-archive.org/interspeech_2010/schuller10b_interspeech.pdf,
+tures,TurES,short_name,https://www.researchgate.net/publication/252012056_Turkish_emotional_speech_database,
 turevdb,TurEV-DB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 80
 turevdb,Turkish Emotion Voice Database (TurEV-DB),official_name,new_corpora/15_turevdb_report.md,
 turevdb,turevdb,recipe_dir,egs3/turevdb/cls/dataset/config.yaml (branch ser/cross-corpus),
@@ -276,7 +285,10 @@ urdusindhi_zenodo3685274,Urdu-Sindhi (Zenodo 3685274),other_source_name,new_corp
 usoms,USoMS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 82
 vam,VAM,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 83
 vam,VAM-Audio,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
+verbo,VERBO,official_name,https://sites.google.com/view/verbodatabase/home/download,
+vesc,VESC,short_name,https://doi.org/10.1007/978-981-95-7896-2_21,
 vesus,VESUS,official_name,https://www.nsa-lab.org/resources/vesus/,
+visec,ViSEC,official_name,https://huggingface.co/datasets/hustep-lab/ViSEC,
 vivae,The Variably Intense Vocalizations of Affect and Emotion Corpus (VIVAE),official_name,new_corpora/27_vivae_report.md,
 vivae,VIVAE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 84
 vivae,vivae,recipe_dir,egs3/vivae/cls/dataset/config.yaml (branch ser/cross-corpus),

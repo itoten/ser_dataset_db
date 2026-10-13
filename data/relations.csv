@@ -4,6 +4,7 @@ emotale,distinct_from,des,https://arxiv.org/abs/2508.14548,どちらもデンマ
 expressivespeech,contains,expresso,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,"カード: curated from Expresso, NCSSD, M3ED, MultiDialog, IEMOCAP"
 expressivespeech,contains,iemocap,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,同上
 expressivespeech,contains,m3ed,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,同上
+iitkgp_sehsc,distinct_from,iitkgp_sesc,https://www.iieta.org/journals/ts/paper/10.18280/ts.380631,同じ研究室のテルグ語版とヒンディー語版
 interface,distinct_from,enterface05,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シートのNotesが『Distinct from eNTERFACE'05』と記す
 mmeld,version_of,meld,https://arxiv.org/abs/2203.16799,MELD の発話のテキストを4言語に訳したもの
 nemo,distinct_from,polishemo,new_corpora/16_polishemo_report.md,どちらもポーランド語の感情音声だが別のコーパス(polishemo の注記)
@@ -13,4 +14,5 @@ textrolspeech,contains,mead,https://arxiv.org/abs/2308.14430,論文 §2
 textrolspeech,contains,mess,https://arxiv.org/abs/2308.14430,論文 §2
 textrolspeech,contains,savee,https://arxiv.org/abs/2308.14430,論文 §2
 textrolspeech,contains,tess,https://arxiv.org/abs/2308.14430,論文 §2
+tures,distinct_from,turevdb,https://doi.org/10.1186/1687-4722-2013-26,どちらもトルコ語。TurES は映画の発話、TurEV-DB は単語の演技
 urduser,distinct_from,urdu,https://data.mendeley.com/datasets/jcpfjnk5c2/4; https://github.com/siddiquelatif/URDU-Dataset,どちらもウルドゥー語だが別物。UrduSER は Mendeley の演技音声(10話者)、URDU はトーク番組からの400発話。MSP-Podcast 論文 Table I の UrduSER は urduser に当たる
