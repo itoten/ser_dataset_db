@@ -50,6 +50,7 @@ emovo,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-onl
 emovome,status_reason_codes,superseded,access_signed_agreement,primary,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,emovome/status_reason_codes/02 に置き換え
 enterface05,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1166,see evidence,1293,measured,n_files_release_measured,
 enterface05,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1166,see evidence,1260,measured,recipes.n_total (enterface05),レシピは長さ・ラベルで絞るため一致しないのが普通
+iemocap,access_method,superseded,request_form_or_email,primary,signed_agreement,project_doc,egs3/iemocap/cls/readme.md (branch ser/cross-corpus),iemocap/access_method/02 に置き換え
 iemocap,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,10039,see evidence,5571,measured,recipes.n_total (iemocap),レシピは長さ・ラベルで絞るため一致しないのが普通
 indianenglish,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1000,see evidence,747,measured,n_files_release_measured,
 indianenglish,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1000,see evidence,695,measured,recipes.n_total (indianenglish),レシピは長さ・ラベルで絞るため一致しないのが普通
