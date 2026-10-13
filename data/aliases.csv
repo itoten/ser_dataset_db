@@ -31,6 +31,7 @@ baum2,BAUM-2,other_source_name,new_corpora/99_final_report.md,
 baved,BAVED,other_source_name,new_corpora/99_final_report.md,
 beat,BEAT,official_name,https://pantomatrix.github.io/BEAT/,
 belfast,Belfast Database,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 10
+berst,BERSt,official_name,https://huggingface.co/datasets/Rosie-Lab/BERSt,
 biicnnime,BIIC-NNIME,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 11
 biicnnime,NNIME,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
 biicpodcast,BIIC-Podcast,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 12
@@ -52,12 +53,16 @@ codaco_german,codaco/german-emotional-speech,other_source_name,new_corpora/99_fi
 cremad,CREMA-D,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 20
 cremad,cremad,recipe_dir,egs3/cremad/cls/dataset/config.yaml (branch ser/cross-corpus),
 crowdsourcing_smith2018,Crowdsourcing Emotional Speech,other_source_name,https://arxiv.org/html/2509.09791v1,
+csemotions,CSEMOTIONS,official_name,https://huggingface.co/datasets/AIDC-AI/CSEMOTIONS,
+dailytalk,DailyTalk,official_name,https://github.com/keonlee9420/DailyTalk,
 demos,DEMoS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 21
 des,DES,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 22
 dusha,Dusha,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 23
 dusha,Dusha: Large Raw Emotional Dataset with Aggregation Mechanism,official_name,new_corpora/28_dusha_report.md,
 dusha,dusha,recipe_dir,egs3/dusha/cls/dataset/config.yaml (branch ser/cross-corpus),
 dzafic,dzafic,other_source_name,new_corpora/99_final_report.md,
+ears,EARS,official_name,https://github.com/facebookresearch/ears_dataset,
+ears,Expressive Anechoic Recordings of Speech,official_name,https://github.com/facebookresearch/ears_dataset,
 eekk,EEKK,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 24
 eesc,EESC,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 25
 egyptian_hf_unresolved,Egyptian Hugging Face dataset (unidentified),other_source_name,new_corpora/99_final_report.md,
@@ -69,9 +74,12 @@ emodb,Emo-DB,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast �
 emodb,emodb,recipe_dir,egs3/emodb/cls/dataset/config.yaml (branch ser/cross-corpus),
 emofilm,EmoFilm,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 28
 emomatchspanishdb,EmoMatchSpanishDB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 29
+emonetvoice,EmoNet-Voice Bench,other_source_name,https://arxiv.org/abs/2506.09827,
+emonetvoice,EmoNet-Voice Big,other_source_name,https://arxiv.org/abs/2506.09827,
 emoreact,EmoReact,other_source_name,new_corpora/99_final_report.md,
 emosynth,EmoSynth,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 30
 emota,EmoTa,other_source_name,new_corpora/99_final_report.md,
+emotale,EmoTale,official_name,https://github.com/snehadas/EmoTale,
 emotion_origlia2010,€motion,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 2
 emotional_ema,Emotional EMA,other_source_name,new_corpora/99_final_report.md,
 emotiontts_open_db,emotiontts_open_db,other_source_name,https://github.com/emotiontts/emotiontts_open_db,
@@ -82,6 +90,7 @@ emovie,EMOVIE,official_name,https://arxiv.org/abs/2106.09317,
 emovo,EMOVO,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 32
 emovo,EMOVO Corpus: an Italian Emotional Speech Database,official_name,new_corpora/07_emovo_report.md,
 emovo,emovo,recipe_dir,egs3/emovo/cls/dataset/config.yaml (branch ser/cross-corpus),
+emovoicedb,EmoVoice-DB,official_name,https://huggingface.co/datasets/yhaha/EmoVoice-DB,
 emovome,EMOVOME,other_source_name,new_corpora/99_final_report.md,
 emozionalmente,Emozionalmente,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 33
 emozionalmente,Emozionalmente v1.1,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
@@ -114,6 +123,7 @@ inesco,inesco,recipe_dir,egs3/inesco/cls/dataset/config.yaml (branch ser/cross-c
 interface,INTERFACE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 40
 jlcorpus,JL-Corpus,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 41
 jlcorpus,jlcorpus,recipe_dir,egs3/jlcorpus/cls/dataset/config.yaml (branch ser/cross-corpus),
+jnv,JNV corpus,official_name,https://sites.google.com/site/shinnosuketakamichi/research-topics/jnv_corpus,
 jtes,JTES,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 42
 jvnv,JVNV,official_name,new_corpora/22_jvnv_report.md,
 jvnv,jvnv,recipe_dir,egs3/jvnv/cls/dataset/config.yaml (branch ser/cross-corpus),
@@ -162,14 +172,18 @@ msppodcast,MSP-Podcast,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datas
 msppodcast,msppodcast,recipe_dir,egs3/msppodcast/cls/dataset/config.yaml (branch ser/cross-corpus),
 musecar,MuSe-CaR,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 59
 narrative_dialogue,Narrative Dialogue Dataset,other_source_name,new_corpora/99_final_report.md,
+naturalvoices,NaturalVoices,official_name,https://arxiv.org/abs/2511.00256,
+naturalvoices,NaturalVoices_EVC,other_source_name,https://huggingface.co/datasets/JHU-SmileLab/NaturalVoices_EVC,
 nemo,nEMO,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 60
 nemo,nEMO: Dataset of Emotional Speech in Polish,official_name,new_corpora/03_nemo_report.md,
 nemo,nemo,recipe_dir,egs3/nemo/cls/dataset/config.yaml (branch ser/cross-corpus),
+nonverbaltts,NVTTS,short_name,https://arxiv.org/abs/2507.13155,
 ogvc,OGVC,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 61
 omgemotion,OMG-Emotion,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 62
 oreau,French Emotional Speech Database - Oréau,official_name,new_corpora/05_oreau_report.md,
 oreau,Oreau,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 63
 oreau,oreau,recipe_dir,egs3/oreau/cls/dataset/config.yaml (branch ser/cross-corpus),
+paraspeechcaps,PSC,short_name,https://arxiv.org/abs/2503.04713,
 pavoque,PAVOQUE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 64
 pavoque,pavoque,recipe_dir,egs3/pavoque/cls/dataset/config.yaml (branch ser/cross-corpus),
 polishemo,Emotions in Polish speech recordings,official_name,new_corpora/16_polishemo_report.md,
@@ -196,13 +210,17 @@ sewa,SEWA,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 
 shemo,ShEMO,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 75
 shemo,Sharif Emotional Speech Database (ShEMO),official_name,new_corpora/06_shemo_report.md,
 shemo,shemo,recipe_dir,egs3/shemo/cls/dataset/config.yaml (branch ser/cross-corpus),
+speechcraft,SpeechCraft,official_name,https://github.com/thuhcsi/SpeechCraft,
 studies,STUDIES,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 76
 subesco,SUBESCO,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 77
 subesco,subesco,recipe_dir,egs3/subesco/cls/dataset/config.yaml (branch ser/cross-corpus),
 syntact,SyntAct,official_name,https://aclanthology.org/2022.dclrl-1.1.pdf,
 syntact,syntact_cat,other_source_name,https://zenodo.org/records/6573016,Zenodo の題名
+talromur3,Talromur 3,other_source_name,https://huggingface.co/datasets/atlithor/talromur3_without_emotions,HF の派生版(感情情報を除きスタイル説明文を付けたもの)の表記
 tess,TESS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 78
 tess,tess,recipe_dir,egs3/tess/cls/dataset/config.yaml (branch ser/cross-corpus),
+textrolspeech,TextrolSpeech,official_name,https://github.com/jishengpeng/TextrolSpeech,
+textrolspeech,VccmDataset,other_source_name,https://arxiv.org/abs/2406.01205,ControlSpeech の論文での呼び名。Hours・話者数が同じ
 thaiser,THAI-SER,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
 thaiser,Thai SER,official_name,new_corpora/26_thaiser_report.md,
 thaiser,thaiser,recipe_dir,egs3/thaiser/cls/dataset/config.yaml (branch ser/cross-corpus),

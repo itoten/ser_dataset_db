@@ -1,5 +1,15 @@
 dataset_id,relation,other_dataset_id,source_ref,note
 chsims2,version_of,chsims,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート上の名称(CH-SIMS v2.0 と CH-SIMS)による。内容の同一性は未確認
+emotale,distinct_from,des,https://arxiv.org/abs/2508.14548,どちらもデンマーク語。DES(1997)は別のコーパス
+expressivespeech,contains,expresso,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,"カード: curated from Expresso, NCSSD, M3ED, MultiDialog, IEMOCAP"
+expressivespeech,contains,iemocap,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,同上
+expressivespeech,contains,m3ed,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,同上
 interface,distinct_from,enterface05,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シートのNotesが『Distinct from eNTERFACE'05』と記す
 nemo,distinct_from,polishemo,new_corpora/16_polishemo_report.md,どちらもポーランド語の感情音声だが別のコーパス(polishemo の注記)
+nonverbaltts,contains,expresso,https://huggingface.co/datasets/deepvk/NonverbalTTS,Expresso の音声の一部を含む(カード: derived from VoxCeleb and Expresso)
+textrolspeech,contains,esd,https://arxiv.org/abs/2308.14430,論文 §2
+textrolspeech,contains,mead,https://arxiv.org/abs/2308.14430,論文 §2
+textrolspeech,contains,mess,https://arxiv.org/abs/2308.14430,論文 §2
+textrolspeech,contains,savee,https://arxiv.org/abs/2308.14430,論文 §2
+textrolspeech,contains,tess,https://arxiv.org/abs/2308.14430,論文 §2
 urduser,distinct_from,urdu,https://data.mendeley.com/datasets/jcpfjnk5c2/4; https://github.com/siddiquelatif/URDU-Dataset,どちらもウルドゥー語だが別物。UrduSER は Mendeley の演技音声(10話者)、URDU はトーク番組からの400発話。MSP-Podcast 論文 Table I の UrduSER は urduser に当たる
