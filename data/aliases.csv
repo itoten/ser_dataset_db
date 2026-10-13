@@ -6,15 +6,22 @@ afew,AFEW,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 
 albemo,AlbEmo,official_name,new_corpora/11_albemo_report.md,
 albemo,albemo,recipe_dir,egs3/albemo/cls/dataset/config.yaml (branch ser/cross-corpus),
 amigos,AMIGOS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 5
+anad,ANAD,short_name,https://www.kaggle.com/datasets/suso172/arabic-natural-audio-dataset,
+anad,Arabic Natural Audio Dataset,official_name,https://www.kaggle.com/datasets/suso172/arabic-natural-audio-dataset,
 arabic_zenodo19687456,Arabic (Zenodo 19687456),other_source_name,new_corpora/99_final_report.md,
 ased,ASED,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 6
 ased,ased,recipe_dir,egs3/ased/cls/dataset/config.yaml (branch ser/cross-corpus),
 asvpesd,ASVP-ESD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 7
 asvpesd,"Audio, Speech and Vision Processing Lab Emotional Sound Database (ASVP-ESD)",official_name,new_corpora/23_asvpesd_report.md,
 asvpesd,asvpesd,recipe_dir,egs3/asvpesd/cls/dataset/config.yaml (branch ser/cross-corpus),
+atthack,Att-HACK,official_name,https://www.openslr.org/88/,
+atthack,SLR88,other_source_name,https://www.openslr.org/88/,
 audiospeechsentiment,Audio Speech Sentiment,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 8
 banglamood,BanglaMood,official_name,new_corpora/36_banglamood_report.md,
 banglamood,banglamood,recipe_dir,egs3/banglamood/cls/dataset/config.yaml (branch ser/cross-corpus),
+banglaser,B-SER,former_label,https://data.mendeley.com/datasets/t9h6p943xy/3,同じ Mendeley 記録の v3 の題名(2022-02-10)
+banglaser,BEASC,former_label,https://data.mendeley.com/datasets/t9h6p943xy/1,v1 の略称
+banglaser,BEASC: Bangla emotional audio-speech corpus,former_label,https://data.mendeley.com/datasets/t9h6p943xy/1,同じ Mendeley 記録 t9h6p943xy の v1 の題名(2022-02-08)。SuperKogito の BEASC は figshare の DOI を挙げるが解決しない
 banglaser,BanglaSER,official_name,new_corpora/20_banglaser_report.md,
 banglaser,banglaser,recipe_dir,egs3/banglaser/cls/dataset/config.yaml (branch ser/cross-corpus),
 banspemo,BanSpEmo,official_name,new_corpora/21_banspemo_report.md,
@@ -22,6 +29,7 @@ banspemo,banspemo,recipe_dir,egs3/banspemo/cls/dataset/config.yaml (branch ser/c
 baum1,BAUM-1,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 9
 baum2,BAUM-2,other_source_name,new_corpora/99_final_report.md,
 baved,BAVED,other_source_name,new_corpora/99_final_report.md,
+beat,BEAT,official_name,https://pantomatrix.github.io/BEAT/,
 belfast,Belfast Database,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 10
 biicnnime,BIIC-NNIME,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 11
 biicnnime,NNIME,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
@@ -66,9 +74,11 @@ emosynth,EmoSynth,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.c
 emota,EmoTa,other_source_name,new_corpora/99_final_report.md,
 emotion_origlia2010,€motion,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 2
 emotional_ema,Emotional EMA,other_source_name,new_corpora/99_final_report.md,
+emotiontts_open_db,emotiontts_open_db,other_source_name,https://github.com/emotiontts/emotiontts_open_db,
 emouerj_sed,emouerj-sed,other_source_name,new_corpora/99_final_report.md,
 emovdb,EmoV-DB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 31
 emovdb,emovdb,recipe_dir,egs3/emovdb/cls/dataset/config.yaml (branch ser/cross-corpus),
+emovie,EMOVIE,official_name,https://arxiv.org/abs/2106.09317,
 emovo,EMOVO,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 32
 emovo,EMOVO Corpus: an Italian Emotional Speech Database,official_name,new_corpora/07_emovo_report.md,
 emovo,emovo,recipe_dir,egs3/emovo/cls/dataset/config.yaml (branch ser/cross-corpus),
@@ -87,6 +97,8 @@ eyase,EYASE,other_source_name,new_corpora/99_final_report.md,
 fauaibo,FAU-Aibo,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 37
 galgame_speech_ser,Galgame_Speech_SER,other_source_name,new_corpora/99_final_report.md,
 gees,GEES,other_source_name,new_corpora/99_final_report.md,
+gemep,GEMEP,short_name,https://www.unige.ch/cisa/gemep,
+gemep,GEMEP-CS,short_name,https://pubmed.ncbi.nlm.nih.gov/22081890/,Core Set
 grethe,GreThE,other_source_name,new_corpora/99_final_report.md,
 groupaffect4,GroupAffect-4,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 38
 hikia,"Hi, KIA",official_name,new_corpora/14_hikia_report.md,
@@ -111,12 +123,14 @@ kazemotts,KazEmoTTS,official_name,new_corpora/24_kazemotts_report.md,
 kazemotts,kazemotts,recipe_dir,egs3/kazemotts/cls/dataset/config.yaml (branch ser/cross-corpus),
 kbes,KBES,official_name,new_corpora/35_kbes_report.md,
 kbes,kbes,recipe_dir,egs3/kbes/cls/dataset/config.yaml (branch ser/cross-corpus),
+keioesd,Keio-ESD,official_name,http://research.nii.ac.jp/src/en/Keio-ESD.html,
 kemocon,K-EmoCon,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 43
 kite,KITE,other_source_name,new_corpora/99_final_report.md,
 ksuemotions,KSUEmotions,other_source_name,new_corpora/99_final_report.md,
 legov2,LEGOv2,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 44
 lssed,LSSED,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 45
 m3ed,M3ED,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 46
+mafw,MAFW,official_name,https://mafw-database.github.io/MAFW/,
 mahnobhci,MAHNOB-HCI,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 47
 maleo,Maleo Emotion,official_name,new_corpora/30_maleo_report.md,
 maleo,maleo,recipe_dir,egs3/maleo/cls/dataset/config.yaml (branch ser/cross-corpus),
@@ -140,6 +154,7 @@ mess,MESS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 
 mess,Morgan Emotional Speech Set (MESS),official_name,new_corpora/13_mess_report.md,
 mess,mess,recipe_dir,egs3/mess/cls/dataset/config.yaml (branch ser/cross-corpus),
 mikuemobench,MIKU-PAL,other_source_name,https://arxiv.org/abs/2505.15772,
+mlend_numerals,MLEnd,short_name,https://github.com/SuperKogito/SER-datasets,
 mspconversation,MSP-Conversation,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 56
 mspimprov,MSP-IMPROV,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 57
 msppodcast,MSP-PODCAST 2.0,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
@@ -184,6 +199,8 @@ shemo,shemo,recipe_dir,egs3/shemo/cls/dataset/config.yaml (branch ser/cross-corp
 studies,STUDIES,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 76
 subesco,SUBESCO,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 77
 subesco,subesco,recipe_dir,egs3/subesco/cls/dataset/config.yaml (branch ser/cross-corpus),
+syntact,SyntAct,official_name,https://aclanthology.org/2022.dclrl-1.1.pdf,
+syntact,syntact_cat,other_source_name,https://zenodo.org/records/6573016,Zenodo の題名
 tess,TESS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 78
 tess,tess,recipe_dir,egs3/tess/cls/dataset/config.yaml (branch ser/cross-corpus),
 thaiser,THAI-SER,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
@@ -206,6 +223,7 @@ urdusindhi_zenodo3685274,Urdu-Sindhi (Zenodo 3685274),other_source_name,new_corp
 usoms,USoMS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 82
 vam,VAM,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 83
 vam,VAM-Audio,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
+vesus,VESUS,official_name,https://www.nsa-lab.org/resources/vesus/,
 vivae,The Variably Intense Vocalizations of Affect and Emotion Corpus (VIVAE),official_name,new_corpora/27_vivae_report.md,
 vivae,VIVAE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 84
 vivae,vivae,recipe_dir,egs3/vivae/cls/dataset/config.yaml (branch ser/cross-corpus),

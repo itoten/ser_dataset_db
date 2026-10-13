@@ -68,6 +68,7 @@ license_spdx,LicenseRef-other,上記以外(シートの Other),other
 license_spdx,none_stated,ライセンスの記載が見つからない,none_stated
 license_spdx,conflicting,資料の間でライセンスが食い違う,conflicting
 license_spdx,unknown,調べたが決まらない / シートで Unknown,unknown
+license_spdx,CC-BY-NC-SA-2.0,CC Attribution-NonCommercial-ShareAlike 2.0,noncommercial
 license_class,open,制限が緩い(帰属表示程度),
 license_class,noncommercial,非商用限定,
 license_class,research_only,研究目的限定,

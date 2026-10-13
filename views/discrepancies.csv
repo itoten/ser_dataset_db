@@ -1,15 +1,18 @@
 dataset_id,field,kind,datasets_value,datasets_source_type,other_value,other_source_type,other_source_ref,note
 aesdd,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,5,see evidence,6,measured,n_speakers_measured,
 aesdd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,604,see evidence,605,measured,n_files_release_measured,
+anad,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1384,see evidence,1428,measured,n_files_release_measured,
 asvpesd,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,131,see evidence,76,measured,n_speakers_measured,
 asvpesd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,7812,see evidence,9092,measured,n_files_release_measured,
 asvpesd,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7812,see evidence,3241,measured,recipes.n_total (asvpesd),レシピは長さ・ラベルで絞るため一致しないのが普通
+beat,license_spdx,superseded,Apache-2.0,primary,LicenseRef-other,secondary,https://github.com/SuperKogito/SER-datasets,SuperKogito の記述。出典不明; beat/license_spdx/02 に置き換え
 dusha,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,303963,see evidence,160366,measured,recipes.n_total (dusha),レシピは長さ・ラベルで絞るため一致しないのが普通
 emodb,hours_reported,superseded,1.25,primary,0.7,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,emodb/hours_reported/02 に置き換え
 emodb,license_spdx,conflicting,conflicting,project_doc,CC-BY-4.0,project_doc,corpus_metadata.md,
 emodb,license_spdx,conflicting,conflicting,project_doc,CC0-1.0,primary,https://audeering.github.io/datasets/datasets/emodb.html,
 emodb,license_spdx,superseded,conflicting,project_doc,CC-BY-4.0,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: CC BY 4.0; 資料間の食い違いのため conflicting に置き換え
 emodb,n_utt_reported,superseded,816,project_doc,535,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,emodb/n_utt_reported/02 に置き換え
+emotiontts_open_db,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,6000,see evidence,300,measured,n_files_release_measured,
 emovdb,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7000,see evidence,6893,measured,recipes.n_total (emovdb),レシピは長さ・ラベルで絞るため一致しないのが普通
 emovo,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; emovo/license_spdx/02 に置き換え
 enterface05,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1166,see evidence,1293,measured,n_files_release_measured,
@@ -32,6 +35,7 @@ pavoque,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7334,see ev
 quechua,n_speakers_reported,superseded,6,project_doc,7,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,quechua/n_speakers_reported/02 に置き換え
 resd,n_speakers_reported,superseded,20,primary,200,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,resd/n_speakers_reported/02 に置き換え
 shemo,recording_context,superseded,other,primary,acted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Acted; shemo/recording_context/02 に置き換え
+syntact,license_spdx,superseded,CC-BY-4.0,primary,CC-BY-SA-4.0,secondary,https://github.com/SuperKogito/SER-datasets,syntact/license_spdx/02 に置き換え
 thorsten,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,2400,see evidence,2399,measured,n_files_release_measured,
 thorsten,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,2400,see evidence,2399,measured,recipes.n_total (thorsten),レシピは長さ・ラベルで絞るため一致しないのが普通
 turevdb,license_spdx,conflicting,conflicting,project_doc,CC-BY-NC-ND-4.0,primary,https://github.com/Xeonen/TurEV-DB,
