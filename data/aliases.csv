@@ -3,6 +3,13 @@ aesdd,AESDD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,lin
 aesdd,Acted Emotional Speech Dynamic Database (AESDD),official_name,new_corpora/08_aesdd_report.md,
 aesdd,aesdd,recipe_dir,egs3/aesdd/cls/dataset/config.yaml (branch ser/cross-corpus),
 afew,AFEW,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 4
+aihub_263,AIHub 263,other_source_name,https://www.aihub.or.kr/aihubdata/data/view.do?dataSetSn=263,
+aihub_271,AIHub 271,other_source_name,https://www.aihub.or.kr/aihubdata/data/view.do?dataSetSn=271,
+aihub_286,AIHub 286,other_source_name,https://www.aihub.or.kr/aihubdata/data/view.do?dataSetSn=286,
+aihub_466,AIHub 466,other_source_name,https://www.aihub.or.kr/aihubdata/data/view.do?dataSetSn=466,
+aihub_637,AIHub 637,other_source_name,https://www.aihub.or.kr/aihubdata/data/view.do?dataSetSn=637,
+aihub_71631,AIHub 71631,other_source_name,https://www.aihub.or.kr/aihubdata/data/view.do?dataSetSn=71631,
+aihub_71632,AIHub 71632,other_source_name,https://www.aihub.or.kr/aihubdata/data/view.do?dataSetSn=71632,
 albemo,AlbEmo,official_name,new_corpora/11_albemo_report.md,
 albemo,albemo,recipe_dir,egs3/albemo/cls/dataset/config.yaml (branch ser/cross-corpus),
 amigos,AMIGOS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 5
@@ -50,6 +57,7 @@ cmumoseas,MOSEAS-WE1,other_source_name,https://github.com/CMU-MultiComp-Lab/CMU-
 cmumosei,CMU-MOSEI,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 18
 cmumosi,CMU-MOSI,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 19
 codaco_german,codaco/german-emotional-speech,other_source_name,new_corpora/99_final_report.md,
+cped,CPED,official_name,https://github.com/scutcyr/CPED,
 cremad,CREMA-D,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 20
 cremad,cremad,recipe_dir,egs3/cremad/cls/dataset/config.yaml (branch ser/cross-corpus),
 crowdsourcing_smith2018,Crowdsourcing Emotional Speech,other_source_name,https://arxiv.org/html/2509.09791v1,
@@ -85,6 +93,7 @@ emota,EmoTa,other_source_name,new_corpora/99_final_report.md,
 emotale,EmoTale,official_name,https://github.com/snehadas/EmoTale,
 emotion_origlia2010,€motion,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 2
 emotional_ema,Emotional EMA,other_source_name,new_corpora/99_final_report.md,
+emotiontalk,EmotionTalk,official_name,https://arxiv.org/abs/2505.23018,
 emotiontts_open_db,emotiontts_open_db,other_source_name,https://github.com/emotiontts/emotiontts_open_db,
 emouerj_sed,emouerj-sed,other_source_name,new_corpora/99_final_report.md,
 emovdb,EmoV-DB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 31
@@ -144,6 +153,8 @@ kazemotts,kazemotts,recipe_dir,egs3/kazemotts/cls/dataset/config.yaml (branch se
 kbes,KBES,official_name,new_corpora/35_kbes_report.md,
 kbes,kbes,recipe_dir,egs3/kbes/cls/dataset/config.yaml (branch ser/cross-corpus),
 keioesd,Keio-ESD,official_name,http://research.nii.ac.jp/src/en/Keio-ESD.html,
+kemdy19,KEMDy19,short_name,https://nanum.etri.re.kr/share/kjnoh2/KEMDy19?lang=En_us,
+kemdy20,KEMDy20,short_name,https://nanum.etri.re.kr/share/kjnoh2/KEMDy20?lang=En_us,
 kemocon,K-EmoCon,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 43
 kite,KITE,other_source_name,new_corpora/99_final_report.md,
 ksuemotions,KSUEmotions,other_source_name,new_corpora/99_final_report.md,
@@ -160,18 +171,21 @@ mav,MAV,short_name,https://zenodo.org/records/17036776,
 mavesdb,MAVES DB,other_source_name,new_corpora/99_final_report.md,
 mcaespps,MCAE-SPPS,official_name,new_corpora/19_mcaespps_report.md,
 mcaespps,mcaespps,recipe_dir,egs3/mcaespps/cls/dataset/config.yaml (branch ser/cross-corpus),
+mceiu,MC-EIU,official_name,https://arxiv.org/abs/2407.02751,
 mderma,MDER-MA,official_name,new_corpora/31_mderma_report.md,
 mderma,mderma,recipe_dir,egs3/mderma/cls/dataset/config.yaml (branch ser/cross-corpus),
 mead,MEAD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 49
 meghana007_tamil,meghana-007 tamil,other_source_name,new_corpora/99_final_report.md,
 meld,MELD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 50
 meld,meld,recipe_dir,egs3/meld/cls/dataset/config.yaml (branch ser/cross-corpus),
+memor,MEmoR,official_name,https://dl.acm.org/doi/10.1145/3394171.3413909,
 mer2023,MER2023,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 51
 mer2025,MER2025,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 52
 mer2026,MER2026,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 53
 mesd,MESD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 54
 mesd,Mexican Emotional Speech Database (MESD),official_name,new_corpora/02_mesd_report.md,
 mesd,mesd,recipe_dir,egs3/mesd/cls/dataset/config.yaml (branch ser/cross-corpus),
+mesp,MES-P,official_name,https://arxiv.org/abs/1808.10095,
 mess,MESS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 55
 mess,Morgan Emotional Speech Set (MESS),official_name,new_corpora/13_mess_report.md,
 mess,mess,recipe_dir,egs3/mess/cls/dataset/config.yaml (branch ser/cross-corpus),
@@ -183,6 +197,7 @@ mspimprov,MSP-IMPROV,sheet_name,sheet_import/2026-10-12_ser_database_SER_Dataset
 msppodcast,MSP-PODCAST 2.0,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
 msppodcast,MSP-Podcast,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 58
 msppodcast,msppodcast,recipe_dir,egs3/msppodcast/cls/dataset/config.yaml (branch ser/cross-corpus),
+multidialog,MultiDialog,official_name,https://huggingface.co/datasets/IVLLab/MultiDialog,
 musecar,MuSe-CaR,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 59
 narrative_dialogue,Narrative Dialogue Dataset,other_source_name,new_corpora/99_final_report.md,
 naturalvoices,NaturalVoices,official_name,https://arxiv.org/abs/2511.00256,
@@ -225,6 +240,8 @@ sewa,SEWA,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 
 shemo,ShEMO,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 75
 shemo,Sharif Emotional Speech Database (ShEMO),official_name,new_corpora/06_shemo_report.md,
 shemo,shemo,recipe_dir,egs3/shemo/cls/dataset/config.yaml (branch ser/cross-corpus),
+spanish_meacorpus,MEACorpus,short_name,https://github.com/NLP-UMUTeam/Spanish-MEACorpus-2023,
+spanish_meacorpus,Spanish-MEACorpus-2023,other_source_name,https://github.com/NLP-UMUTeam/Spanish-MEACorpus-2023,
 speechcraft,SpeechCraft,official_name,https://github.com/thuhcsi/SpeechCraft,
 studies,STUDIES,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 76
 subesco,SUBESCO,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 77

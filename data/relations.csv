@@ -5,6 +5,7 @@ expressivespeech,contains,expresso,https://huggingface.co/datasets/FreedomIntell
 expressivespeech,contains,iemocap,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,同上
 expressivespeech,contains,m3ed,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,同上
 interface,distinct_from,enterface05,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シートのNotesが『Distinct from eNTERFACE'05』と記す
+mmeld,version_of,meld,https://arxiv.org/abs/2203.16799,MELD の発話のテキストを4言語に訳したもの
 nemo,distinct_from,polishemo,new_corpora/16_polishemo_report.md,どちらもポーランド語の感情音声だが別のコーパス(polishemo の注記)
 nonverbaltts,contains,expresso,https://huggingface.co/datasets/deepvk/NonverbalTTS,Expresso の音声の一部を含む(カード: derived from VoxCeleb and Expresso)
 textrolspeech,contains,esd,https://arxiv.org/abs/2308.14430,論文 §2
