@@ -77,6 +77,8 @@ mikuemobench,n_utt_reported,superseded,89428,primary,65970,primary,https://arxiv
 msppodcast,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,264705,see evidence,207223,measured,recipes.n_total (msppodcast),レシピは長さ・ラベルで絞るため一致しないのが普通
 musecar,access_method,superseded,signed_agreement,primary,request_form_or_email,primary,https://zenodo.org/records/4651164,EULA の要否は未確認; musecar/access_method/02 に置き換え
 musecar,hours_reported,superseded,36,primary,36.87,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,musecar/hours_reported/02 に置き換え
+narrative_dialogue,espnet_status,superseded,excluded,measured,deferred,project_doc,new_corpora/99_final_report.md,narrative_dialogue/espnet_status/02 に置き換え
+narrative_dialogue,status_reason_codes,superseded,text_only;labels_automatic,primary,unexamined,project_doc,new_corpora/99_final_report.md,narrative_dialogue/status_reason_codes/02 に置き換え
 ogvc,status_reason_codes,superseded,access_signed_agreement,primary,access_request_form_or_email,project_doc,nc_candidates_20261010.md,ogvc/status_reason_codes/03 に置き換え
 pavoque,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,7334,see evidence,5442,measured,n_files_release_measured,
 pavoque,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7334,see evidence,5442,measured,recipes.n_total (pavoque),レシピは長さ・ラベルで絞るため一致しないのが普通
