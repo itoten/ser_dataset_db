@@ -67,12 +67,26 @@
 - `validate.py` は、形式・型と選択肢・キーと外部キー・別名の重複・根拠の規則・実装状態と egs3 の一致・`recipes.csv` / `recipe_labels.csv` と `measurements/*.json` の一致・`views/` が最新かを検査する。`measurements/` と手元の出力(`~/data/...`)が今も一致するかは検査しない。
 - 値を変えるときは必ず根拠行を足す。1データセットまたは1回の確認作業ごとに1コミットとし、メッセージには何が問題だったかと根拠を書く。
 
-## 現状(2026-10-12)
+## 何を1行にするか
 
-137データセット(シート由来84・シート外53)。`implemented` 53、`excluded` 81、`candidate` 1(`whiser`)、`needs_decision` 1(`casia`)、`deferred` 1(`narrative_dialogue`)。MSP-Podcast 論文(arXiv 2509.09791v1)の Table I の28コーパスは全て含む。除外のうち、シートが「申請制」と記すだけで個別には確認していないものは `status_reason_codes` が `access_*` で `status_note` に「個別には確認していない」とある。
+- 1行は元の(最初に公開した)データセット。HF・Kaggle などの単なる再アップロードは行にせず、元の行の `aliases` に入れる。元と中身が変わるもの(組み直し・部分集合・別ラベル)は別の行にし、`relations` で元とつなぐ。
+- 感情ラベルがあれば TTS 用のコーパスも含める。音声のないもの(テキストだけ・特徴量だけ)も、調べた結果を残すために `excluded` で載せる。
+- 同じものが2行あると分かったら、片方を `excluded`(`duplicate_entry`)にして `relations` の `possibly_same_as` でつなぐ。ID は消さない。
+
+## 現状(2026-10-14)
+
+295データセット(シート由来84・シート外211)。`implemented` 53、`candidate` 42、`deferred` 14、`needs_decision` 1(`casia`)、`excluded` 185。MSP-Podcast 論文(arXiv 2509.09791v1)の Table I の28コーパスは全て含む。
+
+- 2026-10-14 の網羅調査で、総説(SuperKogito の一覧、EmoBox、KuralHub など)と、HF・Zenodo・Kaggle・Mendeley・figshare・GitHub の検索から158件を足した。
+- `candidate` は、認証なしか同意クリックだけで音声を取れ、離散の感情ラベルがあるもの。実装するかは未検討(`unexamined`)。
+- `deferred` は論文の書誌しか確かめられず、配布の有無を決められなかったもの。
 
 既知の注意:
 
-- 実装済み35件は一次資料・実測と照合済み(S7)。それ以外のシート由来の行は、シートの記載か調査メモに基づく値が多く、一次資料で再確認していない。
-- シート外の除外候補の URL は調査時の検索結果で名前が一致したもので、今回アクセスし直してはいない。
+- 状態・ライセンス・入手方法の根拠は、ほとんどが一次資料(配布ページ・API・論文)か実測。2026-10-14 の検証で、シートや作業メモしか根拠がなかった行を配布元で確認し直した(検証で値が変わった行は `views/discrepancies.csv` で旧値と並ぶ)。
+- 一次資料で確認できていないもの:
+  - KuralHub(第三者の総説)だけが根拠の28件。`status_note` に「一次資料での入手方法の確認はしていない」とある。多くは古い論文のデータで「依頼制」とされる。
+  - 配布元が応答しないなどで確かめられなかったもの: `amigos`(2026-10-14 に HTTP 503)、`casia`(接続不可)、`cheavd`、`belfast`、`emotion_origlia2010`、`usoms`、`eyase`。
+  - `deferred` の14件。
+- 判断が要るもの(状態の付け方): 同意クリックだけの HF(`emota`・`mer2023` は `excluded`、`emotiontalk`・`mceiu`・`rasa` は `candidate`)、`expresso` の `too_large`(規模は40時間)、`legov2` の `content_insufficient`。
 - 公表値と実測値が食い違う箇所は `views/discrepancies.csv` にある。レシピは長さやラベルで絞るため、`n_utt_reported` とレシピの件数が一致しないのは普通のことが多い。
