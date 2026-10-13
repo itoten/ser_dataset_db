@@ -32,6 +32,7 @@ indianenglish,n_utt_reported vs n_files_release_measured,reported_vs_release_mea
 indianenglish,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1000,see evidence,695,measured,recipes.n_total (indianenglish),レシピは長さ・ラベルで絞るため一致しないのが普通
 inesco,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,2400,see evidence,2399,measured,n_files_release_measured,
 inesco,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,2400,see evidence,2398,measured,recipes.n_total (inesco),レシピは長さ・ラベルで絞るため一致しないのが普通
+mavesdb,status_reason_codes,superseded,access_signed_agreement,measured,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,mavesdb/status_reason_codes/02 に置き換え
 mderma,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1322,see evidence,1345,measured,n_files_release_measured,
 mderma,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1322,see evidence,1267,measured,recipes.n_total (mderma),レシピは長さ・ラベルで絞るため一致しないのが普通
 meld,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,13708,see evidence,13704,measured,recipes.n_total (meld),レシピは長さ・ラベルで絞るため一致しないのが普通

@@ -1,4 +1,6 @@
 dataset_id,alias,alias_type,source_ref,note
+aesc_assamese,Assamese Emotional Speech Corpus (AESC),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Assamese/AESC.md,
+aesd_assamese,Assamese Emotional Speech Dataset (AESD),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Assamese/AESD.md,
 aesdd,AESDD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 3
 aesdd,Acted Emotional Speech Dynamic Database (AESDD),official_name,new_corpora/08_aesdd_report.md,
 aesdd,aesdd,recipe_dir,egs3/aesdd/cls/dataset/config.yaml (branch ser/cross-corpus),
@@ -47,12 +49,14 @@ biicnnime,NNIME,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcas
 biicpodcast,BIIC-Podcast,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 12
 brytserc,BRYTSERC,official_name,https://doi.org/10.6084/m9.figshare.30218872,
 buemodb,BUEMODB,short_name,https://doi.org/10.1109/SIU.2014.6830575,
+burmese_new2001,Burmese emotional speech (New et al. 2001),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Burmese/New_et_al_2001.md,
 cafe,CaFE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 13
 cafe,Canadian French Emotional (CaFE) speech dataset,official_name,new_corpora/01_cafe_report.md,
 cafe,cafe,recipe_dir,egs3/cafe/cls/dataset/config.yaml (branch ser/cross-corpus),
 casia,CASIA,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 14
 caves,CAVES,other_source_name,new_corpora/99_final_report.md,
 caves,Cantonese Audio-Visual Emotional Speech (CAVES),other_source_name,https://www.kaggle.com/datasets/nguyenthanhlim/cantonese-audio-visual-emotional-speech-caves,Kaggle の第三者の複製
+cdse_czech,Czech Database of Speech Emotions (CDSE),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Czech/CDSE.md,
 cemo,CEMO,official_name,https://www.isca-archive.org/interspeech_2006/devillers06_interspeech.pdf,
 cheavd,CHEAVD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 17
 cheavd,CHEAVD 2.0,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
@@ -87,6 +91,7 @@ eekk,EEKK,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 
 eesc,EESC,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 25
 eesc,Eesti emotsionaalse kõne korpus,official_name,https://metashare.ut.ee/repository/browse/estonian-emotional-speech-corpus/f5e5fc91a0d311eebb4773db10791bcf07ff90a82bf541dbbb9ecf816da202fe/,エストニア語の正式名。略称 EEKK
 eesc,Estonian Emotional Speech Corpus,official_name,https://doi.org/10.6084/m9.figshare.25249744,
+eesdb_chinese,Chinese Elderly emotion database (EESDB),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Chinese/EESDB.md,
 egyptian_hf_unresolved,Egyptian Hugging Face dataset (unidentified),other_source_name,new_corpora/99_final_report.md,
 em2ldl,EM2LDL,other_source_name,new_corpora/99_final_report.md,
 emilia_emotion,Emolia,official_name,https://huggingface.co/datasets/laion/Emolia,以前の Emilia-with-Emotion-Annotations(5リポジトリ)を置き換えた名前
@@ -130,10 +135,12 @@ escorpuspe,ESCorpus-PE,other_source_name,new_corpora/99_final_report.md,
 esd,ESD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 35
 esd,Emotional Speech Dataset (ESD),official_name,new_corpora/25_esd_report.md,
 esd,esd,recipe_dir,egs3/esd/cls/dataset/config.yaml (branch ser/cross-corpus),
+esmbs,Emotional Speech of Mandarin and Burmese Speakers (ESMBS),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Burmese/ESMBS.md,
 euemotion_voice,EU-Emotion Stimulus Set,other_source_name,https://www.autismresearchcentre.com/tests/the-eu-emotion-stimulus-set/,音声を含む刺激セット全体の名前
 expresso,Expresso,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 36
 eyase,EYASE,other_source_name,new_corpora/99_final_report.md,
 fauaibo,FAU-Aibo,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 37
+filmed,Filipino Multimodal Emotion Database (FilMED),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Filipino/FilMED.md,
 galgame_speech_ser,Galgame_Speech_SER,other_source_name,new_corpora/99_final_report.md,
 gaudie,GAUDIE,official_name,https://pmc.ncbi.nlm.nih.gov/articles/PMC10991051/,
 gees,GEES,other_source_name,new_corpora/99_final_report.md,
@@ -141,20 +148,24 @@ gemep,GEMEP,short_name,https://www.unige.ch/cisa/gemep,
 gemep,GEMEP-CS,short_name,https://pubmed.ncbi.nlm.nih.gov/22081890/,Core Set
 grethe,GreThE,other_source_name,new_corpora/99_final_report.md,
 groupaffect4,GroupAffect-4,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 38
+gujarati_tank2020,Gujarati emotional speech corpus (Tank et al. 2020),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Gujarati/Tank_et_al_2020.md,
 hesd,HESD,short_name,https://zenodo.org/records/22674064,
 hikia,"Hi, KIA",official_name,new_corpora/14_hikia_report.md,
 hikia,hikia,recipe_dir,egs3/hikia/cls/dataset/config.yaml (branch ser/cross-corpus),
+hindi_bansal_dev,Hindi emotional speech (Bansal and Dev),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Hindi/BansalAndDev.md,
 hume_reaction,Hume-Reaction,official_name,https://arxiv.org/abs/2207.05691,
 humevb,ExVo 2022,other_source_name,https://arxiv.org/abs/2205.01780,
 humevb,H-VB,short_name,https://www.competitions.hume.ai/exvo2022,
 humevb,Hume-VB,short_name,https://www.competitions.hume.ai/exvo2022,
 iemocap,IEMOCAP,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 39
 iemocap,iemocap,recipe_dir,egs3/iemocap/cls/dataset/config.yaml (branch ser/cross-corpus),
+iesc,Indian Emotional Speech Corpora,official_name,https://github.com/aaivu/KuralHub/blob/main/datasets/English/IESC.md,
 iitkgp_sehsc,IITKGP-SEHSC,official_name,https://www.iieta.org/journals/ts/paper/10.18280/ts.380631,
 iitkgp_sesc,IITKGP-SESC,official_name,https://www.iieta.org/journals/ts/paper/10.18280/ts.380631,
 indemovis,IndEmoVis,short_name,https://zenodo.org/records/8255783,
 indianenglish,Indian English Speech Emotion Dataset,official_name,new_corpora/32_indianenglish_report.md,
 indianenglish,indianenglish,recipe_dir,egs3/indianenglish/cls/dataset/config.yaml (branch ser/cross-corpus),
+indonesian_fahmi2020,Indonesian emotional speech (Fahmi et al. 2020),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Indonesian/Fahmi_et_al_2020.md,
 indowavesentiment,IndoWaveSentiment,official_name,new_corpora/34_indowavesentiment_report.md,
 indowavesentiment,indowavesentiment,recipe_dir,egs3/indowavesentiment/cls/dataset/config.yaml (branch ser/cross-corpus),
 inesco,INESCO,official_name,new_corpora/37_inesco_report.md,
@@ -168,7 +179,9 @@ jtes,JTES,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 
 jvnv,JVNV,official_name,new_corpora/22_jvnv_report.md,
 jvnv,jvnv,recipe_dir,egs3/jvnv/cls/dataset/config.yaml (branch ser/cross-corpus),
 kannada,A Kannada Emotional Speech Dataset,official_name,new_corpora/12_kannada_report.md,
+kannada,Agrawal et al (2022),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Kannada/Agrawal_et_al_2022.md,KuralHub の見出し。Zenodo 6345107
 kannada,kannada,recipe_dir,egs3/kannada/cls/dataset/config.yaml (branch ser/cross-corpus),
+kannada_kes,Kannada Emotional Speech database (KES),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Kannada/KES.md,
 kasdimerbah_arabic,KEDAS,short_name,https://catalog.ldc.upenn.edu/LDC2023S10,第三者の文献での呼び名とみられる(Kasdi-merbah Emotional DAtabase in arabic Speech)。一次資料での確認はしていない
 kasdimerbah_arabic,LDC2023S10,other_source_name,https://catalog.ldc.upenn.edu/LDC2023S10,
 kazemotts,KazEmoTTS,official_name,new_corpora/24_kazemotts_report.md,
@@ -181,13 +194,16 @@ kemdy19,KEMDy19,short_name,https://nanum.etri.re.kr/share/kjnoh2/KEMDy19?lang=En
 kemdy20,KEMDy20,short_name,https://nanum.etri.re.kr/share/kjnoh2/KEMDy20?lang=En_us,
 kemocon,K-EmoCon,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 43
 kite,KITE,other_source_name,new_corpora/99_final_report.md,
+kmser,Kannur Malayalam Speech Emotion Recognition (KMSER),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Malayalam/KMSER.md,
 ksuemotions,KSUEmotions,other_source_name,new_corpora/99_final_report.md,
+kurdish_nematullah2024,Kurdish emotional speech (Nematullah et al. 2024),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Kurdish/Nematullah-et-al.md,
 ldc_emotional_prosody,LDC2002S28,other_source_name,https://catalog.ldc.upenn.edu/LDC2002S28,
 legov2,LEGOv2,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 44
 lssed,LSSED,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 45
 m3ed,M3ED,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 46
 mafw,MAFW,official_name,https://mafw-database.github.io/MAFW/,
 mahnobhci,MAHNOB-HCI,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 47
+malayalam_ann2009,Malayalam speech emotion dataset (ANN),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Malayalam/MalayalamSpeechEmotionDataset.md,
 maleo,Maleo Emotion,official_name,new_corpora/30_maleo_report.md,
 maleo,maleo,recipe_dir,egs3/maleo/cls/dataset/config.yaml (branch ser/cross-corpus),
 masc,MASC,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 48
@@ -242,6 +258,8 @@ passau_sfch,Passau-SFCH,official_name,https://arxiv.org/abs/2207.05691,
 pavoque,PAVOQUE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 64
 pavoque,pavoque,recipe_dir,egs3/pavoque/cls/dataset/config.yaml (branch ser/cross-corpus),
 persian_esd,Persian ESD,short_name,https://doi.org/10.3758/s13428-014-0467-x,
+polish_cichosz2005,Polish Emotional Database (Cichosz & Slot 2005),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Polish/Cichosz_and_Slot_2005.md,
+polish_sapinski2019,Polish multimodal emotion database (Sapinski et al. 2019),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Polish/Sapinski_et_al_2019.md,
 polishemo,Emotions in Polish speech recordings,official_name,new_corpora/16_polishemo_report.md,
 polishemo,Emotions in polish speech recordings,official_name,new_corpora/16_polishemo_report.md,
 polishemo,Polish (EmoBox),sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 65
@@ -264,6 +282,8 @@ resd,resd,recipe_dir,egs3/resd/cls/dataset/config.yaml (branch ser/cross-corpus)
 ruslana,RUSLANA,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 71
 savee,SAVEE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 72
 savee,savee,recipe_dir,egs3/savee/cls/dataset/config.yaml (branch ser/cross-corpus),
+sccesc,Slavic Call Center Emotional Speech Corpus (SCCESC),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Czech/SCCESC.md,
+secepdb,A Database for Emotional Interactions of the Elderly (SECEPDB),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Chinese/SECEPDB.md,
 semaine,SEMAINE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 73
 semour,SEMOUR,other_source_name,new_corpora/99_final_report.md,
 sewa,SEWA,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 74
@@ -286,12 +306,15 @@ switchboard_sentiment,Switchboard Sentiment,short_name,https://catalog.ldc.upenn
 syntact,SyntAct,official_name,https://aclanthology.org/2022.dclrl-1.1.pdf,
 syntact,syntact_cat,other_source_name,https://zenodo.org/records/6573016,Zenodo の題名
 talromur3,Talromur 3,other_source_name,https://huggingface.co/datasets/atlithor/talromur3_without_emotions,HF の派生版(感情情報を除きスタイル説明文を付けたもの)の表記
+tamil_ram,"Tamil emotional speech (Ram, Sunitha et al.)",other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Tamil/Ram_C_Sunitha_et_al.md,
+telugu_emotion_kaggle,Sowmith et al (2024),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Telugu/Sowmith_et_al_2024.md,KuralHub の見出し(5感情・468件とする)
 tess,TESS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 78
 tess,tess,recipe_dir,egs3/tess/cls/dataset/config.yaml (branch ser/cross-corpus),
 textrolspeech,TextrolSpeech,official_name,https://github.com/jishengpeng/TextrolSpeech,
 textrolspeech,VccmDataset,other_source_name,https://arxiv.org/abs/2406.01205,ControlSpeech の論文での呼び名。Hours・話者数が同じ
 thaiser,THAI-SER,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
 thaiser,Thai SER,official_name,new_corpora/26_thaiser_report.md,
+thaiser,Thai_Speech_Emotion_Dataset,other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Thai/Thai_Speech_Emotion_Dataset.md,KuralHub の見出し
 thaiser,thaiser,recipe_dir,egs3/thaiser/cls/dataset/config.yaml (branch ser/cross-corpus),
 thanushs25_tamil,Thanushs25 tamil,other_source_name,new_corpora/99_final_report.md,
 thorsten,Thorsten-Emotional,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 79
@@ -299,6 +322,7 @@ thorsten,thorsten,recipe_dir,egs3/thorsten/cls/dataset/config.yaml (branch ser/c
 tumavic,AVIC,short_name,https://www.isca-archive.org/interspeech_2010/schuller10b_interspeech.pdf,
 tumavic,Audiovisual Interest Corpus,official_name,https://www.isca-archive.org/interspeech_2010/schuller10b_interspeech.pdf,
 tumavic,TUM AVIC,short_name,https://www.isca-archive.org/interspeech_2010/schuller10b_interspeech.pdf,
+tures,Oflazoglu et al (2011),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Turkish/Oflazoglu_et_al_2011.md,"KuralHub の見出し(55本の映画・5,304件とする)"
 tures,TurES,short_name,https://www.researchgate.net/publication/252012056_Turkish_emotional_speech_database,
 turevdb,TurEV-DB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 80
 turevdb,Turkish Emotion Voice Database (TurEV-DB),official_name,new_corpora/15_turevdb_report.md,
@@ -311,6 +335,7 @@ urdu,urdu,recipe_dir,egs3/urdu/cls/dataset/config.yaml (branch ser/cross-corpus)
 urduser,UrduSER,official_name,new_corpora/33_urduser_report.md,
 urduser,urduser,recipe_dir,egs3/urduser/cls/dataset/config.yaml (branch ser/cross-corpus),
 urdusindhi_zenodo3685274,Urdu-Sindhi (Zenodo 3685274),other_source_name,new_corpora/99_final_report.md,
+urdusindhi_zenodo3685274,Urdu-Sindhi Speech Emotion Corpus (Syed et al 2020),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Sindhi/Syed_et_al_2020.md,KuralHub の見出し
 usc_emo_mri,USC-EMO-MRI,official_name,https://zenodo.org/records/19325044,
 usoms,USoMS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 82
 utemo,UTeMo,official_name,https://data.mendeley.com/datasets/x5rmd28h73,
