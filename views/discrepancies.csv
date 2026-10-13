@@ -19,6 +19,7 @@ eekk,status_reason_codes,superseded,duplicate_entry,primary,access_no_direct_dow
 eesc,espnet_status,superseded,candidate,measured,excluded,project_doc,new_corpora/99_final_report.md,eesc/espnet_status/03 に置き換え
 eesc,recording_context,superseded,read_speech,primary,acted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Acted; eesc/recording_context/02 に置き換え
 eesc,status_reason_codes,superseded,unexamined,project_doc,access_no_direct_download,project_doc,new_corpora/99_final_report.md,eesc/status_reason_codes/03 に置き換え
+em2ldl,status_reason_codes,superseded,access_signed_agreement,primary,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,em2ldl/status_reason_codes/02 に置き換え
 emilia_emotion,license_spdx,superseded,CC-BY-4.0,primary,none_stated,primary,https://huggingface.co/datasets/laion/Emilia-with-Emotion-Annotations,emilia_emotion/license_spdx/02 に置き換え
 emodb,hours_reported,superseded,1.25,primary,0.7,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,emodb/hours_reported/02 に置き換え
 emodb,license_spdx,conflicting,conflicting,project_doc,CC-BY-4.0,project_doc,corpus_metadata.md,
@@ -33,6 +34,7 @@ emotional_ema,status_reason_codes,superseded,unexamined,project_doc,host_unreach
 emotiontts_open_db,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,6000,see evidence,300,measured,n_files_release_measured,
 emovdb,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7000,see evidence,6893,measured,recipes.n_total (emovdb),レシピは長さ・ラベルで絞るため一致しないのが普通
 emovo,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; emovo/license_spdx/02 に置き換え
+emovome,status_reason_codes,superseded,access_signed_agreement,primary,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,emovome/status_reason_codes/02 に置き換え
 enterface05,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1166,see evidence,1293,measured,n_files_release_measured,
 enterface05,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1166,see evidence,1260,measured,recipes.n_total (enterface05),レシピは長さ・ラベルで絞るため一致しないのが普通
 iemocap,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,10039,see evidence,5571,measured,recipes.n_total (iemocap),レシピは長さ・ラベルで絞るため一致しないのが普通
@@ -41,9 +43,12 @@ indianenglish,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1000,
 inesco,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,2400,see evidence,2399,measured,n_files_release_measured,
 inesco,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,2400,see evidence,2398,measured,recipes.n_total (inesco),レシピは長さ・ラベルで絞るため一致しないのが普通
 kemocon,dimensional_attributes,superseded,arousal;valence,primary,valence;arousal,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,"シート原文: valence, arousal; kemocon/dimensional_attributes/02 に置き換え"
+m3ed,labels_discrete_reported,superseded,happy;neutral;sad;disgust;anger;fear;surprise,primary,anger;disgust;fear;happiness;sadness;surprise;neutral,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,"シート原文: anger, disgust, fear, happiness, sadness, surprise, neutral; m3ed/labels_discrete_reported/02 に置き換え"
+m3ed,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; m3ed/license_spdx/02 に置き換え
 mavesdb,status_reason_codes,superseded,access_signed_agreement,measured,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,mavesdb/status_reason_codes/02 に置き換え
 mderma,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1322,see evidence,1345,measured,n_files_release_measured,
 mderma,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1322,see evidence,1267,measured,recipes.n_total (mderma),レシピは長さ・ラベルで絞るため一致しないのが普通
+mead,license_spdx,superseded,unknown,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; mead/license_spdx/02 に置き換え
 meld,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,13708,see evidence,13704,measured,recipes.n_total (meld),レシピは長さ・ラベルで絞るため一致しないのが普通
 mer2023,license_spdx,superseded,CC-BY-NC-4.0,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; mer2023/license_spdx/02 に置き換え
 mer2026,status_reason_codes,superseded,access_request_form_or_email,primary,access_gated,project_doc,nc_candidates_20261010.md,mer2026/status_reason_codes/03 に置き換え
