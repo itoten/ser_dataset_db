@@ -11,8 +11,16 @@ baum1,status_reason_codes,superseded,access_request_form_or_email,primary,access
 baum2,status_reason_codes,superseded,access_request_form_or_email,primary,not_distributable,project_doc,new_corpora/99_final_report.md,baum2/status_reason_codes/02 に置き換え
 beat,license_spdx,superseded,Apache-2.0,primary,LicenseRef-other,secondary,https://github.com/SuperKogito/SER-datasets,SuperKogito の記述。出典不明; beat/license_spdx/02 に置き換え
 berst,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,4526,see evidence,4523,measured,n_files_release_measured,
+biicpodcast,license_spdx,superseded,LicenseRef-custom-research-only,primary,LicenseRef-proprietary-restricted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Proprietary/Restricted; biicpodcast/license_spdx/02 に置き換え
+biicpodcast,status_reason_codes,superseded,access_signed_agreement,primary,not_individually_checked,project_doc,nc_candidates_20261010.md,biicpodcast/status_reason_codes/03 に置き換え
 caves,status_reason_codes,superseded,access_request_form_or_email,primary,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,caves/status_reason_codes/02 に置き換え
 cbesd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,4320,see evidence,4204,measured,n_files_release_measured,
+chsims,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; chsims/license_spdx/02 に置き換え
+chsims,status_reason_codes,superseded,labels_not_discrete_emotion,primary,not_individually_checked,project_doc,nc_candidates_20261010.md,chsims/status_reason_codes/03 に置き換え
+chsims2,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; chsims2/license_spdx/02 に置き換え
+chsims2,status_reason_codes,superseded,labels_not_discrete_emotion,primary,not_individually_checked,project_doc,nc_candidates_20261010.md,chsims2/status_reason_codes/03 に置き換え
+cmumosei,license_spdx,superseded,unknown,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; cmumosei/license_spdx/02 に置き換え
+cmumosi,status_reason_codes,superseded,labels_not_discrete_emotion;no_raw_audio_features_only,primary,labels_not_discrete_emotion,project_doc,nc_candidates_20261010.md,cmumosi/status_reason_codes/03 に置き換え
 codaco_german,status_reason_codes,superseded,text_only,measured,content_insufficient;redistribution_of_existing_corpus,project_doc,new_corpora/99_final_report.md,codaco_german/status_reason_codes/02 に置き換え
 demos,recording_context,superseded,affect_elicitation,primary,acted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Acted; demos/recording_context/02 に置き換え
 dusha,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,303963,see evidence,160366,measured,recipes.n_total (dusha),レシピは長さ・ラベルで絞るため一致しないのが普通
@@ -31,10 +39,12 @@ emodb,n_utt_reported,superseded,816,project_doc,535,sheet,sheet_import/2026-10-1
 emofilm,access_method,superseded,signed_agreement,primary,request_form_or_email,project_doc,nc_candidates_20261010.md,emofilm/access_method/02 に置き換え
 emofilm,languages,superseded,eng;ita;spa,primary,mul,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Multilingual; emofilm/languages/02 に置き換え
 emofilm,status_reason_codes,superseded,access_signed_agreement,primary,access_request_form_or_email,project_doc,nc_candidates_20261010.md,emofilm/status_reason_codes/03 に置き換え
+emomatchspanishdb,status_reason_codes,superseded,access_signed_agreement,primary,no_raw_audio_features_only,project_doc,nc_candidates_20261010.md,emomatchspanishdb/status_reason_codes/03 に置き換え
 emoreact,status_reason_codes,superseded,access_request_form_or_email,primary,not_distributable,project_doc,new_corpora/99_final_report.md,emoreact/status_reason_codes/02 に置き換え
 emotional_ema,espnet_status,superseded,candidate,primary,excluded,project_doc,new_corpora/99_final_report.md,emotional_ema/espnet_status/02 に置き換え
 emotional_ema,status_reason_codes,superseded,unexamined,project_doc,host_unreachable,project_doc,new_corpora/99_final_report.md,emotional_ema/status_reason_codes/02 に置き換え
 emotiontts_open_db,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,6000,see evidence,300,measured,n_files_release_measured,
+emouerj_sed,status_reason_codes,superseded,redistribution_of_existing_corpus,primary,content_insufficient,project_doc,new_corpora/99_final_report.md,emouerj_sed/status_reason_codes/02 に置き換え
 emovdb,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7000,see evidence,6893,measured,recipes.n_total (emovdb),レシピは長さ・ラベルで絞るため一致しないのが普通
 emovo,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; emovo/license_spdx/02 に置き換え
 emovome,status_reason_codes,superseded,access_signed_agreement,primary,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,emovome/status_reason_codes/02 に置き換え
@@ -45,9 +55,11 @@ indianenglish,n_utt_reported vs n_files_release_measured,reported_vs_release_mea
 indianenglish,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1000,see evidence,695,measured,recipes.n_total (indianenglish),レシピは長さ・ラベルで絞るため一致しないのが普通
 inesco,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,2400,see evidence,2399,measured,n_files_release_measured,
 inesco,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,2400,see evidence,2398,measured,recipes.n_total (inesco),レシピは長さ・ラベルで絞るため一致しないのが普通
+jtes,status_reason_codes,superseded,access_request_form_or_email,primary,not_individually_checked,project_doc,nc_candidates_20261010.md,jtes/status_reason_codes/03 に置き換え
 kemocon,dimensional_attributes,superseded,arousal;valence,primary,valence;arousal,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,"シート原文: valence, arousal; kemocon/dimensional_attributes/02 に置き換え"
 m3ed,labels_discrete_reported,superseded,happy;neutral;sad;disgust;anger;fear;surprise,primary,anger;disgust;fear;happiness;sadness;surprise;neutral,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,"シート原文: anger, disgust, fear, happiness, sadness, surprise, neutral; m3ed/labels_discrete_reported/02 に置き換え"
 m3ed,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; m3ed/license_spdx/02 に置き換え
+mahnobhci,status_reason_codes,superseded,host_unreachable,measured,not_individually_checked,project_doc,nc_candidates_20261010.md,mahnobhci/status_reason_codes/03 に置き換え
 mavesdb,status_reason_codes,superseded,access_signed_agreement,measured,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,mavesdb/status_reason_codes/02 に置き換え
 mderma,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1322,see evidence,1345,measured,n_files_release_measured,
 mderma,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1322,see evidence,1267,measured,recipes.n_total (mderma),レシピは長さ・ラベルで絞るため一致しないのが普通
@@ -60,14 +72,18 @@ mesd,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,864,see eviden
 mikuemobench,hours_reported,superseded,160,primary,131.2,primary,https://arxiv.org/abs/2505.15772,mikuemobench/hours_reported/02 に置き換え(新しい版)
 mikuemobench,n_utt_reported,superseded,89428,primary,65970,primary,https://arxiv.org/abs/2505.15772,mikuemobench/n_utt_reported/02 に置き換え(新しい版)
 msppodcast,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,264705,see evidence,207223,measured,recipes.n_total (msppodcast),レシピは長さ・ラベルで絞るため一致しないのが普通
+musecar,access_method,superseded,signed_agreement,primary,request_form_or_email,primary,https://zenodo.org/records/4651164,EULA の要否は未確認; musecar/access_method/02 に置き換え
 musecar,hours_reported,superseded,36,primary,36.87,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,musecar/hours_reported/02 に置き換え
 ogvc,status_reason_codes,superseded,access_signed_agreement,primary,access_request_form_or_email,project_doc,nc_candidates_20261010.md,ogvc/status_reason_codes/03 に置き換え
 pavoque,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,7334,see evidence,5442,measured,n_files_release_measured,
 pavoque,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7334,see evidence,5442,measured,recipes.n_total (pavoque),レシピは長さ・ラベルで絞るため一致しないのが普通
+prahalabs_malayalam,status_reason_codes,superseded,redistribution_of_existing_corpus,measured,synthetic_or_tts,project_doc,new_corpora/99_final_report.md,prahalabs_malayalam/status_reason_codes/02 に置き換え
 quechua,n_speakers_reported,superseded,6,project_doc,7,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,quechua/n_speakers_reported/02 に置き換え
 resd,n_speakers_reported,superseded,20,primary,200,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,resd/n_speakers_reported/02 に置き換え
 rml_emotion,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,500,see evidence,720,measured,n_files_release_measured,
+semaine,status_reason_codes,superseded,host_unreachable,measured,not_individually_checked,project_doc,nc_candidates_20261010.md,semaine/status_reason_codes/03 に置き換え
 semour,status_reason_codes,superseded,host_unreachable,measured,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,semour/status_reason_codes/02 に置き換え
+sewa,status_reason_codes,superseded,host_unreachable,measured,not_individually_checked,project_doc,nc_candidates_20261010.md,sewa/status_reason_codes/03 に置き換え
 shemo,recording_context,superseded,other,primary,acted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Acted; shemo/recording_context/02 に置き換え
 studies,status_reason_codes,superseded,access_signed_agreement,primary,access_request_form_or_email;access_signed_agreement,project_doc,nc_candidates_20261010.md,studies/status_reason_codes/03 に置き換え
 syntact,license_spdx,superseded,CC-BY-4.0,primary,CC-BY-SA-4.0,secondary,https://github.com/SuperKogito/SER-datasets,syntact/license_spdx/02 に置き換え

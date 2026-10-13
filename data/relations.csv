@@ -4,6 +4,7 @@ eekk,possibly_same_as,eesc,https://metashare.ut.ee/repository/browse/estonian-em
 emosec,contains,esd,https://zenodo.org/records/10948423,ESD の音声へのキャプション
 emosec,contains,iemocap,https://zenodo.org/records/10948423,IEMOCAP の音声へのキャプション
 emotale,distinct_from,des,https://arxiv.org/abs/2508.14548,どちらもデンマーク語。DES(1997)は別のコーパス
+emouerj_sed,version_of,emouerj,https://huggingface.co/datasets/AdeoyeLadele/emouerj-sed,カード: adapted from emoUERJ for the Speech Emotion Diarization Task
 expressivespeech,contains,expresso,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,"カード: curated from Expresso, NCSSD, M3ED, MultiDialog, IEMOCAP"
 expressivespeech,contains,iemocap,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,同上
 expressivespeech,contains,m3ed,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,同上
@@ -17,6 +18,7 @@ mmeld,version_of,meld,https://arxiv.org/abs/2203.16799,MELD の発話のテキ�
 nemo,distinct_from,polishemo,new_corpora/16_polishemo_report.md,どちらもポーランド語の感情音声だが別のコーパス(polishemo の注記)
 nonverbaltts,contains,expresso,https://huggingface.co/datasets/deepvk/NonverbalTTS,Expresso の音声の一部を含む(カード: derived from VoxCeleb and Expresso)
 persian_esd,distinct_from,esd,https://doi.org/10.3758/s13428-014-0467-x,名前が似ているが、中英の ESD(HLT Singapore)とは別物
+prahalabs_malayalam,subset_of,rasa,https://huggingface.co/datasets/Praha-Labs/malayalam-emotion-balanced,行の wav_path が rasa_hf/data/Malayalam を指す(2026-10-14 に先頭行で確認)。全件の照合はしていない
 ses_ed,distinct_from,ses_sd,https://www.kaggle.com/datasets/angeluxarmenta/ses-ed,同じ53人の学生による英語版。SES-SD はスペイン語版
 textrolspeech,contains,esd,https://arxiv.org/abs/2308.14430,論文 §2
 textrolspeech,contains,mead,https://arxiv.org/abs/2308.14430,論文 §2
