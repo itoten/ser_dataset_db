@@ -1,33 +1,105 @@
 dataset_id,field,kind,datasets_value,datasets_source_type,other_value,other_source_type,other_source_ref,note
+aesc_assamese,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Assamese/AESC.md,一次資料は未確認; aesc_assamese/espnet_status/02 に置き換え
+aesc_assamese,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Assamese/AESC.md,一次資料は未確認; aesc_assamese/status_reason_codes/02 に置き換え
+aesd_assamese,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Assamese/AESD.md,一次資料は未確認; aesd_assamese/espnet_status/02 に置き換え
+aesd_assamese,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Assamese/AESD.md,一次資料は未確認; aesd_assamese/status_reason_codes/02 に置き換え
 aesdd,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,5,see evidence,6,measured,n_speakers_measured,
 aesdd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,604,see evidence,605,measured,n_files_release_measured,
+afew,espnet_status,superseded,candidate,user,excluded,primary,https://users.cecs.anu.edu.au/~few_group/AFEW.html,afew/espnet_status/04 に置き換え
+afew,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,afew/espnet_status/03 に置き換え
+afew,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://users.cecs.anu.edu.au/~few_group/AFEW.html,afew/status_reason_codes/04 に置き換え
+afew,status_reason_codes,superseded,unexamined,user,access_signed_agreement,project_doc,nc_candidates_20261010.md,afew/status_reason_codes/03 に置き換え
+affectspeech,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/jeremychee4/AffectSpeech,affectspeech/espnet_status/02 に置き換え
+affectspeech,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://github.com/jeremychee4/AffectSpeech,affectspeech/status_reason_codes/02 に置き換え
+afrikaans_se,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Afrikaans/AfrikaansSE.md,一次資料は未確認; afrikaans_se/espnet_status/02 に置き換え
+afrikaans_se,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Afrikaans/AfrikaansSE.md,一次資料は未確認; afrikaans_se/status_reason_codes/02 に置き換え
+amigos,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,amigos/espnet_status/03 に置き換え
+amigos,status_reason_codes,superseded,unexamined,user,access_signed_agreement,project_doc,nc_candidates_20261010.md,amigos/status_reason_codes/03 に置き換え
 anad,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1384,see evidence,1428,measured,n_files_release_measured,
 asvpesd,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,131,see evidence,76,measured,n_speakers_measured,
 asvpesd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,7812,see evidence,9092,measured,n_files_release_measured,
 asvpesd,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7812,see evidence,3241,measured,recipes.n_total (asvpesd),レシピは長さ・ラベルで絞るため一致しないのが普通
-audiospeechsentiment,status_reason_codes,superseded,labels_not_discrete_emotion;provenance_unclear,measured,account_required;labels_not_discrete_emotion,primary,https://www.kaggle.com/datasets/imsparsh/audio-speech-sentiment,audiospeechsentiment/status_reason_codes/04 に置き換え
-audiospeechsentiment,status_reason_codes,superseded,labels_not_discrete_emotion;provenance_unclear,measured,account_required;labels_not_discrete_emotion,project_doc,nc_candidates_20261010.md,audiospeechsentiment/status_reason_codes/03 に置き換え
+atthack,espnet_status,superseded,candidate,user,excluded,primary,https://www.openslr.org/88/,atthack/espnet_status/02 に置き換え
+atthack,status_reason_codes,superseded,unexamined,user,labels_style_not_emotion,primary,https://www.openslr.org/88/,atthack/status_reason_codes/02 に置き換え
+audiospeechsentiment,espnet_status,superseded,candidate,user,excluded,primary,https://www.kaggle.com/datasets/imsparsh/audio-speech-sentiment,audiospeechsentiment/espnet_status/04 に置き換え
+audiospeechsentiment,espnet_status,superseded,candidate,user,excluded,measured,https://www.kaggle.com/datasets/imsparsh/audio-speech-sentiment,audiospeechsentiment/espnet_status/05 に置き換え
+audiospeechsentiment,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,audiospeechsentiment/espnet_status/03 に置き換え
+audiospeechsentiment,status_reason_codes,superseded,unexamined,user,account_required;labels_not_discrete_emotion,primary,https://www.kaggle.com/datasets/imsparsh/audio-speech-sentiment,audiospeechsentiment/status_reason_codes/04 に置き換え
+audiospeechsentiment,status_reason_codes,superseded,unexamined,user,account_required;labels_not_discrete_emotion,project_doc,nc_candidates_20261010.md,audiospeechsentiment/status_reason_codes/03 に置き換え
+audiospeechsentiment,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion;provenance_unclear,measured,https://www.kaggle.com/datasets/imsparsh/audio-speech-sentiment,audiospeechsentiment/status_reason_codes/05 に置き換え
+basis_global_emotions,espnet_status,superseded,candidate,user,excluded,primary,https://huggingface.co/api/datasets/basis-ai/basis-global-emotions,basis_global_emotions/espnet_status/02 に置き換え
+basis_global_emotions,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://huggingface.co/api/datasets/basis-ai/basis-global-emotions,basis_global_emotions/status_reason_codes/02 に置き換え
+baum1,espnet_status,superseded,candidate,user,excluded,primary,https://archive.ics.uci.edu/api/dataset?id=473,baum1/espnet_status/04 に置き換え
+baum1,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,baum1/espnet_status/03 に置き換え
 baum1,license_spdx,conflicting,conflicting,project_doc,CC-BY-4.0,primary,https://archive.ics.uci.edu/dataset/473/baum+1,
 baum1,license_spdx,conflicting,conflicting,project_doc,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; 申請時の利用条件は非商用(シート注記)。UCI の CC BY 4.0 と食い違う
-baum1,status_reason_codes,superseded,access_request_form_or_email,primary,access_request_form_or_email;not_distributable,project_doc,nc_candidates_20261010.md,baum1/status_reason_codes/03 に置き換え
-baum2,status_reason_codes,superseded,access_request_form_or_email,primary,not_distributable,project_doc,new_corpora/99_final_report.md,baum2/status_reason_codes/02 に置き換え
+baum1,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://archive.ics.uci.edu/api/dataset?id=473,以前の not_distributable は不正確; baum1/status_reason_codes/04 に置き換え
+baum1,status_reason_codes,superseded,unexamined,user,access_request_form_or_email;not_distributable,project_doc,nc_candidates_20261010.md,baum1/status_reason_codes/03 に置き換え
+baum2,espnet_status,superseded,candidate,user,excluded,primary,https://archive.ics.uci.edu/api/dataset?id=474,baum2/espnet_status/03 に置き換え
+baum2,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,baum2/espnet_status/02 に置き換え
+baum2,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://archive.ics.uci.edu/api/dataset?id=474,以前の not_distributable は不正確; baum2/status_reason_codes/03 に置き換え
+baum2,status_reason_codes,superseded,unexamined,user,not_distributable,project_doc,new_corpora/99_final_report.md,baum2/status_reason_codes/02 に置き換え
+baved,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/40uf411/Basic-Arabic-Vocal-Emotions-Dataset,baved/espnet_status/03 に置き換え
+baved,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,baved/espnet_status/02 に置き換え
 baved,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,61,see evidence,60,measured,n_speakers_measured,
+baved,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,primary,https://github.com/40uf411/Basic-Arabic-Vocal-Emotions-Dataset,baved/status_reason_codes/03 に置き換え
+baved,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,project_doc,new_corpora/99_final_report.md,baved/status_reason_codes/02 に置き換え
 beat,license_spdx,superseded,Apache-2.0,primary,LicenseRef-other,secondary,https://github.com/SuperKogito/SER-datasets,SuperKogito の記述。出典不明; beat/license_spdx/02 に置き換え
+bedvibe,espnet_status,superseded,needs_decision,user,excluded,primary,https://github.com/Mormolykos/bedvibe-datasets,bedvibe/espnet_status/02 に置き換え
+belfast,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,belfast/espnet_status/03 に置き換え
 berst,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,4526,see evidence,4523,measured,n_files_release_measured,
+biicnnime,espnet_status,superseded,candidate,user,excluded,primary,https://nnime.ee.nthu.edu.tw/down/,biicnnime/espnet_status/04 に置き換え
+biicnnime,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,biicnnime/espnet_status/03 に置き換え
+biicnnime,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://nnime.ee.nthu.edu.tw/down/,biicnnime/status_reason_codes/04 に置き換え
+biicnnime,status_reason_codes,superseded,unexamined,user,access_signed_agreement,project_doc,nc_candidates_20261010.md,biicnnime/status_reason_codes/03 に置き換え
+biicpodcast,espnet_status,superseded,candidate,user,excluded,primary,http://andc.ai/html/menu/dataset/biic-podcast.php,biicpodcast/espnet_status/04 に置き換え
+biicpodcast,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,biicpodcast/espnet_status/03 に置き換え
 biicpodcast,license_spdx,superseded,LicenseRef-custom-research-only,primary,LicenseRef-proprietary-restricted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Proprietary/Restricted; biicpodcast/license_spdx/02 に置き換え
-biicpodcast,status_reason_codes,superseded,access_signed_agreement,primary,not_individually_checked,project_doc,nc_candidates_20261010.md,biicpodcast/status_reason_codes/03 に置き換え
-caves,status_reason_codes,superseded,access_request_form_or_email,primary,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,caves/status_reason_codes/02 に置き換え
+biicpodcast,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,http://andc.ai/html/menu/dataset/biic-podcast.php,biicpodcast/status_reason_codes/04 に置き換え
+biicpodcast,status_reason_codes,superseded,unexamined,user,not_individually_checked,project_doc,nc_candidates_20261010.md,biicpodcast/status_reason_codes/03 に置き換え
+bmisec,espnet_status,superseded,deferred,user,excluded,measured,https://onlineresource.ucsy.edu.mm/handle/123456789/2809,bmisec/espnet_status/02 に置き換え
+burmese_new2001,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Burmese/New_et_al_2001.md,一次資料は未確認; burmese_new2001/espnet_status/02 に置き換え
+burmese_new2001,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Burmese/New_et_al_2001.md,一次資料は未確認; burmese_new2001/status_reason_codes/02 に置き換え
+caves,espnet_status,superseded,candidate,user,excluded,primary,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11289252/,caves/espnet_status/03 に置き換え
+caves,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,caves/espnet_status/02 に置き換え
+caves,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11289252/,caves/status_reason_codes/03 に置き換え
+caves,status_reason_codes,superseded,unexamined,user,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,caves/status_reason_codes/02 に置き換え
 cbesd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,4320,see evidence,4204,measured,n_files_release_measured,
+cdse_czech,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Czech/CDSE.md,一次資料は未確認; cdse_czech/espnet_status/02 に置き換え
+cdse_czech,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Czech/CDSE.md,一次資料は未確認; cdse_czech/status_reason_codes/02 に置き換え
+cheavd,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,cheavd/espnet_status/03 に置き換え
+chsims,espnet_status,superseded,candidate,user,excluded,primary,https://thuiar.github.io/sims.github.io/chsims,chsims/espnet_status/04 に置き換え
+chsims,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,chsims/espnet_status/03 に置き換え
 chsims,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; chsims/license_spdx/02 に置き換え
-chsims,status_reason_codes,superseded,labels_not_discrete_emotion,primary,not_individually_checked,project_doc,nc_candidates_20261010.md,chsims/status_reason_codes/03 に置き換え
+chsims,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,primary,https://thuiar.github.io/sims.github.io/chsims,chsims/status_reason_codes/04 に置き換え
+chsims,status_reason_codes,superseded,unexamined,user,not_individually_checked,project_doc,nc_candidates_20261010.md,chsims/status_reason_codes/03 に置き換え
+chsims2,espnet_status,superseded,candidate,user,excluded,primary,https://thuiar.github.io/sims.github.io/chsims,chsims2/espnet_status/04 に置き換え
+chsims2,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,chsims2/espnet_status/03 に置き換え
 chsims2,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; chsims2/license_spdx/02 に置き換え
-chsims2,status_reason_codes,superseded,labels_not_discrete_emotion,primary,not_individually_checked,project_doc,nc_candidates_20261010.md,chsims2/status_reason_codes/03 に置き換え
+chsims2,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,primary,https://thuiar.github.io/sims.github.io/chsims,chsims2/status_reason_codes/04 に置き換え
+chsims2,status_reason_codes,superseded,unexamined,user,not_individually_checked,project_doc,nc_candidates_20261010.md,chsims2/status_reason_codes/03 に置き換え
 clesc,status_reason_codes,superseded,text_only;redistribution_of_existing_corpus,primary,content_insufficient;redistribution_of_existing_corpus,primary,https://huggingface.co/datasets/toloka/CLESC,clesc/status_reason_codes/02 に置き換え
 cmumosei,license_spdx,superseded,unknown,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; cmumosei/license_spdx/02 に置き換え
 cmumosi,status_reason_codes,superseded,labels_not_discrete_emotion;no_raw_audio_features_only,primary,labels_not_discrete_emotion,project_doc,nc_candidates_20261010.md,cmumosi/status_reason_codes/03 に置き換え
 codaco_german,status_reason_codes,superseded,text_only,measured,content_insufficient;redistribution_of_existing_corpus,project_doc,new_corpora/99_final_report.md,codaco_german/status_reason_codes/02 に置き換え
-deeply_korean_read,status_reason_codes,superseded,labels_not_discrete_emotion,user,labels_not_discrete_emotion;content_insufficient,primary,https://www.openslr.org/97/,deeply_korean_read/status_reason_codes/02 に置き換え
+coraa_ser,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/rmarcacini/ser-coraa-pt-br,coraa_ser/espnet_status/02 に置き換え
+coraa_ser,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,primary,https://github.com/rmarcacini/ser-coraa-pt-br,coraa_ser/status_reason_codes/02 に置き換え
+daicwoz,espnet_status,superseded,candidate,user,excluded,primary,https://dcapswoz.ict.usc.edu/,daicwoz/espnet_status/02 に置き換え
+daicwoz,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion;access_signed_agreement,primary,https://dcapswoz.ict.usc.edu/,daicwoz/status_reason_codes/02 に置き換え
+deeply_korean_read,espnet_status,superseded,candidate,user,excluded,primary,https://www.openslr.org/97/,deeply_korean_read/espnet_status/02 に置き換え
+deeply_korean_read,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,user,会話 2026-10-14,content_insufficient を外した; deeply_korean_read/status_reason_codes/03 に置き換え
+deeply_korean_read,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion;content_insufficient,primary,https://www.openslr.org/97/,deeply_korean_read/status_reason_codes/02 に置き換え
+deeply_nonverbal,espnet_status,superseded,candidate,user,excluded,primary,https://www.openslr.org/99/,deeply_nonverbal/espnet_status/02 に置き換え
+deeply_nonverbal,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,primary,https://www.openslr.org/99/,deeply_nonverbal/status_reason_codes/02 に置き換え
+demos,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/2544829,demos/espnet_status/04 に置き換え
+demos,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,demos/espnet_status/03 に置き換え
 demos,recording_context,superseded,affect_elicitation,primary,acted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Acted; demos/recording_context/02 に置き換え
+demos,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://zenodo.org/records/2544829,demos/status_reason_codes/04 に置き換え
+demos,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,project_doc,nc_candidates_20261010.md,demos/status_reason_codes/03 に置き換え
+des,espnet_status,superseded,deferred,user,excluded,primary,http://universal.elra.info/product_info.php?products_id=78,des/espnet_status/04 に置き換え
+des,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,des/espnet_status/03 に置き換え
+dfew,espnet_status,superseded,candidate,user,excluded,primary,https://dfew-dataset.github.io/download.html,dfew/espnet_status/02 に置き換え
+dfew,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://dfew-dataset.github.io/download.html,dfew/status_reason_codes/02 に置き換え
 dusha,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,303963,see evidence,160366,measured,recipes.n_total (dusha),レシピは長さ・ラベルで絞るため一致しないのが普通
 dzafic,status_reason_codes,superseded,identity_unresolved,project_doc,content_insufficient,project_doc,new_corpora/99_final_report.md,dzafic/status_reason_codes/02 に置き換え
 eekk,license_spdx,superseded,CC-BY-4.0,primary,LicenseRef-other,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Other; eekk/license_spdx/02 に置き換え
@@ -35,104 +107,339 @@ eekk,status_reason_codes,superseded,duplicate_entry,primary,access_no_direct_dow
 eesc,espnet_status,superseded,candidate,measured,excluded,project_doc,new_corpora/99_final_report.md,eesc/espnet_status/03 に置き換え
 eesc,recording_context,superseded,read_speech,primary,acted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Acted; eesc/recording_context/02 に置き換え
 eesc,status_reason_codes,superseded,unexamined,project_doc,access_no_direct_download,project_doc,new_corpora/99_final_report.md,eesc/status_reason_codes/03 に置き換え
+eesdb_chinese,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Chinese/EESDB.md,一次資料は未確認; eesdb_chinese/espnet_status/02 に置き換え
+eesdb_chinese,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Chinese/EESDB.md,一次資料は未確認; eesdb_chinese/status_reason_codes/02 に置き換え
 egyptian_hf_unresolved,status_reason_codes,superseded,identity_unresolved,user,content_insufficient;identity_unresolved,project_doc,new_corpora/99_final_report.md,egyptian_hf_unresolved/status_reason_codes/02 に置き換え
-em2ldl,status_reason_codes,superseded,access_signed_agreement,primary,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,em2ldl/status_reason_codes/02 に置き換え
+em2ldl,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/xingfengli/EM2LDL,em2ldl/espnet_status/03 に置き換え
+em2ldl,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,em2ldl/espnet_status/02 に置き換え
+em2ldl,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://github.com/xingfengli/EM2LDL,em2ldl/status_reason_codes/03 に置き換え
+em2ldl,status_reason_codes,superseded,unexamined,user,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,em2ldl/status_reason_codes/02 に置き換え
+emilia_emotion,espnet_status,superseded,candidate,user,excluded,primary,https://huggingface.co/datasets/laion/Emilia-with-Emotion-Annotations,emilia_emotion/espnet_status/02 に置き換え
 emilia_emotion,license_spdx,superseded,CC-BY-4.0,primary,none_stated,primary,https://huggingface.co/datasets/laion/Emilia-with-Emotion-Annotations,emilia_emotion/license_spdx/02 に置き換え
+emilia_emotion,status_reason_codes,superseded,unexamined,user,labels_automatic;redistribution_of_existing_corpus,primary,https://huggingface.co/datasets/laion/Emilia-with-Emotion-Annotations,emilia_emotion/status_reason_codes/02 に置き換え
+emis,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/19207001,emis/espnet_status/02 に置き換え
+emis,status_reason_codes,superseded,unexamined,user,synthetic_or_tts,primary,https://zenodo.org/records/19207001,emis/status_reason_codes/02 に置き換え
 emodb,hours_reported,superseded,1.25,primary,0.7,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,emodb/hours_reported/02 に置き換え
 emodb,license_spdx,conflicting,conflicting,project_doc,CC-BY-4.0,project_doc,corpus_metadata.md,
 emodb,license_spdx,conflicting,conflicting,project_doc,CC0-1.0,primary,https://audeering.github.io/datasets/datasets/emodb.html,
 emodb,license_spdx,superseded,conflicting,project_doc,CC-BY-4.0,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: CC BY 4.0; 資料間の食い違いのため conflicting に置き換え
 emodb,n_utt_reported,superseded,816,project_doc,535,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,emodb/n_utt_reported/02 に置き換え
+emodialogcn,espnet_status,superseded,candidate,user,excluded,primary,https://huggingface.co/api/datasets/EmoDialogCN/EmoDialogCN-21.8K,emodialogcn/espnet_status/02 に置き換え
+emodialogcn,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://huggingface.co/api/datasets/EmoDialogCN/EmoDialogCN-21.8K,emodialogcn/status_reason_codes/02 に置き換え
 emofilm,access_method,superseded,signed_agreement,primary,request_form_or_email,project_doc,nc_candidates_20261010.md,emofilm/access_method/02 に置き換え
+emofilm,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/7665999,emofilm/espnet_status/04 に置き換え
+emofilm,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,emofilm/espnet_status/03 に置き換え
 emofilm,languages,superseded,eng;ita;spa,primary,mul,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Multilingual; emofilm/languages/02 に置き換え
-emofilm,status_reason_codes,superseded,access_signed_agreement,primary,access_request_form_or_email,project_doc,nc_candidates_20261010.md,emofilm/status_reason_codes/03 に置き換え
-emomatchspanishdb,status_reason_codes,superseded,access_signed_agreement,primary,no_raw_audio_features_only,project_doc,nc_candidates_20261010.md,emomatchspanishdb/status_reason_codes/03 に置き換え
-emoreact,status_reason_codes,superseded,access_request_form_or_email,primary,not_distributable,project_doc,new_corpora/99_final_report.md,emoreact/status_reason_codes/02 に置き換え
+emofilm,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,project_doc,nc_candidates_20261010.md,emofilm/status_reason_codes/03 に置き換え
+emofilm,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://zenodo.org/records/7665999,emofilm/status_reason_codes/04 に置き換え
+emolah,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Malay/Emolah.md,一次資料は未確認; emolah/espnet_status/02 に置き換え
+emolah,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Malay/Emolah.md,一次資料は未確認; emolah/status_reason_codes/02 に置き換え
+emomatchspanishdb,espnet_status,superseded,candidate,user,excluded,primary,https://figshare.com/articles/dataset/EmoMatchSpanishDB/14215850,emomatchspanishdb/espnet_status/04 に置き換え
+emomatchspanishdb,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,emomatchspanishdb/espnet_status/03 に置き換え
+emomatchspanishdb,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://figshare.com/articles/dataset/EmoMatchSpanishDB/14215850,emomatchspanishdb/status_reason_codes/04 に置き換え
+emomatchspanishdb,status_reason_codes,superseded,unexamined,user,no_raw_audio_features_only,project_doc,nc_candidates_20261010.md,emomatchspanishdb/status_reason_codes/03 に置き換え
+emonetvoice,espnet_status,superseded,candidate,user,excluded,primary,https://arxiv.org/abs/2506.09827,emonetvoice/espnet_status/02 に置き換え
+emonetvoice,status_reason_codes,superseded,unexamined,user,synthetic_or_tts,primary,https://arxiv.org/abs/2506.09827,emonetvoice/status_reason_codes/02 に置き換え
+emoreact,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/bnojavan/EmoReact,emoreact/espnet_status/03 に置き換え
+emoreact,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,emoreact/espnet_status/02 に置き換え
+emoreact,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://github.com/bnojavan/EmoReact,emoreact/status_reason_codes/03 に置き換え
+emoreact,status_reason_codes,superseded,unexamined,user,not_distributable,project_doc,new_corpora/99_final_report.md,emoreact/status_reason_codes/02 に置き換え
+emosynth,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/3727593,emosynth/espnet_status/04 に置き換え
+emosynth,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,emosynth/espnet_status/03 に置き換え
+emosynth,status_reason_codes,superseded,unexamined,user,synthetic_or_tts,primary,https://zenodo.org/records/3727593,emosynth/status_reason_codes/04 に置き換え
+emosynth,status_reason_codes,superseded,unexamined,user,synthetic_or_tts,project_doc,nc_candidates_20261010.md,emosynth/status_reason_codes/03 に置き換え
 emota,espnet_status,superseded,candidate,primary,excluded,primary,https://huggingface.co/datasets/aaivu-labs/EmoTa,emota/espnet_status/03 に置き換え
 emota,espnet_status,superseded,candidate,primary,excluded,project_doc,new_corpora/99_final_report.md,emota/espnet_status/02 に置き換え
 emota,status_reason_codes,superseded,unexamined,primary,access_gated,primary,https://huggingface.co/datasets/aaivu-labs/EmoTa,emota/status_reason_codes/03 に置き換え
 emota,status_reason_codes,superseded,unexamined,primary,access_gated,project_doc,new_corpora/99_final_report.md,emota/status_reason_codes/02 に置き換え
+emotion_origlia2010,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,emotion_origlia2010/espnet_status/03 に置き換え
 emotional_ema,espnet_status,superseded,candidate,primary,excluded,project_doc,new_corpora/99_final_report.md,emotional_ema/espnet_status/02 に置き換え
 emotional_ema,status_reason_codes,superseded,unexamined,project_doc,host_unreachable,project_doc,new_corpora/99_final_report.md,emotional_ema/status_reason_codes/02 に置き換え
+emotiontts_open_db,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/emotiontts/emotiontts_open_db/tree/master/Dataset/SpeechCorpus/Emotional,emotiontts_open_db/espnet_status/02 に置き換え
 emotiontts_open_db,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,6000,see evidence,300,measured,n_files_release_measured,
+emotiontts_open_db,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://github.com/emotiontts/emotiontts_open_db/tree/master/Dataset/SpeechCorpus/Emotional,emotiontts_open_db/status_reason_codes/02 に置き換え
 emouerj_sed,status_reason_codes,superseded,redistribution_of_existing_corpus,primary,content_insufficient,project_doc,new_corpora/99_final_report.md,emouerj_sed/status_reason_codes/02 に置き換え
 emovdb,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7000,see evidence,6893,measured,recipes.n_total (emovdb),レシピは長さ・ラベルで絞るため一致しないのが普通
+emovie,espnet_status,superseded,candidate,user,excluded,primary,https://arxiv.org/abs/2106.09317,emovie/espnet_status/02 に置き換え
+emovie,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,primary,https://arxiv.org/abs/2106.09317,emovie/status_reason_codes/02 に置き換え
 emovo,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; emovo/license_spdx/02 に置き換え
-emovome,status_reason_codes,superseded,access_signed_agreement,primary,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,emovome/status_reason_codes/02 に置き換え
+emovoicedb,espnet_status,superseded,candidate,user,excluded,primary,https://huggingface.co/datasets/yhaha/EmoVoice-DB,emovoicedb/espnet_status/02 に置き換え
+emovoicedb,status_reason_codes,superseded,unexamined,user,synthetic_or_tts,primary,https://huggingface.co/datasets/yhaha/EmoVoice-DB,emovoicedb/status_reason_codes/02 に置き換え
+emovome,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/10694370,emovome/espnet_status/03 に置き換え
+emovome,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,emovome/espnet_status/02 に置き換え
+emovome,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://zenodo.org/records/10694370,emovome/status_reason_codes/03 に置き換え
+emovome,status_reason_codes,superseded,unexamined,user,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,emovome/status_reason_codes/02 に置き換え
 enterface05,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1166,see evidence,1293,measured,n_files_release_measured,
 enterface05,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1166,see evidence,1260,measured,recipes.n_total (enterface05),レシピは長さ・ラベルで絞るため一致しないのが普通
+escorpuspe,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/5793223,escorpuspe/espnet_status/03 に置き換え
+escorpuspe,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,escorpuspe/espnet_status/02 に置き換え
 escorpuspe,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,3749,see evidence,3764,measured,n_files_release_measured,
+escorpuspe,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,primary,https://zenodo.org/records/5793223,escorpuspe/status_reason_codes/03 に置き換え
+escorpuspe,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,project_doc,new_corpora/99_final_report.md,escorpuspe/status_reason_codes/02 に置き換え
+esmbs,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Burmese/ESMBS.md,一次資料は未確認; esmbs/espnet_status/02 に置き換え
+esmbs,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Burmese/ESMBS.md,一次資料は未確認; esmbs/status_reason_codes/02 に置き換え
+euemotion_voice,espnet_status,superseded,candidate,user,excluded,primary,https://www.autismresearchcentre.com/tests/the-eu-emotion-stimulus-set/,euemotion_voice/espnet_status/02 に置き換え
+euemotion_voice,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://www.autismresearchcentre.com/tests/the-eu-emotion-stimulus-set/,euemotion_voice/status_reason_codes/02 に置き換え
 expresso,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,expresso/espnet_status/03 に置き換え
 expresso,status_reason_codes,superseded,unexamined,user,labels_style_not_emotion,user,会話 2026-10-14,ito さんの判断で too_large を外した; expresso/status_reason_codes/04 に置き換え
 expresso,status_reason_codes,superseded,unexamined,user,too_large;labels_style_not_emotion,project_doc,new_corpora/99_final_report.md,expresso/status_reason_codes/03 に置き換え
-gaudie,status_reason_codes,superseded,labels_not_discrete_emotion;access_request_form_or_email,user,labels_not_discrete_emotion;content_insufficient;access_request_form_or_email,primary,https://pmc.ncbi.nlm.nih.gov/articles/PMC10991051/,gaudie/status_reason_codes/02 に置き換え
-gees,status_reason_codes,superseded,access_signed_agreement,primary,access_paid_or_membership,project_doc,new_corpora/99_final_report.md,gees/status_reason_codes/02 に置き換え
+eyase,espnet_status,superseded,deferred,user,excluded,project_doc,new_corpora/99_final_report.md,eyase/espnet_status/02 に置き換え
+eyase,status_reason_codes,superseded,access_no_direct_download,user,not_distributable,project_doc,new_corpora/99_final_report.md,eyase/status_reason_codes/02 に置き換え
+fauaibo,espnet_status,superseded,deferred,user,excluded,primary,https://cris.fau.de/publications/121388344/,fauaibo/espnet_status/04 に置き換え
+fauaibo,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,fauaibo/espnet_status/03 に置き換え
+fauaibo,status_reason_codes,superseded,access_no_direct_download,user,access_signed_agreement,primary,https://cris.fau.de/publications/121388344/,fauaibo/status_reason_codes/04 に置き換え
+fauaibo,status_reason_codes,superseded,access_no_direct_download,user,access_signed_agreement,project_doc,nc_candidates_20261010.md,fauaibo/status_reason_codes/03 に置き換え
+filmed,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Filipino/FilMED.md,一次資料は未確認; filmed/espnet_status/02 に置き換え
+filmed,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Filipino/FilMED.md,一次資料は未確認; filmed/status_reason_codes/02 に置き換え
+galgame_speech_ser,espnet_status,superseded,candidate,user,excluded,primary,https://huggingface.co/datasets/litagin/Galgame_Speech_SER_16kHz,galgame_speech_ser/espnet_status/03 に置き換え
+galgame_speech_ser,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,galgame_speech_ser/espnet_status/02 に置き換え
+galgame_speech_ser,status_reason_codes,superseded,unexamined,user,labels_automatic,primary,https://huggingface.co/datasets/litagin/Galgame_Speech_SER_16kHz,galgame_speech_ser/status_reason_codes/03 に置き換え
+galgame_speech_ser,status_reason_codes,superseded,unexamined,user,labels_automatic,project_doc,new_corpora/99_final_report.md,galgame_speech_ser/status_reason_codes/02 に置き換え
+gaudie,espnet_status,superseded,candidate,user,excluded,primary,https://pmc.ncbi.nlm.nih.gov/articles/PMC10991051/,gaudie/espnet_status/02 に置き換え
+gaudie,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion;access_request_form_or_email,user,会話 2026-10-14,content_insufficient を外した; gaudie/status_reason_codes/03 に置き換え
+gaudie,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion;content_insufficient;access_request_form_or_email,primary,https://pmc.ncbi.nlm.nih.gov/articles/PMC10991051/,gaudie/status_reason_codes/02 に置き換え
+gees,espnet_status,superseded,candidate,user,excluded,primary,https://catalog.elra.info/en-us/repository/browse/ELRA-S0385/,gees/espnet_status/03 に置き換え
+gees,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,gees/espnet_status/02 に置き換え
+gees,status_reason_codes,superseded,unexamined,user,access_paid_or_membership,project_doc,new_corpora/99_final_report.md,gees/status_reason_codes/02 に置き換え
+gees,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://catalog.elra.info/en-us/repository/browse/ELRA-S0385/,gees/status_reason_codes/03 に置き換え
+gemep,espnet_status,superseded,candidate,user,excluded,primary,https://www.unige.ch/cisa/gemep,gemep/espnet_status/02 に置き換え
+gemep,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://www.unige.ch/cisa/gemep,gemep/status_reason_codes/02 に置き換え
 groupaffect4,access_method,superseded,request_form_or_email,primary,direct_download,primary,https://zenodo.org/records/20796290,groupaffect4/access_method/02 に置き換え
-groupaffect4,status_reason_codes,superseded,labels_not_discrete_emotion;access_request_form_or_email,primary,labels_not_discrete_emotion,primary,https://zenodo.org/records/20796290,groupaffect4/status_reason_codes/04 に置き換え
-groupaffect4,status_reason_codes,superseded,labels_not_discrete_emotion;access_request_form_or_email,primary,labels_not_discrete_emotion,project_doc,nc_candidates_20261010.md,groupaffect4/status_reason_codes/03 に置き換え
+groupaffect4,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/20796290,groupaffect4/espnet_status/04 に置き換え
+groupaffect4,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,groupaffect4/espnet_status/03 に置き換え
+groupaffect4,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,primary,https://zenodo.org/records/20796290,groupaffect4/status_reason_codes/04 に置き換え
+groupaffect4,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,project_doc,nc_candidates_20261010.md,groupaffect4/status_reason_codes/03 に置き換え
+groupaffect4,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion;access_request_form_or_email,primary,https://zenodo.org/records/20796290,groupaffect4/status_reason_codes/05 に置き換え
+gujarati_tank2020,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Gujarati/Tank_et_al_2020.md,一次資料は未確認; gujarati_tank2020/espnet_status/02 に置き換え
+gujarati_tank2020,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Gujarati/Tank_et_al_2020.md,一次資料は未確認; gujarati_tank2020/status_reason_codes/02 に置き換え
+hesd,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/22674064,hesd/espnet_status/02 に置き換え
+hesd,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://zenodo.org/records/22674064,hesd/status_reason_codes/02 に置き換え
+hindi_bansal_dev,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Hindi/BansalAndDev.md,一次資料は未確認; hindi_bansal_dev/espnet_status/02 に置き換え
+hindi_bansal_dev,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Hindi/BansalAndDev.md,一次資料は未確認; hindi_bansal_dev/status_reason_codes/02 に置き換え
+hindi_ser_vishlb,espnet_status,superseded,candidate,user,excluded,primary,https://www.kaggle.com/datasets/vishlb/speech-emotion-recognition-hindi,hindi_ser_vishlb/espnet_status/02 に置き換え
+hindi_ser_vishlb,status_reason_codes,superseded,unexamined,user,provenance_unclear,primary,https://www.kaggle.com/datasets/vishlb/speech-emotion-recognition-hindi,hindi_ser_vishlb/status_reason_codes/02 に置き換え
+humevb,espnet_status,superseded,candidate,user,excluded,primary,https://www.competitions.hume.ai/exvo2022,humevb/espnet_status/02 に置き換え
+humevb,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://www.competitions.hume.ai/exvo2022,humevb/status_reason_codes/02 に置き換え
 humyn_indian_emotional,espnet_status,superseded,candidate,user,excluded,measured,https://huggingface.co/api/datasets/humyn-labs/Indian-Emotional-Speech-Corpus,humyn_indian_emotional/espnet_status/02 に置き換え
 humyn_indian_emotional,status_reason_codes,superseded,unexamined,user,content_insufficient,measured,https://huggingface.co/api/datasets/humyn-labs/Indian-Emotional-Speech-Corpus,humyn_indian_emotional/status_reason_codes/02 に置き換え
+hungarian_hesd,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Hungarian/HESD.md,一次資料は未確認; hungarian_hesd/espnet_status/02 に置き換え
+hungarian_hesd,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Hungarian/HESD.md,一次資料は未確認; hungarian_hesd/status_reason_codes/02 に置き換え
 iemocap,access_method,superseded,request_form_or_email,primary,signed_agreement,project_doc,egs3/iemocap/cls/readme.md (branch ser/cross-corpus),iemocap/access_method/02 に置き換え
 iemocap,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,10039,see evidence,5571,measured,recipes.n_total (iemocap),レシピは長さ・ラベルで絞るため一致しないのが普通
+iiitsaint_emomdb,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Malayalam/IIITSaint-EmoMDB.md,一次資料は未確認; iiitsaint_emomdb/espnet_status/02 に置き換え
+iiitsaint_emomdb,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Malayalam/IIITSaint-EmoMDB.md,一次資料は未確認; iiitsaint_emomdb/status_reason_codes/02 に置き換え
+indemovis,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/8255783,indemovis/espnet_status/02 に置き換え
+indemovis,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://zenodo.org/records/8255783,indemovis/status_reason_codes/02 に置き換え
 indianenglish,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1000,see evidence,747,measured,n_files_release_measured,
 indianenglish,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1000,see evidence,695,measured,recipes.n_total (indianenglish),レシピは長さ・ラベルで絞るため一致しないのが普通
+indonesian_fahmi2020,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Indonesian/Fahmi_et_al_2020.md,一次資料は未確認; indonesian_fahmi2020/espnet_status/02 に置き換え
+indonesian_fahmi2020,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Indonesian/Fahmi_et_al_2020.md,一次資料は未確認; indonesian_fahmi2020/status_reason_codes/02 に置き換え
 inesco,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,2400,see evidence,2399,measured,n_files_release_measured,
 inesco,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,2400,see evidence,2398,measured,recipes.n_total (inesco),レシピは長さ・ラベルで絞るため一致しないのが普通
-interface,status_reason_codes,superseded,access_signed_agreement,primary,access_no_direct_download,project_doc,nc_candidates_20261010.md,interface/status_reason_codes/03 に置き換え
-jtes,status_reason_codes,superseded,access_request_form_or_email,primary,not_individually_checked,project_doc,nc_candidates_20261010.md,jtes/status_reason_codes/03 に置き換え
+interface,espnet_status,superseded,candidate,user,excluded,primary,https://catalog.elra.info/en-us/repository/browse/ELRA-S0329/,interface/espnet_status/04 に置き換え
+interface,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,interface/espnet_status/03 に置き換え
+interface,status_reason_codes,superseded,unexamined,user,access_no_direct_download,project_doc,nc_candidates_20261010.md,interface/status_reason_codes/03 に置き換え
+interface,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://catalog.elra.info/en-us/repository/browse/ELRA-S0329/,interface/status_reason_codes/04 に置き換え
+java_sed,espnet_status,superseded,deferred,user,excluded,measured,https://beais-uny.id/dataset/,java_sed/espnet_status/02 に置き換え
+jtes,espnet_status,superseded,candidate,user,excluded,primary,https://www.t-technoarch.co.jp/data/anken_h/S20-017.html,jtes/espnet_status/04 に置き換え
+jtes,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,jtes/espnet_status/03 に置き換え
+jtes,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://www.t-technoarch.co.jp/data/anken_h/S20-017.html,jtes/status_reason_codes/04 に置き換え
+jtes,status_reason_codes,superseded,unexamined,user,not_individually_checked,project_doc,nc_candidates_20261010.md,jtes/status_reason_codes/03 に置き換え
+kannada_kes,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Kannada/KES.md,一次資料は未確認; kannada_kes/espnet_status/02 に置き換え
+kannada_kes,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Kannada/KES.md,一次資料は未確認; kannada_kes/status_reason_codes/02 に置き換え
+kasdimerbah_arabic,espnet_status,superseded,candidate,user,excluded,primary,https://catalog.ldc.upenn.edu/LDC2023S10,kasdimerbah_arabic/espnet_status/02 に置き換え
+kasdimerbah_arabic,status_reason_codes,superseded,unexamined,user,access_paid_or_membership,primary,https://catalog.ldc.upenn.edu/LDC2023S10,kasdimerbah_arabic/status_reason_codes/02 に置き換え
+kazakh_russian_emotion,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Kazakh/Kazakh-Russian-Emotion-Corpus.md,kazakh_russian_emotion/espnet_status/02 に置き換え
+kazakh_russian_emotion,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Kazakh/Kazakh-Russian-Emotion-Corpus.md,kazakh_russian_emotion/status_reason_codes/02 に置き換え
 keg_croatian,status_reason_codes,superseded,no_audio_paper_only,user,no_audio_paper_only;content_insufficient,primary,https://ieeexplore.ieee.org/document/6046587,keg_croatian/status_reason_codes/02 に置き換え
+keioesd,espnet_status,superseded,candidate,user,excluded,primary,http://research.nii.ac.jp/src/en/register.html,keioesd/espnet_status/02 に置き換え
+keioesd,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,http://research.nii.ac.jp/src/en/register.html,keioesd/status_reason_codes/02 に置き換え
 kemocon,dimensional_attributes,superseded,arousal;valence,primary,valence;arousal,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,"シート原文: valence, arousal; kemocon/dimensional_attributes/02 に置き換え"
+kemocon,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/3931963,kemocon/espnet_status/04 に置き換え
+kemocon,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,kemocon/espnet_status/03 に置き換え
+kemocon,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://zenodo.org/records/3931963,kemocon/status_reason_codes/04 に置き換え
+kemocon,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,project_doc,nc_candidates_20261010.md,kemocon/status_reason_codes/03 に置き換え
+kmser,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Malayalam/KMSER.md,一次資料は未確認; kmser/espnet_status/02 に置き換え
+kmser,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Malayalam/KMSER.md,一次資料は未確認; kmser/status_reason_codes/02 に置き換え
+ksuemotions,espnet_status,superseded,candidate,user,excluded,primary,https://catalog.ldc.upenn.edu/LDC2017S12,ksuemotions/espnet_status/03 に置き換え
+ksuemotions,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,ksuemotions/espnet_status/02 に置き換え
+ksuemotions,status_reason_codes,superseded,unexamined,user,access_paid_or_membership,primary,https://catalog.ldc.upenn.edu/LDC2017S12,ksuemotions/status_reason_codes/03 に置き換え
+ksuemotions,status_reason_codes,superseded,unexamined,user,access_paid_or_membership,project_doc,new_corpora/99_final_report.md,ksuemotions/status_reason_codes/02 に置き換え
+kurdish_esd,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Kurdish/KurdishEmotionSpeechDatabase.md,一次資料は未確認; kurdish_esd/espnet_status/02 に置き換え
+kurdish_esd,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Kurdish/KurdishEmotionSpeechDatabase.md,一次資料は未確認; kurdish_esd/status_reason_codes/02 に置き換え
+kurdish_nematullah2024,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Kurdish/Nematullah-et-al.md,一次資料は未確認; kurdish_nematullah2024/espnet_status/02 に置き換え
+kurdish_nematullah2024,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Kurdish/Nematullah-et-al.md,一次資料は未確認; kurdish_nematullah2024/status_reason_codes/02 に置き換え
+ldc_emotional_prosody,espnet_status,superseded,candidate,user,excluded,primary,https://catalog.ldc.upenn.edu/LDC2002S28,ldc_emotional_prosody/espnet_status/02 に置き換え
+ldc_emotional_prosody,status_reason_codes,superseded,unexamined,user,access_paid_or_membership,primary,https://catalog.ldc.upenn.edu/LDC2002S28,ldc_emotional_prosody/status_reason_codes/02 に置き換え
 legov2,espnet_status,superseded,candidate,user,excluded,primary,https://www.uni-bamberg.de/ds/ressourcen/lego/,legov2/espnet_status/04 に置き換え
 legov2,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,legov2/espnet_status/03 に置き換え
 legov2,status_reason_codes,superseded,unexamined,user,content_insufficient,primary,https://www.uni-bamberg.de/ds/ressourcen/lego/,legov2/status_reason_codes/04 に置き換え
 legov2,status_reason_codes,superseded,unexamined,user,content_insufficient,project_doc,new_corpora/99_final_report.md,legov2/status_reason_codes/03 に置き換え
+lssed,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/tobefans/LSSED,lssed/espnet_status/04 に置き換え
+lssed,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,lssed/espnet_status/03 に置き換え
+lssed,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://github.com/tobefans/LSSED,lssed/status_reason_codes/04 に置き換え
+lssed,status_reason_codes,superseded,unexamined,user,access_signed_agreement,project_doc,nc_candidates_20261010.md,lssed/status_reason_codes/03 に置き換え
+m3ed,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/AIM3-RUC/RUCM3ED,m3ed/espnet_status/04 に置き換え
+m3ed,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,m3ed/espnet_status/03 に置き換え
 m3ed,labels_discrete_reported,superseded,happy;neutral;sad;disgust;anger;fear;surprise,primary,anger;disgust;fear;happiness;sadness;surprise;neutral,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,"シート原文: anger, disgust, fear, happiness, sadness, surprise, neutral; m3ed/labels_discrete_reported/02 に置き換え"
 m3ed,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; m3ed/license_spdx/02 に置き換え
-mahnobhci,status_reason_codes,superseded,host_unreachable,measured,not_individually_checked,project_doc,nc_candidates_20261010.md,mahnobhci/status_reason_codes/03 に置き換え
-mavesdb,status_reason_codes,superseded,access_signed_agreement,measured,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,mavesdb/status_reason_codes/02 に置き換え
+m3ed,status_reason_codes,superseded,unexamined,user,access_no_direct_download,primary,https://github.com/AIM3-RUC/RUCM3ED,m3ed/status_reason_codes/04 に置き換え
+m3ed,status_reason_codes,superseded,unexamined,user,access_no_direct_download,project_doc,nc_candidates_20261010.md,m3ed/status_reason_codes/03 に置き換え
+mafw,espnet_status,superseded,candidate,user,excluded,primary,https://mafw-database.github.io/MAFW/,mafw/espnet_status/02 に置き換え
+mafw,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://mafw-database.github.io/MAFW/,mafw/status_reason_codes/02 に置き換え
+mahnobhci,espnet_status,superseded,deferred,user,excluded,measured,http://mahnob-db.eu/hci-tagging/,mahnobhci/espnet_status/04 に置き換え
+mahnobhci,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,mahnobhci/espnet_status/03 に置き換え
+mahnobhci,status_reason_codes,superseded,host_unreachable,user,not_individually_checked,project_doc,nc_candidates_20261010.md,mahnobhci/status_reason_codes/03 に置き換え
+malayalam_ann2009,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Malayalam/MalayalamSpeechEmotionDataset.md,一次資料は未確認; malayalam_ann2009/espnet_status/02 に置き換え
+malayalam_ann2009,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Malayalam/MalayalamSpeechEmotionDataset.md,一次資料は未確認; malayalam_ann2009/status_reason_codes/02 に置き換え
+masc,espnet_status,superseded,candidate,user,excluded,primary,https://catalog.ldc.upenn.edu/LDC2007S09,masc/espnet_status/04 に置き換え
+masc,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,masc/espnet_status/03 に置き換え
+masc,status_reason_codes,superseded,unexamined,user,access_paid_or_membership,primary,https://catalog.ldc.upenn.edu/LDC2007S09,masc/status_reason_codes/04 に置き換え
+masc,status_reason_codes,superseded,unexamined,user,access_paid_or_membership,project_doc,nc_candidates_20261010.md,masc/status_reason_codes/03 に置き換え
+mavesdb,espnet_status,superseded,candidate,user,excluded,measured,https://data.mendeley.com/public-api/datasets/6hm2xt5hd8/files?folder_id=root&version=1,mavesdb/espnet_status/03 に置き換え
+mavesdb,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,mavesdb/espnet_status/02 に置き換え
+mavesdb,status_reason_codes,superseded,unexamined,user,access_signed_agreement,measured,https://data.mendeley.com/public-api/datasets/6hm2xt5hd8/files?folder_id=root&version=1,mavesdb/status_reason_codes/03 に置き換え
+mavesdb,status_reason_codes,superseded,unexamined,user,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,mavesdb/status_reason_codes/02 に置き換え
 mderma,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1322,see evidence,1345,measured,n_files_release_measured,
 mderma,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1322,see evidence,1267,measured,recipes.n_total (mderma),レシピは長さ・ラベルで絞るため一致しないのが普通
+mead,espnet_status,superseded,deferred,user,excluded,measured,https://wywu.github.io/projects/MEAD/MEAD.html,mead/espnet_status/04 に置き換え
+mead,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,mead/espnet_status/03 に置き換え
 mead,license_spdx,superseded,unknown,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; mead/license_spdx/02 に置き換え
+meghana007_tamil,status_reason_codes,superseded,duplicate_entry,measured,provenance_unclear,measured,https://huggingface.co/datasets/meghana-007/tamil-audio-emotion-classification,meghana007_tamil/status_reason_codes/03 に置き換え
+meghana007_tamil,status_reason_codes,superseded,duplicate_entry,measured,provenance_unclear,project_doc,new_corpora/99_final_report.md,meghana007_tamil/status_reason_codes/02 に置き換え
 meld,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,13708,see evidence,13704,measured,recipes.n_total (meld),レシピは長さ・ラベルで絞るため一致しないのが普通
+memor,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/sunlightsgy/MEmoR,memor/espnet_status/02 に置き換え
+memor,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://github.com/sunlightsgy/MEmoR,memor/status_reason_codes/02 に置き換え
 mer2023,espnet_status,superseded,candidate,primary,excluded,primary,https://huggingface.co/datasets/MERChallenge/MER2023,mer2023/espnet_status/04 に置き換え
 mer2023,espnet_status,superseded,candidate,primary,excluded,project_doc,nc_candidates_20261010.md,mer2023/espnet_status/03 に置き換え
 mer2023,license_spdx,superseded,CC-BY-NC-4.0,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; mer2023/license_spdx/02 に置き換え
 mer2023,status_reason_codes,superseded,unexamined,primary,access_gated,primary,https://huggingface.co/datasets/MERChallenge/MER2023,mer2023/status_reason_codes/04 に置き換え
 mer2023,status_reason_codes,superseded,unexamined,primary,access_gated,project_doc,nc_candidates_20261010.md,mer2023/status_reason_codes/03 に置き換え
-mer2026,status_reason_codes,superseded,access_request_form_or_email,primary,access_gated,project_doc,nc_candidates_20261010.md,mer2026/status_reason_codes/03 に置き換え
+mer2025,espnet_status,superseded,candidate,user,excluded,primary,https://huggingface.co/datasets/MERChallenge/MER2025,mer2025/espnet_status/04 に置き換え
+mer2025,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,mer2025/espnet_status/03 に置き換え
+mer2025,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://huggingface.co/datasets/MERChallenge/MER2025,mer2025/status_reason_codes/04 に置き換え
+mer2025,status_reason_codes,superseded,unexamined,user,access_signed_agreement,project_doc,nc_candidates_20261010.md,mer2025/status_reason_codes/03 に置き換え
+mer2026,espnet_status,superseded,needs_decision,user,excluded,primary,https://huggingface.co/datasets/MERChallenge/MER2026,mer2026/espnet_status/04 に置き換え
+mer2026,espnet_status,superseded,needs_decision,user,excluded,project_doc,nc_candidates_20261010.md,mer2026/espnet_status/03 に置き換え
+mer2026,status_reason_codes,superseded,access_request_form_or_email,user,access_gated,project_doc,nc_candidates_20261010.md,mer2026/status_reason_codes/03 に置き換え
 mesd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,864,see evidence,862,measured,n_files_release_measured,
 mesd,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,864,see evidence,862,measured,recipes.n_total (mesd),レシピは長さ・ラベルで絞るため一致しないのが普通
+mikuemobench,espnet_status,superseded,needs_decision,user,excluded,primary,https://huggingface.co/datasets/WhaleDolphin/MIKU-EmoBench,mikuemobench/espnet_status/02 に置き換え
 mikuemobench,hours_reported,superseded,160,primary,131.2,primary,https://arxiv.org/abs/2505.15772,mikuemobench/hours_reported/02 に置き換え(新しい版)
 mikuemobench,n_utt_reported,superseded,89428,primary,65970,primary,https://arxiv.org/abs/2505.15772,mikuemobench/n_utt_reported/02 に置き換え(新しい版)
 mlend_numerals,espnet_status,superseded,candidate,measured,excluded,primary,https://www.kaggle.com/datasets/jesusrequena/mlend-spoken-numerals,mlend_numerals/espnet_status/02 に置き換え
 mlend_numerals,labels_discrete_reported,superseded,neutral;bored;excited;question,primary,none,primary,https://www.kaggle.com/datasets/jesusrequena/mlend-spoken-numerals,感情ではなくイントネーション; mlend_numerals/labels_discrete_reported/02 に置き換え
 mlend_numerals,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,154,see evidence,151,measured,n_speakers_measured,
 mlend_numerals,status_reason_codes,superseded,unexamined,measured,labels_style_not_emotion,primary,https://www.kaggle.com/datasets/jesusrequena/mlend-spoken-numerals,mlend_numerals/status_reason_codes/02 に置き換え
-msppodcast,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,264705,see evidence,207223,measured,recipes.n_total (msppodcast),レシピは長さ・ラベルで絞るため一致しないのが普通
+mspconversation,espnet_status,superseded,candidate,user,excluded,primary,https://www.lab-msp.com/MSP/MSP-Conversation.html,mspconversation/espnet_status/04 に置き換え
+mspconversation,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,mspconversation/espnet_status/03 に置き換え
+mspconversation,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://www.lab-msp.com/MSP/MSP-Conversation.html,mspconversation/status_reason_codes/04 に置き換え
+mspconversation,status_reason_codes,superseded,unexamined,user,access_signed_agreement,project_doc,nc_candidates_20261010.md,mspconversation/status_reason_codes/03 に置き換え
+mspface,espnet_status,superseded,needs_decision,user,excluded,primary,https://www.lab-msp.com/MSP/MSP-Face.html,mspface/espnet_status/02 に置き換え
+mspimprov,espnet_status,superseded,candidate,user,excluded,primary,https://www.lab-msp.com/MSP/MSP-Improv.html,mspimprov/espnet_status/04 に置き換え
+mspimprov,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,mspimprov/espnet_status/03 に置き換え
+mspimprov,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://www.lab-msp.com/MSP/MSP-Improv.html,mspimprov/status_reason_codes/04 に置き換え
+mspimprov,status_reason_codes,superseded,unexamined,user,access_signed_agreement,project_doc,nc_candidates_20261010.md,mspimprov/status_reason_codes/03 に置き換え
+msppodcast,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,264705,see evidence,212808,measured,recipes.n_total (msppodcast),レシピは長さ・ラベルで絞るため一致しないのが普通
 musecar,access_method,superseded,signed_agreement,primary,request_form_or_email,primary,https://zenodo.org/records/4651164,EULA の要否は未確認; musecar/access_method/02 に置き換え
+musecar,espnet_status,superseded,candidate,user,excluded,primary,https://sites.google.com/view/muse2020/challenge/get-data,musecar/espnet_status/04 に置き換え
+musecar,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,musecar/espnet_status/03 に置き換え
 musecar,hours_reported,superseded,36,primary,36.87,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,musecar/hours_reported/02 に置き換え
+musecar,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://sites.google.com/view/muse2020/challenge/get-data,musecar/status_reason_codes/04 に置き換え
+musecar,status_reason_codes,superseded,unexamined,user,access_signed_agreement,project_doc,nc_candidates_20261010.md,musecar/status_reason_codes/03 に置き換え
 narrative_dialogue,espnet_status,superseded,excluded,measured,deferred,project_doc,new_corpora/99_final_report.md,narrative_dialogue/espnet_status/02 に置き換え
 narrative_dialogue,status_reason_codes,superseded,text_only;labels_automatic,primary,unexamined,project_doc,new_corpora/99_final_report.md,narrative_dialogue/status_reason_codes/02 に置き換え
-ogvc,status_reason_codes,superseded,access_signed_agreement,primary,access_request_form_or_email,project_doc,nc_candidates_20261010.md,ogvc/status_reason_codes/03 に置き換え
+naturalvoices,espnet_status,superseded,candidate,user,excluded,primary,https://arxiv.org/abs/2511.00256,naturalvoices/espnet_status/02 に置き換え
+naturalvoices,status_reason_codes,superseded,unexamined,user,labels_automatic,primary,https://arxiv.org/abs/2511.00256,naturalvoices/status_reason_codes/02 に置き換え
+nexdata_en_emotional_20p,espnet_status,superseded,needs_decision,user,excluded,primary,https://github.com/Nexdata-AI/20-People-English-Emotional-Speech-Data-by-Microphone,nexdata_en_emotional_20p/espnet_status/02 に置き換え
+nonverbaltts,espnet_status,superseded,candidate,user,excluded,primary,https://arxiv.org/abs/2507.13155,nonverbaltts/espnet_status/02 に置き換え
+nonverbaltts,status_reason_codes,superseded,unexamined,user,labels_automatic;redistribution_of_existing_corpus,primary,https://arxiv.org/abs/2507.13155,nonverbaltts/status_reason_codes/02 に置き換え
+nvs38k,espnet_status,superseded,candidate,user,excluded,primary,https://huggingface.co/datasets/nonverbalspeech/nonverbalspeech38k,nvs38k/espnet_status/02 に置き換え
+nvs38k,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion;labels_automatic,primary,https://huggingface.co/datasets/nonverbalspeech/nonverbalspeech38k,nvs38k/status_reason_codes/02 に置き換え
+ogvc,espnet_status,superseded,candidate,user,excluded,primary,http://research.nii.ac.jp/src/en/register.html,ogvc/espnet_status/04 に置き換え
+ogvc,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,ogvc/espnet_status/03 に置き換え
+ogvc,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,project_doc,nc_candidates_20261010.md,ogvc/status_reason_codes/03 に置き換え
+ogvc,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,http://research.nii.ac.jp/src/en/register.html,ogvc/status_reason_codes/04 に置き換え
+omgemotion,espnet_status,superseded,needs_decision,user,excluded,primary,https://www2.informatik.uni-hamburg.de/wtm/omgchallenges/omg_emotion2018_description.html,omgemotion/espnet_status/04 に置き換え
+omgemotion,espnet_status,superseded,needs_decision,user,excluded,project_doc,nc_candidates_20261010.md,omgemotion/espnet_status/03 に置き換え
+paraspeechcaps,espnet_status,superseded,candidate,user,excluded,primary,https://arxiv.org/abs/2503.04713,paraspeechcaps/espnet_status/02 に置き換え
+paraspeechcaps,status_reason_codes,superseded,unexamined,user,labels_automatic;redistribution_of_existing_corpus,primary,https://arxiv.org/abs/2503.04713,paraspeechcaps/status_reason_codes/02 に置き換え
 pavoque,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,7334,see evidence,5442,measured,n_files_release_measured,
 pavoque,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7334,see evidence,5442,measured,recipes.n_total (pavoque),レシピは長さ・ラベルで絞るため一致しないのが普通
+pemo_punjabi,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Punjabi/PEMO.md,一次資料は未確認; pemo_punjabi/espnet_status/02 に置き換え
+pemo_punjabi,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Punjabi/PEMO.md,一次資料は未確認; pemo_punjabi/status_reason_codes/02 に置き換え
+polish_cichosz2005,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Polish/Cichosz_and_Slot_2005.md,一次資料は未確認; polish_cichosz2005/espnet_status/02 に置き換え
+polish_cichosz2005,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Polish/Cichosz_and_Slot_2005.md,一次資料は未確認; polish_cichosz2005/status_reason_codes/02 に置き換え
+polish_sapinski2019,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Polish/Sapinski_et_al_2019.md,一次資料は未確認; polish_sapinski2019/espnet_status/02 に置き換え
+polish_sapinski2019,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Polish/Sapinski_et_al_2019.md,一次資料は未確認; polish_sapinski2019/status_reason_codes/02 に置き換え
 prahalabs_malayalam,status_reason_codes,superseded,redistribution_of_existing_corpus,measured,synthetic_or_tts,project_doc,new_corpora/99_final_report.md,prahalabs_malayalam/status_reason_codes/02 に置き換え
+promptspeech,espnet_status,superseded,candidate,user,excluded,primary,https://prompttts.github.io/prompttts/,promptspeech/espnet_status/04 に置き換え
+promptspeech,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,promptspeech/espnet_status/03 に置き換え
+promptspeech,status_reason_codes,superseded,unexamined,user,synthetic_or_tts,primary,https://prompttts.github.io/prompttts/,promptspeech/status_reason_codes/04 に置き換え
+promptspeech,status_reason_codes,superseded,unexamined,user,synthetic_or_tts,project_doc,nc_candidates_20261010.md,promptspeech/status_reason_codes/03 に置き換え
+qlean_japanese_emotional,espnet_status,superseded,candidate,user,excluded,primary,https://huggingface.co/api/datasets/qleandataset/speech-emotional-speech,qlean_japanese_emotional/espnet_status/02 に置き換え
+qlean_japanese_emotional,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://huggingface.co/api/datasets/qleandataset/speech-emotional-speech,qlean_japanese_emotional/status_reason_codes/02 に置き換え
 quechua,n_speakers_reported,superseded,6,project_doc,7,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,quechua/n_speakers_reported/02 に置き換え
+ramas,espnet_status,superseded,deferred,user,excluded,measured,https://neurodatalab.com/,ramas/espnet_status/02 に置き換え
 recanvo,espnet_status,superseded,candidate,measured,excluded,primary,https://pmc.ncbi.nlm.nih.gov/articles/PMC10404278/,recanvo/espnet_status/02 に置き換え
 recanvo,status_reason_codes,superseded,unexamined,measured,labels_not_discrete_emotion,primary,https://pmc.ncbi.nlm.nih.gov/articles/PMC10404278/,recanvo/status_reason_codes/02 に置き換え
+recola,espnet_status,superseded,candidate,user,excluded,primary,https://recola.human-ist.ch/download.html,recola/espnet_status/04 に置き換え
+recola,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,recola/espnet_status/03 に置き換え
+recola,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://recola.human-ist.ch/download.html,recola/status_reason_codes/04 に置き換え
+recola,status_reason_codes,superseded,unexamined,user,access_signed_agreement,project_doc,nc_candidates_20261010.md,recola/status_reason_codes/03 に置き換え
 resd,n_speakers_reported,superseded,20,primary,200,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,resd/n_speakers_reported/02 に置き換え
 rml_emotion,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,500,see evidence,720,measured,n_files_release_measured,
-ruslana,status_reason_codes,superseded,access_no_direct_download,primary,access_paid_or_membership,project_doc,new_corpora/99_final_report.md,ruslana/status_reason_codes/03 に置き換え
-semaine,status_reason_codes,superseded,host_unreachable,measured,not_individually_checked,project_doc,nc_candidates_20261010.md,semaine/status_reason_codes/03 に置き換え
-semour,status_reason_codes,superseded,host_unreachable,measured,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,semour/status_reason_codes/02 に置き換え
-sewa,status_reason_codes,superseded,host_unreachable,measured,not_individually_checked,project_doc,nc_candidates_20261010.md,sewa/status_reason_codes/03 に置き換え
+ruslana,espnet_status,superseded,deferred,user,excluded,primary,https://www.isca-archive.org/icslp_2002/makarova02_icslp.pdf,ruslana/espnet_status/04 に置き換え
+ruslana,espnet_status,superseded,deferred,user,excluded,project_doc,new_corpora/99_final_report.md,ruslana/espnet_status/03 に置き換え
+ruslana,status_reason_codes,superseded,access_no_direct_download,user,access_paid_or_membership,project_doc,new_corpora/99_final_report.md,ruslana/status_reason_codes/03 に置き換え
+sccesc,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Czech/SCCESC.md,一次資料は未確認; sccesc/espnet_status/02 に置き換え
+sccesc,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Czech/SCCESC.md,一次資料は未確認; sccesc/status_reason_codes/02 に置き換え
+secepdb,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Chinese/SECEPDB.md,一次資料は未確認; secepdb/espnet_status/02 に置き換え
+secepdb,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Chinese/SECEPDB.md,一次資料は未確認; secepdb/status_reason_codes/02 に置き換え
+semaine,espnet_status,superseded,deferred,user,excluded,measured,https://www.semaine-db.eu/,semaine/espnet_status/04 に置き換え
+semaine,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,semaine/espnet_status/03 に置き換え
+semaine,status_reason_codes,superseded,host_unreachable,user,not_individually_checked,project_doc,nc_candidates_20261010.md,semaine/status_reason_codes/03 に置き換え
+semour,espnet_status,superseded,deferred,user,excluded,measured,http://acoustics-lab.itu.edu.pk/semour/,semour/espnet_status/03 に置き換え
+semour,espnet_status,superseded,deferred,user,excluded,project_doc,new_corpora/99_final_report.md,semour/espnet_status/02 に置き換え
+semour,status_reason_codes,superseded,host_unreachable,user,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,semour/status_reason_codes/02 に置き換え
+sewa,espnet_status,superseded,deferred,user,excluded,measured,http://db.sewaproject.eu/,sewa/espnet_status/04 に置き換え
+sewa,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,sewa/espnet_status/03 に置き換え
+sewa,status_reason_codes,superseded,host_unreachable,user,not_individually_checked,project_doc,nc_candidates_20261010.md,sewa/status_reason_codes/03 に置き換え
 shemo,recording_context,superseded,other,primary,acted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Acted; shemo/recording_context/02 に置き換え
-studies,status_reason_codes,superseded,access_signed_agreement,primary,access_request_form_or_email;access_signed_agreement,project_doc,nc_candidates_20261010.md,studies/status_reason_codes/03 に置き換え
+slue_voxceleb,espnet_status,superseded,candidate,user,excluded,primary,https://arxiv.org/abs/2111.10367,slue_voxceleb/espnet_status/02 に置き換え
+slue_voxceleb,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,primary,https://arxiv.org/abs/2111.10367,slue_voxceleb/status_reason_codes/02 に置き換え
+spanish_meacorpus,espnet_status,superseded,needs_decision,user,excluded,primary,https://zenodo.org/records/18606423,spanish_meacorpus/espnet_status/02 に置き換え
+speechcraft,espnet_status,superseded,candidate,user,excluded,primary,https://arxiv.org/abs/2408.13608,speechcraft/espnet_status/02 に置き換え
+speechcraft,status_reason_codes,superseded,unexamined,user,labels_automatic;redistribution_of_existing_corpus,primary,https://arxiv.org/abs/2408.13608,speechcraft/status_reason_codes/02 に置き換え
+studies,espnet_status,superseded,candidate,user,excluded,primary,http://research.nii.ac.jp/src/en/register.html,studies/espnet_status/04 に置き換え
+studies,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,studies/espnet_status/03 に置き換え
+studies,status_reason_codes,superseded,unexamined,user,access_request_form_or_email;access_signed_agreement,project_doc,nc_candidates_20261010.md,studies/status_reason_codes/03 に置き換え
+studies,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,http://research.nii.ac.jp/src/en/register.html,studies/status_reason_codes/04 に置き換え
+susas,espnet_status,superseded,candidate,user,excluded,primary,https://catalog.ldc.upenn.edu/LDC99S78,susas/espnet_status/02 に置き換え
+susas,status_reason_codes,superseded,unexamined,user,access_paid_or_membership;labels_not_discrete_emotion,primary,https://catalog.ldc.upenn.edu/LDC99S78,susas/status_reason_codes/02 に置き換え
+swedish_vpesc,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Swedish/SwedishVoiceProviderEmotionalSpeechCorpus.md,一次資料は未確認; swedish_vpesc/espnet_status/02 に置き換え
+swedish_vpesc,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Swedish/SwedishVoiceProviderEmotionalSpeechCorpus.md,一次資料は未確認; swedish_vpesc/status_reason_codes/02 に置き換え
+switchboard_sentiment,espnet_status,superseded,candidate,user,excluded,primary,https://catalog.ldc.upenn.edu/LDC2020T14,switchboard_sentiment/espnet_status/02 に置き換え
+switchboard_sentiment,status_reason_codes,superseded,unexamined,user,access_paid_or_membership;labels_not_discrete_emotion,primary,https://catalog.ldc.upenn.edu/LDC2020T14,switchboard_sentiment/status_reason_codes/02 に置き換え
+syntact,espnet_status,superseded,candidate,user,excluded,primary,https://aclanthology.org/2022.dclrl-1.1.pdf,syntact/espnet_status/02 に置き換え
 syntact,license_spdx,superseded,CC-BY-4.0,primary,CC-BY-SA-4.0,secondary,https://github.com/SuperKogito/SER-datasets,syntact/license_spdx/02 に置き換え
+syntact,status_reason_codes,superseded,unexamined,user,synthetic_or_tts,primary,https://aclanthology.org/2022.dclrl-1.1.pdf,syntact/status_reason_codes/02 に置き換え
 talromur3,hours_reported,superseded,24,primary,14,primary,http://hdl.handle.net/20.500.12537/344,talromur3/hours_reported/02 に置き換え
 talromur3,n_utt_reported,superseded,21528,primary,15078,primary,http://hdl.handle.net/20.500.12537/344,talromur3/n_utt_reported/02 に置き換え
+tamar_emodb,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Tamil/TaMaR-EmoDB.md,一次資料は未確認; tamar_emodb/espnet_status/02 に置き換え
+tamar_emodb,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Tamil/TaMaR-EmoDB.md,一次資料は未確認; tamar_emodb/status_reason_codes/02 に置き換え
+tamil_ram,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Tamil/Ram_C_Sunitha_et_al.md,一次資料は未確認; tamil_ram/espnet_status/02 に置き換え
+tamil_ram,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Tamil/Ram_C_Sunitha_et_al.md,一次資料は未確認; tamil_ram/status_reason_codes/02 に置き換え
+telugu_emotion_kaggle,espnet_status,superseded,candidate,user,excluded,primary,https://www.kaggle.com/datasets/jettysowmith/telugu-emotion-speech,telugu_emotion_kaggle/espnet_status/02 に置き換え
+telugu_emotion_kaggle,status_reason_codes,superseded,unexamined,user,provenance_unclear,primary,https://www.kaggle.com/datasets/jettysowmith/telugu-emotion-speech,telugu_emotion_kaggle/status_reason_codes/02 に置き換え
+thanushs25_tamil,espnet_status,superseded,candidate,user,excluded,measured,https://huggingface.co/datasets/Thanushs25/tamil-audio-emotion-classification,thanushs25_tamil/espnet_status/03 に置き換え
+thanushs25_tamil,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,thanushs25_tamil/espnet_status/02 に置き換え
+thanushs25_tamil,status_reason_codes,superseded,unexamined,user,provenance_unclear,measured,https://huggingface.co/datasets/Thanushs25/tamil-audio-emotion-classification,thanushs25_tamil/status_reason_codes/03 に置き換え
+thanushs25_tamil,status_reason_codes,superseded,unexamined,user,provenance_unclear,project_doc,new_corpora/99_final_report.md,thanushs25_tamil/status_reason_codes/02 に置き換え
 thorsten,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,2400,see evidence,2399,measured,n_files_release_measured,
 thorsten,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,2400,see evidence,2399,measured,recipes.n_total (thorsten),レシピは長さ・ラベルで絞るため一致しないのが普通
+tumavic,espnet_status,superseded,deferred,user,excluded,primary,https://www.isca-archive.org/interspeech_2010/schuller10b_interspeech.pdf,tumavic/espnet_status/02 に置き換え
+tumavic,status_reason_codes,superseded,access_no_direct_download,user,labels_not_discrete_emotion,primary,https://www.isca-archive.org/interspeech_2010/schuller10b_interspeech.pdf,tumavic/status_reason_codes/02 に置き換え
 turevdb,license_spdx,conflicting,conflicting,project_doc,CC-BY-NC-ND-4.0,primary,https://github.com/Xeonen/TurEV-DB,
 turevdb,license_spdx,conflicting,conflicting,project_doc,GPL-3.0-only,primary,https://github.com/Xeonen/TurEV-DB,
 turevdb,license_spdx,superseded,conflicting,project_doc,LicenseRef-other,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Other; 資料間の食い違いのため conflicting に置き換え
@@ -140,8 +447,23 @@ uq_schizophrenia_videos,espnet_status,superseded,deferred,user,excluded,secondar
 uq_schizophrenia_videos,status_reason_codes,superseded,unexamined,user,content_insufficient,secondary,https://github.com/SuperKogito/SER-datasets,uq_schizophrenia_videos/status_reason_codes/02 に置き換え
 urdu,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,38,see evidence,29,measured,n_speakers_measured,
 urdu,recording_context,superseded,talk_show,primary,tv_show,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: TV show; urdu/recording_context/02 に置き換え
-vam,status_reason_codes,superseded,access_signed_agreement,primary,not_individually_checked,project_doc,nc_candidates_20261010.md,vam/status_reason_codes/03 に置き換え
+usoms,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,usoms/espnet_status/03 に置き換え
+uudb,espnet_status,superseded,candidate,user,excluded,primary,http://research.nii.ac.jp/src/en/register.html,uudb/espnet_status/02 に置き換え
+uudb,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,http://research.nii.ac.jp/src/en/register.html,uudb/status_reason_codes/02 に置き換え
+vam,espnet_status,superseded,candidate,user,excluded,measured,https://sail.usc.edu/emotion/VAM/VAM_Audio.zip,vam/espnet_status/04 に置き換え
+vam,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,vam/espnet_status/03 に置き換え
+vam,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://sail.usc.edu/VAM/vam_release.htm,vam/status_reason_codes/04 に置き換え
+vam,status_reason_codes,superseded,unexamined,user,not_individually_checked,project_doc,nc_candidates_20261010.md,vam/status_reason_codes/03 に置き換え
+verbo,espnet_status,superseded,candidate,user,excluded,primary,https://sites.google.com/view/verbodatabase/home/download,verbo/espnet_status/02 に置き換え
+verbo,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://sites.google.com/view/verbodatabase/home/download,verbo/status_reason_codes/02 に置き換え
+vesc,espnet_status,superseded,candidate,user,excluded,measured,https://drive.google.com/drive/folders/1PDHLBbtwxEMXqjMntgAVthi-qRuHVOB-,vesc/espnet_status/02 に置き換え
+vesc,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,project_doc,ser_dataset_db: 2026-10-14 網羅調査での判断,vesc/status_reason_codes/02 に置き換え
+vesus,espnet_status,superseded,candidate,user,excluded,primary,https://www.nsa-lab.org/resources/vesus/,vesus/espnet_status/02 に置き換え
+vesus,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://www.nsa-lab.org/resources/vesus/,vesus/status_reason_codes/02 に置き換え
 vnemos,espnet_status,superseded,deferred,primary,excluded,primary,https://doi.org/10.1109/icdv61346.2024.10616411,vnemos/espnet_status/02 に置き換え
 vnemos,status_reason_codes,superseded,unexamined,primary,content_insufficient,primary,https://doi.org/10.1109/icdv61346.2024.10616411,vnemos/status_reason_codes/02 に置き換え
+waxal_wolof_ser,status_reason_codes,superseded,labels_not_discrete_emotion,measured,provenance_unclear,primary,https://huggingface.co/datasets/papasega/Waxal_Multiling_4_SER-Wolof,waxal_wolof_ser/status_reason_codes/02 に置き換え
+yue_emo_speech,espnet_status,superseded,candidate,user,excluded,project_doc,ser_dataset_db: 2026-10-14 網羅調査での判断,カードに付け方の記載なし; yue_emo_speech/espnet_status/02 に置き換え
+yue_emo_speech,status_reason_codes,superseded,unexamined,user,labels_automatic,project_doc,ser_dataset_db: 2026-10-14 網羅調査での判断,yue_emo_speech/status_reason_codes/02 に置き換え
 zamai_pashto,languages,superseded,pus;fas;eng,primary,pus,project_doc,new_corpora/99_final_report.md,zamai_pashto/languages/02 に置き換え
 zamai_pashto,status_reason_codes,superseded,text_only,measured,content_insufficient,project_doc,new_corpora/99_final_report.md,zamai_pashto/status_reason_codes/02 に置き換え

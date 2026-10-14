@@ -143,6 +143,7 @@ expresso,Expresso,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.c
 eyase,EYASE,other_source_name,new_corpora/99_final_report.md,
 fauaibo,FAU-Aibo,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 37
 filmed,Filipino Multimodal Emotion Database (FilMED),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Filipino/FilMED.md,
+fluent_speech_commands,FSC,short_name,https://fluent.ai/fluent-speech-commands-a-dataset-for-spoken-language-understanding-research/,
 galgame_speech_ser,Galgame_Speech_SER,other_source_name,new_corpora/99_final_report.md,
 gaudie,GAUDIE,official_name,https://pmc.ncbi.nlm.nih.gov/articles/PMC10991051/,
 gees,GEES,other_source_name,new_corpora/99_final_report.md,
@@ -233,6 +234,7 @@ mess,MESS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 
 mess,Morgan Emotional Speech Set (MESS),official_name,new_corpora/13_mess_report.md,
 mess,mess,recipe_dir,egs3/mess/cls/dataset/config.yaml (branch ser/cross-corpus),
 mikuemobench,MIKU-PAL,other_source_name,https://arxiv.org/abs/2505.15772,
+minds14,MINDS-14,short_name,https://arxiv.org/abs/2104.08524,
 mlend_numerals,MLEnd,short_name,https://github.com/SuperKogito/SER-datasets,
 mspconversation,MSP-Conversation,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 56
 mspface,MSP-Face,official_name,https://www.lab-msp.com/MSP/MSP-Face.html,
@@ -295,9 +297,14 @@ shemo,shemo,recipe_dir,egs3/shemo/cls/dataset/config.yaml (branch ser/cross-corp
 sitb_osed,Indic-Odia Speech Emotion Data,other_source_name,https://zenodo.org/records/16210020,
 sitb_osed,SITB-OSED,short_name,https://zenodo.org/records/16210020,
 slue_voxceleb,SLUE,other_source_name,https://arxiv.org/abs/2111.10367,ベンチマーク全体の名前
+slurp,SLURP,official_name,https://arxiv.org/abs/2011.13205,
+snips_slu,Snips SLU,short_name,https://github.com/sonos/spoken-language-understanding-research-datasets,
+snips_slu,Sonos SLU datasets,other_source_name,https://github.com/sonos/spoken-language-understanding-research-datasets,
 spanish_meacorpus,MEACorpus,short_name,https://github.com/NLP-UMUTeam/Spanish-MEACorpus-2023,
 spanish_meacorpus,Spanish-MEACorpus-2023,other_source_name,https://github.com/NLP-UMUTeam/Spanish-MEACorpus-2023,
+speech_massive,Speech-MASSIVE-test,other_source_name,https://huggingface.co/datasets/FBK-MT/Speech-MASSIVE-test,
 speechcraft,SpeechCraft,official_name,https://github.com/thuhcsi/SpeechCraft,
+stop,Spoken Task Oriented semantic Parsing,official_name,https://arxiv.org/abs/2207.10643,
 studies,STUDIES,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 76
 subesco,SUBESCO,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 77
 subesco,SUST BANGLA EMOTIONAL SPEECH CORPUS (HF sustcsenlp),other_source_name,https://huggingface.co/datasets/sustcsenlp/bn_emotion_speech_corpus,SUST の NLP グループによる HF 上の配布(CC BY 4.0)
@@ -321,6 +328,7 @@ thaiser,thaiser,recipe_dir,egs3/thaiser/cls/dataset/config.yaml (branch ser/cros
 thanushs25_tamil,Thanushs25 tamil,other_source_name,new_corpora/99_final_report.md,
 thorsten,Thorsten-Emotional,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 79
 thorsten,thorsten,recipe_dir,egs3/thorsten/cls/dataset/config.yaml (branch ser/cross-corpus),
+timers_and_such,Timers and Such v1.0,official_name,https://zenodo.org/records/4623772,
 tumavic,AVIC,short_name,https://www.isca-archive.org/interspeech_2010/schuller10b_interspeech.pdf,
 tumavic,Audiovisual Interest Corpus,official_name,https://www.isca-archive.org/interspeech_2010/schuller10b_interspeech.pdf,
 tumavic,TUM AVIC,short_name,https://www.isca-archive.org/interspeech_2010/schuller10b_interspeech.pdf,

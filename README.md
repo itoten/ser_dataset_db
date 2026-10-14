@@ -28,7 +28,7 @@
 | `data/recipe_labels.csv` | レシピ×ラベル。レシピが捨てたラベルも残す | `recipe`, `label` |
 | `data/benchmark_membership.csv` | マルチコーパスのレシピを構成するレシピ | `benchmark_recipe`, `member_recipe`, `role` |
 
-- `recipes.dataset_id` が `datasets` に結びつく。マルチコーパスのレシピは `NA`(個別のレシピが各データセットに結びつく)。`msppodcast_full8` は `msppodcast` の別構成(`single_corpus_variant`)。
+- `recipes.dataset_id` が `datasets` に結びつく。マルチコーパスのレシピは `NA`(個別のレシピが各データセットに結びつく)。
 - 状態: `espnet_status` は `implemented`(egs3 にレシピあり)/ `candidate` / `needs_decision` / `deferred` / `excluded`。`implemented` 以外は `status_reason_codes`(`;` 区切り)に理由を持ち、`implemented` では `NA`。補足は `status_note`、確認日は `status_checked_on`。
 - 行の由来: `in_sheet`(元のシートにあった行か)。シート外の行は `sheet_verified=NA`。`sheet_verified` はシートの Verified 列(人が手作業で確認したか)を原文のまま残したもので、判断には使わない。
 
@@ -75,21 +75,27 @@
 
 ## 現状(2026-10-14)
 
-295データセット(シート由来84・シート外211)。`implemented` 53、`candidate` 49、`deferred` 16、`needs_decision` 1(`casia`)、`excluded` 176。MSP-Podcast 論文(arXiv 2509.09791v1)の Table I の28コーパスは全て含む。
+307データセット(シート由来84・シート外223)。`implemented` 53、`candidate` 172、`deferred` 33、`needs_decision` 8、`excluded` 41。MSP-Podcast 論文(arXiv 2509.09791v1)の Table I の28コーパスは全て含む。
 
 - 2026-10-14 の網羅調査で、総説(SuperKogito の一覧、EmoBox、KuralHub など)と、HF・Zenodo・Kaggle・Mendeley・figshare・GitHub の検索から158件を足した。
-- `candidate` は、認証なしか同意クリックだけで音声を取れ、離散の感情ラベルがあるもの。実装するかは未検討(`unexamined`)。
-- `deferred` は論文の書誌しか確かめられず、配布の有無を決められなかったもの。
+- 同日に状態の付け方の方針を改め、全除外行を見直した(下の「状態の付け方」)。
+- 対象は感情に限らない。パラ言語情報を扱うデータ(感情・話し方・意図・対話行為・感情極性など)を集める。意図(intent)・対話行為のデータは、SLURP・Timers and Such・Fluent Speech Commands・Snips/Sonos・STOP・MInDS-14・Speech-MASSIVE・ITALIC・DIHANA・SpokenWOZ・Harper Valley Bank・SLUE-HVB の12件を足した(`candidate`、理由 `unexamined`)。未調査: CATSLU、MRDA・SwDA・AMI などの対話行為、ATIS の音声、SLURP の他言語版、他言語の意図データ。
+
+状態の付け方(ito さんの判断、2026-10-14):
+
+- **`excluded` には明確な理由が要る**: 音声がない(`text_only`・`no_raw_audio_features_only`・`no_audio_paper_only`・`no_audio_code_only`)、別データの再配布(`redistribution_of_existing_corpus`)、重複(`duplicate_entry`)、ラベルが分類に使えない(話者 ID など)、地域制限で入手できない、など。
+- 次は除外理由にしない: 規模の大小、手動の入手作業(申請・署名・ログイン・購入。ito さんに手順を頼んで取れる)、Kaggle(無料アカウントとトークンで取れる)、ラベルの種類(感情極性・意図・次元値・話し方)、自動ラベル、合成音声。これらは `candidate` にし、使えない点や注意は `status_note` に書く。感情極性と離散感情の重なり(怒りと否定)や、連続値ラベルを今のシステムが扱えない点は、実装の段階で決める。
+- `candidate` は、音声と分類に使えるラベルがあり、入手できる見込みがあるもの。`unexamined` は実装を検討していないという意味。
+- `needs_decision` は、利用条件や費用など ito さんにしか決められないもの(有償の業者データ、動画リンクのみの配布、MER2026 の申請文面など)。
+- `deferred` は、配布元が応答しない・入手方法が見つからないなど、確かめられていないもの。確かめれば `candidate` か `excluded` になる。
+- 規模・評定者数・出所の不明などは分析時の注意として `status_note` に書く(例: `legov2` は評定者1人・302通話、`expresso` と `mlend_numerals` は感情でないスタイルが混ざる、`humyn_indian_emotional` は16件)。
 
 既知の注意:
 
 - 状態・ライセンス・入手方法の根拠は、ほとんどが一次資料(配布ページ・API・論文)か実測。2026-10-14 の検証で、シートや作業メモしか根拠がなかった行を配布元で確認し直した(検証で値が変わった行は `views/discrepancies.csv` で旧値と並ぶ)。
+- Kaggle のデータセットは、認証付きの API で一覧とラベルを確かめた(トークンは `~/.kaggle/access_token`)。認証がないと思い込んで除外していた `hindi_ser_vishlb`(感情8クラス・3,200件)と `telugu_emotion_kaggle`(5クラス・458件)を見直しで候補に戻した。
 - 一次資料で確認できていないもの:
   - KuralHub(第三者の総説)だけが根拠の28件。`status_note` に「一次資料での入手方法の確認はしていない」とある。多くは古い論文のデータで「依頼制」とされる。
   - 配布元が応答しないなどで確かめられなかったもの: `amigos`(2026-10-14 に HTTP 503)、`casia`(接続不可)、`cheavd`、`belfast`、`emotion_origlia2010`、`usoms`、`eyase`。
-  - `deferred` の16件。
-- 状態の付け方で決めてあること(ito さんの判断、2026-10-14):
-  - 規模の小ささ・大きさは除外理由にしない(`content_insufficient`・`too_large` は使わない)。小さい・評定者が少ないなどは `status_note` に分析時の注意として書く(例: `legov2` は評定者1人・302通話、`expresso` と `mlend_numerals` は感情でないスタイルが混ざる、`humyn_indian_emotional` は16件)。
-  - HF の同意クリック(`gated: auto`)だけで取れるものは `candidate`(`emota`・`mer2023`・`emotiontalk`・`mceiu`・`rasa`)。
-- 判断が要るもの: `mer2026` は HF API では自動許可だが、申請フォームの文面が「academic research and MER2026 challenge participation only」で、チャレンジ非参加者が使ってよいかは確定できない(`excluded`)。
+  - `deferred` の33件。
 - 公表値と実測値が食い違う箇所は `views/discrepancies.csv` にある。レシピは長さやラベルで絞るため、`n_utt_reported` とレシピの件数が一致しないのは普通のことが多い。
