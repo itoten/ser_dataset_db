@@ -58,7 +58,9 @@ emovo,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-onl
 emovome,status_reason_codes,superseded,access_signed_agreement,primary,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,emovome/status_reason_codes/02 に置き換え
 enterface05,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1166,see evidence,1293,measured,n_files_release_measured,
 enterface05,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1166,see evidence,1260,measured,recipes.n_total (enterface05),レシピは長さ・ラベルで絞るため一致しないのが普通
-expresso,status_reason_codes,superseded,labels_style_not_emotion,user,too_large;labels_style_not_emotion,project_doc,new_corpora/99_final_report.md,expresso/status_reason_codes/03 に置き換え
+expresso,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,expresso/espnet_status/03 に置き換え
+expresso,status_reason_codes,superseded,unexamined,user,labels_style_not_emotion,user,会話 2026-10-14,ito さんの判断で too_large を外した; expresso/status_reason_codes/04 に置き換え
+expresso,status_reason_codes,superseded,unexamined,user,too_large;labels_style_not_emotion,project_doc,new_corpora/99_final_report.md,expresso/status_reason_codes/03 に置き換え
 gaudie,status_reason_codes,superseded,labels_not_discrete_emotion;access_request_form_or_email,user,labels_not_discrete_emotion;content_insufficient;access_request_form_or_email,primary,https://pmc.ncbi.nlm.nih.gov/articles/PMC10991051/,gaudie/status_reason_codes/02 に置き換え
 gees,status_reason_codes,superseded,access_signed_agreement,primary,access_paid_or_membership,project_doc,new_corpora/99_final_report.md,gees/status_reason_codes/02 に置き換え
 humyn_indian_emotional,espnet_status,superseded,candidate,user,excluded,measured,https://huggingface.co/api/datasets/humyn-labs/Indian-Emotional-Speech-Corpus,humyn_indian_emotional/espnet_status/02 に置き換え

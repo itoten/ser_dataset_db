@@ -75,7 +75,7 @@
 
 ## 現状(2026-10-14)
 
-295データセット(シート由来84・シート外211)。`implemented` 53、`candidate` 46、`deferred` 16、`needs_decision` 1(`casia`)、`excluded` 179。MSP-Podcast 論文(arXiv 2509.09791v1)の Table I の28コーパスは全て含む。
+295データセット(シート由来84・シート外211)。`implemented` 53、`candidate` 47、`deferred` 16、`needs_decision` 1(`casia`)、`excluded` 178。MSP-Podcast 論文(arXiv 2509.09791v1)の Table I の28コーパスは全て含む。
 
 - 2026-10-14 の網羅調査で、総説(SuperKogito の一覧、EmoBox、KuralHub など)と、HF・Zenodo・Kaggle・Mendeley・figshare・GitHub の検索から158件を足した。
 - `candidate` は、認証なしか同意クリックだけで音声を取れ、離散の感情ラベルがあるもの。実装するかは未検討(`unexamined`)。
@@ -89,7 +89,7 @@
   - 配布元が応答しないなどで確かめられなかったもの: `amigos`(2026-10-14 に HTTP 503)、`casia`(接続不可)、`cheavd`、`belfast`、`emotion_origlia2010`、`usoms`、`eyase`。
   - `deferred` の16件。
 - 状態の付け方で決めてあること(ito さんの判断、2026-10-14):
-  - 規模の小ささ・大きさは除外理由にしない(`content_insufficient`・`too_large` は使わない)。小さい・評定者が少ないなどは `status_note` に分析時の注意として書く(例: `legov2` は評定者1人・302通話、`humyn_indian_emotional` は16件)。
+  - 規模の小ささ・大きさは除外理由にしない(`content_insufficient`・`too_large` は使わない)。小さい・評定者が少ないなどは `status_note` に分析時の注意として書く(例: `legov2` は評定者1人・302通話、`expresso` は感情でないスタイルが混ざる、`humyn_indian_emotional` は16件)。
   - HF の同意クリック(`gated: auto`)だけで取れるものは `candidate`(`emota`・`mer2023`・`emotiontalk`・`mceiu`・`rasa`)。
-- 判断が要るもの: `expresso` は規模を理由にしなくなったが、ラベルが話し方(スタイル)なので `labels_style_not_emotion` のまま `excluded`。`mer2026` は HF API では自動許可だが、申請フォームの文面が「academic research and MER2026 challenge participation only」で、チャレンジ非参加者が使ってよいかは確定できない(`excluded`)。
+- 判断が要るもの: `mer2026` は HF API では自動許可だが、申請フォームの文面が「academic research and MER2026 challenge participation only」で、チャレンジ非参加者が使ってよいかは確定できない(`excluded`)。
 - 公表値と実測値が食い違う箇所は `views/discrepancies.csv` にある。レシピは長さやラベルで絞るため、`n_utt_reported` とレシピの件数が一致しないのは普通のことが多い。
