@@ -45,6 +45,10 @@ emofilm,languages,superseded,eng;ita;spa,primary,mul,sheet,sheet_import/2026-10-
 emofilm,status_reason_codes,superseded,access_signed_agreement,primary,access_request_form_or_email,project_doc,nc_candidates_20261010.md,emofilm/status_reason_codes/03 に置き換え
 emomatchspanishdb,status_reason_codes,superseded,access_signed_agreement,primary,no_raw_audio_features_only,project_doc,nc_candidates_20261010.md,emomatchspanishdb/status_reason_codes/03 に置き換え
 emoreact,status_reason_codes,superseded,access_request_form_or_email,primary,not_distributable,project_doc,new_corpora/99_final_report.md,emoreact/status_reason_codes/02 に置き換え
+emota,espnet_status,superseded,candidate,primary,excluded,primary,https://huggingface.co/datasets/aaivu-labs/EmoTa,emota/espnet_status/03 に置き換え
+emota,espnet_status,superseded,candidate,primary,excluded,project_doc,new_corpora/99_final_report.md,emota/espnet_status/02 に置き換え
+emota,status_reason_codes,superseded,unexamined,primary,access_gated,primary,https://huggingface.co/datasets/aaivu-labs/EmoTa,emota/status_reason_codes/03 に置き換え
+emota,status_reason_codes,superseded,unexamined,primary,access_gated,project_doc,new_corpora/99_final_report.md,emota/status_reason_codes/02 に置き換え
 emotional_ema,espnet_status,superseded,candidate,primary,excluded,project_doc,new_corpora/99_final_report.md,emotional_ema/espnet_status/02 に置き換え
 emotional_ema,status_reason_codes,superseded,unexamined,project_doc,host_unreachable,project_doc,new_corpora/99_final_report.md,emotional_ema/status_reason_codes/02 に置き換え
 emotiontts_open_db,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,6000,see evidence,300,measured,n_files_release_measured,
@@ -81,7 +85,11 @@ mderma,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1
 mderma,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1322,see evidence,1267,measured,recipes.n_total (mderma),レシピは長さ・ラベルで絞るため一致しないのが普通
 mead,license_spdx,superseded,unknown,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; mead/license_spdx/02 に置き換え
 meld,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,13708,see evidence,13704,measured,recipes.n_total (meld),レシピは長さ・ラベルで絞るため一致しないのが普通
+mer2023,espnet_status,superseded,candidate,primary,excluded,primary,https://huggingface.co/datasets/MERChallenge/MER2023,mer2023/espnet_status/04 に置き換え
+mer2023,espnet_status,superseded,candidate,primary,excluded,project_doc,nc_candidates_20261010.md,mer2023/espnet_status/03 に置き換え
 mer2023,license_spdx,superseded,CC-BY-NC-4.0,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Custom academic/research-only; mer2023/license_spdx/02 に置き換え
+mer2023,status_reason_codes,superseded,unexamined,primary,access_gated,primary,https://huggingface.co/datasets/MERChallenge/MER2023,mer2023/status_reason_codes/04 に置き換え
+mer2023,status_reason_codes,superseded,unexamined,primary,access_gated,project_doc,nc_candidates_20261010.md,mer2023/status_reason_codes/03 に置き換え
 mer2026,status_reason_codes,superseded,access_request_form_or_email,primary,access_gated,project_doc,nc_candidates_20261010.md,mer2026/status_reason_codes/03 に置き換え
 mesd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,864,see evidence,862,measured,n_files_release_measured,
 mesd,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,864,see evidence,862,measured,recipes.n_total (mesd),レシピは長さ・ラベルで絞るため一致しないのが普通
