@@ -75,7 +75,7 @@
 
 ## 現状(2026-10-14)
 
-295データセット(シート由来84・シート外211)。`implemented` 53、`candidate` 47、`deferred` 16、`needs_decision` 1(`casia`)、`excluded` 178。MSP-Podcast 論文(arXiv 2509.09791v1)の Table I の28コーパスは全て含む。
+295データセット(シート由来84・シート外211)。`implemented` 53、`candidate` 48、`deferred` 16、`needs_decision` 1(`casia`)、`excluded` 177。MSP-Podcast 論文(arXiv 2509.09791v1)の Table I の28コーパスは全て含む。
 
 - 2026-10-14 の網羅調査で、総説(SuperKogito の一覧、EmoBox、KuralHub など)と、HF・Zenodo・Kaggle・Mendeley・figshare・GitHub の検索から158件を足した。
 - `candidate` は、認証なしか同意クリックだけで音声を取れ、離散の感情ラベルがあるもの。実装するかは未検討(`unexamined`)。
