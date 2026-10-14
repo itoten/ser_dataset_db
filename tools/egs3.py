@@ -14,8 +14,6 @@ import yaml
 BRANCH = "ser/cross-corpus"
 SYSTEM = "cls"
 REPO = Path(__file__).resolve().parent.parent.parent.parent / "espnet"
-# Recipes that train on one corpus but are not the plain single-corpus layout.
-VARIANTS = {"msppodcast_full8"}
 SPLIT_KEY = re.compile(r"split|ratio|seed|official|_speakers")
 
 
@@ -79,8 +77,6 @@ def derive(recipe):
     builder = cfg.get("builder", {})
     if "train_corpora" in builder:
         kind = "multi_corpus"
-    elif recipe in VARIANTS:
-        kind = "single_corpus_variant"
     else:
         kind = "single_corpus"
     train = load_yaml(f"{base}/conf/training.yaml")

@@ -1,23 +1,24 @@
 {
  "audio_format": {
-  "16000Hz/1ch/PCM_16": 207223
+  "16000Hz/1ch/PCM_16": 212808
  },
  "duration_sec": {
   "max": 11.942,
   "median": 5.0,
   "min": 1.913
  },
- "hours_total": 314.6624,
- "measured_on": "2026-10-12",
- "n_total": 207223,
+ "hours_total": 324.1242,
+ "measured_on": "2026-10-14",
+ "n_total": 212808,
  "output_dir": "/home/tenshi/data/msppodcast_espnet3",
  "output_env_var": "MSPPODCAST_OUTPUT",
  "recipe": "msppodcast",
  "splits": {
   "test": {
-   "hours": 55.8886,
+   "hours": 57.6861,
    "labels": {
     "angry": 6985,
+    "contempt": 1040,
     "disgust": 744,
     "fear": 348,
     "happy": 10947,
@@ -25,17 +26,18 @@
     "sad": 3041,
     "surprise": 1206
    },
-   "manifest_sha1": "1626ac21b08aab1f468267670a1f8ff65597897b",
-   "n": 35728,
+   "manifest_sha1": "d693c5dc1d5bb8d62a09a6f083828e292af60cf3",
+   "n": 36768,
    "n_filtered": null,
    "over_30s": 0,
    "under_0.5s": 0,
-   "unique_utt": 35728
+   "unique_utt": 36768
   },
   "test2": {
-   "hours": 16.1372,
+   "hours": 16.5583,
    "labels": {
     "angry": 538,
+    "contempt": 304,
     "disgust": 141,
     "fear": 116,
     "happy": 2801,
@@ -43,17 +45,18 @@
     "sad": 581,
     "surprise": 394
    },
-   "manifest_sha1": "c2630d8bfaf824d5368a983cdff5a33b39c9898b",
-   "n": 11363,
+   "manifest_sha1": "5fd4ce0c4dc74a57219f40d2345fbd2d805f66e1",
+   "n": 11667,
    "n_filtered": null,
    "over_30s": 0,
    "under_0.5s": 0,
-   "unique_utt": 11363
+   "unique_utt": 11667
   },
   "train": {
-   "hours": 203.0242,
+   "hours": 207.7179,
    "labels": {
     "angry": 22609,
+    "contempt": 2765,
     "disgust": 1325,
     "fear": 794,
     "happy": 37048,
@@ -61,17 +64,18 @@
     "sad": 18256,
     "surprise": 3220
    },
-   "manifest_sha1": "94cd9063566c80baed580329fe9aec7f6c5624a5",
-   "n": 134403,
-   "n_filtered": 134403,
+   "manifest_sha1": "b1234eb0007091ecd394e74f49032c5bc5cad22b",
+   "n": 137168,
+   "n_filtered": 137168,
    "over_30s": 0,
    "under_0.5s": 0,
-   "unique_utt": 134403
+   "unique_utt": 137168
   },
   "valid": {
-   "hours": 39.6124,
+   "hours": 42.162,
    "labels": {
     "angry": 5728,
+    "contempt": 1476,
     "disgust": 534,
     "fear": 285,
     "happy": 7487,
@@ -79,12 +83,12 @@
     "sad": 2352,
     "surprise": 1025
    },
-   "manifest_sha1": "c575f89b295bd494403f6fbae0bd0ba9a83116c1",
-   "n": 25729,
-   "n_filtered": 25729,
+   "manifest_sha1": "3e0b0a993f30dfea467edc0c32d52d37af9c6fcf",
+   "n": 27205,
+   "n_filtered": 27205,
    "over_30s": 0,
    "under_0.5s": 0,
-   "unique_utt": 25729
+   "unique_utt": 27205
   }
  },
  "token_list": [
@@ -93,6 +97,7 @@
   "angry",
   "sad",
   "surprise",
+  "contempt",
   "disgust",
   "fear"
  ]

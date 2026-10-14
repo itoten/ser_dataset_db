@@ -61,7 +61,7 @@ relations,other_dataset_id,slug,-,no,相手の dataset_id
 relations,source_ref,text,empty,no,出典
 relations,note,text,empty,no,補足
 recipes,recipe,slug,-,no,egs3 のディレクトリ名
-recipes,recipe_kind,enum:recipe_kind,-,no,single_corpus / single_corpus_variant / multi_corpus
+recipes,recipe_kind,enum:recipe_kind,-,no,single_corpus / multi_corpus
 recipes,system,text,-,no,espnet3 のシステム名(現在は cls)
 recipes,recipe_path,path,-,no,egs3/<recipe>/cls
 recipes,first_commit,text,-,no,cls 配下の config.yaml がブランチに最初に現れたコミット(旧名 wavlmasp からの改名を含む)
