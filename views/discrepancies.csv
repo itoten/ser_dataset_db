@@ -352,8 +352,10 @@ narrative_dialogue,status_reason_codes,superseded,text_only;labels_automatic,pri
 naturalvoices,espnet_status,superseded,candidate,user,excluded,primary,https://arxiv.org/abs/2511.00256,naturalvoices/espnet_status/02 に置き換え
 naturalvoices,status_reason_codes,superseded,unexamined,user,labels_automatic,primary,https://arxiv.org/abs/2511.00256,naturalvoices/status_reason_codes/02 に置き換え
 nexdata_en_emotional_20p,espnet_status,superseded,needs_decision,user,excluded,primary,https://github.com/Nexdata-AI/20-People-English-Emotional-Speech-Data-by-Microphone,nexdata_en_emotional_20p/espnet_status/02 に置き換え
-nonverbaltts,espnet_status,superseded,candidate,user,excluded,primary,https://arxiv.org/abs/2507.13155,nonverbaltts/espnet_status/02 に置き換え
-nonverbaltts,status_reason_codes,superseded,unexamined,user,labels_automatic;redistribution_of_existing_corpus,primary,https://arxiv.org/abs/2507.13155,nonverbaltts/status_reason_codes/02 に置き換え
+nonverbaltts,espnet_status,superseded,implemented,measured,candidate,user,会話 2026-10-14,旧理由: labels_automatic;redistribution_of_existing_corpus; nonverbaltts/espnet_status/03 に置き換え
+nonverbaltts,espnet_status,superseded,implemented,measured,excluded,primary,https://arxiv.org/abs/2507.13155,nonverbaltts/espnet_status/02 に置き換え
+nonverbaltts,license_spdx,superseded,CC-BY-NC-SA-4.0,user,Apache-2.0,primary,https://huggingface.co/datasets/deepvk/NonverbalTTS,HF のメタデータ欄の値。カード本文と食い違うため採用しない(ito さんの判断、nonverbaltts/license_spdx/03)
+nonverbaltts,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,6256,see evidence,3201,measured,recipes.n_total (nonverbaltts),レシピは長さ・ラベルで絞るため一致しないのが普通
 nvs38k,espnet_status,superseded,candidate,user,excluded,primary,https://huggingface.co/datasets/nonverbalspeech/nonverbalspeech38k,nvs38k/espnet_status/02 に置き換え
 nvs38k,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion;labels_automatic,primary,https://huggingface.co/datasets/nonverbalspeech/nonverbalspeech38k,nvs38k/status_reason_codes/02 に置き換え
 ogvc,espnet_status,superseded,candidate,user,excluded,primary,http://research.nii.ac.jp/src/en/register.html,ogvc/espnet_status/04 に置き換え

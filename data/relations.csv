@@ -16,7 +16,7 @@ kazakh_russian_emotion,distinct_from,kazemotts,https://github.com/aaivu/KuralHub
 kesdy18,distinct_from,kemdy19,https://github.com/aaivu/KuralHub/blob/main/datasets/Korean/KESDy18.md,同じ ETRI の別コーパス(KESDy18 は2018年の感情音声、KEMDy19 は2019年のマルチモーダル)
 mmeld,version_of,meld,https://arxiv.org/abs/2203.16799,MELD の発話のテキストを4言語に訳したもの
 nemo,distinct_from,polishemo,new_corpora/16_polishemo_report.md,どちらもポーランド語の感情音声だが別のコーパス(polishemo の注記)
-nonverbaltts,contains,expresso,https://huggingface.co/datasets/deepvk/NonverbalTTS,Expresso の音声の一部を含む(カード: derived from VoxCeleb and Expresso)
+nonverbaltts,contains,expresso,https://huggingface.co/datasets/deepvk/NonverbalTTS,"Expresso の音声の一部を含む(1,804 本)。VoxCeleb(DB未登録)の音声も含む(4,452 本)(カード: derived from VoxCeleb and Expresso)"
 persian_esd,distinct_from,esd,https://doi.org/10.3758/s13428-014-0467-x,名前が似ているが、中英の ESD(HLT Singapore)とは別物
 prahalabs_malayalam,subset_of,rasa,https://huggingface.co/datasets/Praha-Labs/malayalam-emotion-balanced,行の wav_path が rasa_hf/data/Malayalam を指す(2026-10-14 に先頭行で確認)。全件の照合はしていない
 ses_ed,distinct_from,ses_sd,https://www.kaggle.com/datasets/angeluxarmenta/ses-ed,同じ53人の学生による英語版。SES-SD はスペイン語版

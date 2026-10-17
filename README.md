@@ -77,7 +77,7 @@
 
 ## 現状(2026-10-17)
 
-307データセット(シート由来84・シート外223)。`implemented` 54、`candidate` 171、`deferred` 33、`needs_decision` 8、`excluded` 41。MSP-Podcast 論文(arXiv 2509.09791v1)の Table I の28コーパスは全て含む。
+307データセット(シート由来84・シート外223)。`implemented` 55、`candidate` 170、`deferred` 33、`needs_decision` 8、`excluded` 41。MSP-Podcast 論文(arXiv 2509.09791v1)の Table I の28コーパスは全て含む。
 
 - 2026-10-14 の網羅調査で、総説(SuperKogito の一覧、EmoBox、KuralHub など)と、HF・Zenodo・Kaggle・Mendeley・figshare・GitHub の検索から158件を足した。
 - 同日に状態の付け方の方針を改め、全除外行を見直した(下の「状態の付け方」)。

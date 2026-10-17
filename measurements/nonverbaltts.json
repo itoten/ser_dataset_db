@@ -1,0 +1,74 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 3201
+ },
+ "duration_sec": {
+  "max": 29.824,
+  "median": 7.64,
+  "min": 0.57
+ },
+ "hours_total": 8.122,
+ "measured_on": "2026-10-17",
+ "n_total": 3201,
+ "output_dir": "/home/tenshi/data/nonverbaltts_espnet3",
+ "output_env_var": "NONVERBALTTS_OUTPUT",
+ "recipe": "nonverbaltts",
+ "splits": {
+  "test": {
+   "hours": 0.7595,
+   "labels": {
+    "angry": 1,
+    "happy": 66,
+    "neutral": 217,
+    "sad": 6
+   },
+   "manifest_sha1": "d1d89ba149a75ee25bb35a326a685c5ce00a8896",
+   "n": 290,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 290
+  },
+  "train": {
+   "hours": 7.2537,
+   "labels": {
+    "angry": 16,
+    "disgust": 66,
+    "fear": 8,
+    "happy": 1170,
+    "neutral": 1274,
+    "sad": 310,
+    "surprise": 23
+   },
+   "manifest_sha1": "85c4b89778fc80a8223430308791ca38b266e5d1",
+   "n": 2867,
+   "n_filtered": 2867,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 2867
+  },
+  "valid": {
+   "hours": 0.1089,
+   "labels": {
+    "happy": 12,
+    "neutral": 29,
+    "sad": 3
+   },
+   "manifest_sha1": "1a21da7f77825540778229fe1869adb117bfb5b0",
+   "n": 44,
+   "n_filtered": 44,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 44
+  }
+ },
+ "token_list": [
+  "neutral",
+  "happy",
+  "sad",
+  "disgust",
+  "surprise",
+  "angry",
+  "fear"
+ ]
+}
