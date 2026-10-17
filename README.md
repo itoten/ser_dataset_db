@@ -15,6 +15,7 @@
 | ある値の根拠 | `data/evidence.csv` を `dataset_id` と `field` で絞る |
 | 列の意味・型・null の種類 | `schema/columns.csv`、選択肢は `schema/enums.csv`、表のキーは `schema/tables.csv` |
 | ESPnet レシピの実測値 | `data/recipes.csv`、`measurements/<recipe>.json` |
+| 初心者向けの全体説明(用語集つき) | `docs/manual.md` |
 
 ## テーブル
 
@@ -49,6 +50,7 @@
 - 新しい事実が出たら古い行を消さずに `superseded` にして新しい行を足す。資料同士が食い違い決められないときは `conflicting` の行を2つ以上残し、`datasets` のセルを `conflicting` にする(例: EmoDB と TurEV-DB のライセンス)。
 - `*_measured` の列は `measured` の根拠だけ、`*_reported` の列は `measured` を使えない(公表値と実測値は別の列で並べる)。
 - 資料にないことは書かない。URL・題名を推測で作らない。
+- 確認日は各根拠行の `checked_on`(全行に入っている)。`views/datasets_wide.csv` の `license_checked_on`・`oldest_checked_on` などに集約される。`sheet` 由来の行の日付は取り込み日で、内容を確かめた日ではない。
 - 実測値(件数・時間・話者数)の唯一の根拠は `measurements/<recipe>.json` とダウンロードしたファイルの実測。
 
 ## 検証と更新
@@ -64,7 +66,7 @@
 - `git config core.hooksPath tools/hooks` により、コミット前に `tools/validate.py` が走る。`--no-verify` は使わない。
 - egs3 のレシピは作業ツリーではなく `espnet` の `ser/cross-corpus` ブランチから読む(ブランチ名は `tools/egs3.py` の1か所)。
 - 実測は `cd espnet && pixi run python ../espnet_work/ser_dataset_db/tools/measure.py --all`、続けて `python3 tools/sync.py` で `recipes.csv` の自動列を更新し、手書き列を人が埋める。
-- `validate.py` は、形式・型と選択肢・キーと外部キー・別名の重複・根拠の規則・実装状態と egs3 の一致・`recipes.csv` / `recipe_labels.csv` と `measurements/*.json` の一致・`views/` が最新かを検査する。`measurements/` と手元の出力(`~/data/...`)が今も一致するかは検査しない。
+- `validate.py` は、形式・型と選択肢・キーと外部キー・別名の重複・根拠の規則・実装状態と egs3 の一致(ブランチにあって未登録のレシピは警告のみ)・`recipes.csv` / `recipe_labels.csv` と `measurements/*.json` の一致・`views/` が最新かを検査する。`measurements/` と手元の出力(`~/data/...`)が今も一致するかは検査しない。
 - 値を変えるときは必ず根拠行を足す。1データセットまたは1回の確認作業ごとに1コミットとし、メッセージには何が問題だったかと根拠を書く。
 
 ## 何を1行にするか
@@ -73,9 +75,9 @@
 - 感情ラベルがあれば TTS 用のコーパスも含める。音声のないもの(テキストだけ・特徴量だけ)も、調べた結果を残すために `excluded` で載せる。
 - 同じものが2行あると分かったら、片方を `excluded`(`duplicate_entry`)にして `relations` の `possibly_same_as` でつなぐ。ID は消さない。
 
-## 現状(2026-10-14)
+## 現状(2026-10-17)
 
-307データセット(シート由来84・シート外223)。`implemented` 53、`candidate` 172、`deferred` 33、`needs_decision` 8、`excluded` 41。MSP-Podcast 論文(arXiv 2509.09791v1)の Table I の28コーパスは全て含む。
+307データセット(シート由来84・シート外223)。`implemented` 54、`candidate` 171、`deferred` 33、`needs_decision` 8、`excluded` 41。MSP-Podcast 論文(arXiv 2509.09791v1)の Table I の28コーパスは全て含む。
 
 - 2026-10-14 の網羅調査で、総説(SuperKogito の一覧、EmoBox、KuralHub など)と、HF・Zenodo・Kaggle・Mendeley・figshare・GitHub の検索から158件を足した。
 - 同日に状態の付け方の方針を改め、全除外行を見直した(下の「状態の付け方」)。
