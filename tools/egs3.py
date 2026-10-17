@@ -80,11 +80,6 @@ def derive(recipe):
     else:
         kind = "single_corpus"
     train = load_yaml(f"{base}/conf/training.yaml")
-    train3 = (
-        load_yaml(f"{base}/conf/training_3gpu.yaml")
-        if exists(f"{base}/conf/training_3gpu.yaml")
-        else None
-    )
     h, d = first_commit(recipe)
     urls = []
     for u in re.findall(r"https?://[^\s\"'<>)]+", read(f"{base}/dataset/config.yaml")):
@@ -107,12 +102,11 @@ def derive(recipe):
         "min_wav_duration": _num(_get(train, "remove_long_short", "min_wav_duration")),
         "max_wav_duration": _num(_get(train, "remove_long_short", "max_wav_duration")),
         "max_epochs": _num(_get(train, "trainer", "max_epochs")),
-        "max_epochs_3gpu": _num(_get(train3, "trainer", "max_epochs")),
     }
 
 
 SYNC_COLUMNS = [
     "recipe_kind", "system", "recipe_path", "first_commit", "first_commit_date",
     "source_env_var", "output_env_var", "config_urls", "split_config", "num_classes",
-    "min_wav_duration", "max_wav_duration", "max_epochs", "max_epochs_3gpu",
+    "min_wav_duration", "max_wav_duration", "max_epochs",
 ]

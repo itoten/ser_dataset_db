@@ -14,7 +14,9 @@ SHEET_COLS = ["Verified", "Dataset", "License", "Language", "Source", "Total Hou
               "ESPnet Implemented"]
 EXTRA_COLS = ["dataset_id", "status", "reasons", "license_class", "access_method", "raw_audio_available", "recipe",
               "n_total_recipe", "hours_total_recipe", "n_files_release_measured", "n_speakers_measured",
-              "common7_covered", "common7_missing", "extra_labels", "benchmarks", "report_path", "status_note", "notes"]
+              "common7_covered", "common7_missing", "extra_labels", "benchmarks", "report_path", "status_note", "notes",
+              "license_checked_on", "license_source_type", "license_checked_by", "access_checked_on",
+              "oldest_checked_on", "latest_checked_on"]
 DISC_COLS = ["dataset_id", "field", "kind", "datasets_value", "datasets_source_type", "other_value",
              "other_source_type", "other_source_ref", "note"]
 COMMON7 = ["angry", "disgust", "fear", "happy", "neutral", "sad", "surprise"]
@@ -29,9 +31,16 @@ def wide(db):
     recipes = db["recipes"][1]
     labels = db["recipe_labels"][1]
     members = db["benchmark_membership"][1]
+    canon = {}
+    for e in db["evidence"][1]:
+        if e["is_canonical"] == "true":
+            canon.setdefault(e["dataset_id"], {})[e["field"]] = e
     out = []
     for d in db["datasets"][1]:
         i = d["dataset_id"]
+        ce = canon.get(i, {})
+        lic, acc = ce.get("license_spdx"), ce.get("access_method")
+        dates = sorted(e["checked_on"] for e in ce.values())
         recs = sorted((r for r in recipes if r["dataset_id"] == i), key=lambda r: r["recipe"])
         names = [r["recipe"] for r in recs]
         covered, extra = set(), set()
@@ -59,6 +68,9 @@ def wide(db):
             "common7_missing": ";".join(c for c in COMMON7 if c not in covered) if names else "",
             "extra_labels": ";".join(sorted(extra)), "benchmarks": ";".join(bench),
             "report_path": d["report_path"], "status_note": d["status_note"], "notes": d["notes"],
+            "license_checked_on": lic["checked_on"] if lic else "", "license_source_type": lic["source_type"] if lic else "",
+            "license_checked_by": lic["checked_by"] if lic else "", "access_checked_on": acc["checked_on"] if acc else "",
+            "oldest_checked_on": dates[0] if dates else "", "latest_checked_on": dates[-1] if dates else "",
         }
         out.append(row)
     return out

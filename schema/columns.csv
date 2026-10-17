@@ -74,7 +74,6 @@ recipes,num_classes,int,empty;NA,no,training.yaml の model.num_classes
 recipes,min_wav_duration,float,empty;NA,no,training.yaml の remove_long_short.min_wav_duration
 recipes,max_wav_duration,float,empty;NA,no,training.yaml の remove_long_short.max_wav_duration
 recipes,max_epochs,int,empty;NA,no,training.yaml の trainer.max_epochs
-recipes,max_epochs_3gpu,int,empty;NA,no,training_3gpu.yaml の trainer.max_epochs
 recipes,token_list,list,empty;NA,no,出力先の token_list(<unk>を除く)
 recipes,n_train,int,empty;NA,no,manifest/train.tsv の行数(実測)
 recipes,n_valid,int,empty;NA,no,manifest/valid.tsv の行数(実測)

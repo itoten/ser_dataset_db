@@ -243,8 +243,10 @@ def check_egs3(cols, db):
 
     branch = set(egs3.recipes())
     rec = {r["recipe"]: r for r in db["recipes"][1]}
-    if set(rec) != branch:
-        err(f"recipes.csv and {egs3.BRANCH} differ: only in csv {sorted(set(rec) - branch)}, only in branch {sorted(branch - set(rec))}")
+    if set(rec) - branch:
+        err(f"recipes.csv has recipes that are not on {egs3.BRANCH}: {sorted(set(rec) - branch)}")
+    if branch - set(rec):
+        warn(f"{len(branch - set(rec))} recipes on {egs3.BRANCH} are not registered yet (registered one by one after review): {sorted(branch - set(rec))}")
     ds = {r["dataset_id"]: r for r in db["datasets"][1]}
     implemented = {d for d, r in ds.items() if r["espnet_status"] == "implemented"}
     for d in sorted(implemented):
