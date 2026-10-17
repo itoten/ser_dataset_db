@@ -443,6 +443,8 @@ tumavic,status_reason_codes,superseded,access_no_direct_download,user,labels_not
 turevdb,license_spdx,conflicting,conflicting,project_doc,CC-BY-NC-ND-4.0,primary,https://github.com/Xeonen/TurEV-DB,
 turevdb,license_spdx,conflicting,conflicting,project_doc,GPL-3.0-only,primary,https://github.com/Xeonen/TurEV-DB,
 turevdb,license_spdx,superseded,conflicting,project_doc,LicenseRef-other,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート原文: Other; 資料間の食い違いのため conflicting に置き換え
+uftbesd,espnet_status,superseded,implemented,measured,candidate,primary,https://data.mendeley.com/datasets/h3f8pjbw73,uftbesd/espnet_status/02 に置き換え
+uftbesd,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1400,see evidence,1359,measured,recipes.n_total (uftbesd),レシピは長さ・ラベルで絞るため一致しないのが普通
 uq_schizophrenia_videos,espnet_status,superseded,deferred,user,excluded,secondary,https://github.com/SuperKogito/SER-datasets,uq_schizophrenia_videos/espnet_status/02 に置き換え
 uq_schizophrenia_videos,status_reason_codes,superseded,unexamined,user,content_insufficient,secondary,https://github.com/SuperKogito/SER-datasets,uq_schizophrenia_videos/status_reason_codes/02 に置き換え
 urdu,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,38,see evidence,29,measured,n_speakers_measured,

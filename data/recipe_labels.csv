@@ -293,6 +293,13 @@ turevdb,angry,kz,angry,synonym_rename,341,49,97,NA,487,
 turevdb,calm,sk,none,outside_common7,285,41,82,NA,408,
 turevdb,happy,mt,happy,synonym_rename,250,36,71,NA,357,
 turevdb,sad,hl,sad,synonym_rename,338,48,97,NA,483,
+uftbesd,angry,Angry,angry,spelling_fix,135,20,40,NA,195,metadata の emotion_label は先頭大文字(大文字小文字だけの違い)
+uftbesd,disgust,Disgust,disgust,spelling_fix,132,19,39,NA,190,metadata の emotion_label は先頭大文字(大文字小文字だけの違い)
+uftbesd,fear,Fear,fear,spelling_fix,135,20,40,NA,195,metadata の emotion_label は先頭大文字(大文字小文字だけの違い)
+uftbesd,happy,Happy,happy,spelling_fix,135,20,40,NA,195,metadata の emotion_label は先頭大文字(大文字小文字だけの違い)
+uftbesd,neutral,Neutral,neutral,spelling_fix,135,20,40,NA,195,metadata の emotion_label は先頭大文字(大文字小文字だけの違い)
+uftbesd,sad,Sad,sad,spelling_fix,135,20,40,NA,195,metadata の emotion_label は先頭大文字(大文字小文字だけの違い)
+uftbesd,surprise,Surprise,surprise,spelling_fix,135,20,39,NA,194,metadata の emotion_label は先頭大文字(大文字小文字だけの違い)
 urdu,angry,A,angry,synonym_rename,70,10,20,NA,100,
 urdu,happy,H,happy,synonym_rename,70,10,20,NA,100,
 urdu,neutral,N,neutral,synonym_rename,70,10,20,NA,100,
