@@ -1,0 +1,69 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 2305
+ },
+ "duration_sec": {
+  "max": 10.2,
+  "median": 3.35,
+  "min": 1.31
+ },
+ "hours_total": 2.3628,
+ "measured_on": "2026-10-19",
+ "n_total": 2305,
+ "output_dir": "/home/tenshi/data/usc_emo_mri_espnet3",
+ "output_env_var": "USC_EMO_MRI_OUTPUT",
+ "recipe": "usc_emo_mri",
+ "splits": {
+  "test": {
+   "hours": 0.4833,
+   "labels": {
+    "angry": 118,
+    "happy": 121,
+    "neutral": 132,
+    "sad": 110
+   },
+   "manifest_sha1": "fd057ef0058c0305cca1ad4e539aba056386be0d",
+   "n": 481,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 481
+  },
+  "train": {
+   "hours": 1.6626,
+   "labels": {
+    "angry": 393,
+    "happy": 369,
+    "neutral": 462,
+    "sad": 382
+   },
+   "manifest_sha1": "ad341cdf76ec1861790c876b17489cf109567669",
+   "n": 1606,
+   "n_filtered": 1606,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1606
+  },
+  "valid": {
+   "hours": 0.2169,
+   "labels": {
+    "angry": 52,
+    "happy": 52,
+    "neutral": 62,
+    "sad": 52
+   },
+   "manifest_sha1": "07f8cdce5ad43e03196f50bf53b5e20933ae7356",
+   "n": 218,
+   "n_filtered": 218,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 218
+  }
+ },
+ "token_list": [
+  "neutral",
+  "angry",
+  "sad",
+  "happy"
+ ]
+}
