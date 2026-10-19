@@ -161,6 +161,15 @@ def check_keys(tables, db):
     for r in db["aliases"][1]:
         if r["dataset_id"] not in ds:
             err(f"aliases {r['alias']}: unknown dataset_id {r['dataset_id']}")
+    implemented = {r["dataset_id"] for r in db["datasets"][1] if r["espnet_status"] == "implemented"}
+    for r in db["annotations"][1]:
+        if r["dataset_id"] not in ds:
+            err(f"annotations {r['dataset_id']}/{r['item']}: unknown dataset_id")
+        elif r["used_in_recipe"] == "true" and r["dataset_id"] not in implemented:
+            err(f"annotations {r['dataset_id']}/{r['item']}: used_in_recipe is true but the dataset is not implemented")
+    for r in db["datasets"][1]:
+        if r["label_verification"] and not r["label_source"]:
+            err(f"datasets {r['dataset_id']}: label_verification is set but label_source is empty")
     for r in db["relations"][1]:
         for c in ("dataset_id", "other_dataset_id"):
             if r[c] not in ds:

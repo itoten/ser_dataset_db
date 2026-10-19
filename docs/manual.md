@@ -134,7 +134,7 @@
 ser_dataset_db/
 ├── README.md                  開発者向けの要約(AI が最初に読む)
 ├── docs/manual.md             この文書
-├── data/                      ★正本(7つのCSV)
+├── data/                      ★正本(8つのCSV)
 ├── schema/                    列の定義・選択肢・表のキー(設計図)
 ├── views/                     見るための写し(正本から自動生成)
 ├── measurements/              レシピの実測結果(JSON)
@@ -142,7 +142,7 @@ ser_dataset_db/
 ├── tools/                     検査・更新・実測などのプログラム
 ```
 
-### 4.2 7つの表(`data/`)
+### 4.2 8つの表(`data/`)
 
 | ファイル | 1行が表すもの | 行数 |
 |---|---|---|
@@ -153,6 +153,7 @@ ser_dataset_db/
 | [recipes.csv](../data/recipes.csv) | ESPnet の1レシピ | 57 |
 | [recipe_labels.csv](../data/recipe_labels.csv) | レシピ×ラベル | 356 |
 | [benchmark_membership.csv](../data/benchmark_membership.csv) | ベンチマークを構成するレシピ | 16 |
+| [annotations.csv](../data/annotations.csv) | データセット×感情ラベル以外のアノテーション(書き起こし・話者特性・対話行為など) | 0(これから埋める) |
 
 関係の内訳は `contains`(含む)11、`distinct_from`(名前が似た別物)11、`version_of`(版違い)3、`possibly_same_as`(同一の疑い)3、`subset_of`(一部)2。レシピ57件のうち56件は1コーパス用(`single_corpus`)、1件が複数コーパスを合わせたもの(`multi_corpus`)。
 
@@ -162,6 +163,7 @@ ser_dataset_db/
 datasets ──(dataset_id)── evidence   値ごとの根拠
    │       ──(dataset_id)── aliases    別名
    │       ──(dataset_id)── relations  他データセットとの関係
+   │       ──(dataset_id)── annotations 感情ラベル以外のアノテーション(各行が根拠を持つ)
    └── recipes(dataset_id) ── recipe_labels(ラベルごとの件数)
           └── benchmark_membership(ベンチマークの構成)
 ```
@@ -208,7 +210,30 @@ datasets ──(dataset_id)── evidence   値ごとの根拠
 - `notes`: 自前の注記
 - `sheet_notes`・`annotations_other`・`sheet_verified`: **元のシートの原文**。変更しない。`sheet_verified` は「人が手作業で確認したか」というシート上の印で、このDBでは判断に使わない
 
-### 5.4 全列の定義
+### 5.4 ラベルの付け手(`label_source`・`label_verification`)
+
+感情などの主ラベル(`labels_discrete_reported`・`dimensional_attributes` に書くもの)を、誰が付けたかの記録。どちらも値ごとに根拠行を持つ。空欄は未確認。
+
+- `label_source`: `human`(人手のみ)/ `automatic`(モデルなどによる自動付与のみ)/ `mixed`(自動付与を人が見直したもの、混在)
+- `label_verification`: 自動または混在のラベルを人が見直したか。`human_reviewed`(見直したと資料が述べる)/ `none`(見直しなしと資料が述べる)/ `unknown`(資料に記述が見つからない)/ `NA`(人手のみ)
+- 例: `harper_valley_bank` は自動(論文に automatically labeled とある)で、検証の記述は見つかっていない(`unknown`)。`nonverbaltts` は emotion2vec+ の自動分類を注釈者が見直した(`mixed`・`human_reviewed`)
+- 自動ラベルでも `candidate` から外さない(8.3)。実験で学習に使うか評価だけにするかは DB ではなく、レシピ側の判断として `recipes.notes` に残す
+- いま埋まっているのは上の2件だけ。残りは、レシピを登録するときに一次資料を見て1件ずつ埋める
+
+### 5.5 感情ラベル以外のアノテーション(`annotations.csv`)
+
+書き起こし・話者特性・対話行為・音声品質・アンケートなど、感情ラベル以外に付いている情報を、1行=データセット×項目で記録する表。`datasets.annotations_other`(シートの原文)は変更せず残し、新しい情報はこの表に足す。
+
+- 列: `item`(項目名)、`description`(内容)、`annotator`(`human` / `automatic` / `mixed` / `unknown`)、`unit`(`utterance` / `segment` / `word` / `recording` / `conversation` / `speaker` / `dataset`)、`used_in_recipe`(レシピが使っているか)
+- 根拠はこの表の各行が持つ(`source_type`・`source_ref`・`locator`・`checked_on`・`checked_by`)。`evidence.csv` は `datasets` の列の値のための表なので、この表の根拠は混ぜない
+- `used_in_recipe=true` にできるのは `implemented` のデータセットだけ(検査が見る)
+- いまは0行。レシピを登録するときに、一次資料で確認できた項目から足す
+
+### 5.6 ラベルの種類(`recipe_labels.label_type`)
+
+`categorical`(カテゴリ感情・話し方など)/ `polarity`(感情極性)/ `intent`(意図・対話行為)/ `dimensional` / `other`。極性や意図のラベルは、共通7ラベルに寄せず `common7=none`・`mapping_type=outside_common7` にする。既存の335行は `categorical`、`recanvo` の21行はラベルが感情と要求・意図の両方にまたがるため、未確認(空欄)にしてある。
+
+### 5.7 全列の定義
 
 全列の型・意味・使える欠損の種類は [schema/columns.csv](../schema/columns.csv)、選択肢の一覧は [schema/enums.csv](../schema/enums.csv)、各表のキーは [schema/tables.csv](../schema/tables.csv) にある。
 
@@ -488,6 +513,7 @@ DBのフォルダで実行する。システムの Python(`/usr/bin/python3`)を
 - 根拠の規則(各値に canonical な根拠が1行あるか、実測と公表値を混ぜていないか、など)
 - `implemented` の行が ESPnet のレシピと一致するか
 - `recipes.csv`・`recipe_labels.csv` が `measurements/*.json` と一致するか
+- `annotations.csv` が存在するデータセットを指すか、`used_in_recipe=true` が実装済みだけか、`label_verification` が `label_source` なしで入っていないか
 - `views/` が最新か
 
 ### 13.3 変更の決まり
@@ -592,7 +618,7 @@ MSP-Podcast は内部の非商用研究のみ・再配布不可で、Lotfian & B
 | [schema/columns.csv](../schema/columns.csv) | 全列の型と意味 |
 | [schema/enums.csv](../schema/enums.csv) | 選択肢(状態・理由・ライセンス・入手方法など) |
 | [schema/tables.csv](../schema/tables.csv) | 各表のファイルとキー |
-| [data/](../data/) | 正本(7つのCSV) |
+| [data/](../data/) | 正本(8つのCSV) |
 | [views/](../views/) | 一覧・食い違いの写し(自動生成) |
 | [measurements/](../measurements/) | レシピの実測結果(JSON) |
 | [sheet_import/README.md](../sheet_import/README.md) | 元のシートの出所と指紋 |

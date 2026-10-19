@@ -28,9 +28,12 @@
 | `data/recipes.csv` | 1つの egs3 レシピ(`egs3/<recipe>/cls`)。自動列と手書き列がある | `recipe` |
 | `data/recipe_labels.csv` | レシピ×ラベル。レシピが捨てたラベルも残す | `recipe`, `label` |
 | `data/benchmark_membership.csv` | マルチコーパスのレシピを構成するレシピ | `benchmark_recipe`, `member_recipe`, `role` |
+| `data/annotations.csv` | データセット×感情ラベル以外のアノテーション。根拠は各行が持つ | `dataset_id`, `item` |
 
 - `recipes.dataset_id` が `datasets` に結びつく。マルチコーパスのレシピは `NA`(個別のレシピが各データセットに結びつく)。
 - 状態: `espnet_status` は `implemented`(egs3 にレシピあり)/ `candidate` / `needs_decision` / `deferred` / `excluded`。`implemented` 以外は `status_reason_codes`(`;` 区切り)に理由を持ち、`implemented` では `NA`。補足は `status_note`、確認日は `status_checked_on`。
+- ラベルの付け手: `datasets.label_source`(`human` / `automatic` / `mixed`)と `label_verification`(`human_reviewed` / `none` / `unknown` / `NA`)。値ごとに根拠行がある。空欄は未確認(現在は `harper_valley_bank` と `nonverbaltts` のみ)。`recipe_labels.label_type` は `categorical` / `polarity` / `intent` / `dimensional` / `other`(`recanvo` は未確認で空欄)。極性・意図は `common7=none`。
+- 感情ラベル以外のアノテーションは `annotations.csv` に1項目1行で足す(付け手・単位・レシピでの使用有無・根拠つき)。`annotations_other` はシート原文のまま残す。現在は0行で、レシピ登録のときに一次資料で確認できたものから足す。
 - 行の由来: `in_sheet`(元のシートにあった行か)。シート外の行は `sheet_verified=NA`。`sheet_verified` はシートの Verified 列(人が手作業で確認したか)を原文のまま残したもので、判断には使わない。
 
 ## 規約

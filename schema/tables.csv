@@ -6,3 +6,4 @@ relations,data/relations.csv,dataset_id;relation;other_dataset_id,データセ�
 recipes,data/recipes.csv,recipe,1行=1 egs3 レシピ(cls)。sync列は自動、手書き列は人が記入
 recipe_labels,data/recipe_labels.csv,recipe;label,1行=レシピ×ラベル。レシピが捨てたラベルも残す
 benchmark_membership,data/benchmark_membership.csv,benchmark_recipe;member_recipe;role,ベンチマーク(マルチコーパスのレシピ)の構成レシピ
+annotations,data/annotations.csv,dataset_id;item,データセットの感情ラベル以外のアノテーション(書き起こし・話者特性・対話行為など)。1行=データセット×項目。根拠は各行が持つ

@@ -32,6 +32,8 @@ datasets,labels_discrete_note,text,empty,no,ラベル一覧にできない記述
 datasets,n_discrete_labels_reported,int,empty;unknown,no,資料が述べるカテゴリ数
 datasets,dimensional_attributes,list,empty;unknown;none,yes,次元感情の軸(;区切り)
 datasets,dimensional_note,text,empty,no,次元感情の記述でリストにできないもの(シート原文など)
+datasets,label_source,enum:label_source,empty;unknown;NA,yes,主ラベル(labels_discrete_reported・dimensional_attributes に書くもの)の付け手。human / automatic / mixed
+datasets,label_verification,enum:label_verification,empty;unknown;none;NA,yes,自動または混在のラベルを人が見直したか。human_reviewed / none(見直しなしと資料が述べる)/ unknown(資料に記述なし)。人手のみなら NA
 datasets,annotations_other,text,empty;none,no,シートの Other Annotations(原文)
 datasets,sheet_notes,text,empty,no,シートの Notes(原文。変更禁止)
 datasets,notes,text,empty,no,自前の注記
@@ -107,6 +109,7 @@ recipe_labels,label,text,-,no,レシピでのラベル名
 recipe_labels,source_labels,list,-,no,元のラベル名(;区切り)
 recipe_labels,common7,enum:common7,-,no,共通7ラベルのどれに当たるか(なければ none)
 recipe_labels,mapping_type,enum:mapping_type,-,no,ラベルの対応の種類
+recipe_labels,label_type,enum:label_type,empty,no,ラベルの種類。categorical(カテゴリ感情・話し方など)/ polarity(感情極性)/ intent / dimensional / other。空欄=未確認
 recipe_labels,n_train,int,empty;NA,no,train の件数
 recipe_labels,n_valid,int,empty;NA,no,valid の件数
 recipe_labels,n_test,int,empty;NA,no,test の件数
@@ -121,3 +124,15 @@ benchmark_membership,eval_set_names,list,empty;NA,no,評価セットの名前
 benchmark_membership,set_name,enum:set_name,-,no,Open License set / Non-Commercial set / NA
 benchmark_membership,source_ref,text,empty,no,出典
 benchmark_membership,note,text,empty,no,補足
+annotations,dataset_id,slug,-,no,datasets の外部キー
+annotations,item,slug,-,no,"項目名(英小文字とアンダースコア。例 transcript, speaker_gender, dialogue_act)"
+annotations,description,text,-,no,内容(何がどんな形で付いているか)
+annotations,annotator,enum:label_source,empty;unknown,no,付け手。human / automatic / mixed。資料に記述がなければ unknown
+annotations,unit,enum:annotation_unit,empty;unknown,no,付与の単位
+annotations,used_in_recipe,bool,empty;unknown;NA,no,レシピが使っているか。レシピがなければ NA
+annotations,source_type,enum:source_type,-,no,根拠の種類(evidence と同じ値)
+annotations,source_ref,text,-,no,出典(URL、ファイルパス、会話の日付など)
+annotations,locator,text,empty,no,出典内の位置(25語以内)
+annotations,checked_on,date,-,no,確認日
+annotations,checked_by,enum:checked_by,-,no,確認した主体
+annotations,note,text,empty,no,補足

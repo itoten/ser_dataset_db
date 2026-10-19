@@ -14,7 +14,8 @@ SHEET_COLS = ["Verified", "Dataset", "License", "Language", "Source", "Total Hou
               "ESPnet Implemented"]
 EXTRA_COLS = ["dataset_id", "status", "reasons", "license_class", "access_method", "raw_audio_available", "recipe",
               "n_total_recipe", "hours_total_recipe", "n_files_release_measured", "n_speakers_measured",
-              "common7_covered", "common7_missing", "extra_labels", "benchmarks", "report_path", "status_note", "notes",
+              "common7_covered", "common7_missing", "extra_labels", "label_source", "label_verification", "annotation_items",
+              "benchmarks", "report_path", "status_note", "notes",
               "license_checked_on", "license_source_type", "license_checked_by", "access_checked_on",
               "oldest_checked_on", "latest_checked_on"]
 DISC_COLS = ["dataset_id", "field", "kind", "datasets_value", "datasets_source_type", "other_value",
@@ -31,6 +32,9 @@ def wide(db):
     recipes = db["recipes"][1]
     labels = db["recipe_labels"][1]
     members = db["benchmark_membership"][1]
+    items = {}
+    for a in db["annotations"][1]:
+        items.setdefault(a["dataset_id"], []).append(a["item"])
     canon = {}
     for e in db["evidence"][1]:
         if e["is_canonical"] == "true":
@@ -66,7 +70,9 @@ def wide(db):
             "n_files_release_measured": d["n_files_release_measured"], "n_speakers_measured": d["n_speakers_measured"],
             "common7_covered": f"{len(covered)}/7" if names else "",
             "common7_missing": ";".join(c for c in COMMON7 if c not in covered) if names else "",
-            "extra_labels": ";".join(sorted(extra)), "benchmarks": ";".join(bench),
+            "extra_labels": ";".join(sorted(extra)), "label_source": d["label_source"],
+            "label_verification": d["label_verification"], "annotation_items": ";".join(sorted(items.get(i, []))),
+            "benchmarks": ";".join(bench),
             "report_path": d["report_path"], "status_note": d["status_note"], "notes": d["notes"],
             "license_checked_on": lic["checked_on"] if lic else "", "license_source_type": lic["source_type"] if lic else "",
             "license_checked_by": lic["checked_by"] if lic else "", "access_checked_on": acc["checked_on"] if acc else "",
