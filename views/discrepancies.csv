@@ -212,6 +212,9 @@ groupaffect4,status_reason_codes,superseded,unexamined,user,labels_not_discrete_
 groupaffect4,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion;access_request_form_or_email,primary,https://zenodo.org/records/20796290,groupaffect4/status_reason_codes/05 に置き換え
 gujarati_tank2020,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Gujarati/Tank_et_al_2020.md,一次資料は未確認; gujarati_tank2020/espnet_status/02 に置き換え
 gujarati_tank2020,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Gujarati/Tank_et_al_2020.md,一次資料は未確認; gujarati_tank2020/status_reason_codes/02 に置き換え
+harper_valley_bank,espnet_status,superseded,implemented,measured,candidate,user,会話 2026-10-14,harper_valley_bank/espnet_status/02 に置き換え
+harper_valley_bank,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,25730,see evidence,2892,measured,n_files_release_measured,
+harper_valley_bank,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,25730,see evidence,19456,measured,recipes.n_total (harper_valley_bank),レシピは長さ・ラベルで絞るため一致しないのが普通
 hesd,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/22674064,hesd/espnet_status/02 に置き換え
 hesd,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://zenodo.org/records/22674064,hesd/status_reason_codes/02 に置き換え
 hindi_bansal_dev,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Hindi/BansalAndDev.md,一次資料は未確認; hindi_bansal_dev/espnet_status/02 に置き換え

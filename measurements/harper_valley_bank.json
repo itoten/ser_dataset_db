@@ -1,0 +1,65 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 19456
+ },
+ "duration_sec": {
+  "max": 18.66,
+  "median": 1.71,
+  "min": 0.06
+ },
+ "hours_total": 11.4093,
+ "measured_on": "2026-10-19",
+ "n_total": 19456,
+ "output_dir": "/home/tenshi/data/harper_valley_bank_espnet3",
+ "output_env_var": "HARPER_VALLEY_BANK_OUTPUT",
+ "recipe": "harper_valley_bank",
+ "splits": {
+  "test": {
+   "hours": 2.3475,
+   "labels": {
+    "negative": 92,
+    "neutral": 2160,
+    "positive": 1655
+   },
+   "manifest_sha1": "f9c8b1abb4b0e65935f36bbbb6abac4545a275c0",
+   "n": 3907,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 288,
+   "unique_utt": 3907
+  },
+  "train": {
+   "hours": 7.8938,
+   "labels": {
+    "negative": 273,
+    "neutral": 7697,
+    "positive": 5629
+   },
+   "manifest_sha1": "c41b08339f0435584615b9f467ec0e8de2284faf",
+   "n": 13599,
+   "n_filtered": 13488,
+   "over_30s": 0,
+   "under_0.5s": 1102,
+   "unique_utt": 13599
+  },
+  "valid": {
+   "hours": 1.1679,
+   "labels": {
+    "negative": 51,
+    "neutral": 1103,
+    "positive": 796
+   },
+   "manifest_sha1": "5cfbd3df73d9146a1cf2898fb4a987eac5720988",
+   "n": 1950,
+   "n_filtered": 1937,
+   "over_30s": 0,
+   "under_0.5s": 141,
+   "unique_utt": 1950
+  }
+ },
+ "token_list": [
+  "neutral",
+  "positive",
+  "negative"
+ ]
+}
