@@ -428,9 +428,11 @@ swedish_vpesc,espnet_status,superseded,candidate,user,excluded,secondary,https:/
 swedish_vpesc,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Swedish/SwedishVoiceProviderEmotionalSpeechCorpus.md,一次資料は未確認; swedish_vpesc/status_reason_codes/02 に置き換え
 switchboard_sentiment,espnet_status,superseded,candidate,user,excluded,primary,https://catalog.ldc.upenn.edu/LDC2020T14,switchboard_sentiment/espnet_status/02 に置き換え
 switchboard_sentiment,status_reason_codes,superseded,unexamined,user,access_paid_or_membership;labels_not_discrete_emotion,primary,https://catalog.ldc.upenn.edu/LDC2020T14,switchboard_sentiment/status_reason_codes/02 に置き換え
-syntact,espnet_status,superseded,candidate,user,excluded,primary,https://aclanthology.org/2022.dclrl-1.1.pdf,syntact/espnet_status/02 に置き換え
+syntact,espnet_status,superseded,implemented,measured,candidate,user,会話 2026-10-14,旧理由: synthetic_or_tts; syntact/espnet_status/03 に置き換え
+syntact,espnet_status,superseded,implemented,measured,excluded,primary,https://aclanthology.org/2022.dclrl-1.1.pdf,syntact/espnet_status/02 に置き換え
 syntact,license_spdx,superseded,CC-BY-4.0,primary,CC-BY-SA-4.0,secondary,https://github.com/SuperKogito/SER-datasets,syntact/license_spdx/02 に置き換え
-syntact,status_reason_codes,superseded,unexamined,user,synthetic_or_tts,primary,https://aclanthology.org/2022.dclrl-1.1.pdf,syntact/status_reason_codes/02 に置き換え
+syntact,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,6000,see evidence,6001,measured,n_files_release_measured,
+syntact,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,6000,see evidence,5971,measured,recipes.n_total (syntact),レシピは長さ・ラベルで絞るため一致しないのが普通
 talromur3,hours_reported,superseded,24,primary,14,primary,http://hdl.handle.net/20.500.12537/344,talromur3/hours_reported/02 に置き換え
 talromur3,n_utt_reported,superseded,21528,primary,15078,primary,http://hdl.handle.net/20.500.12537/344,talromur3/n_utt_reported/02 に置き換え
 tamar_emodb,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Tamil/TaMaR-EmoDB.md,一次資料は未確認; tamar_emodb/espnet_status/02 に置き換え

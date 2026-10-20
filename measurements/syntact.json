@@ -1,0 +1,77 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 5971
+ },
+ "duration_sec": {
+  "max": 30.506,
+  "median": 5.77,
+  "min": 0.819
+ },
+ "hours_total": 11.0581,
+ "measured_on": "2026-10-20",
+ "n_total": 5971,
+ "output_dir": "/home/tenshi/data/syntact_espnet3",
+ "output_env_var": "SYNTACT_OUTPUT",
+ "recipe": "syntact",
+ "splits": {
+  "test": {
+   "hours": 4.5378,
+   "labels": {
+    "angry": 394,
+    "boredom": 410,
+    "fear": 388,
+    "happy": 396,
+    "neutral": 408,
+    "sad": 385
+   },
+   "manifest_sha1": "a8b0493ef860c653b6249a451ff16b4f7e0ef33a",
+   "n": 2381,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 2381
+  },
+  "train": {
+   "hours": 4.9699,
+   "labels": {
+    "angry": 365,
+    "boredom": 532,
+    "fear": 408,
+    "happy": 509,
+    "neutral": 487,
+    "sad": 422
+   },
+   "manifest_sha1": "6612f278bd74ef8b47c6a887b9e5aa0250d59052",
+   "n": 2723,
+   "n_filtered": 2722,
+   "over_30s": 1,
+   "under_0.5s": 0,
+   "unique_utt": 2723
+  },
+  "valid": {
+   "hours": 1.5504,
+   "labels": {
+    "angry": 94,
+    "boredom": 170,
+    "fear": 133,
+    "happy": 170,
+    "neutral": 168,
+    "sad": 132
+   },
+   "manifest_sha1": "65fa67d11a94d495f91b6f39b1dce4a5d83db0a0",
+   "n": 867,
+   "n_filtered": 867,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 867
+  }
+ },
+ "token_list": [
+  "boredom",
+  "happy",
+  "neutral",
+  "sad",
+  "fear",
+  "angry"
+ ]
+}
