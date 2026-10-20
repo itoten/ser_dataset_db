@@ -393,7 +393,9 @@ recola,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidate
 recola,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://recola.human-ist.ch/download.html,recola/status_reason_codes/04 に置き換え
 recola,status_reason_codes,superseded,unexamined,user,access_signed_agreement,project_doc,nc_candidates_20261010.md,recola/status_reason_codes/03 に置き換え
 resd,n_speakers_reported,superseded,20,primary,200,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,resd/n_speakers_reported/02 に置き換え
+rml_emotion,espnet_status,superseded,implemented,measured,candidate,measured,https://www.kaggle.com/datasets/ryersonmultimedialab/ryerson-emotion-database,rml_emotion/espnet_status/02 に置き換え
 rml_emotion,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,500,see evidence,720,measured,n_files_release_measured,
+rml_emotion,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,500,see evidence,714,measured,recipes.n_total (rml_emotion),レシピは長さ・ラベルで絞るため一致しないのが普通
 ruslana,espnet_status,superseded,deferred,user,excluded,primary,https://www.isca-archive.org/icslp_2002/makarova02_icslp.pdf,ruslana/espnet_status/04 に置き換え
 ruslana,espnet_status,superseded,deferred,user,excluded,project_doc,new_corpora/99_final_report.md,ruslana/espnet_status/03 に置き換え
 ruslana,status_reason_codes,superseded,access_no_direct_download,user,access_paid_or_membership,project_doc,new_corpora/99_final_report.md,ruslana/status_reason_codes/03 に置き換え

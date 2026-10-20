@@ -1,0 +1,77 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 714
+ },
+ "duration_sec": {
+  "max": 8.229,
+  "median": 5.12,
+  "min": 2.194
+ },
+ "hours_total": 1.0112,
+ "measured_on": "2026-10-20",
+ "n_total": 714,
+ "output_dir": "/home/tenshi/data/rml_emotion_espnet3",
+ "output_env_var": "RML_EMOTION_OUTPUT",
+ "recipe": "rml_emotion",
+ "splits": {
+  "test": {
+   "hours": 0.3005,
+   "labels": {
+    "angry": 38,
+    "disgust": 37,
+    "fear": 37,
+    "happy": 36,
+    "sad": 35,
+    "surprise": 36
+   },
+   "manifest_sha1": "57171d8ae49aec8225f24bb873500a8afc8b5b41",
+   "n": 219,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 219
+  },
+  "train": {
+   "hours": 0.5878,
+   "labels": {
+    "angry": 72,
+    "disgust": 67,
+    "fear": 72,
+    "happy": 65,
+    "sad": 69,
+    "surprise": 70
+   },
+   "manifest_sha1": "fd0d926b412baa1904af3010bc76af774795bd32",
+   "n": 415,
+   "n_filtered": 415,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 415
+  },
+  "valid": {
+   "hours": 0.1228,
+   "labels": {
+    "angry": 8,
+    "disgust": 16,
+    "fear": 11,
+    "happy": 18,
+    "sad": 15,
+    "surprise": 12
+   },
+   "manifest_sha1": "dbb7c1fe36564d467d128f4c13b8800068531698",
+   "n": 80,
+   "n_filtered": 80,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 80
+  }
+ },
+ "token_list": [
+  "angry",
+  "fear",
+  "surprise",
+  "sad",
+  "disgust",
+  "happy"
+ ]
+}
