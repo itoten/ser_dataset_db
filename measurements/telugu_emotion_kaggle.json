@@ -1,0 +1,73 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 456
+ },
+ "duration_sec": {
+  "max": 27.221,
+  "median": 2.657,
+  "min": 0.257
+ },
+ "hours_total": 0.5285,
+ "measured_on": "2026-10-20",
+ "n_total": 456,
+ "output_dir": "/home/tenshi/data/telugu_emotion_kaggle_espnet3",
+ "output_env_var": "TELUGU_EMOTION_KAGGLE_OUTPUT",
+ "recipe": "telugu_emotion_kaggle",
+ "splits": {
+  "test": {
+   "hours": 0.0946,
+   "labels": {
+    "angry": 20,
+    "happy": 20,
+    "neutral": 20,
+    "sad": 18,
+    "surprise": 19
+   },
+   "manifest_sha1": "552f20003b9161af9524afd3cef510b5e9345c32",
+   "n": 97,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 11,
+   "unique_utt": 97
+  },
+  "train": {
+   "hours": 0.3623,
+   "labels": {
+    "angry": 66,
+    "happy": 64,
+    "neutral": 73,
+    "sad": 52,
+    "surprise": 57
+   },
+   "manifest_sha1": "0e64a827aa77417947e4fcb3eb829f59c9eee13b",
+   "n": 312,
+   "n_filtered": 312,
+   "over_30s": 0,
+   "under_0.5s": 4,
+   "unique_utt": 312
+  },
+  "valid": {
+   "hours": 0.0717,
+   "labels": {
+    "angry": 10,
+    "happy": 10,
+    "neutral": 10,
+    "sad": 8,
+    "surprise": 9
+   },
+   "manifest_sha1": "b5ea1432b9bee1580866b785e9f99a4c9e0516c4",
+   "n": 47,
+   "n_filtered": 47,
+   "over_30s": 0,
+   "under_0.5s": 2,
+   "unique_utt": 47
+  }
+ },
+ "token_list": [
+  "neutral",
+  "angry",
+  "happy",
+  "surprise",
+  "sad"
+ ]
+}

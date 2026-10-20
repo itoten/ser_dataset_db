@@ -437,8 +437,8 @@ tamar_emodb,espnet_status,superseded,candidate,user,excluded,secondary,https://g
 tamar_emodb,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Tamil/TaMaR-EmoDB.md,一次資料は未確認; tamar_emodb/status_reason_codes/02 に置き換え
 tamil_ram,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Tamil/Ram_C_Sunitha_et_al.md,一次資料は未確認; tamil_ram/espnet_status/02 に置き換え
 tamil_ram,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Tamil/Ram_C_Sunitha_et_al.md,一次資料は未確認; tamil_ram/status_reason_codes/02 に置き換え
-telugu_emotion_kaggle,espnet_status,superseded,candidate,user,excluded,primary,https://www.kaggle.com/datasets/jettysowmith/telugu-emotion-speech,telugu_emotion_kaggle/espnet_status/02 に置き換え
-telugu_emotion_kaggle,status_reason_codes,superseded,unexamined,user,provenance_unclear,primary,https://www.kaggle.com/datasets/jettysowmith/telugu-emotion-speech,telugu_emotion_kaggle/status_reason_codes/02 に置き換え
+telugu_emotion_kaggle,espnet_status,superseded,implemented,measured,candidate,user,会話 2026-10-14,旧理由: provenance_unclear; telugu_emotion_kaggle/espnet_status/03 に置き換え
+telugu_emotion_kaggle,espnet_status,superseded,implemented,measured,excluded,primary,https://www.kaggle.com/datasets/jettysowmith/telugu-emotion-speech,telugu_emotion_kaggle/espnet_status/02 に置き換え
 thanushs25_tamil,espnet_status,superseded,candidate,user,excluded,measured,https://huggingface.co/datasets/Thanushs25/tamil-audio-emotion-classification,thanushs25_tamil/espnet_status/03 に置き換え
 thanushs25_tamil,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,thanushs25_tamil/espnet_status/02 に置き換え
 thanushs25_tamil,status_reason_codes,superseded,unexamined,user,provenance_unclear,measured,https://huggingface.co/datasets/Thanushs25/tamil-audio-emotion-classification,thanushs25_tamil/status_reason_codes/03 に置き換え
