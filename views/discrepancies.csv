@@ -176,6 +176,9 @@ escorpuspe,espnet_status,superseded,candidate,user,excluded,project_doc,new_corp
 escorpuspe,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,3749,see evidence,3764,measured,n_files_release_measured,
 escorpuspe,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,primary,https://zenodo.org/records/5793223,escorpuspe/status_reason_codes/03 に置き換え
 escorpuspe,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,project_doc,new_corpora/99_final_report.md,escorpuspe/status_reason_codes/02 に置き換え
+eseravd,espnet_status,superseded,implemented,measured,candidate,measured,https://www.kaggle.com/datasets/ahmadnafibudianto/e-seravd-speech-emotion-recognition-av-dataset,eseravd/espnet_status/02 に置き換え
+eseravd,n_files_release_measured,superseded,3000,measured,5400,measured,https://www.kaggle.com/datasets/ahmadnafibudianto/e-seravd-speech-emotion-recognition-av-dataset,eseravd/n_files_release_measured/02 に置き換え
+eseravd,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: 2026-10-14 網羅調査での判断,eseravd/status_reason_codes/02 に置き換え
 esmbs,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Burmese/ESMBS.md,一次資料は未確認; esmbs/espnet_status/02 に置き換え
 esmbs,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Burmese/ESMBS.md,一次資料は未確認; esmbs/status_reason_codes/02 に置き換え
 euemotion_voice,espnet_status,superseded,candidate,user,excluded,primary,https://www.autismresearchcentre.com/tests/the-eu-emotion-stimulus-set/,euemotion_voice/espnet_status/02 に置き換え

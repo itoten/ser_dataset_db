@@ -1,0 +1,77 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 2976
+ },
+ "duration_sec": {
+  "max": 7.5,
+  "median": 2.25,
+  "min": 0.833
+ },
+ "hours_total": 1.9831,
+ "measured_on": "2026-10-22",
+ "n_total": 2976,
+ "output_dir": "/home/tenshi/data/eseravd_espnet3",
+ "output_env_var": "ESERAVD_OUTPUT",
+ "recipe": "eseravd",
+ "splits": {
+  "test": {
+   "hours": 0.5115,
+   "labels": {
+    "angry": 64,
+    "disgust": 146,
+    "fear": 172,
+    "happy": 158,
+    "neutral": 71,
+    "sad": 205
+   },
+   "manifest_sha1": "2cead1adc6d15678555e7aba8b05b15bb0422a05",
+   "n": 816,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 816
+  },
+  "train": {
+   "hours": 1.3539,
+   "labels": {
+    "angry": 383,
+    "disgust": 319,
+    "fear": 300,
+    "happy": 319,
+    "neutral": 378,
+    "sad": 280
+   },
+   "manifest_sha1": "4e64d94733250935dd5bb385f28e4f32394463c3",
+   "n": 1979,
+   "n_filtered": 1979,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1979
+  },
+  "valid": {
+   "hours": 0.1177,
+   "labels": {
+    "angry": 49,
+    "disgust": 33,
+    "fear": 23,
+    "happy": 21,
+    "neutral": 48,
+    "sad": 7
+   },
+   "manifest_sha1": "e296efc20146ae759662923182a2cce8ed4a8580",
+   "n": 181,
+   "n_filtered": 181,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 181
+  }
+ },
+ "token_list": [
+  "angry",
+  "neutral",
+  "happy",
+  "disgust",
+  "fear",
+  "sad"
+ ]
+}
