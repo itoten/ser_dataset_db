@@ -158,6 +158,8 @@ emotional_ema,status_reason_codes,superseded,unexamined,project_doc,host_unreach
 emotiontts_open_db,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/emotiontts/emotiontts_open_db/tree/master/Dataset/SpeechCorpus/Emotional,emotiontts_open_db/espnet_status/02 に置き換え
 emotiontts_open_db,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,6000,see evidence,300,measured,n_files_release_measured,
 emotiontts_open_db,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://github.com/emotiontts/emotiontts_open_db/tree/master/Dataset/SpeechCorpus/Emotional,emotiontts_open_db/status_reason_codes/02 に置き換え
+emouerj,espnet_status,superseded,implemented,measured,candidate,primary,https://zenodo.org/records/5427549,emouerj/espnet_status/02 に置き換え
+emouerj,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: 2026-10-14 既存行の検証での判断,emouerj/status_reason_codes/02 に置き換え
 emouerj_sed,status_reason_codes,superseded,redistribution_of_existing_corpus,primary,content_insufficient,project_doc,new_corpora/99_final_report.md,emouerj_sed/status_reason_codes/02 に置き換え
 emovdb,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7000,see evidence,6893,measured,recipes.n_total (emovdb),レシピは長さ・ラベルで絞るため一致しないのが普通
 emovie,espnet_status,superseded,candidate,user,excluded,primary,https://arxiv.org/abs/2106.09317,emovie/espnet_status/02 に置き換え

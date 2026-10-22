@@ -1,4 +1,7 @@
 dataset_id,item,description,annotator,unit,used_in_recipe,source_type,source_ref,locator,checked_on,checked_by,note
+emouerj,speaker_gender,m / w,human,speaker,false,measured,recipe_review/emouerj_scripts/audit.out,ファイル名,2026-10-22,claude,付けたのは作者(ファイル名)
+emouerj,speaker_id,01〜04(性別ごと),human,speaker,false,measured,recipe_review/emouerj_scripts/audit.out,ファイル名,2026-10-22,claude,
+emouerj,take_number,録音番号 01〜19,human,utterance,true,measured,recipe_review/emouerj_scripts/audit.out,ファイル名,2026-10-22,claude,utt_id にだけ使用
 eseravd,acoustic_features,f0 の平均・標準偏差、RMS、話速、jitter、shimmer、スペクトル重心,automatic,utterance,false,measured,Dataset Specification.xlsx,仕様の xlsx,2026-10-22,claude,
 eseravd,emotion_probability,3 人の評価者の平均確率,human,utterance,false,primary,版 1.2 の README,README は計算したと書く,2026-10-22,claude,配布物にはない
 eseravd,movie,映画の略称 11 種(ファイル名の第 3 欄)。レシピは映画単位で分割,human,utterance,true,measured,recipe_review/eseravd_scripts/,ファイル名,2026-10-22,claude,付けたのは作者(ファイル名)

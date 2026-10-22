@@ -1,0 +1,69 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 377
+ },
+ "duration_sec": {
+  "max": 7.094,
+  "median": 2.777,
+  "min": 1.188
+ },
+ "hours_total": 0.315,
+ "measured_on": "2026-10-22",
+ "n_total": 377,
+ "output_dir": "/home/tenshi/data/emouerj_espnet3",
+ "output_env_var": "EMOUERJ_OUTPUT",
+ "recipe": "emouerj",
+ "splits": {
+  "test": {
+   "hours": 0.0597,
+   "labels": {
+    "angry": 19,
+    "happy": 18,
+    "neutral": 18,
+    "sad": 20
+   },
+   "manifest_sha1": "c6ce3467e27d5b65260e6733bb6fd64087445d8e",
+   "n": 75,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 75
+  },
+  "train": {
+   "hours": 0.2226,
+   "labels": {
+    "angry": 66,
+    "happy": 64,
+    "neutral": 65,
+    "sad": 70
+   },
+   "manifest_sha1": "3e002a781b74c6808b9c2808db625ebcb309e49b",
+   "n": 265,
+   "n_filtered": 265,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 265
+  },
+  "valid": {
+   "hours": 0.0327,
+   "labels": {
+    "angry": 9,
+    "happy": 9,
+    "neutral": 9,
+    "sad": 10
+   },
+   "manifest_sha1": "9d2ecd8aecd3a3d3842c36634fd71cda9b6ed171",
+   "n": 37,
+   "n_filtered": 37,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 37
+  }
+ },
+ "token_list": [
+  "sad",
+  "angry",
+  "neutral",
+  "happy"
+ ]
+}
