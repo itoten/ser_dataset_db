@@ -1,0 +1,73 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 953
+ },
+ "duration_sec": {
+  "max": 63.0,
+  "median": 4.546,
+  "min": 1.359
+ },
+ "hours_total": 1.6277,
+ "measured_on": "2026-10-22",
+ "n_total": 953,
+ "output_dir": "/home/tenshi/data/emotional_ema_espnet3",
+ "output_env_var": "EMOTIONAL_EMA_OUTPUT",
+ "recipe": "emotional_ema",
+ "splits": {
+  "test": {
+   "hours": 0.2866,
+   "labels": {
+    "angry": 36,
+    "fear": 32,
+    "happy": 32,
+    "neutral": 55,
+    "sad": 35
+   },
+   "manifest_sha1": "9406e7e4ee719ccf1f27bca41cb863b8d3d634f4",
+   "n": 190,
+   "n_filtered": null,
+   "over_30s": 4,
+   "under_0.5s": 0,
+   "unique_utt": 190
+  },
+  "train": {
+   "hours": 1.1875,
+   "labels": {
+    "angry": 128,
+    "fear": 111,
+    "happy": 112,
+    "neutral": 194,
+    "sad": 122
+   },
+   "manifest_sha1": "1ba7a4d5344befd2b5e0ccb7bca180f7589e0bff",
+   "n": 667,
+   "n_filtered": 641,
+   "over_30s": 26,
+   "under_0.5s": 0,
+   "unique_utt": 667
+  },
+  "valid": {
+   "hours": 0.1535,
+   "labels": {
+    "angry": 18,
+    "fear": 16,
+    "happy": 16,
+    "neutral": 28,
+    "sad": 18
+   },
+   "manifest_sha1": "676c013f5e467cfe430eb9bbe49b4e019fdaddf7",
+   "n": 96,
+   "n_filtered": 93,
+   "over_30s": 3,
+   "under_0.5s": 0,
+   "unique_utt": 96
+  }
+ },
+ "token_list": [
+  "neutral",
+  "angry",
+  "sad",
+  "happy",
+  "fear"
+ ]
+}

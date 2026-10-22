@@ -153,8 +153,13 @@ emota,espnet_status,superseded,candidate,primary,excluded,project_doc,new_corpor
 emota,status_reason_codes,superseded,unexamined,primary,access_gated,primary,https://huggingface.co/datasets/aaivu-labs/EmoTa,emota/status_reason_codes/03 に置き換え
 emota,status_reason_codes,superseded,unexamined,primary,access_gated,project_doc,new_corpora/99_final_report.md,emota/status_reason_codes/02 に置き換え
 emotion_origlia2010,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,emotion_origlia2010/espnet_status/03 に置き換え
-emotional_ema,espnet_status,superseded,candidate,primary,excluded,project_doc,new_corpora/99_final_report.md,emotional_ema/espnet_status/02 に置き換え
-emotional_ema,status_reason_codes,superseded,unexamined,project_doc,host_unreachable,project_doc,new_corpora/99_final_report.md,emotional_ema/status_reason_codes/02 に置き換え
+emotional_ema,espnet_status,superseded,implemented,measured,candidate,primary,https://zenodo.org/records/19303746,emotional_ema/espnet_status/03 に置き換え
+emotional_ema,espnet_status,superseded,implemented,measured,excluded,project_doc,new_corpora/99_final_report.md,emotional_ema/espnet_status/02 に置き換え
+emotional_ema,labels_discrete_reported,superseded,angry;fear;happy;neutral;sad,primary,anger;happiness;sadness;neutrality,primary,https://zenodo.org/records/19303746,emotional_ema/labels_discrete_reported/02 に置き換え
+emotional_ema,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,680,see evidence,953,measured,n_files_release_measured,
+emotional_ema,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,680,see evidence,953,measured,recipes.n_total (emotional_ema),レシピは長さ・ラベルで絞るため一致しないのが普通
+emotional_ema,status_reason_codes,superseded,NA,measured,host_unreachable,project_doc,new_corpora/99_final_report.md,emotional_ema/status_reason_codes/02 に置き換え
+emotional_ema,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: 2026-10-14 網羅調査での判断,EMA 用の録音である点の扱いを決めていない; emotional_ema/status_reason_codes/03 に置き換え
 emotiontts_open_db,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/emotiontts/emotiontts_open_db/tree/master/Dataset/SpeechCorpus/Emotional,emotiontts_open_db/espnet_status/02 に置き換え
 emotiontts_open_db,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,6000,see evidence,300,measured,n_files_release_measured,
 emotiontts_open_db,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://github.com/emotiontts/emotiontts_open_db/tree/master/Dataset/SpeechCorpus/Emotional,emotiontts_open_db/status_reason_codes/02 に置き換え
