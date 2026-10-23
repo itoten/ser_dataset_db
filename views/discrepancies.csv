@@ -72,6 +72,16 @@ brytserc,espnet_status,superseded,implemented,measured,candidate,measured,https:
 brytserc,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: 2026-10-14 網羅調査での判断,音声の権利が第三者にある点の扱いを決めていない; brytserc/status_reason_codes/02 に置き換え
 burmese_new2001,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Burmese/New_et_al_2001.md,一次資料は未確認; burmese_new2001/espnet_status/02 に置き換え
 burmese_new2001,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Burmese/New_et_al_2001.md,一次資料は未確認; burmese_new2001/status_reason_codes/02 に置き換え
+casia,espnet_status,superseded,implemented,measured,needs_decision,project_doc,new_corpora/99_final_report.md,casia/espnet_status/03 に置き換え
+casia,hours_reported,superseded,unknown,primary,0.6,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,casia/hours_reported/02 に置き換え
+casia,labels_discrete_reported,conflicting,neutral;happy;sad;angry;fearful;surprised,secondary,高兴;悲哀;生气;惊吓;中性,primary,https://web.archive.org/web/20051214151014/http://www.chineseldc.org:80/doc/CLDC-SPC-2005-010/label.htm,2005 年の標注規範(旧版)は 5 感情。DB 管理セッションが保存版を開いて照合(2026-10-23)。配布団体 ChineseLDC のカタログで、作成者の研究室自身の文書ではない
+casia,labels_discrete_reported,superseded,neutral;happy;sad;angry;fearful;surprised,secondary,anger;fear;happiness;sadness;surprise;neutral,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,"シート原文: anger, fear, happiness, sadness, surprise, neutral; casia/labels_discrete_reported/02 に置き換え"
+casia,n_utt_reported,conflicting,9600,primary,10000,primary,https://web.archive.org/web/20051214151014/http://www.chineseldc.org:80/doc/CLDC-SPC-2005-010/label.htm,2005 年の標注規範(旧版)。4 × 5 × 500。DB 管理セッションが保存版を開いて照合(2026-10-23)。配布団体 ChineseLDC のカタログで、作成者の研究室自身の文書ではない
+casia,n_utt_reported,conflicting,9600,primary,12000,primary,https://web.archive.org/web/20051214160150/http://www.chineseldc.org:80/doc/CLDC-SPC-2005-010/intro.htm,2005 年の資源簡介(旧版)。4 × 6 × 500。DB 管理セッションが保存版を開いて照合(2026-10-23)。配布団体 ChineseLDC のカタログで、作成者の研究室自身の文書ではない
+casia,n_utt_reported,superseded,9600,primary,1200,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,casia/n_utt_reported/02 に置き換え
+casia,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,9600,see evidence,1200,measured,n_files_release_measured,
+casia,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,9600,see evidence,1200,measured,recipes.n_total (casia),レシピは長さ・ラベルで絞るため一致しないのが普通
+casia,status_reason_codes,superseded,NA,measured,access_unofficial_mirror_only,project_doc,new_corpora/99_final_report.md,casia/status_reason_codes/03 に置き換え
 caves,espnet_status,superseded,candidate,user,excluded,primary,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11289252/,caves/espnet_status/03 に置き換え
 caves,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,caves/espnet_status/02 に置き換え
 caves,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11289252/,caves/status_reason_codes/03 に置き換え

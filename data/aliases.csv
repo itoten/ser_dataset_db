@@ -55,6 +55,9 @@ cafe,CaFE,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 
 cafe,Canadian French Emotional (CaFE) speech dataset,official_name,new_corpora/01_cafe_report.md,
 cafe,cafe,recipe_dir,egs3/cafe/cls/dataset/config.yaml (branch ser/cross-corpus),
 casia,CASIA,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 14
+casia,CASIA汉语情感语料库,official_name,https://web.archive.org/web/20200501144342/http://www.chineseldc.org/resource_info.php?rid=76,ChineseLDC の資源名称
+casia,CASIA汉语情感音频语料库-1200音频版本,other_source_name,https://aistudio.baidu.com/datasetdetail/209512,百度 AI Studio の再アップロードの題名
+casia,CLDC-SPC-2005-010,other_source_name,https://web.archive.org/web/20200501144342/http://www.chineseldc.org/resource_info.php?rid=76,ChineseLDC の資源序列号
 caves,CAVES,other_source_name,new_corpora/99_final_report.md,
 caves,Cantonese Audio-Visual Emotional Speech (CAVES),other_source_name,https://www.kaggle.com/datasets/nguyenthanhlim/cantonese-audio-visual-emotional-speech-caves,Kaggle の第三者の複製
 cdse_czech,Czech Database of Speech Emotions (CDSE),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Czech/CDSE.md,

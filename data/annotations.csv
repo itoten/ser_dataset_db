@@ -18,6 +18,9 @@ berst,script,句(カードは無意味な 13 句)。metadata の script 列に�
 berst,shout_level,shout / no-shout / n/a,unknown,utterance,false,measured,recipe_review/berst_scripts/audit.out,metadata,2026-10-23,claude,付け手の記述なし(チャンクの位置から付けた可能性)
 berst,speaker_id,user_id、98 人,human,speaker,true,measured,recipe_review/berst_scripts/audit.out,metadata,2026-10-23,claude,公式の分割に使用
 brytserc,speaker_gender,Male / Female,unknown,utterance,false,measured,recipe_review/brytserc_scripts/audit.out,ファイル名,2026-10-23,claude,付け手の記述なし。ファイル名にだけある
+casia,sentence_id,"文番号 201〜250(1,200 本版)",unknown,utterance,false,measured,recipe_review/casia_scripts/audit.out,ファイル名,2026-10-23,claude,utt_id にだけ使用。201〜205 は同じ文を感情で読み分けたと確認(Whisper)
+casia,speaker_name,話者名 liuchanhg / wangzhe / zhaoquanyin / ZhaoZuoxiang(性別はファイル名にない),unknown,speaker,true,measured,recipe_review/casia_scripts/audit.out,"ファイル名(1,200 本版)",2026-10-23,claude,話者単位の分割に使用。付け手は不明
+casia,tag_files,"音節境界と F0(完全版の .tag ファイル。1,200 本版には含まれない)",unknown,segment,false,primary,https://web.archive.org/web/20051214151014/http://www.chineseldc.org:80/doc/CLDC-SPC-2005-010/label.htm,2、目录结构及标注说明,2026-10-23,claude,付け手(人手か自動か)の記述なし
 emotional_ema,articulatory_data,舌先・舌端・舌背・上唇・下唇・顎の位置(100 Hz),automatic,utterance,false,primary,Zenodo の zip(EMA_5EMO_NSF.zip),*.mat、README,2026-10-22,claude,EMA 計測
 emotional_ema,final_label,聞き手の最終ラベル(`best_emo`)。5 クラス,human,utterance,true,primary,Zenodo の zip(EMA_5EMO_NSF.zip),<話者>_best_emo,2026-10-22,claude,
 emotional_ema,listener_ratings,聞き手ごとの感情・強さ・確信度(EmoEval、StrEval、ConfEval)。1 発話 11、13、15 票,human,utterance,false,primary,Zenodo の zip(EMA_5EMO_NSF.zip),評価ファイル,2026-10-22,claude,聞き手の評価がある点が他の演技コーパスとの違い

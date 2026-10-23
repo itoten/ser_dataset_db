@@ -1,0 +1,77 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 1200
+ },
+ "duration_sec": {
+  "max": 4.934,
+  "median": 1.694,
+  "min": 0.956
+ },
+ "hours_total": 0.6352,
+ "measured_on": "2026-10-23",
+ "n_total": 1200,
+ "output_dir": "/home/tenshi/data/casia_espnet3",
+ "output_env_var": "CASIA_OUTPUT",
+ "recipe": "casia",
+ "splits": {
+  "test": {
+   "hours": 0.1254,
+   "labels": {
+    "angry": 50,
+    "fear": 50,
+    "happy": 50,
+    "neutral": 50,
+    "sad": 50,
+    "surprise": 50
+   },
+   "manifest_sha1": "88dee117a875ce78248e095d77228b4ef73fd88d",
+   "n": 300,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 300
+  },
+  "train": {
+   "hours": 0.2892,
+   "labels": {
+    "angry": 100,
+    "fear": 100,
+    "happy": 100,
+    "neutral": 100,
+    "sad": 100,
+    "surprise": 100
+   },
+   "manifest_sha1": "c705a8784fb3ff23e3b5ed3563b514f0ad6f41a8",
+   "n": 600,
+   "n_filtered": 600,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 600
+  },
+  "valid": {
+   "hours": 0.2205,
+   "labels": {
+    "angry": 50,
+    "fear": 50,
+    "happy": 50,
+    "neutral": 50,
+    "sad": 50,
+    "surprise": 50
+   },
+   "manifest_sha1": "8955bc4096ec8d641b299a9f53a97b1c20492b43",
+   "n": 300,
+   "n_filtered": 300,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 300
+  }
+ },
+ "token_list": [
+  "angry",
+  "fear",
+  "happy",
+  "neutral",
+  "sad",
+  "surprise"
+ ]
+}
