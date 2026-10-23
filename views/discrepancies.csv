@@ -86,7 +86,11 @@ caves,espnet_status,superseded,candidate,user,excluded,primary,https://www.ncbi.
 caves,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,caves/espnet_status/02 に置き換え
 caves,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11289252/,caves/status_reason_codes/03 に置き換え
 caves,status_reason_codes,superseded,unexamined,user,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,caves/status_reason_codes/02 に置き換え
+cbesd,espnet_status,superseded,implemented,measured,candidate,measured,https://www.kaggle.com/datasets/pranuthi19/bilingual-emotion-speech-datasetbesd,cbesd/espnet_status/02 に置き換え
+cbesd,n_utt_reported,conflicting,4320,primary,4200,primary,https://www.kaggle.com/datasets/pranuthi19/bilingual-emotion-speech-datasetbesd,"同じ説明の中で 4,320 と食い違う。式の値は 4,200 で、配布物 4,204 本に近い。DB 管理セッションが Kaggle の API と ~/data/cbesd で照合(2026-10-23)"
 cbesd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,4320,see evidence,4204,measured,n_files_release_measured,
+cbesd,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,4320,see evidence,4164,measured,recipes.n_total (cbesd),レシピは長さ・ラベルで絞るため一致しないのが普通
+cbesd,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: 2026-10-14 網羅調査での判断,cbesd/status_reason_codes/02 に置き換え
 cdse_czech,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Czech/CDSE.md,一次資料は未確認; cdse_czech/espnet_status/02 に置き換え
 cdse_czech,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Czech/CDSE.md,一次資料は未確認; cdse_czech/status_reason_codes/02 に置き換え
 cheavd,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,cheavd/espnet_status/03 に置き換え
