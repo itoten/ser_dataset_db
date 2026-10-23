@@ -14,7 +14,7 @@ berst,gender,例: Woman,human,speaker,false,primary,https://huggingface.co/datas
 berst,native_language,現在の言語・第一言語(例: English),human,speaker,false,primary,https://huggingface.co/datasets/Rosie-Lab/BERSt,metadata,2026-10-23,claude,付け手の記述はなく、自己申告と推定
 berst,phone_model,機種(例: Samsung Galaxy s8+),human,recording,false,primary,https://huggingface.co/datasets/Rosie-Lab/BERSt,metadata,2026-10-23,claude,付け手の記述はなく、自己申告と推定
 berst,phone_position,19 種(文章の指示),human,recording,false,primary,https://huggingface.co/datasets/Rosie-Lab/BERSt,metadata,2026-10-23,claude,作者の指示
-berst,script,無意味な 13 句,human,recording,false,primary,https://huggingface.co/datasets/Rosie-Lab/BERSt,metadata,2026-10-23,claude,
+berst,script,句(カードは無意味な 13 句)。metadata の script 列には 87 種類の文字列がある(句の表記の揺れ・書き起こしの修正を含む。カード: speech annotations have been checked and adjusted),human,recording,false,primary,https://huggingface.co/datasets/Rosie-Lab/BERSt,metadata,2026-10-23,claude,87 種類は DB 管理セッションが metadata の 3 つの CSV から数えた(2026-10-23)。13 句との関係は未確認
 berst,shout_level,shout / no-shout / n/a,unknown,utterance,false,measured,recipe_review/berst_scripts/audit.out,metadata,2026-10-23,claude,付け手の記述なし(チャンクの位置から付けた可能性)
 berst,speaker_id,user_id、98 人,human,speaker,true,measured,recipe_review/berst_scripts/audit.out,metadata,2026-10-23,claude,公式の分割に使用
 brytserc,speaker_gender,Male / Female,unknown,utterance,false,measured,recipe_review/brytserc_scripts/audit.out,ファイル名,2026-10-23,claude,付け手の記述なし。ファイル名にだけある
