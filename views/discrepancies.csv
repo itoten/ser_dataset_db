@@ -54,7 +54,10 @@ baved,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion
 beat,license_spdx,superseded,Apache-2.0,primary,LicenseRef-other,secondary,https://github.com/SuperKogito/SER-datasets,SuperKogito の記述。出典不明; beat/license_spdx/02 に置き換え
 bedvibe,espnet_status,superseded,needs_decision,user,excluded,primary,https://github.com/Mormolykos/bedvibe-datasets,bedvibe/espnet_status/02 に置き換え
 belfast,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,belfast/espnet_status/03 に置き換え
+berst,espnet_status,superseded,implemented,measured,candidate,measured,https://huggingface.co/datasets/Rosie-Lab/BERSt,berst/espnet_status/02 に置き換え
 berst,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,4526,see evidence,4523,measured,n_files_release_measured,
+berst,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,4526,see evidence,4460,measured,recipes.n_total (berst),レシピは長さ・ラベルで絞るため一致しないのが普通
+berst,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: 2026-10-13 網羅調査での判断,berst/status_reason_codes/02 に置き換え
 biicnnime,espnet_status,superseded,candidate,user,excluded,primary,https://nnime.ee.nthu.edu.tw/down/,biicnnime/espnet_status/04 に置き換え
 biicnnime,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,biicnnime/espnet_status/03 に置き換え
 biicnnime,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://nnime.ee.nthu.edu.tw/down/,biicnnime/status_reason_codes/04 に置き換え

@@ -8,6 +8,15 @@ baser,sentence_id,S_1〜S_5。文の中身は配布物にない,human,utterance,
 baser,speaker_gender,F / M,human,speaker,false,measured,recipe_review/baser_scripts/audit.out,ファイル名,2026-10-23,claude,付けたのは作者(ファイル名)
 baser,speaker_id,`<F|M>_<n>_<NAME>`,human,speaker,true,measured,recipe_review/baser_scripts/audit.out,ファイル名,2026-10-23,claude,話者単位の分割に使用
 baser,take_number,テイク番号 1〜3(21 が 1 本、なしが 3 本),human,utterance,true,measured,recipe_review/baser_scripts/audit.out,ファイル名,2026-10-23,claude,utt_id にだけ使用
+berst,age,年代の区分(例: 25-39),human,speaker,false,primary,https://huggingface.co/datasets/Rosie-Lab/BERSt,metadata,2026-10-23,claude,付け手の記述はなく、自己申告と推定
+berst,audio_id_last_modified,録音 ID・時刻,automatic,recording,false,measured,recipe_review/berst_scripts/audit.out,metadata,2026-10-23,claude,
+berst,gender,例: Woman,human,speaker,false,primary,https://huggingface.co/datasets/Rosie-Lab/BERSt,metadata,2026-10-23,claude,付け手の記述はなく、自己申告と推定
+berst,native_language,現在の言語・第一言語(例: English),human,speaker,false,primary,https://huggingface.co/datasets/Rosie-Lab/BERSt,metadata,2026-10-23,claude,付け手の記述はなく、自己申告と推定
+berst,phone_model,機種(例: Samsung Galaxy s8+),human,recording,false,primary,https://huggingface.co/datasets/Rosie-Lab/BERSt,metadata,2026-10-23,claude,付け手の記述はなく、自己申告と推定
+berst,phone_position,19 種(文章の指示),human,recording,false,primary,https://huggingface.co/datasets/Rosie-Lab/BERSt,metadata,2026-10-23,claude,作者の指示
+berst,script,無意味な 13 句,human,recording,false,primary,https://huggingface.co/datasets/Rosie-Lab/BERSt,metadata,2026-10-23,claude,
+berst,shout_level,shout / no-shout / n/a,unknown,utterance,false,measured,recipe_review/berst_scripts/audit.out,metadata,2026-10-23,claude,付け手の記述なし(チャンクの位置から付けた可能性)
+berst,speaker_id,user_id、98 人,human,speaker,true,measured,recipe_review/berst_scripts/audit.out,metadata,2026-10-23,claude,公式の分割に使用
 emotional_ema,articulatory_data,舌先・舌端・舌背・上唇・下唇・顎の位置(100 Hz),automatic,utterance,false,primary,Zenodo の zip(EMA_5EMO_NSF.zip),*.mat、README,2026-10-22,claude,EMA 計測
 emotional_ema,final_label,聞き手の最終ラベル(`best_emo`)。5 クラス,human,utterance,true,primary,Zenodo の zip(EMA_5EMO_NSF.zip),<話者>_best_emo,2026-10-22,claude,
 emotional_ema,listener_ratings,聞き手ごとの感情・強さ・確信度(EmoEval、StrEval、ConfEval)。1 発話 11、13、15 票,human,utterance,false,primary,Zenodo の zip(EMA_5EMO_NSF.zip),評価ファイル,2026-10-22,claude,聞き手の評価がある点が他の演技コーパスとの違い
