@@ -28,6 +28,9 @@ audiospeechsentiment,status_reason_codes,superseded,labels_not_discrete_emotion,
 audiospeechsentiment,status_reason_codes,superseded,labels_not_discrete_emotion,user,account_required;labels_not_discrete_emotion,project_doc,nc_candidates_20261010.md,audiospeechsentiment/status_reason_codes/03 に置き換え
 audiospeechsentiment,status_reason_codes,superseded,labels_not_discrete_emotion,user,labels_not_discrete_emotion;provenance_unclear,measured,https://www.kaggle.com/datasets/imsparsh/audio-speech-sentiment,audiospeechsentiment/status_reason_codes/05 に置き換え
 audiospeechsentiment,status_reason_codes,superseded,labels_not_discrete_emotion,user,unexamined,user,会話 2026-10-14,旧理由: labels_not_discrete_emotion;provenance_unclear; audiospeechsentiment/status_reason_codes/06 に置き換え
+bari_emospeech,espnet_status,superseded,excluded,user,candidate,primary,https://data.mendeley.com/datasets/hpfv67fgb8,bari_emospeech/espnet_status/02 に置き換え
+bari_emospeech,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,2312,see evidence,2328,measured,n_files_release_measured,
+bari_emospeech,status_reason_codes,superseded,labels_from_text_content,user,unexamined,project_doc,ser_dataset_db: 2026-10-14 網羅調査での判断,bari_emospeech/status_reason_codes/02 に置き換え
 basis_global_emotions,espnet_status,superseded,candidate,user,excluded,primary,https://huggingface.co/api/datasets/basis-ai/basis-global-emotions,basis_global_emotions/espnet_status/02 に置き換え
 basis_global_emotions,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://huggingface.co/api/datasets/basis-ai/basis-global-emotions,basis_global_emotions/status_reason_codes/02 に置き換え
 baum1,espnet_status,superseded,candidate,user,excluded,primary,https://archive.ics.uci.edu/api/dataset?id=473,baum1/espnet_status/04 に置き換え
