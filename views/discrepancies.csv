@@ -110,6 +110,8 @@ cmumosi,status_reason_codes,superseded,labels_not_discrete_emotion;no_raw_audio_
 codaco_german,status_reason_codes,superseded,text_only,measured,content_insufficient;redistribution_of_existing_corpus,project_doc,new_corpora/99_final_report.md,codaco_german/status_reason_codes/02 に置き換え
 coraa_ser,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/rmarcacini/ser-coraa-pt-br,coraa_ser/espnet_status/02 に置き換え
 coraa_ser,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,primary,https://github.com/rmarcacini/ser-coraa-pt-br,coraa_ser/status_reason_codes/02 に置き換え
+csemotions,espnet_status,superseded,implemented,measured,candidate,primary,https://huggingface.co/datasets/AIDC-AI/CSEMOTIONS,csemotions/espnet_status/02 に置き換え
+csemotions,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: 2026-10-13 網羅調査での判断,NOTICE の ESD 取り込みの範囲を確認していない; csemotions/status_reason_codes/02 に置き換え
 daicwoz,espnet_status,superseded,candidate,user,excluded,primary,https://dcapswoz.ict.usc.edu/,daicwoz/espnet_status/02 に置き換え
 daicwoz,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion;access_signed_agreement,primary,https://dcapswoz.ict.usc.edu/,daicwoz/status_reason_codes/02 に置き換え
 deeply_korean_read,espnet_status,superseded,candidate,user,excluded,primary,https://www.openslr.org/97/,deeply_korean_read/espnet_status/02 に置き換え

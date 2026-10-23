@@ -1,0 +1,81 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 4160
+ },
+ "duration_sec": {
+  "max": 34.212,
+  "median": 7.8,
+  "min": 1.752
+ },
+ "hours_total": 10.1978,
+ "measured_on": "2026-10-23",
+ "n_total": 4160,
+ "output_dir": "/home/tenshi/data/csemotions_espnet3",
+ "output_env_var": "CSEMOTIONS_OUTPUT",
+ "recipe": "csemotions",
+ "splits": {
+  "test": {
+   "hours": 2.0292,
+   "labels": {
+    "angry": 173,
+    "fear": 118,
+    "happy": 116,
+    "neutral": 104,
+    "playfulness": 140,
+    "sad": 105,
+    "surprise": 94
+   },
+   "manifest_sha1": "0c91e55b074b50ea6be953ae8ef39a5c5f967207",
+   "n": 850,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 850
+  },
+  "train": {
+   "hours": 7.219,
+   "labels": {
+    "angry": 544,
+    "fear": 443,
+    "happy": 421,
+    "neutral": 352,
+    "playfulness": 423,
+    "sad": 402,
+    "surprise": 347
+   },
+   "manifest_sha1": "978a2a6c5fb1dbc370ad7c6c780a76fa87a1ce9f",
+   "n": 2932,
+   "n_filtered": 2917,
+   "over_30s": 15,
+   "under_0.5s": 0,
+   "unique_utt": 2932
+  },
+  "valid": {
+   "hours": 0.9495,
+   "labels": {
+    "angry": 52,
+    "fear": 62,
+    "happy": 66,
+    "neutral": 34,
+    "playfulness": 58,
+    "sad": 39,
+    "surprise": 67
+   },
+   "manifest_sha1": "a8a490e9094d2386bba185ed2dc5b817b80857c2",
+   "n": 378,
+   "n_filtered": 378,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 378
+  }
+ },
+ "token_list": [
+  "angry",
+  "fear",
+  "playfulness",
+  "happy",
+  "sad",
+  "neutral",
+  "surprise"
+ ]
+}
