@@ -1,0 +1,73 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 692
+ },
+ "duration_sec": {
+  "max": 5.013,
+  "median": 3.0,
+  "min": 1.714
+ },
+ "hours_total": 0.5518,
+ "measured_on": "2026-10-23",
+ "n_total": 692,
+ "output_dir": "/home/tenshi/data/baser_espnet3",
+ "output_env_var": "BASER_OUTPUT",
+ "recipe": "baser",
+ "splits": {
+  "test": {
+   "hours": 0.0853,
+   "labels": {
+    "angry": 20,
+    "fear": 20,
+    "happy": 20,
+    "neutral": 19,
+    "sad": 20
+   },
+   "manifest_sha1": "eb47a08e1529f0f09ba2acae2284cc3ad9c9a1af",
+   "n": 99,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 99
+  },
+  "train": {
+   "hours": 0.4132,
+   "labels": {
+    "angry": 104,
+    "fear": 102,
+    "happy": 104,
+    "neutral": 105,
+    "sad": 103
+   },
+   "manifest_sha1": "ca6645cd677e864535312170d542f576201f451b",
+   "n": 518,
+   "n_filtered": 518,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 518
+  },
+  "valid": {
+   "hours": 0.0533,
+   "labels": {
+    "angry": 15,
+    "fear": 15,
+    "happy": 15,
+    "neutral": 15,
+    "sad": 15
+   },
+   "manifest_sha1": "b205c528adea5064137cdf2f40d77969a6e0cbb8",
+   "n": 75,
+   "n_filtered": 75,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 75
+  }
+ },
+ "token_list": [
+  "neutral",
+  "angry",
+  "happy",
+  "sad",
+  "fear"
+ ]
+}

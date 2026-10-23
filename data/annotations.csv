@@ -4,6 +4,10 @@ anad,video,元の動画クリップ(.avi 142 本),unknown,segment,NA,measured,ht
 anad,video_id,元の動画(通話)V1〜V8。ラベルは動画ごとに一定,human,recording,NA,primary,https://www.kaggle.com/datasets/suso172/arabic-natural-audio-dataset,ファイル名・説明,2026-10-23,claude,ラベルの単位は動画
 audiospeechsentiment,mel_spectrogram_image,メルスペクトログラムの png 360 枚,automatic,utterance,NA,measured,Kaggle の配布物,png,2026-10-22,claude,
 audiospeechsentiment,sentiment,negative / neutral / positive(カテゴリ感情ではない),unknown,utterance,NA,measured,TRAIN.csv,TRAIN.csv,2026-10-22,claude,レシピは存在するが使わない方針(削除は確認中)。レポートでは used_in_recipe=true だが、implemented でないデータセットは true にできないので NA
+baser,sentence_id,S_1〜S_5。文の中身は配布物にない,human,utterance,false,measured,recipe_review/baser_scripts/audit.out,ファイル名,2026-10-23,claude,
+baser,speaker_gender,F / M,human,speaker,false,measured,recipe_review/baser_scripts/audit.out,ファイル名,2026-10-23,claude,付けたのは作者(ファイル名)
+baser,speaker_id,`<F|M>_<n>_<NAME>`,human,speaker,true,measured,recipe_review/baser_scripts/audit.out,ファイル名,2026-10-23,claude,話者単位の分割に使用
+baser,take_number,テイク番号 1〜3(21 が 1 本、なしが 3 本),human,utterance,true,measured,recipe_review/baser_scripts/audit.out,ファイル名,2026-10-23,claude,utt_id にだけ使用
 emotional_ema,articulatory_data,舌先・舌端・舌背・上唇・下唇・顎の位置(100 Hz),automatic,utterance,false,primary,Zenodo の zip(EMA_5EMO_NSF.zip),*.mat、README,2026-10-22,claude,EMA 計測
 emotional_ema,final_label,聞き手の最終ラベル(`best_emo`)。5 クラス,human,utterance,true,primary,Zenodo の zip(EMA_5EMO_NSF.zip),<話者>_best_emo,2026-10-22,claude,
 emotional_ema,listener_ratings,聞き手ごとの感情・強さ・確信度(EmoEval、StrEval、ConfEval)。1 発話 11、13、15 票,human,utterance,false,primary,Zenodo の zip(EMA_5EMO_NSF.zip),評価ファイル,2026-10-22,claude,聞き手の評価がある点が他の演技コーパスとの違い
