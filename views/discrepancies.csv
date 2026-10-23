@@ -15,7 +15,9 @@ afrikaans_se,espnet_status,superseded,candidate,user,excluded,secondary,https://
 afrikaans_se,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Afrikaans/AfrikaansSE.md,一次資料は未確認; afrikaans_se/status_reason_codes/02 に置き換え
 amigos,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,amigos/espnet_status/03 に置き換え
 amigos,status_reason_codes,superseded,unexamined,user,access_signed_agreement,project_doc,nc_candidates_20261010.md,amigos/status_reason_codes/03 に置き換え
+anad,espnet_status,superseded,deferred,user,candidate,measured,https://www.kaggle.com/datasets/suso172/arabic-natural-audio-dataset,anad/espnet_status/02 に置き換え
 anad,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1384,see evidence,1428,measured,n_files_release_measured,
+anad,status_reason_codes,superseded,provenance_unclear,user,unexamined,project_doc,ser_dataset_db: 2026-10-13 網羅調査での判断,1秒単位の分割と NC ライセンスの扱いを決めていない; anad/status_reason_codes/02 に置き換え
 asvpesd,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,131,see evidence,76,measured,n_speakers_measured,
 asvpesd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,7812,see evidence,9092,measured,n_files_release_measured,
 asvpesd,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7812,see evidence,3241,measured,recipes.n_total (asvpesd),レシピは長さ・ラベルで絞るため一致しないのが普通

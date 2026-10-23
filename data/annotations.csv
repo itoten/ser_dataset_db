@@ -1,4 +1,7 @@
 dataset_id,item,description,annotator,unit,used_in_recipe,source_type,source_ref,locator,checked_on,checked_by,note
+anad,acoustic_features,950 次元の音響特徴量の CSV,automatic,segment,NA,primary,https://www.kaggle.com/datasets/suso172/arabic-natural-audio-dataset,配布物の CSV,2026-10-23,claude,1 秒チャンクごと
+anad,video,元の動画クリップ(.avi 142 本),unknown,segment,NA,measured,https://www.kaggle.com/datasets/suso172/arabic-natural-audio-dataset,Kaggle のファイル一覧(2026-10-13),2026-10-23,claude,
+anad,video_id,元の動画(通話)V1〜V8。ラベルは動画ごとに一定,human,recording,NA,primary,https://www.kaggle.com/datasets/suso172/arabic-natural-audio-dataset,ファイル名・説明,2026-10-23,claude,ラベルの単位は動画
 audiospeechsentiment,mel_spectrogram_image,メルスペクトログラムの png 360 枚,automatic,utterance,NA,measured,Kaggle の配布物,png,2026-10-22,claude,
 audiospeechsentiment,sentiment,negative / neutral / positive(カテゴリ感情ではない),unknown,utterance,NA,measured,TRAIN.csv,TRAIN.csv,2026-10-22,claude,レシピは存在するが使わない方針(削除は確認中)。レポートでは used_in_recipe=true だが、implemented でないデータセットは true にできないので NA
 emotional_ema,articulatory_data,舌先・舌端・舌背・上唇・下唇・顎の位置(100 Hz),automatic,utterance,false,primary,Zenodo の zip(EMA_5EMO_NSF.zip),*.mat、README,2026-10-22,claude,EMA 計測
