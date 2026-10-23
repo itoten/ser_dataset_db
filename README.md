@@ -33,7 +33,7 @@
 - `recipes.dataset_id` が `datasets` に結びつく。マルチコーパスのレシピは `NA`(個別のレシピが各データセットに結びつく)。
 - 状態: `espnet_status` は `implemented`(egs3 にレシピあり)/ `candidate` / `needs_decision` / `deferred` / `excluded`。`implemented` 以外は `status_reason_codes`(`;` 区切り)に理由を持ち、`implemented` では `NA`。補足は `status_note`、確認日は `status_checked_on`。
 - ラベルの付け手: `datasets.label_source`(`human` / `automatic` / `mixed`)と `label_verification`(`human_reviewed` / `none` / `unknown` / `NA`)。値ごとに根拠行がある。空欄は未確認(現在は `harper_valley_bank`・`nonverbaltts`・`usc_emo_mri`・`rml_emotion`・`telugu_emotion_kaggle` のみ)。`recipe_labels.label_type` は `categorical` / `polarity` / `intent` / `dimensional` / `other`(`recanvo` は未確認で空欄)。極性・意図は `common7=none`。
-- 感情ラベル以外のアノテーションは `annotations.csv` に1項目1行で足す(付け手・単位・レシピでの使用有無・根拠つき)。`annotations_other` はシート原文のまま残す。現在は `anad` の3行、`audiospeechsentiment` の2行、`baser` の4行、`berst` の9行、`emotional_ema` の8行、`emouerj` の3行、`eseravd` の3行、`harper_valley_bank` の19行、`rml_emotion` の4行、`syntact` の6行、`telugu_emotion_kaggle` の4行、`usc_emo_mri` の5行で、レシピ登録のときに一次資料で確認できたものから足す。
+- 感情ラベル以外のアノテーションは `annotations.csv` に1項目1行で足す(付け手・単位・レシピでの使用有無・根拠つき)。`annotations_other` はシート原文のまま残す。現在は `anad` の3行、`audiospeechsentiment` の2行、`baser` の4行、`berst` の9行、`brytserc` の1行、`emotional_ema` の8行、`emouerj` の3行、`eseravd` の3行、`harper_valley_bank` の19行、`rml_emotion` の4行、`syntact` の6行、`telugu_emotion_kaggle` の4行、`usc_emo_mri` の5行で、レシピ登録のときに一次資料で確認できたものから足す。
 - 行の由来: `in_sheet`(元のシートにあった行か)。シート外の行は `sheet_verified=NA`。`sheet_verified` はシートの Verified 列(人が手作業で確認したか)を原文のまま残したもので、判断には使わない。
 
 ## 規約
@@ -80,7 +80,7 @@
 
 ## 現状(2026-10-19)
 
-322データセット(シート由来84・シート外238)。`implemented` 66、`candidate` 167、`deferred` 35、`needs_decision` 8、`excluded` 46。MSP-Podcast 論文(arXiv 2509.09791v1)の Table I の28コーパスは全て含む。
+322データセット(シート由来84・シート外238)。`implemented` 67、`candidate` 166、`deferred` 35、`needs_decision` 8、`excluded` 46。MSP-Podcast 論文(arXiv 2509.09791v1)の Table I の28コーパスは全て含む。
 
 - 2026-10-14 の網羅調査で、総説(SuperKogito の一覧、EmoBox、KuralHub など)と、HF・Zenodo・Kaggle・Mendeley・figshare・GitHub の検索から158件を足した。
 - 同日に状態の付け方の方針を改め、全除外行を見直した(下の「状態の付け方」)。

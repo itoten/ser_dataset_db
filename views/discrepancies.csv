@@ -68,6 +68,8 @@ biicpodcast,license_spdx,superseded,LicenseRef-custom-research-only,primary,Lice
 biicpodcast,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,http://andc.ai/html/menu/dataset/biic-podcast.php,biicpodcast/status_reason_codes/04 に置き換え
 biicpodcast,status_reason_codes,superseded,unexamined,user,not_individually_checked,project_doc,nc_candidates_20261010.md,biicpodcast/status_reason_codes/03 に置き換え
 bmisec,espnet_status,superseded,deferred,user,excluded,measured,https://onlineresource.ucsy.edu.mm/handle/123456789/2809,bmisec/espnet_status/02 に置き換え
+brytserc,espnet_status,superseded,implemented,measured,candidate,measured,https://ndownloader.figshare.com/files/58302829,brytserc/espnet_status/02 に置き換え
+brytserc,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: 2026-10-14 網羅調査での判断,音声の権利が第三者にある点の扱いを決めていない; brytserc/status_reason_codes/02 に置き換え
 burmese_new2001,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Burmese/New_et_al_2001.md,一次資料は未確認; burmese_new2001/espnet_status/02 に置き換え
 burmese_new2001,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Burmese/New_et_al_2001.md,一次資料は未確認; burmese_new2001/status_reason_codes/02 に置き換え
 caves,espnet_status,superseded,candidate,user,excluded,primary,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11289252/,caves/espnet_status/03 に置き換え

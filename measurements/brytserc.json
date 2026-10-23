@@ -1,0 +1,81 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 5215
+ },
+ "duration_sec": {
+  "max": 3.0,
+  "median": 3.0,
+  "min": 2.999
+ },
+ "hours_total": 4.3458,
+ "measured_on": "2026-10-23",
+ "n_total": 5215,
+ "output_dir": "/home/tenshi/data/brytserc_espnet3",
+ "output_env_var": "BRYTSERC_OUTPUT",
+ "recipe": "brytserc",
+ "splits": {
+  "test": {
+   "hours": 0.8692,
+   "labels": {
+    "angry": 149,
+    "disgust": 149,
+    "fear": 149,
+    "happy": 149,
+    "neutral": 149,
+    "sad": 149,
+    "surprise": 149
+   },
+   "manifest_sha1": "74d2a618ed62a35dafed36fc45cb7e585920ed4f",
+   "n": 1043,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1043
+  },
+  "train": {
+   "hours": 3.045,
+   "labels": {
+    "angry": 522,
+    "disgust": 522,
+    "fear": 522,
+    "happy": 522,
+    "neutral": 522,
+    "sad": 522,
+    "surprise": 522
+   },
+   "manifest_sha1": "5aa77b7469a466aea5a7d6db081360fb9a982bd6",
+   "n": 3654,
+   "n_filtered": 3654,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 3654
+  },
+  "valid": {
+   "hours": 0.4317,
+   "labels": {
+    "angry": 74,
+    "disgust": 74,
+    "fear": 74,
+    "happy": 74,
+    "neutral": 74,
+    "sad": 74,
+    "surprise": 74
+   },
+   "manifest_sha1": "1d4c4c94e2ec4e3ef8de2ae47fe82ca73f76f624",
+   "n": 518,
+   "n_filtered": 518,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 518
+  }
+ },
+ "token_list": [
+  "angry",
+  "disgust",
+  "fear",
+  "happy",
+  "neutral",
+  "sad",
+  "surprise"
+ ]
+}

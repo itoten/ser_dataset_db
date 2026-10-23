@@ -17,6 +17,7 @@ berst,phone_position,19 種(文章の指示),human,recording,false,primary,https
 berst,script,無意味な 13 句,human,recording,false,primary,https://huggingface.co/datasets/Rosie-Lab/BERSt,metadata,2026-10-23,claude,
 berst,shout_level,shout / no-shout / n/a,unknown,utterance,false,measured,recipe_review/berst_scripts/audit.out,metadata,2026-10-23,claude,付け手の記述なし(チャンクの位置から付けた可能性)
 berst,speaker_id,user_id、98 人,human,speaker,true,measured,recipe_review/berst_scripts/audit.out,metadata,2026-10-23,claude,公式の分割に使用
+brytserc,speaker_gender,Male / Female,unknown,utterance,false,measured,recipe_review/brytserc_scripts/audit.out,ファイル名,2026-10-23,claude,付け手の記述なし。ファイル名にだけある
 emotional_ema,articulatory_data,舌先・舌端・舌背・上唇・下唇・顎の位置(100 Hz),automatic,utterance,false,primary,Zenodo の zip(EMA_5EMO_NSF.zip),*.mat、README,2026-10-22,claude,EMA 計測
 emotional_ema,final_label,聞き手の最終ラベル(`best_emo`)。5 クラス,human,utterance,true,primary,Zenodo の zip(EMA_5EMO_NSF.zip),<話者>_best_emo,2026-10-22,claude,
 emotional_ema,listener_ratings,聞き手ごとの感情・強さ・確信度(EmoEval、StrEval、ConfEval)。1 発話 11、13、15 票,human,utterance,false,primary,Zenodo の zip(EMA_5EMO_NSF.zip),評価ファイル,2026-10-22,claude,聞き手の評価がある点が他の演技コーパスとの違い
