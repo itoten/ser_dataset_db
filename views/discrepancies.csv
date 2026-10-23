@@ -114,7 +114,9 @@ em2ldl,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/
 em2ldl,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://github.com/xingfengli/EM2LDL,em2ldl/status_reason_codes/03 に置き換え
 em2ldl,status_reason_codes,superseded,unexamined,user,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,em2ldl/status_reason_codes/02 に置き換え
 emilia_emotion,espnet_status,superseded,candidate,user,excluded,primary,https://huggingface.co/datasets/laion/Emilia-with-Emotion-Annotations,emilia_emotion/espnet_status/02 に置き換え
-emilia_emotion,license_spdx,superseded,CC-BY-4.0,primary,none_stated,primary,https://huggingface.co/datasets/laion/Emilia-with-Emotion-Annotations,emilia_emotion/license_spdx/02 に置き換え
+emilia_emotion,license_spdx,conflicting,conflicting,primary,CC-BY-4.0,primary,https://huggingface.co/datasets/laion/Emolia,以前の5分割リポジトリには記載なし; 論文・元の Emilia の利用条件と食い違うため conflicting
+emilia_emotion,license_spdx,conflicting,conflicting,primary,CC-BY-NC-4.0,primary,https://arxiv.org/abs/2609.32016,Emilia 部分は CC-BY-NC-4.0、Emilia-YODAS 部分は CC-BY-4.0。派生物は元クリップのライセンスを引き継ぐ(Limitations)。元の amphion/Emilia-Dataset の利用条件も Emilia を CC-BY-NC、Emilia-YODAS を CC-BY で使うと定める
+emilia_emotion,license_spdx,superseded,conflicting,primary,none_stated,primary,https://huggingface.co/datasets/laion/Emilia-with-Emotion-Annotations,emilia_emotion/license_spdx/02 に置き換え
 emilia_emotion,status_reason_codes,superseded,unexamined,user,labels_automatic;redistribution_of_existing_corpus,primary,https://huggingface.co/datasets/laion/Emilia-with-Emotion-Annotations,emilia_emotion/status_reason_codes/02 に置き換え
 emis,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/19207001,emis/espnet_status/02 に置き換え
 emis,status_reason_codes,superseded,unexamined,user,synthetic_or_tts,primary,https://zenodo.org/records/19207001,emis/status_reason_codes/02 に置き換え
@@ -138,6 +140,7 @@ emomatchspanishdb,espnet_status,superseded,candidate,user,excluded,project_doc,n
 emomatchspanishdb,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://figshare.com/articles/dataset/EmoMatchSpanishDB/14215850,emomatchspanishdb/status_reason_codes/04 に置き換え
 emomatchspanishdb,status_reason_codes,superseded,unexamined,user,no_raw_audio_features_only,project_doc,nc_candidates_20261010.md,emomatchspanishdb/status_reason_codes/03 に置き換え
 emonetvoice,espnet_status,superseded,candidate,user,excluded,primary,https://arxiv.org/abs/2506.09827,emonetvoice/espnet_status/02 に置き換え
+emonetvoice,n_utt_reported,superseded,12600,primary,4700,primary,https://arxiv.org/abs/2506.09827,Bench の件数(概数); emonetvoice/n_utt_reported/02 に置き換え
 emonetvoice,status_reason_codes,superseded,unexamined,user,synthetic_or_tts,primary,https://arxiv.org/abs/2506.09827,emonetvoice/status_reason_codes/02 に置き換え
 emoreact,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/bnojavan/EmoReact,emoreact/espnet_status/03 に置き換え
 emoreact,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,emoreact/espnet_status/02 に置き換え
@@ -352,7 +355,10 @@ mspimprov,espnet_status,superseded,candidate,user,excluded,primary,https://www.l
 mspimprov,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,mspimprov/espnet_status/03 に置き換え
 mspimprov,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://www.lab-msp.com/MSP/MSP-Improv.html,mspimprov/status_reason_codes/04 に置き換え
 mspimprov,status_reason_codes,superseded,unexamined,user,access_signed_agreement,project_doc,nc_candidates_20261010.md,mspimprov/status_reason_codes/03 に置き換え
-msppodcast,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,264705,see evidence,212808,measured,recipes.n_total (msppodcast),レシピは長さ・ラベルで絞るため一致しないのが普通
+msppodcast,n_speakers_reported,superseded,3641,primary,3929,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,msppodcast/n_speakers_reported/02 に置き換え
+msppodcast,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,3641,see evidence,3713,measured,n_speakers_measured,
+msppodcast,n_utt_reported,superseded,267905,primary,264705,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,msppodcast/n_utt_reported/02 に置き換え
+msppodcast,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,267905,see evidence,212808,measured,recipes.n_total (msppodcast),レシピは長さ・ラベルで絞るため一致しないのが普通
 musecar,access_method,superseded,signed_agreement,primary,request_form_or_email,primary,https://zenodo.org/records/4651164,EULA の要否は未確認; musecar/access_method/02 に置き換え
 musecar,espnet_status,superseded,candidate,user,excluded,primary,https://sites.google.com/view/muse2020/challenge/get-data,musecar/espnet_status/04 に置き換え
 musecar,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,musecar/espnet_status/03 に置き換え
@@ -377,6 +383,7 @@ ogvc,status_reason_codes,superseded,unexamined,user,access_signed_agreement,prim
 omgemotion,espnet_status,superseded,needs_decision,user,excluded,primary,https://www2.informatik.uni-hamburg.de/wtm/omgchallenges/omg_emotion2018_description.html,omgemotion/espnet_status/04 に置き換え
 omgemotion,espnet_status,superseded,needs_decision,user,excluded,project_doc,nc_candidates_20261010.md,omgemotion/espnet_status/03 に置き換え
 paraspeechcaps,espnet_status,superseded,candidate,user,excluded,primary,https://arxiv.org/abs/2503.04713,paraspeechcaps/espnet_status/02 に置き換え
+paraspeechcaps,hours_reported,superseded,2709,primary,2769,primary,https://arxiv.org/abs/2503.04713,342+2427 の和; paraspeechcaps/hours_reported/02 に置き換え
 paraspeechcaps,status_reason_codes,superseded,unexamined,user,labels_automatic;redistribution_of_existing_corpus,primary,https://arxiv.org/abs/2503.04713,paraspeechcaps/status_reason_codes/02 に置き換え
 pavoque,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,7334,see evidence,5442,measured,n_files_release_measured,
 pavoque,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7334,see evidence,5442,measured,recipes.n_total (pavoque),レシピは長さ・ラベルで絞るため一致しないのが普通
