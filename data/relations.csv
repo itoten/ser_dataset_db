@@ -1,22 +1,32 @@
 dataset_id,relation,other_dataset_id,source_ref,note
+capspeech_agentdb,subset_of,capspeech,https://arxiv.org/abs/2506.02863,CapSpeech の新規録音の一つ
 chsims2,version_of,chsims,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シート上の名称(CH-SIMS v2.0 と CH-SIMS)による。内容の同一性は未確認
 eekk,possibly_same_as,eesc,https://metashare.ut.ee/repository/browse/estonian-emotional-speech-corpus/f5e5fc91a0d311eebb4773db10791bcf07ff90a82bf541dbbb9ecf816da202fe/,同一と判断。META-SHARE の記録(エストニア語名 Eesti emotsionaalse kõne korpus = EEKK)が figshare 25249744(Estonian Emotional Speech Corpus)を指し、文数・話者・ラベルも一致
+emonetvoice,possibly_same_as,laions_got_talent,https://huggingface.co/datasets/t1a5anu-anon/emonet-voice-foundation,EmoNet-Voice Big(foundation)のカードが本体として LAION's Got Talent の拡張版を示す。同一かは未確認
 emosec,contains,esd,https://zenodo.org/records/10948423,ESD の音声へのキャプション
 emosec,contains,iemocap,https://zenodo.org/records/10948423,IEMOCAP の音声へのキャプション
+emospeech_secap,distinct_from,emospeech_keywords,https://arxiv.org/abs/2312.10381,名前が似ているが別物
 emotale,distinct_from,des,https://arxiv.org/abs/2508.14548,どちらもデンマーク語。DES(1997)は別のコーパス
 emouerj_sed,version_of,emouerj,https://huggingface.co/datasets/AdeoyeLadele/emouerj-sed,カード: adapted from emoUERJ for the Speech Emotion Diarization Task
+emovoicedb,contains,laions_got_talent,https://github.com/yanghaha0908/EmoVoice,README: the part we use (of laions_got_talent) is also uploaded to EmoVoice-DB(laions_got_latent.jsonl)。含むのは一部
 expressivespeech,contains,expresso,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,"カード: curated from Expresso, NCSSD, M3ED, MultiDialog, IEMOCAP"
 expressivespeech,contains,iemocap,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,同上
 expressivespeech,contains,m3ed,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,同上
+fcaps,contains,paraspeechcaps,https://arxiv.org/abs/2601.03065,FCaps-PSCBase は PSC-Base の音声と全体キャプションを使う(§3)
 hume_reaction,distinct_from,humevb,https://arxiv.org/abs/2207.05691,どちらも Hume AI。Hume-Reaction は刺激への反応の映像・音声、Hume-VB は非言語発声
 iitkgp_sehsc,distinct_from,iitkgp_sesc,https://www.iieta.org/journals/ts/paper/10.18280/ts.380631,同じ研究室のテルグ語版とヒンディー語版
 interface,distinct_from,enterface05,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,シートのNotesが『Distinct from eNTERFACE'05』と記す
 javanese_ser_2black0,possibly_same_as,java_sed,https://github.com/2black0/Sound-Emotion-Recognition-Javanese-Speech-Dataset,"どちらもジャワ語の6感情(同じラベル)で、10話者×4文×6感情×7回=1,680 が KuralHub の Java-SED の件数と一致。KuralHub は話者20人とする"
 kazakh_russian_emotion,distinct_from,kazemotts,https://github.com/aaivu/KuralHub/blob/main/datasets/Kazakh/Kazakh-Russian-Emotion-Corpus.md,どちらもカザフ語。KazEmoTTS は TTS 用の別コーパス
 kesdy18,distinct_from,kemdy19,https://github.com/aaivu/KuralHub/blob/main/datasets/Korean/KESDy18.md,同じ ETRI の別コーパス(KESDy18 は2018年の感情音声、KEMDy19 は2019年のマルチモーダル)
+mer2024,contains,mer2023,https://arxiv.org/abs/2404.17113,"MER2024 の Train&Val 5,030 件は MER2023 のラベル付き全件(§2: we merge all labeled samples)"
+mer2025,contains,mer2024,https://arxiv.org/abs/2504.19423,"MER2025 の論文の Table 1 は Train&Val を 3,373(2023)→ 5,030(2024)→ 7,369(2025)と書く。7,369 は MER2024 のラベル付きの和(5,030+1,169+1,170)と一致するので含むと判断(内訳を明記した文は見つからない)"
+mer_caption,subset_of,mer2024,https://arxiv.org/abs/2501.16566,MER2024 の無ラベル部分への注釈
+merr,subset_of,mer2023,https://arxiv.org/abs/2406.11161,MER2023 の無ラベル部分への注釈
 mmeld,version_of,meld,https://arxiv.org/abs/2203.16799,MELD の発話のテキストを4言語に訳したもの
 nemo,distinct_from,polishemo,new_corpora/16_polishemo_report.md,どちらもポーランド語の感情音声だが別のコーパス(polishemo の注記)
 nonverbaltts,contains,expresso,https://huggingface.co/datasets/deepvk/NonverbalTTS,"Expresso の音声の一部を含む(1,804 本)。VoxCeleb(DB未登録)の音声も含む(4,452 本)(カード: derived from VoxCeleb and Expresso)"
+ov_merd,subset_of,mer2023,https://arxiv.org/abs/2410.01495,MER2023 の一部への新しいラベル層(§2.3)
 persian_esd,distinct_from,esd,https://doi.org/10.3758/s13428-014-0467-x,名前が似ているが、中英の ESD(HLT Singapore)とは別物
 prahalabs_malayalam,subset_of,rasa,https://huggingface.co/datasets/Praha-Labs/malayalam-emotion-balanced,行の wav_path が rasa_hf/data/Malayalam を指す(2026-10-14 に先頭行で確認)。全件の照合はしていない
 ses_ed,distinct_from,ses_sd,https://www.kaggle.com/datasets/angeluxarmenta/ses-ed,同じ53人の学生による英語版。SES-SD はスペイン語版
@@ -29,3 +39,4 @@ textrolspeech,contains,tess,https://arxiv.org/abs/2308.14430,論文 §2
 thanushs25_tamil,possibly_same_as,meghana007_tamil,https://huggingface.co/datasets/Thanushs25/tamil-audio-emotion-classification,README と final_data/ の構成・wav 195件が同一(2026-10-14)
 tures,distinct_from,turevdb,https://doi.org/10.1186/1687-4722-2013-26,どちらもトルコ語。TurES は映画の発話、TurEV-DB は単語の演技
 urduser,distinct_from,urdu,https://data.mendeley.com/datasets/jcpfjnk5c2/4; https://github.com/siddiquelatif/URDU-Dataset,どちらもウルドゥー語だが別物。UrduSER は Mendeley の演技音声(10話者)、URDU はトーク番組からの400発話。MSP-Podcast 論文 Table I の UrduSER は urduser に当たる
+voicenet,subset_of,emilia_emotion,https://arxiv.org/abs/2609.32016,VoiceNet-Emo のクリップは Emilia-Large(Emolia の音声)から選んだもの

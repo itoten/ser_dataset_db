@@ -99,6 +99,7 @@ emilia_emotion,Emolia,official_name,https://huggingface.co/datasets/laion/Emolia
 emis,EMIS,short_name,https://zenodo.org/records/19207001,
 emns,EMNS,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 26
 emns,emns,recipe_dir,egs3/emns/cls/dataset/config.yaml (branch ser/cross-corpus),
+emo_emilia,ASLP-lab/Emo-Emilia,other_source_name,https://huggingface.co/datasets/ASLP-lab/Emo-Emilia,
 emochildru,EmoChildRu,official_name,https://doi.org/10.1007/978-3-319-23132-7_18,
 emodb,EMODB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 27
 emodb,Emo-DB,other_source_name,https://arxiv.org/html/2509.09791v1,MSP-Podcast 論文 Table I の表記
@@ -110,6 +111,7 @@ emomatchspanishdb,EmoMatchSpanishDB,sheet_name,sheet_import/2026-10-12_ser_datab
 emonetvoice,EmoNet-Voice Bench,other_source_name,https://arxiv.org/abs/2506.09827,
 emonetvoice,EmoNet-Voice Big,other_source_name,https://arxiv.org/abs/2506.09827,
 emoreact,EmoReact,other_source_name,new_corpora/99_final_report.md,
+emospeech_secap,EMOSpeech,short_name,https://arxiv.org/abs/2312.10381,emospeech_keywords(Kaggle の EmoSpeech)とは別物
 emosynth,EmoSynth,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 30
 emota,EmoTa,other_source_name,new_corpora/99_final_report.md,
 emotale,EmoTale,official_name,https://github.com/snehadas/EmoTale,
@@ -118,6 +120,7 @@ emotional_ema,An articulatory study of emotional speech production,official_name
 emotional_ema,Emotional EMA,other_source_name,new_corpora/99_final_report.md,
 emotiontalk,EmotionTalk,official_name,https://arxiv.org/abs/2505.23018,
 emotiontts_open_db,emotiontts_open_db,other_source_name,https://github.com/emotiontts/emotiontts_open_db,
+emotranscap,EmoTransSpeech,other_source_name,https://arxiv.org/abs/2604.26417,
 emouerj,emoUERJ,official_name,https://zenodo.org/records/5427549,
 emouerj_sed,emouerj-sed,other_source_name,new_corpora/99_final_report.md,
 emovdb,EmoV-DB,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 31
@@ -142,6 +145,7 @@ euemotion_voice,EU-Emotion Stimulus Set,other_source_name,https://www.autismrese
 expresso,Expresso,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 36
 eyase,EYASE,other_source_name,new_corpora/99_final_report.md,
 fauaibo,FAU-Aibo,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 37
+fcaps,yfyeung/FCaps,other_source_name,https://huggingface.co/datasets/yfyeung/FCaps,
 filmed,Filipino Multimodal Emotion Database (FilMED),other_source_name,https://github.com/aaivu/KuralHub/blob/main/datasets/Filipino/FilMED.md,
 fluent_speech_commands,FSC,short_name,https://fluent.ai/fluent-speech-commands-a-dataset-for-spoken-language-understanding-research/,
 galgame_speech_ser,Galgame_Speech_SER,other_source_name,new_corpora/99_final_report.md,
@@ -224,6 +228,7 @@ meld,MELD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 
 meld,meld,recipe_dir,egs3/meld/cls/dataset/config.yaml (branch ser/cross-corpus),
 memor,MEmoR,official_name,https://dl.acm.org/doi/10.1145/3394171.3413909,
 mer2023,MER2023,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 51
+mer2024,MERChallenge/MER2024,other_source_name,https://huggingface.co/datasets/MERChallenge/MER2024,
 mer2025,MER2025,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 52
 mer2026,MER2026,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 53
 mesd,MESD,sheet_name,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,line 54
