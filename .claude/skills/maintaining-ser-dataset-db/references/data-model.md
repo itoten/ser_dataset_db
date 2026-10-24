@@ -11,6 +11,7 @@ nulls), `schema/enums.csv` (every allowed value) and `schema/tables.csv` (keys).
 - Conflicting sources
 - Dataset status
 - Label provenance
+- How the audio was produced vs. how the labels were made
 - Annotations
 - Recipe tables
 - What counts as one dataset
@@ -54,7 +55,7 @@ These `datasets` columns need an evidence row for their value: `languages`,
 `recording_context`, `vocal_content`, `license_spdx`, `access_method`, `raw_audio_available`,
 `n_utt_reported`, `hours_reported`, `n_speakers_reported`, `n_files_release_measured`,
 `n_speakers_measured`, `labels_discrete_reported`, `dimensional_attributes`, `espnet_status`,
-`status_reason_codes`, `label_source`, `label_verification`.
+`status_reason_codes`, `label_source`, `label_verification`, `speech_production`, `label_basis`.
 
 Columns that never take evidence rows (adding one is a validation error): URL columns
 (`source_url`, `download_url`, `paper_url`, `doi`) and text columns (`status_note`, `notes`,
@@ -115,8 +116,26 @@ describe it in the exclusion section of `docs/manual.md`.
 - `label_source`: `human`, `automatic` or `mixed`. Emotions that actors were asked to portray
   are `human`.
 - `label_verification`: `human_reviewed` (the source says people checked automatic labels),
-  `none` (the source says nobody did), `unknown` (the sources say nothing), `NA` (labels are
-  human-only, e.g. the instructed emotion itself).
+  `listener_validated` (instructed labels were confirmed or filtered by a listening test; the
+  label itself stays the instructed one), `none` (the source says nobody checked), `unknown`
+  (the sources say nothing), `NA` (nothing to check).
+
+## How the audio was produced vs. how the labels were made
+
+These are two independent facts and are recorded in separate columns. Acted speech can carry
+perceived labels, and spontaneous speech can carry self-reported ones; never infer one from the
+other. Perceived labels are especially valuable, so record them precisely.
+
+| Column | Values (`;`-separated when several apply) |
+|---|---|
+| `speech_production` | `acted` (speakers portrayed an instructed emotion), `elicited` (emotion induced by stimuli, tasks or a set-up conversation), `spontaneous` (natural speech: conversations, broadcasts, streams), `read` (reading without an emotion instruction), `synthetic` |
+| `label_basis` | `intended` (the emotion the speaker was told to portray), `perceived` (what listeners or raters judged), `self_reported` (the speaker's own report), `context_inferred` (from the scene, script or the meaning of the words), `automatic` (a model); `none` if there are no emotion labels |
+| `label_basis_note` (free text) | number of raters per clip, what raters saw or heard (audio only, video, transcript), how ratings were combined (majority, mean, consensus), which label set is the main one, listening-test details |
+| `recipes.label_basis_used` | which kind of label the recipe actually trains on, for datasets that ship more than one |
+
+`recording_context` keeps the setting or medium (studio, YouTube, TV, film). Fill all of these
+from the paper or official documentation of the dataset, with evidence rows; when the sources
+are silent, write `unknown` and say so in the note.
 
 ## Annotations
 
@@ -139,6 +158,7 @@ hand-written ones:
 | `split_method` | `official`, `official_with_carved_valid`, `random_stratified_by_label`, `speaker_independent`, `sentence_independent`, `source_group_independent`, `other` |
 | `split_unit`, `recipe_exclusions_note`, `known_issues`, `notes` | free text |
 | `speaker_overlap` | `true` / `false` / `unknown` |
+| `label_basis_used` | the `label_basis` value(s) of the labels the recipe trains on |
 | `baseline_status` | `evaluated`, `trained_only`, `not_run`, `unknown` |
 
 `recipe_labels.csv`: `common7` is one of angry, happy, sad, neutral, fear, disgust, surprise, or

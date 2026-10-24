@@ -67,6 +67,9 @@ R.ev("n_speakers_measured", "8", "measured", AUDIT, "speaker field of the file n
 # Labels and license.
 R.ev("label_source", "human", "primary", KG, "actors portrayed the given emotion")
 R.ev("label_verification", "NA", "primary", KG, "no listening test described; labels are the instructed emotion")
+R.ev("speech_production", "acted", "primary", KG, "actors portrayed each emotion")
+R.ev("label_basis", "intended", "primary", KG, "label = the emotion the actor was asked to portray")
+R.set(label_basis_note="Labels are the instructed emotion; no rater judgements are distributed.")
 R.ev("license_spdx", "CC-BY-4.0", "user", KG, "license field on the page", by="user",
      note="checked on the page by the maintainer (2026-01-30); the API shows the same")
 R.set(release_version="Kaggle version 2 (2025-11-02)",
@@ -81,6 +84,7 @@ R.recipe(report_path="reviews/toyemo.md",  # must exist, same base directory as 
          speaker_overlap="false",
          recipe_exclusions_note="12 files: the second file of each byte-identical pair (maintainer, 2026-01-30)",
          known_issues="One near-identical pair with different labels (Angry_031 / Sad_112) is still used",
+         label_basis_used="intended",
          baseline_status="not_run", notes="health check ok on 2026-01-29 (2 epochs)")
 R.labels({"angry": ("anger", "angry", "spelling_fix"), "happy": ("joy", "happy", "synonym_rename"),
           "sad": ("sadness", "sad", "synonym_rename"), "neutral": ("neutral", "neutral", "identity"),

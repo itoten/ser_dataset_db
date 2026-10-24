@@ -85,7 +85,9 @@ to; the recipe's `dataset/config.yaml`, readme and commit history on the recipe 
 **2. Sort the claims** into maintainer decisions (record as given) and facts (check each).
 
 **3. Check the facts.** At minimum: open the distributor page or API and compare license,
-version, counts, speakers, label set and how labels were made; run
+version, counts, speakers and label set; establish from the paper how the audio was produced
+(acted, elicited, spontaneous, read, synthetic) and, separately, how the labels were made
+(instructed, perceived by raters, self-reported, inferred from context, automatic); run
 `audio_audit.py inventory` on the corpus and compare files, formats, durations and
 byte-identical groups; if the report counts duplicates, run `audio_audit.py dups` yourself.
 Note every difference: you will report it.
@@ -104,7 +106,8 @@ add one to `schema/enums.csv` and the manual. The full rules: [references/data-m
 [references/registration-example.md](references/registration-example.md). Include:
 - evidence for `espnet_status`, `status_reason_codes`, the checked counts
   (`n_files_release_measured`, `n_speakers_measured`, or `unknown` when they cannot be counted),
-  `label_source`, `label_verification`, and any published value or license that changed;
+  `label_source`, `label_verification`, `speech_production` and `label_basis` (with details in
+  `label_basis_note`), and any published value or license that changed;
   disagreeing sources as `conflicting` rows;
 - cells without evidence: `status_note`, `notes`, `license_note`, `release_version`,
   `status_checked_on`;
