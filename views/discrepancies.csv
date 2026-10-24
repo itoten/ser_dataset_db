@@ -118,6 +118,11 @@ csemotions,label_verification,superseded,unknown,primary,NA,primary,https://hugg
 csemotions,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: 2026-10-13 網羅調査での判断,NOTICE の ESD 取り込みの範囲を確認していない; csemotions/status_reason_codes/02 に置き換え
 daicwoz,espnet_status,superseded,candidate,user,excluded,primary,https://dcapswoz.ict.usc.edu/,daicwoz/espnet_status/02 に置き換え
 daicwoz,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion;access_signed_agreement,primary,https://dcapswoz.ict.usc.edu/,daicwoz/status_reason_codes/02 に置き換え
+dailytalk,espnet_status,superseded,implemented,measured,candidate,primary,https://github.com/keonlee9420/DailyTalk,superseded by dailytalk/espnet_status/02
+dailytalk,hours_reported,conflicting,21.67,primary,20,primary,https://arxiv.org/abs/2207.01063,"表 1 の 78,026 秒(21.67 時間)を丸めた値"
+dailytalk,hours_reported,superseded,21.67,primary,20,primary,https://arxiv.org/abs/2207.01063,superseded by dailytalk/hours_reported/02
+dailytalk,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,23773,see evidence,23772,measured,recipes.n_total (dailytalk),レシピは長さ・ラベルで絞るため一致しないのが普通
+dailytalk,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: 2026-10-13 網羅調査での判断,ラベルがテキスト由来である点の扱いを決めていない; superseded by dailytalk/status_reason_codes/02
 deeply_korean_read,espnet_status,superseded,candidate,user,excluded,primary,https://www.openslr.org/97/,deeply_korean_read/espnet_status/02 に置き換え
 deeply_korean_read,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,user,会話 2026-10-14,content_insufficient を外した; deeply_korean_read/status_reason_codes/03 に置き換え
 deeply_korean_read,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion;content_insufficient,primary,https://www.openslr.org/97/,deeply_korean_read/status_reason_codes/02 に置き換え

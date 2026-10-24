@@ -28,6 +28,12 @@ cbesd,language,T(テルグ語)/ E(英語),human,utterance,true,primary,https://w
 cbesd,utterance_number,1〜5,human,utterance,false,primary,https://www.kaggle.com/datasets/pranuthi19/bilingual-emotion-speech-datasetbesd,説明のファイル名規則,2026-10-23,claude,utt_id にだけ使用。文の中身は配布物にない
 csemotions,speaker,speaker 列(female001〜005、male001〜005),human,speaker,true,measured,recipe_review/csemotions_scripts/audit.out,speaker 列,2026-10-23,claude,話者単位の分割に使用
 csemotions,text,"台本の文(text 列。中国語 1,296 種類)",human,utterance,false,measured,recipe_review/csemotions_scripts/audit.out,text 列,2026-10-23,claude,ラベルではなく台本。どの文も 1 つの感情にだけ出る
+dailytalk,dialogue_act,inform / question / directive / commissive,human,utterance,false,primary,https://arxiv.org/abs/2207.01063,inherited from DailyDialog,2026-10-24,claude,DailyDialog のテキストへの注釈
+dailytalk,filler_instruction,約半数の対話でフィラーを入れるよう指示(論文の表 1 で話者 0 は 962 対話、話者 1 は 689 対話),human,conversation,false,primary,https://arxiv.org/abs/2207.01063,"Section 2.2, Table 1",2026-10-24,claude,配布物にどの対話かの印はない
+dailytalk,speaker_id,0 / 1(声優 2 人、全対話に両方が出る),human,utterance,false,measured,~/data/dailytalk の配布物、audio_audit.py inventory と metadata.json の集計(2026-10-24),metadata.json の speaker,2026-10-24,claude,
+dailytalk,topic,話題 1〜10,human,conversation,false,primary,https://arxiv.org/abs/2207.01063,inherited from DailyDialog,2026-10-24,claude,DailyDialog のテキストへの注釈
+dailytalk,transcript,英語の書き起こし(台本。収録後に注釈者 6 人が音声との食い違いを直した),human,utterance,false,primary,https://arxiv.org/abs/2207.01063,Section 2.3,2026-10-24,claude,
+dailytalk,turn_order,対話番号・発話の順序(dialog_idx、utterance_idx、turn),human,utterance,true,measured,~/data/dailytalk の配布物、audio_audit.py inventory と metadata.json の集計(2026-10-24),metadata.json,2026-10-24,claude,utt_id と対話単位の分割に使用
 emotional_ema,articulatory_data,舌先・舌端・舌背・上唇・下唇・顎の位置(100 Hz),automatic,utterance,false,primary,Zenodo の zip(EMA_5EMO_NSF.zip),*.mat、README,2026-10-22,claude,EMA 計測
 emotional_ema,final_label,聞き手の最終ラベル(`best_emo`)。5 クラス,human,utterance,true,primary,Zenodo の zip(EMA_5EMO_NSF.zip),<話者>_best_emo,2026-10-22,claude,
 emotional_ema,listener_ratings,聞き手ごとの感情・強さ・確信度(EmoEval、StrEval、ConfEval)。1 発話 11、13、15 票,human,utterance,false,primary,Zenodo の zip(EMA_5EMO_NSF.zip),評価ファイル,2026-10-22,claude,聞き手の評価がある点が他の演技コーパスとの違い

@@ -1,0 +1,81 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 23772
+ },
+ "duration_sec": {
+  "max": 17.837,
+  "median": 2.91,
+  "min": 0.506
+ },
+ "hours_total": 21.6731,
+ "measured_on": "2026-10-24",
+ "n_total": 23772,
+ "output_dir": "/home/tenshi/data/dailytalk_espnet3",
+ "output_env_var": "DAILYTALK_OUTPUT",
+ "recipe": "dailytalk",
+ "splits": {
+  "test": {
+   "hours": 4.3271,
+   "labels": {
+    "angry": 25,
+    "disgust": 11,
+    "fear": 6,
+    "happy": 791,
+    "neutral": 3715,
+    "sad": 52,
+    "surprise": 83
+   },
+   "manifest_sha1": "78eadf86ea33e034c7c19abd648d272d87321063",
+   "n": 4683,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 4683
+  },
+  "train": {
+   "hours": 15.1961,
+   "labels": {
+    "angry": 130,
+    "disgust": 50,
+    "fear": 11,
+    "happy": 2632,
+    "neutral": 13356,
+    "sad": 231,
+    "surprise": 284
+   },
+   "manifest_sha1": "adf9de1a842cbea7545071feb479f6efcc329fe4",
+   "n": 16694,
+   "n_filtered": 16694,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 16694
+  },
+  "valid": {
+   "hours": 2.1499,
+   "labels": {
+    "angry": 4,
+    "disgust": 5,
+    "fear": 1,
+    "happy": 433,
+    "neutral": 1894,
+    "sad": 18,
+    "surprise": 40
+   },
+   "manifest_sha1": "d7d74b9a1e319f0f3075f50e5fd14e36d95fe4b4",
+   "n": 2395,
+   "n_filtered": 2395,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 2395
+  }
+ },
+ "token_list": [
+  "neutral",
+  "happy",
+  "surprise",
+  "sad",
+  "angry",
+  "disgust",
+  "fear"
+ ]
+}

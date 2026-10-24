@@ -13,12 +13,12 @@
 | 項目 | 値 |
 |---|---|
 | 登録データセット数 | **322件**(元のシート由来84件 + 新たに調べて足した238件) |
-| ESPnet に実装済み | 70件 |
-| 次の実装候補 | 164件 |
+| ESPnet に実装済み | 71件 |
+| 次の実装候補 | 163件 |
 | 判断待ち | 7件 |
 | 保留 | 35件 |
 | 除外(理由つき) | 46件 |
-| 値ごとの「根拠」の記録 | 4,011行 |
+| 値ごとの「根拠」の記録 | 4,018行 |
 | 登場する言語コード | 70種類 |
 
 ### 1.3 売りになる点
@@ -147,15 +147,15 @@ ser_dataset_db/
 | ファイル | 1行が表すもの | 行数 |
 |---|---|---|
 | [datasets.csv](../data/datasets.csv) | **1つのデータセット**(中心になる表) | 322 |
-| [evidence.csv](../data/evidence.csv) | datasets の1つの値の**根拠** | 4,011 |
+| [evidence.csv](../data/evidence.csv) | datasets の1つの値の**根拠** | 4,018 |
 | [aliases.csv](../data/aliases.csv) | 別名(公式名・略称・旧名・レシピ名など) | 375 |
 | [relations.csv](../data/relations.csv) | データセット同士の関係 | 41 |
-| [recipes.csv](../data/recipes.csv) | ESPnet の1レシピ | 71 |
-| [recipe_labels.csv](../data/recipe_labels.csv) | レシピ×ラベル | 433 |
+| [recipes.csv](../data/recipes.csv) | ESPnet の1レシピ | 72 |
+| [recipe_labels.csv](../data/recipe_labels.csv) | レシピ×ラベル | 440 |
 | [benchmark_membership.csv](../data/benchmark_membership.csv) | ベンチマークを構成するレシピ | 16 |
-| [annotations.csv](../data/annotations.csv) | データセット×感情ラベル以外のアノテーション(書き起こし・話者特性・対話行為など) | 81(`anad` 3、`audiospeechsentiment` 2、`baser` 4、`berst` 9、`brytserc` 1、`casia` 3、`cbesd` 5、`csemotions` 2、`emotional_ema` 8、`emouerj` 3、`eseravd` 3、`harper_valley_bank` 19、`rml_emotion` 4、`syntact` 6、`telugu_emotion_kaggle` 4、`usc_emo_mri` 5。これから埋める) |
+| [annotations.csv](../data/annotations.csv) | データセット×感情ラベル以外のアノテーション(書き起こし・話者特性・対話行為など) | 87(`anad` 3、`audiospeechsentiment` 2、`baser` 4、`berst` 9、`brytserc` 1、`casia` 3、`cbesd` 5、`csemotions` 2、`dailytalk` 6、`emotional_ema` 8、`emouerj` 3、`eseravd` 3、`harper_valley_bank` 19、`rml_emotion` 4、`syntact` 6、`telugu_emotion_kaggle` 4、`usc_emo_mri` 5。これから埋める) |
 
-関係の内訳は `contains`(含む)15、`distinct_from`(名前が似た別物)12、`subset_of`(一部)7、`possibly_same_as`(同一の疑い)4、`version_of`(版違い)3。レシピ71件のうち70件は1コーパス用(`single_corpus`)、1件が複数コーパスを合わせたもの(`multi_corpus`)。
+関係の内訳は `contains`(含む)15、`distinct_from`(名前が似た別物)12、`subset_of`(一部)7、`possibly_same_as`(同一の疑い)4、`version_of`(版違い)3。レシピ72件のうち71件は1コーパス用(`single_corpus`)、1件が複数コーパスを合わせたもの(`multi_corpus`)。
 
 ### 4.3 表のつながり
 
@@ -274,7 +274,7 @@ datasets ──(dataset_id)── evidence   値ごとの根拠
 
 ### 6.2.1 「いつ確認したか」の記録
 
-確認日(`checked_on`)は全4,011行に入っている(2026-10-10〜10-24)。ただし**日付は、その時点で出典を見た日**であって、今も正しいことの保証ではない。配布ページやライセンスは後から変わりうる。元のシート由来の行(`source_type`=`sheet`)の日付 2026-10-12 は、シートを取り込んだ日で、誰かが内容を確かめた日ではない。
+確認日(`checked_on`)は全4,018行に入っている(2026-10-10〜10-24)。ただし**日付は、その時点で出典を見た日**であって、今も正しいことの保証ではない。配布ページやライセンスは後から変わりうる。元のシート由来の行(`source_type`=`sheet`)の日付 2026-10-12 は、シートを取り込んだ日で、誰かが内容を確かめた日ではない。
 
 一覧の [views/datasets_wide.csv](../views/datasets_wide.csv) には、データセットごとに次の列を足してある(根拠から自動で作る)。
 
@@ -299,7 +299,7 @@ datasets ──(dataset_id)── evidence   値ごとの根拠
 | 5 | `secondary` | 第三者の記述(Kaggle、再配布ページ、総説) |
 | 6 | `sheet` | 元のシートの値 |
 
-現在の根拠4,011行の内訳は、primary 1,954、sheet 572、project_doc 435、measured 428、user 349、secondary 273。
+現在の根拠4,018行の内訳は、primary 1,957、sheet 572、project_doc 435、measured 432、user 349、secondary 273。
 
 ### 6.4 新しい事実が出たとき
 
@@ -339,8 +339,8 @@ datasets ──(dataset_id)── evidence   値ごとの根拠
 
 | 状態 | 意味 | 件数 |
 |---|---|---|
-| `implemented` | ESPnet にレシピがある | 70 |
-| `candidate` | 追加の候補。音声と分類に使えるラベルがあり、入手できる見込みがある | 164 |
+| `implemented` | ESPnet にレシピがある | 71 |
+| `candidate` | 追加の候補。音声と分類に使えるラベルがあり、入手できる見込みがある | 163 |
 | `needs_decision` | ito さんにしか決められない(費用・利用条件・申請文面など) | 7 |
 | `deferred` | 保留。配布元が応答しない・入手方法が不明など、確かめられていない | 35 |
 | `excluded` | 明確な理由があって扱わない | 46 |
@@ -372,7 +372,7 @@ datasets ──(dataset_id)── evidence   値ごとの根拠
 
 ### 8.4 理由コード(`status_reason_codes`)
 
-`implemented` 以外の行には理由コードが入る(`;` 区切り)。`unexamined`(まだ実装を検討していない)が最多で181件に付いている。一覧と意味は [schema/enums.csv](../schema/enums.csv) の `reason_code` の行を見る。
+`implemented` 以外の行には理由コードが入る(`;` 区切り)。`unexamined`(まだ実装を検討していない)が最多で180件に付いている。一覧と意味は [schema/enums.csv](../schema/enums.csv) の `reason_code` の行を見る。
 
 ## 9. ライセンス(license)の見方
 
@@ -432,8 +432,8 @@ SPDX にない条件には、`license_note` に原文の要点を書いたうえ
 
 | 状態 | open | NC | 研究限定 | 制限つき | その他 | 記載なし | 不明 | 食い違い | 未調査 | 計 |
 |---|---|---|---|---|---|---|---|---|---|---|
-| implemented | 45 | 8 | 10 | 1 | 1 | 2 | 1 | 2 | 0 | 70 |
-| candidate | 35 | 25 | 35 | 9 | 4 | 18 | 5 | 2 | 31 | 164 |
+| implemented | 46 | 8 | 10 | 1 | 1 | 2 | 1 | 2 | 0 | 71 |
+| candidate | 34 | 25 | 35 | 9 | 4 | 18 | 5 | 2 | 31 | 163 |
 | needs_decision | 2 | 1 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 7 |
 | deferred | 0 | 1 | 7 | 0 | 0 | 1 | 7 | 0 | 19 | 35 |
 | excluded | 13 | 3 | 1 | 0 | 0 | 4 | 11 | 0 | 14 | 46 |
@@ -442,8 +442,8 @@ SPDX にない条件には、`license_note` に原文の要点を書いたうえ
 
 読み取れること:
 
-- 実装済み70件のうち、オープンな条件(`open`)は45件。
-- 候補164件のうち、ライセンスが `open` で `direct_download`(すぐ取れる)なものは24件。次の実装の第一候補群。
+- 実装済み71件のうち、オープンな条件(`open`)は46件。
+- 候補163件のうち、ライセンスが `open` で `direct_download`(すぐ取れる)なものは23件。次の実装の第一候補群。
 
 ### 11.2 データの性質
 
@@ -451,7 +451,7 @@ SPDX にない条件には、`license_note` に原文の要点を書いたうえ
 - **言語**: コードで70種類。英語(eng)87件、中国語(cmn)37件、韓国語(kor)16件、スペイン語(spa)・ドイツ語(deu)各14件、フランス語(fra)12件、日本語(jpn)11件、多言語(mul)16件。
 - **生音声の有無**: 配布あり 186、なし 29、不明 4、未確認 103。
 - **次元感情のラベルがあるもの**: 30件。
-- **ESPnet レシピの学習・評価**: 実施済み(`evaluated`)17、未実施(`not_run`)54。
+- **ESPnet レシピの学習・評価**: 実施済み(`evaluated`)17、未実施(`not_run`)55。
 - **意図・対話行為のデータ**: 12件(SLURP、Timers and Such、Fluent Speech Commands、Snips/Sonos、STOP、MInDS-14、Speech-MASSIVE、ITALIC、DIHANA、SpokenWOZ、Harper Valley Bank、SLUE-HVB)。
 - **網羅の確認**: MSP-Podcast 論文(arXiv 2509.09791v1)の Table I にある28コーパスは全て含む。
 
@@ -584,15 +584,15 @@ MSP-Podcast は内部の非商用研究のみ・再配布不可で、Lotfian & B
 
 ### 16.1 報告の流れ(1〜2分)
 
-1. **作ったもの**: SER・パラ言語データセットの根拠つき台帳。322件、根拠4,011行。
+1. **作ったもの**: SER・パラ言語データセットの根拠つき台帳。322件、根拠4,018行。
 2. **なぜ**: データセットの条件(ライセンス・入手方法)を毎回調べ直す手間を省き、クロスコーパス評価の根拠を残すため。
 3. **信頼性の工夫**: 値ごとに出典・確認日・確認者を記録し、機械が検査する。分からないことは「分からない」と書き、推測で埋めない。
-4. **実装との連動**: ESPnet の71レシピを実測してDBに入れ、実装済み・候補・保留を区別している(ブランチではその後も実装が進んでおり、DBへの反映はこれから。15.1)。
+4. **実装との連動**: ESPnet の72レシピを実測してDBに入れ、実装済み・候補・保留を区別している(ブランチではその後も実装が進んでおり、DBへの反映はこれから。15.1)。
 5. **これから**: レシピ実装ごとのライセンス目視確認、保留35件の調査、未調査の分野の追加。
 
 ### 16.2 見せるとよいもの
 
-- [views/datasets_wide.csv](../views/datasets_wide.csv) を表計算ソフトで開き、フィルタで絞ってみせる(例: `status`=candidate、`license_class`=open、`access_method`=direct_download → 24件)。
+- [views/datasets_wide.csv](../views/datasets_wide.csv) を表計算ソフトで開き、フィルタで絞ってみせる(例: `status`=candidate、`license_class`=open、`access_method`=direct_download → 23件)。
 - 根拠の例: [data/evidence.csv](../data/evidence.csv) で `ravdess`・`license_spdx` を絞り、シートの値が Zenodo の一次資料に置き換わった履歴を見せる。
 
 ### 16.3 想定される質問と答え
@@ -600,9 +600,9 @@ MSP-Podcast は内部の非商用研究のみ・再配布不可で、Lotfian & B
 | 質問 | 答え |
 |---|---|
 | なぜ元のシートではなくCSVにしたのか | シートでは根拠・履歴・検査ができない。CSVを git で管理すると、変更履歴が残り、機械で検査できる |
-| 情報は正しいのか | 値ごとに出典と確認日があり、一次資料(論文・公式ページ)に基づく行が最も多い(根拠4,011行のうち1,954行)。ただし人の目での最終確認(ライセンス)はこれから |
+| 情報は正しいのか | 値ごとに出典と確認日があり、一次資料(論文・公式ページ)に基づく行が最も多い(根拠4,018行のうち1,957行)。ただし人の目での最終確認(ライセンス)はこれから |
 | どうやって集めたのか | 元のシート84件に、総説・各種ホスティングサービス・文献から238件を足した。足した行は一次資料で確認している |
-| 何件実装できるのか | 実装済み70件、候補164件。候補のうちライセンスがオープンですぐ取れるものは24件 |
+| 何件実装できるのか | 実装済み71件、候補163件。候補のうちライセンスがオープンですぐ取れるものは23件 |
 | 除外したものは | 46件。音声がない、既存データの再配布、重複、地域制限など、明確な理由があるものだけ。手間や規模は除外理由にしていない |
 | ライセンスは信用してよいのか | DBは「資料に書いてある条件」の記録で、法的な解釈ではない。使う前に原文を読む。レシピを実装するたびに1件ずつ人の目で確認していく |
 | 今後どうするのか | レシピ実装ごとの目視確認、保留35件の調査、未調査分野(対話行為・他言語の意図データなど)の追加 |
