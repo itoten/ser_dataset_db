@@ -18,7 +18,7 @@ This guide explains the database from scratch. Terms are explained before they a
 | Awaiting a decision | 7 |
 | Deferred | 35 |
 | Excluded (with reasons) | 46 |
-| Evidence rows (sources of values) | 4,090 |
+| Evidence rows (sources of values) | 4,092 |
 | Language codes | 70 |
 
 ### 1.3 What makes it useful
@@ -148,7 +148,7 @@ ser_dataset_db/
 | File | One row is | Rows |
 |---|---|---|
 | [datasets.csv](../data/datasets.csv) | **one dataset** (the central table) | 322 |
-| [evidence.csv](../data/evidence.csv) | the **source** of one value in datasets | 4,090 |
+| [evidence.csv](../data/evidence.csv) | the **source** of one value in datasets | 4,092 |
 | [aliases.csv](../data/aliases.csv) | another name (official name, short name, former name, recipe name, ...) | 375 |
 | [relations.csv](../data/relations.csv) | a relation between datasets | 41 |
 | [recipes.csv](../data/recipes.csv) | one ESPnet recipe | 75 |
@@ -220,7 +220,7 @@ They can differ, and the difference itself is useful information. Recipes drop v
 
 Records who assigned the main labels (those in `labels_discrete_reported` and `dimensional_attributes`). Both have evidence rows for each value. Empty means not checked.
 
-- `label_source`: `human` (people only) / `automatic` (models etc. only) / `mixed` (automatic labels reviewed by people, or a mix)
+- `label_source`: `human` (people only) / `automatic` (models etc. only) / `mixed` (automatic labels reviewed by people, or a mix) / `synthesis_specified` (synthetic audio whose label is the emotion specified to the synthesiser)
 - `label_verification`: whether people checked the labels: `human_reviewed` (the source says people reviewed automatic labels) / `listener_validated` (instructed labels confirmed or filtered by a listening test; the label stays the instructed one) / `none` (the source says there was no review) / `unknown` (the sources say nothing) / `NA` (nothing to review, e.g. labels that are listeners' own judgements)
 - Examples: `harper_valley_bank` is automatic (the paper says the labels came from an API) with no description of verification (`unknown`). `nonverbaltts` is emotion2vec+ classification reviewed by annotators (`mixed`, `human_reviewed`).
 - Automatic labels do not remove a dataset from `candidate` (8.3). Whether to train on such labels or only evaluate is a recipe-side decision, recorded in `recipes.notes`.
@@ -295,7 +295,7 @@ Columns that need evidence: `languages`, `recording_context`, `vocal_content`, `
 
 ### 6.2.1 Recording when something was checked
 
-Every one of the 4,090 evidence rows has a date checked (`checked_on`, 2026-10-10 to 10-24). But **the date is when the source was looked at**, not a guarantee that it is still true; distribution pages and licenses can change. For rows from the original spreadsheet (`source_type`=`sheet`), the date 2026-10-12 is the import date, not a date when anyone checked the content.
+Every one of the 4,092 evidence rows has a date checked (`checked_on`, 2026-10-10 to 10-24). But **the date is when the source was looked at**, not a guarantee that it is still true; distribution pages and licenses can change. For rows from the original spreadsheet (`source_type`=`sheet`), the date 2026-10-12 is the import date, not a date when anyone checked the content.
 
 The overview [views/datasets_wide.csv](../views/datasets_wide.csv) adds these columns per dataset (generated from the evidence):
 
@@ -320,7 +320,7 @@ Strongest first.
 | 5 | `secondary` | third-party statements (Kaggle, re-upload pages, surveys) |
 | 6 | `sheet` | values of the original spreadsheet |
 
-The 4,090 evidence rows by source type: primary 2,005, sheet 572, measured 455, project_doc 435, user 350, secondary 273.
+The 4,092 evidence rows by source type: primary 2,005, sheet 572, measured 455, project_doc 435, user 352, secondary 273.
 
 ### 6.4 When a new fact appears
 
@@ -608,7 +608,7 @@ MSP-Podcast is for internal non-commercial research only, may not be redistribut
 
 ### 16.1 Outline (1-2 minutes)
 
-1. **What was built**: an evidence-backed ledger of SER and paralinguistic datasets. 322 datasets, 4,090 evidence rows.
+1. **What was built**: an evidence-backed ledger of SER and paralinguistic datasets. 322 datasets, 4,092 evidence rows.
 2. **Why**: to stop re-researching dataset conditions (license, access) every time, and to keep the basis for cross-corpus evaluation.
 3. **Reliability measures**: each value records its source, date and checker, and a machine checks the rules. Unknowns are written as unknown, never filled by guessing.
 4. **Link to the implementation**: the 75 ESPnet recipes are measured into the DB, distinguishing implemented, candidate and deferred datasets (the recipe branch keeps growing, and new recipes are registered after review; 15.1).
@@ -624,7 +624,7 @@ MSP-Podcast is for internal non-commercial research only, may not be redistribut
 | Question | Answer |
 |---|---|
 | Why CSV instead of the original spreadsheet? | A spreadsheet cannot hold sources, history or checks. CSV under git keeps the change history and can be checked by machine |
-| Is the information correct? | Every value has a source and a date; primary sources (papers, official pages) are the largest group (2,005 of 4,090 evidence rows). Final human checks (licenses) are still in progress |
+| Is the information correct? | Every value has a source and a date; primary sources (papers, official pages) are the largest group (2,005 of 4,092 evidence rows). Final human checks (licenses) are still in progress |
 | How was it collected? | 238 datasets from surveys, hosting services and the literature were added to the spreadsheet's 84; added rows were checked in primary sources |
 | How many can be implemented? | 74 implemented, 160 candidates. Of the candidates, 20 are openly licensed and available now |
 | What was excluded? | 46. Only for clear reasons: no audio, redistribution of existing data, duplicates, regional restrictions, etc. Effort and size are not reasons |

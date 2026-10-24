@@ -162,6 +162,7 @@ emilia_emotion,license_spdx,superseded,conflicting,primary,none_stated,primary,h
 emilia_emotion,status_reason_codes,superseded,unexamined,user,labels_automatic;redistribution_of_existing_corpus,primary,https://huggingface.co/datasets/laion/Emilia-with-Emotion-Annotations,superseded by emilia_emotion/status_reason_codes/02
 emis,espnet_status,superseded,implemented,measured,candidate,user,"Conversation with the maintainer, 2026-10-14",Former reason: synthetic_or_tts; superseded by emis/espnet_status/03
 emis,espnet_status,superseded,implemented,measured,excluded,primary,https://zenodo.org/records/19207001,superseded by emis/espnet_status/02
+emis,label_source,superseded,synthesis_specified,user,NA,primary,https://arxiv.org/abs/2510.25054,"Neither people nor a classifier assigned it. Same treatment as syntact, where the maintainer decided NA; a dedicated value for 'specified at synthesis' is an open question; superseded by emis/label_source/02"
 emis,status_reason_codes,superseded,NA,measured,synthetic_or_tts,primary,https://zenodo.org/records/19207001,superseded by emis/status_reason_codes/02
 emis,status_reason_codes,superseded,NA,measured,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: synthetic_or_tts; superseded by emis/status_reason_codes/03
 emodb,hours_reported,superseded,1.25,primary,0.7,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,superseded by emodb/hours_reported/02
@@ -494,6 +495,7 @@ switchboard_sentiment,espnet_status,superseded,candidate,user,excluded,primary,h
 switchboard_sentiment,status_reason_codes,superseded,unexamined,user,access_paid_or_membership;labels_not_discrete_emotion,primary,https://catalog.ldc.upenn.edu/LDC2020T14,superseded by switchboard_sentiment/status_reason_codes/02
 syntact,espnet_status,superseded,implemented,measured,candidate,user,"Conversation with the maintainer, 2026-10-14",Former reason: synthetic_or_tts; superseded by syntact/espnet_status/03
 syntact,espnet_status,superseded,implemented,measured,excluded,primary,https://aclanthology.org/2022.dclrl-1.1.pdf,superseded by syntact/espnet_status/02
+syntact,label_source,superseded,synthesis_specified,user,NA,user,recipe_reports/2026-10-20_syntact_db_update.md,Maintainer's decision (2026-10-20); superseded by syntact/label_source/02
 syntact,label_verification,superseded,listener_validated,primary,NA,user,recipe_reports/2026-10-20_syntact_db_update.md,"The report proposed none, which does not fit the DB definition (none = a source says there was no review), so NA. The paper's listening test (20 people) is a separate experiment, recorded as listening_test in annotations; superseded by syntact/label_verification/02"
 syntact,license_spdx,superseded,CC-BY-4.0,primary,CC-BY-SA-4.0,secondary,https://github.com/SuperKogito/SER-datasets,superseded by syntact/license_spdx/02
 syntact,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,6000,see evidence,6001,measured,n_files_release_measured,

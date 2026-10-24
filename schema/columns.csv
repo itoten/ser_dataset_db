@@ -32,7 +32,7 @@ datasets,labels_discrete_note,text,empty,no,"Descriptions that cannot be made in
 datasets,n_discrete_labels_reported,int,empty;unknown,no,Number of categories stated by the source
 datasets,dimensional_attributes,list,empty;unknown;none,yes,Axes of dimensional emotion (;-separated)
 datasets,dimensional_note,text,empty,no,"Descriptions of dimensional emotion that cannot be listed (spreadsheet originals, etc.)"
-datasets,label_source,enum:label_source,empty;unknown;NA,yes,Who assigned the main labels (those in labels_discrete_reported and dimensional_attributes): human / automatic / mixed
+datasets,label_source,enum:label_source,empty;unknown;NA,yes,Who assigned the main labels (those in labels_discrete_reported and dimensional_attributes): human / automatic / mixed / synthesis_specified (synthetic audio whose label is the emotion specified to the synthesiser)
 datasets,label_verification,enum:label_verification,empty;unknown;none;NA,yes,Whether people checked the labels: human_reviewed (people reviewed automatic labels) / listener_validated (instructed labels confirmed or filtered by a listening test; the label stays the instructed one) / none (a source says there was no review) / unknown / NA (nothing to review)
 datasets,speech_production,enumlist:speech_production,empty;unknown,yes,"How the audio was produced (;-separated): acted (acting, including film and drama performances) / elicited (emotion induced by stimuli or tasks) / spontaneous (natural speech) / read (reading without an emotion instruction) / synthetic (synthetic speech). The setting or medium is recording_context"
 datasets,label_basis,enumlist:label_basis,empty;unknown;none,yes,"How the main labels were made (;-separated): intended (emotion the speaker was told to portray) / perceived (emotion listeners perceived) / self_reported (the speaker's own report) / context_inferred (from the scene, script or meaning of the words) / automatic (a model's estimate). none = no emotion labels"
@@ -134,7 +134,7 @@ benchmark_membership,note,text,empty,no,Notes
 annotations,dataset_id,slug,-,no,Foreign key to datasets
 annotations,item,slug,-,no,"Item name (lower-case letters and underscores, e.g. transcript, speaker_gender, dialogue_act)"
 annotations,description,text,-,no,Content (what is annotated and in what form)
-annotations,annotator,enum:label_source,empty;unknown,no,Annotator: human / automatic / mixed. unknown if the sources do not say
+annotations,annotator,enum:label_source,empty;unknown,no,Annotator: human / automatic / mixed / synthesis_specified. unknown if the sources do not say
 annotations,unit,enum:annotation_unit,empty;unknown,no,Unit of annotation
 annotations,used_in_recipe,bool,empty;unknown;NA,no,Whether the recipe uses it. NA if there is no recipe
 annotations,source_type,enum:source_type,-,no,Kind of source (same values as in evidence)

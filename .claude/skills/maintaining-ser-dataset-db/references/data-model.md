@@ -114,8 +114,9 @@ describe it in the exclusion section of `docs/manual.md`.
 
 ## Label provenance
 
-- `label_source`: `human`, `automatic` or `mixed`. Emotions that actors were asked to portray
-  are `human`.
+- `label_source`: `human`, `automatic`, `mixed` or `synthesis_specified`. Emotions that actors were
+  asked to portray are `human`. `synthesis_specified` is for synthetic audio whose label is the
+  emotion given to the synthesiser.
 - `label_verification`: `human_reviewed` (the source says people checked automatic labels),
   `listener_validated` (instructed labels were confirmed or filtered by a listening test; the
   label itself stays the instructed one), `none` (the source says nobody checked), `unknown`
