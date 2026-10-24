@@ -34,7 +34,7 @@ datasets,dimensional_attributes,list,empty;unknown;none,yes,次元感情の軸(;
 datasets,dimensional_note,text,empty,no,次元感情の記述でリストにできないもの(シート原文など)
 datasets,label_source,enum:label_source,empty;unknown;NA,yes,主ラベル(labels_discrete_reported・dimensional_attributes に書くもの)の付け手。human / automatic / mixed
 datasets,label_verification,enum:label_verification,empty;unknown;none;NA,yes,ラベルを人が見直したか。human_reviewed(自動ラベルを人が見直した)/ listener_validated(指示ラベルを聴取テストで確かめた・選別した。ラベルは指示のまま)/ none(見直しなしと資料が述べる)/ unknown / NA(見直しの対象がない)
-datasets,speech_production,enumlist:speech_production,empty;unknown,yes,音声がどう発せられたか(;区切り)。acted(指示された感情を演じた)/ elicited(刺激や課題で感情を誘発)/ spontaneous(自然な発話)/ read(感情の指示なしの読み上げ)/ synthetic(合成音声)。録音の場所・媒体は recording_context
+datasets,speech_production,enumlist:speech_production,empty;unknown,yes,音声がどう発せられたか(;区切り)。acted(演技。映画・ドラマの演技を含む)/ elicited(刺激や課題で感情を誘発)/ spontaneous(自然な発話)/ read(感情の指示なしの読み上げ)/ synthetic(合成音声)。録音の場所・媒体は recording_context
 datasets,label_basis,enumlist:label_basis,empty;unknown;none,yes,主ラベルがどう付けられたか(;区切り)。intended(話者に指示した感情)/ perceived(聞き手が知覚した感情)/ self_reported(話者自身の申告)/ context_inferred(場面・台本・文の意味から付与)/ automatic(モデルの推定)。none=感情ラベルなし
 datasets,label_basis_note,text,empty,no,ラベルの付け方の補足。評定者数・評定者が見聞きしたもの(音声のみ/映像つき/書き起こし)・まとめ方(多数決・平均)・どのラベルを主とするか・聴取テストの内容など
 datasets,annotations_other,text,empty;none,no,シートの Other Annotations(原文)

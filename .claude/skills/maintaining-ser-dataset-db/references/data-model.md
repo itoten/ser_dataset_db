@@ -128,7 +128,7 @@ other. Perceived labels are especially valuable, so record them precisely.
 
 | Column | Values (`;`-separated when several apply) |
 |---|---|
-| `speech_production` | `acted` (speakers portrayed an instructed emotion), `elicited` (emotion induced by stimuli, tasks or a set-up conversation), `spontaneous` (natural speech: conversations, broadcasts, streams), `read` (reading without an emotion instruction), `synthetic` |
+| `speech_production` | `acted` (speakers portrayed an emotion: instructed portrayals, and scripted film or drama performances), `elicited` (emotion induced by stimuli, tasks or a set-up conversation), `spontaneous` (natural speech: conversations, broadcasts, streams), `read` (reading without an emotion instruction), `synthetic` |
 | `label_basis` | `intended` (the emotion the speaker was told to portray), `perceived` (what listeners or raters judged), `self_reported` (the speaker's own report), `context_inferred` (from the scene, script or the meaning of the words), `automatic` (a model); `none` if there are no emotion labels |
 | `label_basis_note` (free text) | number of raters per clip, what raters saw or heard (audio only, video, transcript), how ratings were combined (majority, mean, consensus), which label set is the main one, listening-test details |
 | `recipes.label_basis_used` | which kind of label the recipe actually trains on, for datasets that ship more than one |

@@ -18,7 +18,7 @@
 | 判断待ち | 7件 |
 | 保留 | 35件 |
 | 除外(理由つき) | 46件 |
-| 値ごとの「根拠」の記録 | 3,951行 |
+| 値ごとの「根拠」の記録 | 4,011行 |
 | 登場する言語コード | 70種類 |
 
 ### 1.3 売りになる点
@@ -147,7 +147,7 @@ ser_dataset_db/
 | ファイル | 1行が表すもの | 行数 |
 |---|---|---|
 | [datasets.csv](../data/datasets.csv) | **1つのデータセット**(中心になる表) | 322 |
-| [evidence.csv](../data/evidence.csv) | datasets の1つの値の**根拠** | 3,951 |
+| [evidence.csv](../data/evidence.csv) | datasets の1つの値の**根拠** | 4,011 |
 | [aliases.csv](../data/aliases.csv) | 別名(公式名・略称・旧名・レシピ名など) | 375 |
 | [relations.csv](../data/relations.csv) | データセット同士の関係 | 41 |
 | [recipes.csv](../data/recipes.csv) | ESPnet の1レシピ | 71 |
@@ -155,7 +155,7 @@ ser_dataset_db/
 | [benchmark_membership.csv](../data/benchmark_membership.csv) | ベンチマークを構成するレシピ | 16 |
 | [annotations.csv](../data/annotations.csv) | データセット×感情ラベル以外のアノテーション(書き起こし・話者特性・対話行為など) | 81(`anad` 3、`audiospeechsentiment` 2、`baser` 4、`berst` 9、`brytserc` 1、`casia` 3、`cbesd` 5、`csemotions` 2、`emotional_ema` 8、`emouerj` 3、`eseravd` 3、`harper_valley_bank` 19、`rml_emotion` 4、`syntact` 6、`telugu_emotion_kaggle` 4、`usc_emo_mri` 5。これから埋める) |
 
-関係の内訳は `contains`(含む)15、`distinct_from`(名前が似た別物)12、`subset_of`(一部)7、`possibly_same_as`(同一の疑い)4、`version_of`(版違い)3。レシピ66件のうち65件は1コーパス用(`single_corpus`)、1件が複数コーパスを合わせたもの(`multi_corpus`)。
+関係の内訳は `contains`(含む)15、`distinct_from`(名前が似た別物)12、`subset_of`(一部)7、`possibly_same_as`(同一の疑い)4、`version_of`(版違い)3。レシピ71件のうち70件は1コーパス用(`single_corpus`)、1件が複数コーパスを合わせたもの(`multi_corpus`)。
 
 ### 4.3 表のつながり
 
@@ -215,10 +215,10 @@ datasets ──(dataset_id)── evidence   値ごとの根拠
 感情などの主ラベル(`labels_discrete_reported`・`dimensional_attributes` に書くもの)を、誰が付けたかの記録。どちらも値ごとに根拠行を持つ。空欄は未確認。
 
 - `label_source`: `human`(人手のみ)/ `automatic`(モデルなどによる自動付与のみ)/ `mixed`(自動付与を人が見直したもの、混在)
-- `label_verification`: 自動または混在のラベルを人が見直したか。`human_reviewed`(見直したと資料が述べる)/ `none`(見直しなしと資料が述べる)/ `unknown`(資料に記述が見つからない)/ `NA`(人手のみ)
+- `label_verification`: ラベルを人が見直したか。`listener_validated`(指示ラベルを聴取テストで確かめた・選別した。ラベルは指示のまま)もある。`human_reviewed`(見直したと資料が述べる)/ `none`(見直しなしと資料が述べる)/ `unknown`(資料に記述が見つからない)/ `NA`(人手のみ)
 - 例: `harper_valley_bank` は自動(論文に automatically labeled とある)で、検証の記述は見つかっていない(`unknown`)。`nonverbaltts` は emotion2vec+ の自動分類を注釈者が見直した(`mixed`・`human_reviewed`)
 - 自動ラベルでも `candidate` から外さない(8.3)。実験で学習に使うか評価だけにするかは DB ではなく、レシピ側の判断として `recipes.notes` に残す
-- いま埋まっているのは上の2件だけ。残りは、レシピを登録するときに一次資料を見て1件ずつ埋める
+- 埋まっているのは、レシピ審査を済ませたデータセット。残りは審査のときに一次資料を見て1件ずつ埋める
 
 ### 5.4.1 音声の発せられ方とラベルの付け方(`speech_production`・`label_basis`)
 
@@ -226,7 +226,7 @@ datasets ──(dataset_id)── evidence   値ごとの根拠
 
 | 列 | 値(`;` 区切りで複数可) |
 |---|---|
-| `speech_production` | `acted`(指示された感情を演じた)/ `elicited`(刺激・課題で誘発)/ `spontaneous`(自然な発話)/ `read`(感情の指示なしの読み上げ)/ `synthetic`(合成) |
+| `speech_production` | `acted`(演技。指示された感情を演じたもの、映画・ドラマの台詞の演技を含む)/ `elicited`(刺激・課題で誘発)/ `spontaneous`(自然な発話)/ `read`(感情の指示なしの読み上げ)/ `synthetic`(合成) |
 | `label_basis` | `intended`(話者に指示した感情)/ `perceived`(聞き手が知覚した感情)/ `self_reported`(話者の申告)/ `context_inferred`(場面・台本・文の意味から)/ `automatic`(モデルの推定)。感情ラベルがなければ `none` |
 | `label_basis_note` | 自由記述: 評定者数、評定者が見聞きしたもの(音声のみ・映像つき・書き起こし)、まとめ方(多数決・平均)、どのラベルを主とするか、聴取テストの内容 |
 | `recipes.label_basis_used` | レシピが実際に使うラベルの付け方。複数の付け方のラベルを配布するデータセットで区別する |
@@ -274,7 +274,7 @@ datasets ──(dataset_id)── evidence   値ごとの根拠
 
 ### 6.2.1 「いつ確認したか」の記録
 
-確認日(`checked_on`)は全3,951行に入っている(2026-10-10〜10-23)。ただし**日付は、その時点で出典を見た日**であって、今も正しいことの保証ではない。配布ページやライセンスは後から変わりうる。元のシート由来の行(`source_type`=`sheet`)の日付 2026-10-12 は、シートを取り込んだ日で、誰かが内容を確かめた日ではない。
+確認日(`checked_on`)は全4,011行に入っている(2026-10-10〜10-24)。ただし**日付は、その時点で出典を見た日**であって、今も正しいことの保証ではない。配布ページやライセンスは後から変わりうる。元のシート由来の行(`source_type`=`sheet`)の日付 2026-10-12 は、シートを取り込んだ日で、誰かが内容を確かめた日ではない。
 
 一覧の [views/datasets_wide.csv](../views/datasets_wide.csv) には、データセットごとに次の列を足してある(根拠から自動で作る)。
 
@@ -299,7 +299,7 @@ datasets ──(dataset_id)── evidence   値ごとの根拠
 | 5 | `secondary` | 第三者の記述(Kaggle、再配布ページ、総説) |
 | 6 | `sheet` | 元のシートの値 |
 
-現在の根拠3,951行の内訳は、primary 1,895、sheet 572、project_doc 435、measured 428、user 349、secondary 272。
+現在の根拠4,011行の内訳は、primary 1,954、sheet 572、project_doc 435、measured 428、user 349、secondary 273。
 
 ### 6.4 新しい事実が出たとき
 
@@ -341,7 +341,7 @@ datasets ──(dataset_id)── evidence   値ごとの根拠
 |---|---|---|
 | `implemented` | ESPnet にレシピがある | 70 |
 | `candidate` | 追加の候補。音声と分類に使えるラベルがあり、入手できる見込みがある | 164 |
-| `needs_decision` | ito さんにしか決められない(費用・利用条件・申請文面など) | 8 |
+| `needs_decision` | ito さんにしか決められない(費用・利用条件・申請文面など) | 7 |
 | `deferred` | 保留。配布元が応答しない・入手方法が不明など、確かめられていない | 35 |
 | `excluded` | 明確な理由があって扱わない | 46 |
 
@@ -413,20 +413,20 @@ SPDX にない条件には、`license_note` に原文の要点を書いたうえ
 
 | 値 | 意味 | 件数 |
 |---|---|---|
-| `direct_download` | 認証なしで直接ダウンロードできる | 123 |
+| `direct_download` | 認証なしで直接ダウンロードできる | 131 |
 | `free_account_required` | 無料アカウント(登録)が必要 | 17 |
-| `gated_click_through` | 同意などのクリックが必要 | 6 |
-| `request_form_or_email` | 申請フォーム・メールでの依頼が必要 | 58 |
-| `signed_agreement` | 署名した同意書が必要 | 29 |
-| `paid_or_membership` | 有償・会員制 | 8 |
+| `gated_click_through` | 同意などのクリックが必要 | 7 |
+| `request_form_or_email` | 申請フォーム・メールでの依頼が必要 | 59 |
+| `signed_agreement` | 署名した同意書が必要 | 30 |
+| `paid_or_membership` | 有償・会員制 | 9 |
 | `unofficial_mirror_only` | 非公式のミラー(複製)しかない | 0 |
 | `unavailable` | 入手できない | 7 |
-| `unknown` | 不明 | 11 |
-| (空欄) | 未確認 | 48 |
+| `unknown` | 不明 | 12 |
+| (空欄) | 未確認 | 50 |
 
 「すぐ取れるか」は `direct_download` と `free_account_required` と `gated_click_through`、「手続きが要る」のは `request_form_or_email` と `signed_agreement` と考えるとよい。
 
-## 11. 現在の数字(2026-10-19)
+## 11. 現在の数字(2026-10-24)
 
 ### 11.1 状態×ライセンス区分
 
@@ -447,11 +447,11 @@ SPDX にない条件には、`license_note` に原文の要点を書いたうえ
 
 ### 11.2 データの性質
 
-- **録音の状況**(`recording_context`、66件は未調査): 演技 114、自発的会話 21、複数ウェブ由来 17、YouTube 13、感情誘発 13、映画 12、テレビ番組 10、朗読 8、その他 8、人と機械の対話 7、合成 6、ポッドキャスト 4 など。
-- **言語**: コードで70種類。英語(eng)78件、中国語(cmn)29件、韓国語(kor)16件、スペイン語(spa)・ドイツ語(deu)各14件、フランス語(fra)12件、日本語(jpn)11件、多言語(mul)14件。
-- **生音声の有無**: 配布あり 177、なし 24、不明 4、未確認 102。
-- **次元感情のラベルがあるもの**: 28件。
-- **ESPnet レシピの学習・評価**: 実施済み(`evaluated`)17、未実施(`not_run`)37。
+- **録音の状況**(`recording_context`、67件は未調査): 演技 115、自発的会話 23、複数ウェブ由来 21、YouTube 14、テレビ番組 14、感情誘発 13、映画 12、朗読 8、合成 8、その他 8、人と機械の対話 7、ポッドキャスト 4 など。
+- **言語**: コードで70種類。英語(eng)87件、中国語(cmn)37件、韓国語(kor)16件、スペイン語(spa)・ドイツ語(deu)各14件、フランス語(fra)12件、日本語(jpn)11件、多言語(mul)16件。
+- **生音声の有無**: 配布あり 186、なし 29、不明 4、未確認 103。
+- **次元感情のラベルがあるもの**: 30件。
+- **ESPnet レシピの学習・評価**: 実施済み(`evaluated`)17、未実施(`not_run`)54。
 - **意図・対話行為のデータ**: 12件(SLURP、Timers and Such、Fluent Speech Commands、Snips/Sonos、STOP、MInDS-14、Speech-MASSIVE、ITALIC、DIHANA、SpokenWOZ、Harper Valley Bank、SLUE-HVB)。
 - **網羅の確認**: MSP-Podcast 論文(arXiv 2509.09791v1)の Table I にある28コーパスは全て含む。
 
@@ -565,7 +565,7 @@ DBのフォルダで実行する。システムの Python(`/usr/bin/python3`)を
 - **ライセンスの人の目での確認はほぼ未着手**(`uftbesd`・`nonverbaltts`・`recanvo` の3件のみ。以後、レシピを実装するたびに1件ずつ)。いま入っているライセンスは、一次資料を Claude が確認したものが中心だが、人の目での確認はこれから。
 - **第三者の総説(KuralHub)だけが根拠の28件**は、一次資料での入手方法の確認をしていない。多くは古い論文のデータで「依頼制」とされる。
 - **配布元が応答せず確かめられなかったもの**がある(`amigos`、`casia`、`cheavd`、`belfast`、`emotion_origlia2010`、`usoms`、`eyase`)。
-- **保留(`deferred`)33件**は、本当の入手経路を調べる作業が残っている。
+- **保留(`deferred`)35件**は、本当の入手経路を調べる作業が残っている。
 - **空欄(未調査)が残る**: ライセンスが空欄64件、入手方法が空欄50件、録音の状況が空欄67件。
 - **未調査の範囲**: CATSLU、MRDA・SwDA・AMI などの対話行為、ATIS の音声、SLURP の他言語版、他言語の意図データ。
 
@@ -584,15 +584,15 @@ MSP-Podcast は内部の非商用研究のみ・再配布不可で、Lotfian & B
 
 ### 16.1 報告の流れ(1〜2分)
 
-1. **作ったもの**: SER・パラ言語データセットの根拠つき台帳。322件、根拠3,951行。
+1. **作ったもの**: SER・パラ言語データセットの根拠つき台帳。322件、根拠4,011行。
 2. **なぜ**: データセットの条件(ライセンス・入手方法)を毎回調べ直す手間を省き、クロスコーパス評価の根拠を残すため。
 3. **信頼性の工夫**: 値ごとに出典・確認日・確認者を記録し、機械が検査する。分からないことは「分からない」と書き、推測で埋めない。
 4. **実装との連動**: ESPnet の71レシピを実測してDBに入れ、実装済み・候補・保留を区別している(ブランチではその後も実装が進んでおり、DBへの反映はこれから。15.1)。
-5. **これから**: レシピ実装ごとのライセンス目視確認、保留33件の調査、未調査の分野の追加。
+5. **これから**: レシピ実装ごとのライセンス目視確認、保留35件の調査、未調査の分野の追加。
 
 ### 16.2 見せるとよいもの
 
-- [views/datasets_wide.csv](../views/datasets_wide.csv) を表計算ソフトで開き、フィルタで絞ってみせる(例: `status`=candidate、`license_class`=open、`access_method`=direct_download → 35件)。
+- [views/datasets_wide.csv](../views/datasets_wide.csv) を表計算ソフトで開き、フィルタで絞ってみせる(例: `status`=candidate、`license_class`=open、`access_method`=direct_download → 24件)。
 - 根拠の例: [data/evidence.csv](../data/evidence.csv) で `ravdess`・`license_spdx` を絞り、シートの値が Zenodo の一次資料に置き換わった履歴を見せる。
 
 ### 16.3 想定される質問と答え
@@ -600,12 +600,12 @@ MSP-Podcast は内部の非商用研究のみ・再配布不可で、Lotfian & B
 | 質問 | 答え |
 |---|---|
 | なぜ元のシートではなくCSVにしたのか | シートでは根拠・履歴・検査ができない。CSVを git で管理すると、変更履歴が残り、機械で検査できる |
-| 情報は正しいのか | 値ごとに出典と確認日があり、一次資料(論文・公式ページ)に基づく行が最も多い(根拠3,951行のうち1,895行)。ただし人の目での最終確認(ライセンス)はこれから |
+| 情報は正しいのか | 値ごとに出典と確認日があり、一次資料(論文・公式ページ)に基づく行が最も多い(根拠4,011行のうち1,954行)。ただし人の目での最終確認(ライセンス)はこれから |
 | どうやって集めたのか | 元のシート84件に、総説・各種ホスティングサービス・文献から238件を足した。足した行は一次資料で確認している |
 | 何件実装できるのか | 実装済み70件、候補164件。候補のうちライセンスがオープンですぐ取れるものは24件 |
 | 除外したものは | 46件。音声がない、既存データの再配布、重複、地域制限など、明確な理由があるものだけ。手間や規模は除外理由にしていない |
 | ライセンスは信用してよいのか | DBは「資料に書いてある条件」の記録で、法的な解釈ではない。使う前に原文を読む。レシピを実装するたびに1件ずつ人の目で確認していく |
-| 今後どうするのか | レシピ実装ごとの目視確認、保留33件の調査、未調査分野(対話行為・他言語の意図データなど)の追加 |
+| 今後どうするのか | レシピ実装ごとの目視確認、保留35件の調査、未調査分野(対話行為・他言語の意図データなど)の追加 |
 
 ### 16.4 言ってはいけないこと
 

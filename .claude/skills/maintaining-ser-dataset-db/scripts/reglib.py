@@ -42,13 +42,15 @@ class Reg:
 
     validate.py resolves report_path relative to the directory that contains the repository,
     so a report saved inside the repository is written as "<repo dir name>/reports/<file>.md".
-    Pass report=None to keep report_path unchanged and record `via` as the repository itself.
+    Pass report=None to keep report_path unchanged; `via` then names the checking session instead
+    (e.g. "2026-01-31 re-check of label provenance").
     """
 
-    def __init__(self, dataset_id, today, report=None):
+    def __init__(self, dataset_id, today, report=None, via=None):
         self.D = dataset_id
         self.today = today
         self.report = report
+        self.via = via or report or ""
         self.db = dbmod.load()
         self.evh, self.evr = self.db["evidence"]
         self.row = dbmod.find(self.db, "datasets", (dataset_id,))
@@ -68,7 +70,7 @@ class Reg:
     def _append(self, eid, field, value, stype, ref, loc, by, note, canonical, status):
         e = {c: "" for c in self.evh}
         e.update(evidence_id=eid, dataset_id=self.D, field=field, value=value, source_type=stype,
-                 source_ref=ref, locator=loc, via=self.report or "", checked_on=self.today,
+                 source_ref=ref, locator=loc, via=self.via, checked_on=self.today,
                  checked_by=by, is_canonical=canonical, status=status, note=note.strip())
         self.evr.append(e)
 
@@ -125,6 +127,15 @@ class Reg:
             raise SystemExit(f"recipe: no such recipes column(s): {bad}")
         r.update(dataset_id=self.D, **manual_columns)
         rr.append(r)
+
+    def recipe_update(self, **manual_columns):
+        """Change hand-written columns of the existing recipes.csv row of this dataset."""
+        rh, rr = self.db["recipes"]
+        rows = [r for r in rr if r["recipe"] == self.D]
+        bad = [c for c in manual_columns if c not in rh]
+        if not rows or bad:
+            raise SystemExit(f"recipe_update: no recipes row {self.D!r}" if not rows else f"unknown column(s) {bad}")
+        rows[0].update(manual_columns)
 
     def labels(self, spec, label_type="categorical"):
         """spec maps each recipe label to (source_labels, common7, mapping_type).

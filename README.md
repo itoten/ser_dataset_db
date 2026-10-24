@@ -33,7 +33,7 @@
 
 - `recipes.dataset_id` が `datasets` に結びつく。マルチコーパスのレシピは `NA`(個別のレシピが各データセットに結びつく)。
 - 状態: `espnet_status` は `implemented`(egs3 にレシピあり)/ `candidate` / `needs_decision` / `deferred` / `excluded`。`implemented` 以外は `status_reason_codes`(`;` 区切り)に理由を持ち、`implemented` では `NA`。補足は `status_note`、確認日は `status_checked_on`。
-- ラベルの付け手: `datasets.label_source`(`human` / `automatic` / `mixed`)と `label_verification`(`human_reviewed` / `none` / `unknown` / `NA`)。値ごとに根拠行がある。空欄は未確認(現在は `harper_valley_bank`・`nonverbaltts`・`usc_emo_mri`・`rml_emotion`・`telugu_emotion_kaggle` のみ)。`recipe_labels.label_type` は `categorical` / `polarity` / `intent` / `dimensional` / `other`(`recanvo` は未確認で空欄)。極性・意図は `common7=none`。
+- ラベルの付け手: `datasets.label_source`(`human` / `automatic` / `mixed`)と `label_verification`(`human_reviewed` 自動ラベルを人が見直した / `listener_validated` 指示ラベルを聴取テストで確かめた / `none` / `unknown` / `NA`)。値ごとに根拠行がある。空欄は未確認で、レシピ審査のときに埋める。`recipe_labels.label_type` は `categorical` / `polarity` / `intent` / `dimensional` / `other`(`recanvo` は未確認で空欄)。極性・意図は `common7=none`。
 - 音声の発せられ方とラベルの付け方は分けて記録する。`speech_production`(`acted` 演技 / `elicited` 誘発 / `spontaneous` 自然 / `read` 指示なしの読み上げ / `synthetic` 合成、`;` 区切り)は音声がどう発せられたか、`label_basis`(`intended` 話者に指示した感情 / `perceived` 聞き手が知覚した感情 / `self_reported` 話者の申告 / `context_inferred` 文脈・文の意味から / `automatic` モデル、`;` 区切り)は主ラベルがどう付けられたか。演技の音声に知覚ラベルが付くこともあるので、片方から他方を推測しない。評定者数・評定者が見聞きしたもの・まとめ方などは `label_basis_note` に書く。どちらも値ごとに根拠行を持つ。`recording_context` は録音の場所・媒体の列として残す。レシピが実際に使うラベルの付け方は `recipes.label_basis_used`。指示ラベルを聴取テストで確かめたものは `label_verification=listener_validated`。レシピ審査のたびに一次資料で埋める(未審査の行は空欄=未確認)。
 - 感情ラベル以外のアノテーションは `annotations.csv` に1項目1行で足す(付け手・単位・レシピでの使用有無・根拠つき)。`annotations_other` はシート原文のまま残す。現在は `anad` の3行、`audiospeechsentiment` の2行、`baser` の4行、`berst` の9行、`brytserc` の1行、`casia` の3行、`cbesd` の5行、`csemotions` の2行、`emotional_ema` の8行、`emouerj` の3行、`eseravd` の3行、`harper_valley_bank` の19行、`rml_emotion` の4行、`syntact` の6行、`telugu_emotion_kaggle` の4行、`usc_emo_mri` の5行で、レシピ登録のときに一次資料で確認できたものから足す。
 - 行の由来: `in_sheet`(元のシートにあった行か)。シート外の行は `sheet_verified=NA`。`sheet_verified` はシートの Verified 列(人が手作業で確認したか)を原文のまま残したもので、判断には使わない。
@@ -80,7 +80,7 @@
 - 感情ラベルがあれば TTS 用のコーパスも含める。音声のないもの(テキストだけ・特徴量だけ)も、調べた結果を残すために `excluded` で載せる。
 - 同じものが2行あると分かったら、片方を `excluded`(`duplicate_entry`)にして `relations` の `possibly_same_as` でつなぐ。ID は消さない。
 
-## 現状(2026-10-19)
+## 現状(2026-10-24)
 
 322データセット(シート由来84・シート外238)。`implemented` 70、`candidate` 164、`deferred` 35、`needs_decision` 7、`excluded` 46。MSP-Podcast 論文(arXiv 2509.09791v1)の Table I の28コーパスは全て含む。
 
@@ -104,5 +104,5 @@
 - 一次資料で確認できていないもの:
   - KuralHub(第三者の総説)だけが根拠の28件。`status_note` に「一次資料での入手方法の確認はしていない」とある。多くは古い論文のデータで「依頼制」とされる。
   - 配布元が応答しないなどで確かめられなかったもの: `amigos`(2026-10-14 に HTTP 503)、`casia`(接続不可)、`cheavd`、`belfast`、`emotion_origlia2010`、`usoms`、`eyase`。
-  - `deferred` の33件。
+  - `deferred` の35件。
 - 公表値と実測値が食い違う箇所は `views/discrepancies.csv` にある。レシピは長さやラベルで絞るため、`n_utt_reported` とレシピの件数が一致しないのは普通のことが多い。
