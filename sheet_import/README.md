@@ -1,41 +1,41 @@
 # sheet_import
 
-Googleスプレッドシート「ser_database」の原本を、取得したまま保存したもの。**編集しない**(バイト一致を保つ)。
+The original of the Google spreadsheet "ser_database", stored exactly as downloaded. **Do not edit it** (its bytes must stay identical).
 
-| 項目 | 値 |
+| Item | Value |
 |---|---|
-| ファイル | `2026-10-12_ser_database_SER_Datasets.csv` |
-| シートID | `16KIVViHe7JhMWdzGQHBBqLPWhHceW6i9MU5pccB5Jao` |
-| タブ | SER Datasets(`gid=0`) |
-| 取得日 | 2026-10-12(itotenさんがシートからCSVでダウンロード) |
+| File | `2026-10-12_ser_database_SER_Datasets.csv` |
+| Sheet ID | `16KIVViHe7JhMWdzGQHBBqLPWhHceW6i9MU5pccB5Jao` |
+| Tab | SER Datasets (`gid=0`) |
+| Downloaded | 2026-10-12 (downloaded as CSV from the sheet by the project maintainer) |
 | sha256 | `f94d19e2ae5416d8ed1fc5feab593167908b87f6f228ab8e2215960014fab619` |
-| 大きさ | 44221 バイト、ヘッダ + 84行、15列 |
-| 改行 | CRLF、末尾に改行なし、BOMなし |
-| 列 | `Verified, Dataset, License, Language, Source, Total Hours, Utterances, Speakers, Discrete Emotions, Dimensional Emotions, Other Annotations, Source URL, Notes, Paper URL, ESPnet Implemented` |
+| Size | 44221 bytes, header + 84 rows, 15 columns |
+| Line endings | CRLF, no trailing newline, no BOM |
+| Columns | `Verified, Dataset, License, Language, Source, Total Hours, Utterances, Speakers, Discrete Emotions, Dimensional Emotions, Other Annotations, Source URL, Notes, Paper URL, ESPnet Implemented` |
 
-- `Verified` 列は、人が手作業で情報を確認したかどうか(itotenさんの説明)。
-- `ESPnet Implemented` 列は取得時点でitotenさんが入れたもの。「Polish (EmoBox)」行は FALSE だが、実際は egs3 の `polishemo` と同じコーパス(EmoBox README が出典に同じ MOST Wiedzy のページを挙げている)。
-- 原本のまま残すので、この食い違いは原本では直さない。
+- The `Verified` column says whether someone checked the information by hand (the maintainer's explanation).
+- The `ESPnet Implemented` column was filled in by the maintainer at download time. The "Polish (EmoBox)" row says FALSE, but it is in fact the same corpus as the egs3 recipe `polishemo` (the EmoBox README cites the same MOST Wiedzy page as its source).
+- The original is kept as is, so this discrepancy is not corrected in it.
 
-## DBへの取り込み規則(取り込みスクリプトで1回だけ実行した。スクリプトは削除済みで、git履歴のコミット 041d798 に残る)
+## Import rules (applied once by an import script; the script was deleted and survives in git history, commit 041d798)
 
-シートの84行は、1行が1つの `datasets` 行になる(行の合併はない。Polish (EmoBox) は `polishemo` として1行)。
+Each of the 84 rows became one `datasets` row (no rows were merged; Polish (EmoBox) is the single row `polishemo`).
 
-| シートの列 | 取り込み先 | 変換 |
+| Spreadsheet column | Imported into | Conversion |
 |---|---|---|
-| Verified | `sheet_verified` | そのまま。判断には使わない |
-| Dataset | `name`、`aliases`(`sheet_name`) | `dataset_id` は egs3 レシピ名が対応する34件+Polishはその名前、それ以外は小文字英数字のみの slug。`€motion`→`emotion_origlia2010`、`CH-SIMS v2.0`→`chsims2`、`Belfast Database`→`belfast` |
-| License | `license_spdx`、`license_class` | 対応表で SPDX 識別子へ。`license_class` は `enums.csv` の derived から決まる |
-| Language | `languages` | ISO 639-3。`Multilingual`→`mul`、`Other`→`unknown`、`Mexican Spanish`→`spa`(元の表記は `language_note`) |
-| Source | `recording_context` | 対応表で enum 値へ |
-| Total Hours / Utterances / Speakers | `hours_reported` / `n_utt_reported` / `n_speakers_reported` | そのまま |
-| Discrete Emotions | `labels_discrete_reported` | 小文字の語をカンマ区切りで並べた形のものだけ `;` 区切りに。文章はそのまま `labels_discrete_note` |
-| Dimensional Emotions | `dimensional_attributes` | 同上(文章は `dimensional_note`)。`None`→`none` |
-| Other Annotations | `annotations_other` | そのまま。`None`→`none` |
-| Source URL / Paper URL | `source_url` / `paper_url` | そのまま |
-| Notes | `sheet_notes` | そのまま |
-| ESPnet Implemented | (取り込まない) | `espnet_status` は egs3(gitブランチ)との照合で決める(S7)。誤りを含むため |
+| Verified | `sheet_verified` | As is. Not used for decisions |
+| Dataset | `name`, `aliases` (`sheet_name`) | `dataset_id` is the egs3 recipe name for the 34 rows with a matching recipe and for Polish; otherwise a slug of lower-case letters and digits. `€motion` -> `emotion_origlia2010`, `CH-SIMS v2.0` -> `chsims2`, `Belfast Database` -> `belfast` |
+| License | `license_spdx`, `license_class` | Mapped to SPDX identifiers with a table. `license_class` follows from `derived` in `enums.csv` |
+| Language | `languages` | ISO 639-3. `Multilingual` -> `mul`, `Other` -> `unknown`, `Mexican Spanish` -> `spa` (the original wording in `language_note`) |
+| Source | `recording_context` | Mapped to enum values with a table |
+| Total Hours / Utterances / Speakers | `hours_reported` / `n_utt_reported` / `n_speakers_reported` | As is |
+| Discrete Emotions | `labels_discrete_reported` | Only comma-separated lists of lower-case words became `;`-separated lists; prose stayed as is in `labels_discrete_note` |
+| Dimensional Emotions | `dimensional_attributes` | Same (prose in `dimensional_note`). `None` -> `none` |
+| Other Annotations | `annotations_other` | As is. `None` -> `none` |
+| Source URL / Paper URL | `source_url` / `paper_url` | As is |
+| Notes | `sheet_notes` | As is |
+| ESPnet Implemented | (not imported) | `espnet_status` is decided by comparison with egs3 (the git branch), because this column contains errors |
 
-- 型付きの値は `evidence` 行(`source_type=sheet`、場所は「line N, column X」)を持つ。文章のまま残した列は evidence を持たない。
-- 前後の空白は取り除いた(Notes の1件)。それ以外の値は改変していない。
-- `espnet_status` は取り込み直後の仮の値 `deferred`(理由 `not_individually_checked`)。S7以降で実際の状態に更新する。
+- Typed values have `evidence` rows (`source_type=sheet`, location "line N, column X"). Columns kept as prose have no evidence.
+- Leading and trailing spaces were removed (one Notes value). No other value was altered.
+- `espnet_status` was set to the provisional value `deferred` (reason `not_individually_checked`) right after the import, and later updated to the actual status.

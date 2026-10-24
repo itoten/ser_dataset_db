@@ -263,8 +263,8 @@ msppodcast,disgust,D,disgust,synonym_rename,categorical,NA,NA,NA,NA,NA,
 msppodcast,fear,F,fear,synonym_rename,categorical,NA,NA,NA,NA,NA,
 msppodcast,happy,H,happy,synonym_rename,categorical,NA,NA,NA,NA,NA,
 msppodcast,neutral,N,neutral,synonym_rename,categorical,NA,NA,NA,NA,NA,
-msppodcast,no_majority,X,none,dropped_by_recipe,categorical,NA,NA,NA,NA,NA,注釈者の多数決が無い
-msppodcast,other,O,none,dropped_by_recipe,categorical,NA,NA,NA,NA,NA,注釈者の自由記述。感情ラベルではない
+msppodcast,no_majority,X,none,dropped_by_recipe,categorical,NA,NA,NA,NA,NA,No annotator majority
+msppodcast,other,O,none,dropped_by_recipe,categorical,NA,NA,NA,NA,NA,"Free text by annotators, not an emotion label"
 msppodcast,sad,S,sad,synonym_rename,categorical,NA,NA,NA,NA,NA,
 msppodcast,surprise,U,surprise,synonym_rename,categorical,NA,NA,NA,NA,NA,
 nemo,angry,anger,angry,spelling_fix,categorical,524,75,150,NA,749,
@@ -278,8 +278,8 @@ nonverbaltts,disgust,disgusted,disgust,synonym_rename,categorical,66,0,0,NA,66,
 nonverbaltts,fear,fearful,fear,synonym_rename,categorical,8,0,0,NA,8,
 nonverbaltts,happy,happy,happy,identity,categorical,1170,12,66,NA,1248,
 nonverbaltts,neutral,neutral,neutral,identity,categorical,1274,29,217,NA,1520,
-nonverbaltts,no_tag,(空),none,dropped_by_recipe,categorical,12,0,0,NA,12,感情タグなし(件数は除外前。すべて train)
-nonverbaltts,other,other,none,dropped_by_recipe,categorical,762,2,69,NA,833,8 感情外の曖昧なカテゴリ。レシピは使わない(件数は除外前の公開分割 train/dev/test の数)
+nonverbaltts,no_tag,(空),none,dropped_by_recipe,categorical,12,0,0,NA,12,No emotion tag (count before exclusion; all in train)
+nonverbaltts,other,other,none,dropped_by_recipe,categorical,762,2,69,NA,833,Ambiguous category outside the 8 emotions. Not used by the recipe (counts are for the public train/dev/test splits before exclusion)
 nonverbaltts,sad,sad,sad,identity,categorical,310,3,6,NA,319,
 nonverbaltts,surprise,surprised,surprise,synonym_rename,categorical,23,0,0,NA,23,
 oreau,angry,C,angry,synonym_rename,categorical,47,7,13,NA,67,
@@ -326,7 +326,7 @@ recanvo,greeting,greeting,none,outside_common7,,2,0,1,NA,3,
 recanvo,happy,happy,happy,identity,,43,6,12,NA,61,
 recanvo,help,help,none,outside_common7,,17,2,5,NA,24,
 recanvo,hunger,hunger,none,outside_common7,,3,0,1,NA,4,
-recanvo,laughter,laughter;laugh,none,outside_common7,,70,10,21,NA,101,CSV の laughter 93 + laugh 8(すべて P03)を統合(ito さんの判断、2026-10-18)。件数は下限フィルタ前
+recanvo,laughter,laughter;laugh,none,outside_common7,,70,10,21,NA,101,"Merges laughter 93 + laugh 8 (all P03) in the CSV (maintainer's decision, 2026-10-18). Counts before the minimum-length filter"
 recanvo,more,more,none,outside_common7,,16,2,4,NA,22,
 recanvo,no,no,none,outside_common7,,9,1,2,NA,12,
 recanvo,protest,protest,none,outside_common7,,15,2,4,NA,21,
@@ -403,13 +403,13 @@ turevdb,angry,kz,angry,synonym_rename,categorical,341,49,97,NA,487,
 turevdb,calm,sk,none,outside_common7,categorical,285,41,82,NA,408,
 turevdb,happy,mt,happy,synonym_rename,categorical,250,36,71,NA,357,
 turevdb,sad,hl,sad,synonym_rename,categorical,338,48,97,NA,483,
-uftbesd,angry,Angry,angry,spelling_fix,categorical,135,20,40,NA,195,metadata の emotion_label は先頭大文字(大文字小文字だけの違い)
-uftbesd,disgust,Disgust,disgust,spelling_fix,categorical,132,19,39,NA,190,metadata の emotion_label は先頭大文字(大文字小文字だけの違い)
-uftbesd,fear,Fear,fear,spelling_fix,categorical,135,20,40,NA,195,metadata の emotion_label は先頭大文字(大文字小文字だけの違い)
-uftbesd,happy,Happy,happy,spelling_fix,categorical,135,20,40,NA,195,metadata の emotion_label は先頭大文字(大文字小文字だけの違い)
-uftbesd,neutral,Neutral,neutral,spelling_fix,categorical,135,20,40,NA,195,metadata の emotion_label は先頭大文字(大文字小文字だけの違い)
-uftbesd,sad,Sad,sad,spelling_fix,categorical,135,20,40,NA,195,metadata の emotion_label は先頭大文字(大文字小文字だけの違い)
-uftbesd,surprise,Surprise,surprise,spelling_fix,categorical,135,20,39,NA,194,metadata の emotion_label は先頭大文字(大文字小文字だけの違い)
+uftbesd,angry,Angry,angry,spelling_fix,categorical,135,20,40,NA,195,emotion_label in the metadata is capitalised (differs only in case)
+uftbesd,disgust,Disgust,disgust,spelling_fix,categorical,132,19,39,NA,190,emotion_label in the metadata is capitalised (differs only in case)
+uftbesd,fear,Fear,fear,spelling_fix,categorical,135,20,40,NA,195,emotion_label in the metadata is capitalised (differs only in case)
+uftbesd,happy,Happy,happy,spelling_fix,categorical,135,20,40,NA,195,emotion_label in the metadata is capitalised (differs only in case)
+uftbesd,neutral,Neutral,neutral,spelling_fix,categorical,135,20,40,NA,195,emotion_label in the metadata is capitalised (differs only in case)
+uftbesd,sad,Sad,sad,spelling_fix,categorical,135,20,40,NA,195,emotion_label in the metadata is capitalised (differs only in case)
+uftbesd,surprise,Surprise,surprise,spelling_fix,categorical,135,20,39,NA,194,emotion_label in the metadata is capitalised (differs only in case)
 urdu,angry,A,angry,synonym_rename,categorical,70,10,20,NA,100,
 urdu,happy,H,happy,synonym_rename,categorical,70,10,20,NA,100,
 urdu,neutral,N,neutral,synonym_rename,categorical,70,10,20,NA,100,

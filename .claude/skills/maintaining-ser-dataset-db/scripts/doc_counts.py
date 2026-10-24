@@ -3,11 +3,11 @@
     python3 <skill dir>/scripts/doc_counts.py            # dry run: print each change
     python3 <skill dir>/scripts/doc_counts.py --write    # apply the changes
 
-Each rule is a regular expression for one known sentence or table row of the documents. The
-documents are written in Japanese, so the patterns are too. A rule whose text is not found is
-reported as MISSING and the script exits with status 1: the sentence was reworded, so update the
-rule (or the document) instead of leaving a stale number behind. Breakdowns that need judgement
-(the exclusion breakdown in manual section 8.2) are printed for a manual check, not rewritten.
+Each rule is a regular expression for one known sentence or table row of the documents. A rule
+whose text is not found is reported as MISSING and the script exits with status 1: the sentence
+was reworded, so update the rule (or the document) instead of leaving a stale number behind.
+Breakdowns that need judgement (the exclusion breakdown in manual section 8.2) are printed for a
+manual check, not rewritten.
 """
 
 import argparse
@@ -28,6 +28,31 @@ def _find_root():
 
 ROOT = _find_root()
 
+LIC_COLS = ["open", "noncommercial", "research_only", "restricted", "other", "none_stated", "unknown",
+            "conflicting", ""]
+# Start of each description cell in manual sections 9.2 and 10, so that every rule matches exactly one row.
+LIC_DESC = {"open": "permissive", "noncommercial": "non-commercial only", "research_only": "custom terms limited",
+            "restricted": "restricted or paid", "other": "other than the above",
+            "none_stated": "no license statement found", "unknown": "examined but undecidable",
+            "conflicting": "sources disagree"}
+ACC_DESC = {"direct_download": "directly downloadable", "free_account_required": "free account",
+            "gated_click_through": "consent click", "request_form_or_email": "request by application",
+            "signed_agreement": "signed agreement required", "paid_or_membership": "paid or membership",
+            "unofficial_mirror_only": "only unofficial mirrors", "unavailable": "cannot be obtained",
+            "unknown": "unknown"}
+STATUS_DESC = {"implemented": "an ESPnet recipe exists", "candidate": "candidate for addition",
+               "needs_decision": "only the project maintainer", "deferred": "not confirmed",
+               "excluded": "not used, for a clear reason"}
+RC_EN = {"acted": "acted", "spontaneous_conversation": "spontaneous conversation",
+         "multi_source_web": "multi-source web", "youtube": "YouTube", "affect_elicitation": "affect elicitation",
+         "movie_film": "film", "tv_show": "TV show", "read_speech": "read speech", "other": "other",
+         "human_agent_interaction": "human-agent interaction", "synthetic": "synthetic", "podcast": "podcast",
+         "talk_show": "talk show", "non_speech_vocalization": "non-speech vocalisation",
+         "child_robot_interaction": "child-robot interaction", "unknown": "unknown"}
+REL_EN = {"contains": "`contains` {}", "distinct_from": "`distinct_from` (similar names, different datasets) {}",
+          "subset_of": "`subset_of` {}", "possibly_same_as": "`possibly_same_as` (suspected identity) {}",
+          "version_of": "`version_of` {}"}
+
 
 def load(name):
     with open(ROOT / "data" / f"{name}.csv", encoding="utf-8", newline="") as f:
@@ -39,17 +64,10 @@ def n(x):
 
 
 def stats():
-    d = load("datasets")
-    e = load("evidence")
-    r = load("recipes")
-    s = {}
-    st = collections.Counter(x["espnet_status"] for x in d)
-    s["status"] = st
-    s["n_datasets"] = len(d)
-    s["in_sheet"] = sum(x["in_sheet"] == "true" for x in d)
-    s["n_evidence"] = len(e)
-    s["src"] = collections.Counter(x["source_type"] for x in e)
-    s["ev_last"] = max(x["checked_on"] for x in e)
+    d, e, r = load("datasets"), load("evidence"), load("recipes")
+    s = {"status": collections.Counter(x["espnet_status"] for x in d), "n_datasets": len(d),
+         "in_sheet": sum(x["in_sheet"] == "true" for x in d), "n_evidence": len(e),
+         "src": collections.Counter(x["source_type"] for x in e), "ev_last": max(x["checked_on"] for x in e)}
     s["rows"] = {t: len(load(t)) for t in ["datasets", "evidence", "aliases", "relations", "recipes",
                                            "recipe_labels", "benchmark_membership", "annotations"]}
     s["ann_by"] = sorted(collections.Counter(x["dataset_id"] for x in load("annotations")).items())
@@ -60,7 +78,6 @@ def stats():
     s["lic"] = collections.Counter(x["license_class"] for x in d)
     s["acc"] = collections.Counter(x["access_method"] for x in d)
     s["st_lic"] = collections.Counter((x["espnet_status"], x["license_class"]) for x in d)
-    s["impl_open"] = s["st_lic"][("implemented", "open")]
     s["cand_open_direct"] = sum(x["espnet_status"] == "candidate" and x["license_class"] == "open"
                                 and x["access_method"] == "direct_download" for x in d)
     s["rc"] = collections.Counter(x["recording_context"] for x in d)
@@ -73,134 +90,115 @@ def stats():
                 langs[c] += 1
     s["langs"] = langs
     s["blank"] = {k: sum(x[k] == "" for x in d) for k in ["license_spdx", "access_method", "recording_context"]}
+    s["basis_filled"] = sum(x["label_basis"] != "" for x in d)
+    s["perceived"] = sum("perceived" in x["label_basis"].split(";") for x in d)
+    s["user_lic"] = sorted({x["dataset_id"] for x in e if x["field"] == "license_spdx"
+                            and x["checked_by"] == "user" and x["is_canonical"] == "true"})
     s["excl_codes"] = collections.Counter(c for x in d if x["espnet_status"] == "excluded"
                                           for c in x["status_reason_codes"].split(";"))
     return s
 
 
-LIC_COLS = ["open", "noncommercial", "research_only", "restricted", "other", "none_stated", "unknown",
-            "conflicting", ""]
-# Start of each description cell in manual sections 9.2 and 10, so that every rule matches exactly one table row.
-LIC_DESC = {"open": "制限が緩い", "noncommercial": "非商用限定", "research_only": "学術・研究目的に限定",
-            "restricted": "制限つき・有償", "other": "上記以外", "none_stated": "ライセンスの記載が見つからない",
-            "unknown": "調べたが決まらない", "conflicting": "資料の間で食い違う"}
-ACC_DESC = {"direct_download": "認証なしで", "free_account_required": "無料アカウント",
-            "gated_click_through": "同意などのクリック", "request_form_or_email": "申請フォーム",
-            "signed_agreement": "署名した同意書", "paid_or_membership": "有償・会員制",
-            "unofficial_mirror_only": "非公式のミラー", "unavailable": "入手できない", "unknown": "不明"}
-RC_JA = {"acted": "演技", "spontaneous_conversation": "自発的会話", "multi_source_web": "複数ウェブ由来",
-         "youtube": "YouTube", "affect_elicitation": "感情誘発", "movie_film": "映画", "tv_show": "テレビ番組",
-         "read_speech": "朗読", "other": "その他", "human_agent_interaction": "人と機械の対話", "synthetic": "合成",
-         "podcast": "ポッドキャスト", "talk_show": "トーク番組", "non_speech_vocalization": "非言語の発声",
-         "child_robot_interaction": "子どもとロボットの対話", "unknown": "不明"}
-
-
 def rules(s, today):
     st = s["status"]
-    md = today[5:]
-    ann = "、".join(f"`{k}` {v}" for k, v in s["ann_by"])
-    ann_readme = "、".join(f"`{k}` の{v}行" for k, v in s["ann_by"])
-    rel_order = ["contains", "distinct_from", "subset_of", "possibly_same_as", "version_of"]
-    rel_ja = {"contains": "含む", "distinct_from": "名前が似た別物", "subset_of": "一部",
-              "possibly_same_as": "同一の疑い", "version_of": "版違い"}
-    rel = "、".join(f"`{k}`({rel_ja[k]}){s['rel'][k]}" for k in sorted(rel_order, key=lambda k: -s["rel"][k]))
-    src = "、".join(f"{k} {n(v)}" for k, v in s["src"].most_common())
-    rc_items = [(k, v) for k, v in s["rc"].most_common() if k and v >= 4]
-    rc = "、".join(f"{RC_JA.get(k, k)} {v}" for k, v in rc_items)
+    added = s["n_datasets"] - s["in_sheet"]
+    ann = ", ".join(f"`{k}` {v}" for k, v in s["ann_by"])
+    rel = ", ".join(REL_EN[k].format(s["rel"][k]) for k in sorted(REL_EN, key=lambda k: -s["rel"][k]))
+    src = ", ".join(f"{k} {n(v)}" for k, v in s["src"].most_common())
+    rc = ", ".join(f"{RC_EN.get(k, k)} {v}" for k, v in s["rc"].most_common() if k and v >= 4)
+    users = ", ".join(f"`{u}`" for u in s["user_lic"])
 
     def lic_row(status):
         vals = [s["st_lic"][(status, c)] for c in LIC_COLS]
         return f"| {status} | " + " | ".join(str(v) for v in vals) + f" | {st[status]} |"
 
     def lang_sub(m):
-        text = re.sub(r"コードで\d+種類", f"コードで{len(s['langs'])}種類", m.group(0))
-        text = re.sub(r"\((\w{3})\)(\d+)件", lambda mm: f"({mm.group(1)}){s['langs'][mm.group(1)]}件", text)
+        text = re.sub(r"\d+ codes", f"{len(s['langs'])} codes", m.group(0))
+        text = re.sub(r"\((\w{3})\) (\d+)(?! each)", lambda mm: f"({mm.group(1)}) {s['langs'][mm.group(1)]}", text)
 
         def pair(mm):
             a, b = s["langs"][mm.group(1)], s["langs"][mm.group(2)]
             if a != b:
-                print(f"NOTE     languages: {mm.group(1)}={a}, {mm.group(2)}={b} differ; rewrite the '各' phrase by hand")
-            return re.sub(r"各\d+件$", f"各{a}件", mm.group(0))
-        return re.sub(r"\((\w{3})\)・[^(、]+\((\w{3})\)各\d+件", pair, text)
+                print(f"NOTE     languages: {mm.group(1)}={a}, {mm.group(2)}={b} differ; rewrite the 'each' phrase by hand")
+            return re.sub(r"\d+ each$", f"{a} each", mm.group(0))
+        return re.sub(r"\((\w{3})\) and [^(,]+\((\w{3})\) \d+ each", pair, text)
 
     R = [
         # README
-        ("README.md", r"\d+データセット\(シート由来\d+・シート外\d+\)。`implemented` \d+、`candidate` \d+、`deferred` \d+、`needs_decision` \d+、`excluded` \d+。",
-         f"{s['n_datasets']}データセット(シート由来{s['in_sheet']}・シート外{s['n_datasets'] - s['in_sheet']})。`implemented` {st['implemented']}、`candidate` {st['candidate']}、`deferred` {st['deferred']}、`needs_decision` {st['needs_decision']}、`excluded` {st['excluded']}。"),
-        ("README.md", r"## 現状\(\d{4}-\d{2}-\d{2}\)", f"## 現状({today})"),
-        ("README.md", r"現在は (`[a-z0-9_]+` の\d+行、)*`[a-z0-9_]+` の\d+行で、", f"現在は {ann_readme}で、"),
-        ("README.md", r"`deferred` の\d+件。", f"`deferred` の{st['deferred']}件。"),
+        ("README.md", r"\d+ datasets \(\d+ from the spreadsheet, \d+ added later\)\. `implemented` \d+, `candidate` \d+, `deferred` \d+, `needs_decision` \d+, `excluded` \d+\.",
+         f"{s['n_datasets']} datasets ({s['in_sheet']} from the spreadsheet, {added} added later). `implemented` {st['implemented']}, `candidate` {st['candidate']}, `deferred` {st['deferred']}, `needs_decision` {st['needs_decision']}, `excluded` {st['excluded']}."),
+        ("README.md", r"## Current state \(\d{4}-\d{2}-\d{2}\)", f"## Current state ({today})"),
+        ("README.md", r"Currently: (`[a-z0-9_]+` \d+, )*`[a-z0-9_]+` \d+;", f"Currently: {ann};"),
+        ("README.md", r"The `deferred` rows \(\d+\)\.", f"The `deferred` rows ({st['deferred']})."),
         # manual 1.2
-        ("docs/manual.md", r"\| 登録データセット数 \| \*\*\d+件\*\*\(元のシート由来\d+件 \+ 新たに調べて足した\d+件\) \|",
-         f"| 登録データセット数 | **{s['n_datasets']}件**(元のシート由来{s['in_sheet']}件 + 新たに調べて足した{s['n_datasets'] - s['in_sheet']}件) |"),
-        ("docs/manual.md", r"\| ESPnet に実装済み \| \d+件 \|", f"| ESPnet に実装済み | {st['implemented']}件 |"),
-        ("docs/manual.md", r"\| 次の実装候補 \| \d+件 \|", f"| 次の実装候補 | {st['candidate']}件 |"),
-        ("docs/manual.md", r"\| 判断待ち \| \d+件 \|", f"| 判断待ち | {st['needs_decision']}件 |"),
-        ("docs/manual.md", r"\| 保留 \| \d+件 \|", f"| 保留 | {st['deferred']}件 |"),
-        ("docs/manual.md", r"\| 除外\(理由つき\) \| \d+件 \|", f"| 除外(理由つき) | {st['excluded']}件 |"),
-        ("docs/manual.md", r"\| 値ごとの「根拠」の記録 \| [\d,]+行 \|", f"| 値ごとの「根拠」の記録 | {n(s['n_evidence'])}行 |"),
-        ("docs/manual.md", r"\| 登場する言語コード \| \d+種類 \|", f"| 登場する言語コード | {len(s['langs'])}種類 |"),
+        ("docs/manual.md", r"\| Datasets registered \| \*\*\d+\*\* \(\d+ from the original spreadsheet \+ \d+ added later\) \|",
+         f"| Datasets registered | **{s['n_datasets']}** ({s['in_sheet']} from the original spreadsheet + {added} added later) |"),
+        ("docs/manual.md", r"\| Implemented in ESPnet \| \d+ \|", f"| Implemented in ESPnet | {st['implemented']} |"),
+        ("docs/manual.md", r"\| Candidates for implementation \| \d+ \|", f"| Candidates for implementation | {st['candidate']} |"),
+        ("docs/manual.md", r"\| Awaiting a decision \| \d+ \|", f"| Awaiting a decision | {st['needs_decision']} |"),
+        ("docs/manual.md", r"\| Deferred \| \d+ \|", f"| Deferred | {st['deferred']} |"),
+        ("docs/manual.md", r"\| Excluded \(with reasons\) \| \d+ \|", f"| Excluded (with reasons) | {st['excluded']} |"),
+        ("docs/manual.md", r"\| Evidence rows \(sources of values\) \| [\d,]+ \|", f"| Evidence rows (sources of values) | {n(s['n_evidence'])} |"),
+        ("docs/manual.md", r"\| Language codes \| \d+ \|", f"| Language codes | {len(s['langs'])} |"),
         # manual 4.2
-        ("docs/manual.md", r"(\*\*1つのデータセット\*\*\(中心になる表\) \| )\d+ \|", rf"\g<1>{s['rows']['datasets']} |"),
-        ("docs/manual.md", r"(datasets の1つの値の\*\*根拠\*\* \| )[\d,]+ \|", rf"\g<1>{n(s['rows']['evidence'])} |"),
-        ("docs/manual.md", r"(別名\(公式名・略称・旧名・レシピ名など\) \| )\d+ \|", rf"\g<1>{s['rows']['aliases']} |"),
-        ("docs/manual.md", r"(データセット同士の関係 \| )\d+ \|", rf"\g<1>{s['rows']['relations']} |"),
-        ("docs/manual.md", r"(ESPnet の1レシピ \| )\d+ \|", rf"\g<1>{s['rows']['recipes']} |"),
-        ("docs/manual.md", r"(レシピ×ラベル \| )\d+ \|", rf"\g<1>{s['rows']['recipe_labels']} |"),
-        ("docs/manual.md", r"(ベンチマークを構成するレシピ \| )\d+ \|", rf"\g<1>{s['rows']['benchmark_membership']} |"),
-        ("docs/manual.md", r"(書き起こし・話者特性・対話行為など\) \| )\d+\((`[a-z0-9_]+` \d+、)*`[a-z0-9_]+` \d+。",
-         rf"\g<1>{s['rows']['annotations']}({ann}。"),
-        ("docs/manual.md", r"関係の内訳は [^。]+。", f"関係の内訳は {rel}。"),
-        ("docs/manual.md", r"レシピ\d+件のうち\d+件は1コーパス用\(`single_corpus`\)、\d+件が複数コーパスを合わせたもの\(`multi_corpus`\)。",
-         f"レシピ{s['rows']['recipes']}件のうち{s['kind']['single_corpus']}件は1コーパス用(`single_corpus`)、{s['kind']['multi_corpus']}件が複数コーパスを合わせたもの(`multi_corpus`)。"),
+        ("docs/manual.md", r"(\(the central table\) \| )\d+ \|", rf"\g<1>{s['rows']['datasets']} |"),
+        ("docs/manual.md", r"(of one value in datasets \| )[\d,]+ \|", rf"\g<1>{n(s['rows']['evidence'])} |"),
+        ("docs/manual.md", r"(former name, recipe name, \.\.\.\) \| )\d+ \|", rf"\g<1>{s['rows']['aliases']} |"),
+        ("docs/manual.md", r"(\| a relation between datasets \| )\d+ \|", rf"\g<1>{s['rows']['relations']} |"),
+        ("docs/manual.md", r"(\| one ESPnet recipe \| )\d+ \|", rf"\g<1>{s['rows']['recipes']} |"),
+        ("docs/manual.md", r"(\| recipe x label \| )\d+ \|", rf"\g<1>{s['rows']['recipe_labels']} |"),
+        ("docs/manual.md", r"(\| a recipe that is part of a benchmark \| )\d+ \|", rf"\g<1>{s['rows']['benchmark_membership']} |"),
+        ("docs/manual.md", r"(speaker traits, dialogue acts, \.\.\.\) \| )\d+ \((`[a-z0-9_]+` \d+, )*`[a-z0-9_]+` \d+;",
+         rf"\g<1>{s['rows']['annotations']} ({ann};"),
+        ("docs/manual.md", r"Relations by type: [^.]+\.", f"Relations by type: {rel}."),
+        ("docs/manual.md", r"Of the \d+ recipes, \d+ are for a single corpus \(`single_corpus`\) and \d+ combines? several corpora \(`multi_corpus`\)\.",
+         f"Of the {s['rows']['recipes']} recipes, {s['kind']['single_corpus']} are for a single corpus (`single_corpus`) and {s['kind']['multi_corpus']} combines several corpora (`multi_corpus`)."),
         # manual 6
-        ("docs/manual.md", r"確認日\(`checked_on`\)は全[\d,]+行に入っている\(2026-10-10〜\d{2}-\d{2}\)",
-         f"確認日(`checked_on`)は全{n(s['n_evidence'])}行に入っている(2026-10-10〜{s['ev_last'][5:]})"),
-        ("docs/manual.md", r"現在の根拠[\d,]+行の内訳は、[^。]+。", f"現在の根拠{n(s['n_evidence'])}行の内訳は、{src}。"),
+        ("docs/manual.md", r"Every one of the [\d,]+ evidence rows has a date checked \(`checked_on`, 2026-10-10 to \d{2}-\d{2}\)",
+         f"Every one of the {n(s['n_evidence'])} evidence rows has a date checked (`checked_on`, 2026-10-10 to {s['ev_last'][5:]})"),
+        ("docs/manual.md", r"The [\d,]+ evidence rows by source type: [^.]+\.", f"The {n(s['n_evidence'])} evidence rows by source type: {src}."),
         # manual 8
-        ("docs/manual.md", r"(\| `implemented` \| ESPnet にレシピがある \| )\d+ \|", rf"\g<1>{st['implemented']} |"),
-        ("docs/manual.md", r"(\| `candidate` \| 追加の候補。[^|]+\| )\d+ \|", rf"\g<1>{st['candidate']} |"),
-        ("docs/manual.md", r"(\| `needs_decision` \| [^|]+\| )\d+ \|", rf"\g<1>{st['needs_decision']} |"),
-        ("docs/manual.md", r"(\| `deferred` \| 保留。[^|]+\| )\d+ \|", rf"\g<1>{st['deferred']} |"),
-        ("docs/manual.md", r"(\| `excluded` \| 明確な理由があって扱わない \| )\d+ \|", rf"\g<1>{st['excluded']} |"),
-        ("docs/manual.md", r"現在の除外\d+件の内訳は", f"現在の除外{st['excluded']}件の内訳は"),
-        ("docs/manual.md", r"`unexamined`\(まだ実装を検討していない\)が最多で\d+件",
-         f"`unexamined`(まだ実装を検討していない)が最多で{s['unexamined']}件"),
+        *[("docs/manual.md", rf"(\| `{k}` \| {re.escape(v)}[^|]*\| )\d+ \|", rf"\g<1>{st[k]} |") for k, v in STATUS_DESC.items()],
+        ("docs/manual.md", r"The \d+ excluded rows break down as", f"The {st['excluded']} excluded rows break down as"),
+        ("docs/manual.md", r"\(implementation not yet considered\), on \d+ rows", f"(implementation not yet considered), on {s['unexamined']} rows"),
         # manual 9.2 / 10
-        *[("docs/manual.md", rf"(\| `{c}` \| {LIC_DESC[c]}[^|]*\| )\d+ \|", rf"\g<1>{s['lic'][c]} |") for c in LIC_DESC],
-        ("docs/manual.md", r"(\| \(空欄\) \| まだ調べていない \| )\d+ \|", rf"\g<1>{s['lic']['']} |"),
-        *[("docs/manual.md", rf"(\| `{a}` \| {ACC_DESC[a]}[^|]*\| )\d+ \|", rf"\g<1>{s['acc'][a]} |") for a in ACC_DESC],
-        ("docs/manual.md", r"(\| \(空欄\) \| 未確認 \| )\d+ \|", rf"\g<1>{s['acc']['']} |"),
+        *[("docs/manual.md", rf"(\| `{c}` \| {re.escape(v)}[^|]*\| )\d+ \|", rf"\g<1>{s['lic'][c]} |") for c, v in LIC_DESC.items()],
+        ("docs/manual.md", r"(\| \(empty\) \| not investigated yet \| )\d+ \|", rf"\g<1>{s['lic']['']} |"),
+        *[("docs/manual.md", rf"(\| `{a}` \| {re.escape(v)}[^|]*\| )\d+ \|", rf"\g<1>{s['acc'][a]} |") for a, v in ACC_DESC.items()],
+        ("docs/manual.md", r"(\| \(empty\) \| not checked \| )\d+ \|", rf"\g<1>{s['acc']['']} |"),
         # manual 11
-        ("docs/manual.md", r"## 11\. 現在の数字\(\d{4}-\d{2}-\d{2}\)", f"## 11. 現在の数字({today})"),
-        *[("docs/manual.md", rf"\| {k} \|( \d+ \|){{10}}", lic_row(k)) for k in
-          ["implemented", "candidate", "needs_decision", "deferred", "excluded"]],
-        ("docs/manual.md", r"実装済み\d+件のうち、オープンな条件\(`open`\)は\d+件",
-         f"実装済み{st['implemented']}件のうち、オープンな条件(`open`)は{s['impl_open']}件"),
-        ("docs/manual.md", r"候補\d+件のうち、ライセンスが `open` で `direct_download`\(すぐ取れる\)なものは\d+件",
-         f"候補{st['candidate']}件のうち、ライセンスが `open` で `direct_download`(すぐ取れる)なものは{s['cand_open_direct']}件"),
-        ("docs/manual.md", r"\*\*録音の状況\*\*\(`recording_context`、\d+件は未調査\): [^。]+ など。",
-         f"**録音の状況**(`recording_context`、{s['blank']['recording_context']}件は未調査): {rc} など。"),
-        ("docs/manual.md", r"\*\*言語\*\*: コードで\d+種類。[^\n]+", lang_sub),
-        ("docs/manual.md", r"\*\*生音声の有無\*\*: 配布あり \d+、なし \d+、不明 \d+、未確認 \d+。",
-         f"**生音声の有無**: 配布あり {s['raw']['true']}、なし {s['raw']['false']}、不明 {s['raw']['unknown']}、未確認 {s['raw']['']}。"),
-        ("docs/manual.md", r"\*\*次元感情のラベルがあるもの\*\*: \d+件。", f"**次元感情のラベルがあるもの**: {s['dim']}件。"),
-        ("docs/manual.md", r"実施済み\(`evaluated`\)\d+、未実施\(`not_run`\)\d+",
-         f"実施済み(`evaluated`){s['baseline']['evaluated']}、未実施(`not_run`){s['baseline']['not_run']}"),
-        # manual 15-16
-        ("docs/manual.md", r"\*\*保留\(`deferred`\)\d+件\*\*", f"**保留(`deferred`){st['deferred']}件**"),
-        ("docs/manual.md", r"ライセンスが空欄\d+件、入手方法が空欄\d+件、録音の状況が空欄\d+件",
-         f"ライセンスが空欄{s['blank']['license_spdx']}件、入手方法が空欄{s['blank']['access_method']}件、録音の状況が空欄{s['blank']['recording_context']}件"),
-        ("docs/manual.md", r"根拠つき台帳。\d+件、根拠[\d,]+行。", f"根拠つき台帳。{s['n_datasets']}件、根拠{n(s['n_evidence'])}行。"),
-        ("docs/manual.md", r"ESPnet の\d+レシピを実測して", f"ESPnet の{s['rows']['recipes']}レシピを実測して"),
-        ("docs/manual.md", r"保留\d+件の調査", f"保留{st['deferred']}件の調査"),
-        ("docs/manual.md", r"`access_method`=direct_download → \d+件", f"`access_method`=direct_download → {s['cand_open_direct']}件"),
-        ("docs/manual.md", r"根拠[\d,]+行のうち[\d,]+行\)", f"根拠{n(s['n_evidence'])}行のうち{n(s['src']['primary'])}行)"),
-        ("docs/manual.md", r"実装済み\d+件、候補\d+件。候補のうちライセンスがオープンですぐ取れるものは\d+件",
-         f"実装済み{st['implemented']}件、候補{st['candidate']}件。候補のうちライセンスがオープンですぐ取れるものは{s['cand_open_direct']}件"),
-        ("docs/manual.md", r"\| 除外したものは \| \d+件。", f"| 除外したものは | {st['excluded']}件。"),
-        ("docs/manual.md", r"元のシート\d+件に、総説・各種ホスティングサービス・文献から\d+件を足した。",
-         f"元のシート{s['in_sheet']}件に、総説・各種ホスティングサービス・文献から{s['n_datasets'] - s['in_sheet']}件を足した。"),
+        ("docs/manual.md", r"## 11\. Current figures \(\d{4}-\d{2}-\d{2}\)", f"## 11. Current figures ({today})"),
+        *[("docs/manual.md", rf"\| {k} \|( \d+ \|){{10}}", lic_row(k)) for k in STATUS_DESC],
+        ("docs/manual.md", r"Of the \d+ implemented datasets, \d+ have open terms",
+         f"Of the {st['implemented']} implemented datasets, {s['st_lic'][('implemented', 'open')]} have open terms"),
+        ("docs/manual.md", r"Of the \d+ candidates, \d+ are `open` and `direct_download`",
+         f"Of the {st['candidate']} candidates, {s['cand_open_direct']} are `open` and `direct_download`"),
+        ("docs/manual.md", r"\*\*Recording context\*\* \(`recording_context`; \d+ not checked\): [^.]+, and others\.",
+         f"**Recording context** (`recording_context`; {s['blank']['recording_context']} not checked): {rc}, and others."),
+        ("docs/manual.md", r"\*\*Languages\*\*: \d+ codes\.[^\n]+", lang_sub),
+        ("docs/manual.md", r"\*\*Raw audio\*\*: distributed \d+, not distributed \d+, unknown \d+, not checked \d+\.",
+         f"**Raw audio**: distributed {s['raw']['true']}, not distributed {s['raw']['false']}, unknown {s['raw']['unknown']}, not checked {s['raw']['']}."),
+        ("docs/manual.md", r"\*\*Datasets with dimensional emotion labels\*\*: \d+\.", f"**Datasets with dimensional emotion labels**: {s['dim']}."),
+        ("docs/manual.md", r"done \(`evaluated`\) \d+, not run \(`not_run`\) \d+",
+         f"done (`evaluated`) {s['baseline']['evaluated']}, not run (`not_run`) {s['baseline']['not_run']}"),
+        ("docs/manual.md", r"filled for \d+ datasets; perceived labels \(`perceived`, alone or with others\) on \d+",
+         f"filled for {s['basis_filled']} datasets; perceived labels (`perceived`, alone or with others) on {s['perceived']}"),
+        # manual 14-16
+        ("docs/manual.md", r"license evidence checked by the maintainer exists for \d+ datasets \([^)]*\)",
+         f"license evidence checked by the maintainer exists for {len(s['user_lic'])} datasets ({users})"),
+        ("docs/manual.md", r"\*\*The \d+ `deferred` rows\*\*", f"**The {st['deferred']} `deferred` rows**"),
+        ("docs/manual.md", r"license empty for \d+, access method empty for \d+, recording context empty for \d+",
+         f"license empty for {s['blank']['license_spdx']}, access method empty for {s['blank']['access_method']}, recording context empty for {s['blank']['recording_context']}"),
+        ("docs/manual.md", r"\d+ datasets, [\d,]+ evidence rows\.", f"{s['n_datasets']} datasets, {n(s['n_evidence'])} evidence rows."),
+        ("docs/manual.md", r"the \d+ ESPnet recipes are measured", f"the {s['rows']['recipes']} ESPnet recipes are measured"),
+        ("docs/manual.md", r"investigating the \d+ deferred rows", f"investigating the {st['deferred']} deferred rows"),
+        ("docs/manual.md", r"`access_method`=direct_download -> \d+ rows", f"`access_method`=direct_download -> {s['cand_open_direct']} rows"),
+        ("docs/manual.md", r"\([\d,]+ of [\d,]+ evidence rows\)", f"({n(s['src']['primary'])} of {n(s['n_evidence'])} evidence rows)"),
+        ("docs/manual.md", r"\d+ implemented, \d+ candidates\. Of the candidates, \d+ are openly licensed",
+         f"{st['implemented']} implemented, {st['candidate']} candidates. Of the candidates, {s['cand_open_direct']} are openly licensed"),
+        ("docs/manual.md", r"\| What was excluded\? \| \d+\.", f"| What was excluded? | {st['excluded']}."),
+        ("docs/manual.md", r"\d+ datasets from surveys, hosting services and the literature were added to the spreadsheet's \d+",
+         f"{added} datasets from surveys, hosting services and the literature were added to the spreadsheet's {s['in_sheet']}"),
     ]
     return R
 
@@ -219,13 +217,11 @@ def main():
             print(f"MISSING  {path}: /{pat[:70]}/")
             missing += 1
             continue
-        new = re.sub(pat, rep, texts[path])
-        if new != texts[path]:
-            for m in ms:
-                after = re.sub(pat, rep, m.group(0))
-                if after != m.group(0):
-                    print(f"CHANGE   {path}: {m.group(0)[:90]}\n      -> {after[:90]}")
-            texts[path] = new
+        for m in ms:
+            after = re.sub(pat, rep, m.group(0))
+            if after != m.group(0):
+                print(f"CHANGE   {path}: {m.group(0)[:90]}\n      -> {after[:90]}")
+        texts[path] = re.sub(pat, rep, texts[path])
     print("\nCheck by hand (manual 8.2 exclusion breakdown, reason code -> rows):",
           dict(s["excl_codes"].most_common()))
     if a.write:

@@ -117,7 +117,7 @@ def discrepancies(db):
                         "datasets_value": d["n_utt_reported"], "datasets_source_type": "see evidence",
                         "other_value": r["n_total"], "other_source_type": "measured",
                         "other_source_ref": f"recipes.n_total ({r['recipe']})",
-                        "note": "レシピは長さ・ラベルで絞るため一致しないのが普通"})
+                        "note": "a mismatch is normal: recipes filter by length and label"})
     return out
 
 

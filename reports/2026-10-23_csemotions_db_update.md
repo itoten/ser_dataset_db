@@ -1,117 +1,117 @@
-# CSEMOTIONS: DB 更新用レポート(DB 管理セッションによる検証つきの保存版)
+# CSEMOTIONS: DB update report (saved with verification)
 
-このファイルは `recipe_reports/2026-10-23_csemotions_db_update.md`(レシピ側セッションの報告)の全文に、DB 管理セッションの検証結果を先頭に足したもの。DB の `csemotions` の根拠行は、ここを `via` に指す。報告の本文は一字も直していない。ライセンスを `open` とする判断と、NOTICE の ESD の条件を適用しない判断は ito さんのもの(2026-10-23)。
+This file is the full DB update report written by the recipe author (originally `recipe_reports/2026-10-23_csemotions_db_update.md`, in Japanese), translated into English, with the DB maintainer's verification added on top. The evidence rows of `csemotions` point here through `via`. Apart from the translation, the report text is unchanged. The decisions to treat the license as `open` and not to apply the ESD condition in the NOTICE are the project maintainer's (2026-10-23).
 
-## 0. DB 管理セッションの検証(2026-10-23)
+## 0. Verification by the DB maintainer (2026-10-23)
 
-| 報告の主張 | 検証の方法 | 結果 |
+| Claim in the report | How it was checked | Result |
 |---|---|---|
-| HF のカードは Apache-2.0、固定コミット 19498e62… の NOTICE が ESD(MIT、研究目的のみ)を取り込むと書く。カードに ESD の記述はない。旧名 AIDC-AI/CSEMOTIONS は ATH-MaaS/CSEMOTIONS にリダイレクト | HF の API・NOTICE・README・リダイレクトを取り直した | 一致(コミット SHA も同じ) |
-| 4,160 本、10 人、10.198 時間、1.75〜34.2 秒、48 kHz モノラル **16 bit**(カードは 24 bit)、30 秒超 15 本 | `~/data/csemotions` の parquet 8 本を数え直した | 一致(4,160 本、10.1978 時間、1.752〜34.212 秒、PCM_16 のみ、30 秒超 15 本)。カードの 24 bit は実態と違う |
-| 文は 1,296 種類、1,293 が複数の話者、どの文も 1 つの感情にしか出ない | `text` 列を集計 | 一致(1,296 / 1,293 / 感情をまたぐ文 0) |
-| 分割: train 7 人 2,932 / valid female002 378 / test male003・male004 850、test の文 849 のうち 848、valid の 378 文すべてが train にもある | 手元の parquet から再計算 | 一致 |
-| ESD の音との重なり 0(35,000 本と比較) | 自分で別の方法で再検査: ESD の全 35,000 本と CSEMOTIONS の全 4,160 本を、長さ(±30 ms)と包絡の相関 0.9 超で絞り、全体の波形相関で確認 | 候補 0 件。報告と一致(一部どうしの比較はしていない点も同じ) |
-| ESD の中国語 350 文との文の重なりなし(最大 0.19) | 保存済みの Whisper 書き起こし 350 文と CSEMOTIONS の 1,296 文で、文字ペアの Jaccard を再計算 | 完全一致 0、最大 0.185。計算は再現した。書き起こしそのもの(Whisper)は検証していない |
-| ESD: GitHub の LICENSE は MIT、README は誓約書の送付と「研究目的のみ」を求める。ESD は 350 並行文・10 人の中国語話者 | GitHub から取り直した | 一致 |
-| Marco-Voice 報告(arXiv 2508.02038)は CSEMOTIONS を新規の proprietary なデータセット、ESD を別の学習データとして挙げる | 論文を取り直して該当節を読んだ | 一致。ただし論文は「**各話者が 100 の中英プロンプトを読む**」と書くが、実データの中国語の文は 1,296 種類(話者あたり 3 百〜4 百)で、論文の記述と合わない(報告にない食い違い) |
+| The Hugging Face card says Apache-2.0; the NOTICE at pinned commit 19498e62... says ESD (MIT, research use only) is incorporated; the card does not mention ESD; the old name AIDC-AI/CSEMOTIONS redirects to ATH-MaaS/CSEMOTIONS | Re-fetched the Hugging Face API, NOTICE, README and redirect | Matches (same commit SHA) |
+| 4,160 clips, 10 speakers, 10.198 h, 1.75-34.2 s, 48 kHz mono **16-bit** (the card says 24-bit), 15 clips over 30 s | Recounted the 8 parquet files of the release | Matches (4,160 clips, 10.1978 h, 1.752-34.212 s, PCM_16 only, 15 over 30 s). The card's 24-bit does not match the data |
+| 1,296 distinct sentences, 1,293 read by several speakers, each sentence under only one emotion | Counted the `text` column | Matches (1,296 / 1,293 / 0 sentences across emotions) |
+| Split: train 7 speakers 2,932 / valid female002 378 / test male003, male004 850; 848 of 849 test sentences and all 378 valid sentences also appear in train | Recomputed from the parquet files | Matches |
+| No audio overlap with ESD (compared with 35,000 clips) | Re-checked with a different method: all 35,000 ESD clips against all 4,160 CSEMOTIONS clips, filtered by duration (+/-30 ms) and envelope correlation > 0.9, then confirmed by whole-waveform correlation | 0 candidates. Matches the report (partial overlaps were not compared, as in the report) |
+| No sentence overlap with ESD's 350 Mandarin sentences (max 0.19) | Recomputed the character-bigram Jaccard between the saved Whisper transcripts of 350 sentences and the 1,296 CSEMOTIONS sentences | 0 exact matches, max 0.185. The computation reproduces; the Whisper transcripts themselves were not verified |
+| ESD: the GitHub LICENSE is MIT; the README asks for a signed form and says research use only. ESD has 350 parallel sentences and 10 Mandarin speakers | Re-fetched from GitHub | Matches |
+| The Marco-Voice report (arXiv 2508.02038) describes CSEMOTIONS as a new proprietary dataset and lists ESD as separate training data | Re-fetched the paper and read the relevant section | Matches. However, the paper says "**each speaker reading a curated set of 100 Chinese and English prompts**", while the data has 1,296 distinct Mandarin sentences (300-400 per speaker), which does not match the paper (a discrepancy not in the report) |
 
-追加で分かったこと(報告にない):
-- HF のカードの列名(transcript / speaker_id / gender / prompt_id)は、実際の列(audio / text / emotion / speaker)と違う。
-- ESD の DB 行(`esd`)は、すでに `research_only` / `signed_agreement` と README に基づいて記録されている(報告 §6 の 2 への答え)。LICENSE が MIT である点との食い違いは、この登録の範囲外。
+Additional findings (not in the report):
+- The column names on the Hugging Face card (transcript / speaker_id / gender / prompt_id) differ from the actual columns (audio / text / emotion / speaker).
+- The DB row for ESD (`esd`) is already recorded as `research_only` / `signed_agreement` based on its README (answer to question 2 in §6). The disagreement with its MIT LICENSE is outside the scope of this registration.
 
-検証していないこと: 聴取(ito さんの 28 本)、NOTICE の意図(作者の説明なし)、クリップの一部に ESD の音が入っているか、ESD の Whisper 書き起こしの正しさ、論文に感情ラベルの検証の記述がないこと(索引で該当語を探したが、本文の全読はしていない)。
+Not verified: the listening check (the maintainer's 28 clips), the intent of the NOTICE (no explanation from the authors), whether part of a clip contains ESD audio, the correctness of the Whisper transcripts of ESD, and the absence of a description of emotion-label validation in the paper (searched by keyword, not read in full).
 
 ---
 
-# CSEMOTIONS: DB 更新用レポート
+# CSEMOTIONS: DB update report
 
-- 作成: 2026-10-23(DB 管理セッション宛)
-- 対象 dataset_id: `csemotions`(レシピ `egs3/csemotions/cls`、最初のコミット d0bacb999e2。readme の更新 838c0bf1ea0、ローカル)
-- 審査: ito さんの判断(2026-10-23): **ライセンスは `open`(Apache-2.0)**。NOTICE が ESD(研究目的のみ)の取り込みを記すことを明記し、そのうえで open と判断する理由も残す。データに問題はなく、規模が大きく有望。
-- 詳しい根拠: `recipe_review/csemotions.md`、計測は `recipe_review/csemotions_scripts/`
-- 数値は 2026-10-20 に実データ(`~/data/csemotions`)から取り直したもの。ESD との文の比較と分割の文の共有は 2026-10-23 に追加で計測
-- 聴取(ito さん 2026-10-23): 7 感情 × 4 本(別の話者)を聴き、パラ言語情報はしっかりあると判断。ただし文の意味でモデルが判断する可能性があるので、readme に軽い警告を書いた。
-- 健康診断: `ok`(2026-10-20 20:44:37〜20:55:33、GPU 1、2 エポック。スコアは動作確認の値で学習の質を表さない)。レシピのデータは変えていない
+- Written: 2026-10-23 (to the DB maintainer)
+- dataset_id: `csemotions` (recipe `egs3/csemotions/cls`, first commit d0bacb999e2; readme update 838c0bf1ea0, local)
+- Review: the maintainer's decision (2026-10-23): **the license is `open` (Apache-2.0)**. State that the NOTICE says ESD (research use only) is incorporated, and record the reasons for judging it open anyway. The data has no problems, is large and promising.
+- Detailed basis: `recipe_review/csemotions.md`; measurements in `recipe_review/csemotions_scripts/`
+- Figures re-measured from the release files on 2026-10-20. The sentence comparison with ESD and sentence sharing across splits were measured additionally on 2026-10-23
+- Listening (the maintainer, 2026-10-23): listened to 4 clips (different speakers) for each of the 7 emotions and judged that paralinguistic information is clearly present. Since a model may still judge from the meaning of the sentences, a mild warning was added to the readme.
+- Health check: `ok` (2026-10-20 20:44:37-20:55:33, GPU 1, 2 epochs; the scores are smoke-test values and say nothing about learning quality). The recipe's data was not changed
 
-## 1. 結論
+## 1. Conclusion
 
-| 項目 | 内容 |
+| Item | Content |
 |---|---|
-| 状態 | `candidate` → `implemented` |
-| 全体とレシピ使用分 | 4,160 本すべて(`remove_long_short` で train の 30 秒超 15 本だけ落ちる) |
-| ライセンス | `open`(Apache-2.0、カード)。NOTICE の ESD の条件は、ESD の素材が見つからないので適用しない(§3) |
-| 記録する事実 | 文と感情が一対一(1,296 文のどれも 1 つの感情にしか出ない)。ビット深度はカードの 24 bit ではなく 16 bit |
+| Status | `candidate` -> `implemented` |
+| Whole set and what the recipe uses | All 4,160 clips (only the 15 train clips over 30 s are dropped by `remove_long_short`) |
+| License | `open` (Apache-2.0, card). The ESD condition in the NOTICE is not applied, since no ESD material was found (§3) |
+| Facts to record | Sentences and emotions are one-to-one (each of the 1,296 sentences appears under one emotion only). Bit depth is 16-bit, not the card's 24-bit |
 
-## 2. datasets.csv の更新提案
+## 2. Proposed updates to datasets.csv
 
-| 列 | DB の今の値 | 提案 | 根拠 |
+| Column | Current value | Proposal | Basis |
 |---|---|---|---|
-| espnet_status | candidate | implemented | レシピ d0bacb999e2 |
-| status_reason_codes | unexamined | NA | — |
-| source_url | https://huggingface.co/datasets/AIDC-AI/CSEMOTIONS | https://huggingface.co/datasets/ATH-MaaS/CSEMOTIONS(旧名はここにリダイレクトされる) | HF |
-| license_spdx / license_class | Apache-2.0 / open | 変更なし | カード(ito さんの判断) |
-| license_note | (空) | 下の案 | NOTICE、§3 |
-| n_files_release_measured | (空) | 4160 | 実測 |
-| n_speakers_measured | (空) | 10 | 実測(`speaker` 列) |
-| label_source | (空) | `human`(声優が演じた感情、`emotion` 列) | カード |
-| label_verification | (空) | `NA`(聴取による確認の記述なし) | カード |
-| status_note | 「…NOTICE ファイルが ESD(研究目的のみ)を取り込んでいると書いており、どの部分かは未確認。」 | 「レシピは全 4,160 本を使う。NOTICE の ESD(研究目的のみ)は、音・文とも ESD との重なりが見つからないため適用せず、Apache-2.0 として扱う(ito さんの判断 2026-10-23)。」 | §3 |
-| notes | 今の文 | 下の案で置き換え | — |
-| report_path | (空) | recipe_reports/2026-10-23_csemotions_db_update.md | — |
-| status_checked_on / last_updated_on | — | 2026-10-23 | — |
+| espnet_status | candidate | implemented | recipe d0bacb999e2 |
+| status_reason_codes | unexamined | NA | - |
+| source_url | https://huggingface.co/datasets/AIDC-AI/CSEMOTIONS | https://huggingface.co/datasets/ATH-MaaS/CSEMOTIONS (the old name redirects here) | HF |
+| license_spdx / license_class | Apache-2.0 / open | unchanged | card (maintainer's decision) |
+| license_note | (empty) | proposal below | NOTICE, §3 |
+| n_files_release_measured | (empty) | 4160 | measured |
+| n_speakers_measured | (empty) | 10 | measured (`speaker` column) |
+| label_source | (empty) | `human` (emotions portrayed by voice actors, `emotion` column) | card |
+| label_verification | (empty) | `NA` (no listening check described) | card |
+| status_note | "...the NOTICE file says it incorporates ESD (research use only); which part is unverified." | "The recipe uses all 4,160 clips. The ESD condition (research use only) in the NOTICE is not applied because no overlap with ESD was found in sound or sentences; treated as Apache-2.0 (maintainer's decision 2026-10-23)." | §3 |
+| notes | current text | replace with the proposal below | - |
+| report_path | (empty) | recipe_reports/2026-10-23_csemotions_db_update.md | - |
+| status_checked_on / last_updated_on | - | 2026-10-23 | - |
 
-### license_note の案
-「カードは Apache-2.0。リポジトリの NOTICE(固定コミット 19498e62…)は、Emotional-Speech-Data(ESD、MIT)を取り込み『研究目的にのみ使える』と書くが、どのクリップかは示さない。2026-10-23 の確認で、ESD の全 35,000 本と同じ長さで波形が一致するクリップはなく、ESD の中国語 350 文(Whisper で書き起こし)と近い文もない(最大でも文字ペアの重なり 19%)。Marco-Voice の報告は CSEMOTIONS を 10 人の声優の新規録音とし、ESD を別の学習データとして挙げる。NOTICE はプロジェクト全体(ESD でも学習)から来た可能性があるが、作者の説明はない。ito さんの判断で open とした。」
+### Proposed license_note
+"The card says Apache-2.0. The repository's NOTICE (pinned commit 19498e62...) says it incorporates Emotional-Speech-Data (ESD, MIT) that \"can only be used for research purpose\", but does not say which clips. A check on 2026-10-23 found no clip with the same length and matching waveform among all 35,000 ESD clips, and no sentence close to ESD's 350 Mandarin sentences (transcribed with Whisper; at most 19% character-bigram overlap). The Marco-Voice report describes CSEMOTIONS as new recordings by 10 voice actors and lists ESD as separate training data. The NOTICE may come from the whole project (which also trained on ESD), but the authors do not explain it. Treated as open by the maintainer's decision."
 
-### notes の案
-「Alibaba AIDC-AI。Marco-Voice の技術報告(arXiv 2508.02038)と同時公開。プロの声優 10 人(男女各 5)のスタジオ録音、7 感情(neutral、happy、angry、sad、surprise、playfulness、fearful)、4,160 本、10.198 時間(実測)、1.75〜34.2 秒、48 kHz・モノラル・**16 bit**(カードは 24 bit)。`text` 列に台本の文があり、1,296 種類の文の 1,293 が複数の話者で読まれる。**どの文も 1 つの感情にしか出ず、文の意味からも感情が分かる**(聴くと声の調子にも感情の違いがあるが、モデルが言語情報で判断する可能性はある)。重複なし。論文の評価用プロンプトは感情ごとに 100(英語・中国語)。」
+### Proposed notes
+"Alibaba AIDC-AI. Released with the Marco-Voice technical report (arXiv 2508.02038). Studio recordings of 10 professional voice actors (5 male, 5 female), 7 emotions (neutral, happy, angry, sad, surprise, playfulness, fearful), 4,160 clips, 10.198 h (measured), 1.75-34.2 s, 48 kHz mono **16-bit** (the card says 24-bit). The `text` column holds the script sentence; 1,293 of 1,296 sentences are read by several speakers. **Each sentence appears under one emotion only, so the emotion can also be read from the meaning** (listening shows the voice differs by emotion too, but a model may rely on linguistic information). No duplicates. The paper's evaluation prompts are 100 per emotion (English and Chinese)."
 
-### 根拠行(evidence)の追加案
+### Proposed evidence rows
 
 | field | value | source_type | source_ref | locator |
 |---|---|---|---|---|
-| n_files_release_measured | 4160 | measured | measurements/csemotions.json(またはレシピの実測) | parquet 8 本の行数 |
-| n_speakers_measured | 10 | measured | 同上 | `speaker` 列 |
-| status_reason_codes(superseded の追加) | NA | project_doc | recipe_reports/2026-10-23_csemotions_db_update.md | §1 |
+| n_files_release_measured | 4160 | measured | measurements/csemotions.json (or the recipe's measurement) | row count of the 8 parquet files |
+| n_speakers_measured | 10 | measured | same | `speaker` column |
+| status_reason_codes (adding a superseding row) | NA | project_doc | recipe_reports/2026-10-23_csemotions_db_update.md | §1 |
 
-## 3. ESD の条件を適用しない理由(確認したこと)
+## 3. Why the ESD condition is not applied (what was checked)
 
-| 確認 | 方法 | 結果 | ファイル |
+| Check | Method | Result | File |
 |---|---|---|---|
-| 音の重なり | ESD のレシピの全 35,000 本(中国語・英語)と CSEMOTIONS の 4,160 本を、長さ(±20 ms)と波形の相関で突き合わせ(`tools/cross_dup.py`) | ほぼ同じ音の組 **0**。クリップの一部どうしの比較はしていない | `cross_esd.out` |
-| 文の重なり | ESD の中国語は全話者・全感情で同じ 350 文。話者 0001 の neutral 350 本を Whisper large-v3 で書き起こし、CSEMOTIONS の 1,296 文と文字ペア(bigram)の Jaccard で比較 | 近い文 **0**(最大 0.19) | `esd_text_overlap.out`、`esd_0001_neutral_whisper.tsv` |
-| 構成 | — | ESD は 5 感情・各 350 の並行文。CSEMOTIONS は 7 感情(playfulness、fearful を含む)、文は感情ごとに別 | — |
-| 論文 | Marco-Voice 報告(arXiv 2508.02038)の本文を読んだ | CSEMOTIONS を「独自の感情音声データセット」、10 人の経験ある声優のスタジオ録音とする。ESD は別の学習データとして並べて挙げる。評価用プロンプトは「ESD と CSEMOTIONS の両方の感情クラスにまたがって」作ったと書く。データに ESD を混ぜた記述はない | `sources/marcovoice_2508.02038.pdf`、`marcovoice.txt` |
-| NOTICE | 固定コミットの NOTICE を取得して読んだ | ESD を取り込み、研究目的のみ、と書く。どのクリップかは書かない。カード(README)には ESD の記述がない | `NOTICE_19498e62…`、`README_19498e62….md` |
+| Audio overlap | All 35,000 clips of the ESD recipe (Mandarin and English) against the 4,160 CSEMOTIONS clips, matched by length (+/-20 ms) and waveform correlation (`tools/cross_dup.py`) | **0** near-identical pairs. Partial overlaps were not compared | `cross_esd.out` |
+| Sentence overlap | ESD's Mandarin part uses the same 350 sentences for all speakers and emotions. The 350 neutral clips of speaker 0001 were transcribed with Whisper large-v3 and compared with the 1,296 CSEMOTIONS sentences by character-bigram Jaccard | **0** close sentences (max 0.19) | `esd_text_overlap.out`, `esd_0001_neutral_whisper.tsv` |
+| Design | - | ESD: 5 emotions, 350 parallel sentences each. CSEMOTIONS: 7 emotions (including playfulness, fearful), different sentences per emotion | - |
+| Paper | Read the text of the Marco-Voice report (arXiv 2508.02038) | Describes CSEMOTIONS as "a proprietary emotional speech dataset", studio recordings of 10 experienced voice actors. Lists ESD alongside as separate training data. Says the evaluation prompts were built "across both ESD and CSEMOTIONS" emotion classes. Nothing says ESD was mixed into the data | `sources/marcovoice_2508.02038.pdf`, `marcovoice.txt` |
+| NOTICE | Fetched and read the NOTICE at the pinned commit | Says ESD is incorporated, research use only; does not say which clips. The card (README) does not mention ESD | `NOTICE_19498e62...`, `README_19498e62....md` |
 
-- ESD 自体: GitHub の LICENSE は MIT。README(`sources/esd_README.md`、2026-10-23 に取得)は「ライセンスの書類に記入して送付」し、「このデータベースは研究目的にのみ使える」と書く。NOTICE の文言はこの README の一文と同じ。ESD の行の扱いは別に確認が要る(このレポートの範囲外)。
+- ESD itself: the GitHub LICENSE is MIT. The README (`sources/esd_README.md`, fetched 2026-10-23) asks users to "complete a License and send it" and says "This database can only be used for research purpose." The NOTICE wording is the same as this README sentence. How to treat the ESD row needs a separate check (outside this report).
 
-## 4. データセット全体とレシピ使用分
+## 4. Whole set and what the recipe uses
 
-| | 全体 | レシピ使用 |
+| | Whole set | Recipe |
 |---|---|---|
-| クリップ | 4,160 | 4,160(train は `remove_long_short` 後 2,917) |
-| 時間 | 10.198 | 同じ(train の 30 秒超 15 本は `remove_long_short` で落ちる) |
-| 話者 | 10 | 話者単位: train 7 人 2,932 / valid female002 378 / test male003・male004 850 |
-| 文の共有 | — | test の 849 文のうち 848、valid の 378 文すべてが train でも読まれる |
+| Clips | 4,160 | 4,160 (train 2,917 after `remove_long_short`) |
+| Hours | 10.198 | same (the 15 train clips over 30 s are dropped by `remove_long_short`) |
+| Speakers | 10 | by speaker: train 7 speakers 2,932 / valid female002 378 / test male003, male004 850 |
+| Sentence sharing | - | 848 of 849 test sentences and all 378 valid sentences are also read in train |
 
-- `max_epochs` = max(30, ceil(3000 / ceil(2917 / 32))) = 33(設定と一致)。
+- `max_epochs` = max(30, ceil(3000 / ceil(2917 / 32))) = 33 (matches the setting).
 
 ## 5. recipes.csv
 
-| 列 | 値 |
+| Column | Value |
 |---|---|
 | recipe | egs3/csemotions/cls |
 | first_commit | d0bacb999e2 |
-| 備考 | readme にライセンスの判断の理由を追記(838c0bf1ea0、ローカル)。max_epochs 33 |
+| Remarks | reason for the license decision added to the readme (838c0bf1ea0, local). max_epochs 33 |
 
-## 6. 質問
+## 6. Questions
 
-1. `license_note` に判断の経緯をここまで書いてよいか(長い場合は report_path で参照する形にする)。
-2. ESD の行(`esd`)の `license_class`: LICENSE は MIT(open)だが、README は書類の送付と「研究目的のみ」を求める。今回の範囲外だが、CSEMOTIONS の判断と合わせて確認が要る。
+1. May `license_note` describe the reasoning at this length (if too long, refer to it through report_path)?
+2. `license_class` of the ESD row (`esd`): the LICENSE is MIT (open), but the README requires sending a form and says research use only. Outside this report, but needs checking together with the CSEMOTIONS decision.
 
-## 7. 未確認
+## 7. Not verified
 
-- 聴取は 7 感情 × 4 本(別の話者、計 28 本、`csemotions_scripts/listen/`)だけ。
-- クリップの一部に ESD の音が入っているか(同じ長さの比較だけ)。
-- NOTICE の意図(作者の説明なし)。
+- Listening covered only 4 clips per emotion (different speakers, 28 in total, `csemotions_scripts/listen/`).
+- Whether part of a clip contains ESD audio (only same-length comparisons were made).
+- The intent of the NOTICE (no explanation from the authors).

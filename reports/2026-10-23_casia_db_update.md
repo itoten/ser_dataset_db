@@ -1,206 +1,206 @@
-# CASIA: 出典と入手経路の調査(DB 管理セッションによる検証つきの保存版)
+# CASIA: investigation of origin and access route (saved with verification)
 
-このファイルは `recipe_reports/2026-10-23_casia_db_update.md`(レシピ側セッションの報告)の全文に、DB 管理セッションの検証結果を先頭に足したもの。DB の `casia` の根拠行はここを `via` に指す。報告の本文は一字も直していない。資料の原本は `espnet_work/recipe_review/casia_scripts/sources/` にあり、このリポジトリには含まれない(SHA-256 は報告 §9)。
+This file is the full report written by the recipe author (originally `recipe_reports/2026-10-23_casia_db_update.md`, in Japanese), translated into English, with the DB maintainer's verification added on top. The evidence rows of `casia` point here through `via`. Apart from the translation, the report text is unchanged. The source documents themselves are kept outside this repository, in the recipe author's review folder (`recipe_review/casia_scripts/sources/`; SHA-256 in §9).
 
-## 0. DB 管理セッションの検証(2026-10-23)
+## 0. Verification by the DB maintainer (2026-10-23)
 
-報告の事実は、原本または一次資料を自分で開いて照合した。人手の判断(ito さんの判断)は検証していない。
+The report's facts were checked against the originals or primary sources, opened directly. Human decisions (the project maintainer's) were not re-checked.
 
-| 報告の主張 | 検証の方法 | 結果 |
+| Claim in the report | How it was checked | Result |
 |---|---|---|
-| ChineseLDC の資源ページ(2020-05-01 保存): 単位 自動化所、4 人・6 感情・9,600 句(300 同文 + 100 異文)、授権費 5,000 / 15,000 / 35,000 / 105,000 元、加入 2008-06-11、更新 2010-10-09 | Wayback を取り直して全文を読んだ。保存版の SHA-256 も一致 | 一致。ページ下部の著作権表示は「中国中文信息学会」で、報告 §3.1 が書く 2024 年のトップページ(「中国科学院自动化研究所」)とは違う(2024 年の保存版を読んで確認。年代で変わった) |
-| 2005 年のカタログ: 12,000 句・六種情緒・300 同文 + 200 異文(intro)、5 感情・各 500 句・計 10,000 句・w1/w2/m1/m2・16 kHz 16 bit(label)、SNR 約 35 dB(report) | 保存版の 3 本を読んだ(ハッシュ一致を確認) | 一致。3 本とも聴取検証の記述なし(「検証していない」ではなく「記述がない」) |
-| Tao ら 2008 は女性 1 人の音声合成用コーパスの論文で "emotion" が 1 度も出ない | PDF を Wayback から取り直し(SHA-256 一致)、全文検索 | 一致。"emotion" は 0 回 |
-| EmoBox の README と論文が AI Studio 209512 にリンク、論文の引用 [10] が Tao ら 2008 | GitHub の README と arXiv 2406.07162 を取り直して確認 | 一致(表: Act / Mandarin / 6 / 4 / 1200 / 0.6、[10] = Tao, Liu, Zhang, Jia) |
-| 他の論文の引用(arXiv 2103.16456 は「Blizzard Challenge, 2005」、2310.03992 は Zhang と Jia のみの 2008、2001.05908 は出典なし) | arXiv の PDF を取り直して引用箇所を検索 | 一致 |
-| AI Studio 209512: 公開者「千鹤」、2023-04-16 13:58:22、ライセンス欄「其他」、組織欄に自動化所、CASIA.zip 54.89 MB、説明に rid=76 のリンク | ブラウザでページを開いて読んだ | 一致 |
-| HF ミラー `Bill13579/casia-mirror`: 2025-06-29 作成、LICENSE が 0 バイト | HF の API とヘッダーで確認 | 一致(`license:other` のタグ付き) |
-| ミラーの展開物と AI Studio の表示 20 ファイルがサイズ・更新日時で一致 | 手元の `~/data/casia` の 20 ファイルを照合 | **20 / 20 一致**。ハッシュでの照合はしていない(報告のとおり) |
-| 1,200 本版の中身: 1,200 本・4 人・6 感情各 200・文番号 201〜250・16 kHz モノラル・0.6352 時間 | `~/data/casia` を数え直した | 一致(ファイル名から話者 4 人 × 各感情 50 本、1,200 の重複ファイル名なし) |
+| ChineseLDC resource page (archived 2020-05-01): institution: Institute of Automation; 4 speakers, 6 emotions, 9,600 sentences (300 identical + 100 different texts); license fees CNY 5,000 / 15,000 / 35,000 / 105,000; added 2008-06-11; updated 2010-10-09 | Re-fetched from the Wayback Machine and read in full; the SHA-256 of the saved copy also matches | Matches. The copyright line at the bottom of that page says 中国中文信息学会 (Chinese Information Processing Society of China), which differs from the 2024 top page cited in §3.1 (中国科学院自动化研究所, Institute of Automation) (checked by reading the 2024 snapshot; it changed over time) |
+| 2005 catalogue: 12,000 sentences, six emotions, 300 identical + 200 different texts (intro); 5 emotions, 500 sentences each, 10,000 in total, w1/w2/m1/m2, 16 kHz 16-bit (label); SNR about 35 dB (report) | Read the three saved documents (hashes match) | Matches. None of the three describes a listening check ("not described", not "not done") |
+| Tao et al. 2008 is a paper on a single-female-speaker speech-synthesis corpus, and "emotion" never appears in it | Re-fetched the PDF from the Wayback Machine (SHA-256 matches) and searched the full text | Matches. "emotion" occurs 0 times |
+| The EmoBox README and paper link to AI Studio 209512; the paper's reference [10] is Tao et al. 2008 | Re-fetched the GitHub README and arXiv 2406.07162 | Matches (table: Act / Mandarin / 6 / 4 / 1200 / 0.6; [10] = Tao, Liu, Zhang, Jia) |
+| Citations in other papers (arXiv 2103.16456: "Blizzard Challenge, 2005"; 2310.03992: only Zhang and Jia, 2008; 2001.05908: no source) | Re-fetched the arXiv PDFs and searched the citations | Matches |
+| AI Studio 209512: uploader 千鹤, 2023-04-16 13:58:22, license field 其他 (other), Institute of Automation in the organisation field, CASIA.zip 54.89 MB, link to rid=76 in the description | Opened the page in a browser and read it | Matches |
+| Hugging Face mirror `Bill13579/casia-mirror`: created 2025-06-29, LICENSE is 0 bytes | Checked via the Hugging Face API and headers | Matches (tagged `license:other`) |
+| The extracted mirror and the 20 files shown on AI Studio match in size and modification time | Compared the 20 files in the local copy of the data | **20 / 20 match**. Not compared by hash (as the report says) |
+| Content of the 1,200-clip version: 1,200 clips, 4 speakers, 6 emotions x 200, sentence numbers 201-250, 16 kHz mono, 0.6352 h | Recounted the release files | Matches (4 speakers x 50 per emotion from file names; no duplicate file names among the 1,200) |
 
-検証していないこと: 2024 年時点の ChineseLDC の条件(サイトに接続できない)、ミラーと AI Studio の zip のハッシュ一致、文番号 206〜250 の書き起こし、Whisper の書き起こし(201〜205)、`recipe_review/mistakes.md` の記述。
+Not verified: ChineseLDC's terms as of 2024 (the site cannot be reached), hash identity of the mirror and the AI Studio zip, transcripts of sentence numbers 206-250, the Whisper transcripts (201-205), the content of `recipe_review/mistakes.md`.
 
-DB 管理セッションが §6 に答えた内容:
-1. レシピは ito さんの判断(2026-10-23)で残されたので、`espnet_status` は `implemented`(レシピがあるという意味)とし、警告は `status_note` と `known_issues` の先頭に置く。
-2. E1〜E3 の `source_type` は `primary`(配布団体のカタログ)。作成者の研究室自身の文書ではない点を根拠行の note に書く。
-3. `n_utt_reported` は最新の 9,600(2010 年版)を採り、2005 年版の 12,000 と 10,000 は `conflicting` の別行に残す。`labels_discrete_reported` は 6 感情の一覧(AI Studio の説明)を採り、2005 年の 5 感情は `conflicting` の別行に残す。
-4. 1,200 本版は別の dataset 行にせず、notes に書く。
+How the DB maintainer answered §6:
+1. The maintainer decided (2026-10-23) to keep the recipe, so `espnet_status` is `implemented` (meaning a recipe exists), with the warning at the start of `status_note` and `known_issues`.
+2. `source_type` of E1-E3 is `primary` (the distributor's catalogue). The evidence notes say it is not a document of the creators' lab.
+3. `n_utt_reported` takes the latest value, 9,600 (2010 edition); the 2005 values 12,000 and 10,000 are kept as separate `conflicting` rows. `labels_discrete_reported` takes the list of 6 emotions (AI Studio description), with the 2005 set of 5 emotions kept as a separate `conflicting` row.
+4. The 1,200-clip version is described in notes rather than as a separate dataset row.
 
 ---
 
-# CASIA: DB 更新用レポート(出典と入手経路の調査)
+# CASIA: DB update report (investigation of origin and access route)
 
-- 作成: 2026-10-23(DB 管理セッション宛)
-- 対象 dataset_id: `casia`(レシピ `egs3/casia/cls`、最初のコミット 1556c1c8ce4)
-- 依頼: ito さん(2026-10-23)「ここまで確認してきたことも踏まえ DB に登録しよう。全部は載り切らないかもしれないからレポートとしても残しておこう」
-- 詳しい根拠: `recipe_review/casia.md` の §0a。取得した資料はすべて `recipe_review/casia_scripts/sources/` に保存した(§9 に一覧と SHA-256)
-- **この報告の書き方**: 自分で開いて読んだ資料だけを根拠にする。資料ごとに「読めた範囲」を書き、推定には「〜とみられる」と書いて事実と分ける。Web 検索ツールの要約文は根拠にしていない(§8 の経緯)。
-- **まだ決まっていないこと**: レシピを使い続けるかと DB の `espnet_status` は、ito さんが決めていない。§6 に選択肢として書き、§2 の提案には含めない。
+- Written: 2026-10-23 (to the DB maintainer)
+- dataset_id: `casia` (recipe `egs3/casia/cls`, first commit 1556c1c8ce4)
+- Request: the maintainer (2026-10-23): "Register this in the DB, taking into account everything checked so far. It may not all fit, so keep it as a report too."
+- Detailed basis: §0a of `recipe_review/casia.md`. All documents obtained are saved in `recipe_review/casia_scripts/sources/` (list and SHA-256 in §9)
+- **How this report is written**: only documents actually opened and read are used as evidence. For each, the part that could be read is stated, and inferences are marked "appears to" to separate them from facts. Summaries returned by a web-search tool are not used as evidence (background in §8).
+- **Not yet decided**: whether to keep using the recipe and the DB `espnet_status` have not been decided by the maintainer. They are listed as options in §6 and not included in the proposals of §2.
 
-## 1. 結論
+## 1. Conclusion
 
-| 項目 | 分かったこと | 確かさ |
+| Item | Finding | Certainty |
 |---|---|---|
-| コーパスの作成元 | 中国科学院自動化所(CASIA)。配布団体 ChineseLDC のカタログが「开发单位 中国科学院自动化所、开发时间 2005 年」と書く | ChineseLDC の記載(作成者の文書は未発見) |
-| ChineseLDC と自動化所 | ChineseLDC のサイトの著作権表示が「中国科学院自动化研究所」、連絡先が自動化所の所在地(2024 年の保存版) | ChineseLDC のサイト自身の記載 |
-| 全体の規模 | 4 人・6 感情・9,600 発話(300 の同じ文 + 100 の違う文)。ChineseLDC の資源ページ(2010-10-09 更新)。2005 年のカタログは 12,000 / 10,000・5 感情で食い違う | 版により違う |
-| 入手条件 | **ChineseLDC での有償の利用許諾**: 国内非営利 5,000 元、国内営利 15,000 元、国外非営利 35,000 元、国外営利 105,000 元(2020-05-01 保存のページ) | 2024 年時点の条件は未確認 |
-| **SER 論文が引く出典** | **"Design of Speech Corpus for Mandarin Text to Speech"(Tao ら 2008)は、女性話者 1 人の音声合成用コーパスの論文で、感情コーパスの記述がない**。EmoBox を含む SER の論文が、これを CASIA 感情コーパスの出典として引いている | 論文本文を読んで確認 |
-| **広く使われる 1,200 本版の出どころ** | 百度 AI Studio に**個人(表示名「千鹤」)が 2023-04-16 に公開した再アップロード**。EmoBox の README はここにリンクする。レシピの HF ミラーはこれと同じファイルとみられる | AI Studio のページを読み、20 ファイルを照合 |
-| 再配布の許可 | 無償の再配布を認める記述は、見つけたどの資料にもない | — |
+| Creator of the corpus | Institute of Automation, Chinese Academy of Sciences (CASIA). The catalogue of the distributor ChineseLDC says "开发单位 中国科学院自动化所, 开发时间 2005 年" (developer: Institute of Automation; developed in 2005) | ChineseLDC's statement (no document by the creators found) |
+| ChineseLDC and the Institute | The copyright line of the ChineseLDC site says 中国科学院自动化研究所, and its contact address is the Institute's (2024 snapshot) | The ChineseLDC site's own statement |
+| Size of the whole corpus | 4 speakers, 6 emotions, 9,600 utterances (300 identical + 100 different sentences), per the ChineseLDC resource page (updated 2010-10-09). The 2005 catalogue says 12,000 / 10,000 and 5 emotions, which disagrees | Differs by edition |
+| Access terms | **Paid license from ChineseLDC**: domestic non-commercial CNY 5,000, domestic commercial 15,000, foreign non-commercial 35,000, foreign commercial 105,000 (page archived 2020-05-01) | Terms as of 2024 unverified |
+| **Source cited by SER papers** | **"Design of Speech Corpus for Mandarin Text to Speech" (Tao et al. 2008) is a paper on a single-female-speaker speech-synthesis corpus and does not describe an emotion corpus.** SER papers, including EmoBox, cite it as the source of the CASIA emotion corpus | Confirmed by reading the paper |
+| **Origin of the widely used 1,200-clip version** | A **re-upload by an individual (display name 千鹤) to Baidu AI Studio on 2023-04-16**. The EmoBox README links to it. The recipe's Hugging Face mirror appears to hold the same files | Read the AI Studio page and compared 20 files |
+| Permission to redistribute | None of the documents found allows free redistribution | - |
 
-要するに、**CASIA(感情)は、作成者による論文がなく、SER 研究では別の論文が出典として引かれ、ベンチマークで使われる 1,200 本版は有償の許諾を経ない個人の再アップロードが元になっている**。
+In short: **the CASIA emotion corpus has no paper by its creators, SER research cites a different paper as its source, and the 1,200-clip version used in benchmarks derives from an individual's re-upload made without the paid license.**
 
-## 2. datasets.csv の更新提案
+## 2. Proposed updates to datasets.csv
 
-`espnet_status` と `status_reason_codes` は §6 で決まってから更新する(今は `needs_decision` / `access_unofficial_mirror_only` のまま)。
+`espnet_status` and `status_reason_codes` are updated once §6 is decided (for now they stay `needs_decision` / `access_unofficial_mirror_only`).
 
-| 列 | DB の今の値 | 提案 | 根拠(§3 の番号) |
+| Column | Current value | Proposal | Basis (numbers in §3) |
 |---|---|---|---|
-| source_url | https://globalaccentchinese.com/literature.php | http://www.chineseldc.org/resource_info.php?rid=76(今はこの環境から接続できない。保存版は §9) | E1。今の値は根拠がない(§7) |
-| license_spdx | LicenseRef-proprietary-restricted(根拠はシート) | 値は同じ。根拠を `primary` の行(E1)に置き換え、シートの行は `superseded` | E1 |
-| license_class | restricted | 変更なし(派生列) | — |
-| access_method | (空) | `paid_or_membership`(ChineseLDC の有償の許諾)。非公式の再配布の存在は notes に書く | E1 |
-| n_utt_reported | 1200(シート) | `conflicting`: 9,600(E1、2010 年版)、12,000(E2、2005 年の資源簡介)、10,000(E3、2005 年の標注規範)。シートの 1200 は 1,200 本版の数なので `superseded`(note に「1,200 本版の数」) | E1〜E3 |
-| n_speakers_reported | 4(シート) | 4(E1、E3。E3 は男女 2 人ずつ) | E1、E3 |
-| labels_discrete_reported | anger;fear;happiness;sadness;surprise;neutral(シート) | `conflicting`: 6 感情(E1 は数だけ。一覧は E4 の再アップロードの説明: neutral、happy、sad、angry、fearful、surprised)と 5 感情(E3: 高兴、悲哀、生气、惊吓、中性) | E1、E3、E4 |
-| hours_reported | 0.6(シート) | 全体の時間は資料にない → `unknown`。0.6 は 1,200 本版の値(実測 0.6352)で `superseded` | — |
-| n_files_release_measured | (空) | 1200(レシピの入手物 = HF ミラー) | 実測 |
-| n_speakers_measured | (空) | 4 | 実測(ファイル名) |
-| label_source | (空) | `human`(俳優が感情を演じて読む。E3) | E3 |
-| label_verification | (空) | `unknown`(聴取テストの記述は資料にない) | — |
-| paper_url | (空) | 空のまま(**作成者による論文が見つからない**)。SER 論文が引く Tao ら 2008 は別のコーパスの論文なので入れない | §4 |
-| status_note | 「99_final_report は…」 | 下の案 | — |
-| notes | (空) | 下の案 | — |
-| report_path | (空) | recipe_reports/2026-10-23_casia_db_update.md | — |
-| status_checked_on / last_updated_on | — | 2026-10-23 | — |
+| source_url | https://globalaccentchinese.com/literature.php | http://www.chineseldc.org/resource_info.php?rid=76 (cannot be reached from this environment now; archived copies in §9) | E1. The current value has no basis (§7) |
+| license_spdx | LicenseRef-proprietary-restricted (basis: spreadsheet) | Same value. Replace the evidence with a `primary` row (E1) and mark the spreadsheet row `superseded` | E1 |
+| license_class | restricted | unchanged (derived column) | - |
+| access_method | (empty) | `paid_or_membership` (paid license from ChineseLDC). Mention the unofficial redistributions in notes | E1 |
+| n_utt_reported | 1200 (spreadsheet) | `conflicting`: 9,600 (E1, 2010 edition), 12,000 (E2, 2005 resource overview), 10,000 (E3, 2005 annotation guide). The spreadsheet's 1200 is the 1,200-clip version's count, so `superseded` (note: "count of the 1,200-clip version") | E1-E3 |
+| n_speakers_reported | 4 (spreadsheet) | 4 (E1, E3; E3 says 2 male and 2 female) | E1, E3 |
+| labels_discrete_reported | anger;fear;happiness;sadness;surprise;neutral (spreadsheet) | `conflicting`: 6 emotions (E1 gives only the number; the list is from the re-upload's description, E4: neutral, happy, sad, angry, fearful, surprised) and 5 emotions (E3: 高兴, 悲哀, 生气, 惊吓, 中性 = joy, sadness, anger, fright, neutral) | E1, E3, E4 |
+| hours_reported | 0.6 (spreadsheet) | the sources give no total duration -> `unknown`. 0.6 is the 1,200-clip version's value (measured 0.6352), so `superseded` | - |
+| n_files_release_measured | (empty) | 1200 (what the recipe obtains = the Hugging Face mirror) | measured |
+| n_speakers_measured | (empty) | 4 | measured (file names) |
+| label_source | (empty) | `human` (speakers read while acting the emotion; E3) | E3 |
+| label_verification | (empty) | `unknown` (no listening test is described) | - |
+| paper_url | (empty) | leave empty (**no paper by the creators was found**). Tao et al. 2008, cited by SER papers, is about another corpus, so it is not used | §4 |
+| status_note | "99_final_report says..." | proposal below | - |
+| notes | (empty) | proposal below | - |
+| report_path | (empty) | recipe_reports/2026-10-23_casia_db_update.md | - |
+| status_checked_on / last_updated_on | - | 2026-10-23 | - |
 
-### status_note の案
-「ChineseLDC(CLDC-SPC-2005-010)で有償の許諾。広く使われる 1,200 本版(EmoBox など)は個人による再アップロード(百度 AI Studio 209512、2023)が元で、レシピの HF ミラーも同じとみられる。SER 論文が出典に引く Tao ら 2008 は音声合成コーパスの論文で感情コーパスの出典ではない。レシピを使うかは未決(2026-10-23)。」
+### Proposed status_note
+"Paid license through ChineseLDC (CLDC-SPC-2005-010). The widely used 1,200-clip version (EmoBox etc.) derives from an individual's re-upload (Baidu AI Studio 209512, 2023), and the recipe's Hugging Face mirror appears to be the same. Tao et al. 2008, cited by SER papers as the source, is a speech-synthesis corpus paper, not the source of the emotion corpus. Whether to use the recipe is undecided (2026-10-23)."
 
-### notes の案
-「中国科学院自動化所の『CASIA汉语情感语料库』(ChineseLDC CLDC-SPC-2005-010、2005 年開発)。プロの話者 4 人(男女 2 人ずつ)が同じ文と感情に合った文を感情を付けて読む演技音声、16 kHz・16 bit。規模は版で違う(2005 年のカタログ: 6 感情・12,000 / 5 感情・10,000、2010 年更新の資源ページ: 6 感情・9,600)。**作成者による論文は見つからない。SER の論文は "Design of Speech Corpus for Mandarin Text to Speech"(Tao, Liu, Zhang, Jia, Blizzard Challenge 2008)を出典に引くが、これは女性話者 1 人・5,000 文の音声合成用コーパスの論文で感情の記述はない**(引用も著者・年が論文ごとに違う)。EmoBox などが使う 1,200 本版(4 人 × 6 感情 × 文番号 201〜250。201〜205 は同じ文を感情で読み分けたものと確認)は、作成元でない個人が百度 AI Studio に再アップロードしたもの(2023-04-16)。無償の再配布を認める記述は見つからない(2026-10-23 調査)。」
+### Proposed notes
+"\"CASIA汉语情感语料库\" (CASIA Chinese emotional speech corpus) of the Institute of Automation, Chinese Academy of Sciences (ChineseLDC CLDC-SPC-2005-010, developed 2005). Acted speech: 4 professional speakers (2 male, 2 female) read identical sentences and emotion-appropriate sentences with emotion; 16 kHz, 16-bit. Size differs by edition (2005 catalogue: 6 emotions, 12,000 / 5 emotions, 10,000; resource page updated 2010: 6 emotions, 9,600). **No paper by the creators was found. SER papers cite \"Design of Speech Corpus for Mandarin Text to Speech\" (Tao, Liu, Zhang, Jia, Blizzard Challenge 2008), but that is a paper on a single-female-speaker, 5,000-sentence speech-synthesis corpus with no mention of emotion** (the citations also differ in authors and year between papers). The 1,200-clip version used by EmoBox and others (4 speakers x 6 emotions x sentence numbers 201-250; 201-205 were confirmed to be the same sentences read in different emotions) is a re-upload to Baidu AI Studio by an individual who is not the creator (2023-04-16). No statement allowing free redistribution was found (investigation of 2026-10-23)."
 
-### 根拠行(evidence)の追加案
+### Proposed evidence rows
 
-| ID 案 | field | value | source_type | source_ref | locator | via |
+| ID | field | value | source_type | source_ref | locator | via |
 |---|---|---|---|---|---|---|
-| E1 | license_spdx / access_method / n_utt_reported / n_speakers_reported | LicenseRef-proprietary-restricted / paid_or_membership / 9600 / 4 | primary | http://www.chineseldc.org/resource_info.php?rid=76 | Wayback 2020-05-01 保存。摘要と授权费の欄 | web.archive.org/web/20200501144342/… |
-| E2 | n_utt_reported | 12000 | primary | http://www.chineseldc.org/doc/CLDC-SPC-2005-010/intro.htm | Wayback 2005-12-14。（5）开发规模 | web.archive.org |
-| E3 | n_utt_reported / n_speakers_reported / labels_discrete_reported / label_source | 10000 / 4 / 5 感情 / human | primary | http://www.chineseldc.org/doc/CLDC-SPC-2005-010/label.htm | Wayback 2005-12-14。1、语料内容 | web.archive.org |
-| E4 | labels_discrete_reported | neutral;happy;sad;angry;fearful;surprised | secondary | https://aistudio.baidu.com/datasetdetail/209512 | 説明文(個人の再アップロード) | EmoBox README |
+| E1 | license_spdx / access_method / n_utt_reported / n_speakers_reported | LicenseRef-proprietary-restricted / paid_or_membership / 9600 / 4 | primary | http://www.chineseldc.org/resource_info.php?rid=76 | Wayback snapshot of 2020-05-01; summary and license-fee fields | web.archive.org/web/20200501144342/... |
+| E2 | n_utt_reported | 12000 | primary | http://www.chineseldc.org/doc/CLDC-SPC-2005-010/intro.htm | Wayback 2005-12-14; (5) 开发规模 (size) | web.archive.org |
+| E3 | n_utt_reported / n_speakers_reported / labels_discrete_reported / label_source | 10000 / 4 / 5 emotions / human | primary | http://www.chineseldc.org/doc/CLDC-SPC-2005-010/label.htm | Wayback 2005-12-14; 1、语料内容 (corpus content) | web.archive.org |
+| E4 | labels_discrete_reported | neutral;happy;sad;angry;fearful;surprised | secondary | https://aistudio.baidu.com/datasetdetail/209512 | description (an individual's re-upload) | EmoBox README |
 
-- E1〜E3 は ChineseLDC の文書なので `primary` とした。ただし作成者(研究室)自身の文書ではない点を note に書く(§6 の質問 3)。
-- 保存版の URL は §9。
+- E1-E3 are ChineseLDC documents, so they are `primary`. The note should say they are not documents of the creators' lab (question 3 in §6).
+- Archived URLs in §9.
 
-## 3. 根拠(読んだ資料と、読めた範囲)
+## 3. Evidence (documents read, and how much of each)
 
-### 3.1 ChineseLDC(配布団体)のカタログ
+### 3.1 The ChineseLDC (distributor) catalogue
 
-| # | 資料 | 読めた範囲 | 書かれていること |
+| # | Document | Read | What it says |
 |---|---|---|---|
-| E2 | CLDC-SPC-2005-010 intro.htm(2005-12-14 保存) | 全文 | 资源名称「汉语情感语料库」、开发单位 自動化所、开发时间 2005 年、**四个专业发音人、六种情绪、共 12,000 句**、300 句相同文本と 200 句不同文本 |
-| E3 | 同 label.htm(標注規範、2005-12-14 保存) | 本文(図は除く) | **5 種の感情**(高兴、悲哀、生气、惊吓、中性)。各感情 500 句 = 前 300 句は同じ文、後 200 句は文の意味から感情が分かる文。録音者は男女 2 人ずつ(w1、w2、m1、m2)、1 人 2,500 句、**計 10,000 句**、16 kHz・16 bit・PCM。音節境界と F0 の tag ファイル付き |
-| — | 同 report.htm(技術文書、2005-12-14 保存) | 本文 | label と同じ 5 感情・500 句の設計。録音環境の SNR 約 35 dB。目的は感情状態による韻律・音響の分析、感情認識と感情合成の研究 |
-| E1 | resource_info.php?rid=76(2020-05-01 保存。2019-11-25 と 2020-01-24 の保存も同じ内容のハッシュ) | 全文 | 资源名称「**CASIA汉语情感语料库**」、序列号 CLDC-SPC-2005-010、**4 人・6 感情・9,600 句(300 句相同文本 + 100 句不同文本)**、加入 2008-06-11、更新 2010-10-09、**授权费**(§1 の表) |
-| — | トップページ(2024-11-26 保存) | 全文 | 「**版权所有：中国科学院自动化研究所**」。連絡先 北京市海淀区中关村东路 95 号 智能化大厦 514 室。お知らせ「自動化所の組み込み音声合成システムは CASIA汉语情感语料库 などを学習に使った」。CLDC は中国中文信息学会の委員会が発起した非営利の団体と自己紹介 |
-| — | 資源一覧(2023-12-06、2024-06-15 保存) | 1 ページ目 | 「CASIA汉语情感语料库」が載っている(資源総数 99) |
+| E2 | CLDC-SPC-2005-010 intro.htm (archived 2005-12-14) | full text | Resource name 汉语情感语料库 (Chinese emotional speech corpus); developer: Institute of Automation; developed 2005; **four professional speakers, six emotions, 12,000 sentences in total**; 300 identical-text and 200 different-text sentences |
+| E3 | label.htm of the same (annotation guide, archived 2005-12-14) | body (figures excluded) | **5 emotions** (高兴 joy, 悲哀 sadness, 生气 anger, 惊吓 fright, 中性 neutral). 500 sentences per emotion: the first 300 identical texts, the last 200 texts whose meaning reveals the emotion. Speakers: 2 male and 2 female (w1, w2, m1, m2), 2,500 sentences each, **10,000 in total**, 16 kHz, 16-bit PCM. With .tag files of syllable boundaries and F0 |
+| - | report.htm of the same (technical document, archived 2005-12-14) | body | The same design of 5 emotions and 500 sentences as label. Recording SNR about 35 dB. Purpose: analysing prosody and acoustics across emotional states; research on emotion recognition and emotional synthesis |
+| E1 | resource_info.php?rid=76 (archived 2020-05-01; the 2019-11-25 and 2020-01-24 snapshots have the same content hash) | full text | Resource name "**CASIA汉语情感语料库**", catalogue number CLDC-SPC-2005-010, **4 speakers, 6 emotions, 9,600 sentences (300 identical + 100 different texts)**, added 2008-06-11, updated 2010-10-09, **license fees** (table in §1) |
+| - | Top page (archived 2024-11-26) | full text | "**版权所有：中国科学院自动化研究所**" (copyright: Institute of Automation). Contact: Room 514, Intelligence Building, 95 Zhongguancun East Road, Haidian District, Beijing. A notice says the Institute's embedded speech-synthesis system was trained on CASIA汉语情感语料库 among others. CLDC describes itself as a non-profit body initiated by a committee of the Chinese Information Processing Society of China |
+| - | Resource list (archived 2023-12-06, 2024-06-15) | first page | "CASIA汉语情感语料库" is listed (99 resources in total) |
 
-- 9,600 = 4 × 6 × 400、12,000 = 4 × 6 × 500、10,000 = 4 × 5 × 500 で、各版の中では計算が合う。版が変わった理由は書かれていない。
-- 価格の載った資源ページの保存は 2020-05-01 が最後。2023 年の保存(URL に余計な文字が付いたもの)は中身が空で、**2024 年時点の条件は確認できていない**。
-- サイトはこの環境(大学のネットワーク)から接続できない(タイムアウト)。止まっているのか、地域・ネットワークの制限かは分からない。
+- 9,600 = 4 x 6 x 400, 12,000 = 4 x 6 x 500, 10,000 = 4 x 5 x 500: each edition is internally consistent. Why the edition changed is not stated.
+- The last archived copy of the resource page with prices is 2020-05-01. A 2023 snapshot (with extra characters in the URL) is empty, so **the terms as of 2024 are unconfirmed**.
+- The site cannot be reached from this environment (a university network; timeout). Whether it is down or restricted by region or network is unknown.
 
-### 3.2 SER 論文が出典に引く論文(別のコーパス)
+### 3.2 The paper SER papers cite (a different corpus)
 
-- **Tao, Liu, Zhang, Jia "Design of Speech Corpus for Mandarin Text to Speech"**。自動化所 NLPR のサイトの PDF(`nlpr.ia.ac.cn/2008papers/gjhy/gh166.pdf`)を Wayback Machine(2024-05-03 保存)で取得し、**全文を読んだ**(PDF の作成日 2008-08-27)。
-  - 要旨: 音声合成研究のための CASIA の Mandarin コーパス。プロの女性話者がスタジオで録音、音素文脈のバランスを取った 5,000 文、約 7 時間。Blizzard Challenge 2008 の共通コーパスとして配布。
-  - 話者の選び方: 男女 8 人の候補から 30 歳の女性 1 人を選んだ。
-  - **"emotion" という語は 1 度も出てこない。**
-- Blizzard 2008 の主催者の論文(Karaiskos, King, Clark, Mayo、ISCA Archive の PDF を読んだ): 2008 年は第 4 回。Mandarin のデータは「自動化所 NLPR が出した 6.5 時間の女性話者 1 人のデータ」。
-- 同じ著者らの "The WISTON Text to Speech System for Blizzard 2008"(ISCA Archive の PDF を読んだ): Mandarin のデータは CASIA 提供の 4,500 発話・約 8.5 時間の中立な読み上げ、ライセンスの参照先は `www.speakit.cn/corpus/license.html`(ChineseLDC ではない)。
-- Blizzard 2008 の論文一覧(festvox.org の公式ページと ISCA Archive の一覧)に "Design of Speech Corpus…" は載っていない。発表の形は分からない。
+- **Tao, Liu, Zhang, Jia, "Design of Speech Corpus for Mandarin Text to Speech"**. The PDF on the Institute's NLPR site (`nlpr.ia.ac.cn/2008papers/gjhy/gh166.pdf`) was obtained from the Wayback Machine (snapshot 2024-05-03) and **read in full** (PDF created 2008-08-27).
+  - Abstract: the CASIA Mandarin corpus for speech-synthesis research, recorded in a studio by a professional female speaker; 5,000 phonetically balanced sentences, about 7 hours; distributed as the common corpus of the Blizzard Challenge 2008.
+  - Speaker selection: one 30-year-old woman chosen from 8 male and female candidates.
+  - **The word "emotion" does not appear once.**
+- The Blizzard 2008 organisers' paper (Karaiskos, King, Clark, Mayo; PDF from the ISCA Archive, read): 2008 was the 4th edition. The Mandarin data is "6.5 hours of a single female speaker released by NLPR, Institute of Automation".
+- "The WISTON Text to Speech System for Blizzard 2008" by the same authors (PDF from the ISCA Archive, read): the Mandarin data is 4,500 utterances, about 8.5 hours of neutral reading provided by CASIA; the license reference is `www.speakit.cn/corpus/license.html` (not ChineseLDC).
+- The Blizzard 2008 paper lists (festvox.org's official page and the ISCA Archive) do not include "Design of Speech Corpus...". How it was presented is unknown.
 
-### 3.3 SER 論文の書き方(本文を読んだもの)
+### 3.3 How SER papers describe it (texts read)
 
-| 論文 | CASIA の説明 | 出典の書き方 |
+| Paper | Description of CASIA | Citation |
 |---|---|---|
-| EmoBox(arXiv 2406.07162。掲載先は PDF に書かれていない) | 表: Act、Mandarin、6 感情、4 人、1,200、0.6 時間 | [10] **J. Tao, F. Liu, M. Zhang, H. Jia**, "Design of speech corpus for Mandarin text to speech", The Blizzard Challenge Workshop, 2008 |
-| arXiv 2103.16456(Deep Self-Learning) | 9,600 発話、4 人(男女 2 人ずつ)、6 感情。実験は 300 文の 7,200 発話 | [26] J. Tao, F. Liu, M. Zhang, H. Jia, …, Proc. the 4th Workshop on Blizzard Challenge, **2005**(第 4 回は 2008 年。年が誤り) |
-| arXiv 2310.03992(LIDAN) | 4 人(男女 2 人ずつ)、**1,200 サンプル、各話者 300 文**(数が合わない) | [27] **J. Zhang and H. Jia**, …, The blizzard challenge 2008 workshop, 2008(4 人の著者のうち 2 人) |
-| arXiv 2001.05908 | 自動化所が録音。プロの話者 4 人、6 種類の感情(列挙は 5 つで fear がない)、計 9,600 | **出典なし** |
-| 南京大学学报(自然科学版)55(5), 765〜(2019)「跨语言语料库的语音情感识别对比研究」 | 自動化所の汉语情感语料库、4 人・6 感情、各感情 50 句(同じ文) | [25] Pan, Tao, Li, "The CASIA audio emotion recognition method for audio/visual emotion challenge 2011", ACII 2011(AVEC 2011 の手法論文。本文は未読。コーパスの論文ではないとみられる) |
+| EmoBox (arXiv 2406.07162; venue not stated in the PDF) | Table: Act, Mandarin, 6 emotions, 4 speakers, 1,200, 0.6 h | [10] **J. Tao, F. Liu, M. Zhang, H. Jia**, "Design of speech corpus for Mandarin text to speech", The Blizzard Challenge Workshop, 2008 |
+| arXiv 2103.16456 (Deep Self-Learning) | 9,600 utterances, 4 speakers (2 male, 2 female), 6 emotions; experiments use the 7,200 utterances of the 300 sentences | [26] J. Tao, F. Liu, M. Zhang, H. Jia, ..., Proc. the 4th Workshop on Blizzard Challenge, **2005** (the 4th edition was 2008; the year is wrong) |
+| arXiv 2310.03992 (LIDAN) | 4 speakers (2 male, 2 female), **1,200 samples, 300 sentences per speaker** (numbers inconsistent) | [27] **J. Zhang and H. Jia**, ..., The blizzard challenge 2008 workshop, 2008 (2 of the 4 authors) |
+| arXiv 2001.05908 | Recorded by the Institute of Automation; 4 professional speakers, 6 kinds of emotion (only 5 listed, without fear), 9,600 in total | **no citation** |
+| Journal of Nanjing University (Natural Science) 55(5), 765- (2019), "A comparative study of cross-lingual corpora for speech emotion recognition" | The Institute's Chinese emotional speech corpus, 4 speakers, 6 emotions, 50 sentences per emotion (identical texts) | [25] Pan, Tao, Li, "The CASIA audio emotion recognition method for audio/visual emotion challenge 2011", ACII 2011 (a method paper for AVEC 2011; text not read; appears not to be a corpus paper) |
 
-- 調べたのは 5 本だけ。SER 研究全体でどう引かれているかの集計はしていない。
+- Only 5 papers were checked. How SER research as a whole cites it was not surveyed.
 
-### 3.4 1,200 本版の出どころ
+### 3.4 Origin of the 1,200-clip version
 
-- **EmoBox**(GitHub `emo-box/EmoBox`、コミット 39c306b): README の表の CASIA のリンク先は **百度 AI Studio データセット 209512**。入手のコードはなく、`downloads/casia/<話者>/<感情>/<番号>.wav` に置くよう指示するだけ(`EmoBox/preprocess/scripts/casia.py`、`data/casia/casia.json`)。
-- **AI Studio 209512**(2026-10-23 にブラウザで開いて読んだ。控えは `sources/aistudio_209512_read_2026-10-23.txt`):
-  - 題名「CASIA汉语情感音频语料库-1200音频版本」。説明「4 人(男 2、女 2)の約 1,200 の音声、6 感情」と、ChineseLDC の rid=76 へのリンク。
-  - **公開者は個人ユーザー(表示名「千鹤」)**、2023-04-16 13:58:22。ライセンスの欄は「其他」。組織の欄に自動化所の名前があるが、公開者は自動化所ではない。
-  - `CASIA.zip` 54.89 MB。ファイルの日付は 2005 年。
-- **レシピの HF ミラー**(`Bill13579/casia-mirror`、2025-06-29 作成、LICENSE ファイルは 0 バイト):
-  - 展開したファイルと AI Studio に表示された 20 ファイルで、**サイズと更新日時(秒まで)が 20 本すべて一致**。展開した `CASIA/` の日時は 2023-04-16 13:55:20(AI Studio の公開の約 3 分前)。
-  - → **HF ミラーは AI Studio の zip(またはその元)の再アップロードとみられる**。ハッシュでの照合はしていない。
-- 1,200 本の中身(実測): 話者は人名 4 人(liuchanhg、ZhaoZuoxiang、zhaoquanyin、wangzhe)、6 感情、文番号 201〜250。201〜205 を Whisper large-v3 で書き起こすと、**どの感情・話者でも同じ文**(201「就是下雨也去」、202「我马上拿来」など、`casia_scripts/transcribe_ids.out`)。
-  - ChineseLDC の 2005 年の標注規範では話者のフォルダが w1・w2・m1・m2、感情は 5 つ。1,200 本版の話者名と 6 感情はこれと合わない。どの版から切り出したかは分からない。
-  - 2005 年の標注規範は「前 300 句が同じ文」と書くが、1,200 本版は 201〜250 番が同じ文。番号の付け方が版で違うとみられる(確かめていない)。
+- **EmoBox** (GitHub `emo-box/EmoBox`, commit 39c306b): the CASIA link in the README table points to **Baidu AI Studio dataset 209512**. There is no download code; users are told to place files at `downloads/casia/<speaker>/<emotion>/<number>.wav` (`EmoBox/preprocess/scripts/casia.py`, `data/casia/casia.json`).
+- **AI Studio 209512** (opened and read in a browser on 2026-10-23; notes in `sources/aistudio_209512_read_2026-10-23.txt`):
+  - Title "CASIA汉语情感音频语料库-1200音频版本" (CASIA Chinese emotional audio corpus, 1,200-clip version). Description: "about 1,200 recordings by 4 people (2 male, 2 female), 6 emotions", with a link to ChineseLDC rid=76.
+  - **The uploader is an individual user (display name 千鹤)**, 2023-04-16 13:58:22. License field: 其他 (other). The organisation field names the Institute of Automation, but the uploader is not the Institute.
+  - `CASIA.zip`, 54.89 MB. File dates are in 2005.
+- **The recipe's Hugging Face mirror** (`Bill13579/casia-mirror`, created 2025-06-29, LICENSE file 0 bytes):
+  - The extracted files and the 20 files shown on AI Studio **match in size and modification time (to the second) for all 20**. The extracted `CASIA/` is dated 2023-04-16 13:55:20 (about 3 minutes before the AI Studio upload).
+  - -> **The Hugging Face mirror appears to be a re-upload of the AI Studio zip (or its source).** Not compared by hash.
+- Content of the 1,200 clips (measured): 4 speakers with personal names (liuchanhg, ZhaoZuoxiang, zhaoquanyin, wangzhe), 6 emotions, sentence numbers 201-250. Transcribing 201-205 with Whisper large-v3 gives **the same sentence for every emotion and speaker** (201 "就是下雨也去", 202 "我马上拿来", etc.; `casia_scripts/transcribe_ids.out`).
+  - The 2005 annotation guide of ChineseLDC names the speaker folders w1, w2, m1, m2 and has 5 emotions; the speaker names and 6 emotions of the 1,200-clip version do not match it. Which edition it was cut from is unknown.
+  - The 2005 guide says "the first 300 sentences are identical texts", while in the 1,200-clip version sentences 201-250 are identical texts. The numbering appears to differ by edition (unverified).
 
-## 4. 影響(SER 研究と、このプロジェクト)
+## 4. Impact (on SER research and on this project)
 
-- **SER 研究**: CASIA は EmoBox などのベンチマークに入り、広く使われている。しかし、(1) 作成者による論文がなく、(2) 別のコーパスの論文が出典として引かれ、(3) ベンチマークの 1,200 本版は有償の許諾を経ない個人の再アップロードが元。データの来歴と利用の正当性が確かめられない。
-- **このプロジェクト**: レシピ `egs3/casia/cls` は、この再アップロード(HF ミラー)からダウンロードする。upstream に出すと、許諾の確認できない再配布物を取るコードを配ることになる。
-- **DB のほかの行**: シートの CASIA の行の数(1,200 本・0.6 時間)は 1,200 本版の値で、コーパス全体の値ではなかった。ほかのデータセットでも、EmoBox の表の数をそのまま公表値にしていないか、確かめていない。
+- **SER research**: CASIA is in benchmarks such as EmoBox and widely used. However, (1) there is no paper by its creators, (2) a paper about another corpus is cited as its source, and (3) the benchmarks' 1,200-clip version derives from an individual's re-upload without the paid license. Its provenance and the legitimacy of its use cannot be confirmed.
+- **This project**: the recipe `egs3/casia/cls` downloads this re-upload (the Hugging Face mirror). Submitting it upstream would distribute code that fetches a redistribution whose permission cannot be confirmed.
+- **Other DB rows**: the spreadsheet's CASIA figures (1,200 clips, 0.6 hours) were those of the 1,200-clip version, not of the whole corpus. Whether other datasets also took EmoBox's table figures as published values has not been checked.
 
-## 5. データセット全体とレシピ使用分
+## 5. Whole corpus and what the recipe uses
 
-| | 全体(ChineseLDC) | レシピ使用(1,200 本版、実測) |
+| | Whole corpus (ChineseLDC) | Recipe (1,200-clip version, measured) |
 |---|---|---|
-| 発話 | 9,600(2010 年版)。2005 年版は 12,000 / 10,000 | 1,200 |
-| 話者 | 4(男女 2 人ずつ) | 4(人名。性別はファイル名にない) |
-| 感情 | 6(2005 年の標注規範は 5) | 6、各 200 |
-| 文 | 同じ文 300 + 違う文 100(2010 年版) | 文番号 201〜250 の 50 文。同じ文を感情で読み分けた部分(5 文で確認) |
-| 時間 | 資料にない | 0.6352 時間 |
-| 形式 | 16 kHz・16 bit・PCM | 16 kHz・モノラル・16 bit |
-| 分割 | なし | 話者単位: train 2 人 600 / valid 1 人 300 / test 1 人 300 |
+| Utterances | 9,600 (2010 edition); 12,000 / 10,000 in the 2005 editions | 1,200 |
+| Speakers | 4 (2 male, 2 female) | 4 (personal names; gender not in file names) |
+| Emotions | 6 (5 in the 2005 annotation guide) | 6, 200 each |
+| Sentences | 300 identical + 100 different (2010 edition) | 50 sentences, numbers 201-250; the part with the same sentences read in each emotion (confirmed for 5) |
+| Hours | not given in the sources | 0.6352 |
+| Format | 16 kHz, 16-bit PCM | 16 kHz mono 16-bit |
+| Split | none | by speaker: train 2 speakers 600 / valid 1 speaker 300 / test 1 speaker 300 |
 
-## 6. ito さん・DB 管理セッションに決めてほしいこと
+## 6. Decisions for the maintainer and the DB maintainer
 
-**ito さんの判断(2026-10-23)**: レシピは残す。readme の冒頭に「非公式で使うべきでない」警告と問題の概要を書いた(espnet コミット、ローカル)。ChineseLDC には問い合わせない(これ以上深追いしない)。下の 1 と 5 はこれで決まり。
+**The maintainer's decision (2026-10-23)**: keep the recipe. A warning that it is "unofficial and should not be used", with a summary of the problem, was added at the top of the readme (espnet commit, local). ChineseLDC will not be contacted (no further digging). Items 1 and 5 below are settled by this.
 
-1. **レシピを使い続けるか**(ito さん。審査レポート §8 の 1):
-   - (ア) 使う(今の HF ミラーから取る)。
-   - (イ) レシピを残すが、取得は手元にデータがある人だけに限る(ダウンロードのコードを外す)。
-   - (ウ) 使わない(レシピをリポジトリに含めない)。
-   - 判断の材料: 有償の許諾のあるコーパスの再配布物であること(§3.4)、2024 年時点の条件は未確認であること。
-2. **`espnet_status` と理由コード**: (1) に合わせて決める。`needs_decision` のままなら理由に `access_paid_or_membership` を足す。使わないなら `excluded` + `not_distributable` または `access_paid_or_membership`(README の規則では有償だけでは除外理由にならないので、理由の書き方を DB 管理セッションで決める)。
-3. **E1〜E3 の `source_type`**: ChineseLDC は自動化所が運営に関わる配布団体(サイトの著作権表示)だが、作成者の研究室の文書ではない。`primary` でよいか。
-4. **`n_utt_reported` と `labels_discrete_reported` を `conflicting` にするか**: 版の違い(2005 年と 2010 年)として、新しい 2010 年版を正とする書き方もある。
-5. **問い合わせ**: ChineseLDC(service@chineseldc.org、2024 年のページの連絡先)に現在の条件と 1,200 本版の扱いを問い合わせるか(ito さんの判断。送るなら ito さんから)。
-6. **relations**: AI Studio の 1,200 本版を別の行にして `subset_of casia` でつなぐか、notes だけにするか。
+1. **Whether to keep using the recipe** (the maintainer; item 1 of §8 in the review report):
+   - (a) use it (download from the current Hugging Face mirror).
+   - (b) keep the recipe, but only for people who already have the data (remove the download code).
+   - (c) do not use it (do not include the recipe in the repository).
+   - Considerations: it is a redistribution of a corpus under a paid license (§3.4), and the terms as of 2024 are unconfirmed.
+2. **`espnet_status` and reason codes**: decide according to (1). If it stays `needs_decision`, add `access_paid_or_membership` to the reasons. If it is not used, `excluded` with `not_distributable` or `access_paid_or_membership` (the README's rules say payment alone is not a reason to exclude, so the DB maintainer decides how to state the reason).
+3. **`source_type` of E1-E3**: ChineseLDC is a distributor in whose operation the Institute takes part (the site's copyright line), but its documents are not the creators' lab documents. Is `primary` acceptable?
+4. **Whether `n_utt_reported` and `labels_discrete_reported` should be `conflicting`**: one could instead treat them as editions (2005 and 2010) and take the newer 2010 edition as authoritative.
+5. **Inquiry**: whether to ask ChineseLDC (service@chineseldc.org, the contact on the 2024 page) about current terms and the handling of the 1,200-clip version (the maintainer's decision; if sent, the maintainer sends it).
+6. **relations**: whether to make the AI Studio 1,200-clip version a separate row linked with `subset_of casia`, or only mention it in notes.
 
-## 7. 未確認・限界
+## 7. Unverified and limitations
 
-- 作成者(研究室)自身による、このコーパスの論文・配布の文書。
-- 2024 年時点の ChineseLDC の条件(価格のページの保存が 2020 年まで)。サイトはこの環境から接続できない。
-- 1,200 本版と HF ミラーのハッシュでの一致(サイズと日時の 20 本だけで照合)。
-- 1,200 本版が ChineseLDC のどの版から切り出されたか(話者名・6 感情が 2005 年の文書と合わない)。
-- 文番号 206〜250 の書き起こし(201〜205 だけ確認)。
-- **DB の今の Source URL(globalaccentchinese.com/literature.php)**: 2026-10-20 はつながらず、2026-10-23 に Wayback Machine の保存版を開こうとすると、大学のネットワークが「malware」の分類で遮断した。**中身は見ていない**。どの資料からこの URL が入ったかも確かめていない(シート由来)。
-- Pan, Tao, Li(ACII 2011)の本文。
-- SER 研究全体での引用のされ方(5 本のみ確認)。
-- 南京大学学報 2019 は HTML を取得して該当箇所を読んだ。
+- A paper or distribution document by the creators (the lab) themselves.
+- ChineseLDC's terms as of 2024 (archived price pages only up to 2020). The site cannot be reached from this environment.
+- Hash identity of the 1,200-clip version and the Hugging Face mirror (compared only by size and time for 20 files).
+- Which ChineseLDC edition the 1,200-clip version was cut from (speaker names and 6 emotions do not match the 2005 documents).
+- Transcripts of sentence numbers 206-250 (only 201-205 were checked).
+- **The DB's current Source URL (globalaccentchinese.com/literature.php)**: unreachable on 2026-10-20; on 2026-10-23 an attempt to open its Wayback copy was blocked by the university network as "malware". **Its content was not seen.** Which document the URL came from was not checked either (it came from the spreadsheet).
+- The text of Pan, Tao, Li (ACII 2011).
+- How SER research as a whole cites it (only 5 papers checked).
+- The Journal of Nanjing University 2019 article was fetched as HTML and the relevant part read.
 
-## 8. この調査の経緯(報告の誤りの訂正を含む)
+## 8. Background of this investigation (including corrections to earlier reports)
 
-- 2026-10-20 の審査レポートで、CASIA の規模と「音声合成のために作った」を「二次資料(論文の中の紹介)」と書いた。実際は Web 検索ツールが返した要約文で、出典を特定できていなかった。ito さんの指摘で分かった。
-- 「音声合成のために作った」は、§3.2 の音声合成コーパスの論文と取り違えたもので、感情コーパスの根拠ではなかった。取り下げた。
-- 調査の途中で、9,600 を「出どころ不明」と書いたが、ChineseLDC の 2010 年版の資源ページの数だった。また ChineseLDC を「公式」と書いたが、作成元が自ら指定した証拠はない。どちらも訂正済み。
-- 記録: `recipe_review/mistakes.md`(2026-10-23 の項)。
+- The review report of 2026-10-20 described CASIA's size and "built for speech synthesis" as coming from "a secondary source (an introduction in a paper)". In fact they were summaries returned by a web-search tool, with no identified source. The maintainer pointed this out.
+- "Built for speech synthesis" came from confusing it with the speech-synthesis corpus paper of §3.2; it was not evidence about the emotion corpus, and was withdrawn.
+- During the investigation, 9,600 was described as "of unknown origin", but it is the figure on ChineseLDC's 2010 resource page. ChineseLDC was also called "official", but there is no evidence that the creators designated it. Both were corrected.
+- Record: `recipe_review/mistakes.md` (entry of 2026-10-23).
 
-## 9. 保存した資料(`recipe_review/casia_scripts/sources/`)
+## 9. Saved documents (`recipe_review/casia_scripts/sources/`)
 
-| ファイル | 元の場所 | SHA-256(先頭 16 桁) |
+| File | Original location | SHA-256 (first 16 hex digits) |
 |---|---|---|
 | cldc/CLDC-SPC-2005-010_intro.htm | web.archive.org/web/20051214160150/http://www.chineseldc.org:80/doc/CLDC-SPC-2005-010/intro.htm | 6cd769e0faec7b1e |
 | cldc/CLDC-SPC-2005-010_label.htm | web.archive.org/web/20051214151014/http://www.chineseldc.org:80/doc/CLDC-SPC-2005-010/label.htm | fb0ef60fbf1d66f8 |
@@ -208,13 +208,13 @@ DB 管理セッションが §6 に答えた内容:
 | cldc/resource_info_rid76_2020.html | web.archive.org/web/20200501144342/http://www.chineseldc.org/resource_info.php?rid=76 | acf61f3ae110971a |
 | cldc/home_2024.html | web.archive.org/web/20241126183355/http://www.chineseldc.org/ | 3c82d191d0798f99 |
 | cldc/resource_list_20240615040043.html | web.archive.org/web/20240615040043/http://www.chineseldc.org/resource_list.php?begin=0&count=20 | 2e979f1214be1c8e |
-| nlpr_gh166.pdf(+ .txt) | web.archive.org/web/20240503152623/https://nlpr.ia.ac.cn/2008papers/gjhy/gh166.pdf | 8a19684c35be17a5 |
-| karaiskos08_blizzard.pdf(+ .txt) | https://www.isca-archive.org/blizzard_2008/karaiskos08_blizzard.pdf | c6c20864f5b38567 |
-| tao08_blizzard.pdf(+ .txt) | https://www.isca-archive.org/blizzard_2008/tao08_blizzard.pdf | 70aef7b80d03acce |
-| blizzard2008.html | http://www.festvox.org/blizzard/blizzard2008.html | — |
-| emobox_2406.07162.pdf(+ emobox.txt) | https://arxiv.org/pdf/2406.07162 | 88d5f1115f9b5a5b |
-| emobox/README.md、casia.py、casia.json、corpus.cfg | GitHub emo-box/EmoBox コミット 39c306b | README 799589fc313f102c |
-| arxiv_2001.05908.pdf / arxiv_2103.16456.pdf / arxiv_2310.03992.pdf(+ .txt) | https://arxiv.org/pdf/<ID>(2026-10-23 取得の最新版) | 344e4844 / 91dc502c / 80dfbccd |
-| nju2019.html | https://jns.nju.edu.cn/article/2019/0469-5097/0469-5097-2019-55-5-765.shtml | — |
-| aistudio_209512_read_2026-10-23.txt | https://aistudio.baidu.com/datasetdetail/209512 を読んだ控え(ページそのものは保存していない) | — |
-| cldc/CLDC-SPC-*_intro.htm(ほか) | ChineseLDC の 2005〜2008 年のカタログ(感情コーパスを探すために取得) | — |
+| nlpr_gh166.pdf (+ .txt) | web.archive.org/web/20240503152623/https://nlpr.ia.ac.cn/2008papers/gjhy/gh166.pdf | 8a19684c35be17a5 |
+| karaiskos08_blizzard.pdf (+ .txt) | https://www.isca-archive.org/blizzard_2008/karaiskos08_blizzard.pdf | c6c20864f5b38567 |
+| tao08_blizzard.pdf (+ .txt) | https://www.isca-archive.org/blizzard_2008/tao08_blizzard.pdf | 70aef7b80d03acce |
+| blizzard2008.html | http://www.festvox.org/blizzard/blizzard2008.html | - |
+| emobox_2406.07162.pdf (+ emobox.txt) | https://arxiv.org/pdf/2406.07162 | 88d5f1115f9b5a5b |
+| emobox/README.md, casia.py, casia.json, corpus.cfg | GitHub emo-box/EmoBox commit 39c306b | README 799589fc313f102c |
+| arxiv_2001.05908.pdf / arxiv_2103.16456.pdf / arxiv_2310.03992.pdf (+ .txt) | https://arxiv.org/pdf/<ID> (latest versions fetched 2026-10-23) | 344e4844 / 91dc502c / 80dfbccd |
+| nju2019.html | https://jns.nju.edu.cn/article/2019/0469-5097/0469-5097-2019-55-5-765.shtml | - |
+| aistudio_209512_read_2026-10-23.txt | notes on reading https://aistudio.baidu.com/datasetdetail/209512 (the page itself was not saved) | - |
+| cldc/CLDC-SPC-*_intro.htm (and others) | ChineseLDC catalogues of 2005-2008 (fetched while searching for the emotion corpus) | - |

@@ -1,142 +1,142 @@
 table,column,type,nulls,evidence,description
-datasets,dataset_id,slug,-,no,安定ID。実装済みは egs3 のレシピ名と同一。一度コミットしたら変えない
-datasets,name,text,-,no,一次資料の表記(シート由来の行ではシートの名前)
-datasets,full_title,text,empty,no,正式題名
+datasets,dataset_id,slug,-,no,Stable ID. For implemented datasets it equals the egs3 recipe name. Never changed once committed
+datasets,name,text,-,no,Name as written in the primary source (the spreadsheet name for rows from the spreadsheet)
+datasets,full_title,text,empty,no,Full title
 datasets,espnet_status,enum:espnet_status,-,status,implemented / candidate / needs_decision / deferred / excluded
-datasets,status_reason_codes,enumlist:reason_code,NA,status,implemented以外の理由コード(;区切り)。implementedは NA
-datasets,status_note,text,empty,no,状態の補足
-datasets,status_checked_on,date,empty,no,状態を最後に確認した日
-datasets,in_sheet,bool,-,no,2026-10-12 のシート原本に行があるか
-datasets,sheet_verified,enum:sheet_verified,-,no,シートの Verified 列そのまま。意味は『人が手作業で情報を確認したか』。判断には使わない
-datasets,languages,isolist,empty;unknown,yes,ISO 639-3 コード(;区切り)。mul=多言語で内訳不明、zxx=言語内容なし
-datasets,language_note,text,empty,no,変種や、言語の値をどう決めたかの補足
-datasets,recording_context,enum:recording_context,empty,yes,録音・収集の状況
-datasets,vocal_content,enum:vocal_content,empty,yes,発話か非言語発声か
-datasets,license_spdx,enum:license_spdx,empty,yes,SPDX識別子またはLicenseRef-*。記載された条件の分類で、法的解釈ではない
-datasets,license_class,enum:license_class,empty,no,license_spdx から決まる派生列(enums.csvのderived)
-datasets,license_note,text,empty,no,ライセンス原文の要点
-datasets,access_method,enum:access_method,empty,yes,入手方法
-datasets,raw_audio_available,bool,empty;unknown,yes,生の音声が配布されているか
-datasets,release_version,text,empty,no,取得した版
+datasets,status_reason_codes,enumlist:reason_code,NA,status,Reason codes for statuses other than implemented (;-separated). NA for implemented
+datasets,status_note,text,empty,no,Notes on the status
+datasets,status_checked_on,date,empty,no,Date the status was last checked
+datasets,in_sheet,bool,-,no,Whether the row exists in the original spreadsheet of 2026-10-12
+datasets,sheet_verified,enum:sheet_verified,-,no,"The spreadsheet's Verified column as is. It means ""whether someone checked the information by hand"". Not used for decisions"
+datasets,languages,isolist,empty;unknown,yes,"ISO 639-3 codes (;-separated). mul = multilingual with unknown breakdown, zxx = no linguistic content"
+datasets,language_note,text,empty,no,Notes on varieties and how the language value was decided
+datasets,recording_context,enum:recording_context,empty,yes,Recording or collection setting
+datasets,vocal_content,enum:vocal_content,empty,yes,Speech or non-verbal vocalisation
+datasets,license_spdx,enum:license_spdx,empty,yes,"SPDX identifier or LicenseRef-*. A classification of the stated terms, not a legal interpretation"
+datasets,license_class,enum:license_class,empty,no,Column derived from license_spdx (derived in enums.csv)
+datasets,license_note,text,empty,no,Gist of the license wording
+datasets,access_method,enum:access_method,empty,yes,Access method
+datasets,raw_audio_available,bool,empty;unknown,yes,Whether raw audio is distributed
+datasets,release_version,text,empty,no,Version obtained
 datasets,doi,text,empty,no,DOI
-datasets,source_url,url,empty,no,シートの Source URL。ダウンロード元か紹介ページかは行による
-datasets,download_url,url,empty,no,ダウンロード元
-datasets,paper_url,url,empty,no,論文のURL
-datasets,n_utt_reported,int,empty;unknown,yes,一次資料(またはシート)の発話数
-datasets,hours_reported,float,empty;unknown,yes,一次資料(またはシート)の総時間
-datasets,n_speakers_reported,int,empty;unknown,yes,一次資料(またはシート)の話者数
-datasets,n_files_release_measured,int,empty;unknown;NA,yes,取得物のファイル数(私たちの実測)
-datasets,n_speakers_measured,int,empty;unknown;NA,yes,取得物の話者数(私たちの実測)
-datasets,labels_discrete_reported,list,empty;unknown;none,yes,資料のカテゴリ感情ラベル(;区切り、資料の語彙のまま)
-datasets,labels_discrete_note,text,empty,no,ラベル一覧にできない記述(シート原文など)
-datasets,n_discrete_labels_reported,int,empty;unknown,no,資料が述べるカテゴリ数
-datasets,dimensional_attributes,list,empty;unknown;none,yes,次元感情の軸(;区切り)
-datasets,dimensional_note,text,empty,no,次元感情の記述でリストにできないもの(シート原文など)
-datasets,label_source,enum:label_source,empty;unknown;NA,yes,主ラベル(labels_discrete_reported・dimensional_attributes に書くもの)の付け手。human / automatic / mixed
-datasets,label_verification,enum:label_verification,empty;unknown;none;NA,yes,ラベルを人が見直したか。human_reviewed(自動ラベルを人が見直した)/ listener_validated(指示ラベルを聴取テストで確かめた・選別した。ラベルは指示のまま)/ none(見直しなしと資料が述べる)/ unknown / NA(見直しの対象がない)
-datasets,speech_production,enumlist:speech_production,empty;unknown,yes,音声がどう発せられたか(;区切り)。acted(演技。映画・ドラマの演技を含む)/ elicited(刺激や課題で感情を誘発)/ spontaneous(自然な発話)/ read(感情の指示なしの読み上げ)/ synthetic(合成音声)。録音の場所・媒体は recording_context
-datasets,label_basis,enumlist:label_basis,empty;unknown;none,yes,主ラベルがどう付けられたか(;区切り)。intended(話者に指示した感情)/ perceived(聞き手が知覚した感情)/ self_reported(話者自身の申告)/ context_inferred(場面・台本・文の意味から付与)/ automatic(モデルの推定)。none=感情ラベルなし
-datasets,label_basis_note,text,empty,no,ラベルの付け方の補足。評定者数・評定者が見聞きしたもの(音声のみ/映像つき/書き起こし)・まとめ方(多数決・平均)・どのラベルを主とするか・聴取テストの内容など
-datasets,annotations_other,text,empty;none,no,シートの Other Annotations(原文)
-datasets,sheet_notes,text,empty,no,シートの Notes(原文。変更禁止)
-datasets,notes,text,empty,no,自前の注記
-datasets,report_path,path,empty,no,NNレポートなど、詳細の所在
-datasets,last_updated_on,date,-,no,この行を最後に更新した日
-evidence,evidence_id,text,-,no,<dataset_id>/<field>/<2桁連番>
-evidence,dataset_id,slug,-,no,datasets の外部キー
-evidence,field,text,-,no,datasets の列名(evidence=yes の列)
-evidence,value,text,-,no,その根拠が示す値(datasets と同じ書式)
+datasets,source_url,url,empty,no,The spreadsheet's Source URL. Whether it is a download location or an introduction page depends on the row
+datasets,download_url,url,empty,no,Download location
+datasets,paper_url,url,empty,no,Paper URL
+datasets,n_utt_reported,int,empty;unknown,yes,Number of utterances per the primary source (or the spreadsheet)
+datasets,hours_reported,float,empty;unknown,yes,Total hours per the primary source (or the spreadsheet)
+datasets,n_speakers_reported,int,empty;unknown,yes,Number of speakers per the primary source (or the spreadsheet)
+datasets,n_files_release_measured,int,empty;unknown;NA,yes,Number of files in what we obtained (our measurement)
+datasets,n_speakers_measured,int,empty;unknown;NA,yes,Number of speakers in what we obtained (our measurement)
+datasets,labels_discrete_reported,list,empty;unknown;none,yes,"Categorical emotion labels in the source (;-separated, in the source's own vocabulary)"
+datasets,labels_discrete_note,text,empty,no,"Descriptions that cannot be made into a label list (spreadsheet originals, etc.)"
+datasets,n_discrete_labels_reported,int,empty;unknown,no,Number of categories stated by the source
+datasets,dimensional_attributes,list,empty;unknown;none,yes,Axes of dimensional emotion (;-separated)
+datasets,dimensional_note,text,empty,no,"Descriptions of dimensional emotion that cannot be listed (spreadsheet originals, etc.)"
+datasets,label_source,enum:label_source,empty;unknown;NA,yes,Who assigned the main labels (those in labels_discrete_reported and dimensional_attributes): human / automatic / mixed
+datasets,label_verification,enum:label_verification,empty;unknown;none;NA,yes,Whether people checked the labels: human_reviewed (people reviewed automatic labels) / listener_validated (instructed labels confirmed or filtered by a listening test; the label stays the instructed one) / none (a source says there was no review) / unknown / NA (nothing to review)
+datasets,speech_production,enumlist:speech_production,empty;unknown,yes,"How the audio was produced (;-separated): acted (acting, including film and drama performances) / elicited (emotion induced by stimuli or tasks) / spontaneous (natural speech) / read (reading without an emotion instruction) / synthetic (synthetic speech). The setting or medium is recording_context"
+datasets,label_basis,enumlist:label_basis,empty;unknown;none,yes,"How the main labels were made (;-separated): intended (emotion the speaker was told to portray) / perceived (emotion listeners perceived) / self_reported (the speaker's own report) / context_inferred (from the scene, script or meaning of the words) / automatic (a model's estimate). none = no emotion labels"
+datasets,label_basis_note,text,empty,no,"Details of how labels were made: number of raters, what raters saw or heard (audio only / with video / transcript), how ratings were combined (majority, mean), which label set is the main one, listening-test details, etc."
+datasets,annotations_other,text,empty;none,no,The spreadsheet's Other Annotations (original text)
+datasets,sheet_notes,text,empty,no,The spreadsheet's Notes (original text; do not change)
+datasets,notes,text,empty,no,Our own notes
+datasets,report_path,path,empty,no,"Where details are (an NN report, etc.)"
+datasets,last_updated_on,date,-,no,Date this row was last updated
+evidence,evidence_id,text,-,no,<dataset_id>/<field>/<2-digit sequence number>
+evidence,dataset_id,slug,-,no,Foreign key to datasets
+evidence,field,text,-,no,Column name in datasets (a column with evidence=yes)
+evidence,value,text,-,no,The value the evidence supports (same format as in datasets)
 evidence,source_type,enum:source_type,-,no,measured / primary / secondary / project_doc / sheet / user
-evidence,source_ref,text,-,no,出典(URL、ファイルパス、コミット)
-evidence,locator,text,empty,no,出典内の位置(25語以内)
-evidence,via,text,empty,no,どう取り込んだか(原本、NNレポート、計測など)
-evidence,checked_on,date,-,no,確認日
-evidence,checked_by,enum:checked_by,-,no,確認した主体
-evidence,is_canonical,bool,-,no,datasets の値と対応する根拠なら true(各 dataset×field に1行)
+evidence,source_ref,text,-,no,"Source (URL, file path, commit)"
+evidence,locator,text,empty,no,Location within the source (25 words at most)
+evidence,via,text,empty,no,"How it was brought in (original, NN report, measurement, etc.)"
+evidence,checked_on,date,-,no,Date checked
+evidence,checked_by,enum:checked_by,-,no,Who checked
+evidence,is_canonical,bool,-,no,true if this is the evidence for the value in datasets (one row per dataset x field)
 evidence,status,enum:evidence_status,-,no,current / superseded / conflicting
-evidence,note,text,empty,no,補足。低順位の根拠を canonical にするときは必須
-aliases,dataset_id,slug,-,no,datasets の外部キー
-aliases,alias,text,-,no,別名
-aliases,alias_type,enum:alias_type,-,no,別名の種類
-aliases,source_ref,text,empty,no,出典
-aliases,note,text,empty,no,補足
-relations,dataset_id,slug,-,no,datasets の外部キー
+evidence,note,text,empty,no,Notes. Required when a lower-ranked source is made canonical
+aliases,dataset_id,slug,-,no,Foreign key to datasets
+aliases,alias,text,-,no,Alias
+aliases,alias_type,enum:alias_type,-,no,Kind of alias
+aliases,source_ref,text,empty,no,Source
+aliases,note,text,empty,no,Notes
+relations,dataset_id,slug,-,no,Foreign key to datasets
 relations,relation,enum:relation_type,-,no,version_of / subset_of / contains / distinct_from / possibly_same_as
-relations,other_dataset_id,slug,-,no,相手の dataset_id
-relations,source_ref,text,empty,no,出典
-relations,note,text,empty,no,補足
-recipes,recipe,slug,-,no,egs3 のディレクトリ名
+relations,other_dataset_id,slug,-,no,The other dataset_id
+relations,source_ref,text,empty,no,Source
+relations,note,text,empty,no,Notes
+recipes,recipe,slug,-,no,Directory name under egs3
 recipes,recipe_kind,enum:recipe_kind,-,no,single_corpus / multi_corpus
-recipes,system,text,-,no,espnet3 のシステム名(現在は cls)
+recipes,system,text,-,no,espnet3 system name (currently cls)
 recipes,recipe_path,path,-,no,egs3/<recipe>/cls
-recipes,first_commit,text,-,no,cls 配下の config.yaml がブランチに最初に現れたコミット(旧名 wavlmasp からの改名を含む)
-recipes,first_commit_date,date,-,no,同コミットの日付
-recipes,source_env_var,text,empty;NA,no,音源の場所を指す環境変数
-recipes,output_env_var,text,empty;NA,no,出力先を指す環境変数
-recipes,config_urls,list,empty;none,no,dataset/config.yaml に書かれたURL
-recipes,split_config,text,empty;NA,no,dataset/config.yaml の分割に関する設定(JSON)
-recipes,num_classes,int,empty;NA,no,training.yaml の model.num_classes
-recipes,min_wav_duration,float,empty;NA,no,training.yaml の remove_long_short.min_wav_duration
-recipes,max_wav_duration,float,empty;NA,no,training.yaml の remove_long_short.max_wav_duration
-recipes,max_epochs,int,empty;NA,no,training.yaml の trainer.max_epochs
-recipes,token_list,list,empty;NA,no,出力先の token_list(<unk>を除く)
-recipes,n_train,int,empty;NA,no,manifest/train.tsv の行数(実測)
-recipes,n_valid,int,empty;NA,no,manifest/valid.tsv の行数(実測)
-recipes,n_test,int,empty;NA,no,manifest/test.tsv の行数(実測)
-recipes,n_test2,int,empty;NA,no,manifest/test2.tsv の行数(実測)
-recipes,n_train_filtered,int,empty;NA,no,manifest_filtered/train.tsv の行数(実測)
-recipes,n_valid_filtered,int,empty;NA,no,manifest_filtered/valid.tsv の行数(実測)
-recipes,n_total,int,empty;NA,no,全 split の発話数(実測)
-recipes,hours_total,float,empty;NA,no,全 split の総時間(実測)
-recipes,dur_min_sec,float,empty;NA,no,最短の発話の秒数(実測)
-recipes,dur_max_sec,float,empty;NA,no,最長の発話の秒数(実測)
-recipes,dur_median_sec,float,empty;NA,no,発話の長さの中央値(実測)
-recipes,audio_format,text,empty;NA,no,サンプルレート/チャンネル/サブタイプごとの件数(実測)
-recipes,measured_on,date,empty;NA,no,実測日
+recipes,first_commit,text,-,no,Commit in which the config.yaml under cls first appeared on the branch (including the rename from the old name wavlmasp)
+recipes,first_commit_date,date,-,no,Date of that commit
+recipes,source_env_var,text,empty;NA,no,Environment variable pointing to the source audio
+recipes,output_env_var,text,empty;NA,no,Environment variable pointing to the output location
+recipes,config_urls,list,empty;none,no,URL written in dataset/config.yaml
+recipes,split_config,text,empty;NA,no,Split settings in dataset/config.yaml (JSON)
+recipes,num_classes,int,empty;NA,no,model.num_classes in training.yaml
+recipes,min_wav_duration,float,empty;NA,no,remove_long_short.min_wav_duration in training.yaml
+recipes,max_wav_duration,float,empty;NA,no,remove_long_short.max_wav_duration in training.yaml
+recipes,max_epochs,int,empty;NA,no,trainer.max_epochs in training.yaml
+recipes,token_list,list,empty;NA,no,token_list at the output location (excluding <unk>)
+recipes,n_train,int,empty;NA,no,Rows of manifest/train.tsv (measured)
+recipes,n_valid,int,empty;NA,no,Rows of manifest/valid.tsv (measured)
+recipes,n_test,int,empty;NA,no,Rows of manifest/test.tsv (measured)
+recipes,n_test2,int,empty;NA,no,Rows of manifest/test2.tsv (measured)
+recipes,n_train_filtered,int,empty;NA,no,Rows of manifest_filtered/train.tsv (measured)
+recipes,n_valid_filtered,int,empty;NA,no,Rows of manifest_filtered/valid.tsv (measured)
+recipes,n_total,int,empty;NA,no,Utterances over all splits (measured)
+recipes,hours_total,float,empty;NA,no,Total hours over all splits (measured)
+recipes,dur_min_sec,float,empty;NA,no,Shortest utterance in seconds (measured)
+recipes,dur_max_sec,float,empty;NA,no,Longest utterance in seconds (measured)
+recipes,dur_median_sec,float,empty;NA,no,Median utterance length (measured)
+recipes,audio_format,text,empty;NA,no,Counts per sample rate / channels / subtype (measured)
+recipes,measured_on,date,empty;NA,no,Date measured
 recipes,measurement_file,path,empty;NA,no,measurements/<recipe>.json
-recipes,dataset_id,slug,NA,no,対応する datasets の行。マルチコーパスは NA
-recipes,report_path,path,empty,no,NNレポート
-recipes,report_no,int,empty;NA,no,NNレポートの番号
-recipes,added_batch,text,empty,no,追加した時期・バッチ
-recipes,official_split_exists,bool,empty;unknown,no,コーパスが公式の分割を公表しているか
-recipes,split_method,enum:split_method,empty;unknown;NA,no,レシピの分割方法
-recipes,split_unit,text,empty;unknown;NA,no,分割の単位(話者、文など)
-recipes,speaker_overlap,bool,empty;unknown;NA,no,分割間で話者が重なるか
-recipes,recipe_exclusions_note,text,empty,no,レシピが除外するデータ
-recipes,known_issues,text,empty,no,既知の問題
-recipes,label_basis_used,enumlist:label_basis,empty;unknown;NA,no,レシピが実際に使うラベルの付け方(label_basis の値)。データセットが複数の付け方のラベルを配布するときに区別する
-recipes,baseline_status,enum:baseline_status,empty,no,学習・評価の実施状況
-recipes,baseline_ref,text,empty,no,結果の所在
-recipes,notes,text,empty,no,自前の注記
-recipe_labels,recipe,slug,-,no,recipes の外部キー
-recipe_labels,label,text,-,no,レシピでのラベル名
-recipe_labels,source_labels,list,-,no,元のラベル名(;区切り)
-recipe_labels,common7,enum:common7,-,no,共通7ラベルのどれに当たるか(なければ none)
-recipe_labels,mapping_type,enum:mapping_type,-,no,ラベルの対応の種類
-recipe_labels,label_type,enum:label_type,empty,no,ラベルの種類。categorical(カテゴリ感情・話し方など)/ polarity(感情極性)/ intent / dimensional / other。空欄=未確認
-recipe_labels,n_train,int,empty;NA,no,train の件数
-recipe_labels,n_valid,int,empty;NA,no,valid の件数
-recipe_labels,n_test,int,empty;NA,no,test の件数
-recipe_labels,n_test2,int,empty;NA,no,test2 の件数
-recipe_labels,n_total,int,empty;NA,no,全 split の件数
-recipe_labels,note,text,empty,no,補足
-benchmark_membership,benchmark_recipe,slug,-,no,マルチコーパスのレシピ
-benchmark_membership,member_recipe,slug,-,no,構成レシピ
+recipes,dataset_id,slug,NA,no,Corresponding datasets row. NA for multi-corpus recipes
+recipes,report_path,path,empty,no,NN report
+recipes,report_no,int,empty;NA,no,NN report number
+recipes,added_batch,text,empty,no,When and in which batch it was added
+recipes,official_split_exists,bool,empty;unknown,no,Whether the corpus publishes an official split
+recipes,split_method,enum:split_method,empty;unknown;NA,no,How the recipe splits
+recipes,split_unit,text,empty;unknown;NA,no,"Unit of the split (speaker, sentence, etc.)"
+recipes,speaker_overlap,bool,empty;unknown;NA,no,Whether speakers overlap between splits
+recipes,recipe_exclusions_note,text,empty,no,Data the recipe excludes
+recipes,known_issues,text,empty,no,Known issues
+recipes,label_basis_used,enumlist:label_basis,empty;unknown;NA,no,How the labels the recipe actually uses were made (label_basis values). Distinguishes them when a dataset ships labels made in several ways
+recipes,baseline_status,enum:baseline_status,empty,no,Status of training and evaluation
+recipes,baseline_ref,text,empty,no,Where the results are
+recipes,notes,text,empty,no,Our own notes
+recipe_labels,recipe,slug,-,no,Foreign key to recipes
+recipe_labels,label,text,-,no,Label name in the recipe
+recipe_labels,source_labels,list,-,no,Original label names (;-separated)
+recipe_labels,common7,enum:common7,-,no,Which of the common 7 labels it corresponds to (none if none)
+recipe_labels,mapping_type,enum:mapping_type,-,no,Kind of label mapping
+recipe_labels,label_type,enum:label_type,empty,no,"Kind of label: categorical (categorical emotions, speaking styles, etc.) / polarity (sentiment) / intent / dimensional / other. Empty = not checked"
+recipe_labels,n_train,int,empty;NA,no,Count in train
+recipe_labels,n_valid,int,empty;NA,no,Count in valid
+recipe_labels,n_test,int,empty;NA,no,Count in test
+recipe_labels,n_test2,int,empty;NA,no,Count in test2
+recipe_labels,n_total,int,empty;NA,no,Count over all splits
+recipe_labels,note,text,empty,no,Notes
+benchmark_membership,benchmark_recipe,slug,-,no,Multi-corpus recipe
+benchmark_membership,member_recipe,slug,-,no,Member recipe
 benchmark_membership,role,enum:bench_role,-,no,train / eval
-benchmark_membership,splits_used,list,-,no,使う split(;区切り)
-benchmark_membership,eval_set_names,list,empty;NA,no,評価セットの名前
+benchmark_membership,splits_used,list,-,no,Splits used (;-separated)
+benchmark_membership,eval_set_names,list,empty;NA,no,Names of evaluation sets
 benchmark_membership,set_name,enum:set_name,-,no,Open License set / Non-Commercial set / NA
-benchmark_membership,source_ref,text,empty,no,出典
-benchmark_membership,note,text,empty,no,補足
-annotations,dataset_id,slug,-,no,datasets の外部キー
-annotations,item,slug,-,no,"項目名(英小文字とアンダースコア。例 transcript, speaker_gender, dialogue_act)"
-annotations,description,text,-,no,内容(何がどんな形で付いているか)
-annotations,annotator,enum:label_source,empty;unknown,no,付け手。human / automatic / mixed。資料に記述がなければ unknown
-annotations,unit,enum:annotation_unit,empty;unknown,no,付与の単位
-annotations,used_in_recipe,bool,empty;unknown;NA,no,レシピが使っているか。レシピがなければ NA
-annotations,source_type,enum:source_type,-,no,根拠の種類(evidence と同じ値)
-annotations,source_ref,text,-,no,出典(URL、ファイルパス、会話の日付など)
-annotations,locator,text,empty,no,出典内の位置(25語以内)
-annotations,checked_on,date,-,no,確認日
-annotations,checked_by,enum:checked_by,-,no,確認した主体
-annotations,note,text,empty,no,補足
+benchmark_membership,source_ref,text,empty,no,Source
+benchmark_membership,note,text,empty,no,Notes
+annotations,dataset_id,slug,-,no,Foreign key to datasets
+annotations,item,slug,-,no,"Item name (lower-case letters and underscores, e.g. transcript, speaker_gender, dialogue_act)"
+annotations,description,text,-,no,Content (what is annotated and in what form)
+annotations,annotator,enum:label_source,empty;unknown,no,Annotator: human / automatic / mixed. unknown if the sources do not say
+annotations,unit,enum:annotation_unit,empty;unknown,no,Unit of annotation
+annotations,used_in_recipe,bool,empty;unknown;NA,no,Whether the recipe uses it. NA if there is no recipe
+annotations,source_type,enum:source_type,-,no,Kind of source (same values as in evidence)
+annotations,source_ref,text,-,no,"Source (URL, file path, date of a conversation, etc.)"
+annotations,locator,text,empty,no,Location within the source (25 words at most)
+annotations,checked_on,date,-,no,Date checked
+annotations,checked_by,enum:checked_by,-,no,Who checked
+annotations,note,text,empty,no,Notes

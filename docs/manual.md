@@ -1,436 +1,440 @@
-# SERデータセットDB 初心者向け完全マニュアル
+# The SER dataset DB: a beginner's guide
 
-2026-10-17 版(現行バージョン)。数字はすべて 2026-10-17 に `data/*.csv` を数え直したもの。専門知識がなくても読めるように、用語は先に説明してから使う。
+This guide explains the database from scratch. Terms are explained before they are used. All figures were recounted from `data/*.csv` on the date given in section 11 (they are refreshed by `doc_counts.py`, see the maintenance skill).
 
-## 1. 30秒でわかるSERデータセットDB
+## 1. The DB in 30 seconds
 
-### 1.1 一言でいうと
+### 1.1 In one sentence
 
-**「感情を含む音声データセットの、公開されている情報をまとめた台帳」**。表計算ソフトで開ける CSV ファイルの集まりで、`git` というソフトで履歴を管理している。
+**"A ledger of the public information about speech datasets that carry emotion (and other paralinguistic) labels."** It is a set of CSV files that open in any spreadsheet program, with its history managed by `git`.
 
-### 1.2 数字で見る
+### 1.2 In numbers
 
-| 項目 | 値 |
+| Item | Value |
 |---|---|
-| 登録データセット数 | **322件**(元のシート由来84件 + 新たに調べて足した238件) |
-| ESPnet に実装済み | 71件 |
-| 次の実装候補 | 163件 |
-| 判断待ち | 7件 |
-| 保留 | 35件 |
-| 除外(理由つき) | 46件 |
-| 値ごとの「根拠」の記録 | 4,018行 |
-| 登場する言語コード | 70種類 |
+| Datasets registered | **322** (84 from the original spreadsheet + 238 added later) |
+| Implemented in ESPnet | 71 |
+| Candidates for implementation | 163 |
+| Awaiting a decision | 7 |
+| Deferred | 35 |
+| Excluded (with reasons) | 46 |
+| Evidence rows (sources of values) | 4,018 |
+| Language codes | 70 |
 
-### 1.3 売りになる点
+### 1.3 What makes it useful
 
-- **根拠つき**: 「ライセンスは CC-BY-4.0」と書くだけでなく、「どのページの、どの文言を、いつ、誰が確認したか」を1行ずつ残している。
-- **嘘を書かない**: 分からないものは分からないと書く(空欄・`unknown` など、欠損の書き方に決まりがある。第7章)。URL や題名を推測で作らない。
-- **機械が検査する**: 形式や根拠の抜けを `validate.py` というプログラムが自動で検査し、通らないと保存(コミット)できない。
-- **実装と連動**: ESPnet に実際に作ったレシピ(実験の設定一式)の件数・時間・ラベルを、実測してDBに入れている。
+- **Every value has a source**: it does not just say "the license is CC-BY-4.0" but records, row by row, which page, which wording, when and by whom it was checked.
+- **No guessing**: what is unknown is recorded as unknown (there are rules for writing missing values, section 7). URLs and titles are never made up.
+- **Machine-checked**: `validate.py` checks format and missing evidence automatically; a commit is refused if it fails.
+- **Linked to the implementation**: counts, hours and labels of the ESPnet recipes (experiment set-ups) actually built are measured and stored.
 
-## 2. なぜ作ったか
+## 2. Why it exists
 
-### 2.1 背景
+### 2.1 Background
 
-音声感情認識(SER)の研究では、データセットが何十種類もあり、言語・規模・ライセンス・入手方法がバラバラである。「あのコーパス、商用利用できる?」「日本語の感情データは何がある?」と聞かれるたびにウェブを検索し直すのは時間もトークン(AIの読み書きの量)も無駄になる。
+Speech emotion recognition (SER) research uses dozens of datasets with different languages, sizes, licenses and access routes. Searching the web again each time someone asks "can this corpus be used commercially?" or "what emotional data is there in Japanese?" wastes time and tokens.
 
-### 2.2 目的
+### 2.2 Goals
 
-1. **質問への即答**: データセットの言語・規模・ライセンス・入手方法・ラベル・実装状況を、検索せずに引ける。
-2. **次に実装するものを選ぶ**: 「ライセンスが緩く、すぐダウンロードでき、まだ実装していない」ものを一覧から選べる。
-3. **研究の信頼性**: クロスコーパス評価(第3章)で、どのデータを学習に使い、どれを評価に使ったかの根拠を示せる。ライセンスの扱いを間違えると論文が書けなくなるので、特に気を配っている。
+1. **Answer questions at once**: language, size, license, access, labels and implementation status of a dataset can be looked up without searching.
+2. **Choose what to implement next**: datasets that are permissively licensed, directly downloadable and not yet implemented can be picked from a list.
+3. **Reliable research**: for cross-corpus evaluation (section 3), the DB shows the basis for which data was used for training and which for evaluation. Licenses get particular care, because mishandling them can make results unpublishable.
 
-### 2.3 元になったもの
+### 2.3 Origin
 
-もとは Google スプレッドシート「ser_database」(84行)だった。2026-10-12 時点で凍結し、原本を [sheet_import/](../sheet_import/README.md) に保存してある。それ以後は CSV を正本とし、シートは更新しない。2026-10-14 に、総説(まとめ論文)・既存の一覧・各種ホスティングサービスの検索から158件、意図・対話行為のデータ12件などを足して307件になった。
+It started as a Google spreadsheet, "ser_database" (84 rows). The spreadsheet was frozen on 2026-10-12 and the original is kept in [sheet_import/](../sheet_import/README.md); since then the CSV files are authoritative and the spreadsheet is not updated. On 2026-10-14, 158 datasets from surveys, existing lists and searches of hosting services, plus 12 intent and dialogue-act datasets and others, were added, bringing it to 307 rows; more have been added since.
 
-## 3. 用語集(専門用語の解説)
+## 3. Glossary
 
-### 3.1 研究まわりの用語
+### 3.1 Research terms
 
-| 用語 | やさしい説明 |
+| Term | Plain explanation |
 |---|---|
-| **SER**(Speech Emotion Recognition、音声感情認識) | 人の声から感情(怒り・喜び・悲しみなど)を機械に当てさせる研究分野 |
-| **コーパス / データセット** | 研究用に集めて整理した音声データの集まり。このDBでは同じ意味で使う |
-| **ラベル** | 1つの音声につけられた「正解」。例:「angry(怒り)」 |
-| **離散感情(カテゴリ感情)** | 怒り・喜びのように、いくつかの箱に分ける感情の表し方 |
-| **次元感情** | 感情を数値で表す方式。代表は valence(快・不快)と arousal(興奮度)。表す軸の名前を `dimensional_attributes` に書く |
-| **発話(utterance)** | ひと続きの話し言葉。データの件数は「発話数」で数える |
-| **話者** | 話している人 |
-| **演技(acted)** | 俳優などが感情を込めて演じて録音したもの |
-| **自発的(spontaneous)** | 自然な会話・ポッドキャスト・動画などから集めたもの。現実に近いが、ラベルの付け方が難しい |
-| **意図(intent)・対話行為** | 感情ではなく「何をしたくて話したか」(例:アラームをセットして)や「質問・依頼・同意」などの発話の働き。感情以外の話し方の情報も扱うため、このDBでは対象にしている |
-| **パラ言語情報** | 言葉の内容以外で声に乗る情報(感情・話し方・意図・感情の極性など)の総称 |
-| **極性(sentiment)** | 肯定的・否定的といった感情の向き |
-| **TTS** | 文章から声を作る音声合成。合成用に録音された感情つきコーパスも対象に含める |
-| **ASR** | 音声認識(声を文字にする)。ASR 専用のデータはこのDBの対象外 |
-| **クロスコーパス評価** | あるデータで学習し、別のデータで評価すること。データセットが違っても通用するかを見る。このプロジェクトの中心テーマ |
-| **完全OOD** | 学習で一度も見ていないコーパスだけで評価すること(ood20 ベンチマーク) |
+| **SER** (speech emotion recognition) | Getting machines to recognise emotions (anger, joy, sadness, ...) from the voice |
+| **Corpus / dataset** | A collection of speech data organised for research. Used interchangeably here |
+| **Label** | The "answer" attached to a recording, e.g. "angry" |
+| **Discrete (categorical) emotion** | Representing emotion as one of a few boxes such as anger or joy |
+| **Dimensional emotion** | Representing emotion as numbers, typically valence (pleasant-unpleasant) and arousal (activation). The axes are listed in `dimensional_attributes` |
+| **Utterance** | A stretch of speech. Data sizes are counted in utterances |
+| **Speaker** | The person talking |
+| **Acted** | Speech performed with emotion by actors or others |
+| **Spontaneous** | Natural speech collected from conversations, podcasts, videos, etc. Closer to real life, but harder to label |
+| **Intent / dialogue act** | Not emotion, but what the speaker wanted to do ("set an alarm") or the function of an utterance (question, request, agreement). Included because the DB also covers non-emotion paralinguistic information |
+| **Paralinguistic information** | Information carried by the voice beyond the words (emotion, speaking style, intent, sentiment, ...) |
+| **Sentiment (polarity)** | The direction of feeling, such as positive or negative |
+| **TTS** | Text-to-speech synthesis. Emotional corpora recorded for TTS are included |
+| **ASR** | Automatic speech recognition. Data only for ASR is out of scope |
+| **Cross-corpus evaluation** | Training on one dataset and evaluating on another, to see whether a model generalises across datasets |
+| **Fully out-of-domain evaluation** | Evaluating only on corpora never seen in training |
 
-### 3.2 ESPnet まわりの用語
+### 3.2 ESPnet terms
 
-| 用語 | やさしい説明 |
+| Term | Plain explanation |
 |---|---|
-| **ESPnet / ESPnet3** | 音声処理の研究用ソフトウェア(オープンソース)。このプロジェクトは SER 機能を足している |
-| **レシピ** | 1つのデータセットを学習・評価するための設定一式。`egs3/<名前>/cls` というフォルダに入る |
-| **`cls`** | 分類(classification)用のシステム名。以前は `wavlmasp` という名前だった |
-| **実装済み(implemented)** | そのコーパスのレシピが作られていること |
-| **ベンチマーク** | 複数のコーパスを組み合わせた評価の枠組み。レシピでは `multi_corpus` と呼ぶ |
+| **ESPnet / ESPnet3** | Open-source research software for speech processing, to which this project adds SER |
+| **Recipe** | The full set-up for training and evaluating on one dataset, in the folder `egs3/<name>/cls` |
+| **`cls`** | The system name for classification |
+| **Implemented** | A recipe exists for the corpus |
+| **Benchmark** | An evaluation framework combining several corpora; such recipes are `multi_corpus` |
 
-### 3.3 データ管理まわりの用語
+### 3.3 Data-management terms
 
-| 用語 | やさしい説明 |
+| Term | Plain explanation |
 |---|---|
-| **CSV** | カンマ区切りの表のファイル。Excel・Google スプレッドシート・LibreOffice で開ける |
-| **正本** | 「これが本物」と決めた元のデータ。ここでは `data/*.csv`。`views/` は正本から作る写しなので直接直さない |
-| **git / コミット** | ファイルの変更履歴を管理するソフトと、その1回分の記録。いつ何を変えたか、後から戻せる |
-| **リモート** | ネット上の置き場所。このDBには無く、PCの中だけで完結している |
-| **フック(hook)** | コミットする直前に自動で走る検査。通らないとコミットできない |
-| **DB(データベース)** | 整理されたデータの集まり。ここでは複数のCSVをキーでつないだもの |
-| **キー(ID)** | 行を一意に決める名前。`dataset_id`(例 `ravdess`)など。一度決めたら変えない |
-| **外部キー** | 別の表のキーを指す列。例: `evidence.dataset_id` は `datasets` の行を指す |
-| **スキーマ** | 列の名前・型・意味を決めた設計図。`schema/` に入っている |
-| **sha256** | ファイルの中身から作る指紋のような値。同じファイルかどうかの確認に使う |
+| **CSV** | A comma-separated table file; opens in Excel, Google Sheets or LibreOffice |
+| **Authoritative data** | The data declared to be the original: `data/*.csv`. `views/` is generated from it, so never edit `views/` directly |
+| **git / commit** | Software that records the history of file changes, and one recorded change. You can see later what changed when, and go back |
+| **Remote** | The online copy of the repository (here on GitHub) |
+| **Hook** | A check that runs automatically just before a commit; the commit is refused if it fails |
+| **Key (ID)** | A name that identifies a row, e.g. `dataset_id` (`ravdess`). Never changed once set |
+| **Foreign key** | A column that points to a key in another table, e.g. `evidence.dataset_id` points to a `datasets` row |
+| **Schema** | The design: column names, types and meanings, in `schema/` |
+| **sha256** | A fingerprint computed from a file's contents, used to check whether two files are identical |
 
-### 3.4 入手元・出典まわりの用語
+### 3.4 Source terms
 
-| 用語 | やさしい説明 |
+| Term | Plain explanation |
 |---|---|
-| **一次資料(primary)** | 作者自身が出した情報(論文・公式の配布ページ・LICENSE ファイル) |
-| **二次資料(secondary)** | 他人が書いた情報(まとめサイト、再配布ページ、総説) |
-| **Hugging Face(HF)** | 機械学習のデータやモデルを置くサービス |
-| **Kaggle** | データ分析コンペのサービス。データも共有される。無料アカウントとトークン(認証用の文字列)で取れる |
-| **Zenodo / figshare / Mendeley Data** | 研究データを公開する無料サービス。DOI がつく |
-| **DOI** | 論文やデータにつく恒久的な識別番号 |
-| **ISO 639-3** | 言語を3文字で表す国際規格。`eng`=英語、`jpn`=日本語、`cmn`=中国語(北京語)、`mul`=複数言語で内訳不明、`zxx`=言語なし |
-| **KuralHub** | 言語別のSERデータセット総説。第三者の資料なので、これだけが根拠のものは「裏取り未了」と扱う |
+| **Primary source** | Information published by the authors themselves (paper, official distribution page, LICENSE file) |
+| **Secondary source** | Information written by others (summary sites, re-upload pages, surveys) |
+| **Hugging Face (HF)** | A service hosting machine-learning data and models |
+| **Kaggle** | A data-science competition service where data is also shared; downloadable with a free account and an API token |
+| **Zenodo / figshare / Mendeley Data** | Free services for publishing research data, with DOIs |
+| **DOI** | A permanent identifier for papers and data |
+| **ISO 639-3** | Three-letter language codes: `eng` English, `jpn` Japanese, `cmn` Mandarin, `mul` several languages without a breakdown, `zxx` no linguistic content |
+| **KuralHub** | A survey of SER datasets by language. It is a third-party source, so values supported only by it count as not yet confirmed |
 
-### 3.5 ライセンスまわりの用語
+### 3.5 License terms
 
-ライセンスとは「このデータをどこまで使ってよいか」を書いた使用許諾の条件。ここでの説明は一般的なもので、法的な助言ではない。
+A license states how far data may be used. The explanations here are general, not legal advice.
 
-| 用語 | やさしい説明 |
+| Term | Plain explanation |
 |---|---|
-| **CC(Creative Commons)** | 作品の使い方の条件を、決まった記号の組み合わせで示す仕組み |
-| **BY** | 作者名などを表示(帰属表示)すれば使える |
-| **NC** | 非営利目的のみ。会社の製品など商用利用は不可 |
-| **SA** | 加工したものを同じ条件で公開する |
-| **ND** | 改変してはいけない |
-| **CC0** | 権利を放棄し、自由に使える |
-| **ODbL / ODC-By** | データベース向けのライセンス。表示や同条件公開を求める |
-| **MIT / Apache-2.0** | 条件がゆるい(表示すれば自由に使える)ソフトウェア用ライセンス |
-| **GPL** | 同じ条件で公開することを強く求めるソフトウェア用ライセンス。データでは稀 |
-| **SPDX識別子** | ライセンスの正式な短い名前(例 `CC-BY-4.0`)。表記ゆれを防ぐために使う |
-| **LicenseRef-…** | SPDX にない独自条件に付ける、このDB独自の名前(第9章) |
-| **コピーレフト** | 利用者に、同じ条件での公開を義務づける考え方(SA や GPL) |
-| **寛容(permissive)** | 表示程度の条件で、ほぼ自由に使えるもの |
-| **再配布** | 受け取ったデータを他人に渡したり、別の場所に公開したりすること。許可されないことが多い |
+| **CC (Creative Commons)** | A system that expresses conditions of use with fixed symbols |
+| **BY** | Usable if the author is credited (attribution) |
+| **NC** | Non-commercial use only; no use in commercial products |
+| **SA** | Derived works must be shared under the same terms |
+| **ND** | No modification |
+| **CC0** | Rights waived; free to use |
+| **ODbL / ODC-By** | Licenses for databases, requiring attribution or share-alike |
+| **MIT / Apache-2.0** | Permissive software licenses (free use with attribution) |
+| **GPL** | A software license that strongly requires sharing under the same terms; rare for data |
+| **SPDX identifier** | The official short name of a license (e.g. `CC-BY-4.0`), used to avoid spelling variants |
+| **LicenseRef-...** | The DB's own names for custom terms that SPDX does not cover (section 9) |
+| **Copyleft** | Requiring users to share under the same terms (SA, GPL) |
+| **Permissive** | Almost free use, with attribution at most |
+| **Redistribution** | Passing received data to others or publishing it elsewhere; often not allowed |
 
-## 4. DBの中身(ファイル構成)
+## 4. What is in the DB
 
-### 4.1 フォルダの地図
+### 4.1 Folder map
 
 ```
 ser_dataset_db/
-├── README.md                  開発者向けの要約(AI が最初に読む)
-├── docs/manual.md             この文書
-├── data/                      ★正本(8つのCSV)
-├── schema/                    列の定義・選択肢・表のキー(設計図)
-├── views/                     見るための写し(正本から自動生成)
-├── measurements/              レシピの実測結果(JSON)
-├── sheet_import/              凍結した元のシート
-├── tools/                     検査・更新・実測などのプログラム
+├── README.md                  summary for developers (read first by AI assistants)
+├── docs/manual.md             this document
+├── data/                      * authoritative data (8 CSV files)
+├── schema/                    column definitions, allowed values, table keys
+├── views/                     copies for reading (generated from data/)
+├── measurements/              measured results of recipes (JSON)
+├── reports/                   detailed investigations of single datasets, with verification
+├── sheet_import/              the frozen original spreadsheet
+├── tools/                     programs for checking, updating and measuring
+└── .claude/skills/            the maintenance workflow for Claude Code
 ```
 
-### 4.2 8つの表(`data/`)
+### 4.2 The 8 tables (`data/`)
 
-| ファイル | 1行が表すもの | 行数 |
+| File | One row is | Rows |
 |---|---|---|
-| [datasets.csv](../data/datasets.csv) | **1つのデータセット**(中心になる表) | 322 |
-| [evidence.csv](../data/evidence.csv) | datasets の1つの値の**根拠** | 4,018 |
-| [aliases.csv](../data/aliases.csv) | 別名(公式名・略称・旧名・レシピ名など) | 375 |
-| [relations.csv](../data/relations.csv) | データセット同士の関係 | 41 |
-| [recipes.csv](../data/recipes.csv) | ESPnet の1レシピ | 72 |
-| [recipe_labels.csv](../data/recipe_labels.csv) | レシピ×ラベル | 440 |
-| [benchmark_membership.csv](../data/benchmark_membership.csv) | ベンチマークを構成するレシピ | 16 |
-| [annotations.csv](../data/annotations.csv) | データセット×感情ラベル以外のアノテーション(書き起こし・話者特性・対話行為など) | 87(`anad` 3、`audiospeechsentiment` 2、`baser` 4、`berst` 9、`brytserc` 1、`casia` 3、`cbesd` 5、`csemotions` 2、`dailytalk` 6、`emotional_ema` 8、`emouerj` 3、`eseravd` 3、`harper_valley_bank` 19、`rml_emotion` 4、`syntact` 6、`telugu_emotion_kaggle` 4、`usc_emo_mri` 5。これから埋める) |
+| [datasets.csv](../data/datasets.csv) | **one dataset** (the central table) | 322 |
+| [evidence.csv](../data/evidence.csv) | the **source** of one value in datasets | 4,018 |
+| [aliases.csv](../data/aliases.csv) | another name (official name, short name, former name, recipe name, ...) | 375 |
+| [relations.csv](../data/relations.csv) | a relation between datasets | 41 |
+| [recipes.csv](../data/recipes.csv) | one ESPnet recipe | 72 |
+| [recipe_labels.csv](../data/recipe_labels.csv) | recipe x label | 440 |
+| [benchmark_membership.csv](../data/benchmark_membership.csv) | a recipe that is part of a benchmark | 16 |
+| [annotations.csv](../data/annotations.csv) | dataset x annotation other than emotion labels (transcripts, speaker traits, dialogue acts, ...) | 87 (`anad` 3, `audiospeechsentiment` 2, `baser` 4, `berst` 9, `brytserc` 1, `casia` 3, `cbesd` 5, `csemotions` 2, `dailytalk` 6, `emotional_ema` 8, `emouerj` 3, `eseravd` 3, `harper_valley_bank` 19, `rml_emotion` 4, `syntact` 6, `telugu_emotion_kaggle` 4, `usc_emo_mri` 5; more to come) |
 
-関係の内訳は `contains`(含む)15、`distinct_from`(名前が似た別物)12、`subset_of`(一部)7、`possibly_same_as`(同一の疑い)4、`version_of`(版違い)3。レシピ72件のうち71件は1コーパス用(`single_corpus`)、1件が複数コーパスを合わせたもの(`multi_corpus`)。
+Relations by type: `contains` 15, `distinct_from` (similar names, different datasets) 12, `subset_of` 7, `possibly_same_as` (suspected identity) 4, `version_of` 3. Of the 72 recipes, 71 are for a single corpus (`single_corpus`) and 1 combines several corpora (`multi_corpus`).
 
-### 4.3 表のつながり
+### 4.3 How the tables connect
 
 ```
-datasets ──(dataset_id)── evidence   値ごとの根拠
-   │       ──(dataset_id)── aliases    別名
-   │       ──(dataset_id)── relations  他データセットとの関係
-   │       ──(dataset_id)── annotations 感情ラベル以外のアノテーション(各行が根拠を持つ)
-   └── recipes(dataset_id) ── recipe_labels(ラベルごとの件数)
-          └── benchmark_membership(ベンチマークの構成)
+datasets ──(dataset_id)── evidence     source of each value
+   │       ──(dataset_id)── aliases      other names
+   │       ──(dataset_id)── relations    relations to other datasets
+   │       ──(dataset_id)── annotations  non-emotion annotations (each row has its own source)
+   └── recipes(dataset_id) ── recipe_labels (counts per label)
+          └── benchmark_membership (make-up of benchmarks)
 ```
 
-### 4.4 「何を1行にするか」のルール
+### 4.4 What counts as one row
 
-- 1行は**元の(最初に公開した)データセット**。Hugging Face や Kaggle への単なる再アップロードは行にせず、元の行の別名(aliases)に入れる。
-- 中身が変わったもの(組み直し・部分集合・別ラベル)は別の行にし、`relations` で元とつなぐ。
-- 同じものが2行あると分かったら、片方を `excluded`(重複)にして `possibly_same_as` でつなぐ。ID は消さない。
-- 音声のないもの(テキストだけ・特徴量だけ)も、調べた結果を残すために `excluded` で載せる。
+- One row is the original (first published) dataset. Plain re-uploads on Hugging Face, Kaggle and the like are not rows; they go into the original's aliases.
+- Anything whose content differs (re-split, subset, new labels) is a separate row linked with `relations`.
+- When two rows turn out to be the same, one becomes `excluded` (duplicate) and they are linked with `possibly_same_as`. IDs are never deleted.
+- Datasets without audio (text only, features only) are kept as `excluded` to record what was found.
 
-## 5. `datasets` 表の読み方
+## 5. Reading the `datasets` table
 
-### 5.1 まず見る列
+### 5.1 Columns to look at first
 
-1行ごとに約40列あるが、まず見るのは次の列。
+Each row has about 45 columns; start with these.
 
-| 列 | 意味 | 例(ravdess) |
+| Column | Meaning | Example (ravdess) |
 |---|---|---|
-| `dataset_id` | 安定したID | `ravdess` |
-| `name` | 名前 | RAVDESS |
-| `espnet_status` | 状態(第8章) | `implemented` |
-| `languages` | 言語(ISO 639-3、`;`区切り) | `eng` |
-| `recording_context` | 録音の状況 | `acted` |
-| `license_spdx` / `license_class` | ライセンスと区分(第9章) | `CC-BY-NC-SA-4.0` / `noncommercial` |
-| `access_method` | 入手方法(第10章) | `direct_download` |
-| `raw_audio_available` | 生の音声が配布されているか | `true` |
-| `n_utt_reported` / `hours_reported` / `n_speakers_reported` | 資料が書いている発話数・時間・話者数 | 1440 / 1.5 / 24 |
-| `labels_discrete_reported` | 資料にあるカテゴリ感情ラベル | calm;happy;sad;angry;… |
-| `dimensional_attributes` | 次元感情の軸。無ければ `none` | `none` |
+| `dataset_id` | stable ID | `ravdess` |
+| `name` | name | RAVDESS |
+| `espnet_status` | status (section 8) | `implemented` |
+| `languages` | languages (ISO 639-3, `;`-separated) | `eng` |
+| `recording_context` | recording setting or medium | `acted` |
+| `speech_production` | how the audio was produced (5.4.1) | `acted` |
+| `label_basis` | how the labels were made (5.4.1) | `intended` |
+| `license_spdx` / `license_class` | license and its class (section 9) | `CC-BY-NC-SA-4.0` / `noncommercial` |
+| `access_method` | how to obtain it (section 10) | `direct_download` |
+| `raw_audio_available` | whether raw audio is distributed | `true` |
+| `n_utt_reported` / `hours_reported` / `n_speakers_reported` | utterances, hours and speakers stated by the sources | 1440 / 1.5 / 24 |
+| `labels_discrete_reported` | categorical emotion labels in the sources | calm;happy;sad;angry;... |
+| `dimensional_attributes` | axes of dimensional emotion, or `none` | `none` |
 
-### 5.2 「reported」と「measured」の違い
+### 5.2 "Reported" vs "measured"
 
-- `*_reported`: **論文や配布ページが書いている**数字(公表値)。
-- `*_measured`: **私たちが実際にダウンロードして数えた**数字(実測値)。
+- `*_reported`: figures **stated by the paper or distribution page** (published values).
+- `*_measured`: figures **we counted after downloading** (measured values).
 
-食い違うことがあり、それ自体が有益な情報になる。レシピは短すぎる音声などを除くので、レシピの件数と公表値が違うのは普通のこと。食い違いは [views/discrepancies.csv](../views/discrepancies.csv) に並ぶ。
+They can differ, and the difference itself is useful information. Recipes drop very short clips and the like, so recipe counts and published counts usually differ. Disagreements are listed in [views/discrepancies.csv](../views/discrepancies.csv).
 
-### 5.3 注記の列
+### 5.3 Note columns
 
-- `status_note`: 状態の補足(なぜ候補なのか、何に注意するか)
-- `license_note`: ライセンス原文の要点
-- `language_note`: 方言や言語の決め方の補足
-- `notes`: 自前の注記
-- `sheet_notes`・`annotations_other`・`sheet_verified`: **元のシートの原文**。変更しない。`sheet_verified` は「人が手作業で確認したか」というシート上の印で、このDBでは判断に使わない
+- `status_note`: notes on the status (why it is a candidate, what to watch out for)
+- `license_note`: gist of the license wording
+- `language_note`: dialects and how the language value was decided
+- `label_basis_note`: details of how labels were made (5.4.1)
+- `notes`: our own notes
+- `sheet_notes`, `annotations_other`, `sheet_verified`: **original text of the spreadsheet**; never changed. `sheet_verified` is the spreadsheet's mark for "checked by hand" and is not used for decisions
 
-### 5.4 ラベルの付け手(`label_source`・`label_verification`)
+### 5.4 Who made the labels (`label_source`, `label_verification`)
 
-感情などの主ラベル(`labels_discrete_reported`・`dimensional_attributes` に書くもの)を、誰が付けたかの記録。どちらも値ごとに根拠行を持つ。空欄は未確認。
+Records who assigned the main labels (those in `labels_discrete_reported` and `dimensional_attributes`). Both have evidence rows for each value. Empty means not checked.
 
-- `label_source`: `human`(人手のみ)/ `automatic`(モデルなどによる自動付与のみ)/ `mixed`(自動付与を人が見直したもの、混在)
-- `label_verification`: ラベルを人が見直したか。`listener_validated`(指示ラベルを聴取テストで確かめた・選別した。ラベルは指示のまま)もある。`human_reviewed`(見直したと資料が述べる)/ `none`(見直しなしと資料が述べる)/ `unknown`(資料に記述が見つからない)/ `NA`(人手のみ)
-- 例: `harper_valley_bank` は自動(論文に automatically labeled とある)で、検証の記述は見つかっていない(`unknown`)。`nonverbaltts` は emotion2vec+ の自動分類を注釈者が見直した(`mixed`・`human_reviewed`)
-- 自動ラベルでも `candidate` から外さない(8.3)。実験で学習に使うか評価だけにするかは DB ではなく、レシピ側の判断として `recipes.notes` に残す
-- 埋まっているのは、レシピ審査を済ませたデータセット。残りは審査のときに一次資料を見て1件ずつ埋める
+- `label_source`: `human` (people only) / `automatic` (models etc. only) / `mixed` (automatic labels reviewed by people, or a mix)
+- `label_verification`: whether people checked the labels: `human_reviewed` (the source says people reviewed automatic labels) / `listener_validated` (instructed labels confirmed or filtered by a listening test; the label stays the instructed one) / `none` (the source says there was no review) / `unknown` (the sources say nothing) / `NA` (nothing to review, e.g. labels that are listeners' own judgements)
+- Examples: `harper_valley_bank` is automatic (the paper says the labels came from an API) with no description of verification (`unknown`). `nonverbaltts` is emotion2vec+ classification reviewed by annotators (`mixed`, `human_reviewed`).
+- Automatic labels do not remove a dataset from `candidate` (8.3). Whether to train on such labels or only evaluate is a recipe-side decision, recorded in `recipes.notes`.
+- Filled for datasets whose recipe review is done; the rest are filled one by one during review, from primary sources.
 
-### 5.4.1 音声の発せられ方とラベルの付け方(`speech_production`・`label_basis`)
+### 5.4.1 How the audio was produced vs. how the labels were made (`speech_production`, `label_basis`)
 
-「音声がどう発せられたか」と「ラベルがどう付けられたか」は別のことなので、別の列に記録する。演技の音声でも、聞き手が知覚した感情をラベルにしていることがある(その逆もある)。知覚ラベルは特に貴重なので、検索できる形で残す。
+"How the audio was produced" and "how the labels were made" are different things and are recorded in separate columns. Acted speech can carry labels that listeners perceived (and vice versa). Perceived labels are especially valuable, so they are recorded in a searchable form.
 
-| 列 | 値(`;` 区切りで複数可) |
+| Column | Values (`;`-separated when several apply) |
 |---|---|
-| `speech_production` | `acted`(演技。指示された感情を演じたもの、映画・ドラマの台詞の演技を含む)/ `elicited`(刺激・課題で誘発)/ `spontaneous`(自然な発話)/ `read`(感情の指示なしの読み上げ)/ `synthetic`(合成) |
-| `label_basis` | `intended`(話者に指示した感情)/ `perceived`(聞き手が知覚した感情)/ `self_reported`(話者の申告)/ `context_inferred`(場面・台本・文の意味から)/ `automatic`(モデルの推定)。感情ラベルがなければ `none` |
-| `label_basis_note` | 自由記述: 評定者数、評定者が見聞きしたもの(音声のみ・映像つき・書き起こし)、まとめ方(多数決・平均)、どのラベルを主とするか、聴取テストの内容 |
-| `recipes.label_basis_used` | レシピが実際に使うラベルの付け方。複数の付け方のラベルを配布するデータセットで区別する |
+| `speech_production` | `acted` (acting: an instructed emotion portrayed, including scripted film and drama performances) / `elicited` (induced by stimuli or tasks) / `spontaneous` (natural speech) / `read` (reading without an emotion instruction) / `synthetic` |
+| `label_basis` | `intended` (the emotion the speaker was told to portray) / `perceived` (the emotion listeners perceived) / `self_reported` (the speaker's own report) / `context_inferred` (from the scene, script or meaning of the words) / `automatic` (a model's estimate); `none` if there are no emotion labels |
+| `label_basis_note` | free text: number of raters, what raters saw or heard (audio only, with video, transcript), how ratings were combined (majority, mean), which label set is the main one, listening-test details |
+| `recipes.label_basis_used` | which kind of label the recipe actually uses, for datasets that ship labels made in several ways |
 
-- `recording_context` は録音の場所・媒体(スタジオ、YouTube、テレビ、映画など)の列として残す。発せられ方はそこから推測しない。
-- 指示ラベルを聴取テストで確かめた・一致したものだけ残した場合、ラベルは `intended` のままで、`label_verification=listener_validated` とする。
-- 埋めるのはレシピ審査のとき。未審査の行は空欄(未確認)。
+- `recording_context` stays as the column for the setting or medium (studio, YouTube, TV, film, ...). Do not infer how speech was produced from it.
+- When instructed labels were confirmed by a listening test, or only agreeing clips were kept, the label stays `intended` and `label_verification=listener_validated`.
+- Filled during recipe review. Rows not yet reviewed are empty (not checked).
 
-### 5.5 感情ラベル以外のアノテーション(`annotations.csv`)
+### 5.5 Annotations other than emotion labels (`annotations.csv`)
 
-書き起こし・話者特性・対話行為・音声品質・アンケートなど、感情ラベル以外に付いている情報を、1行=データセット×項目で記録する表。`datasets.annotations_other`(シートの原文)は変更せず残し、新しい情報はこの表に足す。
+Transcripts, speaker traits, dialogue acts, audio quality, questionnaires and other information beyond the emotion label are recorded one row per dataset x item. `datasets.annotations_other` (spreadsheet text) is kept unchanged, and new information goes into this table.
 
-- 列: `item`(項目名)、`description`(内容)、`annotator`(`human` / `automatic` / `mixed` / `unknown`)、`unit`(`utterance` / `segment` / `word` / `recording` / `conversation` / `speaker` / `dataset`)、`used_in_recipe`(レシピが使っているか)
-- 根拠はこの表の各行が持つ(`source_type`・`source_ref`・`locator`・`checked_on`・`checked_by`)。`evidence.csv` は `datasets` の列の値のための表なので、この表の根拠は混ぜない
-- `used_in_recipe=true` にできるのは `implemented` のデータセットだけ(検査が見る)
-- いまは0行。レシピを登録するときに、一次資料で確認できた項目から足す
+- Columns: `item`, `description`, `annotator` (`human` / `automatic` / `mixed` / `unknown`), `unit` (`utterance` / `segment` / `word` / `recording` / `conversation` / `speaker` / `dataset`), `used_in_recipe`
+- Each row carries its own source (`source_type`, `source_ref`, `locator`, `checked_on`, `checked_by`). `evidence.csv` is for values of `datasets` columns, so annotation sources are not mixed into it.
+- `used_in_recipe=true` is allowed only for `implemented` datasets (checked by the validator).
+- Items are added when recipes are registered, from what primary sources confirm.
 
-### 5.6 ラベルの種類(`recipe_labels.label_type`)
+### 5.6 Kinds of label (`recipe_labels.label_type`)
 
-`categorical`(カテゴリ感情・話し方など)/ `polarity`(感情極性)/ `intent`(意図・対話行為)/ `dimensional` / `other`。極性や意図のラベルは、共通7ラベルに寄せず `common7=none`・`mapping_type=outside_common7` にする。既存の335行は `categorical`、`recanvo` の21行はラベルが感情と要求・意図の両方にまたがるため、未確認(空欄)にしてある。
+`categorical` (categorical emotions, speaking styles, ...) / `polarity` (sentiment) / `intent` (intents, dialogue acts) / `dimensional` / `other`. Polarity and intent labels are not mapped onto the common 7 labels: `common7=none`, `mapping_type=outside_common7`. The 21 rows of `recanvo` are left empty (not checked) because its labels span emotions and requests or intents.
 
-### 5.7 全列の定義
+### 5.7 All column definitions
 
-全列の型・意味・使える欠損の種類は [schema/columns.csv](../schema/columns.csv)、選択肢の一覧は [schema/enums.csv](../schema/enums.csv)、各表のキーは [schema/tables.csv](../schema/tables.csv) にある。
+Types, meanings and allowed missing values of every column are in [schema/columns.csv](../schema/columns.csv), allowed values in [schema/enums.csv](../schema/enums.csv), and table keys in [schema/tables.csv](../schema/tables.csv).
 
-## 6. 根拠(evidence)の仕組み
+## 6. Evidence
 
-### 6.1 なぜ根拠を残すのか
+### 6.1 Why keep evidence
 
-値だけでは、後で「それは本当か?」と聞かれたときに答えられない。そこで、重要な値には**必ず根拠の行**をつける。1つの値につき、出典・確認日・確認した主体・強さを残す。
+A value alone cannot answer "is that really true?" later. So every important value gets **an evidence row** recording its source, the date checked, who checked it, and its strength.
 
-### 6.2 根拠行の中身
+### 6.2 What an evidence row holds
 
-| 列 | 意味 |
+| Column | Meaning |
 |---|---|
-| `value` | その根拠が示す値 |
-| `source_type` | 出典の種類(強さの順位あり。6.3) |
-| `source_ref` | 出典(URL・ファイルパス) |
-| `locator` | 出典のどこに書いてあるか(25語以内の短い引用や場所) |
-| `checked_on` / `checked_by` | 確認日と、確認した主体(`claude` / `user` / `script`) |
-| `is_canonical` | 今の値の根拠なら `true`。各データセット×列に1行だけ |
-| `status` | `current`(現行)/ `superseded`(新しい根拠に置き換えられた)/ `conflicting`(食い違いで決められない) |
+| `value` | the value the evidence supports |
+| `source_type` | kind of source (ranked by strength, 6.3) |
+| `source_ref` | the source (URL, file path) |
+| `locator` | where in the source (a short quote or place, 25 words at most) |
+| `checked_on` / `checked_by` | date checked and who checked (`claude` / `user` / `script`) |
+| `is_canonical` | `true` for the evidence of the current value; exactly one per dataset x column |
+| `status` | `current` / `superseded` (replaced by newer evidence) / `conflicting` (sources disagree, undecided) |
 
-根拠が必要な列は15個:`languages`、`recording_context`、`vocal_content`、`license_spdx`、`access_method`、`raw_audio_available`、`n_utt_reported`、`hours_reported`、`n_speakers_reported`、`n_files_release_measured`、`n_speakers_measured`、`labels_discrete_reported`、`dimensional_attributes`、`espnet_status`、`status_reason_codes`。
+Columns that need evidence: `languages`, `recording_context`, `vocal_content`, `license_spdx`, `access_method`, `raw_audio_available`, `n_utt_reported`, `hours_reported`, `n_speakers_reported`, `n_files_release_measured`, `n_speakers_measured`, `labels_discrete_reported`, `dimensional_attributes`, `espnet_status`, `status_reason_codes`, `label_source`, `label_verification`, `speech_production`, `label_basis`.
 
-### 6.2.1 「いつ確認したか」の記録
+### 6.2.1 Recording when something was checked
 
-確認日(`checked_on`)は全4,018行に入っている(2026-10-10〜10-24)。ただし**日付は、その時点で出典を見た日**であって、今も正しいことの保証ではない。配布ページやライセンスは後から変わりうる。元のシート由来の行(`source_type`=`sheet`)の日付 2026-10-12 は、シートを取り込んだ日で、誰かが内容を確かめた日ではない。
+Every one of the 4,018 evidence rows has a date checked (`checked_on`, 2026-10-10 to 10-24). But **the date is when the source was looked at**, not a guarantee that it is still true; distribution pages and licenses can change. For rows from the original spreadsheet (`source_type`=`sheet`), the date 2026-10-12 is the import date, not a date when anyone checked the content.
 
-一覧の [views/datasets_wide.csv](../views/datasets_wide.csv) には、データセットごとに次の列を足してある(根拠から自動で作る)。
+The overview [views/datasets_wide.csv](../views/datasets_wide.csv) adds these columns per dataset (generated from the evidence):
 
-| 列 | 意味 |
+| Column | Meaning |
 |---|---|
-| `license_checked_on` / `license_source_type` / `license_checked_by` | ライセンスの根拠の確認日・出典の種類・確認した主体 |
-| `access_checked_on` | 入手方法の確認日 |
-| `oldest_checked_on` / `latest_checked_on` | その行の現行の根拠のうち、最も古い・新しい確認日 |
+| `license_checked_on` / `license_source_type` / `license_checked_by` | date, kind and checker of the license evidence |
+| `access_checked_on` | date the access method was checked |
+| `oldest_checked_on` / `latest_checked_on` | oldest and newest date among the row's current evidence |
 
-古い日付や `sheet` のものは、再確認の優先度が高い。
+Old dates and `sheet` sources have priority for re-checking.
 
-### 6.3 出典の強さ
+### 6.3 Strength of sources
 
-強い順に並べる。
+Strongest first.
 
-| 順位 | `source_type` | 中身 |
+| Rank | `source_type` | Content |
 |---|---|---|
-| 1 | `user` | ito さんの指示・説明 |
-| 2 | `measured` | 私たちが数えた・アクセスを試した値 |
-| 3 | `primary` | 作者の論文・公式ページ・LICENSE |
-| 4 | `project_doc` | 出典を特定できない自前資料 |
-| 5 | `secondary` | 第三者の記述(Kaggle、再配布ページ、総説) |
-| 6 | `sheet` | 元のシートの値 |
+| 1 | `user` | decisions and explanations of the project maintainer |
+| 2 | `measured` | values we counted or access we tried |
+| 3 | `primary` | the authors' paper, official page, LICENSE |
+| 4 | `project_doc` | internal documents whose source cannot be pinned down |
+| 5 | `secondary` | third-party statements (Kaggle, re-upload pages, surveys) |
+| 6 | `sheet` | values of the original spreadsheet |
 
-現在の根拠4,018行の内訳は、primary 1,957、sheet 572、project_doc 435、measured 432、user 349、secondary 273。
+The 4,018 evidence rows by source type: primary 1,957, sheet 572, project_doc 435, measured 432, user 349, secondary 273.
 
-### 6.4 新しい事実が出たとき
+### 6.4 When a new fact appears
 
-古い根拠は消さず `superseded` にして、新しい根拠の行を足す。履歴が残るので、「前はこうだったがこの資料で直した」と説明できる。同じ強さの資料同士が食い違い、どちらが正しいか決められないときは、`conflicting` の行を2つ以上残して、datasets のセルも `conflicting` にする(例: EmoDB・Baum-1・TurEV-DB のライセンス)。
+The old evidence is kept and marked `superseded`, and a new row is added. The history remains, so one can explain "it used to say this, and this source corrected it". When equally strong sources disagree and neither can be preferred, two or more `conflicting` rows are kept and the datasets cell is also `conflicting` (e.g. the licenses of EmoDB, Baum-1 and TurEV-DB). When one value can be preferred for a stated reason, it becomes canonical and the other stays as a non-canonical `conflicting` row.
 
-### 6.5 実際の例(RAVDESS のライセンス)
+### 6.5 A real example (the RAVDESS license)
 
-| 根拠 | 値 | 出典の種類 | 状態 |
+| Evidence | Value | Source type | Status |
 |---|---|---|---|
-| `ravdess/license_spdx/01` | CC-BY-NC-SA-4.0 | sheet(元のシート) | superseded(置き換え済み) |
-| `ravdess/license_spdx/02` | CC-BY-NC-SA-4.0 | primary(Zenodo のレコード) | **current / canonical** |
+| `ravdess/license_spdx/01` | CC-BY-NC-SA-4.0 | sheet (original spreadsheet) | superseded |
+| `ravdess/license_spdx/02` | CC-BY-NC-SA-4.0 | primary (Zenodo record) | **current / canonical** |
 
-値は同じでも、シートの値から一次資料の値に差し替えたことが記録に残る。
+Even though the value is the same, the record shows that the spreadsheet value was replaced by a primary source.
 
-### 6.6 守っている原則
+### 6.6 Principles
 
-- 資料にないことは書かない。URL や題名を推測で作らない。
-- 「公表値」の列に「実測値」を根拠として使わない(逆も同様)。
-- 件数・時間・話者数の実測の唯一の根拠は `measurements/<レシピ>.json` と、ダウンロードしたファイルそのもの。
+- Write nothing the sources do not say. Never guess URLs or titles.
+- Never use measured values as evidence for "reported" columns (or the reverse).
+- The only basis for measured counts, hours and speakers is `measurements/<recipe>.json` and the downloaded files themselves.
 
-## 7. 欠損の書き方(空欄・unknown・NA・none)
+## 7. Writing missing values (empty, unknown, NA, none)
 
-「値がない」には4種類あり、**混ぜない**。
+"No value" comes in four kinds, which are **never mixed**.
 
-| 表記 | 意味 | 例 |
+| Written as | Meaning | Example |
 |---|---|---|
-| (空欄) | **まだ確認していない** | ライセンスを未調査 |
-| `unknown` | 確認したが、資料に書いてない・決められない | 配布元にライセンスの記載がない |
-| `NA` | 該当しない | 実装済みでない行の「レシピ」関連 |
-| `none` | 無いと確認済み | 次元感情が無い、と確認した |
+| (empty) | **not checked yet** | license not investigated |
+| `unknown` | checked, but the sources do not say or it cannot be decided | the distributor states no license |
+| `NA` | does not apply | recipe columns of a dataset that is not implemented |
+| `none` | checked, and there is none | confirmed there are no dimensional labels |
 
-どの列がどれを使えるかは `schema/columns.csv` の `nulls` 列に決まっている。ライセンスだけは別に `none_stated`(ライセンスの記載が見つからない)という値がある。
+Which ones a column accepts is fixed in the `nulls` column of `schema/columns.csv`. Licenses also have the value `none_stated` (no license statement found).
 
-## 8. 状態(`espnet_status`)の意味
+## 8. Status (`espnet_status`)
 
-### 8.1 5つの状態
+### 8.1 The five statuses
 
-| 状態 | 意味 | 件数 |
+| Status | Meaning | Count |
 |---|---|---|
-| `implemented` | ESPnet にレシピがある | 71 |
-| `candidate` | 追加の候補。音声と分類に使えるラベルがあり、入手できる見込みがある | 163 |
-| `needs_decision` | ito さんにしか決められない(費用・利用条件・申請文面など) | 7 |
-| `deferred` | 保留。配布元が応答しない・入手方法が不明など、確かめられていない | 35 |
-| `excluded` | 明確な理由があって扱わない | 46 |
+| `implemented` | an ESPnet recipe exists | 71 |
+| `candidate` | candidate for addition: has audio and labels usable for classification, and can probably be obtained | 163 |
+| `needs_decision` | only the project maintainer can decide (cost, terms of use, application wording) | 7 |
+| `deferred` | not confirmed: the distributor does not respond, the access route is unknown, etc. | 35 |
+| `excluded` | not used, for a clear reason | 46 |
 
-### 8.2 `excluded` の理由は「明確なもの」だけ
+### 8.2 Only clear reasons justify `excluded`
 
-除外してよいのは、次のような場合のみ。
+Exclusion is allowed only when:
 
-- 音声がない(テキストのみ・論文のみ・特徴量のみ・コードのみ)
-- 他のデータセットの再配布(`redistribution_of_existing_corpus`)、または重複
-- ラベルが分類に使えない
-- ラベルが声の特徴でなく発話内容(文の意味)で決まる(`labels_from_text_content`)。聴取で確かめ、ito さんが判断したものに限る
-- 国籍や居住地の制限で入手できない
-- 配布が許されていない
+- there is no audio (text only, paper only, features only, code only)
+- it redistributes another dataset (`redistribution_of_existing_corpus`) or duplicates a row
+- the labels cannot be used for classification
+- the labels follow the spoken content (the meaning of the sentence) rather than the voice (`labels_from_text_content`); only when confirmed by listening and decided by the maintainer
+- it cannot be obtained because of nationality or residence restrictions
+- distribution is not allowed
 
-現在の除外46件の内訳は、テキストのみ11、論文のみ9、既存の再配布9、地域制限7、特徴量のみ6、そのほか(特定不能・重複・コードのみ・配布不可・ラベル不適・配布元到達不可など)。
+The 46 excluded rows break down as: text only 11, paper only 9, redistribution of an existing corpus 9, regional restriction 7, features only 6, and others (unidentifiable, duplicate, code only, not distributable, unsuitable labels, distributor unreachable, ...).
 
-### 8.3 除外の理由にしないもの(重要)
+### 8.3 Not reasons to exclude (important)
 
-2026-10-14 に ito さんが決めた方針。次は**除外理由にならない**。
+Policy set by the maintainer on 2026-10-14. These are **not reasons to exclude**:
 
-- 規模の大小
-- 手動の入手作業(申請・署名・ログイン・購入)。ito さんに手順を頼めば取れる
-- Kaggle にあること(無料アカウントとトークンで取れる)
-- ラベルの種類(感情極性・意図・次元値・話し方)
-- 自動ラベル、合成音声
+- size, small or large
+- manual access steps (application, signature, login, purchase); the maintainer can be asked to do them
+- being on Kaggle (a free account and token suffice)
+- the kind of label (sentiment, intent, dimensional values, speaking style)
+- automatic labels, synthetic speech
 
-これらは `candidate` にして、注意を `status_note` に書く。「手間がかかるから外す」とせず、「手間がかかる」という事実を記録して、あとから判断できるようにするのが狙い。
+Such datasets stay `candidate`, with caveats in `status_note`. The aim is not to drop something because it is laborious, but to record that it is laborious so it can be decided later.
 
-### 8.4 理由コード(`status_reason_codes`)
+### 8.4 Reason codes (`status_reason_codes`)
 
-`implemented` 以外の行には理由コードが入る(`;` 区切り)。`unexamined`(まだ実装を検討していない)が最多で180件に付いている。一覧と意味は [schema/enums.csv](../schema/enums.csv) の `reason_code` の行を見る。
+Every row except `implemented` has reason codes (`;`-separated). The most common is `unexamined` (implementation not yet considered), on 180 rows. The list and meanings are the `reason_code` rows of [schema/enums.csv](../schema/enums.csv).
 
-## 9. ライセンス(license)の見方
+## 9. Licenses
 
-### 9.1 2つの列
+### 9.1 Two columns
 
-- `license_spdx`: 資料に書いてある条件を SPDX 識別子に写した値。
-- `license_class`: 識別子から**機械的に**決めた大まかな区分。法的な判断ではない。
+- `license_spdx`: the conditions in the sources mapped to an SPDX identifier.
+- `license_class`: a rough class derived **mechanically** from the identifier. Not a legal judgement.
 
-### 9.2 `license_class` の区分と件数
+### 9.2 `license_class` values and counts
 
-| 区分 | 意味 | 件数 |
+| Class | Meaning | Count |
 |---|---|---|
-| `open` | 制限が緩い(表示程度)。CC-BY、CC0、MIT など | 95 |
-| `noncommercial` | 非商用限定(CC-BY-NC など) | 38 |
-| `research_only` | 学術・研究目的に限定した独自条件 | 55 |
-| `restricted` | 制限つき・有償 | 12 |
-| `other` | 上記以外 | 5 |
-| `none_stated` | ライセンスの記載が見つからない | 25 |
-| `unknown` | 調べたが決まらない | 24 |
-| `conflicting` | 資料の間で食い違う | 4 |
-| (空欄) | まだ調べていない | 64 |
+| `open` | permissive (attribution at most): CC-BY, CC0, MIT, ... | 95 |
+| `noncommercial` | non-commercial only (CC-BY-NC, ...) | 38 |
+| `research_only` | custom terms limited to academic or research use | 55 |
+| `restricted` | restricted or paid | 12 |
+| `other` | other than the above | 5 |
+| `none_stated` | no license statement found | 25 |
+| `unknown` | examined but undecidable | 24 |
+| `conflicting` | sources disagree | 4 |
+| (empty) | not investigated yet | 64 |
 
-### 9.3 独自条件の3つの名前
+### 9.3 Three names for custom terms
 
-SPDX にない条件には、`license_note` に原文の要点を書いたうえで次のどれかを付ける。
+Terms not covered by SPDX get one of these, with the gist of the wording in `license_note`:
 
-- `LicenseRef-custom-research-only`: 独自の学術・研究目的限定
-- `LicenseRef-proprietary-restricted`: 有償・契約などの独占的な条件
-- `LicenseRef-other`: それ以外
+- `LicenseRef-custom-research-only`: custom academic or research-only terms
+- `LicenseRef-proprietary-restricted`: proprietary terms such as payment or contracts
+- `LicenseRef-other`: anything else
 
-### 9.4 使う前の注意
+### 9.4 Before using a dataset
 
-- `license_class` が `open` でも、**データ本体のライセンス**と**付属コードのライセンス**は別のことがある。必ず `license_note` と一次資料を読む。
-- 「研究目的限定」「非商用」の範囲(論文化・モデルの公開・再配布)は条件ごとに違う。DBはそれを解釈しない。
-- 再アップロード先(Kaggle など)が自分でライセンスを書いていても、作者の条件と同じとは限らない。
+- Even when `license_class` is `open`, **the data's license** and **the license of bundled code** may differ. Always read `license_note` and the primary source.
+- The scope of "research only" or "non-commercial" (publication, releasing models, redistribution) differs between terms. The DB does not interpret it.
+- A license written by a re-uploader (on Kaggle etc.) is not necessarily the authors' terms.
 
-## 10. 入手方法(access_method)の見方
+## 10. Access methods (`access_method`)
 
-| 値 | 意味 | 件数 |
+| Value | Meaning | Count |
 |---|---|---|
-| `direct_download` | 認証なしで直接ダウンロードできる | 131 |
-| `free_account_required` | 無料アカウント(登録)が必要 | 17 |
-| `gated_click_through` | 同意などのクリックが必要 | 7 |
-| `request_form_or_email` | 申請フォーム・メールでの依頼が必要 | 59 |
-| `signed_agreement` | 署名した同意書が必要 | 30 |
-| `paid_or_membership` | 有償・会員制 | 9 |
-| `unofficial_mirror_only` | 非公式のミラー(複製)しかない | 0 |
-| `unavailable` | 入手できない | 7 |
-| `unknown` | 不明 | 12 |
-| (空欄) | 未確認 | 50 |
+| `direct_download` | directly downloadable without authentication | 131 |
+| `free_account_required` | free account (registration) required | 17 |
+| `gated_click_through` | consent click or similar required | 7 |
+| `request_form_or_email` | request by application form or e-mail | 59 |
+| `signed_agreement` | signed agreement required | 30 |
+| `paid_or_membership` | paid or membership | 9 |
+| `unofficial_mirror_only` | only unofficial mirrors | 0 |
+| `unavailable` | cannot be obtained | 7 |
+| `unknown` | unknown | 12 |
+| (empty) | not checked | 50 |
 
-「すぐ取れるか」は `direct_download` と `free_account_required` と `gated_click_through`、「手続きが要る」のは `request_form_or_email` と `signed_agreement` と考えるとよい。
+Roughly, `direct_download`, `free_account_required` and `gated_click_through` are "available now", and `request_form_or_email` and `signed_agreement` "need a procedure".
 
-## 11. 現在の数字(2026-10-24)
+## 11. Current figures (2026-10-24)
 
-### 11.1 状態×ライセンス区分
+### 11.1 Status x license class
 
-| 状態 | open | NC | 研究限定 | 制限つき | その他 | 記載なし | 不明 | 食い違い | 未調査 | 計 |
+| Status | open | NC | research | restricted | other | none stated | unknown | conflicting | not checked | total |
 |---|---|---|---|---|---|---|---|---|---|---|
 | implemented | 46 | 8 | 10 | 1 | 1 | 2 | 1 | 2 | 0 | 71 |
 | candidate | 34 | 25 | 35 | 9 | 4 | 18 | 5 | 2 | 31 | 163 |
@@ -438,208 +442,211 @@ SPDX にない条件には、`license_note` に原文の要点を書いたうえ
 | deferred | 0 | 1 | 7 | 0 | 0 | 1 | 7 | 0 | 19 | 35 |
 | excluded | 13 | 3 | 1 | 0 | 0 | 4 | 11 | 0 | 14 | 46 |
 
-(NC は noncommercial。)
+(NC is noncommercial.)
 
-読み取れること:
+What this shows:
 
-- 実装済み71件のうち、オープンな条件(`open`)は46件。
-- 候補163件のうち、ライセンスが `open` で `direct_download`(すぐ取れる)なものは23件。次の実装の第一候補群。
+- Of the 71 implemented datasets, 46 have open terms (`open`).
+- Of the 163 candidates, 23 are `open` and `direct_download` (available now): the first group to implement next.
 
-### 11.2 データの性質
+### 11.2 Properties of the data
 
-- **録音の状況**(`recording_context`、67件は未調査): 演技 115、自発的会話 23、複数ウェブ由来 21、YouTube 14、テレビ番組 14、感情誘発 13、映画 12、朗読 8、合成 8、その他 8、人と機械の対話 7、ポッドキャスト 4 など。
-- **言語**: コードで70種類。英語(eng)87件、中国語(cmn)37件、韓国語(kor)16件、スペイン語(spa)・ドイツ語(deu)各14件、フランス語(fra)12件、日本語(jpn)11件、多言語(mul)16件。
-- **生音声の有無**: 配布あり 186、なし 29、不明 4、未確認 103。
-- **次元感情のラベルがあるもの**: 30件。
-- **ESPnet レシピの学習・評価**: 実施済み(`evaluated`)17、未実施(`not_run`)55。
-- **意図・対話行為のデータ**: 12件(SLURP、Timers and Such、Fluent Speech Commands、Snips/Sonos、STOP、MInDS-14、Speech-MASSIVE、ITALIC、DIHANA、SpokenWOZ、Harper Valley Bank、SLUE-HVB)。
-- **網羅の確認**: MSP-Podcast 論文(arXiv 2509.09791v1)の Table I にある28コーパスは全て含む。
+- **Recording context** (`recording_context`; 67 not checked): acted 115, spontaneous conversation 23, multi-source web 21, YouTube 14, TV show 14, affect elicitation 13, film 12, read speech 8, synthetic 8, other 8, human-agent interaction 7, podcast 4, and others.
+- **Languages**: 70 codes. English (eng) 87, Mandarin (cmn) 37, Korean (kor) 16, Spanish (spa) and German (deu) 14 each, French (fra) 12, Japanese (jpn) 11, multilingual (mul) 16.
+- **Raw audio**: distributed 186, not distributed 29, unknown 4, not checked 103.
+- **Datasets with dimensional emotion labels**: 30.
+- **Training and evaluation of ESPnet recipes**: done (`evaluated`) 17, not run (`not_run`) 55.
+- **Speech production and label basis** (filled during recipe review): filled for 22 datasets; perceived labels (`perceived`, alone or with others) on 8.
+- **Intent and dialogue-act data**: 12 (SLURP, Timers and Such, Fluent Speech Commands, Snips/Sonos, STOP, MInDS-14, Speech-MASSIVE, ITALIC, DIHANA, SpokenWOZ, Harper Valley Bank, SLUE-HVB).
+- **Coverage check**: all 28 corpora in Table I of the MSP-Podcast paper (arXiv 2509.09791v1) are included.
 
-### 11.3 調査の方法
+### 11.3 How the data was collected
 
-2026-10-14 に、次を調べて158件を足した。総説(SuperKogito の一覧、EmoBox、KuralHub など)、Hugging Face・Zenodo・Kaggle・Mendeley・figshare・GitHub・OpenSLR の検索、文献で知られるコーパス。足した行は、確認できた範囲の一次資料で入手条件・ライセンス・ラベルを確かめている。
+On 2026-10-14, 158 datasets were added from surveys (SuperKogito's list, EmoBox, KuralHub, ...), searches of Hugging Face, Zenodo, Kaggle, Mendeley, figshare, GitHub and OpenSLR, and corpora known from the literature. For added rows, access terms, licenses and labels were checked in primary sources as far as possible.
 
-## 12. 使い方(調べる)
+## 12. Using the DB (looking things up)
 
-### 12.1 一番かんたんな方法: 表計算ソフトで開く
+### 12.1 The easiest way: open it in a spreadsheet
 
-[views/datasets_wide.csv](../views/datasets_wide.csv) を Excel・Google スプレッドシート・LibreOffice で開く。1行が1データセットで、フィルタ機能で絞れる。主な列:
+Open [views/datasets_wide.csv](../views/datasets_wide.csv) in Excel, Google Sheets or LibreOffice. One row per dataset; use filters to narrow it down. Main columns:
 
 - `dataset_id`: ID
-- `status`: 状態(= `espnet_status`)
-- `reasons`: 理由コード
-- `license_class`、`access_method`、`raw_audio_available`
-- `recipe`、`n_total_recipe`、`hours_total_recipe`: 実装済みならレシピと実測の件数・時間
-- `common7_covered`、`common7_missing`: 共通7ラベル(angry・disgust・fear・happy・neutral・sad・surprise)のうち、そのデータにあるもの・無いもの
-- `benchmarks`: 入っているベンチマーク
+- `status`: status (= `espnet_status`)
+- `reasons`: reason codes
+- `license_class`, `access_method`, `raw_audio_available`
+- `speech_production`, `label_basis`, `label_basis_note`
+- `recipe`, `n_total_recipe`, `hours_total_recipe`: for implemented datasets, the recipe and its measured count and hours
+- `common7_covered`, `common7_missing`: which of the common 7 labels (angry, disgust, fear, happy, neutral, sad, surprise) the data has or lacks
+- `benchmarks`: benchmarks it belongs to
 
-先頭の15列(Verified〜ESPnet Implemented)は元のシートと同じ名前で並ぶ。
+The first 15 columns (Verified to ESPnet Implemented) have the original spreadsheet's names.
 
-> `views/` は自動生成の写し。ここを直接編集しても、次に作り直したときに消える。直すのは `data/` 側。
+> `views/` is a generated copy. Edits there are lost the next time it is regenerated. Fix `data/` instead.
 
-### 12.2 例1: 特定のデータセットを引く
+### 12.2 Example 1: look up a dataset
 
-ターミナルで、DBのフォルダ(`espnet_work/ser_dataset_db`)に移動して実行する。
+In a terminal, in the DB folder:
 
 ```bash
 grep -i ravdess views/datasets_wide.csv
 ```
 
-1行の全情報を縦に見たいとき:
+To see all fields of a row vertically:
 
 ```bash
-/usr/bin/python3 tools/db.py get datasets ravdess
+python3 tools/db.py get datasets ravdess
 ```
 
-### 12.3 例2: 値の根拠を見る
+### 12.3 Example 2: see the source of a value
 
-[data/evidence.csv](../data/evidence.csv) を開き、`dataset_id` 列で `ravdess`、`field` 列で `license_spdx` と絞る。出典URL(`source_ref`)・確認日・確認した主体が見える。ライセンスについては、根拠を新しい順に見やすく出す専用コマンドもある。
+Open [data/evidence.csv](../data/evidence.csv) and filter `dataset_id` = `ravdess` and `field` = `license_spdx`. The source URL (`source_ref`), date checked and checker are shown.
 
 ```bash
 grep '^ravdess/license_spdx' data/evidence.csv
 ```
 
-### 12.4 例3: 食い違いを見る
+### 12.4 Example 3: see disagreements
 
-[views/discrepancies.csv](../views/discrepancies.csv) に、DBの現在値と「別の資料の値」が並ぶ。シートや総説の記述を一次資料で直した行は、旧値がここに出る。
+[views/discrepancies.csv](../views/discrepancies.csv) lists the DB's current value next to values from other sources. Rows where spreadsheet or survey values were corrected from primary sources show the old values here.
 
-### 12.5 例4: AI(Claude)に聞く
+### 12.5 Example 4: ask an AI assistant
 
-「ESPnet SER」のセッションでは、データセットについての質問は検索より先にこのDBを引く、というルールがある。「日本語の感情データは何があるか」「オープンライセンスで未実装のものは」と聞けば、DBを読んで答える。重要な判断では、根拠の `source_type` が `sheet`・`project_doc`・`secondary` のものは裏取りが必要だと一緒に伝える決まりになっている。
+Assistants working on this project look up this DB before searching the web. Ask "what Japanese emotional data is there?" or "which openly licensed datasets are not yet implemented?" and the answer comes from the DB. For important decisions, the answer should say that evidence whose `source_type` is `sheet`, `project_doc` or `secondary` needs confirming.
 
-## 13. 保守(更新と検査)
+## 13. Maintenance (updates and checks)
 
-### 13.1 ふだん触るコマンド
+### 13.1 Everyday commands
 
-DBのフォルダで実行する。システムの Python(`/usr/bin/python3`)を使う。
+Run in the DB folder with the system Python.
 
-| コマンド | 何をするか |
+| Command | What it does |
 |---|---|
-| `/usr/bin/python3 tools/validate.py` | 全体を検査する。ESPnet のブランチも読み、レシピや実測との一致まで見る |
-| `/usr/bin/python3 tools/validate.py --offline` | ESPnet を読まず、DB内だけを検査する |
-| `/usr/bin/python3 tools/views.py` | `views/` を作り直す |
-| `/usr/bin/python3 tools/db.py get\|set\|add\|fmt` | 1行の閲覧・変更・追加、CSVの形の整え直し |
+| `python3 tools/validate.py` | checks everything, including the ESPnet branch, recipes and measurements |
+| `python3 tools/validate.py --offline` | checks only the DB, without reading ESPnet |
+| `python3 tools/views.py` | regenerates `views/` |
+| `python3 tools/db.py get\|set\|add\|fmt` | view, change or add a row; reformat the CSV files |
 
-実測は `tools/measure.py`、レシピ表への反映は `tools/sync.py`(README の「検証と更新」に手順)。
+Measurements use `tools/measure.py`, and `tools/sync.py` copies them into the recipe table (steps in the README, "Validation and updates"). The full maintenance workflow, including verification of incoming reports, is in `.claude/skills/maintaining-ser-dataset-db/SKILL.md`.
 
-### 13.2 検査が見ているもの
+### 13.2 What the checks cover
 
-- CSV の形式(UTF-8・並び順)と、列の型・選択肢
-- キーと外部キー(存在しない行を指していないか)
-- 根拠の規則(各値に canonical な根拠が1行あるか、実測と公表値を混ぜていないか、など)
-- `implemented` の行が ESPnet のレシピと一致するか
-- `recipes.csv`・`recipe_labels.csv` が `measurements/*.json` と一致するか
-- `annotations.csv` が存在するデータセットを指すか、`used_in_recipe=true` が実装済みだけか、`label_verification` が `label_source` なしで入っていないか
-- `views/` が最新か
+- CSV format (UTF-8, row order), column types and allowed values
+- keys and foreign keys (no rows pointing to missing rows)
+- evidence rules (one canonical evidence row per value, no mixing of measured and reported values, ...)
+- whether `implemented` rows match the ESPnet recipes
+- whether `recipes.csv` and `recipe_labels.csv` match `measurements/*.json`
+- whether `annotations.csv` points to existing datasets, `used_in_recipe=true` only for implemented ones, and `label_verification` is not set without `label_source`
+- whether `views/` is up to date
 
-### 13.3 変更の決まり
+### 13.3 Rules for changes
 
-- 値を変えるときは、必ず根拠の行を足す。
-- 1データセットまたは1回の確認作業ごとに1コミット。コミットメッセージには、**何が問題だったか**と根拠を書く。
-- コミットの直前にフックが検査を自動実行する。通らなければコミットできない。検査を飛ばすオプション(`--no-verify`)は使わない。
-- `git add` は、ファイルのパスを明示する。`git add -A`・`git add .` は使わない。
-- 一度コミットした `dataset_id` は変えない(変えるなら旧IDを別名として残す)。
+- Every value change gets an evidence row.
+- One commit per dataset or per checking session. The commit message (in English) says **what was wrong** and what the evidence was.
+- The hook runs the checks automatically before each commit; the commit is refused if they fail. Never skip the checks (`--no-verify`).
+- Stage files by name; never `git add -A` or `git add .`.
+- Committed `dataset_id`s are never changed (if one must change, keep the old ID as an alias).
 
-### 13.4 レシピ作成セッションとの分担
+### 13.4 Division of work with recipe authors
 
-実装中に分かったこと(ラベルの問題、分割の癖など)は、直接DBに書くのではなく、DB担当のセッションにレポートとして渡し、そちらで根拠をつけて反映する。例外は、`measure.py` と `sync.py` が自動で出す実測値・レシピ表の更新。
+Findings made while implementing recipes (label problems, split peculiarities, ...) are not written into the DB directly. They are handed to the DB maintainer as a DB update report, and the DB maintainer verifies them against primary sources and the audio before recording them with evidence. The exception is the automatic measurements and recipe-table updates produced by `measure.py` and `sync.py`.
 
-## 14. ライセンスの目視検証
+## 14. Human checks of licenses
 
-### 14.1 なぜ必要か
+### 14.1 Why
 
-現在のライセンスの根拠は、ほとんどが Claude や自動処理が取ったもの(`checked_by` が `claude` か `script`)。一部は API やカードの欄から機械的に取った値なので、人の目での確認が望ましい。
+Most license evidence was gathered by Claude or automated processing (`checked_by` is `claude` or `script`), some of it mechanically from API fields or cards, so human confirmation is desirable.
 
-### 14.2 進め方
+### 14.2 How
 
-まとめて全件を検証する計画はやめ、**ESPnet にレシピを1つ実装して審査するたびに、そのデータセットのライセンスも ito さんがページで目視する**。結果は根拠行として足し、`checked_by` を `user` にする。2026-10-17 時点で `checked_by=user` のライセンス根拠は `uftbesd`・`nonverbaltts`・`recanvo` の3件だけ(`uftbesd/license_spdx/03`、`nonverbaltts/license_spdx/03`、`recanvo/license_spdx/02`)。`nonverbaltts` は HF のメタデータ欄(Apache-2.0)とカード本文(CC BY-NC-SA 4.0)が食い違い、ito さんがカード本文を採用した。
+Instead of one bulk check, **each time a recipe is implemented and reviewed, the maintainer looks at that dataset's license page**. The result is added as an evidence row with `checked_by=user`. Current license evidence checked by the maintainer exists for 2 datasets (`recanvo`, `uftbesd`).
 
-## 15. 限界と注意(正直に)
+## 15. Limitations (honestly)
 
-報告では、できていることだけでなく、できていないことも明示する。
+Reports state what is not done as well as what is.
 
-### 15.1 確認が済んでいないこと
+### 15.1 Not yet confirmed
 
-- **ESPnet 側の実装にDBがまだ追いついていない**: 2026-10-17 に検査を実行したところ、ESPnet の `ser/cross-corpus` ブランチには、DBの `recipes.csv` にないレシピが33件ある(`validate.py` はこれを警告として出すだけで、エラーにしない。レビュー後に1件ずつ登録する)(`anad`、`casia`、`legov2`、`whiser` など)。実装が進んだ分で、DBへの反映(実測 `measure.py` と `sync.py`、状態の `implemented` への更新)はこれから。このため、この文書の「実装済み65件」はDB上の数字で、実際の実装数はそれより多い。
-- **長さの下限が 0.5 秒から 0.2 秒に変わった**(ESPnet のコミット 96a54519743、2026-10-17)。`recipes.csv` の `min_wav_duration` は全レシピで 0.2 に揃えたが、`recanvo` 以外の `n_train_filtered`・`n_valid_filtered` は変更前の実測のまま(0.5 秒の下限で数えた値)。再測定は未実施。
-- **ライセンスの人の目での確認はほぼ未着手**(`uftbesd`・`nonverbaltts`・`recanvo` の3件のみ。以後、レシピを実装するたびに1件ずつ)。いま入っているライセンスは、一次資料を Claude が確認したものが中心だが、人の目での確認はこれから。
-- **第三者の総説(KuralHub)だけが根拠の28件**は、一次資料での入手方法の確認をしていない。多くは古い論文のデータで「依頼制」とされる。
-- **配布元が応答せず確かめられなかったもの**がある(`amigos`、`casia`、`cheavd`、`belfast`、`emotion_origlia2010`、`usoms`、`eyase`)。
-- **保留(`deferred`)35件**は、本当の入手経路を調べる作業が残っている。
-- **空欄(未調査)が残る**: ライセンスが空欄64件、入手方法が空欄50件、録音の状況が空欄67件。
-- **未調査の範囲**: CATSLU、MRDA・SwDA・AMI などの対話行為、ATIS の音声、SLURP の他言語版、他言語の意図データ。
+- **The DB lags behind the ESPnet implementation**: the ESPnet recipe branch has recipes that are not yet in `recipes.csv` (`validate.py` lists them as a warning, not an error; they are registered one by one after review).
+- **Minimum clip length changed from 0.5 s to 0.2 s** (ESPnet commit 96a54519743, 2026-10-17). `min_wav_duration` in `recipes.csv` is 0.2 for all recipes, but for recipes registered before the change, `n_train_filtered` and `n_valid_filtered` are still the old measurements (counted with the 0.5 s minimum). Not yet re-measured.
+- **Human checks of licenses have barely started** (see 14.2). The licenses in the DB are mostly primary sources checked by Claude.
+- **28 rows supported only by a third-party survey (KuralHub)** have not had their access checked in primary sources. Many are data from older papers, listed as "on request".
+- **Some distributors did not respond**, so some rows could not be checked (`amigos`, `casia`, `cheavd`, `belfast`, `emotion_origlia2010`, `usoms`, `eyase`).
+- **The 35 `deferred` rows** still need their real access routes investigated.
+- **Empty (not investigated) values remain**: license empty for 64, access method empty for 50, recording context empty for 67.
+- **Not yet surveyed**: CATSLU, dialogue acts such as MRDA, SwDA and AMI, ATIS audio, SLURP in other languages, intent data in other languages.
 
-### 15.2 DBの性質上の限界
+### 15.2 Limits by nature
 
-- このDBは**公開されている情報の整理**であり、法的な判断ではない。ライセンス区分は機械的な分類。
-- 「データセットが存在すること」と「あなたが使えること」は別。使う前に必ず一次資料と条件の原文を読む。
-- 実測値(`measurements/`)と手元のデータ(`~/data/…`)が今も一致しているかは自動検査していない。
-- 感情ラベルの有無は、論文だけでは判断しづらいことがある。判断がつかないものは、実際にダウンロードして確かめた(Expresso など)。
+- The DB **organises public information**; it is not legal advice. License classes are mechanical classifications.
+- "A dataset exists" and "you may use it" are different. Always read the primary source and the original terms before use.
+- Whether `measurements/` still matches the local copies of the data is not checked automatically.
+- Whether a dataset has emotion labels is sometimes hard to tell from the paper alone; unclear cases were downloaded and checked (e.g. Expresso).
 
-### 15.3 MSP-Podcast の利用条件
+### 15.3 MSP-Podcast terms
 
-MSP-Podcast は内部の非商用研究のみ・再配布不可で、Lotfian & Busso (2019) の引用が必須。ラベルは contempt を含む8クラスを標準とする(7クラス版とcore7は今後使わない)。
+MSP-Podcast is for internal non-commercial research only, may not be redistributed, and requires citing Lotfian & Busso (2019). Its standard label set is the 8 classes including contempt.
 
-## 16. 進捗報告ミーティング用の要点
+## 16. Talking points for a progress report
 
-### 16.1 報告の流れ(1〜2分)
+### 16.1 Outline (1-2 minutes)
 
-1. **作ったもの**: SER・パラ言語データセットの根拠つき台帳。322件、根拠4,018行。
-2. **なぜ**: データセットの条件(ライセンス・入手方法)を毎回調べ直す手間を省き、クロスコーパス評価の根拠を残すため。
-3. **信頼性の工夫**: 値ごとに出典・確認日・確認者を記録し、機械が検査する。分からないことは「分からない」と書き、推測で埋めない。
-4. **実装との連動**: ESPnet の72レシピを実測してDBに入れ、実装済み・候補・保留を区別している(ブランチではその後も実装が進んでおり、DBへの反映はこれから。15.1)。
-5. **これから**: レシピ実装ごとのライセンス目視確認、保留35件の調査、未調査の分野の追加。
+1. **What was built**: an evidence-backed ledger of SER and paralinguistic datasets. 322 datasets, 4,018 evidence rows.
+2. **Why**: to stop re-researching dataset conditions (license, access) every time, and to keep the basis for cross-corpus evaluation.
+3. **Reliability measures**: each value records its source, date and checker, and a machine checks the rules. Unknowns are written as unknown, never filled by guessing.
+4. **Link to the implementation**: the 72 ESPnet recipes are measured into the DB, distinguishing implemented, candidate and deferred datasets (the recipe branch keeps growing, and new recipes are registered after review; 15.1).
+5. **Next**: human license checks with each recipe, investigating the 35 deferred rows, surveying uncovered areas.
 
-### 16.2 見せるとよいもの
+### 16.2 Things to show
 
-- [views/datasets_wide.csv](../views/datasets_wide.csv) を表計算ソフトで開き、フィルタで絞ってみせる(例: `status`=candidate、`license_class`=open、`access_method`=direct_download → 23件)。
-- 根拠の例: [data/evidence.csv](../data/evidence.csv) で `ravdess`・`license_spdx` を絞り、シートの値が Zenodo の一次資料に置き換わった履歴を見せる。
+- Open [views/datasets_wide.csv](../views/datasets_wide.csv) in a spreadsheet and filter it (e.g. `status`=candidate, `license_class`=open, `access_method`=direct_download -> 23 rows).
+- An evidence example: filter [data/evidence.csv](../data/evidence.csv) on `ravdess` and `license_spdx` to show how the spreadsheet value was replaced by the Zenodo primary source.
 
-### 16.3 想定される質問と答え
+### 16.3 Expected questions
 
-| 質問 | 答え |
+| Question | Answer |
 |---|---|
-| なぜ元のシートではなくCSVにしたのか | シートでは根拠・履歴・検査ができない。CSVを git で管理すると、変更履歴が残り、機械で検査できる |
-| 情報は正しいのか | 値ごとに出典と確認日があり、一次資料(論文・公式ページ)に基づく行が最も多い(根拠4,018行のうち1,957行)。ただし人の目での最終確認(ライセンス)はこれから |
-| どうやって集めたのか | 元のシート84件に、総説・各種ホスティングサービス・文献から238件を足した。足した行は一次資料で確認している |
-| 何件実装できるのか | 実装済み71件、候補163件。候補のうちライセンスがオープンですぐ取れるものは23件 |
-| 除外したものは | 46件。音声がない、既存データの再配布、重複、地域制限など、明確な理由があるものだけ。手間や規模は除外理由にしていない |
-| ライセンスは信用してよいのか | DBは「資料に書いてある条件」の記録で、法的な解釈ではない。使う前に原文を読む。レシピを実装するたびに1件ずつ人の目で確認していく |
-| 今後どうするのか | レシピ実装ごとの目視確認、保留35件の調査、未調査分野(対話行為・他言語の意図データなど)の追加 |
+| Why CSV instead of the original spreadsheet? | A spreadsheet cannot hold sources, history or checks. CSV under git keeps the change history and can be checked by machine |
+| Is the information correct? | Every value has a source and a date; primary sources (papers, official pages) are the largest group (1,957 of 4,018 evidence rows). Final human checks (licenses) are still in progress |
+| How was it collected? | 238 datasets from surveys, hosting services and the literature were added to the spreadsheet's 84; added rows were checked in primary sources |
+| How many can be implemented? | 71 implemented, 163 candidates. Of the candidates, 23 are openly licensed and available now |
+| What was excluded? | 46. Only for clear reasons: no audio, redistribution of existing data, duplicates, regional restrictions, etc. Effort and size are not reasons |
+| Can the licenses be trusted? | The DB records the terms the sources state; it is not a legal interpretation. Read the original before use. Human checks are added one by one with each recipe |
+| What next? | Human checks with each recipe, investigating the 35 deferred rows, adding uncovered areas (dialogue acts, intent data in other languages, ...) |
 
-### 16.4 言ってはいけないこと
+### 16.4 Things not to say
 
-- 「すべて人が確認済み」(人の目での確認は `uftbesd`・`nonverbaltts`・`recanvo` の3件だけ)
-- 「ライセンス的に使える」(区分は機械的な分類で、法的な判断ではない)
-- 「世界中のデータセットを網羅」(調べた範囲での網羅であり、未調査の分野を15.1に明記している)
+- "Everything has been checked by people" (human license checks cover only a few datasets, 14.2)
+- "These licenses allow use" (the classes are mechanical, not legal judgements)
+- "It covers every dataset in the world" (it covers what was surveyed; uncovered areas are listed in 15.1)
 
-## 17. 困ったとき
+## 17. Troubleshooting
 
-| 状況 | 対処 |
+| Situation | What to do |
 |---|---|
-| 検査(validate)が失敗した | メッセージにファイル名・行・原因が出る。多くは根拠行の抜けや選択肢にない値。直せなければ Claude に見せる |
-| コミットできない | フックの検査に落ちている。同じ検査を手動で走らせて原因を直す。`--no-verify` で回避しない |
-| `views/` の内容が古い | `tools/views.py` で作り直す(検査も「最新か」を見ている) |
-| CSVを直接いじってしまった | `tools/db.py fmt` で書式を整えてから `validate.py` を通す |
-| 値が合っているか不安 | `evidence.csv` で `dataset_id` と `field` を絞り、`source_type` と `source_ref` を確認する |
-| 変更を取り消したい | 勝手に `reset` などを実行せず、Claude に相談する(履歴を壊す操作は事前確認が決まり) |
+| validate fails | The message gives the file, line and cause. Usually missing evidence or a value outside the allowed list. If you cannot fix it, ask Claude |
+| Cannot commit | The hook's checks failed. Run the same check by hand and fix the cause. Never bypass it with `--no-verify` |
+| `views/` is outdated | Regenerate with `tools/views.py` (the checks also verify it is up to date) |
+| Edited a CSV directly | Run `tools/db.py fmt`, then `validate.py` |
+| Unsure whether a value is right | Filter `evidence.csv` on `dataset_id` and `field` and check `source_type` and `source_ref` |
+| Want to undo a change | Do not run `reset` or similar on your own; ask first (operations that rewrite history need confirmation) |
 
-## 18. 付録
+## 18. Appendix
 
-### 18.1 主要ファイルの一覧
+### 18.1 Main files
 
-| ファイル | 内容 |
+| File | Content |
 |---|---|
-| [README.md](../README.md) | 開発者向けの要約。表・規約・根拠規則・現状 |
-| [schema/columns.csv](../schema/columns.csv) | 全列の型と意味 |
-| [schema/enums.csv](../schema/enums.csv) | 選択肢(状態・理由・ライセンス・入手方法など) |
-| [schema/tables.csv](../schema/tables.csv) | 各表のファイルとキー |
-| [data/](../data/) | 正本(8つのCSV) |
-| [views/](../views/) | 一覧・食い違いの写し(自動生成) |
-| [measurements/](../measurements/) | レシピの実測結果(JSON) |
-| [sheet_import/README.md](../sheet_import/README.md) | 元のシートの出所と指紋 |
-| [tools/](../tools/) | validate・views・db・measure・sync |
+| [README.md](../README.md) | summary for developers: tables, conventions, evidence rules, current state |
+| [schema/columns.csv](../schema/columns.csv) | types and meanings of all columns |
+| [schema/enums.csv](../schema/enums.csv) | allowed values (status, reasons, licenses, access, ...) |
+| [schema/tables.csv](../schema/tables.csv) | file and key of each table |
+| [data/](../data/) | authoritative data (8 CSV files) |
+| [views/](../views/) | generated overview and disagreement lists |
+| [measurements/](../measurements/) | measured results of recipes (JSON) |
+| [reports/](../reports/) | saved investigation reports with verification |
+| [sheet_import/README.md](../sheet_import/README.md) | origin and fingerprint of the original spreadsheet |
+| [tools/](../tools/) | validate, views, db, measure, sync |
 
-### 18.2 この文書の更新
+### 18.2 Updating this document
 
-数字は 2026-10-17 時点。DBが変わったら、`data/*.csv` を数え直して書き換える。
+The figures are as of the date in section 11. When the DB changes, recount `data/*.csv` (the `doc_counts.py` script of the maintenance skill does this) and update the text.

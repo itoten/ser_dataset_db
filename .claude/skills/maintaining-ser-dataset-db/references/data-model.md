@@ -184,4 +184,4 @@ hand-written ones:
   `status_note`: what is used and what to watch out for, in one or two sentences.
   `license_note`: the gist of the license wording and any disagreement between sources.
 - Use absolute dates (2026-01-31), never "today" or "last week".
-- Write in the language the DB already uses for that column.
+- Write all text in English. Quote non-English wording only when it matters (e.g. a name or a license sentence), with an English gloss.

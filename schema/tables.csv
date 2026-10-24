@@ -1,9 +1,9 @@
 table,path,key_columns,description
-datasets,data/datasets.csv,dataset_id,1行=1データセット(正本)。値の根拠は evidence.csv
-evidence,data/evidence.csv,evidence_id,1行=datasetsの1つの値の根拠(出典・確認日・種別)
-aliases,data/aliases.csv,dataset_id;alias,データセットの別名(シート上の名前、公式名、旧ラベルなど)
-relations,data/relations.csv,dataset_id;relation;other_dataset_id,データセット間の関係(版違い、別物、同一の疑いなど)
-recipes,data/recipes.csv,recipe,1行=1 egs3 レシピ(cls)。sync列は自動、手書き列は人が記入
-recipe_labels,data/recipe_labels.csv,recipe;label,1行=レシピ×ラベル。レシピが捨てたラベルも残す
-benchmark_membership,data/benchmark_membership.csv,benchmark_recipe;member_recipe;role,ベンチマーク(マルチコーパスのレシピ)の構成レシピ
-annotations,data/annotations.csv,dataset_id;item,データセットの感情ラベル以外のアノテーション(書き起こし・話者特性・対話行為など)。1行=データセット×項目。根拠は各行が持つ
+datasets,data/datasets.csv,dataset_id,One row = one dataset (authoritative). Evidence for values is in evidence.csv
+evidence,data/evidence.csv,evidence_id,"One row = evidence for one value in datasets (source, date checked, type)"
+aliases,data/aliases.csv,dataset_id;alias,"Other names of datasets (spreadsheet names, official names, former labels, etc.)"
+relations,data/relations.csv,dataset_id;relation;other_dataset_id,"Relations between datasets (versions, different datasets, suspected identity, etc.)"
+recipes,data/recipes.csv,recipe,One row = one egs3 recipe (cls). Sync columns are automatic; hand-written columns are filled by people
+recipe_labels,data/recipe_labels.csv,recipe;label,One row = recipe x label. Labels the recipe drops are kept too
+benchmark_membership,data/benchmark_membership.csv,benchmark_recipe;member_recipe;role,Member recipes of a benchmark (multi-corpus recipe)
+annotations,data/annotations.csv,dataset_id;item,"Annotations of a dataset other than emotion labels (transcripts, speaker traits, dialogue acts, etc.). One row = dataset x item. Each row carries its own evidence"
