@@ -55,7 +55,8 @@ These `datasets` columns need an evidence row for their value: `languages`,
 `recording_context`, `vocal_content`, `license_spdx`, `access_method`, `raw_audio_available`,
 `n_utt_reported`, `hours_reported`, `n_speakers_reported`, `n_files_release_measured`,
 `n_speakers_measured`, `labels_discrete_reported`, `dimensional_attributes`, `espnet_status`,
-`status_reason_codes`, `label_source`, `label_verification`, `speech_production`, `label_basis`.
+`status_reason_codes`, `label_source`, `label_verification`, `speech_production`, `label_basis`,
+`text_emotion_link`, `lexical_confound`.
 
 Columns that never take evidence rows (adding one is a validation error): URL columns
 (`source_url`, `download_url`, `paper_url`, `doi`) and text columns (`status_note`, `notes`,
@@ -136,6 +137,28 @@ other. Perceived labels are especially valuable, so record them precisely.
 `recording_context` keeps the setting or medium (studio, YouTube, TV, film). Fill all of these
 from the paper or official documentation of the dataset, with evidence rows; when the sources
 are silent, write `unknown` and say so in the note.
+
+## Text and labels (shortcut risk)
+
+If the words spoken give the label away, a model can learn the words instead of the voice.
+Data whose labels follow only the words is excluded (`labels_from_text_content`); data with real
+paralinguistic information plus some word correlation is flagged with these columns, so that
+someone checks the actual data before relying on it.
+
+| Column | Values |
+|---|---|
+| `text_emotion_link` (`;`-separated) | `parallel` (same sentences in every emotion), `neutral_text` (semantically neutral sentences), `emotion_specific_text` (content matches the emotion), `unrelated_text` (sentences assigned without regard to the emotion), `dialogue_script` (film, drama or written-dialogue lines), `unscripted` |
+| `lexical_confound` | `full` (each sentence under one emotion only), `strong` (most utterances), `moderate` (a substantial part), `weak` (a small part), `possible` (a documented reason to suspect it, such as unscripted speech or labels assigned with the transcript visible), `none` (ruled out by design: parallel, neutral or emotion-independent text, or no words) |
+| `lexical_confound_note` (free text) | what the value rests on and its scope |
+
+- Fill a value only from a design statement in the paper or official documentation, or from a
+  measurement (count the emotions each sentence occurs under, from transcripts). If neither
+  exists, leave it empty and say what is missing. Never guess.
+- Prefer flagging: anything with a documented chance of correlation gets `possible` or above.
+  `none` needs a design that rules it out.
+- Sentence numbers in file names do not prove that the same text was read in every emotion:
+  transcribe a sample. Whisper output is a measurement, but note that no person checked it.
+  Keep the outputs under `measurements/text_link/`.
 
 ## Annotations
 

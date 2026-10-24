@@ -44,6 +44,8 @@ What you need to know about the surroundings:
    exclude data, or decide something they have postponed. Propose instead.
 3. **Write only what a source or a measurement supports.** No invented URLs, titles or numbers.
    Never cite a file you did not open. Unverified means "left out" or "marked not verified".
+   This holds for every column, including judgement-like ones such as `lexical_confound`:
+   without a clear source, leave the cell empty rather than filling in a plausible value.
 4. **Never delete history.** A new value gets a new evidence row; the old one becomes
    superseded. Conflicting sources stay visible.
 5. **Keep "the whole release" and "what the recipe uses" apart** in every count and note.
@@ -107,7 +109,8 @@ add one to `schema/enums.csv` and the manual. The full rules: [references/data-m
 - evidence for `espnet_status`, `status_reason_codes`, the checked counts
   (`n_files_release_measured`, `n_speakers_measured`, or `unknown` when they cannot be counted),
   `label_source`, `label_verification`, `speech_production` and `label_basis` (with details in
-  `label_basis_note`), and any published value or license that changed;
+  `label_basis_note`), `text_emotion_link` and `lexical_confound` (with the basis in
+  `lexical_confound_note`), and any published value or license that changed;
   disagreeing sources as `conflicting` rows;
 - cells without evidence: `status_note`, `notes`, `license_note`, `release_version`,
   `status_checked_on`;

@@ -70,6 +70,15 @@ R.ev("label_verification", "NA", "primary", KG, "no listening test described; la
 R.ev("speech_production", "acted", "primary", KG, "actors portrayed each emotion")
 R.ev("label_basis", "intended", "primary", KG, "label = the emotion the actor was asked to portray")
 R.set(label_basis_note="Labels are the instructed emotion; no rater judgements are distributed.")
+# The page does not say whether the 25 sentences are the same in every emotion, and the texts
+# are not distributed, so a Whisper sample decides it (saved under measurements/text_link/).
+TX = "measurements/text_link/toyemo_whisper_sample.tsv"
+R.ev("text_emotion_link", "parallel", "measured", TX,
+     "2 actors x 6 emotions x 25 sentence numbers: each number has the same text in every emotion",
+     note="Whisper large-v3 transcripts, not checked by a person")
+R.ev("lexical_confound", "none", "measured", TX, "same sentences in every emotion",
+     note="Whisper large-v3 transcripts, not checked by a person")
+R.set(lexical_confound_note="The same 25 sentences in every emotion (Whisper sample of 2 of 8 actors).")
 R.ev("license_spdx", "CC-BY-4.0", "user", KG, "license field on the page", by="user",
      note="checked on the page by the maintainer (2026-01-30); the API shows the same")
 R.set(release_version="Kaggle version 2 (2025-11-02)",

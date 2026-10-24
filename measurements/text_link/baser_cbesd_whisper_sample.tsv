@@ -1,0 +1,125 @@
+dataset	file	sentence_id	emotion	whisper_large_v3
+baser	M_1_HASAN_S_1_ANGRY_1.wav	S_1	ANGRY	মমাছির চাক দেখে কুকুটটি গেয় গেয় করছে
+baser	M_1_HASAN_S_1_FEAR_1.wav	S_1	FEAR	মামাচির চাগ দেখে কুকুরটি ধেয় গেয় করছে।
+baser	M_1_HASAN_S_1_HAPPY_1.wav	S_1	HAPPY	মমাচীর চাক দেখে কুগুটি ঘেউ ঘেউ করছে।
+baser	M_1_HASAN_S_1_NEUTRAL_1.wav	S_1	NEUTRAL	মোমাচির তাক দেখে কুকুটি ঘেউ ঘেউ করছে।
+baser	M_1_HASAN_S_1_SAD_1.wav	S_1	SAD	মামাছীর চাক দেখে কুগরতি গেও গেও করছে
+baser	M_1_HASAN_S_2_ANGRY_1.wav	S_2	ANGRY	তুমি সব উলোট পালোট করে দিয়ে ছো
+baser	M_1_HASAN_S_2_FEAR_1.wav	S_2	FEAR	তুমি সব অলোট পালোট করে দিয়ে ছো
+baser	M_1_HASAN_S_2_HAPPY_1.wav	S_2	HAPPY	তুনি স্যাব ওলোটপালোট করদিয়ে ছাও।
+baser	M_1_HASAN_S_2_NEUTRAL_1.wav	S_2	NEUTRAL	তুমি সব উলোট পালোট করে দিয়েছো
+baser	M_1_HASAN_S_2_SAD_1.wav	S_2	SAD	তুনি সব অলোট পালোট করে দিয়ে ছো
+baser	M_1_HASAN_S_3_ANGRY_1.wav	S_3	ANGRY	সে কোনো কিছু না বলেই চলে গেছে
+baser	M_1_HASAN_S_3_FEAR_1.wav	S_3	FEAR	সে কোনো কিছু না বলেই চলে গেছে
+baser	M_1_HASAN_S_3_HAPPY_1.wav	S_3	HAPPY	সে কোনো কিছু না বুলে ইজো লেগেছে
+baser	M_1_HASAN_S_3_NEUTRAL_1.wav	S_3	NEUTRAL	সে কনো কিছু না বলেই চলে গেছে।
+baser	M_1_HASAN_S_3_SAD_1.wav	S_3	SAD	সে কোনো গিছু না বলেই জোলে গেছে
+baser	M_1_HASAN_S_4_ANGRY_1.wav	S_4	ANGRY	তুমার কাস্টা করা ঠিক হয়নি।
+baser	M_1_HASAN_S_4_FEAR_1.wav	S_4	FEAR	তুমার কাস্টা করা ঠিক হয়নি।
+baser	M_1_HASAN_S_4_HAPPY_1.wav	S_4	HAPPY	তোমার কাস্টা করা থিক হারনি।
+baser	M_1_HASAN_S_4_NEUTRAL_1.wav	S_4	NEUTRAL	তোমার কাস্টা করা থিক হয়নে
+baser	M_1_HASAN_S_4_SAD_1.wav	S_4	SAD	তুমার কাস্ট্রা করা ঠিক হয়নি।
+baser	M_1_HASAN_S_5_ANGRY_1.wav	S_5	ANGRY	1 দিন পরেই কার বিয়ে
+baser	M_1_HASAN_S_5_FEAR_1.wav	S_5	FEAR	একদিল পরিয় তার বিয়ে
+baser	M_1_HASAN_S_5_HAPPY_1.wav	S_5	HAPPY	Agri-Foreight আরবিয়ে
+baser	M_1_HASAN_S_5_NEUTRAL_1.wav	S_5	NEUTRAL	একদিল পরি তার্বিয়ে
+baser	M_1_HASAN_S_5_SAD_1.wav	S_5	SAD	1 দিন পরেহি তার্বিয়ে
+baser	F_1_CHAITY_S_1_ANGRY_1.wav	S_1	ANGRY	মোমাংছির চাক দেখে কুকুটি কেও কেও কোটছে
+baser	F_1_CHAITY_S_1_FEAR_1.wav	S_1	FEAR	মমাছীর জান্তে খে কুকুটি গেয় গেয় করছে
+baser	F_1_CHAITY_S_1_HAPPY_1.wav	S_1	HAPPY	Mowashi চাক দেখে কুকুটি ঘেও ঘেও করছে
+baser	F_1_CHAITY_S_1_NEUTRAL_1.wav	S_1	NEUTRAL	Mo মাছের চাক দেখে কুকুটি খেও খেও করছে
+baser	F_1_CHAITY_S_1_SAD_1.wav	S_1	SAD	Momma ছের চাক দেখে কুকুটি গের গের করছে
+baser	F_1_CHAITY_S_2_ANGRY_1.wav	S_2	ANGRY	তুমি সাপুলোট পালোট করে দিয়েছো
+baser	F_1_CHAITY_S_2_FEAR_1.wav	S_2	FEAR	তুমিহি সাপলোট পালোট করিতিয়ছো
+baser	F_1_CHAITY_S_2_HAPPY_1.wav	S_2	HAPPY	তুমি শাপ ভুলোট পালোট করে দিয়ছে
+baser	F_1_CHAITY_S_2_NEUTRAL_1.wav	S_2	NEUTRAL	তুমি সব উলোট পালোট করে দিয়েছো
+baser	F_1_CHAITY_S_2_SAD_1.wav	S_2	SAD	তুমি সাপলোট পালোট করে দেয়ছু
+baser	F_1_CHAITY_S_3_ANGRY_1.wav	S_3	ANGRY	কে কোনে কিছু না বলিক চলে গাছে
+baser	F_1_CHAITY_S_3_FEAR_1.wav	S_3	FEAR	সেখ কুনে কিছু না বলেই চুলে আছে
+baser	F_1_CHAITY_S_3_HAPPY_1.wav	S_3	HAPPY	কে কোনে কেছে না বলে চুলে গাছে
+baser	F_1_CHAITY_S_3_NEUTRAL_1.wav	S_3	NEUTRAL	সে কোনো কিছু না বলে চলে গাছে।
+baser	F_1_CHAITY_S_3_SAD_1.wav	S_3	SAD	সে কোনে কিছু না বুলে চুলো যাছে
+baser	F_1_CHAITY_S_4_ANGRY_1.wav	S_4	ANGRY	তোমার কাছ্টা করে ঠিক হয় নিয়।
+baser	F_1_CHAITY_S_4_FEAR_1.wav	S_4	FEAR	তুমার কাছেটা করা ঠিক হয় নিয়।
+baser	F_1_CHAITY_S_4_HAPPY_1.wav	S_4	HAPPY	তুমার কাছ্টা করা থিখাইনি
+baser	F_1_CHAITY_S_4_NEUTRAL_1.wav	S_4	NEUTRAL	তোমার কাছেটা করা থিক হানে।
+baser	F_1_CHAITY_S_4_SAD_1.wav	S_4	SAD	2 মান কাছেটা করা ধিক হাই নেক
+baser	F_1_CHAITY_S_5_ANGRY_1.wav	S_5	ANGRY	1 দিন পাড়িকি তাড় ভিয়ে
+baser	F_1_CHAITY_S_5_FEAR_1.wav	S_5	FEAR	1 দিন পড়ে তারে বেয়ে
+baser	F_1_CHAITY_S_5_HAPPY_1.wav	S_5	HAPPY	1 দিন পডেই তার্ভিয়ে
+baser	F_1_CHAITY_S_5_NEUTRAL_1.wav	S_5	NEUTRAL	1 দিন পড়ে তারে বেয়
+cbesd	54.EF_11 Disgust_1.wav	utt_1	DISGUST	I don't want to do homework.
+cbesd	58.EF_6 Disgust_1.wav	utt_1	DISGUST	I don't like that.
+cbesd	14.EM_11 Disgust_1.wav	utt_1	DISGUST	I don't want to do homework.
+cbesd	4.EM_7 Disgust_2.wav	utt_2	DISGUST	I don't want to do homework.
+cbesd	69.EM_6 Disgust_2.wav	utt_2	DISGUST	It smells bad.
+cbesd	66.EF_8 Disgust_2.wav	utt_2	DISGUST	You are bad.
+cbesd	56.EF_7 Disgust_3.wav	utt_3	DISGUST	I want to go to school.
+cbesd	44.EF_9 Disgust_3.wav	utt_3	DISGUST	You're bad.
+cbesd	65.EM_9 Disgust_3.wav	utt_3	DISGUST	It smells bad.
+cbesd	50.EM_13 Disgust_4.wav	utt_4	DISGUST	I don't like that.
+cbesd	35.EF_12 Disgust_4.wav	utt_4	DISGUST	I don't want to go home.
+cbesd	68.EF_10 Disgust_4.wav	utt_4	DISGUST	You're back.
+cbesd	25.EM_6 Disgust_5.wav	utt_5	DISGUST	It spells bad.
+cbesd	42.EF_13 Disgust_5.wav	utt_5	DISGUST	I don't want to do homework.
+cbesd	20.EM_11 Disgust_5.wav	utt_5	DISGUST	It smells bad.
+cbesd	39.EM_12 fear_1.wav	utt_1	FEAR	I saw a ghost.
+cbesd	70.EM_10 fear_1.wav	utt_1	FEAR	I saw a big dog.
+cbesd	26.EM_8 fear_1.wav	utt_1	FEAR	I saw a tiger.
+cbesd	45.EF_8 fear_2.wav	utt_2	FEAR	I saw a ghost.
+cbesd	20.EM_11 fear_2.wav	utt_2	FEAR	I saw a tiger.
+cbesd	18.EM_11 fear_2.wav	utt_2	FEAR	I'm so monster.
+cbesd	48.EM_10 fear_3.wav	utt_3	FEAR	I saw a ghost.
+cbesd	63.EF_11 fear_3.wav	utt_3	FEAR	I saw a monster.
+cbesd	20.EM_11 fear_3.wav	utt_3	FEAR	It is dark outside.
+cbesd	50.EM_13 fear_4.wav	utt_4	FEAR	I say it either
+cbesd	59.EM_10 fear_4.wav	utt_4	FEAR	I saw a monster.
+cbesd	46.EF_6 fear_4.wav	utt_4	FEAR	I saw a monster.
+cbesd	33.EM_11 fear_5.wav	utt_5	FEAR	I saw a ghost.
+cbesd	9.EF_8 fear_5.wav	utt_5	FEAR	I saw a tiger.
+cbesd	64.EM_13 fear_5.wav	utt_5	FEAR	A so big dog.
+cbesd	60.EF_10 happy_1.wav	utt_1	HAPPY	I like ice cream.
+cbesd	7.EF_12 happy_1.wav	utt_1	HAPPY	Food is yummy!
+cbesd	4.EM_8 happy_1.wav	utt_1	HAPPY	Who is Emmy?
+cbesd	16.EM_12 happy_2.wav	utt_2	HAPPY	Food is yummy.
+cbesd	10.EM_7 happy_2.wav	utt_2	HAPPY	I like ice cream.
+cbesd	2.EF_8 happy_2.wav	utt_2	HAPPY	For the family.
+cbesd	56.EF_10 happy_3.wav	utt_3	HAPPY	to envoy the children
+cbesd	1.EF_7 happy_3.wav	utt_3	HAPPY	I love chocolate.
+cbesd	67.EF_8 happy_3.wav	utt_3	HAPPY	I love singing.
+cbesd	48.EF_9 happy_4.wav	utt_4	HAPPY	I like ice cream.
+cbesd	38.EM_10 happy_4.wav	utt_4	HAPPY	I like ice cream.
+cbesd	47.EF_7 happy_4.wav	utt_4	HAPPY	Food is yummy!
+cbesd	17.EM_11 happy_5.wav	utt_5	HAPPY	I love chocolate.
+cbesd	31.EM_12 happy_5.wav	utt_5	HAPPY	Food is yummy.
+cbesd	35.EM_10 happy_5.wav	utt_5	HAPPY	I love singing.
+cbesd	37.EM_11 neutral_1.wav	utt_1	NEUTRAL	Good morning, madam.
+cbesd	26.EM_6 neutral _1.wav	utt_1	NEUTRAL	I am drawing pictures.
+cbesd	9.EM_7 neutral_1.wav	utt_1	NEUTRAL	Good morning, madam.
+cbesd	61.EM_12 neutral_2.wav	utt_2	NEUTRAL	So you're done.
+cbesd	2.EF_8 neutral_2.wav	utt_2	NEUTRAL	I am playing.
+cbesd	19.EF_6 neutral_2.wav	utt_2	NEUTRAL	and watching movies.
+cbesd	46.EM_10 neutral_3.wav	utt_3	NEUTRAL	She's dancing.
+cbesd	69.EF_11 neutral_3.wav	utt_3	NEUTRAL	Good morning, madam.
+cbesd	66.EF_12 neutral_3.wav	utt_3	NEUTRAL	She's done.
+cbesd	21.EF_6 neutral_4.wav	utt_4	NEUTRAL	Good morning, madam.
+cbesd	44.EF_11 neutral_4.wav	utt_4	NEUTRAL	Thank you.
+cbesd	43.EM_9 neutral_4.wav	utt_4	NEUTRAL	She's dancing.
+cbesd	23.EM_6 neutral_5.wav	utt_5	NEUTRAL	Fish dancing.
+cbesd	49.EF_10 neutral_5.wav	utt_5	NEUTRAL	Good morning, madam.
+cbesd	34.EM_10 neutral_5.wav	utt_5	NEUTRAL	Good morning, ma'am.
+cbesd	43.EM_9 sad_1.wav	utt_1	SAD	I lost my tie.
+cbesd	61.EM_12 sad_1.wav	utt_1	SAD	Teacher Batman.
+cbesd	20.EM_6 sad_1.wav	utt_1	SAD	I lost the game.
+cbesd	54.EM_7 sad_2.wav	utt_2	SAD	I got fever
+cbesd	46.EM_10 sad_2.wav	utt_2	SAD	I lost my toy.
+cbesd	37.EM_11 sad_2.wav	utt_2	SAD	Teach it with me.
+cbesd	43.EM_9 sad_3.wav	utt_3	SAD	I lost again.
+cbesd	30.EF_11 sad_3.wav	utt_3	SAD	My mother begs me.
+cbesd	31.EM_12 sad_3.wav	utt_3	SAD	I lost my toy.
+cbesd	30.EF_11 sad_4.wav	utt_4	SAD	I lost my toy.
+cbesd	13.EM_11 sad_4.wav	utt_4	SAD	Teach it with me.
+cbesd	4.EM_8 sad_4.wav	utt_4	SAD	My mother built me.
+cbesd	64.EF_9 sad_5.wav	utt_5	SAD	I got sea long.
+cbesd	17.EM_11 sad_5.wav	utt_5	SAD	Teacher, but me...
+cbesd	2.EF_8 sad_5.wav	utt_5	SAD	I got fever.
