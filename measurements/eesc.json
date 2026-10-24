@@ -1,0 +1,69 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 1164
+ },
+ "duration_sec": {
+  "max": 14.011,
+  "median": 2.923,
+  "min": 0.445
+ },
+ "hours_total": 1.085,
+ "measured_on": "2026-10-24",
+ "n_total": 1164,
+ "output_dir": "/home/tenshi/data/eesc_espnet3",
+ "output_env_var": "EESC_OUTPUT",
+ "recipe": "eesc",
+ "splits": {
+  "test": {
+   "hours": 0.2194,
+   "labels": {
+    "angry": 61,
+    "happy": 54,
+    "neutral": 68,
+    "sad": 50
+   },
+   "manifest_sha1": "2bc0715947bbe3797480d1accf090365827ba160",
+   "n": 233,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 233
+  },
+  "train": {
+   "hours": 0.7607,
+   "labels": {
+    "angry": 214,
+    "happy": 190,
+    "neutral": 236,
+    "sad": 174
+   },
+   "manifest_sha1": "bc48e00f59e1e9cff94f763d1c39dcc3e535e343",
+   "n": 814,
+   "n_filtered": 814,
+   "over_30s": 0,
+   "under_0.5s": 2,
+   "unique_utt": 814
+  },
+  "valid": {
+   "hours": 0.1049,
+   "labels": {
+    "angry": 31,
+    "happy": 27,
+    "neutral": 34,
+    "sad": 25
+   },
+   "manifest_sha1": "504b367c1b70eefff1f604068794c10351423b9f",
+   "n": 117,
+   "n_filtered": 117,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 117
+  }
+ },
+ "token_list": [
+  "neutral",
+  "angry",
+  "happy",
+  "sad"
+ ]
+}

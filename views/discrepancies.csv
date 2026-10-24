@@ -141,9 +141,13 @@ dusha,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,303963,see ev
 dzafic,status_reason_codes,superseded,identity_unresolved,project_doc,content_insufficient,project_doc,new_corpora/99_final_report.md,superseded by dzafic/status_reason_codes/02
 eekk,license_spdx,superseded,CC-BY-4.0,primary,LicenseRef-other,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Other; superseded by eekk/license_spdx/02
 eekk,status_reason_codes,superseded,duplicate_entry,primary,access_no_direct_download,project_doc,nc_candidates_20261010.md,superseded by eekk/status_reason_codes/03
-eesc,espnet_status,superseded,candidate,measured,excluded,project_doc,new_corpora/99_final_report.md,superseded by eesc/espnet_status/03
+eesc,espnet_status,superseded,implemented,measured,candidate,measured,https://ndownloader.figshare.com/files/44609146,superseded by eesc/espnet_status/04
+eesc,espnet_status,superseded,implemented,measured,excluded,project_doc,new_corpora/99_final_report.md,superseded by eesc/espnet_status/03
+eesc,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1234,see evidence,1164,measured,n_files_release_measured,
+eesc,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1234,see evidence,1164,measured,recipes.n_total (eesc),a mismatch is normal: recipes filter by length and label
 eesc,recording_context,superseded,read_speech,primary,acted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Acted; superseded by eesc/recording_context/02
-eesc,status_reason_codes,superseded,unexamined,project_doc,access_no_direct_download,project_doc,new_corpora/99_final_report.md,superseded by eesc/status_reason_codes/03
+eesc,status_reason_codes,superseded,NA,measured,access_no_direct_download,project_doc,new_corpora/99_final_report.md,superseded by eesc/status_reason_codes/03
+eesc,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by eesc/status_reason_codes/04
 eesdb_chinese,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Chinese/EESDB.md,Not confirmed in a primary source; superseded by eesdb_chinese/espnet_status/02
 eesdb_chinese,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Chinese/EESDB.md,Not confirmed in a primary source; superseded by eesdb_chinese/status_reason_codes/02
 egyptian_hf_unresolved,status_reason_codes,superseded,identity_unresolved,user,content_insufficient;identity_unresolved,project_doc,new_corpora/99_final_report.md,superseded by egyptian_hf_unresolved/status_reason_codes/02
