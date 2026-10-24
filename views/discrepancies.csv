@@ -160,8 +160,10 @@ emilia_emotion,license_spdx,conflicting,conflicting,primary,CC-BY-4.0,primary,ht
 emilia_emotion,license_spdx,conflicting,conflicting,primary,CC-BY-NC-4.0,primary,https://arxiv.org/abs/2609.32016,"Emilia part CC-BY-NC-4.0, Emilia-YODAS part CC-BY-4.0; derivatives inherit the source clips' license (Limitations). The original amphion/Emilia-Dataset terms likewise use Emilia under CC-BY-NC and Emilia-YODAS under CC-BY"
 emilia_emotion,license_spdx,superseded,conflicting,primary,none_stated,primary,https://huggingface.co/datasets/laion/Emilia-with-Emotion-Annotations,superseded by emilia_emotion/license_spdx/02
 emilia_emotion,status_reason_codes,superseded,unexamined,user,labels_automatic;redistribution_of_existing_corpus,primary,https://huggingface.co/datasets/laion/Emilia-with-Emotion-Annotations,superseded by emilia_emotion/status_reason_codes/02
-emis,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/19207001,superseded by emis/espnet_status/02
-emis,status_reason_codes,superseded,unexamined,user,synthetic_or_tts,primary,https://zenodo.org/records/19207001,superseded by emis/status_reason_codes/02
+emis,espnet_status,superseded,implemented,measured,candidate,user,"Conversation with the maintainer, 2026-10-14",Former reason: synthetic_or_tts; superseded by emis/espnet_status/03
+emis,espnet_status,superseded,implemented,measured,excluded,primary,https://zenodo.org/records/19207001,superseded by emis/espnet_status/02
+emis,status_reason_codes,superseded,NA,measured,synthetic_or_tts,primary,https://zenodo.org/records/19207001,superseded by emis/status_reason_codes/02
+emis,status_reason_codes,superseded,NA,measured,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: synthetic_or_tts; superseded by emis/status_reason_codes/03
 emodb,hours_reported,superseded,1.25,primary,0.7,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,superseded by emodb/hours_reported/02
 emodb,license_spdx,conflicting,conflicting,project_doc,CC-BY-4.0,project_doc,corpus_metadata.md,
 emodb,license_spdx,conflicting,conflicting,project_doc,CC0-1.0,primary,https://audeering.github.io/datasets/datasets/emodb.html,
@@ -175,6 +177,8 @@ emofilm,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidat
 emofilm,languages,superseded,eng;ita;spa,primary,mul,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Multilingual; superseded by emofilm/languages/02
 emofilm,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,project_doc,nc_candidates_20261010.md,superseded by emofilm/status_reason_codes/03
 emofilm,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://zenodo.org/records/7665999,superseded by emofilm/status_reason_codes/04
+emogator,espnet_status,superseded,implemented,measured,candidate,measured,https://github.com/fredbuhl/EmoGator,superseded by emogator/espnet_status/02
+emogator,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-13 survey,superseded by emogator/status_reason_codes/02
 emolah,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Malay/Emolah.md,Not confirmed in a primary source; superseded by emolah/espnet_status/02
 emolah,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Malay/Emolah.md,Not confirmed in a primary source; superseded by emolah/status_reason_codes/02
 emomatchspanishdb,espnet_status,superseded,candidate,user,excluded,primary,https://figshare.com/articles/dataset/EmoMatchSpanishDB/14215850,superseded by emomatchspanishdb/espnet_status/04
