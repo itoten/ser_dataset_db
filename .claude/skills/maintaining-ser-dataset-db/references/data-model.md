@@ -153,8 +153,11 @@ someone checks the actual data before relying on it.
 | `lexical_confound_note` (free text) | what the value rests on and its scope |
 
 - Fill a value only from a design statement in the paper or official documentation, or from a
-  measurement (count the emotions each sentence occurs under, from transcripts). If neither
-  exists, leave it empty and say what is missing. Never guess.
+  measurement (count the emotions each sentence occurs under, from transcripts). Never guess.
+  Measuring is optional because it can be costly: if the sources are silent and no cheap check
+  exists, write `unknown` (checked, the sources do not say) and, with a documented reason to
+  suspect a correlation, `lexical_confound=possible`. Leave a cell empty only if the dataset
+  was not looked at.
 - Prefer flagging: anything with a documented chance of correlation gets `possible` or above.
   `none` needs a design that rules it out.
 - Sentence numbers in file names do not prove that the same text was read in every emotion:

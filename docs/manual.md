@@ -18,7 +18,7 @@ This guide explains the database from scratch. Terms are explained before they a
 | Awaiting a decision | 7 |
 | Deferred | 35 |
 | Excluded (with reasons) | 46 |
-| Evidence rows (sources of values) | 4,092 |
+| Evidence rows (sources of values) | 4,095 |
 | Language codes | 70 |
 
 ### 1.3 What makes it useful
@@ -150,7 +150,7 @@ ser_dataset_db/
 | File | One row is | Rows |
 |---|---|---|
 | [datasets.csv](../data/datasets.csv) | **one dataset** (the central table) | 322 |
-| [evidence.csv](../data/evidence.csv) | the **source** of one value in datasets | 4,092 |
+| [evidence.csv](../data/evidence.csv) | the **source** of one value in datasets | 4,095 |
 | [aliases.csv](../data/aliases.csv) | another name (official name, short name, former name, recipe name, ...) | 375 |
 | [relations.csv](../data/relations.csv) | a relation between datasets | 41 |
 | [recipes.csv](../data/recipes.csv) | one ESPnet recipe | 75 |
@@ -253,7 +253,7 @@ If the words spoken already give the label away, a model can learn the words ins
 | `lexical_confound` | `full` (the text determines the label: each sentence under one emotion only) / `strong` (most utterances) / `moderate` (a substantial part) / `weak` (a small part or a weak link) / `possible` (no direct evidence, but a documented reason to suspect it, e.g. unscripted speech, labels assigned from context or with the transcript visible) / `none` (ruled out by design: parallel, neutral or emotion-independent sentences, or no words) |
 | `lexical_confound_note` | free text: what the value is based on (design in a source, sentence-label counts, a text-only classifier) and its scope (e.g. "English half only") |
 
-- A value needs a clear source: a design statement in the paper or official documentation, or a measurement (counting sentences per emotion in transcripts). Never fill a value by guessing; leave it empty and say what is missing.
+- A value needs a clear source: a design statement in the paper or official documentation, or a measurement (counting sentences per emotion in transcripts). Never fill a value by guessing. Measuring is optional and can be costly: if the sources are silent and no cheap check exists, write `unknown` (checked, the sources do not say) and, when there is a documented reason to suspect a correlation, set `lexical_confound=possible` with the reason in `lexical_confound_note`. Leave the cell empty only when the dataset has not been looked at.
 - Record anything with even a small chance of correlation (`possible` or above), because the flag is what prompts someone to look at the data later. Use `none` only when the design rules it out.
 - Whisper transcripts are a measurement, but say in the evidence note that no person checked them. Measurement outputs go under `measurements/text_link/`.
 - Filled during recipe review. Rows not yet reviewed are empty (not checked).
@@ -297,7 +297,7 @@ Columns that need evidence: `languages`, `recording_context`, `vocal_content`, `
 
 ### 6.2.1 Recording when something was checked
 
-Every one of the 4,092 evidence rows has a date checked (`checked_on`, 2026-10-10 to 10-24). But **the date is when the source was looked at**, not a guarantee that it is still true; distribution pages and licenses can change. For rows from the original spreadsheet (`source_type`=`sheet`), the date 2026-10-12 is the import date, not a date when anyone checked the content.
+Every one of the 4,095 evidence rows has a date checked (`checked_on`, 2026-10-10 to 10-25). But **the date is when the source was looked at**, not a guarantee that it is still true; distribution pages and licenses can change. For rows from the original spreadsheet (`source_type`=`sheet`), the date 2026-10-12 is the import date, not a date when anyone checked the content.
 
 The overview [views/datasets_wide.csv](../views/datasets_wide.csv) adds these columns per dataset (generated from the evidence):
 
@@ -322,7 +322,7 @@ Strongest first.
 | 5 | `secondary` | third-party statements (Kaggle, re-upload pages, surveys) |
 | 6 | `sheet` | values of the original spreadsheet |
 
-The 4,092 evidence rows by source type: primary 2,005, sheet 572, measured 455, project_doc 435, user 352, secondary 273.
+The 4,095 evidence rows by source type: primary 2,008, sheet 572, measured 455, project_doc 435, user 352, secondary 273.
 
 ### 6.4 When a new fact appears
 
@@ -610,7 +610,7 @@ MSP-Podcast is for internal non-commercial research only, may not be redistribut
 
 ### 16.1 Outline (1-2 minutes)
 
-1. **What was built**: an evidence-backed ledger of SER and paralinguistic datasets. 322 datasets, 4,092 evidence rows.
+1. **What was built**: an evidence-backed ledger of SER and paralinguistic datasets. 322 datasets, 4,095 evidence rows.
 2. **Why**: to stop re-researching dataset conditions (license, access) every time, and to keep the basis for cross-corpus evaluation.
 3. **Reliability measures**: each value records its source, date and checker, and a machine checks the rules. Unknowns are written as unknown, never filled by guessing.
 4. **Link to the implementation**: the 75 ESPnet recipes are measured into the DB, distinguishing implemented, candidate and deferred datasets (the recipe branch keeps growing, and new recipes are registered after review; 15.1).
@@ -626,7 +626,7 @@ MSP-Podcast is for internal non-commercial research only, may not be redistribut
 | Question | Answer |
 |---|---|
 | Why CSV instead of the original spreadsheet? | A spreadsheet cannot hold sources, history or checks. CSV under git keeps the change history and can be checked by machine |
-| Is the information correct? | Every value has a source and a date; primary sources (papers, official pages) are the largest group (2,005 of 4,092 evidence rows). Final human checks (licenses) are still in progress |
+| Is the information correct? | Every value has a source and a date; primary sources (papers, official pages) are the largest group (2,008 of 4,095 evidence rows). Final human checks (licenses) are still in progress |
 | How was it collected? | 238 datasets from surveys, hosting services and the literature were added to the spreadsheet's 84; added rows were checked in primary sources |
 | How many can be implemented? | 74 implemented, 160 candidates. Of the candidates, 20 are openly licensed and available now |
 | What was excluded? | 46. Only for clear reasons: no audio, redistribution of existing data, duplicates, regional restrictions, etc. Effort and size are not reasons |
