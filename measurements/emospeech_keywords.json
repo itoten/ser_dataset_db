@@ -1,0 +1,68 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 6530
+ },
+ "duration_sec": {
+  "max": 3.755,
+  "median": 3.0,
+  "min": 1.963
+ },
+ "hours_total": 5.5441,
+ "measured_on": "2026-10-25",
+ "n_total": 6530,
+ "output_env_var": "EMOSPEECH_KEYWORDS_OUTPUT",
+ "recipe": "emospeech_keywords",
+ "splits": {
+  "test": {
+   "hours": 1.1085,
+   "labels": {
+    "angry": 222,
+    "calm": 583,
+    "fear": 310,
+    "happy": 192
+   },
+   "manifest_sha1": "a8120ac2eee24f7d082d474bcfcff24fe52301c2",
+   "n": 1307,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1307
+  },
+  "train": {
+   "hours": 3.8806,
+   "labels": {
+    "angry": 777,
+    "calm": 2039,
+    "fear": 1084,
+    "happy": 670
+   },
+   "manifest_sha1": "b7fda6a2ea6ee20787f7ff952d57825a4cbe013d",
+   "n": 4570,
+   "n_filtered": 4570,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 4570
+  },
+  "valid": {
+   "hours": 0.555,
+   "labels": {
+    "angry": 111,
+    "calm": 291,
+    "fear": 155,
+    "happy": 96
+   },
+   "manifest_sha1": "36f77122c77d15dfa1b8883722f7ada4ed5616fe",
+   "n": 653,
+   "n_filtered": 653,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 653
+  }
+ },
+ "token_list": [
+  "calm",
+  "fear",
+  "angry",
+  "happy"
+ ]
+}

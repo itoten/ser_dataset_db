@@ -1,0 +1,72 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 800
+ },
+ "duration_sec": {
+  "max": 7.443,
+  "median": 2.6,
+  "min": 1.07
+ },
+ "hours_total": 0.617,
+ "measured_on": "2026-10-25",
+ "n_total": 800,
+ "output_env_var": "EMOTALE_OUTPUT",
+ "recipe": "emotale",
+ "splits": {
+  "test": {
+   "hours": 0.1373,
+   "labels": {
+    "angry": 35,
+    "boredom": 35,
+    "happy": 35,
+    "neutral": 35,
+    "sad": 35
+   },
+   "manifest_sha1": "689292bb23f0ca6fd7031cd830d8c832d4216559",
+   "n": 175,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 175
+  },
+  "train": {
+   "hours": 0.413,
+   "labels": {
+    "angry": 105,
+    "boredom": 105,
+    "happy": 105,
+    "neutral": 105,
+    "sad": 105
+   },
+   "manifest_sha1": "e18adaf437fb1c25933cf7df3cd92a6275251519",
+   "n": 525,
+   "n_filtered": 525,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 525
+  },
+  "valid": {
+   "hours": 0.0667,
+   "labels": {
+    "angry": 20,
+    "boredom": 20,
+    "happy": 20,
+    "neutral": 20,
+    "sad": 20
+   },
+   "manifest_sha1": "dcbe1efdba4ed4b1a041fdadeaa3e5fbd71e49d0",
+   "n": 100,
+   "n_filtered": 100,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 100
+  }
+ },
+ "token_list": [
+  "angry",
+  "boredom",
+  "happy",
+  "neutral",
+  "sad"
+ ]
+}

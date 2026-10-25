@@ -1,0 +1,80 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 22100
+ },
+ "duration_sec": {
+  "max": 27.75,
+  "median": 6.4,
+  "min": 1.05
+ },
+ "hours_total": 40.4431,
+ "measured_on": "2026-10-25",
+ "n_total": 22100,
+ "output_env_var": "EMOVOICEDB_OUTPUT",
+ "recipe": "emovoicedb",
+ "splits": {
+  "test": {
+   "hours": 1.3008,
+   "labels": {
+    "angry": 100,
+    "disgust": 100,
+    "fear": 100,
+    "happy": 100,
+    "neutral": 100,
+    "sad": 100,
+    "surprise": 100
+   },
+   "manifest_sha1": "f7e1a2b024684e9f7583457889dce16943a4c82b",
+   "n": 700,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 700
+  },
+  "train": {
+   "hours": 38.5017,
+   "labels": {
+    "angry": 3336,
+    "disgust": 2800,
+    "fear": 2811,
+    "happy": 3119,
+    "neutral": 3038,
+    "sad": 3024,
+    "surprise": 2922
+   },
+   "manifest_sha1": "9dc19ff034f762c18849e6b47dcfd6ca112ce787",
+   "n": 21050,
+   "n_filtered": 21050,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 21050
+  },
+  "valid": {
+   "hours": 0.6406,
+   "labels": {
+    "angry": 50,
+    "disgust": 50,
+    "fear": 50,
+    "happy": 50,
+    "neutral": 50,
+    "sad": 50,
+    "surprise": 50
+   },
+   "manifest_sha1": "2ee8ab9d02447e97a92328ae2a37955f4020df6b",
+   "n": 350,
+   "n_filtered": 350,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 350
+  }
+ },
+ "token_list": [
+  "angry",
+  "happy",
+  "neutral",
+  "sad",
+  "surprise",
+  "fear",
+  "disgust"
+ ]
+}

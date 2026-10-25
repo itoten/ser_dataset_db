@@ -193,6 +193,8 @@ emoreact,espnet_status,superseded,candidate,user,excluded,primary,https://github
 emoreact,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,superseded by emoreact/espnet_status/02
 emoreact,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://github.com/bnojavan/EmoReact,superseded by emoreact/status_reason_codes/03
 emoreact,status_reason_codes,superseded,unexamined,user,not_distributable,project_doc,new_corpora/99_final_report.md,superseded by emoreact/status_reason_codes/02
+emospeech_keywords,espnet_status,superseded,implemented,measured,candidate,measured,https://www.kaggle.com/datasets/ujjwal9/emospeech,superseded by emospeech_keywords/espnet_status/02
+emospeech_keywords,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by emospeech_keywords/status_reason_codes/02
 emosynth,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/3727593,superseded by emosynth/espnet_status/04
 emosynth,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by emosynth/espnet_status/03
 emosynth,status_reason_codes,superseded,unexamined,user,synthetic_or_tts,primary,https://zenodo.org/records/3727593,superseded by emosynth/status_reason_codes/04
@@ -201,6 +203,8 @@ emota,espnet_status,superseded,candidate,primary,excluded,primary,https://huggin
 emota,espnet_status,superseded,candidate,primary,excluded,project_doc,new_corpora/99_final_report.md,superseded by emota/espnet_status/02
 emota,status_reason_codes,superseded,unexamined,primary,access_gated,primary,https://huggingface.co/datasets/aaivu-labs/EmoTa,superseded by emota/status_reason_codes/03
 emota,status_reason_codes,superseded,unexamined,primary,access_gated,project_doc,new_corpora/99_final_report.md,superseded by emota/status_reason_codes/02
+emotale,espnet_status,superseded,implemented,measured,candidate,measured,https://github.com/snehadas/EmoTale,superseded by emotale/espnet_status/02
+emotale,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-13 survey,How to handle the missing license is not decided; superseded by emotale/status_reason_codes/02
 emotion_origlia2010,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,superseded by emotion_origlia2010/espnet_status/03
 emotional_ema,espnet_status,superseded,implemented,measured,candidate,primary,https://zenodo.org/records/19303746,superseded by emotional_ema/espnet_status/03
 emotional_ema,espnet_status,superseded,implemented,measured,excluded,project_doc,new_corpora/99_final_report.md,superseded by emotional_ema/espnet_status/02
@@ -220,8 +224,11 @@ emovdb,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7000,see evi
 emovie,espnet_status,superseded,candidate,user,excluded,primary,https://arxiv.org/abs/2106.09317,superseded by emovie/espnet_status/02
 emovie,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,primary,https://arxiv.org/abs/2106.09317,superseded by emovie/status_reason_codes/02
 emovo,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Custom academic/research-only; superseded by emovo/license_spdx/02
-emovoicedb,espnet_status,superseded,candidate,user,excluded,primary,https://huggingface.co/datasets/yhaha/EmoVoice-DB,superseded by emovoicedb/espnet_status/02
-emovoicedb,status_reason_codes,superseded,unexamined,user,synthetic_or_tts,primary,https://huggingface.co/datasets/yhaha/EmoVoice-DB,superseded by emovoicedb/status_reason_codes/02
+emovoicedb,espnet_status,superseded,implemented,measured,candidate,user,"Conversation with the maintainer, 2026-10-14",Former reason: synthetic_or_tts; superseded by emovoicedb/espnet_status/03
+emovoicedb,espnet_status,superseded,implemented,measured,excluded,primary,https://huggingface.co/datasets/yhaha/EmoVoice-DB,superseded by emovoicedb/espnet_status/02
+emovoicedb,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,22100,see evidence,24923,measured,n_files_release_measured,
+emovoicedb,status_reason_codes,superseded,NA,measured,synthetic_or_tts,primary,https://huggingface.co/datasets/yhaha/EmoVoice-DB,superseded by emovoicedb/status_reason_codes/02
+emovoicedb,status_reason_codes,superseded,NA,measured,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: synthetic_or_tts; superseded by emovoicedb/status_reason_codes/03
 emovome,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/10694370,superseded by emovome/espnet_status/03
 emovome,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,superseded by emovome/espnet_status/02
 emovome,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://zenodo.org/records/10694370,superseded by emovome/status_reason_codes/03
