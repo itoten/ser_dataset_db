@@ -10,7 +10,6 @@
  "hours_total": 2.9003,
  "measured_on": "2026-10-12",
  "n_total": 3218,
- "output_dir": "/home/tenshi/data/banglamood_espnet3",
  "output_env_var": "BANGLAMOOD_OUTPUT",
  "recipe": "banglamood",
  "splits": {

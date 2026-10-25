@@ -10,7 +10,6 @@
  "hours_total": 0.0872,
  "measured_on": "2026-10-12",
  "n_total": 488,
- "output_dir": "/home/tenshi/data/hikia_espnet3",
  "output_env_var": "HIKIA_OUTPUT",
  "recipe": "hikia",
  "splits": {

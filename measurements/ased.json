@@ -10,7 +10,6 @@
  "hours_total": 2.1058,
  "measured_on": "2026-10-12",
  "n_total": 2474,
- "output_dir": "/home/tenshi/data/ased_espnet3",
  "output_env_var": "ASED_OUTPUT",
  "recipe": "ased",
  "splits": {

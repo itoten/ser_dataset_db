@@ -10,7 +10,6 @@
  "hours_total": 1.2629,
  "measured_on": "2026-10-24",
  "n_total": 1248,
- "output_dir": "/home/tenshi/data/emis_espnet3",
  "output_env_var": "EMIS_OUTPUT",
  "recipe": "emis",
  "splits": {

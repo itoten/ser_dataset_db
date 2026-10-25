@@ -10,7 +10,6 @@
  "hours_total": 0.2774,
  "measured_on": "2026-10-12",
  "n_total": 400,
- "output_dir": "/home/tenshi/data/urdu_espnet3",
  "output_env_var": "URDU_OUTPUT",
  "recipe": "urdu",
  "splits": {

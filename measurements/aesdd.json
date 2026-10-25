@@ -10,7 +10,6 @@
  "hours_total": 0.6886,
  "measured_on": "2026-10-12",
  "n_total": 604,
- "output_dir": "/home/tenshi/data/aesdd_espnet3",
  "output_env_var": "AESDD_OUTPUT",
  "recipe": "aesdd",
  "splits": {

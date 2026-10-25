@@ -10,7 +10,6 @@
  "hours_total": 2.4606,
  "measured_on": "2026-10-18",
  "n_total": 7077,
- "output_dir": "/home/tenshi/data/recanvo_espnet3",
  "output_env_var": "RECANVO_OUTPUT",
  "recipe": "recanvo",
  "splits": {

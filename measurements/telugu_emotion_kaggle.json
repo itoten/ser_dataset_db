@@ -10,7 +10,6 @@
  "hours_total": 0.5285,
  "measured_on": "2026-10-20",
  "n_total": 456,
- "output_dir": "/home/tenshi/data/telugu_emotion_kaggle_espnet3",
  "output_env_var": "TELUGU_EMOTION_KAGGLE_OUTPUT",
  "recipe": "telugu_emotion_kaggle",
  "splits": {

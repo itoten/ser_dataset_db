@@ -10,7 +10,6 @@
  "hours_total": 0.5518,
  "measured_on": "2026-10-23",
  "n_total": 692,
- "output_dir": "/home/tenshi/data/baser_espnet3",
  "output_env_var": "BASER_OUTPUT",
  "recipe": "baser",
  "splits": {

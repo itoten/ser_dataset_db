@@ -10,7 +10,6 @@
  "hours_total": 0.173,
  "measured_on": "2026-10-12",
  "n_total": 862,
- "output_dir": "/home/tenshi/data/mesd_espnet3",
  "output_env_var": "MESD_OUTPUT",
  "recipe": "mesd",
  "splits": {

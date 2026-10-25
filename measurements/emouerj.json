@@ -10,7 +10,6 @@
  "hours_total": 0.315,
  "measured_on": "2026-10-22",
  "n_total": 377,
- "output_dir": "/home/tenshi/data/emouerj_espnet3",
  "output_env_var": "EMOUERJ_OUTPUT",
  "recipe": "emouerj",
  "splits": {

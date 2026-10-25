@@ -10,7 +10,6 @@
  "hours_total": 1.9831,
  "measured_on": "2026-10-22",
  "n_total": 2976,
- "output_dir": "/home/tenshi/data/eseravd_espnet3",
  "output_env_var": "ESERAVD_OUTPUT",
  "recipe": "eseravd",
  "splits": {

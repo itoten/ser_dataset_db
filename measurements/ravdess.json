@@ -10,7 +10,6 @@
  "hours_total": 1.4803,
  "measured_on": "2026-10-12",
  "n_total": 1440,
- "output_dir": "/home/tenshi/data/ravdess_espnet3",
  "output_env_var": "RAVDESS_OUTPUT",
  "recipe": "ravdess",
  "splits": {

@@ -10,7 +10,6 @@
  "hours_total": 1.085,
  "measured_on": "2026-10-24",
  "n_total": 1164,
- "output_dir": "/home/tenshi/data/eesc_espnet3",
  "output_env_var": "EESC_OUTPUT",
  "recipe": "eesc",
  "splits": {

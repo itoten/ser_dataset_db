@@ -10,7 +10,6 @@
  "hours_total": 5.4801,
  "measured_on": "2026-10-12",
  "n_total": 3241,
- "output_dir": "/home/tenshi/data/asvpesd_espnet3",
  "output_env_var": "ASVPESD_OUTPUT",
  "recipe": "asvpesd",
  "splits": {

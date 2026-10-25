@@ -10,7 +10,6 @@
  "hours_total": 3.0246,
  "measured_on": "2026-10-12",
  "n_total": 2398,
- "output_dir": "/home/tenshi/data/inesco_espnet3",
  "output_env_var": "INESCO_OUTPUT",
  "recipe": "inesco",
  "splits": {

@@ -10,7 +10,6 @@
  "hours_total": 21.6731,
  "measured_on": "2026-10-24",
  "n_total": 23772,
- "output_dir": "/home/tenshi/data/dailytalk_espnet3",
  "output_env_var": "DAILYTALK_OUTPUT",
  "recipe": "dailytalk",
  "splits": {

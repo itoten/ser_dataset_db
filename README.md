@@ -48,6 +48,8 @@ A database of speech emotion recognition (SER) datasets, kept as CSV files under
 - **CSV format**: UTF-8, no BOM, LF, rows in key order. After editing by hand, run `python3 tools/db.py fmt`.
 - **Licenses**: `license_spdx` maps the wording in the sources to an SPDX identifier (or `LicenseRef-...`). `license_class` is derived mechanically from the identifier and is not a legal interpretation. Read `license_note` and the primary source before using a dataset.
 - **Language**: all text in the DB and its documents is English (dataset names and quotations keep their original language).
+- **Public repository**: everything committed here, including commit messages, is public. Write no personal names, e-mail addresses or machine-specific paths; refer to people by role ("the project maintainer") and to local data by environment variable (e.g. `$EESC_OUTPUT/manifest/test.tsv`). `tools/validate.py` rejects absolute home paths.
+- **References outside this repository**: many evidence rows cite the project's working documents (`recipe_reports/…`, `recipe_review/…`, `new_corpora/…`, resolved from the directory that contains this repository). They are internal notes and are not published; the facts they support are summarised in the row's `locator` and `note`.
 
 ## Evidence rules
 
@@ -72,7 +74,7 @@ python3 tools/db.py get|set|add|fmt   # view or edit one row
 
 - Run with the system Python 3 (with PyYAML). pandas is not used.
 - `git config core.hooksPath tools/hooks` makes `tools/validate.py` run before every commit. Do not use `--no-verify`.
-- egs3 recipes are read from the recipe branch of the ESPnet repository, not from its working tree (the location and branch are set in one place, `tools/egs3.py`).
+- egs3 recipes are read from the recipe branch of the ESPnet repository, not from its working tree (the branch is set in `tools/egs3.py`). Machine-specific settings such as the location of that repository go in `.env` (git-ignored; copy `.env.example`).
 - Measurements: run `tools/measure.py --all` in the toolkit's environment (see its docstring), then `python3 tools/sync.py` to update the automatic columns of `recipes.csv`; people fill the hand-written columns.
 - `validate.py` checks format, types and allowed values, keys and foreign keys, duplicate aliases, the evidence rules, agreement of the implementation status with egs3 (recipes on the branch but not registered only produce a warning), agreement of `recipes.csv` / `recipe_labels.csv` with `measurements/*.json`, and that `views/` is up to date. It does not check whether `measurements/` still matches the local outputs.
 - Every value change needs an evidence row. Make one commit per dataset or per checking session, and write in the message what was wrong and what the evidence was.
@@ -83,7 +85,7 @@ python3 tools/db.py get|set|add|fmt   # view or edit one row
 - Corpora built for TTS are included if they have emotion labels. Datasets without audio (text only, features only) are kept as `excluded` to record what was found.
 - When two rows turn out to be the same, mark one `excluded` (`duplicate_entry`) and link them with `possibly_same_as` in `relations`. IDs are never deleted.
 
-## Current state (2026-10-24)
+## Current state (2026-10-25)
 
 322 datasets (84 from the spreadsheet, 238 added later). `implemented` 74, `candidate` 160, `deferred` 35, `needs_decision` 7, `excluded` 46. All 28 corpora in Table I of the MSP-Podcast paper (arXiv 2509.09791v1) are included.
 
@@ -109,3 +111,7 @@ Known caveats:
   - Rows that could not be checked because the distributor did not respond, etc.: `amigos` (HTTP 503 on 2026-10-14), `casia` (no connection), `cheavd`, `belfast`, `emotion_origlia2010`, `usoms`, `eyase`.
   - The `deferred` rows (35).
 - Disagreements between published and measured values are in `views/discrepancies.csv`. Recipes filter by length and label, so `n_utt_reported` and the recipe's count often differ, which is normal.
+
+## License
+
+MIT (see [LICENSE](LICENSE)). The license covers this database and its tools. It does not cover the datasets described here: each keeps its own terms, recorded in `license_spdx` and `license_note`.

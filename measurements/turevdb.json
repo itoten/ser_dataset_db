@@ -10,7 +10,6 @@
  "hours_total": 0.4629,
  "measured_on": "2026-10-12",
  "n_total": 1735,
- "output_dir": "/home/tenshi/data/turevdb_espnet3",
  "output_env_var": "TUREVDB_OUTPUT",
  "recipe": "turevdb",
  "splits": {

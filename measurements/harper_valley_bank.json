@@ -10,7 +10,6 @@
  "hours_total": 11.4093,
  "measured_on": "2026-10-19",
  "n_total": 19456,
- "output_dir": "/home/tenshi/data/harper_valley_bank_espnet3",
  "output_env_var": "HARPER_VALLEY_BANK_OUTPUT",
  "recipe": "harper_valley_bank",
  "splits": {

@@ -10,7 +10,6 @@
  "hours_total": 8.6041,
  "measured_on": "2026-10-12",
  "n_total": 5442,
- "output_dir": "/home/tenshi/data/pavoque_espnet3",
  "output_env_var": "PAVOQUE_OUTPUT",
  "recipe": "pavoque",
  "splits": {

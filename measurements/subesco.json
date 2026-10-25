@@ -10,7 +10,6 @@
  "hours_total": 7.8321,
  "measured_on": "2026-10-12",
  "n_total": 7000,
- "output_dir": "/home/tenshi/data/subesco_espnet3",
  "output_env_var": "SUBESCO_OUTPUT",
  "recipe": "subesco",
  "splits": {

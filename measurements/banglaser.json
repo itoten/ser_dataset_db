@@ -10,7 +10,6 @@
  "hours_total": 1.374,
  "measured_on": "2026-10-12",
  "n_total": 1467,
- "output_dir": "/home/tenshi/data/banglaser_espnet3",
  "output_env_var": "BANGLASER_OUTPUT",
  "recipe": "banglaser",
  "splits": {

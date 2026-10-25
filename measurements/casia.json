@@ -10,7 +10,6 @@
  "hours_total": 0.6352,
  "measured_on": "2026-10-23",
  "n_total": 1200,
- "output_dir": "/home/tenshi/data/casia_espnet3",
  "output_env_var": "CASIA_OUTPUT",
  "recipe": "casia",
  "splits": {

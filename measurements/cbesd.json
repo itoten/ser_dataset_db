@@ -10,7 +10,6 @@
  "hours_total": 3.0013,
  "measured_on": "2026-10-23",
  "n_total": 4164,
- "output_dir": "/home/tenshi/data/cbesd_espnet3",
  "output_env_var": "CBESD_OUTPUT",
  "recipe": "cbesd",
  "splits": {

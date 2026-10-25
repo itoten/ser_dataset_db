@@ -10,7 +10,6 @@
  "hours_total": 2.297,
  "measured_on": "2026-10-12",
  "n_total": 6675,
- "output_dir": "/home/tenshi/data/mcaespps_espnet3",
  "output_env_var": "MCAESPPS_OUTPUT",
  "recipe": "mcaespps",
  "splits": {

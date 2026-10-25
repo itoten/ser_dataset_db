@@ -10,7 +10,6 @@
  "hours_total": 202.4873,
  "measured_on": "2026-10-12",
  "n_total": 160366,
- "output_dir": "/home/tenshi/data/dusha_espnet3",
  "output_env_var": "DUSHA_OUTPUT",
  "recipe": "dusha",
  "splits": {

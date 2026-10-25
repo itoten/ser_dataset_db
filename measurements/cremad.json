@@ -10,7 +10,6 @@
  "hours_total": 5.2567,
  "measured_on": "2026-10-12",
  "n_total": 7442,
- "output_dir": "/home/tenshi/data/cremad_espnet3",
  "output_env_var": "CREMAD_OUTPUT",
  "recipe": "cremad",
  "splits": {

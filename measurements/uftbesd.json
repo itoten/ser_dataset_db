@@ -10,7 +10,6 @@
  "hours_total": 1.0082,
  "measured_on": "2026-10-17",
  "n_total": 1359,
- "output_dir": "/home/tenshi/data/uftbesd_espnet3",
  "output_env_var": "UFTBESD_OUTPUT",
  "recipe": "uftbesd",
  "splits": {

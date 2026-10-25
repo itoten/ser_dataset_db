@@ -10,7 +10,6 @@
  "hours_total": 1.6277,
  "measured_on": "2026-10-22",
  "n_total": 953,
- "output_dir": "/home/tenshi/data/emotional_ema_espnet3",
  "output_env_var": "EMOTIONAL_EMA_OUTPUT",
  "recipe": "emotional_ema",
  "splits": {

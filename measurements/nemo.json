@@ -10,7 +10,6 @@
  "hours_total": 3.0726,
  "measured_on": "2026-10-12",
  "n_total": 4481,
- "output_dir": "/home/tenshi/data/nemo_espnet3",
  "output_env_var": "NEMO_OUTPUT",
  "recipe": "nemo",
  "splits": {

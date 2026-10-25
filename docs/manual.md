@@ -140,6 +140,8 @@ ser_dataset_db/
 ├── reports/                   detailed investigations of single datasets, with verification
 ├── sheet_import/              the frozen original spreadsheet
 ├── tools/                     programs for checking, updating and measuring
+├── .env.example               template for machine-specific settings (copy to .env, git-ignored)
+├── LICENSE                    MIT, for this database and its tools (not for the datasets it describes)
 └── .claude/skills/            the maintenance workflow for Claude Code
 ```
 
@@ -447,7 +449,7 @@ Terms not covered by SPDX get one of these, with the gist of the wording in `lic
 
 Roughly, `direct_download`, `free_account_required` and `gated_click_through` are "available now", and `request_form_or_email` and `signed_agreement` "need a procedure".
 
-## 11. Current figures (2026-10-24)
+## 11. Current figures (2026-10-25)
 
 ### 11.1 Status x license class
 

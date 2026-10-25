@@ -10,7 +10,6 @@
  "hours_total": 0.5098,
  "measured_on": "2026-10-12",
  "n_total": 588,
- "output_dir": "/home/tenshi/data/emovo_espnet3",
  "output_env_var": "EMOVO_OUTPUT",
  "recipe": "emovo",
  "splits": {

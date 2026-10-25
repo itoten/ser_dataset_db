@@ -10,7 +10,6 @@
  "hours_total": 2.1131,
  "measured_on": "2026-10-12",
  "n_total": 1267,
- "output_dir": "/home/tenshi/data/mderma_espnet3",
  "output_env_var": "MDERMA_OUTPUT",
  "recipe": "mderma",
  "splits": {

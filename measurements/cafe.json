@@ -10,7 +10,6 @@
  "hours_total": 1.1549,
  "measured_on": "2026-10-12",
  "n_total": 936,
- "output_dir": "/home/tenshi/data/cafe_espnet3",
  "output_env_var": "CAFE_OUTPUT",
  "recipe": "cafe",
  "splits": {

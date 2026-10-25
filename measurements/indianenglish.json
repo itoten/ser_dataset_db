@@ -10,7 +10,6 @@
  "hours_total": 0.5484,
  "measured_on": "2026-10-12",
  "n_total": 695,
- "output_dir": "/home/tenshi/data/indianenglish_espnet3",
  "output_env_var": "INDIANENGLISH_OUTPUT",
  "recipe": "indianenglish",
  "splits": {

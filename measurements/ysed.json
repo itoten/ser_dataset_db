@@ -10,7 +10,6 @@
  "hours_total": 1.0069,
  "measured_on": "2026-10-12",
  "n_total": 1432,
- "output_dir": "/home/tenshi/data/ysed_espnet3",
  "output_env_var": "YSED_OUTPUT",
  "recipe": "ysed",
  "splits": {

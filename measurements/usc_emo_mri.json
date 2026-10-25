@@ -10,7 +10,6 @@
  "hours_total": 2.3628,
  "measured_on": "2026-10-19",
  "n_total": 2305,
- "output_dir": "/home/tenshi/data/usc_emo_mri_espnet3",
  "output_env_var": "USC_EMO_MRI_OUTPUT",
  "recipe": "usc_emo_mri",
  "splits": {

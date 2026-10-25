@@ -8,6 +8,7 @@ Exit status is 1 when any error is found; warnings do not fail the run.
 
 import datetime
 import re
+import subprocess
 import sys
 import unicodedata
 
@@ -356,6 +357,24 @@ def check_paths(cols, tables, db):
                     err(f"{name} {c['column']}={v}: path not found (relative to {base})")
 
 
+LOCAL_PATH = re.compile(r"(?<![\w.])(/home/\w+/|/Users/\w+/|/mnt/\w+|[~]/|[A-Za-z]:\\Users\\)")
+
+
+def check_no_local_paths():
+    """The repository is public: tracked files must not hold machine-specific paths."""
+    files = subprocess.run(["git", "-C", str(csvio.ROOT), "ls-files"], capture_output=True,
+                           text=True, check=True).stdout.split()
+    for name in files:
+        try:
+            text = (csvio.ROOT / name).read_text(encoding="utf-8")
+        except (UnicodeDecodeError, FileNotFoundError):
+            continue
+        for i, line in enumerate(text.splitlines(), 1):
+            m = LOCAL_PATH.search(line)
+            if m:
+                err(f"{name}:{i}: machine-specific path {m.group(0)!r} (use an environment variable name or a relative path)")
+
+
 def check_views(db):
     for path, text in views.build(db).items():
         f = csvio.ROOT / path
@@ -378,6 +397,7 @@ def main(argv):
     check_paths(cols, tables, db)
     check_measurements(db)
     check_views(db)
+    check_no_local_paths()
     if not offline:
         check_egs3(cols, db)
         check_membership(db)

@@ -10,7 +10,6 @@
  "hours_total": 10.1978,
  "measured_on": "2026-10-23",
  "n_total": 4160,
- "output_dir": "/home/tenshi/data/csemotions_espnet3",
  "output_env_var": "CSEMOTIONS_OUTPUT",
  "recipe": "csemotions",
  "splits": {

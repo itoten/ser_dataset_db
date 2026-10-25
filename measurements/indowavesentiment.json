@@ -10,7 +10,6 @@
  "hours_total": 0.2586,
  "measured_on": "2026-10-12",
  "n_total": 300,
- "output_dir": "/home/tenshi/data/indowavesentiment_espnet3",
  "output_env_var": "INDOWAVESENTIMENT_OUTPUT",
  "recipe": "indowavesentiment",
  "splits": {

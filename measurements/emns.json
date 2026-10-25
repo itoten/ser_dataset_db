@@ -10,7 +10,6 @@
  "hours_total": 1.9122,
  "measured_on": "2026-10-12",
  "n_total": 1181,
- "output_dir": "/home/tenshi/data/emns_espnet3",
  "output_env_var": "EMNS_OUTPUT",
  "recipe": "emns",
  "splits": {

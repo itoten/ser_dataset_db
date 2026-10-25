@@ -10,7 +10,6 @@
  "hours_total": 0.3351,
  "measured_on": "2026-10-12",
  "n_total": 434,
- "output_dir": "/home/tenshi/data/oreau_espnet3",
  "output_env_var": "OREAU_OUTPUT",
  "recipe": "oreau",
  "splits": {

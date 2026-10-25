@@ -10,7 +10,6 @@
  "hours_total": 324.1242,
  "measured_on": "2026-10-14",
  "n_total": 212808,
- "output_dir": "/home/tenshi/data/msppodcast_espnet3",
  "output_env_var": "MSPPODCAST_OUTPUT",
  "recipe": "msppodcast",
  "splits": {

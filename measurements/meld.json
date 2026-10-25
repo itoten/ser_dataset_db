@@ -10,7 +10,6 @@
  "hours_total": 11.952,
  "measured_on": "2026-10-12",
  "n_total": 13704,
- "output_dir": "/home/tenshi/data/meld_espnet3",
  "output_env_var": "MELD_OUTPUT",
  "recipe": "meld",
  "splits": {

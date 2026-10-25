@@ -10,7 +10,6 @@
  "hours_total": 6.305,
  "measured_on": "2026-10-12",
  "n_total": 6902,
- "output_dir": "/home/tenshi/data/emozionalmente_espnet3",
  "output_env_var": "EMOZIONALMENTE_OUTPUT",
  "recipe": "emozionalmente",
  "splits": {

@@ -10,7 +10,6 @@
  "hours_total": 3.944,
  "measured_on": "2026-10-12",
  "n_total": 1615,
- "output_dir": "/home/tenshi/data/jvnv_espnet3",
  "output_env_var": "JVNV_OUTPUT",
  "recipe": "jvnv",
  "splits": {

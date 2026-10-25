@@ -10,7 +10,6 @@
  "hours_total": 0.5942,
  "measured_on": "2026-10-12",
  "n_total": 700,
- "output_dir": "/home/tenshi/data/maleo_espnet3",
  "output_env_var": "MALEO_OUTPUT",
  "recipe": "maleo",
  "splits": {

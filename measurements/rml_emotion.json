@@ -10,7 +10,6 @@
  "hours_total": 1.0112,
  "measured_on": "2026-10-20",
  "n_total": 714,
- "output_dir": "/home/tenshi/data/rml_emotion_espnet3",
  "output_env_var": "RML_EMOTION_OUTPUT",
  "recipe": "rml_emotion",
  "splits": {

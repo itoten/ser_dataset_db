@@ -10,7 +10,6 @@
  "hours_total": 3.0424,
  "measured_on": "2026-10-12",
  "n_total": 3500,
- "output_dir": "/home/tenshi/data/urduser_espnet3",
  "output_env_var": "URDUSER_OUTPUT",
  "recipe": "urduser",
  "splits": {

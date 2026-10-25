@@ -10,7 +10,6 @@
  "hours_total": 7.0193,
  "measured_on": "2026-10-12",
  "n_total": 5571,
- "output_dir": "/home/tenshi/data/iemocap_espnet3",
  "output_env_var": "IEMOCAP_OUTPUT",
  "recipe": "iemocap",
  "splits": {

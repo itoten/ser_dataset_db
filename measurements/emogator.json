@@ -10,7 +10,6 @@
  "hours_total": 16.7667,
  "measured_on": "2026-10-24",
  "n_total": 32130,
- "output_dir": "/home/tenshi/data/emogator_espnet3",
  "output_env_var": "EMOGATOR_OUTPUT",
  "recipe": "emogator",
  "splits": {

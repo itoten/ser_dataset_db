@@ -10,7 +10,6 @@
  "hours_total": 0.5119,
  "measured_on": "2026-10-12",
  "n_total": 480,
- "output_dir": "/home/tenshi/data/savee_espnet3",
  "output_env_var": "SAVEE_OUTPUT",
  "recipe": "savee",
  "splits": {

@@ -10,7 +10,6 @@
  "hours_total": 21.2637,
  "measured_on": "2026-10-12",
  "n_total": 14182,
- "output_dir": "/home/tenshi/data/thaiser_espnet3",
  "output_env_var": "THAISER_OUTPUT",
  "recipe": "thaiser",
  "splits": {

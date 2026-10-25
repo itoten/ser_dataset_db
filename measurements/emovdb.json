@@ -10,7 +10,6 @@
  "hours_total": 9.4901,
  "measured_on": "2026-10-12",
  "n_total": 6893,
- "output_dir": "/home/tenshi/data/emovdb_espnet3",
  "output_env_var": "EMOVDB_OUTPUT",
  "recipe": "emovdb",
  "splits": {

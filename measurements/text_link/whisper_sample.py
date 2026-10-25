@@ -1,6 +1,7 @@
 """Whisper large-v3 transcripts of a sample of baser and cbesd (English), to see whether a sentence number means the same text in every emotion.
 
-Run in the espnet pixi env: pixi run python whisper_sample.py OUT.tsv (audio under ~/data/<corpus>)."""
+Run in the espnet pixi env: pixi run python whisper_sample.py DATA_DIR OUT.tsv
+(DATA_DIR holds the downloaded corpora as DATA_DIR/baser and DATA_DIR/cbesd)."""
 import glob, os, random, re, sys
 import librosa, torch
 from transformers import WhisperForConditionalGeneration, WhisperProcessor
@@ -12,8 +13,8 @@ def tx(path, lang):
     with torch.no_grad():
         ids = model.generate(f, language=lang, task="transcribe", max_new_tokens=120)
     return proc.batch_decode(ids, skip_special_tokens=True)[0].strip()
-D = os.path.expanduser("~/data")
-out = sys.argv[1]
+D = sys.argv[1]
+out = sys.argv[2]
 rows = []
 # baser: speakers HASAN (M) and CHAITY (F), take 1, sentences S_1..S_5 x 5 emotions
 for spk in ("M_1_HASAN", "F_1_CHAITY"):

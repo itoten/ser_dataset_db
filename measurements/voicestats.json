@@ -10,7 +10,6 @@
  "hours_total": 2.2834,
  "measured_on": "2026-10-12",
  "n_total": 900,
- "output_dir": "/home/tenshi/data/voicestats_espnet3",
  "output_env_var": "VOICESTATS_OUTPUT",
  "recipe": "voicestats",
  "splits": {

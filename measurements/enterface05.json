@@ -10,7 +10,6 @@
  "hours_total": 0.9894,
  "measured_on": "2026-10-12",
  "n_total": 1260,
- "output_dir": "/home/tenshi/data/enterface05_espnet3",
  "output_env_var": "ENTERFACE05_OUTPUT",
  "recipe": "enterface05",
  "splits": {

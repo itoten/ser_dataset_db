@@ -10,7 +10,6 @@
  "hours_total": 0.2721,
  "measured_on": "2026-10-12",
  "n_total": 1085,
- "output_dir": "/home/tenshi/data/vivae_espnet3",
  "output_env_var": "VIVAE_OUTPUT",
  "recipe": "vivae",
  "splits": {

@@ -10,7 +10,6 @@
  "hours_total": 15.2402,
  "measured_on": "2026-10-12",
  "n_total": 12420,
- "output_dir": "/home/tenshi/data/quechua_espnet3",
  "output_env_var": "QUECHUA_OUTPUT",
  "recipe": "quechua",
  "splits": {

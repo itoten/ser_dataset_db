@@ -10,7 +10,6 @@
  "hours_total": 11.0581,
  "measured_on": "2026-10-20",
  "n_total": 5971,
- "output_dir": "/home/tenshi/data/syntact_espnet3",
  "output_env_var": "SYNTACT_OUTPUT",
  "recipe": "syntact",
  "splits": {

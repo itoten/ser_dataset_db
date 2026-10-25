@@ -11,9 +11,11 @@ from pathlib import Path
 
 import yaml
 
+from localenv import espnet_repo
+
 BRANCH = "ser/cross-corpus"
 SYSTEM = "cls"
-REPO = Path(__file__).resolve().parent.parent.parent.parent / "espnet"
+REPO = espnet_repo()
 SPLIT_KEY = re.compile(r"split|ratio|seed|official|_speakers")
 
 

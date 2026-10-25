@@ -10,7 +10,6 @@
  "hours_total": 1.3867,
  "measured_on": "2026-10-12",
  "n_total": 792,
- "output_dir": "/home/tenshi/data/banspemo_espnet3",
  "output_env_var": "BANSPEMO_OUTPUT",
  "recipe": "banspemo",
  "splits": {

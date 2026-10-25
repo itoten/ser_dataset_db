@@ -10,7 +10,6 @@
  "hours_total": 1.3286,
  "measured_on": "2026-10-12",
  "n_total": 1800,
- "output_dir": "/home/tenshi/data/mess_espnet3",
  "output_env_var": "MESS_OUTPUT",
  "recipe": "mess",
  "splits": {

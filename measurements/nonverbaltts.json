@@ -10,7 +10,6 @@
  "hours_total": 8.122,
  "measured_on": "2026-10-17",
  "n_total": 3201,
- "output_dir": "/home/tenshi/data/nonverbaltts_espnet3",
  "output_env_var": "NONVERBALTTS_OUTPUT",
  "recipe": "nonverbaltts",
  "splits": {

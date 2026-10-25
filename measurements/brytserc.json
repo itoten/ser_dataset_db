@@ -10,7 +10,6 @@
  "hours_total": 4.3458,
  "measured_on": "2026-10-23",
  "n_total": 5215,
- "output_dir": "/home/tenshi/data/brytserc_espnet3",
  "output_env_var": "BRYTSERC_OUTPUT",
  "recipe": "brytserc",
  "splits": {

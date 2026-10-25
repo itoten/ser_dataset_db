@@ -10,7 +10,6 @@
  "hours_total": 29.0712,
  "measured_on": "2026-10-12",
  "n_total": 35000,
- "output_dir": "/home/tenshi/data/esd_espnet3",
  "output_env_var": "ESD_OUTPUT",
  "recipe": "esd",
  "splits": {

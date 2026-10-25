@@ -10,7 +10,6 @@
  "hours_total": 3.6502,
  "measured_on": "2026-10-23",
  "n_total": 4460,
- "output_dir": "/home/tenshi/data/berst_espnet3",
  "output_env_var": "BERST_OUTPUT",
  "recipe": "berst",
  "splits": {

@@ -10,7 +10,6 @@
  "hours_total": 2.9344,
  "measured_on": "2026-10-12",
  "n_total": 2399,
- "output_dir": "/home/tenshi/data/thorsten_espnet3",
  "output_env_var": "THORSTEN_OUTPUT",
  "recipe": "thorsten",
  "splits": {

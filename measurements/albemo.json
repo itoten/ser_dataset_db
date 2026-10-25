@@ -10,7 +10,6 @@
  "hours_total": 0.3679,
  "measured_on": "2026-10-12",
  "n_total": 420,
- "output_dir": "/home/tenshi/data/albemo_espnet3",
  "output_env_var": "ALBEMO_OUTPUT",
  "recipe": "albemo",
  "splits": {

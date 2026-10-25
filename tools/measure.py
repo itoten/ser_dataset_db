@@ -1,7 +1,9 @@
 """Measure the built corpus of each single-corpus egs3 recipe and write measurements/<recipe>.json.
 
-Run with the espnet environment (needs soundfile and the pixi.toml output paths):
-    cd /home/tenshi/projects/espnet && pixi run python ../espnet_work/ser_dataset_db/tools/measure.py --all
+Run from the ESPnet checkout with its pixi environment, which provides soundfile and the
+<CORPUS>_OUTPUT paths:
+    pixi run python <path to this repository>/tools/measure.py --all
+The output records only the variable name (output_env_var), never the local path.
 """
 
 import argparse
@@ -37,7 +39,7 @@ def measure(recipe):
     out_dir = Path(os.environ[var]) if var in os.environ else None
     if out_dir is None or not (out_dir / "manifest").is_dir():
         return None
-    result = {"recipe": recipe, "output_env_var": var, "output_dir": str(out_dir),
+    result = {"recipe": recipe, "output_env_var": var,
               "measured_on": date.today().isoformat(), "splits": {}}
     fmt = collections.Counter()
     all_durs = []

@@ -10,7 +10,6 @@
  "hours_total": 0.5024,
  "measured_on": "2026-10-12",
  "n_total": 468,
- "output_dir": "/home/tenshi/data/kannada_espnet3",
  "output_env_var": "KANNADA_OUTPUT",
  "recipe": "kannada",
  "splits": {

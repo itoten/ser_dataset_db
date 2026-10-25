@@ -49,7 +49,10 @@ What you need to know about the surroundings:
 4. **Never delete history.** A new value gets a new evidence row; the old one becomes
    superseded. Conflicting sources stay visible.
 5. **Keep "the whole release" and "what the recipe uses" apart** in every count and note.
-6. **Stay within the request.** Large sweeps (re-checking every license, re-probing every URL)
+6. **Everything is public.** Files and commit messages are published worldwide. No personal
+   names (refer to roles), e-mail addresses or machine-specific paths (use environment variable
+   names such as `$EESC_OUTPUT`; machine settings go in the git-ignored `.env`).
+7. **Stay within the request.** Large sweeps (re-checking every license, re-probing every URL)
    are proposed, not started.
 
 ## Choose the workflow

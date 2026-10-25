@@ -10,7 +10,6 @@
  "hours_total": 74.859,
  "measured_on": "2026-10-12",
  "n_total": 54760,
- "output_dir": "/home/tenshi/data/kazemotts_espnet3",
  "output_env_var": "KAZEMOTTS_OUTPUT",
  "recipe": "kazemotts",
  "splits": {
