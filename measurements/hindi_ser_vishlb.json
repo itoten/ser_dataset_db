@@ -1,0 +1,84 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 3200
+ },
+ "duration_sec": {
+  "max": 6.1,
+  "median": 3.136,
+  "min": 1.152
+ },
+ "hours_total": 2.8494,
+ "measured_on": "2026-10-25",
+ "n_total": 3200,
+ "output_env_var": "HINDI_SER_VISHLB_OUTPUT",
+ "recipe": "hindi_ser_vishlb",
+ "splits": {
+  "test": {
+   "hours": 0.629,
+   "labels": {
+    "angry": 100,
+    "disgust": 100,
+    "fear": 100,
+    "happy": 100,
+    "neutral": 100,
+    "sad": 100,
+    "sarcastic": 100,
+    "surprise": 100
+   },
+   "manifest_sha1": "c881cf063864afadb7576304d7e8b191a703a8ac",
+   "n": 800,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 800
+  },
+  "train": {
+   "hours": 1.7947,
+   "labels": {
+    "angry": 250,
+    "disgust": 250,
+    "fear": 250,
+    "happy": 250,
+    "neutral": 250,
+    "sad": 250,
+    "sarcastic": 250,
+    "surprise": 250
+   },
+   "manifest_sha1": "a2ea789174918fcd8423f1aa8e20b849fbf4bd5d",
+   "n": 2000,
+   "n_filtered": 2000,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 2000
+  },
+  "valid": {
+   "hours": 0.4257,
+   "labels": {
+    "angry": 50,
+    "disgust": 50,
+    "fear": 50,
+    "happy": 50,
+    "neutral": 50,
+    "sad": 50,
+    "sarcastic": 50,
+    "surprise": 50
+   },
+   "manifest_sha1": "4d63d3c4e06a3b4cd6ae335fe71bb911b4799188",
+   "n": 400,
+   "n_filtered": 400,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 400
+  }
+ },
+ "token_list": [
+  "angry",
+  "disgust",
+  "fear",
+  "happy",
+  "neutral",
+  "sad",
+  "sarcastic",
+  "surprise"
+ ]
+}

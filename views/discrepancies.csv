@@ -286,8 +286,10 @@ hesd,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org
 hesd,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://zenodo.org/records/22674064,superseded by hesd/status_reason_codes/02
 hindi_bansal_dev,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Hindi/BansalAndDev.md,Not confirmed in a primary source; superseded by hindi_bansal_dev/espnet_status/02
 hindi_bansal_dev,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Hindi/BansalAndDev.md,Not confirmed in a primary source; superseded by hindi_bansal_dev/status_reason_codes/02
-hindi_ser_vishlb,espnet_status,superseded,candidate,user,excluded,primary,https://www.kaggle.com/datasets/vishlb/speech-emotion-recognition-hindi,superseded by hindi_ser_vishlb/espnet_status/02
-hindi_ser_vishlb,status_reason_codes,superseded,unexamined,user,provenance_unclear,primary,https://www.kaggle.com/datasets/vishlb/speech-emotion-recognition-hindi,superseded by hindi_ser_vishlb/status_reason_codes/02
+hindi_ser_vishlb,espnet_status,superseded,implemented,measured,candidate,user,"Conversation with the maintainer, 2026-10-14",Former reason: provenance_unclear; superseded by hindi_ser_vishlb/espnet_status/03
+hindi_ser_vishlb,espnet_status,superseded,implemented,measured,excluded,primary,https://www.kaggle.com/datasets/vishlb/speech-emotion-recognition-hindi,superseded by hindi_ser_vishlb/espnet_status/02
+hindi_ser_vishlb,status_reason_codes,superseded,NA,measured,provenance_unclear,primary,https://www.kaggle.com/datasets/vishlb/speech-emotion-recognition-hindi,superseded by hindi_ser_vishlb/status_reason_codes/02
+hindi_ser_vishlb,status_reason_codes,superseded,NA,measured,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: provenance_unclear; superseded by hindi_ser_vishlb/status_reason_codes/03
 humevb,espnet_status,superseded,candidate,user,excluded,primary,https://www.competitions.hume.ai/exvo2022,superseded by humevb/espnet_status/02
 humevb,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://www.competitions.hume.ai/exvo2022,superseded by humevb/status_reason_codes/02
 humyn_indian_emotional,espnet_status,superseded,candidate,user,excluded,measured,https://huggingface.co/api/datasets/humyn-labs/Indian-Emotional-Speech-Corpus,superseded by humyn_indian_emotional/espnet_status/02
