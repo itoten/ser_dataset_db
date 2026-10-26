@@ -204,6 +204,7 @@ emota,espnet_status,superseded,candidate,primary,excluded,project_doc,new_corpor
 emota,status_reason_codes,superseded,unexamined,primary,access_gated,primary,https://huggingface.co/datasets/aaivu-labs/EmoTa,superseded by emota/status_reason_codes/03
 emota,status_reason_codes,superseded,unexamined,primary,access_gated,project_doc,new_corpora/99_final_report.md,superseded by emota/status_reason_codes/02
 emotale,espnet_status,superseded,implemented,measured,candidate,measured,https://github.com/snehadas/EmoTale,superseded by emotale/espnet_status/02
+emotale,license_spdx,superseded,LicenseRef-citation-request,user,none_stated,primary,https://github.com/snehadas/EmoTale/blob/main/EmoTale_datasheet.pdf,superseded by emotale/license_spdx/02
 emotale,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-13 survey,How to handle the missing license is not decided; superseded by emotale/status_reason_codes/02
 emotion_origlia2010,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,superseded by emotion_origlia2010/espnet_status/03
 emotional_ema,espnet_status,superseded,implemented,measured,candidate,primary,https://zenodo.org/records/19303746,superseded by emotional_ema/espnet_status/03
@@ -234,7 +235,7 @@ emovome,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora
 emovome,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://zenodo.org/records/10694370,superseded by emovome/status_reason_codes/03
 emovome,status_reason_codes,superseded,unexamined,user,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,superseded by emovome/status_reason_codes/02
 enterface05,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1166,see evidence,1293,measured,n_files_release_measured,
-enterface05,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1166,see evidence,1260,measured,recipes.n_total (enterface05),a mismatch is normal: recipes filter by length and label
+enterface05,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1166,see evidence,1287,measured,recipes.n_total (enterface05),a mismatch is normal: recipes filter by length and label
 escorpuspe,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/5793223,superseded by escorpuspe/espnet_status/03
 escorpuspe,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,superseded by escorpuspe/espnet_status/02
 escorpuspe,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,3749,see evidence,3764,measured,n_files_release_measured,

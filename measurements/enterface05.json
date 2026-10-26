@@ -1,15 +1,15 @@
 {
  "audio_format": {
-  "16000Hz/1ch/PCM_16": 1260
+  "16000Hz/1ch/PCM_16": 1287
  },
  "duration_sec": {
   "max": 6.84,
   "median": 2.72,
   "min": 1.12
  },
- "hours_total": 0.9894,
- "measured_on": "2026-10-12",
- "n_total": 1260,
+ "hours_total": 1.0061,
+ "measured_on": "2026-10-26",
+ "n_total": 1287,
  "output_env_var": "ENTERFACE05_OUTPUT",
  "recipe": "enterface05",
  "splits": {
@@ -31,21 +31,21 @@
    "unique_utt": 150
   },
   "train": {
-   "hours": 0.7534,
+   "hours": 0.7702,
    "labels": {
-    "angry": 160,
-    "disgust": 160,
-    "fear": 160,
-    "happy": 160,
-    "sad": 160,
-    "surprise": 160
+    "angry": 165,
+    "disgust": 165,
+    "fear": 165,
+    "happy": 162,
+    "sad": 165,
+    "surprise": 165
    },
-   "manifest_sha1": "793196658ea36299e59a10be40fa5cd1116435ee",
-   "n": 960,
-   "n_filtered": 960,
+   "manifest_sha1": "143bdaf36e4af49a94c51053c4318cf74c44faa1",
+   "n": 987,
+   "n_filtered": 987,
    "over_30s": 0,
    "under_0.5s": 0,
-   "unique_utt": 960
+   "unique_utt": 987
   },
   "valid": {
    "hours": 0.1088,
@@ -69,8 +69,8 @@
   "angry",
   "disgust",
   "fear",
-  "happy",
   "sad",
-  "surprise"
+  "surprise",
+  "happy"
  ]
 }

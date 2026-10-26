@@ -18,7 +18,7 @@ This guide explains the database from scratch. Terms are explained before they a
 | Awaiting a decision | 9 |
 | Deferred | 35 |
 | Excluded (with reasons) | 46 |
-| Evidence rows (sources of values) | 4,307 |
+| Evidence rows (sources of values) | 4,308 |
 | Language codes | 70 |
 
 ### 1.3 What makes it useful
@@ -150,7 +150,7 @@ ser_dataset_db/
 | File | One row is | Rows |
 |---|---|---|
 | [datasets.csv](../data/datasets.csv) | **one dataset** (the central table) | 322 |
-| [evidence.csv](../data/evidence.csv) | the **source** of one value in datasets | 4,307 |
+| [evidence.csv](../data/evidence.csv) | the **source** of one value in datasets | 4,308 |
 | [aliases.csv](../data/aliases.csv) | another name (official name, short name, former name, recipe name, ...) | 375 |
 | [relations.csv](../data/relations.csv) | a relation between datasets | 44 |
 | [recipes.csv](../data/recipes.csv) | one ESPnet recipe | 94 |
@@ -312,7 +312,7 @@ Columns that need evidence: `languages`, `recording_context`, `vocal_content`, `
 
 ### 6.2.1 Recording when something was checked
 
-Every one of the 4,307 evidence rows has a date checked (`checked_on`, 2026-10-10 to 10-26). But **the date is when the source was looked at**, not a guarantee that it is still true; distribution pages and licenses can change. For rows from the original spreadsheet (`source_type`=`sheet`), the date 2026-10-12 is the import date, not a date when anyone checked the content.
+Every one of the 4,308 evidence rows has a date checked (`checked_on`, 2026-10-10 to 10-26). But **the date is when the source was looked at**, not a guarantee that it is still true; distribution pages and licenses can change. For rows from the original spreadsheet (`source_type`=`sheet`), the date 2026-10-12 is the import date, not a date when anyone checked the content.
 
 The overview [views/datasets_wide.csv](../views/datasets_wide.csv) adds these columns per dataset (generated from the evidence):
 
@@ -337,7 +337,7 @@ Strongest first.
 | 5 | `secondary` | third-party statements (Kaggle, re-upload pages, surveys) |
 | 6 | `sheet` | values of the original spreadsheet |
 
-The 4,307 evidence rows by source type: primary 2,121, sheet 572, measured 542, project_doc 435, user 364, secondary 273.
+The 4,308 evidence rows by source type: primary 2,121, sheet 572, measured 542, project_doc 435, user 365, secondary 273.
 
 ### 6.4 When a new fact appears
 
@@ -423,12 +423,12 @@ Every row except `implemented` has reason codes (`;`-separated). The most common
 
 | Class | Meaning | Count |
 |---|---|---|
-| `open` | permissive (attribution at most): CC-BY, CC0, MIT, ... | 95 |
+| `open` | permissive (attribution at most): CC-BY, CC0, MIT, ... | 96 |
 | `noncommercial` | non-commercial only (CC-BY-NC, ...) | 38 |
 | `research_only` | custom terms limited to academic or research use | 55 |
 | `restricted` | restricted or paid | 12 |
 | `other` | other than the above | 5 |
-| `none_stated` | no license statement found | 25 |
+| `none_stated` | no license statement found | 24 |
 | `unknown` | examined but undecidable | 24 |
 | `conflicting` | sources disagree | 4 |
 | (empty) | not investigated yet | 64 |
@@ -471,7 +471,7 @@ Roughly, `direct_download`, `free_account_required` and `gated_click_through` ar
 
 | Status | open | NC | research | restricted | other | none stated | unknown | conflicting | not checked | total |
 |---|---|---|---|---|---|---|---|---|---|---|
-| implemented | 61 | 10 | 11 | 1 | 2 | 5 | 1 | 2 | 0 | 93 |
+| implemented | 62 | 10 | 11 | 1 | 2 | 4 | 1 | 2 | 0 | 93 |
 | candidate | 19 | 23 | 34 | 9 | 3 | 14 | 4 | 2 | 31 | 139 |
 | needs_decision | 2 | 1 | 2 | 2 | 0 | 1 | 1 | 0 | 0 | 9 |
 | deferred | 0 | 1 | 7 | 0 | 0 | 1 | 7 | 0 | 19 | 35 |
@@ -481,7 +481,7 @@ Roughly, `direct_download`, `free_account_required` and `gated_click_through` ar
 
 What this shows:
 
-- Of the 93 implemented datasets, 61 have open terms (`open`).
+- Of the 93 implemented datasets, 62 have open terms (`open`).
 - Of the 139 candidates, 11 are `open` and `direct_download` (available now): the first group to implement next.
 
 ### 11.2 Properties of the data
@@ -595,7 +595,7 @@ Most license evidence was gathered by Claude or automated processing (`checked_b
 
 ### 14.2 How
 
-Instead of one bulk check, **each time a recipe is implemented and reviewed, the maintainer looks at that dataset's license page**. The result is added as an evidence row with `checked_by=user`. Current license evidence checked by the maintainer exists for 4 datasets (`iesc`, `recanvo`, `uftbesd`, `visec`).
+Instead of one bulk check, **each time a recipe is implemented and reviewed, the maintainer looks at that dataset's license page**. The result is added as an evidence row with `checked_by=user`. Current license evidence checked by the maintainer exists for 5 datasets (`emotale`, `iesc`, `recanvo`, `uftbesd`, `visec`).
 
 ## 15. Limitations (honestly)
 
@@ -627,7 +627,7 @@ MSP-Podcast is for internal non-commercial research only, may not be redistribut
 
 ### 16.1 Outline (1-2 minutes)
 
-1. **What was built**: an evidence-backed ledger of SER and paralinguistic datasets. 322 datasets, 4,307 evidence rows.
+1. **What was built**: an evidence-backed ledger of SER and paralinguistic datasets. 322 datasets, 4,308 evidence rows.
 2. **Why**: to stop re-researching dataset conditions (license, access) every time, and to keep the basis for cross-corpus evaluation.
 3. **Reliability measures**: each value records its source, date and checker, and a machine checks the rules. Unknowns are written as unknown, never filled by guessing.
 4. **Link to the implementation**: the 94 ESPnet recipes are measured into the DB, distinguishing implemented, candidate and deferred datasets (the recipe branch keeps growing, and new recipes are registered after review; 15.1).
@@ -643,7 +643,7 @@ MSP-Podcast is for internal non-commercial research only, may not be redistribut
 | Question | Answer |
 |---|---|
 | Why CSV instead of the original spreadsheet? | A spreadsheet cannot hold sources, history or checks. CSV under git keeps the change history and can be checked by machine |
-| Is the information correct? | Every value has a source and a date; primary sources (papers, official pages) are the largest group (2,121 of 4,307 evidence rows). Final human checks (licenses) are still in progress |
+| Is the information correct? | Every value has a source and a date; primary sources (papers, official pages) are the largest group (2,121 of 4,308 evidence rows). Final human checks (licenses) are still in progress |
 | How was it collected? | 238 datasets from surveys, hosting services and the literature were added to the spreadsheet's 84; added rows were checked in primary sources |
 | How many can be implemented? | 93 implemented, 139 candidates. Of the candidates, 11 are openly licensed and available now |
 | What was excluded? | 46. Only for clear reasons: no audio, redistribution of existing data, duplicates, regional restrictions, etc. Effort and size are not reasons |
