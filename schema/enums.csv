@@ -194,3 +194,4 @@ paralinguistic_signal,varies,Clear for some speakers or classes and weak for oth
 paralinguistic_signal,weak,The expression in the voice is weak in what was heard,
 paralinguistic_signal,doubtful,The voice may carry no expression of the labelled emotion (e.g. a flat reading of lines),
 relation_type,shares_sentences_with,"Some of the spoken sentences (or their translations) are the same as in the other dataset. Symmetric: recorded once, newer dataset first",
+license_spdx,LicenseRef-citation-request,"No license text: the author only asks for the paper to be cited, and the project treats that request as the terms of use (the maintainer's decision, per dataset)",open

@@ -14,6 +14,7 @@ expressivespeech,contains,iemocap,https://huggingface.co/datasets/FreedomIntelli
 expressivespeech,contains,m3ed,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,Same as above
 fcaps,contains,paraspeechcaps,https://arxiv.org/abs/2601.03065,FCaps-PSCBase uses PSC-Base audio and overall captions (§3)
 hume_reaction,distinct_from,humevb,https://arxiv.org/abs/2207.05691,Both from Hume AI. Hume-Reaction is video and audio of reactions to stimuli; Hume-VB is non-verbal vocalisations
+iesc,shares_sentences_with,ravdess,https://doi.org/10.1007/s11042-023-14577-w,Both datasets use the two sentences 'Kids are talking by the door' and 'Dogs are sitting by the door'; the IESC paper says they are taken from RAVDESS (Section 4.1)
 iitkgp_sehsc,distinct_from,iitkgp_sesc,https://www.iieta.org/journals/ts/paper/10.18280/ts.380631,Telugu and Hindi versions by the same lab
 interface,distinct_from,enterface05,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,"The spreadsheet Notes say ""Distinct from eNTERFACE'05"""
 javanese_ser_2black0,possibly_same_as,java_sed,https://github.com/2black0/Sound-Emotion-Recognition-Javanese-Speech-Dataset,"Both are Javanese with 6 emotions (same labels), and 10 speakers x 4 sentences x 6 emotions x 7 repetitions = 1,680 matches KuralHub's count for Java-SED. KuralHub says 20 speakers"

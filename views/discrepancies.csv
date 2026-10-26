@@ -298,6 +298,9 @@ hungarian_hesd,espnet_status,superseded,candidate,user,excluded,secondary,https:
 hungarian_hesd,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Hungarian/HESD.md,Not confirmed in a primary source; superseded by hungarian_hesd/status_reason_codes/02
 iemocap,access_method,superseded,request_form_or_email,primary,signed_agreement,project_doc,egs3/iemocap/cls/readme.md (branch ser/cross-corpus),superseded by iemocap/access_method/02
 iemocap,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,10039,see evidence,5571,measured,recipes.n_total (iemocap),a mismatch is normal: recipes filter by length and label
+iesc,espnet_status,superseded,implemented,measured,candidate,measured,https://www.kaggle.com/datasets/ybsingh/indian-emotional-speech-corpora-iesc,superseded by iesc/espnet_status/02
+iesc,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,600,see evidence,598,measured,recipes.n_total (iesc),a mismatch is normal: recipes filter by length and label
+iesc,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by iesc/status_reason_codes/02
 iiitsaint_emomdb,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Malayalam/IIITSaint-EmoMDB.md,Not confirmed in a primary source; superseded by iiitsaint_emomdb/espnet_status/02
 iiitsaint_emomdb,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Malayalam/IIITSaint-EmoMDB.md,Not confirmed in a primary source; superseded by iiitsaint_emomdb/status_reason_codes/02
 indemovis,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/8255783,superseded by indemovis/espnet_status/02
@@ -528,6 +531,9 @@ tumavic,status_reason_codes,superseded,access_no_direct_download,user,labels_not
 turevdb,license_spdx,conflicting,conflicting,project_doc,CC-BY-NC-ND-4.0,primary,https://github.com/Xeonen/TurEV-DB,
 turevdb,license_spdx,conflicting,conflicting,project_doc,GPL-3.0-only,primary,https://github.com/Xeonen/TurEV-DB,
 turevdb,license_spdx,superseded,conflicting,project_doc,LicenseRef-other,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Other; replaced by conflicting because sources disagree
+ua_ser,espnet_status,superseded,implemented,measured,candidate,measured,https://huggingface.co/api/datasets/OlhaHavryliuk/UA-SER,superseded by ua_ser/espnet_status/02
+ua_ser,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,952,see evidence,951,measured,recipes.n_total (ua_ser),a mismatch is normal: recipes filter by length and label
+ua_ser,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,The origin of the source audio is not stated; superseded by ua_ser/status_reason_codes/02
 uftbesd,espnet_status,superseded,implemented,measured,candidate,primary,https://data.mendeley.com/datasets/h3f8pjbw73,superseded by uftbesd/espnet_status/02
 uftbesd,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1400,see evidence,1359,measured,recipes.n_total (uftbesd),a mismatch is normal: recipes filter by length and label
 uq_schizophrenia_videos,espnet_status,superseded,deferred,user,excluded,secondary,https://github.com/SuperKogito/SER-datasets,superseded by uq_schizophrenia_videos/espnet_status/02

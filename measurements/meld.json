@@ -8,7 +8,7 @@
   "min": 0.06
  },
  "hours_total": 11.952,
- "measured_on": "2026-10-12",
+ "measured_on": "2026-10-26",
  "n_total": 13704,
  "output_env_var": "MELD_OUTPUT",
  "recipe": "meld",
@@ -44,7 +44,7 @@
    },
    "manifest_sha1": "be3504e7b2376d228c7596fa9679a8a6b5202977",
    "n": 9988,
-   "n_filtered": 9674,
+   "n_filtered": 9872,
    "over_30s": 1,
    "under_0.5s": 309,
    "unique_utt": 9988
@@ -62,7 +62,7 @@
    },
    "manifest_sha1": "75ad1e81009cd4f75b50bb63ac908cb2b0209264",
    "n": 1108,
-   "n_filtered": 1069,
+   "n_filtered": 1092,
    "over_30s": 0,
    "under_0.5s": 38,
    "unique_utt": 1108
