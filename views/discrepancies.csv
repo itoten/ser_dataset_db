@@ -490,6 +490,8 @@ rml_emotion,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,500,see
 ruslana,espnet_status,superseded,deferred,user,excluded,primary,https://www.isca-archive.org/icslp_2002/makarova02_icslp.pdf,superseded by ruslana/espnet_status/04
 ruslana,espnet_status,superseded,deferred,user,excluded,project_doc,new_corpora/99_final_report.md,superseded by ruslana/espnet_status/03
 ruslana,status_reason_codes,superseded,access_no_direct_download,user,access_paid_or_membership,project_doc,new_corpora/99_final_report.md,superseded by ruslana/status_reason_codes/03
+saraiki_ser,espnet_status,superseded,implemented,measured,candidate,measured,https://www.kaggle.com/datasets/mrjunaidsiyal/speech-emotion-recognition-saraiki-audio-dataset,superseded by saraiki_ser/espnet_status/02
+saraiki_ser,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by saraiki_ser/status_reason_codes/02
 sccesc,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Czech/SCCESC.md,Not confirmed in a primary source; superseded by sccesc/espnet_status/02
 sccesc,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Czech/SCCESC.md,Not confirmed in a primary source; superseded by sccesc/status_reason_codes/02
 secepdb,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Chinese/SECEPDB.md,Not confirmed in a primary source; superseded by secepdb/espnet_status/02
@@ -500,6 +502,10 @@ semaine,status_reason_codes,superseded,host_unreachable,user,not_individually_ch
 semour,espnet_status,superseded,deferred,user,excluded,measured,http://acoustics-lab.itu.edu.pk/semour/,superseded by semour/espnet_status/03
 semour,espnet_status,superseded,deferred,user,excluded,project_doc,new_corpora/99_final_report.md,superseded by semour/espnet_status/02
 semour,status_reason_codes,superseded,host_unreachable,user,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,superseded by semour/status_reason_codes/02
+ses_ed,espnet_status,superseded,implemented,measured,candidate,measured,https://www.kaggle.com/datasets/angeluxarmenta/ses-ed,superseded by ses_ed/espnet_status/02
+ses_ed,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by ses_ed/status_reason_codes/02
+ses_sd,espnet_status,superseded,implemented,measured,candidate,measured,https://www.kaggle.com/datasets/angeluxarmenta/ses-sd,superseded by ses_sd/espnet_status/02
+ses_sd,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by ses_sd/status_reason_codes/02
 sewa,espnet_status,superseded,deferred,user,excluded,measured,http://db.sewaproject.eu/,superseded by sewa/espnet_status/04
 sewa,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,superseded by sewa/espnet_status/03
 sewa,status_reason_codes,superseded,host_unreachable,user,not_individually_checked,project_doc,nc_candidates_20261010.md,superseded by sewa/status_reason_codes/03

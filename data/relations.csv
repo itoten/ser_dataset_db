@@ -31,6 +31,8 @@ ov_merd,subset_of,mer2023,https://arxiv.org/abs/2410.01495,A new label layer on 
 persian_esd,distinct_from,esd,https://doi.org/10.3758/s13428-014-0467-x,"Similar name, but not the Chinese-English ESD (HLT Singapore)"
 prahalabs_malayalam,subset_of,rasa,https://huggingface.co/datasets/Praha-Labs/malayalam-emotion-balanced,"Rows' wav_path points to rasa_hf/data/Malayalam (checked on the first row, 2026-10-14). Not checked for all rows"
 ses_ed,distinct_from,ses_sd,https://www.kaggle.com/datasets/angeluxarmenta/ses-ed,English version by the same 53 students. SES-SD is the Spanish version
+ses_ed,shares_sentences_with,cremad,https://github.com/CheyneyComputerScience/CREMA-D,"SES-ED sentence codes DFA, IEO, IWW and TAI are the CREMA-D codes of the same four sentences (CREMA-D README list; Whisper transcripts of 6 clips per code agree). TSI has the same code but a different sentence ('The sun is very bright' vs 'The surface is slick')"
+ses_sd,shares_sentences_with,ses_ed,https://www.kaggle.com/datasets/angeluxarmenta/ses-sd,"SES-SD is the Spanish version of SES-ED: the same speakers and the same five sentence codes, with the sentences translated (Whisper transcripts of 6 clips per code). Four of the five sentences are also translations of CREMA-D sentences"
 slue_hvb,subset_of,harper_valley_bank,https://arxiv.org/abs/2212.10525,An evaluation version of HVB utterances relabelled with human dialogue acts
 textrolspeech,contains,esd,https://arxiv.org/abs/2308.14430,Paper §2
 textrolspeech,contains,mead,https://arxiv.org/abs/2308.14430,Paper §2

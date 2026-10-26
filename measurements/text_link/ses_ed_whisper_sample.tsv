@@ -1,0 +1,31 @@
+file	code	whisper_large_v3
+20_DFA_FEA_ENG.wav	DFA	Don't forget a jacket.
+5_DFA_HAP_ENG.wav	DFA	Don't forget a jacket.
+15_DFA_FEA_ENG.wav	DFA	.
+2_DFA_NEU_ENG.wav	DFA	Don't forget a jacket.
+1_DFA_ANG_ENG.wav	DFA	Don't forget a jacket.
+49_DFA_DIS_ENG.wav	DFA	Don't forget that jacket.
+45_IEO_HAP_ENG.wav	IEO	is Eleven O'Clock.
+47_IEO_FEA_ENG.wav	IEO	You're too living a crook.
+3_IEO_HAP_ENG.wav	IEO	It's 11 o'clock.
+26_IEO_SAD_ENG.wav	IEO	It's 11 o'clock.
+18_IEO_ANG_ENG.wav	IEO	It's 11 o'clock.
+48_IEO_NEU_ENG.wav	IEO	It's eleven o'clock.
+12_IWW_FEA_ENG.wav	IWW	I wonder what this is about.
+40_IWW_DIS_ENG.wav	IWW	I wonder what this is about.
+43_IWW_SAD_ENG.wav	IWW	I wonder what this is about.
+8_IWW_SAD_ENG.wav	IWW	I wonder what this is about.
+10_IWW_DIS_ENG.wav	IWW	I wonder what this is about.
+45_IWW_ANG_ENG.wav	IWW	I wonder what this is about.
+31_TAI_ANG_ENG.wav	TAI	The earplug is a mouthful.
+28_TAI_SAD_ENG.wav	TAI	The apron is almost full.
+7_TAI_SAD_ENG.wav	TAI	The airplane is almost full
+19_TAI_ANG_ENG.wav	TAI	The airplane is almost full.
+35_TAI_FEA_ENG.wav	TAI	The planet is almost a foot.
+12_TAI_HAP_ENG.wav	TAI	The airplay is almost full.
+11_TSI_SAD_ENG.wav	TSI	This one is very bright.
+12_TSI_DIS_ENG.wav	TSI	The sun is very bright.
+52_TSI_DIS_ENG.wav	TSI	the Sun is very bright
+10_TSI_NEU_ENG.wav	TSI	The sun is very bright.
+3_TSI_HAP_ENG.wav	TSI	The sun is very bright.
+27_TSI_FEA_ENG.wav	TSI	The sun is very bright.
