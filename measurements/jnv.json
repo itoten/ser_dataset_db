@@ -1,0 +1,76 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 420
+ },
+ "duration_sec": {
+  "max": 9.616,
+  "median": 3.221,
+  "min": 0.422
+ },
+ "hours_total": 0.395,
+ "measured_on": "2026-10-26",
+ "n_total": 420,
+ "output_env_var": "JNV_OUTPUT",
+ "recipe": "jnv",
+ "splits": {
+  "test": {
+   "hours": 0.0791,
+   "labels": {
+    "angry": 14,
+    "disgust": 11,
+    "fear": 10,
+    "happy": 15,
+    "sad": 8,
+    "surprise": 26
+   },
+   "manifest_sha1": "9b2d7e3a3c7c020853b3126932a07e78a64b6c29",
+   "n": 84,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 84
+  },
+  "train": {
+   "hours": 0.2781,
+   "labels": {
+    "angry": 47,
+    "disgust": 38,
+    "fear": 35,
+    "happy": 53,
+    "sad": 28,
+    "surprise": 93
+   },
+   "manifest_sha1": "038304f5b5a2bde9eca6e8986985a5ec21a1d423",
+   "n": 294,
+   "n_filtered": 294,
+   "over_30s": 0,
+   "under_0.5s": 2,
+   "unique_utt": 294
+  },
+  "valid": {
+   "hours": 0.0378,
+   "labels": {
+    "angry": 7,
+    "disgust": 5,
+    "fear": 5,
+    "happy": 8,
+    "sad": 4,
+    "surprise": 13
+   },
+   "manifest_sha1": "34bd29e3b3efbbf3459a2afaa6b1f1e39a19b69f",
+   "n": 42,
+   "n_filtered": 42,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 42
+  }
+ },
+ "token_list": [
+  "surprise",
+  "happy",
+  "angry",
+  "disgust",
+  "fear",
+  "sad"
+ ]
+}

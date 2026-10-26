@@ -1,0 +1,71 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 4243
+ },
+ "duration_sec": {
+  "max": 21.712,
+  "median": 1.248,
+  "min": 0.576
+ },
+ "hours_total": 1.9716,
+ "measured_on": "2026-10-26",
+ "n_total": 4243,
+ "output_env_var": "LEGOV2_OUTPUT",
+ "recipe": "legov2",
+ "splits": {
+  "test": {
+   "hours": 0.4488,
+   "labels": {
+    "angry": 41,
+    "friendly": 1,
+    "neutral": 661,
+    "slightly_angry": 171,
+    "very_angry": 30
+   },
+   "manifest_sha1": "0a4cce6f1d10c7337015e2c7fd935965cc2b3078",
+   "n": 904,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 904
+  },
+  "train": {
+   "hours": 1.2904,
+   "labels": {
+    "angry": 73,
+    "friendly": 3,
+    "neutral": 2314,
+    "slightly_angry": 429,
+    "very_angry": 68
+   },
+   "manifest_sha1": "45506d2dfb0a827fa34e923817afdb83cb9ece7d",
+   "n": 2887,
+   "n_filtered": 2887,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 2887
+  },
+  "valid": {
+   "hours": 0.2324,
+   "labels": {
+    "angry": 23,
+    "neutral": 330,
+    "slightly_angry": 93,
+    "very_angry": 6
+   },
+   "manifest_sha1": "c205a809a257dc2d002aceaa45d6917a6b6c9890",
+   "n": 452,
+   "n_filtered": 452,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 452
+  }
+ },
+ "token_list": [
+  "neutral",
+  "slightly_angry",
+  "angry",
+  "very_angry",
+  "friendly"
+ ]
+}

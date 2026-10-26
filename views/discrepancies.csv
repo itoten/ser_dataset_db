@@ -316,6 +316,10 @@ interface,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candid
 interface,status_reason_codes,superseded,unexamined,user,access_no_direct_download,project_doc,nc_candidates_20261010.md,superseded by interface/status_reason_codes/03
 interface,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://catalog.elra.info/en-us/repository/browse/ELRA-S0329/,superseded by interface/status_reason_codes/04
 java_sed,espnet_status,superseded,deferred,user,excluded,measured,https://beais-uny.id/dataset/,superseded by java_sed/espnet_status/02
+javanese_ser_2black0,espnet_status,superseded,implemented,measured,candidate,measured,https://github.com/2black0/Sound-Emotion-Recognition-Javanese-Speech-Dataset,superseded by javanese_ser_2black0/espnet_status/02
+javanese_ser_2black0,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by javanese_ser_2black0/status_reason_codes/02
+jnv,espnet_status,superseded,implemented,measured,candidate,primary,https://sites.google.com/site/shinnosuketakamichi/research-topics/jnv_corpus,superseded by jnv/espnet_status/02
+jnv,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-13 survey,superseded by jnv/status_reason_codes/02
 jtes,espnet_status,superseded,candidate,user,excluded,primary,https://www.t-technoarch.co.jp/data/anken_h/S20-017.html,superseded by jtes/espnet_status/04
 jtes,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by jtes/espnet_status/03
 jtes,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://www.t-technoarch.co.jp/data/anken_h/S20-017.html,superseded by jtes/status_reason_codes/04
@@ -346,10 +350,12 @@ kurdish_nematullah2024,espnet_status,superseded,candidate,user,excluded,secondar
 kurdish_nematullah2024,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Kurdish/Nematullah-et-al.md,Not confirmed in a primary source; superseded by kurdish_nematullah2024/status_reason_codes/02
 ldc_emotional_prosody,espnet_status,superseded,candidate,user,excluded,primary,https://catalog.ldc.upenn.edu/LDC2002S28,superseded by ldc_emotional_prosody/espnet_status/02
 ldc_emotional_prosody,status_reason_codes,superseded,unexamined,user,access_paid_or_membership,primary,https://catalog.ldc.upenn.edu/LDC2002S28,superseded by ldc_emotional_prosody/status_reason_codes/02
-legov2,espnet_status,superseded,candidate,user,excluded,primary,https://www.uni-bamberg.de/ds/ressourcen/lego/,superseded by legov2/espnet_status/04
-legov2,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,superseded by legov2/espnet_status/03
-legov2,status_reason_codes,superseded,unexamined,user,content_insufficient,primary,https://www.uni-bamberg.de/ds/ressourcen/lego/,superseded by legov2/status_reason_codes/04
-legov2,status_reason_codes,superseded,unexamined,user,content_insufficient,project_doc,new_corpora/99_final_report.md,superseded by legov2/status_reason_codes/03
+legov2,espnet_status,superseded,implemented,measured,candidate,user,"Conversation with the maintainer, 2026-10-14",superseded by legov2/espnet_status/05
+legov2,espnet_status,superseded,implemented,measured,excluded,primary,https://www.uni-bamberg.de/ds/ressourcen/lego/,superseded by legov2/espnet_status/04
+legov2,espnet_status,superseded,implemented,measured,excluded,project_doc,new_corpora/99_final_report.md,superseded by legov2/espnet_status/03
+legov2,status_reason_codes,superseded,NA,measured,content_insufficient,primary,https://www.uni-bamberg.de/ds/ressourcen/lego/,superseded by legov2/status_reason_codes/04
+legov2,status_reason_codes,superseded,NA,measured,content_insufficient,project_doc,new_corpora/99_final_report.md,superseded by legov2/status_reason_codes/03
+legov2,status_reason_codes,superseded,NA,measured,unexamined,user,"Conversation with the maintainer, 2026-10-14",superseded by legov2/status_reason_codes/05
 lssed,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/tobefans/LSSED,superseded by lssed/espnet_status/04
 lssed,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by lssed/espnet_status/03
 lssed,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://github.com/tobefans/LSSED,superseded by lssed/status_reason_codes/04
