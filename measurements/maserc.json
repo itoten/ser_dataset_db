@@ -1,0 +1,76 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 772
+ },
+ "duration_sec": {
+  "max": 12.255,
+  "median": 3.99,
+  "min": 1.38
+ },
+ "hours_total": 0.8003,
+ "measured_on": "2026-10-26",
+ "n_total": 772,
+ "output_env_var": "MASERC_OUTPUT",
+ "recipe": "maserc",
+ "splits": {
+  "test": {
+   "hours": 0.1576,
+   "labels": {
+    "angry": 27,
+    "fear": 26,
+    "happy": 26,
+    "neutral": 26,
+    "sad": 26,
+    "surprise": 26
+   },
+   "manifest_sha1": "8a0e52c711f5e02bcd2acd847d9496dd09feec80",
+   "n": 157,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 157
+  },
+  "train": {
+   "hours": 0.5443,
+   "labels": {
+    "angry": 92,
+    "fear": 89,
+    "happy": 89,
+    "neutral": 89,
+    "sad": 88,
+    "surprise": 90
+   },
+   "manifest_sha1": "ed3af34ccf4488c3658b92d32694adfd6946cc9e",
+   "n": 537,
+   "n_filtered": 537,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 537
+  },
+  "valid": {
+   "hours": 0.0984,
+   "labels": {
+    "angry": 13,
+    "fear": 13,
+    "happy": 13,
+    "neutral": 13,
+    "sad": 13,
+    "surprise": 13
+   },
+   "manifest_sha1": "402728f9df5ef917d100073b475cea939f63eab5",
+   "n": 78,
+   "n_filtered": 78,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 78
+  }
+ },
+ "token_list": [
+  "angry",
+  "surprise",
+  "fear",
+  "happy",
+  "neutral",
+  "sad"
+ ]
+}

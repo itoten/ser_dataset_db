@@ -1,0 +1,82 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 1453
+ },
+ "duration_sec": {
+  "max": 8.167,
+  "median": 3.947,
+  "min": 2.357
+ },
+ "hours_total": 1.6598,
+ "measured_on": "2026-10-26",
+ "n_total": 1453,
+ "output_env_var": "LITHUANIAN_EMOTION_DB_OUTPUT",
+ "recipe": "lithuanian_emotion_db",
+ "splits": {
+  "test": {
+   "hours": 0.5643,
+   "labels": {
+    "angry": 101,
+    "disgust": 14,
+    "fear": 24,
+    "happy": 84,
+    "neutral": 58,
+    "sad": 192,
+    "surprise": 41
+   },
+   "manifest_sha1": "70340cd3c36c40a7e4f891eea5947fbe207d8886",
+   "n": 514,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 514
+  },
+  "train": {
+   "hours": 0.8954,
+   "labels": {
+    "angry": 130,
+    "disgust": 127,
+    "fear": 59,
+    "happy": 82,
+    "longing": 9,
+    "neutral": 178,
+    "sad": 143,
+    "surprise": 56
+   },
+   "manifest_sha1": "bdb0775b7ad6b7683f6eb579fcd1de6cebdf7081",
+   "n": 784,
+   "n_filtered": 784,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 784
+  },
+  "valid": {
+   "hours": 0.2002,
+   "labels": {
+    "angry": 8,
+    "disgust": 9,
+    "fear": 20,
+    "happy": 94,
+    "neutral": 9,
+    "sad": 7,
+    "surprise": 8
+   },
+   "manifest_sha1": "46f5117a46c9fd2abb06eb9de0ce8ae5c6e17b3c",
+   "n": 155,
+   "n_filtered": 155,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 155
+  }
+ },
+ "token_list": [
+  "neutral",
+  "sad",
+  "angry",
+  "disgust",
+  "happy",
+  "fear",
+  "surprise",
+  "longing"
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 90
+ },
+ "duration_sec": {
+  "max": 4.31,
+  "median": 0.948,
+  "min": 0.24
+ },
+ "hours_total": 0.0272,
+ "measured_on": "2026-10-26",
+ "n_total": 90,
+ "output_env_var": "MAV_OUTPUT",
+ "recipe": "mav",
+ "splits": {
+  "test": {
+   "hours": 0.0063,
+   "labels": {
+    "angry": 2,
+    "disgust": 2,
+    "fear": 2,
+    "happy": 2,
+    "neutral": 2,
+    "pain": 2,
+    "pleasure": 2,
+    "sad": 2,
+    "surprise": 2
+   },
+   "manifest_sha1": "02b42924542166554ce762102bad660ada331119",
+   "n": 18,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 3,
+   "unique_utt": 18
+  },
+  "train": {
+   "hours": 0.0184,
+   "labels": {
+    "angry": 7,
+    "disgust": 7,
+    "fear": 7,
+    "happy": 7,
+    "neutral": 7,
+    "pain": 7,
+    "pleasure": 7,
+    "sad": 7,
+    "surprise": 7
+   },
+   "manifest_sha1": "20daca90e2bfc4eacde2b7e8d8ad8ebbeb1d4034",
+   "n": 63,
+   "n_filtered": 63,
+   "over_30s": 0,
+   "under_0.5s": 10,
+   "unique_utt": 63
+  },
+  "valid": {
+   "hours": 0.0025,
+   "labels": {
+    "angry": 1,
+    "disgust": 1,
+    "fear": 1,
+    "happy": 1,
+    "neutral": 1,
+    "pain": 1,
+    "pleasure": 1,
+    "sad": 1,
+    "surprise": 1
+   },
+   "manifest_sha1": "6060e7b7ca841516a5baeab4768cdd6790c6e5f7",
+   "n": 9,
+   "n_filtered": 9,
+   "over_30s": 0,
+   "under_0.5s": 1,
+   "unique_utt": 9
+  }
+ },
+ "token_list": [
+  "angry",
+  "disgust",
+  "fear",
+  "happy",
+  "neutral",
+  "pain",
+  "pleasure",
+  "sad",
+  "surprise"
+ ]
+}

@@ -356,6 +356,8 @@ legov2,espnet_status,superseded,implemented,measured,excluded,project_doc,new_co
 legov2,status_reason_codes,superseded,NA,measured,content_insufficient,primary,https://www.uni-bamberg.de/ds/ressourcen/lego/,superseded by legov2/status_reason_codes/04
 legov2,status_reason_codes,superseded,NA,measured,content_insufficient,project_doc,new_corpora/99_final_report.md,superseded by legov2/status_reason_codes/03
 legov2,status_reason_codes,superseded,NA,measured,unexamined,user,"Conversation with the maintainer, 2026-10-14",superseded by legov2/status_reason_codes/05
+lithuanian_emotion_db,espnet_status,superseded,implemented,measured,candidate,measured,https://github.com/BPTI-LT/Emociju-duomenu-baze,superseded by lithuanian_emotion_db/espnet_status/02
+lithuanian_emotion_db,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,Handling of the missing license and skewed counts not decided; superseded by lithuanian_emotion_db/status_reason_codes/02
 lssed,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/tobefans/LSSED,superseded by lssed/espnet_status/04
 lssed,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by lssed/espnet_status/03
 lssed,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://github.com/tobefans/LSSED,superseded by lssed/status_reason_codes/04
@@ -377,6 +379,12 @@ masc,espnet_status,superseded,candidate,user,excluded,primary,https://catalog.ld
 masc,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by masc/espnet_status/03
 masc,status_reason_codes,superseded,unexamined,user,access_paid_or_membership,primary,https://catalog.ldc.upenn.edu/LDC2007S09,superseded by masc/status_reason_codes/04
 masc,status_reason_codes,superseded,unexamined,user,access_paid_or_membership,project_doc,nc_candidates_20261010.md,superseded by masc/status_reason_codes/03
+maserc,espnet_status,superseded,implemented,measured,candidate,primary,https://data.mendeley.com/datasets/b9jrrpdxgb,superseded by maserc/espnet_status/02
+maserc,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,804,see evidence,808,measured,n_files_release_measured,
+maserc,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,804,see evidence,772,measured,recipes.n_total (maserc),a mismatch is normal: recipes filter by length and label
+maserc,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by maserc/status_reason_codes/02
+mav,espnet_status,superseded,implemented,measured,candidate,primary,https://zenodo.org/records/17036776,superseded by mav/espnet_status/02
+mav,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-13 survey,How to handle having only 90 items is not decided; superseded by mav/status_reason_codes/02
 mavesdb,espnet_status,superseded,candidate,user,excluded,measured,https://data.mendeley.com/public-api/datasets/6hm2xt5hd8/files?folder_id=root&version=1,superseded by mavesdb/espnet_status/03
 mavesdb,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,superseded by mavesdb/espnet_status/02
 mavesdb,status_reason_codes,superseded,unexamined,user,access_signed_agreement,measured,https://data.mendeley.com/public-api/datasets/6hm2xt5hd8/files?folder_id=root&version=1,superseded by mavesdb/status_reason_codes/03
