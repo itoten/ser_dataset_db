@@ -568,6 +568,9 @@ urdu,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,38,
 urdu,recording_context,superseded,talk_show,primary,tv_show,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: TV show; superseded by urdu/recording_context/02
 usc_emo_mri,espnet_status,superseded,implemented,measured,candidate,primary,https://zenodo.org/records/19325044,superseded by usc_emo_mri/espnet_status/02
 usoms,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,superseded by usoms/espnet_status/03
+utemo,espnet_status,superseded,implemented,measured,candidate,primary,https://data.mendeley.com/datasets/x5rmd28h73,superseded by utemo/espnet_status/02
+utemo,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1801,see evidence,1780,measured,recipes.n_total (utemo),a mismatch is normal: recipes filter by length and label
+utemo,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by utemo/status_reason_codes/02
 uudb,espnet_status,superseded,candidate,user,excluded,primary,http://research.nii.ac.jp/src/en/register.html,superseded by uudb/espnet_status/02
 uudb,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,http://research.nii.ac.jp/src/en/register.html,superseded by uudb/status_reason_codes/02
 vam,espnet_status,superseded,candidate,user,excluded,measured,https://sail.usc.edu/emotion/VAM/VAM_Audio.zip,superseded by vam/espnet_status/04
@@ -583,6 +586,9 @@ vesus,status_reason_codes,superseded,unexamined,user,access_request_form_or_emai
 vnemos,espnet_status,superseded,deferred,primary,excluded,primary,https://doi.org/10.1109/icdv61346.2024.10616411,superseded by vnemos/espnet_status/02
 vnemos,status_reason_codes,superseded,unexamined,primary,content_insufficient,primary,https://doi.org/10.1109/icdv61346.2024.10616411,superseded by vnemos/status_reason_codes/02
 waxal_wolof_ser,status_reason_codes,superseded,labels_not_discrete_emotion,measured,provenance_unclear,primary,https://huggingface.co/datasets/papasega/Waxal_Multiling_4_SER-Wolof,superseded by waxal_wolof_ser/status_reason_codes/02
+whiser,espnet_status,superseded,implemented,measured,candidate,measured,https://www.lab-msp.com/WHiSER/,superseded by whiser/espnet_status/02
+whiser,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,5427,see evidence,4407,measured,recipes.n_total (whiser),a mismatch is normal: recipes filter by length and label
+whiser,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the additions of 2026-10-13,Handling of the missing license and speaker information not decided; superseded by whiser/status_reason_codes/02
 yue_emo_speech,espnet_status,superseded,candidate,user,excluded,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,The card does not describe how labels were made; superseded by yue_emo_speech/espnet_status/02
 yue_emo_speech,status_reason_codes,superseded,unexamined,user,labels_automatic,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by yue_emo_speech/status_reason_codes/02
 zamai_pashto,languages,superseded,pus;fas;eng,primary,pus,project_doc,new_corpora/99_final_report.md,superseded by zamai_pashto/languages/02
