@@ -1,0 +1,76 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 20376
+ },
+ "duration_sec": {
+  "max": 46.507,
+  "median": 3.584,
+  "min": 0.853
+ },
+ "hours_total": 23.7771,
+ "measured_on": "2026-10-26",
+ "n_total": 20376,
+ "output_env_var": "TALROMUR3_OUTPUT",
+ "recipe": "talromur3",
+ "splits": {
+  "test": {
+   "hours": 4.6977,
+   "labels": {
+    "angry": 678,
+    "happy": 678,
+    "helpful": 678,
+    "neutral": 678,
+    "sad": 678,
+    "surprise": 678
+   },
+   "manifest_sha1": "dc70d56bf82636d3b695790a64ede0242151db6e",
+   "n": 4068,
+   "n_filtered": null,
+   "over_30s": 4,
+   "under_0.5s": 0,
+   "unique_utt": 4068
+  },
+  "train": {
+   "hours": 17.1676,
+   "labels": {
+    "angry": 2378,
+    "happy": 2378,
+    "helpful": 2378,
+    "neutral": 2378,
+    "sad": 2378,
+    "surprise": 2378
+   },
+   "manifest_sha1": "2634ac389e5ccb05c189422d08bfdb3cfb1dc1dc",
+   "n": 14268,
+   "n_filtered": 14254,
+   "over_30s": 14,
+   "under_0.5s": 0,
+   "unique_utt": 14268
+  },
+  "valid": {
+   "hours": 1.9118,
+   "labels": {
+    "angry": 340,
+    "happy": 340,
+    "helpful": 340,
+    "neutral": 340,
+    "sad": 340,
+    "surprise": 340
+   },
+   "manifest_sha1": "1d5a1ca4f5a832e0371e5133ba80a27c84be6d2d",
+   "n": 2040,
+   "n_filtered": 2040,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 2040
+  }
+ },
+ "token_list": [
+  "angry",
+  "happy",
+  "helpful",
+  "neutral",
+  "surprise",
+  "sad"
+ ]
+}

@@ -510,6 +510,8 @@ sewa,espnet_status,superseded,deferred,user,excluded,measured,http://db.sewaproj
 sewa,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,superseded by sewa/espnet_status/03
 sewa,status_reason_codes,superseded,host_unreachable,user,not_individually_checked,project_doc,nc_candidates_20261010.md,superseded by sewa/status_reason_codes/03
 shemo,recording_context,superseded,other,primary,acted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Acted; superseded by shemo/recording_context/02
+sitb_osed,espnet_status,superseded,implemented,measured,candidate,primary,https://zenodo.org/records/16210020,superseded by sitb_osed/espnet_status/02
+sitb_osed,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by sitb_osed/status_reason_codes/02
 slue_voxceleb,espnet_status,superseded,candidate,user,excluded,primary,https://arxiv.org/abs/2111.10367,superseded by slue_voxceleb/espnet_status/02
 slue_voxceleb,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,primary,https://arxiv.org/abs/2111.10367,superseded by slue_voxceleb/status_reason_codes/02
 spanish_meacorpus,espnet_status,superseded,needs_decision,user,excluded,primary,https://zenodo.org/records/18606423,superseded by spanish_meacorpus/espnet_status/02
@@ -532,8 +534,12 @@ syntact,label_verification,superseded,listener_validated,primary,NA,user,recipe_
 syntact,license_spdx,superseded,CC-BY-4.0,primary,CC-BY-SA-4.0,secondary,https://github.com/SuperKogito/SER-datasets,superseded by syntact/license_spdx/02
 syntact,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,6000,see evidence,6001,measured,n_files_release_measured,
 syntact,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,6000,see evidence,5971,measured,recipes.n_total (syntact),a mismatch is normal: recipes filter by length and label
+talromur3,espnet_status,superseded,implemented,measured,candidate,primary,http://hdl.handle.net/20.500.12537/387,superseded by talromur3/espnet_status/02
 talromur3,hours_reported,superseded,24,primary,14,primary,http://hdl.handle.net/20.500.12537/344,superseded by talromur3/hours_reported/02
 talromur3,n_utt_reported,superseded,21528,primary,15078,primary,http://hdl.handle.net/20.500.12537/344,superseded by talromur3/n_utt_reported/02
+talromur3,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,21528,see evidence,21516,measured,n_files_release_measured,
+talromur3,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,21528,see evidence,20376,measured,recipes.n_total (talromur3),a mismatch is normal: recipes filter by length and label
+talromur3,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-13 survey,superseded by talromur3/status_reason_codes/02
 tamar_emodb,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Tamil/TaMaR-EmoDB.md,Not confirmed in a primary source; superseded by tamar_emodb/espnet_status/02
 tamar_emodb,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Tamil/TaMaR-EmoDB.md,Not confirmed in a primary source; superseded by tamar_emodb/status_reason_codes/02
 tamil_ram,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Tamil/Ram_C_Sunitha_et_al.md,Not confirmed in a primary source; superseded by tamil_ram/espnet_status/02

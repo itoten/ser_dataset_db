@@ -1,0 +1,76 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 12110
+ },
+ "duration_sec": {
+  "max": 11.811,
+  "median": 5.59,
+  "min": 2.08
+ },
+ "hours_total": 19.1137,
+ "measured_on": "2026-10-26",
+ "n_total": 12110,
+ "output_env_var": "SITB_OSED_OUTPUT",
+ "recipe": "sitb_osed",
+ "splits": {
+  "test": {
+   "hours": 3.6789,
+   "labels": {
+    "angry": 397,
+    "disgust": 409,
+    "fear": 390,
+    "happy": 394,
+    "sad": 404,
+    "surprise": 389
+   },
+   "manifest_sha1": "4a470f33be7f360b157cfa0666154a5e441d7068",
+   "n": 2383,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 2383
+  },
+  "train": {
+   "hours": 13.3042,
+   "labels": {
+    "angry": 1391,
+    "disgust": 1427,
+    "fear": 1391,
+    "happy": 1395,
+    "sad": 1473,
+    "surprise": 1371
+   },
+   "manifest_sha1": "ffe956a585588cca5a8a85fc12ad61983db8101c",
+   "n": 8448,
+   "n_filtered": 8448,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 8448
+  },
+  "valid": {
+   "hours": 2.1306,
+   "labels": {
+    "angry": 209,
+    "disgust": 207,
+    "fear": 209,
+    "happy": 206,
+    "sad": 241,
+    "surprise": 207
+   },
+   "manifest_sha1": "778f76991c2257357c38933aa0a9c2965784b146",
+   "n": 1279,
+   "n_filtered": 1279,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1279
+  }
+ },
+ "token_list": [
+  "sad",
+  "disgust",
+  "happy",
+  "angry",
+  "fear",
+  "surprise"
+ ]
+}
