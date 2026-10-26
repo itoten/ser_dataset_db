@@ -215,6 +215,7 @@ They can differ, and the difference itself is useful information. Recipes drop v
 - `language_note`: dialects and how the language value was decided
 - `label_basis_note`: details of how labels were made (5.4.1)
 - `lexical_confound_note`: what the `lexical_confound` value is based on (5.4.2)
+- `paralinguistic_signal_note`: what was listened to and what was heard (5.4.3)
 - `notes`: our own notes
 - `sheet_notes`, `annotations_other`, `sheet_verified`: **original text of the spreadsheet**; never changed. `sheet_verified` is the spreadsheet's mark for "checked by hand" and is not used for decisions
 
@@ -258,6 +259,20 @@ If the words spoken already give the label away, a model can learn the words ins
 - Whisper transcripts are a measurement, but say in the evidence note that no person checked them. Measurement outputs go under `measurements/text_link/`.
 - Filled during recipe review. Rows not yet reviewed are empty (not checked).
 
+### 5.4.3 Does the voice carry the expression? (`paralinguistic_signal`)
+
+Labels can be correct and the voice still carry little of the labelled expression (a flat reading of lines per emotion, amateur speakers in a classroom). Such data can mislead a model that is meant to learn from the voice. This column records what listening found; it does not decide whether to use the data.
+
+| Value | Meaning |
+|---|---|
+| `clear` | The voice carries the labelled expression (shown by a listening test or by the maintainer's listening) |
+| `varies` | Clear for some speakers or classes, weak for others |
+| `weak` | The expression is weak in what was heard |
+| `doubtful` | The voice may carry no expression of the labelled emotion (e.g. a flat reading of lines) |
+
+- Fill it only from listening (a listening test, or the maintainer's listening, recorded with `source_type=user`). The number of clips heard and what was heard go in `paralinguistic_signal_note`. A light listening (a few clips) is recorded as such and is not a measurement.
+- Empty means not judged. Do not fill it from the label source, the recording setting or the sentences.
+
 ### 5.5 Annotations other than emotion labels (`annotations.csv`)
 
 Transcripts, speaker traits, dialogue acts, audio quality, questionnaires and other information beyond the emotion label are recorded one row per dataset x item. `datasets.annotations_other` (spreadsheet text) is kept unchanged, and new information goes into this table.
@@ -293,7 +308,7 @@ A value alone cannot answer "is that really true?" later. So every important val
 | `is_canonical` | `true` for the evidence of the current value; exactly one per dataset x column |
 | `status` | `current` / `superseded` (replaced by newer evidence) / `conflicting` (sources disagree, undecided) |
 
-Columns that need evidence: `languages`, `recording_context`, `vocal_content`, `license_spdx`, `access_method`, `raw_audio_available`, `n_utt_reported`, `hours_reported`, `n_speakers_reported`, `n_files_release_measured`, `n_speakers_measured`, `labels_discrete_reported`, `dimensional_attributes`, `espnet_status`, `status_reason_codes`, `label_source`, `label_verification`, `speech_production`, `label_basis`, `text_emotion_link`, `lexical_confound`.
+Columns that need evidence: `languages`, `recording_context`, `vocal_content`, `license_spdx`, `access_method`, `raw_audio_available`, `n_utt_reported`, `hours_reported`, `n_speakers_reported`, `n_files_release_measured`, `n_speakers_measured`, `labels_discrete_reported`, `dimensional_attributes`, `espnet_status`, `status_reason_codes`, `label_source`, `label_verification`, `speech_production`, `label_basis`, `text_emotion_link`, `lexical_confound`, `paralinguistic_signal`.
 
 ### 6.2.1 Recording when something was checked
 
@@ -495,6 +510,7 @@ Open [views/datasets_wide.csv](../views/datasets_wide.csv) in Excel, Google Shee
 - `license_class`, `access_method`, `raw_audio_available`
 - `speech_production`, `label_basis`, `label_basis_note`
 - `text_emotion_link`, `lexical_confound`, `lexical_confound_note`
+- `paralinguistic_signal`, `paralinguistic_signal_note`
 - `recipe`, `n_total_recipe`, `hours_total_recipe`: for implemented datasets, the recipe and its measured count and hours
 - `common7_covered`, `common7_missing`: which of the common 7 labels (angry, disgust, fear, happy, neutral, sad, surprise) the data has or lacks
 - `benchmarks`: benchmarks it belongs to

@@ -189,3 +189,8 @@ lexical_confound,possible,"No direct evidence, but a documented reason to suspec
 lexical_confound,none,"Ruled out by design: parallel, semantically neutral or emotion-independent sentences, or no words",
 text_emotion_link,dialogue_script,"Lines of a film, drama or written dialogue; content follows the story, not a per-emotion design",
 text_emotion_link,unrelated_text,"Different sentences per clip, assigned without regard to the emotion (e.g. news sentences taken in order)",
+paralinguistic_signal,clear,The voice carries the labelled expression (shown by a listening test or by the maintainer's listening),
+paralinguistic_signal,varies,Clear for some speakers or classes and weak for others,
+paralinguistic_signal,weak,The expression in the voice is weak in what was heard,
+paralinguistic_signal,doubtful,The voice may carry no expression of the labelled emotion (e.g. a flat reading of lines),
+relation_type,shares_sentences_with,"Some of the spoken sentences (or their translations) are the same as in the other dataset. Symmetric: recorded once, newer dataset first",

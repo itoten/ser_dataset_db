@@ -14,7 +14,7 @@ SHEET_COLS = ["Verified", "Dataset", "License", "Language", "Source", "Total Hou
               "ESPnet Implemented"]
 EXTRA_COLS = ["dataset_id", "status", "reasons", "license_class", "access_method", "raw_audio_available", "recipe",
               "n_total_recipe", "hours_total_recipe", "n_files_release_measured", "n_speakers_measured",
-              "common7_covered", "common7_missing", "extra_labels", "label_source", "label_verification", "speech_production", "label_basis", "label_basis_note", "text_emotion_link", "lexical_confound", "lexical_confound_note",
+              "common7_covered", "common7_missing", "extra_labels", "label_source", "label_verification", "speech_production", "label_basis", "label_basis_note", "text_emotion_link", "lexical_confound", "lexical_confound_note", "paralinguistic_signal", "paralinguistic_signal_note",
               "annotation_items",
               "benchmarks", "report_path", "status_note", "notes",
               "license_checked_on", "license_source_type", "license_checked_by", "access_checked_on",
@@ -75,7 +75,8 @@ def wide(db):
             "label_verification": d["label_verification"], "speech_production": d["speech_production"],
             "label_basis": d["label_basis"], "label_basis_note": d["label_basis_note"],
             "text_emotion_link": d["text_emotion_link"], "lexical_confound": d["lexical_confound"],
-            "lexical_confound_note": d["lexical_confound_note"], "annotation_items": ";".join(sorted(items.get(i, []))),
+            "lexical_confound_note": d["lexical_confound_note"],
+            "paralinguistic_signal": d["paralinguistic_signal"], "paralinguistic_signal_note": d["paralinguistic_signal_note"], "annotation_items": ";".join(sorted(items.get(i, []))),
             "benchmarks": ";".join(bench),
             "report_path": d["report_path"], "status_note": d["status_note"], "notes": d["notes"],
             "license_checked_on": lic["checked_on"] if lic else "", "license_source_type": lic["source_type"] if lic else "",

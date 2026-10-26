@@ -113,7 +113,8 @@ add one to `schema/enums.csv` and the manual. The full rules: [references/data-m
   (`n_files_release_measured`, `n_speakers_measured`, or `unknown` when they cannot be counted),
   `label_source`, `label_verification`, `speech_production` and `label_basis` (with details in
   `label_basis_note`), `text_emotion_link` and `lexical_confound` (with the basis in
-  `lexical_confound_note`), and any published value or license that changed;
+  `lexical_confound_note`), `paralinguistic_signal` when the maintainer's listening or a listening
+  test is reported, and any published value or license that changed;
   disagreeing sources as `conflicting` rows;
 - cells without evidence: `status_note`, `notes`, `license_note`, `release_version`,
   `status_checked_on`;

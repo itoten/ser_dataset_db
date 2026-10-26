@@ -56,7 +56,7 @@ These `datasets` columns need an evidence row for their value: `languages`,
 `n_utt_reported`, `hours_reported`, `n_speakers_reported`, `n_files_release_measured`,
 `n_speakers_measured`, `labels_discrete_reported`, `dimensional_attributes`, `espnet_status`,
 `status_reason_codes`, `label_source`, `label_verification`, `speech_production`, `label_basis`,
-`text_emotion_link`, `lexical_confound`.
+`text_emotion_link`, `lexical_confound`, `paralinguistic_signal`.
 
 Columns that never take evidence rows (adding one is a validation error): URL columns
 (`source_url`, `download_url`, `paper_url`, `doi`) and text columns (`status_note`, `notes`,
@@ -212,3 +212,14 @@ hand-written ones:
   `license_note`: the gist of the license wording and any disagreement between sources.
 - Use absolute dates (2026-01-31), never "today" or "last week".
 - Write all text in English. Quote non-English wording only when it matters (e.g. a name or a license sentence), with an English gloss.
+
+## Listening judgement and shared sentences
+
+- `paralinguistic_signal`: `clear`, `varies`, `weak` or `doubtful`, recorded only from listening
+  (a listening test, or the maintainer's listening as `source_type=user`); the clips heard and
+  what was heard go in `paralinguistic_signal_note`. Empty = not judged. It records, it does not
+  decide.
+- `shares_sentences_with` (relations): some spoken sentences, or their translations, are the same
+  in the other dataset (e.g. SES-ED and CREMA-D). Record it once per pair, the newer dataset
+  first, and describe which sentences in the note. Check by transcribing a few clips per
+  sentence code; do not infer it from similar file names alone.

@@ -40,6 +40,8 @@ datasets,label_basis_note,text,empty,no,"Details of how labels were made: number
 datasets,text_emotion_link,enumlist:text_emotion_link,empty;unknown,yes,"How the spoken text relates to the emotion labels (;-separated when the data mixes designs): parallel (the same sentences in every emotion) / neutral_text (semantically neutral sentences) / emotion_specific_text (content matches the emotion) / unrelated_text (sentences assigned without regard to the emotion) / dialogue_script (lines of a film, drama or written dialogue) / unscripted (no script: conversations, broadcasts, improvisation)"
 datasets,lexical_confound,enum:lexical_confound,empty;unknown,yes,"How far the label can be guessed from the words alone, a shortcut a model may learn: full / strong / moderate / weak / possible / none. A rough flag that prompts checking the actual data, not a measurement"
 datasets,lexical_confound_note,text,empty,no,"What the lexical_confound value is based on (design described in a source, sentence-label counts, a text-only classifier) and its scope"
+datasets,paralinguistic_signal,enum:paralinguistic_signal,empty;unknown,yes,"How well the voice carries the labelled expression, judged by listening (the maintainer's listening or a listening test): clear / varies (clear for some speakers or classes, weak for others) / weak / doubtful (may carry no expression, e.g. a flat reading of lines). Empty = not judged"
+datasets,paralinguistic_signal_note,text,empty,no,"What was listened to and by whom (number of clips, speakers), and what was heard"
 datasets,annotations_other,text,empty;none,no,The spreadsheet's Other Annotations (original text)
 datasets,sheet_notes,text,empty,no,The spreadsheet's Notes (original text; do not change)
 datasets,notes,text,empty,no,Our own notes
@@ -64,7 +66,7 @@ aliases,alias_type,enum:alias_type,-,no,Kind of alias
 aliases,source_ref,text,empty,no,Source
 aliases,note,text,empty,no,Notes
 relations,dataset_id,slug,-,no,Foreign key to datasets
-relations,relation,enum:relation_type,-,no,version_of / subset_of / contains / distinct_from / possibly_same_as
+relations,relation,enum:relation_type,-,no,version_of / subset_of / contains / distinct_from / possibly_same_as / shares_sentences_with
 relations,other_dataset_id,slug,-,no,The other dataset_id
 relations,source_ref,text,empty,no,Source
 relations,note,text,empty,no,Notes
