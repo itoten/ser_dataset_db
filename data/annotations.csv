@@ -165,6 +165,10 @@ jnv,phrase,"Designated phrase of each regular-session clip (phrases.txt, 87 phra
 jnv,rating_scale,0-100 rating on each of the six emotions per clip,human,utterance,false,primary,readme.md in the release,file_rating_scale.csv,2026-10-26,claude,
 jnv,session,"R (phrase designated) or F (phrase free), last field of the file name",unknown,utterance,false,primary,readme.md in the release,Specification,2026-10-26,claude,
 jnv,speaker_id,"F1, F2, M1, M2 (folder); M2 is a professional speaker",unknown,speaker,false,primary,readme.md in the release,Specification,2026-10-26,claude,Not used for the split (random split)
+jvnv,forced_choice_results,Crowd forced-choice results; aggregate only,human,dataset,false,primary,https://arxiv.org/abs/2310.06072,Table 4,2026-10-26,claude,
+jvnv,nonverbal_intervals,"Time intervals of nonverbal vocalisations (nv_label/, 1,615 files)",unknown,utterance,false,primary,https://arxiv.org/abs/2310.06072,distributed files,2026-10-26,claude,Not used
+jvnv,session,regular (nonverbal phrase specified) or free (speaker's choice),unknown,utterance,false,primary,https://arxiv.org/abs/2310.06072,section 3.1,2026-10-26,claude,
+jvnv,transcription,"Transcript of the utterances (transcription.csv, 514 rows)",unknown,utterance,false,primary,https://arxiv.org/abs/2310.06072,distributed files,2026-10-26,claude,Not every clip has a row; not used
 legov2,acoustic_features,Praat acoustic and prosodic features (acoustics.csv),automatic,utterance,false,primary,readme.txt in the release (LEGOv2.zip),acoustics.csv,2026-10-26,claude,Not examined
 legov2,asr_text_and_prompt,ASR result of the user utterance and the system prompt,automatic,utterance,false,primary,readme.txt in the release (LEGOv2.zip),interactions.csv,2026-10-26,claude,Not used by the recipe
 legov2,caller_gender_age_outcome,"Gender, age and dialogue outcome per call (calls.csv)",unknown,conversation,false,primary,readme.txt in the release (LEGOv2.zip),calls.csv,2026-10-26,claude,Not examined
@@ -185,6 +189,8 @@ meld,emotion,Seven emotions by majority vote of three annotators who also saw th
 meld,sentiment,"Positive, negative or neutral sentiment per utterance",human,utterance,false,primary,https://arxiv.org/abs/1810.02508,Section 3,2026-10-26,claude,Not used by the recipe
 meld,speaker_name,Character name of the speaker (304 names),unknown,utterance,false,measured,"the release files (train/valid/test mp4 and CSV), file and CSV count (2026-10-26)",CSV column Speaker,2026-10-26,claude,Used only in the utterance id
 meld,utterance_text,Subtitle text of each utterance (from EmotionLines),unknown,utterance,false,measured,"the release files (train/valid/test mp4 and CSV), file and CSV count (2026-10-26)",CSV column Utterance,2026-10-26,claude,Not used by the recipe
+msppodcast,arousal_valence_dominance,"Crowd scores for arousal, valence, dominance",human,utterance,false,primary,https://arxiv.org/abs/2509.09791,section on annotation,2026-10-26,claude,Not used by the recipe
+msppodcast,crowd_annotations,Crowd workers' categorical votes (consensus class plus O and X codes),human,utterance,true,primary,https://arxiv.org/abs/2509.09791,section on annotation,2026-10-26,claude,Consensus class used; O and X dropped
 quechua,script,Quechua Collao words and sentences with Spanish translation and the kind of item (Script.xlsx),unknown,utterance,false,primary,https://www.nature.com/articles/s41597-022-01855-9,Script folder,2026-10-26,claude,
 quechua,speaker,a1-a6 (actors),unknown,speaker,true,measured,"the release files (12,420 wav, Labels/, Script.xlsx), recipe measurement (2026-10-26)",metadata,2026-10-26,claude,Used for the speaker-independent split
 quechua,valence_arousal_dominance,"Valence, arousal and dominance 1-5 by four annotators (Valence.csv, Arousal.csv, Dominance.csv; averages in Labels.csv)",human,utterance,false,primary,https://www.nature.com/articles/s41597-022-01855-9,Annotation section,2026-10-26,claude,Not used by the recipe
