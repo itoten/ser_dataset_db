@@ -138,6 +138,8 @@ des,espnet_status,superseded,deferred,user,excluded,primary,http://universal.elr
 des,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,superseded by des/espnet_status/03
 dfew,espnet_status,superseded,candidate,user,excluded,primary,https://dfew-dataset.github.io/download.html,superseded by dfew/espnet_status/02
 dfew,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://dfew-dataset.github.io/download.html,superseded by dfew/status_reason_codes/02
+dusha,license_spdx,superseded,LicenseRef-golos-public,primary,LicenseRef-other,primary,https://cdn.chatwm.opensmodel.sberdevices.ru/dusha/,superseded by dusha/license_spdx/03
+dusha,license_spdx,superseded,LicenseRef-golos-public,primary,LicenseRef-other,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Other; superseded by dusha/license_spdx/02
 dusha,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,303963,see evidence,160357,measured,recipes.n_total (dusha),a mismatch is normal: recipes filter by length and label
 dzafic,status_reason_codes,superseded,identity_unresolved,project_doc,content_insufficient,project_doc,new_corpora/99_final_report.md,superseded by dzafic/status_reason_codes/02
 eekk,license_spdx,superseded,CC-BY-4.0,primary,LicenseRef-other,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Other; superseded by eekk/license_spdx/02
@@ -221,6 +223,7 @@ emouerj,espnet_status,superseded,implemented,measured,candidate,primary,https://
 emouerj,label_verification,superseded,unknown,primary,NA,user,recipe_reports/2026-10-22_emouerj_db_update.md,superseded by emouerj/label_verification/02
 emouerj,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 check of existing rows,superseded by emouerj/status_reason_codes/02
 emouerj_sed,status_reason_codes,superseded,redistribution_of_existing_corpus,primary,content_insufficient,project_doc,new_corpora/99_final_report.md,superseded by emouerj_sed/status_reason_codes/02
+emovdb,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,7000,see evidence,6893,measured,n_files_release_measured,
 emovdb,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7000,see evidence,6893,measured,recipes.n_total (emovdb),a mismatch is normal: recipes filter by length and label
 emovie,espnet_status,superseded,candidate,user,excluded,primary,https://arxiv.org/abs/2106.09317,superseded by emovie/espnet_status/02
 emovie,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,primary,https://arxiv.org/abs/2106.09317,superseded by emovie/status_reason_codes/02
