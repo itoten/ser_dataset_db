@@ -1,79 +1,79 @@
 {
  "audio_format": {
-  "16000Hz/1ch/PCM_16": 7000
+  "16000Hz/1ch/PCM_16": 6969
  },
  "duration_sec": {
   "max": 6.026,
   "median": 4.017,
   "min": 2.752
  },
- "hours_total": 7.8321,
- "measured_on": "2026-10-12",
- "n_total": 7000,
+ "hours_total": 7.7974,
+ "measured_on": "2026-10-27",
+ "n_total": 6969,
  "output_env_var": "SUBESCO_OUTPUT",
  "recipe": "subesco",
  "splits": {
   "test": {
-   "hours": 1.5719,
+   "hours": 1.5629,
    "labels": {
-    "angry": 200,
-    "disgust": 200,
+    "angry": 199,
+    "disgust": 197,
     "fear": 200,
     "happy": 200,
-    "neutral": 200,
-    "sad": 200,
+    "neutral": 199,
+    "sad": 197,
     "surprise": 200
    },
-   "manifest_sha1": "dc09d97a3be04c0adb1898df5c1b6b9e824f1fb2",
-   "n": 1400,
+   "manifest_sha1": "44e4edec50912739c22bb613aa580c77327235bc",
+   "n": 1392,
    "n_filtered": null,
    "over_30s": 0,
    "under_0.5s": 0,
-   "unique_utt": 1400
+   "unique_utt": 1392
   },
   "train": {
-   "hours": 4.6879,
+   "hours": 4.6667,
    "labels": {
-    "angry": 600,
-    "disgust": 600,
-    "fear": 600,
-    "happy": 600,
-    "neutral": 600,
-    "sad": 600,
-    "surprise": 600
+    "angry": 596,
+    "disgust": 598,
+    "fear": 599,
+    "happy": 598,
+    "neutral": 598,
+    "sad": 596,
+    "surprise": 596
    },
-   "manifest_sha1": "906feecf7e2c4db25fcdd63829257ccb887f713f",
-   "n": 4200,
-   "n_filtered": 4200,
+   "manifest_sha1": "cf384860f411cfe0b66df2cc32c58d7127aa9457",
+   "n": 4181,
+   "n_filtered": 4181,
    "over_30s": 0,
    "under_0.5s": 0,
-   "unique_utt": 4200
+   "unique_utt": 4181
   },
   "valid": {
-   "hours": 1.5723,
+   "hours": 1.5678,
    "labels": {
-    "angry": 200,
+    "angry": 199,
     "disgust": 200,
-    "fear": 200,
-    "happy": 200,
+    "fear": 199,
+    "happy": 199,
     "neutral": 200,
-    "sad": 200,
+    "sad": 199,
     "surprise": 200
    },
-   "manifest_sha1": "d42c75456a953e154de8958b37319d11306cfb6c",
-   "n": 1400,
-   "n_filtered": 1400,
+   "manifest_sha1": "e098ae7fa82c642c7ed209fd38583807cdd4a0b0",
+   "n": 1396,
+   "n_filtered": 1396,
    "over_30s": 0,
    "under_0.5s": 0,
-   "unique_utt": 1400
+   "unique_utt": 1396
   }
  },
  "token_list": [
-  "angry",
-  "disgust",
   "fear",
+  "disgust",
   "happy",
   "neutral",
+  "angry",
   "sad",
   "surprise"
  ]

@@ -8,7 +8,7 @@
   "min": 2.557
  },
  "hours_total": 1.1549,
- "measured_on": "2026-10-12",
+ "measured_on": "2026-10-27",
  "n_total": 936,
  "output_env_var": "CAFE_OUTPUT",
  "recipe": "cafe",

@@ -8,7 +8,7 @@
   "min": 0.378
  },
  "hours_total": 2.297,
- "measured_on": "2026-10-12",
+ "measured_on": "2026-10-27",
  "n_total": 6675,
  "output_env_var": "MCAESPPS_OUTPUT",
  "recipe": "mcaespps",
@@ -44,7 +44,7 @@
    },
    "manifest_sha1": "f51741708a4115651228a6b172ea300aab341ace",
    "n": 4672,
-   "n_filtered": 4667,
+   "n_filtered": 4672,
    "over_30s": 0,
    "under_0.5s": 5,
    "unique_utt": 4672

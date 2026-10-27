@@ -1,15 +1,15 @@
 {
  "audio_format": {
-  "16000Hz/1ch/PCM_16": 160366
+  "16000Hz/1ch/PCM_16": 160357
  },
  "duration_sec": {
   "max": 29.88,
   "median": 4.34,
   "min": 0.859
  },
- "hours_total": 202.4873,
- "measured_on": "2026-10-12",
- "n_total": 160366,
+ "hours_total": 202.478,
+ "measured_on": "2026-10-27",
+ "n_total": 160357,
  "output_env_var": "DUSHA_OUTPUT",
  "recipe": "dusha",
  "splits": {
@@ -21,7 +21,7 @@
     "neutral": 8948,
     "sad": 2156
    },
-   "manifest_sha1": "42d5d269c19c51835c6c68bd794d01653e7093ea",
+   "manifest_sha1": "bbdd9f8f26309391095d6a83cb5e7b15d69fa9c8",
    "n": 13651,
    "n_filtered": null,
    "over_30s": 0,
@@ -29,19 +29,19 @@
    "unique_utt": 13651
   },
   "train": {
-   "hours": 164.9113,
+   "hours": 164.902,
    "labels": {
     "angry": 12790,
     "happy": 12558,
-    "neutral": 87223,
-    "sad": 19435
+    "neutral": 87218,
+    "sad": 19431
    },
-   "manifest_sha1": "c6a1d2899a8f43aeac250c668f47401e008a287a",
-   "n": 132006,
-   "n_filtered": 132006,
+   "manifest_sha1": "4d03eafb41f321d077ede0842e96cc6e2bba0933",
+   "n": 131997,
+   "n_filtered": 131997,
    "over_30s": 0,
    "under_0.5s": 0,
-   "unique_utt": 132006
+   "unique_utt": 131997
   },
   "valid": {
    "hours": 19.55,
@@ -51,7 +51,7 @@
     "neutral": 9894,
     "sad": 1599
    },
-   "manifest_sha1": "d4d1cb72bfd3721901d2e969657f6e3aafc0aa62",
+   "manifest_sha1": "bca085df3429aa17c2db72cc35ae7ee5849a4afa",
    "n": 14709,
    "n_filtered": 14709,
    "over_30s": 0,

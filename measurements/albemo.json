@@ -8,7 +8,7 @@
   "min": 1.195
  },
  "hours_total": 0.3679,
- "measured_on": "2026-10-12",
+ "measured_on": "2026-10-27",
  "n_total": 420,
  "output_env_var": "ALBEMO_OUTPUT",
  "recipe": "albemo",

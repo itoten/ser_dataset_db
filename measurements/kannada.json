@@ -1,54 +1,54 @@
 {
  "audio_format": {
-  "16000Hz/1ch/PCM_16": 468
+  "16000Hz/1ch/PCM_16": 463
  },
  "duration_sec": {
   "max": 7.198,
-  "median": 3.792,
+  "median": 3.801,
   "min": 1.502
  },
- "hours_total": 0.5024,
- "measured_on": "2026-10-12",
- "n_total": 468,
+ "hours_total": 0.4981,
+ "measured_on": "2026-10-27",
+ "n_total": 463,
  "output_env_var": "KANNADA_OUTPUT",
  "recipe": "kannada",
  "splits": {
   "test": {
-   "hours": 0.1025,
+   "hours": 0.1027,
    "labels": {
     "angry": 16,
     "fear": 16,
-    "happy": 16,
-    "neutral": 16,
+    "happy": 15,
+    "neutral": 15,
     "sad": 16,
-    "surprise": 16
+    "surprise": 15
    },
-   "manifest_sha1": "2a04f97e42195200db1e36c9f4093628f0b3991b",
-   "n": 96,
+   "manifest_sha1": "2543942b12a6c1abfe33a0bddc2b0a3ff64aac6d",
+   "n": 93,
    "n_filtered": null,
    "over_30s": 0,
    "under_0.5s": 0,
-   "unique_utt": 96
+   "unique_utt": 93
   },
   "train": {
-   "hours": 0.3499,
+   "hours": 0.3442,
    "labels": {
     "angry": 54,
     "fear": 54,
-    "happy": 54,
-    "neutral": 54,
+    "happy": 53,
+    "neutral": 53,
     "sad": 54,
     "surprise": 54
    },
-   "manifest_sha1": "13cfa2c2461e74ac949931163ec54d5d8bc44b16",
-   "n": 324,
-   "n_filtered": 324,
+   "manifest_sha1": "96738ada5e94311a59c7b31e6938054acac867f5",
+   "n": 322,
+   "n_filtered": 322,
    "over_30s": 0,
    "under_0.5s": 0,
-   "unique_utt": 324
+   "unique_utt": 322
   },
   "valid": {
-   "hours": 0.05,
+   "hours": 0.0512,
    "labels": {
     "angry": 8,
     "fear": 8,
@@ -57,7 +57,7 @@
     "sad": 8,
     "surprise": 8
    },
-   "manifest_sha1": "732e9fd5375bf47aa0bf3c3a6b22542edfe85c06",
+   "manifest_sha1": "84e157fe32cd30e643e10e9032ae953c0cd8e8b9",
    "n": 48,
    "n_filtered": 48,
    "over_30s": 0,
@@ -69,8 +69,8 @@
   "angry",
   "sad",
   "surprise",
-  "happy",
   "fear",
+  "happy",
   "neutral"
  ]
 }

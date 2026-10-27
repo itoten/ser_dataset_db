@@ -1,71 +1,71 @@
 {
  "audio_format": {
-  "16000Hz/1ch/PCM_16": 3241
+  "16000Hz/1ch/PCM_16": 3211
  },
  "duration_sec": {
   "max": 30.563,
   "median": 6.0,
   "min": 0.379
  },
- "hours_total": 5.4801,
- "measured_on": "2026-10-12",
- "n_total": 3241,
+ "hours_total": 5.4411,
+ "measured_on": "2026-10-27",
+ "n_total": 3211,
  "output_env_var": "ASVPESD_OUTPUT",
  "recipe": "asvpesd",
  "splits": {
   "test": {
-   "hours": 1.09,
+   "hours": 1.095,
    "labels": {
-    "angry": 187,
+    "angry": 186,
     "disgust": 15,
-    "fear": 20,
-    "happy": 92,
-    "neutral": 199,
-    "sad": 86,
-    "surprise": 49
+    "fear": 19,
+    "happy": 90,
+    "neutral": 198,
+    "sad": 85,
+    "surprise": 48
    },
-   "manifest_sha1": "34dafda042db69cdc66b4547b5f142e19cbcdbf7",
-   "n": 648,
+   "manifest_sha1": "ea0646c48bcb8d8bf7ca1e0e4696a3b1c87e5888",
+   "n": 641,
    "n_filtered": null,
    "over_30s": 0,
-   "under_0.5s": 0,
-   "unique_utt": 648
+   "under_0.5s": 1,
+   "unique_utt": 641
   },
   "train": {
-   "hours": 3.8498,
+   "hours": 3.8065,
    "labels": {
-    "angry": 654,
-    "disgust": 53,
-    "fear": 68,
-    "happy": 321,
-    "neutral": 698,
-    "sad": 303,
-    "surprise": 171
+    "angry": 650,
+    "disgust": 52,
+    "fear": 67,
+    "happy": 317,
+    "neutral": 694,
+    "sad": 298,
+    "surprise": 170
    },
-   "manifest_sha1": "ea5e585e3e71118de4c89ee9cc707984ed98d2bc",
-   "n": 2268,
-   "n_filtered": 2262,
+   "manifest_sha1": "765ebb9ce49ccdd4518a2b2a7cbbcdc3b6e96892",
+   "n": 2248,
+   "n_filtered": 2247,
    "over_30s": 1,
-   "under_0.5s": 5,
-   "unique_utt": 2268
+   "under_0.5s": 4,
+   "unique_utt": 2248
   },
   "valid": {
-   "hours": 0.5403,
+   "hours": 0.5396,
    "labels": {
-    "angry": 94,
+    "angry": 93,
     "disgust": 8,
     "fear": 10,
-    "happy": 46,
-    "neutral": 100,
+    "happy": 45,
+    "neutral": 99,
     "sad": 43,
     "surprise": 24
    },
-   "manifest_sha1": "de69673197c6a908100920e408072467ebbe573c",
-   "n": 325,
-   "n_filtered": 324,
+   "manifest_sha1": "8362da73c7f584cb07a9eaa37af5b4539f85f04d",
+   "n": 322,
+   "n_filtered": 322,
    "over_30s": 0,
    "under_0.5s": 1,
-   "unique_utt": 325
+   "unique_utt": 322
   }
  },
  "token_list": [

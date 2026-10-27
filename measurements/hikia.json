@@ -1,47 +1,47 @@
 {
  "audio_format": {
-  "16000Hz/1ch/PCM_16": 488
+  "16000Hz/1ch/PCM_16": 487
  },
  "duration_sec": {
   "max": 1.751,
-  "median": 0.608,
+  "median": 0.609,
   "min": 0.239
  },
- "hours_total": 0.0872,
- "measured_on": "2026-10-12",
- "n_total": 488,
+ "hours_total": 0.0871,
+ "measured_on": "2026-10-27",
+ "n_total": 487,
  "output_env_var": "HIKIA_OUTPUT",
  "recipe": "hikia",
  "splits": {
   "test": {
-   "hours": 0.0177,
+   "hours": 0.017,
    "labels": {
     "angry": 21,
     "happy": 26,
     "neutral": 24,
     "sad": 27
    },
-   "manifest_sha1": "6dc9b74d33d61821022e547dc1d991dc50b31c54",
+   "manifest_sha1": "cf6fd1c0d8b1104304703c483fe9a842a54bbdd4",
    "n": 98,
    "n_filtered": null,
    "over_30s": 0,
-   "under_0.5s": 22,
+   "under_0.5s": 25,
    "unique_utt": 98
   },
   "train": {
-   "hours": 0.0608,
+   "hours": 0.0613,
    "labels": {
-    "angry": 75,
+    "angry": 74,
     "happy": 90,
     "neutral": 83,
     "sad": 93
    },
-   "manifest_sha1": "2e9d833fa0193b7e30f207ea80197a81b0912dcf",
-   "n": 341,
-   "n_filtered": 341,
+   "manifest_sha1": "78cdd8bec7495cfae46fd0271661f70b4e9ed1a6",
+   "n": 340,
+   "n_filtered": 340,
    "over_30s": 0,
-   "under_0.5s": 70,
-   "unique_utt": 341
+   "under_0.5s": 65,
+   "unique_utt": 340
   },
   "valid": {
    "hours": 0.0088,
@@ -51,11 +51,11 @@
     "neutral": 12,
     "sad": 13
    },
-   "manifest_sha1": "09213f3652d2cf73f1553be323a20f251d2afb08",
+   "manifest_sha1": "4954e1cbdefe5cb87649030e7f5b4ead14a89781",
    "n": 49,
    "n_filtered": 49,
    "over_30s": 0,
-   "under_0.5s": 7,
+   "under_0.5s": 8,
    "unique_utt": 49
   }
  },

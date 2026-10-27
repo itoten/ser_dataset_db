@@ -8,7 +8,7 @@
   "min": 1.2
  },
  "hours_total": 1.412,
- "measured_on": "2026-10-12",
+ "measured_on": "2026-10-27",
  "n_total": 2400,
  "output_env_var": "JLCORPUS_OUTPUT",
  "recipe": "jlcorpus",

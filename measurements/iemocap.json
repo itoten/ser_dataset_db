@@ -1,76 +1,93 @@
 {
  "audio_format": {
-  "16000Hz/1ch/PCM_16": 5571
+  "16000Hz/1ch/PCM_16": 10039
  },
  "duration_sec": {
   "max": 34.139,
-  "median": 3.56,
+  "median": 3.52,
   "min": 0.585
  },
- "hours_total": 7.0193,
- "measured_on": "2026-10-12",
- "n_total": 5571,
+ "hours_total": 12.4374,
+ "measured_on": "2026-10-27",
+ "n_total": 10039,
  "output_env_var": "IEMOCAP_OUTPUT",
  "recipe": "iemocap",
  "splits": {
   "test": {
-   "hours": 1.4183,
+   "hours": 2.4443,
    "labels": {
     "angry": 221,
     "excited": 208,
     "fear": 8,
+    "frustrated": 370,
     "happy": 119,
     "neutral": 342,
-    "sad": 217
+    "no_majority": 501,
+    "other": 1,
+    "sad": 217,
+    "surprise": 21
    },
-   "manifest_sha1": "03fb673c033c907117b66aa26e03f4ca388778f7",
-   "n": 1115,
+   "manifest_sha1": "cdcf2165e023b887cfe53ad59adf0763cb10c799",
+   "n": 2008,
    "n_filtered": null,
-   "over_30s": 1,
+   "over_30s": 0,
    "under_0.5s": 0,
-   "unique_utt": 1115
+   "unique_utt": 2008
   },
   "train": {
-   "hours": 4.8911,
+   "hours": 8.7355,
    "labels": {
     "angry": 772,
+    "disgust": 2,
     "excited": 729,
     "fear": 28,
+    "frustrated": 1294,
     "happy": 416,
     "neutral": 1195,
-    "sad": 759
+    "no_majority": 1755,
+    "other": 2,
+    "sad": 759,
+    "surprise": 75
    },
-   "manifest_sha1": "97a90654475552fb4f5e2a2f0af1b2ac4d3920e5",
-   "n": 3899,
-   "n_filtered": 3898,
-   "over_30s": 1,
+   "manifest_sha1": "884cb3f176020fb90105672c99fb72235df587b9",
+   "n": 7027,
+   "n_filtered": 7025,
+   "over_30s": 2,
    "under_0.5s": 0,
-   "unique_utt": 3899
+   "unique_utt": 7027
   },
   "valid": {
-   "hours": 0.7098,
+   "hours": 1.2576,
    "labels": {
     "angry": 110,
     "excited": 104,
     "fear": 4,
+    "frustrated": 185,
     "happy": 60,
     "neutral": 171,
-    "sad": 108
+    "no_majority": 251,
+    "sad": 108,
+    "surprise": 11
    },
-   "manifest_sha1": "72ad9f72f691fa1bd8f6812b20912f76092d1911",
-   "n": 557,
-   "n_filtered": 557,
+   "manifest_sha1": "92f9d8be84742d1ac37ca887a3251c1e4a86fc05",
+   "n": 1004,
+   "n_filtered": 1004,
    "over_30s": 0,
    "under_0.5s": 0,
-   "unique_utt": 557
+   "unique_utt": 1004
   }
  },
  "token_list": [
+  "no_majority",
+  "frustrated",
   "neutral",
   "angry",
   "sad",
   "excited",
   "happy",
-  "fear"
+  "surprise",
+  "fear",
+  "other",
+  "disgust"
  ]
 }

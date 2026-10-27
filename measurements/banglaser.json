@@ -1,20 +1,20 @@
 {
  "audio_format": {
-  "16000Hz/1ch/PCM_16": 1467
+  "16000Hz/1ch/PCM_16": 1459
  },
  "duration_sec": {
   "max": 3.992,
-  "median": 3.307,
+  "median": 3.308,
   "min": 2.621
  },
- "hours_total": 1.374,
- "measured_on": "2026-10-12",
- "n_total": 1467,
+ "hours_total": 1.3668,
+ "measured_on": "2026-10-27",
+ "n_total": 1459,
  "output_env_var": "BANGLASER_OUTPUT",
  "recipe": "banglaser",
  "splits": {
   "test": {
-   "hours": 0.2747,
+   "hours": 0.2742,
    "labels": {
     "angry": 61,
     "happy": 61,
@@ -22,7 +22,7 @@
     "sad": 61,
     "surprise": 61
    },
-   "manifest_sha1": "5e19d437222c310167bd791915c587e0c96a71ad",
+   "manifest_sha1": "45b5879f1704dd7afe24280439e49e1867fbbc0f",
    "n": 293,
    "n_filtered": null,
    "over_30s": 0,
@@ -30,43 +30,43 @@
    "unique_utt": 293
   },
   "train": {
-   "hours": 0.9606,
+   "hours": 0.9578,
    "labels": {
-    "angry": 214,
-    "happy": 214,
+    "angry": 213,
+    "happy": 212,
     "neutral": 170,
     "sad": 214,
-    "surprise": 214
+    "surprise": 213
    },
-   "manifest_sha1": "63600c919e08833f7de05173bf7aa18414d6b079",
-   "n": 1026,
-   "n_filtered": 1026,
+   "manifest_sha1": "24b1004393de58596244bfb0b39aa722e8067b45",
+   "n": 1022,
+   "n_filtered": 1022,
    "over_30s": 0,
    "under_0.5s": 0,
-   "unique_utt": 1026
+   "unique_utt": 1022
   },
   "valid": {
-   "hours": 0.1387,
+   "hours": 0.1348,
    "labels": {
-    "angry": 31,
-    "happy": 31,
+    "angry": 30,
+    "happy": 30,
     "neutral": 24,
-    "sad": 31,
-    "surprise": 31
+    "sad": 30,
+    "surprise": 30
    },
-   "manifest_sha1": "9133abcc4c5682ef8ff1ca229d0e0d0b645d8350",
-   "n": 148,
-   "n_filtered": 148,
+   "manifest_sha1": "1f2483f4b17841b7c9b2f11039043d6a0b6ee6aa",
+   "n": 144,
+   "n_filtered": 144,
    "over_30s": 0,
    "under_0.5s": 0,
-   "unique_utt": 148
+   "unique_utt": 144
   }
  },
  "token_list": [
-  "happy",
   "sad",
   "angry",
   "surprise",
+  "happy",
   "neutral"
  ]
 }

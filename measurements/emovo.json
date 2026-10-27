@@ -8,7 +8,7 @@
   "min": 1.291
  },
  "hours_total": 0.5098,
- "measured_on": "2026-10-12",
+ "measured_on": "2026-10-27",
  "n_total": 588,
  "output_env_var": "EMOVO_OUTPUT",
  "recipe": "emovo",

@@ -1,72 +1,72 @@
 {
  "audio_format": {
-  "16000Hz/1ch/PCM_16": 2474
+  "16000Hz/1ch/PCM_16": 2421
  },
  "duration_sec": {
   "max": 3.9,
   "median": 3.0,
   "min": 2.0
  },
- "hours_total": 2.1058,
- "measured_on": "2026-10-12",
- "n_total": 2474,
+ "hours_total": 2.0613,
+ "measured_on": "2026-10-27",
+ "n_total": 2421,
  "output_env_var": "ASED_OUTPUT",
  "recipe": "ased",
  "splits": {
   "test": {
-   "hours": 0.4182,
+   "hours": 0.4098,
    "labels": {
-    "angry": 97,
-    "fear": 102,
-    "happy": 97,
-    "neutral": 104,
-    "sad": 94
+    "angry": 95,
+    "fear": 100,
+    "happy": 95,
+    "neutral": 102,
+    "sad": 92
    },
-   "manifest_sha1": "a322d4f53f23cce314c93d132ec57898eb2b6a18",
-   "n": 494,
+   "manifest_sha1": "a18d1d125236065a76822db24f303931e569e9cd",
+   "n": 484,
    "n_filtered": null,
    "over_30s": 0,
    "under_0.5s": 0,
-   "unique_utt": 494
+   "unique_utt": 484
   },
   "train": {
-   "hours": 1.4752,
+   "hours": 1.4438,
    "labels": {
-    "angry": 340,
-    "fear": 357,
-    "happy": 340,
-    "neutral": 366,
-    "sad": 329
+    "angry": 332,
+    "fear": 352,
+    "happy": 333,
+    "neutral": 355,
+    "sad": 322
    },
-   "manifest_sha1": "57ab2fa3db59f17668af13c8a9380dee64feff52",
-   "n": 1732,
-   "n_filtered": 1732,
+   "manifest_sha1": "3200c223b9a0de46377a60c953a42576dfeaf636",
+   "n": 1694,
+   "n_filtered": 1694,
    "over_30s": 0,
    "under_0.5s": 0,
-   "unique_utt": 1732
+   "unique_utt": 1694
   },
   "valid": {
-   "hours": 0.2124,
+   "hours": 0.2077,
    "labels": {
-    "angry": 49,
-    "fear": 51,
-    "happy": 49,
-    "neutral": 52,
-    "sad": 47
+    "angry": 48,
+    "fear": 50,
+    "happy": 48,
+    "neutral": 51,
+    "sad": 46
    },
-   "manifest_sha1": "9dbd0b4df945d412dba74aa31f9471d315b003fb",
-   "n": 248,
-   "n_filtered": 248,
+   "manifest_sha1": "97d32e2ef16d565c4a1265226883b9460973996c",
+   "n": 243,
+   "n_filtered": 243,
    "over_30s": 0,
    "under_0.5s": 0,
-   "unique_utt": 248
+   "unique_utt": 243
   }
  },
  "token_list": [
   "neutral",
   "fear",
-  "angry",
   "happy",
+  "angry",
   "sad"
  ]
 }
