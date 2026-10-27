@@ -18,7 +18,7 @@ This guide explains the database from scratch. Terms are explained before they a
 | Awaiting a decision | 9 |
 | Deferred | 35 |
 | Excluded (with reasons) | 46 |
-| Evidence rows (sources of values) | 4,508 |
+| Evidence rows (sources of values) | 4,511 |
 | Language codes | 70 |
 
 ### 1.3 What makes it useful
@@ -150,7 +150,7 @@ ser_dataset_db/
 | File | One row is | Rows |
 |---|---|---|
 | [datasets.csv](../data/datasets.csv) | **one dataset** (the central table) | 322 |
-| [evidence.csv](../data/evidence.csv) | the **source** of one value in datasets | 4,508 |
+| [evidence.csv](../data/evidence.csv) | the **source** of one value in datasets | 4,511 |
 | [aliases.csv](../data/aliases.csv) | another name (official name, short name, former name, recipe name, ...) | 375 |
 | [relations.csv](../data/relations.csv) | a relation between datasets | 44 |
 | [recipes.csv](../data/recipes.csv) | one ESPnet recipe | 94 |
@@ -216,6 +216,7 @@ They can differ, and the difference itself is useful information. Recipes drop v
 - `label_basis_note`: details of how labels were made (5.4.1)
 - `lexical_confound_note`: what the `lexical_confound` value is based on (5.4.2)
 - `paralinguistic_signal_note`: what was listened to and what was heard (5.4.3)
+- `human_accuracy_note`, `material_rights_note`: the listening test design; what the authors say about the material rights (5.4.4)
 - `notes`: our own notes
 - `sheet_notes`, `annotations_other`, `sheet_verified`: **original text of the spreadsheet**; never changed. `sheet_verified` is the spreadsheet's mark for "checked by hand" and is not used for decisions
 
@@ -273,6 +274,26 @@ Labels can be correct and the voice still carry little of the labelled expressio
 - Fill it only from listening (a listening test, or the maintainer's listening, recorded with `source_type=user`). The number of clips heard and what was heard go in `paralinguistic_signal_note`. A light listening (a few clips) is recorded as such and is not a measurement.
 - Empty means not judged. Do not fill it from the label source, the recording setting or the sentences.
 
+### 5.4.4 Human accuracy and rights in the material (`human_accuracy`, `material_rights`)
+
+`human_accuracy` is a number between 0 and 1: how often listeners recognised the labelled emotion in a listening test. It gives a reference level for what a model can be expected to reach. Record it only when a source reports it (a paper, the release, or a count over a distributed rating file, `source_type=measured`).
+
+- `human_accuracy_note` gives the design: number of listeners and clips, the options offered and the chance level, which clips were tested (all or a sample), and whether individual answers are distributed. When sources disagree on a number, say so.
+- Agreement statistics (Fleiss' kappa and so on) are not accuracy. Put them in the note of the `label_verification` evidence.
+- Do not average different tests into one number; record the one the source reports and describe it.
+
+`material_rights` records who holds the rights in the underlying audio, separately from `license_spdx`:
+
+| Value | Meaning |
+|---|---|
+| `own_recordings` | The authors recorded the material themselves |
+| `author_claim_only` | The material is third-party (films, TV, web videos, public media) and the authors only assert that sharing is allowed (fair use, an ethics statement, terms of service) |
+| `permission_stated` | The authors state that the owners gave permission, or the material is under a stated open license |
+| `unknown` | Not examined or not stated |
+
+- `license_class` is not changed by `material_rights`: it keeps describing the license the authors state. Read both before use. `material_rights_note` quotes or paraphrases what the authors say (with the place) and lists what is missing (sources, per-item licenses, consent, non-commercial statement).
+- Empty means not examined.
+
 ### 5.5 Annotations other than emotion labels (`annotations.csv`)
 
 Transcripts, speaker traits, dialogue acts, audio quality, questionnaires and other information beyond the emotion label are recorded one row per dataset x item. `datasets.annotations_other` (spreadsheet text) is kept unchanged, and new information goes into this table.
@@ -308,11 +329,11 @@ A value alone cannot answer "is that really true?" later. So every important val
 | `is_canonical` | `true` for the evidence of the current value; exactly one per dataset x column |
 | `status` | `current` / `superseded` (replaced by newer evidence) / `conflicting` (sources disagree, undecided) |
 
-Columns that need evidence: `languages`, `recording_context`, `vocal_content`, `license_spdx`, `access_method`, `raw_audio_available`, `n_utt_reported`, `hours_reported`, `n_speakers_reported`, `n_files_release_measured`, `n_speakers_measured`, `labels_discrete_reported`, `dimensional_attributes`, `espnet_status`, `status_reason_codes`, `label_source`, `label_verification`, `speech_production`, `label_basis`, `text_emotion_link`, `lexical_confound`, `paralinguistic_signal`.
+Columns that need evidence: `languages`, `recording_context`, `vocal_content`, `license_spdx`, `access_method`, `raw_audio_available`, `n_utt_reported`, `hours_reported`, `n_speakers_reported`, `n_files_release_measured`, `n_speakers_measured`, `labels_discrete_reported`, `dimensional_attributes`, `espnet_status`, `status_reason_codes`, `label_source`, `label_verification`, `speech_production`, `label_basis`, `text_emotion_link`, `lexical_confound`, `paralinguistic_signal`, `human_accuracy`, `material_rights`.
 
 ### 6.2.1 Recording when something was checked
 
-Every one of the 4,508 evidence rows has a date checked (`checked_on`, 2026-10-10 to 10-26). But **the date is when the source was looked at**, not a guarantee that it is still true; distribution pages and licenses can change. For rows from the original spreadsheet (`source_type`=`sheet`), the date 2026-10-12 is the import date, not a date when anyone checked the content.
+Every one of the 4,511 evidence rows has a date checked (`checked_on`, 2026-10-10 to 10-26). But **the date is when the source was looked at**, not a guarantee that it is still true; distribution pages and licenses can change. For rows from the original spreadsheet (`source_type`=`sheet`), the date 2026-10-12 is the import date, not a date when anyone checked the content.
 
 The overview [views/datasets_wide.csv](../views/datasets_wide.csv) adds these columns per dataset (generated from the evidence):
 
@@ -337,7 +358,7 @@ Strongest first.
 | 5 | `secondary` | third-party statements (Kaggle, re-upload pages, surveys) |
 | 6 | `sheet` | values of the original spreadsheet |
 
-The 4,508 evidence rows by source type: primary 2,259, measured 575, sheet 572, project_doc 463, user 366, secondary 273.
+The 4,511 evidence rows by source type: primary 2,261, measured 576, sheet 572, project_doc 463, user 366, secondary 273.
 
 ### 6.4 When a new fact appears
 
@@ -440,6 +461,7 @@ Terms not covered by SPDX get one of these, with the gist of the wording in `lic
 - `LicenseRef-custom-research-only`: custom academic or research-only terms
 - `LicenseRef-proprietary-restricted`: proprietary terms such as payment or contracts
 - `LicenseRef-other`: anything else
+- `LicenseRef-golos-public`: the Golos/Dusha public license "with attribution and conditions reserved", a reworking of CC BY-SA 4.0 without a non-commercial clause (class `open`, by the maintainer's decision)
 - `LicenseRef-citation-request`: no license text, only a request to cite the paper, which the project treats as the terms of use by the maintainer's decision for that dataset (class `open`; the decision and the wording are in `license_note`)
 
 ### 9.4 Before using a dataset
@@ -512,6 +534,8 @@ Open [views/datasets_wide.csv](../views/datasets_wide.csv) in Excel, Google Shee
 - `speech_production`, `label_basis`, `label_basis_note`
 - `text_emotion_link`, `lexical_confound`, `lexical_confound_note`
 - `paralinguistic_signal`, `paralinguistic_signal_note`
+- `human_accuracy`, `human_accuracy_note`
+- `material_rights`, `material_rights_note`
 - `recipe`, `n_total_recipe`, `hours_total_recipe`: for implemented datasets, the recipe and its measured count and hours
 - `common7_covered`, `common7_missing`: which of the common 7 labels (angry, disgust, fear, happy, neutral, sad, surprise) the data has or lacks
 - `benchmarks`: benchmarks it belongs to
@@ -627,7 +651,7 @@ MSP-Podcast is for internal non-commercial research only, may not be redistribut
 
 ### 16.1 Outline (1-2 minutes)
 
-1. **What was built**: an evidence-backed ledger of SER and paralinguistic datasets. 322 datasets, 4,508 evidence rows.
+1. **What was built**: an evidence-backed ledger of SER and paralinguistic datasets. 322 datasets, 4,511 evidence rows.
 2. **Why**: to stop re-researching dataset conditions (license, access) every time, and to keep the basis for cross-corpus evaluation.
 3. **Reliability measures**: each value records its source, date and checker, and a machine checks the rules. Unknowns are written as unknown, never filled by guessing.
 4. **Link to the implementation**: the 94 ESPnet recipes are measured into the DB, distinguishing implemented, candidate and deferred datasets (the recipe branch keeps growing, and new recipes are registered after review; 15.1).
@@ -643,7 +667,7 @@ MSP-Podcast is for internal non-commercial research only, may not be redistribut
 | Question | Answer |
 |---|---|
 | Why CSV instead of the original spreadsheet? | A spreadsheet cannot hold sources, history or checks. CSV under git keeps the change history and can be checked by machine |
-| Is the information correct? | Every value has a source and a date; primary sources (papers, official pages) are the largest group (2,259 of 4,508 evidence rows). Final human checks (licenses) are still in progress |
+| Is the information correct? | Every value has a source and a date; primary sources (papers, official pages) are the largest group (2,261 of 4,511 evidence rows). Final human checks (licenses) are still in progress |
 | How was it collected? | 238 datasets from surveys, hosting services and the literature were added to the spreadsheet's 84; added rows were checked in primary sources |
 | How many can be implemented? | 93 implemented, 139 candidates. Of the candidates, 11 are openly licensed and available now |
 | What was excluded? | 46. Only for clear reasons: no audio, redistribution of existing data, duplicates, regional restrictions, etc. Effort and size are not reasons |
