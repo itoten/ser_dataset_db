@@ -19,7 +19,7 @@ anad,espnet_status,superseded,deferred,user,candidate,measured,https://www.kaggl
 anad,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1384,see evidence,1428,measured,n_files_release_measured,
 anad,status_reason_codes,superseded,provenance_unclear,user,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-13 survey,Handling of the 1-second segmentation and the NC license not decided; superseded by anad/status_reason_codes/02
 ased,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,2474,see evidence,2421,measured,recipes.n_total (ased),a mismatch is normal: recipes filter by length and label
-asvpesd,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,131,see evidence,76,measured,n_speakers_measured,
+asvpesd,n_speakers_measured,superseded,unknown,measured,76,measured,"$ASVPESD_OUTPUT/manifest/{train,valid,test}.tsv",superseded by asvpesd/n_speakers_measured/02
 asvpesd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,7812,see evidence,9092,measured,n_files_release_measured,
 asvpesd,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7812,see evidence,3211,measured,recipes.n_total (asvpesd),a mismatch is normal: recipes filter by length and label
 atthack,espnet_status,superseded,candidate,user,excluded,primary,https://www.openslr.org/88/,superseded by atthack/espnet_status/02
