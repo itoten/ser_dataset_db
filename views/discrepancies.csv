@@ -218,6 +218,7 @@ emotional_ema,n_utt_reported vs n_files_release_measured,reported_vs_release_mea
 emotional_ema,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,680,see evidence,953,measured,recipes.n_total (emotional_ema),a mismatch is normal: recipes filter by length and label
 emotional_ema,status_reason_codes,superseded,NA,measured,host_unreachable,project_doc,new_corpora/99_final_report.md,superseded by emotional_ema/status_reason_codes/02
 emotional_ema,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,Handling of recordings made for EMA not decided; superseded by emotional_ema/status_reason_codes/03
+emotiontalk,status_reason_codes,superseded,access_gated,project_doc,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by emotiontalk/status_reason_codes/02
 emotiontts_open_db,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/emotiontts/emotiontts_open_db/tree/master/Dataset/SpeechCorpus/Emotional,superseded by emotiontts_open_db/espnet_status/02
 emotiontts_open_db,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,6000,see evidence,300,measured,n_files_release_measured,
 emotiontts_open_db,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://github.com/emotiontts/emotiontts_open_db/tree/master/Dataset/SpeechCorpus/Emotional,superseded by emotiontts_open_db/status_reason_codes/02
@@ -379,8 +380,7 @@ m3ed,espnet_status,superseded,candidate,user,excluded,primary,https://github.com
 m3ed,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by m3ed/espnet_status/03
 m3ed,labels_discrete_reported,superseded,happy;neutral;sad;disgust;anger;fear;surprise,primary,anger;disgust;fear;happiness;sadness;surprise;neutral,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,"Original spreadsheet value: anger, disgust, fear, happiness, sadness, surprise, neutral; superseded by m3ed/labels_discrete_reported/02"
 m3ed,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Custom academic/research-only; superseded by m3ed/license_spdx/02
-m3ed,status_reason_codes,superseded,unexamined,user,access_no_direct_download,primary,https://github.com/AIM3-RUC/RUCM3ED,superseded by m3ed/status_reason_codes/04
-m3ed,status_reason_codes,superseded,unexamined,user,access_no_direct_download,project_doc,nc_candidates_20261010.md,superseded by m3ed/status_reason_codes/03
+m3ed,status_reason_codes,superseded,access_no_direct_download,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_no_direct_download; superseded by m3ed/status_reason_codes/05
 mafw,espnet_status,superseded,candidate,user,excluded,primary,https://mafw-database.github.io/MAFW/,superseded by mafw/espnet_status/02
 mafw,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://mafw-database.github.io/MAFW/,superseded by mafw/status_reason_codes/02
 mahnobhci,espnet_status,superseded,deferred,user,excluded,measured,http://mahnob-db.eu/hci-tagging/,superseded by mahnobhci/espnet_status/04
@@ -418,8 +418,7 @@ memor,status_reason_codes,superseded,unexamined,user,access_signed_agreement,pri
 mer2023,espnet_status,superseded,candidate,primary,excluded,primary,https://huggingface.co/datasets/MERChallenge/MER2023,superseded by mer2023/espnet_status/04
 mer2023,espnet_status,superseded,candidate,primary,excluded,project_doc,nc_candidates_20261010.md,superseded by mer2023/espnet_status/03
 mer2023,license_spdx,superseded,CC-BY-NC-4.0,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Custom academic/research-only; superseded by mer2023/license_spdx/02
-mer2023,status_reason_codes,superseded,unexamined,primary,access_gated,primary,https://huggingface.co/datasets/MERChallenge/MER2023,superseded by mer2023/status_reason_codes/04
-mer2023,status_reason_codes,superseded,unexamined,primary,access_gated,project_doc,nc_candidates_20261010.md,superseded by mer2023/status_reason_codes/03
+mer2023,status_reason_codes,superseded,access_gated,project_doc,unexamined,primary,https://huggingface.co/datasets/MERChallenge/MER2023,superseded by mer2023/status_reason_codes/05
 mer2025,espnet_status,superseded,candidate,user,excluded,primary,https://huggingface.co/datasets/MERChallenge/MER2025,superseded by mer2025/espnet_status/04
 mer2025,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by mer2025/espnet_status/03
 mer2025,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://huggingface.co/datasets/MERChallenge/MER2025,superseded by mer2025/status_reason_codes/04
