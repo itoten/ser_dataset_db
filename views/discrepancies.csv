@@ -324,7 +324,7 @@ indemovis,status_reason_codes,superseded,access_request_form_or_email,project_do
 indianenglish,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1000,see evidence,747,measured,n_files_release_measured,
 indianenglish,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1000,see evidence,695,measured,recipes.n_total (indianenglish),a mismatch is normal: recipes filter by length and label
 indonesian_fahmi2020,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Indonesian/Fahmi_et_al_2020.md,Not confirmed in a primary source; superseded by indonesian_fahmi2020/espnet_status/02
-indonesian_fahmi2020,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Indonesian/Fahmi_et_al_2020.md,Not confirmed in a primary source; superseded by indonesian_fahmi2020/status_reason_codes/02
+indonesian_fahmi2020,status_reason_codes,superseded,access_request_form_or_email,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_request_form_or_email; superseded by indonesian_fahmi2020/status_reason_codes/03
 inesco,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,2400,see evidence,2399,measured,n_files_release_measured,
 inesco,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,2400,see evidence,2399,measured,recipes.n_total (inesco),a mismatch is normal: recipes filter by length and label
 interface,espnet_status,superseded,candidate,user,excluded,primary,https://catalog.elra.info/en-us/repository/browse/ELRA-S0329/,superseded by interface/espnet_status/04
@@ -513,7 +513,7 @@ rml_emotion,n_utt_reported vs n_files_release_measured,reported_vs_release_measu
 rml_emotion,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,500,see evidence,714,measured,recipes.n_total (rml_emotion),a mismatch is normal: recipes filter by length and label
 ruslana,espnet_status,superseded,deferred,user,excluded,primary,https://www.isca-archive.org/icslp_2002/makarova02_icslp.pdf,superseded by ruslana/espnet_status/04
 ruslana,espnet_status,superseded,deferred,user,excluded,project_doc,new_corpora/99_final_report.md,superseded by ruslana/espnet_status/03
-ruslana,status_reason_codes,superseded,access_no_direct_download,user,access_paid_or_membership,project_doc,new_corpora/99_final_report.md,superseded by ruslana/status_reason_codes/03
+ruslana,status_reason_codes,superseded,access_no_direct_download,project_doc,access_paid_or_membership,project_doc,new_corpora/99_final_report.md,superseded by ruslana/status_reason_codes/03
 saraiki_ser,espnet_status,superseded,implemented,measured,candidate,measured,https://www.kaggle.com/datasets/mrjunaidsiyal/speech-emotion-recognition-saraiki-audio-dataset,superseded by saraiki_ser/espnet_status/02
 saraiki_ser,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by saraiki_ser/status_reason_codes/02
 sccesc,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Czech/SCCESC.md,Not confirmed in a primary source; superseded by sccesc/espnet_status/02
@@ -525,7 +525,7 @@ semaine,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidate
 semaine,status_reason_codes,superseded,host_unreachable,user,not_individually_checked,project_doc,nc_candidates_20261010.md,superseded by semaine/status_reason_codes/03
 semour,espnet_status,superseded,deferred,user,excluded,measured,http://acoustics-lab.itu.edu.pk/semour/,superseded by semour/espnet_status/03
 semour,espnet_status,superseded,deferred,user,excluded,project_doc,new_corpora/99_final_report.md,superseded by semour/espnet_status/02
-semour,status_reason_codes,superseded,host_unreachable,user,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,superseded by semour/status_reason_codes/02
+semour,status_reason_codes,superseded,host_unreachable,project_doc,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,superseded by semour/status_reason_codes/02
 ses_ed,espnet_status,superseded,implemented,measured,candidate,measured,https://www.kaggle.com/datasets/angeluxarmenta/ses-ed,superseded by ses_ed/espnet_status/02
 ses_ed,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by ses_ed/status_reason_codes/02
 ses_sd,espnet_status,superseded,implemented,measured,candidate,measured,https://www.kaggle.com/datasets/angeluxarmenta/ses-sd,superseded by ses_sd/espnet_status/02
@@ -569,7 +569,7 @@ talromur3,n_utt_reported vs n_files_release_measured,reported_vs_release_measure
 talromur3,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,21528,see evidence,20376,measured,recipes.n_total (talromur3),a mismatch is normal: recipes filter by length and label
 talromur3,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-13 survey,superseded by talromur3/status_reason_codes/02
 tamar_emodb,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Tamil/TaMaR-EmoDB.md,Not confirmed in a primary source; superseded by tamar_emodb/espnet_status/02
-tamar_emodb,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Tamil/TaMaR-EmoDB.md,Not confirmed in a primary source; superseded by tamar_emodb/status_reason_codes/02
+tamar_emodb,status_reason_codes,superseded,access_request_form_or_email,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_request_form_or_email; superseded by tamar_emodb/status_reason_codes/03
 tamil_ram,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Tamil/Ram_C_Sunitha_et_al.md,Not confirmed in a primary source; superseded by tamil_ram/espnet_status/02
 tamil_ram,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Tamil/Ram_C_Sunitha_et_al.md,Not confirmed in a primary source; superseded by tamil_ram/status_reason_codes/02
 telugu_emotion_kaggle,espnet_status,superseded,implemented,measured,candidate,user,"Conversation with the maintainer, 2026-10-14",Former reason: provenance_unclear; superseded by telugu_emotion_kaggle/espnet_status/03
