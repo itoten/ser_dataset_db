@@ -90,7 +90,7 @@ python3 tools/db.py get|set|add|fmt   # view or edit one row
 
 ## Current state (2026-10-28)
 
-322 datasets (84 from the spreadsheet, 238 added later). `implemented` 93, `candidate` 139, `deferred` 35, `needs_decision` 9, `excluded` 46. All 28 corpora in Table I of the MSP-Podcast paper (arXiv 2509.09791v1) are included.
+322 datasets (84 from the spreadsheet, 238 added later). `implemented` 93, `candidate` 138, `deferred` 35, `needs_decision` 9, `excluded` 47. All 28 corpora in Table I of the MSP-Podcast paper (arXiv 2509.09791v1) are included.
 
 - The survey of 2026-10-14 added 158 datasets from surveys (SuperKogito's list, EmoBox, KuralHub, etc.) and searches of Hugging Face, Zenodo, Kaggle, Mendeley, figshare and GitHub.
 - On the same day the status policy was revised and all excluded rows were reviewed (see "Status policy" below).

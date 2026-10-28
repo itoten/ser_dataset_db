@@ -9,8 +9,9 @@ afew,espnet_status,superseded,candidate,user,excluded,primary,https://users.cecs
 afew,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by afew/espnet_status/03
 afew,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://users.cecs.anu.edu.au/~few_group/AFEW.html,superseded by afew/status_reason_codes/04
 afew,status_reason_codes,superseded,unexamined,user,access_signed_agreement,project_doc,nc_candidates_20261010.md,superseded by afew/status_reason_codes/03
-affectspeech,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/jeremychee4/AffectSpeech,superseded by affectspeech/espnet_status/02
-affectspeech,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://github.com/jeremychee4/AffectSpeech,superseded by affectspeech/status_reason_codes/02
+affectspeech,espnet_status,superseded,excluded,project_doc,candidate,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by affectspeech/espnet_status/03
+affectspeech,status_reason_codes,superseded,redistribution_of_existing_corpus;access_signed_agreement,project_doc,access_signed_agreement,primary,https://github.com/jeremychee4/AffectSpeech,superseded by affectspeech/status_reason_codes/02
+affectspeech,status_reason_codes,superseded,redistribution_of_existing_corpus;access_signed_agreement,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by affectspeech/status_reason_codes/03
 afrikaans_se,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Afrikaans/AfrikaansSE.md,Not confirmed in a primary source; superseded by afrikaans_se/espnet_status/02
 afrikaans_se,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Afrikaans/AfrikaansSE.md,Not confirmed in a primary source; superseded by afrikaans_se/status_reason_codes/02
 amigos,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by amigos/espnet_status/03
@@ -69,8 +70,8 @@ biicnnime,status_reason_codes,superseded,unexamined,user,access_signed_agreement
 biicpodcast,espnet_status,superseded,candidate,user,excluded,primary,http://andc.ai/html/menu/dataset/biic-podcast.php,superseded by biicpodcast/espnet_status/04
 biicpodcast,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by biicpodcast/espnet_status/03
 biicpodcast,license_spdx,superseded,LicenseRef-custom-research-only,primary,LicenseRef-proprietary-restricted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Proprietary/Restricted; superseded by biicpodcast/license_spdx/02
-biicpodcast,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,http://andc.ai/html/menu/dataset/biic-podcast.php,superseded by biicpodcast/status_reason_codes/04
-biicpodcast,status_reason_codes,superseded,unexamined,user,not_individually_checked,project_doc,nc_candidates_20261010.md,superseded by biicpodcast/status_reason_codes/03
+biicpodcast,status_reason_codes,superseded,access_signed_agreement,project_doc,not_individually_checked,project_doc,nc_candidates_20261010.md,superseded by biicpodcast/status_reason_codes/03
+biicpodcast,status_reason_codes,superseded,access_signed_agreement,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by biicpodcast/status_reason_codes/05
 bmisec,espnet_status,superseded,deferred,user,excluded,measured,https://onlineresource.ucsy.edu.mm/handle/123456789/2809,superseded by bmisec/espnet_status/02
 brytserc,espnet_status,superseded,implemented,measured,candidate,measured,https://ndownloader.figshare.com/files/58302829,superseded by brytserc/espnet_status/02
 brytserc,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,How to handle third-party rights in the audio is not decided; superseded by brytserc/status_reason_codes/02
@@ -270,8 +271,9 @@ filmed,espnet_status,superseded,candidate,user,excluded,secondary,https://github
 filmed,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Filipino/FilMED.md,Not confirmed in a primary source; superseded by filmed/status_reason_codes/02
 galgame_speech_ser,espnet_status,superseded,candidate,user,excluded,primary,https://huggingface.co/datasets/litagin/Galgame_Speech_SER_16kHz,superseded by galgame_speech_ser/espnet_status/03
 galgame_speech_ser,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,superseded by galgame_speech_ser/espnet_status/02
-galgame_speech_ser,status_reason_codes,superseded,unexamined,user,labels_automatic,primary,https://huggingface.co/datasets/litagin/Galgame_Speech_SER_16kHz,superseded by galgame_speech_ser/status_reason_codes/03
-galgame_speech_ser,status_reason_codes,superseded,unexamined,user,labels_automatic,project_doc,new_corpora/99_final_report.md,superseded by galgame_speech_ser/status_reason_codes/02
+galgame_speech_ser,status_reason_codes,superseded,labels_automatic;labels_from_text_content,project_doc,labels_automatic,primary,https://huggingface.co/datasets/litagin/Galgame_Speech_SER_16kHz,superseded by galgame_speech_ser/status_reason_codes/03
+galgame_speech_ser,status_reason_codes,superseded,labels_automatic;labels_from_text_content,project_doc,labels_automatic,project_doc,new_corpora/99_final_report.md,superseded by galgame_speech_ser/status_reason_codes/02
+galgame_speech_ser,status_reason_codes,superseded,labels_automatic;labels_from_text_content,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: labels_automatic; superseded by galgame_speech_ser/status_reason_codes/04
 gaudie,espnet_status,superseded,candidate,user,excluded,primary,https://pmc.ncbi.nlm.nih.gov/articles/PMC10991051/,superseded by gaudie/espnet_status/02
 gaudie,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion;access_request_form_or_email,user,"Conversation with the maintainer, 2026-10-14",Removed content_insufficient; superseded by gaudie/status_reason_codes/03
 gaudie,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion;content_insufficient;access_request_form_or_email,primary,https://pmc.ncbi.nlm.nih.gov/articles/PMC10991051/,superseded by gaudie/status_reason_codes/02
@@ -301,7 +303,8 @@ hindi_ser_vishlb,espnet_status,superseded,implemented,measured,excluded,primary,
 hindi_ser_vishlb,status_reason_codes,superseded,NA,measured,provenance_unclear,primary,https://www.kaggle.com/datasets/vishlb/speech-emotion-recognition-hindi,superseded by hindi_ser_vishlb/status_reason_codes/02
 hindi_ser_vishlb,status_reason_codes,superseded,NA,measured,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: provenance_unclear; superseded by hindi_ser_vishlb/status_reason_codes/03
 humevb,espnet_status,superseded,candidate,user,excluded,primary,https://www.competitions.hume.ai/exvo2022,superseded by humevb/espnet_status/02
-humevb,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://www.competitions.hume.ai/exvo2022,superseded by humevb/status_reason_codes/02
+humevb,status_reason_codes,superseded,labels_not_discrete_emotion;access_request_form_or_email,project_doc,access_signed_agreement,primary,https://www.competitions.hume.ai/exvo2022,superseded by humevb/status_reason_codes/02
+humevb,status_reason_codes,superseded,labels_not_discrete_emotion;access_request_form_or_email,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by humevb/status_reason_codes/03
 humyn_indian_emotional,espnet_status,superseded,candidate,user,excluded,measured,https://huggingface.co/api/datasets/humyn-labs/Indian-Emotional-Speech-Corpus,superseded by humyn_indian_emotional/espnet_status/02
 humyn_indian_emotional,status_reason_codes,superseded,unexamined,user,content_insufficient,measured,https://huggingface.co/api/datasets/humyn-labs/Indian-Emotional-Speech-Corpus,superseded by humyn_indian_emotional/status_reason_codes/02
 hungarian_hesd,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Hungarian/HESD.md,Not confirmed in a primary source; superseded by hungarian_hesd/espnet_status/02
@@ -369,8 +372,9 @@ lithuanian_emotion_db,espnet_status,superseded,implemented,measured,candidate,me
 lithuanian_emotion_db,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,Handling of the missing license and skewed counts not decided; superseded by lithuanian_emotion_db/status_reason_codes/02
 lssed,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/tobefans/LSSED,superseded by lssed/espnet_status/04
 lssed,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by lssed/espnet_status/03
-lssed,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://github.com/tobefans/LSSED,superseded by lssed/status_reason_codes/04
-lssed,status_reason_codes,superseded,unexamined,user,access_signed_agreement,project_doc,nc_candidates_20261010.md,superseded by lssed/status_reason_codes/03
+lssed,hours_reported,superseded,206.4,primary,206,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,superseded by lssed/hours_reported/02
+lssed,languages,superseded,eng,primary,cmn,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Mandarin Chinese; superseded by lssed/languages/02
+lssed,status_reason_codes,superseded,access_signed_agreement,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by lssed/status_reason_codes/05
 m3ed,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/AIM3-RUC/RUCM3ED,superseded by m3ed/espnet_status/04
 m3ed,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by m3ed/espnet_status/03
 m3ed,labels_discrete_reported,superseded,happy;neutral;sad;disgust;anger;fear;surprise,primary,anger;disgust;fear;happiness;sadness;surprise;neutral,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,"Original spreadsheet value: anger, disgust, fear, happiness, sadness, surprise, neutral; superseded by m3ed/labels_discrete_reported/02"
@@ -398,6 +402,7 @@ mavesdb,espnet_status,superseded,candidate,user,excluded,measured,https://data.m
 mavesdb,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,superseded by mavesdb/espnet_status/02
 mavesdb,status_reason_codes,superseded,unexamined,user,access_signed_agreement,measured,https://data.mendeley.com/public-api/datasets/6hm2xt5hd8/files?folder_id=root&version=1,superseded by mavesdb/status_reason_codes/03
 mavesdb,status_reason_codes,superseded,unexamined,user,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,superseded by mavesdb/status_reason_codes/02
+mceiu,status_reason_codes,superseded,access_gated,project_doc,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by mceiu/status_reason_codes/02
 mderma,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1322,see evidence,1345,measured,n_files_release_measured,
 mderma,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1322,see evidence,1267,measured,recipes.n_total (mderma),a mismatch is normal: recipes filter by length and label
 mead,espnet_status,superseded,deferred,user,excluded,measured,https://wywu.github.io/projects/MEAD/MEAD.html,superseded by mead/espnet_status/04
@@ -608,6 +613,6 @@ whiser,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,5427,see evi
 whiser,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the additions of 2026-10-13,Handling of the missing license and speaker information not decided; superseded by whiser/status_reason_codes/02
 ysed,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,71,see evidence,68,measured,n_speakers_measured,
 yue_emo_speech,espnet_status,superseded,candidate,user,excluded,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,The card does not describe how labels were made; superseded by yue_emo_speech/espnet_status/02
-yue_emo_speech,status_reason_codes,superseded,unexamined,user,labels_automatic,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by yue_emo_speech/status_reason_codes/02
+yue_emo_speech,status_reason_codes,superseded,unexamined,project_doc,labels_automatic,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by yue_emo_speech/status_reason_codes/02
 zamai_pashto,languages,superseded,pus;fas;eng,primary,pus,project_doc,new_corpora/99_final_report.md,superseded by zamai_pashto/languages/02
 zamai_pashto,status_reason_codes,superseded,text_only,measured,content_insufficient,project_doc,new_corpora/99_final_report.md,superseded by zamai_pashto/status_reason_codes/02
