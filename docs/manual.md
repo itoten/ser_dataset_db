@@ -18,7 +18,7 @@ This guide explains the database from scratch. Terms are explained before they a
 | Awaiting a decision | 9 |
 | Deferred | 35 |
 | Excluded (with reasons) | 47 |
-| Evidence rows (sources of values) | 4,723 |
+| Evidence rows (sources of values) | 4,809 |
 | Language codes | 70 |
 
 ### 1.3 What makes it useful
@@ -150,7 +150,7 @@ ser_dataset_db/
 | File | One row is | Rows |
 |---|---|---|
 | [datasets.csv](../data/datasets.csv) | **one dataset** (the central table) | 322 |
-| [evidence.csv](../data/evidence.csv) | the **source** of one value in datasets | 4,723 |
+| [evidence.csv](../data/evidence.csv) | the **source** of one value in datasets | 4,809 |
 | [aliases.csv](../data/aliases.csv) | another name (official name, short name, former name, recipe name, ...) | 375 |
 | [relations.csv](../data/relations.csv) | a relation between datasets | 44 |
 | [recipes.csv](../data/recipes.csv) | one ESPnet recipe | 94 |
@@ -336,7 +336,7 @@ Columns that need evidence: `languages`, `recording_context`, `vocal_content`, `
 
 ### 6.2.1 Recording when something was checked
 
-Every one of the 4,723 evidence rows has a date checked (`checked_on`, 2026-10-10 to 10-28). But **the date is when the source was looked at**, not a guarantee that it is still true; distribution pages and licenses can change. For rows from the original spreadsheet (`source_type`=`sheet`), the date 2026-10-12 is the import date, not a date when anyone checked the content.
+Every one of the 4,809 evidence rows has a date checked (`checked_on`, 2026-10-10 to 10-28). But **the date is when the source was looked at**, not a guarantee that it is still true; distribution pages and licenses can change. For rows from the original spreadsheet (`source_type`=`sheet`), the date 2026-10-12 is the import date, not a date when anyone checked the content.
 
 The overview [views/datasets_wide.csv](../views/datasets_wide.csv) adds these columns per dataset (generated from the evidence):
 
@@ -361,7 +361,7 @@ Strongest first.
 | 5 | `secondary` | third-party statements (Kaggle, re-upload pages, surveys) |
 | 6 | `sheet` | values of the original spreadsheet |
 
-The 4,723 evidence rows by source type: primary 2,330, project_doc 602, measured 579, sheet 572, user 367, secondary 273.
+The 4,809 evidence rows by source type: primary 2,383, project_doc 635, measured 579, sheet 572, user 367, secondary 273.
 
 ### 6.4 When a new fact appears
 
@@ -434,7 +434,7 @@ Such datasets stay `candidate`, with caveats in `status_note`. The aim is not to
 
 ### 8.4 Reason codes (`status_reason_codes`)
 
-Every row except `implemented` has reason codes (`;`-separated). The most common is `unexamined` (implementation not yet considered), on 147 rows. The list and meanings are the `reason_code` rows of [schema/enums.csv](../schema/enums.csv).
+Every row except `implemented` has reason codes (`;`-separated). The most common is `unexamined` (implementation not yet considered), on 124 rows. The list and meanings are the `reason_code` rows of [schema/enums.csv](../schema/enums.csv).
 
 ## 9. Licenses
 
@@ -516,7 +516,7 @@ What this shows:
 - **Raw audio**: distributed 186, not distributed 29, unknown 4, not checked 103.
 - **Datasets with dimensional emotion labels**: 30.
 - **Training and evaluation of ESPnet recipes**: done (`evaluated`) 17, not run (`not_run`) 77.
-- **Speech production and label basis** (filled during recipe review): filled for 106 datasets; perceived labels (`perceived`, alone or with others) on 38.
+- **Speech production and label basis** (filled during recipe review): filled for 118 datasets; perceived labels (`perceived`, alone or with others) on 44.
 - **Intent and dialogue-act data**: 12 (SLURP, Timers and Such, Fluent Speech Commands, Snips/Sonos, STOP, MInDS-14, Speech-MASSIVE, ITALIC, DIHANA, SpokenWOZ, Harper Valley Bank, SLUE-HVB).
 - **Coverage check**: all 28 corpora in Table I of the MSP-Podcast paper (arXiv 2509.09791v1) are included.
 
@@ -654,7 +654,7 @@ MSP-Podcast is for internal non-commercial research only, may not be redistribut
 
 ### 16.1 Outline (1-2 minutes)
 
-1. **What was built**: an evidence-backed ledger of SER and paralinguistic datasets. 322 datasets, 4,723 evidence rows.
+1. **What was built**: an evidence-backed ledger of SER and paralinguistic datasets. 322 datasets, 4,809 evidence rows.
 2. **Why**: to stop re-researching dataset conditions (license, access) every time, and to keep the basis for cross-corpus evaluation.
 3. **Reliability measures**: each value records its source, date and checker, and a machine checks the rules. Unknowns are written as unknown, never filled by guessing.
 4. **Link to the implementation**: the 94 ESPnet recipes are measured into the DB, distinguishing implemented, candidate and deferred datasets (the recipe branch keeps growing, and new recipes are registered after review; 15.1).
@@ -670,7 +670,7 @@ MSP-Podcast is for internal non-commercial research only, may not be redistribut
 | Question | Answer |
 |---|---|
 | Why CSV instead of the original spreadsheet? | A spreadsheet cannot hold sources, history or checks. CSV under git keeps the change history and can be checked by machine |
-| Is the information correct? | Every value has a source and a date; primary sources (papers, official pages) are the largest group (2,330 of 4,723 evidence rows). Final human checks (licenses) are still in progress |
+| Is the information correct? | Every value has a source and a date; primary sources (papers, official pages) are the largest group (2,383 of 4,809 evidence rows). Final human checks (licenses) are still in progress |
 | How was it collected? | 238 datasets from surveys, hosting services and the literature were added to the spreadsheet's 84; added rows were checked in primary sources |
 | How many can be implemented? | 93 implemented, 138 candidates. Of the candidates, 11 are openly licensed and available now |
 | What was excluded? | 47. Only for clear reasons: no audio, redistribution of existing data, duplicates, regional restrictions, etc. Effort and size are not reasons |
