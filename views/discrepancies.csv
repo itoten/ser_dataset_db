@@ -22,6 +22,7 @@ ased,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,2474,see evide
 asvpesd,n_speakers_measured,superseded,unknown,measured,76,measured,"$ASVPESD_OUTPUT/manifest/{train,valid,test}.tsv",superseded by asvpesd/n_speakers_measured/02
 asvpesd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,7812,see evidence,9092,measured,n_files_release_measured,
 asvpesd,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7812,see evidence,3211,measured,recipes.n_total (asvpesd),a mismatch is normal: recipes filter by length and label
+asvpesd,source_rights,superseded,unaddressed,primary,asserted,primary,https://zenodo.org/records/4782712,"No list of sources or statement of permission from the rights holders (maintainer's concern, 2026-10-26; to be judged by the project members); superseded by asvpesd/source_rights/02"
 atthack,espnet_status,superseded,candidate,user,excluded,primary,https://www.openslr.org/88/,superseded by atthack/espnet_status/02
 atthack,status_reason_codes,superseded,unexamined,user,labels_style_not_emotion,primary,https://www.openslr.org/88/,superseded by atthack/status_reason_codes/02
 audiospeechsentiment,espnet_status,superseded,excluded,user,candidate,user,"Conversation with the maintainer, 2026-10-14",Former reason: labels_not_discrete_emotion;provenance_unclear; superseded by audiospeechsentiment/espnet_status/06
@@ -318,7 +319,7 @@ indianenglish,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1000,
 indonesian_fahmi2020,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Indonesian/Fahmi_et_al_2020.md,Not confirmed in a primary source; superseded by indonesian_fahmi2020/espnet_status/02
 indonesian_fahmi2020,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Indonesian/Fahmi_et_al_2020.md,Not confirmed in a primary source; superseded by indonesian_fahmi2020/status_reason_codes/02
 inesco,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,2400,see evidence,2399,measured,n_files_release_measured,
-inesco,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,2400,see evidence,2398,measured,recipes.n_total (inesco),a mismatch is normal: recipes filter by length and label
+inesco,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,2400,see evidence,2399,measured,recipes.n_total (inesco),a mismatch is normal: recipes filter by length and label
 interface,espnet_status,superseded,candidate,user,excluded,primary,https://catalog.elra.info/en-us/repository/browse/ELRA-S0329/,superseded by interface/espnet_status/04
 interface,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by interface/espnet_status/03
 interface,status_reason_codes,superseded,unexamined,user,access_no_direct_download,project_doc,nc_candidates_20261010.md,superseded by interface/status_reason_codes/03
@@ -406,6 +407,7 @@ meghana007_tamil,status_reason_codes,superseded,duplicate_entry,measured,provena
 meghana007_tamil,status_reason_codes,superseded,duplicate_entry,measured,provenance_unclear,project_doc,new_corpora/99_final_report.md,superseded by meghana007_tamil/status_reason_codes/02
 meld,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,13708,see evidence,13707,measured,n_files_release_measured,
 meld,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,13708,see evidence,13704,measured,recipes.n_total (meld),a mismatch is normal: recipes filter by length and label
+meld,source_rights,superseded,cleared,primary,asserted,primary,https://aclanthology.org/P19-1050/,Clips of the TV series Friends; the repository README states no rights for the material; superseded by meld/source_rights/02
 memor,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/sunlightsgy/MEmoR,superseded by memor/espnet_status/02
 memor,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://github.com/sunlightsgy/MEmoR,superseded by memor/status_reason_codes/02
 mer2023,espnet_status,superseded,candidate,primary,excluded,primary,https://huggingface.co/datasets/MERChallenge/MER2023,superseded by mer2023/espnet_status/04
@@ -556,6 +558,7 @@ tamil_ram,espnet_status,superseded,candidate,user,excluded,secondary,https://git
 tamil_ram,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Tamil/Ram_C_Sunitha_et_al.md,Not confirmed in a primary source; superseded by tamil_ram/status_reason_codes/02
 telugu_emotion_kaggle,espnet_status,superseded,implemented,measured,candidate,user,"Conversation with the maintainer, 2026-10-14",Former reason: provenance_unclear; superseded by telugu_emotion_kaggle/espnet_status/03
 telugu_emotion_kaggle,espnet_status,superseded,implemented,measured,excluded,primary,https://www.kaggle.com/datasets/jettysowmith/telugu-emotion-speech,superseded by telugu_emotion_kaggle/espnet_status/02
+thaiser,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,14182,see evidence,25185,measured,recipes.n_total (thaiser),a mismatch is normal: recipes filter by length and label
 thanushs25_tamil,espnet_status,superseded,needs_decision,user,candidate,user,"Conversation with the maintainer, 2026-10-14",Former reason: provenance_unclear; superseded by thanushs25_tamil/espnet_status/04
 thanushs25_tamil,espnet_status,superseded,needs_decision,user,excluded,measured,https://huggingface.co/datasets/Thanushs25/tamil-audio-emotion-classification,superseded by thanushs25_tamil/espnet_status/03
 thanushs25_tamil,espnet_status,superseded,needs_decision,user,excluded,project_doc,new_corpora/99_final_report.md,superseded by thanushs25_tamil/espnet_status/02

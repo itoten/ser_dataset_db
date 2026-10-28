@@ -1,70 +1,70 @@
 {
  "audio_format": {
-  "16000Hz/1ch/PCM_16": 14182
+  "16000Hz/1ch/PCM_16": 25185
  },
  "duration_sec": {
   "max": 108.788,
-  "median": 4.617,
-  "min": 0.498
+  "median": 4.659,
+  "min": 0.288
  },
- "hours_total": 21.2637,
- "measured_on": "2026-10-12",
- "n_total": 14182,
+ "hours_total": 37.6626,
+ "measured_on": "2026-10-28",
+ "n_total": 25185,
  "output_env_var": "THAISER_OUTPUT",
  "recipe": "thaiser",
  "splits": {
   "test": {
-   "hours": 4.1673,
+   "hours": 7.4825,
    "labels": {
-    "angry": 395,
-    "frustrated": 694,
-    "happy": 595,
-    "neutral": 834,
-    "sad": 319
+    "angry": 622,
+    "frustrated": 1573,
+    "happy": 814,
+    "neutral": 1472,
+    "sad": 556
    },
-   "manifest_sha1": "a92ac0169d26cd3d5847a4397601e0441ff05a36",
-   "n": 2837,
+   "manifest_sha1": "3eac5fd6cdfbea182a8bf251cf6f5fab2b2a0938",
+   "n": 5037,
    "n_filtered": null,
-   "over_30s": 5,
-   "under_0.5s": 0,
-   "unique_utt": 2837
+   "over_30s": 17,
+   "under_0.5s": 1,
+   "unique_utt": 5037
   },
   "train": {
-   "hours": 14.9838,
+   "hours": 26.4804,
    "labels": {
-    "angry": 1381,
-    "frustrated": 2428,
-    "happy": 2082,
-    "neutral": 2921,
-    "sad": 1116
+    "angry": 2178,
+    "frustrated": 5505,
+    "happy": 2849,
+    "neutral": 5151,
+    "sad": 1947
    },
-   "manifest_sha1": "ff12802215594376c43ae146c8dbc63a86e015cb",
-   "n": 9928,
-   "n_filtered": 9890,
-   "over_30s": 36,
-   "under_0.5s": 1,
-   "unique_utt": 9928
+   "manifest_sha1": "9b97cb7ae80698f881be14ad9adbbe0a12f7f229",
+   "n": 17630,
+   "n_filtered": 17582,
+   "over_30s": 48,
+   "under_0.5s": 4,
+   "unique_utt": 17630
   },
   "valid": {
-   "hours": 2.1126,
+   "hours": 3.6997,
    "labels": {
-    "angry": 197,
-    "frustrated": 347,
-    "happy": 297,
-    "neutral": 417,
-    "sad": 159
+    "angry": 311,
+    "frustrated": 786,
+    "happy": 407,
+    "neutral": 736,
+    "sad": 278
    },
-   "manifest_sha1": "308fc1a4e5256499733fd67c6fc90dc1879d8cab",
-   "n": 1417,
-   "n_filtered": 1413,
-   "over_30s": 4,
-   "under_0.5s": 0,
-   "unique_utt": 1417
+   "manifest_sha1": "61dcb3ce9e0db0e29aa2e4b1013cea99d82b0ae5",
+   "n": 2518,
+   "n_filtered": 2513,
+   "over_30s": 5,
+   "under_0.5s": 1,
+   "unique_utt": 2518
   }
  },
  "token_list": [
-  "neutral",
   "frustrated",
+  "neutral",
   "happy",
   "angry",
   "sad"

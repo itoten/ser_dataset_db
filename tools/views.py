@@ -1,4 +1,4 @@
-"""Generate views/datasets_wide.csv and views/discrepancies.csv from data/.
+"""Generate views/datasets_wide.csv, views/discrepancies.csv and views/source_rights_check.csv from data/.
 
 Usage: python3 tools/views.py      (rewrite both files)
 validate.py regenerates them in memory and fails if the files on disk differ.
@@ -14,7 +14,7 @@ SHEET_COLS = ["Verified", "Dataset", "License", "Language", "Source", "Total Hou
               "ESPnet Implemented"]
 EXTRA_COLS = ["dataset_id", "status", "reasons", "license_class", "access_method", "raw_audio_available", "recipe",
               "n_total_recipe", "hours_total_recipe", "n_files_release_measured", "n_speakers_measured",
-              "common7_covered", "common7_missing", "extra_labels", "label_source", "label_verification", "speech_production", "label_basis", "label_basis_note", "text_emotion_link", "lexical_confound", "lexical_confound_note", "paralinguistic_signal", "paralinguistic_signal_note", "human_accuracy", "human_accuracy_note", "material_rights", "material_rights_note",
+              "common7_covered", "common7_missing", "extra_labels", "label_source", "label_verification", "speech_production", "label_basis", "label_basis_note", "text_emotion_link", "lexical_confound", "lexical_confound_note", "paralinguistic_signal", "paralinguistic_signal_note", "human_accuracy", "human_accuracy_note", "source_rights", "source_rights_note",
               "annotation_items",
               "benchmarks", "report_path", "status_note", "notes",
               "license_checked_on", "license_source_type", "license_checked_by", "access_checked_on",
@@ -22,6 +22,8 @@ EXTRA_COLS = ["dataset_id", "status", "reasons", "license_class", "access_method
 DISC_COLS = ["dataset_id", "field", "kind", "datasets_value", "datasets_source_type", "other_value",
              "other_source_type", "other_source_ref", "note"]
 COMMON7 = ["angry", "disgust", "fear", "happy", "neutral", "sad", "surprise"]
+RIGHTS_COLS = ["dataset_id", "name", "espnet_status", "license_spdx", "license_class", "source_rights", "source_rights_note"]
+RIGHTS_NEEDS_CHECK = ("asserted", "unaddressed", "unknown")
 DISC_KEYS = ("dataset_id", "field", "kind", "other_value", "other_source_ref")
 
 
@@ -78,7 +80,7 @@ def wide(db):
             "lexical_confound_note": d["lexical_confound_note"],
             "paralinguistic_signal": d["paralinguistic_signal"], "paralinguistic_signal_note": d["paralinguistic_signal_note"],
             "human_accuracy": d["human_accuracy"], "human_accuracy_note": d["human_accuracy_note"],
-            "material_rights": d["material_rights"], "material_rights_note": d["material_rights_note"], "annotation_items": ";".join(sorted(items.get(i, []))),
+            "source_rights": d["source_rights"], "source_rights_note": d["source_rights_note"], "annotation_items": ";".join(sorted(items.get(i, []))),
             "benchmarks": ";".join(bench),
             "report_path": d["report_path"], "status_note": d["status_note"], "notes": d["notes"],
             "license_checked_on": lic["checked_on"] if lic else "", "license_source_type": lic["source_type"] if lic else "",
@@ -126,11 +128,17 @@ def discrepancies(db):
     return out
 
 
+def rights_check(db):
+    """Datasets whose underlying material needs a rights check (source_rights asserted / unaddressed / unknown)."""
+    return [{c: d[c] for c in RIGHTS_COLS} for d in db["datasets"][1] if d["source_rights"] in RIGHTS_NEEDS_CHECK]
+
+
 def build(db):
     """Return {relative path: canonical file text}."""
     return {
         "views/datasets_wide.csv": csvio.format_rows(SHEET_COLS + EXTRA_COLS, wide(db), ("dataset_id",)),
         "views/discrepancies.csv": csvio.format_rows(DISC_COLS, discrepancies(db), DISC_KEYS),
+        "views/source_rights_check.csv": csvio.format_rows(RIGHTS_COLS, rights_check(db), ("dataset_id",)),
     }
 
 

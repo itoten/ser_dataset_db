@@ -1,15 +1,15 @@
 {
  "audio_format": {
-  "16000Hz/1ch/PCM_16": 2398
+  "16000Hz/1ch/PCM_16": 2399
  },
  "duration_sec": {
   "max": 11.835,
   "median": 4.37,
   "min": 1.125
  },
- "hours_total": 3.0246,
- "measured_on": "2026-10-12",
- "n_total": 2398,
+ "hours_total": 3.0253,
+ "measured_on": "2026-10-28",
+ "n_total": 2399,
  "output_env_var": "INESCO_OUTPUT",
  "recipe": "inesco",
  "splits": {
@@ -28,18 +28,18 @@
    "unique_utt": 480
   },
   "train": {
-   "hours": 2.1007,
+   "hours": 2.1014,
    "labels": {
     "angry": 531,
-    "happy": 591,
+    "happy": 592,
     "sad": 556
    },
-   "manifest_sha1": "624fc927c3bfa82cfbb16b44f6a447e3e7e9120f",
-   "n": 1678,
-   "n_filtered": 1678,
+   "manifest_sha1": "7f1827352a0901a68a06ca6293fba485b0a959f8",
+   "n": 1679,
+   "n_filtered": 1679,
    "over_30s": 0,
    "under_0.5s": 0,
-   "unique_utt": 1678
+   "unique_utt": 1679
   },
   "valid": {
    "hours": 0.3114,
