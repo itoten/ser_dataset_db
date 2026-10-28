@@ -49,8 +49,8 @@ baum1,status_reason_codes,superseded,unexamined,user,access_request_form_or_emai
 baum1,status_reason_codes,superseded,unexamined,user,access_request_form_or_email;not_distributable,project_doc,nc_candidates_20261010.md,superseded by baum1/status_reason_codes/03
 baum2,espnet_status,superseded,candidate,user,excluded,primary,https://archive.ics.uci.edu/api/dataset?id=474,superseded by baum2/espnet_status/03
 baum2,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,superseded by baum2/espnet_status/02
-baum2,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://archive.ics.uci.edu/api/dataset?id=474,The earlier not_distributable was inaccurate; superseded by baum2/status_reason_codes/03
-baum2,status_reason_codes,superseded,unexamined,user,not_distributable,project_doc,new_corpora/99_final_report.md,superseded by baum2/status_reason_codes/02
+baum2,status_reason_codes,superseded,access_request_form_or_email,project_doc,not_distributable,project_doc,new_corpora/99_final_report.md,superseded by baum2/status_reason_codes/02
+baum2,status_reason_codes,superseded,access_request_form_or_email,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_request_form_or_email; superseded by baum2/status_reason_codes/04
 baved,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/40uf411/Basic-Arabic-Vocal-Emotions-Dataset,superseded by baved/espnet_status/03
 baved,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,superseded by baved/espnet_status/02
 baved,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,61,see evidence,60,measured,n_speakers_measured,
@@ -243,8 +243,8 @@ emovoicedb,status_reason_codes,superseded,NA,measured,synthetic_or_tts,primary,h
 emovoicedb,status_reason_codes,superseded,NA,measured,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: synthetic_or_tts; superseded by emovoicedb/status_reason_codes/03
 emovome,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/10694370,superseded by emovome/espnet_status/03
 emovome,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,superseded by emovome/espnet_status/02
-emovome,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://zenodo.org/records/10694370,superseded by emovome/status_reason_codes/03
-emovome,status_reason_codes,superseded,unexamined,user,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,superseded by emovome/status_reason_codes/02
+emovome,status_reason_codes,superseded,access_signed_agreement,project_doc,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,superseded by emovome/status_reason_codes/02
+emovome,status_reason_codes,superseded,access_signed_agreement,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by emovome/status_reason_codes/04
 enterface05,label_basis,superseded,unknown,primary,intended,project_doc,recipe_review/archive_v1/enterface05.md,superseded by enterface05/label_basis/02
 enterface05,label_source,superseded,unknown,primary,human,project_doc,recipe_review/archive_v1/enterface05.md,"Not re-verified against the paper, which was not read; superseded by enterface05/label_source/02"
 enterface05,n_speakers_measured,superseded,43,measured,42,measured,"$ENTERFACE05_OUTPUT/manifest/{train,valid,test}.tsv",superseded by enterface05/n_speakers_measured/02
@@ -301,7 +301,7 @@ harper_valley_bank,espnet_status,superseded,implemented,measured,candidate,user,
 harper_valley_bank,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,25730,see evidence,2892,measured,n_files_release_measured,
 harper_valley_bank,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,25730,see evidence,19456,measured,recipes.n_total (harper_valley_bank),a mismatch is normal: recipes filter by length and label
 hesd,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/22674064,superseded by hesd/espnet_status/02
-hesd,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://zenodo.org/records/22674064,superseded by hesd/status_reason_codes/02
+hesd,status_reason_codes,superseded,access_request_form_or_email,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_request_form_or_email; superseded by hesd/status_reason_codes/03
 hindi_bansal_dev,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Hindi/BansalAndDev.md,Not confirmed in a primary source; superseded by hindi_bansal_dev/espnet_status/02
 hindi_bansal_dev,status_reason_codes,superseded,access_request_form_or_email,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_request_form_or_email; superseded by hindi_bansal_dev/status_reason_codes/03
 hindi_ser_vishlb,espnet_status,superseded,implemented,measured,candidate,user,"Conversation with the maintainer, 2026-10-14",Former reason: provenance_unclear; superseded by hindi_ser_vishlb/espnet_status/03
@@ -312,7 +312,7 @@ humevb,espnet_status,superseded,candidate,user,excluded,primary,https://www.comp
 humevb,status_reason_codes,superseded,labels_not_discrete_emotion;access_request_form_or_email,project_doc,access_signed_agreement,primary,https://www.competitions.hume.ai/exvo2022,superseded by humevb/status_reason_codes/02
 humevb,status_reason_codes,superseded,labels_not_discrete_emotion;access_request_form_or_email,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by humevb/status_reason_codes/03
 humyn_indian_emotional,espnet_status,superseded,candidate,user,excluded,measured,https://huggingface.co/api/datasets/humyn-labs/Indian-Emotional-Speech-Corpus,superseded by humyn_indian_emotional/espnet_status/02
-humyn_indian_emotional,status_reason_codes,superseded,unexamined,user,content_insufficient,measured,https://huggingface.co/api/datasets/humyn-labs/Indian-Emotional-Speech-Corpus,superseded by humyn_indian_emotional/status_reason_codes/02
+humyn_indian_emotional,status_reason_codes,superseded,unexamined,project_doc,content_insufficient,measured,https://huggingface.co/api/datasets/humyn-labs/Indian-Emotional-Speech-Corpus,superseded by humyn_indian_emotional/status_reason_codes/02
 hungarian_hesd,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Hungarian/HESD.md,Not confirmed in a primary source; superseded by hungarian_hesd/espnet_status/02
 hungarian_hesd,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Hungarian/HESD.md,Not confirmed in a primary source; superseded by hungarian_hesd/status_reason_codes/02
 iemocap,access_method,superseded,request_form_or_email,primary,signed_agreement,project_doc,egs3/iemocap/cls/readme.md (branch ser/cross-corpus),superseded by iemocap/access_method/02
@@ -407,8 +407,8 @@ mav,espnet_status,superseded,implemented,measured,candidate,primary,https://zeno
 mav,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-13 survey,How to handle having only 90 items is not decided; superseded by mav/status_reason_codes/02
 mavesdb,espnet_status,superseded,candidate,user,excluded,measured,https://data.mendeley.com/public-api/datasets/6hm2xt5hd8/files?folder_id=root&version=1,superseded by mavesdb/espnet_status/03
 mavesdb,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,superseded by mavesdb/espnet_status/02
-mavesdb,status_reason_codes,superseded,unexamined,user,access_signed_agreement,measured,https://data.mendeley.com/public-api/datasets/6hm2xt5hd8/files?folder_id=root&version=1,superseded by mavesdb/status_reason_codes/03
-mavesdb,status_reason_codes,superseded,unexamined,user,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,superseded by mavesdb/status_reason_codes/02
+mavesdb,status_reason_codes,superseded,access_signed_agreement,project_doc,access_signed_agreement;access_request_form_or_email,project_doc,new_corpora/99_final_report.md,superseded by mavesdb/status_reason_codes/02
+mavesdb,status_reason_codes,superseded,access_signed_agreement,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by mavesdb/status_reason_codes/04
 mceiu,status_reason_codes,superseded,access_gated,project_doc,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by mceiu/status_reason_codes/02
 mderma,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1322,see evidence,1345,measured,n_files_release_measured,
 mderma,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1322,see evidence,1267,measured,recipes.n_total (mderma),a mismatch is normal: recipes filter by length and label
