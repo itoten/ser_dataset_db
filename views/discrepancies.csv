@@ -351,6 +351,8 @@ kazakh_russian_emotion,status_reason_codes,superseded,unexamined,user,access_req
 keg_croatian,status_reason_codes,superseded,no_audio_paper_only,user,no_audio_paper_only;content_insufficient,primary,https://ieeexplore.ieee.org/document/6046587,superseded by keg_croatian/status_reason_codes/02
 keioesd,espnet_status,superseded,candidate,user,excluded,primary,http://research.nii.ac.jp/src/en/register.html,superseded by keioesd/espnet_status/02
 keioesd,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,http://research.nii.ac.jp/src/en/register.html,superseded by keioesd/status_reason_codes/02
+kemdy19,status_reason_codes,superseded,access_request_form_or_email,project_doc,unexamined,measured,https://nanum.etri.re.kr/share/kjnoh2/KEMDy19?lang=En_us,superseded by kemdy19/status_reason_codes/02
+kemdy20,status_reason_codes,superseded,access_request_form_or_email,project_doc,unexamined,measured,https://nanum.etri.re.kr/share/kjnoh2/KEMDy20?lang=En_us,superseded by kemdy20/status_reason_codes/02
 kemocon,dimensional_attributes,superseded,arousal;valence,primary,valence;arousal,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,"Original spreadsheet value: valence, arousal; superseded by kemocon/dimensional_attributes/02"
 kemocon,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/3931963,superseded by kemocon/espnet_status/04
 kemocon,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by kemocon/espnet_status/03
@@ -497,6 +499,7 @@ qlean_japanese_emotional,espnet_status,superseded,candidate,user,excluded,primar
 qlean_japanese_emotional,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://huggingface.co/api/datasets/qleandataset/speech-emotional-speech,superseded by qlean_japanese_emotional/status_reason_codes/02
 quechua,n_speakers_reported,superseded,6,project_doc,7,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,superseded by quechua/n_speakers_reported/02
 ramas,espnet_status,superseded,deferred,user,excluded,measured,https://neurodatalab.com/,superseded by ramas/espnet_status/02
+rasa,status_reason_codes,superseded,access_gated,project_doc,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by rasa/status_reason_codes/02
 recanvo,espnet_status,superseded,implemented,measured,candidate,measured,https://zenodo.org/records/5786860/files/ReCANVo.zip,superseded by recanvo/espnet_status/03
 recanvo,espnet_status,superseded,implemented,measured,excluded,primary,https://pmc.ncbi.nlm.nih.gov/articles/PMC10404278/,superseded by recanvo/espnet_status/02
 recola,espnet_status,superseded,candidate,user,excluded,primary,https://recola.human-ist.ch/download.html,superseded by recola/espnet_status/04
