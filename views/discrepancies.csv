@@ -13,7 +13,9 @@ affectspeech,status_reason_codes,superseded,redistribution_of_existing_corpus;ac
 affectspeech,status_reason_codes,superseded,redistribution_of_existing_corpus;access_signed_agreement,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by affectspeech/status_reason_codes/03
 afrikaans_se,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Afrikaans/AfrikaansSE.md,Not confirmed in a primary source; superseded by afrikaans_se/espnet_status/02
 afrikaans_se,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Afrikaans/AfrikaansSE.md,Not confirmed in a primary source; superseded by afrikaans_se/status_reason_codes/02
-akace,status_reason_codes,superseded,unexamined,project_doc,NA,project_doc,first review 2026-10-28 (see status_note),Replaces the provisional reason from the spreadsheet import with the first-review result; superseded by akace/status_reason_codes/03
+akace,status_reason_codes,superseded,first_review_done,project_doc,NA,project_doc,first review 2026-10-28 (see status_note),Replaces the provisional reason from the spreadsheet import with the first-review result; superseded by akace/status_reason_codes/03
+akace,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,first review 2026-10-28 (see status_note),Replaces the provisional reason from the spreadsheet import; superseded by akace/status_reason_codes/04
+akace,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by akace/status_reason_codes/02
 amigos,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by amigos/espnet_status/03
 amigos,status_reason_codes,superseded,unexamined,user,access_signed_agreement,project_doc,nc_candidates_20261010.md,superseded by amigos/status_reason_codes/03
 anad,espnet_status,superseded,deferred,user,candidate,measured,https://www.kaggle.com/datasets/suso172/arabic-natural-audio-dataset,superseded by anad/espnet_status/02
@@ -55,6 +57,8 @@ baved,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/9
 baved,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,61,see evidence,60,measured,n_speakers_measured,
 baved,status_reason_codes,superseded,labels_not_discrete_emotion,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: labels_not_discrete_emotion; superseded by baved/status_reason_codes/04
 beat,license_spdx,superseded,Apache-2.0,primary,LicenseRef-other,secondary,https://github.com/SuperKogito/SER-datasets,From SuperKogito; source unknown; superseded by beat/license_spdx/02
+beat,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,first review 2026-10-28 (see status_note),Replaces the provisional reason from the spreadsheet import with the first-review result; superseded by beat/status_reason_codes/03
+beat,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-13 survey,How to assign session-level emotion labels to utterances has not been considered; superseded by beat/status_reason_codes/02
 bedvibe,espnet_status,superseded,needs_decision,user,excluded,primary,https://github.com/Mormolykos/bedvibe-datasets,superseded by bedvibe/espnet_status/02
 belfast,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,superseded by belfast/espnet_status/03
 berst,espnet_status,superseded,implemented,measured,candidate,measured,https://huggingface.co/datasets/Rosie-Lab/BERSt,superseded by berst/espnet_status/02
@@ -145,6 +149,8 @@ dusha,license_spdx,superseded,LicenseRef-golos-public,primary,LicenseRef-other,p
 dusha,license_spdx,superseded,LicenseRef-golos-public,primary,LicenseRef-other,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Other; superseded by dusha/license_spdx/02
 dusha,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,303963,see evidence,160357,measured,recipes.n_total (dusha),a mismatch is normal: recipes filter by length and label
 dzafic,status_reason_codes,superseded,identity_unresolved,project_doc,content_insufficient,project_doc,new_corpora/99_final_report.md,superseded by dzafic/status_reason_codes/02
+ears,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,first review 2026-10-28 (see status_note),Replaces the provisional reason from the spreadsheet import with the first-review result; superseded by ears/status_reason_codes/03
+ears,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-13 survey,superseded by ears/status_reason_codes/02
 eekk,license_spdx,superseded,CC-BY-4.0,primary,LicenseRef-other,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Other; superseded by eekk/license_spdx/02
 eekk,status_reason_codes,superseded,duplicate_entry,primary,access_no_direct_download,project_doc,nc_candidates_20261010.md,superseded by eekk/status_reason_codes/03
 eesc,espnet_status,superseded,implemented,measured,candidate,measured,https://ndownloader.figshare.com/files/44609146,superseded by eesc/espnet_status/04
@@ -171,6 +177,8 @@ emis,espnet_status,superseded,implemented,measured,excluded,primary,https://zeno
 emis,label_source,superseded,synthesis_specified,user,NA,primary,https://arxiv.org/abs/2510.25054,"Neither people nor a classifier assigned it. Same treatment as syntact, where the maintainer decided NA; a dedicated value for 'specified at synthesis' is an open question; superseded by emis/label_source/02"
 emis,status_reason_codes,superseded,NA,measured,synthetic_or_tts,primary,https://zenodo.org/records/19207001,superseded by emis/status_reason_codes/02
 emis,status_reason_codes,superseded,NA,measured,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: synthetic_or_tts; superseded by emis/status_reason_codes/03
+emo_emilia,status_reason_codes,superseded,first_review_done,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",superseded by emo_emilia/status_reason_codes/02
+emo_emilia,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,second look 2026-10-28 (see status_note),Replaces the provisional reason from the spreadsheet import; superseded by emo_emilia/status_reason_codes/03
 emodb,hours_reported,superseded,1.25,primary,0.7,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,superseded by emodb/hours_reported/02
 emodb,license_spdx,conflicting,CC-BY-4.0,user,CC0-1.0,primary,https://audeering.github.io/datasets/datasets/emodb.html,
 emodb,license_spdx,superseded,CC-BY-4.0,user,conflicting,project_doc,corpus_metadata.md,Zenodo 17651657 (2.0) says CC BY 4.0; the audEERING documentation says CC0-1.0 (corpus_metadata.md); superseded by emodb/license_spdx/05
@@ -310,7 +318,9 @@ humevb,espnet_status,superseded,candidate,user,excluded,primary,https://www.comp
 humevb,status_reason_codes,superseded,labels_not_discrete_emotion;access_request_form_or_email,project_doc,access_signed_agreement,primary,https://www.competitions.hume.ai/exvo2022,superseded by humevb/status_reason_codes/02
 humevb,status_reason_codes,superseded,labels_not_discrete_emotion;access_request_form_or_email,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by humevb/status_reason_codes/03
 humyn_indian_emotional,espnet_status,superseded,candidate,user,excluded,measured,https://huggingface.co/api/datasets/humyn-labs/Indian-Emotional-Speech-Corpus,superseded by humyn_indian_emotional/espnet_status/02
-humyn_indian_emotional,status_reason_codes,superseded,unexamined,project_doc,content_insufficient,measured,https://huggingface.co/api/datasets/humyn-labs/Indian-Emotional-Speech-Corpus,superseded by humyn_indian_emotional/status_reason_codes/02
+humyn_indian_emotional,status_reason_codes,superseded,first_review_done,project_doc,content_insufficient,measured,https://huggingface.co/api/datasets/humyn-labs/Indian-Emotional-Speech-Corpus,superseded by humyn_indian_emotional/status_reason_codes/02
+humyn_indian_emotional,status_reason_codes,superseded,first_review_done,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",superseded by humyn_indian_emotional/status_reason_codes/03
+humyn_indian_emotional,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,second look 2026-10-28 (see status_note),Replaces the provisional reason from the spreadsheet import; superseded by humyn_indian_emotional/status_reason_codes/04
 hungarian_hesd,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Hungarian/HESD.md,Not confirmed in a primary source; superseded by hungarian_hesd/espnet_status/02
 hungarian_hesd,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Hungarian/HESD.md,Not confirmed in a primary source; superseded by hungarian_hesd/status_reason_codes/02
 iemocap,access_method,superseded,request_form_or_email,primary,signed_agreement,project_doc,egs3/iemocap/cls/readme.md (branch ser/cross-corpus),superseded by iemocap/access_method/02
@@ -334,6 +344,7 @@ interface,status_reason_codes,superseded,unexamined,user,access_signed_agreement
 java_sed,espnet_status,superseded,deferred,user,excluded,measured,https://beais-uny.id/dataset/,superseded by java_sed/espnet_status/02
 javanese_ser_2black0,espnet_status,superseded,implemented,measured,candidate,measured,https://github.com/2black0/Sound-Emotion-Recognition-Javanese-Speech-Dataset,superseded by javanese_ser_2black0/espnet_status/02
 javanese_ser_2black0,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by javanese_ser_2black0/status_reason_codes/02
+javmeps,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-13 survey,Handling of the unset license and the morphed voices not decided; superseded by javmeps/status_reason_codes/02
 jnv,espnet_status,superseded,implemented,measured,candidate,primary,https://sites.google.com/site/shinnosuketakamichi/research-topics/jnv_corpus,superseded by jnv/espnet_status/02
 jnv,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-13 survey,superseded by jnv/status_reason_codes/02
 jtes,espnet_status,superseded,candidate,user,excluded,primary,https://www.t-technoarch.co.jp/data/anken_h/S20-017.html,superseded by jtes/espnet_status/04
@@ -412,9 +423,10 @@ mderma,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1322,see evi
 mead,espnet_status,superseded,deferred,user,excluded,measured,https://wywu.github.io/projects/MEAD/MEAD.html,superseded by mead/espnet_status/04
 mead,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,superseded by mead/espnet_status/03
 mead,license_spdx,superseded,unknown,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Custom academic/research-only; superseded by mead/license_spdx/02
-mead,status_reason_codes,superseded,unexamined,project_doc,host_unreachable,user,"Conversation with the maintainer, 2026-10-14",Former reason: host_unreachable; superseded by mead/status_reason_codes/05
-mead,status_reason_codes,superseded,unexamined,project_doc,host_unreachable,measured,https://wywu.github.io/projects/MEAD/MEAD.html,superseded by mead/status_reason_codes/04
-mead,status_reason_codes,superseded,unexamined,project_doc,host_unreachable,project_doc,nc_candidates_20261010.md,superseded by mead/status_reason_codes/03
+mead,status_reason_codes,superseded,first_review_done,project_doc,host_unreachable,user,"Conversation with the maintainer, 2026-10-14",Former reason: host_unreachable; superseded by mead/status_reason_codes/05
+mead,status_reason_codes,superseded,first_review_done,project_doc,host_unreachable,measured,https://wywu.github.io/projects/MEAD/MEAD.html,superseded by mead/status_reason_codes/04
+mead,status_reason_codes,superseded,first_review_done,project_doc,host_unreachable,project_doc,nc_candidates_20261010.md,superseded by mead/status_reason_codes/03
+mead,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,second look 2026-10-28 (see status_note),Replaces the provisional reason from the spreadsheet import; superseded by mead/status_reason_codes/06
 meghana007_tamil,status_reason_codes,superseded,duplicate_entry,measured,provenance_unclear,measured,https://huggingface.co/datasets/meghana-007/tamil-audio-emotion-classification,superseded by meghana007_tamil/status_reason_codes/03
 meghana007_tamil,status_reason_codes,superseded,duplicate_entry,measured,provenance_unclear,project_doc,new_corpora/99_final_report.md,superseded by meghana007_tamil/status_reason_codes/02
 meld,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,13708,see evidence,13707,measured,n_files_release_measured,
@@ -451,11 +463,15 @@ mspconversation,status_reason_codes,superseded,unexamined,user,access_signed_agr
 mspface,espnet_status,superseded,needs_decision,user,excluded,primary,https://www.lab-msp.com/MSP/MSP-Face.html,superseded by mspface/espnet_status/02
 mspimprov,espnet_status,superseded,candidate,user,excluded,primary,https://www.lab-msp.com/MSP/MSP-Improv.html,superseded by mspimprov/espnet_status/04
 mspimprov,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by mspimprov/espnet_status/03
+mspimprov,lexical_confound,superseded,possible,primary,none,primary,https://www.lab-msp.com/MSP/MSP-Improv.html,superseded by mspimprov/lexical_confound/02
 mspimprov,status_reason_codes,superseded,access_signed_agreement,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by mspimprov/status_reason_codes/05
+mspimprov,text_emotion_link,superseded,parallel;unscripted,primary,parallel,primary,https://www.lab-msp.com/MSP/MSP-Improv.html,superseded by mspimprov/text_emotion_link/02
 msppodcast,n_speakers_reported,superseded,3641,primary,3929,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,superseded by msppodcast/n_speakers_reported/02
 msppodcast,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,3641,see evidence,3713,measured,n_speakers_measured,
 msppodcast,n_utt_reported,superseded,267905,primary,264705,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,superseded by msppodcast/n_utt_reported/02
 msppodcast,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,267905,see evidence,212808,measured,recipes.n_total (msppodcast),a mismatch is normal: recipes filter by length and label
+multidialog,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,first review 2026-10-28 (see status_note),Replaces the provisional reason from the spreadsheet import with the first-review result; superseded by multidialog/status_reason_codes/03
+multidialog,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,Unknown license type not resolved; superseded by multidialog/status_reason_codes/02
 musecar,access_method,superseded,signed_agreement,primary,request_form_or_email,primary,https://zenodo.org/records/4651164,Whether a EULA is needed is unverified; superseded by musecar/access_method/02
 musecar,espnet_status,superseded,candidate,user,excluded,primary,https://sites.google.com/view/muse2020/challenge/get-data,superseded by musecar/espnet_status/04
 musecar,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by musecar/espnet_status/03
@@ -500,6 +516,7 @@ qlean_japanese_emotional,status_reason_codes,superseded,unexamined,user,access_r
 quechua,n_speakers_reported,superseded,6,project_doc,7,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,superseded by quechua/n_speakers_reported/02
 ramas,espnet_status,superseded,deferred,user,excluded,measured,https://neurodatalab.com/,superseded by ramas/espnet_status/02
 rasa,status_reason_codes,superseded,access_gated,project_doc,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by rasa/status_reason_codes/02
+ravdess,human_accuracy,superseded,0.62,primary,0.60,project_doc,"Livingstone and Russo 2018, PLOS ONE",taken from the project review report; the paper was not re-read in this update; audio-only is the figure that matches this recipe; superseded by ravdess/human_accuracy/02
 recanvo,espnet_status,superseded,implemented,measured,candidate,measured,https://zenodo.org/records/5786860/files/ReCANVo.zip,superseded by recanvo/espnet_status/03
 recanvo,espnet_status,superseded,implemented,measured,excluded,primary,https://pmc.ncbi.nlm.nih.gov/articles/PMC10404278/,superseded by recanvo/espnet_status/02
 recola,espnet_status,superseded,candidate,user,excluded,primary,https://recola.human-ist.ch/download.html,superseded by recola/espnet_status/04
@@ -626,6 +643,8 @@ whiser,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,5427,see evi
 whiser,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the additions of 2026-10-13,Handling of the missing license and speaker information not decided; superseded by whiser/status_reason_codes/02
 ysed,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,71,see evidence,68,measured,n_speakers_measured,
 yue_emo_speech,espnet_status,superseded,candidate,user,excluded,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,The card does not describe how labels were made; superseded by yue_emo_speech/espnet_status/02
-yue_emo_speech,status_reason_codes,superseded,unexamined,project_doc,labels_automatic,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by yue_emo_speech/status_reason_codes/02
+yue_emo_speech,status_reason_codes,superseded,first_review_done,project_doc,labels_automatic,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by yue_emo_speech/status_reason_codes/02
+yue_emo_speech,status_reason_codes,superseded,first_review_done,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: labels_automatic; superseded by yue_emo_speech/status_reason_codes/03
+yue_emo_speech,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,first review 2026-10-28 (see status_note),Replaces the provisional reason from the spreadsheet import with the first-review result; superseded by yue_emo_speech/status_reason_codes/04
 zamai_pashto,languages,superseded,pus;fas;eng,primary,pus,project_doc,new_corpora/99_final_report.md,superseded by zamai_pashto/languages/02
 zamai_pashto,status_reason_codes,superseded,text_only,measured,content_insufficient,project_doc,new_corpora/99_final_report.md,superseded by zamai_pashto/status_reason_codes/02

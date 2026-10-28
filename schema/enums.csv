@@ -201,3 +201,4 @@ source_rights,cleared,"Third-party material whose use is shown to be fine by a q
 source_rights,asserted,"Third-party material (films, TV, web videos, public media); the creators say it is fine to share (ethics statement, fair use, terms of service, no copyright issue) but give no checkable basis: no list of sources, per-item licenses or permissions. Needs checking",
 source_rights,unaddressed,"Third-party material and the sources say nothing about the rights in it (no statement, no paper). Needs checking",
 source_rights,unknown,"The origin of the material itself is unknown, so it cannot be said whether it is third-party. Needs checking",
+reason_code,first_review_done,"First review done from primary sources; no blocking reason (access, labels, audio) was recorded; the use decision is pending",
