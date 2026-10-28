@@ -558,7 +558,8 @@ tamil_ram,espnet_status,superseded,candidate,user,excluded,secondary,https://git
 tamil_ram,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Tamil/Ram_C_Sunitha_et_al.md,Not confirmed in a primary source; superseded by tamil_ram/status_reason_codes/02
 telugu_emotion_kaggle,espnet_status,superseded,implemented,measured,candidate,user,"Conversation with the maintainer, 2026-10-14",Former reason: provenance_unclear; superseded by telugu_emotion_kaggle/espnet_status/03
 telugu_emotion_kaggle,espnet_status,superseded,implemented,measured,excluded,primary,https://www.kaggle.com/datasets/jettysowmith/telugu-emotion-speech,superseded by telugu_emotion_kaggle/espnet_status/02
-thaiser,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,14182,see evidence,25185,measured,recipes.n_total (thaiser),a mismatch is normal: recipes filter by length and label
+thaiser,n_utt_reported,superseded,27854,primary,14182,primary,https://github.com/vistec-AI/dataset-releases/releases/tag/v1,superseded by thaiser/n_utt_reported/02
+thaiser,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,27854,see evidence,25185,measured,recipes.n_total (thaiser),a mismatch is normal: recipes filter by length and label
 thanushs25_tamil,espnet_status,superseded,needs_decision,user,candidate,user,"Conversation with the maintainer, 2026-10-14",Former reason: provenance_unclear; superseded by thanushs25_tamil/espnet_status/04
 thanushs25_tamil,espnet_status,superseded,needs_decision,user,excluded,measured,https://huggingface.co/datasets/Thanushs25/tamil-audio-emotion-classification,superseded by thanushs25_tamil/espnet_status/03
 thanushs25_tamil,espnet_status,superseded,needs_decision,user,excluded,project_doc,new_corpora/99_final_report.md,superseded by thanushs25_tamil/espnet_status/02
@@ -567,9 +568,9 @@ thorsten,n_utt_reported vs n_files_release_measured,reported_vs_release_measured
 thorsten,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,2400,see evidence,2399,measured,recipes.n_total (thorsten),a mismatch is normal: recipes filter by length and label
 tumavic,espnet_status,superseded,deferred,user,excluded,primary,https://www.isca-archive.org/interspeech_2010/schuller10b_interspeech.pdf,superseded by tumavic/espnet_status/02
 tumavic,status_reason_codes,superseded,access_no_direct_download,user,labels_not_discrete_emotion,primary,https://www.isca-archive.org/interspeech_2010/schuller10b_interspeech.pdf,superseded by tumavic/status_reason_codes/02
-turevdb,license_spdx,conflicting,conflicting,project_doc,CC-BY-NC-ND-4.0,primary,https://github.com/Xeonen/TurEV-DB,
-turevdb,license_spdx,conflicting,conflicting,project_doc,GPL-3.0-only,primary,https://github.com/Xeonen/TurEV-DB,
-turevdb,license_spdx,superseded,conflicting,project_doc,LicenseRef-other,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Other; replaced by conflicting because sources disagree
+turevdb,license_spdx,conflicting,CC-BY-NC-ND-4.0,user,GPL-3.0-only,primary,https://github.com/Xeonen/TurEV-DB,
+turevdb,license_spdx,superseded,CC-BY-NC-ND-4.0,user,LicenseRef-other,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Other; replaced by conflicting because sources disagree
+turevdb,license_spdx,superseded,CC-BY-NC-ND-4.0,user,conflicting,project_doc,new_corpora/15_turevdb_report.md,The README (CC BY-NC-ND 4.0) and the LICENSE file (GPL v3) disagree; which is intended is unverified (report §2); superseded by turevdb/license_spdx/05
 ua_ser,espnet_status,superseded,implemented,measured,candidate,measured,https://huggingface.co/api/datasets/OlhaHavryliuk/UA-SER,superseded by ua_ser/espnet_status/02
 ua_ser,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,952,see evidence,951,measured,recipes.n_total (ua_ser),a mismatch is normal: recipes filter by length and label
 ua_ser,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,The origin of the source audio is not stated; superseded by ua_ser/status_reason_codes/02
@@ -605,6 +606,7 @@ waxal_wolof_ser,status_reason_codes,superseded,labels_not_discrete_emotion,measu
 whiser,espnet_status,superseded,implemented,measured,candidate,measured,https://www.lab-msp.com/WHiSER/,superseded by whiser/espnet_status/02
 whiser,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,5427,see evidence,4407,measured,recipes.n_total (whiser),a mismatch is normal: recipes filter by length and label
 whiser,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the additions of 2026-10-13,Handling of the missing license and speaker information not decided; superseded by whiser/status_reason_codes/02
+ysed,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,71,see evidence,68,measured,n_speakers_measured,
 yue_emo_speech,espnet_status,superseded,candidate,user,excluded,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,The card does not describe how labels were made; superseded by yue_emo_speech/espnet_status/02
 yue_emo_speech,status_reason_codes,superseded,unexamined,user,labels_automatic,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by yue_emo_speech/status_reason_codes/02
 zamai_pashto,languages,superseded,pus;fas;eng,primary,pus,project_doc,new_corpora/99_final_report.md,superseded by zamai_pashto/languages/02

@@ -56,7 +56,7 @@ These `datasets` columns need an evidence row for their value: `languages`,
 `n_utt_reported`, `hours_reported`, `n_speakers_reported`, `n_files_release_measured`,
 `n_speakers_measured`, `labels_discrete_reported`, `dimensional_attributes`, `espnet_status`,
 `status_reason_codes`, `label_source`, `label_verification`, `speech_production`, `label_basis`,
-`text_emotion_link`, `lexical_confound`, `paralinguistic_signal`, `human_accuracy`, `material_rights`.
+`text_emotion_link`, `lexical_confound`, `paralinguistic_signal`, `human_accuracy`, `source_rights`.
 
 Columns that never take evidence rows (adding one is a validation error): URL columns
 (`source_url`, `download_url`, `paper_url`, `doi`) and text columns (`status_note`, `notes`,
@@ -223,10 +223,13 @@ hand-written ones:
   source reports it (or counts it from a distributed rating file, `measured`); the note gives
   listeners, clips, options and chance. Kappa is not accuracy; it goes in the `label_verification`
   evidence note. Never average different tests.
-- `material_rights` (`own_recordings` / `author_claim_only` / `permission_stated` / `unknown`) and
-  `material_rights_note`: rights in the underlying audio, separate from `license_spdx`. Clips from
-  films, TV or web videos with only the authors' claim are `author_claim_only`; `license_class`
-  keeps describing the stated license. Empty = not examined.
+- `source_rights` (`own` / `cleared` / `asserted` / `unaddressed` / `unknown`) and
+  `source_rights_note`: rights in the underlying audio, separate from `license_spdx`.
+  `asserted` = third-party material and the creators only say it is fine; `unaddressed` = the
+  sources say nothing; `unknown` = the origin is unknown; `cleared` = a quotable statement about
+  the source material (a card's CC license is not one). `asserted`, `unaddressed` and `unknown` need a
+  rights check and appear in `views/source_rights_check.csv`. `license_class` is never changed
+  by it. Empty = not examined.
 - `LicenseRef-golos-public` (class `open`): Golos/Dusha public license, a CC BY-SA 4.0 reworking
   without a non-commercial clause (maintainer's decision).
 - `shares_sentences_with` (relations): some spoken sentences, or their translations, are the same

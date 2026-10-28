@@ -18,7 +18,7 @@ This guide explains the database from scratch. Terms are explained before they a
 | Awaiting a decision | 9 |
 | Deferred | 35 |
 | Excluded (with reasons) | 46 |
-| Evidence rows (sources of values) | 4,511 |
+| Evidence rows (sources of values) | 4,654 |
 | Language codes | 70 |
 
 ### 1.3 What makes it useful
@@ -150,13 +150,13 @@ ser_dataset_db/
 | File | One row is | Rows |
 |---|---|---|
 | [datasets.csv](../data/datasets.csv) | **one dataset** (the central table) | 322 |
-| [evidence.csv](../data/evidence.csv) | the **source** of one value in datasets | 4,511 |
+| [evidence.csv](../data/evidence.csv) | the **source** of one value in datasets | 4,654 |
 | [aliases.csv](../data/aliases.csv) | another name (official name, short name, former name, recipe name, ...) | 375 |
 | [relations.csv](../data/relations.csv) | a relation between datasets | 44 |
 | [recipes.csv](../data/recipes.csv) | one ESPnet recipe | 94 |
 | [recipe_labels.csv](../data/recipe_labels.csv) | recipe x label | 601 |
 | [benchmark_membership.csv](../data/benchmark_membership.csv) | a recipe that is part of a benchmark | 16 |
-| [annotations.csv](../data/annotations.csv) | dataset x annotation other than emotion labels (transcripts, speaker traits, dialogue acts, ...) | 256 (`aesdd` 1, `albemo` 3, `anad` 3, `ased` 4, `asvpesd` 4, `audiospeechsentiment` 2, `banglaser` 4, `banspemo` 2, `baser` 4, `berst` 9, `brytserc` 1, `cafe` 2, `casia` 3, `cbesd` 5, `cremad` 4, `csemotions` 2, `dailytalk` 6, `dusha` 4, `eesc` 6, `emis` 5, `emns` 4, `emodb` 4, `emogator` 2, `emospeech_keywords` 5, `emotale` 5, `emotional_ema` 8, `emouerj` 3, `emovoicedb` 5, `emozionalmente` 4, `enterface05` 4, `eseravd` 3, `harper_valley_bank` 19, `hikia` 1, `hindi_ser_vishlb` 4, `iemocap` 4, `iesc` 4, `javanese_ser_2black0` 3, `jlcorpus` 4, `jnv` 6, `jvnv` 4, `kbes` 1, `legov2` 6, `lithuanian_emotion_db` 2, `maserc` 4, `mav` 3, `mcaespps` 2, `mderma` 1, `meld` 5, `msppodcast` 2, `quechua` 3, `rml_emotion` 4, `saraiki_ser` 1, `ses_ed` 3, `ses_sd` 3, `sitb_osed` 4, `subesco` 5, `syntact` 6, `talromur3` 5, `telugu_emotion_kaggle` 4, `thorsten` 2, `ua_ser` 6, `usc_emo_mri` 5, `utemo` 4, `whiser` 5; more to come) |
+| [annotations.csv](../data/annotations.csv) | dataset x annotation other than emotion labels (transcripts, speaker traits, dialogue acts, ...) | 274 (`aesdd` 1, `albemo` 3, `anad` 3, `ased` 4, `asvpesd` 4, `audiospeechsentiment` 2, `banglamood` 1, `banglaser` 4, `banspemo` 2, `baser` 4, `berst` 9, `brytserc` 1, `cafe` 2, `casia` 3, `cbesd` 5, `cremad` 4, `csemotions` 2, `dailytalk` 6, `dusha` 4, `eesc` 6, `emis` 5, `emns` 4, `emodb` 4, `emogator` 2, `emospeech_keywords` 5, `emotale` 5, `emotional_ema` 8, `emouerj` 3, `emovoicedb` 5, `emozionalmente` 4, `enterface05` 4, `eseravd` 3, `harper_valley_bank` 19, `hikia` 1, `hindi_ser_vishlb` 4, `iemocap` 4, `iesc` 4, `javanese_ser_2black0` 3, `jlcorpus` 4, `jnv` 6, `jvnv` 4, `kbes` 1, `legov2` 6, `lithuanian_emotion_db` 2, `maserc` 4, `mav` 3, `mcaespps` 2, `mderma` 1, `meld` 5, `mesd` 1, `mess` 1, `msppodcast` 2, `quechua` 3, `ravdess` 1, `resd` 3, `rml_emotion` 4, `saraiki_ser` 1, `ses_ed` 3, `ses_sd` 3, `shemo` 2, `sitb_osed` 4, `subesco` 5, `syntact` 6, `talromur3` 5, `telugu_emotion_kaggle` 4, `thaiser` 3, `thorsten` 2, `ua_ser` 6, `urduser` 2, `usc_emo_mri` 5, `utemo` 4, `vivae` 2, `whiser` 5, `ysed` 2; more to come) |
 
 Relations by type: `contains` 15, `distinct_from` (similar names, different datasets) 12, `subset_of` 7, `possibly_same_as` (suspected identity) 4, `version_of` 3. Of the 94 recipes, 93 are for a single corpus (`single_corpus`) and 1 combines several corpora (`multi_corpus`).
 
@@ -216,7 +216,7 @@ They can differ, and the difference itself is useful information. Recipes drop v
 - `label_basis_note`: details of how labels were made (5.4.1)
 - `lexical_confound_note`: what the `lexical_confound` value is based on (5.4.2)
 - `paralinguistic_signal_note`: what was listened to and what was heard (5.4.3)
-- `human_accuracy_note`, `material_rights_note`: the listening test design; what the authors say about the material rights (5.4.4)
+- `human_accuracy_note`, `source_rights_note`: the listening test design; what the authors say about the material rights (5.4.4)
 - `notes`: our own notes
 - `sheet_notes`, `annotations_other`, `sheet_verified`: **original text of the spreadsheet**; never changed. `sheet_verified` is the spreadsheet's mark for "checked by hand" and is not used for decisions
 
@@ -274,7 +274,7 @@ Labels can be correct and the voice still carry little of the labelled expressio
 - Fill it only from listening (a listening test, or the maintainer's listening, recorded with `source_type=user`). The number of clips heard and what was heard go in `paralinguistic_signal_note`. A light listening (a few clips) is recorded as such and is not a measurement.
 - Empty means not judged. Do not fill it from the label source, the recording setting or the sentences.
 
-### 5.4.4 Human accuracy and rights in the material (`human_accuracy`, `material_rights`)
+### 5.4.4 Human accuracy and rights in the material (`human_accuracy`, `source_rights`)
 
 `human_accuracy` is a number between 0 and 1: how often listeners recognised the labelled emotion in a listening test. It gives a reference level for what a model can be expected to reach. Record it only when a source reports it (a paper, the release, or a count over a distributed rating file, `source_type=measured`).
 
@@ -282,17 +282,20 @@ Labels can be correct and the voice still carry little of the labelled expressio
 - Agreement statistics (Fleiss' kappa and so on) are not accuracy. Put them in the note of the `label_verification` evidence.
 - Do not average different tests into one number; record the one the source reports and describe it.
 
-`material_rights` records who holds the rights in the underlying audio, separately from `license_spdx`:
+`source_rights` records the rights in the underlying audio, separately from `license_spdx` / `license_class` (which keep describing the license the authors state):
 
 | Value | Meaning |
 |---|---|
-| `own_recordings` | The authors recorded the material themselves |
-| `author_claim_only` | The material is third-party (films, TV, web videos, public media) and the authors only assert that sharing is allowed (fair use, an ethics statement, terms of service) |
-| `permission_stated` | The authors state that the owners gave permission, or the material is under a stated open license |
-| `unknown` | Not examined or not stated |
+| `own` | The creators recorded the material themselves (not third-party material) |
+| `cleared` | Third-party material whose use is shown to be fine by a quotable statement in a paper or an official page (permission, an open license of the source, or a legal opinion); quote it in the evidence |
+| `asserted` | Third-party material; the creators say it is fine to share (ethics statement, fair use, terms of service, no copyright issue) but give no checkable basis: no list of sources, per-item licenses or permissions |
+| `unaddressed` | Third-party material and the sources say nothing about the rights in it |
+| `unknown` | The origin of the material itself is unknown |
 
-- `license_class` is not changed by `material_rights`: it keeps describing the license the authors state. Read both before use. `material_rights_note` quotes or paraphrases what the authors say (with the place) and lists what is missing (sources, per-item licenses, consent, non-commercial statement).
-- Empty means not examined.
+- `asserted`, `unaddressed` and `unknown` mean the material needs a rights check. `views/source_rights_check.csv` lists these datasets; the project keeps the matching hold list outside the repository.
+- A license shown on a card or record (CC BY and so on) does not make the material `cleared`: it covers the compilers' own work. `cleared` needs a statement about the source material.
+- `cleared` through a fair-use opinion (MELD) is recorded as stated; say in the note that a fair-use opinion is not a license for commercial use.
+- `source_rights_note` quotes or paraphrases what the sources say (with the place) and lists what is missing (sources, per-item licenses, consent, non-commercial statement). Empty means not examined.
 
 ### 5.5 Annotations other than emotion labels (`annotations.csv`)
 
@@ -329,11 +332,11 @@ A value alone cannot answer "is that really true?" later. So every important val
 | `is_canonical` | `true` for the evidence of the current value; exactly one per dataset x column |
 | `status` | `current` / `superseded` (replaced by newer evidence) / `conflicting` (sources disagree, undecided) |
 
-Columns that need evidence: `languages`, `recording_context`, `vocal_content`, `license_spdx`, `access_method`, `raw_audio_available`, `n_utt_reported`, `hours_reported`, `n_speakers_reported`, `n_files_release_measured`, `n_speakers_measured`, `labels_discrete_reported`, `dimensional_attributes`, `espnet_status`, `status_reason_codes`, `label_source`, `label_verification`, `speech_production`, `label_basis`, `text_emotion_link`, `lexical_confound`, `paralinguistic_signal`, `human_accuracy`, `material_rights`.
+Columns that need evidence: `languages`, `recording_context`, `vocal_content`, `license_spdx`, `access_method`, `raw_audio_available`, `n_utt_reported`, `hours_reported`, `n_speakers_reported`, `n_files_release_measured`, `n_speakers_measured`, `labels_discrete_reported`, `dimensional_attributes`, `espnet_status`, `status_reason_codes`, `label_source`, `label_verification`, `speech_production`, `label_basis`, `text_emotion_link`, `lexical_confound`, `paralinguistic_signal`, `human_accuracy`, `source_rights`.
 
 ### 6.2.1 Recording when something was checked
 
-Every one of the 4,511 evidence rows has a date checked (`checked_on`, 2026-10-10 to 10-26). But **the date is when the source was looked at**, not a guarantee that it is still true; distribution pages and licenses can change. For rows from the original spreadsheet (`source_type`=`sheet`), the date 2026-10-12 is the import date, not a date when anyone checked the content.
+Every one of the 4,654 evidence rows has a date checked (`checked_on`, 2026-10-10 to 10-28). But **the date is when the source was looked at**, not a guarantee that it is still true; distribution pages and licenses can change. For rows from the original spreadsheet (`source_type`=`sheet`), the date 2026-10-12 is the import date, not a date when anyone checked the content.
 
 The overview [views/datasets_wide.csv](../views/datasets_wide.csv) adds these columns per dataset (generated from the evidence):
 
@@ -358,7 +361,7 @@ Strongest first.
 | 5 | `secondary` | third-party statements (Kaggle, re-upload pages, surveys) |
 | 6 | `sheet` | values of the original spreadsheet |
 
-The 4,511 evidence rows by source type: primary 2,261, measured 576, sheet 572, project_doc 463, user 366, secondary 273.
+The 4,654 evidence rows by source type: primary 2,276, project_doc 587, measured 579, sheet 572, user 367, secondary 273.
 
 ### 6.4 When a new fact appears
 
@@ -445,13 +448,13 @@ Every row except `implemented` has reason codes (`;`-separated). The most common
 | Class | Meaning | Count |
 |---|---|---|
 | `open` | permissive (attribution at most): CC-BY, CC0, MIT, ... | 98 |
-| `noncommercial` | non-commercial only (CC-BY-NC, ...) | 38 |
+| `noncommercial` | non-commercial only (CC-BY-NC, ...) | 39 |
 | `research_only` | custom terms limited to academic or research use | 55 |
 | `restricted` | restricted or paid | 12 |
 | `other` | other than the above | 4 |
 | `none_stated` | no license statement found | 24 |
 | `unknown` | examined but undecidable | 24 |
-| `conflicting` | sources disagree | 3 |
+| `conflicting` | sources disagree | 2 |
 | (empty) | not investigated yet | 64 |
 
 ### 9.3 Four names for custom terms
@@ -487,13 +490,13 @@ Terms not covered by SPDX get one of these, with the gist of the wording in `lic
 
 Roughly, `direct_download`, `free_account_required` and `gated_click_through` are "available now", and `request_form_or_email` and `signed_agreement` "need a procedure".
 
-## 11. Current figures (2026-10-27)
+## 11. Current figures (2026-10-28)
 
 ### 11.1 Status x license class
 
 | Status | open | NC | research | restricted | other | none stated | unknown | conflicting | not checked | total |
 |---|---|---|---|---|---|---|---|---|---|---|
-| implemented | 64 | 10 | 11 | 1 | 1 | 4 | 1 | 1 | 0 | 93 |
+| implemented | 64 | 11 | 11 | 1 | 1 | 4 | 1 | 0 | 0 | 93 |
 | candidate | 19 | 23 | 34 | 9 | 3 | 14 | 4 | 2 | 31 | 139 |
 | needs_decision | 2 | 1 | 2 | 2 | 0 | 1 | 1 | 0 | 0 | 9 |
 | deferred | 0 | 1 | 7 | 0 | 0 | 1 | 7 | 0 | 19 | 35 |
@@ -513,7 +516,7 @@ What this shows:
 - **Raw audio**: distributed 186, not distributed 29, unknown 4, not checked 103.
 - **Datasets with dimensional emotion labels**: 30.
 - **Training and evaluation of ESPnet recipes**: done (`evaluated`) 17, not run (`not_run`) 77.
-- **Speech production and label basis** (filled during recipe review): filled for 77 datasets; perceived labels (`perceived`, alone or with others) on 26.
+- **Speech production and label basis** (filled during recipe review): filled for 97 datasets; perceived labels (`perceived`, alone or with others) on 31.
 - **Intent and dialogue-act data**: 12 (SLURP, Timers and Such, Fluent Speech Commands, Snips/Sonos, STOP, MInDS-14, Speech-MASSIVE, ITALIC, DIHANA, SpokenWOZ, Harper Valley Bank, SLUE-HVB).
 - **Coverage check**: all 28 corpora in Table I of the MSP-Podcast paper (arXiv 2509.09791v1) are included.
 
@@ -535,7 +538,7 @@ Open [views/datasets_wide.csv](../views/datasets_wide.csv) in Excel, Google Shee
 - `text_emotion_link`, `lexical_confound`, `lexical_confound_note`
 - `paralinguistic_signal`, `paralinguistic_signal_note`
 - `human_accuracy`, `human_accuracy_note`
-- `material_rights`, `material_rights_note`
+- `source_rights`, `source_rights_note`
 - `recipe`, `n_total_recipe`, `hours_total_recipe`: for implemented datasets, the recipe and its measured count and hours
 - `common7_covered`, `common7_missing`: which of the common 7 labels (angry, disgust, fear, happy, neutral, sad, surprise) the data has or lacks
 - `benchmarks`: benchmarks it belongs to
@@ -651,7 +654,7 @@ MSP-Podcast is for internal non-commercial research only, may not be redistribut
 
 ### 16.1 Outline (1-2 minutes)
 
-1. **What was built**: an evidence-backed ledger of SER and paralinguistic datasets. 322 datasets, 4,511 evidence rows.
+1. **What was built**: an evidence-backed ledger of SER and paralinguistic datasets. 322 datasets, 4,654 evidence rows.
 2. **Why**: to stop re-researching dataset conditions (license, access) every time, and to keep the basis for cross-corpus evaluation.
 3. **Reliability measures**: each value records its source, date and checker, and a machine checks the rules. Unknowns are written as unknown, never filled by guessing.
 4. **Link to the implementation**: the 94 ESPnet recipes are measured into the DB, distinguishing implemented, candidate and deferred datasets (the recipe branch keeps growing, and new recipes are registered after review; 15.1).
@@ -667,7 +670,7 @@ MSP-Podcast is for internal non-commercial research only, may not be redistribut
 | Question | Answer |
 |---|---|
 | Why CSV instead of the original spreadsheet? | A spreadsheet cannot hold sources, history or checks. CSV under git keeps the change history and can be checked by machine |
-| Is the information correct? | Every value has a source and a date; primary sources (papers, official pages) are the largest group (2,261 of 4,511 evidence rows). Final human checks (licenses) are still in progress |
+| Is the information correct? | Every value has a source and a date; primary sources (papers, official pages) are the largest group (2,276 of 4,654 evidence rows). Final human checks (licenses) are still in progress |
 | How was it collected? | 238 datasets from surveys, hosting services and the literature were added to the spreadsheet's 84; added rows were checked in primary sources |
 | How many can be implemented? | 93 implemented, 139 candidates. Of the candidates, 11 are openly licensed and available now |
 | What was excluded? | 46. Only for clear reasons: no audio, redistribution of existing data, duplicates, regional restrictions, etc. Effort and size are not reasons |
