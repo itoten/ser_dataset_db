@@ -184,16 +184,17 @@ emofilm,access_method,superseded,signed_agreement,primary,request_form_or_email,
 emofilm,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/7665999,superseded by emofilm/espnet_status/04
 emofilm,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by emofilm/espnet_status/03
 emofilm,languages,superseded,eng;ita;spa,primary,mul,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Multilingual; superseded by emofilm/languages/02
-emofilm,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,project_doc,nc_candidates_20261010.md,superseded by emofilm/status_reason_codes/03
-emofilm,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://zenodo.org/records/7665999,superseded by emofilm/status_reason_codes/04
+emofilm,status_reason_codes,superseded,access_signed_agreement,project_doc,access_request_form_or_email,project_doc,nc_candidates_20261010.md,superseded by emofilm/status_reason_codes/03
+emofilm,status_reason_codes,superseded,access_signed_agreement,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by emofilm/status_reason_codes/05
 emogator,espnet_status,superseded,implemented,measured,candidate,measured,https://github.com/fredbuhl/EmoGator,superseded by emogator/espnet_status/02
 emogator,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-13 survey,superseded by emogator/status_reason_codes/02
 emolah,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Malay/Emolah.md,Not confirmed in a primary source; superseded by emolah/espnet_status/02
 emolah,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Malay/Emolah.md,Not confirmed in a primary source; superseded by emolah/status_reason_codes/02
 emomatchspanishdb,espnet_status,superseded,candidate,user,excluded,primary,https://figshare.com/articles/dataset/EmoMatchSpanishDB/14215850,superseded by emomatchspanishdb/espnet_status/04
 emomatchspanishdb,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by emomatchspanishdb/espnet_status/03
-emomatchspanishdb,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://figshare.com/articles/dataset/EmoMatchSpanishDB/14215850,superseded by emomatchspanishdb/status_reason_codes/04
-emomatchspanishdb,status_reason_codes,superseded,unexamined,user,no_raw_audio_features_only,project_doc,nc_candidates_20261010.md,superseded by emomatchspanishdb/status_reason_codes/03
+emomatchspanishdb,license_spdx,superseded,LicenseRef-custom-research-only,primary,MIT,primary,https://figshare.com/articles/dataset/EmoMatchSpanishDB/14215850,The deposit has feature zips and EMOMATCHAgreement.docx; the audio is not in the deposit; superseded by emomatchspanishdb/license_spdx/04
+emomatchspanishdb,status_reason_codes,superseded,access_signed_agreement,project_doc,no_raw_audio_features_only,project_doc,nc_candidates_20261010.md,superseded by emomatchspanishdb/status_reason_codes/03
+emomatchspanishdb,status_reason_codes,superseded,access_signed_agreement,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by emomatchspanishdb/status_reason_codes/05
 emonetvoice,espnet_status,superseded,candidate,user,excluded,primary,https://arxiv.org/abs/2506.09827,superseded by emonetvoice/espnet_status/02
 emonetvoice,n_utt_reported,superseded,12600,primary,4700,primary,https://arxiv.org/abs/2506.09827,Count of Bench (approximate); superseded by emonetvoice/n_utt_reported/02
 emonetvoice,status_reason_codes,superseded,unexamined,user,synthetic_or_tts,primary,https://arxiv.org/abs/2506.09827,superseded by emonetvoice/status_reason_codes/02
@@ -322,7 +323,7 @@ iesc,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_datas
 iiitsaint_emomdb,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Malayalam/IIITSaint-EmoMDB.md,Not confirmed in a primary source; superseded by iiitsaint_emomdb/espnet_status/02
 iiitsaint_emomdb,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Malayalam/IIITSaint-EmoMDB.md,Not confirmed in a primary source; superseded by iiitsaint_emomdb/status_reason_codes/02
 indemovis,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/8255783,superseded by indemovis/espnet_status/02
-indemovis,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://zenodo.org/records/8255783,superseded by indemovis/status_reason_codes/02
+indemovis,status_reason_codes,superseded,access_request_form_or_email,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_request_form_or_email; superseded by indemovis/status_reason_codes/03
 indianenglish,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1000,see evidence,747,measured,n_files_release_measured,
 indianenglish,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1000,see evidence,695,measured,recipes.n_total (indianenglish),a mismatch is normal: recipes filter by length and label
 indonesian_fahmi2020,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Indonesian/Fahmi_et_al_2020.md,Not confirmed in a primary source; superseded by indonesian_fahmi2020/espnet_status/02
@@ -356,8 +357,7 @@ kemdy20,status_reason_codes,superseded,access_request_form_or_email,project_doc,
 kemocon,dimensional_attributes,superseded,arousal;valence,primary,valence;arousal,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,"Original spreadsheet value: valence, arousal; superseded by kemocon/dimensional_attributes/02"
 kemocon,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/3931963,superseded by kemocon/espnet_status/04
 kemocon,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by kemocon/espnet_status/03
-kemocon,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://zenodo.org/records/3931963,superseded by kemocon/status_reason_codes/04
-kemocon,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,project_doc,nc_candidates_20261010.md,superseded by kemocon/status_reason_codes/03
+kemocon,status_reason_codes,superseded,access_request_form_or_email,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_request_form_or_email; superseded by kemocon/status_reason_codes/05
 kmser,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Malayalam/KMSER.md,Not confirmed in a primary source; superseded by kmser/espnet_status/02
 kmser,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Malayalam/KMSER.md,Not confirmed in a primary source; superseded by kmser/status_reason_codes/02
 ksuemotions,espnet_status,superseded,candidate,user,excluded,primary,https://catalog.ldc.upenn.edu/LDC2017S12,superseded by ksuemotions/espnet_status/03
