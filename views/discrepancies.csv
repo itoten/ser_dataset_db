@@ -475,6 +475,8 @@ msppodcast,n_speakers_reported,superseded,3641,primary,3929,sheet,sheet_import/2
 msppodcast,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,3641,see evidence,3713,measured,n_speakers_measured,
 msppodcast,n_utt_reported,superseded,267905,primary,264705,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,superseded by msppodcast/n_utt_reported/02
 msppodcast,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,267905,see evidence,212808,measured,recipes.n_total (msppodcast),a mismatch is normal: recipes filter by length and label
+multidialog,labels_discrete_reported,conflicting,neutral;happy;fear;angry;disgusting;surprising;sad,primary,neutral;happy;surprise;sad;disgust;fear;angry;curious,primary,https://huggingface.co/datasets/IVLLab/MultiDialog,'Curious to dive deeper' (43% of utterances) is a separate value in the metadata; the paper (section 3.2) merges it with Neutral because the two are acted the same way
+multidialog,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,187859,see evidence,187854,measured,n_files_release_measured,
 multidialog,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,first review 2026-10-28 (see status_note),Replaces the provisional reason from the spreadsheet import with the first-review result; superseded by multidialog/status_reason_codes/03
 multidialog,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,Unknown license type not resolved; superseded by multidialog/status_reason_codes/02
 musecar,access_method,superseded,signed_agreement,primary,request_form_or_email,primary,https://zenodo.org/records/4651164,Whether a EULA is needed is unverified; superseded by musecar/access_method/02
@@ -520,6 +522,11 @@ qlean_japanese_emotional,espnet_status,superseded,candidate,user,excluded,primar
 qlean_japanese_emotional,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://huggingface.co/api/datasets/qleandataset/speech-emotional-speech,superseded by qlean_japanese_emotional/status_reason_codes/02
 quechua,n_speakers_reported,superseded,6,project_doc,7,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,superseded by quechua/n_speakers_reported/02
 ramas,espnet_status,superseded,deferred,user,excluded,measured,https://neurodatalab.com/,superseded by ramas/espnet_status/02
+rasa,hours_reported,superseded,280.4,user,1145.44,primary,https://huggingface.co/datasets/ai4bharat/Rasa,The total includes neutral and style speech; the share of the six Ekman emotions is not given per emotion on the card; superseded by rasa/hours_reported/02
+rasa,labels_discrete_reported,superseded,happy;anger;fear;surprise;disgust;sad,primary,neutral;anger;disgust;fear;happiness;sadness;surprise,primary,https://arxiv.org/abs/2407.14056,superseded by rasa/labels_discrete_reported/02
+rasa,languages,superseded,asm;ben;brx;doi;guj;hin;kan;kas;kok;mai;mal;mni;mar;nep;ory;pan;san;sat;snd;tam;tel;urd,primary,asm;ben;kan;mal;mar;nep;tam;pan;tel;san;urd;kas;snd,primary,https://huggingface.co/api/datasets/ai4bharat/Rasa,superseded by rasa/languages/02
+rasa,n_utt_reported,superseded,124842,user,640950,primary,https://huggingface.co/datasets/ai4bharat/Rasa,superseded by rasa/n_utt_reported/02
+rasa,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,124842,see evidence,640946,measured,n_files_release_measured,
 rasa,status_reason_codes,superseded,access_gated,project_doc,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by rasa/status_reason_codes/02
 ravdess,human_accuracy,superseded,0.62,primary,0.60,project_doc,"Livingstone and Russo 2018, PLOS ONE",taken from the project review report; the paper was not re-read in this update; audio-only is the figure that matches this recipe; superseded by ravdess/human_accuracy/02
 recanvo,espnet_status,superseded,implemented,measured,candidate,measured,https://zenodo.org/records/5786860/files/ReCANVo.zip,superseded by recanvo/espnet_status/03
