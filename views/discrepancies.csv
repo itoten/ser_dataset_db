@@ -13,9 +13,11 @@ affectspeech,status_reason_codes,superseded,redistribution_of_existing_corpus;ac
 affectspeech,status_reason_codes,superseded,redistribution_of_existing_corpus;access_signed_agreement,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by affectspeech/status_reason_codes/03
 afrikaans_se,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Afrikaans/AfrikaansSE.md,Not confirmed in a primary source; superseded by afrikaans_se/espnet_status/02
 afrikaans_se,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Afrikaans/AfrikaansSE.md,Not confirmed in a primary source; superseded by afrikaans_se/status_reason_codes/02
-akace,status_reason_codes,superseded,first_review_done,project_doc,NA,project_doc,first review 2026-10-28 (see status_note),Replaces the provisional reason from the spreadsheet import with the first-review result; superseded by akace/status_reason_codes/03
-akace,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,first review 2026-10-28 (see status_note),Replaces the provisional reason from the spreadsheet import; superseded by akace/status_reason_codes/04
-akace,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by akace/status_reason_codes/02
+akace,espnet_status,superseded,implemented,measured,candidate,primary,https://github.com/sasudavid/AkaCE,superseded by akace/espnet_status/02
+akace,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,6162,see evidence,6102,measured,recipes.n_total (akace),a mismatch is normal: recipes filter by length and label
+akace,status_reason_codes,superseded,NA,measured,first_review_done,project_doc,audit 2026-10-28 (see status_note),Replaces the code 'unexamined' left after the first review; superseded by akace/status_reason_codes/05
+akace,status_reason_codes,superseded,NA,measured,unexamined,project_doc,first review 2026-10-28 (see status_note),Replaces the provisional reason from the spreadsheet import; superseded by akace/status_reason_codes/04
+akace,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by akace/status_reason_codes/02
 amigos,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by amigos/espnet_status/03
 amigos,status_reason_codes,superseded,unexamined,user,access_signed_agreement,project_doc,nc_candidates_20261010.md,superseded by amigos/status_reason_codes/03
 anad,espnet_status,superseded,deferred,user,candidate,measured,https://www.kaggle.com/datasets/suso172/arabic-natural-audio-dataset,superseded by anad/espnet_status/02
@@ -229,7 +231,10 @@ emotional_ema,n_utt_reported vs n_files_release_measured,reported_vs_release_mea
 emotional_ema,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,680,see evidence,953,measured,recipes.n_total (emotional_ema),a mismatch is normal: recipes filter by length and label
 emotional_ema,status_reason_codes,superseded,NA,measured,host_unreachable,project_doc,new_corpora/99_final_report.md,superseded by emotional_ema/status_reason_codes/02
 emotional_ema,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,Handling of recordings made for EMA not decided; superseded by emotional_ema/status_reason_codes/03
-emotiontalk,status_reason_codes,superseded,access_gated,project_doc,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by emotiontalk/status_reason_codes/02
+emotiontalk,espnet_status,superseded,implemented,measured,candidate,primary,https://huggingface.co/datasets/BAAI/Emotiontalk,superseded by emotiontalk/espnet_status/02
+emotiontalk,status_reason_codes,superseded,NA,measured,access_gated,project_doc,first review 2026-10-28 (see status_note),Replaces the provisional reason from the spreadsheet import with the first-review result; superseded by emotiontalk/status_reason_codes/03
+emotiontalk,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by emotiontalk/status_reason_codes/02
+emotiontalk,text_emotion_link,superseded,dialogue_script,primary,unscripted,primary,https://arxiv.org/abs/2505.23018,superseded by emotiontalk/text_emotion_link/02
 emotiontts_open_db,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/emotiontts/emotiontts_open_db/tree/master/Dataset/SpeechCorpus/Emotional,superseded by emotiontts_open_db/espnet_status/02
 emotiontts_open_db,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,6000,see evidence,300,measured,n_files_release_measured,
 emotiontts_open_db,status_reason_codes,superseded,access_request_form_or_email,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_request_form_or_email; superseded by emotiontts_open_db/status_reason_codes/03

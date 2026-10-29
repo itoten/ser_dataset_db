@@ -13,12 +13,12 @@ This guide explains the database from scratch. Terms are explained before they a
 | Item | Value |
 |---|---|
 | Datasets registered | **322** (84 from the original spreadsheet + 238 added later) |
-| Implemented in ESPnet | 93 |
-| Candidates for implementation | 138 |
+| Implemented in ESPnet | 95 |
+| Candidates for implementation | 136 |
 | Awaiting a decision | 9 |
 | Deferred | 35 |
 | Excluded (with reasons) | 47 |
-| Evidence rows (sources of values) | 4,942 |
+| Evidence rows (sources of values) | 4,957 |
 | Language codes | 70 |
 
 ### 1.3 What makes it useful
@@ -150,15 +150,15 @@ ser_dataset_db/
 | File | One row is | Rows |
 |---|---|---|
 | [datasets.csv](../data/datasets.csv) | **one dataset** (the central table) | 322 |
-| [evidence.csv](../data/evidence.csv) | the **source** of one value in datasets | 4,942 |
+| [evidence.csv](../data/evidence.csv) | the **source** of one value in datasets | 4,957 |
 | [aliases.csv](../data/aliases.csv) | another name (official name, short name, former name, recipe name, ...) | 375 |
 | [relations.csv](../data/relations.csv) | a relation between datasets | 44 |
-| [recipes.csv](../data/recipes.csv) | one ESPnet recipe | 94 |
-| [recipe_labels.csv](../data/recipe_labels.csv) | recipe x label | 601 |
+| [recipes.csv](../data/recipes.csv) | one ESPnet recipe | 96 |
+| [recipe_labels.csv](../data/recipe_labels.csv) | recipe x label | 617 |
 | [benchmark_membership.csv](../data/benchmark_membership.csv) | a recipe that is part of a benchmark | 16 |
-| [annotations.csv](../data/annotations.csv) | dataset x annotation other than emotion labels (transcripts, speaker traits, dialogue acts, ...) | 274 (`aesdd` 1, `albemo` 3, `anad` 3, `ased` 4, `asvpesd` 4, `audiospeechsentiment` 2, `banglamood` 1, `banglaser` 4, `banspemo` 2, `baser` 4, `berst` 9, `brytserc` 1, `cafe` 2, `casia` 3, `cbesd` 5, `cremad` 4, `csemotions` 2, `dailytalk` 6, `dusha` 4, `eesc` 6, `emis` 5, `emns` 4, `emodb` 4, `emogator` 2, `emospeech_keywords` 5, `emotale` 5, `emotional_ema` 8, `emouerj` 3, `emovoicedb` 5, `emozionalmente` 4, `enterface05` 4, `eseravd` 3, `harper_valley_bank` 19, `hikia` 1, `hindi_ser_vishlb` 4, `iemocap` 4, `iesc` 4, `javanese_ser_2black0` 3, `jlcorpus` 4, `jnv` 6, `jvnv` 4, `kbes` 1, `legov2` 6, `lithuanian_emotion_db` 2, `maserc` 4, `mav` 3, `mcaespps` 2, `mderma` 1, `meld` 5, `mesd` 1, `mess` 1, `msppodcast` 2, `quechua` 3, `ravdess` 1, `resd` 3, `rml_emotion` 4, `saraiki_ser` 1, `ses_ed` 3, `ses_sd` 3, `shemo` 2, `sitb_osed` 4, `subesco` 5, `syntact` 6, `talromur3` 5, `telugu_emotion_kaggle` 4, `thaiser` 3, `thorsten` 2, `ua_ser` 6, `urduser` 2, `usc_emo_mri` 5, `utemo` 4, `vivae` 2, `whiser` 5, `ysed` 2; more to come) |
+| [annotations.csv](../data/annotations.csv) | dataset x annotation other than emotion labels (transcripts, speaker traits, dialogue acts, ...) | 282 (`aesdd` 1, `akace` 2, `albemo` 3, `anad` 3, `ased` 4, `asvpesd` 4, `audiospeechsentiment` 2, `banglamood` 1, `banglaser` 4, `banspemo` 2, `baser` 4, `berst` 9, `brytserc` 1, `cafe` 2, `casia` 3, `cbesd` 5, `cremad` 4, `csemotions` 2, `dailytalk` 6, `dusha` 4, `eesc` 6, `emis` 5, `emns` 4, `emodb` 4, `emogator` 2, `emospeech_keywords` 5, `emotale` 5, `emotional_ema` 8, `emotiontalk` 6, `emouerj` 3, `emovoicedb` 5, `emozionalmente` 4, `enterface05` 4, `eseravd` 3, `harper_valley_bank` 19, `hikia` 1, `hindi_ser_vishlb` 4, `iemocap` 4, `iesc` 4, `javanese_ser_2black0` 3, `jlcorpus` 4, `jnv` 6, `jvnv` 4, `kbes` 1, `legov2` 6, `lithuanian_emotion_db` 2, `maserc` 4, `mav` 3, `mcaespps` 2, `mderma` 1, `meld` 5, `mesd` 1, `mess` 1, `msppodcast` 2, `quechua` 3, `ravdess` 1, `resd` 3, `rml_emotion` 4, `saraiki_ser` 1, `ses_ed` 3, `ses_sd` 3, `shemo` 2, `sitb_osed` 4, `subesco` 5, `syntact` 6, `talromur3` 5, `telugu_emotion_kaggle` 4, `thaiser` 3, `thorsten` 2, `ua_ser` 6, `urduser` 2, `usc_emo_mri` 5, `utemo` 4, `vivae` 2, `whiser` 5, `ysed` 2; more to come) |
 
-Relations by type: `contains` 15, `distinct_from` (similar names, different datasets) 12, `subset_of` 7, `possibly_same_as` (suspected identity) 4, `version_of` 3. Of the 94 recipes, 93 are for a single corpus (`single_corpus`) and 1 combines several corpora (`multi_corpus`).
+Relations by type: `contains` 15, `distinct_from` (similar names, different datasets) 12, `subset_of` 7, `possibly_same_as` (suspected identity) 4, `version_of` 3. Of the 96 recipes, 95 are for a single corpus (`single_corpus`) and 1 combines several corpora (`multi_corpus`).
 
 ### 4.3 How the tables connect
 
@@ -336,7 +336,7 @@ Columns that need evidence: `languages`, `recording_context`, `vocal_content`, `
 
 ### 6.2.1 Recording when something was checked
 
-Every one of the 4,942 evidence rows has a date checked (`checked_on`, 2026-10-10 to 10-28). But **the date is when the source was looked at**, not a guarantee that it is still true; distribution pages and licenses can change. For rows from the original spreadsheet (`source_type`=`sheet`), the date 2026-10-12 is the import date, not a date when anyone checked the content.
+Every one of the 4,957 evidence rows has a date checked (`checked_on`, 2026-10-10 to 10-29). But **the date is when the source was looked at**, not a guarantee that it is still true; distribution pages and licenses can change. For rows from the original spreadsheet (`source_type`=`sheet`), the date 2026-10-12 is the import date, not a date when anyone checked the content.
 
 The overview [views/datasets_wide.csv](../views/datasets_wide.csv) adds these columns per dataset (generated from the evidence):
 
@@ -361,7 +361,7 @@ Strongest first.
 | 5 | `secondary` | third-party statements (Kaggle, re-upload pages, surveys) |
 | 6 | `sheet` | values of the original spreadsheet |
 
-The 4,942 evidence rows by source type: primary 2,470, project_doc 681, measured 579, sheet 572, user 367, secondary 273.
+The 4,957 evidence rows by source type: primary 2,477, project_doc 681, measured 585, sheet 572, user 369, secondary 273.
 
 ### 6.4 When a new fact appears
 
@@ -401,8 +401,8 @@ Which ones a column accepts is fixed in the `nulls` column of `schema/columns.cs
 
 | Status | Meaning | Count |
 |---|---|---|
-| `implemented` | an ESPnet recipe exists | 93 |
-| `candidate` | candidate for addition: has audio and labels usable for classification, and can probably be obtained | 138 |
+| `implemented` | an ESPnet recipe exists | 95 |
+| `candidate` | candidate for addition: has audio and labels usable for classification, and can probably be obtained | 136 |
 | `needs_decision` | only the project maintainer can decide (cost, terms of use, application wording) | 9 |
 | `deferred` | not confirmed: the distributor does not respond, the access route is unknown, etc. | 35 |
 | `excluded` | not used, for a clear reason | 47 |
@@ -490,14 +490,14 @@ Terms not covered by SPDX get one of these, with the gist of the wording in `lic
 
 Roughly, `direct_download`, `free_account_required` and `gated_click_through` are "available now", and `request_form_or_email` and `signed_agreement` "need a procedure".
 
-## 11. Current figures (2026-10-28)
+## 11. Current figures (2026-10-29)
 
 ### 11.1 Status x license class
 
 | Status | open | NC | research | restricted | other | none stated | unknown | conflicting | not checked | total |
 |---|---|---|---|---|---|---|---|---|---|---|
-| implemented | 64 | 11 | 11 | 1 | 1 | 4 | 1 | 0 | 0 | 93 |
-| candidate | 19 | 23 | 33 | 9 | 3 | 14 | 4 | 2 | 31 | 138 |
+| implemented | 64 | 12 | 12 | 1 | 1 | 4 | 1 | 0 | 0 | 95 |
+| candidate | 19 | 22 | 32 | 9 | 3 | 14 | 4 | 2 | 31 | 136 |
 | needs_decision | 2 | 1 | 2 | 2 | 0 | 1 | 1 | 0 | 0 | 9 |
 | deferred | 0 | 1 | 7 | 0 | 0 | 1 | 7 | 0 | 19 | 35 |
 | excluded | 13 | 3 | 2 | 0 | 0 | 4 | 11 | 0 | 14 | 47 |
@@ -506,8 +506,8 @@ Roughly, `direct_download`, `free_account_required` and `gated_click_through` ar
 
 What this shows:
 
-- Of the 93 implemented datasets, 64 have open terms (`open`).
-- Of the 138 candidates, 11 are `open` and `direct_download` (available now): the first group to implement next.
+- Of the 95 implemented datasets, 64 have open terms (`open`).
+- Of the 136 candidates, 11 are `open` and `direct_download` (available now): the first group to implement next.
 
 ### 11.2 Properties of the data
 
@@ -515,7 +515,7 @@ What this shows:
 - **Languages**: 70 codes. English (eng) 89, Mandarin (cmn) 36, Korean (kor) 16, Spanish (spa) and German (deu) 14 each, French (fra) 12, Japanese (jpn) 11, multilingual (mul) 16.
 - **Raw audio**: distributed 186, not distributed 29, unknown 4, not checked 103.
 - **Datasets with dimensional emotion labels**: 30.
-- **Training and evaluation of ESPnet recipes**: done (`evaluated`) 17, not run (`not_run`) 77.
+- **Training and evaluation of ESPnet recipes**: done (`evaluated`) 17, not run (`not_run`) 79.
 - **Speech production and label basis** (filled during recipe review): filled for 126 datasets; perceived labels (`perceived`, alone or with others) on 47.
 - **Intent and dialogue-act data**: 12 (SLURP, Timers and Such, Fluent Speech Commands, Snips/Sonos, STOP, MInDS-14, Speech-MASSIVE, ITALIC, DIHANA, SpokenWOZ, Harper Valley Bank, SLUE-HVB).
 - **Coverage check**: all 28 corpora in Table I of the MSP-Podcast paper (arXiv 2509.09791v1) are included.
@@ -622,7 +622,7 @@ Most license evidence was gathered by Claude or automated processing (`checked_b
 
 ### 14.2 How
 
-Instead of one bulk check, **each time a recipe is implemented and reviewed, the maintainer looks at that dataset's license page**. The result is added as an evidence row with `checked_by=user`. Current license evidence checked by the maintainer exists for 6 datasets (`emodb`, `emotale`, `iesc`, `recanvo`, `uftbesd`, `visec`).
+Instead of one bulk check, **each time a recipe is implemented and reviewed, the maintainer looks at that dataset's license page**. The result is added as an evidence row with `checked_by=user`. Current license evidence checked by the maintainer exists for 8 datasets (`akace`, `emodb`, `emotale`, `emotiontalk`, `iesc`, `recanvo`, `uftbesd`, `visec`).
 
 ## 15. Limitations (honestly)
 
@@ -654,10 +654,10 @@ MSP-Podcast is for internal non-commercial research only, may not be redistribut
 
 ### 16.1 Outline (1-2 minutes)
 
-1. **What was built**: an evidence-backed ledger of SER and paralinguistic datasets. 322 datasets, 4,942 evidence rows.
+1. **What was built**: an evidence-backed ledger of SER and paralinguistic datasets. 322 datasets, 4,957 evidence rows.
 2. **Why**: to stop re-researching dataset conditions (license, access) every time, and to keep the basis for cross-corpus evaluation.
 3. **Reliability measures**: each value records its source, date and checker, and a machine checks the rules. Unknowns are written as unknown, never filled by guessing.
-4. **Link to the implementation**: the 94 ESPnet recipes are measured into the DB, distinguishing implemented, candidate and deferred datasets (the recipe branch keeps growing, and new recipes are registered after review; 15.1).
+4. **Link to the implementation**: the 96 ESPnet recipes are measured into the DB, distinguishing implemented, candidate and deferred datasets (the recipe branch keeps growing, and new recipes are registered after review; 15.1).
 5. **Next**: human license checks with each recipe, investigating the 35 deferred rows, surveying uncovered areas.
 
 ### 16.2 Things to show
@@ -670,9 +670,9 @@ MSP-Podcast is for internal non-commercial research only, may not be redistribut
 | Question | Answer |
 |---|---|
 | Why CSV instead of the original spreadsheet? | A spreadsheet cannot hold sources, history or checks. CSV under git keeps the change history and can be checked by machine |
-| Is the information correct? | Every value has a source and a date; primary sources (papers, official pages) are the largest group (2,470 of 4,942 evidence rows). Final human checks (licenses) are still in progress |
+| Is the information correct? | Every value has a source and a date; primary sources (papers, official pages) are the largest group (2,477 of 4,957 evidence rows). Final human checks (licenses) are still in progress |
 | How was it collected? | 238 datasets from surveys, hosting services and the literature were added to the spreadsheet's 84; added rows were checked in primary sources |
-| How many can be implemented? | 93 implemented, 138 candidates. Of the candidates, 11 are openly licensed and available now |
+| How many can be implemented? | 95 implemented, 136 candidates. Of the candidates, 11 are openly licensed and available now |
 | What was excluded? | 47. Only for clear reasons: no audio, redistribution of existing data, duplicates, regional restrictions, etc. Effort and size are not reasons |
 | Can the licenses be trusted? | The DB records the terms the sources state; it is not a legal interpretation. Read the original before use. Human checks are added one by one with each recipe |
 | What next? | Human checks with each recipe, investigating the 35 deferred rows, adding uncovered areas (dialogue acts, intent data in other languages, ...) |
