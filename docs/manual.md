@@ -132,7 +132,7 @@ A license states how far data may be used. The explanations here are general, no
 ```
 ser_dataset_db/
 ├── README.md                  summary for developers (read first by AI assistants)
-├── docs/manual.md             this document
+├── docs/manual.md, manual.ja.md  this guide (English, and its Japanese translation)
 ├── data/                      * authoritative data (8 CSV files)
 ├── schema/                    column definitions, allowed values, table keys
 ├── views/                     copies for reading (generated from data/)
@@ -736,4 +736,4 @@ MSP-Podcast is for internal non-commercial research only, may not be redistribut
 
 ### 18.2 Updating this document
 
-The figures are as of the date in section 11. When the DB changes, recount `data/*.csv` (the `doc_counts.py` script of the maintenance skill does this) and update the text.
+The figures are as of the date in section 11. When the DB changes, recount `data/*.csv` (the `doc_counts.py` script of the maintenance skill does this) and update the text. The Japanese translation, [manual.ja.md](manual.ja.md), has the same structure; **always update both files together** (never only one).

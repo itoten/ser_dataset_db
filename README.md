@@ -15,7 +15,7 @@ A database of speech emotion recognition (SER) datasets, kept as CSV files under
 | The source of a value | `data/evidence.csv`, filtered by `dataset_id` and `field` |
 | Meaning, type and allowed nulls of a column | `schema/columns.csv`; allowed values in `schema/enums.csv`; table keys in `schema/tables.csv` |
 | Measured values of ESPnet recipes | `data/recipes.csv`, `measurements/<recipe>.json` |
-| A beginner's guide with a glossary | `docs/manual.md` |
+| A beginner's guide with a glossary | `docs/manual.md` (English), `docs/manual.ja.md` (Japanese translation; always update both together) |
 | A detailed investigation of one dataset (with verification; referenced from evidence `via`) | `reports/<date>_<dataset_id>_db_update.md` |
 | How to maintain the DB (workflow for Claude Code) | `.claude/skills/maintaining-ser-dataset-db/SKILL.md` |
 

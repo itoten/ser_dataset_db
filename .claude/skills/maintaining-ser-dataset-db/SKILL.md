@@ -167,10 +167,11 @@ python3 <skill dir>/scripts/doc_counts.py --write
 python3 tools/validate.py                          # fix every error, then run the loop again
 ```
 
-- `doc_counts.py` rewrites every count quoted in `README.md` and `docs/manual.md`. A `MISSING`
+- `doc_counts.py` rewrites every count quoted in `README.md` and `docs/manual.md`, and checks `docs/manual.ja.md` against it. A `MISSING`
   line means a sentence was reworded: update the rule in the script or fix the text by hand.
   The exclusion breakdown it prints must be compared by hand.
-- If you changed a rule or added a code or column, update the README and manual text too.
+- `docs/manual.ja.md` is the Japanese translation of `docs/manual.md`. Whenever you edit the English manual, make the same change in the Japanese one in the same commit (never only one). `doc_counts.py` updates only the section 11 date there and prints a `PARITY` line for every section whose numbers (two digits or more) differ from the English manual; fix those by hand.
+- If you changed a rule or added a code or column, update the README and manual text (both languages) too.
 
 Commit one dataset (or one checking session) per commit. Stage files by name, never with
 `git add -A` or `git add .`. Write the message in English: what was wrong or uncertain, what the

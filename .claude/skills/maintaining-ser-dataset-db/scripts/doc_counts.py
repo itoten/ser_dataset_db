@@ -1,4 +1,6 @@
 """Recompute every count quoted in README.md and docs/manual.md from data/*.csv and rewrite it.
+The Japanese translation docs/manual.ja.md is not rewritten; it is checked against the English
+manual by number (PARITY lines) and its section 11 date is updated.
 
     python3 <skill dir>/scripts/doc_counts.py            # dry run: print each change
     python3 <skill dir>/scripts/doc_counts.py --write    # apply the changes
@@ -94,6 +96,11 @@ def stats():
     s["perceived"] = sum("perceived" in x["label_basis"].split(";") for x in d)
     s["user_lic"] = sorted({x["dataset_id"] for x in e if x["field"] == "license_spdx"
                             and x["checked_by"] == "user" and x["is_canonical"] == "true"})
+    s["rc_status"] = collections.Counter(
+        ((c if c in ("unexamined", "first_review_done", "not_individually_checked") else
+          "access_*" if c.startswith("access_") else "labels_*" if c.startswith("labels_") else "others"),
+         x["espnet_status"]) for x in d if x["espnet_status"] != "implemented"
+        for c in x["status_reason_codes"].split(";") if c)
     s["excl_codes"] = collections.Counter(c for x in d if x["espnet_status"] == "excluded"
                                           for c in x["status_reason_codes"].split(";"))
     return s
@@ -160,7 +167,6 @@ def rules(s, today):
         # manual 8
         *[("docs/manual.md", rf"(\| `{k}` \| {re.escape(v)}[^|]*\| )\d+ \|", rf"\g<1>{st[k]} |") for k, v in STATUS_DESC.items()],
         ("docs/manual.md", r"The \d+ excluded rows break down as", f"The {st['excluded']} excluded rows break down as"),
-        ("docs/manual.md", r"\(implementation not yet considered\), on \d+ rows", f"(implementation not yet considered), on {s['unexamined']} rows"),
         # manual 9.2 / 10
         *[("docs/manual.md", rf"(\| `{c}` \| {re.escape(v)}[^|]*\| )\d+ \|", rf"\g<1>{s['lic'][c]} |") for c, v in LIC_DESC.items()],
         ("docs/manual.md", r"(\| \(empty\) \| not investigated yet \| )\d+ \|", rf"\g<1>{s['lic']['']} |"),
@@ -203,13 +209,42 @@ def rules(s, today):
     return R
 
 
+def numbers(chunk):
+    """Numbers of two or more digits (small counters are worded differently in Japanese)."""
+    chunk = re.sub(r"\]\([^)]*\)", "]", chunk)  # link targets
+    chunk = re.sub(r"`[^`]*`", "", chunk)  # code spans: ids, commands, hashes
+    chunk = re.sub(r"\((?:see )?\d+(?:\.\d+)*\)", "", chunk)  # section cross-references
+    return sorted(x for x in re.findall(r"\d+(?:,\d{3})*(?:\.\d+)?", chunk) if len(x.replace(",", "")) >= 2)
+
+
+def sections(text):
+    out, key, buf = {}, "top", []
+    for line in text.splitlines():
+        m = re.match(r"#{2,3} (\d+(?:\.\d+)*)\.? ", line)
+        if m:
+            out[key] = "\n".join(buf)
+            key, buf = m.group(1), []
+        else:
+            buf.append(line)
+    out[key] = "\n".join(buf)
+    return out
+
+
+def parity(en, ja):
+    """Sections of the Japanese manual whose numbers differ from the English manual."""
+    a, b = sections(en), sections(ja)
+    bad = [k for k in sorted(set(a) | set(b), key=lambda k: [int(x) for x in k.split(".")] if k != "top" else [])
+           if k not in a or k not in b or numbers(a[k]) != numbers(b[k])]
+    return bad
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--today", default=date.today().isoformat())
     a = ap.parse_args()
     s = stats()
-    texts = {p: (ROOT / p).read_text(encoding="utf-8") for p in ["README.md", "docs/manual.md"]}
+    texts = {p: (ROOT / p).read_text(encoding="utf-8") for p in ["README.md", "docs/manual.md", "docs/manual.ja.md"]}
     missing = 0
     for path, pat, rep in rules(s, a.today):
         ms = list(re.finditer(pat, texts[path]))
@@ -222,8 +257,19 @@ def main():
             if after != m.group(0):
                 print(f"CHANGE   {path}: {m.group(0)[:90]}\n      -> {after[:90]}")
         texts[path] = re.sub(pat, rep, texts[path])
+    ja_date = r"## 11\. 現在の数値\(\d{4}-\d{2}-\d{2}\)"
+    if re.search(ja_date, texts["docs/manual.ja.md"]):
+        texts["docs/manual.ja.md"] = re.sub(ja_date, f"## 11. 現在の数値({a.today})", texts["docs/manual.ja.md"])
+    else:
+        print("MISSING  docs/manual.ja.md: section 11 heading")
+        missing += 1
+    bad = parity(texts["docs/manual.md"], texts["docs/manual.ja.md"])
+    for k in bad:
+        print(f"PARITY   manual section {k}: numbers differ between manual.md and manual.ja.md; update both")
+    missing += bool(bad)
     print("\nCheck by hand (manual 8.2 exclusion breakdown, reason code -> rows):",
           dict(s["excl_codes"].most_common()))
+    print("Check by hand (manual 8.4 reason-code table, (code group, status) -> rows):", dict(sorted(s["rc_status"].items())))
     if a.write:
         for p, t in texts.items():
             (ROOT / p).write_text(t, encoding="utf-8")
