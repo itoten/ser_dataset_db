@@ -90,7 +90,7 @@ python3 tools/db.py get|set|add|fmt   # view or edit one row
 
 ## Current state (2026-10-30)
 
-322 datasets (84 from the spreadsheet, 238 added later). `implemented` 95, `candidate` 136, `deferred` 35, `needs_decision` 9, `excluded` 47. All 28 corpora in Table I of the MSP-Podcast paper (arXiv 2509.09791v1) are included.
+322 datasets (84 from the spreadsheet, 238 added later). `implemented` 101, `candidate` 134, `deferred` 34, `needs_decision` 7, `excluded` 46. All 28 corpora in Table I of the MSP-Podcast paper (arXiv 2509.09791v1) are included.
 
 - The survey of 2026-10-14 added 158 datasets from surveys (SuperKogito's list, EmoBox, KuralHub, etc.) and searches of Hugging Face, Zenodo, Kaggle, Mendeley, figshare and GitHub.
 - On the same day the status policy was revised and all excluded rows were reviewed (see "Status policy" below).
@@ -112,7 +112,7 @@ Known caveats:
 - Not confirmed in primary sources:
   - 28 rows supported only by KuralHub (a third-party survey). Their `status_note` says access was not checked in a primary source. Many are data from older papers, listed as "on request".
   - Rows that could not be checked because the distributor did not respond, etc.: `amigos` (HTTP 503 on 2026-10-14), `casia` (no connection), `cheavd`, `belfast`, `emotion_origlia2010`, `usoms`, `eyase`.
-  - The `deferred` rows (35).
+  - The `deferred` rows (34).
 - Disagreements between published and measured values are in `views/discrepancies.csv`. Recipes filter by length and label, so `n_utt_reported` and the recipe's count often differ, which is normal.
 
 ## License

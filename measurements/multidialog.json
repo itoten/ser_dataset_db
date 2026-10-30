@@ -1,0 +1,80 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 187852
+ },
+ "duration_sec": {
+  "max": 298.432,
+  "median": 5.717,
+  "min": 0.021
+ },
+ "hours_total": 325.4485,
+ "measured_on": "2026-10-30",
+ "n_total": 187852,
+ "output_env_var": "MULTIDIALOG_OUTPUT",
+ "recipe": "multidialog",
+ "splits": {
+  "test": {
+   "hours": 32.3997,
+   "labels": {
+    "angry": 82,
+    "disgust": 166,
+    "fear": 51,
+    "happy": 2799,
+    "neutral": 12220,
+    "sad": 195,
+    "surprise": 2628
+   },
+   "manifest_sha1": "d166540bcd6e9fe9b9f5352469175e1527db6657",
+   "n": 18141,
+   "n_filtered": 18124,
+   "over_30s": 3,
+   "under_0.5s": 21,
+   "unique_utt": 18141
+  },
+  "train": {
+   "hours": 262.1968,
+   "labels": {
+    "angry": 700,
+    "disgust": 1124,
+    "fear": 818,
+    "happy": 23779,
+    "neutral": 98676,
+    "sad": 2060,
+    "surprise": 24485
+   },
+   "manifest_sha1": "2f66ce0e914d7400a729e600d9303e7398d9ca54",
+   "n": 151642,
+   "n_filtered": 151561,
+   "over_30s": 22,
+   "under_0.5s": 121,
+   "unique_utt": 151642
+  },
+  "valid": {
+   "hours": 30.852,
+   "labels": {
+    "angry": 121,
+    "disgust": 149,
+    "fear": 54,
+    "happy": 2885,
+    "neutral": 11433,
+    "sad": 233,
+    "surprise": 3194
+   },
+   "manifest_sha1": "da83dd898cdc940d330fba71d69a5daf0a541204",
+   "n": 18069,
+   "n_filtered": 18048,
+   "over_30s": 0,
+   "under_0.5s": 33,
+   "unique_utt": 18069
+  }
+ },
+ "token_list": [
+  "neutral",
+  "surprise",
+  "happy",
+  "sad",
+  "disgust",
+  "fear",
+  "angry"
+ ]
+}

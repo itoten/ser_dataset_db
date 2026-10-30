@@ -1,0 +1,72 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 193
+ },
+ "duration_sec": {
+  "max": 140.497,
+  "median": 16.11,
+  "min": 2.691
+ },
+ "hours_total": 1.0933,
+ "measured_on": "2026-10-30",
+ "n_total": 193,
+ "output_env_var": "THANUSHS25_TAMIL_OUTPUT",
+ "recipe": "thanushs25_tamil",
+ "splits": {
+  "test": {
+   "hours": 0.1976,
+   "labels": {
+    "angry": 10,
+    "fear": 6,
+    "happy": 8,
+    "neutral": 5,
+    "sad": 10
+   },
+   "manifest_sha1": "d97d494c859c2f3a442729703c30d84133f889dc",
+   "n": 39,
+   "n_filtered": null,
+   "over_30s": 5,
+   "under_0.5s": 0,
+   "unique_utt": 39
+  },
+  "train": {
+   "hours": 0.783,
+   "labels": {
+    "angry": 34,
+    "fear": 19,
+    "happy": 28,
+    "neutral": 19,
+    "sad": 34
+   },
+   "manifest_sha1": "832e42735e4170b11370f26b11b97614a615355f",
+   "n": 134,
+   "n_filtered": 115,
+   "over_30s": 19,
+   "under_0.5s": 0,
+   "unique_utt": 134
+  },
+  "valid": {
+   "hours": 0.1127,
+   "labels": {
+    "angry": 5,
+    "fear": 3,
+    "happy": 4,
+    "neutral": 3,
+    "sad": 5
+   },
+   "manifest_sha1": "139ff33c0b9f4eae6c610b9d1bd58d2f23508a63",
+   "n": 20,
+   "n_filtered": 15,
+   "over_30s": 5,
+   "under_0.5s": 0,
+   "unique_utt": 20
+  }
+ },
+ "token_list": [
+  "sad",
+  "angry",
+  "happy",
+  "neutral",
+  "fear"
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 250
+ },
+ "duration_sec": {
+  "max": 3.945,
+  "median": 2.586,
+  "min": 1.698
+ },
+ "hours_total": 0.1839,
+ "measured_on": "2026-10-30",
+ "n_total": 250,
+ "output_env_var": "AUDIOSPEECHSENTIMENT_OUTPUT",
+ "recipe": "audiospeechsentiment",
+ "splits": {
+  "test": {
+   "hours": 0.035,
+   "labels": {
+    "negative": 17,
+    "neutral": 16,
+    "positive": 16
+   },
+   "manifest_sha1": "0c295a616ba4f5d7e014255b985b8770fa0e45b9",
+   "n": 49,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 49
+  },
+  "train": {
+   "hours": 0.1304,
+   "labels": {
+    "negative": 61,
+    "neutral": 57,
+    "positive": 58
+   },
+   "manifest_sha1": "bd7d53318e103c845a859dc001a5bf02d8c35e92",
+   "n": 176,
+   "n_filtered": 176,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 176
+  },
+  "valid": {
+   "hours": 0.0184,
+   "labels": {
+    "negative": 9,
+    "neutral": 8,
+    "positive": 8
+   },
+   "manifest_sha1": "6ae50c1d3c1c0d6ead89f00884152dd0e9b684eb",
+   "n": 25,
+   "n_filtered": 25,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 25
+  }
+ },
+ "token_list": [
+  "negative",
+  "positive",
+  "neutral"
+ ]
+}

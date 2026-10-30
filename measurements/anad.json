@@ -1,0 +1,64 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 566
+ },
+ "duration_sec": {
+  "max": 1.0,
+  "median": 1.0,
+  "min": 0.052
+ },
+ "hours_total": 0.1315,
+ "measured_on": "2026-10-30",
+ "n_total": 566,
+ "output_env_var": "ANAD_OUTPUT",
+ "recipe": "anad",
+ "splits": {
+  "test": {
+   "hours": 0.0239,
+   "labels": {
+    "angry": 81,
+    "happy": 31,
+    "surprise": 2
+   },
+   "manifest_sha1": "cbc2a3099fa077ed37d045a0813a03760ee1bb8f",
+   "n": 114,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 32,
+   "unique_utt": 114
+  },
+  "train": {
+   "hours": 0.0978,
+   "labels": {
+    "angry": 283,
+    "happy": 108,
+    "surprise": 5
+   },
+   "manifest_sha1": "4a095762f2e6b7608b574e929087b9e0cc740a76",
+   "n": 396,
+   "n_filtered": 349,
+   "over_30s": 0,
+   "under_0.5s": 49,
+   "unique_utt": 396
+  },
+  "valid": {
+   "hours": 0.0098,
+   "labels": {
+    "angry": 40,
+    "happy": 15,
+    "surprise": 1
+   },
+   "manifest_sha1": "611cbf813c8a7b949aecff592095a04251f4de7f",
+   "n": 56,
+   "n_filtered": 33,
+   "over_30s": 0,
+   "under_0.5s": 23,
+   "unique_utt": 56
+  }
+ },
+ "token_list": [
+  "angry",
+  "happy",
+  "surprise"
+ ]
+}

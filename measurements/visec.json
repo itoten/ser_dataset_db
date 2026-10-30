@@ -1,0 +1,68 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 4999
+ },
+ "duration_sec": {
+  "max": 24.704,
+  "median": 1.92,
+  "min": 1.0
+ },
+ "hours_total": 2.9575,
+ "measured_on": "2026-10-30",
+ "n_total": 4999,
+ "output_env_var": "VISEC_OUTPUT",
+ "recipe": "visec",
+ "splits": {
+  "test": {
+   "hours": 0.7826,
+   "labels": {
+    "angry": 167,
+    "happy": 277,
+    "neutral": 407,
+    "sad": 212
+   },
+   "manifest_sha1": "800c5e5cf5756d7dbdf2d5c3572d46833278ad70",
+   "n": 1063,
+   "n_filtered": null,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 1063
+  },
+  "train": {
+   "hours": 1.8626,
+   "labels": {
+    "angry": 1160,
+    "happy": 635,
+    "neutral": 938,
+    "sad": 689
+   },
+   "manifest_sha1": "353f5af41ba4e51799d53545942db454ec9c1d0b",
+   "n": 3422,
+   "n_filtered": 3422,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 3422
+  },
+  "valid": {
+   "hours": 0.3123,
+   "labels": {
+    "angry": 138,
+    "happy": 61,
+    "neutral": 160,
+    "sad": 155
+   },
+   "manifest_sha1": "41a63d81021aae0cf8d2abd340c1693e17b24d0d",
+   "n": 514,
+   "n_filtered": 514,
+   "over_30s": 0,
+   "under_0.5s": 0,
+   "unique_utt": 514
+  }
+ },
+ "token_list": [
+  "angry",
+  "neutral",
+  "sad",
+  "happy"
+ ]
+}

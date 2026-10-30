@@ -1,0 +1,120 @@
+{
+ "audio_format": {
+  "16000Hz/1ch/PCM_16": 640806
+ },
+ "duration_sec": {
+  "max": 332.602,
+  "median": 5.54,
+  "min": 0.0
+ },
+ "hours_total": 1145.311,
+ "measured_on": "2026-10-30",
+ "n_total": 640806,
+ "output_env_var": "RASA_OUTPUT",
+ "recipe": "rasa",
+ "splits": {
+  "test": {
+   "hours": 115.0168,
+   "labels": {
+    "alexa": 1331,
+    "anger": 2147,
+    "bb": 676,
+    "book": 5577,
+    "conv": 12460,
+    "digi": 538,
+    "disgust": 2013,
+    "fear": 2073,
+    "happy": 2198,
+    "indic": 1287,
+    "news": 4176,
+    "proper_noun": 10401,
+    "sad": 2006,
+    "sangrah": 184,
+    "surprise": 2050,
+    "umang": 546,
+    "wiki": 14427
+   },
+   "manifest_sha1": "613ecee045f00b930a84992beaa2ae7cd325f555",
+   "n": 64090,
+   "n_filtered": 64031,
+   "over_30s": 58,
+   "under_0.5s": 254,
+   "unique_utt": 64090
+  },
+  "train": {
+   "hours": 927.3045,
+   "labels": {
+    "alexa": 10764,
+    "anger": 17387,
+    "bb": 5484,
+    "book": 45188,
+    "conv": 100907,
+    "digi": 4359,
+    "disgust": 16308,
+    "fear": 16778,
+    "happy": 17800,
+    "indic": 10407,
+    "news": 33846,
+    "proper_noun": 84237,
+    "sad": 16258,
+    "sangrah": 1488,
+    "surprise": 16590,
+    "umang": 4401,
+    "wiki": 116839
+   },
+   "manifest_sha1": "bda6402c36def11130f88129c75521d7271b5e39",
+   "n": 519041,
+   "n_filtered": 518544,
+   "over_30s": 486,
+   "under_0.5s": 2097,
+   "unique_utt": 519041
+  },
+  "valid": {
+   "hours": 102.9896,
+   "labels": {
+    "alexa": 1197,
+    "anger": 1933,
+    "bb": 609,
+    "book": 5023,
+    "conv": 11211,
+    "digi": 485,
+    "disgust": 1813,
+    "fear": 1861,
+    "happy": 1977,
+    "indic": 1158,
+    "news": 3760,
+    "proper_noun": 9360,
+    "sad": 1806,
+    "sangrah": 165,
+    "surprise": 1844,
+    "umang": 489,
+    "wiki": 12984
+   },
+   "manifest_sha1": "429ed2aaf60368d7d4c0f8402e583d6cbd6c3ad9",
+   "n": 57675,
+   "n_filtered": 57620,
+   "over_30s": 54,
+   "under_0.5s": 264,
+   "unique_utt": 57675
+  }
+ },
+ "token_list": [
+  "wiki",
+  "conv",
+  "proper_noun",
+  "book",
+  "news",
+  "happy",
+  "anger",
+  "fear",
+  "surprise",
+  "disgust",
+  "sad",
+  "alexa",
+  "indic",
+  "bb",
+  "umang",
+  "digi",
+  "sangrah"
+ ]
+}
