@@ -17,6 +17,7 @@ A database of speech emotion recognition (SER) datasets, kept as CSV files under
 | Measured values of ESPnet recipes | `data/recipes.csv`, `measurements/<recipe>.json` |
 | A beginner's guide with a glossary | `docs/manual.md` (English), `docs/manual.ja.md` (Japanese translation; always update both together) |
 | A detailed investigation of one dataset (with verification; referenced from evidence `via`) | `reports/<date>_<dataset_id>_db_update.md` |
+| How the DB is being designed: open questions, decisions with their reasons, and the record of each discussion | `docs/design/agenda.md`, `docs/design/archive/` |
 | How to maintain the DB (workflow for Claude Code) | `.claude/skills/maintaining-ser-dataset-db/SKILL.md` |
 
 ## Tables

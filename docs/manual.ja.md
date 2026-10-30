@@ -727,6 +727,7 @@ MSP-Podcast は内部の非商用研究のみで、再配布は不可、Lotfian 
 | ファイル | 内容 |
 |---|---|
 | README.md | 開発者向けの要約: 表・規約・根拠の規則・現在の状態 |
+| [design/agenda.md](design/agenda.md) | 設計の議論: 未決の問いと、背景・理由つきの決定。議論ごとの記録は [design/archive/](design/archive/) |
 | schema/columns.csv | 全列の型と意味 |
 | schema/enums.csv | 許される値(状態・理由・ライセンス・入手方法など) |
 | schema/tables.csv | 各表のファイルとキー |

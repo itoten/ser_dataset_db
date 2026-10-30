@@ -724,6 +724,7 @@ MSP-Podcast is for internal non-commercial research only, may not be redistribut
 | File | Content |
 |---|---|
 | [README.md](../README.md) | summary for developers: tables, conventions, evidence rules, current state |
+| [design/agenda.md](design/agenda.md) | design discussion: open questions, and decisions with their background and reasons; each discussion is recorded in [design/archive/](design/archive/) |
 | [schema/columns.csv](../schema/columns.csv) | types and meanings of all columns |
 | [schema/enums.csv](../schema/enums.csv) | allowed values (status, reasons, licenses, access, ...) |
 | [schema/tables.csv](../schema/tables.csv) | file and key of each table |
