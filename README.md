@@ -88,7 +88,7 @@ python3 tools/db.py get|set|add|fmt   # view or edit one row
 - Corpora built for TTS are included if they have emotion labels. Datasets without audio (text only, features only) are kept as `excluded` to record what was found.
 - When two rows turn out to be the same, mark one `excluded` (`duplicate_entry`) and link them with `possibly_same_as` in `relations`. IDs are never deleted.
 
-## Current state (2026-10-29)
+## Current state (2026-10-30)
 
 322 datasets (84 from the spreadsheet, 238 added later). `implemented` 95, `candidate` 136, `deferred` 35, `needs_decision` 9, `excluded` 47. All 28 corpora in Table I of the MSP-Podcast paper (arXiv 2509.09791v1) are included.
 

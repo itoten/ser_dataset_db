@@ -418,7 +418,7 @@ Exclusion is allowed only when:
 - it cannot be obtained because of nationality or residence restrictions
 - distribution is not allowed
 
-The 47 excluded rows break down as: text only 11, paper only 9, redistribution of an existing corpus 9, regional restriction 7, features only 6, and others (unidentifiable, duplicate, code only, not distributable, unsuitable labels, distributor unreachable, ...).
+The 47 excluded rows break down as: text only 11, redistribution of an existing corpus 10, paper only 9, regional restriction 7, features only 6, and others (unsuitable labels, unidentifiable, duplicate, code only, not distributable, distributor unreachable, ...). A row can have more than one reason.
 
 ### 8.3 Not reasons to exclude (important)
 
@@ -434,7 +434,18 @@ Such datasets stay `candidate`, with caveats in `status_note`. The aim is not to
 
 ### 8.4 Reason codes (`status_reason_codes`)
 
-Every row except `implemented` has reason codes (`;`-separated). The most common is `unexamined` (implementation not yet considered), on 89 rows. The list and meanings are the `reason_code` rows of [schema/enums.csv](../schema/enums.csv).
+Every row except `implemented` has reason codes (`;`-separated). The list and meanings are the `reason_code` rows of [schema/enums.csv](../schema/enums.csv). A row can have more than one code, so the counts below add up to more than the number of rows.
+
+| Code | Meaning | candidate | needs_decision | deferred | excluded |
+|---|---|---|---|---|---|
+| `unexamined` | implementation not yet considered | 74 | 0 | 15 | 0 |
+| `first_review_done` | primary sources read, no blocking reason found; use not yet decided | 7 | 0 | 1 | 0 |
+| `not_individually_checked` | provisional reason from the spreadsheet import | 0 | 0 | 2 | 0 |
+| `access_*` | application, signature, gate, payment, no direct download or regional restriction | 49 | 4 | 9 | 8 |
+| `labels_*` | labels are not categorical emotions, are styles, are automatic, or follow the text | 9 | 1 | 0 | 5 |
+| others | no audio, redistribution, duplicate, unidentifiable, unreachable, origin unclear, not distributable, links only | 1 | 5 | 8 | 44 |
+
+`first_review_done` marks only the rows whose first review found no blocking reason. Rows whose review found one carry that reason instead, so the number of reviewed rows cannot be read from this code alone; the review is recorded in `status_note` and the evidence rows.
 
 ## 9. Licenses
 
@@ -490,7 +501,7 @@ Terms not covered by SPDX get one of these, with the gist of the wording in `lic
 
 Roughly, `direct_download`, `free_account_required` and `gated_click_through` are "available now", and `request_form_or_email` and `signed_agreement` "need a procedure".
 
-## 11. Current figures (2026-10-29)
+## 11. Current figures (2026-10-30)
 
 ### 11.1 Status x license class
 
@@ -592,6 +603,18 @@ Run in the DB folder with the system Python.
 
 Measurements use `tools/measure.py`, and `tools/sync.py` copies them into the recipe table (steps in the README, "Validation and updates"). The full maintenance workflow, including verification of incoming reports, is in `.claude/skills/maintaining-ser-dataset-db/SKILL.md`.
 
+Other programs, which are not run by hand day to day:
+
+| File | What it does |
+|---|---|
+| `tools/csvio.py` | reads and writes every CSV in one fixed format (used by the other tools) |
+| `tools/egs3.py` | reads the recipes from the ESPnet branch `ser/cross-corpus` with `git show`, whatever branch is checked out |
+| `tools/localenv.py` | reads machine-specific settings from `.env` (e.g. `ESPNET_REPO`) |
+| `tools/hooks/pre-commit` | the check that runs before each commit |
+| `.claude/skills/.../scripts/reglib.py` | stages the changes for one dataset (evidence, cells, recipe rows, labels, annotations) and saves them through `tools/db.py` |
+| `.claude/skills/.../scripts/audio_audit.py` | checks a corpus's audio independently: file inventory, formats, durations, identical and near-identical files |
+| `.claude/skills/.../scripts/doc_counts.py` | recounts the figures in this guide and the README |
+
 ### 13.2 What the checks cover
 
 - CSV format (UTF-8, row order), column types and allowed values
@@ -630,7 +653,7 @@ Reports state what is not done as well as what is.
 
 ### 15.1 Not yet confirmed
 
-- **The DB lags behind the ESPnet implementation**: the ESPnet recipe branch has recipes that are not yet in `recipes.csv` (`validate.py` lists them as a warning, not an error; they are registered one by one after review).
+- **The DB lags behind the ESPnet implementation**: the ESPnet recipe branch has single-corpus recipes for 102 datasets, but 7 of them are not yet in `recipes.csv` and those datasets are not yet `implemented` (`anad`, `audiospeechsentiment`, `bari_emospeech`, `multidialog`, `rasa`, `thanushs25_tamil`, `visec`). `validate.py` lists them as a warning, not an error; they are registered one by one after review.
 - **Minimum clip length changed from 0.5 s to 0.2 s** (ESPnet commit 96a54519743, 2026-10-17). `min_wav_duration` in `recipes.csv` is 0.2 for all recipes, but for recipes registered before the change, `n_train_filtered` and `n_valid_filtered` are still the old measurements (counted with the 0.5 s minimum). Not yet re-measured.
 - **Human checks of licenses have barely started** (see 14.2). The licenses in the DB are mostly primary sources checked by Claude.
 - **28 rows supported only by a third-party survey (KuralHub)** have not had their access checked in primary sources. Many are data from older papers, listed as "on request".
@@ -709,7 +732,7 @@ MSP-Podcast is for internal non-commercial research only, may not be redistribut
 | [measurements/](../measurements/) | measured results of recipes (JSON) |
 | [reports/](../reports/) | saved investigation reports with verification |
 | [sheet_import/README.md](../sheet_import/README.md) | origin and fingerprint of the original spreadsheet |
-| [tools/](../tools/) | validate, views, db, measure, sync |
+| [tools/](../tools/) | validate, views, db, measure, sync, and their helpers (13.1) |
 
 ### 18.2 Updating this document
 
