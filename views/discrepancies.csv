@@ -354,7 +354,6 @@ keioesd,status_reason_codes,superseded,access_request_form_or_email,project_doc,
 keioesd,status_reason_codes,superseded,access_request_form_or_email,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by keioesd/status_reason_codes/03
 kemdy19,status_reason_codes,superseded,access_request_form_or_email,project_doc,unexamined,measured,https://nanum.etri.re.kr/share/kjnoh2/KEMDy19?lang=En_us,superseded by kemdy19/status_reason_codes/02
 kemdy20,status_reason_codes,superseded,access_request_form_or_email,project_doc,unexamined,measured,https://nanum.etri.re.kr/share/kjnoh2/KEMDy20?lang=En_us,superseded by kemdy20/status_reason_codes/02
-kemocon,dimensional_attributes,superseded,arousal;valence,primary,valence;arousal,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,"Original spreadsheet value: valence, arousal; superseded by kemocon/dimensional_attributes/02"
 kemocon,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/3931963,superseded by kemocon/espnet_status/04
 kemocon,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by kemocon/espnet_status/03
 kemocon,status_reason_codes,superseded,access_request_form_or_email,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_request_form_or_email; superseded by kemocon/status_reason_codes/05
