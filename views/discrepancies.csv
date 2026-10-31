@@ -378,8 +378,6 @@ lithuanian_emotion_db,espnet_status,superseded,implemented,measured,candidate,me
 lithuanian_emotion_db,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,Handling of the missing license and skewed counts not decided; superseded by lithuanian_emotion_db/status_reason_codes/02
 lssed,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/tobefans/LSSED,superseded by lssed/espnet_status/04
 lssed,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by lssed/espnet_status/03
-lssed,hours_reported,superseded,206.4,primary,206,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,superseded by lssed/hours_reported/02
-lssed,languages,superseded,eng,primary,cmn,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Mandarin Chinese; superseded by lssed/languages/02
 lssed,status_reason_codes,superseded,access_signed_agreement,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by lssed/status_reason_codes/05
 m3ed,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/AIM3-RUC/RUCM3ED,superseded by m3ed/espnet_status/04
 m3ed,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by m3ed/espnet_status/03
