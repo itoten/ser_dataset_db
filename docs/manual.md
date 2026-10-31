@@ -18,8 +18,8 @@ This guide explains the database from scratch. Terms are explained before they a
 | Awaiting a decision | 7 |
 | Deferred | 34 |
 | Excluded (with reasons) | 46 |
-| Evidence rows (sources of values) | 4,987 |
-| Language codes | 76 |
+| Evidence rows (sources of values) | 4,708 |
+| Language codes | 77 |
 
 ### 1.3 What makes it useful
 
@@ -191,7 +191,7 @@ ser_dataset_db/
 | File | One row is | Rows |
 |---|---|---|
 | [datasets.csv](../data/datasets.csv) | **one dataset** (the central table) | 322 |
-| [evidence.csv](../data/evidence.csv) | the **source** of one value in datasets | 4,987 |
+| [evidence.csv](../data/evidence.csv) | the **source** of one value in datasets | 4,708 |
 | [aliases.csv](../data/aliases.csv) | another name (official name, short name, former name, recipe name, ...) | 375 |
 | [relations.csv](../data/relations.csv) | a relation between datasets | 44 |
 | [recipes.csv](../data/recipes.csv) | one ESPnet recipe | 102 |
@@ -377,7 +377,7 @@ Columns that need evidence: `languages`, `recording_context`, `vocal_content`, `
 
 ### 6.2.1 Recording when something was checked
 
-Every one of the 4,987 evidence rows has a date checked (`checked_on`, 2026-10-10 to 10-30). But **the date is when the source was looked at**, not a guarantee that it is still true; distribution pages and licenses can change. For rows from the original spreadsheet (`source_type`=`sheet`), the date 2026-10-12 is the import date, not a date when anyone checked the content.
+Every one of the 4,708 evidence rows has a date checked (`checked_on`, 2026-10-10 to 10-31). But **the date is when the source was looked at**, not a guarantee that it is still true; distribution pages and licenses can change. No evidence row rests on the original spreadsheet any more: its values were rechecked against primary sources and the spreadsheet rows were removed (the earlier state stays in the git history).
 
 The overview [views/datasets_wide.csv](../views/datasets_wide.csv) adds these columns per dataset (generated from the evidence):
 
@@ -387,7 +387,7 @@ The overview [views/datasets_wide.csv](../views/datasets_wide.csv) adds these co
 | `access_checked_on` | date the access method was checked |
 | `oldest_checked_on` / `latest_checked_on` | oldest and newest date among the row's current evidence |
 
-Old dates and `sheet` sources have priority for re-checking.
+Old dates have priority for re-checking.
 
 ### 6.3 Strength of sources
 
@@ -400,9 +400,9 @@ Strongest first.
 | 3 | `primary` | the authors' paper, official page, LICENSE |
 | 4 | `project_doc` | internal documents whose source cannot be pinned down |
 | 5 | `secondary` | third-party statements (Kaggle, re-upload pages, surveys) |
-| 6 | `sheet` | values of the original spreadsheet |
+| 6 | `sheet` | values of the original spreadsheet (no rows remain; the value is kept only for the history) |
 
-The 4,987 evidence rows by source type: primary 2,490, project_doc 681, measured 587, sheet 572, user 384, secondary 273.
+The 4,708 evidence rows by source type: primary 2,780, project_doc 681, measured 587, user 384, secondary 276.
 
 ### 6.4 When a new fact appears
 
@@ -412,10 +412,9 @@ The old evidence is kept and marked `superseded`, and a new row is added. The hi
 
 | Evidence | Value | Source type | Status |
 |---|---|---|---|
-| `ravdess/license_spdx/01` | CC-BY-NC-SA-4.0 | sheet (original spreadsheet) | superseded |
 | `ravdess/license_spdx/02` | CC-BY-NC-SA-4.0 | primary (Zenodo record) | **current / canonical** |
 
-Even though the value is the same, the record shows that the spreadsheet value was replaced by a primary source.
+The row replaced an earlier value taken from the original spreadsheet. That row has been removed from the current files; it can be read in the git history.
 
 ### 6.6 Principles
 
@@ -501,13 +500,13 @@ Every row except `implemented` has reason codes (`;`-separated). The list and me
 |---|---|---|
 | `open` | permissive (attribution at most): CC-BY, CC0, MIT, ... | 98 |
 | `noncommercial` | non-commercial only (CC-BY-NC, ...) | 39 |
-| `research_only` | custom terms limited to academic or research use | 55 |
+| `research_only` | custom terms limited to academic or research use | 49 |
 | `restricted` | restricted or paid | 12 |
 | `other` | other than the above | 4 |
 | `none_stated` | no license statement found | 24 |
 | `unknown` | examined but undecidable | 24 |
 | `conflicting` | sources disagree | 2 |
-| (empty) | not investigated yet | 64 |
+| (empty) | not investigated yet | 70 |
 
 ### 9.3 Four names for custom terms
 
@@ -549,9 +548,9 @@ Roughly, `direct_download`, `free_account_required` and `gated_click_through` ar
 | Status | open | NC | research | restricted | other | none stated | unknown | conflicting | not checked | total |
 |---|---|---|---|---|---|---|---|---|---|---|
 | implemented | 66 | 13 | 12 | 1 | 1 | 5 | 3 | 0 | 0 | 101 |
-| candidate | 18 | 22 | 32 | 9 | 3 | 14 | 3 | 2 | 31 | 134 |
+| candidate | 18 | 22 | 30 | 9 | 3 | 14 | 3 | 2 | 33 | 134 |
 | needs_decision | 2 | 1 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 7 |
-| deferred | 0 | 0 | 7 | 0 | 0 | 1 | 7 | 0 | 19 | 34 |
+| deferred | 0 | 0 | 3 | 0 | 0 | 1 | 7 | 0 | 23 | 34 |
 | excluded | 12 | 3 | 2 | 0 | 0 | 4 | 11 | 0 | 14 | 46 |
 
 (NC is noncommercial.)
@@ -563,10 +562,10 @@ What this shows:
 
 ### 11.2 Properties of the data
 
-- **Recording context** (`recording_context`; 67 not checked): acted 115, spontaneous conversation 23, multi-source web 21, YouTube 14, TV show 14, affect elicitation 13, film 12, read speech 8, synthetic 8, other 8, human-agent interaction 7, podcast 4, and others.
-- **Languages**: 76 codes. English (eng) 89, Mandarin (cmn) 36, Korean (kor) 16, Spanish (spa) and German (deu) 14 each, French (fra) 12, Japanese (jpn) 11, multilingual (mul) 16.
+- **Recording context** (`recording_context`; 87 not checked): acted 113, spontaneous conversation 19, multi-source web 17, YouTube 13, affect elicitation 13, TV show 12, film 11, read speech 7, synthetic 7, human-agent interaction 6, other 5, podcast 4, and others.
+- **Languages**: 77 codes. English (eng) 75, Mandarin (cmn) 32, Korean (kor) 16, Spanish (spa) and German (deu) 14 each, French (fra) 15, Japanese (jpn) 11, multilingual (mul) 10.
 - **Raw audio**: distributed 186, not distributed 29, unknown 4, not checked 103.
-- **Datasets with dimensional emotion labels**: 30.
+- **Datasets with dimensional emotion labels**: 25.
 - **Training and evaluation of ESPnet recipes**: done (`evaluated`) 17, not run (`not_run`) 85.
 - **Speech production and label basis** (filled during recipe review): filled for 127 datasets; perceived labels (`perceived`, alone or with others) on 47.
 - **Intent and dialogue-act data**: 12 (SLURP, Timers and Such, Fluent Speech Commands, Snips/Sonos, STOP, MInDS-14, Speech-MASSIVE, ITALIC, DIHANA, SpokenWOZ, Harper Valley Bank, SLUE-HVB).
@@ -627,7 +626,7 @@ grep '^ravdess/license_spdx' data/evidence.csv
 
 ### 12.5 Example 4: ask an AI assistant
 
-Assistants working on this project look up this DB before searching the web. Ask "what Japanese emotional data is there?" or "which openly licensed datasets are not yet implemented?" and the answer comes from the DB. For important decisions, the answer should say that evidence whose `source_type` is `sheet`, `project_doc` or `secondary` needs confirming.
+Assistants working on this project look up this DB before searching the web. Ask "what Japanese emotional data is there?" or "which openly licensed datasets are not yet implemented?" and the answer comes from the DB. For important decisions, the answer should say that evidence whose `source_type` is `project_doc` or `secondary` needs confirming.
 
 ## 13. Maintenance (updates and checks)
 
@@ -702,7 +701,8 @@ Reports state what is not done as well as what is.
 - **28 rows supported only by a third-party survey (KuralHub)** have not had their access checked in primary sources. Many are data from older papers, listed as "on request".
 - **Some distributors did not respond**, so some rows could not be checked (`amigos`, `casia`, `cheavd`, `belfast`, `emotion_origlia2010`, `usoms`, `eyase`).
 - **The 34 `deferred` rows** still need their real access routes investigated.
-- **Empty (not investigated) values remain**: license empty for 64, access method empty for 50, recording context empty for 67.
+- **Spreadsheet values were rechecked** (2026-10-31): the 429 values that rested only on the original spreadsheet were checked against primary sources; those the sources state were replaced, those they do not state (or that could not be read) were emptied. Values that were emptied because a source could not be read (e.g. `enterface05`, `cheavd`, `semaine`, `amigos`) can be filled when the source can be read.
+- **Empty (not investigated) values remain**: license empty for 70, access method empty for 50, recording context empty for 87.
 - **Not yet surveyed**: CATSLU, dialogue acts such as MRDA, SwDA and AMI, ATIS audio, SLURP in other languages, intent data in other languages.
 
 ### 15.2 Limits by nature
@@ -720,7 +720,7 @@ MSP-Podcast is for internal non-commercial research only, may not be redistribut
 
 ### 16.1 Outline (1-2 minutes)
 
-1. **What was built**: an evidence-backed ledger of SER and paralinguistic datasets. 322 datasets, 4,987 evidence rows.
+1. **What was built**: an evidence-backed ledger of SER and paralinguistic datasets. 322 datasets, 4,708 evidence rows.
 2. **Why**: to stop re-researching dataset conditions (license, access) every time, and to keep the basis for cross-corpus evaluation.
 3. **Reliability measures**: each value records its source, date and checker, and a machine checks the rules. Unknowns are written as unknown, never filled by guessing.
 4. **Link to the implementation**: the 102 ESPnet recipes are measured into the DB, distinguishing implemented, candidate and deferred datasets (the recipe branch keeps growing, and new recipes are registered after review; 15.1).
@@ -736,7 +736,7 @@ MSP-Podcast is for internal non-commercial research only, may not be redistribut
 | Question | Answer |
 |---|---|
 | Why CSV instead of the original spreadsheet? | A spreadsheet cannot hold sources, history or checks. CSV under git keeps the change history and can be checked by machine |
-| Is the information correct? | Every value has a source and a date; primary sources (papers, official pages) are the largest group (2,490 of 4,987 evidence rows). Final human checks (licenses) are still in progress |
+| Is the information correct? | Every value has a source and a date; primary sources (papers, official pages) are the largest group (2,780 of 4,708 evidence rows). Final human checks (licenses) are still in progress |
 | How was it collected? | 238 datasets from surveys, hosting services and the literature were added to the spreadsheet's 84; added rows were checked in primary sources |
 | How many can be implemented? | 101 implemented, 134 candidates. Of the candidates, 11 are openly licensed and available now |
 | What was excluded? | 46. Only for clear reasons: no audio, redistribution of existing data, duplicates, regional restrictions, etc. Effort and size are not reasons |
