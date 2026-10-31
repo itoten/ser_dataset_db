@@ -408,7 +408,6 @@ mderma,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1
 mderma,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1322,see evidence,1267,measured,recipes.n_total (mderma),a mismatch is normal: recipes filter by length and label
 mead,espnet_status,superseded,deferred,user,excluded,measured,https://wywu.github.io/projects/MEAD/MEAD.html,superseded by mead/espnet_status/04
 mead,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,superseded by mead/espnet_status/03
-mead,license_spdx,superseded,unknown,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Custom academic/research-only; superseded by mead/license_spdx/02
 mead,status_reason_codes,superseded,first_review_done,project_doc,host_unreachable,user,"Conversation with the maintainer, 2026-10-14",Former reason: host_unreachable; superseded by mead/status_reason_codes/05
 mead,status_reason_codes,superseded,first_review_done,project_doc,host_unreachable,measured,https://wywu.github.io/projects/MEAD/MEAD.html,superseded by mead/status_reason_codes/04
 mead,status_reason_codes,superseded,first_review_done,project_doc,host_unreachable,project_doc,nc_candidates_20261010.md,superseded by mead/status_reason_codes/03
