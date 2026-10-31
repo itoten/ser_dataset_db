@@ -149,7 +149,6 @@ dusha,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,303963,see ev
 dzafic,status_reason_codes,superseded,identity_unresolved,project_doc,content_insufficient,project_doc,new_corpora/99_final_report.md,superseded by dzafic/status_reason_codes/02
 ears,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,first review 2026-10-28 (see status_note),Replaces the provisional reason from the spreadsheet import with the first-review result; superseded by ears/status_reason_codes/03
 ears,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-13 survey,superseded by ears/status_reason_codes/02
-eekk,license_spdx,superseded,CC-BY-4.0,primary,LicenseRef-other,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Other; superseded by eekk/license_spdx/02
 eekk,status_reason_codes,superseded,duplicate_entry,primary,access_no_direct_download,project_doc,nc_candidates_20261010.md,superseded by eekk/status_reason_codes/03
 eesc,espnet_status,superseded,implemented,measured,candidate,measured,https://ndownloader.figshare.com/files/44609146,superseded by eesc/espnet_status/04
 eesc,espnet_status,superseded,implemented,measured,excluded,project_doc,new_corpora/99_final_report.md,superseded by eesc/espnet_status/03
