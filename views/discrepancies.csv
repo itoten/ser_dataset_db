@@ -381,8 +381,6 @@ lssed,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates
 lssed,status_reason_codes,superseded,access_signed_agreement,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by lssed/status_reason_codes/05
 m3ed,espnet_status,superseded,candidate,user,excluded,primary,https://github.com/AIM3-RUC/RUCM3ED,superseded by m3ed/espnet_status/04
 m3ed,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by m3ed/espnet_status/03
-m3ed,labels_discrete_reported,superseded,happy;neutral;sad;disgust;anger;fear;surprise,primary,anger;disgust;fear;happiness;sadness;surprise;neutral,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,"Original spreadsheet value: anger, disgust, fear, happiness, sadness, surprise, neutral; superseded by m3ed/labels_discrete_reported/02"
-m3ed,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Custom academic/research-only; superseded by m3ed/license_spdx/02
 m3ed,status_reason_codes,superseded,access_no_direct_download,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_no_direct_download; superseded by m3ed/status_reason_codes/05
 mafw,espnet_status,superseded,candidate,user,excluded,primary,https://mafw-database.github.io/MAFW/,superseded by mafw/espnet_status/02
 mafw,status_reason_codes,superseded,access_request_form_or_email,project_doc,access_signed_agreement,primary,https://mafw-database.github.io/MAFW/,superseded by mafw/status_reason_codes/02
