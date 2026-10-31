@@ -113,7 +113,6 @@ chsims,status_reason_codes,superseded,labels_not_discrete_emotion,project_doc,no
 chsims,status_reason_codes,superseded,labels_not_discrete_emotion,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: labels_not_discrete_emotion; superseded by chsims/status_reason_codes/05
 chsims2,espnet_status,superseded,candidate,user,excluded,primary,https://thuiar.github.io/sims.github.io/chsims,superseded by chsims2/espnet_status/04
 chsims2,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by chsims2/espnet_status/03
-chsims2,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Custom academic/research-only; superseded by chsims2/license_spdx/02
 chsims2,status_reason_codes,superseded,labels_not_discrete_emotion,project_doc,not_individually_checked,project_doc,nc_candidates_20261010.md,superseded by chsims2/status_reason_codes/03
 chsims2,status_reason_codes,superseded,labels_not_discrete_emotion,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: labels_not_discrete_emotion; superseded by chsims2/status_reason_codes/05
 clesc,status_reason_codes,superseded,text_only;redistribution_of_existing_corpus,primary,content_insufficient;redistribution_of_existing_corpus,primary,https://huggingface.co/datasets/toloka/CLESC,superseded by clesc/status_reason_codes/02
