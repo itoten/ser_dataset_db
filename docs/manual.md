@@ -6,7 +6,7 @@ This guide explains the database from scratch. Terms are explained before they a
 
 ### 1.1 In one sentence
 
-**"A ledger of the public information about speech datasets that carry emotion (and other paralinguistic) labels."** It is a set of CSV files that open in any spreadsheet program, with its history managed by `git`.
+**"A tertiary source that leads to the primary sources of datasets usable for SER research."** It does not offer the truth about a dataset, but the way to the papers, distribution pages and license files where it can be checked. It is a set of CSV files that open in any spreadsheet program, with its history managed by `git`.
 
 ### 1.2 In numbers
 
@@ -32,15 +32,56 @@ This guide explains the database from scratch. Terms are explained before they a
 
 ### 2.1 Background
 
-Speech emotion recognition (SER) research uses dozens of datasets with different languages, sizes, licenses and access routes. Searching the web again each time someone asks "can this corpus be used commercially?" or "what emotional data is there in Japanese?" wastes time and tokens.
+In today's AI research, centred on deep learning, the scale of the data cannot be ignored, and multi-corpus research, which combines several datasets, has become an important method. Researchers therefore keep looking for larger and more numerous datasets.
 
-### 2.2 Goals
+But datasets are created, redistributed and withdrawn every day. Information changes so fast that a list of datasets made by someone becomes useless within a few years, and whether what it says is still correct has to be checked again anyway. The information researchers must follow keeps growing, and investigating datasets has itself become very costly.
 
-1. **Answer questions at once**: language, size, license, access, labels and implementation status of a dataset can be looked up without searching.
-2. **Choose what to implement next**: datasets that are permissively licensed, directly downloadable and not yet implemented can be picked from a list.
-3. **Reliable research**: for cross-corpus evaluation (section 3), the DB shows the basis for which data was used for training and which for evaluation. Licenses get particular care, because mishandling them can make results unpublishable.
+With recent AI, information can be searched more comprehensively than with a search engine. But if every researcher investigates separately each time a new study starts, everyone spends the same effort and the same tokens to obtain the same information.
 
-### 2.3 Origin
+What is needed is a tertiary source through which up-to-date information on the world's datasets can be reached easily: a "Wikipedia of datasets".
+
+### 2.2 Challenges
+
+1. **Coverage without collaborators.** Wikipedia's coverage rests on the collaboration of many people. A narrow research field such as SER cannot expect that. As many datasets as possible, and their information, must be collected with few people.
+2. **Keeping up with information that keeps changing.** Datasets appear, are redistributed and disappear, and terms such as licenses can change at the authors' will. Collected information soon becomes outdated, yet most lists do not even say when their information was valid.
+3. **Correctness cannot be guaranteed.** Whoever investigates makes mistakes: people err, and AI hallucinates. However careful one is, "absolutely correct information" cannot be offered. Moreover, most existing lists give no sources, so readers cannot notice the errors and end up investigating everything again themselves.
+
+### 2.3 Mission
+
+To lower the cost for researchers of investigating datasets, by collecting up-to-date information on datasets usable for SER research as comprehensively as possible, in a database where anyone can check the primary source of every value.
+
+### 2.4 Principles
+
+None ranks above the others.
+
+| Principle | Meaning |
+|---|---|
+| **Verifiability** | Every value can be checked by anyone against a primary source. What this DB offers is not "the truth" but the way to it. Information without a source is not recorded. Readers are advised to always check the primary source. |
+| **Coverage** | Collect as many datasets and as much information about them as possible. What one investigation misses is added by later investigations and by information from people, aiming at coverage beyond any other list. |
+| **Currency** | Keep taking in new information and re-check old information. Every value records when it was checked, so readers can judge how current it is. |
+| **Transparency** | Show who checked what and when, and in particular whether a value was verified by a person or only investigated by AI. Within one DB, values differ in how certain they are; if this is invisible, readers cannot tell how far to trust each value. State what is unknown and the limits of the DB. |
+| **Neutrality** | Record facts only, and give no judgements such as "should this dataset be used" or "is this good data". Whether a dataset is usable depends on the purpose of the research, and a written judgement makes readers follow it without looking at the primary sources. When sources disagree, the DB does not decide which to trust; that is left to the reader. |
+
+These principles are the basis for the rules (this manual, `schema/`, `tools/validate.py`) and the procedures (the maintenance skill). The DB does not yet follow them everywhere (see 15.1); the design work towards them is recorded in [design/](design/agenda.md).
+
+### 2.5 How
+
+Dataset information is almost always on the web and open to anyone (papers, distribution pages, license files). So the way to the primary source can be written precisely. Building that way can be left to AI, and whoever checks needs to look not at the way but only at the primary source it leads to. This makes coverage and verifiability possible together with few people. The main methods:
+
+| Method | What it means |
+|---|---|
+| **A source for every value** | For each value, record the source (URL), the place in the source, and the date checked. |
+| **Verification state** | For each value, record whether AI only investigated it, AI verified it, or a person verified it. |
+| **Repeated re-verification** | Regularly re-check that values match their sources and that the sources still say the same. |
+| **A design for AI** | Assume AI is used to investigate, verify and read the DB. Information is not cut for the sake of human readability; the generated views are an aid, not the main way to read it. |
+
+### 2.6 For readers
+
+- Check the primary source before relying on a value, and cite the primary source, not this DB.
+- Whether you may use a dataset is for you to judge from the primary sources. The DB is not legal advice.
+- The DB is currently used for one researcher's work, and is designed for future public release.
+
+### 2.7 Origin
 
 It started as a Google spreadsheet, "ser_database" (84 rows). The spreadsheet was frozen on 2026-10-12 and the original is kept in [sheet_import/](../sheet_import/README.md); since then the CSV files are authoritative and the spreadsheet is not updated. On 2026-10-14, 158 datasets from surveys, existing lists and searches of hosting services, plus 12 intent and dialogue-act datasets and others, were added, bringing it to 307 rows; more have been added since.
 
@@ -501,7 +542,7 @@ Terms not covered by SPDX get one of these, with the gist of the wording in `lic
 
 Roughly, `direct_download`, `free_account_required` and `gated_click_through` are "available now", and `request_form_or_email` and `signed_agreement` "need a procedure".
 
-## 11. Current figures (2026-10-30)
+## 11. Current figures (2026-10-31)
 
 ### 11.1 Status x license class
 
@@ -652,6 +693,8 @@ Instead of one bulk check, **each time a recipe is implemented and reviewed, the
 Reports state what is not done as well as what is.
 
 ### 15.1 Not yet confirmed
+
+- **The DB does not yet follow its principles everywhere** (see 2.4). Some status values (`candidate`, `deferred`, `excluded`, ...) contain decisions about use; some evidence cites the project's internal documents or conversations with the maintainer, which outside readers cannot follow; and the DB measures recipe outputs itself (`measurements/`). How to resolve these is being worked out in [design/](design/agenda.md).
 
 - **The DB lags behind the ESPnet implementation**: the ESPnet recipe branch has single-corpus recipes for 102 datasets, but 1 of them is not yet in `recipes.csv` and that dataset is not yet `implemented` (`bari_emospeech`: its corpus must be downloaded again before it can be measured). `validate.py` lists it as a warning, not an error. The other six that were waiting (`anad`, `audiospeechsentiment`, `multidialog`, `rasa`, `thanushs25_tamil`, `visec`) were registered on 2026-10-30.
 - **Minimum clip length changed from 0.5 s to 0.2 s** (ESPnet commit 96a54519743, 2026-10-17). `min_wav_duration` in `recipes.csv` is 0.2 for all recipes, but for recipes registered before the change, `n_train_filtered` and `n_valid_filtered` are still the old measurements (counted with the 0.5 s minimum). Not yet re-measured.

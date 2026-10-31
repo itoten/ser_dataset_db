@@ -1,6 +1,24 @@
 # ser_dataset_db
 
-A database of speech emotion recognition (SER) datasets, kept as CSV files under git. It is built first of all to be read and used by AI assistants (such as Claude), so it favours completeness and accuracy, and every important value carries its source.
+A database of speech emotion recognition (SER) datasets, kept as CSV files under git. It is a tertiary source: it does not offer the truth about a dataset, but the way to the primary sources (papers, distribution pages, license files) where the truth can be checked.
+
+## Mission and principles
+
+**Mission**: to lower the cost for researchers of investigating datasets, by collecting up-to-date information on datasets usable for SER research as comprehensively as possible, in a database where anyone can check the primary source of every value.
+
+**Principles** (none ranks above the others):
+
+- **Verifiability**: every value can be checked by anyone against a primary source. Information without a source is not recorded.
+- **Coverage**: collect as many datasets and as much information about them as possible. What one investigation misses is added by later investigations and by information from people.
+- **Currency**: keep taking in new information and re-check old information. Every value records when it was checked, so readers can judge how current it is.
+- **Transparency**: show who checked what and when, and in particular whether a value was verified by a person or only investigated by AI. State what is unknown and the limits of the DB.
+- **Neutrality**: record facts only. The DB gives no judgements such as "should this dataset be used" or "is this good data", and when sources disagree it does not decide which to trust; that is left to the reader.
+
+**How**: a source and the place in it for every value; the verification state of every value; repeated re-verification; and a design for AI. Dataset information is almost always on the web, so the way to the primary source can be written precisely; AI can build that way, and whoever checks only needs to look at the primary source it leads to. The DB is meant to be read through AI, so information is not cut for the sake of human readability; the generated views are an aid, not the main way to read it.
+
+**For readers**: check the primary source before relying on a value, and cite the primary source, not this DB. The DB is not legal advice.
+
+**Current position**: the DB is used for one researcher's work, and is designed for future public release. Background, challenges and the reasoning behind these principles are in `docs/manual.md` section 2; the discussion that led to them is in `docs/design/`.
 
 - **`data/*.csv` is authoritative.** The Google spreadsheet it grew from ("ser_database", 84 rows) was frozen on 2026-10-12 and the original is kept in `sheet_import/` (origin and sha256 in `sheet_import/README.md`). The spreadsheet is no longer updated.
 - It covers all datasets that are (or may be) usable for SER. Whether a dataset is implemented as an ESPnet recipe is recorded in `espnet_status`. Datasets only for EEG or ASR are out of scope.
@@ -89,13 +107,13 @@ python3 tools/db.py get|set|add|fmt   # view or edit one row
 - Corpora built for TTS are included if they have emotion labels. Datasets without audio (text only, features only) are kept as `excluded` to record what was found.
 - When two rows turn out to be the same, mark one `excluded` (`duplicate_entry`) and link them with `possibly_same_as` in `relations`. IDs are never deleted.
 
-## Current state (2026-10-30)
+## Current state (2026-10-31)
 
 322 datasets (84 from the spreadsheet, 238 added later). `implemented` 101, `candidate` 134, `deferred` 34, `needs_decision` 7, `excluded` 46. All 28 corpora in Table I of the MSP-Podcast paper (arXiv 2509.09791v1) are included.
 
 - The survey of 2026-10-14 added 158 datasets from surveys (SuperKogito's list, EmoBox, KuralHub, etc.) and searches of Hugging Face, Zenodo, Kaggle, Mendeley, figshare and GitHub.
 - On the same day the status policy was revised and all excluded rows were reviewed (see "Status policy" below).
-- The scope is not limited to emotion: data on paralinguistic information in general (emotion, speaking style, intent, dialogue act, sentiment, ...) is collected. 12 intent and dialogue-act datasets were added (`candidate`, reason `unexamined`): SLURP, Timers and Such, Fluent Speech Commands, Snips/Sonos, STOP, MInDS-14, Speech-MASSIVE, ITALIC, DIHANA, SpokenWOZ, Harper Valley Bank, SLUE-HVB. Not yet surveyed: CATSLU, dialogue acts such as MRDA, SwDA and AMI, ATIS audio, SLURP in other languages, intent data in other languages.
+- Scope: the axis is SER. Emotion is taken in a broad sense that includes sentiment, and data such as speaking style, intent and dialogue act is collected as material for SER research. 12 intent and dialogue-act datasets were added (`candidate`, reason `unexamined`): SLURP, Timers and Such, Fluent Speech Commands, Snips/Sonos, STOP, MInDS-14, Speech-MASSIVE, ITALIC, DIHANA, SpokenWOZ, Harper Valley Bank, SLUE-HVB. Not yet surveyed: CATSLU, dialogue acts such as MRDA, SwDA and AMI, ATIS audio, SLURP in other languages, intent data in other languages.
 
 Status policy (project maintainer's decision, 2026-10-14):
 
