@@ -109,7 +109,6 @@ cdse_czech,status_reason_codes,superseded,unexamined,user,access_request_form_or
 cheavd,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,superseded by cheavd/espnet_status/03
 chsims,espnet_status,superseded,candidate,user,excluded,primary,https://thuiar.github.io/sims.github.io/chsims,superseded by chsims/espnet_status/04
 chsims,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by chsims/espnet_status/03
-chsims,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Custom academic/research-only; superseded by chsims/license_spdx/02
 chsims,status_reason_codes,superseded,labels_not_discrete_emotion,project_doc,not_individually_checked,project_doc,nc_candidates_20261010.md,superseded by chsims/status_reason_codes/03
 chsims,status_reason_codes,superseded,labels_not_discrete_emotion,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: labels_not_discrete_emotion; superseded by chsims/status_reason_codes/05
 chsims2,espnet_status,superseded,candidate,user,excluded,primary,https://thuiar.github.io/sims.github.io/chsims,superseded by chsims2/espnet_status/04
