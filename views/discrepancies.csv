@@ -463,9 +463,7 @@ mspimprov,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candid
 mspimprov,lexical_confound,superseded,possible,primary,none,primary,https://www.lab-msp.com/MSP/MSP-Improv.html,superseded by mspimprov/lexical_confound/02
 mspimprov,status_reason_codes,superseded,access_signed_agreement,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by mspimprov/status_reason_codes/05
 mspimprov,text_emotion_link,superseded,parallel;unscripted,primary,parallel,primary,https://www.lab-msp.com/MSP/MSP-Improv.html,superseded by mspimprov/text_emotion_link/02
-msppodcast,n_speakers_reported,superseded,3641,primary,3929,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,superseded by msppodcast/n_speakers_reported/02
 msppodcast,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,3641,see evidence,3713,measured,n_speakers_measured,
-msppodcast,n_utt_reported,superseded,267905,primary,264705,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,superseded by msppodcast/n_utt_reported/02
 msppodcast,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,267905,see evidence,212808,measured,recipes.n_total (msppodcast),a mismatch is normal: recipes filter by length and label
 multidialog,espnet_status,superseded,implemented,user,candidate,primary,https://huggingface.co/datasets/IVLLab/MultiDialog,superseded by multidialog/espnet_status/02
 multidialog,labels_discrete_reported,conflicting,neutral;happy;fear;angry;disgusting;surprising;sad,primary,neutral;happy;surprise;sad;disgust;fear;angry;curious,primary,https://huggingface.co/datasets/IVLLab/MultiDialog,'Curious to dive deeper' (43% of utterances) is a separate value in the metadata; the paper (section 3.2) merges it with Neutral because the two are acted the same way
