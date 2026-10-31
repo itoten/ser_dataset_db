@@ -498,8 +498,6 @@ omgemotion,espnet_status,superseded,needs_decision,user,excluded,project_doc,nc_
 paraspeechcaps,espnet_status,superseded,candidate,user,excluded,primary,https://arxiv.org/abs/2503.04713,superseded by paraspeechcaps/espnet_status/02
 paraspeechcaps,hours_reported,superseded,2709,primary,2769,primary,https://arxiv.org/abs/2503.04713,Sum of 342 + 2427; superseded by paraspeechcaps/hours_reported/02
 paraspeechcaps,status_reason_codes,superseded,unexamined,user,labels_automatic;redistribution_of_existing_corpus,primary,https://arxiv.org/abs/2503.04713,superseded by paraspeechcaps/status_reason_codes/02
-pavoque,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,7334,see evidence,5442,measured,n_files_release_measured,
-pavoque,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,7334,see evidence,5442,measured,recipes.n_total (pavoque),a mismatch is normal: recipes filter by length and label
 pemo_punjabi,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Punjabi/PEMO.md,Not confirmed in a primary source; superseded by pemo_punjabi/espnet_status/02
 pemo_punjabi,status_reason_codes,superseded,access_request_form_or_email,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_request_form_or_email; superseded by pemo_punjabi/status_reason_codes/03
 polish_cichosz2005,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Polish/Cichosz_and_Slot_2005.md,Not confirmed in a primary source; superseded by polish_cichosz2005/espnet_status/02
