@@ -609,7 +609,6 @@ thorsten,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,2400,see e
 tumavic,espnet_status,superseded,deferred,user,excluded,primary,https://www.isca-archive.org/interspeech_2010/schuller10b_interspeech.pdf,superseded by tumavic/espnet_status/02
 tumavic,status_reason_codes,superseded,access_no_direct_download,user,labels_not_discrete_emotion,primary,https://www.isca-archive.org/interspeech_2010/schuller10b_interspeech.pdf,superseded by tumavic/status_reason_codes/02
 turevdb,license_spdx,conflicting,CC-BY-NC-ND-4.0,user,GPL-3.0-only,primary,https://github.com/Xeonen/TurEV-DB,
-turevdb,license_spdx,superseded,CC-BY-NC-ND-4.0,user,LicenseRef-other,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Other; replaced by conflicting because sources disagree
 turevdb,license_spdx,superseded,CC-BY-NC-ND-4.0,user,conflicting,project_doc,new_corpora/15_turevdb_report.md,The README (CC BY-NC-ND 4.0) and the LICENSE file (GPL v3) disagree; which is intended is unverified (report §2); superseded by turevdb/license_spdx/05
 ua_ser,espnet_status,superseded,implemented,measured,candidate,measured,https://huggingface.co/api/datasets/OlhaHavryliuk/UA-SER,superseded by ua_ser/espnet_status/02
 ua_ser,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,952,see evidence,951,measured,recipes.n_total (ua_ser),a mismatch is normal: recipes filter by length and label
