@@ -511,7 +511,6 @@ promptspeech,status_reason_codes,superseded,unexamined,user,synthetic_or_tts,pri
 promptspeech,status_reason_codes,superseded,unexamined,user,synthetic_or_tts,project_doc,nc_candidates_20261010.md,superseded by promptspeech/status_reason_codes/03
 qlean_japanese_emotional,espnet_status,superseded,candidate,user,excluded,primary,https://huggingface.co/api/datasets/qleandataset/speech-emotional-speech,superseded by qlean_japanese_emotional/espnet_status/02
 qlean_japanese_emotional,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,primary,https://huggingface.co/api/datasets/qleandataset/speech-emotional-speech,superseded by qlean_japanese_emotional/status_reason_codes/02
-quechua,n_speakers_reported,superseded,6,project_doc,7,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,superseded by quechua/n_speakers_reported/02
 ramas,espnet_status,superseded,deferred,user,excluded,measured,https://neurodatalab.com/,superseded by ramas/espnet_status/02
 rasa,espnet_status,superseded,implemented,user,candidate,primary,https://huggingface.co/datasets/ai4bharat/Rasa,superseded by rasa/espnet_status/02
 rasa,hours_reported,superseded,280.4,user,1145.44,primary,https://huggingface.co/datasets/ai4bharat/Rasa,The total includes neutral and style speech; the share of the six Ekman emotions is not given per emotion on the card; superseded by rasa/hours_reported/02
