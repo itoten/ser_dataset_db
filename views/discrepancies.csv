@@ -446,8 +446,6 @@ mer2025,status_reason_codes,superseded,access_gated,project_doc,unexamined,user,
 mer2026,espnet_status,superseded,needs_decision,user,excluded,primary,https://huggingface.co/datasets/MERChallenge/MER2026,superseded by mer2026/espnet_status/04
 mer2026,espnet_status,superseded,needs_decision,user,excluded,project_doc,nc_candidates_20261010.md,superseded by mer2026/espnet_status/03
 mer2026,status_reason_codes,superseded,access_request_form_or_email,user,access_gated,project_doc,nc_candidates_20261010.md,superseded by mer2026/status_reason_codes/03
-mesd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,864,see evidence,862,measured,n_files_release_measured,
-mesd,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,864,see evidence,862,measured,recipes.n_total (mesd),a mismatch is normal: recipes filter by length and label
 mikuemobench,espnet_status,superseded,needs_decision,user,excluded,primary,https://huggingface.co/datasets/WhaleDolphin/MIKU-EmoBench,superseded by mikuemobench/espnet_status/02
 mikuemobench,hours_reported,superseded,160,primary,131.2,primary,https://arxiv.org/abs/2505.15772,superseded by mikuemobench/hours_reported/02 (newer version)
 mikuemobench,n_utt_reported,superseded,89428,primary,65970,primary,https://arxiv.org/abs/2505.15772,superseded by mikuemobench/n_utt_reported/02 (newer version)
