@@ -54,6 +54,13 @@ What you need to know about the surroundings:
    names such as `$EESC_OUTPUT`; machine settings go in the git-ignored `.env`).
 7. **Stay within the request.** Large sweeps (re-checking every license, re-probing every URL)
    are proposed, not started.
+8. **Every evidence row must point at a statement about the dataset.** Before saving a row, ask:
+   does the source (and `locator`) say something about the dataset itself? A policy, an
+   instruction, a decision to add a value to a column, "treated like dataset X", a counting
+   convention, or a choice between disagreeing sources is not evidence of a dataset fact. For a
+   fact, cite the primary source (paper, official page, licence file) that states it; if sources
+   disagree or the wording is unclear, record what each says (`conflicting`, or the value as
+   written) rather than choosing or interpreting.
 
 ## Choose the workflow
 
