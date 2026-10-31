@@ -3,8 +3,6 @@ aesc_assamese,espnet_status,superseded,candidate,user,excluded,secondary,https:/
 aesc_assamese,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Assamese/AESC.md,Not confirmed in a primary source; superseded by aesc_assamese/status_reason_codes/02
 aesd_assamese,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Assamese/AESD.md,Not confirmed in a primary source; superseded by aesd_assamese/espnet_status/02
 aesd_assamese,status_reason_codes,superseded,unexamined,user,access_request_form_or_email,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Assamese/AESD.md,Not confirmed in a primary source; superseded by aesd_assamese/status_reason_codes/02
-aesdd,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,5,see evidence,6,measured,n_speakers_measured,
-aesdd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,604,see evidence,605,measured,n_files_release_measured,
 afew,espnet_status,superseded,candidate,user,excluded,primary,https://users.cecs.anu.edu.au/~few_group/AFEW.html,superseded by afew/espnet_status/04
 afew,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by afew/espnet_status/03
 afew,status_reason_codes,superseded,access_signed_agreement,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by afew/status_reason_codes/05
