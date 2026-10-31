@@ -1,119 +1,102 @@
 # Verifying claims
 
-How to check a claim yourself before it goes into the DB. Use sources you opened and files you
-measured. A web-search summary is not a source: it cannot be cited and has mixed up different
-corpora before.
+How to check a claim before it goes into the DB. Use sources you opened. A web-search summary is
+not a source: it cannot be cited and has mixed up different corpora before. The DB does not count
+or measure by itself (SKILL.md rule 1): a value either has a primary source that states it, or
+stays empty.
 
 ## Contents
 - Sort the claims first
 - Distributor pages and APIs
 - Pages that are gone or render with JavaScript
 - Papers
-- The audio itself
-- Duplicates and near-duplicates
-- When your result matches the report exactly
+- The recipe readme
+- When something looks wrong
 - Recording what you checked
 
 ## Sort the claims first
 
-Go through the report and put every statement in one of two groups:
+Go through the report and put every statement in one of three groups:
 
-1. **Decisions and human checks by the project maintainer**: "listened to the 58 pairs and they
-   are the same sound", "checked the license on the page", "keep the recipe", "exclude these
-   files", "do not use this dataset". Record these as they are, with `source_type=user` and
-   `checked_by=user`. You cannot redo a listening test, and the decision is not yours to change.
-2. **Everything else**: counts, durations, speaker numbers, formats, duplicate counts, license
-   wording, what a card or paper says, how labels were made, URLs, dates, commit IDs. Check each
-   one. Reports written by other sessions or people contain mistakes: miscounts, a search summary
-   mistaken for a primary source, guesses written as facts.
+1. **Decisions by the project maintainer**: "keep the recipe", "exclude these files", "do not use
+   this dataset". They go into the status columns and the recipe tables only (SKILL.md "Interim").
+   They are not dataset facts and are not yours to change.
+2. **Facts about the dataset**: license wording, version, published counts, speakers, label set,
+   how the audio was produced and how the labels were made, listening tests, URLs, dates. Check
+   each one in a primary source. Reports written by other sessions or people contain mistakes:
+   miscounts, a search summary mistaken for a primary source, guesses written as facts.
+3. **Findings of the recipe**: counts in the release, duplicates, formats, sentence overlap,
+   listening notes, a source the maintainer checked by hand. Record them only as stated in the
+   recipe readme (cited at its fork commit). A finding that is only in the report stays out of the
+   DB; list it in the reply so the recipe author can add it to the readme.
 
 ## Distributor pages and APIs
 
 | Host | Read | Look at |
 |---|---|---|
-| Kaggle | `curl -sL https://www.kaggle.com/api/v1/datasets/view/<owner>/<slug>` (JSON, no login needed) | `licenseName`, `currentVersionNumber`, `lastUpdated`, `creatorName`, `description` |
+| Kaggle | `curl -sL https://www.kaggle.com/api/v1/datasets/view/<owner>/<slug>` (JSON) | `licenseName`, `currentVersionNumber`, `lastUpdated`, `creatorName`, `description` |
 | Hugging Face | `curl -sL https://huggingface.co/api/datasets/<repo>`; raw files at `https://huggingface.co/datasets/<repo>/raw/<revision>/<file>`; `curl -sIL https://huggingface.co/datasets/<repo>` for renames | `sha` (pin it), license tag, `cardData`, file list, README, LICENSE, NOTICE |
 | Zenodo | `curl -sL https://zenodo.org/api/records/<id>` | `metadata.license`, `metadata.version`, `files` |
-| figshare | `curl -sL https://api.figshare.com/v2/articles/<id>` (and `.../versions`) | `license`, `version`, dates, `description` (HTML), `files` with size and md5 |
+| figshare | `curl -sL https://api.figshare.com/v2/articles/<id>` (and `.../versions`) | `license`, `version`, dates, `description` (HTML), `files` |
 | GitHub | `https://raw.githubusercontent.com/<owner>/<repo>/<branch>/<file>` | README terms vs. LICENSE file |
 
 The license can differ between the license field, the LICENSE file, the README text and a
 NOTICE file (for example: LICENSE says MIT while the README says "research use only, send a
-signed form"). Read all of them and write the difference into `license_note`. A re-uploader's
-license field is not the authors' terms.
+signed form"). Read all of them; record each as written (`conflicting` rows when they disagree)
+and describe the difference in `license_note`. A re-uploader's license field is not the authors'
+terms.
+
+A number shown on a page as it stands (e.g. a file count displayed by the host) can be cited from
+that page as `primary`. Do not compute a value the page does not print.
 
 Descriptions contradict themselves more often than you would expect: two different utterance
-counts in one description, a design formula whose product is not the number printed next to
-it, a card that says 24-bit while every file is 16-bit, column names on the card that do not
-exist in the data. Compute and compare instead of copying.
+counts in one description, a design formula whose product is not the number printed next to it.
+Record both statements; do not pick one by your own reasoning (data-model.md, "Conflicting
+sources").
 
 ## Pages that are gone or render with JavaScript
 
 - Wayback Machine: `https://web.archive.org/web/<timestamp>/<url>`; append `id_` to the
   timestamp (`.../web/20200501144342id_/<url>`) for the raw page. Page content can change between
-  snapshots (copyright holders, prices, counts), so name the snapshot date in `locator`.
-- If a report saved copies of sources with SHA-256 hashes, hash the saved copy and compare it
-  with a fresh download before relying on it. Old Chinese pages may need `gb18030` decoding.
-- Pages that render with JavaScript (some dataset portals) return an empty shell to curl. Open
-  them in a browser tool and read the rendered text (`document.body.innerText`).
+  snapshots, so name the snapshot date in `locator`. An archived copy of the official page is
+  still the primary source.
+- Pages that render with JavaScript return an empty shell to curl. Open them in a browser tool and
+  read the rendered text (`document.body.innerText`).
+- Do not weaken TLS checks (`curl -k`) to read a page. If a page cannot be read, the value stays
+  empty, or `unknown` with the date of the attempt in the note.
 
 ## Papers
 
 - arXiv: `curl -sL https://arxiv.org/pdf/<id> -o paper.pdf && pdftotext paper.pdf paper.txt`,
   then `grep -n -i` for the dataset name and read the surrounding lines.
-- The paper cited for a dataset is not always about that dataset. Count the obvious keyword
-  (e.g. how often "emotion" occurs) before trusting a citation.
+- The paper cited for a dataset is not always about that dataset. Check the title and abstract
+  before citing it, and before putting it in `paper_url`.
 - When the paper and the release disagree (number of prompts, speakers, classes), record both.
 - Read the references section for how others cite it; differing authors or years across papers
   are a sign the citation is borrowed.
 
-## The audio itself
+## The recipe readme
 
-Find the corpus on disk through the recipe: `dataset/config.yaml` of the recipe names an
-environment variable (`source_env_var`) whose value in the toolkit's environment is the corpus
-directory. Then run, with a Python that has numpy and soundfile:
+- Read it from the recipe branch: `git -C <recipe repo> show <branch>:egs3/<recipe>/cls/readme.md`.
+- Find the commit that last changed it (`git log -1 --format=%H <branch> -- egs3/<recipe>/cls/readme.md`)
+  and check that the commit is on the public fork (`git branch -r --contains <commit>`). Cite
+  `https://github.com/itoten/espnet/blob/<commit>/egs3/<recipe>/cls/readme.md`.
+- The readme's author is responsible for its numbers. Record what it states, in its own scope
+  (whole release vs. what the recipe uses).
 
-```bash
-python <skill dir>/scripts/audio_audit.py inventory <corpus dir>
-```
+## When something looks wrong
 
-It prints files per extension, readable clips, formats (sample rate, channels, subtype), the
-duration range and total hours, and byte-identical groups. Compare every number with the report
-and with the distributor's description. Also count, with a few lines of Python, what the file
-names or metadata files encode (speakers, genders, ages, emotions, sentence IDs) and whether any
-speaker appears in more than one split.
-
-The recipe's own counts (after its filters and exclusions) are in `measurements/<recipe>.json`
-after running `tools/measure.py <recipe>` (see its docstring for the environment it needs).
-Keep "the whole release" and "what the recipe uses" apart everywhere.
-
-## Duplicates and near-duplicates
-
-```bash
-python <skill dir>/scripts/audio_audit.py dups <corpus dir> --out pairs.tsv
-python <skill dir>/scripts/audio_audit.py dups <corpus dir> --against <other corpus dir>
-```
-
-- Byte-identical files come from `inventory`. For each group, check whether its files share a
-  label, folder, speaker and split; groups that cross labels or splits matter most.
-- `dups` finds the same sound with different bytes. Every listed pair crossing a label, a
-  speaker or a split is worth reporting. Borderline pairs need a human to listen.
-- Partial overlaps (the same recording cut at different points) are not found by this method.
-  Say so instead of claiming there are none.
-
-## When your result matches the report exactly
-
-An exact match is reassuring only if you used a different method or looser settings than the
-report. If your search had a tight filter, rerun it looser, or list which pairs each method
-found and look at the difference. One registration missed a true duplicate pair because the
-candidate filter was too strict, and then reported "same result as the report".
+If a report's claim, a readme's number and a primary source disagree, do not resolve it by
+counting yourself. Record what the primary sources say, leave the rest empty, and tell the
+maintainer what disagrees and where, so the recipe author can check and correct the readme.
 
 ## Recording what you checked
 
-- A measured value you confirmed: canonical `measured` row, with a note such as "re-measured from
-  the release files on 2026-01-31; matches the report".
-- A distributor statement: `primary`, with the quoted words in `locator`. Note when the document
-  comes from a distributor or consortium rather than from the authors.
-- A maintainer decision: `user`, `checked_by=user`.
-- Not checked: leave it out, or say "not verified" in the evidence note or in the verification
-  section of the saved report. Never put a file you did not open into `source_ref`.
+- A statement in a primary source: `primary`, with the quoted words in `locator` (25 words at
+  most). Note when the document comes from a distributor or consortium rather than from the
+  authors.
+- A source you read that does not say: value `unknown`, `primary` row citing what you read,
+  "not stated" in `locator`.
+- The maintainer checked the source too: the same `primary` row with `checked_by=user` and the
+  date in `note`.
+- Not checked: leave it out. Never put a file you did not open into `source_ref`.

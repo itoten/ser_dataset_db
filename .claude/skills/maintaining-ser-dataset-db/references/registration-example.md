@@ -5,9 +5,8 @@ shapes, not the values.
 
 ## Contents
 - The situation
-- What verification found
+- What checking found
 - The registration script
-- Saving a long report inside the repository
 - Commit message
 - Reply to the requester
 
@@ -16,22 +15,27 @@ shapes, not the values.
 The DB row `toyemo` is a `candidate` (`unexamined`). A DB update report arrives. It says:
 
 - The recipe `egs3/toyemo/cls` exists (first commit `abc1234`); the maintainer decided to keep it.
-- Kaggle `someone/toyemo`, version 2, CC BY 4.0 (the maintainer looked at the page).
+- Kaggle `someone/toyemo`, version 2, CC BY 4.0 (the maintainer looked at the page on 2026-01-30).
 - 1,200 WAV files, 8 actors, 6 emotions, 1.10 hours, 44.1 kHz.
 - 12 pairs of byte-identical files; the maintainer listened and decided to keep one file of each
   pair, so the recipe uses 1,188 files.
-- Labels are the emotion each actor was asked to portray.
-- Question: should `n_utt_reported` stay 1,240 (the description) or become 1,200?
+- Labels are the emotion each actor was asked to portray; a listening test is described in the paper.
+- The 25 sentences are the same in every emotion.
 
-## What verification found
+## What checking found
 
-- Kaggle API: CC BY 4.0, version 2. The description says "1,240 utterances" in one sentence and
-  "8 actors × 6 emotions × 25 sentences" in another; 8 × 6 × 25 = 1,200.
-- `audio_audit.py inventory`: 1,200 WAV files, all 44.1 kHz mono 16-bit, 1.0972 h in total
-  (the report's 1.10 h rounds this), 12 byte-identical pairs.
-- `audio_audit.py dups`: the same 12 pairs, plus one more pair with different bytes
-  (correlation 0.997) that the report missed, with two different emotion labels.
-- `measurements/toyemo.json`: 1,188 clips; train / valid / test = 832 / 118 / 238.
+- Kaggle API: CC BY 4.0, version 2. The description says "8 actors × 6 emotions × 25 sentences"
+  and "1,200 utterances".
+- The paper (the authors' own): actors portrayed six emotions; 20 listeners rated every clip,
+  with 71% recognition of the intended emotion against a chance level of 17%; individual ratings
+  are not distributed.
+- The recipe readme at commit `def5678` (on the public fork) states the release has 1,200 WAV
+  files, 12 byte-identical pairs (one of each left out), and the same 25 sentences in every
+  emotion (from the distributed transcripts).
+- The report's "1.10 hours" and "44.1 kHz" are in neither the paper, the page nor the readme: they
+  stay out of the DB and go into the reply.
+- `measurements/toyemo.json` (from `tools/measure.py`): 1,188 clips; train / valid / test =
+  832 / 118 / 238.
 
 ## The registration script
 
@@ -44,63 +48,57 @@ sys.path.insert(0, "<skill dir>/scripts")
 from reglib import Reg
 
 KG = "https://www.kaggle.com/datasets/someone/toyemo"
-AUDIT = "the release files, audio_audit.py inventory (2026-01-31)"
-# report_path is resolved from the directory that contains the repository, hence the repo name prefix.
-R = Reg("toyemo", today="2026-01-31", report="ser_dataset_db/reports/2026-01-31_toyemo_db_update.md")
+PAPER = "https://example.org/toyemo-paper.pdf"
+README = "https://github.com/itoten/espnet/blob/def5678/egs3/toyemo/cls/readme.md"
+R = Reg("toyemo", today="2026-01-31")
 
-# Status: the recipe exists and the maintainer keeps it.
+# Status (interim rule): the recipe exists and the maintainer keeps it.
 R.ev("espnet_status", "implemented", "measured", "data/recipes.csv; egs3/toyemo/cls on the recipe branch",
-     "recipe directory exists", note="first commit abc1234; duplicate removal def5678")
+     "recipe directory exists", note="first commit abc1234; kept by the maintainer (2026-01-30)")
 R.ev("status_reason_codes", "NA", "measured", "data/recipes.csv", "implemented rows have no reason code")
-R.set(status_note="6 classes. Uses 1,188 of the 1,200 files: one file of each of 12 byte-identical pairs is "
-                  "left out (maintainer's decision after listening, 2026-01-30).",
+R.set(status_note="6 classes. The recipe uses 1,188 of the 1,200 files: one file of each of 12 "
+                  "byte-identical pairs is left out (recipe readme).",
       status_checked_on=R.today)
 
-# Counts: the description contradicts itself, so keep both values.
-R.ev("n_utt_reported", "1200", "primary", KG, "8 actors x 6 emotions x 25 sentences",
-     note="The same description also says 1,240 utterances; its own design gives 1,200 and the release has 1,200 files")
-R.conflicting("n_utt_reported", "1240", "primary", KG, "comprises 1,240 utterances",
-              note="contradicts the design formula in the same description")
-R.ev("n_files_release_measured", "1200", "measured", AUDIT, "1,200 .wav files", note="matches the report")
-R.ev("n_speakers_measured", "8", "measured", AUDIT, "speaker field of the file names")
+# Published facts from primary sources.
+R.ev("n_utt_reported", "1200", "primary", KG, "8 actors x 6 emotions x 25 sentences ... 1,200 utterances")
+R.ev("n_speakers_reported", "8", "primary", KG, "8 actors")
+R.ev("license_spdx", "CC-BY-4.0", "primary", KG, "license field: CC BY 4.0", by="user",
+     note="the maintainer also checked the page on 2026-01-30")
+R.ev("label_source", "human", "primary", PAPER, "actors portrayed six target emotions")
+R.ev("speech_production", "acted", "primary", PAPER, "actors portrayed six target emotions")
+R.ev("label_basis", "intended", "primary", PAPER, "label = the emotion the actor was asked to portray")
+R.set(label_basis_note="Labels are the instructed emotion. A listening test (20 listeners, every clip) "
+                       "checked recognition; individual ratings are not distributed.")
 
-# Labels and license.
-R.ev("label_source", "human", "primary", KG, "actors portrayed the given emotion")
-R.ev("label_verification", "NA", "primary", KG, "no listening test described; labels are the instructed emotion")
-R.ev("speech_production", "acted", "primary", KG, "actors portrayed each emotion")
-R.ev("label_basis", "intended", "primary", KG, "label = the emotion the actor was asked to portray")
-R.set(label_basis_note="Labels are the instructed emotion; no rater judgements are distributed.")
-# The page does not say whether the 25 sentences are the same in every emotion, and the texts
-# are not distributed, so a Whisper sample decides it (saved under measurements/text_link/).
-TX = "measurements/text_link/toyemo_whisper_sample.tsv"
-R.ev("text_emotion_link", "parallel", "measured", TX,
-     "2 actors x 6 emotions x 25 sentence numbers: each number has the same text in every emotion",
-     note="Whisper large-v3 transcripts, not checked by a person")
-R.ev("lexical_confound", "none", "measured", TX, "same sentences in every emotion",
-     note="Whisper large-v3 transcripts, not checked by a person")
-R.set(lexical_confound_note="The same 25 sentences in every emotion (Whisper sample of 2 of 8 actors).")
-R.ev("license_spdx", "CC-BY-4.0", "user", KG, "license field on the page", by="user",
-     note="checked on the page by the maintainer (2026-01-30); the API shows the same")
+# The listening test is always recorded (rule 6).
+R.ev("human_accuracy", "0.71", "primary", PAPER, "listeners recognised the intended emotion in 71% of ratings")
+R.set(human_accuracy_note="20 listeners rated every clip, 6 options, chance 17%. Individual ratings not distributed.")
+R.ev("label_verification", "none", "primary", PAPER,
+     "listening test measured recognition only; no clips were removed or relabelled")
+
+# Findings of the recipe: cite the readme at its fork commit.
+R.ev("text_emotion_link", "parallel", "primary", README, "the same 25 sentences are spoken in every emotion")
+R.ev("lexical_confound", "none", "primary", README, "the same 25 sentences are spoken in every emotion")
+R.set(lexical_confound_note="The same 25 sentences in every emotion (recipe readme, from the distributed transcripts).")
+# n_files_release_measured accepts only `measured` rows, so it stays empty; the readme's figure goes in notes.
 R.set(release_version="Kaggle version 2 (2025-11-02)",
-      notes="Acted speech by 8 actors, 6 emotions, 25 sentences. 1,200 WAV files, 44.1 kHz mono 16-bit, "
-            "1.0972 h. 12 byte-identical pairs. One further pair has the same sound with different bytes "
-            "(Angry_031 / Sad_112, correlation 0.997) under two different labels; it was not in the report.")
+      notes="Acted speech by 8 actors, 6 emotions, 25 sentences. The recipe readme (commit def5678) "
+            "reports 1,200 WAV files with 12 byte-identical pairs.")
 
-# Recipe tables (needs measurements/toyemo.json from tools/measure.py).
-R.recipe(report_path="reviews/toyemo.md",  # must exist, same base directory as above
-         official_split_exists="false",
+# Recipe tables (interim rule: needs measurements/toyemo.json from tools/measure.py).
+R.recipe(official_split_exists="false",
          split_method="speaker_independent", split_unit="speaker (train 6, valid 1, test 1)",
          speaker_overlap="false",
          recipe_exclusions_note="12 files: the second file of each byte-identical pair (maintainer, 2026-01-30)",
-         known_issues="One near-identical pair with different labels (Angry_031 / Sad_112) is still used",
          label_basis_used="intended",
          baseline_status="not_run", notes="health check ok on 2026-01-29 (2 epochs)")
 R.labels({"angry": ("anger", "angry", "spelling_fix"), "happy": ("joy", "happy", "synonym_rename"),
           "sad": ("sadness", "sad", "synonym_rename"), "neutral": ("neutral", "neutral", "identity"),
           "fear": ("fear", "fear", "identity"), "surprise": ("surprise", "surprise", "identity")})
 R.ann([("speaker_id", "actor code in the file name (8 actors)", "human", "speaker", "true",
-        "measured", AUDIT, "file names", "used for the speaker-independent split"),
-       ("sentence_id", "sentence number 1-25; the texts are not distributed", "human", "utterance", "false",
+        "primary", KG, "file naming section", "used for the speaker-independent split"),
+       ("sentence_id", "sentence number 1-25", "human", "utterance", "false",
         "primary", KG, "file naming section", "")])
 R.alias("ToyEmo Corpus", "official_name", KG)
 R.save()
@@ -109,44 +107,19 @@ R.save()
 Then the finishing loop from SKILL.md: `tools/views.py`, `doc_counts.py --write`,
 `tools/validate.py`, fix, repeat.
 
-## Saving a long report inside the repository
-
-When an investigation does not fit in `notes` (provenance, access history, several sources),
-copy the incoming report to `reports/<date>_<dataset_id>_db_update.md`, leave its text
-unchanged, and put this section on top:
-
-```markdown
-# <Dataset>: DB update report (saved with verification)
-
-This file is the incoming report, unchanged, with the DB maintainer's verification added on top.
-Evidence rows for `<dataset_id>` point here through `via`.
-
-## 0. Verification by the DB maintainer (<date>)
-
-| Claim in the report | How it was checked | Result |
-|---|---|---|
-| ... | ... | matches / differs: ... |
-
-Not verified: ...
-
-How the report's questions were answered: ...
-
----
-```
-
 ## Commit message
 
 ```
 Register toyemo as implemented (1,188 of 1,200 files)
 
-The report's counts were re-measured from the release and match, except that the
-near-duplicate search found one more pair (Angry_031 / Sad_112) with different labels;
-it is recorded in notes and known_issues. The Kaggle description gives both 1,240 and
-1,200 utterances; 1,200 follows its own design and the release, so it is canonical and
-1,240 is kept as a conflicting row.
+License, published counts and label basis come from the Kaggle page and the paper; the
+paper's listening test (20 listeners, 71% recognition) is recorded in human_accuracy.
+Sentence overlap and the release file count come from the recipe readme at def5678.
+The report's duration and sample rate are not stated in any primary source, so they
+were left out.
 ```
 
-State what was wrong or uncertain and what the evidence was, not only what changed.
+State what was uncertain and what the evidence was, not only what changed.
 
 ## Reply to the requester
 
@@ -154,17 +127,11 @@ State what was wrong or uncertain and what the evidence was, not only what chang
 Registered toyemo as implemented (commit 1a2b3c4, validate: 0 errors). The recipe uses
 1,188 of the 1,200 files.
 
-Verified: license and version (Kaggle API), 1,200 files / 8 speakers / 1.0972 h / formats
-(release files), the 12 byte-identical pairs, the recipe counts (measurements).
+Verified in primary sources: license and version (Kaggle), 8 speakers and 1,200 utterances
+(Kaggle), acted speech with instructed labels and the listening test (paper).
+From the recipe readme (def5678): 1,200 files, 12 byte-identical pairs, the same sentences
+in every emotion.
 
-Differs from the report:
-- One more near-identical pair, with different labels: Angry_031 / Sad_112 (corr 0.997).
-  Recorded in notes and known_issues; the recipe still uses both files.
-
-Not verified: the sentence texts (not distributed).
-
-Your question: n_utt_reported is 1,200 (the description's own design), with 1,240 kept as a
-conflicting row.
-
-Open: should the recipe also drop the pair above? That is your call.
+Left out: 1.10 hours and 44.1 kHz are in the report only. If they matter, the recipe readme
+can state them and the DB will cite it.
 ```

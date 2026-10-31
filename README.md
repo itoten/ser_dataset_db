@@ -71,19 +71,19 @@ A database of speech emotion recognition (SER) datasets, kept as CSV files under
 - **Licenses**: `license_spdx` maps the wording in the sources to an SPDX identifier (or `LicenseRef-...`). `license_class` is derived mechanically from the identifier and is not a legal interpretation. Read `license_note` and the primary source before using a dataset.
 - **Language**: all text in the DB and its documents is English (dataset names and quotations keep their original language).
 - **Public repository**: everything committed here, including commit messages, is public. Write no personal names, e-mail addresses or machine-specific paths; refer to people by role ("the project maintainer") and to local data by environment variable (e.g. `$EESC_OUTPUT/manifest/test.tsv`). `tools/validate.py` rejects absolute home paths.
-- **References outside this repository**: many evidence rows cite the project's working documents (`recipe_reports/…`, `recipe_review/…`, `new_corpora/…`, resolved from the directory that contains this repository). They are internal notes and are not published; the facts they support are summarised in the row's `locator` and `note`.
+- **References outside this repository**: some older evidence rows cite the project's working documents (`recipe_reports/…`, `recipe_review/…`, `new_corpora/…`, resolved from the directory that contains this repository). They are internal notes and are not published; the facts they support are summarised in the row's `locator` and `note`. New rows cite only published sources; internal notes may appear in `via` only.
 
 ## Evidence rules
 
 These `datasets` columns carry an evidence row for each value: `languages`, `recording_context`, `vocal_content`, `license_spdx`, `access_method`, `raw_audio_available`, `n_utt_reported`, `hours_reported`, `n_speakers_reported`, `n_files_release_measured`, `n_speakers_measured`, `labels_discrete_reported`, `dimensional_attributes`, `espnet_status`, `status_reason_codes`, `label_source`, `label_verification`, `speech_production`, `label_basis`, `text_emotion_link`, `lexical_confound`, `paralinguistic_signal`, `human_accuracy`, `source_rights`. URL and free-text columns do not.
 
 - Each column has exactly one row with `is_canonical=true`, and its value equals the cell in `datasets`.
-- Strength of `source_type`: `user` > `measured` > `primary` (the original text of a primary source) > `project_doc` (internal notes of this project) > `secondary` > `sheet`. `locator` marks the place in the source (25 words at most); `via` says which document led us there.
+- `source_type` of new rows: `primary` (the authors' or their organisation's paper, official page, license file or release files, or an ESPnet recipe readme cited at a commit on the public fork `itoten/espnet`), or `secondary` (mirrors, surveys, re-uploads) only when the primary source cannot be accessed. Older rows also use `user` (a decision or check by the project maintainer), `measured` (counted by this project), `project_doc` (internal notes) and `sheet` (the original spreadsheet; no rows remain); these are being phased out. The validator ranks them `user` > `measured` > `primary` > `project_doc` > `secondary` > `sheet`; this ranking is under review. `locator` marks the place in the source (25 words at most); `via` says which document led us there.
 - When a new fact appears, the old row is kept and marked `superseded`, and a new row is added. When sources disagree and cannot be decided, keep two or more `conflicting` rows and set the `datasets` cell to `conflicting` (e.g. the licenses of EmoDB and TurEV-DB).
-- `*_measured` columns take only `measured` evidence; `*_reported` columns cannot use `measured` (published and measured values sit side by side in separate columns).
+- `*_measured` columns take only `measured` evidence; `*_reported` columns cannot use `measured` (published and measured values sit side by side in separate columns). The DB no longer counts by itself, so new registrations leave `*_measured` empty.
 - Write nothing the sources do not say. Never guess URLs or titles.
-- The date checked is `checked_on` of each evidence row (filled for every row) and is summarised in `views/datasets_wide.csv` (`license_checked_on`, `oldest_checked_on`, ...). For rows from the spreadsheet (`sheet`), the date is the import date, not a date on which the content was checked.
-- The only basis for measured values (counts, hours, speakers) is `measurements/<recipe>.json` and measurements of the downloaded files.
+- The date checked is `checked_on` of each evidence row (filled for every row) and is summarised in `views/datasets_wide.csv` (`license_checked_on`, `oldest_checked_on`, ...).
+- Existing measured values (counts, hours, speakers) rest on `measurements/<recipe>.json` and on measurements of the downloaded files made before 2026-10-31. Values that need counting are now taken from the recipe readme once it states them; until then they stay empty.
 
 ## Validation and updates
 
@@ -126,7 +126,7 @@ Status policy (project maintainer's decision, 2026-10-14):
 
 Known caveats:
 
-- Evidence for status, license and access is mostly primary sources (distribution pages, APIs, papers) or measurements. The check of 2026-10-14 re-confirmed at the distributor the rows whose only evidence was the spreadsheet or working notes (rows whose values changed appear next to their old values in `views/discrepancies.csv`).
+- Evidence for status, license and access is mostly primary sources (distribution pages, APIs, papers) or measurements. On 2026-10-31 every value that rested only on the original spreadsheet was re-checked in primary sources; values no source states were emptied (not checked).
 - Kaggle datasets were checked with listings and labels from the authenticated API. `hindi_ser_vishlb` (8 emotion classes, 3,200 clips) and `telugu_emotion_kaggle` (5 classes, 458 clips), which had been excluded on the assumption that they needed no authentication, were returned to candidate in the review.
 - Not confirmed in primary sources:
   - 28 rows supported only by KuralHub (a third-party survey). Their `status_note` says access was not checked in a primary source. Many are data from older papers, listed as "on request".
