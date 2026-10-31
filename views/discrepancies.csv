@@ -184,7 +184,6 @@ emodialogcn,status_reason_codes,superseded,access_gated,project_doc,unexamined,u
 emofilm,access_method,superseded,signed_agreement,primary,request_form_or_email,project_doc,nc_candidates_20261010.md,superseded by emofilm/access_method/02
 emofilm,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/7665999,superseded by emofilm/espnet_status/04
 emofilm,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by emofilm/espnet_status/03
-emofilm,languages,superseded,eng;ita;spa,primary,mul,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Multilingual; superseded by emofilm/languages/02
 emofilm,status_reason_codes,superseded,access_signed_agreement,project_doc,access_request_form_or_email,project_doc,nc_candidates_20261010.md,superseded by emofilm/status_reason_codes/03
 emofilm,status_reason_codes,superseded,access_signed_agreement,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by emofilm/status_reason_codes/05
 emogator,espnet_status,superseded,implemented,measured,candidate,measured,https://github.com/fredbuhl/EmoGator,superseded by emogator/espnet_status/02
