@@ -421,7 +421,6 @@ memor,espnet_status,superseded,candidate,user,excluded,primary,https://github.co
 memor,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://github.com/sunlightsgy/MEmoR,superseded by memor/status_reason_codes/02
 mer2023,espnet_status,superseded,candidate,primary,excluded,primary,https://huggingface.co/datasets/MERChallenge/MER2023,superseded by mer2023/espnet_status/04
 mer2023,espnet_status,superseded,candidate,primary,excluded,project_doc,nc_candidates_20261010.md,superseded by mer2023/espnet_status/03
-mer2023,license_spdx,superseded,CC-BY-NC-4.0,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Custom academic/research-only; superseded by mer2023/license_spdx/02
 mer2023,status_reason_codes,superseded,access_gated,project_doc,unexamined,primary,https://huggingface.co/datasets/MERChallenge/MER2023,superseded by mer2023/status_reason_codes/05
 mer2024,status_reason_codes,superseded,access_gated,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",superseded by mer2024/status_reason_codes/02
 mer2025,espnet_status,superseded,candidate,user,excluded,primary,https://huggingface.co/datasets/MERChallenge/MER2025,superseded by mer2025/espnet_status/04
