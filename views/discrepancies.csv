@@ -528,7 +528,6 @@ recola,espnet_status,superseded,candidate,user,excluded,primary,https://recola.h
 recola,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by recola/espnet_status/03
 recola,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://recola.human-ist.ch/download.html,superseded by recola/status_reason_codes/04
 recola,status_reason_codes,superseded,unexamined,user,access_signed_agreement,project_doc,nc_candidates_20261010.md,superseded by recola/status_reason_codes/03
-resd,n_speakers_reported,superseded,20,primary,200,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,superseded by resd/n_speakers_reported/02
 rml_emotion,espnet_status,superseded,implemented,measured,candidate,measured,https://www.kaggle.com/datasets/ryersonmultimedialab/ryerson-emotion-database,superseded by rml_emotion/espnet_status/02
 rml_emotion,label_verification,superseded,listener_validated,primary,NA,primary,https://www.kaggle.com/datasets/ryersonmultimedialab/ryerson-emotion-database,"Human-only labels, hence NA (DB rule). The listening test covered only about 500 clips, and the release does not say which (see listening_test in annotations). The report proposed human_reviewed, but NA was chosen to fit the DB definition (review of automatic or mixed labels); superseded by rml_emotion/label_verification/02"
 rml_emotion,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,500,see evidence,720,measured,n_files_release_measured,
