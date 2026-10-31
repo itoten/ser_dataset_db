@@ -154,7 +154,6 @@ eesc,espnet_status,superseded,implemented,measured,candidate,measured,https://nd
 eesc,espnet_status,superseded,implemented,measured,excluded,project_doc,new_corpora/99_final_report.md,superseded by eesc/espnet_status/03
 eesc,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1234,see evidence,1164,measured,n_files_release_measured,
 eesc,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1234,see evidence,1164,measured,recipes.n_total (eesc),a mismatch is normal: recipes filter by length and label
-eesc,recording_context,superseded,read_speech,primary,acted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Acted; superseded by eesc/recording_context/02
 eesc,status_reason_codes,superseded,NA,measured,access_no_direct_download,project_doc,new_corpora/99_final_report.md,superseded by eesc/status_reason_codes/03
 eesc,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by eesc/status_reason_codes/04
 eesdb_chinese,espnet_status,superseded,candidate,user,excluded,secondary,https://github.com/aaivu/KuralHub/blob/main/datasets/Chinese/EESDB.md,Not confirmed in a primary source; superseded by eesdb_chinese/espnet_status/02
