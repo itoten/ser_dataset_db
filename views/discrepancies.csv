@@ -460,7 +460,6 @@ multidialog,status_reason_codes,superseded,NA,user,unexamined,project_doc,ser_da
 musecar,access_method,superseded,signed_agreement,primary,request_form_or_email,primary,https://zenodo.org/records/4651164,Whether a EULA is needed is unverified; superseded by musecar/access_method/02
 musecar,espnet_status,superseded,candidate,user,excluded,primary,https://sites.google.com/view/muse2020/challenge/get-data,superseded by musecar/espnet_status/04
 musecar,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by musecar/espnet_status/03
-musecar,hours_reported,superseded,36,primary,36.87,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,superseded by musecar/hours_reported/02
 musecar,status_reason_codes,superseded,unexamined,user,access_signed_agreement,primary,https://sites.google.com/view/muse2020/challenge/get-data,superseded by musecar/status_reason_codes/04
 musecar,status_reason_codes,superseded,unexamined,user,access_signed_agreement,project_doc,nc_candidates_20261010.md,superseded by musecar/status_reason_codes/03
 narrative_dialogue,espnet_status,superseded,excluded,measured,deferred,project_doc,new_corpora/99_final_report.md,superseded by narrative_dialogue/espnet_status/02
