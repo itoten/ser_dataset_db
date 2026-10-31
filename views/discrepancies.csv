@@ -183,10 +183,8 @@ emis,status_reason_codes,superseded,NA,measured,synthetic_or_tts,primary,https:/
 emis,status_reason_codes,superseded,NA,measured,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: synthetic_or_tts; superseded by emis/status_reason_codes/03
 emo_emilia,status_reason_codes,superseded,first_review_done,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",superseded by emo_emilia/status_reason_codes/02
 emo_emilia,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,second look 2026-10-28 (see status_note),Replaces the provisional reason from the spreadsheet import; superseded by emo_emilia/status_reason_codes/03
-emodb,hours_reported,superseded,1.25,primary,0.7,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,superseded by emodb/hours_reported/02
 emodb,license_spdx,conflicting,CC-BY-4.0,user,CC0-1.0,primary,https://audeering.github.io/datasets/datasets/emodb.html,
 emodb,license_spdx,superseded,CC-BY-4.0,user,conflicting,project_doc,corpus_metadata.md,Zenodo 17651657 (2.0) says CC BY 4.0; the audEERING documentation says CC0-1.0 (corpus_metadata.md); superseded by emodb/license_spdx/05
-emodb,n_utt_reported,superseded,816,project_doc,535,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,superseded by emodb/n_utt_reported/02
 emodialogcn,espnet_status,superseded,candidate,user,excluded,primary,https://huggingface.co/api/datasets/EmoDialogCN/EmoDialogCN-21.8K,superseded by emodialogcn/espnet_status/02
 emodialogcn,status_reason_codes,superseded,access_gated,project_doc,access_request_form_or_email,primary,https://huggingface.co/api/datasets/EmoDialogCN/EmoDialogCN-21.8K,superseded by emodialogcn/status_reason_codes/02
 emodialogcn,status_reason_codes,superseded,access_gated,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_request_form_or_email; superseded by emodialogcn/status_reason_codes/03
