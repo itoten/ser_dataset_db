@@ -244,7 +244,6 @@ emouerj,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_da
 emouerj_sed,status_reason_codes,superseded,redistribution_of_existing_corpus,primary,content_insufficient,project_doc,new_corpora/99_final_report.md,superseded by emouerj_sed/status_reason_codes/02
 emovie,espnet_status,superseded,candidate,user,excluded,primary,https://arxiv.org/abs/2106.09317,superseded by emovie/espnet_status/02
 emovie,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,primary,https://arxiv.org/abs/2106.09317,superseded by emovie/status_reason_codes/02
-emovo,license_spdx,superseded,none_stated,primary,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Custom academic/research-only; superseded by emovo/license_spdx/02
 emovoicedb,espnet_status,superseded,implemented,measured,candidate,user,"Conversation with the maintainer, 2026-10-14",Former reason: synthetic_or_tts; superseded by emovoicedb/espnet_status/03
 emovoicedb,espnet_status,superseded,implemented,measured,excluded,primary,https://huggingface.co/datasets/yhaha/EmoVoice-DB,superseded by emovoicedb/espnet_status/02
 emovoicedb,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,22100,see evidence,24923,measured,n_files_release_measured,
