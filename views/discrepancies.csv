@@ -151,7 +151,6 @@ des,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20
 dfew,espnet_status,superseded,candidate,user,excluded,primary,https://dfew-dataset.github.io/download.html,superseded by dfew/espnet_status/02
 dfew,status_reason_codes,superseded,access_request_form_or_email,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_request_form_or_email; superseded by dfew/status_reason_codes/03
 dusha,license_spdx,superseded,LicenseRef-golos-public,primary,LicenseRef-other,primary,https://cdn.chatwm.opensmodel.sberdevices.ru/dusha/,superseded by dusha/license_spdx/03
-dusha,license_spdx,superseded,LicenseRef-golos-public,primary,LicenseRef-other,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Other; superseded by dusha/license_spdx/02
 dusha,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,303963,see evidence,160357,measured,recipes.n_total (dusha),a mismatch is normal: recipes filter by length and label
 dzafic,status_reason_codes,superseded,identity_unresolved,project_doc,content_insufficient,project_doc,new_corpora/99_final_report.md,superseded by dzafic/status_reason_codes/02
 ears,status_reason_codes,superseded,first_review_done,project_doc,unexamined,project_doc,first review 2026-10-28 (see status_note),Replaces the provisional reason from the spreadsheet import with the first-review result; superseded by ears/status_reason_codes/03
