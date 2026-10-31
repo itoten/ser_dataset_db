@@ -80,7 +80,6 @@ biicnnime,status_reason_codes,superseded,access_request_form_or_email,project_do
 biicnnime,status_reason_codes,superseded,access_request_form_or_email,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by biicnnime/status_reason_codes/05
 biicpodcast,espnet_status,superseded,candidate,user,excluded,primary,http://andc.ai/html/menu/dataset/biic-podcast.php,superseded by biicpodcast/espnet_status/04
 biicpodcast,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by biicpodcast/espnet_status/03
-biicpodcast,license_spdx,superseded,LicenseRef-custom-research-only,primary,LicenseRef-proprietary-restricted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Proprietary/Restricted; superseded by biicpodcast/license_spdx/02
 biicpodcast,status_reason_codes,superseded,access_signed_agreement,project_doc,not_individually_checked,project_doc,nc_candidates_20261010.md,superseded by biicpodcast/status_reason_codes/03
 biicpodcast,status_reason_codes,superseded,access_signed_agreement,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_signed_agreement; superseded by biicpodcast/status_reason_codes/05
 bmisec,espnet_status,superseded,deferred,user,excluded,measured,https://onlineresource.ucsy.edu.mm/handle/123456789/2809,superseded by bmisec/espnet_status/02
