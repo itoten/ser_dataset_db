@@ -53,7 +53,6 @@ basis_global_emotions,status_reason_codes,superseded,unexamined,user,access_requ
 baum1,espnet_status,superseded,candidate,user,excluded,primary,https://archive.ics.uci.edu/api/dataset?id=473,superseded by baum1/espnet_status/04
 baum1,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by baum1/espnet_status/03
 baum1,license_spdx,conflicting,conflicting,project_doc,CC-BY-4.0,primary,https://archive.ics.uci.edu/dataset/473/baum+1,
-baum1,license_spdx,conflicting,conflicting,project_doc,LicenseRef-custom-research-only,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Custom academic/research-only; the terms at application time are non-commercial (spreadsheet note). Disagrees with UCI's CC BY 4.0
 baum1,status_reason_codes,superseded,access_request_form_or_email,project_doc,access_request_form_or_email;not_distributable,project_doc,nc_candidates_20261010.md,superseded by baum1/status_reason_codes/03
 baum1,status_reason_codes,superseded,access_request_form_or_email,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_request_form_or_email; superseded by baum1/status_reason_codes/05
 baum2,espnet_status,superseded,candidate,user,excluded,primary,https://archive.ics.uci.edu/api/dataset?id=474,superseded by baum2/espnet_status/03
