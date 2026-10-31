@@ -618,7 +618,6 @@ uftbesd,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1400,see ev
 uq_schizophrenia_videos,espnet_status,superseded,deferred,user,excluded,secondary,https://github.com/SuperKogito/SER-datasets,superseded by uq_schizophrenia_videos/espnet_status/02
 uq_schizophrenia_videos,status_reason_codes,superseded,unexamined,user,content_insufficient,secondary,https://github.com/SuperKogito/SER-datasets,superseded by uq_schizophrenia_videos/status_reason_codes/02
 urdu,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,38,see evidence,29,measured,n_speakers_measured,
-urdu,recording_context,superseded,talk_show,primary,tv_show,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: TV show; superseded by urdu/recording_context/02
 usc_emo_mri,espnet_status,superseded,implemented,measured,candidate,primary,https://zenodo.org/records/19325044,superseded by usc_emo_mri/espnet_status/02
 usoms,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,superseded by usoms/espnet_status/03
 utemo,espnet_status,superseded,implemented,measured,candidate,primary,https://data.mendeley.com/datasets/x5rmd28h73,superseded by utemo/espnet_status/02
