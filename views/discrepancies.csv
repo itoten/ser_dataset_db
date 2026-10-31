@@ -256,9 +256,6 @@ emovome,status_reason_codes,superseded,access_signed_agreement,project_doc,unexa
 enterface05,label_basis,superseded,unknown,primary,intended,project_doc,recipe_review/archive_v1/enterface05.md,superseded by enterface05/label_basis/02
 enterface05,label_source,superseded,unknown,primary,human,project_doc,recipe_review/archive_v1/enterface05.md,"Not re-verified against the paper, which was not read; superseded by enterface05/label_source/02"
 enterface05,n_speakers_measured,superseded,43,measured,42,measured,"$ENTERFACE05_OUTPUT/manifest/{train,valid,test}.tsv",superseded by enterface05/n_speakers_measured/02
-enterface05,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,42,see evidence,43,measured,n_speakers_measured,
-enterface05,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1166,see evidence,1293,measured,n_files_release_measured,
-enterface05,n_utt_reported vs recipe n_total,reported_vs_recipe_measured,1166,see evidence,1287,measured,recipes.n_total (enterface05),a mismatch is normal: recipes filter by length and label
 enterface05,speech_production,superseded,unknown,primary,elicited,project_doc,recipe_review/archive_v1/enterface05.md,From the review notes; the eNTERFACE'05 paper was not read here; superseded by enterface05/speech_production/02
 escorpuspe,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/5793223,superseded by escorpuspe/espnet_status/03
 escorpuspe,espnet_status,superseded,candidate,user,excluded,project_doc,new_corpora/99_final_report.md,superseded by escorpuspe/espnet_status/02
