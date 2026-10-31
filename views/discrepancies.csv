@@ -137,7 +137,6 @@ deeply_nonverbal,espnet_status,superseded,candidate,user,excluded,primary,https:
 deeply_nonverbal,status_reason_codes,superseded,unexamined,user,labels_not_discrete_emotion,primary,https://www.openslr.org/99/,superseded by deeply_nonverbal/status_reason_codes/02
 demos,espnet_status,superseded,candidate,user,excluded,primary,https://zenodo.org/records/2544829,superseded by demos/espnet_status/04
 demos,espnet_status,superseded,candidate,user,excluded,project_doc,nc_candidates_20261010.md,superseded by demos/espnet_status/03
-demos,recording_context,superseded,affect_elicitation,primary,acted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Acted; superseded by demos/recording_context/02
 demos,status_reason_codes,superseded,access_signed_agreement,project_doc,access_request_form_or_email,primary,https://zenodo.org/records/2544829,superseded by demos/status_reason_codes/04
 demos,status_reason_codes,superseded,access_signed_agreement,project_doc,access_request_form_or_email,project_doc,nc_candidates_20261010.md,superseded by demos/status_reason_codes/03
 demos,status_reason_codes,superseded,access_signed_agreement,project_doc,unexamined,user,"Conversation with the maintainer, 2026-10-14",Former reason: access_request_form_or_email; superseded by demos/status_reason_codes/05
