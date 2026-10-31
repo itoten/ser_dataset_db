@@ -554,7 +554,6 @@ ses_sd,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dat
 sewa,espnet_status,superseded,deferred,user,excluded,measured,http://db.sewaproject.eu/,superseded by sewa/espnet_status/04
 sewa,espnet_status,superseded,deferred,user,excluded,project_doc,nc_candidates_20261010.md,superseded by sewa/espnet_status/03
 sewa,status_reason_codes,superseded,host_unreachable,user,not_individually_checked,project_doc,nc_candidates_20261010.md,superseded by sewa/status_reason_codes/03
-shemo,recording_context,superseded,other,primary,acted,sheet,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Original spreadsheet value: Acted; superseded by shemo/recording_context/02
 sitb_osed,espnet_status,superseded,implemented,measured,candidate,primary,https://zenodo.org/records/16210020,superseded by sitb_osed/espnet_status/02
 sitb_osed,status_reason_codes,superseded,NA,measured,unexamined,project_doc,ser_dataset_db: judgement in the 2026-10-14 survey,superseded by sitb_osed/status_reason_codes/02
 slue_voxceleb,espnet_status,superseded,candidate,user,excluded,primary,https://arxiv.org/abs/2111.10367,superseded by slue_voxceleb/espnet_status/02
