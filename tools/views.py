@@ -25,8 +25,8 @@ def wide(db):
     for a in db["annotations"][1]:
         items.setdefault(a["dataset_id"], []).append(a["item"])
     canon = {}
-    for e in db["evidence"][1]:
-        if e["is_canonical"] == "true":
+    for e in sorted(db["evidence"][1], key=lambda e: e["evidence_id"]):
+        if e["status"] in ("current", "conflicting", "provisional"):
             canon.setdefault(e["dataset_id"], {})[e["field"]] = e
     out = []
     for d in db["datasets"][1]:
@@ -46,21 +46,15 @@ def wide(db):
 
 
 def discrepancies(db):
-    ev = db["evidence"][1]
     ds = {d["dataset_id"]: d for d in db["datasets"][1]}
-    canon = {(e["dataset_id"], e["field"]): e for e in ev if e["is_canonical"] == "true"}
     out = []
-    for e in ev:
-        if e["is_canonical"] == "true":
+    for e in db["evidence"][1]:
+        if e["status"] != "conflicting":
             continue
-        c = canon.get((e["dataset_id"], e["field"]))
-        if c is None:
-            continue
-        if e["value"] in (c["value"], "unknown"):
-            continue
-        out.append({"dataset_id": e["dataset_id"], "field": e["field"], "kind": e["status"],
-                    "datasets_value": c["value"], "datasets_source_type": c["source_type"], "other_value": e["value"],
-                    "other_source_type": e["source_type"], "other_source_ref": e["source_ref"], "note": e["note"]})
+        out.append({"dataset_id": e["dataset_id"], "field": e["field"], "kind": "conflicting",
+                    "datasets_value": "conflicting", "datasets_source_type": "see evidence",
+                    "other_value": e["value"], "other_source_type": e["source_type"],
+                    "other_source_ref": e["source_ref"], "note": e["note"]})
     pairs = [("n_speakers_reported", "n_speakers_measured", "reported_vs_release_measured"),
              ("n_utt_reported", "n_files_release_measured", "reported_vs_release_measured")]
     for i, d in ds.items():

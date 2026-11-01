@@ -16,9 +16,7 @@ import db as dbmod
 import views
 
 SLUG = re.compile(r"^[a-z][a-z0-9]*(_[a-z0-9]+)*$")
-TOKENS = {"unknown", "NA", "none"}
-# Lower number = stronger evidence.
-RANK = {"user": 0, "measured": 1, "primary": 2, "implementation": 2, "project_doc": 3, "secondary": 4, "sheet": 5}
+TOKENS = {"unknown", "NA", "none", "conflicting"}
 
 errors = []
 warnings = []
@@ -181,46 +179,70 @@ def check_keys(tables, db):
 # ---- 4. evidence ----------------------------------------------------------
 
 
+LIVE = ("current", "conflicting", "provisional")
+SOURCED = {"primary", "secondary", "implementation"}
+OLD_TYPES = {"measured", "project_doc", "user"}
+
+
 def check_evidence(cols, db):
-    ev_cols = {c["column"]: c["evidence"] for c in cols["datasets"] if c["evidence"] != "no"}
+    ev_cols = {c["column"] for c in cols["datasets"] if c["evidence"] != "no"}
     ev = {}
     for r in db["evidence"][1]:
         ev.setdefault((r["dataset_id"], r["field"]), []).append(r)
+        eid, st, ty = r["evidence_id"], r["status"], r["source_type"]
         if r["field"] not in ev_cols:
-            err(f"evidence {r['evidence_id']}: field {r['field']} does not take evidence")
-        if r["field"].endswith("_measured") and r["source_type"] not in ("measured", "implementation"):
-            err(f"evidence {r['evidence_id']}: *_measured fields need source_type measured or implementation")
-        if r["field"].endswith("_reported") and r["source_type"] in ("measured", "implementation"):
-            err(f"evidence {r['evidence_id']}: *_reported fields cannot use measured or implementation")
-        canon = r["is_canonical"] == "true"
-        if canon and r["status"] == "superseded":
-            err(f"evidence {r['evidence_id']}: canonical row cannot be superseded")
-        if not canon and r["status"] == "current":
-            err(f"evidence {r['evidence_id']}: non-canonical row must be superseded or conflicting")
+            err(f"evidence {eid}: field {r['field']} does not take evidence")
+        if st in ("current", "conflicting"):
+            if ty not in SOURCED:
+                err(f"evidence {eid}: a {st} row needs source_type primary, secondary or implementation, not {ty}")
+            if not r["source_ref"]:
+                err(f"evidence {eid}: a {st} row needs a source")
+            if r["field"].endswith("_measured") and ty != "implementation":
+                err(f"evidence {eid}: *_measured fields need source_type implementation")
+            if r["field"].endswith("_reported") and ty == "implementation":
+                err(f"evidence {eid}: *_reported fields cannot use implementation")
+        if st == "provisional":
+            if ty not in OLD_TYPES | SOURCED:
+                err(f"evidence {eid}: unknown source_type {ty}")
+            if r["source_ref"] or r["locator"]:
+                err(f"evidence {eid}: a provisional row has no source (source_ref and locator must be empty)")
+            if not r["note"].startswith("Provisional:"):
+                err(f"evidence {eid}: the note of a provisional row starts with 'Provisional:'")
     for row in db["datasets"][1]:
         d = row["dataset_id"]
-        for field, kind in ev_cols.items():
+        for field in ev_cols:
             v = row[field]
+            rows = [r for r in ev.get((d, field), []) if r["status"] in LIVE]
             needed = v not in ("", "NA")
-            rows = ev.get((d, field), [])
-            canon = [r for r in rows if r["is_canonical"] == "true"]
             if not needed:
                 if rows and v == "":
-                    err(f"evidence {d}/{field}: rows exist but the datasets cell is empty")
+                    err(f"evidence {d}/{field}: live rows exist but the datasets cell is empty")
                 continue
-            if len(canon) != 1:
-                err(f"evidence {d}/{field}: needs exactly one canonical row, found {len(canon)}")
-                continue
-            c = canon[0]
-            if c["value"] != v:
-                err(f"evidence {d}/{field}: canonical value {c['value']!r} != datasets value {v!r}")
-            better = [r for r in rows if r is not c and RANK[r["source_type"]] < RANK[c["source_type"]]]
-            if better and not c["note"]:
-                err(f"evidence {d}/{field}: canonical row uses a weaker source than another row; note is required")
-            if c["status"] == "conflicting" and not any(
-                r is not c and r["status"] == "conflicting" for r in rows
-            ):
-                err(f"evidence {d}/{field}: canonical is conflicting but no other conflicting row exists")
+            cur = [r for r in rows if r["status"] == "current"]
+            con = [r for r in rows if r["status"] == "conflicting"]
+            pro = [r for r in rows if r["status"] == "provisional"]
+            if not rows:
+                err(f"evidence {d}/{field}: no current, conflicting or provisional row for {v!r}")
+            elif con:
+                if cur:
+                    err(f"evidence {d}/{field}: current and conflicting rows together")
+                if len({r["value"] for r in con}) < 2:
+                    err(f"evidence {d}/{field}: conflicting rows need at least two different values")
+                if v != "conflicting":
+                    err(f"evidence {d}/{field}: conflicting rows but the datasets cell is {v!r}")
+            elif cur:
+                vals = {r["value"] for r in cur}
+                if len(vals) > 1:
+                    err(f"evidence {d}/{field}: current rows disagree {sorted(vals)}; make them conflicting or supersede one")
+                if pro:
+                    err(f"evidence {d}/{field}: a provisional row next to current rows; supersede it")
+                if v not in vals:
+                    err(f"evidence {d}/{field}: current value {sorted(vals)} != datasets value {v!r}")
+            else:
+                if len(pro) != 1:
+                    err(f"evidence {d}/{field}: needs exactly one provisional row, found {len(pro)}")
+                elif pro[0]["value"] != v:
+                    err(f"evidence {d}/{field}: provisional value {pro[0]['value']!r} != datasets value {v!r}")
 
 
 # ---- 9. paths --------------------------------------------------------------

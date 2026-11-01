@@ -2,36 +2,36 @@ table,column,type,nulls,evidence,description
 datasets,dataset_id,slug,-,no,Stable ID. For implemented datasets it equals the egs3 recipe name. Never changed once committed
 datasets,name,text,-,no,Name as written in the primary source (the spreadsheet name for rows from the spreadsheet)
 datasets,full_title,text,empty,no,Full title
-datasets,languages,isolist,empty;unknown,yes,"ISO 639-3 codes (;-separated). mul = multilingual with unknown breakdown, zxx = no linguistic content"
+datasets,languages,isolist,empty;unknown;conflicting,yes,"ISO 639-3 codes (;-separated). mul = multilingual with unknown breakdown, zxx = no linguistic content"
 datasets,language_note,text,empty,no,Notes on varieties and how the language value was decided
-datasets,recording_context,enum:recording_context,empty,yes,Recording or collection setting
-datasets,vocal_content,enum:vocal_content,empty,yes,Speech or non-verbal vocalisation
-datasets,license_spdx,enum:license_spdx,empty,yes,"SPDX identifier or LicenseRef-*. A classification of the stated terms, not a legal interpretation"
+datasets,recording_context,enum:recording_context,empty;conflicting,yes,Recording or collection setting
+datasets,vocal_content,enum:vocal_content,empty;conflicting,yes,Speech or non-verbal vocalisation
+datasets,license_spdx,enum:license_spdx,empty;conflicting,yes,"SPDX identifier or LicenseRef-*. A classification of the stated terms, not a legal interpretation"
 datasets,license_note,text,empty,no,Gist of the license wording
-datasets,access_method,enum:access_method,empty,yes,Access method
-datasets,raw_audio_available,bool,empty;unknown,yes,Whether raw audio is distributed
+datasets,access_method,enum:access_method,empty;conflicting,yes,Access method
+datasets,raw_audio_available,bool,empty;unknown;conflicting,yes,Whether raw audio is distributed
 datasets,release_version,text,empty,no,Version obtained
 datasets,doi,text,empty,no,DOI
 datasets,source_url,url,empty,no,The spreadsheet's Source URL. Whether it is a download location or an introduction page depends on the row
 datasets,download_url,url,empty,no,Download location
 datasets,paper_url,url,empty,no,Paper URL
-datasets,n_utt_reported,int,empty;unknown,yes,Number of utterances per the primary source (or the spreadsheet)
-datasets,hours_reported,float,empty;unknown,yes,Total hours per the primary source (or the spreadsheet)
-datasets,n_speakers_reported,int,empty;unknown,yes,Number of speakers per the primary source (or the spreadsheet)
-datasets,n_files_release_measured,int,empty;unknown;NA,yes,Number of files in what we obtained (our measurement)
-datasets,n_speakers_measured,int,empty;unknown;NA,yes,Number of speakers in what we obtained (our measurement)
-datasets,labels_discrete_reported,list,empty;unknown;none,yes,"Categorical emotion labels in the source (;-separated, in the source's own vocabulary)"
+datasets,n_utt_reported,int,empty;unknown;conflicting,yes,Number of utterances per the primary source (or the spreadsheet)
+datasets,hours_reported,float,empty;unknown;conflicting,yes,Total hours per the primary source (or the spreadsheet)
+datasets,n_speakers_reported,int,empty;unknown;conflicting,yes,Number of speakers per the primary source (or the spreadsheet)
+datasets,n_files_release_measured,int,empty;unknown;NA;conflicting,yes,Number of files in what we obtained (our measurement)
+datasets,n_speakers_measured,int,empty;unknown;NA;conflicting,yes,Number of speakers in what we obtained (our measurement)
+datasets,labels_discrete_reported,list,empty;unknown;none;conflicting,yes,"Categorical emotion labels in the source (;-separated, in the source's own vocabulary)"
 datasets,labels_discrete_note,text,empty,no,"Descriptions that cannot be made into a label list (spreadsheet originals, etc.)"
 datasets,n_discrete_labels_reported,int,empty;unknown,no,Number of categories stated by the source
-datasets,dimensional_attributes,list,empty;unknown;none,yes,Axes of dimensional emotion (;-separated)
+datasets,dimensional_attributes,list,empty;unknown;none;conflicting,yes,Axes of dimensional emotion (;-separated)
 datasets,dimensional_note,text,empty,no,"Descriptions of dimensional emotion that cannot be listed (spreadsheet originals, etc.)"
-datasets,label_source,enum:label_source,empty;unknown;NA,yes,Who assigned the main labels (those in labels_discrete_reported and dimensional_attributes): human / automatic / mixed / synthesis_specified (synthetic audio whose label is the emotion specified to the synthesiser)
-datasets,label_verification,enum:label_verification,empty;unknown;none;NA,yes,Whether people checked the labels: human_reviewed (people reviewed automatic labels) / listener_validated (instructed labels confirmed or filtered by a listening test; the label stays the instructed one) / none (a source says there was no review) / unknown / NA (nothing to review)
-datasets,speech_production,enumlist:speech_production,empty;unknown,yes,"How the audio was produced (;-separated): acted (acting, including film and drama performances) / elicited (emotion induced by stimuli or tasks) / spontaneous (natural speech) / read (reading without an emotion instruction) / synthetic (synthetic speech). The setting or medium is recording_context"
-datasets,label_basis,enumlist:label_basis,empty;unknown;none,yes,"How the main labels were made (;-separated): intended (emotion the speaker was told to portray) / perceived (emotion listeners perceived) / self_reported (the speaker's own report) / context_inferred (from the scene, script or meaning of the words) / automatic (a model's estimate). none = no emotion labels"
+datasets,label_source,enum:label_source,empty;unknown;NA;conflicting,yes,Who assigned the main labels (those in labels_discrete_reported and dimensional_attributes): human / automatic / mixed / synthesis_specified (synthetic audio whose label is the emotion specified to the synthesiser)
+datasets,label_verification,enum:label_verification,empty;unknown;none;NA;conflicting,yes,Whether people checked the labels: human_reviewed (people reviewed automatic labels) / listener_validated (instructed labels confirmed or filtered by a listening test; the label stays the instructed one) / none (a source says there was no review) / unknown / NA (nothing to review)
+datasets,speech_production,enumlist:speech_production,empty;unknown;conflicting,yes,"How the audio was produced (;-separated): acted (acting, including film and drama performances) / elicited (emotion induced by stimuli or tasks) / spontaneous (natural speech) / read (reading without an emotion instruction) / synthetic (synthetic speech). The setting or medium is recording_context"
+datasets,label_basis,enumlist:label_basis,empty;unknown;none;conflicting,yes,"How the main labels were made (;-separated): intended (emotion the speaker was told to portray) / perceived (emotion listeners perceived) / self_reported (the speaker's own report) / context_inferred (from the scene, script or meaning of the words) / automatic (a model's estimate). none = no emotion labels"
 datasets,label_basis_note,text,empty,no,"Details of how labels were made: number of raters, what raters saw or heard (audio only / with video / transcript), how ratings were combined (majority, mean), which label set is the main one, listening-test details, etc."
-datasets,spoken_text_design,enumlist:spoken_text_design,empty;unknown,yes,"How the spoken text relates to the emotion labels (;-separated when the data mixes designs): parallel (the same sentences in every emotion) / neutral_text (semantically neutral sentences) / emotion_specific_text (content matches the emotion) / unrelated_text (sentences assigned without regard to the emotion) / dialogue_script (lines of a film, drama or written dialogue) / unscripted (no script: conversations, broadcasts, improvisation)"
-datasets,source_rights,enum:source_rights,empty,yes,"Rights in the underlying audio, separate from license_spdx (which keeps the stated license): own / cleared / asserted / unaddressed / unknown. asserted, unaddressed and unknown mean the material needs a rights check. Empty = not examined"
+datasets,spoken_text_design,enumlist:spoken_text_design,empty;unknown;conflicting,yes,"How the spoken text relates to the emotion labels (;-separated when the data mixes designs): parallel (the same sentences in every emotion) / neutral_text (semantically neutral sentences) / emotion_specific_text (content matches the emotion) / unrelated_text (sentences assigned without regard to the emotion) / dialogue_script (lines of a film, drama or written dialogue) / unscripted (no script: conversations, broadcasts, improvisation)"
+datasets,source_rights,enum:source_rights,empty;conflicting,yes,"Rights in the underlying audio, separate from license_spdx (which keeps the stated license): own / cleared / asserted / unaddressed / unknown. asserted, unaddressed and unknown mean the material needs a rights check. Empty = not examined"
 datasets,source_rights_note,text,empty,no,"What the sources say about the rights in the material (quote or paraphrase with the place) and what is missing (sources, per-item licenses, consent, non-commercial statement)"
 datasets,notes,text,empty,no,Our own notes
 datasets,last_updated_on,date,-,no,Date this row was last updated
@@ -40,12 +40,11 @@ evidence,dataset_id,slug,-,no,Foreign key to datasets
 evidence,field,text,-,no,Column name in datasets (a column with evidence=yes)
 evidence,value,text,-,no,The value the evidence supports (same format as in datasets)
 evidence,source_type,enum:source_type,-,no,measured / primary / secondary / project_doc / sheet / user
-evidence,source_ref,text,-,no,"Source (URL, file path, commit)"
+evidence,source_ref,text,empty,no,"Source (URL, file path, commit). Empty only for provisional rows"
 evidence,locator,text,empty,no,Location within the source (25 words at most)
 evidence,checked_on,date,-,no,Date checked
 evidence,checked_by,enum:checked_by,-,no,Who checked
-evidence,is_canonical,bool,-,no,true if this is the evidence for the value in datasets (one row per dataset x field)
-evidence,status,enum:evidence_status,-,no,current / superseded / conflicting
+evidence,status,enum:evidence_status,-,no,current / superseded / conflicting / provisional
 evidence,note,text,empty,no,Notes. Required when a lower-ranked source is made canonical
 aliases,dataset_id,slug,-,no,Foreign key to datasets
 aliases,alias,text,-,no,Alias

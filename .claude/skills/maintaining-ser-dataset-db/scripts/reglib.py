@@ -56,29 +56,55 @@ class Reg:
         n = max([int(e["evidence_id"].rsplit("/", 1)[1]) for e in self._rows(field)] or [0]) + 1
         return f"{self.D}/{field}/{n:02d}"
 
-    def _append(self, eid, field, value, stype, ref, loc, by, note, canonical, status):
+    def _append(self, eid, field, value, stype, ref, loc, by, note, status):
         e = {c: "" for c in self.evh}
         e.update(evidence_id=eid, dataset_id=self.D, field=field, value=value, source_type=stype,
                  source_ref=ref, locator=loc, checked_on=self.today,
-                 checked_by=by, is_canonical=canonical, status=status, note=note.strip())
+                 checked_by=by, status=status, note=note.strip())
         self.evr.append(e)
 
-    def ev(self, field, value, stype, ref, loc="", by="claude", note=""):
-        """Add the new canonical evidence row for `field` and set the cell to `value`.
-
-        The previous canonical row is kept and marked superseded (history is never deleted).
-        """
-        nid = self._next_id(field)
+    def _supersede(self, field, nid, only_other_values=None):
         for o in self._rows(field):
-            if o["is_canonical"] == "true":
-                o.update(is_canonical="false", status="superseded",
-                         note=((o["note"] + "; ") if o["note"] else "") + f"superseded by {nid}")
-        self._append(nid, field, value, stype, ref, loc, by, note, "true", "current")
+            if o["status"] in ("current", "provisional") and (only_other_values is None or o["value"] != only_other_values):
+                o.update(status="superseded", note=((o["note"] + "; ") if o["note"] else "") + f"superseded by {nid}")
+
+    def ev(self, field, value, stype, ref, loc="", by="claude", note=""):
+        """Add a current evidence row for `field` and set the cell to `value`.
+
+        Current rows with another value and provisional rows are marked superseded (history is
+        never deleted). Rows with the same value stay current. If the field is conflicting, use
+        conflicting() or resolve() first.
+        """
+        if any(o["status"] == "conflicting" for o in self._rows(field)):
+            raise SystemExit(f"ev: {field} is conflicting; call resolve({field!r}, why) first or add with conflicting()")
+        nid = self._next_id(field)
+        self._supersede(field, nid, only_other_values=value)
+        for o in self._rows(field):
+            if o["status"] == "provisional":
+                o.update(status="superseded", note=((o["note"] + "; ") if o["note"] else "") + f"superseded by {nid}")
+        self._append(nid, field, value, stype, ref, loc, by, note, "current")
         self.row[field] = value
 
     def conflicting(self, field, value, stype, ref, loc="", by="claude", note=""):
-        """Keep a source that disagrees with the canonical value, as a non-canonical row."""
-        self._append(self._next_id(field), field, value, stype, ref, loc, by, note, "false", "conflicting")
+        """Add a source that disagrees with the others. The cell becomes `conflicting`.
+
+        Current rows with another value become conflicting too; provisional rows are superseded.
+        """
+        nid = self._next_id(field)
+        for o in self._rows(field):
+            if o["status"] == "provisional":
+                o.update(status="superseded", note=((o["note"] + "; ") if o["note"] else "") + f"superseded by {nid}")
+            elif o["status"] == "current" and o["value"] != value:
+                o["status"] = "conflicting"
+        self._append(nid, field, value, stype, ref, loc, by, note, "conflicting")
+        self.row[field] = "conflicting"
+
+    def resolve(self, field, why):
+        """Mark every conflicting row of `field` superseded (the dispute was settled by a source)."""
+        for o in self._rows(field):
+            if o["status"] == "conflicting":
+                o.update(status="superseded", note=((o["note"] + "; ") if o["note"] else "") + why)
+        self.row[field] = ""
 
     def note_on(self, evidence_id, text):
         """Append to the note of an existing evidence row, e.g. 'independently re-measured, matches'."""
