@@ -869,7 +869,8 @@ dfew/full_title/01,dfew,full_title,Dynamic Facial Expression in-the-Wild,,,2026-
 dfew/full_title/02,dfew,full_title,Dynamic Facial Expression in-the-Wild,dfew_page,the full title appears in the source: ...tic Facial Expression in-the-Wild & --> Dynamic Facial Expression in-the-Wild Overview Download Cite Contact Term & C...,2026-11-01,claude,current,
 dfew/license_spdx/01,dfew,license_spdx,LicenseRef-custom-research-only,dfew_page,available for non-commercial research purposes only,2026-10-13,claude,current,
 dfew/material_origin/01,dfew,material_origin,film_tv,dfew_page,all clips of the DFEW database are obtained from the Internet (movies),2026-10-13,claude,current,
-dfew/n_files_reported/01,dfew,n_files_reported,16372,dfew_survey,"DFEW contains 16,372 in-the-wild video clips from over 1,500 movies",2026-10-13,claude,current,
+dfew/n_files_reported/01,dfew,n_files_reported,16372,dfew_survey,"DFEW contains 16,372 in-the-wild video clips from over 1,500 movies",2026-10-13,claude,superseded,Superseded by a primary row with the same value.
+dfew/n_files_reported/02,dfew,n_files_reported,16372,dfew_page_2,"""DFEW ... with 16372 very challenging video clips taken from movies""",2026-11-02,claude,current,
 dfew/name/01,dfew,name,DFEW,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by dfew/name/02
 dfew/name/02,dfew,name,DFEW,dfew_page,title of the source contains the name,2026-11-01,claude,current,
 dfew/vocal_content/01,dfew,vocal_content,speech,dfew_page,video clips from movies,2026-10-13,claude,current,
