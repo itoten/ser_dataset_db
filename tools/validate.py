@@ -13,6 +13,7 @@ import unicodedata
 
 import csvio
 import db as dbmod
+import derive
 import views
 
 SLUG = re.compile(r"^[a-z][a-z0-9]*(_[a-z0-9]+)*$")
@@ -149,7 +150,7 @@ def check_keys(tables, db):
     for r in db["evidence"][1]:
         if r["dataset_id"] not in ds:
             err(f"evidence {r['evidence_id']}: unknown dataset_id")
-        m = re.match(r"^(.+)/([a-z_0-9]+)/(\d{2})$", r["evidence_id"])
+        m = re.match(r"^(.+)/([a-z_0-9.]+)/(\d{2})$", r["evidence_id"])
         if not m or m.group(1) != r["dataset_id"] or m.group(2) != r["field"]:
             err(f"evidence {r['evidence_id']}: id does not match dataset_id/field/NN")
     for r in db["aliases"][1]:
@@ -183,14 +184,28 @@ def check_keys(tables, db):
 LIVE = ("current", "conflicting", "provisional")
 
 
+def set_targets(db):
+    """(dataset_id, evidence field, cell value) for the attributes of label sets in annotations."""
+    out = []
+    for ds_id, sets in derive.label_sets(db).items():
+        for item, row in sets.items():
+            if item not in ("emotion_categories", "emotion_attributes"):
+                continue
+            for attr in derive.SET_ATTRS:
+                out.append((ds_id, f"{item}.{attr}", row[attr]))
+    return out
+
+
 def check_evidence(cols, db):
     ev_cols = {c["column"] for c in cols["datasets"] if c["evidence"] != "no"}
+    targets = [(d["dataset_id"], f, d[f]) for d in db["datasets"][1] for f in sorted(ev_cols)] + set_targets(db)
+    set_fields = {(d, f) for d, f, _ in set_targets(db)}
     sources = {r["source_id"]: r for r in db["sources"][1]}
     ev = {}
     for r in db["evidence"][1]:
         ev.setdefault((r["dataset_id"], r["field"]), []).append(r)
         eid, st = r["evidence_id"], r["status"]
-        if r["field"] not in ev_cols:
+        if r["field"] not in ev_cols and (r["dataset_id"], r["field"]) not in set_fields:
             err(f"evidence {eid}: field {r['field']} does not take evidence")
         if r["source_id"] and r["source_id"] not in sources:
             err(f"evidence {eid}: unknown source_id {r['source_id']}")
@@ -209,10 +224,8 @@ def check_evidence(cols, db):
                 err(f"evidence {eid}: a provisional row has no source (source_id and locator must be empty)")
             if not r["note"].startswith("Provisional:"):
                 err(f"evidence {eid}: the note of a provisional row starts with 'Provisional:'")
-    for row in db["datasets"][1]:
-        d = row["dataset_id"]
-        for field in ev_cols:
-            v = row[field]
+    if True:
+        for d, field, v in targets:
             rows = [r for r in ev.get((d, field), []) if r["status"] in LIVE]
             needed = v not in ("", "NA")
             if not needed:
@@ -244,6 +257,14 @@ def check_evidence(cols, db):
                     err(f"evidence {d}/{field}: needs exactly one provisional row, found {len(pro)}")
                 elif pro[0]["value"] != v:
                     err(f"evidence {d}/{field}: provisional value {pro[0]['value']!r} != datasets value {v!r}")
+
+
+def check_derived(db):
+    exp = derive.expected(db)
+    for d in db["datasets"][1]:
+        for c, want in exp[d["dataset_id"]].items():
+            if d[c] != want:
+                err(f"datasets {d['dataset_id']} {c}: {d[c]!r} != {want!r} derived from annotations (run tools/derive.py)")
 
 
 def check_sources(db):
@@ -345,6 +366,7 @@ def main(argv):
     check_keys(tables, db)
     check_evidence(cols, db)
     check_sources(db)
+    check_derived(db)
     check_paths(cols, tables, db)
     check_views(db)
     check_no_local_paths()

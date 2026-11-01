@@ -58,16 +58,20 @@ README = R.source("toyemo_readme", "https://github.com/itoten/espnet/blob/ser/cr
                   "readme", "recipe_author", describes_version="Kaggle version 2")
 R.link(KG, "distribution"); R.link(PAPER, "paper"); R.link(README, "readme")
 
+# Every value has a source, the name included.
+R.ev("name", "ToyEmo", KG, "dataset title on the page")
+
 # Published facts from primary sources.
 R.ev("n_files_reported", "1200", KG, "8 actors x 6 emotions x 25 sentences ... 1,200 utterances")
 R.ev("n_speakers_reported", "8", KG, "8 actors")
 R.ev("license_spdx", "CC-BY-4.0", KG, "license field: CC BY 4.0", by="user",
      note="the maintainer also checked the page on 2026-01-30")
-R.ev("label_source", "human", PAPER, "actors portrayed six target emotions")
 R.ev("speech_production", "acted", PAPER, "actors portrayed six target emotions")
-R.ev("label_basis", "intended", PAPER, "label = the emotion the actor was asked to portray")
-R.set(label_basis_note="Labels are the instructed emotion (paper, section 2).")
-R.ev("label_verification", "none", PAPER,
+R.label_set("emotion_categories", "angry;happy;sad;neutral;fear;surprise", PAPER, "section 2",
+            note="Labels are the instructed emotion (paper, section 2).")
+R.ev("emotion_categories.annotator", "human", PAPER, "actors portrayed six target emotions")
+R.ev("emotion_categories.label_basis", "intended", PAPER, "label = the emotion the actor was asked to portray")
+R.ev("emotion_categories.label_verification", "none", PAPER,
      "listening test measured recognition only; no clips were removed or relabelled")
 
 # Findings only the implementation can show: cite the readme, with the commit in the locator.
@@ -82,10 +86,9 @@ R.set(notes="Acted speech by 8 actors, 6 emotions, 25 sentences (Kaggle page). T
             "reports 12 pairs of byte-identical files (commit def5678abcde).")
 
 # A listening test: that it exists and where it is described, not its result (rule 6).
-R.ann([("listening_test", "listening test of recognition of the intended emotion; results in the paper",
-        "human", "utterance", PAPER, "section 4", ""),
-       ("speaker_id", "actor code in the file name (8 actors)", "human", "speaker", KG, "file naming section", ""),
-       ("sentence_id", "sentence number 1-25", "human", "utterance", KG, "file naming section", "")])
+R.ev("listening_test", "reported", PAPER, "section 4: listening test of recognition of the intended emotion")
+R.ann([("speaker_id", "speaker_id", "actor code in the file name (8 actors)", "human", "speaker", KG, "file naming section", ""),
+       ("sentence_id", "sentence_id", "sentence number 1-25", "human", "utterance", KG, "file naming section", "")])
 R.alias("ToyEmo Corpus", "official_name", KG)
 R.save()
 ```

@@ -34,6 +34,7 @@ def _find_root():
 ROOT = _find_root()
 sys.path.insert(0, str(ROOT / "tools"))
 import db as dbmod  # noqa: E402
+import derive  # noqa: E402
 
 
 class Reg:
@@ -50,6 +51,20 @@ class Reg:
                              f"python3 tools/db.py add datasets dataset_id={dataset_id} ...")
 
     # evidence -----------------------------------------------------------------------------
+
+    def _set_cell(self, field, value):
+        """The datasets cell, or for a field like emotion_categories.label_basis the attribute of that label set."""
+        if "." in field:
+            item, attr = field.split(".", 1)
+            self._set_row(item)[attr] = value
+        else:
+            self.row[field] = value
+
+    def _set_row(self, item):
+        for a in self.db["annotations"][1]:
+            if a["dataset_id"] == self.D and a["item"] == item and a["name"] == item:
+                return a
+        raise SystemExit(f"no label set {item!r} for {self.D}: call label_set() first")
 
     def _rows(self, field):
         return [e for e in self.evr if e["dataset_id"] == self.D and e["field"] == field]
@@ -118,7 +133,7 @@ class Reg:
             if o["status"] == "provisional":
                 o.update(status="superseded", note=((o["note"] + "; ") if o["note"] else "") + f"superseded by {nid}")
         self._append(nid, field, value, source_id, loc, by, note, "current")
-        self.row[field] = value
+        self._set_cell(field, value)
 
     def conflicting(self, field, value, source_id, loc="", by="claude", note=""):
         """Add a source that disagrees with the others. The cell becomes `conflicting`.
@@ -133,14 +148,14 @@ class Reg:
             elif o["status"] == "current" and o["value"] != value:
                 o["status"] = "conflicting"
         self._append(nid, field, value, source_id, loc, by, note, "conflicting")
-        self.row[field] = "conflicting"
+        self._set_cell(field, "conflicting")
 
     def resolve(self, field, why):
         """Mark every conflicting row of `field` superseded (the dispute was settled by a source)."""
         for o in self._rows(field):
             if o["status"] == "conflicting":
                 o.update(status="superseded", note=((o["note"] + "; ") if o["note"] else "") + why)
-        self.row[field] = ""
+        self._set_cell(field, "")
 
     def note_on(self, evidence_id, text):
         """Append to the note of an existing evidence row, e.g. 'independently re-measured, matches'."""
@@ -161,12 +176,23 @@ class Reg:
 
     # other tables -------------------------------------------------------------------------
 
-    def ann(self, rows, by="claude"):
-        """rows: (item, description, annotator, unit, source_id, locator, note)."""
+    def label_set(self, item, labels, source_id, loc="", scale="", perceived_from="", unit="utterance", note="", by="claude"):
+        """A label set of the dataset: item is emotion_categories, emotion_attributes, speaking_style, sentiment or intent;
+        labels in the source's own words (;-separated). Who made the labels and how are added with ev(item + '.annotator', ...),
+        ev(item + '.label_basis', ...), ev(item + '.label_verification', ...)."""
+        self._check_source(source_id)
         ah, ar = self.db["annotations"]
-        for item, desc, annotator, unit, sid, loc, note in rows:
+        ar.append({**{k: "" for k in ah}, "dataset_id": self.D, "item": item, "name": item, "labels": labels, "scale": scale,
+                   "perceived_from": perceived_from, "unit": unit, "source_id": source_id, "locator": loc,
+                   "checked_on": self.today, "checked_by": by, "note": note})
+
+    def ann(self, rows, by="claude"):
+        """Other annotations. rows: (item, name, description, annotator, unit, source_id, locator, note);
+        item is from the fixed vocabulary (schema/enums.csv annotation_item), name is what the release calls it."""
+        ah, ar = self.db["annotations"]
+        for item, name, desc, annotator, unit, sid, loc, note in rows:
             self._check_source(sid)
-            ar.append({**{k: "" for k in ah}, "dataset_id": self.D, "item": item, "description": desc,
+            ar.append({**{k: "" for k in ah}, "dataset_id": self.D, "item": item, "name": name, "description": desc,
                        "annotator": annotator, "unit": unit, "source_id": sid, "locator": loc,
                        "checked_on": self.today, "checked_by": by, "note": note})
 
@@ -182,5 +208,6 @@ class Reg:
 
     def save(self):
         self.row.update({"last_updated_on": self.today})
+        derive.apply(self.db)
         dbmod.save(self.db)
         print(f"saved {self.D}; now run tools/views.py and tools/validate.py")
