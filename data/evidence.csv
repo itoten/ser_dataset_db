@@ -2327,7 +2327,8 @@ mceiu/access_observed/01,mceiu,access_observed,obtained,mceiu_card,card tags: mo
 mceiu/emotion_categories.annotator/01,mceiu,emotion_categories.annotator,human,mceiu_paper,21 postgraduate annotators in 7 groups; each conversation annotated by three volunteers after training and a passing test,2026-10-28,claude,current,
 mceiu/emotion_categories.label_basis/01,mceiu,emotion_categories.label_basis,perceived,mceiu_paper,"annotators watched the video clips with text, audio and history before choosing the emotion and intent",2026-10-28,claude,current,
 mceiu/emotion_categories.label_verification/01,mceiu,emotion_categories.label_verification,NA,mceiu_paper,three annotators per conversation; no accuracy figure read here,2026-10-28,claude,current,
-mceiu/full_title/01,mceiu,full_title,Emotion and Intent Joint Understanding in Multimodal Conversation: A Benchmarking Dataset,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+mceiu/full_title/01,mceiu,full_title,Emotion and Intent Joint Understanding in Multimodal Conversation: A Benchmarking Dataset,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mceiu/full_title/02
+mceiu/full_title/02,mceiu,full_title,Emotion and Intent Joint Understanding in Multimodal Conversation: A Benchmarking Dataset,mceiu_paper,title of the source contains the full title,2026-11-01,claude,current,
 mceiu/languages/01,mceiu,languages,eng;cmn,mceiu_paper,"two languages, English and Mandarin",2026-10-14,claude,current,
 mceiu/license_spdx/01,mceiu,license_spdx,CC-BY-NC-4.0,mceiu_card,dataset card metadata: license cc-by-nc-4.0,2026-10-14,claude,current,
 mceiu/material_origin/01,mceiu,material_origin,film_tv,mceiu_paper,conversational video clips from 3 English and 4 Chinese TV series,2026-10-14,claude,current,
@@ -2467,7 +2468,8 @@ mesp/full_title/01,mesp,full_title,MES-P: An Emotional Tonal Speech Dataset in M
 mesp/languages/01,mesp,languages,cmn,mesp_paper,emotional tonal speech dataset in Mandarin Chinese,2026-10-14,claude,current,
 mesp/n_files_reported/01,mesp,n_files_reported,5376,mesp_paper,"5,376 portrayed utterances",2026-10-14,claude,current,
 mesp/n_speakers_reported/01,mesp,n_speakers_reported,16,mesp_paper,"16 native speakers of Mandarin (8 males, 8 females)",2026-10-14,claude,current,
-mesp/name/01,mesp,name,MES-P,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+mesp/name/01,mesp,name,MES-P,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mesp/name/02
+mesp/name/02,mesp,name,MES-P,mesp_paper,title of the source contains the name,2026-11-01,claude,current,
 mesp/speech_production/01,mesp,speech_production,acted,mesp_paper,"5,376 portrayed utterances from 16 native speakers",2026-10-14,claude,current,
 mesp/vocal_content/01,mesp,vocal_content,speech,mesp_paper,script of 16 sentences covering all phonemes of Mandarin,2026-10-14,claude,current,
 mess/access_method/01,mess,access_method,direct_download,,,2026-10-11,claude,provisional,Provisional:
@@ -2523,16 +2525,19 @@ mlend_numerals/name/02,mlend_numerals,name,MLEnd Spoken Numerals,mlend_numerals_
 mlend_numerals/speech_production/01,mlend_numerals,speech_production,read,mlend_numerals_page,each English numeral read using different intonations,2026-10-13,claude,current,
 mlend_numerals/vocal_content/01,mlend_numerals,vocal_content,speech,mlend_numerals_page,audio recordings of spoken numerals,2026-10-13,claude,current,
 mmeld/access_observed/01,mmeld,access_observed,unavailable,mmeld_paper,human-annotated translations curated from foreign language subtitles,2026-10-14,claude,current,
-mmeld/full_title/01,mmeld,full_title,M-MELD: A Multilingual Multi-Party Dataset for Emotion Recognition in Conversations,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+mmeld/full_title/01,mmeld,full_title,M-MELD: A Multilingual Multi-Party Dataset for Emotion Recognition in Conversations,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mmeld/full_title/02
+mmeld/full_title/02,mmeld,full_title,M-MELD: A Multilingual Multi-Party Dataset for Emotion Recognition in Conversations,mmeld_paper,title of the source contains the full title,2026-11-01,claude,current,
 mmeld/languages/01,mmeld,languages,ell;pol;fra;spa,mmeld_paper,"abstract: MELD extended to Greek, Polish, French, and Spanish",2026-10-14,claude,current,
 mmeld/material_origin/01,mmeld,material_origin,film_tv,mmeld_paper,MELD utterances from the TV series Friends,2026-10-14,claude,current,
-mmeld/name/01,mmeld,name,M-MELD,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+mmeld/name/01,mmeld,name,M-MELD,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mmeld/name/02
+mmeld/name/02,mmeld,name,M-MELD,mmeld_paper,title of the source contains the name,2026-11-01,claude,current,
 mspconversation/access_method/01,mspconversation,access_method,signed_agreement,mspconversation_page,Academic License (free of cost): institution must sign the agreement,2026-10-14,claude,current,
 mspconversation/hours_reported/02,mspconversation,hours_reported,77.43,mspconversation_page,"Release 2.0: 310 conversations, 77 hours 26 minutes total",2026-10-14,claude,current,Release 2.0
 mspconversation/license_spdx/02,mspconversation,license_spdx,LicenseRef-custom-research-only,mspconversation_page,"Academic License (free of cost), signed by the institution",2026-10-14,claude,current,
 mspconversation/material_origin/01,mspconversation,material_origin,podcast,mspconversation_page,the recordings overlap with the recordings included in the MSP-Podcast database ... retrieved from podcasts,2026-10-31,claude,current,
 mspconversation/n_files_reported/02,mspconversation,n_files_reported,310,mspconversation_page,Release 2.0 contains 310 conversations with duration between 10-20 minutes,2026-10-31,claude,current,"Counted in conversations, not utterances"
-mspconversation/name/01,mspconversation,name,MSP-Conversation,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+mspconversation/name/01,mspconversation,name,MSP-Conversation,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mspconversation/name/02
+mspconversation/name/02,mspconversation,name,MSP-Conversation,mspconversation_paper,title of the source contains the name,2026-11-01,claude,current,
 mspface/access_method/01,mspface,access_method,unavailable,mspface_page,we provide the link to the videos and the code to segment them,2026-10-13,claude,current,Links and code are public on GitHub
 mspface/access_observed/01,mspface,access_observed,unavailable,mspface_page,we provide the link to the videos and the code to segment the videos,2026-10-13,claude,current,
 mspface/emotion_categories.annotator/01,mspface,emotion_categories.annotator,human,mspface_page,"9,370 recordings (24 h 41 min) annotated with categorical labels and attributes (activation, dominance, valence) by crowd sourcing",2026-10-28,claude,current,
@@ -2619,7 +2624,8 @@ naturalvoices/access_method/01,naturalvoices,access_method,direct_download,natur
 naturalvoices/access_observed/01,naturalvoices,access_observed,obtained,naturalvoices_card,card: about 370 hours of podcast speech in this repository,2026-10-13,claude,current,
 naturalvoices/emotion_categories.annotator/01,naturalvoices,emotion_categories.annotator,automatic,naturalvoices_paper,§III-B 4) Emotion Categories: predicted using the PEFT-SER model; 5) Emotion Attributes: pre-trained regression-based WavLM model,2026-10-23,claude,current,"4 categories from PEFT-SER (trained on IEMOCAP, MSP-Improv, MSP-Podcast, CREMA-D), dimensions from 3loi/SER-Odyssey-Baseline-WavLM-MultiAttributes, transcript emotion from michellejieli/emotion_text_classifier"
 naturalvoices/emotion_categories.label_verification/01,naturalvoices,emotion_categories.label_verification,unknown,naturalvoices_paper,No statement that people reviewed the automatic labels was found,2026-10-23,claude,current,
-naturalvoices/full_title/01,naturalvoices,full_title,"NaturalVoices: A Large-Scale, Spontaneous and Emotional Podcast Dataset for Voice Conversion",,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+naturalvoices/full_title/01,naturalvoices,full_title,"NaturalVoices: A Large-Scale, Spontaneous and Emotional Podcast Dataset for Voice Conversion",,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by naturalvoices/full_title/02
+naturalvoices/full_title/02,naturalvoices,full_title,"NaturalVoices: A Large-Scale, Spontaneous and Emotional Podcast Dataset for Voice Conversion",naturalvoices_paper,title of the source contains the full title,2026-11-01,claude,current,
 naturalvoices/hours_reported/01,naturalvoices,hours_reported,5049,naturalvoices_paper,"abstract: 5,049 hours of spontaneous podcast recordings",2026-10-13,claude,current,
 naturalvoices/languages/01,naturalvoices,languages,eng,naturalvoices_card,card metadata: language en,2026-10-13,claude,current,
 naturalvoices/license_spdx/01,naturalvoices,license_spdx,none_stated,naturalvoices_card,dataset card has no license field,2026-10-13,claude,current,
@@ -2662,7 +2668,8 @@ nonverbaltts/access_observed/02,nonverbaltts,access_observed,obtained,nonverbalt
 nonverbaltts/emotion_categories.annotator/01,nonverbaltts,emotion_categories.annotator,mixed,nonverbaltts_paper,"§3.2: emotions classified with the emotion2vec+ large classifier, then refined by annotators",2026-10-13,claude,current,
 nonverbaltts/emotion_categories.label_basis/01,nonverbaltts,emotion_categories.label_basis,automatic;perceived,nonverbaltts_paper,classification obtained using emotion2vec+ large; annotators ... Replacing specified emotions as needed,2026-10-24,claude,current,"§3.2, §3.3"
 nonverbaltts/emotion_categories.label_verification/01,nonverbaltts,emotion_categories.label_verification,human_reviewed,nonverbaltts_paper,§3.2-§3.3: emotion2vec+ large's automatic classification reviewed by 3 annotators (as in labels_discrete_note),2026-10-17,claude,current,"Whether review covered all clips or some, and by what criteria, is unverified"
-nonverbaltts/full_title/01,nonverbaltts,full_title,NonverbalTTS: A Public English Corpus of Text-Aligned Nonverbal Vocalizations with Emotion Annotations for Text-to-Speech,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+nonverbaltts/full_title/01,nonverbaltts,full_title,NonverbalTTS: A Public English Corpus of Text-Aligned Nonverbal Vocalizations with Emotion Annotations for Text-to-Speech,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by nonverbaltts/full_title/02
+nonverbaltts/full_title/02,nonverbaltts,full_title,NonverbalTTS: A Public English Corpus of Text-Aligned Nonverbal Vocalizations with Emotion Annotations for Text-to-Speech,nonverbaltts_paper,title of the source contains the full title,2026-11-01,claude,current,
 nonverbaltts/hours_release/01,nonverbaltts,hours_release,17.59,nonverbaltts_readme,commit 8f9597d99262; Size of the release,2026-11-01,claude,current,
 nonverbaltts/hours_reported/01,nonverbaltts,hours_reported,17,nonverbaltts_card,card: 17 hours of high-quality speech data,2026-10-13,claude,current,
 nonverbaltts/languages/01,nonverbaltts,languages,eng,nonverbaltts_card,card: 17-hour open-access English speech corpus,2026-10-13,claude,current,
@@ -3063,7 +3070,8 @@ semour/license_spdx/01,semour,license_spdx,unknown,semour_paper,paper states pub
 semour/n_files_reported/01,semour,n_files_reported,15040,semour_paper,"statistics table: Total instances 15,040",2026-10-14,claude,superseded,superseded by semour/n_utt_reported/02
 semour/n_files_reported/02,semour,n_files_reported,15040,semour_paper,"15,040 unique instances",2026-10-28,claude,current,
 semour/n_speakers_reported/01,semour,n_speakers_reported,8,semour_paper,instances recorded by eight professional actors,2026-10-14,claude,current,
-semour/name/01,semour,name,SEMOUR,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+semour/name/01,semour,name,SEMOUR,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by semour/name/02
+semour/name/02,semour,name,SEMOUR,semour_paper,title of the source contains the name,2026-11-01,claude,current,
 semour/speech_production/01,semour,speech_production,acted,semour_paper,eight professional actors (gender balanced) recorded a syntactically complex scripted text eliciting emotions,2026-10-28,claude,current,
 semour/vocal_content/01,semour,vocal_content,speech,semour_paper,instances recorded by eight professional actors,2026-10-14,claude,current,
 ses_ed/access_method/01,ses_ed,access_method,free_account_required,ses_ed_page,Kaggle download requires signing in,2026-10-14,claude,current,
@@ -3204,7 +3212,8 @@ spanish_meacorpus/name/01,spanish_meacorpus,name,Spanish MEACorpus 2023,,,2026-1
 spanish_meacorpus/vocal_content/01,spanish_meacorpus,vocal_content,speech,spanish_meacorpus_page_2,segmented speech excerpts with manually revised transcriptions,2026-10-14,claude,current,
 speech_massive/access_method/01,speech_massive,access_method,direct_download,speech_massive_card,dataset API gated: False for Speech-MASSIVE; the -test repository is gated auto,2026-10-14,claude,current,
 speech_massive/access_observed/01,speech_massive,access_observed,obtained,speech_massive_card,repository files total about 32GB,2026-10-14,claude,current,
-speech_massive/full_title/01,speech_massive,full_title,Speech-MASSIVE: A Multilingual Speech Dataset for SLU and Beyond,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+speech_massive/full_title/01,speech_massive,full_title,Speech-MASSIVE: A Multilingual Speech Dataset for SLU and Beyond,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by speech_massive/full_title/02
+speech_massive/full_title/02,speech_massive,full_title,Speech-MASSIVE: A Multilingual Speech Dataset for SLU and Beyond,speech_massive_paper,title of the source contains the full title,2026-11-01,claude,current,
 speech_massive/languages/01,speech_massive,languages,ara;deu;spa;fra;hun;kor;nld;pol;por;rus;tur;vie,speech_massive_card,card metadata: language ar de es fr hu ko nl pl pt ru tr vi,2026-10-14,claude,current,
 speech_massive/license_spdx/01,speech_massive,license_spdx,CC-BY-NC-SA-4.0,speech_massive_card,card metadata: license cc-by-nc-sa-4.0,2026-10-14,claude,current,
 speech_massive/name/01,speech_massive,name,Speech-MASSIVE,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by speech_massive/name/02
@@ -3227,7 +3236,8 @@ speechcraft/name/02,speechcraft,name,SpeechCraft,speechcraft_page,title of the s
 speechcraft/vocal_content/01,speechcraft,vocal_content,speech,speechcraft_paper,abstract: in-the-wild speech clips,2026-10-13,claude,current,
 spokenwoz/access_method/01,spokenwoz,access_method,direct_download,spokenwoz_page,download links to Hugging Face repositories ssz1111/SpokenWOZ-*; HF gated False,2026-10-14,claude,current,
 spokenwoz/access_observed/01,spokenwoz,access_observed,obtained,spokenwoz_page,SpokenWOZ Audio Training & Dev Sets; Audio Test Set,2026-10-14,claude,current,
-spokenwoz/full_title/01,spokenwoz,full_title,SpokenWOZ: A Large-Scale Speech-Text Benchmark for Spoken Task-Oriented Dialogue Agents,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+spokenwoz/full_title/01,spokenwoz,full_title,SpokenWOZ: A Large-Scale Speech-Text Benchmark for Spoken Task-Oriented Dialogue Agents,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by spokenwoz/full_title/02
+spokenwoz/full_title/02,spokenwoz,full_title,SpokenWOZ: A Large-Scale Speech-Text Benchmark for Spoken Task-Oriented Dialogue Agents,spokenwoz_paper,title of the source contains the full title,2026-11-01,claude,current,
 spokenwoz/hours_reported/01,spokenwoz,hours_reported,249,spokenwoz_page,5.7k dialogues and 249 hours audios,2026-10-14,claude,current,
 spokenwoz/languages/01,spokenwoz,languages,eng,spokenwoz_page,multi-domain speech-text dataset for spoken task-oriented dialogue modeling,2026-10-14,claude,current,
 spokenwoz/license_spdx/01,spokenwoz,license_spdx,CC-BY-NC-4.0,spokenwoz_page,distributed under the CC BY NC 4.0 license,2026-10-14,claude,current,
