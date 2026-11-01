@@ -1,32 +1,32 @@
 # The SER dataset DB: a beginner's guide
 
-This guide explains the database from scratch. Terms are explained before they are used. All figures were recounted from `data/*.csv` on the date given in section 11 (they are refreshed by `doc_counts.py`, see the maintenance skill).
+This guide explains the database from scratch. Terms are explained before they are used. The figures were recounted from `data/*.csv` on the date given in section 14 (`doc_counts.py` refreshes them, see the maintenance skill).
 
 ## 1. The DB in 30 seconds
 
 ### 1.1 In one sentence
 
-**"A tertiary source that leads to the primary sources of datasets usable for SER research."** It does not offer the truth about a dataset, but the way to the papers, distribution pages and license files where it can be checked. It is a set of CSV files that open in any spreadsheet program, with its history managed by `git`.
+**"A tertiary source that leads to the sources of datasets usable for SER research."** It does not offer the truth about a dataset, but the way to the papers, distribution pages and license files where it can be checked. It is a set of CSV files that open in any spreadsheet program, with its history managed by `git`.
 
 ### 1.2 In numbers
 
 | Item | Value |
 |---|---|
-| Datasets registered | **322** (84 from the original spreadsheet + 238 added later) |
-| Implemented in ESPnet | 101 |
-| Candidates for implementation | 134 |
-| Awaiting a decision | 7 |
-| Deferred | 34 |
-| Excluded (with reasons) | 46 |
-| Evidence rows (sources of values) | 4,708 |
-| Language codes | 77 |
+| Datasets registered | 322 |
+| Datasets with a primary source behind their values (`documents_checked`) | 276 |
+| Datasets with a recipe readme behind their release counts (`implementation_checked`) | 102 |
+| Evidence rows (sources of values) | 3,680 |
+| Source documents | 795 |
+| Label counts (files per label) | 680 |
+| Issues found in releases | 325 |
 
 ### 1.3 What makes it useful
 
-- **Every value has a source**: it does not just say "the license is CC-BY-4.0" but records, row by row, which page, which wording, when and by whom it was checked.
-- **No guessing**: what is unknown is recorded as unknown (there are rules for writing missing values, section 7). URLs and titles are never made up.
-- **Machine-checked**: `validate.py` checks format and missing evidence automatically; a commit is refused if it fails.
-- **Linked to the implementation**: counts, hours and labels of the ESPnet recipes (experiment set-ups) actually built are measured and stored.
+- **Every value has a source**: it does not just say "the license is CC-BY-4.0" but records, row by row, which document, which place in it, when and by whom it was checked.
+- **No guessing**: what is unknown is recorded as unknown (7). URLs and titles are never made up.
+- **Disagreements stay visible**: when two sources disagree, both are kept and the value says `conflicting`; the DB does not pick one.
+- **Machine-checked**: `validate.py` checks format, sources and evidence automatically; a commit is refused if it fails.
+- **Release facts from the implementation**: the number of files, speakers and hours of each release, files per label and problems found while building the ESPnet recipes (experiment set-ups) are copied from the recipe readmes.
 
 ## 2. Why it exists
 
@@ -62,16 +62,16 @@ None ranks above the others.
 | **Transparency** | Show who checked what and when, and in particular whether a value was verified by a person or only investigated by AI. Within one DB, values differ in how certain they are; if this is invisible, readers cannot tell how far to trust each value. State what is unknown and the limits of the DB. |
 | **Neutrality** | Record facts only, and give no judgements such as "should this dataset be used" or "is this good data". Whether a dataset is usable depends on the purpose of the research, and a written judgement makes readers follow it without looking at the primary sources. When sources disagree, the DB does not decide which to trust; that is left to the reader. |
 
-These principles are the basis for the rules (this manual, `schema/`, `tools/validate.py`) and the procedures (the maintenance skill). The DB does not yet follow them everywhere (see 15.1); the design work towards them is recorded in [design/](design/agenda.md).
+These principles are the basis for the rules (this manual, `schema/`, `tools/validate.py`) and the procedures (the maintenance skill). The decisions that follow from them are recorded with their reasons in [design/](design/agenda.md).
 
 ### 2.5 How
 
-Dataset information is almost always on the web and open to anyone (papers, distribution pages, license files). So the way to the primary source can be written precisely. Building that way can be left to AI, and whoever checks needs to look not at the way but only at the primary source it leads to. This makes coverage and verifiability possible together with few people. The main methods:
+Dataset information is almost always on the web and open to anyone (papers, distribution pages, license files). So the way to the primary source can be written precisely. Building that way can be left to AI, and whoever checks needs to look not at the way but only at the source it leads to. This makes coverage and verifiability possible together with few people. The main methods:
 
 | Method | What it means |
 |---|---|
-| **A source for every value** | For each value, record the source (URL), the place in the source, and the date checked. |
-| **Verification state** | For each value, record whether AI only investigated it, AI verified it, or a person verified it. |
+| **A source for every value** | For each value, record the source document, the place in it, and the date checked. |
+| **Verification state** | For each value, record whether AI only investigated it or a person checked it (`checked_by`), and whether it has a public source at all (`provisional`). |
 | **Repeated re-verification** | Regularly re-check that values match their sources and that the sources still say the same. |
 | **A design for AI** | Assume AI is used to investigate, verify and read the DB. Information is not cut for the sake of human readability; the generated views are an aid, not the main way to read it. |
 
@@ -79,11 +79,7 @@ Dataset information is almost always on the web and open to anyone (papers, dist
 
 - Check the primary source before relying on a value, and cite the primary source, not this DB.
 - Whether you may use a dataset is for you to judge from the primary sources. The DB is not legal advice.
-- The DB is currently used for one researcher's work, and is designed for future public release.
-
-### 2.7 Origin
-
-It started as a Google spreadsheet, "ser_database" (84 rows). The spreadsheet was frozen on 2026-10-12 and the original is kept in [sheet_import/](../sheet_import/README.md); since then the CSV files are authoritative and the spreadsheet is not updated. On 2026-10-14, 158 datasets from surveys, existing lists and searches of hosting services, plus 12 intent and dialogue-act datasets and others, were added, bringing it to 307 rows; more have been added since.
+- Decisions that depend on your purpose (which datasets you use, how you group licenses or labels) are yours; keep them in the git-ignored `local/` folder (12.3).
 
 ## 3. Glossary
 
@@ -94,19 +90,15 @@ It started as a Google spreadsheet, "ser_database" (84 rows). The spreadsheet wa
 | **SER** (speech emotion recognition) | Getting machines to recognise emotions (anger, joy, sadness, ...) from the voice |
 | **Corpus / dataset** | A collection of speech data organised for research. Used interchangeably here |
 | **Label** | The "answer" attached to a recording, e.g. "angry" |
-| **Discrete (categorical) emotion** | Representing emotion as one of a few boxes such as anger or joy |
-| **Dimensional emotion** | Representing emotion as numbers, typically valence (pleasant-unpleasant) and arousal (activation). The axes are listed in `dimensional_attributes` |
-| **Utterance** | A stretch of speech. Data sizes are counted in utterances |
-| **Speaker** | The person talking |
-| **Acted** | Speech performed with emotion by actors or others |
-| **Spontaneous** | Natural speech collected from conversations, podcasts, videos, etc. Closer to real life, but harder to label |
+| **Categorical emotion** | Representing emotion as one of a few boxes such as anger or joy (label set `emotion_categories`) |
+| **Dimensional emotion** | Representing emotion as numbers, typically valence (pleasant-unpleasant) and arousal (activation) (label set `emotion_attributes`) |
+| **Utterance** | A stretch of speech. Data sizes are counted in files or utterances |
+| **Acted / improvised / elicited / spontaneous / read** | How the voice was produced: performed with an instructed emotion; performed without a script; induced by a task or stimulus; natural speech; read without an emotion instruction |
 | **Intent / dialogue act** | Not emotion, but what the speaker wanted to do ("set an alarm") or the function of an utterance (question, request, agreement). Included because the DB also covers non-emotion paralinguistic information |
 | **Paralinguistic information** | Information carried by the voice beyond the words (emotion, speaking style, intent, sentiment, ...) |
 | **Sentiment (polarity)** | The direction of feeling, such as positive or negative |
-| **TTS** | Text-to-speech synthesis. Emotional corpora recorded for TTS are included |
-| **ASR** | Automatic speech recognition. Data only for ASR is out of scope |
-| **Cross-corpus evaluation** | Training on one dataset and evaluating on another, to see whether a model generalises across datasets |
-| **Fully out-of-domain evaluation** | Evaluating only on corpora never seen in training |
+| **TTS / ASR** | Text-to-speech synthesis / automatic speech recognition. Emotional corpora recorded for TTS are included; data only for ASR is out of scope |
+| **Listening test** | A test in which people listen to the recordings and answer, for example, which emotion they hear |
 
 ### 3.2 ESPnet terms
 
@@ -114,9 +106,7 @@ It started as a Google spreadsheet, "ser_database" (84 rows). The spreadsheet wa
 |---|---|
 | **ESPnet / ESPnet3** | Open-source research software for speech processing, to which this project adds SER |
 | **Recipe** | The full set-up for training and evaluating on one dataset, in the folder `egs3/<name>/cls` |
-| **`cls`** | The system name for classification |
-| **Implemented** | A recipe exists for the corpus |
-| **Benchmark** | An evaluation framework combining several corpora; such recipes are `multi_corpus` |
+| **Recipe readme** | The `readme.md` of a recipe. Its `## The data` section is written by the recipe author about the whole release as distributed, and is what the DB cites for release counts |
 
 ### 3.3 Data-management terms
 
@@ -125,25 +115,24 @@ It started as a Google spreadsheet, "ser_database" (84 rows). The spreadsheet wa
 | **CSV** | A comma-separated table file; opens in Excel, Google Sheets or LibreOffice |
 | **Authoritative data** | The data declared to be the original: `data/*.csv`. `views/` is generated from it, so never edit `views/` directly |
 | **git / commit** | Software that records the history of file changes, and one recorded change. You can see later what changed when, and go back |
-| **Remote** | The online copy of the repository (here on GitHub) |
+| **Pull request** | A proposed change on GitHub that someone reviews and merges; used here to record that the maintainer checked values |
 | **Hook** | A check that runs automatically just before a commit; the commit is refused if it fails |
 | **Key (ID)** | A name that identifies a row, e.g. `dataset_id` (`ravdess`). Never changed once set |
 | **Foreign key** | A column that points to a key in another table, e.g. `evidence.dataset_id` points to a `datasets` row |
 | **Schema** | The design: column names, types and meanings, in `schema/` |
-| **sha256** | A fingerprint computed from a file's contents, used to check whether two files are identical |
+| **Derived column** | A column computed from other tables by `tools/derive.py`; never edited by hand |
 
 ### 3.4 Source terms
 
 | Term | Plain explanation |
 |---|---|
-| **Primary source** | Information published by the authors themselves (paper, official distribution page, LICENSE file) |
-| **Secondary source** | Information written by others (summary sites, re-upload pages, surveys) |
-| **Hugging Face (HF)** | A service hosting machine-learning data and models |
-| **Kaggle** | A data-science competition service where data is also shared; downloadable with a free account and an API token |
-| **Zenodo / figshare / Mendeley Data** | Free services for publishing research data, with DOIs |
+| **Primary source** | Published by the dataset's authors or their organisation (paper, official distribution page, LICENSE file, release files) |
+| **Implementation source** | The `## The data` section of a recipe readme: written by the recipe author after downloading and opening the release; a practical reference, not a research result |
+| **Secondary source** | Written by others (summary sites, re-upload pages, surveys); used only when the primary source cannot be accessed |
+| **Provisional** | A value kept from earlier records that has no public source yet |
+| **Hugging Face (HF) / Kaggle / Zenodo / figshare / Mendeley Data** | Services where datasets are published |
 | **DOI** | A permanent identifier for papers and data |
 | **ISO 639-3** | Three-letter language codes: `eng` English, `jpn` Japanese, `cmn` Mandarin, `mul` several languages without a breakdown, `zxx` no linguistic content |
-| **KuralHub** | A survey of SER datasets by language. It is a third-party source, so values supported only by it count as not yet confirmed |
 
 ### 3.5 License terms
 
@@ -152,631 +141,222 @@ A license states how far data may be used. The explanations here are general, no
 | Term | Plain explanation |
 |---|---|
 | **CC (Creative Commons)** | A system that expresses conditions of use with fixed symbols |
-| **BY** | Usable if the author is credited (attribution) |
-| **NC** | Non-commercial use only; no use in commercial products |
-| **SA** | Derived works must be shared under the same terms |
-| **ND** | No modification |
+| **BY / NC / SA / ND** | Credit the author / non-commercial only / derived works shared under the same terms / no modification |
 | **CC0** | Rights waived; free to use |
-| **ODbL / ODC-By** | Licenses for databases, requiring attribution or share-alike |
-| **MIT / Apache-2.0** | Permissive software licenses (free use with attribution) |
-| **GPL** | A software license that strongly requires sharing under the same terms; rare for data |
+| **MIT / Apache-2.0 / GPL** | Software licenses: permissive (credit) / permissive with patent terms / share under the same terms |
 | **SPDX identifier** | The official short name of a license (e.g. `CC-BY-4.0`), used to avoid spelling variants |
-| **LicenseRef-...** | The DB's own names for custom terms that SPDX does not cover (section 9) |
-| **Copyleft** | Requiring users to share under the same terms (SA, GPL) |
-| **Permissive** | Almost free use, with attribution at most |
+| **LicenseRef-...** | The DB's own names for custom terms that SPDX does not cover (10) |
 | **Redistribution** | Passing received data to others or publishing it elsewhere; often not allowed |
 
 ## 4. What is in the DB
 
 ### 4.1 Folder map
 
-```
-ser_dataset_db/
-├── README.md                  summary for developers (read first by AI assistants)
-├── docs/manual.md, manual.ja.md  this guide (English, and its Japanese translation)
-├── data/                      * authoritative data (8 CSV files)
-├── schema/                    column definitions, allowed values, table keys
-├── views/                     copies for reading (generated from data/)
-├── measurements/              measured results of recipes (JSON); text_link/ holds transcript checks for 5.4.2
-├── reports/                   detailed investigations of single datasets, with verification
-├── sheet_import/              the frozen original spreadsheet
-├── tools/                     programs for checking, updating and measuring
-├── .env.example               template for machine-specific settings (copy to .env, git-ignored)
-├── LICENSE                    MIT, for this database and its tools (not for the datasets it describes)
-└── .claude/skills/            the maintenance workflow for Claude Code
-```
+| Place | Content |
+|---|---|
+| `data/` | The authoritative tables (CSV) |
+| `views/` | Generated from `data/`: `datasets_wide.csv` (one row per dataset), `discrepancies.csv` |
+| `schema/` | Definitions: `columns.csv`, `enums.csv`, `tables.csv` |
+| `tools/` | Checking and editing tools (`validate.py`, `derive.py`, `views.py`, `db.py`) |
+| `docs/` | This guide (English and Japanese) and the design record in `docs/design/` |
+| `local/` | Your own working space; git-ignored except its README |
+| `.claude/skills/` | The procedure for maintaining the DB with Claude Code |
 
-### 4.2 The 8 tables (`data/`)
+### 4.2 The tables (`data/`)
 
-| File | One row is | Rows |
-|---|---|---|
-| [datasets.csv](../data/datasets.csv) | **one dataset** (the central table) | 322 |
-| [evidence.csv](../data/evidence.csv) | the **source** of one value in datasets | 4,708 |
-| [aliases.csv](../data/aliases.csv) | another name (official name, short name, former name, recipe name, ...) | 375 |
-| [relations.csv](../data/relations.csv) | a relation between datasets | 44 |
-| [recipes.csv](../data/recipes.csv) | one ESPnet recipe | 102 |
-| [recipe_labels.csv](../data/recipe_labels.csv) | recipe x label | 656 |
-| [benchmark_membership.csv](../data/benchmark_membership.csv) | a recipe that is part of a benchmark | 16 |
-| [annotations.csv](../data/annotations.csv) | dataset x annotation other than emotion labels (transcripts, speaker traits, dialogue acts, ...) | 284 (`aesdd` 1, `akace` 2, `albemo` 3, `anad` 3, `ased` 4, `asvpesd` 4, `audiospeechsentiment` 2, `banglamood` 1, `banglaser` 4, `banspemo` 2, `baser` 4, `berst` 9, `brytserc` 1, `cafe` 2, `casia` 3, `cbesd` 5, `cremad` 4, `csemotions` 2, `dailytalk` 6, `dusha` 4, `eesc` 6, `emis` 5, `emns` 4, `emodb` 4, `emogator` 2, `emospeech_keywords` 5, `emotale` 5, `emotional_ema` 8, `emotiontalk` 6, `emouerj` 3, `emovoicedb` 5, `emozionalmente` 4, `enterface05` 4, `eseravd` 3, `harper_valley_bank` 19, `hikia` 1, `hindi_ser_vishlb` 4, `iemocap` 4, `iesc` 4, `javanese_ser_2black0` 3, `jlcorpus` 4, `jnv` 6, `jvnv` 4, `kbes` 1, `legov2` 6, `lithuanian_emotion_db` 2, `maserc` 4, `mav` 3, `mcaespps` 2, `mderma` 1, `meld` 5, `mesd` 1, `mess` 1, `msppodcast` 2, `multidialog` 2, `quechua` 3, `ravdess` 1, `resd` 3, `rml_emotion` 4, `saraiki_ser` 1, `ses_ed` 3, `ses_sd` 3, `shemo` 2, `sitb_osed` 4, `subesco` 5, `syntact` 6, `talromur3` 5, `telugu_emotion_kaggle` 4, `thaiser` 3, `thorsten` 2, `ua_ser` 6, `urduser` 2, `usc_emo_mri` 5, `utemo` 4, `vivae` 2, `whiser` 5, `ysed` 2; more to come) |
-
-Relations by type: `contains` 15, `distinct_from` (similar names, different datasets) 12, `subset_of` 7, `possibly_same_as` (suspected identity) 4, `version_of` 3. Of the 102 recipes, 101 are for a single corpus (`single_corpus`) and 1 combines several corpora (`multi_corpus`).
+| File | One row is |
+|---|---|
+| `datasets.csv` | one dataset |
+| `evidence.csv` | the source of one value |
+| `sources.csv` | one source document |
+| `dataset_sources.csv` | a source that introduces a dataset (paper, distribution, card, mirror, readme) |
+| `annotations.csv` | a label set or another annotation of a dataset |
+| `label_counts.csv` | files per label of a label set, as a source states it |
+| `issues.csv` | one problem of a release as distributed |
+| `aliases.csv` | another name of a dataset |
+| `relations.csv` | a relation between datasets (version, subset, different dataset, suspected identity, shared sentences) |
+| `label_normalization.csv` | a spelling or word-form variant of a label name and its normalised form |
 
 ### 4.3 How the tables connect
 
-```
-datasets ──(dataset_id)── evidence     source of each value
-   │       ──(dataset_id)── aliases      other names
-   │       ──(dataset_id)── relations    relations to other datasets
-   │       ──(dataset_id)── annotations  non-emotion annotations (each row has its own source)
-   └── recipes(dataset_id) ── recipe_labels (counts per label)
-          └── benchmark_membership (make-up of benchmarks)
-```
+`datasets` is the centre. `evidence`, `annotations`, `label_counts`, `issues`, `aliases`, `relations` and `dataset_sources` carry the `dataset_id` of a dataset. `evidence`, `annotations`, `label_counts`, `issues`, `aliases`, `relations` and `dataset_sources` point at a document of `sources` by `source_id`.
 
 ### 4.4 What counts as one row
 
-- One row is the original (first published) dataset. Plain re-uploads on Hugging Face, Kaggle and the like are not rows; they go into the original's aliases.
-- Anything whose content differs (re-split, subset, new labels) is a separate row linked with `relations`.
-- When two rows turn out to be the same, one becomes `excluded` (duplicate) and they are linked with `possibly_same_as`. IDs are never deleted.
-- Datasets without audio (text only, features only) are kept as `excluded` to record what was found.
+One row per original (first published) dataset. Plain re-uploads are not rows; they are aliases and mirror sources. Datasets whose content differs from the original (re-splits, subsets, new labels) are separate rows linked with `relations`. A version that its authors publish under another name or DOI is a row of its own (`version_of`); other versions are one row, and each source's `describes_version` says which release it describes.
 
 ## 5. Reading the `datasets` table
 
 ### 5.1 Columns to look at first
 
-Each row has about 45 columns; start with these.
-
-| Column | Meaning | Example (ravdess) |
+| Column | Meaning | Example |
 |---|---|---|
-| `dataset_id` | stable ID | `ravdess` |
-| `name` | name | RAVDESS |
-| `espnet_status` | status (section 8) | `implemented` |
-| `languages` | languages (ISO 639-3, `;`-separated) | `eng` |
-| `recording_context` | recording setting or medium | `acted` |
-| `speech_production` | how the audio was produced (5.4.1) | `acted` |
-| `label_basis` | how the labels were made (5.4.1) | `intended` |
-| `spoken_text_design` / `lexical_confound` | how the spoken text relates to the labels, and how far the words alone give the label away (5.4.2) | `parallel` / `none` |
-| `license_spdx` / `license_class` | license and its class (section 9) | `CC-BY-NC-SA-4.0` / `noncommercial` |
-| `access_method` | how to obtain it (section 10) | `direct_download` |
-| `raw_audio_available` | whether raw audio is distributed | `true` |
-| `n_utt_reported` / `hours_reported` / `n_speakers_reported` | utterances, hours and speakers stated by the sources | 1440 / 1.5 / 24 |
-| `labels_discrete_reported` | categorical emotion labels in the sources | calm;happy;sad;angry;... |
-| `dimensional_attributes` | axes of dimensional emotion, or `none` | `none` |
+| `name`, `full_title`, `languages` | name, title, ISO 639-3 codes | `RAVDESS` / `eng` |
+| `license_spdx` | the stated terms as an SPDX identifier (10) | `CC-BY-NC-SA-4.0` |
+| `access_method` / `access_observed` | how the documentation says to obtain it / what happened when it was requested or downloaded | `request_form_or_email` / `obtained` |
+| `n_files_reported`, `hours_reported`, `n_speakers_reported` | what the documentation says | `1440` |
+| `n_files_release`, `hours_release`, `n_speakers_release` | the whole release as distributed, before any filtering (recipe readme) | `1440` |
+| `speech_production`, `material_origin`, `vocal_content` | how the voice was produced, where the audio comes from, speech or non-verbal | `acted` / `recorded_for_dataset` / `speech` |
+| `spoken_text_design` | how the spoken text relates to the labels | `parallel` |
+| `emotion_categories`, `emotion_attributes`, `main_label_set_type`, `main_labels`, `label_source`, `label_basis`, `label_verification` | the main label set and how it was made (derived from `annotations.csv`) | `angry;happy;sad` / `human` / `intended` |
+| `official_split`, `listening_test` | an official partition exists; a listening test is reported | `false` / `reported` |
 
-### 5.2 "Reported" vs "measured"
+### 5.2 Documentation versus release
 
-- `*_reported`: figures **stated by the paper or distribution page** (published values).
-- `*_measured`: figures **we counted after downloading** (measured values).
-
-They can differ, and the difference itself is useful information. Recipes drop very short clips and the like, so recipe counts and published counts usually differ. Disagreements are listed in [views/discrepancies.csv](../views/discrepancies.csv).
+The documentation (paper, page) and the release as distributed often disagree: versions, rounding, files the authors left out. Both are recorded side by side (`*_reported` and `*_release`, `access_method` and `access_observed`) and the DB does not choose. Counts after a recipe's own filtering or splitting are not recorded.
 
 ### 5.3 Note columns
 
-- `status_note`: notes on the status (why it is a candidate, what to watch out for)
-- `license_note`: gist of the license wording
-- `language_note`: dialects and how the language value was decided
-- `label_basis_note`: details of how labels were made (5.4.1)
-- `lexical_confound_note`: what the `lexical_confound` value is based on (5.4.2)
-- `paralinguistic_signal_note`: what was listened to and what was heard (5.4.3)
-- `human_accuracy_note`, `source_rights_note`: the listening test design; what the authors say about the material rights (5.4.4)
-- `notes`: our own notes
-- `sheet_notes`, `annotations_other`, `sheet_verified`: **original text of the spreadsheet**; never changed. `sheet_verified` is the spreadsheet's mark for "checked by hand" and is not used for decisions
+`notes`, `language_note`, `license_note` and `source_rights_note` are free text: facts and caveats only, each statement naming its source in brackets (`[aesdd_page]`). `license_note` is used only where the identifier cannot convey the terms; `source_rights_note` quotes what sources say about the rights in third-party material. The DB gives no verdict.
 
-### 5.4 Who made the labels (`label_source`, `label_verification`)
+### 5.4 Label sets
 
-Records who assigned the main labels (those in `labels_discrete_reported` and `dimensional_attributes`). Both have evidence rows for each value. Empty means not checked.
+A label set is a row of `annotations.csv` whose `item` equals its `name`: `emotion_categories`, `emotion_attributes`, `speaking_style`, `sentiment`, `intent`. It has its `labels` in the source's own words, the `scale` (granularity) as the source states it, `perceived_from` (what listeners saw or heard), and three attributes, each with its own evidence rows:
 
-- `label_source`: `human` (people only) / `automatic` (models etc. only) / `mixed` (automatic labels reviewed by people, or a mix) / `synthesis_specified` (synthetic audio whose label is the emotion specified to the synthesiser)
-- `label_verification`: whether people checked the labels: `human_reviewed` (the source says people reviewed automatic labels) / `listener_validated` (instructed labels confirmed or filtered by a listening test; the label stays the instructed one) / `none` (the source says there was no review) / `unknown` (the sources say nothing) / `NA` (nothing to review, e.g. labels that are listeners' own judgements)
-- Examples: `harper_valley_bank` is automatic (the paper says the labels came from an API) with no description of verification (`unknown`). `nonverbaltts` is emotion2vec+ classification reviewed by annotators (`mixed`, `human_reviewed`).
-- Automatic labels do not remove a dataset from `candidate` (8.3). Whether to train on such labels or only evaluate is a recipe-side decision, recorded in `recipes.notes`.
-- Filled for datasets whose recipe review is done; the rest are filled one by one during review, from primary sources.
-
-### 5.4.1 How the audio was produced vs. how the labels were made (`speech_production`, `label_basis`)
-
-"How the audio was produced" and "how the labels were made" are different things and are recorded in separate columns. Acted speech can carry labels that listeners perceived (and vice versa). Perceived labels are especially valuable, so they are recorded in a searchable form.
-
-| Column | Values (`;`-separated when several apply) |
+| Attribute | Values |
 |---|---|
-| `speech_production` | `acted` (acting: an instructed emotion portrayed, including scripted film and drama performances) / `elicited` (induced by stimuli or tasks) / `spontaneous` (natural speech) / `read` (reading without an emotion instruction) / `synthetic` |
-| `label_basis` | `intended` (the emotion the speaker was told to portray) / `perceived` (the emotion listeners perceived) / `self_reported` (the speaker's own report) / `context_inferred` (from the scene, script or meaning of the words) / `automatic` (a model's estimate); `none` if there are no emotion labels |
-| `label_basis_note` | free text: number of raters, what raters saw or heard (audio only, with video, transcript), how ratings were combined (majority, mean), which label set is the main one, listening-test details |
-| `recipes.label_basis_used` | which kind of label the recipe actually uses, for datasets that ship labels made in several ways |
+| `annotator` | `human`, `automatic`, `mixed`, `synthesis_specified` (synthetic audio labelled with the emotion given to the synthesiser) |
+| `label_basis` | `intended` (the emotion the speaker was told to portray), `perceived` (the emotion listeners perceived), `self_reported`, `context_inferred` (from the scene, script or meaning of the words), `automatic` |
+| `label_verification` | `human_reviewed`, `listener_validated` (instructed labels confirmed by a listening test), `none`, `unknown`, `NA` |
 
-- `recording_context` stays as the column for the setting or medium (studio, YouTube, TV, film, ...). Do not infer how speech was produced from it.
-- When instructed labels were confirmed by a listening test, or only agreeing clips were kept, the label stays `intended` and `label_verification=listener_validated`.
-- Filled during recipe review. Rows not yet reviewed are empty (not checked).
+Never infer one attribute from another: acted speech can carry perceived labels. A dataset can have several label sets (instructed and perceived emotion, categories and dimensions, emotion and speaking style); the datasets columns show the main one.
 
-### 5.4.2 Text and labels (`spoken_text_design`, `lexical_confound`)
+### 5.5 Files per label
 
-If the words spoken already give the label away, a model can learn the words instead of the voice (shortcut learning). Datasets whose labels follow only the words are excluded (`labels_from_text_content`). Datasets with real paralinguistic information but some correlation with the words may be used, with care. These columns flag that correlation so that the actual data gets checked; they do not decide anything on their own.
+`label_counts.csv` has the number of files for each label of a label set, in the source's own label words. A paper's table and the recipe readme can both give counts for the same label. They do not have to agree, and both stay. `label_normalization.csv` maps only spelling (case, spaces) and word forms (angry/anger); a mapping that changes the meaning (joy to happy) is a project decision and does not belong in the DB.
 
-| Column | Values |
-|---|---|
-| `spoken_text_design` (`;`-separated) | `parallel` (the same sentences in every emotion) / `neutral_text` (semantically neutral sentences) / `emotion_specific_text` (content matches the emotion) / `unrelated_text` (sentences assigned without regard to the emotion) / `dialogue_script` (lines of a film, drama or written dialogue) / `unscripted` (conversations, broadcasts, improvisation) |
-| `lexical_confound` | `full` (the text determines the label: each sentence under one emotion only) / `strong` (most utterances) / `moderate` (a substantial part) / `weak` (a small part or a weak link) / `possible` (no direct evidence, but a documented reason to suspect it, e.g. unscripted speech, labels assigned from context or with the transcript visible) / `none` (ruled out by design: parallel, neutral or emotion-independent sentences, or no words) |
-| `lexical_confound_note` | free text: what the value is based on (design in a source, sentence-label counts, a text-only classifier) and its scope (e.g. "English half only") |
+### 5.6 Other annotations
 
-- A value needs a clear source: a design statement in the paper or official documentation, or a measurement (counting sentences per emotion in transcripts). Never fill a value by guessing. Measuring is optional and can be costly: if the sources are silent and no cheap check exists, write `unknown` (checked, the sources do not say) and, when there is a documented reason to suspect a correlation, set `lexical_confound=possible` with the reason in `lexical_confound_note`. Leave the cell empty only when the dataset has not been looked at.
-- Record anything with even a small chance of correlation (`possible` or above), because the flag is what prompts someone to look at the data later. Use `none` only when the design rules it out.
-- Whisper transcripts are a measurement, but say in the evidence note that no person checked them. Measurement outputs go under `measurements/text_link/`.
-- Filled during recipe review. Rows not yet reviewed are empty (not checked).
+Transcripts, speaker traits, ratings and so on are rows of `annotations.csv` with an `item` from a fixed vocabulary (`speaker_id`, `speaker_gender`, `transcript`, `sentence_id`, `session_id`, `take`, `intensity`, `listener_ratings`, `listening_test`, `segmentation`, `acoustic_features`, `split`, `video`, `physiological`, `other`) and the release's own name in `name`. Each row has its own source.
 
-### 5.4.3 Does the voice carry the expression? (`paralinguistic_signal`)
+### 5.7 Listening tests
 
-Labels can be correct and the voice still carry little of the labelled expression (a flat reading of lines per emotion, amateur speakers in a classroom). Such data can mislead a model that is meant to learn from the voice. This column records what listening found; it does not decide whether to use the data.
+`listening_test` says only that a human listening test exists (`reported`) or that the sources read say nothing (`not_stated`). Its result and design (listeners, options, whether video was shown) depend on the test and cannot be compared across datasets, so they stay in the source. If a release distributes the ratings, they appear as a `listener_ratings` annotation.
 
-| Value | Meaning |
-|---|---|
-| `clear` | The voice carries the labelled expression (shown by a listening test or by the maintainer's listening) |
-| `varies` | Clear for some speakers or classes, weak for others |
-| `weak` | The expression is weak in what was heard |
-| `doubtful` | The voice may carry no expression of the labelled emotion (e.g. a flat reading of lines) |
+### 5.8 Problems of a release
 
-- Fill it only from listening (a listening test, or the maintainer's listening, recorded with `source_type=user`). The number of clips heard and what was heard go in `paralinguistic_signal_note`. A light listening (a few clips) is recorded as such and is not a measurement.
-- Empty means not judged. Do not fill it from the label source, the recording setting or the sentences.
+`issues.csv` lists what was found when the release was opened: broken or empty files, duplicates, missing or mismatched labels, differences from the documentation, silent or non-speech files, unusual audio, and observations from listening. Each row is one problem in the recipe author's words, with the number of files if given and the readme location. Observations from listening are the author's observations ("Observation by the recipe author (date)"), not measurements.
 
-### 5.4.4 Human accuracy and rights in the material (`human_accuracy`, `source_rights`)
+### 5.9 All column definitions
 
-`human_accuracy` is a number between 0 and 1: how often listeners recognised the labelled emotion in a listening test. It gives a reference level for what a model can be expected to reach. Record it only when a source reports it (a paper, the release, or a count over a distributed rating file, `source_type=measured`).
+`schema/columns.csv` defines every column (type, allowed missing values, whether it takes evidence); `schema/enums.csv` lists every allowed value with its meaning.
 
-- `human_accuracy_note` gives the design: number of listeners and clips, the options offered and the chance level, which clips were tested (all or a sample), and whether individual answers are distributed. When sources disagree on a number, say so.
-- Agreement statistics (Fleiss' kappa and so on) are not accuracy. Put them in the note of the `label_verification` evidence.
-- Do not average different tests into one number; record the one the source reports and describe it.
-
-`source_rights` records the rights in the underlying audio, separately from `license_spdx` / `license_class` (which keep describing the license the authors state):
-
-| Value | Meaning |
-|---|---|
-| `own` | The creators recorded the material themselves (not third-party material) |
-| `cleared` | Third-party material whose use is shown to be fine by a quotable statement in a paper or an official page (permission, an open license of the source, or a legal opinion); quote it in the evidence |
-| `asserted` | Third-party material; the creators say it is fine to share (ethics statement, fair use, terms of service, no copyright issue) but give no checkable basis: no list of sources, per-item licenses or permissions |
-| `unaddressed` | Third-party material and the sources say nothing about the rights in it |
-| `unknown` | The origin of the material itself is unknown |
-
-- `asserted`, `unaddressed` and `unknown` mean the material needs a rights check. `views/source_rights_check.csv` lists these datasets; the project keeps the matching hold list outside the repository.
-- A license shown on a card or record (CC BY and so on) does not make the material `cleared`: it covers the compilers' own work. `cleared` needs a statement about the source material.
-- `cleared` through a fair-use opinion (MELD) is recorded as stated; say in the note that a fair-use opinion is not a license for commercial use.
-- `source_rights_note` quotes or paraphrases what the sources say (with the place) and lists what is missing (sources, per-item licenses, consent, non-commercial statement). Empty means not examined.
-
-### 5.5 Annotations other than emotion labels (`annotations.csv`)
-
-Transcripts, speaker traits, dialogue acts, audio quality, questionnaires and other information beyond the emotion label are recorded one row per dataset x item. `datasets.annotations_other` (spreadsheet text) is kept unchanged, and new information goes into this table.
-
-- Columns: `item`, `description`, `annotator` (`human` / `automatic` / `mixed` / `unknown`), `unit` (`utterance` / `segment` / `word` / `recording` / `conversation` / `speaker` / `dataset`), `used_in_recipe`
-- Each row carries its own source (`source_type`, `source_ref`, `locator`, `checked_on`, `checked_by`). `evidence.csv` is for values of `datasets` columns, so annotation sources are not mixed into it.
-- `used_in_recipe=true` is allowed only for `implemented` datasets (checked by the validator).
-- Items are added when recipes are registered, from what primary sources confirm.
-
-### 5.6 Kinds of label (`recipe_labels.label_type`)
-
-`categorical` (categorical emotions, speaking styles, ...) / `polarity` (sentiment) / `intent` (intents, dialogue acts) / `dimensional` / `other`. Polarity and intent labels are not mapped onto the common 7 labels: `common7=none`, `mapping_type=outside_common7`. The 21 rows of `recanvo` are left empty (not checked) because its labels span emotions and requests or intents.
-
-### 5.7 All column definitions
-
-Types, meanings and allowed missing values of every column are in [schema/columns.csv](../schema/columns.csv), allowed values in [schema/enums.csv](../schema/enums.csv), and table keys in [schema/tables.csv](../schema/tables.csv).
-
-## 6. Evidence
+## 6. Sources and evidence
 
 ### 6.1 Why keep evidence
 
-A value alone cannot answer "is that really true?" later. So every important value gets **an evidence row** recording its source, the date checked, who checked it, and its strength.
+A value without a source cannot be checked, and a list that cannot be checked is not trusted. Every value of the columns that take evidence has at least one row in `evidence.csv`.
 
-### 6.2 What an evidence row holds
+### 6.2 What a source and an evidence row hold
 
-| Column | Meaning |
+A **source** (`sources.csv`) is a document: URL or DOI, title, `kind` (paper, distribution_page, dataset_card, license_file, release_files, readme, mirror, survey, other), `publisher` (authors, third_party, recipe_author), `source_type` (primary, secondary, implementation), the version of the dataset it describes, why it is about this dataset, and when it was checked. A source with an empty publisher has not been checked yet; the validator lists them. The same document can be a primary source for one dataset and a secondary one for another, which makes two sources.
+
+An **evidence row** (`evidence.csv`) says: this value of this field is stated in this source, at this place (`locator`), checked on this date, by `claude` (AI investigation) or `user` (the project maintainer opened the source), with a `status`.
+
+### 6.3 Deciding a value
+
+| Rows of the field | The cell is |
 |---|---|
-| `value` | the value the evidence supports |
-| `source_type` | kind of source (ranked by strength, 6.3) |
-| `source_ref` | the source (URL, file path) |
-| `locator` | where in the source (a short quote or place, 25 words at most) |
-| `checked_on` / `checked_by` | date checked and who checked (`claude` / `user` / `script`) |
-| `is_canonical` | `true` for the evidence of the current value; exactly one per dataset x column |
-| `status` | `current` / `superseded` (replaced by newer evidence) / `conflicting` (sources disagree, undecided) |
+| `current` rows, all with the same value | that value |
+| two or more `conflicting` rows with different values | `conflicting` |
+| one `provisional` row | its value, which has no public source yet |
 
-Columns that need evidence: `languages`, `recording_context`, `vocal_content`, `license_spdx`, `access_method`, `raw_audio_available`, `n_utt_reported`, `hours_reported`, `n_speakers_reported`, `n_files_release_measured`, `n_speakers_measured`, `labels_discrete_reported`, `dimensional_attributes`, `espnet_status`, `status_reason_codes`, `label_source`, `label_verification`, `speech_production`, `label_basis`, `spoken_text_design`, `lexical_confound`, `paralinguistic_signal`, `human_accuracy`, `source_rights`.
+The old row of a replaced value is marked `superseded` and kept: history is never deleted.
 
-### 6.2.1 Recording when something was checked
+### 6.4 Where the recipe readme fits
 
-Every one of the 4,708 evidence rows has a date checked (`checked_on`, 2026-10-10 to 10-31). But **the date is when the source was looked at**, not a guarantee that it is still true; distribution pages and licenses can change. No evidence row rests on the original spreadsheet any more: its values were rechecked against primary sources and the spreadsheet rows were removed (the earlier state stays in the git history).
+A recipe readme is cited only for what the documentation does not state and only opening the release shows: counts of the release, duplicates, what the files contain. It is cited at a commit on the public fork, with `commit <hash>; <heading>` as the locator. When a paper or page states the same thing, that source is cited even if the readme repeats it.
 
-The overview [views/datasets_wide.csv](../views/datasets_wide.csv) adds these columns per dataset (generated from the evidence):
+### 6.5 Provisional values
 
-| Column | Meaning |
+A `provisional` row is a value kept from earlier records that has no public source: names, titles, and values that once came from internal notes or the DB's own measurements. It is shown as such and is replaced as soon as a source is checked.
+
+### 6.6 Human verification
+
+The maintainer checks batches of values (about 20 rows, starting with licenses) in a pull request named `verify/<date>-<n>`: open the link, compare the quoted words, merge. The rows of a merged pull request have `checked_by=user`.
+
+## 7. Writing missing values
+
+| Written as | Means |
 |---|---|
-| `license_checked_on` / `license_source_type` / `license_checked_by` | date, kind and checker of the license evidence |
-| `access_checked_on` | date the access method was checked |
-| `oldest_checked_on` / `latest_checked_on` | oldest and newest date among the row's current evidence |
+| (empty) | not checked yet |
+| `unknown` | checked, but the sources do not say or it cannot be decided |
+| `NA` | does not apply |
+| `none` | checked, and there is none |
+| `conflicting` | sources disagree |
 
-Old dates have priority for re-checking.
+Which of them a column accepts is in the `nulls` column of `schema/columns.csv`. Multiple values are separated by `;`.
 
-### 6.3 Strength of sources
+## 8. Derived columns
 
-Strongest first.
+`emotion_categories`, `emotion_attributes`, `main_label_set_type`, `main_labels`, `label_source`, `label_basis` and `label_verification` of `datasets.csv` are computed from the main label set by `python3 tools/derive.py`, and the validator fails if they differ. The main set is `emotion_categories`, else `emotion_attributes`, else another label set.
 
-| Rank | `source_type` | Content |
-|---|---|---|
-| 1 | `user` | decisions and explanations of the project maintainer |
-| 2 | `measured` | values we counted or access we tried |
-| 3 | `primary` | the authors' paper, official page, LICENSE |
-| 4 | `project_doc` | internal documents whose source cannot be pinned down |
-| 5 | `secondary` | third-party statements (Kaggle, re-upload pages, surveys) |
-| 6 | `sheet` | values of the original spreadsheet (no rows remain; the value is kept only for the history) |
+## 9. Access
 
-The 4,708 evidence rows by source type: primary 2,780, project_doc 681, measured 587, user 384, secondary 276.
+`access_method` is what the documentation says: `direct_download`, `free_account_required`, `gated_click_through`, `request_form_or_email`, `signed_agreement`, `paid_or_membership`, `unofficial_mirror_only`, `unavailable`, `unknown`. `access_observed` is what happened when the data was requested or downloaded (`obtained`, or one of those values) and `access_observed_on` is the date. A dataset can be hard to obtain, or its audio not distributed at all; the DB records it and does not rank datasets by it.
 
-### 6.4 When a new fact appears
+## 10. Licenses
 
-The old evidence is kept and marked `superseded`, and a new row is added. The history remains, so one can explain "it used to say this, and this source corrected it". When equally strong sources disagree and neither can be preferred, two or more `conflicting` rows are kept and the datasets cell is also `conflicting` (e.g. the licenses of EmoDB, Baum-1 and TurEV-DB). When one value can be preferred for a stated reason, it becomes canonical and the other stays as a non-canonical `conflicting` row.
+### 10.1 Two columns
 
-### 6.5 A real example (the RAVDESS license)
+`license_spdx` is the stated terms as an SPDX identifier. `license_note` says what the identifier cannot (the gist of a custom license). Both describe the data's license, not the rights in third-party material behind it (`material_origin`, `source_rights_note`).
 
-| Evidence | Value | Source type | Status |
-|---|---|---|---|
-| `ravdess/license_spdx/02` | CC-BY-NC-SA-4.0 | primary (Zenodo record) | **current / canonical** |
+### 10.2 Custom terms
 
-The row replaced an earlier value taken from the original spreadsheet. That row has been removed from the current files; it can be read in the git history.
+Terms that SPDX does not cover are `LicenseRef-custom-research-only` (research use only), `LicenseRef-proprietary-restricted` (restricted or paid), `LicenseRef-citation-request` (only asks for citation), `LicenseRef-other`, and `none_stated` (no statement found). `conflicting` means sources disagree.
 
-### 6.6 Principles
+### 10.3 Before using a dataset
 
-- Write nothing the sources do not say. Never guess URLs or titles.
-- Never use measured values as evidence for "reported" columns (or the reverse).
-- The only basis for measured counts, hours and speakers is `measurements/<recipe>.json` and the downloaded files themselves.
+The identifier is a classification of wording, not legal advice. Open the primary source, read the terms, and check whether the data's license and the license of bundled code differ. How licenses are grouped for an experiment is your own decision (12.3).
 
-## 7. Writing missing values (empty, unknown, NA, none)
+## 11. Checks
 
-"No value" comes in four kinds, which are **never mixed**.
+`tools/validate.py` checks format, types and allowed values, keys and foreign keys, the source and evidence rules, the derived columns, duplicate names, that `views/` is up to date, and that no machine-specific paths are committed. A pre-commit hook runs it; do not bypass it.
 
-| Written as | Meaning | Example |
-|---|---|---|
-| (empty) | **not checked yet** | license not investigated |
-| `unknown` | checked, but the sources do not say or it cannot be decided | the distributor states no license |
-| `NA` | does not apply | recipe columns of a dataset that is not implemented |
-| `none` | checked, and there is none | confirmed there are no dimensional labels |
+## 12. Using the DB
 
-Which ones a column accepts is fixed in the `nulls` column of `schema/columns.csv`. Licenses also have the value `none_stated` (no license statement found).
+### 12.1 Looking things up
 
-## 8. Status (`espnet_status`)
+1. Open `views/datasets_wide.csv` in a spreadsheet and filter it (for example on `license_spdx`, `languages`, `main_label_set_type`).
+2. For a value you will rely on, look up its row in `data/evidence.csv` (`dataset_id` and `field`) and open the source in `data/sources.csv`.
+3. `views/discrepancies.csv` lists the values on which sources disagree.
 
-### 8.1 The five statuses
+### 12.2 For AI
 
-| Status | Meaning | Count |
-|---|---|---|
-| `implemented` | an ESPnet recipe exists | 101 |
-| `candidate` | candidate for addition: has audio and labels usable for classification, and can probably be obtained | 134 |
-| `needs_decision` | only the project maintainer can decide (cost, terms of use, application wording) | 7 |
-| `deferred` | not confirmed: the distributor does not respond, the access route is unknown, etc. | 34 |
-| `excluded` | not used, for a clear reason | 46 |
+The DB is meant to be read through AI. Read `README.md` first, then the rows you need; answer with the primary source, say when the support is provisional, secondary or an implementation source, and search outside only for empty, `unknown`, `conflicting` or provisional values.
 
-### 8.2 Only clear reasons justify `excluded`
+### 12.3 `local/`
 
-Exclusion is allowed only when:
+`local/` is a git-ignored working space (see its README): which datasets you use and why, how you group licenses, how you map labels. Join your files to the DB by `dataset_id`. The DB's tools never read it.
 
-- there is no audio (text only, paper only, features only, code only)
-- it redistributes another dataset (`redistribution_of_existing_corpus`) or duplicates a row
-- the labels cannot be used for classification
-- the labels follow the spoken content (the meaning of the sentence) rather than the voice (`labels_from_text_content`); only when confirmed by listening and decided by the maintainer
-- it cannot be obtained because of nationality or residence restrictions
-- distribution is not allowed
+## 13. Adding and changing data
 
-The 46 excluded rows break down as: text only 11, redistribution of an existing corpus 10, paper only 9, regional restriction 7, features only 6, and others (unsuitable labels, unidentifiable, duplicate, code only, not distributable, distributor unreachable, ...). A row can have more than one reason.
+Changes are made with the maintenance skill (`.claude/skills/maintaining-ser-dataset-db/`): register the sources, then the values with their evidence, run `tools/views.py` and `tools/validate.py`, commit with a message that says what was uncertain and what the evidence was. Everything committed is public.
 
-### 8.3 Not reasons to exclude (important)
+## 14. Current figures (2026-11-01)
 
-Policy set by the maintainer on 2026-10-14. These are **not reasons to exclude**:
-
-- size, small or large
-- manual access steps (application, signature, login, purchase); the maintainer can be asked to do them
-- being on Kaggle (a free account and token suffice)
-- the kind of label (sentiment, intent, dimensional values, speaking style)
-- automatic labels, synthetic speech
-
-Such datasets stay `candidate`, with caveats in `status_note`. The aim is not to drop something because it is laborious, but to record that it is laborious so it can be decided later.
-
-### 8.4 Reason codes (`status_reason_codes`)
-
-Every row except `implemented` has reason codes (`;`-separated). The list and meanings are the `reason_code` rows of [schema/enums.csv](../schema/enums.csv). A row can have more than one code, so the counts below add up to more than the number of rows.
-
-| Code | Meaning | candidate | needs_decision | deferred | excluded |
-|---|---|---|---|---|---|
-| `unexamined` | implementation not yet considered | 74 | 0 | 15 | 0 |
-| `first_review_done` | primary sources read, no blocking reason found; use not yet decided | 6 | 0 | 1 | 0 |
-| `not_individually_checked` | provisional reason from the spreadsheet import | 0 | 0 | 2 | 0 |
-| `access_*` | application, signature, gate, payment, no direct download or regional restriction | 48 | 4 | 9 | 8 |
-| `labels_*` | labels are not categorical emotions, are styles, are automatic, or follow the text | 9 | 1 | 0 | 4 |
-| others | no audio, redistribution, duplicate, unidentifiable, unreachable, origin unclear, not distributable, links only | 1 | 3 | 7 | 44 |
-
-`first_review_done` marks only the rows whose first review found no blocking reason. Rows whose review found one carry that reason instead, so the number of reviewed rows cannot be read from this code alone; the review is recorded in `status_note` and the evidence rows.
-
-## 9. Licenses
-
-### 9.1 Two columns
-
-- `license_spdx`: the conditions in the sources mapped to an SPDX identifier.
-- `license_class`: a rough class derived **mechanically** from the identifier. Not a legal judgement.
-
-### 9.2 `license_class` values and counts
-
-| Class | Meaning | Count |
-|---|---|---|
-| `open` | permissive (attribution at most): CC-BY, CC0, MIT, ... | 98 |
-| `noncommercial` | non-commercial only (CC-BY-NC, ...) | 39 |
-| `research_only` | custom terms limited to academic or research use | 49 |
-| `restricted` | restricted or paid | 12 |
-| `other` | other than the above | 4 |
-| `none_stated` | no license statement found | 24 |
-| `unknown` | examined but undecidable | 24 |
-| `conflicting` | sources disagree | 2 |
-| (empty) | not investigated yet | 70 |
-
-### 9.3 Four names for custom terms
-
-Terms not covered by SPDX get one of these, with the gist of the wording in `license_note`:
-
-- `LicenseRef-custom-research-only`: custom academic or research-only terms
-- `LicenseRef-proprietary-restricted`: proprietary terms such as payment or contracts
-- `LicenseRef-other`: anything else
-- `LicenseRef-golos-public`: the Golos/Dusha public license "with attribution and conditions reserved", a reworking of CC BY-SA 4.0 without a non-commercial clause (class `open`, by the maintainer's decision)
-- `LicenseRef-citation-request`: no license text, only a request to cite the paper, which the project treats as the terms of use by the maintainer's decision for that dataset (class `open`; the decision and the wording are in `license_note`)
-
-### 9.4 Before using a dataset
-
-- Even when `license_class` is `open`, **the data's license** and **the license of bundled code** may differ. Always read `license_note` and the primary source.
-- The scope of "research only" or "non-commercial" (publication, releasing models, redistribution) differs between terms. The DB does not interpret it.
-- A license written by a re-uploader (on Kaggle etc.) is not necessarily the authors' terms.
-
-## 10. Access methods (`access_method`)
-
-| Value | Meaning | Count |
-|---|---|---|
-| `direct_download` | directly downloadable without authentication | 131 |
-| `free_account_required` | free account (registration) required | 17 |
-| `gated_click_through` | consent click or similar required | 7 |
-| `request_form_or_email` | request by application form or e-mail | 59 |
-| `signed_agreement` | signed agreement required | 30 |
-| `paid_or_membership` | paid or membership | 9 |
-| `unofficial_mirror_only` | only unofficial mirrors | 0 |
-| `unavailable` | cannot be obtained | 7 |
-| `unknown` | unknown | 12 |
-| (empty) | not checked | 50 |
-
-Roughly, `direct_download`, `free_account_required` and `gated_click_through` are "available now", and `request_form_or_email` and `signed_agreement` "need a procedure".
-
-## 11. Current figures (2026-10-31)
-
-### 11.1 Status x license class
-
-| Status | open | NC | research | restricted | other | none stated | unknown | conflicting | not checked | total |
-|---|---|---|---|---|---|---|---|---|---|---|
-| implemented | 66 | 13 | 12 | 1 | 1 | 5 | 3 | 0 | 0 | 101 |
-| candidate | 18 | 22 | 30 | 9 | 3 | 14 | 3 | 2 | 33 | 134 |
-| needs_decision | 2 | 1 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 7 |
-| deferred | 0 | 0 | 3 | 0 | 0 | 1 | 7 | 0 | 23 | 34 |
-| excluded | 12 | 3 | 2 | 0 | 0 | 4 | 11 | 0 | 14 | 46 |
-
-(NC is noncommercial.)
-
-What this shows:
-
-- Of the 101 implemented datasets, 66 have open terms (`open`).
-- Of the 134 candidates, 11 are `open` and `direct_download` (available now): the first group to implement next.
-
-### 11.2 Properties of the data
-
-- **Recording context** (`recording_context`; 87 not checked): acted 113, spontaneous conversation 19, multi-source web 17, YouTube 13, affect elicitation 13, TV show 12, film 11, read speech 7, synthetic 7, human-agent interaction 6, other 5, podcast 4, and others.
-- **Languages**: 77 codes. English (eng) 75, Mandarin (cmn) 32, Korean (kor) 16, Spanish (spa) and German (deu) 14 each, French (fra) 15, Japanese (jpn) 11, multilingual (mul) 10.
-- **Raw audio**: distributed 186, not distributed 29, unknown 4, not checked 103.
-- **Datasets with dimensional emotion labels**: 25.
-- **Training and evaluation of ESPnet recipes**: done (`evaluated`) 17, not run (`not_run`) 85.
-- **Speech production and label basis** (filled during recipe review): filled for 127 datasets; perceived labels (`perceived`, alone or with others) on 47.
-- **Intent and dialogue-act data**: 12 (SLURP, Timers and Such, Fluent Speech Commands, Snips/Sonos, STOP, MInDS-14, Speech-MASSIVE, ITALIC, DIHANA, SpokenWOZ, Harper Valley Bank, SLUE-HVB).
-- **Coverage check**: all 28 corpora in Table I of the MSP-Podcast paper (arXiv 2509.09791v1) are included.
-
-### 11.3 How the data was collected
-
-On 2026-10-14, 158 datasets were added from surveys (SuperKogito's list, EmoBox, KuralHub, ...), searches of Hugging Face, Zenodo, Kaggle, Mendeley, figshare, GitHub and OpenSLR, and corpora known from the literature. For added rows, access terms, licenses and labels were checked in primary sources as far as possible.
-
-## 12. Using the DB (looking things up)
-
-### 12.1 The easiest way: open it in a spreadsheet
-
-Open [views/datasets_wide.csv](../views/datasets_wide.csv) in Excel, Google Sheets or LibreOffice. One row per dataset; use filters to narrow it down. Main columns:
-
-- `dataset_id`: ID
-- `status`: status (= `espnet_status`)
-- `reasons`: reason codes
-- `license_class`, `access_method`, `raw_audio_available`
-- `speech_production`, `label_basis`, `label_basis_note`
-- `spoken_text_design`, `lexical_confound`, `lexical_confound_note`
-- `paralinguistic_signal`, `paralinguistic_signal_note`
-- `human_accuracy`, `human_accuracy_note`
-- `source_rights`, `source_rights_note`
-- `recipe`, `n_total_recipe`, `hours_total_recipe`: for implemented datasets, the recipe and its measured count and hours
-- `common7_covered`, `common7_missing`: which of the common 7 labels (angry, disgust, fear, happy, neutral, sad, surprise) the data has or lacks
-- `benchmarks`: benchmarks it belongs to
-
-The first 15 columns (Verified to ESPnet Implemented) have the original spreadsheet's names.
-
-> `views/` is a generated copy. Edits there are lost the next time it is regenerated. Fix `data/` instead.
-
-### 12.2 Example 1: look up a dataset
-
-In a terminal, in the DB folder:
-
-```bash
-grep -i ravdess views/datasets_wide.csv
-```
-
-To see all fields of a row vertically:
-
-```bash
-python3 tools/db.py get datasets ravdess
-```
-
-### 12.3 Example 2: see the source of a value
-
-Open [data/evidence.csv](../data/evidence.csv) and filter `dataset_id` = `ravdess` and `field` = `license_spdx`. The source URL (`source_ref`), date checked and checker are shown.
-
-```bash
-grep '^ravdess/license_spdx' data/evidence.csv
-```
-
-### 12.4 Example 3: see disagreements
-
-[views/discrepancies.csv](../views/discrepancies.csv) lists the DB's current value next to values from other sources. Rows where spreadsheet or survey values were corrected from primary sources show the old values here.
-
-### 12.5 Example 4: ask an AI assistant
-
-Assistants working on this project look up this DB before searching the web. Ask "what Japanese emotional data is there?" or "which openly licensed datasets are not yet implemented?" and the answer comes from the DB. For important decisions, the answer should say that evidence whose `source_type` is `project_doc` or `secondary` needs confirming.
-
-## 13. Maintenance (updates and checks)
-
-### 13.1 Everyday commands
-
-Run in the DB folder with the system Python.
-
-| Command | What it does |
+| Item | Value |
 |---|---|
-| `python3 tools/validate.py` | checks everything, including the ESPnet branch, recipes and measurements |
-| `python3 tools/validate.py --offline` | checks only the DB, without reading ESPnet |
-| `python3 tools/views.py` | regenerates `views/` |
-| `python3 tools/db.py get\|set\|add\|fmt` | view, change or add a row; reformat the CSV files |
+| Datasets | 322 |
+| Evidence rows: current | 2,543 |
+| Evidence rows: conflicting | 13 |
+| Evidence rows: provisional | 754 |
+| Evidence rows: superseded | 370 |
+| Sources: primary | 436 |
+| Sources: implementation | 102 |
+| Sources: secondary | 47 |
+| Sources without a checked publisher | 210 |
+| Annotation rows | 549 |
+| Dataset sources links | 698 |
 
-Measurements use `tools/measure.py`, and `tools/sync.py` copies them into the recipe table (steps in the README, "Validation and updates"). The full maintenance workflow, including verification of incoming reports, is in `.claude/skills/maintaining-ser-dataset-db/SKILL.md`.
+## 15. Limits
 
-Other programs, which are not run by hand day to day:
+### 15.1 What the DB does not yet do
 
-| File | What it does |
-|---|---|
-| `tools/csvio.py` | reads and writes every CSV in one fixed format (used by the other tools) |
-| `tools/egs3.py` | reads the recipes from the ESPnet branch `ser/cross-corpus` with `git show`, whatever branch is checked out |
-| `tools/localenv.py` | reads machine-specific settings from `.env` (e.g. `ESPNET_REPO`) |
-| `tools/hooks/pre-commit` | the check that runs before each commit |
-| `.claude/skills/.../scripts/reglib.py` | stages the changes for one dataset (evidence, cells, recipe rows, labels, annotations) and saves them through `tools/db.py` |
-| `.claude/skills/.../scripts/doc_counts.py` | recounts the figures in this guide and the README |
+- Most values rest on an AI investigation; a person has opened the source of few of them. Check the primary source before relying on a value.
+- The 754 provisional rows (names, titles, and values from before sources were required) and the 210 sources without a checked publisher are the main work left; `views/datasets_wide.csv` shows the stage of every dataset.
+- The recipe readmes were written by the recipe author; their counts are as reliable as that author's counting.
 
-### 13.2 What the checks cover
+### 15.2 What the DB will never do
 
-- CSV format (UTF-8, row order), column types and allowed values
-- keys and foreign keys (no rows pointing to missing rows)
-- evidence rules (one canonical evidence row per value, no mixing of measured and reported values, ...)
-- whether `implemented` rows match the ESPnet recipes
-- whether `recipes.csv` and `recipe_labels.csv` match `measurements/*.json`
-- whether `annotations.csv` points to existing datasets, `used_in_recipe=true` only for implemented ones, and `label_verification` is not set without `label_source`
-- whether `views/` is up to date
-
-### 13.3 Rules for changes
-
-- Every value change gets an evidence row.
-- One commit per dataset or per checking session. The commit message (in English) says **what was wrong** and what the evidence was.
-- The hook runs the checks automatically before each commit; the commit is refused if they fail. Never skip the checks (`--no-verify`).
-- Stage files by name; never `git add -A` or `git add .`.
-- Committed `dataset_id`s are never changed (if one must change, keep the old ID as an alias).
-
-### 13.4 Division of work with recipe authors
-
-Findings made while implementing recipes (label problems, split peculiarities, ...) are not written into the DB directly. They are handed to the DB maintainer as a DB update report, and the DB maintainer verifies them against primary sources and the audio before recording them with evidence. The exception is the automatic measurements and recipe-table updates produced by `measure.py` and `sync.py`.
-
-## 14. Human checks of licenses
-
-### 14.1 Why
-
-Most license evidence was gathered by Claude or automated processing (`checked_by` is `claude` or `script`), some of it mechanically from API fields or cards, so human confirmation is desirable.
-
-### 14.2 How
-
-Instead of one bulk check, **each time a recipe is implemented and reviewed, the maintainer looks at that dataset's license page**. The result is added as an evidence row with `checked_by=user`. Current license evidence checked by the maintainer exists for 9 datasets (`akace`, `emodb`, `emotale`, `emotiontalk`, `iesc`, `rasa`, `recanvo`, `uftbesd`, `visec`).
-
-## 15. Limitations (honestly)
-
-Reports state what is not done as well as what is.
-
-### 15.1 Not yet confirmed
-
-- **The DB does not yet follow its principles everywhere** (see 2.4). Some status values (`candidate`, `deferred`, `excluded`, ...) contain decisions about use; some evidence cites the project's internal documents or conversations with the maintainer, which outside readers cannot follow; and the DB measures recipe outputs itself (`measurements/`). How to resolve these is being worked out in [design/](design/agenda.md).
-
-- **The DB lags behind the ESPnet implementation**: the ESPnet recipe branch has single-corpus recipes for 102 datasets, but 1 of them is not yet in `recipes.csv` and that dataset is not yet `implemented` (`bari_emospeech`: its corpus must be downloaded again before it can be measured). `validate.py` lists it as a warning, not an error. The other six that were waiting (`anad`, `audiospeechsentiment`, `multidialog`, `rasa`, `thanushs25_tamil`, `visec`) were registered on 2026-10-30.
-- **Minimum clip length changed from 0.5 s to 0.2 s** (ESPnet commit 96a54519743, 2026-10-17). `min_wav_duration` in `recipes.csv` is 0.2 for all recipes, but for recipes registered before the change, `n_train_filtered` and `n_valid_filtered` are still the old measurements (counted with the 0.5 s minimum). Not yet re-measured.
-- **Human checks of licenses have barely started** (see 14.2). The licenses in the DB are mostly primary sources checked by Claude.
-- **28 rows supported only by a third-party survey (KuralHub)** have not had their access checked in primary sources. Many are data from older papers, listed as "on request".
-- **Some distributors did not respond**, so some rows could not be checked (`amigos`, `casia`, `cheavd`, `belfast`, `emotion_origlia2010`, `usoms`, `eyase`).
-- **The 34 `deferred` rows** still need their real access routes investigated.
-- **Spreadsheet values were rechecked** (2026-10-31): the 429 values that rested only on the original spreadsheet were checked against primary sources; those the sources state were replaced, those they do not state (or that could not be read) were emptied. Values that were emptied because a source could not be read (e.g. `enterface05`, `cheavd`, `semaine`, `amigos`) can be filled when the source can be read.
-- **Empty (not investigated) values remain**: license empty for 70, access method empty for 50, recording context empty for 87.
-- **Not yet surveyed**: CATSLU, dialogue acts such as MRDA, SwDA and AMI, ATIS audio, SLURP in other languages, intent data in other languages.
-
-### 15.2 Limits by nature
-
-- The DB **organises public information**; it is not legal advice. License classes are mechanical classifications.
-- "A dataset exists" and "you may use it" are different. Always read the primary source and the original terms before use.
-- Whether `measurements/` still matches the local copies of the data is not checked automatically.
-- Whether a dataset has emotion labels is sometimes hard to tell from the paper alone; unclear cases were downloaded and checked (e.g. Expresso).
-
-### 15.3 MSP-Podcast terms
-
-MSP-Podcast is for internal non-commercial research only, may not be redistributed, and requires citing Lotfian & Busso (2019). Its standard label set is the 8 classes including contempt.
-
-## 16. Talking points for a progress report
-
-### 16.1 Outline (1-2 minutes)
-
-1. **What was built**: an evidence-backed ledger of SER and paralinguistic datasets. 322 datasets, 4,708 evidence rows.
-2. **Why**: to stop re-researching dataset conditions (license, access) every time, and to keep the basis for cross-corpus evaluation.
-3. **Reliability measures**: each value records its source, date and checker, and a machine checks the rules. Unknowns are written as unknown, never filled by guessing.
-4. **Link to the implementation**: the 102 ESPnet recipes are measured into the DB, distinguishing implemented, candidate and deferred datasets (the recipe branch keeps growing, and new recipes are registered after review; 15.1).
-5. **Next**: human license checks with each recipe, investigating the 34 deferred rows, surveying uncovered areas.
-
-### 16.2 Things to show
-
-- Open [views/datasets_wide.csv](../views/datasets_wide.csv) in a spreadsheet and filter it (e.g. `status`=candidate, `license_class`=open, `access_method`=direct_download -> 11 rows).
-- An evidence example: filter [data/evidence.csv](../data/evidence.csv) on `ravdess` and `license_spdx` to show how the spreadsheet value was replaced by the Zenodo primary source.
-
-### 16.3 Expected questions
-
-| Question | Answer |
-|---|---|
-| Why CSV instead of the original spreadsheet? | A spreadsheet cannot hold sources, history or checks. CSV under git keeps the change history and can be checked by machine |
-| Is the information correct? | Every value has a source and a date; primary sources (papers, official pages) are the largest group (2,780 of 4,708 evidence rows). Final human checks (licenses) are still in progress |
-| How was it collected? | 238 datasets from surveys, hosting services and the literature were added to the spreadsheet's 84; added rows were checked in primary sources |
-| How many can be implemented? | 101 implemented, 134 candidates. Of the candidates, 11 are openly licensed and available now |
-| What was excluded? | 46. Only for clear reasons: no audio, redistribution of existing data, duplicates, regional restrictions, etc. Effort and size are not reasons |
-| Can the licenses be trusted? | The DB records the terms the sources state; it is not a legal interpretation. Read the original before use. Human checks are added one by one with each recipe |
-| What next? | Human checks with each recipe, investigating the 34 deferred rows, adding uncovered areas (dialogue acts, intent data in other languages, ...) |
-
-### 16.4 Things not to say
-
-- "Everything has been checked by people" (human license checks cover only a few datasets, 14.2)
-- "These licenses allow use" (the classes are mechanical, not legal judgements)
-- "It covers every dataset in the world" (it covers what was surveyed; uncovered areas are listed in 15.1)
-
-## 17. Troubleshooting
-
-| Situation | What to do |
-|---|---|
-| validate fails | The message gives the file, line and cause. Usually missing evidence or a value outside the allowed list. If you cannot fix it, ask Claude |
-| Cannot commit | The hook's checks failed. Run the same check by hand and fix the cause. Never bypass it with `--no-verify` |
-| `views/` is outdated | Regenerate with `tools/views.py` (the checks also verify it is up to date) |
-| Edited a CSV directly | Run `tools/db.py fmt`, then `validate.py` |
-| Unsure whether a value is right | Filter `evidence.csv` on `dataset_id` and `field` and check `source_type` and `source_ref` |
-| Want to undo a change | Do not run `reset` or similar on your own; ask first (operations that rewrite history need confirmation) |
-
-## 18. Appendix
-
-### 18.1 Main files
-
-| File | Content |
-|---|---|
-| [README.md](../README.md) | summary for developers: tables, conventions, evidence rules, current state |
-| [design/agenda.md](design/agenda.md) | design discussion: open questions, and decisions with their background and reasons; each discussion is recorded in [design/archive/](design/archive/) |
-| [schema/columns.csv](../schema/columns.csv) | types and meanings of all columns |
-| [schema/enums.csv](../schema/enums.csv) | allowed values (status, reasons, licenses, access, ...) |
-| [schema/tables.csv](../schema/tables.csv) | file and key of each table |
-| [data/](../data/) | authoritative data (8 CSV files) |
-| [views/](../views/) | generated overview and disagreement lists |
-| [measurements/](../measurements/) | measured results of recipes (JSON) |
-| [reports/](../reports/) | saved investigation reports with verification |
-| [sheet_import/README.md](../sheet_import/README.md) | origin and fingerprint of the original spreadsheet |
-| [tools/](../tools/) | validate, views, db, measure, sync, and their helpers (13.1) |
-
-### 18.2 Updating this document
-
-The figures are as of the date in section 11. When the DB changes, recount `data/*.csv` (the `doc_counts.py` script of the maintenance skill does this) and update the text. The Japanese translation, [manual.ja.md](manual.ja.md), has the same structure; **always update both files together** (never only one).
+It does not say which datasets to use, does not rank them, and does not choose between disagreeing sources.

@@ -9,7 +9,7 @@ import sys
 import csvio
 import db as dbmod
 
-EXTRA_COLS = ["paper_url", "distribution_url", "card_url", "mirror_url", "readme_url", "other_url",
+EXTRA_COLS = ["documents_checked", "implementation_checked", "paper_url", "distribution_url", "card_url", "mirror_url", "readme_url", "other_url",
               "annotation_items", "license_checked_on", "license_source_type", "license_checked_by",
               "access_checked_on", "oldest_checked_on", "latest_checked_on"]
 DISC_COLS = ["dataset_id", "field", "kind", "datasets_value", "datasets_source_type", "other_value",
@@ -31,6 +31,18 @@ def wide(db):
     urls = {}
     for r in db["dataset_sources"][1]:
         urls.setdefault((r["dataset_id"], r["role"]), []).append(src_url(sources, r["source_id"]))
+    stage = {}
+    DOC_FIELDS = {"languages", "license_spdx", "speech_production", "label_basis", "emotion_categories.label_basis",
+                  "emotion_categories.annotator", "n_files_reported", "access_method"}
+    for e in db["evidence"][1]:
+        if e["status"] not in ("current", "conflicting"):
+            continue
+        ty = sources.get(e["source_id"], {}).get("source_type", "")
+        st = stage.setdefault(e["dataset_id"], set())
+        if ty == "primary" and e["field"] in DOC_FIELDS:
+            st.add("documents")
+        if ty == "implementation":
+            st.add("implementation")
     items = {}
     for a in db["annotations"][1]:
         items.setdefault(a["dataset_id"], []).append(a["item"])
@@ -46,6 +58,8 @@ def wide(db):
         dates = sorted(e["checked_on"] for e in ce.values())
         row = dict(d)
         row.update({
+            "documents_checked": "true" if "documents" in stage.get(i, ()) else "false",
+            "implementation_checked": "true" if "implementation" in stage.get(i, ()) else "false",
             **{f"{role}_url": ";".join(urls.get((i, role), [])) for role in ("paper", "distribution", "card", "mirror", "readme", "other")},
             "annotation_items": ";".join(sorted(items.get(i, []))),
             "license_checked_on": lic["checked_on"] if lic else "", "license_source_type": sources.get(lic["source_id"], {}).get("source_type", "") if lic else "",

@@ -20,120 +20,98 @@ A database of speech emotion recognition (SER) datasets, kept as CSV files under
 
 **Current position**: the DB is used for one researcher's work, and is designed for future public release. Background, challenges and the reasoning behind these principles are in `docs/manual.md` section 2; the discussion that led to them is in `docs/design/`.
 
-- **`data/*.csv` is authoritative.** The Google spreadsheet it grew from ("ser_database", 84 rows) was frozen on 2026-10-12 and the original is kept in `sheet_import/` (origin and sha256 in `sheet_import/README.md`). The spreadsheet is no longer updated.
-- It covers all datasets that are (or may be) usable for SER. Whether a dataset is implemented as an ESPnet recipe is recorded in `espnet_status`. Datasets only for EEG or ASR are out of scope.
-- This is an independent git repository, separate from the ESPnet fork that holds the recipes; nothing written here goes into that repository.
+- **`data/*.csv` is authoritative.** Everything in `views/` is generated from it.
+- It covers datasets that are (or may be) usable for speech emotion recognition (SER). Scope: the axis is SER; emotion is taken in a broad sense that includes sentiment, and data such as speaking style, intent and dialogue acts is collected as material for SER research. Datasets only for EEG or ASR are out of scope.
+- This is an independent git repository, separate from the ESPnet fork that holds the recipes. The database records what sources state; what a project decides to use, and why, is not here (see `local/`).
 
 ## Where to look first
 
 | You want | Look at |
 |---|---|
-| All datasets at a glance | `views/datasets_wide.csv` (generated; one row per dataset; the first 15 columns have the spreadsheet's names) |
-| Disagreements between values | `views/discrepancies.csv` (generated) |
-| The source of a value | `data/evidence.csv`, filtered by `dataset_id` and `field` |
+| All datasets at a glance | `views/datasets_wide.csv` (generated; one row per dataset, with the source URLs and the stage of checking) |
+| Disagreements between sources | `views/discrepancies.csv` (generated) |
+| Where a value comes from | `data/evidence.csv` (filter by `dataset_id` and `field`), then `data/sources.csv` by `source_id` |
+| Problems found in a release | `data/issues.csv` |
+| How many files each label has | `data/label_counts.csv` |
 | Meaning, type and allowed nulls of a column | `schema/columns.csv`; allowed values in `schema/enums.csv`; table keys in `schema/tables.csv` |
-| Measured values of ESPnet recipes | `data/recipes.csv`, `measurements/<recipe>.json` |
 | A beginner's guide with a glossary | `docs/manual.md` (English), `docs/manual.ja.md` (Japanese translation; always update both together) |
-| How the DB is being designed: open questions, decisions with their reasons, and the record of each discussion | `docs/design/agenda.md`, `docs/design/archive/` |
+| How the DB was designed: decisions with their reasons | `docs/design/agenda.md`, `docs/design/archive/` |
 | How to maintain the DB (workflow for Claude Code) | `.claude/skills/maintaining-ser-dataset-db/SKILL.md` |
+| Your own decisions that build on the DB (which datasets you use, license groups, ...) | `local/` (git-ignored; see `local/README.md`) |
 
 ## Tables
 
 | File | One row is | Key |
 |---|---|---|
-| `data/datasets.csv` | one dataset (authoritative) | `dataset_id` |
-| `data/evidence.csv` | the source for one value in `datasets` | `evidence_id` = `<dataset_id>/<field>/<NN>` |
-| `data/aliases.csv` | another name (spreadsheet name, official name, former label, recipe name, ...) | `dataset_id`, `alias` |
-| `data/relations.csv` | a relation between datasets (version, subset, different dataset, suspected identity) | `dataset_id`, `relation`, `other_dataset_id` |
-| `data/recipes.csv` | one egs3 recipe (`egs3/<recipe>/cls`), with automatic and hand-written columns | `recipe` |
-| `data/recipe_labels.csv` | recipe x label; labels the recipe drops are kept too | `recipe`, `label` |
-| `data/benchmark_membership.csv` | a member recipe of a multi-corpus recipe | `benchmark_recipe`, `member_recipe`, `role` |
-| `data/annotations.csv` | dataset x non-emotion annotation; each row carries its own source | `dataset_id`, `item` |
+| `data/datasets.csv` | one dataset | `dataset_id` |
+| `data/evidence.csv` | the source of one value of `datasets` (or of a label set attribute) | `evidence_id` = `<dataset_id>/<field>/<NN>` |
+| `data/sources.csv` | one source document: paper, page, card, license file, release files, recipe readme | `source_id` |
+| `data/dataset_sources.csv` | a source that introduces a dataset (paper, distribution, card, mirror, readme) | `dataset_id`, `source_id`, `role` |
+| `data/annotations.csv` | a label set (emotion categories, emotion attributes, speaking style, ...) or another annotation (transcript, speaker, ratings, ...) of a dataset | `dataset_id`, `item`, `name` |
+| `data/label_counts.csv` | the number of files of one label of a label set, as a source states it | `dataset_id`, `item`, `label`, `source_id` |
+| `data/issues.csv` | one problem of a release as distributed | `dataset_id`, `issue_no` |
+| `data/aliases.csv` | another name of a dataset | `dataset_id`, `alias` |
+| `data/relations.csv` | a relation between datasets (version, subset, different dataset, suspected identity, shared sentences) | `dataset_id`, `relation`, `other_dataset_id` |
+| `data/label_normalization.csv` | a spelling or word-form variant of a label name and its normalised form | `source_label` |
 
-- `recipes.dataset_id` links to `datasets`. Multi-corpus recipes have `NA` (their member recipes link to the datasets).
-- Status: `espnet_status` is `implemented` (an egs3 recipe exists) / `candidate` / `needs_decision` / `deferred` / `excluded`. Every status except `implemented` has reasons in `status_reason_codes` (`;`-separated); `implemented` has `NA`. Notes go in `status_note`; the date checked in `status_checked_on`.
-- Who made the labels: `datasets.label_source` (`human` / `automatic` / `mixed` / `synthesis_specified`: synthetic audio labelled with the emotion given to the synthesiser) and `label_verification` (`human_reviewed`: people reviewed automatic labels / `listener_validated`: instructed labels confirmed by a listening test / `none` / `unknown` / `NA`). Each value has an evidence row. Empty means not checked; filled during recipe review. `recipe_labels.label_type` is `categorical` / `polarity` / `intent` / `dimensional` / `other` (empty for `recanvo`, not checked). Polarity and intent labels have `common7=none`.
-- How the audio was produced and how the labels were made are recorded separately. `speech_production` (`acted` / `elicited` / `spontaneous` / `read`: reading without an emotion instruction / `synthetic`; `;`-separated) says how the audio was produced; `label_basis` (`intended`: the emotion the speaker was told to portray / `perceived`: the emotion listeners perceived / `self_reported` / `context_inferred`: from context or the meaning of the words / `automatic`: a model; `;`-separated) says how the main labels were made. Acted speech can carry perceived labels, so never infer one from the other. Number of raters, what they saw or heard and how ratings were combined go in `label_basis_note`. Both columns have evidence rows. `recording_context` stays as the column for the setting or medium. Which kind of label a recipe actually uses is `recipes.label_basis_used`. Instructed labels confirmed by a listening test have `label_verification=listener_validated`. These are filled from primary sources during each recipe review (rows not yet reviewed are empty = not checked).
-- Whether the words give the label away (shortcut learning) is flagged separately. `spoken_text_design` (`parallel` / `neutral_text` / `emotion_specific_text` / `unrelated_text` / `dialogue_script` / `unscripted`; `;`-separated) says how the spoken text relates to the labels; `lexical_confound` (`full` / `strong` / `moderate` / `weak` / `possible` / `none`) is a rough flag of how far the words alone give the label away, with its basis in `lexical_confound_note`. Both have evidence rows and are filled only from a clear source (a design statement or a measurement), never by guessing. `possible` and above mean: check the actual data before relying on it.
-- Whether the voice itself carries the labelled expression is recorded from listening only: `paralinguistic_signal` (`clear` / `varies` / `weak` / `doubtful`) with the details in `paralinguistic_signal_note`. Datasets that share sentences (or their translations) with another dataset are linked by the `shares_sentences_with` relation, because this matters when corpora are combined or tested against each other.
-- Human recognition of the intended emotion is recorded as a number when a listening test reports it: `human_accuracy` (0-1, the share of listener judgements that matched the label, or the paper's accuracy figure) with the design (listeners, clips, options, chance level) in `human_accuracy_note`. It is a reference level for models, not a quality score. Agreement statistics such as kappa are not accuracy and go in `label_verification`'s evidence note.
-- Rights in the underlying audio are separate from the data license: `source_rights` (`own` / `cleared` / `asserted` / `unaddressed` / `unknown`) with `source_rights_note`. `license_class` keeps describing the license the authors state; `asserted`, `unaddressed` and `unknown` mark third-party material (films, TV, web videos) whose rights need checking, and `views/source_rights_check.csv` lists them.
-- Annotations other than emotion labels go in `annotations.csv`, one item per row (annotator, unit, whether the recipe uses it, and a source). `annotations_other` keeps the spreadsheet's original text. Currently: `aesdd` 1, `akace` 2, `albemo` 3, `anad` 3, `ased` 4, `asvpesd` 4, `audiospeechsentiment` 2, `banglamood` 1, `banglaser` 4, `banspemo` 2, `baser` 4, `berst` 9, `brytserc` 1, `cafe` 2, `casia` 3, `cbesd` 5, `cremad` 4, `csemotions` 2, `dailytalk` 6, `dusha` 4, `eesc` 6, `emis` 5, `emns` 4, `emodb` 4, `emogator` 2, `emospeech_keywords` 5, `emotale` 5, `emotional_ema` 8, `emotiontalk` 6, `emouerj` 3, `emovoicedb` 5, `emozionalmente` 4, `enterface05` 4, `eseravd` 3, `harper_valley_bank` 19, `hikia` 1, `hindi_ser_vishlb` 4, `iemocap` 4, `iesc` 4, `javanese_ser_2black0` 3, `jlcorpus` 4, `jnv` 6, `jvnv` 4, `kbes` 1, `legov2` 6, `lithuanian_emotion_db` 2, `maserc` 4, `mav` 3, `mcaespps` 2, `mderma` 1, `meld` 5, `mesd` 1, `mess` 1, `msppodcast` 2, `multidialog` 2, `quechua` 3, `ravdess` 1, `resd` 3, `rml_emotion` 4, `saraiki_ser` 1, `ses_ed` 3, `ses_sd` 3, `shemo` 2, `sitb_osed` 4, `subesco` 5, `syntact` 6, `talromur3` 5, `telugu_emotion_kaggle` 4, `thaiser` 3, `thorsten` 2, `ua_ser` 6, `urduser` 2, `usc_emo_mri` 5, `utemo` 4, `vivae` 2, `whiser` 5, `ysed` 2; more are added from primary sources when recipes are registered.
-- Row origin: `in_sheet` (whether the row was in the original spreadsheet). Rows not from the spreadsheet have `sheet_verified=NA`. `sheet_verified` keeps the spreadsheet's Verified column (whether someone checked by hand) as is and is not used for decisions.
+## What a dataset row holds
+
+- **Identity and access**: `name`, `full_title`, `languages`, `license_spdx` (a classification of the stated terms, not a legal interpretation; `license_note` only where the identifier cannot convey the terms), `access_method` (what the documentation says), `access_observed` and `access_observed_on` (what happened when the data was requested or downloaded).
+- **Size**: the documentation's values `n_files_reported`, `hours_reported`, `n_speakers_reported`, and the values of the whole release as distributed, before any filtering, `n_files_release`, `hours_release`, `n_speakers_release`. The two sit side by side and may differ; the DB does not choose. Files per label are in `label_counts.csv`.
+- **How it was made**: `speech_production` (acted / improvised / elicited / spontaneous / read / synthetic), `material_origin` (recorded for the dataset, film or TV, web video, ...), `vocal_content` (speech / nonverbal / both), `spoken_text_design` (how the spoken text relates to the labels: the same sentences in every emotion, scripted dialogue, no script, ...).
+- **Labels**: the label sets are rows of `annotations.csv` (`item` = `emotion_categories`, `emotion_attributes`, `speaking_style`, `sentiment`, `intent`) with their `labels`, `scale`, who made them (`annotator`), on what basis (`label_basis`: intended / perceived / self-reported / context-inferred / automatic) and whether people checked them (`label_verification`). Never infer one of these from another. The columns `emotion_categories`, `emotion_attributes`, `main_label_set_type`, `main_labels`, `label_source`, `label_basis` and `label_verification` of `datasets.csv` are derived from the main label set by `tools/derive.py`; do not edit them.
+- **Other facts**: `official_split`, `listening_test` (`reported` / `not_stated`: only that a listening test exists; its result and design are in the source), `source_rights_note` (what sources say about the rights in third-party material, quoted), `language_note`, `notes`.
+- **Checking**: `documents_checked` and `implementation_checked` in `views/datasets_wide.csv` say whether a primary source or a recipe readme backs the dataset's values.
 
 ## Conventions
 
-- **Missing values**: empty = not checked. `unknown` = checked, but the sources do not say; `NA` = does not apply; `none` = checked, there is none. Which are allowed per column is in the `nulls` column of `schema/columns.csv`.
-- **Multiple values** are `;`-separated (`labels_discrete_reported`, `languages`, `status_reason_codes`, ...).
-- **IDs** match `^[a-z][a-z0-9]*(_[a-z0-9]+)*$`. Implemented datasets use the egs3 recipe name. A committed ID never changes (if it must, keep the old ID in `aliases` as `former_label`).
+- **Missing values**: empty = not checked. `unknown` = checked, but the sources do not say; `NA` = does not apply; `none` = checked, there is none; `conflicting` = sources disagree. Which are allowed per column is in the `nulls` column of `schema/columns.csv`.
+- **Multiple values** are `;`-separated (`languages`, `speech_production`, `labels`, ...).
+- **IDs** match `^[a-z][a-z0-9]*(_[a-z0-9]+)*$`. A committed ID never changes (if it must, keep the old ID in `aliases` as `former_label`). Implemented datasets use the egs3 recipe name.
 - **CSV format**: UTF-8, no BOM, LF, rows in key order. After editing by hand, run `python3 tools/db.py fmt`.
-- **Licenses**: `license_spdx` maps the wording in the sources to an SPDX identifier (or `LicenseRef-...`). It is a classification of the stated terms, not a legal interpretation. How licenses are grouped for an experiment (open, non-commercial, ...) is a project decision and is not in the DB; keep such groupings in `local/`. Read `license_note` and the primary source before using a dataset.
 - **Language**: all text in the DB and its documents is English (dataset names and quotations keep their original language).
-- **Public repository**: everything committed here, including commit messages, is public. Write no personal names, e-mail addresses or machine-specific paths; refer to people by role ("the project maintainer") and to local data by environment variable (e.g. `$EESC_OUTPUT/manifest/test.tsv`). `tools/validate.py` rejects absolute home paths.
-- **References outside this repository**: some older evidence rows cite the project's working documents (`recipe_reports/…`, `recipe_review/…`, `new_corpora/…`, resolved from the directory that contains this repository). They are internal notes and are not published; the facts they support are summarised in the row's `locator` and `note`. New rows cite only published sources.
+- **Public repository**: everything committed here, including commit messages, is public. Write no personal names, e-mail addresses or machine-specific paths; refer to people by role ("the project maintainer") and to local data by environment variable. `tools/validate.py` rejects absolute home paths.
 
 ## Evidence rules
 
-These `datasets` columns carry an evidence row for each value: `languages`, `recording_context`, `vocal_content`, `license_spdx`, `access_method`, `raw_audio_available`, `n_utt_reported`, `hours_reported`, `n_speakers_reported`, `n_files_release_measured`, `n_speakers_measured`, `labels_discrete_reported`, `dimensional_attributes`, `espnet_status`, `status_reason_codes`, `label_source`, `label_verification`, `speech_production`, `label_basis`, `spoken_text_design`, `lexical_confound`, `paralinguistic_signal`, `human_accuracy`, `source_rights`. URL and free-text columns do not.
+Every value of the columns that take evidence (see `evidence=yes` in `schema/columns.csv`) has at least one row in `evidence.csv`, and every row points at a source in `sources.csv`.
 
-- A value in `datasets` is decided by the evidence rows of its field: all `current` rows agree on it; if sources disagree the rows are `conflicting` and the cell is `conflicting` (the DB does not choose between sources); a `provisional` row is a value without a public source, kept until a primary source or the recipe readme replaces it.
-- `source_type` of new rows: `primary` (the dataset authors' or their organisation's paper, official page, license file or release files), `implementation` (the `## The data` section of an ESPnet recipe readme cited at a commit on the public fork `itoten/espnet`: what only obtaining and opening the release shows, written by the recipe author), or `secondary` (mirrors, surveys, re-uploads) only when the primary source cannot be accessed. `locator` marks the place in the source (25 words at most);
-- When a new fact appears, the old row is kept and marked `superseded`, and a new row is added. When sources disagree and cannot be decided, keep two or more `conflicting` rows and set the `datasets` cell to `conflicting` (e.g. the licenses of EmoDB and TurEV-DB).
-- `*_measured` columns take `measured` evidence (old rows) or `implementation` evidence (new rows); `*_reported` columns take neither (published and observed values sit side by side in separate columns). The DB does not count by itself: release counts come from the recipe readme.
-- A recipe readme is cited only for what the documentation does not state and only opening the release shows. When a paper, page or card states the same thing, that source is cited, even if the readme repeats it.
-- Every value should have a source, including names, versions, URLs and free text. Where a column takes no evidence rows yet, the text names its source (for example `version 2 (Kaggle page)`); a list of sources is planned.
+- **Sources.** A source has a `source_type`: `primary` (published by the dataset's authors or their organisation: paper, page, license file, release files), `implementation` (the `## The data` section of an ESPnet recipe readme, cited at a commit on the public fork `itoten/espnet`: what only obtaining and opening the release shows; written by the recipe author, a practical reference and not a research result), or `secondary` (a mirror, re-upload, survey or database; only when the primary source cannot be accessed). The same URL can be a primary source for one dataset and a secondary one for another; these are two sources. A source whose publisher is not yet checked has an empty `source_type` and is listed in the validator's warning.
+- **A recipe readme is cited only for what the documentation does not state** and only opening the release shows (counts of the release, duplicates, what the files contain). When a paper, page or card states the same thing, that source is cited even if the readme repeats it.
+- **Deciding a value.** All `current` rows of a field agree on the value of the cell. If sources disagree the rows are `conflicting` and the cell is `conflicting`: the DB does not choose between sources. A `provisional` row is a value without a public source (it came from earlier records); it stays until a primary source or the readme replaces it. A newer fact marks the older row `superseded`; history is never deleted.
+- **`*_release` columns** take only `implementation` sources; `*_reported` columns take none. The DB does not count anything by itself.
+- **`checked_on` and `checked_by`.** Every row has the date checked and who checked: `claude` (AI investigation) or `user` (the project maintainer opened the source). Rows checked by `user` are in the git history of pull requests named `verify/...`.
+- **`locator`** marks the place in the source (25 words at most). For a readme it starts with `commit <12 characters>; <heading>`.
 - Write nothing the sources do not say. Never guess URLs or titles.
-- The date checked is `checked_on` of each evidence row (filled for every row) and is summarised in `views/datasets_wide.csv` (`license_checked_on`, `oldest_checked_on`, ...).
-- Existing measured values (counts, hours, speakers) rest on `measurements/<recipe>.json` and on measurements of the downloaded files made before 2026-10-31. Values that need counting are now taken from the recipe readme once it states them; until then they stay empty.
+- Free-text columns (`notes`, `license_note`, `language_note`, `source_rights_note`) have no evidence rows: each statement names its source in the text, for example `[aesdd_page]`. A fact in free text that no source states does not belong there.
 
 ## Validation and updates
 
 ```bash
-python3 tools/validate.py             # reads egs3 from the recipe branch and compares with measurements
-python3 tools/validate.py --offline   # does not read the recipe repository
-python3 tools/views.py                # regenerates views/
+python3 tools/validate.py     # format, types, keys, evidence, sources, derived columns, views
+python3 tools/derive.py       # recompute the derived columns of datasets.csv from annotations.csv
+python3 tools/views.py        # regenerate views/
 python3 tools/db.py get|set|add|fmt   # view or edit one row
 ```
 
 - Run with the system Python 3 (with PyYAML). pandas is not used.
 - `git config core.hooksPath tools/hooks` makes `tools/validate.py` run before every commit. Do not use `--no-verify`.
-- egs3 recipes are read from the recipe branch of the ESPnet repository, not from its working tree (the branch is set in `tools/egs3.py`). Machine-specific settings such as the location of that repository go in `.env` (git-ignored; copy `.env.example`).
-- Measurements: run `tools/measure.py --all` in the toolkit's environment (see its docstring), then `python3 tools/sync.py` to update the automatic columns of `recipes.csv`; people fill the hand-written columns.
-- `validate.py` checks format, types and allowed values, keys and foreign keys, duplicate aliases, the evidence rules, agreement of the implementation status with egs3 (recipes on the branch but not registered only produce a warning), agreement of `recipes.csv` / `recipe_labels.csv` with `measurements/*.json`, and that `views/` is up to date. It does not check whether `measurements/` still matches the local outputs.
+- Recipes are read from the recipe branch of the ESPnet repository (`tools/egs3.py`) only to find the commit of a readme. Machine-specific settings such as the location of that repository go in `.env` (git-ignored; copy `.env.example`).
 - Every value change needs an evidence row. Make one commit per dataset or per checking session, and write in the message what was wrong and what the evidence was.
+- Human verification: the maintainer opens the source of a batch of values in a pull request (`verify/<date>-<n>`) and merges it; the rows in it then have `checked_by=user`.
 
 ## What counts as one row
 
-- One row per original (first published) dataset. Plain re-uploads on Hugging Face, Kaggle, etc. are not rows; they go into the original's `aliases`. Datasets whose content differs from the original (re-splits, subsets, new labels) are separate rows linked with `relations`.
-- Corpora built for TTS are included if they have emotion labels. Datasets without audio (text only, features only) are kept as `excluded` to record what was found.
-- When two rows turn out to be the same, mark one `excluded` (`duplicate_entry`) and link them with `possibly_same_as` in `relations`. IDs are never deleted.
+- One row per original (first published) dataset. Plain re-uploads on Hugging Face, Kaggle, etc. are not rows; they go into the original's `aliases` and, as mirrors, into its sources. Datasets whose content differs from the original (re-splits, subsets, new labels) are separate rows linked with `relations`.
+- Corpora built for TTS are included if they have emotion labels. Datasets without audio (text only, features only) are included to record what was found; `access_observed` says what happened.
+- When two rows turn out to be the same, link them with `possibly_same_as` in `relations`. IDs are never deleted.
+- A version of a dataset that its authors publish under another name or DOI is a separate row linked by `version_of`; other versions are one row, and `sources.describes_version` says which version each source describes.
 
-## Current state (2026-11-01)
+## Known limits
 
-322 datasets (84 from the spreadsheet, 238 added later). `implemented` 101, `candidate` 134, `deferred` 34, `needs_decision` 7, `excluded` 46. All 28 corpora in Table I of the MSP-Podcast paper (arXiv 2509.09791v1) are included.
-
-- The survey of 2026-10-14 added 158 datasets from surveys (SuperKogito's list, EmoBox, KuralHub, etc.) and searches of Hugging Face, Zenodo, Kaggle, Mendeley, figshare and GitHub.
-- On the same day the status policy was revised and all excluded rows were reviewed (see "Status policy" below).
-- Scope: the axis is SER. Emotion is taken in a broad sense that includes sentiment, and data such as speaking style, intent and dialogue act is collected as material for SER research. 12 intent and dialogue-act datasets were added (`candidate`, reason `unexamined`): SLURP, Timers and Such, Fluent Speech Commands, Snips/Sonos, STOP, MInDS-14, Speech-MASSIVE, ITALIC, DIHANA, SpokenWOZ, Harper Valley Bank, SLUE-HVB. Not yet surveyed: CATSLU, dialogue acts such as MRDA, SwDA and AMI, ATIS audio, SLURP in other languages, intent data in other languages.
-
-Status policy (project maintainer's decision, 2026-10-14):
-
-- **`excluded` needs a clear reason**: no audio (`text_only`, `no_raw_audio_features_only`, `no_audio_paper_only`, `no_audio_code_only`), a redistribution of other data (`redistribution_of_existing_corpus`), a duplicate (`duplicate_entry`), labels unusable for classification (e.g. speaker IDs), unobtainable because of regional restrictions, and so on.
-- Not reasons to exclude: size, manual access steps (application, signature, login, purchase; the maintainer can be asked to do them), Kaggle (a free account and token suffice), the kind of label (sentiment, intent, dimensional values, speaking style), automatic labels, synthetic speech. These stay `candidate`, with limitations and caveats in `status_note`. Overlap between sentiment and discrete emotions (anger vs negative) and continuous labels that the current system cannot handle are decided at implementation time.
-- `candidate`: has audio and labels usable for classification, and can probably be obtained. `unexamined` means implementation has not been considered.
-- `needs_decision`: matters only the maintainer can decide, such as terms of use and cost (commercial vendor data, distribution of video links only, the MER2026 application wording, ...).
-- `deferred`: could not be confirmed (the distributor does not respond, no access route found, ...). Becomes `candidate` or `excluded` once confirmed.
-- Size, number of raters, unclear provenance and similar are written in `status_note` as analysis caveats (e.g. `legov2` has one rater and 302 calls; `expresso` and `mlend_numerals` mix in non-emotion styles; `humyn_indian_emotional` has 16 clips).
-
-Known caveats:
-
-- Evidence for status, license and access is mostly primary sources (distribution pages, APIs, papers) or measurements. On 2026-10-31 every value that rested only on the original spreadsheet was re-checked in primary sources; values no source states were emptied (not checked).
-- Kaggle datasets were checked with listings and labels from the authenticated API. `hindi_ser_vishlb` (8 emotion classes, 3,200 clips) and `telugu_emotion_kaggle` (5 classes, 458 clips), which had been excluded on the assumption that they needed no authentication, were returned to candidate in the review.
-- Not confirmed in primary sources:
-  - 28 rows supported only by KuralHub (a third-party survey). Their `status_note` says access was not checked in a primary source. Many are data from older papers, listed as "on request".
-  - Rows that could not be checked because the distributor did not respond, etc.: `amigos` (HTTP 503 on 2026-10-14), `casia` (no connection), `cheavd`, `belfast`, `emotion_origlia2010`, `usoms`, `eyase`.
-  - The `deferred` rows (34).
-- Disagreements between published and measured values are in `views/discrepancies.csv`. Recipes filter by length and label, so `n_utt_reported` and the recipe's count often differ, which is normal.
+- Most values have the evidence of an AI investigation; a person has opened the source of few of them (`checked_by=user`). Check the primary source before relying on a value.
+- `provisional` rows (names, titles, and values from before sources were required) are not yet backed by a source. `views/datasets_wide.csv` shows the stage of every dataset.
+- The recipe readmes were written by the recipe author; their numbers are as reliable as that author's counting.
 
 ## License
 

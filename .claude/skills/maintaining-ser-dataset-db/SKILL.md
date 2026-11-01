@@ -1,26 +1,28 @@
 ---
 name: maintaining-ser-dataset-db
-description: Maintains the speech emotion recognition (SER) dataset database, a public git repository of CSV tables in which every value carries an evidence row pointing to a primary source. Reads new or rebuilt ESPnet recipes and their readmes, checks dataset facts against primary sources, then registers recipes and datasets, records evidence, keeps the README and manual counts in sync, validates, and commits. Use when told that a recipe was made or rebuilt, asks to add or reclassify a dataset, asks to reconcile another team's research notes with the DB, or asks about a dataset's license, access, size, labels or status.
+description: Maintains the speech emotion recognition (SER) dataset database, a public git repository of CSV tables in which every value carries an evidence row pointing to a source document. Reads new or rebuilt ESPnet recipes and their readmes, checks dataset facts against primary sources, registers datasets, sources, label sets, issues and evidence, validates, and commits. Use when told that a recipe was made or rebuilt, asks to add or check a dataset, asks to reconcile another team's research notes with the DB, or asks about a dataset's license, access, size, labels or sources.
 ---
 
 # Maintaining the SER dataset DB
 
 The DB is a **tertiary source**: it does not offer the truth about a dataset, but the way to the
-primary sources (papers, distribution pages, license files) where the truth can be checked, and,
-for what only opening the release shows, to the recipe readme. Each dataset is one row in `data/datasets.csv`; the main values have a row in
-`data/evidence.csv` saying which source states them. `tools/validate.py` enforces the rules and
-runs as a pre-commit hook.
+sources where the truth can be checked: papers, distribution pages and license files published by
+the dataset's authors (primary), and, for what only opening the release shows, the recipe
+readme's `## The data` section (implementation). Each dataset is one row of `data/datasets.csv`;
+each value of the columns that take evidence has a row in `data/evidence.csv` that points at a
+document in `data/sources.csv`. `tools/validate.py` enforces the rules and runs as a pre-commit
+hook.
 
 All paths below are relative to the repository root. `<skill dir>` is this skill's directory
 (`${CLAUDE_SKILL_DIR}` in Claude Code).
 
 ## First time in the repository
 
-Read `README.md` (mission and principles first), then
+Read `README.md` (mission, principles, tables, evidence rules), then
 [references/data-model.md](references/data-model.md). Then run:
 
 ```bash
-python3 tools/validate.py     # must end with "0 error(s)"; a warning about unregistered recipes is normal
+python3 tools/validate.py     # must end with "0 error(s)"; a warning about sources without a publisher is normal
 ```
 
 What you need to know about the surroundings:
@@ -30,11 +32,10 @@ What you need to know about the surroundings:
   read. Read recipe files from the branch, not the working tree:
   `git -C <recipe repo> show <branch>:egs3/<recipe>/cls/readme.md`. The branch is published on
   the public fork `itoten/espnet`; only commits that are on the fork can be cited.
-- **Two Pythons**: the DB tools run with the system `python3` (needs PyYAML only).
-  `tools/measure.py` needs the toolkit's environment; its docstring shows the command.
-- **The design is being discussed.** The open questions and decisions are in
-  `docs/design/agenda.md` and `docs/design/archive/`. Decisions there do not change the DB by
-  themselves: change rules, columns or existing rows only when the project maintainer asks.
+- **`local/`** is git-ignored and belongs to the user: which datasets they use and why, license
+  groupings, label mappings. The DB's tools never read it, and you never write facts there.
+- **The design is recorded** in `docs/design/` (decisions with their reasons). Change rules,
+  columns or existing rows only when the project maintainer asks.
 
 ## Mission and principles
 
@@ -51,82 +52,51 @@ the others (the README explains them):
 ## Rules
 
 1. **The DB creates no facts of its own.** Every value comes from a source someone else
-   published. In particular:
-   - **Do not count or measure anything yourself** to fill a dataset value (no file counts,
-     duplicate searches, transcriptions or listening). Values that need counting (files and
-     speakers in the release, sentence overlap, how well the voice carries the emotion, ...) stay
-     empty (not checked) until the recipe's readme states them; then cite the readme.
-   - A **recipe readme** (its `## The data` section) is the source only for what can be known
-     solely by obtaining and opening the release (counts in the release, duplicates, what the
-     files contain). Its evidence type is `implementation`, not `primary`: it is written by the
-     recipe author, not by the dataset's authors. If a paper, page or card states the same thing,
-     cite that source, even when the readme repeats it. Cite the readme at a commit on the public
-     fork:
-     `https://github.com/itoten/espnet/blob/<commit>/egs3/<recipe>/cls/readme.md`. If the commit
-     is not on the fork yet, leave the value empty and say so in the reply.
-2. **Evidence types for new rows: `primary`, `implementation`, and `secondary` only as an
-   exception.**
-   - `primary`: the dataset authors' or their organisation's paper, official page, LICENSE,
-     official release files.
-   - `implementation`: the `## The data` section of a recipe readme, at a commit on the public
-     fork (rule 1).
-   - `secondary`: only when the primary source cannot be accessed (paywall, page gone, no
-     response); write why in `note`. Redistributions by others (mirrors, re-uploads) are
-     `secondary`; when it is unclear whether one is official, say so in `note`.
-   - Do not add `measured`, `project_doc`, `user` or `sheet` rows (they are being phased out;
-     the exceptions are under "Interim" below). Internal notes and reports are leads, never the
-     source.
-3. **Every evidence row must point at a statement about the dataset.** Before saving a row, ask:
-   does the source (and `locator`) say something about the dataset itself? A policy, an
-   instruction, a decision to add a value to a column, "treated like dataset X", a counting
-   convention, or a choice between disagreeing sources is not evidence of a dataset fact.
-4. **Do not judge.** When sources disagree, record what each says (`conflicting` rows; for
-   licenses the cell becomes `conflicting`); do not pick one. When wording is ambiguous, record
-   it as written; do not interpret it. Free text (`status_note`, `notes`, ...) states facts and
-   caveats, never advice such as "should not be used" or "poor data".
-5. **Empty, `unknown`, `none`, `NA` mean different things.** Empty = not checked yet;
-   `unknown` = a source was read and does not say (cite the source you read, with "not stated" in
-   `locator`); `none` = checked, there is none; `NA` = does not apply. A failed attempt at one
-   moment (timeout, 404) is `unknown` with the date in the note.
-6. **Listening tests: record that one exists and where, not its result.** If a source (or,
-   through the readme, the release files) describes a human perception or listening test,
-   record its existence and where it is described. Do not put its result in a column as a single
-   number: accuracy depends on the number of classes, audio only or with video, how answers were
-   combined and which clips were rated, so numbers from different tests mislead when set side by
-   side. Readers are pointed to the source. How to record it until the columns are rebuilt: see
-   "Interim".
-7. **Every value has a source**, including names, versions, URLs and free text. Where a column
-   takes no evidence rows yet, name the source in the text itself (see "Interim").
+   published. Do not count or measure anything yourself (no file counts, duplicate searches,
+   transcriptions, listening). Values that need counting stay empty until the recipe readme
+   states them.
+2. **Every value has a source.** Evidence rows point at a source in `sources.csv`. Free-text
+   columns (`notes`, `license_note`, `language_note`, `source_rights_note`) name their source in
+   the text (`[aesdd_page]`); a fact no source states does not belong there.
+3. **Source types.** `primary` is published by the dataset's authors or their organisation.
+   `implementation` is the `## The data` section of a recipe readme, cited at a commit on the
+   public fork; it is written by the recipe author and is a practical reference, not a research
+   result. `secondary` (mirror, re-upload, survey, database) only when the primary source cannot
+   be accessed; write why in `note`. The same URL may be primary for one dataset and secondary
+   for another: two sources.
+4. **A recipe readme is cited only for what the documentation does not state** and only opening
+   the release shows (counts of the release, duplicates, what the files contain). If a paper,
+   page or card states the same thing, cite that source even when the readme repeats it. Cite the
+   readme with `commit <12 characters>; <heading>` as the locator. If the commit is not on the
+   fork yet, leave the value empty and say so in the reply.
+5. **Do not judge.** When sources disagree, add `conflicting` rows; the cell becomes
+   `conflicting`; do not pick one. When wording is ambiguous, record it as written. Free text
+   states facts, never advice ("should not be used", "poor data"). A fact that lets a reader
+   judge ("each sentence is spoken in only one emotion") is written; the judgement ("may be
+   confounded") is not.
+6. **Empty, `unknown`, `none`, `NA` mean different things.** Empty = not checked; `unknown` = a
+   source was read and does not say (cite the source you read, with "not stated" in `locator`);
+   `none` = checked, there is none; `NA` = does not apply. A failed attempt at one moment
+   (timeout, 404) is `unknown` with the date in the note.
+7. **Listening tests: record that one exists, not its result.** `listening_test` is `reported`
+   when a source describes a human listening test of the recordings (or the release distributes
+   ratings, a `listener_ratings` annotation) and `not_stated` when the sources read say nothing.
+   Do not write accuracy or agreement figures into a column: they depend on the number of
+   classes, audio only or with video, how answers were combined and which clips were rated.
+   Readers go to the source.
 8. **Write only what a source supports.** No invented URLs, titles or numbers. Never cite a file
    you did not open. Reports from other sessions contain mistakes: check every claim against the
-   primary source ([references/verifying-claims.md](references/verifying-claims.md)).
+   source ([references/verifying-claims.md](references/verifying-claims.md)).
 9. **Never delete history.** A new value gets a new evidence row; the old one becomes
-   superseded. Conflicting sources stay visible.
-10. **Keep "the whole release" and "what the recipe uses" apart** in every count and note.
+   `superseded`. A `provisional` row (a value without a public source) is superseded when a real
+   source is added.
+10. **Keep "the whole release" and "what the recipe uses" apart.** The DB records the release as
+    distributed, before any filtering; splits, filters and results are the recipe's business.
 11. **Everything is public.** Files and commit messages are published worldwide. No personal
     names (refer to "the project maintainer"), e-mail addresses or machine-specific paths (use
-    environment variable names such as `$EESC_OUTPUT`; machine settings go in the git-ignored
-    `.env`).
+    environment variable names; machine settings go in the git-ignored `.env`).
 12. **Stay within the request.** Large sweeps (re-checking every license, re-probing every URL)
     and design changes are proposed, not started.
-
-## Interim: decided but not yet implemented
-
-Some decisions need a design that does not exist yet. Until it does, follow this table, and do
-not invent a new mechanism. The plan is tracked outside this repository by the maintainer.
-
-| Situation | Decided direction | Until then |
-|---|---|---|
-| `espnet_status` / `status_reason_codes` (applying the status policy, use or exclusion decisions) | moves out of the public facts (local information) | record the maintainer's decision as before (`source_type=user`); only for these two columns |
-| `espnet_status=implemented` (a recipe exists) | derived from the branch on the public fork | `measured` row citing the recipe directory on the branch, as in the example |
-| Recipe tables (`recipes.csv`, `recipe_labels.csv`, `measurements/`) | numbers come from the recipe readme | keep running `tools/measure.py` and `tools/sync.py` (the validator requires them); write no dataset evidence from them |
-| The maintainer checked a source (human verification) | a record of DB work, kept apart from `source_type` | `primary` row citing the page, `checked_by=user`, the checked words in `locator`, the date (and an archive URL if one was made) in `note` |
-| A readme figure for a `*_measured` column (files, speakers in the release) | renamed to `*_release` and cited from the readme | cite the readme's `## The data` section with `source_type=implementation` (the validator accepts it for `*_measured`) |
-| The maintainer's listening findings (`paralinguistic_signal`) | from the recipe readme, as its author's view | leave empty unless a readme or a published listening test states it |
-| Existing `measured`, `project_doc`, `user`, `secondary` rows | replaced by primary sources or emptied | leave them as they are unless asked to migrate them |
-| A listening test (rule 6) | a column saying whether a test exists, plus the path to the source; no single accuracy number | add an `annotations` row, item `listening_test`, citing the source that describes it (`primary`, the describing words in `locator`); keep `label_verification` as before; add no new `human_accuracy` values (existing ones stay) |
-| `source_rights` | codes only whether the material is third-party (recorded for the dataset, or taken from films, broadcasts, the web); what sources say about rights is quoted; no "needs checking" | for new entries use only `own` (a source says it was recorded for the dataset); for third-party material leave the code empty and quote what the sources say about it, with the source named, in `source_rights_note` |
-| Columns without evidence rows (names, `release_version`, URLs, free text) | every value cites a source through a list of sources (`sources.csv`, not built yet) | name the source in the text (`v2 (Kaggle page)`; "… 20 listeners (paper, section 3)") and put no fact in free text that no source states |
 
 ## Choose the workflow
 
@@ -135,89 +105,70 @@ not invent a new mechanism. The plan is tracked outside this repository by the m
 - "Add this dataset" / a survey of new datasets → **Add a dataset**.
 - Another team's research notes that touch the DB → **Reconcile external notes**.
 - A question about a dataset → **Answer a question**.
-- "Bring the counts up to date" → only **Finish**.
+- "Check the sources of ..." (replace provisional values, check URLs, replace secondary
+  sources) → **Check sources**.
 
 ## Register a recipe
 
-Recipe sessions build recipes on their own and do not hand over a report. When you are told
-that a recipe was made or rebuilt, go and read the recipe and its readme yourself. Older
-`*_db_update.md` reports may still exist; they are leads at most, never sources.
-
-Copy this checklist and tick it off:
+Recipe sessions build recipes on their own and do not hand over a report. When you are told that
+a recipe was made or rebuilt, read the recipe and its readme yourself.
 
 ```
-- [ ] 1. Read the recipe, its readme and the current DB row
+- [ ] 1. Read the recipe, its readme and the current DB rows
 - [ ] 2. Check that the readme commit is on the public fork
 - [ ] 3. Check the dataset facts in primary sources
 - [ ] 4. Take the findings of the implementation from the readme's "## The data" section only
-- [ ] 5. Recipe tables (tools/measure.py) and status (interim rules)
-- [ ] 6. Write and run the registration script (reglib)
-- [ ] 7. Finish: views, counts, validate, commit, push
-- [ ] 8. Reply: registered / verified / left empty and why / open questions
+- [ ] 5. Write and run the registration script (reglib)
+- [ ] 6. Finish: views, validate, commit, push
+- [ ] 7. Reply: registered / verified / left empty and why / open questions
 ```
 
-**1. Read.** The recipe's `dataset/config.yaml`, `readme.md` and commit history on the recipe
-branch (`git -C <recipe repo> show <branch>:egs3/<recipe>/cls/readme.md`); the dataset's row in
-`views/datasets_wide.csv` and its evidence rows (`grep '^<id>/' data/evidence.csv`).
+**1. Read.** The recipe's `readme.md` and commit history on the recipe branch; the dataset's row
+in `views/datasets_wide.csv`, its evidence rows (`grep '^<id>/' data/evidence.csv`), its
+annotations, issues and label counts.
 
 **2. Public fork.** Find the commit that last changed the readme and check that it is on the
 public fork (`git -C <recipe repo> branch -r --contains <commit>`). If it is not, nothing from
 the readme can be cited yet: register what primary sources support and say so in the reply.
 
 **3. Dataset facts.** Open the distributor page or API and the paper and check license, version,
-published counts (including counts per label), speakers and label set; establish separately how
-the audio was produced (acted, elicited, spontaneous, read, synthetic) and how the labels were
-made (instructed, perceived by raters, self-reported, inferred from context, automatic); look for
-a listening test. Citations in other sections of the readme are leads to these sources, not
-sources themselves.
+published counts (including counts per label), speakers and label sets; establish separately how
+the audio was produced (acted, improvised, elicited, spontaneous, read, synthetic) and how the
+labels were made (instructed, perceived by raters, self-reported, inferred from context,
+automatic); look for a listening test. Citations in other sections of the readme are leads to
+these sources, not sources themselves.
 
-**4. Findings of the implementation.** Read only the readme's `## The data` section: access
-(how and when the release was obtained), size of the whole unfiltered release (files, speakers,
+**4. Findings of the implementation.** Read only the readme's `## The data` section: access (how
+and when the release was obtained), size of the whole unfiltered release (files, speakers,
 hours), files per label, issues in the release, facts the documentation does not state, ratings
-in the release. Cite the readme at its fork commit, and only for what the documentation does not
-state (rule 1). If the section is missing or lacks an item, leave the value empty and list it in
+in the release. Cite the readme at its fork commit and only for what the documentation does not
+state (rule 4). If the section is missing or lacks an item, leave the value empty and list it in
 the reply so the recipe author can add it.
 
-**5. Recipe tables and status.** `tools/measure.py <recipe>` writes `measurements/<recipe>.json`,
-which fills the recipe tables (interim rule; these tables are to be removed). The recipe exists
-on the branch → `implemented` (`status_reason_codes=NA`, with a `recipes.csv` row). Decisions not
-to use a dataset come from the maintainer directly → `excluded` with a clear reason code, or
-`deferred`. If no reason code fits, ask the maintainer before adding one. The full rules:
-[references/data-model.md](references/data-model.md).
-
-**6. Register.** Write a short script in a scratch directory that uses
+**5. Register.** Write a short script in a scratch directory that uses
 `<skill dir>/scripts/reglib.py` and run it once. A complete example:
 [references/registration-example.md](references/registration-example.md). Include:
-- evidence from primary sources for every value you checked: license, published counts,
-  `label_source`, `label_verification`, `speech_production`, `label_basis` (details in
-  `label_basis_note`), the design of the spoken text only from a design statement;
-  disagreeing sources as `conflicting` rows;
-- a listening test, if any source describes one, as an `annotations` row (interim rule);
-- values stated in the readme's `## The data` section, cited at its fork commit;
-- status rows under the interim rule;
-- cells without evidence: `status_note`, `notes`, `license_note`, `release_version`,
-  `status_checked_on` (facts only, each naming its source; no advice);
-- for implemented datasets: `R.recipe(...)` with the hand-written columns, `R.labels({...})`
-  keyed by the recipe's own label names, and `R.ann([...])` with every non-emotion annotation
-  that a primary source or the readme describes;
-- aliases and relations only when a source states them;
-- dates: `checked_on` and `status_checked_on` are the day you checked; a maintainer's decision
-  keeps the date it was made (write it in the note).
+- the sources (`R.source`, `R.link`), then evidence from them for every value you checked:
+  license, published counts, `speech_production`, `material_origin`, the design of the spoken
+  text only from a design statement; disagreeing sources as `R.conflicting`;
+- the label sets (`R.label_set`) with who made them and how (`R.ev("emotion_categories.label_basis", ...)`),
+  and the other annotations (`R.ann`), each from a source;
+- `R.issue` for each problem the readme reports, `R.label_count` for each label count;
+- cells without evidence rows (`notes`, `license_note`, `language_note`, `source_rights_note`):
+  facts only, each naming its source;
+- aliases and relations only when a source states them.
 
-The script stages everything and writes only in `save()`, so a failed run changes nothing.
-After a successful run, running it again would add the rows twice: restore `data/` from git
-first (check `git diff` so nothing else is lost).
-
-**7–8.** Finish (below), then reply.
+The script stages everything and writes only in `save()` (which also recomputes the derived
+columns), so a failed run changes nothing. After a successful run, running it again would add
+the rows twice: restore `data/` from git first (check `git diff` so nothing else is lost).
 
 ## Add a dataset
 
 1. Search the DB first (`grep -i` the name in `views/datasets_wide.csv` and `data/aliases.csv`);
-   a re-upload of a known corpus becomes an alias, not a row.
-2. `python3 tools/db.py add datasets dataset_id=<id> name=<name> ...`, fill the URL columns with
-   the primary pages (open each and check it is about this dataset), then add evidence rows from
-   primary sources with `reglib` (status `candidate`, reason `unexamined` unless a clear exclusion
-   reason applies).
+   a re-upload of a known corpus becomes an alias and a mirror source, not a row.
+2. `python3 tools/db.py add datasets dataset_id=<id> name=<name>`, then register it with
+   `reglib`: the sources of the dataset (open each and check it is about this dataset), then the
+   name and the values you can check in them.
 3. Finish.
 
 ## Reconcile external notes
@@ -229,45 +180,50 @@ suspect go into `notes`, not `relations`.
 ## Answer a question
 
 Look in the DB before searching the web: the row in `views/datasets_wide.csv`, its evidence rows
-in `data/evidence.csv`, and `views/discrepancies.csv`. Answer with the primary source the row
-points to (the DB itself is not the source); if the support is not `primary`, say that it needs
-confirming. Search outside only for empty, `unknown` or contested values, and offer to record
-what you find.
+in `data/evidence.csv` and sources in `data/sources.csv`, and `views/discrepancies.csv`. Answer
+with the primary source the row points to (the DB itself is not the source). If the support is a
+`provisional` row, a `secondary` source or an `implementation` source, say so: it needs
+confirming, or it is a practical reference. Search outside only for empty, `unknown`,
+`conflicting` or provisional values, and offer to record what you find.
+
+## Check sources
+
+For `provisional` rows, `secondary` sources and sources without a publisher: open the source,
+confirm that it is about this dataset (`identity_basis`), fill `title`, `publisher`, `source_type`
+and `checked_on`, and replace provisional values by rows that cite it (`R.ev` supersedes the
+provisional row). Save a web-archive copy in `archive_url` when you can. Work in batches of about
+ten datasets and commit each batch.
 
 ## Finish
 
-Run this loop until validation passes:
-
 ```bash
 python3 tools/views.py
-python3 <skill dir>/scripts/doc_counts.py          # review the listed changes
-python3 <skill dir>/scripts/doc_counts.py --write
-python3 tools/validate.py                          # fix every error, then run the loop again
+python3 tools/validate.py          # fix every error, then run again
 ```
-
-- `doc_counts.py` rewrites every count quoted in `README.md` and `docs/manual.md`, and checks
-  `docs/manual.ja.md` against it. A `MISSING` line means a sentence was reworded: update the rule
-  in the script or fix the text by hand. The exclusion breakdown it prints must be compared by hand.
-- `docs/manual.ja.md` is the Japanese translation of `docs/manual.md`. Whenever you edit the
-  English manual, make the same change in the Japanese one in the same commit. `doc_counts.py`
-  prints a `PARITY` line for every section whose numbers differ from the English manual; fix those
-  by hand.
-- If a rule, code or column changed (only on the maintainer's request), update the README and
-  manual text (both languages) too.
 
 Commit one dataset (or one checking session) per commit. Stage files by name, never with
 `git add -A` or `git add .`. Write the message in English: what was wrong or uncertain, what the
-evidence was, what changed (example in the example file). If the pre-commit hook fails, nothing
-was committed: fix, stage again and make a new commit; do not amend and never bypass the hook.
-Normal pushes need no confirmation; never force-push or rewrite published history.
+evidence was, what changed. If the pre-commit hook fails, nothing was committed: fix, stage again
+and make a new commit; do not amend and never bypass the hook. Normal pushes need no
+confirmation; never force-push or rewrite published history.
+
+If a rule, code or column changed (only on the maintainer's request), update the README and the
+manual (both languages, same commit) too.
+
+## Human verification
+
+When the maintainer should confirm values, put them in a pull request named `verify/<date>-<n>`
+(about 20 rows, `license_spdx` first): change `checked_by` to `user` and add the PR number to the
+`note`, push the branch, and open the PR with a table of dataset, value, the link and the quoted
+words. You never merge; the maintainer merges, and the merge is the confirmation.
 
 ## Reply
 
-Keep it short, in this order: what was registered (status, commit, validation result); what was
+Keep it short, in this order: what was registered (commit, validation result); what was
 verified and in which primary source; where the readme and a primary source disagree and how it
-was recorded; what was left empty and why (not in a primary source, not in the readme's
-`## The data` section, readme commit not public); what is left for the maintainer to decide (including changes needed in other repositories, which you do not make).
-State nothing as fact that you did not check.
+was recorded; what was left empty and why; what is left for the maintainer to decide (including
+changes needed in other repositories, which you do not make). State nothing as fact that you did
+not check.
 
 ## Common errors
 
@@ -275,22 +231,24 @@ Messages from `tools/validate.py` (and reglib) and what they mean:
 
 | Message contains | Fix |
 |---|---|
-| `field ... does not take evidence` | URL and text columns have no evidence rows; set the cell with `R.set` |
-| `*_reported fields cannot use measured or implementation` / `*_measured fields need source_type measured or implementation` | published values need `primary` (or `secondary`); release counts come from the readme as `implementation` (rule 1) |
-| `canonical row uses a weaker source than another row; note is required` | add a `note` saying why the canonical row is the current one (e.g. it replaces an older source) |
-| `canonical value ... != datasets value` | the cell and the canonical row disagree; set both through `R.ev` |
-| `not in enum ...` | use a value from `schema/enums.csv` (e.g. `mapping_type`: `identity`, `spelling_fix`, `synonym_rename`, `outside_common7`, `dropped_by_recipe`) |
-| `status_reason_codes must be NA exactly when implemented` | `NA` for implemented rows, at least one reason code otherwise |
-| `implemented but recipes.csv has no recipe` / `is not an implemented dataset` | only implemented datasets have recipe rows, and every implemented one needs one |
-| `used_in_recipe is true but the dataset is not implemented` | use `NA` for datasets that are not implemented |
-| `leading/trailing space or newline` | trim the cell (reglib trims evidence notes only) |
-| `labels: token_list is ...` (reglib) | spec keys must be the recipe's labels, not the corpus's spelling |
-| warning: `recipes on ... are not registered yet` | expected while recipes wait for review, and for recipes of non-implemented datasets |
+| `field ... does not take evidence` | free-text and URL-free columns have no evidence rows; set the cell with `R.set` |
+| `a current row needs a source` / `unknown source_id` | add the source with `R.source` first |
+| `*_release fields need a source of type implementation` / `*_reported fields cannot use an implementation source` | release counts come from the readme, documentation counts from papers and pages |
+| `current rows disagree` | make them `R.conflicting` or supersede the older one |
+| `current and conflicting rows together` | add the disagreeing source with `R.conflicting` (it converts the current rows) |
+| `conflicting rows need at least two different values` | one source cannot conflict with itself; use `R.ev` |
+| `a provisional row next to current rows` | `R.ev` supersedes provisional rows; do not add them by hand |
+| `not in enum ...` | use a value from `schema/enums.csv` |
+| `derived from annotations` | run `python3 tools/derive.py`; never edit the derived columns |
+| `the dataset has no label set ...` | add the label set (`R.label_set`) before its label counts |
+| `same url and source_type as ...` | the source exists; use its id |
+| `leading/trailing space or newline` | trim the cell |
 
 ## Files in this skill
 
 - `scripts/reglib.py`: stages DB changes for one dataset and saves them (import it).
-- `scripts/doc_counts.py`: recomputes the counts in README and manual (run it).
-- [references/data-model.md](references/data-model.md): tables, missing values, evidence, statuses, enums.
+- `scripts/doc_counts.py`: prints the figures quoted in the manual and checks that the Japanese
+  manual agrees with the English one (run it).
+- [references/data-model.md](references/data-model.md): tables, missing values, evidence, enums.
 - [references/verifying-claims.md](references/verifying-claims.md): how to check claims in primary sources.
 - [references/registration-example.md](references/registration-example.md): full script, commit message, reply.

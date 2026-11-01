@@ -2,8 +2,8 @@
 
 How to check a claim before it goes into the DB. Use sources you opened. A web-search summary is
 not a source: it cannot be cited and has mixed up different corpora before. The DB does not count
-or measure by itself (SKILL.md rule 1): a value either has a primary source that states it, or
-stays empty.
+or measure by itself (SKILL.md rule 1): a value either has a source that states it, or
+stays empty (or provisional).
 
 ## Contents
 - Sort the claims first
@@ -16,19 +16,19 @@ stays empty.
 
 ## Sort the claims first
 
-Go through the report and put every statement in one of three groups:
+Whatever the origin of a statement (a note, another session, a recipe readme, your own memory),
+put it in one of three groups:
 
-1. **Decisions by the project maintainer**: "keep the recipe", "exclude these files", "do not use
-   this dataset". They go into the status columns and the recipe tables only (SKILL.md "Interim").
-   They are not dataset facts and are not yours to change.
-2. **Facts about the dataset**: license wording, version, published counts, speakers, label set,
+1. **Decisions by a project** ("use this dataset", "exclude these files", "keep the recipe").
+   They are not dataset facts and do not belong in the DB; they belong in the user's `local/`.
+2. **Facts about the dataset**: license wording, version, published counts, speakers, label sets,
    how the audio was produced and how the labels were made, listening tests, URLs, dates. Check
-   each one in a primary source. Reports written by other sessions or people contain mistakes:
+   each one in a primary source. Notes written by other sessions or people contain mistakes:
    miscounts, a search summary mistaken for a primary source, guesses written as facts.
-3. **Findings of the recipe**: counts in the release, duplicates, formats, sentence overlap,
-   listening notes, a source the maintainer checked by hand. Record them only as stated in the
-   recipe readme (cited at its fork commit). A finding that is only in the report stays out of the
-   DB; list it in the reply so the recipe author can add it to the readme. If a paper or page
+3. **Findings of the implementation**: counts of the release, duplicates, formats, sentence
+   overlap, observations from listening. Record them only as stated in the `## The data` section
+   of the recipe readme (cited at its fork commit). A finding that is only in a note stays out of
+   the DB; list it in the reply so the recipe author can add it to the readme. If a paper or page
    also states it, cite that source instead: the readme is cited only for what nothing but the
    implementation can show.
 
@@ -72,7 +72,7 @@ sources").
 - arXiv: `curl -sL https://arxiv.org/pdf/<id> -o paper.pdf && pdftotext paper.pdf paper.txt`,
   then `grep -n -i` for the dataset name and read the surrounding lines.
 - The paper cited for a dataset is not always about that dataset. Check the title and abstract
-  before citing it, and before putting it in `paper_url`.
+  before citing it, and before registering it as the dataset's paper.
 - When the paper and the release disagree (number of prompts, speakers, classes), record both.
 - Read the references section for how others cite it; differing authors or years across papers
   are a sign the citation is borrowed.
@@ -88,7 +88,7 @@ sources").
 
 ## When something looks wrong
 
-If a report's claim, a readme's number and a primary source disagree, do not resolve it by
+If a note's claim, a readme's number and a primary source disagree, do not resolve it by
 counting yourself. Record what the primary sources say, leave the rest empty, and tell the
 maintainer what disagrees and where, so the recipe author can check and correct the readme.
 
