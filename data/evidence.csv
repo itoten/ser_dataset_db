@@ -154,6 +154,7 @@ albemo/license_spdx/01,albemo,license_spdx,CC-BY-4.0,albemo_page,bundled LICENSE
 albemo/listening_test/01,albemo,listening_test,reported,albemo_page,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 albemo/n_files_release/01,albemo,n_files_release,420,,,2026-10-11,claude,superseded,Provisional:; superseded by albemo/n_files_release/02
 albemo/n_files_release/02,albemo,n_files_release,420,albemo_readme,commit 08308769a6a3; Size of the release,2026-11-01,claude,current,
+albemo/n_files_reported/01,albemo,n_files_reported,420,albemo_page,"The result is 420 recordings, one for every combination of speaker, emotion and sentence",2026-11-01,claude,current,
 albemo/n_speakers_release/01,albemo,n_speakers_release,10,,distinct speaker token in utterance ids of the used utterances,2026-10-12,script,superseded,superseded by albemo/n_speakers_measured/02; Former source type: measured
 albemo/n_speakers_release/02,albemo,n_speakers_release,10,,,2026-10-26,claude,superseded,Provisional:; superseded by albemo/n_speakers_release/03
 albemo/n_speakers_release/03,albemo,n_speakers_release,10,albemo_readme,commit 08308769a6a3; Size of the release,2026-11-01,claude,current,
@@ -295,6 +296,7 @@ banglamood/license_spdx/01,banglamood,license_spdx,CC-BY-4.0,banglamood_page,lic
 banglamood/material_origin/01,banglamood,material_origin,web_video,banglamood_page,description: clips of randomly chosen YouTube videos labeled by 3 annotators,2026-10-12,claude,current,
 banglamood/n_files_release/01,banglamood,n_files_release,3220,,,2026-10-12,claude,superseded,Provisional:; superseded by banglamood/n_files_release/02
 banglamood/n_files_release/02,banglamood,n_files_release,3220,banglamood_readme,commit 07b611114c77; Size of the release,2026-11-01,claude,current,
+banglamood/n_files_reported/01,banglamood,n_files_reported,3220,banglamood_page,"The BanglaMOOD dataset comprises 3,220 audio files in WAV format",2026-11-01,claude,current,
 banglamood/n_speakers_release/01,banglamood,n_speakers_release,unknown,banglamood_readme,commit 07b611114c77; Size of the release,2026-11-01,claude,current,Readme cell: unknown
 banglamood/name/01,banglamood,name,BanglaMood,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by banglamood/name/02
 banglamood/name/02,banglamood,name,BanglaMood,banglamood_page,title of the source contains the name,2026-11-01,claude,current,
@@ -338,6 +340,7 @@ banspemo/license_spdx/01,banspemo,license_spdx,CC-BY-4.0,banspemo_page,Mendeley 
 banspemo/listening_test/01,banspemo,listening_test,reported,banspemo_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 banspemo/n_files_release/01,banspemo,n_files_release,792,,,2026-10-11,claude,superseded,Provisional:; superseded by banspemo/n_files_release/02
 banspemo/n_files_release/02,banspemo,n_files_release,792,banspemo_readme,commit b676f7fb18be; Size of the release,2026-11-01,claude,current,
+banspemo/n_files_reported/01,banspemo,n_files_reported,792,banspemo_paper,This corpus contains 792 audio recordings over a duration of more than 1 hour and 23 minutes,2026-11-01,claude,current,
 banspemo/n_speakers_release/01,banspemo,n_speakers_release,22,,,2026-10-12,claude,superseded,Provisional:; superseded by banspemo/n_speakers_release/02
 banspemo/n_speakers_release/02,banspemo,n_speakers_release,22,banspemo_readme,commit b676f7fb18be; Size of the release,2026-11-01,claude,current,
 banspemo/n_speakers_reported/01,banspemo,n_speakers_reported,22,banspemo_paper,"paper: 22 speakers (11 male, 11 female)",2026-10-11,claude,current,
@@ -1691,9 +1694,11 @@ hikia/listening_test/01,hikia,listening_test,reported,,,2026-11-01,claude,supers
 hikia/listening_test/02,hikia,listening_test,reported,hikia_readme,commit 703fd9434c36; Listening test ratings in the release,2026-11-01,claude,current,
 hikia/n_files_release/01,hikia,n_files_release,488,,,2026-10-11,claude,superseded,Provisional:; superseded by hikia/n_files_release/02
 hikia/n_files_release/02,hikia,n_files_release,488,hikia_readme,commit 703fd9434c36; Size of the release,2026-11-01,claude,current,
+hikia/n_files_reported/01,hikia,n_files_reported,1247,hikia_paper,released WUW dataset contains 1247 utterances from 80 speakers,2026-11-01,claude,current,
 hikia/n_speakers_release/01,hikia,n_speakers_release,8,,,2026-10-12,claude,superseded,Provisional:; superseded by hikia/n_speakers_release/02
 hikia/n_speakers_release/02,hikia,n_speakers_release,8,hikia_readme,commit 703fd9434c36; Size of the release,2026-11-01,claude,current,
-hikia/n_speakers_reported/01,hikia,n_speakers_reported,8,hikia_paper,"abstract and file names F5-F8, M1-M4 agree on 8 speakers",2026-10-11,claude,current,
+hikia/n_speakers_reported/01,hikia,n_speakers_reported,8,hikia_paper,"abstract and file names F5-F8, M1-M4 agree on 8 speakers",2026-10-11,claude,superseded,superseded by hikia/n_speakers_reported/02
+hikia/n_speakers_reported/02,hikia,n_speakers_reported,80,hikia_paper,released WUW dataset contains 1247 utterances from 80 speakers,2026-11-01,claude,current,
 hikia/name/01,hikia,name,"Hi, KIA",,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by hikia/name/02
 hikia/name/02,hikia,name,"Hi, KIA",hikia_page,title of the source contains the name,2026-11-01,claude,current,
 hikia/speech_production/01,hikia,speech_production,acted,hikia_paper,voice actors uttered the wake-up words with an instructed emotion,2026-10-26,claude,current,
@@ -2028,6 +2033,7 @@ jvnv/license_spdx/01,jvnv,license_spdx,CC-BY-SA-4.0,jvnv_page,author page,2026-1
 jvnv/listening_test/01,jvnv,listening_test,reported,jvnv_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 jvnv/n_files_release/01,jvnv,n_files_release,1615,,,2026-10-11,claude,superseded,Provisional:; superseded by jvnv/n_files_release/02
 jvnv/n_files_release/02,jvnv,n_files_release,1615,jvnv_readme,commit 778f3541b476; Size of the release,2026-11-01,claude,current,
+jvnv/n_files_reported/01,jvnv,n_files_reported,1615,jvnv_page,"Duration: 3.94 hours with 1,615 utterances",2026-11-01,claude,current,
 jvnv/n_speakers_release/01,jvnv,n_speakers_release,4,,,2026-10-12,claude,superseded,Provisional:; superseded by jvnv/n_speakers_release/02
 jvnv/n_speakers_release/02,jvnv,n_speakers_release,4,jvnv_readme,commit 778f3541b476; Size of the release,2026-11-01,claude,current,
 jvnv/n_speakers_reported/01,jvnv,n_speakers_reported,4,jvnv_page,"author page: speakers F1, F2, M1, M2",2026-10-11,claude,current,
@@ -2050,6 +2056,7 @@ kannada/languages/01,kannada,languages,kan,kannada_page,dataset description name
 kannada/license_spdx/01,kannada,license_spdx,CC-BY-4.0,kannada_page,Zenodo record license,2026-10-11,claude,current,
 kannada/n_files_release/01,kannada,n_files_release,468,,,2026-10-11,claude,superseded,Provisional:; superseded by kannada/n_files_release/02
 kannada/n_files_release/02,kannada,n_files_release,468,kannada_readme,commit c69e31a00905; Size of the release,2026-11-01,claude,current,
+kannada/n_files_reported/01,kannada,n_files_reported,468,kannada_page,"The dataset contains a total of 468 audio samples, each one in a separate audio file",2026-11-01,claude,current,
 kannada/n_speakers_release/01,kannada,n_speakers_release,13,,,2026-10-12,claude,superseded,Provisional:; superseded by kannada/n_speakers_release/02
 kannada/n_speakers_release/02,kannada,n_speakers_release,13,kannada_readme,commit c69e31a00905; Size of the release,2026-11-01,claude,current,
 kannada/n_speakers_reported/01,kannada,n_speakers_reported,13,kannada_page,"description table lists 13 speakers (9 female, 4 male, 12-48 y)",2026-10-11,claude,current,
@@ -2094,6 +2101,7 @@ kazemotts/license_spdx/01,kazemotts,license_spdx,CC-BY-4.0,kazemotts_card,Huggin
 kazemotts/license_spdx/02,kazemotts,license_spdx,CC-BY-4.0,kazemotts_page,"form text (re-read 2026-10-26): 'This dataset is provided under the Creative Commons Attribution 4.0 International Licence. To request access to the dataset, please complete the form.'",2026-10-26,claude,current,The Hugging Face dataset card (README and tags) states no license; the official access form linked from the card does. Replaces the earlier evidence row that pointed to the card
 kazemotts/n_files_release/01,kazemotts,n_files_release,54760,,,2026-10-11,claude,superseded,Provisional:; superseded by kazemotts/n_files_release/02
 kazemotts/n_files_release/02,kazemotts,n_files_release,54760,kazemotts_readme,commit 3d3f1a3ffe93; Size of the release,2026-11-01,claude,current,
+kazemotts/n_files_reported/01,kazemotts,n_files_reported,54760,kazemotts_card,"KazEmoTTS is a collection of 54,760 audio-text pairs",2026-11-01,claude,current,
 kazemotts/n_speakers_release/01,kazemotts,n_speakers_release,3,,,2026-10-12,claude,superseded,Provisional:; superseded by kazemotts/n_speakers_release/02
 kazemotts/n_speakers_release/02,kazemotts,n_speakers_release,3,kazemotts_readme,commit 3d3f1a3ffe93; Size of the release,2026-11-01,claude,current,
 kazemotts/name/01,kazemotts,name,KazEmoTTS,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by kazemotts/name/02
@@ -3008,6 +3016,7 @@ ravdess/license_spdx/02,ravdess,license_spdx,CC-BY-NC-SA-4.0,ravdess_page,Zenodo
 ravdess/listening_test/01,ravdess,listening_test,reported,ravdess_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 ravdess/n_files_release/01,ravdess,n_files_release,1440,,,2026-10-12,claude,superseded,Provisional:; superseded by ravdess/n_files_release/02
 ravdess/n_files_release/02,ravdess,n_files_release,1440,ravdess_readme,commit 23a0c910e1b3; Size of the release,2026-11-01,claude,current,
+ravdess/n_files_reported/01,ravdess,n_files_reported,7356,ravdess_paper,"The set of 7356 recordings were each rated 10 times on emotional validity, intensity, and genuineness",2026-11-01,claude,current,"The whole database (speech and song, audio-video, video-only and audio-only)"
 ravdess/n_speakers_release/01,ravdess,n_speakers_release,24,,,2026-10-12,claude,superseded,Provisional:; superseded by ravdess/n_speakers_release/02
 ravdess/n_speakers_release/02,ravdess,n_speakers_release,24,ravdess_readme,commit 23a0c910e1b3; Size of the release,2026-11-01,claude,current,
 ravdess/n_speakers_reported/02,ravdess,n_speakers_reported,24,ravdess_page,"The dataset contains 24 professional actors (12 female, 12 male)",2026-10-31,claude,current,
@@ -4036,10 +4045,12 @@ ysed/listening_test/01,ysed,listening_test,reported,ysed_readme,commit 1a5f8dd6a
 ysed/material_origin/01,ysed,material_origin,recorded_for_dataset,,,2026-10-28,claude,provisional,Provisional: carried over from source_rights
 ysed/n_files_release/01,ysed,n_files_release,1432,,,2026-10-11,claude,superseded,Provisional:; superseded by ysed/n_files_release/02
 ysed/n_files_release/02,ysed,n_files_release,1432,ysed_readme,commit 1a5f8dd6a19e; Size of the release,2026-11-01,claude,current,
+ysed/n_files_reported/01,ysed,n_files_reported,1432,ysed_page,"which comprises 1,432 audio recordings from 71 male and female participants aged between 15 and 40 years",2026-11-01,claude,current,
 ysed/n_speakers_release/01,ysed,n_speakers_release,68,,,2026-10-28,claude,superseded,Provisional: The file name carries gender and participant number; superseded by ysed/n_speakers_release/02
 ysed/n_speakers_release/02,ysed,n_speakers_release,67,ysed_readme,commit 1a5f8dd6a19e; Size of the release,2026-11-01,claude,current,Readme cell: 67 (participant numbers in the file names)
 ysed/n_speakers_reported/01,ysed,n_speakers_reported,71,ysed_page,Zenodo description: 71 participants aged 15-40,2026-10-11,claude,superseded,superseded by ysed/n_speakers_reported/02
-ysed/n_speakers_reported/02,ysed,n_speakers_reported,71,,,2026-10-28,claude,provisional,Provisional: The abstract and the participants section disagree (71 vs 68)
+ysed/n_speakers_reported/02,ysed,n_speakers_reported,71,,,2026-10-28,claude,superseded,Provisional: The abstract and the participants section disagree (71 vs 68); superseded by ysed/n_speakers_reported/03
+ysed/n_speakers_reported/03,ysed,n_speakers_reported,71,ysed_page,"1,432 audio recordings from 71 male and female participants aged between 15 and 40 years",2026-11-01,claude,current,
 ysed/name/01,ysed,name,YSED,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by ysed/name/02
 ysed/name/02,ysed,name,YSED,ysed_page,title of the source contains the name,2026-11-01,claude,current,
 ysed/speech_production/01,ysed,speech_production,acted,,,2026-10-28,claude,provisional,Provisional: taken from the project review report; the paper was not re-read in this update
