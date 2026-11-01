@@ -13,7 +13,6 @@ datasets,language_note,text,empty,no,Notes on varieties and how the language val
 datasets,recording_context,enum:recording_context,empty,yes,Recording or collection setting
 datasets,vocal_content,enum:vocal_content,empty,yes,Speech or non-verbal vocalisation
 datasets,license_spdx,enum:license_spdx,empty,yes,"SPDX identifier or LicenseRef-*. A classification of the stated terms, not a legal interpretation"
-datasets,license_class,enum:license_class,empty,no,Column derived from license_spdx (derived in enums.csv)
 datasets,license_note,text,empty,no,Gist of the license wording
 datasets,access_method,enum:access_method,empty,yes,Access method
 datasets,raw_audio_available,bool,empty;unknown,yes,Whether raw audio is distributed
@@ -44,7 +43,7 @@ datasets,paralinguistic_signal,enum:paralinguistic_signal,empty;unknown,yes,"How
 datasets,paralinguistic_signal_note,text,empty,no,"What was listened to and by whom (number of clips, speakers), and what was heard"
 datasets,human_accuracy,float,empty;unknown,yes,"Share (0-1) of human listeners' answers that recognise the intended (main) label, as reported or computed from distributed ratings: a reference level for what a model can be expected to reach. What counts as correct (single answer or majority, audio only or with video) is in human_accuracy_note"
 datasets,human_accuracy_note,text,empty,no,"Who rated (number of raters, ratings per clip), what they perceived (audio only or with video), how accuracy is defined, the chance level, and where the ratings are"
-datasets,source_rights,enum:source_rights,empty,yes,"Rights in the underlying audio, separate from license_class (which keeps the stated license): own / cleared / asserted / unaddressed / unknown. asserted, unaddressed and unknown mean the material needs a rights check. Empty = not examined"
+datasets,source_rights,enum:source_rights,empty,yes,"Rights in the underlying audio, separate from license_spdx (which keeps the stated license): own / cleared / asserted / unaddressed / unknown. asserted, unaddressed and unknown mean the material needs a rights check. Empty = not examined"
 datasets,source_rights_note,text,empty,no,"What the sources say about the rights in the material (quote or paraphrase with the place) and what is missing (sources, per-item licenses, consent, non-commercial statement)"
 datasets,annotations_other,text,empty;none,no,The spreadsheet's Other Annotations (original text)
 datasets,sheet_notes,text,empty,no,The spreadsheet's Notes (original text; do not change)

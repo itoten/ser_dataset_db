@@ -12,7 +12,7 @@ import db as dbmod
 SHEET_COLS = ["Verified", "Dataset", "License", "Language", "Source", "Total Hours", "Utterances", "Speakers",
               "Discrete Emotions", "Dimensional Emotions", "Other Annotations", "Source URL", "Notes", "Paper URL",
               "ESPnet Implemented"]
-EXTRA_COLS = ["dataset_id", "status", "reasons", "license_class", "access_method", "raw_audio_available", "recipe",
+EXTRA_COLS = ["dataset_id", "status", "reasons", "access_method", "raw_audio_available", "recipe",
               "n_total_recipe", "hours_total_recipe", "n_files_release_measured", "n_speakers_measured",
               "common7_covered", "common7_missing", "extra_labels", "label_source", "label_verification", "speech_production", "label_basis", "label_basis_note", "text_emotion_link", "lexical_confound", "lexical_confound_note", "paralinguistic_signal", "paralinguistic_signal_note", "human_accuracy", "human_accuracy_note", "source_rights", "source_rights_note",
               "annotation_items",
@@ -22,7 +22,7 @@ EXTRA_COLS = ["dataset_id", "status", "reasons", "license_class", "access_method
 DISC_COLS = ["dataset_id", "field", "kind", "datasets_value", "datasets_source_type", "other_value",
              "other_source_type", "other_source_ref", "note"]
 COMMON7 = ["angry", "disgust", "fear", "happy", "neutral", "sad", "surprise"]
-RIGHTS_COLS = ["dataset_id", "name", "espnet_status", "license_spdx", "license_class", "source_rights", "source_rights_note"]
+RIGHTS_COLS = ["dataset_id", "name", "espnet_status", "license_spdx", "source_rights", "source_rights_note"]
 RIGHTS_NEEDS_CHECK = ("asserted", "unaddressed", "unknown")
 DISC_KEYS = ("dataset_id", "field", "kind", "other_value", "other_source_ref")
 
@@ -67,7 +67,7 @@ def wide(db):
             "Other Annotations": d["annotations_other"], "Source URL": d["source_url"], "Notes": d["sheet_notes"],
             "Paper URL": d["paper_url"], "ESPnet Implemented": "TRUE" if d["espnet_status"] == "implemented" else "FALSE",
             "dataset_id": i, "status": d["espnet_status"], "reasons": d["status_reason_codes"],
-            "license_class": d["license_class"], "access_method": d["access_method"],
+            "access_method": d["access_method"],
             "raw_audio_available": d["raw_audio_available"], "recipe": ";".join(names),
             "n_total_recipe": main["n_total"] if main else "", "hours_total_recipe": main["hours_total"] if main else "",
             "n_files_release_measured": d["n_files_release_measured"], "n_speakers_measured": d["n_speakers_measured"],

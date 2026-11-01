@@ -68,7 +68,7 @@ A database of speech emotion recognition (SER) datasets, kept as CSV files under
 - **Multiple values** are `;`-separated (`labels_discrete_reported`, `languages`, `status_reason_codes`, ...).
 - **IDs** match `^[a-z][a-z0-9]*(_[a-z0-9]+)*$`. Implemented datasets use the egs3 recipe name. A committed ID never changes (if it must, keep the old ID in `aliases` as `former_label`).
 - **CSV format**: UTF-8, no BOM, LF, rows in key order. After editing by hand, run `python3 tools/db.py fmt`.
-- **Licenses**: `license_spdx` maps the wording in the sources to an SPDX identifier (or `LicenseRef-...`). `license_class` is derived mechanically from the identifier and is not a legal interpretation. Read `license_note` and the primary source before using a dataset.
+- **Licenses**: `license_spdx` maps the wording in the sources to an SPDX identifier (or `LicenseRef-...`). It is a classification of the stated terms, not a legal interpretation. How licenses are grouped for an experiment (open, non-commercial, ...) is a project decision and is not in the DB; keep such groupings in `local/`. Read `license_note` and the primary source before using a dataset.
 - **Language**: all text in the DB and its documents is English (dataset names and quotations keep their original language).
 - **Public repository**: everything committed here, including commit messages, is public. Write no personal names, e-mail addresses or machine-specific paths; refer to people by role ("the project maintainer") and to local data by environment variable (e.g. `$EESC_OUTPUT/manifest/test.tsv`). `tools/validate.py` rejects absolute home paths.
 - **References outside this repository**: some older evidence rows cite the project's working documents (`recipe_reports/…`, `recipe_review/…`, `new_corpora/…`, resolved from the directory that contains this repository). They are internal notes and are not published; the facts they support are summarised in the row's `locator` and `note`. New rows cite only published sources; internal notes may appear in `via` only.
@@ -107,7 +107,7 @@ python3 tools/db.py get|set|add|fmt   # view or edit one row
 - Corpora built for TTS are included if they have emotion labels. Datasets without audio (text only, features only) are kept as `excluded` to record what was found.
 - When two rows turn out to be the same, mark one `excluded` (`duplicate_entry`) and link them with `possibly_same_as` in `relations`. IDs are never deleted.
 
-## Current state (2026-10-31)
+## Current state (2026-11-01)
 
 322 datasets (84 from the spreadsheet, 238 added later). `implemented` 101, `candidate` 134, `deferred` 34, `needs_decision` 7, `excluded` 46. All 28 corpora in Table I of the MSP-Podcast paper (arXiv 2509.09791v1) are included.
 

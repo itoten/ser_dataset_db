@@ -279,7 +279,6 @@ Messages from `tools/validate.py` (and reglib) and what they mean:
 | `*_reported fields cannot use measured or implementation` / `*_measured fields need source_type measured or implementation` | published values need `primary` (or `secondary`); release counts come from the readme as `implementation` (rule 1) |
 | `canonical row uses a weaker source than another row; note is required` | add a `note` saying why the canonical row is the current one (e.g. it replaces an older source) |
 | `canonical value ... != datasets value` | the cell and the canonical row disagree; set both through `R.ev` |
-| `license_class ... != derived` | `license_class` follows `license_spdx`; when emptying `license_spdx`, empty `license_class` too |
 | `not in enum ...` | use a value from `schema/enums.csv` (e.g. `mapping_type`: `identity`, `spelling_fix`, `synonym_rename`, `outside_common7`, `dropped_by_recipe`) |
 | `status_reason_codes must be NA exactly when implemented` | `NA` for implemented rows, at least one reason code otherwise |
 | `implemented but recipes.csv has no recipe` / `is not an implemented dataset` | only implemented datasets have recipe rows, and every implemented one needs one |

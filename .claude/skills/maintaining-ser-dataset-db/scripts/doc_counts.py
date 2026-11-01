@@ -30,13 +30,7 @@ def _find_root():
 
 ROOT = _find_root()
 
-LIC_COLS = ["open", "noncommercial", "research_only", "restricted", "other", "none_stated", "unknown",
-            "conflicting", ""]
-# Start of each description cell in manual sections 9.2 and 10, so that every rule matches exactly one row.
-LIC_DESC = {"open": "permissive", "noncommercial": "non-commercial only", "research_only": "custom terms limited",
-            "restricted": "restricted or paid", "other": "other than the above",
-            "none_stated": "no license statement found", "unknown": "examined but undecidable",
-            "conflicting": "sources disagree"}
+# Start of each description cell in manual section 10, so that every rule matches exactly one row.
 ACC_DESC = {"direct_download": "directly downloadable", "free_account_required": "free account",
             "gated_click_through": "consent click", "request_form_or_email": "request by application",
             "signed_agreement": "signed agreement required", "paid_or_membership": "paid or membership",
@@ -77,11 +71,7 @@ def stats():
     s["kind"] = collections.Counter(x["recipe_kind"] for x in r)
     s["baseline"] = collections.Counter(x["baseline_status"] for x in r)
     s["unexamined"] = sum("unexamined" in x["status_reason_codes"].split(";") for x in d)
-    s["lic"] = collections.Counter(x["license_class"] for x in d)
     s["acc"] = collections.Counter(x["access_method"] for x in d)
-    s["st_lic"] = collections.Counter((x["espnet_status"], x["license_class"]) for x in d)
-    s["cand_open_direct"] = sum(x["espnet_status"] == "candidate" and x["license_class"] == "open"
-                                and x["access_method"] == "direct_download" for x in d)
     s["rc"] = collections.Counter(x["recording_context"] for x in d)
     s["raw"] = collections.Counter(x["raw_audio_available"] for x in d)
     s["dim"] = sum(x["dimensional_attributes"] not in ("", "none", "NA", "unknown") for x in d)
@@ -114,10 +104,6 @@ def rules(s, today):
     src = ", ".join(f"{k} {n(v)}" for k, v in s["src"].most_common())
     rc = ", ".join(f"{RC_EN.get(k, k)} {v}" for k, v in s["rc"].most_common() if k and v >= 4)
     users = ", ".join(f"`{u}`" for u in s["user_lic"])
-
-    def lic_row(status):
-        vals = [s["st_lic"][(status, c)] for c in LIC_COLS]
-        return f"| {status} | " + " | ".join(str(v) for v in vals) + f" | {st[status]} |"
 
     def lang_sub(m):
         text = re.sub(r"\d+ codes", f"{len(s['langs'])} codes", m.group(0))
@@ -168,17 +154,10 @@ def rules(s, today):
         *[("docs/manual.md", rf"(\| `{k}` \| {re.escape(v)}[^|]*\| )\d+ \|", rf"\g<1>{st[k]} |") for k, v in STATUS_DESC.items()],
         ("docs/manual.md", r"The \d+ excluded rows break down as", f"The {st['excluded']} excluded rows break down as"),
         # manual 9.2 / 10
-        *[("docs/manual.md", rf"(\| `{c}` \| {re.escape(v)}[^|]*\| )\d+ \|", rf"\g<1>{s['lic'][c]} |") for c, v in LIC_DESC.items()],
-        ("docs/manual.md", r"(\| \(empty\) \| not investigated yet \| )\d+ \|", rf"\g<1>{s['lic']['']} |"),
         *[("docs/manual.md", rf"(\| `{a}` \| {re.escape(v)}[^|]*\| )\d+ \|", rf"\g<1>{s['acc'][a]} |") for a, v in ACC_DESC.items()],
         ("docs/manual.md", r"(\| \(empty\) \| not checked \| )\d+ \|", rf"\g<1>{s['acc']['']} |"),
         # manual 11
         ("docs/manual.md", r"## 11\. Current figures \(\d{4}-\d{2}-\d{2}\)", f"## 11. Current figures ({today})"),
-        *[("docs/manual.md", rf"\| {k} \|( \d+ \|){{10}}", lic_row(k)) for k in STATUS_DESC],
-        ("docs/manual.md", r"Of the \d+ implemented datasets, \d+ have open terms",
-         f"Of the {st['implemented']} implemented datasets, {s['st_lic'][('implemented', 'open')]} have open terms"),
-        ("docs/manual.md", r"Of the \d+ candidates, \d+ are `open` and `direct_download`",
-         f"Of the {st['candidate']} candidates, {s['cand_open_direct']} are `open` and `direct_download`"),
         ("docs/manual.md", r"\*\*Recording context\*\* \(`recording_context`; \d+ not checked\): [^.]+, and others\.",
          f"**Recording context** (`recording_context`; {s['blank']['recording_context']} not checked): {rc}, and others."),
         ("docs/manual.md", r"\*\*Languages\*\*: \d+ codes\.[^\n]+", lang_sub),
@@ -198,10 +177,7 @@ def rules(s, today):
         ("docs/manual.md", r"\d+ datasets, [\d,]+ evidence rows\.", f"{s['n_datasets']} datasets, {n(s['n_evidence'])} evidence rows."),
         ("docs/manual.md", r"the \d+ ESPnet recipes are measured", f"the {s['rows']['recipes']} ESPnet recipes are measured"),
         ("docs/manual.md", r"investigating the \d+ deferred rows", f"investigating the {st['deferred']} deferred rows"),
-        ("docs/manual.md", r"`access_method`=direct_download -> \d+ rows", f"`access_method`=direct_download -> {s['cand_open_direct']} rows"),
         ("docs/manual.md", r"\([\d,]+ of [\d,]+ evidence rows\)", f"({n(s['src']['primary'])} of {n(s['n_evidence'])} evidence rows)"),
-        ("docs/manual.md", r"\d+ implemented, \d+ candidates\. Of the candidates, \d+ are openly licensed",
-         f"{st['implemented']} implemented, {st['candidate']} candidates. Of the candidates, {s['cand_open_direct']} are openly licensed"),
         ("docs/manual.md", r"\| What was excluded\? \| \d+\.", f"| What was excluded? | {st['excluded']}."),
         ("docs/manual.md", r"\d+ datasets from surveys, hosting services and the literature were added to the spreadsheet's \d+",
          f"{added} datasets from surveys, hosting services and the literature were added to the spreadsheet's {s['in_sheet']}"),

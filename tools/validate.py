@@ -134,10 +134,6 @@ def check_types(tables, cols, db, enums):
                 msg = cell_error(row[c["column"]], c["type"], c["nulls"], enums)
                 if msg:
                     err(f"{name} line {i} ({row[tables[name]['keys'][0]]}) {c['column']}={row[c['column']]!r}: {msg}")
-    for i, row in enumerate(db["datasets"][1], 2):
-        derived = enums["license_spdx"].get(row["license_spdx"], {}).get("derived", "")
-        if row["license_class"] != derived:
-            err(f"datasets {row['dataset_id']}: license_class {row['license_class']!r} != derived {derived!r}")
 
 
 # ---- 3. keys, foreign keys, aliases ---------------------------------------

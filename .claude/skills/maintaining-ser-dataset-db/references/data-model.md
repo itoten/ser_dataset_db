@@ -244,7 +244,7 @@ hand-written ones:
   rebuilt, use only `own` for new entries (a source says it was recorded for the dataset); for
   third-party material leave the code empty and quote the sources, naming them, in
   `source_rights_note`. Older rows still use `cleared`, `asserted`, `unaddressed` and `unknown`.
-  `license_class` is never changed by it. Empty = not examined.
+  Empty = not examined.
 - `LicenseRef-golos-public` (class `open`): Golos/Dusha public license, a CC BY-SA 4.0 reworking
   without a non-commercial clause (maintainer's decision).
 - `shares_sentences_with` (relations): some spoken sentences, or their translations, are the same
