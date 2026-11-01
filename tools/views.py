@@ -16,7 +16,7 @@ EXTRA_COLS = ["dataset_id", "status", "reasons", "access_method", "raw_audio_ava
               "n_total_recipe", "hours_total_recipe", "n_files_release_measured", "n_speakers_measured",
               "common7_covered", "common7_missing", "extra_labels", "label_source", "label_verification", "speech_production", "label_basis", "label_basis_note", "text_emotion_link", "lexical_confound", "lexical_confound_note", "paralinguistic_signal", "paralinguistic_signal_note", "human_accuracy", "human_accuracy_note", "source_rights", "source_rights_note",
               "annotation_items",
-              "benchmarks", "report_path", "status_note", "notes",
+              "benchmarks", "status_note", "notes",
               "license_checked_on", "license_source_type", "license_checked_by", "access_checked_on",
               "oldest_checked_on", "latest_checked_on"]
 DISC_COLS = ["dataset_id", "field", "kind", "datasets_value", "datasets_source_type", "other_value",
@@ -82,7 +82,7 @@ def wide(db):
             "human_accuracy": d["human_accuracy"], "human_accuracy_note": d["human_accuracy_note"],
             "source_rights": d["source_rights"], "source_rights_note": d["source_rights_note"], "annotation_items": ";".join(sorted(items.get(i, []))),
             "benchmarks": ";".join(bench),
-            "report_path": d["report_path"], "status_note": d["status_note"], "notes": d["notes"],
+            "status_note": d["status_note"], "notes": d["notes"],
             "license_checked_on": lic["checked_on"] if lic else "", "license_source_type": lic["source_type"] if lic else "",
             "license_checked_by": lic["checked_by"] if lic else "", "access_checked_on": acc["checked_on"] if acc else "",
             "oldest_checked_on": dates[0] if dates else "", "latest_checked_on": dates[-1] if dates else "",

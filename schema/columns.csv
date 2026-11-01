@@ -48,7 +48,6 @@ datasets,source_rights_note,text,empty,no,"What the sources say about the rights
 datasets,annotations_other,text,empty;none,no,The spreadsheet's Other Annotations (original text)
 datasets,sheet_notes,text,empty,no,The spreadsheet's Notes (original text; do not change)
 datasets,notes,text,empty,no,Our own notes
-datasets,report_path,path,empty,no,"Where details are (an NN report, etc.)"
 datasets,last_updated_on,date,-,no,Date this row was last updated
 evidence,evidence_id,text,-,no,<dataset_id>/<field>/<2-digit sequence number>
 evidence,dataset_id,slug,-,no,Foreign key to datasets
@@ -57,7 +56,6 @@ evidence,value,text,-,no,The value the evidence supports (same format as in data
 evidence,source_type,enum:source_type,-,no,measured / primary / secondary / project_doc / sheet / user
 evidence,source_ref,text,-,no,"Source (URL, file path, commit)"
 evidence,locator,text,empty,no,Location within the source (25 words at most)
-evidence,via,text,empty,no,"How it was brought in (original, NN report, measurement, etc.)"
 evidence,checked_on,date,-,no,Date checked
 evidence,checked_by,enum:checked_by,-,no,Who checked
 evidence,is_canonical,bool,-,no,true if this is the evidence for the value in datasets (one row per dataset x field)

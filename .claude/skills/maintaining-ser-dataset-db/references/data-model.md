@@ -61,7 +61,7 @@ These `datasets` columns need an evidence row for their value: `languages`,
 Columns that never take evidence rows (adding one is a validation error): URL columns
 (`source_url`, `download_url`, `paper_url`, `doi`) and text columns (`status_note`, `notes`,
 `license_note`, `language_note`, `labels_discrete_note`, `annotations_other`, `release_version`,
-`report_path`, `n_discrete_labels_reported`). Every value still needs a source: until a list of
+`n_discrete_labels_reported`). Every value still needs a source: until a list of
 sources exists, name the source inside the text (`v2 (Kaggle page)`).
 
 Rules checked by `tools/validate.py`:
@@ -82,8 +82,7 @@ Rules checked by `tools/validate.py`:
   take `measured` (old rows) or `implementation` (the readme's `## The data`, for new rows). The
   DB no longer counts by itself.
 - `locator` says where in the source the value is (a quote or section, 25 words at most).
-  `via` says how we came to it (e.g. the report that pointed us there); internal notes may appear
-  here, never in `source_ref`.
+  Internal notes are never cited: they are leads, not sources.
   `checked_by` is `claude`, `user` (the maintainer looked at the source: a record of human
   verification, not a source type) or `script`.
 
@@ -191,7 +190,6 @@ hand-written ones:
 
 | Column | Values |
 |---|---|
-| `report_path` | the recipe's review notes, relative to the directory that contains the repository |
 | `official_split_exists` | `true` / `false` |
 | `split_method` | `official`, `official_with_carved_valid`, `random_stratified_by_label`, `speaker_independent`, `sentence_independent`, `source_group_independent`, `other` |
 | `split_unit`, `recipe_exclusions_note`, `known_issues`, `notes` | free text |

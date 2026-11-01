@@ -75,7 +75,7 @@ the others (the README explains them):
      `secondary`; when it is unclear whether one is official, say so in `note`.
    - Do not add `measured`, `project_doc`, `user` or `sheet` rows (they are being phased out;
      the exceptions are under "Interim" below). Internal notes and reports are leads, never the
-     source: put them in `via` at most.
+     source.
 3. **Every evidence row must point at a statement about the dataset.** Before saving a row, ask:
    does the source (and `locator`) say something about the dataset itself? A policy, an
    instruction, a decision to add a value to a column, "treated like dataset X", a counting
@@ -283,7 +283,6 @@ Messages from `tools/validate.py` (and reglib) and what they mean:
 | `status_reason_codes must be NA exactly when implemented` | `NA` for implemented rows, at least one reason code otherwise |
 | `implemented but recipes.csv has no recipe` / `is not an implemented dataset` | only implemented datasets have recipe rows, and every implemented one needs one |
 | `used_in_recipe is true but the dataset is not implemented` | use `NA` for datasets that are not implemented |
-| `path not found (relative to ...)` | `report_path` is resolved from the directory containing the repository: write `<repo name>/reports/...` |
 | `leading/trailing space or newline` | trim the cell (reglib trims evidence notes only) |
 | `labels: token_list is ...` (reglib) | spec keys must be the recipe's labels, not the corpus's spelling |
 | warning: `recipes on ... are not registered yet` | expected while recipes wait for review, and for recipes of non-implemented datasets |

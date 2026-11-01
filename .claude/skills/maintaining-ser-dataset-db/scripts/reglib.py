@@ -38,19 +38,11 @@ import sync  # noqa: E402
 
 
 class Reg:
-    """Changes for one dataset_id. `report` is stored in evidence.via and datasets.report_path.
+    """Changes for one dataset_id."""
 
-    validate.py resolves report_path relative to the directory that contains the repository,
-    so a report saved inside the repository is written as "<repo dir name>/reports/<file>.md".
-    Pass report=None to keep report_path unchanged; `via` then names the checking session instead
-    (e.g. "2026-01-31 re-check of label provenance").
-    """
-
-    def __init__(self, dataset_id, today, report=None, via=None):
+    def __init__(self, dataset_id, today):
         self.D = dataset_id
         self.today = today
-        self.report = report
-        self.via = via or report or ""
         self.db = dbmod.load()
         self.evh, self.evr = self.db["evidence"]
         self.row = dbmod.find(self.db, "datasets", (dataset_id,))
@@ -70,7 +62,7 @@ class Reg:
     def _append(self, eid, field, value, stype, ref, loc, by, note, canonical, status):
         e = {c: "" for c in self.evh}
         e.update(evidence_id=eid, dataset_id=self.D, field=field, value=value, source_type=stype,
-                 source_ref=ref, locator=loc, via=self.via, checked_on=self.today,
+                 source_ref=ref, locator=loc, checked_on=self.today,
                  checked_by=by, is_canonical=canonical, status=status, note=note.strip())
         self.evr.append(e)
 
@@ -180,9 +172,6 @@ class Reg:
                    "other_dataset_id": other_dataset_id, "source_ref": source_ref, "note": note})
 
     def save(self):
-        updates = {"last_updated_on": self.today}
-        if self.report:
-            updates["report_path"] = self.report
-        self.row.update(updates)
+        self.row.update({"last_updated_on": self.today})
         dbmod.save(self.db)
         print(f"saved {self.D}; now run tools/views.py and tools/validate.py")
