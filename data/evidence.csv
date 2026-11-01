@@ -3616,7 +3616,7 @@ urdu/emotion_categories.label_basis/01,urdu,emotion_categories.label_basis,perce
 urdu/emotion_categories.label_verification/01,urdu,emotion_categories.label_verification,listener_validated,,,2026-10-28,claude,provisional,Provisional: taken from the project review report; the paper was not re-read in this update; individual ratings are not distributed
 urdu/hours_release/01,urdu,hours_release,0.28,urdu_readme,commit ed746ef93a58; Size of the release,2026-11-01,claude,current,
 urdu/languages/02,urdu,languages,urd,gh_siddiquelatif_urdu_dataset,emotional utterances of Urdu speech gathered from Urdu talk shows,2026-10-31,claude,current,
-urdu/license_spdx/02,urdu,license_spdx,LicenseRef-custom-research-only,gh_siddiquelatif_urdu_dataset,README: only for research purposes; no separate license file,2026-10-11,claude,current,
+urdu/license_spdx/02,urdu,license_spdx,LicenseRef-custom-research-only,gh_siddiquelatif_urdu_dataset,README: only for research purposes; no separate license file,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-05
 urdu/material_origin/01,urdu,material_origin,broadcast,gh_siddiquelatif_urdu_dataset,README: utterances cut from YouTube talk shows,2026-10-11,claude,current,The spreadsheet says tv_show. The README says YouTube talk shows
 urdu/n_files_release/01,urdu,n_files_release,400,,,2026-10-11,claude,superseded,Provisional:; superseded by urdu/n_files_release/02
 urdu/n_files_release/02,urdu,n_files_release,400,urdu_readme,commit ed746ef93a58; Size of the release,2026-11-01,claude,current,
@@ -3639,7 +3639,7 @@ urduser/full_title/01,urduser,full_title,UrduSER: A comprehensive dataset for sp
 urduser/full_title/02,urduser,full_title,UrduSER: A comprehensive dataset for speech emotion recognition in Urdu language,urduser_paper_2,title of the source contains the full title,2026-11-01,claude,current,
 urduser/hours_release/01,urduser,hours_release,3.04,urduser_readme,commit 5e48d52daadc; Size of the release,2026-11-01,claude,current,
 urduser/languages/01,urduser,languages,urd,urduser_page,dataset description names the language,2026-10-11,claude,current,
-urduser/license_spdx/01,urduser,license_spdx,CC-BY-4.0,urduser_page,license field of Mendeley,2026-10-11,claude,current,
+urduser/license_spdx/01,urduser,license_spdx,CC-BY-4.0,urduser_page,license field of Mendeley,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-05
 urduser/listening_test/01,urduser,listening_test,reported,urduser_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 urduser/material_origin/01,urduser,material_origin,film_tv,urduser_page,description: Pakistani Urdu dramas and TV films from YouTube,2026-10-11,claude,current,"The description says ""dramas and TV films (YouTube)""; approximated as tv_show"
 urduser/n_files_release/01,urduser,n_files_release,3500,,,2026-10-11,claude,superseded,Provisional:; superseded by urduser/n_files_release/02
@@ -3667,7 +3667,7 @@ usc_emo_mri/full_title/01,usc_emo_mri,full_title,USC-EMO-MRI: An emotional speec
 usc_emo_mri/full_title/02,usc_emo_mri,full_title,USC-EMO-MRI: An emotional speech production database,usc_emo_mri_page,title of the source contains the full title,2026-11-01,claude,current,
 usc_emo_mri/hours_release/01,usc_emo_mri,hours_release,2.42,usc_emo_mri_readme,commit 0dcb820c556a; Size of the release,2026-11-01,claude,current,
 usc_emo_mri/languages/01,usc_emo_mri,languages,eng,usc_emo_mri_paper,"Table 1: stimulus sentences such as ""John bought five black cats at the store."" (English)",2026-10-19,claude,current,"Paper PDF (PMC7286544, 2026-10-19). The sources do not state the recording language explicitly, but the stimulus sentences are English"
-usc_emo_mri/license_spdx/01,usc_emo_mri,license_spdx,CC-BY-4.0,usc_emo_mri_page,Zenodo record metadata: license cc-by-4.0,2026-10-14,claude,current,
+usc_emo_mri/license_spdx/01,usc_emo_mri,license_spdx,CC-BY-4.0,usc_emo_mri_page,Zenodo record metadata: license cc-by-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-05
 usc_emo_mri/n_files_release/01,usc_emo_mri,n_files_release,356,,,2026-10-19,claude,superseded,Provisional: Measured from the AVI files of the USC-EMO-MRI release (*/avi/**/*.avi); superseded by usc_emo_mri/n_files_release/02
 usc_emo_mri/n_files_release/02,usc_emo_mri,n_files_release,2363,usc_emo_mri_readme,commit 0dcb820c556a; Size of the release,2026-11-01,claude,current,
 usc_emo_mri/n_speakers_release/01,usc_emo_mri,n_speakers_release,10,,,2026-10-19,claude,superseded,Provisional: Measured from the USC-EMO-MRI release files; superseded by usc_emo_mri/n_speakers_release/02
@@ -3692,7 +3692,7 @@ utemo/full_title/02,utemo,full_title,UTeMo audiovisual dataset for emotion recog
 utemo/hours_release/01,utemo,hours_release,2.01,utemo_readme,commit 39841da5cf4e; Size of the release,2026-11-01,claude,current,
 utemo/hours_reported/01,utemo,hours_reported,1.75,utemo_page,a total of 105 minutes,2026-10-14,claude,current,105 minutes converted
 utemo/languages/01,utemo,languages,spa,utemo_page,statements vocalized in a Mexican variant of the Spanish language,2026-10-14,claude,current,
-utemo/license_spdx/01,utemo,license_spdx,CC-BY-NC-3.0,utemo_page,Mendeley Data licence: CC BY NC 3.0,2026-10-14,claude,current,
+utemo/license_spdx/01,utemo,license_spdx,CC-BY-NC-3.0,utemo_page,Mendeley Data licence: CC BY NC 3.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-05
 utemo/n_files_release/01,utemo,n_files_release,1801,,,2026-10-26,claude,superseded,Provisional:; superseded by utemo/n_files_release/02
 utemo/n_files_release/02,utemo,n_files_release,1801,utemo_readme,commit 39841da5cf4e; Size of the release,2026-11-01,claude,current,
 utemo/n_files_reported/01,utemo,n_files_reported,1801,utemo_page,1801 video samples with a total of 105 minutes,2026-10-14,claude,current,
@@ -3786,7 +3786,7 @@ vivae/full_title/01,vivae,full_title,The Variably Intense Vocalizations of Affec
 vivae/full_title/02,vivae,full_title,The Variably Intense Vocalizations of Affect and Emotion Corpus (VIVAE),vivae_page,title of the source contains the full title,2026-11-01,claude,current,
 vivae/hours_release/01,vivae,hours_release,0.27,vivae_readme,commit 6134b1534f2f; Size of the release,2026-11-01,claude,current,
 vivae/languages/02,vivae,languages,zxx,vivae_page,non-verbal vocalizations without linguistic content,2026-10-11,claude,current,
-vivae/license_spdx/02,vivae,license_spdx,CC-BY-NC-4.0,vivae_page,Zenodo metadata license field (report §2),2026-10-11,claude,current,
+vivae/license_spdx/02,vivae,license_spdx,CC-BY-NC-4.0,vivae_page,Zenodo metadata license field (report §2),2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-05
 vivae/listening_test/01,vivae,listening_test,reported,vivae_readme,commit 6134b1534f2f; Listening test ratings in the release,2026-11-01,claude,current,
 vivae/material_origin/01,vivae,material_origin,recorded_for_dataset,,,2026-10-28,claude,provisional,Provisional: carried over from source_rights
 vivae/n_files_release/01,vivae,n_files_release,1085,,,2026-10-11,claude,superseded,Provisional:; superseded by vivae/n_files_release/02
@@ -3825,7 +3825,7 @@ voicestats/emotion_categories.label_verification/01,voicestats,emotion_categorie
 voicestats/full_title/01,voicestats,full_title,Voice Actor Statistics Corpus (声優統計コーパス),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 voicestats/hours_release/01,voicestats,hours_release,2.28,voicestats_readme,commit f1fdb1988c54; Size of the release,2026-11-01,claude,current,
 voicestats/languages/02,voicestats,languages,jpn,voicestats_page,phoneme-balanced sentences built from the Japanese Wikipedia text; read aloud by voice actresses,2026-10-31,claude,current,The page is written in Japanese; the sentences come from the Japanese Wikipedia
-voicestats/license_spdx/01,voicestats,license_spdx,LicenseRef-custom-research-only,voicestats_page,site: free for personal research and analysis; redistribution prohibited,2026-10-11,claude,current,Only the text of the phoneme-balanced sentences is CC-BY-SA (report §2)
+voicestats/license_spdx/01,voicestats,license_spdx,LicenseRef-custom-research-only,voicestats_page,site: free for personal research and analysis; redistribution prohibited,2026-10-11,user,current,Only the text of the phoneme-balanced sentences is CC-BY-SA (report §2); Verified by the maintainer in the pull request of branch verify/2026-11-01-05
 voicestats/material_origin/01,voicestats,material_origin,recorded_for_dataset,,,2026-10-28,claude,provisional,Provisional: carried over from source_rights
 voicestats/n_files_release/01,voicestats,n_files_release,900,,,2026-10-11,claude,superseded,Provisional:; superseded by voicestats/n_files_release/02
 voicestats/n_files_release/02,voicestats,n_files_release,900,voicestats_readme,commit f1fdb1988c54; Size of the release,2026-11-01,claude,current,
@@ -3872,7 +3872,7 @@ whiser/full_title/02,whiser,full_title,WHiSER: White House Tapes Speech Emotion 
 whiser/hours_release/01,whiser,hours_release,6.35,whiser_readme,commit 2366a8d0b31e; Size of the release,2026-11-01,claude,current,
 whiser/hours_reported/01,whiser,hours_reported,6.35,whiser_paper,§3.2: total duration of 6 hours 21 minutes,2026-10-13,claude,current,
 whiser/languages/01,whiser,languages,eng,arxiv_s_2509_09791_secondary,Table I row WHiSER: Lang. English,2026-10-13,claude,current,The primary source does not state the language (Nixon tapes)
-whiser/license_spdx/01,whiser,license_spdx,none_stated,whiser_page,repository has no license file; README and paper state no terms,2026-10-13,claude,current,
+whiser/license_spdx/01,whiser,license_spdx,none_stated,whiser_page,repository has no license file; README and paper state no terms,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-05
 whiser/listening_test/01,whiser,listening_test,reported,whiser_readme,commit 2366a8d0b31e; Listening test ratings in the release,2026-11-01,claude,current,
 whiser/n_files_release/01,whiser,n_files_release,5427,,,2026-10-13,claude,superseded,Provisional:; superseded by whiser/n_files_release/02
 whiser/n_files_release/02,whiser,n_files_release,5427,whiser_readme,commit 2366a8d0b31e; Size of the release,2026-11-01,claude,current,
@@ -3909,7 +3909,7 @@ ysed/full_title/01,ysed,full_title,YSED: Yemeni speech emotion dataset,,,2026-11
 ysed/full_title/02,ysed,full_title,YSED: Yemeni speech emotion dataset,ysed_paper,title of the source contains the full title,2026-11-01,claude,current,
 ysed/hours_release/01,ysed,hours_release,1.01,ysed_readme,commit 1a5f8dd6a19e; Size of the release,2026-11-01,claude,current,
 ysed/languages/01,ysed,languages,ara,ysed_page,dataset description names the language,2026-10-11,claude,current,
-ysed/license_spdx/01,ysed,license_spdx,CC-BY-4.0,ysed_page,Zenodo record license,2026-10-11,claude,current,
+ysed/license_spdx/01,ysed,license_spdx,CC-BY-4.0,ysed_page,Zenodo record license,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-05
 ysed/listening_test/01,ysed,listening_test,reported,ysed_readme,commit 1a5f8dd6a19e; Listening test ratings in the release,2026-11-01,claude,current,
 ysed/material_origin/01,ysed,material_origin,recorded_for_dataset,,,2026-10-28,claude,provisional,Provisional: carried over from source_rights
 ysed/n_files_release/01,ysed,n_files_release,1432,,,2026-10-11,claude,superseded,Provisional:; superseded by ysed/n_files_release/02
