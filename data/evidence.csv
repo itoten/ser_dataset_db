@@ -2770,7 +2770,7 @@ pavoque/full_title/01,pavoque,full_title,PAVOQUE,,,2026-11-01,claude,superseded,
 pavoque/full_title/02,pavoque,full_title,PAVOQUE,pavoque_page,title of the source contains the full title,2026-11-01,claude,current,
 pavoque/hours_release/01,pavoque,hours_release,8.6,pavoque_readme,commit db86daa28eef; Size of the release,2026-11-01,claude,current,
 pavoque/languages/02,pavoque,languages,deu,pavoque_page,"A single speaker, multi-style corpus of German speech",2026-10-31,claude,current,
-pavoque/license_spdx/02,pavoque,license_spdx,CC-BY-NC-SA-4.0,pavoque_page,README states CC BY-NC-SA 4.0,2026-10-11,claude,current,
+pavoque/license_spdx/02,pavoque,license_spdx,CC-BY-NC-SA-4.0,pavoque_page,README states CC BY-NC-SA 4.0,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 pavoque/n_files_release/01,pavoque,n_files_release,5442,,,2026-10-11,claude,superseded,Provisional:; superseded by pavoque/n_files_release/02
 pavoque/n_files_release/02,pavoque,n_files_release,5442,pavoque_readme,commit db86daa28eef; Size of the release,2026-11-01,claude,current,
 pavoque/n_speakers_release/01,pavoque,n_speakers_release,1,pavoque_readme,commit db86daa28eef; Size of the release,2026-11-01,claude,current,
@@ -2817,7 +2817,7 @@ polishemo/full_title/01,polishemo,full_title,Emotions in polish speech recording
 polishemo/full_title/02,polishemo,full_title,Emotions in polish speech recordings,polishemo_paper,title of the source contains the full title,2026-11-01,claude,current,
 polishemo/hours_release/01,polishemo,hours_release,0.11,polishemo_readme,commit 74d0c70ba3f6; Size of the release,2026-11-01,claude,current,
 polishemo/languages/02,polishemo,languages,pol,polishemo_paper,emotions recorded in sound files that are expressions of Polish speech,2026-10-31,claude,current,
-polishemo/license_spdx/02,polishemo,license_spdx,CC-BY-4.0,polishemo_paper,dataset page JSON-LD license field (report §2),2026-10-11,claude,current,
+polishemo/license_spdx/02,polishemo,license_spdx,CC-BY-4.0,polishemo_paper,dataset page JSON-LD license field (report §2),2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 polishemo/n_files_release/01,polishemo,n_files_release,450,,,2026-10-11,claude,superseded,Provisional:; superseded by polishemo/n_files_release/02
 polishemo/n_files_release/02,polishemo,n_files_release,450,polishemo_readme,commit 74d0c70ba3f6; Size of the release,2026-11-01,claude,current,
 polishemo/n_files_reported/02,polishemo,n_files_reported,450,polishemo_paper,"There were 5 speakers, so there are 450 files",2026-10-31,claude,current,
@@ -2854,7 +2854,7 @@ quechua/emotion_categories.label_verification/01,quechua,emotion_categories.labe
 quechua/hours_release/01,quechua,hours_release,15.24,quechua_readme,commit b442deb5d15b; Size of the release,2026-11-01,claude,current,
 quechua/hours_reported/02,quechua,hours_reported,15.25,quechua_paper,It contains 15 h 15 min of audio divided into 12420 segments of audio,2026-10-31,claude,current,
 quechua/languages/02,quechua,languages,que,quechua_paper,a 15 hours speech corpus in Quechua Collao,2026-10-31,claude,current,Quechua Collao variant
-quechua/license_spdx/02,quechua,license_spdx,CC-BY-4.0,quechua_page,figshare API article 20292516 license: CC BY 4.0,2026-10-14,claude,current,
+quechua/license_spdx/02,quechua,license_spdx,CC-BY-4.0,quechua_page,figshare API article 20292516 license: CC BY 4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 quechua/listening_test/01,quechua,listening_test,reported,quechua_readme,commit b442deb5d15b; Listening test ratings in the release,2026-11-01,claude,current,
 quechua/n_files_release/01,quechua,n_files_release,12420,quechua_readme,commit b442deb5d15b; Size of the release,2026-11-01,claude,current,
 quechua/n_files_reported/02,quechua,n_files_reported,12420,quechua_paper,It contains 15 h 15 min of audio divided into 12420 segments of audio,2026-10-31,claude,current,
@@ -2912,7 +2912,7 @@ ravdess/emotion_categories.label_verification/01,ravdess,emotion_categories.labe
 ravdess/emotion_categories.label_verification/02,ravdess,emotion_categories.label_verification,listener_validated,ravdess_paper,"7356 recordings each rated 10 times on emotional validity, intensity and genuineness by 247 untrained raters from North America; 72 further raters gave test-retest data",2026-10-28,claude,current,Re-read 2026-10-28. Neutral and calm answers were accepted as correct for each other; per-recording values are in the supplementary material
 ravdess/hours_release/01,ravdess,hours_release,1.48,ravdess_readme,commit 23a0c910e1b3; Size of the release,2026-11-01,claude,current,
 ravdess/languages/02,ravdess,languages,eng,ravdess_paper,facial and vocal expressions in North American English (paper title),2026-10-31,claude,current,
-ravdess/license_spdx/02,ravdess,license_spdx,CC-BY-NC-SA-4.0,ravdess_page,Zenodo record metadata: license cc-by-nc-sa-4.0,2026-10-14,claude,current,
+ravdess/license_spdx/02,ravdess,license_spdx,CC-BY-NC-SA-4.0,ravdess_page,Zenodo record metadata: license cc-by-nc-sa-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 ravdess/listening_test/01,ravdess,listening_test,reported,ravdess_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 ravdess/n_files_release/01,ravdess,n_files_release,1440,,,2026-10-12,claude,superseded,Provisional:; superseded by ravdess/n_files_release/02
 ravdess/n_files_release/02,ravdess,n_files_release,1440,ravdess_readme,commit 23a0c910e1b3; Size of the release,2026-11-01,claude,current,
@@ -2963,7 +2963,7 @@ resd/full_title/01,resd,full_title,Russian Emotional Speech Dialogs (RESD),,,202
 resd/hours_release/01,resd,hours_release,2.3,resd_readme,commit 5021ed9da062; Size of the release,2026-11-01,claude,current,Readme cell: 2.3 (approx.)
 resd/hours_reported/02,resd,hours_reported,2.34,resd_card,"Splits table: train 1.88 hours, test 0.46 hours",2026-10-31,claude,current,Sum of the two splits
 resd/languages/02,resd,languages,rus,resd_card,card metadata: language ru; Russian Emotional Speech Dialogs,2026-10-31,claude,current,
-resd/license_spdx/02,resd,license_spdx,MIT,resd_card,license field of the dataset card,2026-10-11,claude,current,
+resd/license_spdx/02,resd,license_spdx,MIT,resd_card,license field of the dataset card,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 resd/n_files_release/01,resd,n_files_release,1396,,,2026-10-11,claude,superseded,Provisional:; superseded by resd/n_files_release/02
 resd/n_files_release/02,resd,n_files_release,1396,resd_readme,commit 5021ed9da062; Size of the release,2026-11-01,claude,current,
 resd/n_files_reported/02,resd,n_files_reported,1396,resd_card,"Splits table: train 1116 rows, test 280 rows",2026-10-31,claude,current,Sum of the two splits
@@ -2983,7 +2983,7 @@ rml_emotion/emotion_categories.label_verification/01,rml_emotion,emotion_categor
 rml_emotion/emotion_categories.label_verification/02,rml_emotion,emotion_categories.label_verification,listener_validated,rml_emotion_page_2,listening test by at least two participating human subjects,2026-10-24,claude,current,A selection keeping only unanimous clips. The label stays the intended emotion
 rml_emotion/hours_release/01,rml_emotion,hours_release,0.99,rml_emotion_readme,commit 79a71f9c2bf1; Size of the release,2026-11-01,claude,current,
 rml_emotion/languages/01,rml_emotion,languages,mul,rml_emotion_page_2,description: eight subjects speaking six languages,2026-10-14,claude,current,
-rml_emotion/license_spdx/01,rml_emotion,license_spdx,unknown,rml_emotion_page_2,Kaggle dataset license field: Unknown,2026-10-14,claude,current,
+rml_emotion/license_spdx/01,rml_emotion,license_spdx,unknown,rml_emotion_page_2,Kaggle dataset license field: Unknown,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 rml_emotion/listening_test/01,rml_emotion,listening_test,reported,rml_emotion_page_2,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 rml_emotion/n_files_release/01,rml_emotion,n_files_release,720,,,2026-10-14,claude,superseded,Provisional:; superseded by rml_emotion/n_files_release/02
 rml_emotion/n_files_release/02,rml_emotion,n_files_release,720,rml_emotion_readme,commit 79a71f9c2bf1; Size of the release,2026-11-01,claude,current,
@@ -3013,7 +3013,7 @@ saraiki_ser/emotion_categories.label_basis/01,saraiki_ser,emotion_categories.lab
 saraiki_ser/emotion_categories.label_verification/01,saraiki_ser,emotion_categories.label_verification,NA,saraiki_ser_page,the description mentions no listening test or second rater,2026-10-26,claude,current,Labels are the folder names (the emotion recorded)
 saraiki_ser/hours_release/01,saraiki_ser,hours_release,1.08,saraiki_ser_readme,commit 227edd522040; Size of the release,2026-11-01,claude,current,
 saraiki_ser/languages/01,saraiki_ser,languages,skr,saraiki_ser_page,description: an original SER dataset in the Seraiki language,2026-10-14,claude,current,
-saraiki_ser/license_spdx/01,saraiki_ser,license_spdx,CC-BY-4.0,saraiki_ser_page,Kaggle dataset license field: Attribution 4.0 International (CC BY 4.0),2026-10-14,claude,current,
+saraiki_ser/license_spdx/01,saraiki_ser,license_spdx,CC-BY-4.0,saraiki_ser_page,Kaggle dataset license field: Attribution 4.0 International (CC BY 4.0),2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 saraiki_ser/n_files_release/01,saraiki_ser,n_files_release,1200,,,2026-10-14,claude,superseded,Provisional:; superseded by saraiki_ser/n_files_release/02
 saraiki_ser/n_files_release/02,saraiki_ser,n_files_release,1200,saraiki_ser_readme,commit 227edd522040; Size of the release,2026-11-01,claude,current,
 saraiki_ser/n_files_reported/01,saraiki_ser,n_files_reported,1200,saraiki_ser_page,Total Audio Files: 1200; 200 per emotion,2026-10-14,claude,current,
@@ -3036,7 +3036,7 @@ savee/emotion_categories.label_verification/01,savee,emotion_categories.label_ve
 savee/emotion_categories.label_verification/02,savee,emotion_categories.label_verification,listener_validated,savee_page_3,"each actor's data were evaluated by 10 subjects (University of Surrey students, half female, 5 native English speakers) in audio, visual and audio-visual conditions",2026-10-28,claude,current,Re-read 2026-10-28; individual answers are not distributed
 savee/hours_release/01,savee,hours_release,0.51,savee_readme,commit e12537897bd1; Size of the release,2026-11-01,claude,current,
 savee/languages/02,savee,languages,eng,savee_page_2,recorded from four native English male speakers,2026-10-31,claude,current,
-savee/license_spdx/02,savee,license_spdx,LicenseRef-custom-research-only,savee_page,available free of charge for research purposes,2026-10-14,claude,current,
+savee/license_spdx/02,savee,license_spdx,LicenseRef-custom-research-only,savee_page,available free of charge for research purposes,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 savee/listening_test/01,savee,listening_test,reported,savee_page_3,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 savee/n_files_release/01,savee,n_files_release,480,,,2026-10-12,claude,superseded,Provisional:; superseded by savee/n_files_release/02
 savee/n_files_release/02,savee,n_files_release,480,savee_readme,commit e12537897bd1; Size of the release,2026-11-01,claude,current,
@@ -3083,7 +3083,7 @@ ses_ed/emotion_categories.label_verification/01,ses_ed,emotion_categories.label_
 ses_ed/full_title/01,ses_ed,full_title,Student Emotion Sentences in English Dataset,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 ses_ed/hours_release/01,ses_ed,hours_release,2.13,ses_ed_readme,commit 8419943f91a5; Size of the release,2026-11-01,claude,current,
 ses_ed/languages/01,ses_ed,languages,eng,ses_ed_page,description: sentences in English,2026-10-14,claude,current,
-ses_ed/license_spdx/01,ses_ed,license_spdx,ODC-By-1.0,ses_ed_page,Kaggle dataset license field: ODC Attribution License (ODC-By),2026-10-14,claude,current,
+ses_ed/license_spdx/01,ses_ed,license_spdx,ODC-By-1.0,ses_ed_page,Kaggle dataset license field: ODC Attribution License (ODC-By),2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 ses_ed/n_files_release/01,ses_ed,n_files_release,1586,,"Kaggle file listing API: 1586 .wav files, 2026-10-14",2026-10-14,claude,superseded,superseded by ses_ed/n_files_release_measured/02; Former source type: measured
 ses_ed/n_files_release/02,ses_ed,n_files_release,1586,,,2026-10-26,claude,superseded,Provisional:; superseded by ses_ed/n_files_release/03
 ses_ed/n_files_release/03,ses_ed,n_files_release,1586,ses_ed_readme,commit 8419943f91a5; Size of the release,2026-11-01,claude,current,
@@ -3105,7 +3105,7 @@ ses_sd/emotion_categories.label_verification/01,ses_sd,emotion_categories.label_
 ses_sd/full_title/01,ses_sd,full_title,Student Emotion Sentences in Spanish Dataset,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 ses_sd/hours_release/01,ses_sd,hours_release,2.14,ses_sd_readme,commit f683a5e1cce8; Size of the release,2026-11-01,claude,current,
 ses_sd/languages/01,ses_sd,languages,spa,ses_sd_page,description: sentences in Spanish,2026-10-14,claude,current,
-ses_sd/license_spdx/01,ses_sd,license_spdx,ODC-By-1.0,ses_sd_page,Kaggle dataset license field: ODC Attribution License (ODC-By),2026-10-14,claude,current,
+ses_sd/license_spdx/01,ses_sd,license_spdx,ODC-By-1.0,ses_sd_page,Kaggle dataset license field: ODC Attribution License (ODC-By),2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 ses_sd/n_files_release/01,ses_sd,n_files_release,1588,,"Kaggle file listing API: 1588 .wav files, 2026-10-14",2026-10-14,claude,superseded,superseded by ses_sd/n_files_release_measured/02; Former source type: measured
 ses_sd/n_files_release/02,ses_sd,n_files_release,1588,,,2026-10-26,claude,superseded,Provisional:; superseded by ses_sd/n_files_release/03
 ses_sd/n_files_release/03,ses_sd,n_files_release,1588,ses_sd_readme,commit f683a5e1cce8; Size of the release,2026-11-01,claude,current,
@@ -3134,7 +3134,7 @@ shemo/full_title/01,shemo,full_title,Sharif Emotional Speech Database (ShEMO),,,
 shemo/hours_release/01,shemo,hours_release,3.43,shemo_readme,commit 134b9cb7a5bd; Size of the release,2026-11-01,claude,current,
 shemo/hours_reported/02,shemo,hours_reported,3.42,shemo_page,Overview table: Duration 3 hours and 25 minutes,2026-10-31,claude,current,3 h 25 min rounded to two decimals
 shemo/languages/02,shemo,languages,fas,shemo_page,Language: Persian,2026-10-31,claude,current,
-shemo/license_spdx/02,shemo,license_spdx,LicenseRef-custom-research-only,shemo_page,README: available for academic purposes free of charge; no license file,2026-10-11,claude,current,
+shemo/license_spdx/02,shemo,license_spdx,LicenseRef-custom-research-only,shemo_page,README: available for academic purposes free of charge; no license file,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 shemo/n_files_release/01,shemo,n_files_release,3000,,,2026-10-11,claude,superseded,Provisional:; superseded by shemo/n_files_release/02
 shemo/n_files_release/02,shemo,n_files_release,3000,shemo_readme,commit 134b9cb7a5bd; Size of the release,2026-11-01,claude,current,
 shemo/n_files_reported/02,shemo,n_files_reported,3000,shemo_page,Overview table: #Utterances 3000,2026-10-31,claude,current,
@@ -3154,7 +3154,7 @@ sitb_osed/emotion_categories.label_basis/01,sitb_osed,emotion_categories.label_b
 sitb_osed/emotion_categories.label_verification/01,sitb_osed,emotion_categories.label_verification,NA,sitb_osed_page,the record describes no listening test or rating,2026-10-26,claude,current,The maintainer listened to samples (see paralinguistic_signal)
 sitb_osed/hours_release/01,sitb_osed,hours_release,19.11,sitb_osed_readme,commit 21118666a46f; Size of the release,2026-11-01,claude,current,
 sitb_osed/languages/01,sitb_osed,languages,ory,sitb_osed_page,five major dialects spoken by 20 professional Odia native speakers,2026-10-14,claude,current,
-sitb_osed/license_spdx/01,sitb_osed,license_spdx,CC-BY-4.0,sitb_osed_page,Zenodo record metadata: license cc-by-4.0,2026-10-14,claude,current,
+sitb_osed/license_spdx/01,sitb_osed,license_spdx,CC-BY-4.0,sitb_osed_page,Zenodo record metadata: license cc-by-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 sitb_osed/n_files_release/01,sitb_osed,n_files_release,12110,,,2026-10-26,claude,superseded,Provisional:; superseded by sitb_osed/n_files_release/02
 sitb_osed/n_files_release/02,sitb_osed,n_files_release,12110,sitb_osed_readme,commit 21118666a46f; Size of the release,2026-11-01,claude,current,
 sitb_osed/n_files_reported/01,sitb_osed,n_files_reported,12110,sitb_osed_page,"the SITB-OSED database contains 12,110 utterances",2026-10-14,claude,current,
@@ -3288,7 +3288,7 @@ subesco/emotion_categories.label_verification/01,subesco,emotion_categories.labe
 subesco/hours_release/01,subesco,hours_release,7.83,subesco_readme,commit ba759cea1dda; Size of the release,2026-11-01,claude,current,
 subesco/hours_reported/02,subesco,hours_reported,7.68,subesco_page,Total duration of the corpus is 7 hours 40 min 40 sec,2026-10-31,claude,current,7 h 40 min 40 s rounded to two decimals; the spreadsheet value 7.8 differed
 subesco/languages/02,subesco,languages,ben,subesco_page,7000 sentence-level utterances of the Bangla language,2026-10-31,claude,current,The record's language metadata field says ekl; the description says Bangla
-subesco/license_spdx/02,subesco,license_spdx,CC-BY-4.0,subesco_page,Zenodo record metadata: license cc-by-4.0,2026-10-14,claude,current,
+subesco/license_spdx/02,subesco,license_spdx,CC-BY-4.0,subesco_page,Zenodo record metadata: license cc-by-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 subesco/listening_test/01,subesco,listening_test,reported,subesco_page,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 subesco/n_files_release/01,subesco,n_files_release,7000,subesco_readme,commit ba759cea1dda; Size of the release,2026-11-01,claude,current,
 subesco/n_files_reported/02,subesco,n_files_reported,7000,subesco_page,audio-only emotional speech corpus of 7000 sentence-level utterances,2026-10-31,claude,current,
@@ -3335,7 +3335,7 @@ syntact/hours_release/01,syntact,hours_release,11.14,syntact_readme,commit 6b469
 syntact/languages/01,syntact,languages,deu,syntact_paper,"§4.2: all six German voices (de1, de2, de3, de4, de6, de7)",2026-10-13,claude,current,
 syntact/license_spdx/01,syntact,license_spdx,CC-BY-SA-4.0,gh_superkogito_ser_datasets_secondary,README table row SyntAct: License CC BY-SA 4.0,2026-10-13,claude,superseded,superseded by syntact/license_spdx/02
 syntact/license_spdx/02,syntact,license_spdx,CC-BY-4.0,syntact_page_2,Zenodo record metadata: license cc-by-4.0,2026-10-13,claude,superseded,superseded by syntact/license_spdx/03
-syntact/license_spdx/03,syntact,license_spdx,CC-BY-4.0,syntact_page_2,License field of the Zenodo API and the web page (they agree),2026-10-20,claude,current,Re-confirmed on 2026-10-20 with the same value as the existing primary row
+syntact/license_spdx/03,syntact,license_spdx,CC-BY-4.0,syntact_page_2,License field of the Zenodo API and the web page (they agree),2026-10-20,user,current,Re-confirmed on 2026-10-20 with the same value as the existing primary row; Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 syntact/listening_test/01,syntact,listening_test,reported,syntact_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 syntact/material_origin/01,syntact,material_origin,synthetic,syntact_paper,abstract: synthesized database based on rule-based manipulation for a diphone synthesizer,2026-10-13,claude,current,
 syntact/n_files_release/01,syntact,n_files_release,6001,,,2026-10-20,claude,superseded,Provisional: Measured from the SynTact release files (measure.out); superseded by syntact/n_files_release/02
@@ -3359,7 +3359,7 @@ talromur3/hours_release/01,talromur3,hours_release,24.22,talromur3_readme,commit
 talromur3/hours_reported/01,talromur3,hours_reported,14,talromur3_page,v0.1 Size: 14 hours,2026-10-13,claude,superseded,superseded by talromur3/hours_reported/02
 talromur3/hours_reported/02,talromur3,hours_reported,24,talromur3_page_2,"v1.0 Size: 24 hours, 21518 utterances, 6.4 gb",2026-10-13,claude,current,
 talromur3/languages/01,talromur3,languages,isl,talromur3_page_2,Language(s): Icelandic,2026-10-13,claude,current,
-talromur3/license_spdx/01,talromur3,license_spdx,CC-BY-4.0,talromur3_page_2,This item is Publicly Available and licensed under CC BY 4.0,2026-10-13,claude,current,
+talromur3/license_spdx/01,talromur3,license_spdx,CC-BY-4.0,talromur3_page_2,This item is Publicly Available and licensed under CC BY 4.0,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 talromur3/n_files_release/01,talromur3,n_files_release,21516,,,2026-10-26,claude,superseded,"Provisional: The page description says 21,528, its Size field 21,518 and the README 21,526; the difference of 10 to the README figure may be the ten index.tsv files (not confirmed); superseded by talromur3/n_files_release/02"
 talromur3/n_files_release/02,talromur3,n_files_release,21516,talromur3_readme,commit 906c09addc96; Size of the release,2026-11-01,claude,current,
 talromur3/n_files_reported/01,talromur3,n_files_reported,15078,talromur3_page,"v0.1: 15,078 audio clips of ten different speakers",2026-10-13,claude,superseded,superseded by talromur3/n_utt_reported/02
@@ -3394,7 +3394,7 @@ telugu_emotion_kaggle/emotion_categories.label_basis/01,telugu_emotion_kaggle,em
 telugu_emotion_kaggle/emotion_categories.label_verification/01,telugu_emotion_kaggle,emotion_categories.label_verification,unknown,telugu_emotion_kaggle_page,The Kaggle page has no description,2026-10-20,claude,current,"The sources say nothing about a listening evaluation either (maintainer's decision, 2026-10-20)"
 telugu_emotion_kaggle/hours_release/01,telugu_emotion_kaggle,hours_release,0.53,telugu_emotion_kaggle_readme,commit 2d74cbae3a8e; Size of the release,2026-11-01,claude,current,
 telugu_emotion_kaggle/languages/01,telugu_emotion_kaggle,languages,tel,telugu_emotion_kaggle_page,dataset title: Telugu Emotion Speech,2026-10-20,claude,current,"KuralHub (secondary) also says Telugu. Whisper large-v3 language ID (all 456 clips, no human check): te 382, en 35, with English phrases mixed in. Adopts the report's proposal in §9-1"
-telugu_emotion_kaggle/license_spdx/01,telugu_emotion_kaggle,license_spdx,Apache-2.0,telugu_emotion_kaggle_page,Kaggle dataset license field: Apache 2.0,2026-10-14,claude,current,
+telugu_emotion_kaggle/license_spdx/01,telugu_emotion_kaggle,license_spdx,Apache-2.0,telugu_emotion_kaggle_page,Kaggle dataset license field: Apache 2.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 telugu_emotion_kaggle/n_files_release/01,telugu_emotion_kaggle,n_files_release,458,,,2026-10-14,claude,superseded,Provisional:; superseded by telugu_emotion_kaggle/n_files_release/02
 telugu_emotion_kaggle/n_files_release/02,telugu_emotion_kaggle,n_files_release,458,telugu_emotion_kaggle_readme,commit 2d74cbae3a8e; Size of the release,2026-11-01,claude,current,
 telugu_emotion_kaggle/n_speakers_release/01,telugu_emotion_kaggle,n_speakers_release,20,,,2026-10-20,claude,superseded,"Provisional: Counted from file names, since no source says this field is one person; superseded by telugu_emotion_kaggle/n_speakers_release/02"
@@ -3411,7 +3411,7 @@ tess/emotion_categories.label_verification/01,tess,emotion_categories.label_veri
 tess/emotion_categories.label_verification/02,tess,emotion_categories.label_verification,listener_validated,tess_page,56 younger listeners heard the stimuli over a loudspeaker at about 70 dBA and chose the portrayed emotion on a touch screen,2026-10-28,claude,current,Re-read 2026-10-28; individual answers are not in the release
 tess/hours_release/01,tess,hours_release,1.60,tess_readme,commit 6208bb547c48; Size of the release,2026-11-01,claude,current,
 tess/languages/02,tess,languages,eng,tess_paper,Both actresses speak English as their first language,2026-10-31,claude,current,Stimuli are English words in a carrier phrase
-tess/license_spdx/02,tess,license_spdx,CC-BY-NC-4.0,tess_paper,Borealis Dataverse API latestVersion license: CC BY-NC 4.0,2026-10-14,claude,current,
+tess/license_spdx/02,tess,license_spdx,CC-BY-NC-4.0,tess_paper,Borealis Dataverse API latestVersion license: CC BY-NC 4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 tess/listening_test/01,tess,listening_test,reported,tess_page,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 tess/material_origin/01,tess,material_origin,recorded_for_dataset,,,2026-10-28,claude,provisional,Provisional: carried over from source_rights
 tess/n_files_release/01,tess,n_files_release,2800,,,2026-10-12,claude,superseded,Provisional:; superseded by tess/n_files_release/02
@@ -3445,7 +3445,7 @@ thaiser/emotion_categories.label_verification/01,thaiser,emotion_categories.labe
 thaiser/full_title/01,thaiser,full_title,Thai SER (vistec-AI/dataset-releases v1),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 thaiser/hours_release/01,thaiser,hours_release,41.6,thaiser_readme,commit 906c09addc96; Size of the release,2026-11-01,claude,current,
 thaiser/languages/01,thaiser,languages,tha,thaiser_page,dataset description names the language,2026-10-11,claude,current,
-thaiser/license_spdx/01,thaiser,license_spdx,CC-BY-SA-4.0,thaiser_page,README states the license,2026-10-11,claude,current,
+thaiser/license_spdx/01,thaiser,license_spdx,CC-BY-SA-4.0,thaiser_page,README states the license,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 thaiser/listening_test/01,thaiser,listening_test,reported,thaiser_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 thaiser/material_origin/01,thaiser,material_origin,recorded_for_dataset,,,2026-10-28,claude,provisional,Provisional: carried over from source_rights
 thaiser/n_files_release/01,thaiser,n_files_release,27854,thaiser_readme,commit 906c09addc96; Size of the release,2026-11-01,claude,current,
@@ -3484,7 +3484,7 @@ thorsten/emotion_categories.label_verification/01,thorsten,emotion_categories.la
 thorsten/hours_release/01,thorsten,hours_release,2.93,thorsten_readme,commit a533352780e4; Size of the release,2026-11-01,claude,current,
 thorsten/hours_reported/02,thorsten,hours_reported,2.92,thorsten_page,2.400 recordings = 175 minutes audio material,2026-10-31,claude,current,175 min rounded to two decimals of an hour
 thorsten/languages/02,thorsten,languages,deu,thorsten_page_2,emotional dataset ... single german speaker; record language: German,2026-10-31,claude,current,
-thorsten/license_spdx/02,thorsten,license_spdx,CC0-1.0,thorsten_page,OpenSLR 110 page lists License: Creative Commons (CC0),2026-10-12,claude,current,
+thorsten/license_spdx/02,thorsten,license_spdx,CC0-1.0,thorsten_page,OpenSLR 110 page lists License: Creative Commons (CC0),2026-10-12,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 thorsten/n_files_release/01,thorsten,n_files_release,2399,,,2026-10-12,claude,superseded,Provisional:; superseded by thorsten/n_files_release/02
 thorsten/n_files_release/02,thorsten,n_files_release,2399,thorsten_readme,commit a533352780e4; Size of the release,2026-11-01,claude,current,
 thorsten/n_files_reported/02,thorsten,n_files_reported,2400,thorsten_page_2,300 sentences * 8 emotions = 2.400 recordings,2026-10-31,claude,current,
@@ -3560,7 +3560,7 @@ ua_ser/full_title/01,ua_ser,full_title,UA-SER: Ukrainian Speech Emotion Recognit
 ua_ser/hours_release/01,ua_ser,hours_release,0.55,ua_ser_readme,commit 1a0cbe9f86f0; Size of the release,2026-11-01,claude,current,
 ua_ser/hours_reported/01,ua_ser,hours_reported,0.55,ua_ser_card,card: Total duration ~33 min,2026-10-14,claude,current,33 minutes converted
 ua_ser/languages/01,ua_ser,languages,ukr,ua_ser_card,card: Language Ukrainian (uk),2026-10-14,claude,current,
-ua_ser/license_spdx/01,ua_ser,license_spdx,CC-BY-4.0,ua_ser_card,dataset card metadata: license cc-by-4.0,2026-10-14,claude,current,
+ua_ser/license_spdx/01,ua_ser,license_spdx,CC-BY-4.0,ua_ser_card,dataset card metadata: license cc-by-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-04
 ua_ser/n_files_release/01,ua_ser,n_files_release,952,,,2026-10-14,claude,superseded,Provisional:; superseded by ua_ser/n_files_release/02
 ua_ser/n_files_release/02,ua_ser,n_files_release,952,ua_ser_readme,commit 1a0cbe9f86f0; Size of the release,2026-11-01,claude,current,
 ua_ser/n_files_reported/01,ua_ser,n_files_reported,952,ua_ser_card,card: Clips 952,2026-10-14,claude,current,
