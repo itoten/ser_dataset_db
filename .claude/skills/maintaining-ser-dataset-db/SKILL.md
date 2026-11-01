@@ -6,8 +6,8 @@ description: Maintains the speech emotion recognition (SER) dataset database, a 
 # Maintaining the SER dataset DB
 
 The DB is a **tertiary source**: it does not offer the truth about a dataset, but the way to the
-primary sources (papers, distribution pages, license files, recipe readmes) where the truth can
-be checked. Each dataset is one row in `data/datasets.csv`; the main values have a row in
+primary sources (papers, distribution pages, license files) where the truth can be checked, and,
+for what only opening the release shows, to the recipe readme. Each dataset is one row in `data/datasets.csv`; the main values have a row in
 `data/evidence.csv` saying which source states them. `tools/validate.py` enforces the rules and
 runs as a pre-commit hook.
 
@@ -56,15 +56,20 @@ the others (the README explains them):
      duplicate searches, transcriptions or listening). Values that need counting (files and
      speakers in the release, sentence overlap, how well the voice carries the emotion, ...) stay
      empty (not checked) until the recipe's readme states them; then cite the readme.
-   - A **recipe readme** is a primary source only for what can be known solely by implementing
-     the recipe (counts in the release, duplicates, what the files contain). If a paper, page or
-     card states the same thing, cite that source, even when the readme repeats it: there the
-     readme is only restating it. Cite the readme at a commit on the public fork:
+   - A **recipe readme** (its `## The data` section) is the source only for what can be known
+     solely by obtaining and opening the release (counts in the release, duplicates, what the
+     files contain). Its evidence type is `implementation`, not `primary`: it is written by the
+     recipe author, not by the dataset's authors. If a paper, page or card states the same thing,
+     cite that source, even when the readme repeats it. Cite the readme at a commit on the public
+     fork:
      `https://github.com/itoten/espnet/blob/<commit>/egs3/<recipe>/cls/readme.md`. If the commit
      is not on the fork yet, leave the value empty and say so in the reply.
-2. **Evidence types for new rows: `primary`, and `secondary` only as an exception.**
-   - `primary`: the authors' or their organisation's paper, official page, LICENSE, official
-     release files, or the recipe readme.
+2. **Evidence types for new rows: `primary`, `implementation`, and `secondary` only as an
+   exception.**
+   - `primary`: the dataset authors' or their organisation's paper, official page, LICENSE,
+     official release files.
+   - `implementation`: the `## The data` section of a recipe readme, at a commit on the public
+     fork (rule 1).
    - `secondary`: only when the primary source cannot be accessed (paywall, page gone, no
      response); write why in `note`. Redistributions by others (mirrors, re-uploads) are
      `secondary`; when it is unclear whether one is official, say so in `note`.
@@ -116,7 +121,7 @@ not invent a new mechanism. The plan is tracked outside this repository by the m
 | `espnet_status=implemented` (a recipe exists) | derived from the branch on the public fork | `measured` row citing the recipe directory on the branch, as in the example |
 | Recipe tables (`recipes.csv`, `recipe_labels.csv`, `measurements/`) | numbers come from the recipe readme | keep running `tools/measure.py` and `tools/sync.py` (the validator requires them); write no dataset evidence from them |
 | The maintainer checked a source (human verification) | a record of DB work, kept apart from `source_type` | `primary` row citing the page, `checked_by=user`, the checked words in `locator`, the date (and an archive URL if one was made) in `note` |
-| A readme figure for a `*_measured` column (files, speakers in the release) | cited from the readme | those columns accept only `measured` rows: leave them empty and give the readme's figure, with its link, in `notes` |
+| A readme figure for a `*_measured` column (files, speakers in the release) | renamed to `*_release` and cited from the readme | cite the readme's `## The data` section with `source_type=implementation` (the validator accepts it for `*_measured`) |
 | The maintainer's listening findings (`paralinguistic_signal`) | from the recipe readme, as its author's view | leave empty unless a readme or a published listening test states it |
 | Existing `measured`, `project_doc`, `user`, `secondary` rows | replaced by primary sources or emptied | leave them as they are unless asked to migrate them |
 | A listening test (rule 6) | a column saying whether a test exists, plus the path to the source; no single accuracy number | add an `annotations` row, item `listening_test`, citing the source that describes it (`primary`, the describing words in `locator`); keep `label_verification` as before; add no new `human_accuracy` values (existing ones stay) |
@@ -271,7 +276,7 @@ Messages from `tools/validate.py` (and reglib) and what they mean:
 | Message contains | Fix |
 |---|---|
 | `field ... does not take evidence` | URL and text columns have no evidence rows; set the cell with `R.set` |
-| `*_reported fields cannot use measured` / `*_measured fields need source_type measured` | published values need `primary` (or `secondary`); leave `*_measured` columns empty (rule 1) |
+| `*_reported fields cannot use measured or implementation` / `*_measured fields need source_type measured or implementation` | published values need `primary` (or `secondary`); release counts come from the readme as `implementation` (rule 1) |
 | `canonical row uses a weaker source than another row; note is required` | add a `note` saying why the canonical row is the current one (e.g. it replaces an older source) |
 | `canonical value ... != datasets value` | the cell and the canonical row disagree; set both through `R.ev` |
 | `license_class ... != derived` | `license_class` follows `license_spdx`; when emptying `license_spdx`, empty `license_class` too |

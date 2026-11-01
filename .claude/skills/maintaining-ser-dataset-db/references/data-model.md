@@ -68,8 +68,9 @@ Rules checked by `tools/validate.py`:
 - Each (dataset, field) has exactly one row with `is_canonical=true`, and its value equals the cell.
 - When a value changes, the old canonical row stays and becomes `is_canonical=false`,
   `status=superseded`. History is never deleted.
-- `source_type` for new rows: `primary` (the authors' or their organisation's paper, official
-  page, LICENSE, official release files, or the recipe readme at a commit on the public fork), or
+- `source_type` for new rows: `primary` (the dataset authors' or their organisation's paper,
+  official page, LICENSE, official release files), `implementation` (the `## The data` section of
+  a recipe readme at a commit on the public fork: what only opening the release shows), or
   `secondary` (third parties: mirrors, surveys, re-uploads) only when the primary source cannot be
   accessed, with the reason in `note`. The other values still exist in old rows and are being
   phased out: `user` (a decision or check by the project maintainer; still used for the status
@@ -77,8 +78,9 @@ Rules checked by `tools/validate.py`:
   note), `sheet` (the original spreadsheet; no rows remain). The validator still ranks them
   `user` > `measured` > `primary` > `project_doc` > `secondary` > `sheet` (under review) and wants a
   `note` when a lower-ranked row is canonical.
-- `*_reported` columns never take `measured` evidence; `*_measured` columns take only `measured`.
-  The DB no longer counts by itself, so leave `*_measured` empty in new registrations.
+- `*_reported` columns never take `measured` or `implementation` evidence; `*_measured` columns
+  take `measured` (old rows) or `implementation` (the readme's `## The data`, for new rows). The
+  DB no longer counts by itself.
 - `locator` says where in the source the value is (a quote or section, 25 words at most).
   `via` says how we came to it (e.g. the report that pointed us there); internal notes may appear
   here, never in `source_ref`.

@@ -78,13 +78,14 @@ R.ev("label_verification", "none", "primary", PAPER,
      "listening test measured recognition only; no clips were removed or relabelled")
 
 # Findings only the implementation can show: cite the readme at its fork commit.
-R.ev("text_emotion_link", "parallel", "primary", README, "the same 25 sentences are spoken in every emotion")
-R.ev("lexical_confound", "none", "primary", README, "the same 25 sentences are spoken in every emotion")
+R.ev("text_emotion_link", "parallel", "implementation", README, "the same 25 sentences are spoken in every emotion")
+R.ev("lexical_confound", "none", "implementation", README, "the same 25 sentences are spoken in every emotion")
 R.set(lexical_confound_note="The same 25 sentences in every emotion (recipe readme, from the distributed transcripts).")
-# n_files_release_measured accepts only `measured` rows, so it stays empty; the readme's figure goes in notes.
+R.ev("n_files_release_measured", "1200", "implementation", README, "1,200 WAV files over the whole release")
+R.ev("n_speakers_measured", "8", "implementation", README, "8 speakers")
 R.set(release_version="version 2, 2025-11-02 (Kaggle page)",
       notes="Acted speech by 8 actors, 6 emotions, 25 sentences (Kaggle page). The recipe readme (commit def5678) "
-            "reports 1,200 WAV files with 12 byte-identical pairs.")
+            "reports 12 pairs of byte-identical files.")
 
 # Recipe tables (interim rule: needs measurements/toyemo.json from tools/measure.py).
 R.recipe(official_split_exists="false",

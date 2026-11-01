@@ -19,7 +19,7 @@ import views
 SLUG = re.compile(r"^[a-z][a-z0-9]*(_[a-z0-9]+)*$")
 TOKENS = {"unknown", "NA", "none"}
 # Lower number = stronger evidence.
-RANK = {"user": 0, "measured": 1, "primary": 2, "project_doc": 3, "secondary": 4, "sheet": 5}
+RANK = {"user": 0, "measured": 1, "primary": 2, "implementation": 2, "project_doc": 3, "secondary": 4, "sheet": 5}
 
 errors = []
 warnings = []
@@ -207,10 +207,10 @@ def check_evidence(cols, db):
         ev.setdefault((r["dataset_id"], r["field"]), []).append(r)
         if r["field"] not in ev_cols:
             err(f"evidence {r['evidence_id']}: field {r['field']} does not take evidence")
-        if r["field"].endswith("_measured") and r["source_type"] != "measured":
-            err(f"evidence {r['evidence_id']}: *_measured fields need source_type measured")
-        if r["field"].endswith("_reported") and r["source_type"] == "measured":
-            err(f"evidence {r['evidence_id']}: *_reported fields cannot use measured")
+        if r["field"].endswith("_measured") and r["source_type"] not in ("measured", "implementation"):
+            err(f"evidence {r['evidence_id']}: *_measured fields need source_type measured or implementation")
+        if r["field"].endswith("_reported") and r["source_type"] in ("measured", "implementation"):
+            err(f"evidence {r['evidence_id']}: *_reported fields cannot use measured or implementation")
         canon = r["is_canonical"] == "true"
         if canon and r["status"] == "superseded":
             err(f"evidence {r['evidence_id']}: canonical row cannot be superseded")
