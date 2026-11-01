@@ -83,13 +83,12 @@ the others (the README explains them):
    `unknown` = a source was read and does not say (cite the source you read, with "not stated" in
    `locator`); `none` = checked, there is none; `NA` = does not apply. A failed attempt at one
    moment (timeout, 404) is `unknown` with the date in the note.
-6. **Whether a listening test exists is always recorded.** Search carefully for a human
-   perception or listening test in the paper, the page, the card and (through the readme) the
-   release files, even if the recipe does not use it. Record that it exists and where it is
-   described; do not put its result in a column as a single number. Accuracy depends on the
-   number of classes, audio only or with video, how answers were combined and which clips were
-   rated, so numbers from different tests mislead when set side by side: readers are pointed to
-   the source for results and details. How to record it until the columns are rebuilt: see
+6. **Listening tests: record that one exists and where, not its result.** If a source (or,
+   through the readme, the release files) describes a human perception or listening test,
+   record its existence and where it is described. Do not put its result in a column as a single
+   number: accuracy depends on the number of classes, audio only or with video, how answers were
+   combined and which clips were rated, so numbers from different tests mislead when set side by
+   side. Readers are pointed to the source. How to record it until the columns are rebuilt: see
    "Interim".
 7. **Every value has a source**, including names, versions, URLs and free text. Where a column
    takes no evidence rows yet, name the source in the text itself (see "Interim").

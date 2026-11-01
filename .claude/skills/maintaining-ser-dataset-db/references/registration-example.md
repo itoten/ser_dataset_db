@@ -72,7 +72,7 @@ R.ev("speech_production", "acted", "primary", PAPER, "actors portrayed six targe
 R.ev("label_basis", "intended", "primary", PAPER, "label = the emotion the actor was asked to portray")
 R.set(label_basis_note="Labels are the instructed emotion (paper, section 2).")
 
-# Whether a listening test exists is always recorded (rule 6): that it exists and where, not its result.
+# A listening test (rule 6): record that it exists and where, not its result.
 R.ev("label_verification", "none", "primary", PAPER,
      "listening test measured recognition only; no clips were removed or relabelled")
 
