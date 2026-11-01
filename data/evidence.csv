@@ -1862,7 +1862,8 @@ indowavesentiment/n_speakers_release/02,indowavesentiment,n_speakers_release,10,
 indowavesentiment/n_speakers_reported/01,indowavesentiment,n_speakers_reported,10,indowavesentiment_page,"file-naming PDF: 10 speakers, odd numbers male, even female",2026-10-11,claude,current,
 indowavesentiment/name/01,indowavesentiment,name,IndoWaveSentiment,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by indowavesentiment/name/02
 indowavesentiment/name/02,indowavesentiment,name,IndoWaveSentiment,indowavesentiment_page,title of the source contains the name,2026-11-01,claude,current,
-indowavesentiment/speech_production/01,indowavesentiment,speech_production,acted,,,2026-10-26,claude,provisional,Provisional:
+indowavesentiment/speech_production/01,indowavesentiment,speech_production,acted,,,2026-10-26,claude,superseded,Provisional:; superseded by indowavesentiment/speech_production/02
+indowavesentiment/speech_production/02,indowavesentiment,speech_production,acted,indowavesentiment_page,"The dataset was created using recordings from 10 actors, equally split between men and women.",2026-11-01,claude,current,
 indowavesentiment/spoken_text_design/01,indowavesentiment,spoken_text_design,parallel,,,2026-10-26,claude,provisional,"Provisional: Automatic transcripts, not checked by a person; the whole set was not transcribed"
 indowavesentiment/vocal_content/01,indowavesentiment,vocal_content,speech,indowavesentiment_page,dataset described as speech recordings,2026-10-11,claude,current,
 inesco/access_method/01,inesco,access_method,direct_download,,,2026-10-12,claude,superseded,Provisional:; superseded by inesco/access_method/02
@@ -2515,7 +2516,8 @@ mesd/n_speakers_release/01,mesd,n_speakers_release,unknown,mesd_readme,commit 33
 mesd/n_speakers_reported/02,mesd,n_speakers_reported,11,mesd_page,"3 female, 2 male, and 6 child voices are available",2026-10-31,claude,current,11 is the sum of the three groups
 mesd/name/01,mesd,name,MESD,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mesd/name/02
 mesd/name/02,mesd,name,MESD,mesd_page,title of the source contains the name,2026-11-01,claude,current,
-mesd/speech_production/01,mesd,speech_production,acted,,,2026-10-27,claude,provisional,Provisional: taken from the project review report; the paper was not re-read in this update
+mesd/speech_production/01,mesd,speech_production,acted,,,2026-10-27,claude,superseded,Provisional: taken from the project review report; the paper was not re-read in this update; superseded by mesd/speech_production/02
+mesd/speech_production/02,mesd,speech_production,acted,mesd_page,"The MESD has been uttered by both adult and child non-professional actors: 3 female, 2 male, and 6 child voices are available (female mean age ...",2026-11-01,claude,current,
 mesd/spoken_text_design/01,mesd,spoken_text_design,parallel;emotion_specific_text,,,2026-10-27,claude,provisional,Provisional:
 mesd/vocal_content/01,mesd,vocal_content,speech,mesd_page,single words recorded in a studio,2026-10-11,claude,current,
 mesp/access_method/01,mesp,access_method,unknown,mesp_paper,no statement on release or download in the paper,2026-10-14,claude,current,
@@ -2716,7 +2718,8 @@ nemo/n_speakers_release/02,nemo,n_speakers_release,9,nemo_readme,commit 103f4a22
 nemo/n_speakers_reported/02,nemo,n_speakers_reported,9,,,2026-10-27,claude,provisional,Provisional: The recipe readme said 9 actors; corrected to match the paper
 nemo/name/01,nemo,name,nEMO,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by nemo/name/02
 nemo/name/02,nemo,name,nEMO,nemo_card,title of the source contains the name,2026-11-01,claude,current,
-nemo/speech_production/01,nemo,speech_production,acted,,,2026-10-27,claude,provisional,Provisional: taken from the project review report; the paper was not re-read in this update
+nemo/speech_production/01,nemo,speech_production,acted,,,2026-10-27,claude,superseded,Provisional: taken from the project review report; the paper was not re-read in this update; superseded by nemo/speech_production/02
+nemo/speech_production/02,nemo,speech_production,acted,nemo_card,"The corpus contains over 3 hours of samples recorded with the participation of nine actors portraying six emotional states: anger, fear, happiness, sadness, surprise, and ...",2026-11-01,claude,current,
 nemo/spoken_text_design/01,nemo,spoken_text_design,parallel,,,2026-10-27,claude,provisional,Provisional:
 nemo/vocal_content/01,nemo,vocal_content,speech,nemo_card,dataset described as speech recordings,2026-10-11,claude,current,
 nexdata_en_emotional_20p/access_method/01,nexdata_en_emotional_20p,access_method,paid_or_membership,nexdata_en_emotional_20p_page,README: refers to the vendor page for the dataset,2026-10-14,claude,current,
@@ -2989,7 +2992,8 @@ ravdess/n_speakers_release/02,ravdess,n_speakers_release,24,ravdess_readme,commi
 ravdess/n_speakers_reported/02,ravdess,n_speakers_reported,24,ravdess_page,"The dataset contains 24 professional actors (12 female, 12 male)",2026-10-31,claude,current,
 ravdess/name/01,ravdess,name,RAVDESS,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by ravdess/name/02
 ravdess/name/02,ravdess,name,RAVDESS,ravdess_paper,title of the source contains the name,2026-11-01,claude,current,
-ravdess/speech_production/01,ravdess,speech_production,acted,,,2026-10-27,claude,provisional,Provisional: taken from the project review report; the paper was not re-read in this update
+ravdess/speech_production/01,ravdess,speech_production,acted,,,2026-10-27,claude,superseded,Provisional: taken from the project review report; the paper was not re-read in this update; superseded by ravdess/speech_production/02
+ravdess/speech_production/02,ravdess,speech_production,acted,ravdess_paper,"The database is gender balanced consisting of 24 professional actors, vocalizing lexically-matched statements in a neutral North American accent.",2026-11-01,claude,current,
 ravdess/spoken_text_design/01,ravdess,spoken_text_design,neutral_text,,,2026-10-27,claude,provisional,Provisional:
 recanvo/access_method/01,recanvo,access_method,direct_download,recanvo_page,"Zenodo open record with ReCANVo.zip (1,055,113,321 bytes)",2026-10-13,claude,current,
 recanvo/access_observed/01,recanvo,access_observed,obtained,recanvo_page,file ReCANVo.zip with dataset_file_directory.csv,2026-10-13,claude,current,
@@ -3497,7 +3501,8 @@ tess/n_speakers_release/02,tess,n_speakers_release,2,tess_readme,commit 6208bb54
 tess/n_speakers_reported/02,tess,n_speakers_reported,2,tess_paper,two actresses (aged 26 and 64 years),2026-10-31,claude,current,
 tess/name/01,tess,name,TESS,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by tess/name/02
 tess/name/02,tess,name,TESS,tess_paper,title of the source contains the name,2026-11-01,claude,current,
-tess/speech_production/01,tess,speech_production,acted,,,2026-10-28,claude,provisional,Provisional: taken from the project review report; the paper was not re-read in this update
+tess/speech_production/01,tess,speech_production,acted,,,2026-10-28,claude,superseded,Provisional: taken from the project review report; the paper was not re-read in this update; superseded by tess/speech_production/02
+tess/speech_production/02,tess,speech_production,acted,tess_paper,"A set of 200 target words were spoken in the carrier phrase ""Say the word _____' by two actresses (aged 26 and 64 years) and ...",2026-11-01,claude,current,
 tess/spoken_text_design/01,tess,spoken_text_design,parallel,,,2026-10-28,claude,provisional,Provisional:
 textrolspeech/access_method/01,textrolspeech,access_method,direct_download,textrolspeech_page,"README: open-source download links on Google Drive, OpenSLR 60 and DataShare",2026-10-13,claude,current,
 textrolspeech/access_observed/01,textrolspeech,access_observed,obtained,textrolspeech_page,README: Speech download links,2026-10-13,claude,current,
@@ -3728,7 +3733,8 @@ urduser/n_speakers_release/02,urduser,n_speakers_release,10,urduser_readme,commi
 urduser/n_speakers_reported/01,urduser,n_speakers_reported,10,urduser_page,"description: 10 actors, 50 clips per emotion each",2026-10-11,claude,current,
 urduser/name/01,urduser,name,UrduSER,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by urduser/name/02
 urduser/name/02,urduser,name,UrduSER,urduser_page,title of the source contains the name,2026-11-01,claude,current,
-urduser/speech_production/01,urduser,speech_production,acted,,,2026-10-28,claude,provisional,Provisional: taken from the project review report; the paper was not re-read in this update
+urduser/speech_production/01,urduser,speech_production,acted,,,2026-10-28,claude,superseded,Provisional: taken from the project review report; the paper was not re-read in this update; superseded by urduser/speech_production/02
+urduser/speech_production/02,urduser,speech_production,acted,urduser_page,"This comprehensive dataset includes 3500 Urdu speech signals sourced from 10 professional actors, with an equal representation of male and female speakers from diverse age ...",2026-11-01,claude,current,
 urduser/spoken_text_design/01,urduser,spoken_text_design,dialogue_script,,,2026-10-28,claude,provisional,Provisional:
 urduser/vocal_content/01,urduser,vocal_content,speech,urduser_page,dataset described as speech recordings,2026-10-11,claude,current,
 urdusindhi_zenodo3685274/access_observed/01,urdusindhi_zenodo3685274,access_observed,unavailable,urdusindhi_zenodo3685274_page,due to ethical restrictions we cannot release audio recordings,2026-10-14,claude,current,
