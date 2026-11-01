@@ -1,6 +1,6 @@
 ---
 name: maintaining-ser-dataset-db
-description: Maintains the speech emotion recognition (SER) dataset database, a public git repository of CSV tables in which every value carries an evidence row pointing to a primary source. Checks incoming DB update reports and recipe readmes against primary sources, then registers recipes and datasets, records evidence, keeps the README and manual counts in sync, validates, and commits. Use when someone hands over a *_db_update.md report or its path, asks to add or reclassify a dataset, asks to reconcile another team's research notes with the DB, or asks about a dataset's license, access, size, labels or status.
+description: Maintains the speech emotion recognition (SER) dataset database, a public git repository of CSV tables in which every value carries an evidence row pointing to a primary source. Reads new or rebuilt ESPnet recipes and their readmes, checks dataset facts against primary sources, then registers recipes and datasets, records evidence, keeps the README and manual counts in sync, validates, and commits. Use when told that a recipe was made or rebuilt, asks to add or reclassify a dataset, asks to reconcile another team's research notes with the DB, or asks about a dataset's license, access, size, labels or status.
 ---
 
 # Maintaining the SER dataset DB
@@ -125,69 +125,70 @@ not invent a new mechanism. The plan is tracked outside this repository by the m
 
 ## Choose the workflow
 
-- A DB update report (`*_db_update.md`) or its path → **Register a report** below.
+- "A new recipe was made" / "this recipe was rebuilt" (a recipe name, maybe a commit) →
+  **Register a recipe** below.
 - "Add this dataset" / a survey of new datasets → **Add a dataset**.
 - Another team's research notes that touch the DB → **Reconcile external notes**.
 - A question about a dataset → **Answer a question**.
 - "Bring the counts up to date" → only **Finish**.
 
-## Register a report
+## Register a recipe
 
-A DB update report is a Markdown handoff, usually named `<date>_<dataset_id>_db_update.md`,
-written by whoever implemented or reviewed a recipe. It proposes DB values, lists what the
-maintainer decided, and may ask questions. Treat its proposals as leads to check.
+Recipe sessions build recipes on their own and do not hand over a report. When you are told
+that a recipe was made or rebuilt, go and read the recipe and its readme yourself. Older
+`*_db_update.md` reports may still exist; they are leads at most, never sources.
 
 Copy this checklist and tick it off:
 
 ```
-- [ ] 1. Read the report, the current DB row, the recipe and its readme
-- [ ] 2. Sort claims: maintainer decisions / facts about the dataset / findings of the recipe
-- [ ] 3. Check the facts in primary sources; check that findings are stated in the readme
-- [ ] 4. Measure the recipe tables (tools/measure.py)
-- [ ] 5. Status from the maintainer's decision (interim rule)
+- [ ] 1. Read the recipe, its readme and the current DB row
+- [ ] 2. Check that the readme commit is on the public fork
+- [ ] 3. Check the dataset facts in primary sources
+- [ ] 4. Take the findings of the implementation from the readme's "## The data" section only
+- [ ] 5. Recipe tables (tools/measure.py) and status (interim rules)
 - [ ] 6. Write and run the registration script (reglib)
 - [ ] 7. Finish: views, counts, validate, commit, push
-- [ ] 8. Reply: verified / differs / not verified / left empty / questions answered / open
+- [ ] 8. Reply: registered / verified / left empty and why / open questions
 ```
 
-**1. Read.** The report; the dataset's row in `views/datasets_wide.csv` and its evidence rows
-(`grep '^<id>/' data/evidence.csv`); the recipe's `dataset/config.yaml`, `readme.md` and commit
-history on the recipe branch; whether the readme's commit is on the public fork
-(`git -C <recipe repo> branch -r --contains <commit>`).
+**1. Read.** The recipe's `dataset/config.yaml`, `readme.md` and commit history on the recipe
+branch (`git -C <recipe repo> show <branch>:egs3/<recipe>/cls/readme.md`); the dataset's row in
+`views/datasets_wide.csv` and its evidence rows (`grep '^<id>/' data/evidence.csv`).
 
-**2. Sort the claims.**
-- Maintainer decisions (keep the recipe, exclude files, do not use the dataset): status and
-  recipe tables only (interim rule); never a dataset fact.
-- Facts about the dataset (license, version, published counts, labels, how the audio was produced,
-  how the labels were made, listening tests): check each in a primary source.
-- Findings of the recipe (counts in the release, duplicates, sentence overlap, listening notes):
-  record only what the readme states, citing the readme at its fork commit. If the readme does not
-  state a finding, leave the value empty and list it in the reply (the recipe author can add it).
+**2. Public fork.** Find the commit that last changed the readme and check that it is on the
+public fork (`git -C <recipe repo> branch -r --contains <commit>`). If it is not, nothing from
+the readme can be cited yet: register what primary sources support and say so in the reply.
 
-**3. Check the facts.** Open the distributor page or API and the paper and compare license,
-version, published counts, speakers and label set; establish separately how the audio was
-produced (acted, elicited, spontaneous, read, synthetic) and how the labels were made (instructed,
-perceived by raters, self-reported, inferred from context, automatic); look for a listening test.
-Note every difference from the report: you will report it.
+**3. Dataset facts.** Open the distributor page or API and the paper and check license, version,
+published counts (including counts per label), speakers and label set; establish separately how
+the audio was produced (acted, elicited, spontaneous, read, synthetic) and how the labels were
+made (instructed, perceived by raters, self-reported, inferred from context, automatic); look for
+a listening test. Citations in other sections of the readme are leads to these sources, not
+sources themselves.
 
-**4. Measure.** `tools/measure.py <recipe>` writes `measurements/<recipe>.json`, which fills the
-recipe tables (interim rule).
+**4. Findings of the implementation.** Read only the readme's `## The data` section: access
+(how and when the release was obtained), size of the whole unfiltered release (files, speakers,
+hours), files per label, issues in the release, facts the documentation does not state, ratings
+in the release. Cite the readme at its fork commit, and only for what the documentation does not
+state (rule 1). If the section is missing or lacks an item, leave the value empty and list it in
+the reply so the recipe author can add it.
 
-**5. Status.** The recipe exists and the maintainer keeps it → `implemented`
-(`status_reason_codes=NA`, with a `recipes.csv` row). The maintainer decided not to use the data
-→ `excluded` with a clear reason code, or `deferred`; no `recipes.csv` row (validate.py then
-warns that the recipe is unregistered; mention it in the reply). If no reason code fits, ask the
-maintainer before adding one. The full rules: [references/data-model.md](references/data-model.md).
+**5. Recipe tables and status.** `tools/measure.py <recipe>` writes `measurements/<recipe>.json`,
+which fills the recipe tables (interim rule; these tables are to be removed). The recipe exists
+on the branch → `implemented` (`status_reason_codes=NA`, with a `recipes.csv` row). Decisions not
+to use a dataset come from the maintainer directly → `excluded` with a clear reason code, or
+`deferred`. If no reason code fits, ask the maintainer before adding one. The full rules:
+[references/data-model.md](references/data-model.md).
 
 **6. Register.** Write a short script in a scratch directory that uses
 `<skill dir>/scripts/reglib.py` and run it once. A complete example:
 [references/registration-example.md](references/registration-example.md). Include:
 - evidence from primary sources for every value you checked: license, published counts,
   `label_source`, `label_verification`, `speech_production`, `label_basis` (details in
-  `label_basis_note`), `text_emotion_link` and `lexical_confound` only from a design statement
-  (details in `lexical_confound_note`); disagreeing sources as `conflicting` rows;
+  `label_basis_note`), the design of the spoken text only from a design statement;
+  disagreeing sources as `conflicting` rows;
 - a listening test, if any source describes one, as an `annotations` row (interim rule);
-- values stated in the readme, cited at its fork commit;
+- values stated in the readme's `## The data` section, cited at its fork commit;
 - status rows under the interim rule;
 - cells without evidence: `status_note`, `notes`, `license_note`, `release_version`,
   `status_checked_on` (facts only, each naming its source; no advice);
@@ -257,11 +258,10 @@ Normal pushes need no confirmation; never force-push or rewrite published histor
 
 ## Reply
 
-Keep it short, in this order: what was registered (status, what the recipe uses, commit,
-validation result); what was verified and in which primary source; **what differs from the
-report** and how it was handled; what was left empty and why (not in a primary source, not in the
-readme, readme commit not public); answers to the report's questions; what is left for the
-maintainer to decide (including changes needed in other repositories, which you do not make).
+Keep it short, in this order: what was registered (status, commit, validation result); what was
+verified and in which primary source; where the readme and a primary source disagree and how it
+was recorded; what was left empty and why (not in a primary source, not in the readme's
+`## The data` section, readme commit not public); what is left for the maintainer to decide (including changes needed in other repositories, which you do not make).
 State nothing as fact that you did not check.
 
 ## Common errors

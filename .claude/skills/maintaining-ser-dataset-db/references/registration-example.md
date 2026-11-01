@@ -12,15 +12,18 @@ shapes, not the values.
 
 ## The situation
 
-The DB row `toyemo` is a `candidate` (`unexamined`). A DB update report arrives. It says:
+The DB row `toyemo` is a `candidate` (`unexamined`). The maintainer says: "the recipe toyemo was
+made". You read `egs3/toyemo/cls` on the recipe branch. Its readme (last changed in commit
+`def5678`, which is on the public fork) has a `## The data` section saying:
 
-- The recipe `egs3/toyemo/cls` exists (first commit `abc1234`); the maintainer decided to keep it.
-- Kaggle `someone/toyemo`, version 2, CC BY 4.0 (the maintainer looked at the page on 2026-01-30).
-- 1,200 WAV files, 8 actors, 6 emotions, 1.10 hours, 44.1 kHz.
-- 12 pairs of byte-identical files; the maintainer listened and decided to keep one file of each
-  pair, so the recipe uses 1,188 files.
-- Labels are the emotion each actor was asked to portray; a listening test is described in the paper.
-- The 25 sentences are the same in every emotion.
+- checked on 2026-01-29 against Kaggle version 2; direct download, no login;
+- 1,200 WAV files, 8 speakers, 1.10 hours, over the whole release;
+- 200 files for each of the six labels;
+- issues: 12 pairs of byte-identical files (MD5);
+- not stated in the documentation: the same 25 sentences are spoken in every emotion (from the
+  distributed transcripts).
+
+Another section of the readme mentions a listening test and cites the paper.
 
 ## What checking found
 
@@ -29,13 +32,11 @@ The DB row `toyemo` is a `candidate` (`unexamined`). A DB update report arrives.
 - The paper (the authors' own): actors portrayed six emotions; section 4 reports a listening test
   of how often listeners recognised the intended emotion. The DB records that the test exists and
   where; its numbers stay in the paper (rule 6).
-- The recipe readme at commit `def5678` (on the public fork) states the release has 1,200 WAV
-  files, 12 byte-identical pairs (one of each left out), and the same 25 sentences in every
-  emotion (from the distributed transcripts). Neither the page nor the paper says whether the
-  sentences are the same in every emotion, so for that the readme is the source; had the paper
-  said it, the paper would be cited even though the readme repeats it (rule 1).
-- The report's "1.10 hours" and "44.1 kHz" are in neither the paper, the page nor the readme: they
-  stay out of the DB and go into the reply.
+- Neither the page nor the paper says whether the sentences are the same in every emotion, so for
+  that the readme's `## The data` section is the source; had the paper said it, the paper would
+  be cited even though the readme repeats it (rule 1). The same holds for the file count and the
+  duplicates, which only the release shows.
+- The paper gives no count per label, so the readme's counts per label are the only ones.
 - `measurements/toyemo.json` (from `tools/measure.py`): 1,188 clips; train / valid / test =
   832 / 118 / 238.
 
@@ -54,9 +55,9 @@ PAPER = "https://example.org/toyemo-paper.pdf"
 README = "https://github.com/itoten/espnet/blob/def5678/egs3/toyemo/cls/readme.md"
 R = Reg("toyemo", today="2026-01-31")
 
-# Status (interim rule): the recipe exists and the maintainer keeps it.
+# Status (interim rule): the recipe exists on the branch.
 R.ev("espnet_status", "implemented", "measured", "data/recipes.csv; egs3/toyemo/cls on the recipe branch",
-     "recipe directory exists", note="first commit abc1234; kept by the maintainer (2026-01-30)")
+     "recipe directory exists", note="first commit abc1234")
 R.ev("status_reason_codes", "NA", "measured", "data/recipes.csv", "implemented rows have no reason code")
 R.set(status_note="6 classes. The recipe uses 1,188 of the 1,200 files: one file of each of 12 "
                   "byte-identical pairs is left out (recipe readme).",
@@ -115,9 +116,8 @@ Register toyemo as implemented (1,188 of 1,200 files)
 
 License, published counts and label basis come from the Kaggle page and the paper; the
 paper's listening test is recorded as an annotation pointing to section 4 of the paper.
-Sentence overlap and the release file count come from the recipe readme at def5678.
-The report's duration and sample rate are not stated in any primary source, so they
-were left out.
+Sentence overlap, the release file count and the duplicates come from the readme's
+"The data" section at def5678, because no primary source states them.
 ```
 
 State what was uncertain and what the evidence was, not only what changed.
@@ -130,9 +130,9 @@ Registered toyemo as implemented (commit 1a2b3c4, validate: 0 errors). The recip
 
 Verified in primary sources: license and version (Kaggle), 8 speakers and 1,200 utterances
 (Kaggle), acted speech with instructed labels and the listening test (paper).
-From the recipe readme (def5678): 1,200 files, 12 byte-identical pairs, the same sentences
-in every emotion.
+From the readme's "The data" section (def5678): 1,200 files, 12 byte-identical pairs, the same
+sentences in every emotion.
 
-Left out: 1.10 hours and 44.1 kHz are in the report only. If they matter, the recipe readme
-can state them and the DB will cite it.
+Left empty: total hours and counts per label have no column yet (planned); they stay in the
+readme until then.
 ```
