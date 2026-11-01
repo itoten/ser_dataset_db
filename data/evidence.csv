@@ -957,6 +957,7 @@ eesdb_chinese/n_speakers_reported/01,eesdb_chinese,n_speakers_reported,16,eesdb_
 eesdb_chinese/name/01,eesdb_chinese,name,Chinese Elderly emotion database (EESDB),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 egyptian_hf_unresolved/name/01,egyptian_hf_unresolved,name,Egyptian Hugging Face dataset (unidentified),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 em2ldl/access_method/01,em2ldl,access_method,signed_agreement,em2ldl_page,README: return the signed User License Agreement; instructions after approval,2026-10-14,claude,current,
+em2ldl/access_method/02,em2ldl,access_method,signed_agreement,em2ldl_page,"README: ""download the User License Agreement (LA.pdf), complete the agreement and return it"" by e-mail",2026-11-02,claude,current,
 em2ldl/hours_reported/01,em2ldl,hours_reported,4.04,em2ldl_page,"README: 14,540.08 seconds (approximately 4.04 hours)",2026-10-14,claude,current,
 em2ldl/n_files_reported/01,em2ldl,n_files_reported,3998,em2ldl_page,"README: a total of 3,998 audio utterances",2026-10-14,claude,current,
 em2ldl/name/01,em2ldl,name,EM2LDL,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by em2ldl/name/02
