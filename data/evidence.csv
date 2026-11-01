@@ -2976,7 +2976,7 @@ rml_emotion/emotion_categories.label_verification/01,rml_emotion,emotion_categor
 rml_emotion/emotion_categories.label_verification/02,rml_emotion,emotion_categories.label_verification,listener_validated,rml_emotion_page_2,listening test by at least two participating human subjects,2026-10-24,claude,current,A selection keeping only unanimous clips. The label stays the intended emotion
 rml_emotion/hours_release/01,rml_emotion,hours_release,0.99,rml_emotion_readme,commit 79a71f9c2bf1; Size of the release,2026-11-01,claude,current,
 rml_emotion/languages/01,rml_emotion,languages,mul,rml_emotion_page_2,description: eight subjects speaking six languages,2026-10-14,claude,current,
-rml_emotion/license_spdx/01,rml_emotion,license_spdx,unknown,rml_emotion_page_2,Kaggle dataset license field: Unknown,2026-10-14,claude,current,
+rml_emotion/license_spdx/01,rml_emotion,license_spdx,unknown,rml_emotion_page_2,Kaggle dataset license field: Unknown,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 rml_emotion/listening_test/01,rml_emotion,listening_test,reported,rml_emotion_page_2,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 rml_emotion/n_files_release/01,rml_emotion,n_files_release,720,,,2026-10-14,claude,superseded,Provisional:; superseded by rml_emotion/n_files_release/02
 rml_emotion/n_files_release/02,rml_emotion,n_files_release,720,rml_emotion_readme,commit 79a71f9c2bf1; Size of the release,2026-11-01,claude,current,
@@ -2988,7 +2988,7 @@ rml_emotion/speech_production/01,rml_emotion,speech_production,acted,rml_emotion
 rml_emotion/spoken_text_design/01,rml_emotion,spoken_text_design,emotion_specific_text,rml_emotion_page,"ten different sentences were provided for each emotional class, e.g. 'I am so happy today' (Happiness)",2026-10-24,claude,current,
 rml_emotion/vocal_content/01,rml_emotion,vocal_content,speech,rml_emotion_page_2,audio-visual video samples of about 5 seconds,2026-10-14,claude,current,
 ruslana/languages/02,ruslana,languages,rus,ruslana_paper,a database of affective (emotional) utterances for the Russian language,2026-10-31,claude,current,
-ruslana/license_spdx/02,ruslana,license_spdx,unknown,ruslana_paper_2,paper states CD-ROM distribution but no licence,2026-10-14,claude,current,
+ruslana/license_spdx/02,ruslana,license_spdx,unknown,ruslana_paper_2,paper states CD-ROM distribution but no licence,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 ruslana/n_speakers_reported/02,ruslana,n_speakers_reported,61,ruslana_paper,The database contains recordings of 61 speakers (12 male and 49 female),2026-10-31,claude,current,
 ruslana/name/01,ruslana,name,RUSLANA,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by ruslana/name/02
 ruslana/name/02,ruslana,name,RUSLANA,ruslana_paper,title of the source contains the name,2026-11-01,claude,current,
@@ -3006,7 +3006,7 @@ saraiki_ser/emotion_categories.label_basis/01,saraiki_ser,emotion_categories.lab
 saraiki_ser/emotion_categories.label_verification/01,saraiki_ser,emotion_categories.label_verification,NA,saraiki_ser_page,the description mentions no listening test or second rater,2026-10-26,claude,current,Labels are the folder names (the emotion recorded)
 saraiki_ser/hours_release/01,saraiki_ser,hours_release,1.08,saraiki_ser_readme,commit 227edd522040; Size of the release,2026-11-01,claude,current,
 saraiki_ser/languages/01,saraiki_ser,languages,skr,saraiki_ser_page,description: an original SER dataset in the Seraiki language,2026-10-14,claude,current,
-saraiki_ser/license_spdx/01,saraiki_ser,license_spdx,CC-BY-4.0,saraiki_ser_page,Kaggle dataset license field: Attribution 4.0 International (CC BY 4.0),2026-10-14,claude,current,
+saraiki_ser/license_spdx/01,saraiki_ser,license_spdx,CC-BY-4.0,saraiki_ser_page,Kaggle dataset license field: Attribution 4.0 International (CC BY 4.0),2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 saraiki_ser/n_files_release/01,saraiki_ser,n_files_release,1200,,,2026-10-14,claude,superseded,Provisional:; superseded by saraiki_ser/n_files_release/02
 saraiki_ser/n_files_release/02,saraiki_ser,n_files_release,1200,saraiki_ser_readme,commit 227edd522040; Size of the release,2026-11-01,claude,current,
 saraiki_ser/n_files_reported/01,saraiki_ser,n_files_reported,1200,saraiki_ser_page,Total Audio Files: 1200; 200 per emotion,2026-10-14,claude,current,
@@ -3029,7 +3029,7 @@ savee/emotion_categories.label_verification/01,savee,emotion_categories.label_ve
 savee/emotion_categories.label_verification/02,savee,emotion_categories.label_verification,listener_validated,savee_page_3,"each actor's data were evaluated by 10 subjects (University of Surrey students, half female, 5 native English speakers) in audio, visual and audio-visual conditions",2026-10-28,claude,current,Re-read 2026-10-28; individual answers are not distributed
 savee/hours_release/01,savee,hours_release,0.51,savee_readme,commit e12537897bd1; Size of the release,2026-11-01,claude,current,
 savee/languages/02,savee,languages,eng,savee_page_2,recorded from four native English male speakers,2026-10-31,claude,current,
-savee/license_spdx/02,savee,license_spdx,LicenseRef-custom-research-only,savee_page,available free of charge for research purposes,2026-10-14,claude,current,
+savee/license_spdx/02,savee,license_spdx,LicenseRef-custom-research-only,savee_page,available free of charge for research purposes,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 savee/listening_test/01,savee,listening_test,reported,savee_page_3,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 savee/n_files_release/01,savee,n_files_release,480,,,2026-10-12,claude,superseded,Provisional:; superseded by savee/n_files_release/02
 savee/n_files_release/02,savee,n_files_release,480,savee_readme,commit e12537897bd1; Size of the release,2026-11-01,claude,current,
@@ -3059,7 +3059,7 @@ semour/emotion_categories.label_basis/01,semour,emotion_categories.label_basis,i
 semour/emotion_categories.label_verification/01,semour,emotion_categories.label_verification,listener_validated,semour_paper,"human raters' discrete labels, majority vote; Cohen's kappa per actor all above 0.4 (fair or better)",2026-10-28,claude,current,The number of raters was not read
 semour/hours_reported/01,semour,hours_reported,6.92,semour_paper,"statistics table: Total duration 6 hr, 55 min, 29 sec",2026-10-14,claude,current,
 semour/languages/01,semour,languages,urd,semour_paper,title: SEMOUR: A Scripted Emotional Speech Repository for Urdu,2026-10-14,claude,current,
-semour/license_spdx/01,semour,license_spdx,unknown,semour_paper,paper states public availability but no license,2026-10-14,claude,current,The distribution site cannot be opened; unverified
+semour/license_spdx/01,semour,license_spdx,unknown,semour_paper,paper states public availability but no license,2026-10-14,user,current,The distribution site cannot be opened; unverified; Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 semour/n_files_reported/01,semour,n_files_reported,15040,semour_paper,"statistics table: Total instances 15,040",2026-10-14,claude,superseded,superseded by semour/n_utt_reported/02
 semour/n_files_reported/02,semour,n_files_reported,15040,semour_paper,"15,040 unique instances",2026-10-28,claude,current,
 semour/n_speakers_reported/01,semour,n_speakers_reported,8,semour_paper,instances recorded by eight professional actors,2026-10-14,claude,current,
@@ -3075,7 +3075,7 @@ ses_ed/emotion_categories.label_verification/01,ses_ed,emotion_categories.label_
 ses_ed/full_title/01,ses_ed,full_title,Student Emotion Sentences in English Dataset,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 ses_ed/hours_release/01,ses_ed,hours_release,2.13,ses_ed_readme,commit 8419943f91a5; Size of the release,2026-11-01,claude,current,
 ses_ed/languages/01,ses_ed,languages,eng,ses_ed_page,description: sentences in English,2026-10-14,claude,current,
-ses_ed/license_spdx/01,ses_ed,license_spdx,ODC-By-1.0,ses_ed_page,Kaggle dataset license field: ODC Attribution License (ODC-By),2026-10-14,claude,current,
+ses_ed/license_spdx/01,ses_ed,license_spdx,ODC-By-1.0,ses_ed_page,Kaggle dataset license field: ODC Attribution License (ODC-By),2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 ses_ed/n_files_release/01,ses_ed,n_files_release,1586,,"Kaggle file listing API: 1586 .wav files, 2026-10-14",2026-10-14,claude,superseded,superseded by ses_ed/n_files_release_measured/02; Former source type: measured
 ses_ed/n_files_release/02,ses_ed,n_files_release,1586,,,2026-10-26,claude,superseded,Provisional:; superseded by ses_ed/n_files_release/03
 ses_ed/n_files_release/03,ses_ed,n_files_release,1586,ses_ed_readme,commit 8419943f91a5; Size of the release,2026-11-01,claude,current,
@@ -3097,7 +3097,7 @@ ses_sd/emotion_categories.label_verification/01,ses_sd,emotion_categories.label_
 ses_sd/full_title/01,ses_sd,full_title,Student Emotion Sentences in Spanish Dataset,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 ses_sd/hours_release/01,ses_sd,hours_release,2.14,ses_sd_readme,commit f683a5e1cce8; Size of the release,2026-11-01,claude,current,
 ses_sd/languages/01,ses_sd,languages,spa,ses_sd_page,description: sentences in Spanish,2026-10-14,claude,current,
-ses_sd/license_spdx/01,ses_sd,license_spdx,ODC-By-1.0,ses_sd_page,Kaggle dataset license field: ODC Attribution License (ODC-By),2026-10-14,claude,current,
+ses_sd/license_spdx/01,ses_sd,license_spdx,ODC-By-1.0,ses_sd_page,Kaggle dataset license field: ODC Attribution License (ODC-By),2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 ses_sd/n_files_release/01,ses_sd,n_files_release,1588,,"Kaggle file listing API: 1588 .wav files, 2026-10-14",2026-10-14,claude,superseded,superseded by ses_sd/n_files_release_measured/02; Former source type: measured
 ses_sd/n_files_release/02,ses_sd,n_files_release,1588,,,2026-10-26,claude,superseded,Provisional:; superseded by ses_sd/n_files_release/03
 ses_sd/n_files_release/03,ses_sd,n_files_release,1588,ses_sd_readme,commit f683a5e1cce8; Size of the release,2026-11-01,claude,current,
@@ -3112,7 +3112,7 @@ ses_sd/spoken_text_design/01,ses_sd,spoken_text_design,parallel,,,2026-10-26,cla
 ses_sd/vocal_content/01,ses_sd,vocal_content,speech,ses_sd_page,five sentences per participant,2026-10-14,claude,current,
 sewa/access_observed/01,sewa,access_observed,unavailable,,,2026-11-01,claude,provisional,Provisional: from the earlier status notes (the audio could not be obtained or is not distributed)
 sewa/languages/02,sewa,languages,mul,sewa_page,"subjects from six different cultural backgrounds: British, German, Hungarian, Greek, Serbian, and Chinese; the dyadic interactions are always in the native language",2026-10-31,claude,current,The page does not list the languages themselves
-sewa/license_spdx/02,sewa,license_spdx,LicenseRef-custom-research-only,sewa_page_2,The SEWA Database is released at db.sewaproject.eu for research purposes,2026-10-14,claude,current,Text of the terms of use not read
+sewa/license_spdx/02,sewa,license_spdx,LicenseRef-custom-research-only,sewa_page_2,The SEWA Database is released at db.sewaproject.eu for research purposes,2026-10-14,user,current,Text of the terms of use not read; Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 sewa/n_speakers_reported/02,sewa,n_speakers_reported,408,sewa_page,It contains recordings of 408 people watching various advertisements and discussing them via a video-chat software,2026-10-31,claude,current,
 sewa/name/01,sewa,name,SEWA,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by sewa/name/02
 sewa/name/02,sewa,name,SEWA,sewa_page,title of the source contains the name,2026-11-01,claude,current,
@@ -3126,7 +3126,7 @@ shemo/full_title/01,shemo,full_title,Sharif Emotional Speech Database (ShEMO),,,
 shemo/hours_release/01,shemo,hours_release,3.43,shemo_readme,commit 134b9cb7a5bd; Size of the release,2026-11-01,claude,current,
 shemo/hours_reported/02,shemo,hours_reported,3.42,shemo_page,Overview table: Duration 3 hours and 25 minutes,2026-10-31,claude,current,3 h 25 min rounded to two decimals
 shemo/languages/02,shemo,languages,fas,shemo_page,Language: Persian,2026-10-31,claude,current,
-shemo/license_spdx/02,shemo,license_spdx,LicenseRef-custom-research-only,shemo_page,README: available for academic purposes free of charge; no license file,2026-10-11,claude,current,
+shemo/license_spdx/02,shemo,license_spdx,LicenseRef-custom-research-only,shemo_page,README: available for academic purposes free of charge; no license file,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 shemo/n_files_release/01,shemo,n_files_release,3000,,,2026-10-11,claude,superseded,Provisional:; superseded by shemo/n_files_release/02
 shemo/n_files_release/02,shemo,n_files_release,3000,shemo_readme,commit 134b9cb7a5bd; Size of the release,2026-11-01,claude,current,
 shemo/n_files_reported/02,shemo,n_files_reported,3000,shemo_page,Overview table: #Utterances 3000,2026-10-31,claude,current,
@@ -3146,7 +3146,7 @@ sitb_osed/emotion_categories.label_basis/01,sitb_osed,emotion_categories.label_b
 sitb_osed/emotion_categories.label_verification/01,sitb_osed,emotion_categories.label_verification,NA,sitb_osed_page,the record describes no listening test or rating,2026-10-26,claude,current,The maintainer listened to samples (see paralinguistic_signal)
 sitb_osed/hours_release/01,sitb_osed,hours_release,19.11,sitb_osed_readme,commit 21118666a46f; Size of the release,2026-11-01,claude,current,
 sitb_osed/languages/01,sitb_osed,languages,ory,sitb_osed_page,five major dialects spoken by 20 professional Odia native speakers,2026-10-14,claude,current,
-sitb_osed/license_spdx/01,sitb_osed,license_spdx,CC-BY-4.0,sitb_osed_page,Zenodo record metadata: license cc-by-4.0,2026-10-14,claude,current,
+sitb_osed/license_spdx/01,sitb_osed,license_spdx,CC-BY-4.0,sitb_osed_page,Zenodo record metadata: license cc-by-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 sitb_osed/n_files_release/01,sitb_osed,n_files_release,12110,,,2026-10-26,claude,superseded,Provisional:; superseded by sitb_osed/n_files_release/02
 sitb_osed/n_files_release/02,sitb_osed,n_files_release,12110,sitb_osed_readme,commit 21118666a46f; Size of the release,2026-11-01,claude,current,
 sitb_osed/n_files_reported/01,sitb_osed,n_files_reported,12110,sitb_osed_page,"the SITB-OSED database contains 12,110 utterances",2026-10-14,claude,current,
@@ -3162,14 +3162,14 @@ slue_hvb/access_observed/01,slue_hvb,access_observed,obtained,slue_hvb_card,hvb 
 slue_hvb/full_title/01,slue_hvb,full_title,SLUE-HVB (SLUE Phase-2),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 slue_hvb/hours_reported/01,slue_hvb,hours_reported,11.4,slue_hvb_paper,"Table 1 SLUE-HVB: fine-tune 6.8 h, dev 1.0 h, test 3.6 h; summed",2026-10-14,claude,current,
 slue_hvb/languages/01,slue_hvb,languages,eng,slue_hvb_paper,SLUE-HVB: English call-centre conversations,2026-10-14,claude,current,
-slue_hvb/license_spdx/01,slue_hvb,license_spdx,CC-BY-4.0,arxiv_s_2010_13929,released under Creative Commons license (CC-BY),2026-10-14,claude,current,Terms of the original HVB. The Hugging Face card of SLUE-HVB has no license field
+slue_hvb/license_spdx/01,slue_hvb,license_spdx,CC-BY-4.0,arxiv_s_2010_13929,released under Creative Commons license (CC-BY),2026-10-14,user,current,Terms of the original HVB. The Hugging Face card of SLUE-HVB has no license field; Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 slue_hvb/n_files_reported/01,slue_hvb,n_files_reported,19155,slue_hvb_paper,"Table 1 SLUE-HVB: 11,344 + 1,690 + 6,121 utterances; summed",2026-10-14,claude,current,
 slue_hvb/name/01,slue_hvb,name,SLUE-HVB,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 slue_hvb/vocal_content/01,slue_hvb,vocal_content,speech,slue_hvb_card,"dataset features: audio, role, dialog_acts, intent",2026-10-14,claude,current,
 slue_voxceleb/access_method/01,slue_voxceleb,access_method,gated_click_through,slue_voxceleb_page,dataset API: gated auto,2026-10-14,claude,current,
 slue_voxceleb/access_observed/01,slue_voxceleb,access_observed,obtained,slue_voxceleb_page,dataset tags: modality audio,2026-10-14,claude,current,
 slue_voxceleb/languages/01,slue_voxceleb,languages,eng,slue_voxceleb_card,dataset tags: language en,2026-10-14,claude,current,
-slue_voxceleb/license_spdx/01,slue_voxceleb,license_spdx,CC-BY-4.0,slue_voxceleb_card,card metadata: licenses cc0-1.0 and cc-by-4.0,2026-10-14,claude,current,The license file of the VoxCeleb part was not read
+slue_voxceleb/license_spdx/01,slue_voxceleb,license_spdx,CC-BY-4.0,slue_voxceleb_card,card metadata: licenses cc0-1.0 and cc-by-4.0,2026-10-14,user,current,The license file of the VoxCeleb part was not read; Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 slue_voxceleb/material_origin/01,slue_voxceleb,material_origin,multiple,slue_voxceleb_paper,new annotations on subsets of the VoxCeleb dataset,2026-10-14,claude,current,
 slue_voxceleb/name/01,slue_voxceleb,name,SLUE-VoxCeleb,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 slue_voxceleb/vocal_content/01,slue_voxceleb,vocal_content,speech,slue_voxceleb_paper,naturally produced speech,2026-10-14,claude,current,
@@ -3179,7 +3179,7 @@ slurp/full_title/01,slurp,full_title,SLURP: A Spoken Language Understanding Reso
 slurp/full_title/02,slurp,full_title,SLURP: A Spoken Language Understanding Resource Package,slurp_page,title of the source contains the full title,2026-11-01,claude,current,
 slurp/hours_reported/01,slurp,hours_reported,58,slurp_paper,SLURP comprises ~58 hours of acoustic data,2026-10-14,claude,current,
 slurp/languages/01,slurp,languages,eng,slurp_paper,dataset in English spanning 18 domains,2026-10-14,claude,current,
-slurp/license_spdx/01,slurp,license_spdx,CC-BY-NC-4.0,slurp_page,LICENSE.txt: released under Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0),2026-10-14,claude,current,
+slurp/license_spdx/01,slurp,license_spdx,CC-BY-NC-4.0,slurp_page,LICENSE.txt: released under Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0),2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 slurp/n_speakers_reported/01,slurp,n_speakers_reported,177,slurp_paper,Table: Speakers 97 69 177 34; SLURP column,2026-10-14,claude,current,
 slurp/name/01,slurp,name,SLURP,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by slurp/name/02
 slurp/name/02,slurp,name,SLURP,slurp_page,title of the source contains the name,2026-11-01,claude,current,
@@ -3189,7 +3189,7 @@ snips_slu/access_observed/01,snips_slu,access_observed,obtained,snips_slu_page,o
 snips_slu/full_title/01,snips_slu,full_title,"Snips SLU open datasets (Saade et al., 2019)",,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 snips_slu/hours_reported/01,snips_slu,hours_reported,5.5,arxiv_s_2207_10643,Table 3: Duration[hrs] 5.5 (SNIPS column),2026-10-14,claude,current,
 snips_slu/languages/01,snips_slu,languages,eng;fra,snips_slu_page,SmartLights; two SmartSpeaker assistants in English and French,2026-10-14,claude,current,
-snips_slu/license_spdx/01,snips_slu,license_spdx,LicenseRef-custom-research-only,snips_slu_page,License summary: Use only for academic and/or research purposes. No commercial use.,2026-10-14,claude,current,
+snips_slu/license_spdx/01,snips_slu,license_spdx,LicenseRef-custom-research-only,snips_slu_page,License summary: Use only for academic and/or research purposes. No commercial use.,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 snips_slu/name/01,snips_slu,name,Snips / Sonos SLU datasets,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 snips_slu/vocal_content/01,snips_slu,vocal_content,speech,snips_slu_page,Recordings of these sentences are then crowdsourced,2026-10-14,claude,current,
 spanish_meacorpus/access_method/01,spanish_meacorpus,access_method,unavailable,spanish_meacorpus_page_2,audio and video files are not redistributed; code downloads from YouTube,2026-10-14,claude,current,
@@ -3197,7 +3197,7 @@ spanish_meacorpus/access_observed/01,spanish_meacorpus,access_observed,unavailab
 spanish_meacorpus/full_title/01,spanish_meacorpus,full_title,Spanish MEACorpus 2023: A multimodal speech-text corpus for emotion analysis in Spanish from natural environments,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 spanish_meacorpus/hours_reported/01,spanish_meacorpus,hours_reported,13.16,spanish_meacorpus_page,README: 13.16 h of speech divided into 5129 segments,2026-10-14,claude,current,
 spanish_meacorpus/languages/01,spanish_meacorpus,languages,spa,spanish_meacorpus_page,README: multimodal Spanish corpus for emotion analysis,2026-10-14,claude,current,
-spanish_meacorpus/license_spdx/01,spanish_meacorpus,license_spdx,CC-BY-4.0,spanish_meacorpus_page_2,Zenodo record metadata: license cc-by-4.0,2026-10-14,claude,current,License of the annotations
+spanish_meacorpus/license_spdx/01,spanish_meacorpus,license_spdx,CC-BY-4.0,spanish_meacorpus_page_2,Zenodo record metadata: license cc-by-4.0,2026-10-14,user,current,License of the annotations; Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 spanish_meacorpus/material_origin/01,spanish_meacorpus,material_origin,web_video,spanish_meacorpus_page_2,constructed from YouTube videos,2026-10-14,claude,current,
 spanish_meacorpus/n_files_reported/01,spanish_meacorpus,n_files_reported,5129,spanish_meacorpus_page,README: 13.16 h of speech divided into 5129 segments,2026-10-14,claude,current,
 spanish_meacorpus/name/01,spanish_meacorpus,name,Spanish MEACorpus 2023,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -3206,7 +3206,7 @@ speech_massive/access_method/01,speech_massive,access_method,direct_download,spe
 speech_massive/access_observed/01,speech_massive,access_observed,obtained,speech_massive_card,repository files total about 32GB,2026-10-14,claude,current,
 speech_massive/full_title/01,speech_massive,full_title,Speech-MASSIVE: A Multilingual Speech Dataset for SLU and Beyond,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 speech_massive/languages/01,speech_massive,languages,ara;deu;spa;fra;hun;kor;nld;pol;por;rus;tur;vie,speech_massive_card,card metadata: language ar de es fr hu ko nl pl pt ru tr vi,2026-10-14,claude,current,
-speech_massive/license_spdx/01,speech_massive,license_spdx,CC-BY-NC-SA-4.0,speech_massive_card,card metadata: license cc-by-nc-sa-4.0,2026-10-14,claude,current,
+speech_massive/license_spdx/01,speech_massive,license_spdx,CC-BY-NC-SA-4.0,speech_massive_card,card metadata: license cc-by-nc-sa-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 speech_massive/name/01,speech_massive,name,Speech-MASSIVE,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by speech_massive/name/02
 speech_massive/name/02,speech_massive,name,Speech-MASSIVE,speech_massive_card,title of the source contains the name,2026-11-01,claude,current,
 speech_massive/speech_production/01,speech_massive,speech_production,read,speech_massive_paper,"crowdsourcing protocol: participants record sentences from the MASSIVE text, then validated",2026-10-14,claude,current,
@@ -3219,7 +3219,7 @@ speechcraft/full_title/01,speechcraft,full_title,SpeechCraft: A Fine-grained Exp
 speechcraft/full_title/02,speechcraft,full_title,SpeechCraft: A Fine-grained Expressive Speech Dataset with Natural Language Description,speechcraft_paper,title of the source contains the full title,2026-11-01,claude,current,
 speechcraft/hours_reported/01,speechcraft,hours_reported,2000,speechcraft_paper,"abstract: approximately 2,000 hours of audio data",2026-10-13,claude,current,Approximate
 speechcraft/languages/01,speechcraft,languages,cmn;eng,speechcraft_paper,abstract: a fine-grained bilingual expressive speech dataset,2026-10-13,claude,current,
-speechcraft/license_spdx/01,speechcraft,license_spdx,none_stated,speechcraft_page,repository has no license; README says the audio copyright is not owned by the authors,2026-10-13,claude,current,
+speechcraft/license_spdx/01,speechcraft,license_spdx,none_stated,speechcraft_page,repository has no license; README says the audio copyright is not owned by the authors,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 speechcraft/material_origin/01,speechcraft,material_origin,multiple,speechcraft_page,"README: download the speech corpus from Zhvoice, AISHELL-3, GigaSpeech-M, LibriTTS-R",2026-10-13,claude,current,
 speechcraft/n_files_reported/01,speechcraft,n_files_reported,2000000,speechcraft_paper,abstract: over two million speech clips,2026-10-13,claude,current,"""Over 2 million"""
 speechcraft/name/01,speechcraft,name,SpeechCraft,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by speechcraft/name/02
@@ -3230,7 +3230,7 @@ spokenwoz/access_observed/01,spokenwoz,access_observed,obtained,spokenwoz_page,S
 spokenwoz/full_title/01,spokenwoz,full_title,SpokenWOZ: A Large-Scale Speech-Text Benchmark for Spoken Task-Oriented Dialogue Agents,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 spokenwoz/hours_reported/01,spokenwoz,hours_reported,249,spokenwoz_page,5.7k dialogues and 249 hours audios,2026-10-14,claude,current,
 spokenwoz/languages/01,spokenwoz,languages,eng,spokenwoz_page,multi-domain speech-text dataset for spoken task-oriented dialogue modeling,2026-10-14,claude,current,
-spokenwoz/license_spdx/01,spokenwoz,license_spdx,CC-BY-NC-4.0,spokenwoz_page,distributed under the CC BY NC 4.0 license,2026-10-14,claude,current,
+spokenwoz/license_spdx/01,spokenwoz,license_spdx,CC-BY-NC-4.0,spokenwoz_page,distributed under the CC BY NC 4.0 license,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 spokenwoz/n_files_reported/01,spokenwoz,n_files_reported,203000,spokenwoz_page,"203k turns, 5.7k dialogues and 249 hours audios",2026-10-14,claude,current,
 spokenwoz/name/01,spokenwoz,name,SpokenWOZ,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by spokenwoz/name/02
 spokenwoz/name/02,spokenwoz,name,SpokenWOZ,spokenwoz_page,title of the source contains the name,2026-11-01,claude,current,
@@ -3239,7 +3239,7 @@ srol/access_method/01,srol,access_method,direct_download,,,2026-10-14,claude,pro
 srol/access_observed/01,srol,access_observed,obtained,srol_mirror,"KuralHub entry: file format .wav, about 900 recordings",2026-10-14,claude,current,
 srol/full_title/01,srol,full_title,Sounds of the Romanian Language,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 srol/languages/01,srol,languages,ron,srol_page,SRoL: Voiced Sounds of the Romanian Language archive,2026-10-14,claude,current,
-srol/license_spdx/01,srol,license_spdx,unknown,srol_page,page refers to a Legal Disclaimer and Copyright Notice,2026-10-14,claude,current,Text not read
+srol/license_spdx/01,srol,license_spdx,unknown,srol_page,page refers to a Legal Disclaimer and Copyright Notice,2026-10-14,user,current,Text not read; Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 srol/n_files_reported/01,srol,n_files_reported,900,srol_mirror,KuralHub entry: approximately 900 speech recordings,2026-10-14,claude,current,Approximate
 srol/n_speakers_reported/01,srol,n_speakers_reported,25,srol_mirror,KuralHub entry: 14 male and 11 female,2026-10-14,claude,current,
 srol/name/01,srol,name,SRoL,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -3250,7 +3250,7 @@ stop/access_observed/01,stop,access_observed,obtained,stop_page,stop.tar.gz; gen
 stop/full_title/01,stop,full_title,STOP: A dataset for Spoken Task Oriented semantic Parsing,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 stop/hours_reported/01,stop,hours_reported,218,arxiv_s_2207_10643,Table 3: Duration[hrs] 218 (STOP column),2026-10-14,claude,current,
 stop/languages/01,stop,languages,eng,arxiv_s_2207_10643,spoken task oriented semantic parsing dataset; recordings of TOPv2 English utterances,2026-10-14,claude,current,
-stop/license_spdx/01,stop,license_spdx,unknown,stop_page,README lists the download link only; no data licence stated,2026-10-14,claude,current,
+stop/license_spdx/01,stop,license_spdx,unknown,stop_page,README lists the download link only; no data licence stated,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-10
 stop/n_files_reported/01,stop,n_files_reported,236477,arxiv_s_2207_10643,Table 3: Audio Files 236477 (STOP column),2026-10-14,claude,current,
 stop/n_speakers_reported/01,stop,n_speakers_reported,885,arxiv_s_2207_10643,Table 3: Speakers 885 (STOP column),2026-10-14,claude,current,
 stop/name/01,stop,name,STOP,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
