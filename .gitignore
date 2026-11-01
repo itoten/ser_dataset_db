@@ -1,3 +1,6 @@
 __pycache__/
 *.pyc
 .env
+# Each user's own working space; only its README is published.
+local/*
+!local/README.md
