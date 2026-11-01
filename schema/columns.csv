@@ -10,11 +10,6 @@ datasets,license_spdx,enum:license_spdx,empty;conflicting,yes,"SPDX identifier o
 datasets,license_note,text,empty,no,Gist of the license wording
 datasets,access_method,enum:access_method,empty;conflicting,yes,Access method
 datasets,raw_audio_available,bool,empty;unknown;conflicting,yes,Whether raw audio is distributed
-datasets,release_version,text,empty,no,Version obtained
-datasets,doi,text,empty,no,DOI
-datasets,source_url,url,empty,no,The spreadsheet's Source URL. Whether it is a download location or an introduction page depends on the row
-datasets,download_url,url,empty,no,Download location
-datasets,paper_url,url,empty,no,Paper URL
 datasets,n_utt_reported,int,empty;unknown;conflicting,yes,Number of utterances per the primary source (or the spreadsheet)
 datasets,hours_reported,float,empty;unknown;conflicting,yes,Total hours per the primary source (or the spreadsheet)
 datasets,n_speakers_reported,int,empty;unknown;conflicting,yes,Number of speakers per the primary source (or the spreadsheet)
@@ -39,8 +34,7 @@ evidence,evidence_id,text,-,no,<dataset_id>/<field>/<2-digit sequence number>
 evidence,dataset_id,slug,-,no,Foreign key to datasets
 evidence,field,text,-,no,Column name in datasets (a column with evidence=yes)
 evidence,value,text,-,no,The value the evidence supports (same format as in datasets)
-evidence,source_type,enum:source_type,-,no,measured / primary / secondary / project_doc / sheet / user
-evidence,source_ref,text,empty,no,"Source (URL, file path, commit). Empty only for provisional rows"
+evidence,source_id,slug,empty,no,The source (sources.csv). Empty only for provisional rows and for old superseded rows
 evidence,locator,text,empty,no,Location within the source (25 words at most)
 evidence,checked_on,date,-,no,Date checked
 evidence,checked_by,enum:checked_by,-,no,Who checked
@@ -49,21 +43,35 @@ evidence,note,text,empty,no,Notes. Required when a lower-ranked source is made c
 aliases,dataset_id,slug,-,no,Foreign key to datasets
 aliases,alias,text,-,no,Alias
 aliases,alias_type,enum:alias_type,-,no,Kind of alias
-aliases,source_ref,text,empty,no,Source
+aliases,source_id,slug,empty,no,The source (sources.csv); empty if none is recorded
 aliases,note,text,empty,no,Notes
 relations,dataset_id,slug,-,no,Foreign key to datasets
 relations,relation,enum:relation_type,-,no,version_of / subset_of / contains / distinct_from / possibly_same_as / shares_sentences_with
 relations,other_dataset_id,slug,-,no,The other dataset_id
-relations,source_ref,text,empty,no,Source
+relations,source_id,slug,empty,no,The source (sources.csv); empty if none is recorded
 relations,note,text,empty,no,Notes
 annotations,dataset_id,slug,-,no,Foreign key to datasets
 annotations,item,slug,-,no,"Item name (lower-case letters and underscores, e.g. transcript, speaker_gender, dialogue_act)"
 annotations,description,text,-,no,Content (what is annotated and in what form)
 annotations,annotator,enum:label_source,empty;unknown,no,Annotator: human / automatic / mixed / synthesis_specified. unknown if the sources do not say
 annotations,unit,enum:annotation_unit,empty;unknown,no,Unit of annotation
-annotations,source_type,enum:source_type,-,no,Kind of source (same values as in evidence)
-annotations,source_ref,text,-,no,"Source (URL, file path, date of a conversation, etc.)"
+annotations,source_id,slug,empty,no,"The source (sources.csv). Empty only when the note starts with ""Provisional:"""
 annotations,locator,text,empty,no,Location within the source (25 words at most)
 annotations,checked_on,date,-,no,Date checked
 annotations,checked_by,enum:checked_by,-,no,Who checked
 annotations,note,text,empty,no,Notes
+sources,source_id,slug,-,no,"<dataset_id>_<kind> for a source of one dataset (aesdd_page, aesdd_paper, aesdd_card, aesdd_readme; _2 for a second one), a short name for a source shared by several datasets"
+sources,url,url,empty,no,URL of the source; empty for a document known only by name (a file inside a release)
+sources,doi,text,empty,no,DOI when the URL is a doi.org link
+sources,title,text,empty,no,Title as printed on the source; may be empty
+sources,kind,enum:source_kind,-,no,paper / distribution_page / dataset_card / license_file / release_files / readme / mirror / survey / other
+sources,publisher,enum:source_publisher,empty,no,authors (the dataset authors or their organisation) / third_party / recipe_author. Empty if not checked
+sources,source_type,enum:source_type,empty,no,primary (publisher authors) / secondary (third party) / implementation (recipe readme). Empty if not checked
+sources,describes_version,text,empty,no,The release or version of the dataset that this source describes
+sources,identity_basis,text,empty,no,"Why this source is about this dataset (title matches, the authors link to it, DOI resolves to it)"
+sources,checked_on,date,empty,no,Date the source was last opened and checked
+sources,archive_url,url,empty,no,A web-archive copy of the source as seen
+sources,note,text,empty,no,Notes on the source
+dataset_sources,dataset_id,slug,-,no,Foreign key to datasets
+dataset_sources,source_id,slug,-,no,Foreign key to sources
+dataset_sources,role,enum:dataset_source_role,-,no,paper / distribution / card / mirror / readme / other

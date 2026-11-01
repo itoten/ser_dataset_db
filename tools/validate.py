@@ -20,6 +20,7 @@ TOKENS = {"unknown", "NA", "none", "conflicting"}
 
 errors = []
 warnings = []
+warn_untyped = set()
 
 
 def err(msg):
@@ -180,32 +181,32 @@ def check_keys(tables, db):
 
 
 LIVE = ("current", "conflicting", "provisional")
-SOURCED = {"primary", "secondary", "implementation"}
-OLD_TYPES = {"measured", "project_doc", "user"}
 
 
 def check_evidence(cols, db):
     ev_cols = {c["column"] for c in cols["datasets"] if c["evidence"] != "no"}
+    sources = {r["source_id"]: r for r in db["sources"][1]}
     ev = {}
     for r in db["evidence"][1]:
         ev.setdefault((r["dataset_id"], r["field"]), []).append(r)
-        eid, st, ty = r["evidence_id"], r["status"], r["source_type"]
+        eid, st = r["evidence_id"], r["status"]
         if r["field"] not in ev_cols:
             err(f"evidence {eid}: field {r['field']} does not take evidence")
+        if r["source_id"] and r["source_id"] not in sources:
+            err(f"evidence {eid}: unknown source_id {r['source_id']}")
+        ty = sources.get(r["source_id"], {}).get("source_type", "")
         if st in ("current", "conflicting"):
-            if ty not in SOURCED:
-                err(f"evidence {eid}: a {st} row needs source_type primary, secondary or implementation, not {ty}")
-            if not r["source_ref"]:
+            if not r["source_id"]:
                 err(f"evidence {eid}: a {st} row needs a source")
-            if r["field"].endswith("_measured") and ty != "implementation":
-                err(f"evidence {eid}: *_measured fields need source_type implementation")
+            elif not ty:
+                warn_untyped.add(r["source_id"])
+            if r["field"].endswith("_measured") and ty not in ("implementation", ""):
+                err(f"evidence {eid}: *_measured fields need a source of type implementation")
             if r["field"].endswith("_reported") and ty == "implementation":
-                err(f"evidence {eid}: *_reported fields cannot use implementation")
+                err(f"evidence {eid}: *_reported fields cannot use an implementation source")
         if st == "provisional":
-            if ty not in OLD_TYPES | SOURCED:
-                err(f"evidence {eid}: unknown source_type {ty}")
-            if r["source_ref"] or r["locator"]:
-                err(f"evidence {eid}: a provisional row has no source (source_ref and locator must be empty)")
+            if r["source_id"] or r["locator"]:
+                err(f"evidence {eid}: a provisional row has no source (source_id and locator must be empty)")
             if not r["note"].startswith("Provisional:"):
                 err(f"evidence {eid}: the note of a provisional row starts with 'Provisional:'")
     for row in db["datasets"][1]:
@@ -243,6 +244,52 @@ def check_evidence(cols, db):
                     err(f"evidence {d}/{field}: needs exactly one provisional row, found {len(pro)}")
                 elif pro[0]["value"] != v:
                     err(f"evidence {d}/{field}: provisional value {pro[0]['value']!r} != datasets value {v!r}")
+
+
+def check_sources(db):
+    sources = {}
+    seen = {}
+    for r in db["sources"][1]:
+        sid = r["source_id"]
+        sources[sid] = r
+        t, p, k = r["source_type"], r["publisher"], r["kind"]
+        if r["url"]:
+            key = (r["url"], t)
+            if key in seen:
+                err(f"sources {sid}: same url and source_type as {seen[key]}")
+            seen[key] = sid
+        if r["doi"]:
+            key = ("doi", r["doi"], t)
+            if key in seen:
+                err(f"sources {sid}: same DOI and source_type as {seen[key]}")
+            seen[key] = sid
+        want = {"primary": "authors", "secondary": "third_party", "implementation": "recipe_author"}.get(t)
+        if t and p != want:
+            err(f"sources {sid}: source_type {t} needs publisher {want}, not {p!r}")
+        if t == "implementation" and k != "readme":
+            err(f"sources {sid}: an implementation source is a readme")
+        if k == "mirror" and t != "secondary":
+            err(f"sources {sid}: a mirror is a secondary source")
+        if (t == "") != (p == ""):
+            err(f"sources {sid}: source_type and publisher are both set or both empty")
+    unknown = sum(1 for r in sources.values() if not r["source_type"])
+    if unknown:
+        warn(f"{unknown} sources have no publisher and source_type yet (origin not checked)")
+    ds = {r["dataset_id"] for r in db["datasets"][1]}
+    for r in db["dataset_sources"][1]:
+        if r["dataset_id"] not in ds:
+            err(f"dataset_sources {r['dataset_id']}/{r['source_id']}: unknown dataset_id")
+        if r["source_id"] not in sources:
+            err(f"dataset_sources {r['dataset_id']}/{r['source_id']}: unknown source_id")
+    for name, key in (("annotations", "item"), ("aliases", "alias"), ("relations", "relation")):
+        for r in db[name][1]:
+            if r["source_id"] and r["source_id"] not in sources:
+                err(f"{name} {r['dataset_id']}/{r[key]}: unknown source_id {r['source_id']}")
+    for r in db["annotations"][1]:
+        if not r["source_id"] and not r["note"].startswith("Provisional:"):
+            err(f"annotations {r['dataset_id']}/{r['item']}: no source_id; a row without a source has a note starting with 'Provisional:'")
+    if warn_untyped:
+        warn(f"{len(warn_untyped)} sources used by current evidence have no publisher and source_type")
 
 
 # ---- 9. paths --------------------------------------------------------------
@@ -297,6 +344,7 @@ def main(argv):
     check_types(tables, cols, db, enums)
     check_keys(tables, db)
     check_evidence(cols, db)
+    check_sources(db)
     check_paths(cols, tables, db)
     check_views(db)
     check_no_local_paths()

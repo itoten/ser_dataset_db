@@ -4,3 +4,5 @@ evidence,data/evidence.csv,evidence_id,"One row = evidence for one value in data
 aliases,data/aliases.csv,dataset_id;alias,"Other names of datasets (spreadsheet names, official names, former labels, etc.)"
 relations,data/relations.csv,dataset_id;relation;other_dataset_id,"Relations between datasets (versions, different datasets, suspected identity, etc.)"
 annotations,data/annotations.csv,dataset_id;item,"Annotations of a dataset other than emotion labels (transcripts, speaker traits, dialogue acts, etc.). One row = dataset x item. Each row carries its own evidence"
+sources,data/sources.csv,source_id,"One row = one source document (paper, page, card, license file, release files, recipe readme). Evidence, annotations, aliases and relations point to it by source_id"
+dataset_sources,data/dataset_sources.csv,dataset_id;source_id;role,"The sources that introduce a dataset: its paper, its distribution page, its card, mirrors, its recipe readme"

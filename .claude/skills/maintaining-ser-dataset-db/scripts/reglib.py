@@ -10,7 +10,9 @@ CSVs through tools/db.py, which keeps the repository's sort order and formatting
     from reglib import Reg
 
     R = Reg("mydataset", today="2026-01-31")
-    R.ev("license_spdx", "CC-BY-4.0", "primary", "https://example.org/page", "license field")
+    page = R.source("mydataset_page", "https://example.org/page", "distribution_page", "authors")
+    R.link(page, "distribution")
+    R.ev("license_spdx", "CC-BY-4.0", page, "license field")
     R.set(notes="...")
     R.save()
 
@@ -56,10 +58,10 @@ class Reg:
         n = max([int(e["evidence_id"].rsplit("/", 1)[1]) for e in self._rows(field)] or [0]) + 1
         return f"{self.D}/{field}/{n:02d}"
 
-    def _append(self, eid, field, value, stype, ref, loc, by, note, status):
+    def _append(self, eid, field, value, source_id, loc, by, note, status):
         e = {c: "" for c in self.evh}
-        e.update(evidence_id=eid, dataset_id=self.D, field=field, value=value, source_type=stype,
-                 source_ref=ref, locator=loc, checked_on=self.today,
+        e.update(evidence_id=eid, dataset_id=self.D, field=field, value=value,
+                 source_id=source_id, locator=loc, checked_on=self.today,
                  checked_by=by, status=status, note=note.strip())
         self.evr.append(e)
 
@@ -68,13 +70,46 @@ class Reg:
             if o["status"] in ("current", "provisional") and (only_other_values is None or o["value"] != only_other_values):
                 o.update(status="superseded", note=((o["note"] + "; ") if o["note"] else "") + f"superseded by {nid}")
 
-    def ev(self, field, value, stype, ref, loc="", by="claude", note=""):
+    def source(self, source_id, url, kind, publisher, title="", doi="", describes_version="", note="",
+               identity_basis="", archive_url=""):
+        """Add a source to sources.csv (or return the existing one with the same url and publisher).
+
+        publisher: authors (primary) / third_party (secondary) / recipe_author (implementation).
+        Use kind mirror or survey for secondary sources, readme for the recipe readme.
+        """
+        stype = {"authors": "primary", "third_party": "secondary", "recipe_author": "implementation"}[publisher]
+        sh, sr = self.db["sources"]
+        for r in sr:
+            if r["source_id"] == source_id:
+                if url and r["url"] != url:
+                    raise SystemExit(f"source: {source_id} exists with another url {r['url']!r}")
+                return source_id
+            if url and r["url"] == url and r["source_type"] == stype:
+                return r["source_id"]
+        sr.append({**{k: "" for k in sh}, "source_id": source_id, "url": url, "doi": doi, "title": title,
+                   "kind": kind, "publisher": publisher, "source_type": stype,
+                   "describes_version": describes_version, "identity_basis": identity_basis,
+                   "checked_on": self.today, "archive_url": archive_url, "note": note})
+        return source_id
+
+    def link(self, source_id, role):
+        """Say that this source introduces the dataset (role: paper / distribution / card / mirror / readme / other)."""
+        lh, lr = self.db["dataset_sources"]
+        if not any(r["dataset_id"] == self.D and r["source_id"] == source_id and r["role"] == role for r in lr):
+            lr.append({"dataset_id": self.D, "source_id": source_id, "role": role})
+
+    def _check_source(self, source_id):
+        if not any(r["source_id"] == source_id for r in self.db["sources"][1]):
+            raise SystemExit(f"no source {source_id!r}: add it with source() first")
+
+    def ev(self, field, value, source_id, loc="", by="claude", note=""):
         """Add a current evidence row for `field` and set the cell to `value`.
 
         Current rows with another value and provisional rows are marked superseded (history is
         never deleted). Rows with the same value stay current. If the field is conflicting, use
         conflicting() or resolve() first.
         """
+        self._check_source(source_id)
         if any(o["status"] == "conflicting" for o in self._rows(field)):
             raise SystemExit(f"ev: {field} is conflicting; call resolve({field!r}, why) first or add with conflicting()")
         nid = self._next_id(field)
@@ -82,21 +117,22 @@ class Reg:
         for o in self._rows(field):
             if o["status"] == "provisional":
                 o.update(status="superseded", note=((o["note"] + "; ") if o["note"] else "") + f"superseded by {nid}")
-        self._append(nid, field, value, stype, ref, loc, by, note, "current")
+        self._append(nid, field, value, source_id, loc, by, note, "current")
         self.row[field] = value
 
-    def conflicting(self, field, value, stype, ref, loc="", by="claude", note=""):
+    def conflicting(self, field, value, source_id, loc="", by="claude", note=""):
         """Add a source that disagrees with the others. The cell becomes `conflicting`.
 
         Current rows with another value become conflicting too; provisional rows are superseded.
         """
+        self._check_source(source_id)
         nid = self._next_id(field)
         for o in self._rows(field):
             if o["status"] == "provisional":
                 o.update(status="superseded", note=((o["note"] + "; ") if o["note"] else "") + f"superseded by {nid}")
             elif o["status"] == "current" and o["value"] != value:
                 o["status"] = "conflicting"
-        self._append(nid, field, value, stype, ref, loc, by, note, "conflicting")
+        self._append(nid, field, value, source_id, loc, by, note, "conflicting")
         self.row[field] = "conflicting"
 
     def resolve(self, field, why):
@@ -126,23 +162,23 @@ class Reg:
     # other tables -------------------------------------------------------------------------
 
     def ann(self, rows, by="claude"):
-        """rows: (item, description, annotator, unit, source_type, source_ref, locator, note)."""
+        """rows: (item, description, annotator, unit, source_id, locator, note)."""
         ah, ar = self.db["annotations"]
-        for item, desc, annotator, unit, st, ref, loc, note in rows:
+        for item, desc, annotator, unit, sid, loc, note in rows:
+            self._check_source(sid)
             ar.append({**{k: "" for k in ah}, "dataset_id": self.D, "item": item, "description": desc,
-                       "annotator": annotator, "unit": unit, "source_type": st,
-                       "source_ref": ref, "locator": loc, "checked_on": self.today, "checked_by": by,
-                       "note": note})
+                       "annotator": annotator, "unit": unit, "source_id": sid, "locator": loc,
+                       "checked_on": self.today, "checked_by": by, "note": note})
 
-    def alias(self, alias, alias_type, source_ref, note=""):
+    def alias(self, alias, alias_type, source_id="", note=""):
         ah, ar = self.db["aliases"]
         ar.append({**{k: "" for k in ah}, "dataset_id": self.D, "alias": alias,
-                   "alias_type": alias_type, "source_ref": source_ref, "note": note})
+                   "alias_type": alias_type, "source_id": source_id, "note": note})
 
-    def relation(self, relation, other_dataset_id, source_ref, note=""):
+    def relation(self, relation, other_dataset_id, source_id="", note=""):
         rh, rr = self.db["relations"]
         rr.append({**{k: "" for k in rh}, "dataset_id": self.D, "relation": relation,
-                   "other_dataset_id": other_dataset_id, "source_ref": source_ref, "note": note})
+                   "other_dataset_id": other_dataset_id, "source_id": source_id, "note": note})
 
     def save(self):
         self.row.update({"last_updated_on": self.today})

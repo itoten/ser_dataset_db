@@ -1,43 +1,43 @@
-dataset_id,relation,other_dataset_id,source_ref,note
-capspeech_agentdb,subset_of,capspeech,https://arxiv.org/abs/2506.02863,One of CapSpeech's new recordings
-eekk,possibly_same_as,eesc,https://metashare.ut.ee/repository/browse/estonian-emotional-speech-corpus/f5e5fc91a0d311eebb4773db10791bcf07ff90a82bf541dbbb9ecf816da202fe/,"Judged identical. The META-SHARE record (Estonian name Eesti emotsionaalse kõne korpus = EEKK) points to figshare 25249744 (Estonian Emotional Speech Corpus), and sentence count, speakers and labels match"
-emonetvoice,possibly_same_as,laions_got_talent,https://huggingface.co/datasets/t1a5anu-anon/emonet-voice-foundation,The card of EmoNet-Voice Big (foundation) points to the extended LAION's Got Talent as the main data. Whether they are the same is unverified
-emosec,contains,esd,https://zenodo.org/records/10948423,Captions for ESD audio
-emosec,contains,iemocap,https://zenodo.org/records/10948423,Captions for IEMOCAP audio
-emospeech_secap,distinct_from,emospeech_keywords,https://arxiv.org/abs/2312.10381,"Similar names, different datasets"
-emotale,distinct_from,des,https://arxiv.org/abs/2508.14548,Both Danish. DES (1997) is a different corpus
-emouerj_sed,version_of,emouerj,https://huggingface.co/datasets/AdeoyeLadele/emouerj-sed,Card: adapted from emoUERJ for the Speech Emotion Diarization Task
-emovoicedb,contains,laions_got_talent,https://github.com/yanghaha0908/EmoVoice,README: the part we use (of laions_got_talent) is also uploaded to EmoVoice-DB (laions_got_latent.jsonl). Contains only part of it
-expressivespeech,contains,expresso,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,"Card: curated from Expresso, NCSSD, M3ED, MultiDialog, IEMOCAP"
-expressivespeech,contains,iemocap,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,Same as above
-expressivespeech,contains,m3ed,https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech,Same as above
-fcaps,contains,paraspeechcaps,https://arxiv.org/abs/2601.03065,FCaps-PSCBase uses PSC-Base audio and overall captions (§3)
-hume_reaction,distinct_from,humevb,https://arxiv.org/abs/2207.05691,Both from Hume AI. Hume-Reaction is video and audio of reactions to stimuli; Hume-VB is non-verbal vocalisations
-iesc,shares_sentences_with,ravdess,https://doi.org/10.1007/s11042-023-14577-w,Both datasets use the two sentences 'Kids are talking by the door' and 'Dogs are sitting by the door'; the IESC paper says they are taken from RAVDESS (Section 4.1)
-iitkgp_sehsc,distinct_from,iitkgp_sesc,https://www.iieta.org/journals/ts/paper/10.18280/ts.380631,Telugu and Hindi versions by the same lab
-javanese_ser_2black0,possibly_same_as,java_sed,https://github.com/2black0/Sound-Emotion-Recognition-Javanese-Speech-Dataset,"Both are Javanese with 6 emotions (same labels), and 10 speakers x 4 sentences x 6 emotions x 7 repetitions = 1,680 matches KuralHub's count for Java-SED. KuralHub says 20 speakers"
-kazakh_russian_emotion,distinct_from,kazemotts,https://github.com/aaivu/KuralHub/blob/main/datasets/Kazakh/Kazakh-Russian-Emotion-Corpus.md,Both Kazakh. KazEmoTTS is a separate TTS corpus
-kesdy18,distinct_from,kemdy19,https://github.com/aaivu/KuralHub/blob/main/datasets/Korean/KESDy18.md,"Different corpora from the same ETRI (KESDy18 is 2018 emotional speech, KEMDy19 is 2019 multimodal)"
-mer2024,contains,mer2023,https://arxiv.org/abs/2404.17113,"MER2024's 5,030 Train&Val clips are all the labelled clips of MER2023 (§2: we merge all labeled samples)"
-mer2025,contains,mer2024,https://arxiv.org/abs/2504.19423,"Table 1 of the MER2025 paper gives Train&Val as 3,373 (2023) -> 5,030 (2024) -> 7,369 (2025). 7,369 equals the sum of MER2024's labelled sets (5,030+1,169+1,170), so it is judged to include them (no sentence stating the breakdown was found)"
-mer_caption,subset_of,mer2024,https://arxiv.org/abs/2501.16566,Annotations of the unlabelled part of MER2024
-merr,subset_of,mer2023,https://arxiv.org/abs/2406.11161,Annotations of the unlabelled part of MER2023
-mmeld,version_of,meld,https://arxiv.org/abs/2203.16799,Text of MELD utterances translated into 4 languages
-nemo,distinct_from,polishemo,new_corpora/16_polishemo_report.md,Both Polish emotional speech but different corpora (per the polishemo note)
-nonverbaltts,contains,expresso,https://huggingface.co/datasets/deepvk/NonverbalTTS,"Contains part of Expresso's audio (1,804 clips). Also contains VoxCeleb audio (4,452 clips; VoxCeleb not in the DB) (card: derived from VoxCeleb and Expresso)"
-ov_merd,subset_of,mer2023,https://arxiv.org/abs/2410.01495,A new label layer on part of MER2023 (§2.3)
-persian_esd,distinct_from,esd,https://doi.org/10.3758/s13428-014-0467-x,"Similar name, but not the Chinese-English ESD (HLT Singapore)"
-prahalabs_malayalam,subset_of,rasa,https://huggingface.co/datasets/Praha-Labs/malayalam-emotion-balanced,"Rows' wav_path points to rasa_hf/data/Malayalam (checked on the first row, 2026-10-14). Not checked for all rows"
-ses_ed,distinct_from,ses_sd,https://www.kaggle.com/datasets/angeluxarmenta/ses-ed,English version by the same 53 students. SES-SD is the Spanish version
-ses_ed,shares_sentences_with,cremad,https://github.com/CheyneyComputerScience/CREMA-D,"SES-ED sentence codes DFA, IEO, IWW and TAI are the CREMA-D codes of the same four sentences (CREMA-D README list; Whisper transcripts of 6 clips per code agree). TSI has the same code but a different sentence ('The sun is very bright' vs 'The surface is slick')"
-ses_sd,shares_sentences_with,ses_ed,https://www.kaggle.com/datasets/angeluxarmenta/ses-sd,"SES-SD is the Spanish version of SES-ED: the same speakers and the same five sentence codes, with the sentences translated (Whisper transcripts of 6 clips per code). Four of the five sentences are also translations of CREMA-D sentences"
-slue_hvb,subset_of,harper_valley_bank,https://arxiv.org/abs/2212.10525,An evaluation version of HVB utterances relabelled with human dialogue acts
-textrolspeech,contains,esd,https://arxiv.org/abs/2308.14430,Paper §2
-textrolspeech,contains,mead,https://arxiv.org/abs/2308.14430,Paper §2
-textrolspeech,contains,mess,https://arxiv.org/abs/2308.14430,Paper §2
-textrolspeech,contains,savee,https://arxiv.org/abs/2308.14430,Paper §2
-textrolspeech,contains,tess,https://arxiv.org/abs/2308.14430,Paper §2
-thanushs25_tamil,possibly_same_as,meghana007_tamil,https://huggingface.co/datasets/Thanushs25/tamil-audio-emotion-classification,"README, final_data/ layout and the 195 wav files are identical (2026-10-14)"
-tures,distinct_from,turevdb,https://doi.org/10.1186/1687-4722-2013-26,"Both Turkish. TurES is film utterances, TurEV-DB is acted words"
-urduser,distinct_from,urdu,https://data.mendeley.com/datasets/jcpfjnk5c2/4; https://github.com/siddiquelatif/URDU-Dataset,Both Urdu but different. UrduSER is acted speech on Mendeley (10 speakers); URDU is 400 utterances from talk shows. UrduSER in Table I of the MSP-Podcast paper corresponds to urduser
-voicenet,subset_of,emilia_emotion,https://arxiv.org/abs/2609.32016,VoiceNet-Emo clips were selected from Emilia-Large (Emolia's audio)
+dataset_id,relation,other_dataset_id,source_id,note
+capspeech_agentdb,subset_of,capspeech,arxiv_s_2506_02863,One of CapSpeech's new recordings
+eekk,possibly_same_as,eesc,ut_repository_browse_estonian_emotional_speech_corpus_f5e5fc,"Judged identical. The META-SHARE record (Estonian name Eesti emotsionaalse kõne korpus = EEKK) points to figshare 25249744 (Estonian Emotional Speech Corpus), and sentence count, speakers and labels match"
+emonetvoice,possibly_same_as,laions_got_talent,emonetvoice_card_2,The card of EmoNet-Voice Big (foundation) points to the extended LAION's Got Talent as the main data. Whether they are the same is unverified
+emosec,contains,esd,emosec_page,Captions for ESD audio
+emosec,contains,iemocap,emosec_page,Captions for IEMOCAP audio
+emospeech_secap,distinct_from,emospeech_keywords,emospeech_secap_paper,"Similar names, different datasets"
+emotale,distinct_from,des,emotale_paper,Both Danish. DES (1997) is a different corpus
+emouerj_sed,version_of,emouerj,emouerj_sed_card,Card: adapted from emoUERJ for the Speech Emotion Diarization Task
+emovoicedb,contains,laions_got_talent,emovoicedb_page,README: the part we use (of laions_got_talent) is also uploaded to EmoVoice-DB (laions_got_latent.jsonl). Contains only part of it
+expressivespeech,contains,expresso,expressivespeech_card,"Card: curated from Expresso, NCSSD, M3ED, MultiDialog, IEMOCAP"
+expressivespeech,contains,iemocap,expressivespeech_card,Same as above
+expressivespeech,contains,m3ed,expressivespeech_card,Same as above
+fcaps,contains,paraspeechcaps,fcaps_paper,FCaps-PSCBase uses PSC-Base audio and overall captions (§3)
+hume_reaction,distinct_from,humevb,arxiv_s_2207_05691,Both from Hume AI. Hume-Reaction is video and audio of reactions to stimuli; Hume-VB is non-verbal vocalisations
+iesc,shares_sentences_with,ravdess,iesc_paper,Both datasets use the two sentences 'Kids are talking by the door' and 'Dogs are sitting by the door'; the IESC paper says they are taken from RAVDESS (Section 4.1)
+iitkgp_sehsc,distinct_from,iitkgp_sesc,iieta_journals_ts_paper_10_18280_ts_380631_secondary,Telugu and Hindi versions by the same lab
+javanese_ser_2black0,possibly_same_as,java_sed,javanese_ser_2black0_page,"Both are Javanese with 6 emotions (same labels), and 10 speakers x 4 sentences x 6 emotions x 7 repetitions = 1,680 matches KuralHub's count for Java-SED. KuralHub says 20 speakers"
+kazakh_russian_emotion,distinct_from,kazemotts,kazakh_russian_emotion_mirror,Both Kazakh. KazEmoTTS is a separate TTS corpus
+kesdy18,distinct_from,kemdy19,kesdy18_mirror,"Different corpora from the same ETRI (KESDy18 is 2018 emotional speech, KEMDy19 is 2019 multimodal)"
+mer2024,contains,mer2023,arxiv_s_2404_17113,"MER2024's 5,030 Train&Val clips are all the labelled clips of MER2023 (§2: we merge all labeled samples)"
+mer2025,contains,mer2024,mer2025_paper,"Table 1 of the MER2025 paper gives Train&Val as 3,373 (2023) -> 5,030 (2024) -> 7,369 (2025). 7,369 equals the sum of MER2024's labelled sets (5,030+1,169+1,170), so it is judged to include them (no sentence stating the breakdown was found)"
+mer_caption,subset_of,mer2024,mer_caption_paper,Annotations of the unlabelled part of MER2024
+merr,subset_of,mer2023,merr_paper,Annotations of the unlabelled part of MER2023
+mmeld,version_of,meld,mmeld_paper,Text of MELD utterances translated into 4 languages
+nemo,distinct_from,polishemo,,Both Polish emotional speech but different corpora (per the polishemo note)
+nonverbaltts,contains,expresso,nonverbaltts_card,"Contains part of Expresso's audio (1,804 clips). Also contains VoxCeleb audio (4,452 clips; VoxCeleb not in the DB) (card: derived from VoxCeleb and Expresso)"
+ov_merd,subset_of,mer2023,ov_merd_paper,A new label layer on part of MER2023 (§2.3)
+persian_esd,distinct_from,esd,persian_esd_paper,"Similar name, but not the Chinese-English ESD (HLT Singapore)"
+prahalabs_malayalam,subset_of,rasa,prahalabs_malayalam_card,"Rows' wav_path points to rasa_hf/data/Malayalam (checked on the first row, 2026-10-14). Not checked for all rows"
+ses_ed,distinct_from,ses_sd,ses_ed_page,English version by the same 53 students. SES-SD is the Spanish version
+ses_ed,shares_sentences_with,cremad,gh_cheyneycomputerscience_crema_d,"SES-ED sentence codes DFA, IEO, IWW and TAI are the CREMA-D codes of the same four sentences (CREMA-D README list; Whisper transcripts of 6 clips per code agree). TSI has the same code but a different sentence ('The sun is very bright' vs 'The surface is slick')"
+ses_sd,shares_sentences_with,ses_ed,ses_sd_page,"SES-SD is the Spanish version of SES-ED: the same speakers and the same five sentence codes, with the sentences translated (Whisper transcripts of 6 clips per code). Four of the five sentences are also translations of CREMA-D sentences"
+slue_hvb,subset_of,harper_valley_bank,slue_hvb_paper,An evaluation version of HVB utterances relabelled with human dialogue acts
+textrolspeech,contains,esd,textrolspeech_paper,Paper §2
+textrolspeech,contains,mead,textrolspeech_paper,Paper §2
+textrolspeech,contains,mess,textrolspeech_paper,Paper §2
+textrolspeech,contains,savee,textrolspeech_paper,Paper §2
+textrolspeech,contains,tess,textrolspeech_paper,Paper §2
+thanushs25_tamil,possibly_same_as,meghana007_tamil,thanushs25_tamil_card,"README, final_data/ layout and the 195 wav files are identical (2026-10-14)"
+tures,distinct_from,turevdb,tures_paper,"Both Turkish. TurES is film utterances, TurEV-DB is acted words"
+urduser,distinct_from,urdu,urduser_page,Both Urdu but different. UrduSER is acted speech on Mendeley (10 speakers); URDU is 400 utterances from talk shows. UrduSER in Table I of the MSP-Podcast paper corresponds to urduser; also gh_siddiquelatif_urdu_dataset
+voicenet,subset_of,emilia_emotion,arxiv_s_2609_32016,VoiceNet-Emo clips were selected from Emilia-Large (Emolia's audio)

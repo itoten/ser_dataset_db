@@ -9,7 +9,8 @@ import sys
 import csvio
 import db as dbmod
 
-EXTRA_COLS = ["annotation_items", "license_checked_on", "license_source_type", "license_checked_by",
+EXTRA_COLS = ["paper_url", "distribution_url", "card_url", "mirror_url", "readme_url", "other_url",
+              "annotation_items", "license_checked_on", "license_source_type", "license_checked_by",
               "access_checked_on", "oldest_checked_on", "latest_checked_on"]
 DISC_COLS = ["dataset_id", "field", "kind", "datasets_value", "datasets_source_type", "other_value",
              "other_source_type", "other_source_ref", "note"]
@@ -20,7 +21,16 @@ def semi(v):
     return v.replace(";", ", ")
 
 
+def src_url(sources, sid):
+    r = sources.get(sid)
+    return (r["url"] or r["source_id"]) if r else ""
+
+
 def wide(db):
+    sources = {r["source_id"]: r for r in db["sources"][1]}
+    urls = {}
+    for r in db["dataset_sources"][1]:
+        urls.setdefault((r["dataset_id"], r["role"]), []).append(src_url(sources, r["source_id"]))
     items = {}
     for a in db["annotations"][1]:
         items.setdefault(a["dataset_id"], []).append(a["item"])
@@ -36,8 +46,9 @@ def wide(db):
         dates = sorted(e["checked_on"] for e in ce.values())
         row = dict(d)
         row.update({
+            **{f"{role}_url": ";".join(urls.get((i, role), [])) for role in ("paper", "distribution", "card", "mirror", "readme", "other")},
             "annotation_items": ";".join(sorted(items.get(i, []))),
-            "license_checked_on": lic["checked_on"] if lic else "", "license_source_type": lic["source_type"] if lic else "",
+            "license_checked_on": lic["checked_on"] if lic else "", "license_source_type": sources.get(lic["source_id"], {}).get("source_type", "") if lic else "",
             "license_checked_by": lic["checked_by"] if lic else "", "access_checked_on": acc["checked_on"] if acc else "",
             "oldest_checked_on": dates[0] if dates else "", "latest_checked_on": dates[-1] if dates else "",
         })
@@ -46,6 +57,7 @@ def wide(db):
 
 
 def discrepancies(db):
+    sources = {r["source_id"]: r for r in db["sources"][1]}
     ds = {d["dataset_id"]: d for d in db["datasets"][1]}
     out = []
     for e in db["evidence"][1]:
@@ -53,8 +65,8 @@ def discrepancies(db):
             continue
         out.append({"dataset_id": e["dataset_id"], "field": e["field"], "kind": "conflicting",
                     "datasets_value": "conflicting", "datasets_source_type": "see evidence",
-                    "other_value": e["value"], "other_source_type": e["source_type"],
-                    "other_source_ref": e["source_ref"], "note": e["note"]})
+                    "other_value": e["value"], "other_source_type": sources.get(e["source_id"], {}).get("source_type", ""),
+                    "other_source_ref": src_url(sources, e["source_id"]), "note": e["note"]})
     pairs = [("n_speakers_reported", "n_speakers_measured", "reported_vs_release_measured"),
              ("n_utt_reported", "n_files_release_measured", "reported_vs_release_measured")]
     for i, d in ds.items():
