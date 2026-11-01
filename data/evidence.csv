@@ -248,7 +248,8 @@ atthack/license_spdx/02,atthack,license_spdx,LicenseRef-other,atthack_page,Licen
 atthack/n_speakers_reported/01,atthack,n_speakers_reported,25,atthack_paper,abstract: 25 speakers interpreting 100 utterances in 4 social attitudes,2026-10-13,claude,current,
 atthack/name/01,atthack,name,Att-HACK,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by atthack/name/02
 atthack/name/02,atthack,name,Att-HACK,atthack_paper,title of the source contains the name,2026-11-01,claude,current,
-atthack/speech_production/01,atthack,speech_production,acted,atthack_page,About: acted expressive speech in French,2026-10-13,claude,current,
+atthack/speech_production/01,atthack,speech_production,acted,atthack_page,About: acted expressive speech in French,2026-10-13,claude,superseded,superseded by atthack/speech_production/02
+atthack/speech_production/02,atthack,speech_production,acted;improvised,atthack_paper,actors freely improvise based on a given scenario,2026-11-01,claude,current,
 atthack/vocal_content/01,atthack,vocal_content,speech,atthack_page,100 phrases with multiple versions in four social attitudes,2026-10-13,claude,current,
 audiospeechsentiment/access_method/01,audiospeechsentiment,access_method,free_account_required,audiospeechsentiment_page,Kaggle dataset; download requires a Kaggle account,2026-10-14,claude,current,
 audiospeechsentiment/access_observed/01,audiospeechsentiment,access_observed,obtained,,,2026-10-14,claude,superseded,Provisional: carried over from raw_audio_available; superseded by audiospeechsentiment/access_observed/02
@@ -1519,6 +1520,7 @@ expresso/license_spdx/03,expresso,license_spdx,CC-BY-NC-4.0,expresso_page,The Ex
 expresso/n_speakers_reported/02,expresso,n_speakers_reported,4,expresso_page,"the dataset includes 4 speakers (2 males, 2 females)",2026-10-14,claude,current,
 expresso/name/01,expresso,name,Expresso,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by expresso/name/02
 expresso/name/02,expresso,name,Expresso,expresso_paper,title of the source contains the name,2026-11-01,claude,current,
+expresso/speech_production/01,expresso,speech_production,read;improvised,expresso_page,"4 speakers, 40 hours (11h read, 30h improvised)",2026-11-01,claude,current,
 eyase/languages/01,eyase,languages,arz,eyase_survey,EYASE Egyptian Arabic speech emotion corpus,2026-10-14,claude,current,
 eyase/name/01,eyase,name,EYASE,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 fauaibo/emotion_categories.annotator/01,fauaibo,emotion_categories.annotator,human,fauaibo_page,"five labellers, word-based annotation of emotional user states",2026-10-28,claude,current,
@@ -3543,7 +3545,8 @@ thaiser/n_speakers_reported/01,thaiser,n_speakers_reported,200,thaiser_page,"REA
 thaiser/n_speakers_reported/02,thaiser,n_speakers_reported,200,thaiser_card,"the release page, the Hugging Face card and the paper give 200 actors, 112 female and 88 male",2026-10-28,claude,current,The earlier README-based row said 87 male and 113 female; the sources disagree on the gender split (not resolved here); the speaker IDs in the file names number 200
 thaiser/name/01,thaiser,name,Thai SER,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by thaiser/name/02
 thaiser/name/02,thaiser,name,Thai SER,thaiser_page,title of the source contains the name,2026-11-01,claude,current,
-thaiser/speech_production/01,thaiser,speech_production,acted,thaiser_paper,"professional actors (200, aged 18-55) performed scripted sessions and improvisation scenes in the studio or over Zoom",2026-10-28,claude,current,taken from the project review report; the paper was not re-read in this update
+thaiser/speech_production/01,thaiser,speech_production,acted,thaiser_paper,"professional actors (200, aged 18-55) performed scripted sessions and improvisation scenes in the studio or over Zoom",2026-10-28,claude,superseded,taken from the project review report; the paper was not re-read in this update; superseded by thaiser/speech_production/02
+thaiser/speech_production/02,thaiser,speech_production,acted;improvised,thaiser_page,Each recording is separated into two sessions: Script Session and Improvisation Session,2026-11-01,claude,current,
 thaiser/spoken_text_design/01,thaiser,spoken_text_design,parallel;unscripted,,,2026-10-28,claude,provisional,Provisional:
 thaiser/vocal_content/01,thaiser,vocal_content,speech,thaiser_page,dataset described as speech recordings,2026-10-11,claude,current,
 thanushs25_tamil/access_observed/01,thanushs25_tamil,access_observed,obtained,thanushs25_tamil_readme,commit 906c09addc96; Access,2026-11-01,claude,current,
