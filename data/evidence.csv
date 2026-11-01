@@ -277,7 +277,8 @@ avcaffe/n_speakers_reported/01,avcaffe,n_speakers_reported,106,avcaffe_paper,abs
 avcaffe/name/01,avcaffe,name,AVCAffe,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by avcaffe/name/02
 avcaffe/name/02,avcaffe,name,AVCAffe,avcaffe_page_2,title of the source contains the name,2026-11-01,claude,current,
 avcaffe/vocal_content/01,avcaffe,vocal_content,speech,avcaffe_paper,audio-visual recordings of conversations,2026-10-23,claude,current,
-banglamood/access_method/01,banglamood,access_method,direct_download,,,2026-10-12,claude,provisional,Provisional:
+banglamood/access_method/01,banglamood,access_method,direct_download,,,2026-10-12,claude,superseded,Provisional:; superseded by banglamood/access_method/02
+banglamood/access_method/02,banglamood,access_method,direct_download,banglamood_page,"the page offers ""Download All Files"" without a sign-in",2026-11-01,claude,current,
 banglamood/access_observed/01,banglamood,access_observed,obtained,,,2026-10-12,claude,superseded,Provisional: carried over from raw_audio_available; superseded by banglamood/access_observed/02
 banglamood/access_observed/02,banglamood,access_observed,obtained,banglamood_readme,commit 07b611114c77; Access,2026-11-01,claude,current,
 banglamood/emotion_categories.annotator/01,banglamood,emotion_categories.annotator,human,banglamood_page,method: three native Bengali annotators distributed the videos and labelled emotions,2026-10-28,claude,current,
@@ -295,7 +296,8 @@ banglamood/n_speakers_release/01,banglamood,n_speakers_release,unknown,banglamoo
 banglamood/name/01,banglamood,name,BanglaMood,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by banglamood/name/02
 banglamood/name/02,banglamood,name,BanglaMood,banglamood_page,title of the source contains the name,2026-11-01,claude,current,
 banglamood/vocal_content/01,banglamood,vocal_content,speech,banglamood_page,dataset described as speech recordings,2026-10-12,claude,current,
-banglaser/access_method/01,banglaser,access_method,direct_download,,,2026-10-11,claude,provisional,Provisional:
+banglaser/access_method/01,banglaser,access_method,direct_download,,,2026-10-11,claude,superseded,Provisional:; superseded by banglaser/access_method/02
+banglaser/access_method/02,banglaser,access_method,direct_download,banglaser_page,"the page offers ""Download All Files"" without a sign-in",2026-11-01,claude,current,
 banglaser/access_observed/01,banglaser,access_observed,obtained,,,2026-10-11,claude,superseded,Provisional: carried over from raw_audio_available; superseded by banglaser/access_observed/02
 banglaser/access_observed/02,banglaser,access_observed,obtained,banglaser_readme,commit c5a35d31f077; Access,2026-11-01,claude,current,
 banglaser/emotion_categories.annotator/01,banglaser,emotion_categories.annotator,human,banglaser_paper,emotional expressions were simulated and enacted; actors were briefed on the scripted statements and emotional states,2026-10-26,claude,current,
@@ -317,7 +319,8 @@ banglaser/name/02,banglaser,name,BanglaSER,banglaser_page,title of the source co
 banglaser/speech_production/01,banglaser,speech_production,acted,banglaser_paper,"34 nonprofessional actors acted read, scripted statements (3 statements x 3 repetitions) on smartphones and laptops",2026-10-26,claude,current,
 banglaser/spoken_text_design/01,banglaser,spoken_text_design,parallel,banglaser_page,3 statements x 3 repetitions x 4 emotions x 34 speakers (+ neutral from 27 speakers): the same three statements in every emotion,2026-10-26,claude,current,
 banglaser/vocal_content/01,banglaser,vocal_content,speech,banglaser_page,dataset described as speech recordings,2026-10-11,claude,current,
-banspemo/access_method/01,banspemo,access_method,direct_download,,,2026-10-11,claude,provisional,Provisional:
+banspemo/access_method/01,banspemo,access_method,direct_download,,,2026-10-11,claude,superseded,Provisional:; superseded by banspemo/access_method/02
+banspemo/access_method/02,banspemo,access_method,direct_download,banspemo_page,"the page offers ""Download All Files"" without a sign-in",2026-11-01,claude,current,
 banspemo/access_observed/01,banspemo,access_observed,obtained,,,2026-10-11,claude,superseded,Provisional: carried over from raw_audio_available; superseded by banspemo/access_observed/02
 banspemo/access_observed/02,banspemo,access_observed,obtained,banspemo_readme,commit b676f7fb18be; Access,2026-11-01,claude,current,
 banspemo/emotion_categories.annotator/01,banspemo,emotion_categories.annotator,human,banspemo_paper,speakers were explained the emotional states and recorded the sentences in a more realistic way than just reading,2026-10-26,claude,current,
@@ -1813,7 +1816,8 @@ indemovis/license_spdx/01,indemovis,license_spdx,none_stated,indemovis_page,Zeno
 indemovis/n_speakers_reported/01,indemovis,n_speakers_reported,61,indemovis_page,122 videos involving 61 participants,2026-10-14,claude,current,
 indemovis/name/01,indemovis,name,IndEmoVis,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by indemovis/name/02
 indemovis/name/02,indemovis,name,IndEmoVis,indemovis_page,title of the source contains the name,2026-11-01,claude,current,
-indianenglish/access_method/01,indianenglish,access_method,direct_download,,,2026-10-11,claude,provisional,Provisional:
+indianenglish/access_method/01,indianenglish,access_method,direct_download,,,2026-10-11,claude,superseded,Provisional:; superseded by indianenglish/access_method/02
+indianenglish/access_method/02,indianenglish,access_method,direct_download,indianenglish_page,"the page offers ""Download All Files"" without a sign-in",2026-11-01,claude,current,
 indianenglish/access_observed/01,indianenglish,access_observed,obtained,,,2026-10-11,claude,superseded,Provisional: carried over from raw_audio_available; superseded by indianenglish/access_observed/02
 indianenglish/access_observed/02,indianenglish,access_observed,obtained,indianenglish_readme,commit 25201a18519a; Access,2026-11-01,claude,current,
 indianenglish/emotion_categories.annotator/01,indianenglish,emotion_categories.annotator,unknown,,,2026-10-26,claude,provisional,Provisional:
@@ -1839,7 +1843,8 @@ indonesian_fahmi2020/n_files_reported/01,indonesian_fahmi2020,n_files_reported,9
 indonesian_fahmi2020/n_speakers_reported/01,indonesian_fahmi2020,n_speakers_reported,10,indonesian_fahmi2020_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
 indonesian_fahmi2020/name/01,indonesian_fahmi2020,name,Indonesian emotional speech (Fahmi et al. 2020),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 indonesian_fahmi2020/speech_production/01,indonesian_fahmi2020,speech_production,acted,indonesian_fahmi2020_paper,"dialogs of an Indonesian movie were classified into four emotion classes (movie dialogue, scripted performance)",2026-10-28,claude,current,
-indowavesentiment/access_method/01,indowavesentiment,access_method,direct_download,,,2026-10-11,claude,provisional,Provisional:
+indowavesentiment/access_method/01,indowavesentiment,access_method,direct_download,,,2026-10-11,claude,superseded,Provisional:; superseded by indowavesentiment/access_method/02
+indowavesentiment/access_method/02,indowavesentiment,access_method,direct_download,indowavesentiment_page,"the page offers ""Download All Files"" without a sign-in",2026-11-01,claude,current,
 indowavesentiment/access_observed/01,indowavesentiment,access_observed,obtained,,,2026-10-11,claude,superseded,Provisional: carried over from raw_audio_available; superseded by indowavesentiment/access_observed/02
 indowavesentiment/access_observed/02,indowavesentiment,access_observed,obtained,indowavesentiment_readme,commit 820198870b01; Access,2026-11-01,claude,current,
 indowavesentiment/emotion_categories.annotator/01,indowavesentiment,emotion_categories.annotator,human,,,2026-10-26,claude,provisional,Provisional:
@@ -1860,7 +1865,8 @@ indowavesentiment/name/02,indowavesentiment,name,IndoWaveSentiment,indowavesenti
 indowavesentiment/speech_production/01,indowavesentiment,speech_production,acted,,,2026-10-26,claude,provisional,Provisional:
 indowavesentiment/spoken_text_design/01,indowavesentiment,spoken_text_design,parallel,,,2026-10-26,claude,provisional,"Provisional: Automatic transcripts, not checked by a person; the whole set was not transcribed"
 indowavesentiment/vocal_content/01,indowavesentiment,vocal_content,speech,indowavesentiment_page,dataset described as speech recordings,2026-10-11,claude,current,
-inesco/access_method/01,inesco,access_method,direct_download,,,2026-10-12,claude,provisional,Provisional:
+inesco/access_method/01,inesco,access_method,direct_download,,,2026-10-12,claude,superseded,Provisional:; superseded by inesco/access_method/02
+inesco/access_method/02,inesco,access_method,direct_download,inesco_page,"the page offers ""Download All Files"" without a sign-in",2026-11-01,claude,current,
 inesco/access_observed/01,inesco,access_observed,obtained,,,2026-10-12,claude,superseded,Provisional: carried over from raw_audio_available; superseded by inesco/access_observed/02
 inesco/access_observed/02,inesco,access_observed,obtained,inesco_readme,commit c3f1b82bcea1; Access,2026-11-01,claude,current,
 inesco/emotion_categories.annotator/01,inesco,emotion_categories.annotator,human,,,2026-10-28,claude,provisional,Provisional:
@@ -2077,7 +2083,8 @@ kazemotts/name/01,kazemotts,name,KazEmoTTS,,,2026-11-01,claude,superseded,Provis
 kazemotts/name/02,kazemotts,name,KazEmoTTS,kazemotts_card,title of the source contains the name,2026-11-01,claude,current,
 kazemotts/speech_production/01,kazemotts,speech_production,acted,kazemotts_card,professional narrators act the emotions (TTS corpus),2026-10-11,claude,current,
 kazemotts/vocal_content/01,kazemotts,vocal_content,speech,kazemotts_card,dataset described as speech recordings,2026-10-11,claude,current,
-kbes/access_method/01,kbes,access_method,direct_download,,,2026-10-11,claude,provisional,Provisional:
+kbes/access_method/01,kbes,access_method,direct_download,,,2026-10-11,claude,superseded,Provisional:; superseded by kbes/access_method/02
+kbes/access_method/02,kbes,access_method,direct_download,kbes_page,"the page offers ""Download All Files"" without a sign-in",2026-11-01,claude,current,
 kbes/access_observed/01,kbes,access_observed,obtained,,,2026-10-11,claude,superseded,Provisional: carried over from raw_audio_available; superseded by kbes/access_observed/02
 kbes/access_observed/02,kbes,access_observed,obtained,kbes_readme,commit d9e26d5cc616; Access,2026-11-01,claude,current,
 kbes/emotion_categories.annotator/01,kbes,emotion_categories.annotator,human,kbes_paper_2,"one author labelled the emotion by listening, another author checked, and a third author reviewed the whole process and checked a random few",2026-10-26,claude,current,
@@ -2383,7 +2390,8 @@ mceiu/name/02,mceiu,name,MC-EIU,mceiu_card,title of the source contains the name
 mceiu/speech_production/01,mceiu,speech_production,acted,mceiu_paper,clips of English and Chinese TV dramas (scripted performances),2026-10-28,claude,current,
 mceiu/spoken_text_design/01,mceiu,spoken_text_design,dialogue_script,mceiu_paper,lines of TV series,2026-10-28,claude,current,
 mceiu/vocal_content/01,mceiu,vocal_content,speech,mceiu_paper,"textual, acoustic, and visual content of utterances",2026-10-14,claude,current,
-mderma/access_method/01,mderma,access_method,direct_download,,,2026-10-11,claude,provisional,Provisional:
+mderma/access_method/01,mderma,access_method,direct_download,,,2026-10-11,claude,superseded,Provisional:; superseded by mderma/access_method/02
+mderma/access_method/02,mderma,access_method,direct_download,mderma_page,"the page offers ""Download All Files"" without a sign-in",2026-11-01,claude,current,
 mderma/access_observed/01,mderma,access_observed,obtained,,,2026-10-11,claude,superseded,Provisional: carried over from raw_audio_available; superseded by mderma/access_observed/02
 mderma/access_observed/02,mderma,access_observed,obtained,mderma_readme,commit a5e9f7e88d2a; Access,2026-11-01,claude,current,
 mderma/emotion_categories.annotator/01,mderma,emotion_categories.annotator,human,mderma_paper,five native speakers listened to every segment independently; segments with at least three matching labels were kept,2026-10-26,claude,current,
@@ -2489,7 +2497,8 @@ merr/material_origin/01,merr,material_origin,film_tv,merr_paper,Derived from MER
 merr/n_files_reported/01,merr,n_files_reported,28618,merr_paper,"abstract: 28,618 coarse-grained and 4,487 fine-grained annotated samples",2026-10-23,claude,current,"Count of coarse annotations. Fine-grained annotations: 4,487"
 merr/name/01,merr,name,MERR,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by merr/name/02
 merr/name/02,merr,name,MERR,merr_page,the name appears in the source: ...LaMA/)! [2025.07.09] 🔥🔥🔥 We release the MERR dataset construction strategy at [MER-F...,2026-11-01,claude,current,
-mesd/access_method/01,mesd,access_method,direct_download,,,2026-10-11,claude,provisional,Provisional:
+mesd/access_method/01,mesd,access_method,direct_download,,,2026-10-11,claude,superseded,Provisional:; superseded by mesd/access_method/02
+mesd/access_method/02,mesd,access_method,direct_download,mesd_page,"the page offers ""Download All Files"" without a sign-in",2026-11-01,claude,current,
 mesd/access_observed/01,mesd,access_observed,obtained,,,2026-10-11,claude,superseded,Provisional: carried over from raw_audio_available; superseded by mesd/access_observed/02
 mesd/access_observed/02,mesd,access_observed,obtained,mesd_readme,commit 335de59c7787; Access,2026-11-01,claude,current,
 mesd/emotion_categories.annotator/01,mesd,emotion_categories.annotator,human,,,2026-10-27,claude,provisional,Provisional: taken from the project review report; the paper was not re-read in this update
@@ -3697,7 +3706,8 @@ urdu/name/02,urdu,name,URDU,gh_siddiquelatif_urdu_dataset,title of the source co
 urdu/speech_production/01,urdu,speech_production,spontaneous,,,2026-10-28,claude,provisional,Provisional: taken from the project review report; the paper was not re-read in this update
 urdu/spoken_text_design/01,urdu,spoken_text_design,unscripted,,,2026-10-28,claude,provisional,Provisional:
 urdu/vocal_content/01,urdu,vocal_content,speech,gh_siddiquelatif_urdu_dataset,utterances cut from talk shows,2026-10-11,claude,current,
-urduser/access_method/01,urduser,access_method,direct_download,,,2026-10-11,claude,provisional,Provisional:
+urduser/access_method/01,urduser,access_method,direct_download,,,2026-10-11,claude,superseded,Provisional:; superseded by urduser/access_method/02
+urduser/access_method/02,urduser,access_method,direct_download,urduser_page,"the page offers ""Download All Files"" without a sign-in",2026-11-01,claude,current,
 urduser/access_observed/01,urduser,access_observed,obtained,,,2026-10-11,claude,superseded,Provisional: carried over from raw_audio_available; superseded by urduser/access_observed/02
 urduser/access_observed/02,urduser,access_observed,obtained,urduser_readme,commit 5e48d52daadc; Access,2026-11-01,claude,current,
 urduser/emotion_categories.annotator/01,urduser,emotion_categories.annotator,human,,,2026-10-28,claude,provisional,Provisional:
