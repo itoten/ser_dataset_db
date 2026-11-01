@@ -37,6 +37,7 @@ afew/license_spdx/02,afew,license_spdx,LicenseRef-custom-research-only,afew_page
 afew/material_origin/01,afew,material_origin,film_tv,afew_page,a dynamic temporal facial expressions data corpus consisting of close to real world environment extracted from movies,2026-10-31,claude,current,
 afew/name/01,afew,name,AFEW,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by afew/name/02
 afew/name/02,afew,name,AFEW,afew_page,"the name appears in the source: ...av[at]gmail[dot]com with the subject : ""AFEW/SFEW download"" with signed EULA documen...",2026-11-01,claude,current,
+afew/speech_production/01,afew,speech_production,acted,afew_page,"""Acted Facial Expressions In The Wild ... extracted from movies""",2026-11-01,claude,current,
 affectspeech/access_method/01,affectspeech,access_method,signed_agreement,affectspeech_page,README: sign the EULA and send the scanned PDF by e-mail,2026-10-14,claude,current,
 affectspeech/access_observed/01,affectspeech,access_observed,obtained,affectspeech_page,README: private link to download the full version after approval,2026-10-14,claude,current,
 affectspeech/emotion_categories.annotator/01,affectspeech,emotion_categories.annotator,mixed,affectspeech_paper,"the nine-category labels come from the source corpora (SAVEE, RAVDESS, eNTERFACE, TESS, CREMA-D, ESD, MEAD, MESS) and algorithmic pre-labeling for the added VCTK and LibriTTS subsets; the 1,522,794 descriptions were made by multimodal LLMs and checked by humans",2026-10-28,claude,current,Which categorical labels of the VCTK / LibriTTS subsets are pre-labelled automatically was not read in detail; the composition figure was not readable in the text
@@ -404,6 +405,7 @@ baum1/n_files_reported/02,baum1,n_files_reported,1184,baum1_page,abstract: 1184 
 baum1/n_speakers_reported/02,baum1,n_speakers_reported,31,baum1_page,abstract: 1184 multimodal facial video clips collected from 31 subjects,2026-10-14,claude,current,
 baum1/name/01,baum1,name,BAUM-1,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by baum1/name/02
 baum1/name/02,baum1,name,BAUM-1,baum1_paper,title of the source contains the name,2026-11-01,claude,current,
+baum1/speech_production/01,baum1,speech_production,spontaneous,baum1_paper,"""The 1184 video clips contain spontaneous facial expressions and speech""",2026-11-01,claude,current,
 baum2/access_method/01,baum2,access_method,request_form_or_email,baum2_page,additional_info: in order to download the database please send an e-mail,2026-10-14,claude,current,
 baum2/access_observed/01,baum2,access_observed,obtained,baum2_page,abstract: audio-visual affective face database,2026-10-14,claude,current,
 baum2/languages/01,baum2,languages,mul,baum2_page,abstract: a multilingual audio-visual affective face database,2026-10-14,claude,current,
@@ -715,6 +717,7 @@ coraa_ser/languages/01,coraa_ser,languages,por,coraa_ser_page,README: Brazilian 
 coraa_ser/license_spdx/01,coraa_ser,license_spdx,none_stated,coraa_ser_page,repository has no license; README states no terms,2026-10-14,claude,current,
 coraa_ser/name/01,coraa_ser,name,CORAA SER,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by coraa_ser/name/02
 coraa_ser/name/02,coraa_ser,name,CORAA SER,coraa_ser_page,the name appears in the source: ...ortuguese. We provide a dataset called [CORAA SER version 1.0](https://drive.google.com/d...,2026-11-01,claude,current,
+coraa_ser/speech_production/01,coraa_ser,speech_production,spontaneous,coraa_ser_page,"""Emotion Recognition from Brazilian Portuguese Informal Spontaneous Speech""",2026-11-01,claude,current,
 coraa_ser/vocal_content/01,coraa_ser,vocal_content,speech,coraa_ser_page,README: audio segments of spontaneous speech,2026-10-14,claude,current,
 cped/access_method/01,cped,access_method,unavailable,cped_paper,abstract: textual dataset with audio and video features released,2026-10-14,claude,current,Raw audio cannot be obtained
 cped/access_observed/01,cped,access_observed,unavailable,cped_paper,abstract: we release the textual dataset with audio features and video features,2026-10-14,claude,current,
@@ -876,6 +879,7 @@ dihana/license_spdx/01,dihana,license_spdx,CC-BY-4.0,dihana_page,Zenodo metadata
 dihana/n_speakers_reported/01,dihana,n_speakers_reported,225,dihana_page,In total 225 speakers (153 males and 72 females) recorded 900 dialogues,2026-11-01,claude,current,
 dihana/name/01,dihana,name,DIHANA,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by dihana/name/02
 dihana/name/02,dihana,name,DIHANA,dihana_page,title of the source contains the name,2026-11-01,claude,current,
+dihana/speech_production/01,dihana,speech_production,spontaneous,dihana_page,"""spontaneous speech"" (dialogues not restricted lexically or syntactically)",2026-11-01,claude,current,
 dihana/vocal_content/01,dihana,vocal_content,speech,dihana_page,spontaneous speech; telephone dialogues,2026-10-14,claude,current,
 dusha/access_method/01,dusha,access_method,direct_download,,,2026-10-11,claude,provisional,Provisional:
 dusha/access_observed/01,dusha,access_observed,obtained,,,2026-10-11,claude,superseded,Provisional: carried over from raw_audio_available; superseded by dusha/access_observed/02
@@ -2723,6 +2727,7 @@ naturalvoices/license_spdx/01,naturalvoices,license_spdx,none_stated,naturalvoic
 naturalvoices/material_origin/01,naturalvoices,material_origin,podcast,naturalvoices_paper,"abstract: 5,049 hours of spontaneous podcast recordings",2026-10-13,claude,current,
 naturalvoices/name/01,naturalvoices,name,NaturalVoices,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by naturalvoices/name/02
 naturalvoices/name/02,naturalvoices,name,NaturalVoices,naturalvoices_card,title of the source contains the name,2026-11-01,claude,current,
+naturalvoices/speech_production/01,naturalvoices,speech_production,spontaneous,naturalvoices_card,"""curated from spontaneous, in-..."" (card description)",2026-11-01,claude,current,
 naturalvoices/vocal_content/01,naturalvoices,vocal_content,speech,naturalvoices_paper,abstract: spontaneous podcast speech with transcripts,2026-10-13,claude,current,
 nemo/access_method/01,nemo,access_method,direct_download,,,2026-10-11,claude,superseded,Provisional:; superseded by nemo/access_method/02
 nemo/access_method/02,nemo,access_method,direct_download,nemo_card,Hugging Face API: gated False,2026-11-01,claude,current,
@@ -3316,6 +3321,7 @@ spanish_meacorpus/material_origin/01,spanish_meacorpus,material_origin,web_video
 spanish_meacorpus/n_files_reported/01,spanish_meacorpus,n_files_reported,5129,spanish_meacorpus_page,README: 13.16 h of speech divided into 5129 segments,2026-10-14,claude,current,
 spanish_meacorpus/name/01,spanish_meacorpus,name,Spanish MEACorpus 2023,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by spanish_meacorpus/name/02
 spanish_meacorpus/name/02,spanish_meacorpus,name,Spanish MEACorpus 2023,spanish_meacorpus_page,the name appears in the source: ...# Spanish MEACorpus 2023 ## A multi-modal speech-text corpus for...,2026-11-01,claude,current,
+spanish_meacorpus/speech_production/01,spanish_meacorpus,speech_production,spontaneous,spanish_meacorpus_page,"""realistic emotional distributions in spontaneous speech""",2026-11-01,claude,current,
 spanish_meacorpus/vocal_content/01,spanish_meacorpus,vocal_content,speech,spanish_meacorpus_page_2,segmented speech excerpts with manually revised transcriptions,2026-10-14,claude,current,
 speech_massive/access_method/01,speech_massive,access_method,direct_download,speech_massive_card,dataset API gated: False for Speech-MASSIVE; the -test repository is gated auto,2026-10-14,claude,current,
 speech_massive/access_observed/01,speech_massive,access_observed,obtained,speech_massive_card,repository files total about 32GB,2026-10-14,claude,current,
@@ -3849,6 +3855,7 @@ vam/n_files_reported/02,vam,n_files_reported,1018,vam_paper,VAM-Audio contains 1
 vam/n_speakers_reported/02,vam,n_speakers_reported,47,vam_paper,1018 emotional utterances by 47 speakers (11m/36f),2026-10-31,claude,current,
 vam/name/01,vam,name,VAM,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by vam/name/02
 vam/name/02,vam,name,VAM,vam_page,title of the source contains the name,2026-11-01,claude,current,
+vam/speech_production/01,vam,speech_production,spontaneous,vam_paper,"""database of spontaneous emotional speech in German""",2026-11-01,claude,current,
 venec/full_title/01,venec,full_title,Vocal Expressions of Nineteen Emotions across Cultures,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 venec/name/01,venec,name,VENEC,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 verbo/access_method/01,verbo,access_method,request_form_or_email,verbo_page_2,request the database by filling out this form and sending it by e-mail,2026-10-14,claude,current,
