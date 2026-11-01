@@ -32,7 +32,7 @@ aesdd/name/02,aesdd,name,AESDD,aesdd_page,title of the source contains the name,
 aesdd/speech_production/01,aesdd,speech_production,acted,aesdd_page,"the first version was created with professional actors; utterances in five emotions: anger, disgust, fear, happiness and sadness",2026-10-26,claude,current,
 aesdd/vocal_content/01,aesdd,vocal_content,speech,aesdd_page,acted Greek speech,2026-10-11,claude,current,
 afew/access_method/01,afew,access_method,signed_agreement,afew_page,"to obtain a copy, e-mail with the signed EULA document",2026-10-14,claude,current,
-afew/license_spdx/02,afew,license_spdx,LicenseRef-custom-research-only,afew_page,copy obtained only with a signed EULA,2026-10-14,claude,current,EULA text not read
+afew/license_spdx/02,afew,license_spdx,LicenseRef-custom-research-only,afew_page,copy obtained only with a signed EULA,2026-10-14,user,current,EULA text not read; Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 afew/material_origin/01,afew,material_origin,film_tv,afew_page,a dynamic temporal facial expressions data corpus consisting of close to real world environment extracted from movies,2026-10-31,claude,current,
 afew/name/01,afew,name,AFEW,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 affectspeech/access_method/01,affectspeech,access_method,signed_agreement,affectspeech_page,README: sign the EULA and send the scanned PDF by e-mail,2026-10-14,claude,current,
@@ -41,7 +41,7 @@ affectspeech/emotion_categories.annotator/01,affectspeech,emotion_categories.ann
 affectspeech/full_title/01,affectspeech,full_title,AffectSpeech: A Large-Scale Emotional Speech Dataset with Fine-Grained Textual Descriptions for Speech Emotion Captioning and Synthesis,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by affectspeech/full_title/02
 affectspeech/full_title/02,affectspeech,full_title,AffectSpeech: A Large-Scale Emotional Speech Dataset with Fine-Grained Textual Descriptions for Speech Emotion Captioning and Synthesis,affectspeech_page,title of the source contains the full title,2026-11-01,claude,current,
 affectspeech/languages/01,affectspeech,languages,eng,affectspeech_page,README Dataset Overview: Language English,2026-10-14,claude,current,
-affectspeech/license_spdx/01,affectspeech,license_spdx,LicenseRef-custom-research-only,affectspeech_page,README: Restricted EULA for non-commercial academic research purposes only,2026-10-14,claude,current,
+affectspeech/license_spdx/01,affectspeech,license_spdx,LicenseRef-custom-research-only,affectspeech_page,README: Restricted EULA for non-commercial academic research purposes only,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 affectspeech/n_files_reported/01,affectspeech,n_files_reported,253799,affectspeech_paper,"§III-A: The dataset contains 253,799 authentic English utterances",2026-10-23,claude,current,
 affectspeech/name/01,affectspeech,name,AffectSpeech,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by affectspeech/name/02
 affectspeech/name/02,affectspeech,name,AffectSpeech,affectspeech_page,title of the source contains the name,2026-11-01,claude,current,
@@ -54,19 +54,19 @@ afrikaans_se/name/01,afrikaans_se,name,Afrikaans speech emotion corpus,,,2026-11
 aihub_263/access_method/01,aihub_263,access_method,request_form_or_email,aihub_263_page,only Korean nationals can apply for the data (내국인만 데이터 신청이 가능합니다),2026-10-14,claude,current,
 aihub_263/access_observed/01,aihub_263,access_observed,obtained,aihub_263_page,type: audio,2026-10-14,claude,current,
 aihub_263/languages/01,aihub_263,languages,kor,aihub_263_page,field: Korean (한국어),2026-10-14,claude,current,
-aihub_263/license_spdx/01,aihub_263,license_spdx,unknown,aihub_263_page,page gives no license name; AIHub usage policy applies,2026-10-14,claude,current,Terms of use not read
+aihub_263/license_spdx/01,aihub_263,license_spdx,unknown,aihub_263_page,page gives no license name; AIHub usage policy applies,2026-10-14,user,current,Terms of use not read; Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 aihub_263/n_files_reported/01,aihub_263,n_files_reported,43991,aihub_263_page,"4th year 14,606; 5th year 10,011; 5th year phase 2 19,374",2026-10-14,claude,current,Sum of the three releases
 aihub_263/name/01,aihub_263,name,감정 분류를 위한 대화 음성 데이터셋,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 aihub_263/vocal_content/01,aihub_263,vocal_content,speech,aihub_263_page,"conversational speech audio, WAV",2026-10-14,claude,current,
 aihub_271/access_method/01,aihub_271,access_method,request_form_or_email,aihub_271_page,only Korean nationals can apply for the data (내국인만 데이터 신청이 가능합니다),2026-10-14,claude,current,
 aihub_271/access_observed/01,aihub_271,access_observed,unavailable,aihub_271_page,type: text (텍스트),2026-10-14,claude,current,
 aihub_271/languages/01,aihub_271,languages,kor,aihub_271_page,field: Korean (한국어),2026-10-14,claude,current,
-aihub_271/license_spdx/01,aihub_271,license_spdx,unknown,aihub_271_page,page gives no license name; AIHub usage policy applies,2026-10-14,claude,current,Terms of use not read
+aihub_271/license_spdx/01,aihub_271,license_spdx,unknown,aihub_271_page,page gives no license name; AIHub usage policy applies,2026-10-14,user,current,Terms of use not read; Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 aihub_271/name/01,aihub_271,name,한국어 감정 정보가 포함된 연속적 대화 데이터셋,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 aihub_286/access_method/01,aihub_286,access_method,request_form_or_email,aihub_286_page,only Korean nationals can apply for the data (내국인만 데이터 신청이 가능합니다),2026-10-14,claude,current,
 aihub_286/access_observed/01,aihub_286,access_observed,obtained,aihub_286_page,"type: audio, text",2026-10-14,claude,current,
 aihub_286/languages/01,aihub_286,languages,kor,aihub_286_page,field: Korean (한국어),2026-10-14,claude,current,
-aihub_286/license_spdx/01,aihub_286,license_spdx,unknown,aihub_286_page,page gives no license name; AIHub usage policy applies,2026-10-14,claude,current,Terms of use not read
+aihub_286/license_spdx/01,aihub_286,license_spdx,unknown,aihub_286_page,page gives no license name; AIHub usage policy applies,2026-10-14,user,current,Terms of use not read; Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 aihub_286/n_files_reported/01,aihub_286,n_files_reported,21000,aihub_286_page,"3,000 utterances for each of 7 emotions, 21,000 files",2026-10-14,claude,current,
 aihub_286/n_speakers_reported/01,aihub_286,n_speakers_reported,1,aihub_286_page,one female voice actor in her 30s,2026-10-14,claude,current,
 aihub_286/name/01,aihub_286,name,감정 음성합성 데이터셋,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -76,7 +76,7 @@ aihub_466/access_method/01,aihub_466,access_method,request_form_or_email,aihub_4
 aihub_466/access_observed/01,aihub_466,access_observed,obtained,aihub_466_page,type: audio; WAV,2026-10-14,claude,current,
 aihub_466/hours_reported/01,aihub_466,hours_reported,1067,aihub_466_page,"built 2021 / 1,067 hours",2026-10-14,claude,current,
 aihub_466/languages/01,aihub_466,languages,kor,aihub_466_page,field: Korean (한국어),2026-10-14,claude,current,
-aihub_466/license_spdx/01,aihub_466,license_spdx,unknown,aihub_466_page,page gives no license name; AIHub usage policy applies,2026-10-14,claude,current,Terms of use not read
+aihub_466/license_spdx/01,aihub_466,license_spdx,unknown,aihub_466_page,page gives no license name; AIHub usage policy applies,2026-10-14,user,current,Terms of use not read; Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 aihub_466/n_speakers_reported/01,aihub_466,n_speakers_reported,50,aihub_466_page,50 professional voice actors,2026-10-14,claude,current,
 aihub_466/name/01,aihub_466,name,감성 및 발화 스타일별 음성합성 데이터,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 aihub_466/speech_production/01,aihub_466,speech_production,acted,aihub_466_page,"50 professional voice actors recorded 1,067 hours",2026-10-14,claude,current,
@@ -85,7 +85,7 @@ aihub_637/access_method/01,aihub_637,access_method,request_form_or_email,aihub_6
 aihub_637/access_observed/01,aihub_637,access_observed,obtained,aihub_637_page,type: audio,2026-10-14,claude,current,
 aihub_637/hours_reported/01,aihub_637,hours_reported,333,aihub_637_page,voice actors 206 hours plus general public 127 hours,2026-10-14,claude,current,Sum of 206 + 127
 aihub_637/languages/01,aihub_637,languages,kor,aihub_637_page,field: Korean (한국어),2026-10-14,claude,current,
-aihub_637/license_spdx/01,aihub_637,license_spdx,unknown,aihub_637_page,page gives no license name; AIHub usage policy applies,2026-10-14,claude,current,Terms of use not read
+aihub_637/license_spdx/01,aihub_637,license_spdx,unknown,aihub_637_page,page gives no license name; AIHub usage policy applies,2026-10-14,user,current,Terms of use not read; Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 aihub_637/n_speakers_reported/01,aihub_637,n_speakers_reported,509,aihub_637_page,8 professional voice actors and 501 general speakers,2026-10-14,claude,current,
 aihub_637/name/01,aihub_637,name,감정 음성 데이터셋,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 aihub_637/speech_production/01,aihub_637,speech_production,acted,aihub_637_page,8 professional voice actors and 501 members of the public recorded emotional speech,2026-10-14,claude,current,
@@ -94,14 +94,14 @@ aihub_71631/access_method/01,aihub_71631,access_method,request_form_or_email,aih
 aihub_71631/access_observed/01,aihub_71631,access_observed,obtained,aihub_71631_page,type: audio; WAV,2026-10-14,claude,current,
 aihub_71631/hours_reported/01,aihub_71631,hours_reported,3000,aihub_71631_page,"a total of 3,000 hours of speech data",2026-10-14,claude,current,
 aihub_71631/languages/01,aihub_71631,languages,kor,aihub_71631_page,field: Korean (한국어),2026-10-14,claude,current,
-aihub_71631/license_spdx/01,aihub_71631,license_spdx,unknown,aihub_71631_page,page gives no license name; AIHub usage policy applies,2026-10-14,claude,current,Terms of use not read
+aihub_71631/license_spdx/01,aihub_71631,license_spdx,unknown,aihub_71631_page,page gives no license name; AIHub usage policy applies,2026-10-14,user,current,Terms of use not read; Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 aihub_71631/name/01,aihub_71631,name,감정이 태깅된 자유대화 (성인),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 aihub_71631/vocal_content/01,aihub_71631,vocal_content,speech,aihub_71631_page,free conversation speech in WAV with JSON labels,2026-10-14,claude,current,
 aihub_71632/access_method/01,aihub_71632,access_method,request_form_or_email,aihub_71632_page,only Korean nationals can apply for the data (내국인만 데이터 신청이 가능합니다),2026-10-14,claude,current,
 aihub_71632/access_observed/01,aihub_71632,access_observed,obtained,aihub_71632_page,type: audio; WAV,2026-10-14,claude,current,
 aihub_71632/hours_reported/01,aihub_71632,hours_reported,3000,aihub_71632_page,"a total of 3,000 hours of speech data",2026-10-14,claude,current,
 aihub_71632/languages/01,aihub_71632,languages,kor,aihub_71632_page,field: Korean (한국어),2026-10-14,claude,current,
-aihub_71632/license_spdx/01,aihub_71632,license_spdx,unknown,aihub_71632_page,page gives no license name; AIHub usage policy applies,2026-10-14,claude,current,Terms of use not read
+aihub_71632/license_spdx/01,aihub_71632,license_spdx,unknown,aihub_71632_page,page gives no license name; AIHub usage policy applies,2026-10-14,user,current,Terms of use not read; Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 aihub_71632/name/01,aihub_71632,name,감정이 태깅된 자유대화 (청소년),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 aihub_71632/vocal_content/01,aihub_71632,vocal_content,speech,aihub_71632_page,free conversation speech in WAV with JSON labels,2026-10-14,claude,current,
 akace/access_method/01,akace,access_method,direct_download,akace_page,README: audio and video files via a shared Google Drive link,2026-10-14,claude,current,
@@ -139,7 +139,7 @@ albemo/emotion_categories.label_verification/01,albemo,emotion_categories.label_
 albemo/full_title/01,albemo,full_title,AlbEmo: an emotional speech corpus for Albanian,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 albemo/hours_release/01,albemo,hours_release,0.37,albemo_readme,commit 08308769a6a3; Size of the release,2026-11-01,claude,current,
 albemo/languages/01,albemo,languages,sqi,albemo_page,dataset description names the language,2026-10-11,claude,current,
-albemo/license_spdx/01,albemo,license_spdx,CC-BY-4.0,albemo_page,bundled LICENSE file of albemo-v1.0.zip,2026-10-11,claude,current,
+albemo/license_spdx/01,albemo,license_spdx,CC-BY-4.0,albemo_page,bundled LICENSE file of albemo-v1.0.zip,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 albemo/listening_test/01,albemo,listening_test,reported,albemo_page,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 albemo/n_files_release/01,albemo,n_files_release,420,,,2026-10-11,claude,superseded,Provisional:; superseded by albemo/n_files_release/02
 albemo/n_files_release/02,albemo,n_files_release,420,albemo_readme,commit 08308769a6a3; Size of the release,2026-11-01,claude,current,
@@ -168,7 +168,7 @@ anad/full_title/01,anad,full_title,Arabic Natural Audio Dataset,,,2026-11-01,cla
 anad/full_title/02,anad,full_title,Arabic Natural Audio Dataset,anad_page,title of the source contains the full title,2026-11-01,claude,current,
 anad/hours_release/01,anad,hours_release,0.36,anad_readme,commit 6cae0e200fff; Size of the release,2026-11-01,claude,current,
 anad/languages/01,anad,languages,ara,anad_page,description: first Arabic Natural Audio Dataset (ANAD),2026-10-13,claude,current,
-anad/license_spdx/01,anad,license_spdx,CC-BY-NC-SA-4.0,anad_page,Kaggle dataset license field: CC BY-NC-SA 4.0,2026-10-13,claude,current,
+anad/license_spdx/01,anad,license_spdx,CC-BY-NC-SA-4.0,anad_page,Kaggle dataset license field: CC BY-NC-SA 4.0,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 anad/material_origin/01,anad,material_origin,broadcast,anad_page,description: eight videos of live calls from online Arabic talk shows,2026-10-13,claude,current,
 anad/n_files_release/01,anad,n_files_release,1428,,,2026-10-13,claude,superseded,"Provisional: Number of wav files in the release. Difference from the reported 1,384 unverified; superseded by anad/n_files_release/02"
 anad/n_files_release/02,anad,n_files_release,1420,anad_readme,commit 6cae0e200fff; Size of the release,2026-11-01,claude,current,
@@ -189,7 +189,7 @@ ased/emotion_categories.label_basis/01,ased,emotion_categories.label_basis,inten
 ased/emotion_categories.label_verification/01,ased,emotion_categories.label_verification,listener_validated,ased_page,"README Judgments: every recording was reviewed independently by all eight judges; an emotion-specific recording was accepted only if five or more judges accepted it, a common-sentence recording only if five or more assigned the same emotion",2026-10-26,claude,current,"Only accepted recordings are in the release: 2,474 of the 4,550 expected (65 participants x 70 recordings), 54%. The judges' individual decisions are not distributed"
 ased/hours_release/01,ased,hours_release,2.11,ased_readme,commit 4a66ac0ebe72; Size of the release,2026-11-01,claude,current,
 ased/languages/02,ased,languages,amh,ased_page,README title: Amharic Speech Emotional Dataset (ASED) v1,2026-10-31,claude,current,
-ased/license_spdx/02,ased,license_spdx,none_stated,ased_page,README has no license statement,2026-10-11,claude,current,
+ased/license_spdx/02,ased,license_spdx,none_stated,ased_page,README has no license statement,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 ased/n_files_release/01,ased,n_files_release,2474,,,2026-10-11,claude,superseded,Provisional:; superseded by ased/n_files_release/02
 ased/n_files_release/02,ased,n_files_release,2474,ased_readme,commit 4a66ac0ebe72; Size of the release,2026-11-01,claude,current,
 ased/n_files_reported/02,ased,n_files_reported,2474,ased_page,"resulting in 2,474 recordings in the dataset",2026-10-31,claude,current,
@@ -212,7 +212,7 @@ asvpesd/full_title/01,asvpesd,full_title,"Audio, Speech and Vision Processing La
 asvpesd/full_title/02,asvpesd,full_title,"Audio, Speech and Vision Processing Lab Emotional Sound Database (ASVP-ESD)",asvpesd_page,title of the source contains the full title,2026-11-01,claude,current,
 asvpesd/hours_release/01,asvpesd,hours_release,6.08,asvpesd_readme,commit dc439736873f; Size of the release,2026-11-01,claude,current,
 asvpesd/languages/02,asvpesd,languages,mul,asvpesd_page,"with no language restriction; file names code Chinese, English, French and others",2026-10-31,claude,current,No breakdown of languages is given
-asvpesd/license_spdx/02,asvpesd,license_spdx,CC-BY-4.0,asvpesd_page,Zenodo metadata license field (report §2),2026-10-11,claude,current,
+asvpesd/license_spdx/02,asvpesd,license_spdx,CC-BY-4.0,asvpesd_page,Zenodo metadata license field (report §2),2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 asvpesd/material_origin/01,asvpesd,material_origin,multiple,asvpesd_page,"recorded and collected from movies, tv show, youtube channel and other emotional sound websites",2026-10-31,claude,current,
 asvpesd/n_files_release/01,asvpesd,n_files_release,9092,,,2026-10-11,claude,superseded,Provisional:; superseded by asvpesd/n_files_release/02
 asvpesd/n_files_release/02,asvpesd,n_files_release,3555,asvpesd_readme,commit dc439736873f; Size of the release,2026-11-01,claude,current,"Readme cell: 3,555 (speech files)"
@@ -231,7 +231,7 @@ atthack/full_title/01,atthack,full_title,Att-HACK: An Expressive Speech Database
 atthack/full_title/02,atthack,full_title,Att-HACK: An Expressive Speech Database with Social Attitudes,atthack_paper,title of the source contains the full title,2026-11-01,claude,current,
 atthack/hours_reported/01,atthack,hours_reported,30,atthack_paper,"abstract: 25 speakers, 100 utterances in 4 social attitudes, 30 hours of speech",2026-10-13,claude,current,
 atthack/languages/01,atthack,languages,fra,atthack_page,About: acted expressive speech in French,2026-10-13,claude,current,
-atthack/license_spdx/01,atthack,license_spdx,CC-BY-NC-ND-4.0,atthack_page,License: Creative Commons (BY/NC/ND),2026-10-13,claude,current,No version stated; treated as 4.0
+atthack/license_spdx/01,atthack,license_spdx,CC-BY-NC-ND-4.0,atthack_page,License: Creative Commons (BY/NC/ND),2026-10-13,user,current,No version stated; treated as 4.0; Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 atthack/n_speakers_reported/01,atthack,n_speakers_reported,25,atthack_paper,abstract: 25 speakers interpreting 100 utterances in 4 social attitudes,2026-10-13,claude,current,
 atthack/name/01,atthack,name,Att-HACK,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by atthack/name/02
 atthack/name/02,atthack,name,Att-HACK,atthack_paper,title of the source contains the name,2026-11-01,claude,current,
@@ -245,7 +245,7 @@ audiospeechsentiment/emotion_categories.label_basis/01,audiospeechsentiment,emot
 audiospeechsentiment/emotion_categories.label_verification/01,audiospeechsentiment,emotion_categories.label_verification,unknown,,,2026-10-22,user,provisional,Provisional:
 audiospeechsentiment/hours_release/01,audiospeechsentiment,hours_release,0.27,audiospeechsentiment_readme,commit 155c3c176004; Size of the release,2026-11-01,claude,current,
 audiospeechsentiment/languages/01,audiospeechsentiment,languages,eng,,,2026-10-22,user,provisional,"Provisional: Light check only, no human verification. Confidence lowish. The uploader does not state the language"
-audiospeechsentiment/license_spdx/02,audiospeechsentiment,license_spdx,CC0-1.0,audiospeechsentiment_page,Kaggle API licenseName: CC0: Public Domain,2026-10-14,claude,current,
+audiospeechsentiment/license_spdx/02,audiospeechsentiment,license_spdx,CC0-1.0,audiospeechsentiment_page,Kaggle API licenseName: CC0: Public Domain,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 audiospeechsentiment/n_files_release/01,audiospeechsentiment,n_files_release,360,,,2026-10-14,claude,superseded,Provisional:; superseded by audiospeechsentiment/n_files_release/02
 audiospeechsentiment/n_files_release/02,audiospeechsentiment,n_files_release,360,audiospeechsentiment_readme,commit 155c3c176004; Size of the release,2026-11-01,claude,current,
 audiospeechsentiment/n_speakers_release/01,audiospeechsentiment,n_speakers_release,unknown,audiospeechsentiment_readme,commit 155c3c176004; Size of the release,2026-11-01,claude,current,Readme cell: unknown
@@ -260,7 +260,7 @@ avcaffe/full_title/01,avcaffe,full_title,AVCAffe: A Large Scale Audio-Visual Dat
 avcaffe/full_title/02,avcaffe,full_title,AVCAffe: A Large Scale Audio-Visual Dataset of Cognitive Load and Affect for Remote Work,avcaffe_page_2,title of the source contains the full title,2026-11-01,claude,current,
 avcaffe/hours_reported/01,avcaffe,hours_reported,108,avcaffe_paper,abstract: a total of 108 hours of video,2026-10-23,claude,current,
 avcaffe/languages/01,avcaffe,languages,eng,avcaffe_paper,abstract: the largest originally collected affective dataset in English language,2026-10-23,claude,current,
-avcaffe/license_spdx/01,avcaffe,license_spdx,LicenseRef-custom-research-only,avcaffe_license,Database License Agreement: license to use the Licensed Database only for academic research,2026-10-23,claude,current,
+avcaffe/license_spdx/01,avcaffe,license_spdx,LicenseRef-custom-research-only,avcaffe_license,Database License Agreement: license to use the Licensed Database only for academic research,2026-10-23,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 avcaffe/n_speakers_reported/01,avcaffe,n_speakers_reported,106,avcaffe_paper,abstract: We recruit 106 participants from 18 different countries,2026-10-23,claude,current,
 avcaffe/name/01,avcaffe,name,AVCAffe,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by avcaffe/name/02
 avcaffe/name/02,avcaffe,name,AVCAffe,avcaffe_page_2,title of the source contains the name,2026-11-01,claude,current,
@@ -275,7 +275,7 @@ banglamood/full_title/01,banglamood,full_title,BanglaMood: A Rich Audio Dataset 
 banglamood/full_title/02,banglamood,full_title,BanglaMood: A Rich Audio Dataset for Eight Emotion Recognition in Bangla Speech,banglamood_page,title of the source contains the full title,2026-11-01,claude,current,
 banglamood/hours_release/01,banglamood,hours_release,2.90,banglamood_readme,commit 07b611114c77; Size of the release,2026-11-01,claude,current,
 banglamood/languages/01,banglamood,languages,ben,banglamood_page,dataset description names the language,2026-10-12,claude,current,
-banglamood/license_spdx/01,banglamood,license_spdx,CC-BY-4.0,banglamood_page,license field of Mendeley,2026-10-12,claude,current,
+banglamood/license_spdx/01,banglamood,license_spdx,CC-BY-4.0,banglamood_page,license field of Mendeley,2026-10-12,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 banglamood/material_origin/01,banglamood,material_origin,web_video,banglamood_page,description: clips of randomly chosen YouTube videos labeled by 3 annotators,2026-10-12,claude,current,
 banglamood/n_files_release/01,banglamood,n_files_release,3220,,,2026-10-12,claude,superseded,Provisional:; superseded by banglamood/n_files_release/02
 banglamood/n_files_release/02,banglamood,n_files_release,3220,banglamood_readme,commit 07b611114c77; Size of the release,2026-11-01,claude,current,
@@ -293,7 +293,7 @@ banglaser/full_title/01,banglaser,full_title,BanglaSER: A speech emotion recogni
 banglaser/full_title/02,banglaser,full_title,BanglaSER: A speech emotion recognition dataset for the Bangla language,banglaser_paper,title of the source contains the full title,2026-11-01,claude,current,
 banglaser/hours_release/01,banglaser,hours_release,1.37,banglaser_readme,commit c5a35d31f077; Size of the release,2026-11-01,claude,current,
 banglaser/languages/01,banglaser,languages,ben,banglaser_page,dataset description names the language,2026-10-11,claude,current,
-banglaser/license_spdx/01,banglaser,license_spdx,CC-BY-4.0,banglaser_page,Mendeley metadata,2026-10-11,claude,current,
+banglaser/license_spdx/01,banglaser,license_spdx,CC-BY-4.0,banglaser_page,Mendeley metadata,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 banglaser/listening_test/01,banglaser,listening_test,reported,banglaser_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 banglaser/n_files_release/01,banglaser,n_files_release,1467,,,2026-10-11,claude,superseded,Provisional:; superseded by banglaser/n_files_release/02
 banglaser/n_files_release/02,banglaser,n_files_release,1467,banglaser_readme,commit c5a35d31f077; Size of the release,2026-11-01,claude,current,
@@ -315,7 +315,7 @@ banspemo/full_title/01,banspemo,full_title,BanSpEmo: A Bangla Emotional Speech R
 banspemo/full_title/02,banspemo,full_title,BanSpEmo: A Bangla Emotional Speech Recognition Dataset,banspemo_paper,title of the source contains the full title,2026-11-01,claude,current,
 banspemo/hours_release/01,banspemo,hours_release,1.39,banspemo_readme,commit b676f7fb18be; Size of the release,2026-11-01,claude,current,
 banspemo/languages/01,banspemo,languages,ben,banspemo_page,dataset description names the language,2026-10-11,claude,current,
-banspemo/license_spdx/01,banspemo,license_spdx,CC-BY-4.0,banspemo_page,Mendeley metadata,2026-10-11,claude,current,
+banspemo/license_spdx/01,banspemo,license_spdx,CC-BY-4.0,banspemo_page,Mendeley metadata,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 banspemo/listening_test/01,banspemo,listening_test,reported,banspemo_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 banspemo/n_files_release/01,banspemo,n_files_release,792,,,2026-10-11,claude,superseded,Provisional:; superseded by banspemo/n_files_release/02
 banspemo/n_files_release/02,banspemo,n_files_release,792,banspemo_readme,commit b676f7fb18be; Size of the release,2026-11-01,claude,current,
@@ -338,7 +338,7 @@ bari_emospeech/full_title/02,bari_emospeech,full_title,BARI-EmoSpeech: A Dialect
 bari_emospeech/hours_release/01,bari_emospeech,hours_release,2.12,bari_emospeech_readme,commit dd8974bef67c; Size of the release,2026-11-01,claude,current,
 bari_emospeech/hours_reported/01,bari_emospeech,hours_reported,1.67,bari_emospeech_page,"2,312 spontaneous audio utterances (1.67 hours total)",2026-10-14,claude,current,
 bari_emospeech/languages/01,bari_emospeech,languages,ben,bari_emospeech_page,speech emotion recognition in the Barishal dialect of Bangla,2026-10-14,claude,current,
-bari_emospeech/license_spdx/01,bari_emospeech,license_spdx,CC-BY-4.0,bari_emospeech_page,Mendeley Data licence: CC BY 4.0,2026-10-14,claude,current,
+bari_emospeech/license_spdx/01,bari_emospeech,license_spdx,CC-BY-4.0,bari_emospeech_page,Mendeley Data licence: CC BY 4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-01
 bari_emospeech/n_files_release/01,bari_emospeech,n_files_release,2328,,,2026-10-23,claude,superseded,"Provisional: The description says WAV 16 kHz, but the release is mostly m4a (AAC). The recipe reads the 2,303 sequentially numbered m4a files; superseded by bari_emospeech/n_files_release/02"
 bari_emospeech/n_files_release/02,bari_emospeech,n_files_release,2312,bari_emospeech_readme,commit dd8974bef67c; Size of the release,2026-11-01,claude,current,
 bari_emospeech/n_files_reported/01,bari_emospeech,n_files_reported,2312,bari_emospeech_page,"2,312 spontaneous audio utterances (1.67 hours total)",2026-10-14,claude,current,
