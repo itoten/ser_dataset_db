@@ -1330,6 +1330,7 @@ emovdb/access_observed/01,emovdb,access_observed,obtained,,,2026-10-12,claude,su
 emovdb/access_observed/02,emovdb,access_observed,obtained,emovdb_readme,commit 74570d22b946; Access,2026-11-01,claude,current,
 emovdb/emotion_categories.label_basis/01,emovdb,emotion_categories.label_basis,intended,emovdb_paper,the emotion is the style the actor was asked to produce; stored as speaker x emotion archive names,2026-10-26,claude,current,
 emovdb/hours_release/01,emovdb,hours_release,9.49,emovdb_readme,commit 74570d22b946; Size of the release,2026-11-01,claude,current,
+emovdb/hours_reported/01,emovdb,hours_reported,12,emovdb_paper,"""In total it contains 10 speakers and 12 hours of data.""",2026-11-01,claude,current,
 emovdb/languages/02,emovdb,languages,eng;fra,emovdb_paper,data for male and female actors in English and a male actor in French,2026-10-31,claude,current,
 emovdb/license_spdx/02,emovdb,license_spdx,LicenseRef-custom-research-only,emovdb_license,LICENSE.md: agreeing to the Non-commercial Purposes condition,2026-10-14,claude,current,The License field of OpenSLR 115 points to this file
 emovdb/n_files_release/01,emovdb,n_files_release,6893,,,2026-10-26,claude,superseded,Provisional:; superseded by emovdb/n_files_release/02
