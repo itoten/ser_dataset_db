@@ -291,8 +291,6 @@ Messages from `tools/validate.py` (and reglib) and what they mean:
 
 - `scripts/reglib.py`: stages DB changes for one dataset and saves them (import it).
 - `scripts/doc_counts.py`: recomputes the counts in README and manual (run it).
-- `scripts/audio_audit.py`: inventory and duplicate search for a corpus. It is for recipe authors,
-  whose readme then states the results; the DB does not record its output (rule 1).
 - [references/data-model.md](references/data-model.md): tables, missing values, evidence, statuses, enums.
 - [references/verifying-claims.md](references/verifying-claims.md): how to check claims in primary sources.
 - [references/registration-example.md](references/registration-example.md): full script, commit message, reply.

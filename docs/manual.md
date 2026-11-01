@@ -652,7 +652,6 @@ Other programs, which are not run by hand day to day:
 | `tools/localenv.py` | reads machine-specific settings from `.env` (e.g. `ESPNET_REPO`) |
 | `tools/hooks/pre-commit` | the check that runs before each commit |
 | `.claude/skills/.../scripts/reglib.py` | stages the changes for one dataset (evidence, cells, recipe rows, labels, annotations) and saves them through `tools/db.py` |
-| `.claude/skills/.../scripts/audio_audit.py` | checks a corpus's audio independently: file inventory, formats, durations, identical and near-identical files |
 | `.claude/skills/.../scripts/doc_counts.py` | recounts the figures in this guide and the README |
 
 ### 13.2 What the checks cover

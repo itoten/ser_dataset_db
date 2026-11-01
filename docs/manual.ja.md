@@ -655,7 +655,6 @@ DB のフォルダで、システムの Python で実行する。
 | `tools/localenv.py` | マシン固有の設定(例: `ESPNET_REPO`)を `.env` から読む |
 | `tools/hooks/pre-commit` | コミットのたびに走る検査 |
 | `.claude/skills/.../scripts/reglib.py` | 1 つのデータセットの変更(根拠・セルの値・レシピの行・ラベル・アノテーション)をまとめ、`tools/db.py` 経由で保存する |
-| `.claude/skills/.../scripts/audio_audit.py` | コーパスの音声を独立に検査する: ファイルの一覧、形式、長さ、同一・ほぼ同一のファイル |
 | `.claude/skills/.../scripts/doc_counts.py` | このガイドと README の数値を数え直す |
 
 ### 13.2 検査の内容
