@@ -30,6 +30,8 @@ meld,n_files_reported vs n_files_release,reported_vs_release,13000,see evidence,
 mlend_numerals,n_speakers_reported vs n_speakers_release,reported_vs_release,154,see evidence,151,implementation,n_speakers_release,
 msppodcast,n_speakers_reported vs n_speakers_release,reported_vs_release,3641,see evidence,3714,implementation,n_speakers_release,
 multidialog,n_files_reported vs n_files_release,reported_vs_release,187859,see evidence,187854,implementation,n_files_release,
+nonverbaltts,license_spdx,conflicting,conflicting,see evidence,Apache-2.0,primary,https://huggingface.co/datasets/deepvk/NonverbalTTS,
+nonverbaltts,license_spdx,conflicting,conflicting,see evidence,CC-BY-NC-SA-4.0,primary,https://huggingface.co/datasets/deepvk/NonverbalTTS,The card's text limits the license to the annotations and defers the audio to the original sources
 rasa,n_files_reported vs n_files_release,reported_vs_release,124842,see evidence,640946,implementation,n_files_release,
 rml_emotion,n_files_reported vs n_files_release,reported_vs_release,500,see evidence,720,implementation,n_files_release,
 syntact,n_files_reported vs n_files_release,reported_vs_release,6000,see evidence,6001,implementation,n_files_release,

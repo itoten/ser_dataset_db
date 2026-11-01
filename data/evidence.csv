@@ -21,7 +21,8 @@ aesdd/full_title/01,aesdd,full_title,Acted Emotional Speech Dynamic Database (AE
 aesdd/full_title/02,aesdd,full_title,Acted Emotional Speech Dynamic Database (AESDD),aesdd_page,title of the source contains the full title,2026-11-01,claude,current,
 aesdd/hours_release/01,aesdd,hours_release,0.69,aesdd_readme,commit e987f57bdbf6; Size of the release,2026-11-01,claude,current,
 aesdd/languages/02,aesdd,languages,ell,aesdd_page,acted emotional speech in the Greek language,2026-10-31,claude,current,
-aesdd/license_spdx/02,aesdd,license_spdx,LicenseRef-custom-research-only,,,2026-10-11,claude,provisional,Provisional: Official page URL: https://m3c.web.auth.gr/research/aesdd-speech-emotion-recognition/
+aesdd/license_spdx/02,aesdd,license_spdx,LicenseRef-custom-research-only,,,2026-10-11,claude,superseded,Provisional: Official page URL: https://m3c.web.auth.gr/research/aesdd-speech-emotion-recognition/; superseded by aesdd/license_spdx/03
+aesdd/license_spdx/03,aesdd,license_spdx,LicenseRef-custom-research-only,aesdd_page,"the dataset is ""publically available for research purposes""",2026-11-01,claude,current,The page names no license; the wording is research purposes
 aesdd/listening_test/01,aesdd,listening_test,reported,aesdd_page,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 aesdd/n_files_release/01,aesdd,n_files_release,605,,,2026-10-11,claude,superseded,Provisional:; superseded by aesdd/n_files_release/02
 aesdd/n_files_release/02,aesdd,n_files_release,605,aesdd_readme,commit e987f57bdbf6; Size of the release,2026-11-01,claude,current,
@@ -117,7 +118,8 @@ akace/hours_release/01,akace,hours_release,15.36,akace_readme,commit 906c09addc9
 akace/hours_reported/01,akace,hours_reported,24.3,akace_page,"total number of seconds 87,441",2026-10-28,claude,current,
 akace/languages/01,akace,languages,aka,akace_page,"README: developed for Akan, a widely spoken West African language",2026-10-14,claude,current,
 akace/license_spdx/01,akace,license_spdx,LicenseRef-custom-research-only,akace_page,README License: released for non-commercial research purposes only,2026-10-14,claude,superseded,superseded by akace/license_spdx/02
-akace/license_spdx/02,akace,license_spdx,LicenseRef-custom-research-only,,,2026-10-29,user,provisional,"Provisional: Confirmed by the maintainer (2026-10-29): non-commercial academic research and educational purposes only, no redistribution including derived data, citation required. The GitHub license field is NOASSERTION."
+akace/license_spdx/02,akace,license_spdx,LicenseRef-custom-research-only,,,2026-10-29,user,superseded,"Provisional: Confirmed by the maintainer (2026-10-29): non-commercial academic research and educational purposes only, no redistribution including derived data, citation required. The GitHub license field is NOASSERTION.; superseded by akace/license_spdx/03"
+akace/license_spdx/03,akace,license_spdx,LicenseRef-custom-research-only,akace_page,"README, License: released for non-commercial research purposes only; see LICENSE.txt",2026-11-01,claude,current,
 akace/listening_test/01,akace,listening_test,reported,akace_readme,commit 906c09addc96; Listening test ratings in the release,2026-11-01,claude,current,
 akace/material_origin/01,akace,material_origin,film_tv,akace_page,README: 385 dialogues from Akan-language movies,2026-10-14,claude,current,
 akace/n_files_release/01,akace,n_files_release,6138,akace_readme,commit 906c09addc96; Size of the release,2026-11-01,claude,current,
@@ -1161,7 +1163,8 @@ emotale/full_title/02,emotale,full_title,EmoTale: An Enacted Speech-emotion Data
 emotale/hours_release/01,emotale,hours_release,0.62,emotale_readme,commit 3befdb138054; Size of the release,2026-11-01,claude,current,
 emotale/languages/01,emotale,languages,dan;eng,emotale_page,README: 450 audio files in Danish and 350 files in English,2026-10-13,claude,current,
 emotale/license_spdx/01,emotale,license_spdx,none_stated,emotale_paper_2,Distribution: distributed under a copyright; there is no license,2026-10-13,claude,superseded,superseded by emotale/license_spdx/02
-emotale/license_spdx/02,emotale,license_spdx,LicenseRef-citation-request,,,2026-10-26,user,provisional,Provisional: Asking the authors is optional (do it if there is time). The datasheet wording is quoted in license_note
+emotale/license_spdx/02,emotale,license_spdx,LicenseRef-citation-request,,,2026-10-26,user,superseded,Provisional: Asking the authors is optional (do it if there is time). The datasheet wording is quoted in license_note; superseded by emotale/license_spdx/03
+emotale/license_spdx/03,emotale,license_spdx,LicenseRef-citation-request,emotale_datasheet,"distributed under a copyright; there is no license, but there is a request to cite the paper",2026-11-01,claude,current,
 emotale/listening_test/01,emotale,listening_test,reported,emotale_readme,commit 3befdb138054; Listening test ratings in the release,2026-11-01,claude,current,
 emotale/n_files_release/01,emotale,n_files_release,800,,,2026-10-13,claude,superseded,Provisional:; superseded by emotale/n_files_release/02
 emotale/n_files_release/02,emotale,n_files_release,800,emotale_readme,commit 3befdb138054; Size of the release,2026-11-01,claude,current,
@@ -1214,7 +1217,8 @@ emotiontalk/hours_reported/01,emotiontalk,hours_reported,23.6,emotiontalk_paper,
 emotiontalk/hours_reported/02,emotiontalk,hours_reported,23.6,emotiontalk_paper,23.6 hours of speech,2026-10-28,claude,current,
 emotiontalk/languages/01,emotiontalk,languages,cmn,emotiontalk_paper,abstract: an interactive Chinese multimodal emotion dataset,2026-10-14,claude,current,
 emotiontalk/license_spdx/01,emotiontalk,license_spdx,CC-BY-NC-SA-4.0,emotiontalk_card,dataset card metadata: license cc-by-nc-sa-4.0,2026-10-14,claude,superseded,superseded by emotiontalk/license_spdx/02
-emotiontalk/license_spdx/02,emotiontalk,license_spdx,CC-BY-NC-SA-4.0,,,2026-10-29,user,provisional,Provisional: Confirmed by the maintainer (2026-10-29); the card metadata shows cc-by-nc-sa-4.0
+emotiontalk/license_spdx/02,emotiontalk,license_spdx,CC-BY-NC-SA-4.0,,,2026-10-29,user,superseded,Provisional: Confirmed by the maintainer (2026-10-29); the card metadata shows cc-by-nc-sa-4.0; superseded by emotiontalk/license_spdx/03
+emotiontalk/license_spdx/03,emotiontalk,license_spdx,CC-BY-NC-SA-4.0,emotiontalk_card,card metadata: license cc-by-nc-sa-4.0,2026-11-01,claude,current,
 emotiontalk/listening_test/01,emotiontalk,listening_test,reported,emotiontalk_readme,commit 3cdb8dd2694b; Listening test ratings in the release,2026-11-01,claude,current,
 emotiontalk/material_origin/01,emotiontalk,material_origin,recorded_for_dataset,emotiontalk_paper,recorded by the authors with professional actors,2026-10-28,claude,current,
 emotiontalk/n_files_release/01,emotiontalk,n_files_release,19250,emotiontalk_readme,commit 3cdb8dd2694b; Size of the release,2026-11-01,claude,current,
@@ -1738,7 +1742,8 @@ iesc/full_title/02,iesc,full_title,Indian Emotional Speech Corpora,iesc_page,tit
 iesc/hours_release/01,iesc,hours_release,0.56,iesc_readme,commit c1c6a512502f; Size of the release,2026-11-01,claude,current,
 iesc/languages/01,iesc,languages,eng,iesc_page,"description: sentences such as Kids are talking by the door, by north Indian speakers",2026-10-14,claude,current,
 iesc/license_spdx/01,iesc,license_spdx,unknown,iesc_page,Kaggle dataset license field: Unknown,2026-10-14,claude,superseded,superseded by iesc/license_spdx/02
-iesc/license_spdx/02,iesc,license_spdx,LicenseRef-citation-request,,,2026-10-26,user,provisional,Provisional: Kaggle field: 'Unknown'; description: 'For using This Dataset Kindly Cite this Paper'. The authors were not asked
+iesc/license_spdx/02,iesc,license_spdx,LicenseRef-citation-request,,,2026-10-26,user,superseded,Provisional: Kaggle field: 'Unknown'; description: 'For using This Dataset Kindly Cite this Paper'. The authors were not asked; superseded by iesc/license_spdx/03
+iesc/license_spdx/03,iesc,license_spdx,unknown,iesc_page,Kaggle license field: Unknown,2026-11-01,claude,current,
 iesc/listening_test/01,iesc,listening_test,reported,iesc_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 iesc/n_files_release/01,iesc,n_files_release,600,,,2026-10-14,claude,superseded,Provisional:; superseded by iesc/n_files_release/02
 iesc/n_files_release/02,iesc,n_files_release,600,iesc_readme,commit c1c6a512502f; Size of the release,2026-11-01,claude,current,
@@ -2675,7 +2680,9 @@ nonverbaltts/hours_reported/01,nonverbaltts,hours_reported,17,nonverbaltts_card,
 nonverbaltts/languages/01,nonverbaltts,languages,eng,nonverbaltts_card,card: 17-hour open-access English speech corpus,2026-10-13,claude,current,
 nonverbaltts/license_spdx/01,nonverbaltts,license_spdx,Apache-2.0,nonverbaltts_card,dataset card metadata: license apache-2.0,2026-10-13,claude,superseded,"Value of the Hugging Face metadata field. Not adopted because it disagrees with the card text (maintainer's decision, nonverbaltts/license_spdx/03)"
 nonverbaltts/license_spdx/02,nonverbaltts,license_spdx,CC-BY-NC-SA-4.0,nonverbaltts_card,License section of the card: Annotations: CC BY-NC-SA 4.0 (audio follows the licenses of the sources),2026-10-17,claude,superseded,The maintainer also checked the card (2026-10-17)
-nonverbaltts/license_spdx/03,nonverbaltts,license_spdx,CC-BY-NC-SA-4.0,,,2026-10-17,claude,provisional,Provisional: Maintainer's decision
+nonverbaltts/license_spdx/03,nonverbaltts,license_spdx,CC-BY-NC-SA-4.0,,,2026-10-17,claude,superseded,Provisional: Maintainer's decision; superseded by nonverbaltts/license_spdx/04
+nonverbaltts/license_spdx/04,nonverbaltts,license_spdx,Apache-2.0,nonverbaltts_card,card metadata: license apache-2.0,2026-11-01,claude,conflicting,
+nonverbaltts/license_spdx/05,nonverbaltts,license_spdx,CC-BY-NC-SA-4.0,nonverbaltts_card,"License section: Annotations: CC BY-NC-SA 4.0; Audio: adheres to original source licenses (VoxCeleb, Expresso)",2026-11-01,claude,conflicting,The card's text limits the license to the annotations and defers the audio to the original sources
 nonverbaltts/material_origin/01,nonverbaltts,material_origin,multiple,nonverbaltts_card,card: derived from VoxCeleb and Expresso corpora,2026-10-13,claude,current,
 nonverbaltts/n_files_release/01,nonverbaltts,n_files_release,6256,,,2026-10-17,claude,superseded,Provisional:; superseded by nonverbaltts/n_files_release/02
 nonverbaltts/n_files_release/02,nonverbaltts,n_files_release,6256,nonverbaltts_readme,commit 8f9597d99262; Size of the release,2026-11-01,claude,current,
@@ -2889,7 +2896,8 @@ rasa/hours_reported/02,rasa,hours_reported,280.4,,,2026-10-29,user,provisional,P
 rasa/languages/01,rasa,languages,asm;ben;kan;mal;mar;nep;tam;pan;tel;san;urd;kas;snd,rasa_page,"dataset tags: language as, bn, kn, ml, mr, ne, ta, pa, te, sa, ur, ks, sd",2026-10-14,claude,superseded,superseded by rasa/languages/02
 rasa/languages/02,rasa,languages,asm;ben;brx;doi;guj;hin;kan;kas;kok;mai;mal;mni;mar;nep;ory;pan;san;sat;snd;tam;tel;urd,rasa_card,"the 22 language folders of the repository: Assamese, Bengali, Bodo, Dogri, Gujarati, Hindi, Kannada, Kashmiri, Konkani, Maithili, Malayalam, Manipuri, Marathi, Nepali, Odia, Punjabi, Sanskrit, Santali, Sindhi, Tamil, Telugu, Urdu",2026-10-29,claude,current,"The card's language tags list only 13; the paper covers 3 (Assamese, Bengali, Tamil)"
 rasa/license_spdx/01,rasa,license_spdx,CC-BY-4.0,rasa_card,dataset card metadata: license cc-by-4.0,2026-10-14,claude,superseded,superseded by rasa/license_spdx/02
-rasa/license_spdx/02,rasa,license_spdx,CC-BY-4.0,,,2026-10-29,user,provisional,"Provisional: Confirmed by the maintainer (2026-10-29): the license offered by the authors is trusted. An aggregator (AIKosh) lists CC BY-ND 4.0, which is not followed"
+rasa/license_spdx/02,rasa,license_spdx,CC-BY-4.0,,,2026-10-29,user,superseded,"Provisional: Confirmed by the maintainer (2026-10-29): the license offered by the authors is trusted. An aggregator (AIKosh) lists CC BY-ND 4.0, which is not followed; superseded by rasa/license_spdx/03"
+rasa/license_spdx/03,rasa,license_spdx,CC-BY-4.0,rasa_card,card metadata: license cc-by-4.0,2026-11-01,claude,current,
 rasa/material_origin/01,rasa,material_origin,recorded_for_dataset,rasa_paper,"voice artists recorded for the dataset; consent, payment and ethics approval described for 3 of the 22 languages",2026-10-29,claude,current,
 rasa/n_files_release/01,rasa,n_files_release,640946,,,2026-10-29,claude,superseded,"Provisional: The card says 640,950 (Gujarati has 2 fewer files for each gender, reason unknown); 640,806 after dropping 140 files with a name collision; superseded by rasa/n_files_release/02"
 rasa/n_files_release/02,rasa,n_files_release,640946,rasa_readme,commit 0dc349618f51; Size of the release,2026-11-01,claude,current,
@@ -3467,7 +3475,8 @@ thanushs25_tamil/emotion_categories.label_verification/01,thanushs25_tamil,emoti
 thanushs25_tamil/hours_release/01,thanushs25_tamil,hours_release,1.11,thanushs25_tamil_readme,commit 906c09addc96; Size of the release,2026-11-01,claude,current,
 thanushs25_tamil/hours_reported/01,thanushs25_tamil,hours_reported,unknown,thanushs25_tamil_card,the card has no description; its size category (1B<n<10B) does not match the 195 files,2026-10-26,claude,current,
 thanushs25_tamil/languages/01,thanushs25_tamil,languages,tam,,,2026-10-12,claude,provisional,Provisional:
-thanushs25_tamil/license_spdx/01,thanushs25_tamil,license_spdx,none_stated,,,2026-10-14,claude,provisional,Provisional:
+thanushs25_tamil/license_spdx/01,thanushs25_tamil,license_spdx,none_stated,,,2026-10-14,claude,superseded,Provisional:; superseded by thanushs25_tamil/license_spdx/02
+thanushs25_tamil/license_spdx/02,thanushs25_tamil,license_spdx,none_stated,thanushs25_tamil_card,the card metadata has no license field and the card text states none,2026-11-01,claude,current,
 thanushs25_tamil/n_files_release/01,thanushs25_tamil,n_files_release,195,,,2026-10-14,claude,superseded,Provisional:; superseded by thanushs25_tamil/n_files_release/02
 thanushs25_tamil/n_files_release/02,thanushs25_tamil,n_files_release,195,thanushs25_tamil_readme,commit 906c09addc96; Size of the release,2026-11-01,claude,current,
 thanushs25_tamil/n_speakers_release/01,thanushs25_tamil,n_speakers_release,unknown,,,2026-10-26,claude,superseded,Provisional:; superseded by thanushs25_tamil/n_speakers_release/02
@@ -3763,19 +3772,20 @@ visec/emotion_categories.annotator/01,visec,emotion_categories.annotator,unknown
 visec/emotion_categories.label_basis/01,visec,emotion_categories.label_basis,unknown,visec_paper,the labelling procedure is not in the abstract,2026-10-26,claude,current,
 visec/emotion_categories.label_verification/01,visec,emotion_categories.label_verification,unknown,visec_paper,not described in the abstract (the full paper was not read),2026-10-26,claude,current,
 visec/hours_release/01,visec,hours_release,3.18,visec_readme,commit 1dd1cb516d1b; Size of the release,2026-11-01,claude,current,
-visec/languages/01,visec,languages,vie,visec_card,"card: Vietnamese dataset; accent field north, south, mid",2026-10-14,claude,current,
+visec/languages/01,visec,languages,vie,visec_mirror,"card: Vietnamese dataset; accent field north, south, mid",2026-10-14,claude,current,
 visec/license_spdx/01,visec,license_spdx,CC-BY-4.0,visec_mirror,duplicate's card metadata: license cc-by-4.0,2026-10-14,claude,superseded,Stated by the copy. The original repository cannot be viewed; superseded by visec/license_spdx/02
-visec/license_spdx/02,visec,license_spdx,unknown,,,2026-10-26,user,provisional,"Provisional: The card of the re-publication Dennis290/ViSEC says cc-by-4.0 (Hugging Face API, 2026-10-26); that is the re-publisher's statement, not the authors'"
+visec/license_spdx/02,visec,license_spdx,unknown,,,2026-10-26,user,superseded,"Provisional: The card of the re-publication Dennis290/ViSEC says cc-by-4.0 (Hugging Face API, 2026-10-26); that is the re-publisher's statement, not the authors'; superseded by visec/license_spdx/03"
+visec/license_spdx/03,visec,license_spdx,CC-BY-4.0,visec_mirror,card metadata: license cc-by-4.0,2026-11-01,claude,current,"Stated by a re-publication; the original repository hustep-lab/ViSEC answers HTTP 401, so the authors' terms cannot be read"
 visec/n_files_release/01,visec,n_files_release,5280,,,2026-10-14,claude,superseded,Provisional:; superseded by visec/n_files_release/02
 visec/n_files_release/02,visec,n_files_release,5280,visec_readme,commit 1dd1cb516d1b; Size of the release,2026-11-01,claude,current,
 visec/n_files_reported/01,visec,n_files_reported,5280,visec_mirror,duplicate's card dataset_info: train num_examples 5280,2026-10-14,claude,current,
 visec/n_speakers_release/01,visec,n_speakers_release,147,,,2026-10-26,claude,superseded,Provisional: The paper's abstract also says 147 speakers; the correspondence of ids to people is assumed; superseded by visec/n_speakers_release/02
 visec/n_speakers_release/02,visec,n_speakers_release,147,visec_readme,commit 1dd1cb516d1b; Size of the release,2026-11-01,claude,current,
 visec/name/01,visec,name,ViSEC,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by visec/name/02
-visec/name/02,visec,name,ViSEC,visec_card,title of the source contains the name,2026-11-01,claude,current,
+visec/name/02,visec,name,ViSEC,visec_mirror,title of the source contains the name,2026-11-01,claude,current,
 visec/speech_production/01,visec,speech_production,unknown,visec_paper,abstract: collected from public media focusing on sources with rich and balanced emotional content; the kind of media is not named,2026-10-26,claude,current,
-visec/spoken_text_design/01,visec,spoken_text_design,unknown,visec_card,the card has no transcripts or text design,2026-10-26,claude,current,Not examined
-visec/vocal_content/01,visec,vocal_content,speech,visec_card,"card features: audio path, duration, accent, emotion",2026-10-14,claude,current,
+visec/spoken_text_design/01,visec,spoken_text_design,unknown,visec_mirror,the card has no transcripts or text design,2026-10-26,claude,current,Not examined
+visec/vocal_content/01,visec,vocal_content,speech,visec_mirror,"card features: audio path, duration, accent, emotion",2026-10-14,claude,current,
 vivae/access_method/01,vivae,access_method,direct_download,,,2026-10-11,claude,provisional,Provisional:
 vivae/access_observed/01,vivae,access_observed,obtained,,,2026-10-11,claude,superseded,Provisional: carried over from raw_audio_available; superseded by vivae/access_observed/02
 vivae/access_observed/02,vivae,access_observed,obtained,vivae_readme,commit 6134b1534f2f; Access,2026-11-01,claude,current,

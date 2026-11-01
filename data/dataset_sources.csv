@@ -202,6 +202,7 @@ emosynth,emosynth_page_2,distribution
 emosynth,emosynth_paper,paper
 emota,emota_card,card
 emota,emota_paper,paper
+emotale,emotale_datasheet,other
 emotale,emotale_page,distribution
 emotale,emotale_paper,paper
 emotale,emotale_readme,readme
@@ -666,8 +667,8 @@ vesc,vesc_paper,paper
 vesus,vesus_page,other
 vesus,vesus_paper_2,paper
 vesus,vesus_paper_3,paper
-visec,visec_card,card
-visec,visec_card,distribution
+visec,visec_mirror,card
+visec,visec_mirror,distribution
 visec,visec_paper,paper
 visec,visec_readme,readme
 vivae,vivae_page,distribution
