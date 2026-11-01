@@ -223,6 +223,7 @@ asvpesd/emotion_categories.label_verification/01,asvpesd,emotion_categories.labe
 asvpesd/full_title/01,asvpesd,full_title,"Audio, Speech and Vision Processing Lab Emotional Sound Database (ASVP-ESD)",,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by asvpesd/full_title/02
 asvpesd/full_title/02,asvpesd,full_title,"Audio, Speech and Vision Processing Lab Emotional Sound Database (ASVP-ESD)",asvpesd_page,title of the source contains the full title,2026-11-01,claude,current,
 asvpesd/hours_release/01,asvpesd,hours_release,6.08,asvpesd_readme,commit dc439736873f; Size of the release,2026-11-01,claude,current,
+asvpesd/hours_reported/01,asvpesd,hours_reported,10.85,asvpesd_page,for a total of about 10 hours 51 minutes,2026-11-01,claude,current,10 h 51 min written as hours
 asvpesd/languages/02,asvpesd,languages,mul,asvpesd_page,"with no language restriction; file names code Chinese, English, French and others",2026-10-31,claude,current,No breakdown of languages is given
 asvpesd/license_spdx/02,asvpesd,license_spdx,CC-BY-4.0,asvpesd_page,Zenodo metadata license field (report §2),2026-10-11,claude,current,
 asvpesd/material_origin/01,asvpesd,material_origin,multiple,asvpesd_page,"recorded and collected from movies, tv show, youtube channel and other emotional sound websites",2026-10-31,claude,current,
@@ -331,6 +332,7 @@ banspemo/emotion_categories.label_verification/01,banspemo,emotion_categories.la
 banspemo/full_title/01,banspemo,full_title,BanSpEmo: A Bangla Emotional Speech Recognition Dataset,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by banspemo/full_title/02
 banspemo/full_title/02,banspemo,full_title,BanSpEmo: A Bangla Emotional Speech Recognition Dataset,banspemo_paper,title of the source contains the full title,2026-11-01,claude,current,
 banspemo/hours_release/01,banspemo,hours_release,1.39,banspemo_readme,commit b676f7fb18be; Size of the release,2026-11-01,claude,current,
+banspemo/hours_reported/01,banspemo,hours_reported,12,banspemo_paper,has 12 hours length of audio that was verified by six listeners,2026-11-01,claude,current,
 banspemo/languages/01,banspemo,languages,ben,banspemo_page,dataset description names the language,2026-10-11,claude,current,
 banspemo/license_spdx/01,banspemo,license_spdx,CC-BY-4.0,banspemo_page,Mendeley metadata,2026-10-11,claude,current,
 banspemo/listening_test/01,banspemo,listening_test,reported,banspemo_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
@@ -865,8 +867,10 @@ dihana/access_method/01,dihana,access_method,direct_download,dihana_page,Zenodo 
 dihana/access_observed/01,dihana,access_observed,obtained,dihana_page,"dihanaCorpus.tgz holds per-turn .ul files, e.g. B101_BA0c0_T01u.ul",2026-10-14,claude,current,"Checked from the listing of the first 11,911 entries of the tar. That .ul is mu-law audio follows DIHANA's description; playback not checked"
 dihana/full_title/01,dihana,full_title,DIHANA corpus,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by dihana/full_title/02
 dihana/full_title/02,dihana,full_title,DIHANA corpus,dihana_page,title of the source contains the full title,2026-11-01,claude,current,
+dihana/hours_reported/01,dihana,hours_reported,5.5,dihana_page,The DIHANA corpus contains 5.5 hours of spontaneous speech corresponding to 6278 sentences,2026-11-01,claude,current,
 dihana/languages/01,dihana,languages,spa,dihana_page,900 human-computer dialogues in Spanish,2026-10-14,claude,current,
 dihana/license_spdx/01,dihana,license_spdx,CC-BY-4.0,dihana_page,Zenodo metadata license cc-by-4.0,2026-10-14,claude,current,
+dihana/n_speakers_reported/01,dihana,n_speakers_reported,225,dihana_page,In total 225 speakers (153 males and 72 females) recorded 900 dialogues,2026-11-01,claude,current,
 dihana/name/01,dihana,name,DIHANA,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by dihana/name/02
 dihana/name/02,dihana,name,DIHANA,dihana_page,title of the source contains the name,2026-11-01,claude,current,
 dihana/vocal_content/01,dihana,vocal_content,speech,dihana_page,spontaneous speech; telephone dialogues,2026-10-14,claude,current,
@@ -1325,6 +1329,7 @@ emovdb/n_files_release/01,emovdb,n_files_release,6893,,,2026-10-26,claude,supers
 emovdb/n_files_release/02,emovdb,n_files_release,6893,emovdb_readme,commit 74570d22b946; Size of the release,2026-11-01,claude,current,
 emovdb/n_speakers_release/01,emovdb,n_speakers_release,4,,,2026-10-12,claude,superseded,Provisional:; superseded by emovdb/n_speakers_release/02
 emovdb/n_speakers_release/02,emovdb,n_speakers_release,4,emovdb_readme,commit 74570d22b946; Size of the release,2026-11-01,claude,current,
+emovdb/n_speakers_reported/01,emovdb,n_speakers_reported,5,emovdb_paper,an open-source multi-speaker (5 different speakers) and multilingual database of emotional speech,2026-11-01,claude,current,
 emovdb/name/01,emovdb,name,EmoV-DB,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by emovdb/name/02
 emovdb/name/02,emovdb,name,EmoV-DB,emovdb_page,the name appears in the source: ...n English (https://github.com/numediart/EmoV-DB) Category: Speech License: Click here t...,2026-11-01,claude,current,
 emovdb/speech_production/01,emovdb,speech_production,acted,emovdb_paper,actors recorded sentences in several emotions for emotional speech synthesis,2026-10-26,claude,current,
@@ -2017,6 +2022,7 @@ jvnv/emotion_categories.label_basis/01,jvnv,emotion_categories.label_basis,inten
 jvnv/emotion_categories.label_verification/01,jvnv,emotion_categories.label_verification,listener_validated,jvnv_paper,"Table 4 and section 5: forced-choice task on a crowdsourcing platform, 60 emotion-balanced samples, 30 workers, 30 utterances each, accuracy 94.21% (87.37% with the nonverbal parts removed)",2026-10-26,claude,current,Aggregate only; individual answers not distributed; no clip was removed
 jvnv/full_title/01,jvnv,full_title,JVNV: Japanese emotional speech corpus with Verbal content and Nonverbal Vocalizations,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 jvnv/hours_release/01,jvnv,hours_release,3.94,jvnv_readme,commit 778f3541b476; Size of the release,2026-11-01,claude,current,
+jvnv/hours_reported/01,jvnv,hours_reported,3.94,jvnv_page,The corpus consists of 3.94 hours of speech from 4 speakers with 6 emotions,2026-11-01,claude,current,
 jvnv/languages/01,jvnv,languages,jpn,jvnv_page,dataset description names the language,2026-10-11,claude,current,
 jvnv/license_spdx/01,jvnv,license_spdx,CC-BY-SA-4.0,jvnv_page,author page,2026-10-11,claude,current,
 jvnv/listening_test/01,jvnv,listening_test,reported,jvnv_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
@@ -2082,6 +2088,7 @@ kazemotts/access_observed/02,kazemotts,access_observed,obtained,kazemotts_readme
 kazemotts/full_title/01,kazemotts,full_title,KazEmoTTS,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by kazemotts/full_title/02
 kazemotts/full_title/02,kazemotts,full_title,KazEmoTTS,kazemotts_card,title of the source contains the full title,2026-11-01,claude,current,
 kazemotts/hours_release/01,kazemotts,hours_release,74.9,kazemotts_readme,commit 3d3f1a3ffe93; Size of the release,2026-11-01,claude,current,
+kazemotts/hours_reported/01,kazemotts,hours_reported,74.85,kazemotts_card,"a total duration of 74.85 hours, featuring 34.23 hours delivered by a female narrator and 40.62 hours by two male narrators",2026-11-01,claude,current,
 kazemotts/languages/01,kazemotts,languages,kaz,kazemotts_card,dataset description names the language,2026-10-11,claude,current,
 kazemotts/license_spdx/01,kazemotts,license_spdx,CC-BY-4.0,kazemotts_card,Hugging Face dataset card,2026-10-11,claude,superseded,superseded by kazemotts/license_spdx/02
 kazemotts/license_spdx/02,kazemotts,license_spdx,CC-BY-4.0,kazemotts_page,"form text (re-read 2026-10-26): 'This dataset is provided under the Creative Commons Attribution 4.0 International Licence. To request access to the dataset, please complete the form.'",2026-10-26,claude,current,The Hugging Face dataset card (README and tags) states no license; the official access form linked from the card does. Replaces the earlier evidence row that pointed to the card
@@ -3089,6 +3096,7 @@ ruslana/name/02,ruslana,name,RUSLANA,ruslana_paper,title of the source contains 
 ruslana/speech_production/01,ruslana,speech_production,acted,ruslana_paper,"61 speakers (12 male, 49 female) pronounced ten sentences neutrally and in five emotional states (surprise, happiness, anger, sadness, fear)",2026-10-28,claude,current,
 ruslana/spoken_text_design/01,ruslana,spoken_text_design,parallel,ruslana_paper,the same ten sentences in every emotional state,2026-10-28,claude,current,
 safe_corpus/full_title/01,safe_corpus,full_title,Situation Analysis in a Fictional and Emotional Database,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+safe_corpus/hours_reported/01,safe_corpus,hours_reported,7,safe_corpus_paper,A total of 7 hours of recordings was collected,2026-11-01,claude,current,
 safe_corpus/languages/01,safe_corpus,languages,eng,safe_corpus_paper,§2: sequences extracted from a collection of 30 recent movies in English,2026-10-14,claude,current,
 safe_corpus/material_origin/01,safe_corpus,material_origin,film_tv,safe_corpus_paper,audio-visual sequences extracted from movie fictions,2026-10-14,claude,current,
 safe_corpus/name/01,safe_corpus,name,SAFE,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -3331,6 +3339,7 @@ spokenwoz/hours_reported/01,spokenwoz,hours_reported,249,spokenwoz_page,5.7k dia
 spokenwoz/languages/01,spokenwoz,languages,eng,spokenwoz_page,multi-domain speech-text dataset for spoken task-oriented dialogue modeling,2026-10-14,claude,current,
 spokenwoz/license_spdx/01,spokenwoz,license_spdx,CC-BY-NC-4.0,spokenwoz_page,distributed under the CC BY NC 4.0 license,2026-10-14,claude,current,
 spokenwoz/n_files_reported/01,spokenwoz,n_files_reported,203000,spokenwoz_page,"203k turns, 5.7k dialogues and 249 hours audios",2026-10-14,claude,current,
+spokenwoz/n_speakers_reported/01,spokenwoz,n_speakers_reported,250,spokenwoz_paper,"we organize 250 participants to generate 5,700 dialogues via phone calls",2026-11-01,claude,current,
 spokenwoz/name/01,spokenwoz,name,SpokenWOZ,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by spokenwoz/name/02
 spokenwoz/name/02,spokenwoz,name,SpokenWOZ,spokenwoz_page,title of the source contains the name,2026-11-01,claude,current,
 spokenwoz/vocal_content/01,spokenwoz,vocal_content,speech,spokenwoz_page,249 hours audios from realistic human-to-human spoken conversations,2026-10-14,claude,current,
@@ -3408,10 +3417,12 @@ swedish_vpesc/n_files_reported/01,swedish_vpesc,n_files_reported,10000,swedish_v
 swedish_vpesc/name/01,swedish_vpesc,name,Swedish Voice Provider Emotional Speech Corpus,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 switchboard_sentiment/access_method/01,switchboard_sentiment,access_method,paid_or_membership,switchboard_sentiment_page,Available Media: Web Download; View Fees,2026-10-13,claude,current,
 switchboard_sentiment/access_observed/01,switchboard_sentiment,access_observed,unavailable,switchboard_sentiment_page,data is a single tab-delimited file; audio is Switchboard-1 Release 2 (LDC97S62),2026-10-13,claude,current,
-switchboard_sentiment/hours_reported/01,switchboard_sentiment,hours_reported,140,switchboard_sentiment_page,"approximately 49,500 utterances covering 140 hours of audio",2026-10-13,claude,current,
+switchboard_sentiment/hours_reported/01,switchboard_sentiment,hours_reported,140,switchboard_sentiment_page,"approximately 49,500 utterances covering 140 hours of audio",2026-10-13,claude,superseded,superseded by switchboard_sentiment/hours_reported/02
+switchboard_sentiment/hours_reported/02,switchboard_sentiment,hours_reported,260,switchboard_sentiment_page,approximately 260 hours of telephone speech from 543 speakers,2026-11-01,claude,current,
 switchboard_sentiment/languages/01,switchboard_sentiment,languages,eng,switchboard_sentiment_page,telephone speech from 543 speakers across the United States,2026-10-13,claude,current,
 switchboard_sentiment/license_spdx/01,switchboard_sentiment,license_spdx,LicenseRef-proprietary-restricted,switchboard_sentiment_page,"Licensing Instructions: Subscription & Standard Members, and Non-Members",2026-10-13,claude,current,
 switchboard_sentiment/n_files_reported/01,switchboard_sentiment,n_files_reported,49500,switchboard_sentiment_page,"approximately 49,500 utterances covering 140 hours of audio",2026-10-13,claude,current,Approximate
+switchboard_sentiment/n_speakers_reported/01,switchboard_sentiment,n_speakers_reported,543,switchboard_sentiment_page,approximately 260 hours of telephone speech from 543 speakers across the United States,2026-11-01,claude,current,
 switchboard_sentiment/name/01,switchboard_sentiment,name,Speech Sentiment Annotations (Switchboard),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 switchboard_sentiment/vocal_content/01,switchboard_sentiment,vocal_content,speech,switchboard_sentiment_page,segments based on transcript turns,2026-10-13,claude,current,
 syntact/access_method/01,syntact,access_method,direct_download,syntact_page_2,Zenodo open record with file syntact_cat.zip,2026-10-13,claude,current,
@@ -3538,6 +3549,7 @@ thaiser/emotion_categories.label_basis/01,thaiser,emotion_categories.label_basis
 thaiser/emotion_categories.label_verification/01,thaiser,emotion_categories.label_verification,listener_validated,thaiser_paper,"crowd raters (wang.in.th): 984 of 1,759 applicants passed a pre-test; 3-8 raters per utterance (3-11 in the data), audio only; Krippendorff alpha 0.413 overall and 0.692 for agreement of at least 0.71",2026-10-28,claude,current,taken from the project review report; the paper was not re-read in this update; individual ratings are distributed (annotated)
 thaiser/full_title/01,thaiser,full_title,Thai SER (vistec-AI/dataset-releases v1),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 thaiser/hours_release/01,thaiser,hours_release,41.6,thaiser_readme,commit 906c09addc96; Size of the release,2026-11-01,claude,current,
+thaiser/hours_reported/01,thaiser,hours_reported,41.6,thaiser_page,"The recordings were 41 hours, 36 minutes long (27,854 utterances)",2026-11-01,claude,current,41 h 36 min written as hours
 thaiser/languages/01,thaiser,languages,tha,thaiser_page,dataset description names the language,2026-10-11,claude,current,
 thaiser/license_spdx/01,thaiser,license_spdx,CC-BY-SA-4.0,thaiser_page,README states the license,2026-10-11,claude,current,
 thaiser/listening_test/01,thaiser,listening_test,reported,thaiser_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
@@ -3819,6 +3831,7 @@ uudb/name/02,uudb,name,UUDB,uudb_page,title of the source contains the name,2026
 uudb/speech_production/01,uudb,speech_production,spontaneous,uudb_page,task-oriented dialogue (a four-frame cartoon sorting task) between 7 pairs of speakers (2 males and 12 females),2026-10-28,claude,current,
 uudb/vocal_content/01,uudb,vocal_content,speech,uudb_page,spontaneous speech through task-oriented dialogue,2026-10-14,claude,current,
 vam/access_method/01,vam,access_method,signed_agreement,vam_page_2,data release form and request form; files behind HTTP basic authentication,2026-10-14,claude,current,
+vam/hours_reported/01,vam,hours_reported,12,vam_paper,The database consists of 12 hours of audio-visual recordings of the German TV talk show,2026-11-01,claude,current,
 vam/languages/02,vam,languages,deu,vam_paper,a recently collected database of spontaneous emotional speech in German,2026-10-31,claude,current,
 vam/license_spdx/02,vam,license_spdx,LicenseRef-custom-research-only,vam_page_2,data is only shared for non-profit research purpose,2026-10-14,claude,current,
 vam/material_origin/01,vam,material_origin,broadcast,vam_page,a German audio-visual speech database recorded from a talk-show on TV,2026-10-31,claude,current,
