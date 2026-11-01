@@ -2348,7 +2348,7 @@ mderma/full_title/01,mderma,full_title,MDER-MA: A multimodal dataset for emotion
 mderma/full_title/02,mderma,full_title,MDER-MA: A multimodal dataset for emotion recognition in low-resource Moroccan Arabic language,mderma_paper_2,title of the source contains the full title,2026-11-01,claude,current,
 mderma/hours_release/01,mderma,hours_release,2.175,mderma_readme,commit a5e9f7e88d2a; Size of the release,2026-11-01,claude,current,
 mderma/languages/01,mderma,languages,ary,mderma_page,dataset description names the language,2026-10-11,claude,current,
-mderma/license_spdx/01,mderma,license_spdx,CC-BY-4.0,mderma_page,license field of the Mendeley list,2026-10-11,claude,current,
+mderma/license_spdx/01,mderma,license_spdx,CC-BY-4.0,mderma_page,license field of the Mendeley list,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 mderma/n_files_release/01,mderma,n_files_release,1345,,,2026-10-11,claude,superseded,Provisional:; superseded by mderma/n_files_release/02
 mderma/n_files_release/02,mderma,n_files_release,1345,mderma_readme,commit a5e9f7e88d2a; Size of the release,2026-11-01,claude,current,
 mderma/n_files_reported/01,mderma,n_files_reported,1322,mderma_page,"dataset description: 1,322 samples per format",2026-10-11,claude,current,
@@ -2357,7 +2357,7 @@ mderma/name/01,mderma,name,MDER-MA,,,2026-11-01,claude,superseded,Provisional: c
 mderma/name/02,mderma,name,MDER-MA,mderma_page,title of the source contains the name,2026-11-01,claude,current,
 mderma/speech_production/01,mderma,speech_production,unknown,,,2026-10-26,claude,provisional,Provisional:
 mderma/vocal_content/01,mderma,vocal_content,speech,mderma_page,dataset described as speech recordings,2026-10-11,claude,current,
-mead/license_spdx/02,mead,license_spdx,unknown,mead_page,"repository license MIT covers code; dataset terms are on the download page, now 404",2026-10-14,claude,current,Data terms unverified
+mead/license_spdx/02,mead,license_spdx,unknown,mead_page,"repository license MIT covers code; dataset terms are on the download page, now 404",2026-10-14,user,current,Data terms unverified; Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 mead/n_speakers_reported/02,mead,n_speakers_reported,60,mead_page,a talking-face video corpus featuring 60 actors and actresses,2026-10-31,claude,current,
 mead/name/01,mead,name,MEAD,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mead/name/02
 mead/name/02,mead,name,MEAD,mead_page,title of the source contains the name,2026-11-01,claude,current,
@@ -2373,7 +2373,7 @@ meld/emotion_categories.annotator/01,meld,emotion_categories.annotator,human,mel
 meld/emotion_categories.label_basis/01,meld,emotion_categories.label_basis,perceived,meld_paper_2,Section 3.1: the three annotators were asked to also look at the video clip of each utterance; the final label is the majority vote,2026-10-26,claude,current,The earlier EmotionLines labels were assigned from transcripts only; MELD re-annotated all utterances with the video
 meld/emotion_categories.label_verification/01,meld,emotion_categories.label_verification,NA,meld_paper_2,the majority vote of the annotators is the label itself,2026-10-26,claude,current,Fleiss kappa 0.43 (paper); utterances where all three differ were dropped (89 utterances)
 meld/hours_release/01,meld,hours_release,12.07,meld_readme,commit b6b321565c17; Size of the release,2026-11-01,claude,current,
-meld/license_spdx/02,meld,license_spdx,GPL-3.0-only,meld_page,GitHub license API reports GPL-3.0 for the repository,2026-10-12,claude,current,License of the repository. Rights in the source TV footage are not stated
+meld/license_spdx/02,meld,license_spdx,GPL-3.0-only,meld_page,GitHub license API reports GPL-3.0 for the repository,2026-10-12,user,current,License of the repository. Rights in the source TV footage are not stated; Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 meld/material_origin/01,meld,material_origin,film_tv,meld_page,MELD has more than 1400 dialogues and 13000 utterances from Friends TV series,2026-10-31,claude,current,
 meld/n_files_release/01,meld,n_files_release,13707,,,2026-10-26,claude,superseded,"Provisional: The CSV files have 13,708 rows; one row has no mp4; superseded by meld/n_files_release/02"
 meld/n_files_release/02,meld,n_files_release,13708,meld_readme,commit b6b321565c17; Size of the release,2026-11-01,claude,current,
@@ -2388,7 +2388,7 @@ memor/access_observed/01,memor,access_observed,obtained,memor_page,README: datas
 memor/full_title/01,memor,full_title,MEmoR: A Dataset for Multimodal Emotion Reasoning in Videos,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by memor/full_title/02
 memor/full_title/02,memor,full_title,MEmoR: A Dataset for Multimodal Emotion Reasoning in Videos,memor_page,title of the source contains the full title,2026-11-01,claude,current,
 memor/languages/01,memor,languages,eng,memor_paper,§1: clips from the popular TV series The Big Bang Theory,2026-10-14,claude,current,
-memor/license_spdx/01,memor,license_spdx,LicenseRef-proprietary-restricted,memor_page,README: download the License Agreement and send it back to get the password,2026-10-14,claude,current,
+memor/license_spdx/01,memor,license_spdx,LicenseRef-proprietary-restricted,memor_page,README: download the License Agreement and send it back to get the password,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 memor/material_origin/01,memor,material_origin,film_tv,memor_paper,"§1: 5,502 video clips from The Big Bang Theory",2026-10-14,claude,current,
 memor/n_files_reported/01,memor,n_files_reported,8536,memor_paper,"§1: 5,502 video clips and 8,536 data samples",2026-10-14,claude,current,Sample count per person
 memor/name/01,memor,name,MEmoR,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by memor/name/02
@@ -2397,7 +2397,7 @@ memor/vocal_content/01,memor,vocal_content,speech,memor_page,"multimodal inputs:
 mer2023/access_method/01,mer2023,access_method,gated_click_through,mer2023_card,gated auto: agree to share contact information; no EULA mentioned,2026-10-14,claude,current,
 mer2023/emotion_categories.annotator/01,mer2023,emotion_categories.annotator,human,mer2023_paper,"reliable samples with high annotation consistency form the labelled subsets (Train&Val, MER-MULTI, MER-NOISE); unreliable samples are treated as unlabelled",2026-10-28,claude,current,
 mer2023/emotion_categories.label_basis/01,mer2023,emotion_categories.label_basis,perceived,mer2023_paper,multimodal video annotation (discrete and dimensional),2026-10-28,claude,current,
-mer2023/license_spdx/02,mer2023,license_spdx,CC-BY-NC-4.0,mer2023_card,card: Licensed under CC BY-NC 4.0,2026-10-14,claude,current,
+mer2023/license_spdx/02,mer2023,license_spdx,CC-BY-NC-4.0,mer2023_card,card: Licensed under CC BY-NC 4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 mer2023/n_files_reported/02,mer2023,n_files_reported,5030,arxiv_s_2404_17113,"Table 1: MER2023 Train&Val 3373, MER-MULTI 411, MER-NOISE 412, MER-SEMI 834/73982",2026-10-23,claude,current,"Sum of labelled items (3,373+411+412+834), computed from a table in the MER2024 paper (same organisers). MER2024 merged these 5,030 into Train&Val (§2)"
 mer2023/name/01,mer2023,name,MER2023,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mer2023/name/02
 mer2023/name/02,mer2023,name,MER2023,mer2023_card,title of the source contains the name,2026-11-01,claude,current,
@@ -2408,19 +2408,19 @@ mer2024/emotion_categories.annotator/01,mer2024,emotion_categories.annotator,hum
 mer2024/emotion_categories.label_verification/01,mer2024,emotion_categories.label_verification,NA,arxiv_s_2404_17113,Human labels,2026-10-23,claude,current,
 mer2024/full_title/01,mer2024,full_title,"MER 2024: Semi-Supervised Learning, Noise Robustness, and Open-Vocabulary Multimodal Emotion Recognition",,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 mer2024/languages/01,mer2024,languages,cmn,arxiv_s_2404_17113,§2.1: raw data comes from movies and TV series; Chinese encoders,2026-10-23,claude,current,"Chinese films and dramas. The Hugging Face tag is en, but subtitles are Chinese and English"
-mer2024/license_spdx/01,mer2024,license_spdx,LicenseRef-custom-research-only,mer2024_card,card: Academic use only; access requires signing an EULA; no redistribution,2026-10-23,claude,current,Hugging Face license tag: cc-by-nc-4.0
+mer2024/license_spdx/01,mer2024,license_spdx,LicenseRef-custom-research-only,mer2024_card,card: Academic use only; access requires signing an EULA; no redistribution,2026-10-23,user,current,Hugging Face license tag: cc-by-nc-4.0; Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 mer2024/material_origin/01,mer2024,material_origin,film_tv,arxiv_s_2404_17113,§2.1: raw data in MER2024 comes from movies and TV series,2026-10-23,claude,current,Same value as mer2023
 mer2024/n_files_reported/01,mer2024,n_files_reported,7369,arxiv_s_2404_17113,"Table 1: Train&Val 5030, MER-SEMI 1169/115595, MER-NOISE 1170/115595",2026-10-23,claude,current,"Sum of labelled items (5,030+1,169+1,170). Unlabelled: 115,595"
 mer2024/name/01,mer2024,name,MER2024,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mer2024/name/02
 mer2024/name/02,mer2024,name,MER2024,mer2024_card,title of the source contains the name,2026-11-01,claude,current,
 mer2024/vocal_content/01,mer2024,vocal_content,speech,arxiv_s_2404_17113,video clips of one speaker,2026-10-23,claude,current,
 mer2025/access_method/01,mer2025,access_method,signed_agreement,mer2025_card,card: access requires signing an EULA; approval required,2026-10-14,claude,current,
-mer2025/license_spdx/02,mer2025,license_spdx,LicenseRef-custom-research-only,mer2025_card,card: academic use only; no redistribution,2026-10-14,claude,current,
+mer2025/license_spdx/02,mer2025,license_spdx,LicenseRef-custom-research-only,mer2025_card,card: academic use only; no redistribution,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 mer2025/n_files_reported/01,mer2025,n_files_reported,7369,mer2025_paper,"§3: comprising 7,369 labeled samples and 124,802 unlabeled samples",2026-10-23,claude,current,"Labelled Train&Val. Plus 124,802 unlabelled (2,026 of them annotated for evaluation); 132,171 in total"
 mer2025/name/01,mer2025,name,MER2025,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mer2025/name/02
 mer2025/name/02,mer2025,name,MER2025,mer2025_card,title of the source contains the name,2026-11-01,claude,current,
 mer2026/access_method/01,mer2026,access_method,request_form_or_email,mer2026_card,access granted only after manual review by the organizers,2026-10-14,claude,current,
-mer2026/license_spdx/02,mer2026,license_spdx,LicenseRef-custom-research-only,mer2026_card,access form: no redistribution or commercial use without written permission,2026-10-14,claude,current,
+mer2026/license_spdx/02,mer2026,license_spdx,LicenseRef-custom-research-only,mer2026_card,access form: no redistribution or commercial use without written permission,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 mer2026/name/01,mer2026,name,MER2026,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mer2026/name/02
 mer2026/name/02,mer2026,name,MER2026,mer2026_card,title of the source contains the name,2026-11-01,claude,current,
 mer_caption/access_observed/01,mer_caption,access_observed,unavailable,mer_caption_paper,Annotations only,2026-10-23,claude,current,
@@ -2428,7 +2428,7 @@ mer_caption/emotion_categories.annotator/01,mer_caption,emotion_categories.annot
 mer_caption/emotion_categories.label_verification/01,mer_caption,emotion_categories.label_verification,none,mer_caption_paper,Ethics: The annotation process does not involve hiring external annotators,2026-10-23,claude,current,
 mer_caption/full_title/01,mer_caption,full_title,"MER-Caption, MER-Caption+ (description data of AffectGPT)",,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 mer_caption/languages/01,mer_caption,languages,cmn,mer_caption_paper,Derived from MER2024,2026-10-23,claude,current,
-mer_caption/license_spdx/01,mer_caption,license_spdx,CC-BY-NC-4.0,mer_caption_paper,Ethics: we restrict the use of this dataset under the license of CC BY-NC 4.0,2026-10-23,claude,current,
+mer_caption/license_spdx/01,mer_caption,license_spdx,CC-BY-NC-4.0,mer_caption_paper,Ethics: we restrict the use of this dataset under the license of CC BY-NC 4.0,2026-10-23,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 mer_caption/material_origin/01,mer_caption,material_origin,film_tv,mer_caption_paper,Derived from MER2024,2026-10-23,claude,current,
 mer_caption/n_files_reported/01,mer_caption,n_files_reported,115595,mer_caption_paper,"Table 1: MER-Caption 115,595, MER-Caption+ 31,327",2026-10-23,claude,current,Count of MER-Caption
 mer_caption/name/01,mer_caption,name,MER-Caption / MER-Caption+,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -2438,7 +2438,7 @@ merr/emotion_categories.annotator/01,merr,emotion_categories.annotator,mixed,mer
 merr/emotion_categories.label_verification/01,merr,emotion_categories.label_verification,human_reviewed,merr_paper,Appendix: four domain experts manually review the refined descriptions and use a voting,2026-10-23,claude,current,"Humans checked the 4,487 fine-grained annotations"
 merr/full_title/01,merr,full_title,MERR: Multimodal Emotion Recognition and Reasoning dataset(Emotion-LLaMA),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 merr/languages/01,merr,languages,cmn,merr_paper,Derived from MER2023,2026-10-23,claude,current,
-merr/license_spdx/01,merr,license_spdx,LicenseRef-custom-research-only,merr_page,README License: Data is from MER2023 and licensed under EULA for research purposes only,2026-10-23,claude,current,
+merr/license_spdx/01,merr,license_spdx,LicenseRef-custom-research-only,merr_page,README License: Data is from MER2023 and licensed under EULA for research purposes only,2026-10-23,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 merr/material_origin/01,merr,material_origin,film_tv,merr_paper,Derived from MER2023,2026-10-23,claude,current,
 merr/n_files_reported/01,merr,n_files_reported,28618,merr_paper,"abstract: 28,618 coarse-grained and 4,487 fine-grained annotated samples",2026-10-23,claude,current,"Count of coarse annotations. Fine-grained annotations: 4,487"
 merr/name/01,merr,name,MERR,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -2451,7 +2451,7 @@ mesd/emotion_categories.label_verification/01,mesd,emotion_categories.label_veri
 mesd/full_title/01,mesd,full_title,Mexican Emotional Speech Database (MESD),,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mesd/full_title/02
 mesd/full_title/02,mesd,full_title,Mexican Emotional Speech Database (MESD),mesd_page,title of the source contains the full title,2026-11-01,claude,current,
 mesd/hours_release/01,mesd,hours_release,0.22,mesd_readme,commit 335de59c7787; Size of the release,2026-11-01,claude,current,
-mesd/license_spdx/02,mesd,license_spdx,CC-BY-4.0,mesd_page,license field of Mendeley (version 5),2026-10-11,claude,current,
+mesd/license_spdx/02,mesd,license_spdx,CC-BY-4.0,mesd_page,license field of Mendeley (version 5),2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 mesd/n_files_release/01,mesd,n_files_release,862,,,2026-10-11,claude,superseded,Provisional:; superseded by mesd/n_files_release/02
 mesd/n_files_release/02,mesd,n_files_release,1150,mesd_readme,commit 335de59c7787; Size of the release,2026-11-01,claude,current,
 mesd/n_speakers_release/01,mesd,n_speakers_release,unknown,mesd_readme,commit 335de59c7787; Size of the release,2026-11-01,claude,current,Readme cell: unknown (see below)
@@ -2481,7 +2481,7 @@ mess/emotion_categories.label_verification/01,mess,emotion_categories.label_veri
 mess/emotion_categories.label_verification/02,mess,emotion_categories.label_verification,listener_validated,mess_paper,"10 listeners (five men, five women, 19-28 years, 9 American and 1 Canadian English speakers, hearing screened) rated all 2,160 sentences in six sessions of about 90 minutes",2026-10-28,claude,current,Re-read 2026-10-28; raw category selections and ratings are available from the author on request
 mess/full_title/01,mess,full_title,Morgan Emotional Speech Set (MESS),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 mess/hours_release/01,mess,hours_release,1.33,mess_readme,commit 191554fbb4b5; Size of the release,2026-11-01,claude,current,
-mess/license_spdx/02,mess,license_spdx,CC-BY-4.0,mess_page,Zenodo license field (report §2),2026-10-11,claude,current,
+mess/license_spdx/02,mess,license_spdx,CC-BY-4.0,mess_page,Zenodo license field (report §2),2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 mess/listening_test/01,mess,listening_test,reported,mess_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 mess/n_files_release/01,mess,n_files_release,1800,,,2026-10-11,claude,superseded,Provisional:; superseded by mess/n_files_release/02
 mess/n_files_release/02,mess,n_files_release,1800,mess_readme,commit 191554fbb4b5; Size of the release,2026-11-01,claude,current,
@@ -2498,7 +2498,7 @@ mikuemobench/emotion_categories.label_verification/01,mikuemobench,emotion_categ
 mikuemobench/hours_reported/01,mikuemobench,hours_reported,131.2,mikuemobench_paper,§3.1: 131.2 hours of emotion-labeled audio,2026-10-13,claude,superseded,superseded by mikuemobench/hours_reported/02 (newer version)
 mikuemobench/hours_reported/02,mikuemobench,hours_reported,160,mikuemobench_card,README: about 160 hours of emotion-labeled audio,2026-10-13,claude,current,Approximate. The card is a newer version than the paper
 mikuemobench/languages/01,mikuemobench,languages,mul,arxiv_s_2509_09791_secondary,Table I row MIKU-EmoBench: Lang. Multiple,2026-10-13,claude,current,The primary source does not state the language
-mikuemobench/license_spdx/01,mikuemobench,license_spdx,CC-BY-3.0,mikuemobench_card,dataset card metadata: license cc-by-3.0,2026-10-13,claude,current,
+mikuemobench/license_spdx/01,mikuemobench,license_spdx,CC-BY-3.0,mikuemobench_card,dataset card metadata: license cc-by-3.0,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 mikuemobench/material_origin/01,mikuemobench,material_origin,web_video,mikuemobench_card,"README: sourced from open YouTube videos; interviews, movies, daily conversations",2026-10-13,claude,current,
 mikuemobench/n_files_reported/01,mikuemobench,n_files_reported,65970,mikuemobench_paper,"§3.1: 131.2 hours segmented into 65,970 utterances",2026-10-13,claude,superseded,superseded by mikuemobench/n_utt_reported/02 (newer version)
 mikuemobench/n_files_reported/02,mikuemobench,n_files_reported,89428,mikuemobench_card,"README: the dataset is segmented into 89,428 utterances",2026-10-13,claude,current,The card is a newer version than the paper (states it was updated after submission)
@@ -2510,13 +2510,13 @@ minds14/access_method/01,minds14,access_method,direct_download,minds14_card,data
 minds14/access_observed/01,minds14,access_observed,obtained,minds14_paper,"release the MInDS-14 dataset, including the original speech data and ASR data",2026-10-14,claude,current,
 minds14/full_title/01,minds14,full_title,MInDS-14: Multilingual Intent Detection from Speech,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 minds14/languages/01,minds14,languages,eng;fra;ita;spa;por;deu;nld;rus;pol;ces;kor;zho,minds14_card,card metadata: language en fr it es pt de nl ru pl cs ko zh,2026-10-14,claude,current,
-minds14/license_spdx/01,minds14,license_spdx,CC-BY-4.0,minds14_card,card metadata: license cc-by-4.0,2026-10-14,claude,current,
+minds14/license_spdx/01,minds14,license_spdx,CC-BY-4.0,minds14_card,card metadata: license cc-by-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 minds14/name/01,minds14,name,MInDS-14,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 minds14/vocal_content/01,minds14,vocal_content,speech,minds14_paper,14 intents in the banking domain with accompanying spoken utterances,2026-10-14,claude,current,
 mlend_numerals/access_method/01,mlend_numerals,access_method,free_account_required,mlend_numerals_page,Kaggle download requires signing in,2026-10-13,claude,current,
 mlend_numerals/access_observed/01,mlend_numerals,access_observed,obtained,mlend_numerals_page,collection of more than 32k audio recordings,2026-10-13,claude,current,
 mlend_numerals/languages/01,mlend_numerals,languages,eng,mlend_numerals_page,each recording is one English numeral from zero to billion,2026-10-13,claude,current,
-mlend_numerals/license_spdx/01,mlend_numerals,license_spdx,unknown,mlend_numerals_page,Kaggle dataset license field: Unknown,2026-10-13,claude,current,
+mlend_numerals/license_spdx/01,mlend_numerals,license_spdx,unknown,mlend_numerals_page,Kaggle dataset license field: Unknown,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 mlend_numerals/n_files_reported/01,mlend_numerals,n_files_reported,32000,mlend_numerals_page,more than 32k audio recordings produced by 154 speakers,2026-10-13,claude,current,"""Over 32k"""
 mlend_numerals/n_speakers_release/01,mlend_numerals,n_speakers_release,151,,,2026-10-14,claude,provisional,Provisional:
 mlend_numerals/n_speakers_reported/01,mlend_numerals,n_speakers_reported,154,mlend_numerals_page,more than 32k audio recordings produced by 154 speakers,2026-10-13,claude,current,
@@ -2533,7 +2533,7 @@ mmeld/name/01,mmeld,name,M-MELD,,,2026-11-01,claude,superseded,Provisional: carr
 mmeld/name/02,mmeld,name,M-MELD,mmeld_paper,title of the source contains the name,2026-11-01,claude,current,
 mspconversation/access_method/01,mspconversation,access_method,signed_agreement,mspconversation_page,Academic License (free of cost): institution must sign the agreement,2026-10-14,claude,current,
 mspconversation/hours_reported/02,mspconversation,hours_reported,77.43,mspconversation_page,"Release 2.0: 310 conversations, 77 hours 26 minutes total",2026-10-14,claude,current,Release 2.0
-mspconversation/license_spdx/02,mspconversation,license_spdx,LicenseRef-custom-research-only,mspconversation_page,"Academic License (free of cost), signed by the institution",2026-10-14,claude,current,
+mspconversation/license_spdx/02,mspconversation,license_spdx,LicenseRef-custom-research-only,mspconversation_page,"Academic License (free of cost), signed by the institution",2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 mspconversation/material_origin/01,mspconversation,material_origin,podcast,mspconversation_page,the recordings overlap with the recordings included in the MSP-Podcast database ... retrieved from podcasts,2026-10-31,claude,current,
 mspconversation/n_files_reported/02,mspconversation,n_files_reported,310,mspconversation_page,Release 2.0 contains 310 conversations with duration between 10-20 minutes,2026-10-31,claude,current,"Counted in conversations, not utterances"
 mspconversation/name/01,mspconversation,name,MSP-Conversation,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mspconversation/name/02
@@ -2544,7 +2544,7 @@ mspface/emotion_categories.annotator/01,mspface,emotion_categories.annotator,hum
 mspface/emotion_categories.label_basis/01,mspface,emotion_categories.label_basis,perceived,mspface_page,crowd perceptual evaluation of the speaking turns,2026-10-28,claude,current,
 mspface/full_title/01,mspface,full_title,MSP-Face corpus: A natural audiovisual emotional database,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 mspface/hours_reported/01,mspface,hours_reported,24.68,mspface_page,"annotated set: 9,370 recordings (24 hrs, 41 mins)",2026-10-13,claude,current,Labelled part. Unlabelled: 38 h 3 min
-mspface/license_spdx/01,mspface,license_spdx,LicenseRef-custom-research-only,mspface_page,Release of the Corpus: Academic License,2026-10-13,claude,current,
+mspface/license_spdx/01,mspface,license_spdx,LicenseRef-custom-research-only,mspface_page,Release of the Corpus: Academic License,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 mspface/material_origin/01,mspface,material_origin,web_video,mspface_page,natural emotional multimodal corpus collected from video-sharing websites,2026-10-13,claude,current,
 mspface/n_files_reported/01,mspface,n_files_reported,9370,mspface_page,"annotated set: 9,370 recordings (24 hrs, 41 mins)",2026-10-13,claude,superseded,"Unlabelled: 15,011 clips; superseded by mspface/n_utt_reported/02"
 mspface/n_files_reported/02,mspface,n_files_reported,9370,mspface_page,"labelled set of 9,370 recordings; an unlabelled set has 15,011 recordings (38 h 3 min)",2026-10-28,claude,current,
@@ -2556,7 +2556,7 @@ mspimprov/access_method/01,mspimprov,access_method,signed_agreement,mspimprov_pa
 mspimprov/emotion_categories.annotator/01,mspimprov,emotion_categories.annotator,human,arxiv_s_2402_13018,"annotated with primary and secondary emotions (crowdsourced perceptual annotation); 8,438 manually segmented clips",2026-10-28,claude,superseded,superseded by mspimprov/label_source/02
 mspimprov/emotion_categories.annotator/02,mspimprov,emotion_categories.annotator,human,arxiv_s_2402_13018,"the annotation process has primary and secondary emotion scenarios and collected typed descriptions; 8,438 manually segmented clips",2026-10-28,claude,current,Corrected 2026-10-28: the earlier wording 'crowdsourced' was not stated in this source (the lab's page lists papers on crowdsourced evaluations of its corpora)
 mspimprov/emotion_categories.label_basis/01,mspimprov,emotion_categories.label_basis,perceived,arxiv_s_2402_13018,perceptual annotation of each clip,2026-10-28,claude,current,
-mspimprov/license_spdx/02,mspimprov,license_spdx,LicenseRef-custom-research-only,mspimprov_page,"Academic License; commercial license from UT Dallas for US$8,000",2026-10-14,claude,current,
+mspimprov/license_spdx/02,mspimprov,license_spdx,LicenseRef-custom-research-only,mspimprov_page,"Academic License; commercial license from UT Dallas for US$8,000",2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 mspimprov/n_files_reported/02,mspimprov,n_files_reported,8438,arxiv_s_2402_13018,"all sessions are manually segmented into 8,438 clips",2026-10-28,claude,current,
 mspimprov/n_speakers_reported/02,mspimprov,n_speakers_reported,12,mspimprov_page,the corpus comprises data from six dyad sessions (12 actors),2026-10-31,claude,current,
 mspimprov/name/01,mspimprov,name,MSP-IMPROV,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mspimprov/name/02
@@ -2573,7 +2573,7 @@ msppodcast/emotion_categories.label_basis/01,msppodcast,emotion_categories.label
 msppodcast/emotion_categories.label_verification/01,msppodcast,emotion_categories.label_verification,listener_validated,arxiv_s_2509_09791,"after corrections the corpus has 1,446,270 emotional annotations from 13,280 workers; the consensus class comes from the workers' votes",2026-10-26,claude,current,Per-class human accuracy is not reported. The annotation itself is the listening evaluation; the primary-emotion agreement 0.411 is called Cohen's kappa in Table III and Fleiss' kappa in section VI
 msppodcast/hours_release/01,msppodcast,hours_release,409.51,msppodcast_readme,commit ab2176a86ba4; Size of the release,2026-11-01,claude,current,
 msppodcast/hours_reported/02,msppodcast,hours_reported,409,msppodcast_page,"Version 2.0 of the corpus has 264,705 speaking turns (409 hours)",2026-10-31,claude,current,Release 2.0
-msppodcast/license_spdx/02,msppodcast,license_spdx,LicenseRef-custom-research-only,msppodcast_page,Release of the Corpus: Academic License (free of cost),2026-10-14,claude,current,A commercial license exists separately
+msppodcast/license_spdx/02,msppodcast,license_spdx,LicenseRef-custom-research-only,msppodcast_page,Release of the Corpus: Academic License (free of cost),2026-10-14,user,current,A commercial license exists separately; Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 msppodcast/material_origin/01,msppodcast,material_origin,podcast,msppodcast_page,speech segments from podcast recordings that are perceptually annotated by crowdsourcing workers and student evaluators,2026-10-31,claude,current,
 msppodcast/n_files_release/01,msppodcast,n_files_release,267905,,,2026-10-23,claude,superseded,"Provisional: labels_consensus.csv has 264,705 rows (Train 169,190, Development 34,399, Test1 46,294, Test2 14,822). Partitions.txt adds Test3 (3,200) for 267,905; superseded by msppodcast/n_files_release/02"
 msppodcast/n_files_release/02,msppodcast,n_files_release,267905,msppodcast_readme,commit ab2176a86ba4; Size of the release,2026-11-01,claude,current,
@@ -2596,7 +2596,7 @@ multidialog/full_title/01,multidialog,full_title,Let's Go Real Talk: Spoken Dial
 multidialog/hours_release/01,multidialog,hours_release,325.45,multidialog_readme,commit 2b6650d5d8ec; Size of the release,2026-11-01,claude,current,
 multidialog/hours_reported/01,multidialog,hours_reported,339.71,multidialog_card,card statistics: total length 339.71 hours,2026-10-14,claude,current,
 multidialog/languages/01,multidialog,languages,eng,multidialog_card,card metadata: language en,2026-10-14,claude,current,
-multidialog/license_spdx/01,multidialog,license_spdx,unknown,multidialog_card,"dataset card metadata: license cc, with no type or version",2026-10-14,claude,current,
+multidialog/license_spdx/01,multidialog,license_spdx,unknown,multidialog_card,"dataset card metadata: license cc, with no type or version",2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-08
 multidialog/material_origin/01,multidialog,material_origin,recorded_for_dataset,multidialog_paper,"the actors were recorded for the dataset (appendix A.2: consent forms and compensation); the script text comes from Topical-Chat, whose license was not checked",2026-10-29,claude,current,
 multidialog/n_files_release/01,multidialog,n_files_release,187854,,,2026-10-29,claude,superseded,"Provisional: The card and metadata say 187,859; recorded only, not resolved (maintainer, 2026-10-29); superseded by multidialog/n_files_release/02"
 multidialog/n_files_release/02,multidialog,n_files_release,187854,multidialog_readme,commit 2b6650d5d8ec; Size of the release,2026-11-01,claude,current,
