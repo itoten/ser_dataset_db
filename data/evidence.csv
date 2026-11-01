@@ -3718,7 +3718,7 @@ uudb/speech_production/01,uudb,speech_production,spontaneous,uudb_page,task-orie
 uudb/vocal_content/01,uudb,vocal_content,speech,uudb_page,spontaneous speech through task-oriented dialogue,2026-10-14,claude,current,
 vam/access_method/01,vam,access_method,signed_agreement,vam_page_2,data release form and request form; files behind HTTP basic authentication,2026-10-14,claude,current,
 vam/languages/02,vam,languages,deu,vam_paper,a recently collected database of spontaneous emotional speech in German,2026-10-31,claude,current,
-vam/license_spdx/02,vam,license_spdx,LicenseRef-custom-research-only,vam_page_2,data is only shared for non-profit research purpose,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-12
+vam/license_spdx/02,vam,license_spdx,LicenseRef-custom-research-only,vam_page_2,data is only shared for non-profit research purpose,2026-10-14,user,current,Verified by the maintainer in the pull request #24 (branch verify/2026-11-01-12)
 vam/material_origin/01,vam,material_origin,broadcast,vam_page,a German audio-visual speech database recorded from a talk-show on TV,2026-10-31,claude,current,
 vam/n_files_reported/02,vam,n_files_reported,1018,vam_paper,VAM-Audio contains 1018 emotional utterances by 47 speakers (11m/36f),2026-10-31,claude,current,
 vam/n_speakers_reported/02,vam,n_speakers_reported,47,vam_paper,1018 emotional utterances by 47 speakers (11m/36f),2026-10-31,claude,current,
@@ -3746,7 +3746,7 @@ vesus/emotion_categories.label_verification/01,vesus,emotion_categories.label_ve
 vesus/full_title/01,vesus,full_title,Varied Emotion in Syntactically Uniform Speech,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 vesus/hours_reported/01,vesus,hours_reported,6,vesus_page,VESUS contains over 6 hours of pure speech,2026-10-13,claude,current,"""Over 6 hours"""
 vesus/languages/01,vesus,languages,eng,vesus_page,We recruited ten English speaking actors from the Baltimore area,2026-10-13,claude,current,
-vesus/license_spdx/01,vesus,license_spdx,LicenseRef-custom-research-only,vesus_page,Release: VESUS will be made freely available for academic use,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-12
+vesus/license_spdx/01,vesus,license_spdx,LicenseRef-custom-research-only,vesus_page,Release: VESUS will be made freely available for academic use,2026-10-13,user,current,Verified by the maintainer in the pull request #24 (branch verify/2026-11-01-12)
 vesus/listening_test/01,vesus,listening_test,reported,,,2026-11-01,claude,provisional,Provisional: a listening test was recorded earlier; the source is not public
 vesus/material_origin/01,vesus,material_origin,recorded_for_dataset,vesus_paper,recorded at Johns Hopkins University under an IRB protocol with informed consent,2026-10-28,claude,current,
 vesus/n_files_reported/01,vesus,n_files_reported,12594,vesus_page,"ten emotional annotations for each of the 12,594 utterances",2026-10-13,claude,current,
@@ -3786,7 +3786,7 @@ vivae/full_title/01,vivae,full_title,The Variably Intense Vocalizations of Affec
 vivae/full_title/02,vivae,full_title,The Variably Intense Vocalizations of Affect and Emotion Corpus (VIVAE),vivae_page,title of the source contains the full title,2026-11-01,claude,current,
 vivae/hours_release/01,vivae,hours_release,0.27,vivae_readme,commit 6134b1534f2f; Size of the release,2026-11-01,claude,current,
 vivae/languages/02,vivae,languages,zxx,vivae_page,non-verbal vocalizations without linguistic content,2026-10-11,claude,current,
-vivae/license_spdx/02,vivae,license_spdx,CC-BY-NC-4.0,vivae_page,Zenodo metadata license field (report §2),2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-12
+vivae/license_spdx/02,vivae,license_spdx,CC-BY-NC-4.0,vivae_page,Zenodo metadata license field (report §2),2026-10-11,user,current,Verified by the maintainer in the pull request #24 (branch verify/2026-11-01-12)
 vivae/listening_test/01,vivae,listening_test,reported,vivae_readme,commit 6134b1534f2f; Listening test ratings in the release,2026-11-01,claude,current,
 vivae/material_origin/01,vivae,material_origin,recorded_for_dataset,,,2026-10-28,claude,provisional,Provisional: carried over from source_rights
 vivae/n_files_release/01,vivae,n_files_release,1085,,,2026-10-11,claude,superseded,Provisional:; superseded by vivae/n_files_release/02
@@ -3811,7 +3811,7 @@ voicenet/emotion_categories.annotator/01,voicenet,emotion_categories.annotator,h
 voicenet/emotion_categories.label_verification/01,voicenet,emotion_categories.label_verification,NA,arxiv_s_2609_32016,Human ratings,2026-10-23,claude,current,
 voicenet/full_title/01,voicenet,full_title,VoiceNet: Fine-Grained Voice Understanding Beyond Emotion at Scale(VoiceNet-Emo / VoiceNet-Ext),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 voicenet/languages/01,voicenet,languages,mul,arxiv_s_2609_32016,§3: clips from the Emilia-YODAS and Emilia portions of Emilia-Large,2026-10-23,claude,current,The language breakdown is not given
-voicenet/license_spdx/01,voicenet,license_spdx,CC-BY-NC-4.0,arxiv_s_2609_32016,§3: clips come from the Emilia-YODAS (CC-BY-4.0) and Emilia (CC-BY-NC-4.0) portions; openly available under CC-BY and CC-BY-NC research licences,2026-10-23,user,current,CC-BY-4.0 and CC-BY-NC-4.0 are mixed per clip; the stricter is used as the value. The GitHub repository itself is MIT; Verified by the maintainer in the pull request of branch verify/2026-11-01-12
+voicenet/license_spdx/01,voicenet,license_spdx,CC-BY-NC-4.0,arxiv_s_2609_32016,§3: clips come from the Emilia-YODAS (CC-BY-4.0) and Emilia (CC-BY-NC-4.0) portions; openly available under CC-BY and CC-BY-NC research licences,2026-10-23,user,current,CC-BY-4.0 and CC-BY-NC-4.0 are mixed per clip; the stricter is used as the value. The GitHub repository itself is MIT; Verified by the maintainer in the pull request #24 (branch verify/2026-11-01-12)
 voicenet/material_origin/01,voicenet,material_origin,multiple,arxiv_s_2609_32016,permissively-licensed in-the-wild speech,2026-10-23,claude,current,
 voicenet/n_files_reported/01,voicenet,n_files_reported,3944,arxiv_s_2609_32016,"§3: 7,988 (audio, emotion) pairs over 3,944 unique audio clips",2026-10-23,claude,current,Number of VoiceNet-Emo clips
 voicenet/name/01,voicenet,name,VoiceNet,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -3825,7 +3825,7 @@ voicestats/emotion_categories.label_verification/01,voicestats,emotion_categorie
 voicestats/full_title/01,voicestats,full_title,Voice Actor Statistics Corpus (声優統計コーパス),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 voicestats/hours_release/01,voicestats,hours_release,2.28,voicestats_readme,commit f1fdb1988c54; Size of the release,2026-11-01,claude,current,
 voicestats/languages/02,voicestats,languages,jpn,voicestats_page,phoneme-balanced sentences built from the Japanese Wikipedia text; read aloud by voice actresses,2026-10-31,claude,current,The page is written in Japanese; the sentences come from the Japanese Wikipedia
-voicestats/license_spdx/01,voicestats,license_spdx,LicenseRef-custom-research-only,voicestats_page,site: free for personal research and analysis; redistribution prohibited,2026-10-11,user,current,Only the text of the phoneme-balanced sentences is CC-BY-SA (report §2); Verified by the maintainer in the pull request of branch verify/2026-11-01-12
+voicestats/license_spdx/01,voicestats,license_spdx,LicenseRef-custom-research-only,voicestats_page,site: free for personal research and analysis; redistribution prohibited,2026-10-11,user,current,Only the text of the phoneme-balanced sentences is CC-BY-SA (report §2); Verified by the maintainer in the pull request #24 (branch verify/2026-11-01-12)
 voicestats/material_origin/01,voicestats,material_origin,recorded_for_dataset,,,2026-10-28,claude,provisional,Provisional: carried over from source_rights
 voicestats/n_files_release/01,voicestats,n_files_release,900,,,2026-10-11,claude,superseded,Provisional:; superseded by voicestats/n_files_release/02
 voicestats/n_files_release/02,voicestats,n_files_release,900,voicestats_readme,commit f1fdb1988c54; Size of the release,2026-11-01,claude,current,
@@ -3839,7 +3839,7 @@ voicestats/vocal_content/01,voicestats,vocal_content,speech,voicestats_page,voic
 waxal_wolof_ser/access_method/01,waxal_wolof_ser,access_method,direct_download,waxal_wolof_ser_page,dataset is not gated,2026-10-14,claude,current,
 waxal_wolof_ser/access_observed/01,waxal_wolof_ser,access_observed,obtained,,,2026-10-14,claude,provisional,Provisional: carried over from raw_audio_available
 waxal_wolof_ser/languages/01,waxal_wolof_ser,languages,wol,waxal_wolof_ser_card,card metadata: language wo,2026-10-14,claude,current,
-waxal_wolof_ser/license_spdx/01,waxal_wolof_ser,license_spdx,none_stated,waxal_wolof_ser_page,dataset card has no license field,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-12
+waxal_wolof_ser/license_spdx/01,waxal_wolof_ser,license_spdx,none_stated,waxal_wolof_ser_page,dataset card has no license field,2026-10-14,user,current,Verified by the maintainer in the pull request #24 (branch verify/2026-11-01-12)
 waxal_wolof_ser/n_files_release/01,waxal_wolof_ser,n_files_release,3765,,,2026-10-14,claude,provisional,Provisional:
 waxal_wolof_ser/name/01,waxal_wolof_ser,name,Waxal_Multiling_4_SER-Wolof,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by waxal_wolof_ser/name/02
 waxal_wolof_ser/name/02,waxal_wolof_ser,name,Waxal_Multiling_4_SER-Wolof,waxal_wolof_ser_card,title of the source contains the name,2026-11-01,claude,current,
@@ -3853,7 +3853,7 @@ werewolf_xl/full_title/02,werewolf_xl,full_title,Werewolf-XL: A Database for Ide
 werewolf_xl/hours_reported/01,werewolf_xl,hours_reported,14.83,werewolf_xl_page,README: a total of 890 minutes of spontaneous audio-visual recordings,2026-10-23,claude,superseded,890 minutes converted to hours; superseded by werewolf_xl/hours_reported/02
 werewolf_xl/hours_reported/02,werewolf_xl,hours_reported,14.83,werewolf_xl_page,890 minutes of recordings,2026-10-28,claude,current,
 werewolf_xl/languages/01,werewolf_xl,languages,unknown,werewolf_xl_page,The README does not state the language,2026-10-23,claude,current,Recorded at Zhejiang University. The language cannot be confirmed from the sources
-werewolf_xl/license_spdx/01,werewolf_xl,license_spdx,none_stated,werewolf_xl_page,License & co in the README only asks for the paper to be cited,2026-10-23,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-12
+werewolf_xl/license_spdx/01,werewolf_xl,license_spdx,none_stated,werewolf_xl_page,License & co in the README only asks for the paper to be cited,2026-10-23,user,current,Verified by the maintainer in the pull request #24 (branch verify/2026-11-01-12)
 werewolf_xl/n_files_reported/01,werewolf_xl,n_files_reported,131688,werewolf_xl_page,"README: 131,688 individual utterance-level video clips",2026-10-23,claude,superseded,"Of these, 14,632 are speaker samples; the rest are listener samples; superseded by werewolf_xl/n_utt_reported/02"
 werewolf_xl/n_files_reported/02,werewolf_xl,n_files_reported,131688,werewolf_xl_page,"131,688 individual utterance-level video clips",2026-10-28,claude,current,
 werewolf_xl/n_speakers_reported/01,werewolf_xl,n_speakers_reported,129,werewolf_xl_page,README: 129 subjects,2026-10-23,claude,current,
@@ -3872,7 +3872,7 @@ whiser/full_title/02,whiser,full_title,WHiSER: White House Tapes Speech Emotion 
 whiser/hours_release/01,whiser,hours_release,6.35,whiser_readme,commit 2366a8d0b31e; Size of the release,2026-11-01,claude,current,
 whiser/hours_reported/01,whiser,hours_reported,6.35,whiser_paper,§3.2: total duration of 6 hours 21 minutes,2026-10-13,claude,current,
 whiser/languages/01,whiser,languages,eng,arxiv_s_2509_09791_secondary,Table I row WHiSER: Lang. English,2026-10-13,claude,current,The primary source does not state the language (Nixon tapes)
-whiser/license_spdx/01,whiser,license_spdx,none_stated,whiser_page,repository has no license file; README and paper state no terms,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-12
+whiser/license_spdx/01,whiser,license_spdx,none_stated,whiser_page,repository has no license file; README and paper state no terms,2026-10-13,user,current,Verified by the maintainer in the pull request #24 (branch verify/2026-11-01-12)
 whiser/listening_test/01,whiser,listening_test,reported,whiser_readme,commit 2366a8d0b31e; Listening test ratings in the release,2026-11-01,claude,current,
 whiser/n_files_release/01,whiser,n_files_release,5427,,,2026-10-13,claude,superseded,Provisional:; superseded by whiser/n_files_release/02
 whiser/n_files_release/02,whiser,n_files_release,5427,whiser_readme,commit 2366a8d0b31e; Size of the release,2026-11-01,claude,current,
@@ -3892,7 +3892,7 @@ yodasspeakerpool/emotion_categories.label_verification/01,yodasspeakerpool,emoti
 yodasspeakerpool/full_title/01,yodasspeakerpool,full_title,YodasSpeakerPool,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by yodasspeakerpool/full_title/02
 yodasspeakerpool/full_title/02,yodasspeakerpool,full_title,YodasSpeakerPool,yodasspeakerpool_page,title of the source contains the full title,2026-11-01,claude,current,
 yodasspeakerpool/languages/01,yodasspeakerpool,languages,cmn;eng,yodasspeakerpool_page,README: 3.4K Chinese speakers and 4.2K English speakers,2026-10-23,claude,current,
-yodasspeakerpool/license_spdx/01,yodasspeakerpool,license_spdx,CC-BY-4.0,yodasspeakerpool_card,Hugging Face license tag cc-by-4.0,2026-10-23,user,current,The original Emilia-YODAS is also CC-BY; Verified by the maintainer in the pull request of branch verify/2026-11-01-12
+yodasspeakerpool/license_spdx/01,yodasspeakerpool,license_spdx,CC-BY-4.0,yodasspeakerpool_card,Hugging Face license tag cc-by-4.0,2026-10-23,user,current,The original Emilia-YODAS is also CC-BY; Verified by the maintainer in the pull request #24 (branch verify/2026-11-01-12)
 yodasspeakerpool/material_origin/01,yodasspeakerpool,material_origin,web_video,yodasspeakerpool_page,README: Built from Emilia-YODAS,2026-10-23,claude,current,
 yodasspeakerpool/n_files_release/01,yodasspeakerpool,n_files_release,7616,,,2026-10-23,claude,provisional,Provisional:
 yodasspeakerpool/n_speakers_reported/01,yodasspeakerpool,n_speakers_reported,7600,yodasspeakerpool_page,"README: approximately 7,600 unique speakers",2026-10-23,claude,current,
@@ -3909,7 +3909,7 @@ ysed/full_title/01,ysed,full_title,YSED: Yemeni speech emotion dataset,,,2026-11
 ysed/full_title/02,ysed,full_title,YSED: Yemeni speech emotion dataset,ysed_paper,title of the source contains the full title,2026-11-01,claude,current,
 ysed/hours_release/01,ysed,hours_release,1.01,ysed_readme,commit 1a5f8dd6a19e; Size of the release,2026-11-01,claude,current,
 ysed/languages/01,ysed,languages,ara,ysed_page,dataset description names the language,2026-10-11,claude,current,
-ysed/license_spdx/01,ysed,license_spdx,CC-BY-4.0,ysed_page,Zenodo record license,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-12
+ysed/license_spdx/01,ysed,license_spdx,CC-BY-4.0,ysed_page,Zenodo record license,2026-10-11,user,current,Verified by the maintainer in the pull request #24 (branch verify/2026-11-01-12)
 ysed/listening_test/01,ysed,listening_test,reported,ysed_readme,commit 1a5f8dd6a19e; Listening test ratings in the release,2026-11-01,claude,current,
 ysed/material_origin/01,ysed,material_origin,recorded_for_dataset,,,2026-10-28,claude,provisional,Provisional: carried over from source_rights
 ysed/n_files_release/01,ysed,n_files_release,1432,,,2026-10-11,claude,superseded,Provisional:; superseded by ysed/n_files_release/02
@@ -3928,7 +3928,7 @@ yue_emo_speech/access_observed/01,yue_emo_speech,access_observed,obtained,yue_em
 yue_emo_speech/emotion_categories.annotator/01,yue_emo_speech,emotion_categories.annotator,unknown,yue_emo_speech_card,the card says each clip is labelled with one of eight emotions and a confidence but not who or what labelled it,2026-10-28,claude,current,"Continuous confidences and an <unk> label suggest a model, but that is not stated"
 yue_emo_speech/hours_reported/01,yue_emo_speech,hours_reported,1000,yue_emo_speech_card,"card: 1,000 hours of Cantonese speech",2026-10-14,claude,current,
 yue_emo_speech/languages/01,yue_emo_speech,languages,yue,yue_emo_speech_card,card metadata: language yue,2026-10-14,claude,current,
-yue_emo_speech/license_spdx/01,yue_emo_speech,license_spdx,none_stated,yue_emo_speech_page,dataset card has no license field,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-12
+yue_emo_speech/license_spdx/01,yue_emo_speech,license_spdx,none_stated,yue_emo_speech_page,dataset card has no license field,2026-10-14,user,current,Verified by the maintainer in the pull request #24 (branch verify/2026-11-01-12)
 yue_emo_speech/material_origin/01,yue_emo_speech,material_origin,multiple,yue_emo_speech_card,crawled from YouTube and RTHK,2026-10-14,claude,current,
 yue_emo_speech/n_files_reported/01,yue_emo_speech,n_files_reported,726579,yue_emo_speech_card,"card metadata: train split 726,579 examples, 72 GB download",2026-10-28,claude,current,
 yue_emo_speech/name/01,yue_emo_speech,name,Cantonese Emotional Speech (hon9kon9ize),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -3936,5 +3936,5 @@ yue_emo_speech/vocal_content/01,yue_emo_speech,vocal_content,speech,yue_emo_spee
 zamai_pashto/access_observed/01,zamai_pashto,access_observed,unavailable,,,2026-10-14,claude,provisional,Provisional: carried over from raw_audio_available
 zamai_pashto/languages/01,zamai_pashto,languages,pus,,§3: ZamAI Pashto,2026-10-12,claude,superseded,superseded by zamai_pashto/languages/02; Former source type: project_doc
 zamai_pashto/languages/02,zamai_pashto,languages,pus;fas;eng,zamai_pashto_card,"HF tags language:ps, fa, en",2026-10-14,claude,current,
-zamai_pashto/license_spdx/01,zamai_pashto,license_spdx,Apache-2.0,zamai_pashto_card,HF tag license:apache-2.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-12
+zamai_pashto/license_spdx/01,zamai_pashto,license_spdx,Apache-2.0,zamai_pashto_card,HF tag license:apache-2.0,2026-10-14,user,current,Verified by the maintainer in the pull request #24 (branch verify/2026-11-01-12)
 zamai_pashto/name/01,zamai_pashto,name,ZamAI Pashto,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
