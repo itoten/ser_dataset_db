@@ -2612,12 +2612,12 @@ musecar/access_method/01,musecar,access_method,request_form_or_email,musecar_pag
 musecar/access_method/02,musecar,access_method,signed_agreement,musecar_page,fill out the EULA and send it via the form or e-mail; reviewed,2026-10-14,claude,current,
 musecar/hours_reported/02,musecar,hours_reported,36,musecar_page_2,"MuSe-CAR is a large (>36h), multimodal dataset",2026-10-14,claude,current,"""Over 36 hours"""
 musecar/languages/02,musecar,languages,eng,musecar_paper,"Most are native English speakers from the UK or the US, while a small minority are non-native, yet fluent English speakers",2026-10-31,claude,current,
-musecar/license_spdx/02,musecar,license_spdx,LicenseRef-custom-research-only,musecar_page,EULA: available for non-commercial research purposes only,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+musecar/license_spdx/02,musecar,license_spdx,LicenseRef-custom-research-only,musecar_page,EULA: available for non-commercial research purposes only,2026-10-14,user,current,Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 musecar/material_origin/01,musecar,material_origin,web_video,musecar_paper,video data from 291 videos and 70 host speakers sourced from YouTube,2026-10-31,claude,current,
 musecar/name/01,musecar,name,MuSe-CaR,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 narrative_dialogue/access_method/01,narrative_dialogue,access_method,direct_download,narrative_dialogue_page,Zenodo record metadata: access_right open,2026-10-14,claude,current,
 narrative_dialogue/access_observed/01,narrative_dialogue,access_observed,unavailable,,,2026-10-14,claude,provisional,Provisional: carried over from raw_audio_available
-narrative_dialogue/license_spdx/01,narrative_dialogue,license_spdx,CC-BY-4.0,narrative_dialogue_page,Zenodo record metadata: license cc-by-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+narrative_dialogue/license_spdx/01,narrative_dialogue,license_spdx,CC-BY-4.0,narrative_dialogue_page,Zenodo record metadata: license cc-by-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 narrative_dialogue/name/01,narrative_dialogue,name,Narrative Dialogue Dataset,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by narrative_dialogue/name/02
 narrative_dialogue/name/02,narrative_dialogue,name,Narrative Dialogue Dataset,narrative_dialogue_page,title of the source contains the name,2026-11-01,claude,current,
 naturalvoices/access_method/01,naturalvoices,access_method,direct_download,naturalvoices_card,card: download with huggingface-cli; dataset is not gated,2026-10-13,claude,current,
@@ -2628,7 +2628,7 @@ naturalvoices/full_title/01,naturalvoices,full_title,"NaturalVoices: A Large-Sca
 naturalvoices/full_title/02,naturalvoices,full_title,"NaturalVoices: A Large-Scale, Spontaneous and Emotional Podcast Dataset for Voice Conversion",naturalvoices_paper,title of the source contains the full title,2026-11-01,claude,current,
 naturalvoices/hours_reported/01,naturalvoices,hours_reported,5049,naturalvoices_paper,"abstract: 5,049 hours of spontaneous podcast recordings",2026-10-13,claude,current,
 naturalvoices/languages/01,naturalvoices,languages,eng,naturalvoices_card,card metadata: language en,2026-10-13,claude,current,
-naturalvoices/license_spdx/01,naturalvoices,license_spdx,none_stated,naturalvoices_card,dataset card has no license field,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+naturalvoices/license_spdx/01,naturalvoices,license_spdx,none_stated,naturalvoices_card,dataset card has no license field,2026-10-13,user,current,Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 naturalvoices/material_origin/01,naturalvoices,material_origin,podcast,naturalvoices_paper,"abstract: 5,049 hours of spontaneous podcast recordings",2026-10-13,claude,current,
 naturalvoices/name/01,naturalvoices,name,NaturalVoices,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by naturalvoices/name/02
 naturalvoices/name/02,naturalvoices,name,NaturalVoices,naturalvoices_card,title of the source contains the name,2026-11-01,claude,current,
@@ -2644,7 +2644,7 @@ nemo/full_title/02,nemo,full_title,nEMO: Dataset of Emotional Speech in Polish,n
 nemo/hours_release/01,nemo,hours_release,3.0,nemo_readme,commit 103f4a22739e; Size of the release,2026-11-01,claude,current,Readme cell: 3.0 (approx.)
 nemo/hours_reported/02,nemo,hours_reported,3,nemo_card,The corpus contains over 3 hours of samples,2026-10-31,claude,current,Stated as over 3 hours
 nemo/languages/02,nemo,languages,pol,nemo_card,nEMO is a simulated dataset of emotional speech in the Polish language,2026-10-31,claude,current,
-nemo/license_spdx/02,nemo,license_spdx,CC-BY-NC-SA-4.0,nemo_card,license field of the dataset card,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+nemo/license_spdx/02,nemo,license_spdx,CC-BY-NC-SA-4.0,nemo_card,license field of the dataset card,2026-10-11,user,current,Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 nemo/n_files_release/01,nemo,n_files_release,4481,,,2026-10-11,claude,superseded,Provisional:; superseded by nemo/n_files_release/02
 nemo/n_files_release/02,nemo,n_files_release,4481,nemo_readme,commit 103f4a22739e; Size of the release,2026-11-01,claude,current,
 nemo/n_files_reported/02,nemo,n_files_reported,4481,nemo_card,dataset_info splits: train num_examples 4481,2026-10-31,claude,current,Count from the card metadata
@@ -2658,7 +2658,7 @@ nemo/spoken_text_design/01,nemo,spoken_text_design,parallel,,,2026-10-27,claude,
 nemo/vocal_content/01,nemo,vocal_content,speech,nemo_card,dataset described as speech recordings,2026-10-11,claude,current,
 nexdata_en_emotional_20p/access_method/01,nexdata_en_emotional_20p,access_method,paid_or_membership,nexdata_en_emotional_20p_page,README: refers to the vendor page for the dataset,2026-10-14,claude,current,
 nexdata_en_emotional_20p/languages/01,nexdata_en_emotional_20p,languages,eng,nexdata_en_emotional_20p_page,README: Language English; 20 American native speakers,2026-10-14,claude,current,
-nexdata_en_emotional_20p/license_spdx/01,nexdata_en_emotional_20p,license_spdx,LicenseRef-proprietary-restricted,nexdata_en_emotional_20p_page,README: Licensing Information Commercial License,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+nexdata_en_emotional_20p/license_spdx/01,nexdata_en_emotional_20p,license_spdx,LicenseRef-proprietary-restricted,nexdata_en_emotional_20p_page,README: Licensing Information Commercial License,2026-10-14,user,current,Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 nexdata_en_emotional_20p/n_speakers_reported/01,nexdata_en_emotional_20p,n_speakers_reported,20,nexdata_en_emotional_20p_page,README: 20 American native speakers,2026-10-14,claude,current,
 nexdata_en_emotional_20p/name/01,nexdata_en_emotional_20p,name,Nexdata 20 People English Emotional Speech Data,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 nexdata_en_emotional_20p/speech_production/01,nexdata_en_emotional_20p,speech_production,acted,nexdata_en_emotional_20p_page,README: recorded script covers 10 emotions,2026-10-14,claude,current,
@@ -2692,7 +2692,7 @@ nvs38k/access_method/01,nvs38k,access_method,direct_download,nvs38k_card,dataset
 nvs38k/access_observed/01,nvs38k,access_observed,obtained,nvs38k_card,card: modality audio,2026-10-13,claude,current,
 nvs38k/hours_reported/01,nvs38k,hours_reported,131,nvs38k_card,card: approximately 131 hours,2026-10-13,claude,current,
 nvs38k/languages/01,nvs38k,languages,cmn;eng,nvs38k_card,"card metadata: language zh, en",2026-10-13,claude,current,
-nvs38k/license_spdx/01,nvs38k,license_spdx,CC-BY-NC-4.0,nvs38k_card,dataset card metadata: license cc-by-nc-4.0,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+nvs38k/license_spdx/01,nvs38k,license_spdx,CC-BY-NC-4.0,nvs38k_card,dataset card metadata: license cc-by-nc-4.0,2026-10-13,user,current,Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 nvs38k/material_origin/01,nvs38k,material_origin,multiple,nvs38k_card,"constructed from in-the-wild sources such as movies, cartoons, and audiobooks",2026-10-13,claude,current,
 nvs38k/n_files_reported/01,nvs38k,n_files_reported,38718,nvs38k_card,"card: a total of 38,718 samples spanning approximately 131 hours",2026-10-13,claude,current,
 nvs38k/name/01,nvs38k,name,NonVerbalSpeech-38K,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -2702,7 +2702,7 @@ ogvc/access_observed/01,ogvc,access_observed,obtained,ogvc_page_2,speech file fo
 ogvc/emotion_categories.annotator/01,ogvc,emotion_categories.annotator,human,ogvc_page,"6,578 spontaneous utterances carry one of 10 emotion labels (Plutchik model); 2,847 where two or more agreed also have a 5-level intensity",2026-10-28,claude,current,
 ogvc/emotion_categories.label_basis/01,ogvc,emotion_categories.label_basis,perceived;intended,ogvc_page,"perceptual labels for the spontaneous part; the acted part uses specified emotions (8 emotions, calm and 3 intensities)",2026-10-28,claude,current,
 ogvc/languages/02,ogvc,languages,jpn,ogvc_page_2,Spontaneous Japanese dialogues made by two or three online game players through a voice chat system,2026-10-31,claude,current,
-ogvc/license_spdx/02,ogvc,license_spdx,LicenseRef-custom-research-only,ogvc_page_2,Licensing: For research purpose only; Price: No fee,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+ogvc/license_spdx/02,ogvc,license_spdx,LicenseRef-custom-research-only,ogvc_page_2,Licensing: For research purpose only; Price: No fee,2026-10-14,user,current,Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 ogvc/n_files_reported/02,ogvc,n_files_reported,11770,ogvc_page_2,"natural speech 9,114 utterances; acted speech 2,656 utterances",2026-10-14,claude,superseded,"9,114+2,656; superseded by ogvc/n_utt_reported/03"
 ogvc/n_files_reported/03,ogvc,n_files_reported,11770,ogvc_page,"9,114 spontaneous plus 2,656 acted utterances",2026-10-28,claude,current,
 ogvc/n_speakers_reported/01,ogvc,n_speakers_reported,17,ogvc_page_2,natural: 9 males and 4 females; acted: 2 males and 2 females,2026-10-14,claude,current,13+4
@@ -2710,7 +2710,7 @@ ogvc/name/01,ogvc,name,OGVC,,,2026-11-01,claude,superseded,Provisional: carried 
 ogvc/name/02,ogvc,name,OGVC,ogvc_page,title of the source contains the name,2026-11-01,claude,current,
 ogvc/speech_production/01,ogvc,speech_production,spontaneous;acted,ogvc_page,"9,114 spontaneous utterances from online-game voice chat (13 speakers, 6 dialogues) plus 2,656 acted utterances by 4 professional actors",2026-10-28,claude,current,
 omgemotion/hours_reported/01,omgemotion,hours_reported,10,omgemotion_page,"a total of 420 videos, totaling around 10 hours of data",2026-10-14,claude,current,
-omgemotion/license_spdx/02,omgemotion,license_spdx,CC-BY-NC-SA-3.0-DE,omgemotion_page,Distribution and License: CC BY-NC-SA 3.0 DE,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+omgemotion/license_spdx/02,omgemotion,license_spdx,CC-BY-NC-SA-3.0-DE,omgemotion_page,Distribution and License: CC BY-NC-SA 3.0 DE,2026-10-14,user,current,Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 omgemotion/material_origin/01,omgemotion,material_origin,web_video,omgemotion_page,This dataset is composed of Youtube videos which are around a minute in length,2026-10-31,claude,current,
 omgemotion/n_files_reported/01,omgemotion,n_files_reported,420,omgemotion_page,we selected a total of 420 videos,2026-10-14,claude,current,Number of videos
 omgemotion/name/01,omgemotion,name,OMG-Emotion,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by omgemotion/name/02
@@ -2725,7 +2725,7 @@ oreau/full_title/01,oreau,full_title,French Emotional Speech Database - Oréau,,
 oreau/full_title/02,oreau,full_title,French Emotional Speech Database - Oréau,oreau_page,title of the source contains the full title,2026-11-01,claude,current,
 oreau/hours_release/01,oreau,hours_release,0.34,oreau_readme,commit 70b7358c5b90; Size of the release,2026-11-01,claude,current,
 oreau/languages/02,oreau,languages,fra,oreau_page,utterances written for each of the 7 emotions in French language by 32 non-professional speakers,2026-10-31,claude,current,
-oreau/license_spdx/02,oreau,license_spdx,CC-BY-4.0,oreau_page,Zenodo license field,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+oreau/license_spdx/02,oreau,license_spdx,CC-BY-4.0,oreau_page,Zenodo license field,2026-10-11,user,current,Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 oreau/n_files_release/01,oreau,n_files_release,434,,,2026-10-11,claude,superseded,Provisional:; superseded by oreau/n_files_release/02
 oreau/n_files_release/02,oreau,n_files_release,434,oreau_readme,commit 70b7358c5b90; Size of the release,2026-11-01,claude,current,
 oreau/n_files_reported/02,oreau,n_files_reported,434,oreau_page,90% of utterances (434 utterances) were correctly identified and retained after the test ... the second version of database,2026-10-31,claude,current,Second version; the first version has 502 sentences
@@ -2741,7 +2741,7 @@ ov_merd/emotion_categories.annotator/01,ov_merd,emotion_categories.annotator,mix
 ov_merd/emotion_categories.label_verification/01,ov_merd,emotion_categories.label_verification,human_reviewed,ov_merd_paper,§2: manual checks in the annotation pipeline,2026-10-23,claude,current,
 ov_merd/full_title/01,ov_merd,full_title,OV-MERD (annotation data for open-vocabulary multimodal emotion recognition),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 ov_merd/languages/01,ov_merd,languages,cmn,ov_merd_paper,derived from MER2023 (Chinese films and dramas),2026-10-23,claude,current,
-ov_merd/license_spdx/01,ov_merd,license_spdx,CC-BY-NC-4.0,ov_merd_paper,Ethics/License: restrict the use of the OV-MERD dataset to non-commercial purposes under the CC BY-NC 4.0 license,2026-10-23,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+ov_merd/license_spdx/01,ov_merd,license_spdx,CC-BY-NC-4.0,ov_merd_paper,Ethics/License: restrict the use of the OV-MERD dataset to non-commercial purposes under the CC BY-NC 4.0 license,2026-10-23,user,current,Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 ov_merd/material_origin/01,ov_merd,material_origin,film_tv,ov_merd_paper,Derived from MER2023,2026-10-23,claude,current,
 ov_merd/name/01,ov_merd,name,OV-MERD,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 paraspeechcaps/access_method/01,paraspeechcaps,access_method,direct_download,paraspeechcaps_card,dataset is not gated; parquet files,2026-10-13,claude,current,
@@ -2750,7 +2750,7 @@ paraspeechcaps/full_title/01,paraspeechcaps,full_title,Paralinguistic Speech Cap
 paraspeechcaps/hours_reported/01,paraspeechcaps,hours_reported,2769,paraspeechcaps_paper,abstract: 342 hours human-labelled plus 2427 hours automatically annotated,2026-10-13,claude,superseded,Sum of 342 + 2427; superseded by paraspeechcaps/hours_reported/02
 paraspeechcaps/hours_reported/02,paraspeechcaps,hours_reported,2709,paraspeechcaps_paper_2,abstract and §1: 282 hours of human-labelled data (PSC-Base) and 2427 hours of automatically annotated data,2026-10-23,claude,current,"PDF v2 gives 282 hours for PSC-Base in both abstract and text, totalling 2,709. The old value 2,769 used the 342 hours of the abstract on the arXiv listing page (v2). The listing abstract and the PDF of the same version disagree"
 paraspeechcaps/languages/01,paraspeechcaps,languages,eng,paraspeechcaps_card,card metadata: language en,2026-10-13,claude,current,
-paraspeechcaps/license_spdx/01,paraspeechcaps,license_spdx,CC-BY-NC-SA-4.0,paraspeechcaps_card,dataset card metadata: license cc-by-nc-sa-4.0,2026-10-13,user,current,License of the annotations; Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+paraspeechcaps/license_spdx/01,paraspeechcaps,license_spdx,CC-BY-NC-SA-4.0,paraspeechcaps_card,dataset card metadata: license cc-by-nc-sa-4.0,2026-10-13,user,current,License of the annotations; Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 paraspeechcaps/material_origin/01,paraspeechcaps,material_origin,multiple,paraspeechcaps_card,card fields: source and relative_audio_path of existing corpora,2026-10-13,claude,current,
 paraspeechcaps/name/01,paraspeechcaps,name,ParaSpeechCaps,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by paraspeechcaps/name/02
 paraspeechcaps/name/02,paraspeechcaps,name,ParaSpeechCaps,paraspeechcaps_card,title of the source contains the name,2026-11-01,claude,current,
@@ -2770,7 +2770,7 @@ pavoque/full_title/01,pavoque,full_title,PAVOQUE,,,2026-11-01,claude,superseded,
 pavoque/full_title/02,pavoque,full_title,PAVOQUE,pavoque_page,title of the source contains the full title,2026-11-01,claude,current,
 pavoque/hours_release/01,pavoque,hours_release,8.6,pavoque_readme,commit db86daa28eef; Size of the release,2026-11-01,claude,current,
 pavoque/languages/02,pavoque,languages,deu,pavoque_page,"A single speaker, multi-style corpus of German speech",2026-10-31,claude,current,
-pavoque/license_spdx/02,pavoque,license_spdx,CC-BY-NC-SA-4.0,pavoque_page,README states CC BY-NC-SA 4.0,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+pavoque/license_spdx/02,pavoque,license_spdx,CC-BY-NC-SA-4.0,pavoque_page,README states CC BY-NC-SA 4.0,2026-10-11,user,current,Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 pavoque/n_files_release/01,pavoque,n_files_release,5442,,,2026-10-11,claude,superseded,Provisional:; superseded by pavoque/n_files_release/02
 pavoque/n_files_release/02,pavoque,n_files_release,5442,pavoque_readme,commit db86daa28eef; Size of the release,2026-11-01,claude,current,
 pavoque/n_speakers_release/01,pavoque,n_speakers_release,1,pavoque_readme,commit db86daa28eef; Size of the release,2026-11-01,claude,current,
@@ -2793,7 +2793,7 @@ persian_esd/name/01,persian_esd,name,Persian ESD,,,2026-11-01,claude,superseded,
 persian_esd/name/02,persian_esd,name,Persian ESD,persian_esd_paper,title of the source contains the name,2026-11-01,claude,current,
 picka_nh/access_method/01,picka_nh,access_method,direct_download,picka_nh_page,"five public files (csv and txt), none restricted",2026-10-14,claude,current,
 picka_nh/access_observed/01,picka_nh,access_observed,unavailable,picka_nh_page,"files: Demographics.csv, emo_db_results.csv and README files",2026-10-14,claude,current,
-picka_nh/license_spdx/01,picka_nh,license_spdx,CC-BY-NC-SA-4.0,picka_nh_page,termsOfUse: provided under CC BY-NC-SA 4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+picka_nh/license_spdx/01,picka_nh,license_spdx,CC-BY-NC-SA-4.0,picka_nh_page,termsOfUse: provided under CC BY-NC-SA 4.0,2026-10-14,user,current,Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 picka_nh/name/01,picka_nh,name,PICKA-NH: Vocal emotion recognition,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 polish_cichosz2005/access_method/01,polish_cichosz2005,access_method,request_form_or_email,polish_cichosz2005_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
 polish_cichosz2005/languages/01,polish_cichosz2005,languages,pol,polish_cichosz2005_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
@@ -2817,7 +2817,7 @@ polishemo/full_title/01,polishemo,full_title,Emotions in polish speech recording
 polishemo/full_title/02,polishemo,full_title,Emotions in polish speech recordings,polishemo_paper,title of the source contains the full title,2026-11-01,claude,current,
 polishemo/hours_release/01,polishemo,hours_release,0.11,polishemo_readme,commit 74d0c70ba3f6; Size of the release,2026-11-01,claude,current,
 polishemo/languages/02,polishemo,languages,pol,polishemo_paper,emotions recorded in sound files that are expressions of Polish speech,2026-10-31,claude,current,
-polishemo/license_spdx/02,polishemo,license_spdx,CC-BY-4.0,polishemo_paper,dataset page JSON-LD license field (report §2),2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+polishemo/license_spdx/02,polishemo,license_spdx,CC-BY-4.0,polishemo_paper,dataset page JSON-LD license field (report §2),2026-10-11,user,current,Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 polishemo/n_files_release/01,polishemo,n_files_release,450,,,2026-10-11,claude,superseded,Provisional:; superseded by polishemo/n_files_release/02
 polishemo/n_files_release/02,polishemo,n_files_release,450,polishemo_readme,commit 74d0c70ba3f6; Size of the release,2026-11-01,claude,current,
 polishemo/n_files_reported/02,polishemo,n_files_reported,450,polishemo_paper,"There were 5 speakers, so there are 450 files",2026-10-31,claude,current,
@@ -2836,13 +2836,13 @@ prahalabs_malayalam/license_spdx/01,prahalabs_malayalam,license_spdx,none_stated
 prahalabs_malayalam/name/01,prahalabs_malayalam,name,Praha-Labs malayalam,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 prahalabs_malayalam/speech_production/01,prahalabs_malayalam,speech_production,acted,,,2026-10-14,claude,provisional,Provisional: carried over from the earlier column
 promptspeech/access_method/01,promptspeech,access_method,direct_download,promptspeech_page,"download links in the table: Synthesized_training.zip, EMO.zip, Real_training.zip",2026-10-14,claude,current,
-promptspeech/license_spdx/02,promptspeech,license_spdx,none_stated,promptspeech_page,project page states no license,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+promptspeech/license_spdx/02,promptspeech,license_spdx,none_stated,promptspeech_page,project page states no license,2026-10-14,user,current,Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 promptspeech/n_files_reported/02,promptspeech,n_files_reported,188017,promptspeech_paper,"Table 2: Synthesized 155,092 / 5,032, Real 26,588 / 1,305",2026-10-23,claude,current,"Sum of the synthetic version (with emotion) 160,124 and the real-speech version (from LibriTTS, no emotion) 27,893. The 26,588 in the paper that used it is only the training part of the real-speech version"
 promptspeech/name/01,promptspeech,name,PromptSpeech,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 qlean_japanese_emotional/access_method/01,qlean_japanese_emotional,access_method,request_form_or_email,qlean_japanese_emotional_page,dataset API: gated manual,2026-10-14,claude,current,
 qlean_japanese_emotional/access_observed/01,qlean_japanese_emotional,access_observed,obtained,,,2026-10-14,claude,provisional,Provisional: carried over from raw_audio_available
 qlean_japanese_emotional/languages/01,qlean_japanese_emotional,languages,jpn,qlean_japanese_emotional_page,dataset tags: language ja,2026-10-14,claude,current,
-qlean_japanese_emotional/license_spdx/01,qlean_japanese_emotional,license_spdx,LicenseRef-other,qlean_japanese_emotional_page,card metadata: license other,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+qlean_japanese_emotional/license_spdx/01,qlean_japanese_emotional,license_spdx,LicenseRef-other,qlean_japanese_emotional_page,card metadata: license other,2026-10-14,user,current,Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 qlean_japanese_emotional/n_files_release/01,qlean_japanese_emotional,n_files_release,6800,,,2026-10-14,claude,provisional,Provisional:
 qlean_japanese_emotional/name/01,qlean_japanese_emotional,name,Qlean emotional speech (Japanese),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 quechua/access_method/01,quechua,access_method,direct_download,,,2026-10-12,claude,provisional,Provisional:
@@ -2854,7 +2854,7 @@ quechua/emotion_categories.label_verification/01,quechua,emotion_categories.labe
 quechua/hours_release/01,quechua,hours_release,15.24,quechua_readme,commit b442deb5d15b; Size of the release,2026-11-01,claude,current,
 quechua/hours_reported/02,quechua,hours_reported,15.25,quechua_paper,It contains 15 h 15 min of audio divided into 12420 segments of audio,2026-10-31,claude,current,
 quechua/languages/02,quechua,languages,que,quechua_paper,a 15 hours speech corpus in Quechua Collao,2026-10-31,claude,current,Quechua Collao variant
-quechua/license_spdx/02,quechua,license_spdx,CC-BY-4.0,quechua_page,figshare API article 20292516 license: CC BY 4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+quechua/license_spdx/02,quechua,license_spdx,CC-BY-4.0,quechua_page,figshare API article 20292516 license: CC BY 4.0,2026-10-14,user,current,Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 quechua/listening_test/01,quechua,listening_test,reported,quechua_readme,commit b442deb5d15b; Listening test ratings in the release,2026-11-01,claude,current,
 quechua/n_files_release/01,quechua,n_files_release,12420,quechua_readme,commit b442deb5d15b; Size of the release,2026-11-01,claude,current,
 quechua/n_files_reported/02,quechua,n_files_reported,12420,quechua_paper,It contains 15 h 15 min of audio divided into 12420 segments of audio,2026-10-31,claude,current,
@@ -2912,7 +2912,7 @@ ravdess/emotion_categories.label_verification/01,ravdess,emotion_categories.labe
 ravdess/emotion_categories.label_verification/02,ravdess,emotion_categories.label_verification,listener_validated,ravdess_paper,"7356 recordings each rated 10 times on emotional validity, intensity and genuineness by 247 untrained raters from North America; 72 further raters gave test-retest data",2026-10-28,claude,current,Re-read 2026-10-28. Neutral and calm answers were accepted as correct for each other; per-recording values are in the supplementary material
 ravdess/hours_release/01,ravdess,hours_release,1.48,ravdess_readme,commit 23a0c910e1b3; Size of the release,2026-11-01,claude,current,
 ravdess/languages/02,ravdess,languages,eng,ravdess_paper,facial and vocal expressions in North American English (paper title),2026-10-31,claude,current,
-ravdess/license_spdx/02,ravdess,license_spdx,CC-BY-NC-SA-4.0,ravdess_page,Zenodo record metadata: license cc-by-nc-sa-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+ravdess/license_spdx/02,ravdess,license_spdx,CC-BY-NC-SA-4.0,ravdess_page,Zenodo record metadata: license cc-by-nc-sa-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 ravdess/listening_test/01,ravdess,listening_test,reported,ravdess_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 ravdess/n_files_release/01,ravdess,n_files_release,1440,,,2026-10-12,claude,superseded,Provisional:; superseded by ravdess/n_files_release/02
 ravdess/n_files_release/02,ravdess,n_files_release,1440,ravdess_readme,commit 23a0c910e1b3; Size of the release,2026-11-01,claude,current,
@@ -2949,7 +2949,7 @@ recanvo/vocal_content/01,recanvo,vocal_content,nonverbal,recanvo_page,vocalizati
 recola/access_method/01,recola,access_method,signed_agreement,recola_page_2,send all items of the form along with a signed EULA by institutional email,2026-10-14,claude,current,
 recola/hours_reported/02,recola,hours_reported,9.5,recola_page,"9.5 hours of audio, visual, and physiological recordings",2026-10-14,claude,current,
 recola/languages/02,recola,languages,fra,recola_page,46 French speaking participants,2026-10-14,claude,current,
-recola/license_spdx/02,recola,license_spdx,LicenseRef-custom-research-only,recola_page_2,free for Academics and non-profit organisations under the terms of the EULA,2026-10-14,user,current,A commercial license also exists separately (paid); Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+recola/license_spdx/02,recola,license_spdx,LicenseRef-custom-research-only,recola_page_2,free for Academics and non-profit organisations under the terms of the EULA,2026-10-14,user,current,A commercial license also exists separately (paid); Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 recola/n_speakers_reported/02,recola,n_speakers_reported,46,recola_page,online dyadic interactions between 46 French speaking participants,2026-10-14,claude,current,
 recola/name/01,recola,name,RECOLA,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by recola/name/02
 recola/name/02,recola,name,RECOLA,recola_page,title of the source contains the name,2026-11-01,claude,current,
@@ -2963,7 +2963,7 @@ resd/full_title/01,resd,full_title,Russian Emotional Speech Dialogs (RESD),,,202
 resd/hours_release/01,resd,hours_release,2.3,resd_readme,commit 5021ed9da062; Size of the release,2026-11-01,claude,current,Readme cell: 2.3 (approx.)
 resd/hours_reported/02,resd,hours_reported,2.34,resd_card,"Splits table: train 1.88 hours, test 0.46 hours",2026-10-31,claude,current,Sum of the two splits
 resd/languages/02,resd,languages,rus,resd_card,card metadata: language ru; Russian Emotional Speech Dialogs,2026-10-31,claude,current,
-resd/license_spdx/02,resd,license_spdx,MIT,resd_card,license field of the dataset card,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-09
+resd/license_spdx/02,resd,license_spdx,MIT,resd_card,license field of the dataset card,2026-10-11,user,current,Verified by the maintainer in the pull request #21 (branch verify/2026-11-01-09)
 resd/n_files_release/01,resd,n_files_release,1396,,,2026-10-11,claude,superseded,Provisional:; superseded by resd/n_files_release/02
 resd/n_files_release/02,resd,n_files_release,1396,resd_readme,commit 5021ed9da062; Size of the release,2026-11-01,claude,current,
 resd/n_files_reported/02,resd,n_files_reported,1396,resd_card,"Splits table: train 1116 rows, test 280 rows",2026-10-31,claude,current,Sum of the two splits
