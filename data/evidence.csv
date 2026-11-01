@@ -627,7 +627,7 @@ chsims/name/01,chsims,name,CH-SIMS,,,2026-11-01,claude,superseded,Provisional: c
 chsims/name/02,chsims,name,CH-SIMS,chsims_paper,title of the source contains the name,2026-11-01,claude,current,
 chsims2/access_method/01,chsims2,access_method,direct_download,github_sims_github_io_chsims,Download: CH-SIMS v2.0 (s) and (u) on Google Drive and Baiduyun Drive,2026-10-14,claude,current,
 chsims2/access_observed/01,chsims2,access_observed,obtained,github_sims_github_io_chsims,We provide raw video files as well as pre-extracted feature files,2026-10-14,claude,current,Audio is contained in the videos
-chsims2/license_spdx/02,chsims2,license_spdx,none_stated,github_sims_github_io_chsims,project page states no license; GitHub thuiar/ch-sims-v2 has no license,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-03
+chsims2/license_spdx/02,chsims2,license_spdx,none_stated,github_sims_github_io_chsims,project page states no license; GitHub thuiar/ch-sims-v2 has no license,2026-10-14,user,current,Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)
 chsims2/n_files_reported/02,chsims2,n_files_reported,14563,github_sims_github_io_chsims,We also extended the number of instances to a total of 14563,2026-10-31,claude,current,4402 supervised instances (s) and 10161 unsupervised instances (u); the spreadsheet had 4402
 chsims2/name/01,chsims2,name,CH-SIMS v2.0,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by chsims2/name/02
 chsims2/name/02,chsims2,name,CH-SIMS v2.0,chsims2_paper,title of the source contains the name,2026-11-01,claude,current,
@@ -635,7 +635,7 @@ clesc/access_method/01,clesc,access_method,direct_download,clesc_card,dataset is
 clesc/access_observed/01,clesc,access_observed,unavailable,clesc_card,dataset tags: modality text only; one parquet file of 112 KB,2026-10-13,claude,current,
 clesc/full_title/01,clesc,full_title,Crowd Labeled Emotions and Speech Characteristics,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 clesc/languages/01,clesc,languages,eng,clesc_card,card metadata: language en,2026-10-13,claude,current,
-clesc/license_spdx/01,clesc,license_spdx,CC-BY-4.0,clesc_card,dataset card metadata: license cc-by-4.0,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-03
+clesc/license_spdx/01,clesc,license_spdx,CC-BY-4.0,clesc_card,dataset card metadata: license cc-by-4.0,2026-10-13,user,current,Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)
 clesc/material_origin/01,clesc,material_origin,multiple,clesc_card,card: samples from Common Voice (100) and VoxCeleb (400),2026-10-13,claude,current,
 clesc/n_files_reported/01,clesc,n_files_reported,500,clesc_card,card: a dataset of 500 audio samples with transcriptions,2026-10-13,claude,current,
 clesc/name/01,clesc,name,CLESC,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by clesc/name/02
@@ -646,7 +646,7 @@ cmumoseas/full_title/01,cmumoseas,full_title,"CMU-MOSEAS: A Multimodal Language 
 cmumoseas/full_title/02,cmumoseas,full_title,"CMU-MOSEAS: A Multimodal Language Dataset for Spanish, Portuguese, German and French",cmumoseas_paper,title of the source contains the full title,2026-11-01,claude,current,
 cmumoseas/hours_reported/01,cmumoseas,hours_reported,68.82,arxiv_s_2509_09791_secondary,Table I row CMU-MOSEAS: Size 68h49m,2026-10-13,claude,current,The original paper gives no total duration
 cmumoseas/languages/01,cmumoseas,languages,spa;por;deu;fra,cmumoseas_paper,"title: Spanish, Portuguese, German and French",2026-10-13,claude,current,
-cmumoseas/license_spdx/01,cmumoseas,license_spdx,unknown,cmumoseas_paper,Privacy and Ethics: a specific EULA is required to download the labels,2026-10-13,user,current,EULA terms are in the supplement and were not checked; Verified by the maintainer in the pull request of branch verify/2026-11-01-03
+cmumoseas/license_spdx/01,cmumoseas,license_spdx,unknown,cmumoseas_paper,Privacy and Ethics: a specific EULA is required to download the labels,2026-10-13,user,current,EULA terms are in the supplement and were not checked; Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)
 cmumoseas/material_origin/01,cmumoseas,material_origin,web_video,cmumoseas_paper,§3.1: monologue videos manually found from across YouTube,2026-10-13,claude,current,
 cmumoseas/n_files_reported/01,cmumoseas,n_files_reported,40000,cmumoseas_paper,"Table 2: 10,000 annotated sentences for each of four languages",2026-10-13,claude,current,"128,768 sentences in total"
 cmumoseas/n_speakers_reported/01,cmumoseas,n_speakers_reported,1645,cmumoseas_paper,"Table 2: distinct speakers 341, 399, 480, 425 for the four languages",2026-10-13,claude,current,
@@ -654,7 +654,7 @@ cmumoseas/name/01,cmumoseas,name,CMU-MOSEAS,,,2026-11-01,claude,superseded,Provi
 cmumoseas/name/02,cmumoseas,name,CMU-MOSEAS,cmumoseas_paper,title of the source contains the name,2026-11-01,claude,current,
 cmumoseas/vocal_content/01,cmumoseas,vocal_content,speech,cmumoseas_paper,sentence utterances of monologue videos,2026-10-13,claude,current,
 cmumosei/access_observed/01,cmumosei,access_observed,unavailable,gh_cmu_multicomp_lab_cmu_multimodalsdk,README FAQ 4: Do you share raw data? No,2026-10-14,claude,current,
-cmumosei/license_spdx/02,cmumosei,license_spdx,unknown,gh_cmu_multicomp_lab_cmu_multimodalsdk,repository license MIT covers the SDK code; data terms not stated,2026-10-14,user,current,"immortal.multicomp.cs.cmu.edu, said to host raw data, still could not be reached on 2026-10-14; Verified by the maintainer in the pull request of branch verify/2026-11-01-03"
+cmumosei/license_spdx/02,cmumosei,license_spdx,unknown,gh_cmu_multicomp_lab_cmu_multimodalsdk,repository license MIT covers the SDK code; data terms not stated,2026-10-14,user,current,"immortal.multicomp.cs.cmu.edu, said to host raw data, still could not be reached on 2026-10-14; Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)"
 cmumosei/material_origin/01,cmumosei,material_origin,web_video,cmumosei_paper,"During our automatic data acquisition process, videos from YouTube are analyzed for the presence of one speaker in the frame",2026-10-31,claude,current,
 cmumosei/n_files_reported/02,cmumosei,n_files_reported,23453,cmumosei_paper,"CMU-MOSEI contains 23,453 annotated video segments from 1,000 distinct speakers",2026-10-31,claude,current,
 cmumosei/n_speakers_reported/02,cmumosei,n_speakers_reported,1000,cmumosei_paper,"23,453 annotated video segments from 1,000 distinct speakers",2026-10-31,claude,current,The paper notes that an identity is a proxy for the number of channels
@@ -662,7 +662,7 @@ cmumosei/name/01,cmumosei,name,CMU-MOSEI,,,2026-11-01,claude,superseded,Provisio
 cmumosei/name/02,cmumosei,name,CMU-MOSEI,cmumosei_paper,title of the source contains the name,2026-11-01,claude,current,
 cmumosi/access_observed/01,cmumosi,access_observed,unavailable,gh_cmu_multicomp_lab_cmu_multimodalsdk,README FAQ 4: Do you share raw data? No,2026-10-14,claude,current,
 cmumosi/languages/02,cmumosi,languages,eng,cmumosi_paper,all speakers expressed themselves in English and the videos originated from either United States of America or United Kingdom,2026-10-31,claude,current,
-cmumosi/license_spdx/02,cmumosi,license_spdx,unknown,gh_cmu_multicomp_lab_cmu_multimodalsdk,repository license MIT covers the SDK code; data terms not stated,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-03
+cmumosi/license_spdx/02,cmumosi,license_spdx,unknown,gh_cmu_multicomp_lab_cmu_multimodalsdk,repository license MIT covers the SDK code; data terms not stated,2026-10-14,user,current,Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)
 cmumosi/n_files_reported/02,cmumosi,n_files_reported,2199,cmumosi_paper,The subjectivity annotation resulted in 2199 subjective segments and 1503 objective ones,2026-10-31,claude,current,Sentiment annotation covers the 2199 opinion segments
 cmumosi/n_speakers_reported/02,cmumosi,n_speakers_reported,89,cmumosi_paper,"The final set of videos contained 89 distinct speakers, including 41 female and 48 male speakers",2026-10-31,claude,current,
 cmumosi/name/01,cmumosi,name,CMU-MOSI,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -675,14 +675,14 @@ cnev/vocal_content/01,cnev,vocal_content,nonverbal,cnev_paper,title: nonverbal e
 codaco_german/access_observed/01,codaco_german,access_observed,unavailable,,,2026-10-14,claude,provisional,Provisional: carried over from raw_audio_available
 codaco_german/languages/01,codaco_german,languages,deu,,§3: german-emotional-speech,2026-10-12,claude,superseded,superseded by codaco_german/languages/02; Former source type: project_doc
 codaco_german/languages/02,codaco_german,languages,deu,codaco_german_card,dataset name german-emotional-speech,2026-10-14,claude,current,No language tag on Hugging Face
-codaco_german/license_spdx/01,codaco_german,license_spdx,CC-BY-4.0,codaco_german_card,HF tag license:cc-by-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-03
+codaco_german/license_spdx/01,codaco_german,license_spdx,CC-BY-4.0,codaco_german_card,HF tag license:cc-by-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)
 codaco_german/name/01,codaco_german,name,codaco/german-emotional-speech,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by codaco_german/name/02
 codaco_german/name/02,codaco_german,name,codaco/german-emotional-speech,codaco_german_card,title of the source contains the name,2026-11-01,claude,current,
 coraa_ser/access_method/01,coraa_ser,access_method,direct_download,coraa_ser_page,README: train and test zips on public Google Drive links,2026-10-14,claude,current,
 coraa_ser/access_observed/01,coraa_ser,access_observed,obtained,coraa_ser_page,README: audio files named <file-id>_<label>.wav,2026-10-14,claude,current,
 coraa_ser/hours_reported/01,coraa_ser,hours_reported,0.83,coraa_ser_page,README: approximately 50 minutes of audio segments,2026-10-14,claude,current,50 minutes converted
 coraa_ser/languages/01,coraa_ser,languages,por,coraa_ser_page,README: Brazilian Portuguese informal spontaneous speech,2026-10-14,claude,current,
-coraa_ser/license_spdx/01,coraa_ser,license_spdx,none_stated,coraa_ser_page,repository has no license; README states no terms,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-03
+coraa_ser/license_spdx/01,coraa_ser,license_spdx,none_stated,coraa_ser_page,repository has no license; README states no terms,2026-10-14,user,current,Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)
 coraa_ser/name/01,coraa_ser,name,CORAA SER,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 coraa_ser/vocal_content/01,coraa_ser,vocal_content,speech,coraa_ser_page,README: audio segments of spontaneous speech,2026-10-14,claude,current,
 cped/access_method/01,cped,access_method,unavailable,cped_paper,abstract: textual dataset with audio and video features released,2026-10-14,claude,current,Raw audio cannot be obtained
@@ -690,7 +690,7 @@ cped/access_observed/01,cped,access_observed,unavailable,cped_paper,abstract: we
 cped/full_title/01,cped,full_title,CPED: A Large-Scale Chinese Personalized and Emotional Dialogue Dataset for Conversational AI,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by cped/full_title/02
 cped/full_title/02,cped,full_title,CPED: A Large-Scale Chinese Personalized and Emotional Dialogue Dataset for Conversational AI,cped_page,title of the source contains the full title,2026-11-01,claude,current,
 cped/languages/01,cped,languages,cmn,cped_page,README: constructed from 40 Chinese TV shows,2026-10-14,claude,current,
-cped/license_spdx/01,cped,license_spdx,Apache-2.0,cped_page,GitHub repository license field: Apache-2.0,2026-10-14,user,current,License of the text and features; Verified by the maintainer in the pull request of branch verify/2026-11-01-03
+cped/license_spdx/01,cped,license_spdx,Apache-2.0,cped_page,GitHub repository license field: Apache-2.0,2026-10-14,user,current,License of the text and features; Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)
 cped/material_origin/01,cped,material_origin,film_tv,cped_page,README: constructed from 40 Chinese TV shows,2026-10-14,claude,current,
 cped/n_files_reported/01,cped,n_files_reported,132762,cped_page,"README statistics: utterances 94,187 / 11,137 / 27,438",2026-10-14,claude,current,Sum of the 3 splits
 cped/name/01,cped,name,CPED,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by cped/name/02
@@ -703,7 +703,7 @@ cremad/emotion_categories.annotator/01,cremad,emotion_categories.annotator,human
 cremad/emotion_categories.label_basis/01,cremad,emotion_categories.label_basis,intended;perceived,gh_cheyneycomputerscience_crema_d,label = the emotion the actor was to portray (file name); per-clip crowd ratings are distributed,2026-10-26,claude,current,The recipe uses only the intended emotion (label_basis_used = intended)
 cremad/emotion_categories.label_verification/01,cremad,emotion_categories.label_verification,listener_validated,gh_cheyneycomputerscience_crema_d,"README: 2,443 crowd participants each rated 90 unique clips, 30 audio, 30 visual and 30 audio-visual; 95% of the clips have more than 7 ratings",2026-10-26,claude,current,"The ratings are distributed (processedResults/) and the label stays the intended emotion. The audio-only majority matches the intended emotion for 3,099 of 7,442 clips with a strict single winner (41.6%) and 3,563 when a tie that contains it counts (47.9%); the report's 3,388 (45.5%) could not be reproduced with either rule"
 cremad/hours_release/01,cremad,hours_release,5.3,cremad_readme,commit 76089aafdb7f; Size of the release,2026-11-01,claude,current,Readme cell: 5.3 (approx.)
-cremad/license_spdx/02,cremad,license_spdx,ODbL-1.0,gh_cheyneycomputerscience_crema_d,"README: database under ODbL 1.0, contents under DbCL 1.0",2026-10-12,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-03
+cremad/license_spdx/02,cremad,license_spdx,ODbL-1.0,gh_cheyneycomputerscience_crema_d,"README: database under ODbL 1.0, contents under DbCL 1.0",2026-10-12,user,current,Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)
 cremad/listening_test/01,cremad,listening_test,reported,,,2026-11-01,claude,superseded,Provisional: a listening test was recorded earlier; the source is not public; superseded by cremad/listening_test/02
 cremad/listening_test/02,cremad,listening_test,reported,cremad_readme,commit 76089aafdb7f; Listening test ratings in the release,2026-11-01,claude,current,
 cremad/n_files_release/01,cremad,n_files_release,7442,cremad_readme,commit 76089aafdb7f; Size of the release,2026-11-01,claude,current,
@@ -737,7 +737,7 @@ csemotions/hours_release/01,csemotions,hours_release,10.20,csemotions_readme,com
 csemotions/hours_reported/01,csemotions,hours_reported,10,csemotions_card,card: Total Duration ~10 hours,2026-10-13,claude,current,Approximate
 csemotions/languages/01,csemotions,languages,cmn,csemotions_card,card: Language Mandarin Chinese; native Mandarin speakers,2026-10-13,claude,current,
 csemotions/license_spdx/01,csemotions,license_spdx,Apache-2.0,csemotions_card,dataset card metadata and NOTICE: Apache License 2.0,2026-10-13,claude,superseded,The NOTICE also states that ESD (research use only) is incorporated; superseded by csemotions/license_spdx/02
-csemotions/license_spdx/02,csemotions,license_spdx,Apache-2.0,csemotions_card_2,License field of the card (pinned commit 19498e62...),2026-10-23,user,current,"The NOTICE (same commit) states that ESD (MIT, research use only) is incorporated. By the maintainer's decision the ESD condition in the NOTICE is not applied (no overlap in sound or sentences; reports/2026-10-23_csemotions_db_update.md); Verified by the maintainer in the pull request of branch verify/2026-11-01-03"
+csemotions/license_spdx/02,csemotions,license_spdx,Apache-2.0,csemotions_card_2,License field of the card (pinned commit 19498e62...),2026-10-23,user,current,"The NOTICE (same commit) states that ESD (MIT, research use only) is incorporated. By the maintainer's decision the ESD condition in the NOTICE is not applied (no overlap in sound or sentences; reports/2026-10-23_csemotions_db_update.md); Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)"
 csemotions/n_files_release/01,csemotions,n_files_release,4160,,,2026-10-23,claude,superseded,Provisional: Re-measured by the DB maintainer from the release files: matches (2026-10-23); superseded by csemotions/n_files_release/02
 csemotions/n_files_release/02,csemotions,n_files_release,4160,csemotions_readme,commit 9af443fcd218; Size of the release,2026-11-01,claude,current,
 csemotions/n_files_reported/01,csemotions,n_files_reported,4160,csemotions_card,card dataset_info: train num_examples 4160,2026-10-13,claude,current,
@@ -752,7 +752,7 @@ csemotions/vocal_content/01,csemotions,vocal_content,speech,csemotions_card,card
 daicwoz/access_method/01,daicwoz,access_method,signed_agreement,daicwoz_page,"complete, sign and submit the form to download",2026-10-14,claude,current,
 daicwoz/access_observed/01,daicwoz,access_observed,obtained,daicwoz_page,each session includes participant audio files,2026-10-14,claude,current,
 daicwoz/full_title/01,daicwoz,full_title,Distress Analysis Interview Corpus - Wizard of Oz,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
-daicwoz/license_spdx/01,daicwoz,license_spdx,LicenseRef-custom-research-only,daicwoz_page,only distributed to academics and other non-profit researchers,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-03
+daicwoz/license_spdx/01,daicwoz,license_spdx,LicenseRef-custom-research-only,daicwoz_page,only distributed to academics and other non-profit researchers,2026-10-14,user,current,Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)
 daicwoz/name/01,daicwoz,name,DAIC-WOZ,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by daicwoz/name/02
 daicwoz/name/02,daicwoz,name,DAIC-WOZ,daicwoz_page,title of the source contains the name,2026-11-01,claude,current,
 daicwoz/vocal_content/01,daicwoz,vocal_content,speech,daicwoz_page,participant audio files and transcripts,2026-10-14,claude,current,
@@ -769,7 +769,7 @@ dailytalk/hours_reported/01,dailytalk,hours_reported,20,dailytalk_paper_2,"§2.4
 dailytalk/hours_reported/02,dailytalk,hours_reported,21.67,dailytalk_paper_2,"Table 1: total duration 78,026 s",2026-10-24,claude,conflicting,"The text and abstract say ""20 hours in total"" (rounded). The seconds in Table 1 are used"
 dailytalk/hours_reported/03,dailytalk,hours_reported,20,dailytalk_paper_2,20 hours in total (Section 2.4),2026-10-24,claude,conflicting,"Rounded from the 78,026 s (21.67 h) of Table 1"
 dailytalk/languages/01,dailytalk,languages,eng,dailytalk_paper_2,§2.2: two English-fluent speakers as voice actors,2026-10-13,claude,current,
-dailytalk/license_spdx/01,dailytalk,license_spdx,CC-BY-SA-4.0,dailytalk_page,README abstract: freely available for academic use with CC-BY-SA 4.0 license,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-03
+dailytalk/license_spdx/01,dailytalk,license_spdx,CC-BY-SA-4.0,dailytalk_page,README abstract: freely available for academic use with CC-BY-SA 4.0 license,2026-10-13,user,current,Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)
 dailytalk/n_files_release/01,dailytalk,n_files_release,23773,,,2026-10-24,claude,superseded,Provisional: Matches the report; superseded by dailytalk/n_files_release/02
 dailytalk/n_files_release/02,dailytalk,n_files_release,23773,dailytalk_readme,commit fe704640bae7; Size of the release,2026-11-01,claude,current,
 dailytalk/n_files_reported/01,dailytalk,n_files_reported,23773,dailytalk_paper_2,"Table 1: # clips 23,773",2026-10-24,claude,current,"The report said the paper gives no utterance count, but Table 1 of the paper has it (checked by the DB maintainer)"
@@ -785,7 +785,7 @@ deeply_korean_read/access_method/01,deeply_korean_read,access_method,direct_down
 deeply_korean_read/access_observed/01,deeply_korean_read,access_observed,obtained,deeply_korean_read_page,"Format: 16kHz, 16-bit, mono",2026-10-14,claude,current,
 deeply_korean_read/hours_reported/01,deeply_korean_read,hours_reported,3,deeply_korean_read_page,Volume: ~3 (~290) hours,2026-10-14,claude,current,Public part
 deeply_korean_read/languages/01,deeply_korean_read,languages,kor,deeply_korean_read_page,Language: Korean,2026-10-14,claude,current,
-deeply_korean_read/license_spdx/01,deeply_korean_read,license_spdx,CC-BY-NC-ND-4.0,deeply_korean_read_page,License: CC BY-NC-ND 4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-03
+deeply_korean_read/license_spdx/01,deeply_korean_read,license_spdx,CC-BY-NC-ND-4.0,deeply_korean_read_page,License: CC BY-NC-ND 4.0,2026-10-14,user,current,Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)
 deeply_korean_read/n_files_reported/01,deeply_korean_read,n_files_reported,2000,deeply_korean_read_page,"Volume: ~2,000 (~190,000) utterances",2026-10-14,claude,current,"Public part. The whole is about 190,000"
 deeply_korean_read/name/01,deeply_korean_read,name,Deeply Korean read speech corpus,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 deeply_korean_read/speech_production/01,deeply_korean_read,speech_production,read,deeply_korean_read_page,pairs of Korean speakers reading scripts with 3 vocal sentiments,2026-10-14,claude,current,
@@ -794,7 +794,7 @@ deeply_nonverbal/access_method/01,deeply_nonverbal,access_method,direct_download
 deeply_nonverbal/access_observed/01,deeply_nonverbal,access_observed,obtained,deeply_nonverbal_page,"Format: 16kHz, 16-bit, mono",2026-10-13,claude,current,
 deeply_nonverbal/hours_reported/01,deeply_nonverbal,hours_reported,0.6,deeply_nonverbal_page,Volume: ~0.6 (~57) hours,2026-10-13,claude,current,Public part
 deeply_nonverbal/languages/01,deeply_nonverbal,languages,zxx,deeply_nonverbal_page,human nonverbal vocal sound dataset,2026-10-13,claude,current,
-deeply_nonverbal/license_spdx/01,deeply_nonverbal,license_spdx,CC-BY-NC-ND-4.0,deeply_nonverbal_page,License: CC BY-NC-ND 4.0,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-03
+deeply_nonverbal/license_spdx/01,deeply_nonverbal,license_spdx,CC-BY-NC-ND-4.0,deeply_nonverbal_page,License: CC BY-NC-ND 4.0,2026-10-13,user,current,Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)
 deeply_nonverbal/n_files_reported/01,deeply_nonverbal,n_files_reported,800,deeply_nonverbal_page,"Volume: ~800 (~70,000) utterances",2026-10-13,claude,current,"Public part. The whole is about 70,000"
 deeply_nonverbal/n_speakers_reported/01,deeply_nonverbal,n_speakers_reported,500,deeply_nonverbal_page,~500 (~1500) speakers,2026-10-13,claude,current,Public part
 deeply_nonverbal/name/01,deeply_nonverbal,name,Deeply Nonverbal Vocalization Dataset,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -816,7 +816,7 @@ des/emotion_categories.annotator/01,des,emotion_categories.annotator,human,des_p
 des/emotion_categories.label_basis/01,des,emotion_categories.label_basis,intended,des_paper,emotion the actors were asked to portray; verified by a listening test,2026-10-28,claude,current,
 des/emotion_categories.label_verification/01,des,emotion_categories.label_verification,listener_validated,des_paper,listening test with 20 listeners: emotions identified correctly in 67.3% of cases (95% interval 66.0-68.6),2026-10-28,claude,current,
 des/languages/02,des,languages,dan,des_paper,"A database of recordings of Danish Emotional Speech, DES",2026-10-31,claude,current,
-des/license_spdx/02,des,license_spdx,unknown,des_page,Universal Catalogue entry ELRA-SD62 gives no licence,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-03
+des/license_spdx/02,des,license_spdx,unknown,des_page,Universal Catalogue entry ELRA-SD62 gives no licence,2026-10-14,user,current,Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)
 des/listening_test/01,des,listening_test,reported,des_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 des/n_speakers_reported/02,des,n_speakers_reported,4,des_page,two male and two female actors,2026-10-14,claude,current,
 des/name/01,des,name,DES,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -825,7 +825,7 @@ dfew/access_method/01,dfew,access_method,request_form_or_email,dfew_page,send an
 dfew/access_observed/01,dfew,access_observed,obtained,dfew_page,password-protected download of the video clips,2026-10-13,claude,current,
 dfew/emotion_categories.label_basis/01,dfew,emotion_categories.label_basis,perceived,dfew_page,facial expression labels of video clips obtained from the Internet,2026-10-28,claude,current,
 dfew/full_title/01,dfew,full_title,Dynamic Facial Expression in-the-Wild,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
-dfew/license_spdx/01,dfew,license_spdx,LicenseRef-custom-research-only,dfew_page,available for non-commercial research purposes only,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-03
+dfew/license_spdx/01,dfew,license_spdx,LicenseRef-custom-research-only,dfew_page,available for non-commercial research purposes only,2026-10-13,user,current,Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)
 dfew/material_origin/01,dfew,material_origin,film_tv,dfew_page,all clips of the DFEW database are obtained from the Internet (movies),2026-10-13,claude,current,
 dfew/n_files_reported/01,dfew,n_files_reported,16372,dfew_survey,"DFEW contains 16,372 in-the-wild video clips from over 1,500 movies",2026-10-13,claude,current,
 dfew/name/01,dfew,name,DFEW,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by dfew/name/02
@@ -836,7 +836,7 @@ dihana/access_observed/01,dihana,access_observed,obtained,dihana_page,"dihanaCor
 dihana/full_title/01,dihana,full_title,DIHANA corpus,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by dihana/full_title/02
 dihana/full_title/02,dihana,full_title,DIHANA corpus,dihana_page,title of the source contains the full title,2026-11-01,claude,current,
 dihana/languages/01,dihana,languages,spa,dihana_page,900 human-computer dialogues in Spanish,2026-10-14,claude,current,
-dihana/license_spdx/01,dihana,license_spdx,CC-BY-4.0,dihana_page,Zenodo metadata license cc-by-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-03
+dihana/license_spdx/01,dihana,license_spdx,CC-BY-4.0,dihana_page,Zenodo metadata license cc-by-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)
 dihana/name/01,dihana,name,DIHANA,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by dihana/name/02
 dihana/name/02,dihana,name,DIHANA,dihana_page,title of the source contains the name,2026-11-01,claude,current,
 dihana/vocal_content/01,dihana,vocal_content,speech,dihana_page,spontaneous speech; telephone dialogues,2026-10-14,claude,current,
@@ -851,7 +851,7 @@ dusha/hours_release/01,dusha,hours_release,202.5,dusha_readme,commit 0211bab9f7f
 dusha/hours_reported/02,dusha,hours_reported,346.6,dusha_page_2,"Dataset structure table, Total: 346.6 hours",2026-10-31,claude,current,Crowd 255.7 h plus podcast 90.9 h
 dusha/languages/02,dusha,languages,rus,dusha_page_2,about 300 000 audio recordings with Russian speech,2026-10-31,claude,current,
 dusha/license_spdx/02,dusha,license_spdx,LicenseRef-other,dusha_page,license text in the release: CC BY-SA 4.0 variant without NC clause,2026-10-11,claude,superseded,superseded by dusha/license_spdx/03
-dusha/license_spdx/03,dusha,license_spdx,LicenseRef-golos-public,dusha_paper_2,full text of the Golos/Dusha public license 'with attribution and conditions reserved',2026-10-26,user,current,"Reworking of CC BY-SA 4.0 with no non-commercial clause; treated as open (maintainer's decision, 2026-10-26); Verified by the maintainer in the pull request of branch verify/2026-11-01-03"
+dusha/license_spdx/03,dusha,license_spdx,LicenseRef-golos-public,dusha_paper_2,full text of the Golos/Dusha public license 'with attribution and conditions reserved',2026-10-26,user,current,"Reworking of CC BY-SA 4.0 with no non-commercial clause; treated as open (maintainer's decision, 2026-10-26); Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)"
 dusha/listening_test/01,dusha,listening_test,reported,dusha_readme,commit 0211bab9f7fa; Listening test ratings in the release,2026-11-01,claude,current,
 dusha/material_origin/01,dusha,material_origin,recorded_for_dataset,,,2026-10-28,claude,provisional,Provisional: carried over from source_rights
 dusha/n_files_release/01,dusha,n_files_release,160366,dusha_readme,commit 0211bab9f7fa; Size of the release,2026-11-01,claude,current,"Readme cell: 160,366 (extracted)"
@@ -875,7 +875,7 @@ ears/full_title/01,ears,full_title,EARS: An Anechoic Fullband Speech Dataset Ben
 ears/full_title/02,ears,full_title,EARS: An Anechoic Fullband Speech Dataset Benchmarked for Speech Enhancement and Dereverberation,ears_paper,title of the source contains the full title,2026-11-01,claude,current,
 ears/hours_reported/01,ears,hours_reported,100,ears_page,README Highlights: 100 h of speech data from 107 speakers,2026-10-13,claude,current,Not the duration of the emotion part only
 ears/languages/01,ears,languages,eng,ears_paper,100 English speakers with high demographic diversity,2026-10-13,claude,current,
-ears/license_spdx/01,ears,license_spdx,CC-BY-NC-4.0,ears_page,README License: dataset released under CC-NC 4.0 International; LICENSE is Attribution-NonCommercial 4.0,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-03
+ears/license_spdx/01,ears,license_spdx,CC-BY-NC-4.0,ears_page,README License: dataset released under CC-NC 4.0 International; LICENSE is Attribution-NonCommercial 4.0,2026-10-13,user,current,Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)
 ears/n_speakers_reported/01,ears,n_speakers_reported,107,ears_page,README Highlights: 100 h of speech data from 107 speakers,2026-10-13,claude,current,
 ears/name/01,ears,name,EARS,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by ears/name/02
 ears/name/02,ears,name,EARS,ears_page,title of the source contains the name,2026-11-01,claude,current,
@@ -884,7 +884,7 @@ ears/vocal_content/01,ears,vocal_content,speech,ears_page,"sentence reading, fre
 eekk/access_method/01,eekk,access_method,direct_download,,,2026-10-14,claude,provisional,Provisional:
 eekk/access_observed/01,eekk,access_observed,obtained,doi_s_10_6084_m9_figshare_25249744,"file ekorpus.zip (277,242,062 bytes)",2026-10-14,claude,current,
 eekk/languages/02,eekk,languages,est,doi_s_10_6084_m9_figshare_25249744,record title: Estonian Emotional Speech Corpus,2026-10-31,claude,current,The language follows the corpus title; the description does not repeat it
-eekk/license_spdx/02,eekk,license_spdx,CC-BY-4.0,doi_s_10_6084_m9_figshare_25249744,figshare license: CC BY 4.0,2026-10-14,user,current,"META-SHARE says CC-BY (no version), Restricted Use; Verified by the maintainer in the pull request of branch verify/2026-11-01-03"
+eekk/license_spdx/02,eekk,license_spdx,CC-BY-4.0,doi_s_10_6084_m9_figshare_25249744,figshare license: CC BY 4.0,2026-10-14,user,current,"META-SHARE says CC-BY (no version), Restricted Use; Verified by the maintainer in the pull request #15 (branch verify/2026-11-01-03)"
 eekk/n_files_reported/02,eekk,n_files_reported,1234,doi_s_10_6084_m9_figshare_25249744,the corpus contains 1234 sentences,2026-10-14,claude,current,
 eekk/name/01,eekk,name,EEKK,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 eekk/speech_production/01,eekk,speech_production,read,doi_s_10_6084_m9_figshare_25249744,read-out non-acted speech; female voice,2026-10-14,claude,current,
