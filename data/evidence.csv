@@ -1338,6 +1338,7 @@ emovdb/languages/02,emovdb,languages,eng;fra,emovdb_paper,data for male and fema
 emovdb/license_spdx/02,emovdb,license_spdx,LicenseRef-custom-research-only,emovdb_license,LICENSE.md: agreeing to the Non-commercial Purposes condition,2026-10-14,claude,current,The License field of OpenSLR 115 points to this file
 emovdb/n_files_release/01,emovdb,n_files_release,6893,,,2026-10-26,claude,superseded,Provisional:; superseded by emovdb/n_files_release/02
 emovdb/n_files_release/02,emovdb,n_files_release,6893,emovdb_readme,commit 74570d22b946; Size of the release,2026-11-01,claude,current,
+emovdb/n_files_reported/01,emovdb,n_files_reported,1260,emovdb_paper,"""This database counts a total of 1260 audio files.""",2026-11-02,claude,current,
 emovdb/n_speakers_release/01,emovdb,n_speakers_release,4,,,2026-10-12,claude,superseded,Provisional:; superseded by emovdb/n_speakers_release/02
 emovdb/n_speakers_release/02,emovdb,n_speakers_release,4,emovdb_readme,commit 74570d22b946; Size of the release,2026-11-01,claude,current,
 emovdb/n_speakers_reported/01,emovdb,n_speakers_reported,5,emovdb_paper,an open-source multi-speaker (5 different speakers) and multilingual database of emotional speech,2026-11-01,claude,current,

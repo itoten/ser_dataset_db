@@ -21,6 +21,7 @@ emodb,license_spdx,conflicting,conflicting,see evidence,CC0-1.0,primary,https://
 emospeech_keywords,n_speakers_reported vs n_speakers_release,reported_vs_release,250,see evidence,103,implementation,n_speakers_release,
 emotional_ema,n_files_reported vs n_files_release,reported_vs_release,680,see evidence,956,implementation,n_files_release,
 emotiontts_open_db,n_files_reported vs n_files_release,reported_vs_release,6000,see evidence,300,implementation,n_files_release,
+emovdb,n_files_reported vs n_files_release,reported_vs_release,1260,see evidence,6893,implementation,n_files_release,
 emovdb,n_speakers_reported vs n_speakers_release,reported_vs_release,5,see evidence,4,implementation,n_speakers_release,
 escorpuspe,n_files_reported vs n_files_release,reported_vs_release,3749,see evidence,3764,implementation,n_files_release,
 hikia,n_files_reported vs n_files_release,reported_vs_release,1247,see evidence,488,implementation,n_files_release,
