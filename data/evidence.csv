@@ -1989,7 +1989,7 @@ kannada/full_title/01,kannada,full_title,A Kannada Emotional Speech Dataset,,,20
 kannada/full_title/02,kannada,full_title,A Kannada Emotional Speech Dataset,kannada_page,title of the source contains the full title,2026-11-01,claude,current,
 kannada/hours_release/01,kannada,hours_release,0.50,kannada_readme,commit c69e31a00905; Size of the release,2026-11-01,claude,current,
 kannada/languages/01,kannada,languages,kan,kannada_page,dataset description names the language,2026-10-11,claude,current,
-kannada/license_spdx/01,kannada,license_spdx,CC-BY-4.0,kannada_page,Zenodo record license,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+kannada/license_spdx/01,kannada,license_spdx,CC-BY-4.0,kannada_page,Zenodo record license,2026-10-11,user,current,Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 kannada/n_files_release/01,kannada,n_files_release,468,,,2026-10-11,claude,superseded,Provisional:; superseded by kannada/n_files_release/02
 kannada/n_files_release/02,kannada,n_files_release,468,kannada_readme,commit c69e31a00905; Size of the release,2026-11-01,claude,current,
 kannada/n_speakers_release/01,kannada,n_speakers_release,13,,,2026-10-12,claude,superseded,Provisional:; superseded by kannada/n_speakers_release/02
@@ -2008,7 +2008,7 @@ kasdimerbah_arabic/access_observed/01,kasdimerbah_arabic,access_observed,obtaine
 kasdimerbah_arabic/emotion_categories.label_basis/01,kasdimerbah_arabic,emotion_categories.label_basis,intended,kasdimerbah_arabic_page,"prompted emotion: sadness, fear, anger, happiness, neutral",2026-10-28,claude,current,
 kasdimerbah_arabic/hours_reported/01,kasdimerbah_arabic,hours_reported,2,kasdimerbah_arabic_page,two hours of Modern Standard Arabic prompted speech,2026-10-13,claude,current,
 kasdimerbah_arabic/languages/01,kasdimerbah_arabic,languages,arb,kasdimerbah_arabic_page,two hours of Modern Standard Arabic prompted speech,2026-10-13,claude,current,
-kasdimerbah_arabic/license_spdx/01,kasdimerbah_arabic,license_spdx,LicenseRef-proprietary-restricted,kasdimerbah_arabic_page,"Licensing Instructions: Subscription & Standard Members, and Non-Members",2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+kasdimerbah_arabic/license_spdx/01,kasdimerbah_arabic,license_spdx,LicenseRef-proprietary-restricted,kasdimerbah_arabic_page,"Licensing Instructions: Subscription & Standard Members, and Non-Members",2026-10-13,user,current,Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 kasdimerbah_arabic/n_files_reported/01,kasdimerbah_arabic,n_files_reported,5000,kasdimerbah_arabic_page,"500 speakers representing 5,000 utterances",2026-10-13,claude,current,
 kasdimerbah_arabic/n_speakers_reported/01,kasdimerbah_arabic,n_speakers_reported,500,kasdimerbah_arabic_page,"500 speakers (254 female, 246 male)",2026-10-13,claude,current,
 kasdimerbah_arabic/name/01,kasdimerbah_arabic,name,Kasdi-Merbah University Emotional Database in Arabic Speech,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by kasdimerbah_arabic/name/02
@@ -2031,7 +2031,7 @@ kazemotts/full_title/02,kazemotts,full_title,KazEmoTTS,kazemotts_card,title of t
 kazemotts/hours_release/01,kazemotts,hours_release,74.9,kazemotts_readme,commit 3d3f1a3ffe93; Size of the release,2026-11-01,claude,current,
 kazemotts/languages/01,kazemotts,languages,kaz,kazemotts_card,dataset description names the language,2026-10-11,claude,current,
 kazemotts/license_spdx/01,kazemotts,license_spdx,CC-BY-4.0,kazemotts_card,Hugging Face dataset card,2026-10-11,claude,superseded,superseded by kazemotts/license_spdx/02
-kazemotts/license_spdx/02,kazemotts,license_spdx,CC-BY-4.0,kazemotts_page,"form text (re-read 2026-10-26): 'This dataset is provided under the Creative Commons Attribution 4.0 International Licence. To request access to the dataset, please complete the form.'",2026-10-26,user,current,The Hugging Face dataset card (README and tags) states no license; the official access form linked from the card does. Replaces the earlier evidence row that pointed to the card; Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+kazemotts/license_spdx/02,kazemotts,license_spdx,CC-BY-4.0,kazemotts_page,"form text (re-read 2026-10-26): 'This dataset is provided under the Creative Commons Attribution 4.0 International Licence. To request access to the dataset, please complete the form.'",2026-10-26,user,current,The Hugging Face dataset card (README and tags) states no license; the official access form linked from the card does. Replaces the earlier evidence row that pointed to the card; Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 kazemotts/n_files_release/01,kazemotts,n_files_release,54760,,,2026-10-11,claude,superseded,Provisional:; superseded by kazemotts/n_files_release/02
 kazemotts/n_files_release/02,kazemotts,n_files_release,54760,kazemotts_readme,commit 3d3f1a3ffe93; Size of the release,2026-11-01,claude,current,
 kazemotts/n_speakers_release/01,kazemotts,n_speakers_release,3,,,2026-10-12,claude,superseded,Provisional:; superseded by kazemotts/n_speakers_release/02
@@ -2050,7 +2050,7 @@ kbes/full_title/01,kbes,full_title,KBES: A dataset for realistic Bangla speech e
 kbes/full_title/02,kbes,full_title,KBES: A dataset for realistic Bangla speech emotion recognition with intensity level,kbes_paper,title of the source contains the full title,2026-11-01,claude,current,
 kbes/hours_release/01,kbes,hours_release,0.75,kbes_readme,commit d9e26d5cc616; Size of the release,2026-11-01,claude,current,
 kbes/languages/01,kbes,languages,ben,kbes_page,dataset description names the language,2026-10-11,claude,current,
-kbes/license_spdx/01,kbes,license_spdx,CC-BY-4.0,kbes_page,license field of Mendeley,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+kbes/license_spdx/01,kbes,license_spdx,CC-BY-4.0,kbes_page,license field of Mendeley,2026-10-11,user,current,Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 kbes/material_origin/01,kbes,material_origin,film_tv,kbes_page,"paper Ethics: clips from TV films, dramas, TV and web series on YouTube/Facebook",2026-10-11,claude,current,"The paper says ""TV films, dramas and TV/web series""; approximated as tv_show"
 kbes/n_files_release/01,kbes,n_files_release,900,,,2026-10-11,claude,superseded,Provisional:; superseded by kbes/n_files_release/02
 kbes/n_files_release/02,kbes,n_files_release,900,kbes_readme,commit d9e26d5cc616; Size of the release,2026-11-01,claude,current,
@@ -2072,7 +2072,7 @@ keioesd/access_method/01,keioesd,access_method,signed_agreement,ac_src_en_regist
 keioesd/access_observed/01,keioesd,access_observed,obtained,keioesd_page,"Speech file format: WAV (16 kHz, 16 bit, Mono); 1 CD-ROM",2026-10-13,claude,current,
 keioesd/full_title/01,keioesd,full_title,Keio University Japanese Emotional Speech Database,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 keioesd/languages/01,keioesd,languages,jpn,keioesd_page,Contents: vocal emotion spoken by a Japanese male speaker,2026-10-13,claude,current,
-keioesd/license_spdx/01,keioesd,license_spdx,LicenseRef-custom-research-only,keioesd_page,Licensing: For research purpose only; Price: No fee,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+keioesd/license_spdx/01,keioesd,license_spdx,LicenseRef-custom-research-only,keioesd_page,Licensing: For research purpose only; Price: No fee,2026-10-13,user,current,Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 keioesd/n_speakers_reported/01,keioesd,n_speakers_reported,1,keioesd_page,Speaker: One male speaker,2026-10-13,claude,current,
 keioesd/name/01,keioesd,name,Keio-ESD,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by keioesd/name/02
 keioesd/name/02,keioesd,name,Keio-ESD,keioesd_page,title of the source contains the name,2026-11-01,claude,current,
@@ -2111,7 +2111,7 @@ ksuemotions/access_method/01,ksuemotions,access_method,paid_or_membership,ksuemo
 ksuemotions/access_observed/01,ksuemotions,access_observed,obtained,ksuemotions_page,audio recordings and transcripts,2026-10-14,claude,current,
 ksuemotions/hours_reported/01,ksuemotions,hours_reported,5,ksuemotions_page,approximately five hours of emotional MSA speech,2026-10-14,claude,current,
 ksuemotions/languages/01,ksuemotions,languages,arb,ksuemotions_page,Modern Standard Arabic speech,2026-10-14,claude,current,
-ksuemotions/license_spdx/01,ksuemotions,license_spdx,LicenseRef-proprietary-restricted,ksuemotions_page,Available Media: Web Download; View Fees,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+ksuemotions/license_spdx/01,ksuemotions,license_spdx,LicenseRef-proprietary-restricted,ksuemotions_page,Available Media: Web Download; View Fees,2026-10-14,user,current,Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 ksuemotions/n_speakers_reported/01,ksuemotions,n_speakers_reported,23,ksuemotions_page,recordings from 23 speakers,2026-10-14,claude,current,
 ksuemotions/name/01,ksuemotions,name,KSUEmotions,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by ksuemotions/name/02
 ksuemotions/name/02,ksuemotions,name,KSUEmotions,ksuemotions_page,title of the source contains the name,2026-11-01,claude,current,
@@ -2131,7 +2131,7 @@ laions_got_talent/access_observed/01,laions_got_talent,access_observed,obtained,
 laions_got_talent/full_title/01,laions_got_talent,full_title,LAION's Got Talent: Generated Voice Acting Dataset,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 laions_got_talent/hours_reported/01,laions_got_talent,hours_reported,110,laions_got_talent_card,"card: currently 110 hours, will grow soon",2026-10-23,claude,current,The card text may not have been updated. The release is 418.9 GB
 laions_got_talent/languages/01,laions_got_talent,languages,mul,laions_got_talent_card,File names carry language marks such as +de+ (e.g. voice_acting_outputs-alloy+de+_004.tar),2026-10-23,claude,current,The card does not describe the language
-laions_got_talent/license_spdx/01,laions_got_talent,license_spdx,none_stated,laions_got_talent_card,The card has no license field or statement (2026-10-23),2026-10-23,user,current,The extended laions_got_talent_enhanced_flash_annotations_and_long_captions states none either; Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+laions_got_talent/license_spdx/01,laions_got_talent,license_spdx,none_stated,laions_got_talent_card,The card has no license field or statement (2026-10-23),2026-10-23,user,current,The extended laions_got_talent_enhanced_flash_annotations_and_long_captions states none either; Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 laions_got_talent/material_origin/01,laions_got_talent,material_origin,synthetic,laions_got_talent_card,card: constructed with the OpenAI Voice API via Hyprlab (gpt-4o-audio models),2026-10-23,claude,current,
 laions_got_talent/name/01,laions_got_talent,name,LAION's Got Talent,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 laions_got_talent/speech_production/01,laions_got_talent,speech_production,synthetic,laions_got_talent_card,card: constructed with the OpenAI Voice API via Hyprlab (gpt-4o-audio models),2026-10-23,claude,current,
@@ -2140,7 +2140,7 @@ ldc_emotional_prosody/access_method/01,ldc_emotional_prosody,access_method,paid_
 ldc_emotional_prosody/access_observed/01,ldc_emotional_prosody,access_observed,obtained,ldc_emotional_prosody_page,Data: 15 recordings in sphere format and their transcripts,2026-10-13,claude,current,
 ldc_emotional_prosody/hours_reported/01,ldc_emotional_prosody,hours_reported,9,ldc_emotional_prosody_page,"Data: 2,777 Mbytes or nine hours of sphere data",2026-10-13,claude,current,
 ldc_emotional_prosody/languages/01,ldc_emotional_prosody,languages,eng,ldc_emotional_prosody_page,actors reading semantically neutral utterances (dates and numbers),2026-10-13,claude,current,"The language is not named, but the content is English dates and numbers"
-ldc_emotional_prosody/license_spdx/01,ldc_emotional_prosody,license_spdx,LicenseRef-proprietary-restricted,ldc_emotional_prosody_page,"Licensing Instructions: Subscription & Standard Members, and Non-Members; fees apply",2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+ldc_emotional_prosody/license_spdx/01,ldc_emotional_prosody,license_spdx,LicenseRef-proprietary-restricted,ldc_emotional_prosody_page,"Licensing Instructions: Subscription & Standard Members, and Non-Members; fees apply",2026-10-13,user,current,Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 ldc_emotional_prosody/name/01,ldc_emotional_prosody,name,Emotional Prosody Speech and Transcripts,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by ldc_emotional_prosody/name/02
 ldc_emotional_prosody/name/02,ldc_emotional_prosody,name,Emotional Prosody Speech and Transcripts,ldc_emotional_prosody_page,title of the source contains the name,2026-11-01,claude,current,
 ldc_emotional_prosody/speech_production/01,ldc_emotional_prosody,speech_production,acted,ldc_emotional_prosody_page,professional actors reading semantically neutral utterances,2026-10-13,claude,current,
@@ -2152,7 +2152,7 @@ legov2/emotion_categories.annotator/01,legov2,emotion_categories.annotator,human
 legov2/emotion_categories.label_basis/01,legov2,emotion_categories.label_basis,perceived,legov2_release,"emotion annotations of 302 calls by one rater, anger on five levels",2026-10-26,claude,current,"What the rater saw or heard (audio, ASR text, dialogue) is not stated in the readme"
 legov2/emotion_categories.label_verification/01,legov2,emotion_categories.label_verification,NA,legov2_release,"one rater only, so agreement cannot be measured and nothing was checked",2026-10-26,claude,current,No second annotation is distributed for the emotion labels
 legov2/hours_release/01,legov2,hours_release,26.41,legov2_readme,commit a429f81bc2c5; Size of the release,2026-11-01,claude,current,
-legov2/license_spdx/02,legov2,license_spdx,LicenseRef-custom-research-only,legov2_page,"LEGOv2/license.txt (CMU and Ulm University): use this data for individual, education research purposes only",2026-10-14,user,current,zip read via HTTP Range (2026-10-14); Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+legov2/license_spdx/02,legov2,license_spdx,LicenseRef-custom-research-only,legov2_page,"LEGOv2/license.txt (CMU and Ulm University): use this data for individual, education research purposes only",2026-10-14,user,current,zip read via HTTP Range (2026-10-14); Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 legov2/n_files_release/01,legov2,n_files_release,4832,,,2026-10-26,claude,superseded,"Provisional: The recipe uses 4,243 of the 4,832 (the 589 garbage utterances are left out); superseded by legov2/n_files_release/02"
 legov2/n_files_release/02,legov2,n_files_release,7909,legov2_readme,commit a429f81bc2c5; Size of the release,2026-11-01,claude,current,
 legov2/n_speakers_release/01,legov2,n_speakers_release,unknown,legov2_readme,commit a429f81bc2c5; Size of the release,2026-11-01,claude,current,Readme cell: unknown (callers are anonymous)
@@ -2167,7 +2167,7 @@ lithuanian_emotion_db/emotion_categories.label_basis/01,lithuanian_emotion_db,em
 lithuanian_emotion_db/emotion_categories.label_verification/01,lithuanian_emotion_db,emotion_categories.label_verification,NA,lithuanian_emotion_db_page,the README describes no listening test or rating,2026-10-26,claude,current,Labels are the folder names (the emotion read)
 lithuanian_emotion_db/hours_release/01,lithuanian_emotion_db,hours_release,1.66,lithuanian_emotion_db_readme,commit 10c627b8a545; Size of the release,2026-11-01,claude,current,
 lithuanian_emotion_db/languages/01,lithuanian_emotion_db,languages,lit,lithuanian_emotion_db_page,description: a Lithuanian Emotional Speech Database,2026-10-14,claude,current,
-lithuanian_emotion_db/license_spdx/01,lithuanian_emotion_db,license_spdx,none_stated,lithuanian_emotion_db_page,repository has no license file; README states no terms,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+lithuanian_emotion_db/license_spdx/01,lithuanian_emotion_db,license_spdx,none_stated,lithuanian_emotion_db_page,repository has no license file; README states no terms,2026-10-14,user,current,Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 lithuanian_emotion_db/n_files_release/01,lithuanian_emotion_db,n_files_release,1453,,,2026-10-14,claude,superseded,Provisional:; superseded by lithuanian_emotion_db/n_files_release/02
 lithuanian_emotion_db/n_files_release/02,lithuanian_emotion_db,n_files_release,1453,lithuanian_emotion_db_readme,commit 10c627b8a545; Size of the release,2026-11-01,claude,current,
 lithuanian_emotion_db/n_speakers_release/01,lithuanian_emotion_db,n_speakers_release,10,,,2026-10-26,claude,superseded,Provisional:; superseded by lithuanian_emotion_db/n_speakers_release/02
@@ -2184,7 +2184,7 @@ lssed/emotion_categories.label_basis/01,lssed,emotion_categories.label_basis,per
 lssed/emotion_categories.label_verification/01,lssed,emotion_categories.label_verification,NA,lssed_paper,no agreement or accuracy figure for the annotation is given in the paper,2026-10-28,claude,current,
 lssed/hours_reported/02,lssed,hours_reported,206.4,lssed_paper,"147,025 sentences, 206 hours and 25 minutes in total",2026-10-28,claude,current,
 lssed/languages/02,lssed,languages,eng,lssed_paper,the paper calls LSSED a challenging large-scale English dataset (Table 1 language column: English),2026-10-28,claude,current,"The earlier value cmn came from the spreadsheet; the paper says English, so the language needs a check on the audio"
-lssed/license_spdx/02,lssed,license_spdx,LicenseRef-custom-research-only,lssed_page,README: EULA for copyright reasons,2026-10-14,user,current,EULA text not read; Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+lssed/license_spdx/02,lssed,license_spdx,LicenseRef-custom-research-only,lssed_page,README: EULA for copyright reasons,2026-10-14,user,current,EULA text not read; Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 lssed/n_files_reported/02,lssed,n_files_reported,147025,lssed_paper,"It contains 147,025 sentences (206 hours and 25 minutes in total) spoken by 820 people",2026-10-31,claude,current,
 lssed/n_speakers_reported/02,lssed,n_speakers_reported,820,lssed_paper,"147,025 utterances from 820 subjects",2026-10-28,claude,current,
 lssed/name/01,lssed,name,LSSED,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by lssed/name/02
@@ -2196,7 +2196,7 @@ m3ed/emotion_categories.annotator/01,m3ed,emotion_categories.annotator,human,m3e
 m3ed/emotion_categories.label_basis/01,m3ed,emotion_categories.label_basis,perceived,m3ed_paper,"annotators watched the video and saw the previous utterances before labelling, so the labels are multimodal and context-dependent, not audio-only",2026-10-28,claude,current,
 m3ed/emotion_categories.label_verification/01,m3ed,emotion_categories.label_verification,listener_validated,m3ed_paper,Fleiss' kappa 0.59 over the seven classes (MELD 0.43),2026-10-28,claude,current,"Annotators were allowed several labels per utterance, ranked by importance"
 m3ed/languages/02,m3ed,languages,cmn,m3ed_paper,"Table 1 (dataset comparison), Language row, M3ED column: Mandarin; the first multimodal emotional dialogue dataset in Chinese",2026-10-31,claude,current,
-m3ed/license_spdx/02,m3ed,license_spdx,none_stated,m3ed_page,repository has no license; README states no terms,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+m3ed/license_spdx/02,m3ed,license_spdx,none_stated,m3ed_page,repository has no license; README states no terms,2026-10-14,user,current,Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 m3ed/material_origin/01,m3ed,material_origin,film_tv,m3ed_paper,990 dyadic emotional dialogues from 56 different TV series,2026-10-31,claude,current,
 m3ed/n_files_reported/02,m3ed,n_files_reported,24449,m3ed_paper,"990 dyadic dialogues from 56 TV series, 9,082 turns and 24,449 utterances",2026-10-28,claude,current,
 m3ed/n_speakers_reported/02,m3ed,n_speakers_reported,626,m3ed_paper,"Table 2 (statistics), Total row: 626 speakers",2026-10-31,claude,current,
@@ -2211,7 +2211,7 @@ mafw/emotion_categories.label_basis/01,mafw,emotion_categories.label_basis,perce
 mafw/full_title/01,mafw,full_title,"MAFW: A Large-scale, Multi-modal, Compound Affective Database for Dynamic Facial Expression Recognition in the Wild",,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mafw/full_title/02
 mafw/full_title/02,mafw,full_title,"MAFW: A Large-scale, Multi-modal, Compound Affective Database for Dynamic Facial Expression Recognition in the Wild",mafw_paper,title of the source contains the full title,2026-11-01,claude,current,
 mafw/languages/01,mafw,languages,mul,mafw_page,"clips come from China, Japan, Korea, Europe, America and India",2026-10-13,claude,current,The language breakdown is not given
-mafw/license_spdx/01,mafw,license_spdx,LicenseRef-custom-research-only,mafw_page,Terms: available for non-commercial research purposes only,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+mafw/license_spdx/01,mafw,license_spdx,LicenseRef-custom-research-only,mafw_page,Terms: available for non-commercial research purposes only,2026-10-13,user,current,Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 mafw/material_origin/01,mafw,material_origin,film_tv,mafw_page,"video clips from movies, TV dramas, and short videos",2026-10-13,claude,current,
 mafw/n_files_reported/01,mafw,n_files_reported,10045,mafw_page,"10,045 number of video clips from movies, TV dramas, and short videos",2026-10-13,claude,current,
 mafw/name/01,mafw,name,MAFW,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mafw/name/02
@@ -2235,7 +2235,7 @@ maleo/emotion_categories.label_verification/01,maleo,emotion_categories.label_ve
 maleo/full_title/01,maleo,full_title,Maleo Emotion Audio Dataset Indonesia,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 maleo/hours_release/01,maleo,hours_release,0.59,maleo_readme,commit 4645ecc3d114; Size of the release,2026-11-01,claude,current,
 maleo/languages/01,maleo,languages,ind,maleo_card,dataset description names the language,2026-10-11,claude,current,
-maleo/license_spdx/01,maleo,license_spdx,CC-BY-4.0,maleo_card,dataset card of the copy,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+maleo/license_spdx/01,maleo,license_spdx,CC-BY-4.0,maleo_card,dataset card of the copy,2026-10-11,user,current,Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 maleo/material_origin/01,maleo,material_origin,web_video,maleo_card,dataset card: clips cut from YouTube videos of spontaneous speech,2026-10-11,claude,current,
 maleo/n_files_release/01,maleo,n_files_release,700,,,2026-10-11,claude,superseded,Provisional:; superseded by maleo/n_files_release/02
 maleo/n_files_release/02,maleo,n_files_release,700,maleo_readme,commit 4645ecc3d114; Size of the release,2026-11-01,claude,current,
@@ -2246,7 +2246,7 @@ masc/access_method/01,masc,access_method,paid_or_membership,masc_page,Available 
 masc/access_observed/01,masc,access_observed,obtained,masc_page,audio recordings and transcripts,2026-10-14,claude,current,
 masc/emotion_categories.label_basis/01,masc,emotion_categories.label_basis,intended,masc_page,"five emotional states: neutral, anger, elation, panic, sadness",2026-10-28,claude,current,
 masc/languages/02,masc,languages,cmn,masc_page,expressive emotional expression in Mandarin Chinese,2026-10-31,claude,current,
-masc/license_spdx/02,masc,license_spdx,LicenseRef-proprietary-restricted,masc_page,Available Media: Web Download; View Fees,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+masc/license_spdx/02,masc,license_spdx,LicenseRef-proprietary-restricted,masc_page,Available Media: Web Download; View Fees,2026-10-14,user,current,Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 masc/n_files_reported/02,masc,n_files_reported,25636,masc_page,"68 speakers (23 female, 45 male); 25,636 utterances (5 phrases, 20 sentences, 2 paragraphs in 5 emotions)",2026-10-28,claude,current,
 masc/n_speakers_reported/02,masc,n_speakers_reported,68,masc_page,recordings from 68 speakers,2026-10-14,claude,superseded,superseded by masc/n_speakers_reported/03
 masc/n_speakers_reported/03,masc,n_speakers_reported,68,masc_page,68 speakers after screening of over 100,2026-10-28,claude,current,
@@ -2263,7 +2263,7 @@ maserc/full_title/02,maserc,full_title,MaSERC: A Dual-Scenario Marathi Emotional
 maserc/hours_release/01,maserc,hours_release,0.82,maserc_readme,commit 810d4ecfd6a6; Size of the release,2026-11-01,claude,current,
 maserc/hours_reported/01,maserc,hours_reported,1.13,maserc_page,description: a total duration of approximately 68 minutes,2026-10-26,claude,current,Approximate; the files total 0.8214 h (49 min)
 maserc/languages/01,maserc,languages,mar,maserc_page,the first emotional speech dataset for the Marathi language,2026-10-14,claude,current,
-maserc/license_spdx/01,maserc,license_spdx,CC-BY-4.0,maserc_page,Mendeley Data licence: CC BY 4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+maserc/license_spdx/01,maserc,license_spdx,CC-BY-4.0,maserc_page,Mendeley Data licence: CC BY 4.0,2026-10-14,user,current,Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 maserc/n_files_release/01,maserc,n_files_release,808,,,2026-10-26,claude,superseded,Provisional: The description says approximately 804; superseded by maserc/n_files_release/02
 maserc/n_files_release/02,maserc,n_files_release,808,maserc_readme,commit 810d4ecfd6a6; Size of the release,2026-11-01,claude,current,
 maserc/n_files_reported/01,maserc,n_files_reported,804,maserc_page,contains approximately 804 audio recordings,2026-10-14,claude,current,Approximate
@@ -2283,7 +2283,7 @@ mav/full_title/01,mav,full_title,The Montreal Affective Voices: A validated set 
 mav/full_title/02,mav,full_title,The Montreal Affective Voices: A validated set of nonverbal affect bursts for research on auditory affective processing,mav_page,title of the source contains the full title,2026-11-01,claude,current,
 mav/hours_release/01,mav,hours_release,0.027,mav_readme,commit 962fd8ddf22f; Size of the release,2026-11-01,claude,current,
 mav/languages/01,mav,languages,zxx,mav_page,90 nonverbal affect bursts,2026-10-13,claude,current,
-mav/license_spdx/01,mav,license_spdx,CC-BY-4.0,mav_page,Zenodo record metadata: license cc-by-4.0,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+mav/license_spdx/01,mav,license_spdx,CC-BY-4.0,mav_page,Zenodo record metadata: license cc-by-4.0,2026-10-13,user,current,Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 mav/listening_test/01,mav,listening_test,reported,mav_page,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 mav/n_files_release/01,mav,n_files_release,90,,,2026-10-26,claude,superseded,Provisional:; superseded by mav/n_files_release/02
 mav/n_files_release/02,mav,n_files_release,90,mav_readme,commit 962fd8ddf22f; Size of the release,2026-11-01,claude,current,
@@ -2300,7 +2300,7 @@ mavesdb/access_method/01,mavesdb,access_method,signed_agreement,,,2026-10-14,cla
 mavesdb/access_observed/01,mavesdb,access_observed,unavailable,,,2026-10-14,claude,provisional,Provisional: carried over from raw_audio_available
 mavesdb/full_title/01,mavesdb,full_title,Malayalam Audio-Visual Emotional Speech Data,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 mavesdb/languages/01,mavesdb,languages,mal,mavesdb_page,title: Malayalam Audio-Visual Emotional Speech Data,2026-10-14,claude,current,
-mavesdb/license_spdx/01,mavesdb,license_spdx,CC-BY-4.0,mavesdb_page,Mendeley Data licence: CC BY 4.0,2026-10-14,user,current,Only the agreement is deposited; Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+mavesdb/license_spdx/01,mavesdb,license_spdx,CC-BY-4.0,mavesdb_page,Mendeley Data licence: CC BY 4.0,2026-10-14,user,current,Only the agreement is deposited; Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 mavesdb/name/01,mavesdb,name,MAVES DB,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mavesdb/name/02
 mavesdb/name/02,mavesdb,name,MAVES DB,mavesdb_page,title of the source contains the name,2026-11-01,claude,current,
 mcaespps/access_method/01,mcaespps,access_method,direct_download,,,2026-10-11,claude,provisional,Provisional:
@@ -2312,7 +2312,7 @@ mcaespps/emotion_categories.label_verification/01,mcaespps,emotion_categories.la
 mcaespps/full_title/01,mcaespps,full_title,A validated Mandarin Chinese Auditory Emotion Database of Subject-Personal-Pronoun Sentences (MCAE-SPPS),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 mcaespps/hours_release/01,mcaespps,hours_release,2.30,mcaespps_readme,commit 8893f059e459; Size of the release,2026-11-01,claude,current,
 mcaespps/languages/01,mcaespps,languages,cmn,mcaespps_page,dataset description names the language,2026-10-11,claude,current,
-mcaespps/license_spdx/01,mcaespps,license_spdx,CC-BY-NC-4.0,mcaespps_page,OSF project license setting,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+mcaespps/license_spdx/01,mcaespps,license_spdx,CC-BY-NC-4.0,mcaespps_page,OSF project license setting,2026-10-11,user,current,Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 mcaespps/listening_test/01,mcaespps,listening_test,reported,,,2026-11-01,claude,superseded,Provisional: a listening test was recorded earlier; the source is not public; superseded by mcaespps/listening_test/02
 mcaespps/listening_test/02,mcaespps,listening_test,reported,mcaespps_readme,commit 8893f059e459; Listening test ratings in the release,2026-11-01,claude,current,
 mcaespps/n_files_release/01,mcaespps,n_files_release,6675,,,2026-10-11,claude,superseded,Provisional:; superseded by mcaespps/n_files_release/02
@@ -2329,7 +2329,7 @@ mceiu/emotion_categories.label_basis/01,mceiu,emotion_categories.label_basis,per
 mceiu/emotion_categories.label_verification/01,mceiu,emotion_categories.label_verification,NA,mceiu_paper,three annotators per conversation; no accuracy figure read here,2026-10-28,claude,current,
 mceiu/full_title/01,mceiu,full_title,Emotion and Intent Joint Understanding in Multimodal Conversation: A Benchmarking Dataset,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 mceiu/languages/01,mceiu,languages,eng;cmn,mceiu_paper,"two languages, English and Mandarin",2026-10-14,claude,current,
-mceiu/license_spdx/01,mceiu,license_spdx,CC-BY-NC-4.0,mceiu_card,dataset card metadata: license cc-by-nc-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-07
+mceiu/license_spdx/01,mceiu,license_spdx,CC-BY-NC-4.0,mceiu_card,dataset card metadata: license cc-by-nc-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request #7 (branch verify/2026-11-01-07)
 mceiu/material_origin/01,mceiu,material_origin,film_tv,mceiu_paper,conversational video clips from 3 English and 4 Chinese TV series,2026-10-14,claude,current,
 mceiu/n_files_reported/01,mceiu,n_files_reported,56012,mceiu_paper,"45,009 English utterances and 11,003 Mandarin utterances",2026-10-14,claude,current,Sum of the 2 languages
 mceiu/name/01,mceiu,name,MC-EIU,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mceiu/name/02
