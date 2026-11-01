@@ -193,6 +193,7 @@ anad/spoken_text_design/01,anad,spoken_text_design,unscripted,anad_page,videos o
 anad/vocal_content/01,anad,vocal_content,speech,anad_page,description: chunks divided into 1 sec speech units; silence and laughs removed,2026-10-13,claude,current,
 arabic_zenodo19687456/access_observed/01,arabic_zenodo19687456,access_observed,unavailable,arabic_zenodo19687456_page,only file (54).pdf in the record,2026-10-14,claude,current,
 arabic_zenodo19687456/languages/01,arabic_zenodo19687456,languages,ara,,,2026-10-12,claude,provisional,Provisional:
+arabic_zenodo19687456/license_spdx/01,arabic_zenodo19687456,license_spdx,CC-BY-4.0,arabic_zenodo19687456_page,"Rights: ""License Creative Commons Attribution 4.0 International""",2026-11-01,claude,current,
 arabic_zenodo19687456/name/01,arabic_zenodo19687456,name,Arabic (Zenodo 19687456),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 ased/access_method/01,ased,access_method,direct_download,,,2026-10-11,claude,provisional,Provisional:
 ased/access_observed/01,ased,access_observed,obtained,,,2026-10-11,claude,superseded,Provisional: carried over from raw_audio_available; superseded by ased/access_observed/02
