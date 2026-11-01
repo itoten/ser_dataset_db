@@ -1619,6 +1619,7 @@ gemep/name/01,gemep,name,GEMEP,,,2026-11-01,claude,provisional,Provisional: carr
 gemep/speech_production/01,gemep,speech_production,acted,gemep_page,10 actors portraying 18 affective states,2026-10-13,claude,current,
 gemep/vocal_content/01,gemep,vocal_content,speech_and_nonverbal,gemep_survey,"Methods: two pseudolinguistic phoneme sequences, or a sustained vowel aaa",2026-10-13,claude,current,
 grethe/access_observed/01,grethe,access_observed,unavailable,grethe_page,README: utterances provided as pyAudioAnalysis feature .npy files,2026-10-14,claude,current,
+grethe/languages/01,grethe,languages,ell,grethe_page,"title: ""Speech Emotion Recognition in Greek Theatrical Plays""",2026-11-01,claude,current,
 grethe/license_spdx/01,grethe,license_spdx,MIT,grethe_page,GitHub license field MIT,2026-10-14,claude,current,
 grethe/n_files_reported/01,grethe,n_files_reported,500,grethe_page,"README: 500 samples, 46 minutes, 23 theatrical plays, 90 unique speakers, 4 human annotators",2026-10-28,claude,current,
 grethe/n_speakers_reported/01,grethe,n_speakers_reported,90,grethe_page,README: 90 unique speakers,2026-10-14,claude,current,
