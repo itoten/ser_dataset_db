@@ -2140,6 +2140,7 @@ kemocon/name/02,kemocon,name,K-EmoCon,kemocon_page,title of the source contains 
 kenyan_swahili_ser/access_method/01,kenyan_swahili_ser,access_method,unknown,kenyan_swahili_ser_page,README: ensure you have the Swahili speech dataset; no download location,2026-10-14,claude,current,
 kenyan_swahili_ser/access_observed/01,kenyan_swahili_ser,access_observed,unknown,kenyan_swahili_ser_page,README gives no download location for the dataset,2026-10-14,claude,current,
 kenyan_swahili_ser/languages/01,kenyan_swahili_ser,languages,swa,kenyan_swahili_ser_page,README: speech emotion recognition for Kenyan Swahili,2026-10-14,claude,current,
+kenyan_swahili_ser/license_spdx/01,kenyan_swahili_ser,license_spdx,GPL-3.0-only,kenyan_swahili_ser_page,GitHub API: repository license GPL-3.0,2026-11-01,claude,current,The license GitHub detected for the repository; whether it also covers the data is not stated
 kenyan_swahili_ser/name/01,kenyan_swahili_ser,name,Kenyan Swahili SER (Skiza-App),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 kesdy18/languages/01,kesdy18,languages,kor,kesdy18_mirror,KuralHub entry: Language Korean,2026-10-14,claude,current,
 kesdy18/n_files_reported/01,kesdy18,n_files_reported,2880,kesdy18_mirror,KuralHub entry: samples 2880,2026-10-14,claude,current,
@@ -3816,6 +3817,7 @@ verbo/speech_production/01,verbo,speech_production,acted,verbo_src,§3.1: actors
 vesc/access_method/01,vesc,access_method,unknown,,,2026-10-14,claude,provisional,Provisional:
 vesc/full_title/01,vesc,full_title,Vietnamese Emotional Speech Corpus,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 vesc/languages/01,vesc,languages,vie,vesc_page,README: trained and evaluated on a Vietnamese speech emotion dataset,2026-10-14,claude,current,
+vesc/license_spdx/01,vesc,license_spdx,none_stated,vesc_page,no license file (GitHub API) and the README mentions no license,2026-11-01,claude,current,
 vesc/name/01,vesc,name,VESC,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by vesc/name/02
 vesc/name/02,vesc,name,VESC,vesc_paper,title of the source contains the name,2026-11-01,claude,current,
 vesus/access_method/01,vesus,access_method,request_form_or_email,vesus_page,Release: fill out this form; a download link is provided afterwards,2026-10-13,claude,current,
