@@ -83,7 +83,7 @@ Every value of the columns that take evidence (see `evidence=yes` in `schema/col
 - **`checked_on` and `checked_by`.** Every row has the date checked and who checked: `claude` (AI investigation) or `user` (the project maintainer opened the source). Rows checked by `user` are in the git history of pull requests named `verify/...`.
 - **`locator`** marks the place in the source (25 words at most). For a readme it starts with `commit <12 characters>; <heading>`.
 - Write nothing the sources do not say. Never guess URLs or titles.
-- Free-text columns (`notes`, `license_note`, `language_note`, `source_rights_note`) have no evidence rows: each statement names its source in the text, for example `[aesdd_page]`. A fact in free text that no source states does not belong there.
+- Free-text columns (`notes`, `license_note`, `language_note`, `source_rights_note`) have no evidence rows: each statement names its source in the text, for example `[aesdd_page]`; the validator requires a valid tag on every sentence. A fact in free text that no source states does not belong there.
 
 ## Validation and updates
 
