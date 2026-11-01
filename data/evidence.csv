@@ -705,6 +705,7 @@ cnev/languages/01,cnev,languages,zxx,cnev_paper,title: a corpus of Chinese nonve
 cnev/name/01,cnev,name,CNEV,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by cnev/name/02
 cnev/name/02,cnev,name,CNEV,cnev_paper,title of the source contains the name,2026-11-01,claude,current,
 cnev/vocal_content/01,cnev,vocal_content,nonverbal,cnev_paper,title: nonverbal emotional vocalizations,2026-10-14,claude,current,
+codaco_german/access_method/01,codaco_german,access_method,direct_download,codaco_german_card,"Hugging Face dataset repository, public and not gated (Hugging Face API, checked 2026-11-02)",2026-11-02,claude,current,
 codaco_german/access_observed/01,codaco_german,access_observed,unavailable,,,2026-10-14,claude,provisional,Provisional: carried over from raw_audio_available
 codaco_german/languages/01,codaco_german,languages,deu,,§3: german-emotional-speech,2026-10-12,claude,superseded,superseded by codaco_german/languages/02; Former source type: project_doc
 codaco_german/languages/02,codaco_german,languages,deu,codaco_german_card,dataset name german-emotional-speech,2026-10-14,claude,current,No language tag on Hugging Face
@@ -1322,6 +1323,7 @@ emouerj/name/02,emouerj,name,emoUERJ,emouerj_page,title of the source contains t
 emouerj/speech_production/01,emouerj,speech_production,acted,emouerj_page,eight actors ... record audios in four emotions target,2026-10-24,claude,current,
 emouerj/spoken_text_design/01,emouerj,spoken_text_design,unknown,emouerj_page,actors were free to choose the phrases (from 10 sentences) for each emotion,2026-10-24,claude,current,Which file holds which sentence is not distributed
 emouerj/vocal_content/01,emouerj,vocal_content,speech,emouerj_page,phrases recorded by actors,2026-10-14,claude,current,
+emouerj_sed/access_method/01,emouerj_sed,access_method,direct_download,emouerj_sed_card,"Hugging Face dataset repository, public and not gated (Hugging Face API, checked 2026-11-02)",2026-11-02,claude,current,
 emouerj_sed/languages/01,emouerj_sed,languages,por,emouerj_sed_card,HF tag language:pt,2026-10-14,claude,current,
 emouerj_sed/license_spdx/01,emouerj_sed,license_spdx,Apache-2.0,emouerj_sed_card,card: license: apache-2.0,2026-10-14,claude,current,The original emoUERJ is CC BY 4.0
 emouerj_sed/name/01,emouerj_sed,name,emouerj-sed,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by emouerj_sed/name/02
@@ -2448,6 +2450,7 @@ mead/n_speakers_reported/02,mead,n_speakers_reported,60,mead_page,a talking-face
 mead/name/01,mead,name,MEAD,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mead/name/02
 mead/name/02,mead,name,MEAD,mead_page,title of the source contains the name,2026-11-01,claude,current,
 mead/speech_production/01,mead,speech_production,acted,mead_page,a talking-face video corpus featuring 60 actors and actresses talking with 8 different emotions at 3 different intensity levels,2026-10-31,claude,current,
+meghana007_tamil/access_method/01,meghana007_tamil,access_method,direct_download,meghana007_tamil_card,"Hugging Face dataset repository, public and not gated (Hugging Face API, checked 2026-11-02)",2026-11-02,claude,current,
 meghana007_tamil/languages/01,meghana007_tamil,languages,tam,,,2026-10-12,claude,provisional,Provisional:
 meghana007_tamil/license_spdx/01,meghana007_tamil,license_spdx,none_stated,,,2026-10-14,claude,provisional,Provisional:
 meghana007_tamil/n_files_release/01,meghana007_tamil,n_files_release,195,,,2026-10-14,claude,provisional,Provisional:
@@ -3585,6 +3588,7 @@ thaiser/speech_production/01,thaiser,speech_production,acted,thaiser_paper,"prof
 thaiser/speech_production/02,thaiser,speech_production,acted;improvised,thaiser_page,Each recording is separated into two sessions: Script Session and Improvisation Session,2026-11-01,claude,current,
 thaiser/spoken_text_design/01,thaiser,spoken_text_design,parallel;unscripted,,,2026-10-28,claude,provisional,Provisional:
 thaiser/vocal_content/01,thaiser,vocal_content,speech,thaiser_page,dataset described as speech recordings,2026-10-11,claude,current,
+thanushs25_tamil/access_method/01,thanushs25_tamil,access_method,direct_download,thanushs25_tamil_card,"Hugging Face dataset repository, public and not gated (Hugging Face API, checked 2026-11-02)",2026-11-02,claude,current,
 thanushs25_tamil/access_observed/01,thanushs25_tamil,access_observed,obtained,thanushs25_tamil_readme,commit 906c09addc96; Access,2026-11-01,claude,current,
 thanushs25_tamil/emotion_categories.annotator/01,thanushs25_tamil,emotion_categories.annotator,unknown,thanushs25_tamil_card,the card does not say how the labels were made,2026-10-26,claude,current,
 thanushs25_tamil/emotion_categories.label_basis/01,thanushs25_tamil,emotion_categories.label_basis,unknown,thanushs25_tamil_card,"the card does not say whether the labels are acted, perceived or inferred from scenes",2026-10-26,claude,current,
@@ -4076,6 +4080,7 @@ yue_emo_speech/material_origin/01,yue_emo_speech,material_origin,multiple,yue_em
 yue_emo_speech/n_files_reported/01,yue_emo_speech,n_files_reported,726579,yue_emo_speech_card,"card metadata: train split 726,579 examples, 72 GB download",2026-10-28,claude,current,
 yue_emo_speech/name/01,yue_emo_speech,name,Cantonese Emotional Speech (hon9kon9ize),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 yue_emo_speech/vocal_content/01,yue_emo_speech,vocal_content,speech,yue_emo_speech_card,Cantonese speech with transcriptions,2026-10-14,claude,current,
+zamai_pashto/access_method/01,zamai_pashto,access_method,direct_download,zamai_pashto_card,"Hugging Face dataset repository, public and not gated (Hugging Face API, checked 2026-11-02)",2026-11-02,claude,current,
 zamai_pashto/access_observed/01,zamai_pashto,access_observed,unavailable,,,2026-10-14,claude,provisional,Provisional: carried over from raw_audio_available
 zamai_pashto/languages/01,zamai_pashto,languages,pus,,§3: ZamAI Pashto,2026-10-12,claude,superseded,superseded by zamai_pashto/languages/02; Former source type: project_doc
 zamai_pashto/languages/02,zamai_pashto,languages,pus;fas;eng,zamai_pashto_card,"HF tags language:ps, fa, en",2026-10-14,claude,current,
