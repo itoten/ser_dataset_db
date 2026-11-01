@@ -1,4 +1,4 @@
-"""Generate views/datasets_wide.csv, views/discrepancies.csv and views/source_rights_check.csv from data/.
+"""Generate views/datasets_wide.csv and views/discrepancies.csv from data/.
 
 Usage: python3 tools/views.py      (rewrite both files)
 validate.py regenerates them in memory and fails if the files on disk differ.
@@ -9,21 +9,10 @@ import sys
 import csvio
 import db as dbmod
 
-SHEET_COLS = ["Verified", "Dataset", "License", "Language", "Source", "Total Hours", "Utterances", "Speakers",
-              "Discrete Emotions", "Dimensional Emotions", "Other Annotations", "Source URL", "Notes", "Paper URL",
-              "ESPnet Implemented"]
-EXTRA_COLS = ["dataset_id", "status", "reasons", "access_method", "raw_audio_available", "recipe",
-              "n_total_recipe", "hours_total_recipe", "n_files_release_measured", "n_speakers_measured",
-              "common7_covered", "common7_missing", "extra_labels", "label_source", "label_verification", "speech_production", "label_basis", "label_basis_note", "spoken_text_design", "lexical_confound", "lexical_confound_note", "paralinguistic_signal", "paralinguistic_signal_note", "human_accuracy", "human_accuracy_note", "source_rights", "source_rights_note",
-              "annotation_items",
-              "benchmarks", "status_note", "notes",
-              "license_checked_on", "license_source_type", "license_checked_by", "access_checked_on",
-              "oldest_checked_on", "latest_checked_on"]
+EXTRA_COLS = ["annotation_items", "license_checked_on", "license_source_type", "license_checked_by",
+              "access_checked_on", "oldest_checked_on", "latest_checked_on"]
 DISC_COLS = ["dataset_id", "field", "kind", "datasets_value", "datasets_source_type", "other_value",
              "other_source_type", "other_source_ref", "note"]
-COMMON7 = ["angry", "disgust", "fear", "happy", "neutral", "sad", "surprise"]
-RIGHTS_COLS = ["dataset_id", "name", "espnet_status", "license_spdx", "source_rights", "source_rights_note"]
-RIGHTS_NEEDS_CHECK = ("asserted", "unaddressed", "unknown")
 DISC_KEYS = ("dataset_id", "field", "kind", "other_value", "other_source_ref")
 
 
@@ -32,9 +21,6 @@ def semi(v):
 
 
 def wide(db):
-    recipes = db["recipes"][1]
-    labels = db["recipe_labels"][1]
-    members = db["benchmark_membership"][1]
     items = {}
     for a in db["annotations"][1]:
         items.setdefault(a["dataset_id"], []).append(a["item"])
@@ -48,45 +34,13 @@ def wide(db):
         ce = canon.get(i, {})
         lic, acc = ce.get("license_spdx"), ce.get("access_method")
         dates = sorted(e["checked_on"] for e in ce.values())
-        recs = sorted((r for r in recipes if r["dataset_id"] == i), key=lambda r: r["recipe"])
-        names = [r["recipe"] for r in recs]
-        covered, extra = set(), set()
-        for lab in labels:
-            if lab["recipe"] in names and lab["mapping_type"] != "dropped_by_recipe":
-                if lab["common7"] in COMMON7:
-                    covered.add(lab["common7"])
-                else:
-                    extra.add(lab["label"])
-        bench = sorted({f"{m['benchmark_recipe']}:{m['role']}" for m in members if m["member_recipe"] in names})
-        main = recs[0] if recs else None
-        row = {
-            "Verified": d["sheet_verified"], "Dataset": d["name"], "License": d["license_spdx"],
-            "Language": semi(d["languages"]), "Source": d["recording_context"], "Total Hours": d["hours_reported"],
-            "Utterances": d["n_utt_reported"], "Speakers": d["n_speakers_reported"],
-            "Discrete Emotions": semi(d["labels_discrete_reported"]), "Dimensional Emotions": semi(d["dimensional_attributes"]),
-            "Other Annotations": d["annotations_other"], "Source URL": d["source_url"], "Notes": d["sheet_notes"],
-            "Paper URL": d["paper_url"], "ESPnet Implemented": "TRUE" if d["espnet_status"] == "implemented" else "FALSE",
-            "dataset_id": i, "status": d["espnet_status"], "reasons": d["status_reason_codes"],
-            "access_method": d["access_method"],
-            "raw_audio_available": d["raw_audio_available"], "recipe": ";".join(names),
-            "n_total_recipe": main["n_total"] if main else "", "hours_total_recipe": main["hours_total"] if main else "",
-            "n_files_release_measured": d["n_files_release_measured"], "n_speakers_measured": d["n_speakers_measured"],
-            "common7_covered": f"{len(covered)}/7" if names else "",
-            "common7_missing": ";".join(c for c in COMMON7 if c not in covered) if names else "",
-            "extra_labels": ";".join(sorted(extra)), "label_source": d["label_source"],
-            "label_verification": d["label_verification"], "speech_production": d["speech_production"],
-            "label_basis": d["label_basis"], "label_basis_note": d["label_basis_note"],
-            "spoken_text_design": d["spoken_text_design"], "lexical_confound": d["lexical_confound"],
-            "lexical_confound_note": d["lexical_confound_note"],
-            "paralinguistic_signal": d["paralinguistic_signal"], "paralinguistic_signal_note": d["paralinguistic_signal_note"],
-            "human_accuracy": d["human_accuracy"], "human_accuracy_note": d["human_accuracy_note"],
-            "source_rights": d["source_rights"], "source_rights_note": d["source_rights_note"], "annotation_items": ";".join(sorted(items.get(i, []))),
-            "benchmarks": ";".join(bench),
-            "status_note": d["status_note"], "notes": d["notes"],
+        row = dict(d)
+        row.update({
+            "annotation_items": ";".join(sorted(items.get(i, []))),
             "license_checked_on": lic["checked_on"] if lic else "", "license_source_type": lic["source_type"] if lic else "",
             "license_checked_by": lic["checked_by"] if lic else "", "access_checked_on": acc["checked_on"] if acc else "",
             "oldest_checked_on": dates[0] if dates else "", "latest_checked_on": dates[-1] if dates else "",
-        }
+        })
         out.append(row)
     return out
 
@@ -102,14 +56,11 @@ def discrepancies(db):
         c = canon.get((e["dataset_id"], e["field"]))
         if c is None:
             continue
-        if e["source_ref"] == "tools/import_sheet.py" and e["field"] in ("espnet_status", "status_reason_codes"):
-            continue
         if e["value"] in (c["value"], "unknown"):
             continue
         out.append({"dataset_id": e["dataset_id"], "field": e["field"], "kind": e["status"],
                     "datasets_value": c["value"], "datasets_source_type": c["source_type"], "other_value": e["value"],
                     "other_source_type": e["source_type"], "other_source_ref": e["source_ref"], "note": e["note"]})
-    recipes = {r["dataset_id"]: r for r in db["recipes"][1] if r["recipe_kind"] == "single_corpus"}
     pairs = [("n_speakers_reported", "n_speakers_measured", "reported_vs_release_measured"),
              ("n_utt_reported", "n_files_release_measured", "reported_vs_release_measured")]
     for i, d in ds.items():
@@ -118,27 +69,14 @@ def discrepancies(db):
                 out.append({"dataset_id": i, "field": f"{a} vs {b}", "kind": kind, "datasets_value": d[a],
                             "datasets_source_type": "see evidence", "other_value": d[b], "other_source_type": "measured",
                             "other_source_ref": b, "note": ""})
-        r = recipes.get(i)
-        if r and d["n_utt_reported"].isdigit() and r["n_total"].isdigit() and d["n_utt_reported"] != r["n_total"]:
-            out.append({"dataset_id": i, "field": "n_utt_reported vs recipe n_total", "kind": "reported_vs_recipe_measured",
-                        "datasets_value": d["n_utt_reported"], "datasets_source_type": "see evidence",
-                        "other_value": r["n_total"], "other_source_type": "measured",
-                        "other_source_ref": f"recipes.n_total ({r['recipe']})",
-                        "note": "a mismatch is normal: recipes filter by length and label"})
     return out
-
-
-def rights_check(db):
-    """Datasets whose underlying material needs a rights check (source_rights asserted / unaddressed / unknown)."""
-    return [{c: d[c] for c in RIGHTS_COLS} for d in db["datasets"][1] if d["source_rights"] in RIGHTS_NEEDS_CHECK]
 
 
 def build(db):
     """Return {relative path: canonical file text}."""
     return {
-        "views/datasets_wide.csv": csvio.format_rows(SHEET_COLS + EXTRA_COLS, wide(db), ("dataset_id",)),
+        "views/datasets_wide.csv": csvio.format_rows(db["datasets"][0] + EXTRA_COLS, wide(db), ("dataset_id",)),
         "views/discrepancies.csv": csvio.format_rows(DISC_COLS, discrepancies(db), DISC_KEYS),
-        "views/source_rights_check.csv": csvio.format_rows(RIGHTS_COLS, rights_check(db), ("dataset_id",)),
     }
 
 

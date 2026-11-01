@@ -1,8 +1,7 @@
-"""Check the database for format, type, key, evidence and egs3 consistency.
+"""Check the database for format, type, key and evidence consistency.
 
-Usage: python3 tools/validate.py [--offline]
+Usage: python3 tools/validate.py
 
---offline skips every check that reads the espnet fork's git branch.
 Exit status is 1 when any error is found; warnings do not fail the run.
 """
 
@@ -148,7 +147,6 @@ def check_keys(tables, db):
                 err(f"{name}: duplicate key {k}")
             seen.add(k)
     ds = {r["dataset_id"] for r in db["datasets"][1]}
-    recipes = {r["recipe"] for r in db["recipes"][1]}
     for r in db["evidence"][1]:
         if r["dataset_id"] not in ds:
             err(f"evidence {r['evidence_id']}: unknown dataset_id")
@@ -158,12 +156,9 @@ def check_keys(tables, db):
     for r in db["aliases"][1]:
         if r["dataset_id"] not in ds:
             err(f"aliases {r['alias']}: unknown dataset_id {r['dataset_id']}")
-    implemented = {r["dataset_id"] for r in db["datasets"][1] if r["espnet_status"] == "implemented"}
     for r in db["annotations"][1]:
         if r["dataset_id"] not in ds:
             err(f"annotations {r['dataset_id']}/{r['item']}: unknown dataset_id")
-        elif r["used_in_recipe"] == "true" and r["dataset_id"] not in implemented:
-            err(f"annotations {r['dataset_id']}/{r['item']}: used_in_recipe is true but the dataset is not implemented")
     for r in db["datasets"][1]:
         if r["label_verification"] and not r["label_source"]:
             err(f"datasets {r['dataset_id']}: label_verification is set but label_source is empty")
@@ -171,16 +166,6 @@ def check_keys(tables, db):
         for c in ("dataset_id", "other_dataset_id"):
             if r[c] not in ds:
                 err(f"relations {r['dataset_id']}/{r['relation']}/{r['other_dataset_id']}: unknown {c}")
-    for r in db["recipes"][1]:
-        if r["dataset_id"] != "NA" and r["dataset_id"] not in ds:
-            err(f"recipes {r['recipe']}: unknown dataset_id {r['dataset_id']}")
-    for r in db["recipe_labels"][1]:
-        if r["recipe"] not in recipes:
-            err(f"recipe_labels {r['recipe']}/{r['label']}: unknown recipe")
-    for r in db["benchmark_membership"][1]:
-        for c in ("benchmark_recipe", "member_recipe"):
-            if r[c] not in recipes:
-                err(f"benchmark_membership: unknown recipe {r[c]} in {c}")
     owners = {}
     names = []
     for r in db["datasets"][1]:
@@ -216,10 +201,7 @@ def check_evidence(cols, db):
         d = row["dataset_id"]
         for field, kind in ev_cols.items():
             v = row[field]
-            if kind == "status" and row["espnet_status"] == "implemented":
-                needed = False
-            else:
-                needed = v not in ("", "NA")
+            needed = v not in ("", "NA")
             rows = ev.get((d, field), [])
             canon = [r for r in rows if r["is_canonical"] == "true"]
             if not needed:
@@ -241,99 +223,6 @@ def check_evidence(cols, db):
                 err(f"evidence {d}/{field}: canonical is conflicting but no other conflicting row exists")
 
 
-# ---- 5/6. egs3 consistency ------------------------------------------------
-
-
-def check_egs3(cols, db):
-    import egs3
-
-    branch = set(egs3.recipes())
-    rec = {r["recipe"]: r for r in db["recipes"][1]}
-    if set(rec) - branch:
-        err(f"recipes.csv has recipes that are not on {egs3.BRANCH}: {sorted(set(rec) - branch)}")
-    if branch - set(rec):
-        warn(f"{len(branch - set(rec))} recipes on {egs3.BRANCH} are not registered yet (registered one by one after review): {sorted(branch - set(rec))}")
-    ds = {r["dataset_id"]: r for r in db["datasets"][1]}
-    implemented = {d for d, r in ds.items() if r["espnet_status"] == "implemented"}
-    for d in sorted(implemented):
-        if d not in rec:
-            err(f"datasets {d}: implemented but recipes.csv has no recipe {d}")
-    for name, r in rec.items():
-        if r["recipe_kind"] == "multi_corpus":
-            if r["dataset_id"] != "NA":
-                err(f"recipes {name}: multi_corpus recipe must have dataset_id NA")
-        elif r["dataset_id"] not in implemented:
-            err(f"recipes {name}: dataset_id {r['dataset_id']} is not an implemented dataset")
-    for row in db["datasets"][1]:
-        implemented_row = row["espnet_status"] == "implemented"
-        if implemented_row != (row["status_reason_codes"] == "NA"):
-            err(f"datasets {row['dataset_id']}: status_reason_codes must be NA exactly when implemented")
-    for name in sorted(set(rec) & branch):
-        want = egs3.derive(name)
-        for col in egs3.SYNC_COLUMNS:
-            if rec[name][col] != want[col]:
-                err(f"recipes {name} {col}: csv {rec[name][col]!r} != egs3 {want[col]!r} (run tools/sync.py)")
-    labels = {}
-    for r in db["recipe_labels"][1]:
-        if r["mapping_type"] != "dropped_by_recipe":
-            labels.setdefault(r["recipe"], set()).add(r["label"])
-    for name, r in rec.items():
-        if name in labels and r["num_classes"] not in ("", "NA") and int(r["num_classes"]) != len(labels[name]):
-            err(f"recipes {name}: num_classes {r['num_classes']} != {len(labels[name])} labels in recipe_labels")
-        tl = r["token_list"]
-        if name in labels and tl not in ("", "NA") and set(tl.split(";")) != labels[name]:
-            err(f"recipes {name}: token_list differs from recipe_labels")
-
-
-def check_measurements(db):
-    """recipes.csv measured columns and recipe_labels counts must match measurements/*.json."""
-    import sync
-
-    rec = {r["recipe"]: r for r in db["recipes"][1]}
-    for name, r in rec.items():
-        for col, want in sync.measured(name).items():
-            if r[col] != want:
-                err(f"recipes {name} {col}: csv {r[col]!r} != measurements {want!r} (run tools/sync.py)")
-    by_recipe = {}
-    for r in db["recipe_labels"][1]:
-        by_recipe.setdefault(r["recipe"], []).append(r)
-    for name, r in rec.items():
-        if r["recipe_kind"] == "multi_corpus":
-            continue
-        rows = by_recipe.get(name)
-        if not rows:
-            err(f"recipes {name}: no recipe_labels rows")
-            continue
-        for sp in ("train", "valid", "test", "test2"):
-            vals = [x["n_" + sp] for x in rows if x["mapping_type"] != "dropped_by_recipe"]
-            if r["n_" + sp] in ("NA", "") or any(v in ("NA", "") for v in vals):
-                continue
-            if sum(int(v) for v in vals) != int(r["n_" + sp]):
-                err(f"recipe_labels {name}: n_{sp} sums to {sum(int(v) for v in vals)} != recipes.n_{sp} {r['n_' + sp]}")
-        for x in rows:
-            parts = [x["n_" + sp] for sp in ("train", "valid", "test", "test2") if x["n_" + sp] not in ("NA", "")]
-            if x["n_total"] not in ("NA", "") and sum(int(v) for v in parts) != int(x["n_total"]):
-                err(f"recipe_labels {name}/{x['label']}: n_total != sum of splits")
-
-
-def check_membership(db):
-    """benchmark_membership must equal what the multi-corpus configs imply."""
-    import egs3
-    import sync
-
-    want = [r for n in egs3.recipes() if egs3.derive(n)["recipe_kind"] == "multi_corpus" for r in sync.membership(n)]
-    key = lambda r: (r["benchmark_recipe"], r["member_recipe"], r["role"], r["splits_used"])
-    have = db["benchmark_membership"][1]
-    if sorted(map(key, have)) != sorted(map(key, want)):
-        err("benchmark_membership differs from the multi-corpus configs (run tools/sync.py)")
-        return
-    for h in have:
-        w = next(x for x in want if key(x) == key(h))
-        for c in ("eval_set_names", "set_name", "source_ref"):
-            if h[c] != w[c]:
-                err(f"benchmark_membership {key(h)} {c}: csv {h[c]!r} != config {w[c]!r}")
-
-
 # ---- 9. paths --------------------------------------------------------------
 
 
@@ -346,11 +235,8 @@ def check_paths(cols, tables, db):
                 v = row[c["column"]]
                 if v in ("", "NA", "unknown", "none"):
                     continue
-                if c["column"] == "recipe_path":
-                    continue
-                base = csvio.ROOT.parent if c["column"] == "report_path" else csvio.ROOT
-                if not (base / v).exists():
-                    err(f"{name} {c['column']}={v}: path not found (relative to {base})")
+                if not (csvio.ROOT / v).exists():
+                    err(f"{name} {c['column']}={v}: path not found (relative to {csvio.ROOT})")
 
 
 LOCAL_PATH = re.compile(r"(?<![\w.])(/home/\w+/|/Users/\w+/|/mnt/\w+|[~]/|[A-Za-z]:\\Users\\)")
@@ -379,7 +265,6 @@ def check_views(db):
 
 
 def main(argv):
-    offline = "--offline" in argv
     tables = csvio.tables()
     cols = csvio.columns()
     enums = csvio.enums()
@@ -391,12 +276,8 @@ def main(argv):
     check_keys(tables, db)
     check_evidence(cols, db)
     check_paths(cols, tables, db)
-    check_measurements(db)
     check_views(db)
     check_no_local_paths()
-    if not offline:
-        check_egs3(cols, db)
-        check_membership(db)
     report()
 
 

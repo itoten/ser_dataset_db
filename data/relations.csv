@@ -1,6 +1,5 @@
 dataset_id,relation,other_dataset_id,source_ref,note
 capspeech_agentdb,subset_of,capspeech,https://arxiv.org/abs/2506.02863,One of CapSpeech's new recordings
-chsims2,version_of,chsims,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,Based on the spreadsheet names (CH-SIMS v2.0 and CH-SIMS). Whether the content is identical is unverified
 eekk,possibly_same_as,eesc,https://metashare.ut.ee/repository/browse/estonian-emotional-speech-corpus/f5e5fc91a0d311eebb4773db10791bcf07ff90a82bf541dbbb9ecf816da202fe/,"Judged identical. The META-SHARE record (Estonian name Eesti emotsionaalse kõne korpus = EEKK) points to figshare 25249744 (Estonian Emotional Speech Corpus), and sentence count, speakers and labels match"
 emonetvoice,possibly_same_as,laions_got_talent,https://huggingface.co/datasets/t1a5anu-anon/emonet-voice-foundation,The card of EmoNet-Voice Big (foundation) points to the extended LAION's Got Talent as the main data. Whether they are the same is unverified
 emosec,contains,esd,https://zenodo.org/records/10948423,Captions for ESD audio
@@ -16,7 +15,6 @@ fcaps,contains,paraspeechcaps,https://arxiv.org/abs/2601.03065,FCaps-PSCBase use
 hume_reaction,distinct_from,humevb,https://arxiv.org/abs/2207.05691,Both from Hume AI. Hume-Reaction is video and audio of reactions to stimuli; Hume-VB is non-verbal vocalisations
 iesc,shares_sentences_with,ravdess,https://doi.org/10.1007/s11042-023-14577-w,Both datasets use the two sentences 'Kids are talking by the door' and 'Dogs are sitting by the door'; the IESC paper says they are taken from RAVDESS (Section 4.1)
 iitkgp_sehsc,distinct_from,iitkgp_sesc,https://www.iieta.org/journals/ts/paper/10.18280/ts.380631,Telugu and Hindi versions by the same lab
-interface,distinct_from,enterface05,sheet_import/2026-10-12_ser_database_SER_Datasets.csv,"The spreadsheet Notes say ""Distinct from eNTERFACE'05"""
 javanese_ser_2black0,possibly_same_as,java_sed,https://github.com/2black0/Sound-Emotion-Recognition-Javanese-Speech-Dataset,"Both are Javanese with 6 emotions (same labels), and 10 speakers x 4 sentences x 6 emotions x 7 repetitions = 1,680 matches KuralHub's count for Java-SED. KuralHub says 20 speakers"
 kazakh_russian_emotion,distinct_from,kazemotts,https://github.com/aaivu/KuralHub/blob/main/datasets/Kazakh/Kazakh-Russian-Emotion-Corpus.md,Both Kazakh. KazEmoTTS is a separate TTS corpus
 kesdy18,distinct_from,kemdy19,https://github.com/aaivu/KuralHub/blob/main/datasets/Korean/KESDy18.md,"Different corpora from the same ETRI (KESDy18 is 2018 emotional speech, KEMDy19 is 2019 multimodal)"

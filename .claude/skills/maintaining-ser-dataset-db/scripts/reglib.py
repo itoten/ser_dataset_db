@@ -1,5 +1,5 @@
-"""Stage and save the DB changes for one dataset: evidence rows, cell values, recipe rows,
-recipe labels, annotations, aliases and relations.
+"""Stage and save the DB changes for one dataset: evidence rows, cell values,
+annotations, aliases and relations.
 
 Import it from a short per-dataset script and run that script once with the system Python
 (the one that runs tools/validate.py). Nothing is written until save(); save() rewrites the
@@ -9,15 +9,14 @@ CSVs through tools/db.py, which keeps the repository's sort order and formatting
     sys.path.insert(0, "<skill dir>/scripts")
     from reglib import Reg
 
-    R = Reg("mydataset", today="2026-01-31", report="reports/2026-01-31_mydataset_db_update.md")
-    R.ev("espnet_status", "implemented", "measured", "data/recipes.csv", "recipe directory exists")
-    R.set(status_note="...", status_checked_on=R.today)
+    R = Reg("mydataset", today="2026-01-31")
+    R.ev("license_spdx", "CC-BY-4.0", "primary", "https://example.org/page", "license field")
+    R.set(notes="...")
     R.save()
 
 See references/registration-example.md for a complete example.
 """
 
-import json
 import sys
 from pathlib import Path
 
@@ -33,8 +32,6 @@ def _find_root():
 ROOT = _find_root()
 sys.path.insert(0, str(ROOT / "tools"))
 import db as dbmod  # noqa: E402
-import egs3  # noqa: E402
-import sync  # noqa: E402
 
 
 class Reg:
@@ -94,70 +91,20 @@ class Reg:
     # cells without evidence ---------------------------------------------------------------
 
     def set(self, **cells):
-        """Cells that take no evidence row: status_note, notes, license_note, source_url, ..."""
+        """Cells that take no evidence row: notes, license_note, language_note, ..."""
         unknown = [c for c in cells if c not in self.row]
         if unknown:
             raise SystemExit(f"set: no such datasets column(s): {unknown}")
         self.row.update(cells)
 
-    # recipe tables (implemented datasets only) --------------------------------------------
-
-    def recipe(self, **manual_columns):
-        """Add the recipes.csv row. Automatic columns come from the recipe branch and measurements/."""
-        rh, rr = self.db["recipes"]
-        if any(r["recipe"] == self.D for r in rr):
-            raise SystemExit(f"recipe: recipes.csv already has {self.D!r}")
-        if not (ROOT / "measurements" / f"{self.D}.json").is_file():
-            raise SystemExit(f"recipe: measurements/{self.D}.json is missing; run tools/measure.py {self.D} first")
-        r = {c: "" for c in rh}
-        derived = egs3.derive(self.D)
-        for c in ["recipe"] + egs3.SYNC_COLUMNS:
-            r[c] = derived[c]
-        r.update(sync.measured(self.D))
-        bad = [c for c in manual_columns if c not in rh]
-        if bad:
-            raise SystemExit(f"recipe: no such recipes column(s): {bad}")
-        r.update(dataset_id=self.D, **manual_columns)
-        rr.append(r)
-
-    def recipe_update(self, **manual_columns):
-        """Change hand-written columns of the existing recipes.csv row of this dataset."""
-        rh, rr = self.db["recipes"]
-        rows = [r for r in rr if r["recipe"] == self.D]
-        bad = [c for c in manual_columns if c not in rh]
-        if not rows or bad:
-            raise SystemExit(f"recipe_update: no recipes row {self.D!r}" if not rows else f"unknown column(s) {bad}")
-        rows[0].update(manual_columns)
-
-    def labels(self, spec, label_type="categorical"):
-        """spec maps each recipe label to (source_labels, common7, mapping_type).
-
-        Keys must be the recipe's labels as listed in measurements/<id>.json token_list
-        (e.g. "fear"), not the corpus's own spelling (e.g. "fearful").
-        """
-        m = json.loads((ROOT / "measurements" / f"{self.D}.json").read_text(encoding="utf-8"))
-        tokens = m["token_list"]
-        missing = [t for t in tokens if t not in spec]
-        extra = [t for t in spec if t not in tokens]
-        if missing or extra:
-            raise SystemExit(f"labels: token_list is {tokens}; missing {missing}, unknown {extra}")
-        lh, lr = self.db["recipe_labels"]
-        for t in tokens:
-            c = [m["splits"][s]["labels"].get(t, 0) for s in ("train", "valid", "test")]
-            src, c7, mt = spec[t]
-            lr.append({**{k: "" for k in lh}, "recipe": self.D, "label": t, "source_labels": src,
-                       "label_type": label_type, "common7": c7, "mapping_type": mt,
-                       "n_train": str(c[0]), "n_valid": str(c[1]), "n_test": str(c[2]),
-                       "n_test2": "NA", "n_total": str(sum(c))})
-
     # other tables -------------------------------------------------------------------------
 
     def ann(self, rows, by="claude"):
-        """rows: (item, description, annotator, unit, used_in_recipe, source_type, source_ref, locator, note)."""
+        """rows: (item, description, annotator, unit, source_type, source_ref, locator, note)."""
         ah, ar = self.db["annotations"]
-        for item, desc, annotator, unit, used, st, ref, loc, note in rows:
+        for item, desc, annotator, unit, st, ref, loc, note in rows:
             ar.append({**{k: "" for k in ah}, "dataset_id": self.D, "item": item, "description": desc,
-                       "annotator": annotator, "unit": unit, "used_in_recipe": used, "source_type": st,
+                       "annotator": annotator, "unit": unit, "source_type": st,
                        "source_ref": ref, "locator": loc, "checked_on": self.today, "checked_by": by,
                        "note": note})
 

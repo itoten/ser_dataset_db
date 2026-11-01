@@ -2,12 +2,6 @@ table,column,type,nulls,evidence,description
 datasets,dataset_id,slug,-,no,Stable ID. For implemented datasets it equals the egs3 recipe name. Never changed once committed
 datasets,name,text,-,no,Name as written in the primary source (the spreadsheet name for rows from the spreadsheet)
 datasets,full_title,text,empty,no,Full title
-datasets,espnet_status,enum:espnet_status,-,status,implemented / candidate / needs_decision / deferred / excluded
-datasets,status_reason_codes,enumlist:reason_code,NA,status,Reason codes for statuses other than implemented (;-separated). NA for implemented
-datasets,status_note,text,empty,no,Notes on the status
-datasets,status_checked_on,date,empty,no,Date the status was last checked
-datasets,in_sheet,bool,-,no,Whether the row exists in the original spreadsheet of 2026-10-12
-datasets,sheet_verified,enum:sheet_verified,-,no,"The spreadsheet's Verified column as is. It means ""whether someone checked the information by hand"". Not used for decisions"
 datasets,languages,isolist,empty;unknown,yes,"ISO 639-3 codes (;-separated). mul = multilingual with unknown breakdown, zxx = no linguistic content"
 datasets,language_note,text,empty,no,Notes on varieties and how the language value was decided
 datasets,recording_context,enum:recording_context,empty,yes,Recording or collection setting
@@ -37,16 +31,8 @@ datasets,speech_production,enumlist:speech_production,empty;unknown,yes,"How the
 datasets,label_basis,enumlist:label_basis,empty;unknown;none,yes,"How the main labels were made (;-separated): intended (emotion the speaker was told to portray) / perceived (emotion listeners perceived) / self_reported (the speaker's own report) / context_inferred (from the scene, script or meaning of the words) / automatic (a model's estimate). none = no emotion labels"
 datasets,label_basis_note,text,empty,no,"Details of how labels were made: number of raters, what raters saw or heard (audio only / with video / transcript), how ratings were combined (majority, mean), which label set is the main one, listening-test details, etc."
 datasets,spoken_text_design,enumlist:spoken_text_design,empty;unknown,yes,"How the spoken text relates to the emotion labels (;-separated when the data mixes designs): parallel (the same sentences in every emotion) / neutral_text (semantically neutral sentences) / emotion_specific_text (content matches the emotion) / unrelated_text (sentences assigned without regard to the emotion) / dialogue_script (lines of a film, drama or written dialogue) / unscripted (no script: conversations, broadcasts, improvisation)"
-datasets,lexical_confound,enum:lexical_confound,empty;unknown,yes,"How far the label can be guessed from the words alone, a shortcut a model may learn: full / strong / moderate / weak / possible / none. A rough flag that prompts checking the actual data, not a measurement"
-datasets,lexical_confound_note,text,empty,no,"What the lexical_confound value is based on (design described in a source, sentence-label counts, a text-only classifier) and its scope"
-datasets,paralinguistic_signal,enum:paralinguistic_signal,empty;unknown,yes,"How well the voice carries the labelled expression, judged by listening (the maintainer's listening or a listening test): clear / varies (clear for some speakers or classes, weak for others) / weak / doubtful (may carry no expression, e.g. a flat reading of lines). Empty = not judged"
-datasets,paralinguistic_signal_note,text,empty,no,"What was listened to and by whom (number of clips, speakers), and what was heard"
-datasets,human_accuracy,float,empty;unknown,yes,"Share (0-1) of human listeners' answers that recognise the intended (main) label, as reported or computed from distributed ratings: a reference level for what a model can be expected to reach. What counts as correct (single answer or majority, audio only or with video) is in human_accuracy_note"
-datasets,human_accuracy_note,text,empty,no,"Who rated (number of raters, ratings per clip), what they perceived (audio only or with video), how accuracy is defined, the chance level, and where the ratings are"
 datasets,source_rights,enum:source_rights,empty,yes,"Rights in the underlying audio, separate from license_spdx (which keeps the stated license): own / cleared / asserted / unaddressed / unknown. asserted, unaddressed and unknown mean the material needs a rights check. Empty = not examined"
 datasets,source_rights_note,text,empty,no,"What the sources say about the rights in the material (quote or paraphrase with the place) and what is missing (sources, per-item licenses, consent, non-commercial statement)"
-datasets,annotations_other,text,empty;none,no,The spreadsheet's Other Annotations (original text)
-datasets,sheet_notes,text,empty,no,The spreadsheet's Notes (original text; do not change)
 datasets,notes,text,empty,no,Our own notes
 datasets,last_updated_on,date,-,no,Date this row was last updated
 evidence,evidence_id,text,-,no,<dataset_id>/<field>/<2-digit sequence number>
@@ -71,75 +57,11 @@ relations,relation,enum:relation_type,-,no,version_of / subset_of / contains / d
 relations,other_dataset_id,slug,-,no,The other dataset_id
 relations,source_ref,text,empty,no,Source
 relations,note,text,empty,no,Notes
-recipes,recipe,slug,-,no,Directory name under egs3
-recipes,recipe_kind,enum:recipe_kind,-,no,single_corpus / multi_corpus
-recipes,system,text,-,no,espnet3 system name (currently cls)
-recipes,recipe_path,path,-,no,egs3/<recipe>/cls
-recipes,first_commit,text,-,no,Commit in which the config.yaml under cls first appeared on the branch (including the rename from the old name wavlmasp)
-recipes,first_commit_date,date,-,no,Date of that commit
-recipes,source_env_var,text,empty;NA,no,Environment variable pointing to the source audio
-recipes,output_env_var,text,empty;NA,no,Environment variable pointing to the output location
-recipes,config_urls,list,empty;none,no,URL written in dataset/config.yaml
-recipes,split_config,text,empty;NA,no,Split settings in dataset/config.yaml (JSON)
-recipes,num_classes,int,empty;NA,no,model.num_classes in training.yaml
-recipes,min_wav_duration,float,empty;NA,no,remove_long_short.min_wav_duration in training.yaml
-recipes,max_wav_duration,float,empty;NA,no,remove_long_short.max_wav_duration in training.yaml
-recipes,max_epochs,int,empty;NA,no,trainer.max_epochs in training.yaml
-recipes,token_list,list,empty;NA,no,token_list at the output location (excluding <unk>)
-recipes,n_train,int,empty;NA,no,Rows of manifest/train.tsv (measured)
-recipes,n_valid,int,empty;NA,no,Rows of manifest/valid.tsv (measured)
-recipes,n_test,int,empty;NA,no,Rows of manifest/test.tsv (measured)
-recipes,n_test2,int,empty;NA,no,Rows of manifest/test2.tsv (measured)
-recipes,n_train_filtered,int,empty;NA,no,Rows of manifest_filtered/train.tsv (measured)
-recipes,n_valid_filtered,int,empty;NA,no,Rows of manifest_filtered/valid.tsv (measured)
-recipes,n_total,int,empty;NA,no,Utterances over all splits (measured)
-recipes,hours_total,float,empty;NA,no,Total hours over all splits (measured)
-recipes,dur_min_sec,float,empty;NA,no,Shortest utterance in seconds (measured)
-recipes,dur_max_sec,float,empty;NA,no,Longest utterance in seconds (measured)
-recipes,dur_median_sec,float,empty;NA,no,Median utterance length (measured)
-recipes,audio_format,text,empty;NA,no,Counts per sample rate / channels / subtype (measured)
-recipes,measured_on,date,empty;NA,no,Date measured
-recipes,measurement_file,path,empty;NA,no,measurements/<recipe>.json
-recipes,dataset_id,slug,NA,no,Corresponding datasets row. NA for multi-corpus recipes
-recipes,report_path,path,empty,no,NN report
-recipes,report_no,int,empty;NA,no,NN report number
-recipes,added_batch,text,empty,no,When and in which batch it was added
-recipes,official_split_exists,bool,empty;unknown,no,Whether the corpus publishes an official split
-recipes,split_method,enum:split_method,empty;unknown;NA,no,How the recipe splits
-recipes,split_unit,text,empty;unknown;NA,no,"Unit of the split (speaker, sentence, etc.)"
-recipes,speaker_overlap,bool,empty;unknown;NA,no,Whether speakers overlap between splits
-recipes,recipe_exclusions_note,text,empty,no,Data the recipe excludes
-recipes,known_issues,text,empty,no,Known issues
-recipes,label_basis_used,enumlist:label_basis,empty;unknown;NA,no,How the labels the recipe actually uses were made (label_basis values). Distinguishes them when a dataset ships labels made in several ways
-recipes,baseline_status,enum:baseline_status,empty,no,Status of training and evaluation
-recipes,baseline_ref,text,empty,no,Where the results are
-recipes,notes,text,empty,no,Our own notes
-recipe_labels,recipe,slug,-,no,Foreign key to recipes
-recipe_labels,label,text,-,no,Label name in the recipe
-recipe_labels,source_labels,list,-,no,Original label names (;-separated)
-recipe_labels,common7,enum:common7,-,no,Which of the common 7 labels it corresponds to (none if none)
-recipe_labels,mapping_type,enum:mapping_type,-,no,Kind of label mapping
-recipe_labels,label_type,enum:label_type,empty,no,"Kind of label: categorical (categorical emotions, speaking styles, etc.) / polarity (sentiment) / intent / dimensional / other. Empty = not checked"
-recipe_labels,n_train,int,empty;NA,no,Count in train
-recipe_labels,n_valid,int,empty;NA,no,Count in valid
-recipe_labels,n_test,int,empty;NA,no,Count in test
-recipe_labels,n_test2,int,empty;NA,no,Count in test2
-recipe_labels,n_total,int,empty;NA,no,Count over all splits
-recipe_labels,note,text,empty,no,Notes
-benchmark_membership,benchmark_recipe,slug,-,no,Multi-corpus recipe
-benchmark_membership,member_recipe,slug,-,no,Member recipe
-benchmark_membership,role,enum:bench_role,-,no,train / eval
-benchmark_membership,splits_used,list,-,no,Splits used (;-separated)
-benchmark_membership,eval_set_names,list,empty;NA,no,Names of evaluation sets
-benchmark_membership,set_name,enum:set_name,-,no,Open License set / Non-Commercial set / NA
-benchmark_membership,source_ref,text,empty,no,Source
-benchmark_membership,note,text,empty,no,Notes
 annotations,dataset_id,slug,-,no,Foreign key to datasets
 annotations,item,slug,-,no,"Item name (lower-case letters and underscores, e.g. transcript, speaker_gender, dialogue_act)"
 annotations,description,text,-,no,Content (what is annotated and in what form)
 annotations,annotator,enum:label_source,empty;unknown,no,Annotator: human / automatic / mixed / synthesis_specified. unknown if the sources do not say
 annotations,unit,enum:annotation_unit,empty;unknown,no,Unit of annotation
-annotations,used_in_recipe,bool,empty;unknown;NA,no,Whether the recipe uses it. NA if there is no recipe
 annotations,source_type,enum:source_type,-,no,Kind of source (same values as in evidence)
 annotations,source_ref,text,-,no,"Source (URL, file path, date of a conversation, etc.)"
 annotations,locator,text,empty,no,Location within the source (25 words at most)
