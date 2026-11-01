@@ -1,45 +1,45 @@
 dataset_id,field,kind,datasets_value,datasets_source_type,other_value,other_source_type,other_source_ref,note
-anad,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1384,see evidence,1428,measured,n_files_release_measured,
-asvpesd,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,7812,see evidence,9092,measured,n_files_release_measured,
-bari_emospeech,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,2312,see evidence,2328,measured,n_files_release_measured,
-baser,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,12,see evidence,10,measured,n_speakers_measured,
-baved,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,61,see evidence,60,measured,n_speakers_measured,
-berst,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,4526,see evidence,4523,measured,n_files_release_measured,
+anad,n_files_reported vs n_files_release,reported_vs_release,1384,see evidence,1428,implementation,n_files_release,
+asvpesd,n_files_reported vs n_files_release,reported_vs_release,7812,see evidence,9092,implementation,n_files_release,
+bari_emospeech,n_files_reported vs n_files_release,reported_vs_release,2312,see evidence,2328,implementation,n_files_release,
+baser,n_speakers_reported vs n_speakers_release,reported_vs_release,12,see evidence,10,implementation,n_speakers_release,
+baved,n_speakers_reported vs n_speakers_release,reported_vs_release,61,see evidence,60,implementation,n_speakers_release,
+berst,n_files_reported vs n_files_release,reported_vs_release,4526,see evidence,4523,implementation,n_files_release,
 casia,labels_discrete_reported,conflicting,conflicting,see evidence,neutral;happy;sad;angry;fearful;surprised,secondary,https://aistudio.baidu.com/datasetdetail/209512,"List of 6 emotions. The 2010 edition at ChineseLDC also gives only the number, 六种情绪 (six emotions). The list comes from the re-upload's description"
 casia,labels_discrete_reported,conflicting,conflicting,see evidence,高兴;悲哀;生气;惊吓;中性,primary,https://web.archive.org/web/20051214151014/http://www.chineseldc.org:80/doc/CLDC-SPC-2005-010/label.htm,"The 2005 annotation guide (older edition) has 5 emotions. Checked by the DB maintainer against the archived copy (2026-10-23). A catalogue of the distributor ChineseLDC, not a document of the creators' lab"
-casia,n_utt_reported,conflicting,conflicting,see evidence,10000,primary,https://web.archive.org/web/20051214151014/http://www.chineseldc.org:80/doc/CLDC-SPC-2005-010/label.htm,"2005 annotation guide (older edition). 4 x 5 x 500. Checked by the DB maintainer against the archived copy (2026-10-23). A catalogue of the distributor ChineseLDC, not a document of the creators' lab"
-casia,n_utt_reported,conflicting,conflicting,see evidence,12000,primary,https://web.archive.org/web/20051214160150/http://www.chineseldc.org:80/doc/CLDC-SPC-2005-010/intro.htm,"2005 resource overview (older edition). 4 x 6 x 500. Checked by the DB maintainer against the archived copy (2026-10-23). A catalogue of the distributor ChineseLDC, not a document of the creators' lab"
-casia,n_utt_reported,conflicting,conflicting,see evidence,9600,primary,https://web.archive.org/web/20200501144342/http://www.chineseldc.org/resource_info.php?rid=76,"Checked by the DB maintainer against the archived copy (2026-10-23). A catalogue of the distributor ChineseLDC, not a document of the creators' lab. 4 x 6 x 400"
-cbesd,n_utt_reported,conflicting,conflicting,see evidence,4200,primary,https://www.kaggle.com/datasets/pranuthi19/bilingual-emotion-speech-datasetbesd,"Disagrees with 4,320 in the same description. The formula gives 4,200, close to the 4,204 released files. Checked by the DB maintainer against the Kaggle API and the release files (2026-10-23)"
-cbesd,n_utt_reported,conflicting,conflicting,see evidence,4320,primary,https://www.kaggle.com/datasets/pranuthi19/bilingual-emotion-speech-datasetbesd,"The description also contains 4,200 (""composed of 4200 speech recordings""). The formula 35 x 2 x 5 x 6 x 2 gives 4,200, so 4,320 is an arithmetic slip (computed by the DB maintainer, 2026-10-23). The release has 4,204 files"
+casia,n_files_reported,conflicting,conflicting,see evidence,10000,primary,https://web.archive.org/web/20051214151014/http://www.chineseldc.org:80/doc/CLDC-SPC-2005-010/label.htm,"2005 annotation guide (older edition). 4 x 5 x 500. Checked by the DB maintainer against the archived copy (2026-10-23). A catalogue of the distributor ChineseLDC, not a document of the creators' lab"
+casia,n_files_reported,conflicting,conflicting,see evidence,12000,primary,https://web.archive.org/web/20051214160150/http://www.chineseldc.org:80/doc/CLDC-SPC-2005-010/intro.htm,"2005 resource overview (older edition). 4 x 6 x 500. Checked by the DB maintainer against the archived copy (2026-10-23). A catalogue of the distributor ChineseLDC, not a document of the creators' lab"
+casia,n_files_reported,conflicting,conflicting,see evidence,9600,primary,https://web.archive.org/web/20200501144342/http://www.chineseldc.org/resource_info.php?rid=76,"Checked by the DB maintainer against the archived copy (2026-10-23). A catalogue of the distributor ChineseLDC, not a document of the creators' lab. 4 x 6 x 400"
+cbesd,n_files_reported,conflicting,conflicting,see evidence,4200,primary,https://www.kaggle.com/datasets/pranuthi19/bilingual-emotion-speech-datasetbesd,"Disagrees with 4,320 in the same description. The formula gives 4,200, close to the 4,204 released files. Checked by the DB maintainer against the Kaggle API and the release files (2026-10-23)"
+cbesd,n_files_reported,conflicting,conflicting,see evidence,4320,primary,https://www.kaggle.com/datasets/pranuthi19/bilingual-emotion-speech-datasetbesd,"The description also contains 4,200 (""composed of 4200 speech recordings""). The formula 35 x 2 x 5 x 6 x 2 gives 4,200, so 4,320 is an arithmetic slip (computed by the DB maintainer, 2026-10-23). The release has 4,204 files"
 dailytalk,hours_reported,conflicting,conflicting,see evidence,20,primary,https://arxiv.org/abs/2207.01063,"Rounded from the 78,026 s (21.67 h) of Table 1"
 dailytalk,hours_reported,conflicting,conflicting,see evidence,21.67,primary,https://arxiv.org/abs/2207.01063,"The text and abstract say ""20 hours in total"" (rounded). The seconds in Table 1 are used"
-eesc,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1234,see evidence,1164,measured,n_files_release_measured,
+eesc,n_files_reported vs n_files_release,reported_vs_release,1234,see evidence,1164,implementation,n_files_release,
 emilia_emotion,license_spdx,conflicting,conflicting,see evidence,CC-BY-4.0,primary,https://huggingface.co/datasets/laion/Emolia,Not stated in the earlier 5-way split repositories; conflicting because it disagrees with the paper and the original Emilia terms
 emilia_emotion,license_spdx,conflicting,conflicting,see evidence,CC-BY-NC-4.0,primary,https://arxiv.org/abs/2609.32016,"Emilia part CC-BY-NC-4.0, Emilia-YODAS part CC-BY-4.0; derivatives inherit the source clips' license (Limitations). The original amphion/Emilia-Dataset terms likewise use Emilia under CC-BY-NC and Emilia-YODAS under CC-BY"
 emodb,license_spdx,conflicting,conflicting,see evidence,CC-BY-4.0,primary,https://zenodo.org/records/17651657,Zenodo record of EmoDB 2.0; disagrees with the audEERING documentation (CC0-1.0)
 emodb,license_spdx,conflicting,conflicting,see evidence,CC0-1.0,primary,https://audeering.github.io/datasets/datasets/emodb.html,
-emotional_ema,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,680,see evidence,953,measured,n_files_release_measured,
-emotiontts_open_db,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,6000,see evidence,300,measured,n_files_release_measured,
-emovoicedb,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,22100,see evidence,24923,measured,n_files_release_measured,
-escorpuspe,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,3749,see evidence,3764,measured,n_files_release_measured,
-harper_valley_bank,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,25730,see evidence,2892,measured,n_files_release_measured,
-indianenglish,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1000,see evidence,747,measured,n_files_release_measured,
-inesco,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,2400,see evidence,2399,measured,n_files_release_measured,
-maserc,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,804,see evidence,808,measured,n_files_release_measured,
-mderma,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,1322,see evidence,1345,measured,n_files_release_measured,
-meld,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,13000,see evidence,13707,measured,n_files_release_measured,
-mlend_numerals,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,154,see evidence,151,measured,n_speakers_measured,
-msppodcast,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,3641,see evidence,3713,measured,n_speakers_measured,
+emotional_ema,n_files_reported vs n_files_release,reported_vs_release,680,see evidence,953,implementation,n_files_release,
+emotiontts_open_db,n_files_reported vs n_files_release,reported_vs_release,6000,see evidence,300,implementation,n_files_release,
+emovoicedb,n_files_reported vs n_files_release,reported_vs_release,22100,see evidence,24923,implementation,n_files_release,
+escorpuspe,n_files_reported vs n_files_release,reported_vs_release,3749,see evidence,3764,implementation,n_files_release,
+harper_valley_bank,n_files_reported vs n_files_release,reported_vs_release,25730,see evidence,2892,implementation,n_files_release,
+indianenglish,n_files_reported vs n_files_release,reported_vs_release,1000,see evidence,747,implementation,n_files_release,
+inesco,n_files_reported vs n_files_release,reported_vs_release,2400,see evidence,2399,implementation,n_files_release,
+maserc,n_files_reported vs n_files_release,reported_vs_release,804,see evidence,808,implementation,n_files_release,
+mderma,n_files_reported vs n_files_release,reported_vs_release,1322,see evidence,1345,implementation,n_files_release,
+meld,n_files_reported vs n_files_release,reported_vs_release,13000,see evidence,13707,implementation,n_files_release,
+mlend_numerals,n_speakers_reported vs n_speakers_release,reported_vs_release,154,see evidence,151,implementation,n_speakers_release,
+msppodcast,n_speakers_reported vs n_speakers_release,reported_vs_release,3641,see evidence,3713,implementation,n_speakers_release,
 multidialog,labels_discrete_reported,conflicting,conflicting,see evidence,neutral;happy;fear;angry;disgusting;surprising;sad,primary,https://huggingface.co/datasets/IVLLab/MultiDialog,
 multidialog,labels_discrete_reported,conflicting,conflicting,see evidence,neutral;happy;surprise;sad;disgust;fear;angry;curious,primary,https://huggingface.co/datasets/IVLLab/MultiDialog,'Curious to dive deeper' (43% of utterances) is a separate value in the metadata; the paper (section 3.2) merges it with Neutral because the two are acted the same way
-multidialog,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,187859,see evidence,187854,measured,n_files_release_measured,
-rasa,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,124842,see evidence,640946,measured,n_files_release_measured,
-rml_emotion,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,500,see evidence,720,measured,n_files_release_measured,
-syntact,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,6000,see evidence,6001,measured,n_files_release_measured,
-talromur3,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,21528,see evidence,21516,measured,n_files_release_measured,
-thorsten,n_utt_reported vs n_files_release_measured,reported_vs_release_measured,2400,see evidence,2399,measured,n_files_release_measured,
+multidialog,n_files_reported vs n_files_release,reported_vs_release,187859,see evidence,187854,implementation,n_files_release,
+rasa,n_files_reported vs n_files_release,reported_vs_release,124842,see evidence,640946,implementation,n_files_release,
+rml_emotion,n_files_reported vs n_files_release,reported_vs_release,500,see evidence,720,implementation,n_files_release,
+syntact,n_files_reported vs n_files_release,reported_vs_release,6000,see evidence,6001,implementation,n_files_release,
+talromur3,n_files_reported vs n_files_release,reported_vs_release,21528,see evidence,21516,implementation,n_files_release,
+thorsten,n_files_reported vs n_files_release,reported_vs_release,2400,see evidence,2399,implementation,n_files_release,
 turevdb,license_spdx,conflicting,conflicting,see evidence,CC-BY-NC-ND-4.0,primary,https://github.com/Xeonen/TurEV-DB,
 turevdb,license_spdx,conflicting,conflicting,see evidence,GPL-3.0-only,primary,https://github.com/Xeonen/TurEV-DB,
-urdu,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,38,see evidence,29,measured,n_speakers_measured,
-ysed,n_speakers_reported vs n_speakers_measured,reported_vs_release_measured,71,see evidence,68,measured,n_speakers_measured,
+urdu,n_speakers_reported vs n_speakers_release,reported_vs_release,38,see evidence,29,implementation,n_speakers_release,
+ysed,n_speakers_reported vs n_speakers_release,reported_vs_release,71,see evidence,68,implementation,n_speakers_release,

@@ -67,13 +67,13 @@ def discrepancies(db):
                     "datasets_value": "conflicting", "datasets_source_type": "see evidence",
                     "other_value": e["value"], "other_source_type": sources.get(e["source_id"], {}).get("source_type", ""),
                     "other_source_ref": src_url(sources, e["source_id"]), "note": e["note"]})
-    pairs = [("n_speakers_reported", "n_speakers_measured", "reported_vs_release_measured"),
-             ("n_utt_reported", "n_files_release_measured", "reported_vs_release_measured")]
+    pairs = [("n_speakers_reported", "n_speakers_release", "reported_vs_release"),
+             ("n_files_reported", "n_files_release", "reported_vs_release")]
     for i, d in ds.items():
         for a, b, kind in pairs:
             if d[a].isdigit() and d[b].isdigit() and d[a] != d[b]:
                 out.append({"dataset_id": i, "field": f"{a} vs {b}", "kind": kind, "datasets_value": d[a],
-                            "datasets_source_type": "see evidence", "other_value": d[b], "other_source_type": "measured",
+                            "datasets_source_type": "see evidence", "other_value": d[b], "other_source_type": "implementation",
                             "other_source_ref": b, "note": ""})
     return out
 

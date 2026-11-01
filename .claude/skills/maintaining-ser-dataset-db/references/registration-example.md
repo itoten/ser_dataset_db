@@ -59,7 +59,7 @@ README = R.source("toyemo_readme", "https://github.com/itoten/espnet/blob/ser/cr
 R.link(KG, "distribution"); R.link(PAPER, "paper"); R.link(README, "readme")
 
 # Published facts from primary sources.
-R.ev("n_utt_reported", "1200", KG, "8 actors x 6 emotions x 25 sentences ... 1,200 utterances")
+R.ev("n_files_reported", "1200", KG, "8 actors x 6 emotions x 25 sentences ... 1,200 utterances")
 R.ev("n_speakers_reported", "8", KG, "8 actors")
 R.ev("license_spdx", "CC-BY-4.0", KG, "license field: CC BY 4.0", by="user",
      note="the maintainer also checked the page on 2026-01-30")
@@ -73,8 +73,11 @@ R.ev("label_verification", "none", PAPER,
 # Findings only the implementation can show: cite the readme, with the commit in the locator.
 R.ev("spoken_text_design", "parallel", README,
      "commit def5678abcde; Not stated in the documentation: the same 25 sentences are spoken in every emotion")
-R.ev("n_files_release_measured", "1200", README, "commit def5678abcde; Size of the release")
-R.ev("n_speakers_measured", "8", README, "commit def5678abcde; Size of the release")
+R.ev("n_files_release", "1200", README, "commit def5678abcde; Size of the release")
+R.ev("n_speakers_release", "8", README, "commit def5678abcde; Size of the release")
+R.ev("hours_release", "1.10", README, "commit def5678abcde; Size of the release")
+R.ev("access_observed", "obtained", README, "commit def5678abcde; Access")
+R.set(access_observed_on="2026-01-29")
 R.set(notes="Acted speech by 8 actors, 6 emotions, 25 sentences (Kaggle page). The recipe readme "
             "reports 12 pairs of byte-identical files (commit def5678abcde).")
 

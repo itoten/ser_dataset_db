@@ -200,8 +200,8 @@ def check_evidence(cols, db):
                 err(f"evidence {eid}: a {st} row needs a source")
             elif not ty:
                 warn_untyped.add(r["source_id"])
-            if r["field"].endswith("_measured") and ty not in ("implementation", ""):
-                err(f"evidence {eid}: *_measured fields need a source of type implementation")
+            if r["field"].endswith("_release") and ty not in ("implementation", ""):
+                err(f"evidence {eid}: *_release fields need a source of type implementation")
             if r["field"].endswith("_reported") and ty == "implementation":
                 err(f"evidence {eid}: *_reported fields cannot use an implementation source")
         if st == "provisional":
