@@ -26,12 +26,14 @@ The DB row `toyemo` is a `candidate` (`unexamined`). A DB update report arrives.
 
 - Kaggle API: CC BY 4.0, version 2. The description says "8 actors × 6 emotions × 25 sentences"
   and "1,200 utterances".
-- The paper (the authors' own): actors portrayed six emotions; 20 listeners rated every clip,
-  with 71% recognition of the intended emotion against a chance level of 17%; individual ratings
-  are not distributed.
+- The paper (the authors' own): actors portrayed six emotions; section 4 reports a listening test
+  of how often listeners recognised the intended emotion. The DB records that the test exists and
+  where; its numbers stay in the paper (rule 6).
 - The recipe readme at commit `def5678` (on the public fork) states the release has 1,200 WAV
   files, 12 byte-identical pairs (one of each left out), and the same 25 sentences in every
-  emotion (from the distributed transcripts).
+  emotion (from the distributed transcripts). Neither the page nor the paper says whether the
+  sentences are the same in every emotion, so for that the readme is the source; had the paper
+  said it, the paper would be cited even though the readme repeats it (rule 1).
 - The report's "1.10 hours" and "44.1 kHz" are in neither the paper, the page nor the readme: they
   stay out of the DB and go into the reply.
 - `measurements/toyemo.json` (from `tools/measure.py`): 1,188 clips; train / valid / test =
@@ -68,22 +70,19 @@ R.ev("license_spdx", "CC-BY-4.0", "primary", KG, "license field: CC BY 4.0", by=
 R.ev("label_source", "human", "primary", PAPER, "actors portrayed six target emotions")
 R.ev("speech_production", "acted", "primary", PAPER, "actors portrayed six target emotions")
 R.ev("label_basis", "intended", "primary", PAPER, "label = the emotion the actor was asked to portray")
-R.set(label_basis_note="Labels are the instructed emotion. A listening test (20 listeners, every clip) "
-                       "checked recognition; individual ratings are not distributed.")
+R.set(label_basis_note="Labels are the instructed emotion (paper, section 2).")
 
-# The listening test is always recorded (rule 6).
-R.ev("human_accuracy", "0.71", "primary", PAPER, "listeners recognised the intended emotion in 71% of ratings")
-R.set(human_accuracy_note="20 listeners rated every clip, 6 options, chance 17%. Individual ratings not distributed.")
+# Whether a listening test exists is always recorded (rule 6): that it exists and where, not its result.
 R.ev("label_verification", "none", "primary", PAPER,
      "listening test measured recognition only; no clips were removed or relabelled")
 
-# Findings of the recipe: cite the readme at its fork commit.
+# Findings only the implementation can show: cite the readme at its fork commit.
 R.ev("text_emotion_link", "parallel", "primary", README, "the same 25 sentences are spoken in every emotion")
 R.ev("lexical_confound", "none", "primary", README, "the same 25 sentences are spoken in every emotion")
 R.set(lexical_confound_note="The same 25 sentences in every emotion (recipe readme, from the distributed transcripts).")
 # n_files_release_measured accepts only `measured` rows, so it stays empty; the readme's figure goes in notes.
-R.set(release_version="Kaggle version 2 (2025-11-02)",
-      notes="Acted speech by 8 actors, 6 emotions, 25 sentences. The recipe readme (commit def5678) "
+R.set(release_version="version 2, 2025-11-02 (Kaggle page)",
+      notes="Acted speech by 8 actors, 6 emotions, 25 sentences (Kaggle page). The recipe readme (commit def5678) "
             "reports 1,200 WAV files with 12 byte-identical pairs.")
 
 # Recipe tables (interim rule: needs measurements/toyemo.json from tools/measure.py).
@@ -96,7 +95,9 @@ R.recipe(official_split_exists="false",
 R.labels({"angry": ("anger", "angry", "spelling_fix"), "happy": ("joy", "happy", "synonym_rename"),
           "sad": ("sadness", "sad", "synonym_rename"), "neutral": ("neutral", "neutral", "identity"),
           "fear": ("fear", "fear", "identity"), "surprise": ("surprise", "surprise", "identity")})
-R.ann([("speaker_id", "actor code in the file name (8 actors)", "human", "speaker", "true",
+R.ann([("listening_test", "listening test of recognition of the intended emotion; results in the paper",
+        "human", "utterance", "false", "primary", PAPER, "section 4", ""),
+       ("speaker_id", "actor code in the file name (8 actors)", "human", "speaker", "true",
         "primary", KG, "file naming section", "used for the speaker-independent split"),
        ("sentence_id", "sentence number 1-25", "human", "utterance", "false",
         "primary", KG, "file naming section", "")])
@@ -113,7 +114,7 @@ Then the finishing loop from SKILL.md: `tools/views.py`, `doc_counts.py --write`
 Register toyemo as implemented (1,188 of 1,200 files)
 
 License, published counts and label basis come from the Kaggle page and the paper; the
-paper's listening test (20 listeners, 71% recognition) is recorded in human_accuracy.
+paper's listening test is recorded as an annotation pointing to section 4 of the paper.
 Sentence overlap and the release file count come from the recipe readme at def5678.
 The report's duration and sample rate are not stated in any primary source, so they
 were left out.

@@ -56,8 +56,10 @@ the others (the README explains them):
      duplicate searches, transcriptions or listening). Values that need counting (files and
      speakers in the release, sentence overlap, how well the voice carries the emotion, ...) stay
      empty (not checked) until the recipe's readme states them; then cite the readme.
-   - A **recipe readme** is a primary source for what was found while implementing the recipe.
-     Cite it at a commit on the public fork:
+   - A **recipe readme** is a primary source only for what can be known solely by implementing
+     the recipe (counts in the release, duplicates, what the files contain). If a paper, page or
+     card states the same thing, cite that source, even when the readme repeats it: there the
+     readme is only restating it. Cite the readme at a commit on the public fork:
      `https://github.com/itoten/espnet/blob/<commit>/egs3/<recipe>/cls/readme.md`. If the commit
      is not on the fork yet, leave the value empty and say so in the reply.
 2. **Evidence types for new rows: `primary`, and `secondary` only as an exception.**
@@ -81,21 +83,27 @@ the others (the README explains them):
    `unknown` = a source was read and does not say (cite the source you read, with "not stated" in
    `locator`); `none` = checked, there is none; `NA` = does not apply. A failed attempt at one
    moment (timeout, 404) is `unknown` with the date in the note.
-6. **Listening tests are always recorded.** If a source reports a human perception or listening
-   test, record it (`human_accuracy`, `label_verification`, their notes): number of raters, ratings
-   per clip, accuracy or agreement (kappa goes in the `label_verification` evidence note), and
-   whether individual ratings are distributed. This holds even if the recipe does not use it.
-7. **Write only what a source supports.** No invented URLs, titles or numbers. Never cite a file
+6. **Whether a listening test exists is always recorded.** Search carefully for a human
+   perception or listening test in the paper, the page, the card and (through the readme) the
+   release files, even if the recipe does not use it. Record that it exists and where it is
+   described; do not put its result in a column as a single number. Accuracy depends on the
+   number of classes, audio only or with video, how answers were combined and which clips were
+   rated, so numbers from different tests mislead when set side by side: readers are pointed to
+   the source for results and details. How to record it until the columns are rebuilt: see
+   "Interim".
+7. **Every value has a source**, including names, versions, URLs and free text. Where a column
+   takes no evidence rows yet, name the source in the text itself (see "Interim").
+8. **Write only what a source supports.** No invented URLs, titles or numbers. Never cite a file
    you did not open. Reports from other sessions contain mistakes: check every claim against the
    primary source ([references/verifying-claims.md](references/verifying-claims.md)).
-8. **Never delete history.** A new value gets a new evidence row; the old one becomes
+9. **Never delete history.** A new value gets a new evidence row; the old one becomes
    superseded. Conflicting sources stay visible.
-9. **Keep "the whole release" and "what the recipe uses" apart** in every count and note.
-10. **Everything is public.** Files and commit messages are published worldwide. No personal
+10. **Keep "the whole release" and "what the recipe uses" apart** in every count and note.
+11. **Everything is public.** Files and commit messages are published worldwide. No personal
     names (refer to "the project maintainer"), e-mail addresses or machine-specific paths (use
     environment variable names such as `$EESC_OUTPUT`; machine settings go in the git-ignored
     `.env`).
-11. **Stay within the request.** Large sweeps (re-checking every license, re-probing every URL)
+12. **Stay within the request.** Large sweeps (re-checking every license, re-probing every URL)
     and design changes are proposed, not started.
 
 ## Interim: decided but not yet implemented
@@ -112,6 +120,9 @@ not invent a new mechanism. The plan is tracked outside this repository by the m
 | A readme figure for a `*_measured` column (files, speakers in the release) | cited from the readme | those columns accept only `measured` rows: leave them empty and give the readme's figure, with its link, in `notes` |
 | The maintainer's listening findings (`paralinguistic_signal`) | from the recipe readme, as its author's view | leave empty unless a readme or a published listening test states it |
 | Existing `measured`, `project_doc`, `user`, `secondary` rows | replaced by primary sources or emptied | leave them as they are unless asked to migrate them |
+| A listening test (rule 6) | a column saying whether a test exists, plus the path to the source; no single accuracy number | add an `annotations` row, item `listening_test`, citing the source that describes it (`primary`, the describing words in `locator`); keep `label_verification` as before; add no new `human_accuracy` values (existing ones stay) |
+| `source_rights` | codes only whether the material is third-party (recorded for the dataset, or taken from films, broadcasts, the web); what sources say about rights is quoted; no "needs checking" | for new entries use only `own` (a source says it was recorded for the dataset); for third-party material leave the code empty and quote what the sources say about it, with the source named, in `source_rights_note` |
+| Columns without evidence rows (names, `release_version`, URLs, free text) | every value cites a source through a list of sources (`sources.csv`, not built yet) | name the source in the text (`v2 (Kaggle page)`; "… 20 listeners (paper, section 3)") and put no fact in free text that no source states |
 
 ## Choose the workflow
 
@@ -175,12 +186,12 @@ maintainer before adding one. The full rules: [references/data-model.md](referen
 - evidence from primary sources for every value you checked: license, published counts,
   `label_source`, `label_verification`, `speech_production`, `label_basis` (details in
   `label_basis_note`), `text_emotion_link` and `lexical_confound` only from a design statement
-  (details in `lexical_confound_note`), `human_accuracy` from a listening test; disagreeing
-  sources as `conflicting` rows;
+  (details in `lexical_confound_note`); disagreeing sources as `conflicting` rows;
+- a listening test, if any source describes one, as an `annotations` row (interim rule);
 - values stated in the readme, cited at its fork commit;
 - status rows under the interim rule;
 - cells without evidence: `status_note`, `notes`, `license_note`, `release_version`,
-  `status_checked_on` (facts only, no advice);
+  `status_checked_on` (facts only, each naming its source; no advice);
 - for implemented datasets: `R.recipe(...)` with the hand-written columns, `R.labels({...})`
   keyed by the recipe's own label names, and `R.ann([...])` with every non-emotion annotation
   that a primary source or the readme describes;

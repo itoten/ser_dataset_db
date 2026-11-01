@@ -61,7 +61,8 @@ These `datasets` columns need an evidence row for their value: `languages`,
 Columns that never take evidence rows (adding one is a validation error): URL columns
 (`source_url`, `download_url`, `paper_url`, `doi`) and text columns (`status_note`, `notes`,
 `license_note`, `language_note`, `labels_discrete_note`, `annotations_other`, `release_version`,
-`report_path`, `n_discrete_labels_reported`).
+`report_path`, `n_discrete_labels_reported`). Every value still needs a source: until a list of
+sources exists, name the source inside the text (`v2 (Kaggle page)`).
 
 Rules checked by `tools/validate.py`:
 - Each (dataset, field) has exactly one row with `is_canonical=true`, and its value equals the cell.
@@ -229,18 +230,19 @@ hand-written ones:
   view). Older rows record the maintainer's listening as `source_type=user`; do not add new ones.
   The clips heard and what was heard go in `paralinguistic_signal_note`. Empty = not judged. It
   records, it does not decide.
-- `human_accuracy` (0-1) and `human_accuracy_note`: the listening test's recognition accuracy as the
-  source reports it (or the recipe readme, if its author computed it from a distributed rating
-  file); the note gives
-  listeners, clips, options and chance. Kappa is not accuracy; it goes in the `label_verification`
-  evidence note. Never average different tests.
-- `source_rights` (`own` / `cleared` / `asserted` / `unaddressed` / `unknown`) and
-  `source_rights_note`: rights in the underlying audio, separate from `license_spdx`.
-  `asserted` = third-party material and the creators only say it is fine; `unaddressed` = the
-  sources say nothing; `unknown` = the origin is unknown; `cleared` = a quotable statement about
-  the source material (a card's CC license is not one). `asserted`, `unaddressed` and `unknown` need a
-  rights check and appear in `views/source_rights_check.csv`. `license_class` is never changed
-  by it. Empty = not examined.
+- Listening tests: the DB records **that a test exists and where it is described**, not its
+  result. Accuracy depends on the number of classes, audio only or with video, how answers were
+  combined and which clips were rated, so a single number per dataset invites comparisons that do
+  not hold; readers check results and details in the source. Until the columns are rebuilt, record
+  a test as an `annotations` row (item `listening_test`, `primary`, the describing words in
+  `locator`). `human_accuracy` and `human_accuracy_note` hold older values only; add no new ones.
+- `source_rights` and `source_rights_note`: the material behind the audio, separate from
+  `license_spdx`. The decided direction is to code only whether the material is third-party and
+  to quote what sources say about rights, without "needs checking". Until the columns are
+  rebuilt, use only `own` for new entries (a source says it was recorded for the dataset); for
+  third-party material leave the code empty and quote the sources, naming them, in
+  `source_rights_note`. Older rows still use `cleared`, `asserted`, `unaddressed` and `unknown`.
+  `license_class` is never changed by it. Empty = not examined.
 - `LicenseRef-golos-public` (class `open`): Golos/Dusha public license, a CC BY-SA 4.0 reworking
   without a non-commercial clause (maintainer's decision).
 - `shares_sentences_with` (relations): some spoken sentences, or their translations, are the same

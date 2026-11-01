@@ -28,7 +28,9 @@ Go through the report and put every statement in one of three groups:
 3. **Findings of the recipe**: counts in the release, duplicates, formats, sentence overlap,
    listening notes, a source the maintainer checked by hand. Record them only as stated in the
    recipe readme (cited at its fork commit). A finding that is only in the report stays out of the
-   DB; list it in the reply so the recipe author can add it to the readme.
+   DB; list it in the reply so the recipe author can add it to the readme. If a paper or page
+   also states it, cite that source instead: the readme is cited only for what nothing but the
+   implementation can show.
 
 ## Distributor pages and APIs
 
