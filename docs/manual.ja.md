@@ -237,7 +237,7 @@ datasets ──(dataset_id)── evidence     各値の出典
 | `recording_context` | 録音の状況や媒体 | `acted` |
 | `speech_production` | 音声の作られ方(5.4.1) | `acted` |
 | `label_basis` | ラベルの付け方(5.4.1) | `intended` |
-| `text_emotion_link` / `lexical_confound` | 発話テキストとラベルの関係、言葉だけでどこまでラベルが当たるか(5.4.2) | `parallel` / `none` |
+| `spoken_text_design` / `lexical_confound` | 発話テキストとラベルの関係、言葉だけでどこまでラベルが当たるか(5.4.2) | `parallel` / `none` |
 | `license_spdx` / `license_class` | ライセンスとその分類(第 9 節) | `CC-BY-NC-SA-4.0` / `noncommercial` |
 | `access_method` | 入手方法(第 10 節) | `direct_download` |
 | `raw_audio_available` | 生の音声が配布されているか | `true` |
@@ -289,13 +289,13 @@ datasets ──(dataset_id)── evidence     各値の出典
 - 指示したラベルを聴取評価で確認した場合、または一致したクリップだけを残した場合、ラベルは `intended` のままで、`label_verification=listener_validated` とする。
 - レシピの審査中に記入する。審査前の行は空欄(未確認)。
 
-### 5.4.2 テキストとラベル(`text_emotion_link`、`lexical_confound`)
+### 5.4.2 テキストとラベル(`spoken_text_design`、`lexical_confound`)
 
 話された言葉だけでラベルが分かってしまうと、モデルは声ではなく言葉を学習してしまう(ショートカット学習)。ラベルが言葉だけに従うデータセットは除外する(`labels_from_text_content`)。本物のパラ言語情報があって、言葉と多少の相関があるだけのデータセットは、注意しながら使ってよい。この列はその相関に印を付けて、実際のデータを確認するきっかけにするためのもので、それだけでは何も決めない。
 
 | 列 | 値 |
 |---|---|
-| `text_emotion_link`(`;` 区切り) | `parallel`(すべての感情で同じ文)/ `neutral_text`(意味的に中立な文)/ `emotion_specific_text`(内容が感情に合っている)/ `unrelated_text`(感情と無関係に割り当てた文)/ `dialogue_script`(映画・ドラマ・書かれた対話のせりふ)/ `unscripted`(会話・放送・即興) |
+| `spoken_text_design`(`;` 区切り) | `parallel`(すべての感情で同じ文)/ `neutral_text`(意味的に中立な文)/ `emotion_specific_text`(内容が感情に合っている)/ `unrelated_text`(感情と無関係に割り当てた文)/ `dialogue_script`(映画・ドラマ・書かれた対話のせりふ)/ `unscripted`(会話・放送・即興) |
 | `lexical_confound` | `full`(テキストがラベルを決める: 各文は 1 つの感情にしかない)/ `strong`(大半の発話)/ `moderate`(かなりの部分)/ `weak`(少しの部分、または弱い関連)/ `possible`(直接の証拠はないが、疑う文書化された理由がある。例: 台本なしの発話、文脈や書き起こしを見て付けたラベル)/ `none`(設計上あり得ない: 並列・中立・感情と無関係な文、または言葉がない) |
 | `lexical_confound_note` | 自由記述: 値の根拠(出典にある設計、文とラベルの件数、テキストだけの分類器)と範囲(例: 「英語半分のみ」) |
 
@@ -376,7 +376,7 @@ datasets ──(dataset_id)── evidence     各値の出典
 | `is_canonical` | 現在の値の根拠なら `true`。データセット × 列ごとにちょうど 1 つ |
 | `status` | `current` / `superseded`(新しい根拠に置き換えられた)/ `conflicting`(出典が食い違い、未決) |
 
-根拠が必要な列: `languages`、`recording_context`、`vocal_content`、`license_spdx`、`access_method`、`raw_audio_available`、`n_utt_reported`、`hours_reported`、`n_speakers_reported`、`n_files_release_measured`、`n_speakers_measured`、`labels_discrete_reported`、`dimensional_attributes`、`espnet_status`、`status_reason_codes`、`label_source`、`label_verification`、`speech_production`、`label_basis`、`text_emotion_link`、`lexical_confound`、`paralinguistic_signal`、`human_accuracy`、`source_rights`。
+根拠が必要な列: `languages`、`recording_context`、`vocal_content`、`license_spdx`、`access_method`、`raw_audio_available`、`n_utt_reported`、`hours_reported`、`n_speakers_reported`、`n_files_release_measured`、`n_speakers_measured`、`labels_discrete_reported`、`dimensional_attributes`、`espnet_status`、`status_reason_codes`、`label_source`、`label_verification`、`speech_production`、`label_basis`、`spoken_text_design`、`lexical_confound`、`paralinguistic_signal`、`human_accuracy`、`source_rights`。
 
 ### 6.2.1 確認した日の記録
 
@@ -589,7 +589,7 @@ SPDX にない条件には次のいずれかを付け、文言の要点を `lice
 - `reasons`: 理由コード
 - `license_class`、`access_method`、`raw_audio_available`
 - `speech_production`、`label_basis`、`label_basis_note`
-- `text_emotion_link`、`lexical_confound`、`lexical_confound_note`
+- `spoken_text_design`、`lexical_confound`、`lexical_confound_note`
 - `paralinguistic_signal`、`paralinguistic_signal_note`
 - `human_accuracy`、`human_accuracy_note`
 - `source_rights`、`source_rights_note`

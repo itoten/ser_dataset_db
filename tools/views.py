@@ -14,7 +14,7 @@ SHEET_COLS = ["Verified", "Dataset", "License", "Language", "Source", "Total Hou
               "ESPnet Implemented"]
 EXTRA_COLS = ["dataset_id", "status", "reasons", "access_method", "raw_audio_available", "recipe",
               "n_total_recipe", "hours_total_recipe", "n_files_release_measured", "n_speakers_measured",
-              "common7_covered", "common7_missing", "extra_labels", "label_source", "label_verification", "speech_production", "label_basis", "label_basis_note", "text_emotion_link", "lexical_confound", "lexical_confound_note", "paralinguistic_signal", "paralinguistic_signal_note", "human_accuracy", "human_accuracy_note", "source_rights", "source_rights_note",
+              "common7_covered", "common7_missing", "extra_labels", "label_source", "label_verification", "speech_production", "label_basis", "label_basis_note", "spoken_text_design", "lexical_confound", "lexical_confound_note", "paralinguistic_signal", "paralinguistic_signal_note", "human_accuracy", "human_accuracy_note", "source_rights", "source_rights_note",
               "annotation_items",
               "benchmarks", "status_note", "notes",
               "license_checked_on", "license_source_type", "license_checked_by", "access_checked_on",
@@ -76,7 +76,7 @@ def wide(db):
             "extra_labels": ";".join(sorted(extra)), "label_source": d["label_source"],
             "label_verification": d["label_verification"], "speech_production": d["speech_production"],
             "label_basis": d["label_basis"], "label_basis_note": d["label_basis_note"],
-            "text_emotion_link": d["text_emotion_link"], "lexical_confound": d["lexical_confound"],
+            "spoken_text_design": d["spoken_text_design"], "lexical_confound": d["lexical_confound"],
             "lexical_confound_note": d["lexical_confound_note"],
             "paralinguistic_signal": d["paralinguistic_signal"], "paralinguistic_signal_note": d["paralinguistic_signal_note"],
             "human_accuracy": d["human_accuracy"], "human_accuracy_note": d["human_accuracy_note"],

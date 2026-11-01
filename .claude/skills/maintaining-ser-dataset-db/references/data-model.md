@@ -56,7 +56,7 @@ These `datasets` columns need an evidence row for their value: `languages`,
 `n_utt_reported`, `hours_reported`, `n_speakers_reported`, `n_files_release_measured`,
 `n_speakers_measured`, `labels_discrete_reported`, `dimensional_attributes`, `espnet_status`,
 `status_reason_codes`, `label_source`, `label_verification`, `speech_production`, `label_basis`,
-`text_emotion_link`, `lexical_confound`, `paralinguistic_signal`, `human_accuracy`, `source_rights`.
+`spoken_text_design`, `lexical_confound`, `paralinguistic_signal`, `human_accuracy`, `source_rights`.
 
 Columns that never take evidence rows (adding one is a validation error): URL columns
 (`source_url`, `download_url`, `paper_url`, `doi`) and text columns (`status_note`, `notes`,
@@ -158,7 +158,7 @@ someone checks the actual data before relying on it.
 
 | Column | Values |
 |---|---|
-| `text_emotion_link` (`;`-separated) | `parallel` (same sentences in every emotion), `neutral_text` (semantically neutral sentences), `emotion_specific_text` (content matches the emotion), `unrelated_text` (sentences assigned without regard to the emotion), `dialogue_script` (film, drama or written-dialogue lines), `unscripted` |
+| `spoken_text_design` (`;`-separated) | `parallel` (same sentences in every emotion), `neutral_text` (semantically neutral sentences), `emotion_specific_text` (content matches the emotion), `unrelated_text` (sentences assigned without regard to the emotion), `dialogue_script` (film, drama or written-dialogue lines), `unscripted` |
 | `lexical_confound` | `full` (each sentence under one emotion only), `strong` (most utterances), `moderate` (a substantial part), `weak` (a small part), `possible` (a documented reason to suspect it, such as unscripted speech or labels assigned with the transcript visible), `none` (ruled out by design: parallel, neutral or emotion-independent text, or no words) |
 | `lexical_confound_note` (free text) | what the value rests on and its scope |
 

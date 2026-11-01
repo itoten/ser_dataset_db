@@ -234,7 +234,7 @@ Each row has about 45 columns; start with these.
 | `recording_context` | recording setting or medium | `acted` |
 | `speech_production` | how the audio was produced (5.4.1) | `acted` |
 | `label_basis` | how the labels were made (5.4.1) | `intended` |
-| `text_emotion_link` / `lexical_confound` | how the spoken text relates to the labels, and how far the words alone give the label away (5.4.2) | `parallel` / `none` |
+| `spoken_text_design` / `lexical_confound` | how the spoken text relates to the labels, and how far the words alone give the label away (5.4.2) | `parallel` / `none` |
 | `license_spdx` / `license_class` | license and its class (section 9) | `CC-BY-NC-SA-4.0` / `noncommercial` |
 | `access_method` | how to obtain it (section 10) | `direct_download` |
 | `raw_audio_available` | whether raw audio is distributed | `true` |
@@ -286,13 +286,13 @@ Records who assigned the main labels (those in `labels_discrete_reported` and `d
 - When instructed labels were confirmed by a listening test, or only agreeing clips were kept, the label stays `intended` and `label_verification=listener_validated`.
 - Filled during recipe review. Rows not yet reviewed are empty (not checked).
 
-### 5.4.2 Text and labels (`text_emotion_link`, `lexical_confound`)
+### 5.4.2 Text and labels (`spoken_text_design`, `lexical_confound`)
 
 If the words spoken already give the label away, a model can learn the words instead of the voice (shortcut learning). Datasets whose labels follow only the words are excluded (`labels_from_text_content`). Datasets with real paralinguistic information but some correlation with the words may be used, with care. These columns flag that correlation so that the actual data gets checked; they do not decide anything on their own.
 
 | Column | Values |
 |---|---|
-| `text_emotion_link` (`;`-separated) | `parallel` (the same sentences in every emotion) / `neutral_text` (semantically neutral sentences) / `emotion_specific_text` (content matches the emotion) / `unrelated_text` (sentences assigned without regard to the emotion) / `dialogue_script` (lines of a film, drama or written dialogue) / `unscripted` (conversations, broadcasts, improvisation) |
+| `spoken_text_design` (`;`-separated) | `parallel` (the same sentences in every emotion) / `neutral_text` (semantically neutral sentences) / `emotion_specific_text` (content matches the emotion) / `unrelated_text` (sentences assigned without regard to the emotion) / `dialogue_script` (lines of a film, drama or written dialogue) / `unscripted` (conversations, broadcasts, improvisation) |
 | `lexical_confound` | `full` (the text determines the label: each sentence under one emotion only) / `strong` (most utterances) / `moderate` (a substantial part) / `weak` (a small part or a weak link) / `possible` (no direct evidence, but a documented reason to suspect it, e.g. unscripted speech, labels assigned from context or with the transcript visible) / `none` (ruled out by design: parallel, neutral or emotion-independent sentences, or no words) |
 | `lexical_confound_note` | free text: what the value is based on (design in a source, sentence-label counts, a text-only classifier) and its scope (e.g. "English half only") |
 
@@ -373,7 +373,7 @@ A value alone cannot answer "is that really true?" later. So every important val
 | `is_canonical` | `true` for the evidence of the current value; exactly one per dataset x column |
 | `status` | `current` / `superseded` (replaced by newer evidence) / `conflicting` (sources disagree, undecided) |
 
-Columns that need evidence: `languages`, `recording_context`, `vocal_content`, `license_spdx`, `access_method`, `raw_audio_available`, `n_utt_reported`, `hours_reported`, `n_speakers_reported`, `n_files_release_measured`, `n_speakers_measured`, `labels_discrete_reported`, `dimensional_attributes`, `espnet_status`, `status_reason_codes`, `label_source`, `label_verification`, `speech_production`, `label_basis`, `text_emotion_link`, `lexical_confound`, `paralinguistic_signal`, `human_accuracy`, `source_rights`.
+Columns that need evidence: `languages`, `recording_context`, `vocal_content`, `license_spdx`, `access_method`, `raw_audio_available`, `n_utt_reported`, `hours_reported`, `n_speakers_reported`, `n_files_release_measured`, `n_speakers_measured`, `labels_discrete_reported`, `dimensional_attributes`, `espnet_status`, `status_reason_codes`, `label_source`, `label_verification`, `speech_production`, `label_basis`, `spoken_text_design`, `lexical_confound`, `paralinguistic_signal`, `human_accuracy`, `source_rights`.
 
 ### 6.2.1 Recording when something was checked
 
@@ -586,7 +586,7 @@ Open [views/datasets_wide.csv](../views/datasets_wide.csv) in Excel, Google Shee
 - `reasons`: reason codes
 - `license_class`, `access_method`, `raw_audio_available`
 - `speech_production`, `label_basis`, `label_basis_note`
-- `text_emotion_link`, `lexical_confound`, `lexical_confound_note`
+- `spoken_text_design`, `lexical_confound`, `lexical_confound_note`
 - `paralinguistic_signal`, `paralinguistic_signal_note`
 - `human_accuracy`, `human_accuracy_note`
 - `source_rights`, `source_rights_note`
