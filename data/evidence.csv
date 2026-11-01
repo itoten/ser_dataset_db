@@ -359,7 +359,7 @@ baser/emotion_categories.label_verification/02,baser,emotion_categories.label_ve
 baser/full_title/01,baser,full_title,Bangla Adolescent Speech Emotion Recognition,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 baser/hours_release/01,baser,hours_release,0.61,baser_readme,commit 28e18504d539; Size of the release,2026-11-01,claude,current,
 baser/languages/01,baser,languages,ben,baser_page,description: a new audio-only emotional speech corpus in Bengali,2026-10-14,claude,current,
-baser/license_spdx/01,baser,license_spdx,Apache-2.0,baser_page,Kaggle dataset license field: Apache 2.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-02
+baser/license_spdx/01,baser,license_spdx,Apache-2.0,baser_page,Kaggle dataset license field: Apache 2.0,2026-10-14,user,current,Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)
 baser/n_files_release/01,baser,n_files_release,750,,,2026-10-14,claude,superseded,Provisional:; superseded by baser/n_files_release/02
 baser/n_files_release/02,baser,n_files_release,750,baser_readme,commit 28e18504d539; Size of the release,2026-11-01,claude,current,
 baser/n_speakers_release/01,baser,n_speakers_release,10,,,2026-10-23,claude,superseded,"Provisional: The Kaggle description says 12 (6 male, 6 female). Reason for the discrepancy unknown (recorded without speculation by the maintainer's decision, 2026-10-23); independently re-measured from the release files by the DB maintainer on 2026-10-23: matches; superseded by baser/n_speakers_release/02"
@@ -372,12 +372,12 @@ baser/spoken_text_design/01,baser,spoken_text_design,parallel,,,2026-10-24,claud
 baser/vocal_content/01,baser,vocal_content,speech,baser_page,audio-only emotional speech corpus,2026-10-14,claude,current,
 basis_global_emotions/access_method/01,basis_global_emotions,access_method,request_form_or_email,basis_global_emotions_page,dataset API: gated manual,2026-10-14,claude,current,
 basis_global_emotions/languages/01,basis_global_emotions,languages,mul,basis_global_emotions_page,"dataset tags list many languages (af, ak, am, ar, as, az, ...)",2026-10-14,claude,current,
-basis_global_emotions/license_spdx/01,basis_global_emotions,license_spdx,LicenseRef-other,basis_global_emotions_page,card metadata: license other,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-02
+basis_global_emotions/license_spdx/01,basis_global_emotions,license_spdx,LicenseRef-other,basis_global_emotions_page,card metadata: license other,2026-10-14,user,current,Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)
 basis_global_emotions/name/01,basis_global_emotions,name,basis-global-emotions,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 baum1/access_method/01,baum1,access_method,request_form_or_email,,§D verified: restricted / application required - BAUM-1 (request by e-mail),2026-10-10,claude,superseded,superseded by baum1/access_method/02; Former source type: project_doc
 baum1/access_method/02,baum1,access_method,request_form_or_email,baum1_page,additional_info: in order to download the database please send an e-mail,2026-10-14,claude,current,
 baum1/access_observed/01,baum1,access_observed,obtained,baum1_page,abstract: video clips containing facial expressions and speech,2026-10-14,claude,current,
-baum1/license_spdx/02,baum1,license_spdx,CC-BY-4.0,baum1_page_2,UCI License: CC BY 4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-02
+baum1/license_spdx/02,baum1,license_spdx,CC-BY-4.0,baum1_page_2,UCI License: CC BY 4.0,2026-10-14,user,current,Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)
 baum1/n_files_reported/02,baum1,n_files_reported,1184,baum1_page,abstract: 1184 multimodal facial video clips collected from 31 subjects,2026-10-14,claude,current,
 baum1/n_speakers_reported/02,baum1,n_speakers_reported,31,baum1_page,abstract: 1184 multimodal facial video clips collected from 31 subjects,2026-10-14,claude,current,
 baum1/name/01,baum1,name,BAUM-1,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by baum1/name/02
@@ -385,7 +385,7 @@ baum1/name/02,baum1,name,BAUM-1,baum1_paper,title of the source contains the nam
 baum2/access_method/01,baum2,access_method,request_form_or_email,baum2_page,additional_info: in order to download the database please send an e-mail,2026-10-14,claude,current,
 baum2/access_observed/01,baum2,access_observed,obtained,baum2_page,abstract: audio-visual affective face database,2026-10-14,claude,current,
 baum2/languages/01,baum2,languages,mul,baum2_page,abstract: a multilingual audio-visual affective face database,2026-10-14,claude,current,
-baum2/license_spdx/01,baum2,license_spdx,CC-BY-4.0,baum2_page_2,UCI License: CC BY 4.0,2026-10-14,user,current,Terms at application time unverified; Verified by the maintainer in the pull request of branch verify/2026-11-01-02
+baum2/license_spdx/01,baum2,license_spdx,CC-BY-4.0,baum2_page_2,UCI License: CC BY 4.0,2026-10-14,user,current,Terms at application time unverified; Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)
 baum2/n_files_reported/01,baum2,n_files_reported,1047,baum2_page,abstract: 1047 video clips of 286 subjects,2026-10-14,claude,superseded,superseded by baum2/n_utt_reported/02
 baum2/n_files_reported/02,baum2,n_files_reported,1047,baum2_page_2,1047 video clips of 286 subjects,2026-10-28,claude,current,
 baum2/n_speakers_reported/01,baum2,n_speakers_reported,286,baum2_page,abstract: 1047 video clips of 286 subjects,2026-10-14,claude,current,
@@ -394,7 +394,7 @@ baum2/name/02,baum2,name,BAUM-2,baum2_paper_2,title of the source contains the n
 baved/access_method/01,baved,access_method,direct_download,baved_page,repository contains 0/ to 6/ directories of .wav files; no login,2026-10-14,claude,current,
 baved/access_observed/01,baved,access_observed,obtained,baved_page,README: dataset in audio/wav format; 1935 records,2026-10-14,claude,current,
 baved/languages/01,baved,languages,arb,baved_page,README: dataset contains 7 arabic words,2026-10-14,claude,current,
-baved/license_spdx/01,baved,license_spdx,none_stated,baved_page,repository has no license; README states no terms,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-02
+baved/license_spdx/01,baved,license_spdx,none_stated,baved_page,repository has no license; README states no terms,2026-10-14,user,current,Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)
 baved/n_files_release/01,baved,n_files_release,1935,,,2026-10-14,claude,provisional,Provisional:
 baved/n_files_reported/01,baved,n_files_reported,1935,baved_page,README: Number of records: 1935,2026-10-14,claude,current,
 baved/n_speakers_release/01,baved,n_speakers_release,60,,,2026-10-14,claude,provisional,Provisional:
@@ -408,7 +408,7 @@ beat/full_title/02,beat,full_title,BEAT: A Large-Scale Semantic and Emotional Mu
 beat/hours_reported/01,beat,hours_reported,76,beat_page,BEAT contains 76-hour 3D motion paired with audio,2026-10-13,claude,current,
 beat/languages/01,beat,languages,eng;cmn;spa;jpn,beat_page,"BEAT contains recording in English (60h), Chinese (16h), Spanish (2h) and Japanese (2h)",2026-10-13,claude,current,
 beat/license_spdx/01,beat,license_spdx,LicenseRef-other,gh_superkogito_ser_datasets_secondary,README table row BEAT: License Non-commercial license,2026-10-13,claude,superseded,From SuperKogito; source unknown; superseded by beat/license_spdx/02
-beat/license_spdx/02,beat,license_spdx,Apache-2.0,beat_card,dataset card metadata: license apache-2.0,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-02
+beat/license_spdx/02,beat,license_spdx,Apache-2.0,beat_card,dataset card metadata: license apache-2.0,2026-10-13,user,current,Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)
 beat/n_files_release/01,beat,n_files_release,1946,,,2026-10-13,claude,provisional,Provisional: English part only
 beat/n_speakers_reported/01,beat,n_speakers_reported,30,beat_page,30 Speakers with Self-Talk and Conversation Recording,2026-10-13,claude,current,
 beat/name/01,beat,name,BEAT,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by beat/name/02
@@ -416,9 +416,9 @@ beat/name/02,beat,name,BEAT,beat_page,title of the source contains the name,2026
 beat/speech_production/01,beat,speech_production,acted,beat_page,emotional gestures with 8 emotions for each speaker; self-talk reading predefined text,2026-10-13,claude,current,
 beat/vocal_content/01,beat,vocal_content,speech,beat_page,audio and text paired with 3D motion,2026-10-13,claude,current,
 bedvibe/access_method/01,bedvibe,access_method,paid_or_membership,bedvibe_page,README: commercial datasets,2026-10-14,claude,current,
-bedvibe/license_spdx/01,bedvibe,license_spdx,LicenseRef-proprietary-restricted,bedvibe_page,README: commercial emotional speech datasets available through BedVibe Studio,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-02
+bedvibe/license_spdx/01,bedvibe,license_spdx,LicenseRef-proprietary-restricted,bedvibe_page,README: commercial emotional speech datasets available through BedVibe Studio,2026-10-14,user,current,Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)
 bedvibe/name/01,bedvibe,name,BedVibe Emotional Speech Datasets,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
-belfast/license_spdx/02,belfast,license_spdx,unknown,belfast_paper,the paper states no licence or terms of distribution,2026-10-31,user,current,"The paper was read; it describes the database design, not its terms; Verified by the maintainer in the pull request of branch verify/2026-11-01-02"
+belfast/license_spdx/02,belfast,license_spdx,unknown,belfast_paper,the paper states no licence or terms of distribution,2026-10-31,user,current,"The paper was read; it describes the database design, not its terms; Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)"
 belfast/n_speakers_reported/02,belfast,n_speakers_reported,100,belfast_paper,The database currently contains material from a total of 100 people,2026-10-31,claude,current,Section 2.3; a total of 239 clips
 belfast/name/01,belfast,name,Belfast Database,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 berst/access_method/01,berst,access_method,direct_download,berst_card,dataset is not gated; wav files listed,2026-10-13,claude,current,
@@ -432,7 +432,7 @@ berst/full_title/01,berst,full_title,B(asic) E(motion) R(andom phrase) S(hou)t(s
 berst/hours_release/01,berst,hours_release,3.73,berst_readme,commit 9de780d2cf96; Size of the release,2026-11-01,claude,current,
 berst/hours_reported/01,berst,hours_reported,3.75,berst_card,card: 4526 single phrase recordings (~3.75h),2026-10-13,claude,current,
 berst/languages/01,berst,languages,eng,berst_card,"card: varying regional accents in English, including non-native speakers",2026-10-13,claude,current,
-berst/license_spdx/01,berst,license_spdx,CC-BY-4.0,berst_card,dataset card metadata: license cc-by-4.0,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-02
+berst/license_spdx/01,berst,license_spdx,CC-BY-4.0,berst_card,dataset card metadata: license cc-by-4.0,2026-10-13,user,current,Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)
 berst/n_files_release/01,berst,n_files_release,4523,,"file listing API: 4,523 .wav files, 2026-10-13",2026-10-13,claude,superseded,"Difference from the reported 4,526 unverified; superseded by berst/n_files_release_measured/02; Former source type: measured"
 berst/n_files_release/02,berst,n_files_release,4523,,,2026-10-23,claude,superseded,"Provisional: 3 fewer than the 4,526 on the Hugging Face card; reason unknown (as of 2026-10-23); independently re-measured from the release files by the DB maintainer on 2026-10-23: matches; superseded by berst/n_files_release/03"
 berst/n_files_release/03,berst,n_files_release,4523,berst_readme,commit 9de780d2cf96; Size of the release,2026-11-01,claude,current,
@@ -447,7 +447,7 @@ berst/vocal_content/01,berst,vocal_content,speech,berst_card,card: nonsense phra
 biicnnime/access_method/01,biicnnime,access_method,signed_agreement,biicnnime_page,sign the EULA and send it to the email below with proof of affiliation,2026-10-14,claude,current,
 biicnnime/emotion_categories.annotator/01,biicnnime,emotion_categories.annotator,human,arxiv_s_2402_13018,annotated with emotions and typed descriptions; turns annotated 'other' by all annotators or by fewer than three annotators are excluded,2026-10-28,claude,current,
 biicnnime/languages/02,biicnnime,languages,cmn,biicnnime_survey,"dyadic conversations acted by 43 actors in Mandarin Chinese (EMO-SUPERB, Section 4.1)",2026-10-31,claude,current,Official page https://nnime.ee.nthu.edu.tw/ returned no content on 2026-10-31; the EMO-SUPERB benchmark paper (secondary) describes the corpus
-biicnnime/license_spdx/02,biicnnime,license_spdx,LicenseRef-custom-research-only,biicnnime_page,available for free for academics and non-profit organisations for research purpose,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-02
+biicnnime/license_spdx/02,biicnnime,license_spdx,LicenseRef-custom-research-only,biicnnime_page,available for free for academics and non-profit organisations for research purpose,2026-10-14,user,current,Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)
 biicnnime/n_speakers_reported/02,biicnnime,n_speakers_reported,43,biicnnime_survey,"dyadic conversations acted by 43 actors in Mandarin Chinese (EMO-SUPERB, Section 4.1)",2026-10-31,claude,current,Official page https://nnime.ee.nthu.edu.tw/ returned no content on 2026-10-31; the EMO-SUPERB benchmark paper (secondary) describes the corpus
 biicnnime/name/01,biicnnime,name,BIIC-NNIME,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 biicnnime/speech_production/01,biicnnime,speech_production,acted,arxiv_s_2402_13018,dyadic conversations acted by 43 actors in Mandarin,2026-10-28,claude,current,
@@ -456,7 +456,7 @@ biicpodcast/emotion_categories.annotator/01,biicpodcast,emotion_categories.annot
 biicpodcast/emotion_categories.label_basis/01,biicpodcast,emotion_categories.label_basis,perceived,arxiv_s_2402_13018,perceptual annotation by crowd annotators,2026-10-28,claude,current,
 biicpodcast/emotion_categories.label_verification/01,biicpodcast,emotion_categories.label_verification,listener_validated,arxiv_s_2402_13018,at least five annotators per utterance; the MSP-PODCAST quality control protocol is followed; agreement figures not read here,2026-10-28,claude,current,
 biicpodcast/languages/02,biicpodcast,languages,cmn,biicpodcast_page,emotional speech recordings in Taiwanese Mandarin language,2026-10-14,claude,current,
-biicpodcast/license_spdx/02,biicpodcast,license_spdx,LicenseRef-custom-research-only,biicpodcast_page,Academic License (free of cost); commercial license from National Tsing Hua University,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-02
+biicpodcast/license_spdx/02,biicpodcast,license_spdx,LicenseRef-custom-research-only,biicpodcast_page,Academic License (free of cost); commercial license from National Tsing Hua University,2026-10-14,user,current,Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)
 biicpodcast/material_origin/01,biicpodcast,material_origin,podcast,biicpodcast_page,audio gathered from audio-sharing platforms under CC-BY or CC-BY-SA,2026-10-14,claude,current,
 biicpodcast/n_files_reported/02,biicpodcast,n_files_reported,70000,arxiv_s_2402_13018,"release 1.01: 48,815 train, 10,845 development, 10,340 test utterances",2026-10-28,claude,current,
 biicpodcast/name/01,biicpodcast,name,BIIC-Podcast,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -479,7 +479,7 @@ brytserc/full_title/01,brytserc,full_title,BRYTSERC: Bangla Realistic YouTube Sp
 brytserc/full_title/02,brytserc,full_title,BRYTSERC: Bangla Realistic YouTube Speech Emotion Recognition Corpus,brytserc_page,title of the source contains the full title,2026-11-01,claude,current,
 brytserc/hours_release/01,brytserc,hours_release,4.35,brytserc_readme,commit 26d2d461f69c; Size of the release,2026-11-01,claude,current,
 brytserc/languages/01,brytserc,languages,ben,brytserc_page,a realistic Bangla speech emotion dataset,2026-10-14,claude,current,
-brytserc/license_spdx/01,brytserc,license_spdx,LicenseRef-custom-research-only,brytserc_page,CC BY 4.0 covers annotations only; source audio non-commercial academic research only,2026-10-14,user,current,"The figshare license field says CC BY 4.0, but the description states it does not extend to the audio; Verified by the maintainer in the pull request of branch verify/2026-11-01-02"
+brytserc/license_spdx/01,brytserc,license_spdx,LicenseRef-custom-research-only,brytserc_page,CC BY 4.0 covers annotations only; source audio non-commercial academic research only,2026-10-14,user,current,"The figshare license field says CC BY 4.0, but the description states it does not extend to the audio; Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)"
 brytserc/material_origin/01,brytserc,material_origin,web_video,brytserc_page,collected from publicly available YouTube videos,2026-10-14,claude,current,
 brytserc/n_files_release/01,brytserc,n_files_release,5215,,,2026-10-23,claude,superseded,"Provisional: Matches figshare (5,215); independently re-measured from the release files by the DB maintainer on 2026-10-23: matches; superseded by brytserc/n_files_release/02"
 brytserc/n_files_release/02,brytserc,n_files_release,5215,brytserc_readme,commit 26d2d461f69c; Size of the release,2026-11-01,claude,current,
@@ -508,7 +508,7 @@ cafe/emotion_categories.label_verification/01,cafe,emotion_categories.label_veri
 cafe/full_title/01,cafe,full_title,Canadian French Emotional (CaFE) speech dataset,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 cafe/hours_release/01,cafe,hours_release,1.15,cafe_readme,commit 44dc11c763a8; Size of the release,2026-11-01,claude,current,
 cafe/languages/02,cafe,languages,fra,cafe_page,A Canadian French Emotional Speech Dataset; language: French,2026-10-31,claude,current,
-cafe/license_spdx/02,cafe,license_spdx,CC-BY-NC-SA-4.0,cafe_page,Zenodo license field and bundled License.txt,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-02
+cafe/license_spdx/02,cafe,license_spdx,CC-BY-NC-SA-4.0,cafe_page,Zenodo license field and bundled License.txt,2026-10-11,user,current,Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)
 cafe/n_files_release/01,cafe,n_files_release,936,,,2026-10-11,claude,superseded,Provisional:; superseded by cafe/n_files_release/02
 cafe/n_files_release/02,cafe,n_files_release,936,cafe_readme,commit 44dc11c763a8; Size of the release,2026-11-01,claude,current,
 cafe/n_speakers_release/01,cafe,n_speakers_release,12,,,2026-10-12,claude,superseded,Provisional:; superseded by cafe/n_speakers_release/02
@@ -524,7 +524,7 @@ capspeech/emotion_categories.annotator/01,capspeech,emotion_categories.annotator
 capspeech/emotion_categories.label_verification/01,capspeech,emotion_categories.label_verification,unknown,arxiv_s_2506_02863,No statement that humans reviewed the machine annotations was found,2026-10-23,claude,current,
 capspeech/full_title/01,capspeech,full_title,CapSpeech: Enabling Downstream Applications in Style-Captioned Text-to-Speech,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 capspeech/languages/01,capspeech,languages,eng,hf_opensound_capspeech,card metadata: language en,2026-10-23,claude,current,
-capspeech/license_spdx/01,capspeech,license_spdx,CC-BY-NC-4.0,hf_opensound_capspeech,card: All resources are under the CC BY-NC 4.0 license,2026-10-23,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-02
+capspeech/license_spdx/01,capspeech,license_spdx,CC-BY-NC-4.0,hf_opensound_capspeech,card: All resources are under the CC BY-NC 4.0 license,2026-10-23,user,current,Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)
 capspeech/material_origin/01,capspeech,material_origin,multiple,arxiv_s_2506_02863,"Emilia, GigaSpeech, MLS, CommonVoice, LibriTTS-R, etc.",2026-10-23,claude,current,
 capspeech/n_files_reported/01,capspeech,n_files_reported,10000000,arxiv_s_2506_02863,abstract: over 10 million machine-annotated audio-caption pairs and nearly 0.36 million human-annotated,2026-10-23,claude,current,"358,783 human-annotated pairs"
 capspeech/name/01,capspeech,name,CapSpeech,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -535,7 +535,7 @@ capspeech_agentdb/full_title/01,capspeech_agentdb,full_title,CapSpeech-AgentDB,,
 capspeech_agentdb/full_title/02,capspeech_agentdb,full_title,CapSpeech-AgentDB,capspeech_agentdb_card,title of the source contains the full title,2026-11-01,claude,current,
 capspeech_agentdb/hours_reported/01,capspeech_agentdb,hours_reported,25.2,arxiv_s_2506_02863,§3: totaling approximately 25.2 hours,2026-10-23,claude,current,
 capspeech_agentdb/languages/01,capspeech_agentdb,languages,eng,hf_opensound_capspeech,card metadata: language en,2026-10-23,claude,current,
-capspeech_agentdb/license_spdx/01,capspeech_agentdb,license_spdx,CC-BY-NC-4.0,capspeech_agentdb_card,Hugging Face license tag cc-by-nc-4.0,2026-10-23,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-02
+capspeech_agentdb/license_spdx/01,capspeech_agentdb,license_spdx,CC-BY-NC-4.0,capspeech_agentdb_card,Hugging Face license tag cc-by-nc-4.0,2026-10-23,user,current,Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)
 capspeech_agentdb/n_files_reported/01,capspeech_agentdb,n_files_reported,10000,arxiv_s_2506_02863,"§3: 10,000 caption-speech pairs, approximately 25.2 hours, a single female speaker; 500 pairs held out for testing",2026-10-23,claude,current,
 capspeech_agentdb/n_speakers_reported/01,capspeech_agentdb,n_speakers_reported,1,arxiv_s_2506_02863,§3: a single female speaker,2026-10-23,claude,current,
 capspeech_agentdb/name/01,capspeech_agentdb,name,CapSpeech-AgentDB,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by capspeech_agentdb/name/02
@@ -550,7 +550,7 @@ casia/emotion_categories.label_verification/01,casia,emotion_categories.label_ve
 casia/hours_release/01,casia,hours_release,0.64,casia_readme,commit 30cd2cb0d32e; Size of the release,2026-11-01,claude,current,
 casia/hours_reported/02,casia,hours_reported,unknown,casia_page_3,The summary gives no total duration,2026-10-23,claude,current,"The spreadsheet's 0.6 is the duration of the 1,200-clip version (measured 0.6352), not of the whole corpus, so it is replaced. The sources give no total duration"
 casia/languages/02,casia,languages,cmn,casia_page_2,(1)资源名称 汉语情感语料库 (resource name: Chinese emotional speech corpus),2026-10-23,claude,current,"Checked by the DB maintainer against the archived copy (2026-10-23). A catalogue of the distributor ChineseLDC, not a document of the creators' lab"
-casia/license_spdx/02,casia,license_spdx,LicenseRef-proprietary-restricted,casia_page_3,授权费 field (license fees),2026-10-23,user,current,"Checked by the DB maintainer against the archived copy (2026-10-23). A catalogue of the distributor ChineseLDC, not a document of the creators' lab; Verified by the maintainer in the pull request of branch verify/2026-11-01-02"
+casia/license_spdx/02,casia,license_spdx,LicenseRef-proprietary-restricted,casia_page_3,授权费 field (license fees),2026-10-23,user,current,"Checked by the DB maintainer against the archived copy (2026-10-23). A catalogue of the distributor ChineseLDC, not a document of the creators' lab; Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)"
 casia/n_files_release/01,casia,n_files_release,1200,,,2026-10-23,claude,superseded,"Provisional: The count of the 1,200-clip version, not of the whole corpus. The DB maintainer re-counted the release files and it matches; superseded by casia/n_files_release/02"
 casia/n_files_release/02,casia,n_files_release,1200,casia_readme,commit 30cd2cb0d32e; Size of the release,2026-11-01,claude,current,
 casia/n_files_reported/02,casia,n_files_reported,9600,casia_page_3,Summary (updated 2010-10-09),2026-10-23,claude,conflicting,"Checked by the DB maintainer against the archived copy (2026-10-23). A catalogue of the distributor ChineseLDC, not a document of the creators' lab. 4 x 6 x 400"
@@ -568,7 +568,7 @@ caves/access_observed/01,caves,access_observed,obtained,caves_page,auditory and 
 caves/emotion_categories.annotator/01,caves,emotion_categories.annotator,human,caves_paper,speakers produced the sentences in the instructed emotions,2026-10-28,claude,current,
 caves/emotion_categories.label_verification/01,caves,emotion_categories.label_verification,listener_validated,caves_paper,"validation study: 15 native Cantonese perceivers completed a forced-choice emotion identification task under auditory-visual, visual-only and auditory-only conditions",2026-10-28,claude,current,Overall accuracy figures were not read here
 caves/languages/01,caves,languages,yue,caves_page,ten native speakers of Cantonese uttering 50 sentences each,2026-10-14,claude,current,
-caves/license_spdx/01,caves,license_spdx,LicenseRef-custom-research-only,caves_page,The dataset is freely available for research purposes,2026-10-14,user,current,Text of the terms of use not read; Verified by the maintainer in the pull request of branch verify/2026-11-01-02
+caves/license_spdx/01,caves,license_spdx,LicenseRef-custom-research-only,caves_page,The dataset is freely available for research purposes,2026-10-14,user,current,Text of the terms of use not read; Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)
 caves/n_files_reported/01,caves,n_files_reported,3500,caves_page,3500 AV stimuli and the same number of visual only and auditory only stimuli,2026-10-14,claude,current,
 caves/n_speakers_reported/01,caves,n_speakers_reported,10,caves_page,Ten native speakers of Cantonese (five females),2026-10-14,claude,current,
 caves/name/01,caves,name,CAVES,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -586,7 +586,7 @@ cbesd/full_title/01,cbesd,full_title,Children-Bilingual Emotion Speech Dataset,,
 cbesd/hours_release/01,cbesd,hours_release,3.03,cbesd_readme,commit 454fad4bff89; Size of the release,2026-11-01,claude,current,
 cbesd/hours_reported/01,cbesd,hours_reported,2.5,cbesd_page,nearly 2.5 hours of speech recordings from 70 children,2026-10-14,claude,current,
 cbesd/languages/01,cbesd,languages,tel;eng,cbesd_page,description: utterances in Telugu and English,2026-10-14,claude,current,
-cbesd/license_spdx/01,cbesd,license_spdx,CC-BY-SA-4.0,cbesd_page,Kaggle dataset license field: CC BY-SA 4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-01-02
+cbesd/license_spdx/01,cbesd,license_spdx,CC-BY-SA-4.0,cbesd_page,Kaggle dataset license field: CC BY-SA 4.0,2026-10-14,user,current,Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)
 cbesd/n_files_release/01,cbesd,n_files_release,4204,,,2026-10-14,claude,superseded,Provisional:; superseded by cbesd/n_files_release/02
 cbesd/n_files_release/02,cbesd,n_files_release,4204,cbesd_readme,commit 454fad4bff89; Size of the release,2026-11-01,claude,current,
 cbesd/n_files_reported/01,cbesd,n_files_reported,4320,cbesd_page,comprises 4320 utterances in Telugu and English,2026-10-14,claude,superseded,"The description also says 4,200 elsewhere; superseded by cbesd/n_utt_reported/02"
@@ -607,7 +607,7 @@ cemo/access_method/01,cemo,access_method,unavailable,cemo_paper,§2: agreements 
 cemo/access_observed/01,cemo,access_observed,unavailable,cemo_paper,§2: agreements ensure the non-diffusion of the corpus and annotations,2026-10-13,claude,current,
 cemo/hours_reported/01,cemo,hours_reported,20,cemo_paper,Table 1: 688 agent-client dialogs of around 20 hours,2026-10-13,claude,current,
 cemo/languages/01,cemo,languages,fra,cemo_paper,French call center: APHP France and LIMSI-CNRS convention; fillers written as French euh,2026-10-13,claude,current,
-cemo/license_spdx/01,cemo,license_spdx,unknown,cemo_paper,§2: agreements ensure the non-diffusion of the corpus and annotations,2026-10-13,user,current,"Not distributed, so there is no license; Verified by the maintainer in the pull request of branch verify/2026-11-01-02"
+cemo/license_spdx/01,cemo,license_spdx,unknown,cemo_paper,§2: agreements ensure the non-diffusion of the corpus and annotations,2026-10-13,user,current,"Not distributed, so there is no license; Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)"
 cemo/n_speakers_reported/01,cemo,n_speakers_reported,unknown,cemo_paper,"Table 1: 7 agents (3M, 4F); clients 688 dialogs (271M, 513F)",2026-10-13,claude,current,The total number of speakers is not given
 cemo/name/01,cemo,name,CEMO,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 cemo/vocal_content/01,cemo,vocal_content,speech,cemo_paper,§2: transcribed agent-client spoken dialogs,2026-10-13,claude,current,
@@ -621,7 +621,7 @@ chen_bimodal/name/01,chen_bimodal,name,Chen Bimodal,,,2026-11-01,claude,provisio
 chen_bimodal/speech_production/01,chen_bimodal,speech_production,acted,arxiv_s_2509_09791_secondary,Table I row Chen Bimodal: Type Acted,2026-10-13,claude,current,
 chsims/access_method/01,chsims,access_method,direct_download,github_sims_github_io_chsims,Download: raw video files and features; CH-SIMS [Google Drive] [Baiduyun Drive],2026-10-14,claude,current,
 chsims/access_observed/01,chsims,access_observed,obtained,github_sims_github_io_chsims,We provide raw video files as well as pre-extracted feature files,2026-10-14,claude,current,Audio is contained in the videos
-chsims/license_spdx/02,chsims,license_spdx,none_stated,github_sims_github_io_chsims,project page states no license; GitHub thuiar/ch-sims-v2 has no license,2026-10-14,user,current,MMSA (code) is MIT; Verified by the maintainer in the pull request of branch verify/2026-11-01-02
+chsims/license_spdx/02,chsims,license_spdx,none_stated,github_sims_github_io_chsims,project page states no license; GitHub thuiar/ch-sims-v2 has no license,2026-10-14,user,current,MMSA (code) is MIT; Verified by the maintainer in the pull request #14 (branch verify/2026-11-01-02)
 chsims/n_files_reported/02,chsims,n_files_reported,2281,chsims_paper,"CH-SIMS, which contains 2,281 refined video segments in the wild",2026-10-31,claude,current,
 chsims/name/01,chsims,name,CH-SIMS,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by chsims/name/02
 chsims/name/02,chsims,name,CH-SIMS,chsims_paper,title of the source contains the name,2026-11-01,claude,current,
