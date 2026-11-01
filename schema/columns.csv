@@ -94,3 +94,11 @@ label_normalization,source_label,text,-,no,A label as written in a source
 label_normalization,normalized,text,-,no,The normalised name
 label_normalization,rule,enum:normalization_rule,-,no,case / word_form / source_translation
 label_normalization,note,text,empty,no,Notes (for source_translation: the source that gives the translation)
+issues,dataset_id,slug,-,no,Foreign key to datasets
+issues,issue_no,int,-,no,"1, 2, 3 ... within the dataset"
+issues,type,enum:issue_type,-,no,corrupt_or_unreadable / duplicate / missing_or_mismatched_label / differs_from_documentation / silent_or_non_speech / unusual_audio / listening_observation / other
+issues,description,text,-,no,"The problem as the source states it, with how many and how it was found"
+issues,n,int,empty,no,"Number of files or rows affected, if the source gives it"
+issues,source_id,slug,-,no,"The source (a recipe readme, or a document that reports the problem)"
+issues,locator,text,empty,no,Location within the source (for a readme: commit and heading)
+issues,checked_on,date,-,no,Date checked

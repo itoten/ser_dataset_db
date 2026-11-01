@@ -1,7 +1,7 @@
 dataset_id,field,kind,datasets_value,datasets_source_type,other_value,other_source_type,other_source_ref,note
-anad,n_files_reported vs n_files_release,reported_vs_release,1384,see evidence,1428,implementation,n_files_release,
-asvpesd,n_files_reported vs n_files_release,reported_vs_release,7812,see evidence,9092,implementation,n_files_release,
-bari_emospeech,n_files_reported vs n_files_release,reported_vs_release,2312,see evidence,2328,implementation,n_files_release,
+akace,n_files_reported vs n_files_release,reported_vs_release,6162,see evidence,6138,implementation,n_files_release,
+anad,n_files_reported vs n_files_release,reported_vs_release,1384,see evidence,1420,implementation,n_files_release,
+asvpesd,n_files_reported vs n_files_release,reported_vs_release,7812,see evidence,3555,implementation,n_files_release,
 baser,n_speakers_reported vs n_speakers_release,reported_vs_release,12,see evidence,10,implementation,n_speakers_release,
 baved,n_speakers_reported vs n_speakers_release,reported_vs_release,61,see evidence,60,implementation,n_speakers_release,
 berst,n_files_reported vs n_files_release,reported_vs_release,4526,see evidence,4523,implementation,n_files_release,
@@ -12,23 +12,23 @@ cbesd,n_files_reported,conflicting,conflicting,see evidence,4200,primary,https:/
 cbesd,n_files_reported,conflicting,conflicting,see evidence,4320,primary,https://www.kaggle.com/datasets/pranuthi19/bilingual-emotion-speech-datasetbesd,"The description also contains 4,200 (""composed of 4200 speech recordings""). The formula 35 x 2 x 5 x 6 x 2 gives 4,200, so 4,320 is an arithmetic slip (computed by the DB maintainer, 2026-10-23). The release has 4,204 files"
 dailytalk,hours_reported,conflicting,conflicting,see evidence,20,primary,https://arxiv.org/abs/2207.01063,"Rounded from the 78,026 s (21.67 h) of Table 1"
 dailytalk,hours_reported,conflicting,conflicting,see evidence,21.67,primary,https://arxiv.org/abs/2207.01063,"The text and abstract say ""20 hours in total"" (rounded). The seconds in Table 1 are used"
+dusha,n_files_reported vs n_files_release,reported_vs_release,303963,see evidence,160366,implementation,n_files_release,
 eesc,n_files_reported vs n_files_release,reported_vs_release,1234,see evidence,1164,implementation,n_files_release,
 emilia_emotion,license_spdx,conflicting,conflicting,see evidence,CC-BY-4.0,primary,https://huggingface.co/datasets/laion/Emolia,Not stated in the earlier 5-way split repositories; conflicting because it disagrees with the paper and the original Emilia terms
 emilia_emotion,license_spdx,conflicting,conflicting,see evidence,CC-BY-NC-4.0,primary,https://arxiv.org/abs/2609.32016,"Emilia part CC-BY-NC-4.0, Emilia-YODAS part CC-BY-4.0; derivatives inherit the source clips' license (Limitations). The original amphion/Emilia-Dataset terms likewise use Emilia under CC-BY-NC and Emilia-YODAS under CC-BY"
 emodb,license_spdx,conflicting,conflicting,see evidence,CC-BY-4.0,primary,https://zenodo.org/records/17651657,Zenodo record of EmoDB 2.0; disagrees with the audEERING documentation (CC0-1.0)
 emodb,license_spdx,conflicting,conflicting,see evidence,CC0-1.0,primary,https://audeering.github.io/datasets/datasets/emodb.html,
-emotional_ema,n_files_reported vs n_files_release,reported_vs_release,680,see evidence,953,implementation,n_files_release,
+emospeech_keywords,n_speakers_reported vs n_speakers_release,reported_vs_release,250,see evidence,103,implementation,n_speakers_release,
+emotional_ema,n_files_reported vs n_files_release,reported_vs_release,680,see evidence,956,implementation,n_files_release,
 emotiontts_open_db,n_files_reported vs n_files_release,reported_vs_release,6000,see evidence,300,implementation,n_files_release,
-emovoicedb,n_files_reported vs n_files_release,reported_vs_release,22100,see evidence,24923,implementation,n_files_release,
 escorpuspe,n_files_reported vs n_files_release,reported_vs_release,3749,see evidence,3764,implementation,n_files_release,
-harper_valley_bank,n_files_reported vs n_files_release,reported_vs_release,25730,see evidence,2892,implementation,n_files_release,
 indianenglish,n_files_reported vs n_files_release,reported_vs_release,1000,see evidence,747,implementation,n_files_release,
 inesco,n_files_reported vs n_files_release,reported_vs_release,2400,see evidence,2399,implementation,n_files_release,
 maserc,n_files_reported vs n_files_release,reported_vs_release,804,see evidence,808,implementation,n_files_release,
 mderma,n_files_reported vs n_files_release,reported_vs_release,1322,see evidence,1345,implementation,n_files_release,
-meld,n_files_reported vs n_files_release,reported_vs_release,13000,see evidence,13707,implementation,n_files_release,
+meld,n_files_reported vs n_files_release,reported_vs_release,13000,see evidence,13708,implementation,n_files_release,
 mlend_numerals,n_speakers_reported vs n_speakers_release,reported_vs_release,154,see evidence,151,implementation,n_speakers_release,
-msppodcast,n_speakers_reported vs n_speakers_release,reported_vs_release,3641,see evidence,3713,implementation,n_speakers_release,
+msppodcast,n_speakers_reported vs n_speakers_release,reported_vs_release,3641,see evidence,3714,implementation,n_speakers_release,
 multidialog,n_files_reported vs n_files_release,reported_vs_release,187859,see evidence,187854,implementation,n_files_release,
 rasa,n_files_reported vs n_files_release,reported_vs_release,124842,see evidence,640946,implementation,n_files_release,
 rml_emotion,n_files_reported vs n_files_release,reported_vs_release,500,see evidence,720,implementation,n_files_release,
@@ -38,4 +38,4 @@ thorsten,n_files_reported vs n_files_release,reported_vs_release,2400,see eviden
 turevdb,license_spdx,conflicting,conflicting,see evidence,CC-BY-NC-ND-4.0,primary,https://github.com/Xeonen/TurEV-DB,
 turevdb,license_spdx,conflicting,conflicting,see evidence,GPL-3.0-only,primary,https://github.com/Xeonen/TurEV-DB,
 urdu,n_speakers_reported vs n_speakers_release,reported_vs_release,38,see evidence,29,implementation,n_speakers_release,
-ysed,n_speakers_reported vs n_speakers_release,reported_vs_release,71,see evidence,68,implementation,n_speakers_release,
+ysed,n_speakers_reported vs n_speakers_release,reported_vs_release,71,see evidence,67,implementation,n_speakers_release,

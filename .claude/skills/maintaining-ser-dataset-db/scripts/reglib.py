@@ -196,6 +196,22 @@ class Reg:
                        "annotator": annotator, "unit": unit, "source_id": sid, "locator": loc,
                        "checked_on": self.today, "checked_by": by, "note": note})
 
+    def issue(self, type, description, source_id, locator="", n=""):
+        """A problem of the release as distributed (type from schema/enums.csv issue_type)."""
+        self._check_source(source_id)
+        ih, ir = self.db["issues"]
+        no = max([int(r["issue_no"]) for r in ir if r["dataset_id"] == self.D] or [0]) + 1
+        ir.append({**{k: "" for k in ih}, "dataset_id": self.D, "issue_no": str(no), "type": type,
+                   "description": description, "n": str(n) if n != "" else "", "source_id": source_id,
+                   "locator": locator, "checked_on": self.today})
+
+    def label_count(self, item, label, n, source_id, locator="", note=""):
+        """Number of files with `label` in the label set `item`, as the source states it."""
+        self._check_source(source_id)
+        ch, cr = self.db["label_counts"]
+        cr.append({**{k: "" for k in ch}, "dataset_id": self.D, "item": item, "label": label, "n": str(n),
+                   "source_id": source_id, "locator": locator, "checked_on": self.today, "note": note})
+
     def alias(self, alias, alias_type, source_id="", note=""):
         ah, ar = self.db["aliases"]
         ar.append({**{k: "" for k in ah}, "dataset_id": self.D, "alias": alias,

@@ -309,6 +309,15 @@ def check_sources(db):
     for r in db["annotations"][1]:
         if not r["source_id"] and not r["note"].startswith("Provisional:"):
             err(f"annotations {r['dataset_id']}/{r['item']}: no source_id; a row without a source has a note starting with 'Provisional:'")
+    sets = derive.label_sets(db)
+    for r in db["issues"][1]:
+        if r["source_id"] not in sources:
+            err(f"issues {r['dataset_id']}/{r['issue_no']}: unknown source_id {r['source_id']}")
+    for r in db["label_counts"][1]:
+        if r["source_id"] not in sources:
+            err(f"label_counts {r['dataset_id']}/{r['label']}: unknown source_id {r['source_id']}")
+        if r["item"] not in sets.get(r["dataset_id"], {}):
+            err(f"label_counts {r['dataset_id']}/{r['item']}/{r['label']}: the dataset has no label set {r['item']} in annotations")
     if warn_untyped:
         warn(f"{len(warn_untyped)} sources used by current evidence have no publisher and source_type")
 

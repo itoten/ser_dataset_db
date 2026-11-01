@@ -8,3 +8,4 @@ sources,data/sources.csv,source_id,"One row = one source document (paper, page, 
 dataset_sources,data/dataset_sources.csv,dataset_id;source_id;role,"The sources that introduce a dataset: its paper, its distribution page, its card, mirrors, its recipe readme"
 label_counts,data/label_counts.csv,dataset_id;item;label;source_id,"Number of files per label of a label set, as stated by a source (the documentation or the recipe readme)"
 label_normalization,data/label_normalization.csv,source_label,"Spelling variants of label names that map to one normalised name (case, word form, translations the source gives). No meaning-changing mappings"
+issues,data/issues.csv,dataset_id;issue_no,"Problems and peculiarities of the release as distributed (broken files, duplicates, missing labels, differences from the documentation, observations from listening). One row = one problem, with its source"
