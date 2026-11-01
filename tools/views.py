@@ -10,7 +10,7 @@ import csvio
 import db as dbmod
 
 EXTRA_COLS = ["documents_checked", "implementation_checked", "paper_url", "distribution_url", "card_url", "mirror_url", "readme_url", "other_url",
-              "annotation_items", "license_checked_on", "license_source_type", "license_checked_by",
+              "annotation_items", "license_checked_on", "license_source_type",
               "access_checked_on", "oldest_checked_on", "latest_checked_on"]
 DISC_COLS = ["dataset_id", "field", "kind", "datasets_value", "datasets_source_type", "other_value",
              "other_source_type", "other_source_ref", "note"]
@@ -63,7 +63,7 @@ def wide(db):
             **{f"{role}_url": ";".join(urls.get((i, role), [])) for role in ("paper", "distribution", "card", "mirror", "readme", "other")},
             "annotation_items": ";".join(sorted(items.get(i, []))),
             "license_checked_on": lic["checked_on"] if lic else "", "license_source_type": sources.get(lic["source_id"], {}).get("source_type", "") if lic else "",
-            "license_checked_by": lic["checked_by"] if lic else "", "access_checked_on": acc["checked_on"] if acc else "",
+            "access_checked_on": acc["checked_on"] if acc else "",
             "oldest_checked_on": dates[0] if dates else "", "latest_checked_on": dates[-1] if dates else "",
         })
         out.append(row)
