@@ -2934,7 +2934,7 @@ recanvo/full_title/02,recanvo,full_title,ReCANVo: A Database of Real-World Commu
 recanvo/hours_release/01,recanvo,hours_release,2.46,recanvo_readme,commit 906c09addc96; Size of the release,2026-11-01,claude,current,
 recanvo/languages/01,recanvo,languages,zxx,recanvo_page,labeled vocalizations made by non-speaking individuals,2026-10-13,claude,current,
 recanvo/license_spdx/01,recanvo,license_spdx,CC-BY-3.0-US,recanvo_page,Zenodo record metadata: license cc-by-3.0-us,2026-10-13,claude,superseded,superseded by recanvo/license_spdx/02
-recanvo/license_spdx/02,recanvo,license_spdx,CC-BY-3.0-US,recanvo_page,License field: CC BY 3.0 US (the Zenodo API's license = cc-by-3.0-us agrees),2026-10-18,user,current,The maintainer viewed the page during the review (recipe_review/archive_v1/recanvo.md A1)
+recanvo/license_spdx/02,recanvo,license_spdx,CC-BY-3.0-US,recanvo_page,License field: CC BY 3.0 US (the Zenodo API's license = cc-by-3.0-us agrees),2026-10-18,user,current,The maintainer viewed the page during the review
 recanvo/n_files_release/01,recanvo,n_files_release,7077,,,2026-10-14,claude,superseded,Provisional:; superseded by recanvo/n_files_release/02
 recanvo/n_files_release/02,recanvo,n_files_release,7077,recanvo_readme,commit 906c09addc96; Size of the release,2026-11-01,claude,current,
 recanvo/n_files_reported/01,recanvo,n_files_reported,7077,recanvo_page,a dataset of 7077 labeled vocalizations,2026-10-13,claude,current,
@@ -3585,7 +3585,7 @@ uftbesd/hours_reported/01,uftbesd,hours_reported,unknown,uftbesd_page,descriptio
 uftbesd/languages/01,uftbesd,languages,ben,uftbesd_page,recordings from 100 native Bangla speakers,2026-10-14,claude,current,
 uftbesd/license_spdx/01,uftbesd,license_spdx,CC-BY-4.0,uftbesd_page,Mendeley Data licence: CC BY 4.0,2026-10-14,claude,superseded,superseded by uftbesd/license_spdx/02
 uftbesd/license_spdx/02,uftbesd,license_spdx,CC-BY-4.0,uftbesd_release,data_licence.short_name = CC BY 4.0; url = creativecommons.org/licenses/by/4.0,2026-10-17,claude,superseded,superseded by uftbesd/license_spdx/03
-uftbesd/license_spdx/03,uftbesd,license_spdx,CC-BY-4.0,uftbesd_page,License field: CC BY 4.0,2026-10-17,user,current,The maintainer viewed the page during the review (recipe_review/archive_v1/uftbesd.md A1)
+uftbesd/license_spdx/03,uftbesd,license_spdx,CC-BY-4.0,uftbesd_page,License field: CC BY 4.0,2026-10-17,user,current,The maintainer viewed the page during the review
 uftbesd/n_files_release/01,uftbesd,n_files_release,1400,,,2026-10-17,claude,superseded,Provisional:; superseded by uftbesd/n_files_release/02
 uftbesd/n_files_release/02,uftbesd,n_files_release,1400,uftbesd_readme,commit 6bb3ab504e8c; Size of the release,2026-11-01,claude,current,
 uftbesd/n_files_reported/01,uftbesd,n_files_reported,1400,uftbesd_page,"100 speakers x 2 sentences x 7 emotions = 1,400 audio clips",2026-10-14,claude,current,
