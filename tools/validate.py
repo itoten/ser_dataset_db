@@ -267,6 +267,24 @@ def check_derived(db):
                 err(f"datasets {d['dataset_id']} {c}: {d[c]!r} != {want!r} derived from annotations (run tools/derive.py)")
 
 
+NOTE_COLS = ("notes", "license_note", "language_note", "source_rights_note")
+
+
+def check_note_tags(db):
+    ids = {r["source_id"] for r in db["sources"][1]}
+    for d in db["datasets"][1]:
+        for c in NOTE_COLS:
+            for sent in re.split(r"(?<=[.;])\s+(?=[A-Z0-9])", d[c]):
+                if not sent:
+                    continue
+                tags = re.findall(r"\[([a-z0-9_]+)\]", sent)
+                if not tags:
+                    err(f"datasets {d['dataset_id']} {c}: sentence without a [source_id] tag: {sent[:50]!r}")
+                for t in tags:
+                    if t not in ids:
+                        err(f"datasets {d['dataset_id']} {c}: tag [{t}] is not a source")
+
+
 def check_sources(db):
     sources = {}
     seen = {}
@@ -376,6 +394,7 @@ def main(argv):
     check_evidence(cols, db)
     check_sources(db)
     check_derived(db)
+    check_note_tags(db)
     check_paths(cols, tables, db)
     check_views(db)
     check_no_local_paths()
