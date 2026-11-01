@@ -3233,6 +3233,7 @@ ses_sd/name/02,ses_sd,name,SES-SD,ses_sd_page,title of the source contains the n
 ses_sd/speech_production/01,ses_sd,speech_production,acted,ses_sd_page,participants read each sentence expressing a different emotion; a custom program displayed the sentence and the target emotion,2026-10-26,claude,current,
 ses_sd/spoken_text_design/01,ses_sd,spoken_text_design,parallel,,,2026-10-26,claude,provisional,"Provisional: The release holds 1588 of the 1,590 possible files"
 ses_sd/vocal_content/01,ses_sd,vocal_content,speech,ses_sd_page,five sentences per participant,2026-10-14,claude,current,
+sewa/access_method/01,sewa,access_method,direct_download,sewa_page,"""The dataset can be downloaded from the link below""",2026-11-02,claude,current,
 sewa/access_observed/01,sewa,access_observed,unavailable,,,2026-11-01,claude,provisional,Provisional: from the earlier status notes (the audio could not be obtained or is not distributed)
 sewa/languages/02,sewa,languages,mul,sewa_page,"subjects from six different cultural backgrounds: British, German, Hungarian, Greek, Serbian, and Chinese; the dyadic interactions are always in the native language",2026-10-31,claude,current,The page does not list the languages themselves
 sewa/license_spdx/02,sewa,license_spdx,LicenseRef-custom-research-only,sewa_page_2,The SEWA Database is released at db.sewaproject.eu for research purposes,2026-10-14,claude,current,Text of the terms of use not read
