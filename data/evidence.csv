@@ -243,7 +243,8 @@ atthack/full_title/01,atthack,full_title,Att-HACK: An Expressive Speech Database
 atthack/full_title/02,atthack,full_title,Att-HACK: An Expressive Speech Database with Social Attitudes,atthack_paper,title of the source contains the full title,2026-11-01,claude,current,
 atthack/hours_reported/01,atthack,hours_reported,30,atthack_paper,"abstract: 25 speakers, 100 utterances in 4 social attitudes, 30 hours of speech",2026-10-13,claude,current,
 atthack/languages/01,atthack,languages,fra,atthack_page,About: acted expressive speech in French,2026-10-13,claude,current,
-atthack/license_spdx/01,atthack,license_spdx,CC-BY-NC-ND-4.0,atthack_page,License: Creative Commons (BY/NC/ND),2026-10-13,claude,current,No version stated; treated as 4.0
+atthack/license_spdx/01,atthack,license_spdx,CC-BY-NC-ND-4.0,atthack_page,License: Creative Commons (BY/NC/ND),2026-10-13,claude,superseded,No version stated; treated as 4.0; superseded by atthack/license_spdx/02
+atthack/license_spdx/02,atthack,license_spdx,LicenseRef-other,atthack_page,License: Creative Commons (BY/NC/ND),2026-11-01,claude,current,CC BY-NC-ND; the page does not state a version
 atthack/n_speakers_reported/01,atthack,n_speakers_reported,25,atthack_paper,abstract: 25 speakers interpreting 100 utterances in 4 social attitudes,2026-10-13,claude,current,
 atthack/name/01,atthack,name,Att-HACK,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by atthack/name/02
 atthack/name/02,atthack,name,Att-HACK,atthack_paper,title of the source contains the name,2026-11-01,claude,current,
@@ -1476,7 +1477,7 @@ eseravd/emotion_categories.label_verification/01,eseravd,emotion_categories.labe
 eseravd/hours_release/01,eseravd,hours_release,2.0,eseravd_readme,commit c723dce8171e; Size of the release,2026-11-01,claude,current,
 eseravd/languages/01,eseravd,languages,ind,eseravd_page,description: an Indonesian speech emotion recognition dataset,2026-10-14,claude,current,
 eseravd/license_spdx/01,eseravd,license_spdx,CC-BY-4.0,eseravd_page,Kaggle dataset license field: Attribution 4.0 International (CC BY 4.0),2026-10-14,claude,superseded,superseded by eseravd/license_spdx/02
-eseravd/license_spdx/02,eseravd,license_spdx,CC-BY-4.0,eseravd_page,Kaggle license field,2026-10-22,claude,current,"The Kaggle field says CC BY 4.0. Rights to film dialogue audio are doubtful (maintainer's judgement, 2026-10-22), but the author's license field is trusted and it stays open"
+eseravd/license_spdx/02,eseravd,license_spdx,CC-BY-4.0,eseravd_page,Kaggle license field,2026-10-22,claude,current,The Kaggle license field says CC BY 4.0
 eseravd/material_origin/01,eseravd,material_origin,film_tv,eseravd_page,audio segments extracted from Indonesian movies,2026-10-14,claude,current,
 eseravd/n_files_release/01,eseravd,n_files_release,5400,,"Kaggle file listing API: 5400 .wav files, 2026-10-14",2026-10-14,claude,superseded,superseded by eseravd/n_files_release_measured/02; Former source type: measured
 eseravd/n_files_release/02,eseravd,n_files_release,3000,,,2026-10-22,claude,superseded,"Provisional: The whole Kaggle release holds 5,400 wav files across 3 releases (versions 1 and 1.1 are the same 1,200 clips with 4 emotions). The old value 5400 was the total; superseded by eseravd/n_files_release/03"
@@ -1993,7 +1994,8 @@ jnv/vocal_content/01,jnv,vocal_content,nonverbal,jnv_page,"nonverbal vocalizatio
 jtes/access_method/01,jtes,access_method,request_form_or_email,jtes_page,この技術に関する お問い合わせはこちら (inquiries about this technology: to the inquiry page),2026-10-14,claude,current,
 jtes/hours_reported/02,jtes,hours_reported,23.5,jtes_page,"20,000 utterances (23.5 hours)",2026-10-14,claude,current,
 jtes/languages/02,jtes,languages,jpn,jtes_page,AIや音声認識の研究開発で利用可能な日本語発話データベース,2026-10-31,claude,current,Japanese utterance database
-jtes/license_spdx/02,jtes,license_spdx,LicenseRef-proprietary-restricted,jtes_page,Introduced as an invention case of the technology transfer organisation (reference S20-017),2026-10-14,claude,current,Treated as provided under contract. Terms not checked
+jtes/license_spdx/02,jtes,license_spdx,LicenseRef-proprietary-restricted,jtes_page,Introduced as an invention case of the technology transfer organisation (reference S20-017),2026-10-14,claude,superseded,Treated as provided under contract. Terms not checked; superseded by jtes/license_spdx/03
+jtes/license_spdx/03,jtes,license_spdx,unknown,jtes_page,the page introduces the data as an invention case of a technology transfer organisation (reference S20-017); no license terms are stated,2026-11-01,claude,current,
 jtes/n_files_reported/02,jtes,n_files_reported,20000,jtes_page,"20,000 utterances (23.5 hours): 100 people said 50 sentences for each of 4 emotions",2026-10-14,claude,current,
 jtes/n_speakers_reported/02,jtes,n_speakers_reported,100,jtes_page,"100 people (50 men, 50 women)",2026-10-14,claude,current,
 jtes/name/01,jtes,name,JTES,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by jtes/name/02
@@ -2040,7 +2042,7 @@ kannada/n_speakers_release/02,kannada,n_speakers_release,13,kannada_readme,commi
 kannada/n_speakers_reported/01,kannada,n_speakers_reported,13,kannada_page,"description table lists 13 speakers (9 female, 4 male, 12-48 y)",2026-10-11,claude,current,
 kannada/name/01,kannada,name,A Kannada Emotional Speech Dataset,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by kannada/name/02
 kannada/name/02,kannada,name,A Kannada Emotional Speech Dataset,kannada_page,title of the source contains the name,2026-11-01,claude,current,
-kannada/speech_production/01,kannada,speech_production,acted,kannada_page,volunteers read six sentences in each emotion,2026-10-11,claude,current,"The description only says ""read aloud"". Since reading with an instructed emotion, treated as acted"
+kannada/speech_production/01,kannada,speech_production,acted,kannada_page,volunteers read six sentences in each emotion,2026-10-11,claude,current,The description says the volunteers read six sentences in each emotion
 kannada/vocal_content/01,kannada,vocal_content,speech,kannada_page,dataset described as speech recordings,2026-10-11,claude,current,
 kannada_kes/access_method/01,kannada_kes,access_method,request_form_or_email,kannada_kes_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
 kannada_kes/languages/01,kannada_kes,languages,kan,kannada_kes_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
@@ -2955,7 +2957,8 @@ rasa/full_title/01,rasa,full_title,Rasa: Building Expressive Speech Synthesis Sy
 rasa/full_title/02,rasa,full_title,Rasa: Building Expressive Speech Synthesis Systems for Indian Languages in Low-resource Settings,rasa_paper_2,title of the source contains the full title,2026-11-01,claude,current,
 rasa/hours_release/01,rasa,hours_release,1145.40,rasa_readme,commit 0dc349618f51; Size of the release,2026-11-01,claude,current,
 rasa/hours_reported/01,rasa,hours_reported,1145.44,rasa_card,"card statistics: 1145.44 hours and 640,950 utterances in total over 22 languages (44 speaker-language pairs)",2026-10-28,claude,superseded,The total includes neutral and style speech; the share of the six Ekman emotions is not given per emotion on the card; superseded by rasa/hours_reported/02
-rasa/hours_reported/02,rasa,hours_reported,280.4,,,2026-10-29,user,provisional,Provisional: Maintainer instruction (2026-10-29); the card's 1145.44 h is the whole corpus (kept in the superseded row)
+rasa/hours_reported/02,rasa,hours_reported,280.4,,,2026-10-29,user,superseded,Provisional: Maintainer instruction (2026-10-29); the card's 1145.44 h is the whole corpus (kept in the superseded row); superseded by rasa/hours_reported/03
+rasa/hours_reported/03,rasa,hours_reported,1145.44,rasa_card,"card statistics: 1145.44 hours and 640,950 utterances in total over 22 languages",2026-11-01,claude,current,"The whole corpus, including neutral and style speech"
 rasa/languages/01,rasa,languages,asm;ben;kan;mal;mar;nep;tam;pan;tel;san;urd;kas;snd,rasa_page,"dataset tags: language as, bn, kn, ml, mr, ne, ta, pa, te, sa, ur, ks, sd",2026-10-14,claude,superseded,superseded by rasa/languages/02
 rasa/languages/02,rasa,languages,asm;ben;brx;doi;guj;hin;kan;kas;kok;mai;mal;mni;mar;nep;ory;pan;san;sat;snd;tam;tel;urd,rasa_card,"the 22 language folders of the repository: Assamese, Bengali, Bodo, Dogri, Gujarati, Hindi, Kannada, Kashmiri, Konkani, Maithili, Malayalam, Manipuri, Marathi, Nepali, Odia, Punjabi, Sanskrit, Santali, Sindhi, Tamil, Telugu, Urdu",2026-10-29,claude,current,"The card's language tags list only 13; the paper covers 3 (Assamese, Bengali, Tamil)"
 rasa/license_spdx/01,rasa,license_spdx,CC-BY-4.0,rasa_card,dataset card metadata: license cc-by-4.0,2026-10-14,claude,superseded,superseded by rasa/license_spdx/02
@@ -2965,7 +2968,8 @@ rasa/material_origin/01,rasa,material_origin,recorded_for_dataset,rasa_paper,"vo
 rasa/n_files_release/01,rasa,n_files_release,640946,,,2026-10-29,claude,superseded,"Provisional: The card says 640,950 (Gujarati has 2 fewer files for each gender, reason unknown); 640,806 after dropping 140 files with a name collision; superseded by rasa/n_files_release/02"
 rasa/n_files_release/02,rasa,n_files_release,640946,rasa_readme,commit 0dc349618f51; Size of the release,2026-11-01,claude,current,
 rasa/n_files_reported/01,rasa,n_files_reported,640950,rasa_card,"card statistics: 640,950 utterances in total",2026-10-28,claude,superseded,superseded by rasa/n_utt_reported/02
-rasa/n_files_reported/02,rasa,n_files_reported,124842,,,2026-10-29,user,provisional,"Provisional: Maintainer instruction (2026-10-29): the amount columns count the emotion styles only; the card's 640,950 utterances and 1145.44 h are the whole corpus (kept in the superseded row)"
+rasa/n_files_reported/02,rasa,n_files_reported,124842,,,2026-10-29,user,superseded,"Provisional: Maintainer instruction (2026-10-29): the amount columns count the emotion styles only; the card's 640,950 utterances and 1145.44 h are the whole corpus (kept in the superseded row); superseded by rasa/n_files_reported/03"
+rasa/n_files_reported/03,rasa,n_files_reported,640950,rasa_card,"card statistics: 1145.44 hours and 640,950 utterances in total over 22 languages",2026-11-01,claude,current,"The whole corpus, including neutral and style speech"
 rasa/n_speakers_release/01,rasa,n_speakers_release,44,rasa_readme,commit 0dc349618f51; Size of the release,2026-11-01,claude,current,
 rasa/n_speakers_reported/01,rasa,n_speakers_reported,44,rasa_card,card statistics: 44 speaker-language pairs (one female and one male voice artist per language),2026-10-29,claude,current,
 rasa/name/01,rasa,name,Rasa,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by rasa/name/02
