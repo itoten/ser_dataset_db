@@ -4172,10 +4172,12 @@ tures/access_method/01,tures,access_method,unknown,tures_paper,abstract has no s
 tures/access_observed/01,tures,access_observed,unavailable,,,2026-11-01,claude,provisional,Provisional: from the earlier status notes (the audio could not be obtained or is not distributed)
 tures/hours_reported/01,tures,hours_reported,unknown,tures_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 tures/languages/01,tures,languages,tur,tures_paper,abstract: a new Turkish emotional speech database,2026-10-14,claude,current,
+tures/languages/02,tures,languages,tur,tures_paper_3,"Abstract: ""the new Turkish emotional speech database we created""",2026-11-02,claude,current,
 tures/license_spdx/01,tures,license_spdx,none_stated,tures_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 tures/listening_test/01,tures,listening_test,not_stated,tures_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 tures/material_origin/01,tures,material_origin,film_tv,tures_paper,"abstract: 5,100 utterances extracted from 55 Turkish movies",2026-10-14,claude,current,
-tures/n_files_reported/01,tures,n_files_reported,5100,tures_paper,"abstract: 5,100 utterances extracted from 55 Turkish movies",2026-10-14,claude,current,
+tures/n_files_reported/01,tures,n_files_reported,5100,tures_paper,"abstract: 5,100 utterances extracted from 55 Turkish movies",2026-10-14,claude,superseded,superseded by tures/n_files_reported/02
+tures/n_files_reported/02,tures,n_files_reported,5304,tures_paper_3,"Abstract: ""Our database consists of 5304 speech signal and their textual contents extracted from 55 Turkish movies""",2026-11-02,claude,current,
 tures/n_speakers_reported/01,tures,n_speakers_reported,unknown,tures_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 tures/name/01,tures,name,Turkish Emotional Speech Database (TurES),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 tures/speech_production/01,tures,speech_production,unknown,tures_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,

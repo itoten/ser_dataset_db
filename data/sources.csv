@@ -714,6 +714,7 @@ tumavic_paper,https://www.isca-archive.org/interspeech_2010/schuller10b_interspe
 tures_page,https://github.com/aaivu/KuralHub/blob/main/datasets/Turkish/Oflazoglu_et_al_2011.md,,KuralHub/datasets/Turkish/Oflazoglu_et_al_2011.md at main · aaivu/KuralHub,mirror,third_party,secondary,,KuralHub catalog entry for the dataset,2026-11-01,,
 tures_paper,https://doi.org/10.1186/1687-4722-2013-26,10.1186/1687-4722-2013-26,Recognizing emotion from Turkish speech using acoustic features,paper,authors,primary,,The title contains the dataset name,2026-11-01,,
 tures_paper_2,https://www.researchgate.net/publication/252012056_Turkish_emotional_speech_database,,,paper,,,,,,,
+tures_paper_3,https://ieeexplore.ieee.org/document/5929860,,Turkish emotional speech database,paper,authors,primary,,The title is Turkish emotional speech database and the abstract describes the database the authors created,2026-11-02,,
 turevdb_page,https://github.com/Xeonen/TurEV-DB,,GitHub - Xeonen/TurEV-DB: Turkish Emotion-Voice Database,distribution_page,authors,primary,,The title contains the dataset name,2026-11-01,,
 turevdb_paper,https://aclanthology.org/2020.sltu-1.52.pdf,,,paper,authors,primary,,,2026-11-01,https://web.archive.org/web/20261019212203/https://aclanthology.org/2020.sltu-1.52.pdf,
 turevdb_paper_2,https://aclanthology.org/2020.sltu-1.52,,Turkish Emotion Voice Database (TurEV-DB),paper,authors,primary,,The title contains the dataset name,2026-11-01,https://web.archive.org/web/20260612085927/https://aclanthology.org/2020.sltu-1.52/,
