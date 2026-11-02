@@ -1,6 +1,7 @@
 dataset_id,source_id,role
 aesc_assamese,aesc_assamese_mirror,distribution
 aesc_assamese,aesc_assamese_paper,paper
+aesc_assamese,aesc_assamese_paper_kural,paper
 aesd_assamese,aesd_assamese_mirror,distribution
 aesd_assamese,aesd_assamese_paper,paper
 aesdd,aesdd_page,distribution
@@ -13,6 +14,7 @@ affectspeech,affectspeech_paper_2,paper
 affectspeech,affectspeech_paper_3,paper
 afrikaans_se,afrikaans_se_mirror,distribution
 afrikaans_se,afrikaans_se_paper_doi,paper
+afrikaans_se,afrikaans_se_paper_kural,paper
 aihub_263,aihub_263_page,other
 aihub_271,aihub_271_page,other
 aihub_286,aihub_286_page,other
@@ -164,6 +166,7 @@ eesc,eesc_page,paper
 eesc,eesc_page_2,distribution
 eesc,eesc_readme,readme
 eesdb_chinese,eesdb_chinese_mirror,distribution
+eesdb_chinese,eesdb_chinese_paper_kural,paper
 em2ldl,em2ldl_page,distribution
 emilia_emotion,emilia_emotion_card_2,card
 emilia_emotion,emilia_emotion_card_2,distribution
