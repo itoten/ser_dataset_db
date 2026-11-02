@@ -789,6 +789,7 @@ cped/languages/01,cped,languages,cmn,cped_page,README: constructed from 40 Chine
 cped/license_spdx/01,cped,license_spdx,Apache-2.0,cped_page,GitHub repository license field: Apache-2.0,2026-10-14,claude,current,License of the text and features
 cped/material_origin/01,cped,material_origin,film_tv,cped_page,README: constructed from 40 Chinese TV shows,2026-10-14,claude,current,
 cped/n_files_reported/01,cped,n_files_reported,132762,cped_page,"README statistics: utterances 94,187 / 11,137 / 27,438",2026-10-14,claude,current,Sum of the 3 splits
+cped/n_speakers_reported/01,cped,n_speakers_reported,392,cped_paper,"""CPED contains more than 12K dialogues of 392 speakers from 40 TV shows.""",2026-11-02,claude,current,
 cped/name/01,cped,name,CPED,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by cped/name/02
 cped/name/02,cped,name,CPED,cped_page,title of the source contains the name,2026-11-01,claude,current,
 cped/speech_production/01,cped,speech_production,unknown,cped_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
@@ -925,6 +926,7 @@ des/access_method/01,des,access_method,unknown,des_paper,not stated in the sourc
 des/emotion_categories.annotator/01,des,emotion_categories.annotator,human,des_paper,actors portrayed the emotions,2026-10-28,claude,current,
 des/emotion_categories.label_basis/01,des,emotion_categories.label_basis,intended,des_paper,emotion the actors were asked to portray; verified by a listening test,2026-10-28,claude,current,
 des/emotion_categories.label_verification/01,des,emotion_categories.label_verification,listener_validated,des_paper,listening test with 20 listeners: emotions identified correctly in 67.3% of cases (95% interval 66.0-68.6),2026-10-28,claude,current,
+des/hours_reported/01,des,hours_reported,0.5,des_paper,"""The complete database comprises approximately 30 minutes of speech.""",2026-11-02,claude,current,
 des/languages/02,des,languages,dan,des_paper,"A database of recordings of Danish Emotional Speech, DES",2026-10-31,claude,current,
 des/license_spdx/02,des,license_spdx,unknown,des_page,Universal Catalogue entry ELRA-SD62 gives no licence,2026-10-14,claude,current,
 des/listening_test/01,des,listening_test,reported,des_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
@@ -950,6 +952,7 @@ dihana/full_title/02,dihana,full_title,DIHANA corpus,dihana_page,title of the so
 dihana/hours_reported/01,dihana,hours_reported,5.5,dihana_page,The DIHANA corpus contains 5.5 hours of spontaneous speech corresponding to 6278 sentences,2026-11-01,claude,current,
 dihana/languages/01,dihana,languages,spa,dihana_page,900 human-computer dialogues in Spanish,2026-10-14,claude,current,
 dihana/license_spdx/01,dihana,license_spdx,CC-BY-4.0,dihana_page,Zenodo metadata license cc-by-4.0,2026-10-14,claude,current,
+dihana/n_files_reported/01,dihana,n_files_reported,6278,dihana_page,"""The DIHANA corpus contains 5.5 hours of spontaneous speech corresponding to 6278 sentences.""",2026-11-02,claude,current,
 dihana/n_speakers_reported/01,dihana,n_speakers_reported,225,dihana_page,In total 225 speakers (153 males and 72 females) recorded 900 dialogues,2026-11-01,claude,current,
 dihana/name/01,dihana,name,DIHANA,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by dihana/name/02
 dihana/name/02,dihana,name,DIHANA,dihana_page,title of the source contains the name,2026-11-01,claude,current,
