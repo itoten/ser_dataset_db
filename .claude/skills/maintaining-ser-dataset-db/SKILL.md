@@ -151,7 +151,10 @@ the reply so the recipe author can add it.
 - the sources (`R.source`, `R.link`), then evidence from them for every value you checked:
   license, published counts, `speech_production`, `material_origin`, the design of the spoken
   text only from a design statement; disagreeing sources as `R.conflicting`;
-- the label sets (`R.label_set`) with who made them and how (`R.ev("emotion_categories.label_basis", ...)`),
+- the label sets (`R.label_set`) with who made them and how (`R.ev("emotion_categories.label_basis", ...)`); one
+  basis per set, and labels of another basis in the same release (listeners' perceived labels next to the
+  actors' intended ones) as a further set (`R.label_set(..., basis="perceived")`, then
+  `R.ev("perceived_emotion_categories.label_basis", "perceived", ...)`),
   and the other annotations (`R.ann`), each from a source;
 - `R.issue` for each problem the readme reports, `R.label_count` for each label count;
 - cells without evidence rows (`notes`, `license_note`, `language_note`, `source_rights_note`):

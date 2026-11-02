@@ -62,7 +62,7 @@ class Reg:
 
     def _set_row(self, item):
         for a in self.db["annotations"][1]:
-            if a["dataset_id"] == self.D and a["item"] == item and a["name"] == item:
+            if a["dataset_id"] == self.D and a["name"] == item and (a["item"] == item or item.endswith("_" + a["item"])):
                 return a
         raise SystemExit(f"no label set {item!r} for {self.D}: call label_set() first")
 
@@ -176,13 +176,16 @@ class Reg:
 
     # other tables -------------------------------------------------------------------------
 
-    def label_set(self, item, labels, source_id, loc="", scale="", perceived_from="", unit="utterance", note="", by="claude"):
+    def label_set(self, item, labels, source_id, loc="", scale="", perceived_from="", unit="utterance", note="", by="claude", basis=""):
         """A label set of the dataset: item is emotion_categories, emotion_attributes, speaking_style, sentiment or intent;
         labels in the source's own words (;-separated). Who made the labels and how are added with ev(item + '.annotator', ...),
-        ev(item + '.label_basis', ...), ev(item + '.label_verification', ...)."""
+        ev(item + '.label_basis', ...), ev(item + '.label_verification', ...).
+        basis: for a further set of the same item with labels of another basis (for example the listeners'
+        perceived labels next to the actors' intended ones); the row is named basis + '_' + item and its
+        attributes are added with ev(name + '.annotator', ...) and so on, ev(name + '.label_basis', basis, ...) included."""
         self._check_source(source_id)
         ah, ar = self.db["annotations"]
-        ar.append({**{k: "" for k in ah}, "dataset_id": self.D, "item": item, "name": item, "labels": labels, "scale": scale,
+        ar.append({**{k: "" for k in ah}, "dataset_id": self.D, "item": item, "name": f"{basis}_{item}" if basis else item, "labels": labels, "scale": scale,
                    "perceived_from": perceived_from, "unit": unit, "source_id": source_id, "locator": loc,
                    "checked_on": self.today, "checked_by": by, "note": note})
 
