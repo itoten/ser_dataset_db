@@ -1035,10 +1035,12 @@ egyptian_hf_unresolved/name/01,egyptian_hf_unresolved,name,Egyptian Hugging Face
 em2ldl/access_method/01,em2ldl,access_method,signed_agreement,em2ldl_page,README: return the signed User License Agreement; instructions after approval,2026-10-14,claude,current,
 em2ldl/access_method/02,em2ldl,access_method,signed_agreement,em2ldl_page,"README: ""download the User License Agreement (LA.pdf), complete the agreement and return it"" by e-mail",2026-11-02,claude,current,
 em2ldl/hours_reported/01,em2ldl,hours_reported,4.04,em2ldl_page,"README: 14,540.08 seconds (approximately 4.04 hours)",2026-10-14,claude,current,
+em2ldl/languages/01,em2ldl,languages,eng;cmn;yue,em2ldl_page,"""EM²LDL comprises expressive utterances in English, Mandarin, and Cantonese""",2026-11-02,claude,current,
 em2ldl/n_files_reported/01,em2ldl,n_files_reported,3998,em2ldl_page,"README: a total of 3,998 audio utterances",2026-10-14,claude,current,
 em2ldl/n_speakers_reported/01,em2ldl,n_speakers_reported,unknown,em2ldl_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 em2ldl/name/01,em2ldl,name,EM2LDL,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by em2ldl/name/02
 em2ldl/name/02,em2ldl,name,EM2LDL,em2ldl_page,title of the source contains the name,2026-11-01,claude,current,
+em2ldl/speech_production/01,em2ldl,speech_production,spontaneous,em2ldl_page,"""The corpus integrates spontaneous emotional expressions from online platforms""",2026-11-02,claude,current,
 emilia_emotion/access_method/01,emilia_emotion,access_method,direct_download,emilia_emotion_card,dataset is not gated; tar.gz shards,2026-10-13,claude,current,
 emilia_emotion/access_observed/01,emilia_emotion,access_observed,obtained,emilia_emotion_card,card: includes the original Emilia audio data in WebDataset format,2026-10-13,claude,current,
 emilia_emotion/emotion_categories.annotator/01,emilia_emotion,emotion_categories.annotator,automatic,arxiv_s_2609_32016,"§3: annotated with 40 emotion scores from the EmpathicInsightVoice classifier, emotion captions from BUD-E-Whisper",2026-10-23,claude,current,
@@ -1159,6 +1161,7 @@ emofilm/license_spdx/02,emofilm,license_spdx,LicenseRef-custom-research-only,emo
 emofilm/material_origin/01,emofilm,material_origin,film_tv,emofilm_page,audio clips ... extracted in wave format from 43 films,2026-10-31,claude,current,
 emofilm/n_files_reported/02,emofilm,n_files_reported,1115,emofilm_page,"1115 audio instances in English, Italian, and Spanish",2026-10-14,claude,superseded,superseded by emofilm/n_utt_reported/03
 emofilm/n_files_reported/03,emofilm,n_files_reported,1115,emofilm_page,"1115 audio instances in English, Italian and Spanish, mean length 3.5 s, extracted from 43 films (original English and dubbed Italian and Spanish versions)",2026-10-28,claude,current,
+emofilm/n_speakers_reported/01,emofilm,n_speakers_reported,207,emofilm_paper,"""1115 English, Spanish and Italian emotional utterances extracted from 43 films and 207 speakers""",2026-11-02,claude,current,
 emofilm/name/01,emofilm,name,EmoFilm,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by emofilm/name/02
 emofilm/name/02,emofilm,name,EmoFilm,emofilm_page,title of the source contains the name,2026-11-01,claude,current,
 emogator/access_method/01,emogator,access_method,direct_download,,,2026-10-13,claude,provisional,Provisional:
@@ -1740,6 +1743,7 @@ gemep/speech_production/01,gemep,speech_production,acted,gemep_page,10 actors po
 gemep/vocal_content/01,gemep,vocal_content,speech_and_nonverbal,gemep_survey,"Methods: two pseudolinguistic phoneme sequences, or a sustained vowel aaa",2026-10-13,claude,current,
 grethe/access_method/01,grethe,access_method,unknown,grethe_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 grethe/access_observed/01,grethe,access_observed,unavailable,grethe_page,README: utterances provided as pyAudioAnalysis feature .npy files,2026-10-14,claude,current,
+grethe/hours_reported/01,grethe,hours_reported,0.77,grethe_page,"Table: ""Total duration | 46 mins""",2026-11-02,claude,current,
 grethe/languages/01,grethe,languages,ell,grethe_page,"title: ""Speech Emotion Recognition in Greek Theatrical Plays""",2026-11-01,claude,current,
 grethe/license_spdx/01,grethe,license_spdx,MIT,grethe_page,GitHub license field MIT,2026-10-14,claude,current,
 grethe/n_files_reported/01,grethe,n_files_reported,500,grethe_page,"README: 500 samples, 46 minutes, 23 theatrical plays, 90 unique speakers, 4 human annotators",2026-10-28,claude,current,
@@ -1963,7 +1967,9 @@ indemovis/access_method/01,indemovis,access_method,request_form_or_email,indemov
 indemovis/full_title/01,indemovis,full_title,IndEmoVis: An Indian Multimodal Audio-Visual Emotion Dataset for Conversational Interactions,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by indemovis/full_title/02
 indemovis/full_title/02,indemovis,full_title,IndEmoVis: An Indian Multimodal Audio-Visual Emotion Dataset for Conversational Interactions,indemovis_page,title of the source contains the full title,2026-11-01,claude,current,
 indemovis/hours_reported/01,indemovis,hours_reported,unknown,indemovis_page_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+indemovis/languages/01,indemovis,languages,eng,indemovis_page_2,"Zenodo record metadata: ""Languages English""",2026-11-02,claude,current,
 indemovis/license_spdx/01,indemovis,license_spdx,none_stated,indemovis_page,Zenodo record has no license field,2026-10-14,claude,current,
+indemovis/n_files_reported/01,indemovis,n_files_reported,122,indemovis_page,"""The dataset comprises a total of 122 videos, involving 61 participants""",2026-11-02,claude,current,
 indemovis/n_speakers_reported/01,indemovis,n_speakers_reported,61,indemovis_page,122 videos involving 61 participants,2026-10-14,claude,current,
 indemovis/name/01,indemovis,name,IndEmoVis,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by indemovis/name/02
 indemovis/name/02,indemovis,name,IndEmoVis,indemovis_page,title of the source contains the name,2026-11-01,claude,current,
@@ -1990,6 +1996,7 @@ indianenglish/speech_production/01,indianenglish,speech_production,unknown,,,202
 indianenglish/spoken_text_design/01,indianenglish,spoken_text_design,emotion_specific_text,,,2026-10-26,claude,provisional,Provisional:
 indianenglish/vocal_content/01,indianenglish,vocal_content,speech,indianenglish_page,dataset described as speech recordings,2026-10-11,claude,current,
 indonesian_fahmi2020/access_method/01,indonesian_fahmi2020,access_method,request_form_or_email,indonesian_fahmi2020_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
+indonesian_fahmi2020/hours_reported/01,indonesian_fahmi2020,hours_reported,1.73,indonesian_fahmi2020_paper,"""The audio data has 1 hour and 44 minutes duration""",2026-11-02,claude,current,
 indonesian_fahmi2020/languages/01,indonesian_fahmi2020,languages,ind,indonesian_fahmi2020_mirror,KuralHub entry: Language field,2026-10-14,claude,superseded,Superseded by a primary row with the same value.
 indonesian_fahmi2020/languages/02,indonesian_fahmi2020,languages,ind,indonesian_fahmi2020_paper,"title: ""Speech-Emotion Detection in an Indonesian Movie""",2026-11-02,claude,current,
 indonesian_fahmi2020/n_files_reported/01,indonesian_fahmi2020,n_files_reported,965,indonesian_fahmi2020_mirror,KuralHub entry: Size field,2026-10-14,claude,superseded,Superseded by a primary row with the same value.
@@ -2248,6 +2255,7 @@ kazemotts/n_files_release/02,kazemotts,n_files_release,54760,kazemotts_readme,co
 kazemotts/n_files_reported/01,kazemotts,n_files_reported,54760,kazemotts_card,"KazEmoTTS is a collection of 54,760 audio-text pairs",2026-11-01,claude,current,
 kazemotts/n_speakers_release/01,kazemotts,n_speakers_release,3,,,2026-10-12,claude,superseded,Provisional:; superseded by kazemotts/n_speakers_release/02
 kazemotts/n_speakers_release/02,kazemotts,n_speakers_release,3,kazemotts_readme,commit 3d3f1a3ffe93; Size of the release,2026-11-01,claude,current,
+kazemotts/n_speakers_reported/01,kazemotts,n_speakers_reported,3,kazemotts_card,"""delivered by a female narrator and ... two male narrators""",2026-11-02,claude,current,
 kazemotts/name/01,kazemotts,name,KazEmoTTS,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by kazemotts/name/02
 kazemotts/name/02,kazemotts,name,KazEmoTTS,kazemotts_card,title of the source contains the name,2026-11-01,claude,current,
 kazemotts/speech_production/01,kazemotts,speech_production,acted,kazemotts_card,professional narrators act the emotions (TTS corpus),2026-10-11,claude,current,
@@ -2267,6 +2275,7 @@ kbes/license_spdx/01,kbes,license_spdx,CC-BY-4.0,kbes_page,license field of Mend
 kbes/material_origin/01,kbes,material_origin,film_tv,kbes_page,"paper Ethics: clips from TV films, dramas, TV and web series on YouTube/Facebook",2026-10-11,claude,current,"The paper says ""TV films, dramas and TV/web series""; approximated as tv_show"
 kbes/n_files_release/01,kbes,n_files_release,900,,,2026-10-11,claude,superseded,Provisional:; superseded by kbes/n_files_release/02
 kbes/n_files_release/02,kbes,n_files_release,900,kbes_readme,commit d9e26d5cc616; Size of the release,2026-11-01,claude,current,
+kbes/n_files_reported/01,kbes,n_files_reported,900,kbes_paper,"""The dataset consists of 900 audio signals (i.e., speech dialogs) from 35 actors""",2026-11-02,claude,current,
 kbes/n_speakers_release/01,kbes,n_speakers_release,unknown,kbes_readme,commit d9e26d5cc616; Size of the release,2026-11-01,claude,current,Readme cell: unknown (35 actors per the paper; not identifiable from the files)
 kbes/n_speakers_reported/01,kbes,n_speakers_reported,35,kbes_page,paper: 35 actors,2026-10-11,claude,current,
 kbes/name/01,kbes,name,KBES,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by kbes/name/02
