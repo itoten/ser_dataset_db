@@ -378,6 +378,7 @@ kenyan_swahili_ser,kenyan_swahili_ser_page,distribution
 kesdy18,kesdy18_paper,paper
 kesdy18,kesdy18_src,other
 kmser,kmser_mirror,distribution
+kmser,kmser_paper_kural,paper
 ksuemotions,ksuemotions_page,distribution
 kurdish_esd,kurdish_esd_mirror,distribution
 kurdish_esd,kurdish_esd_paper,paper
@@ -508,6 +509,7 @@ pavoque,pavoque_readme,readme
 pemo_punjabi,pemo_punjabi_mirror,distribution
 pemo_punjabi,pemo_punjabi_paper,paper
 pemo_punjabi,pemo_punjabi_paper_doi,paper
+pemo_punjabi,pemo_punjabi_paper_kural,paper
 persian_esd,persian_esd_paper,paper
 picka_nh,picka_nh_src,other
 picka_nh,picka_nh_src_2,paper
