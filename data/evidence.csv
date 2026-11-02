@@ -26,7 +26,7 @@ aesdd/hours_release/01,aesdd,hours_release,0.69,aesdd_readme,commit e987f57bdbf6
 aesdd/hours_reported/01,aesdd,hours_reported,unknown,aesdd_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a statement of this field, not read line by line."
 aesdd/languages/02,aesdd,languages,ell,aesdd_page,acted emotional speech in the Greek language,2026-10-31,claude,current,
 aesdd/license_spdx/02,aesdd,license_spdx,LicenseRef-custom-research-only,,,2026-10-11,claude,superseded,Provisional: Official page URL: https://m3c.web.auth.gr/research/aesdd-speech-emotion-recognition/; superseded by aesdd/license_spdx/03
-aesdd/license_spdx/03,aesdd,license_spdx,LicenseRef-custom-research-only,aesdd_page,"the dataset is ""publically available for research purposes""",2026-11-01,claude,current,The page names no license; the wording is research purposes
+aesdd/license_spdx/03,aesdd,license_spdx,LicenseRef-custom-research-only,aesdd_page,"the dataset is ""publically available for research purposes""",2026-11-01,user,current,The page names no license; the wording is research purposes; Verified by the maintainer in the pull request of branch verify/2026-11-02b-01
 aesdd/listening_test/01,aesdd,listening_test,reported,aesdd_page,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 aesdd/n_files_release/01,aesdd,n_files_release,605,,,2026-10-11,claude,superseded,Provisional:; superseded by aesdd/n_files_release/02
 aesdd/n_files_release/02,aesdd,n_files_release,605,aesdd_readme,commit e987f57bdbf6; Size of the release,2026-11-01,claude,current,
@@ -147,7 +147,7 @@ akace/hours_reported/01,akace,hours_reported,24.3,akace_page,"total number of se
 akace/languages/01,akace,languages,aka,akace_page,"README: developed for Akan, a widely spoken West African language",2026-10-14,claude,current,
 akace/license_spdx/01,akace,license_spdx,LicenseRef-custom-research-only,akace_page,README License: released for non-commercial research purposes only,2026-10-14,claude,superseded,superseded by akace/license_spdx/02
 akace/license_spdx/02,akace,license_spdx,LicenseRef-custom-research-only,,,2026-10-29,user,superseded,"Provisional: Confirmed by the maintainer (2026-10-29): non-commercial academic research and educational purposes only, no redistribution including derived data, citation required. The GitHub license field is NOASSERTION.; superseded by akace/license_spdx/03"
-akace/license_spdx/03,akace,license_spdx,LicenseRef-custom-research-only,akace_page,"README, License: released for non-commercial research purposes only; see LICENSE.txt",2026-11-01,claude,current,
+akace/license_spdx/03,akace,license_spdx,LicenseRef-custom-research-only,akace_page,"README, License: released for non-commercial research purposes only; see LICENSE.txt",2026-11-01,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-02b-01
 akace/listening_test/01,akace,listening_test,reported,akace_readme,commit 906c09addc96; Listening test ratings in the release,2026-11-01,claude,current,
 akace/material_origin/01,akace,material_origin,film_tv,akace_page,README: 385 dialogues from Akan-language movies,2026-10-14,claude,current,
 akace/n_files_release/01,akace,n_files_release,6138,akace_readme,commit 906c09addc96; Size of the release,2026-11-01,claude,current,
@@ -172,7 +172,7 @@ albemo/full_title/01,albemo,full_title,AlbEmo: an emotional speech corpus for Al
 albemo/hours_release/01,albemo,hours_release,0.37,albemo_readme,commit 08308769a6a3; Size of the release,2026-11-01,claude,current,
 albemo/hours_reported/01,albemo,hours_reported,0.37,albemo_page,"""totalling 22.1 minutes""",2026-11-02,claude,current,22.1 min written as hours (rounded to two decimals)
 albemo/languages/01,albemo,languages,sqi,albemo_page,dataset description names the language,2026-10-11,claude,current,
-albemo/license_spdx/01,albemo,license_spdx,CC-BY-4.0,albemo_page,bundled LICENSE file of albemo-v1.0.zip,2026-10-11,claude,current,
+albemo/license_spdx/01,albemo,license_spdx,CC-BY-4.0,albemo_page,bundled LICENSE file of albemo-v1.0.zip,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-02b-01
 albemo/listening_test/01,albemo,listening_test,reported,albemo_page,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 albemo/n_files_release/01,albemo,n_files_release,420,,,2026-10-11,claude,superseded,Provisional:; superseded by albemo/n_files_release/02
 albemo/n_files_release/02,albemo,n_files_release,420,albemo_readme,commit 08308769a6a3; Size of the release,2026-11-01,claude,current,
@@ -214,7 +214,7 @@ anad/full_title/02,anad,full_title,Arabic Natural Audio Dataset,anad_page,title 
 anad/hours_release/01,anad,hours_release,0.36,anad_readme,commit 6cae0e200fff; Size of the release,2026-11-01,claude,current,
 anad/hours_reported/01,anad,hours_reported,unknown,anad_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a statement of this field, not read line by line."
 anad/languages/01,anad,languages,ara,anad_page,description: first Arabic Natural Audio Dataset (ANAD),2026-10-13,claude,current,
-anad/license_spdx/01,anad,license_spdx,CC-BY-NC-SA-4.0,anad_page,Kaggle dataset license field: CC BY-NC-SA 4.0,2026-10-13,claude,current,
+anad/license_spdx/01,anad,license_spdx,CC-BY-NC-SA-4.0,anad_page,Kaggle dataset license field: CC BY-NC-SA 4.0,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-02b-01
 anad/material_origin/01,anad,material_origin,broadcast,anad_page,description: eight videos of live calls from online Arabic talk shows,2026-10-13,claude,current,
 anad/n_files_release/01,anad,n_files_release,1428,,,2026-10-13,claude,superseded,"Provisional: Number of wav files in the release. Difference from the reported 1,384 unverified; superseded by anad/n_files_release/02"
 anad/n_files_release/02,anad,n_files_release,1420,anad_readme,commit 6cae0e200fff; Size of the release,2026-11-01,claude,current,
@@ -246,7 +246,7 @@ ased/emotion_categories.label_verification/01,ased,emotion_categories.label_veri
 ased/hours_release/01,ased,hours_release,2.11,ased_readme,commit 4a66ac0ebe72; Size of the release,2026-11-01,claude,current,
 ased/hours_reported/01,ased,hours_reported,unknown,ased_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a statement of this field, not read line by line."
 ased/languages/02,ased,languages,amh,ased_page,README title: Amharic Speech Emotional Dataset (ASED) v1,2026-10-31,claude,current,
-ased/license_spdx/02,ased,license_spdx,none_stated,ased_page,README has no license statement,2026-10-11,claude,current,
+ased/license_spdx/02,ased,license_spdx,none_stated,ased_page,README has no license statement,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-02b-01
 ased/listening_test/01,ased,listening_test,not_stated,ased_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a listening or perception test, not read line by line."
 ased/n_files_release/01,ased,n_files_release,2474,,,2026-10-11,claude,superseded,Provisional:; superseded by ased/n_files_release/02
 ased/n_files_release/02,ased,n_files_release,2474,ased_readme,commit 4a66ac0ebe72; Size of the release,2026-11-01,claude,current,
@@ -273,7 +273,7 @@ asvpesd/full_title/02,asvpesd,full_title,"Audio, Speech and Vision Processing La
 asvpesd/hours_release/01,asvpesd,hours_release,6.08,asvpesd_readme,commit dc439736873f; Size of the release,2026-11-01,claude,current,
 asvpesd/hours_reported/01,asvpesd,hours_reported,10.85,asvpesd_page,for a total of about 10 hours 51 minutes,2026-11-01,claude,current,10 h 51 min written as hours
 asvpesd/languages/02,asvpesd,languages,mul,asvpesd_page,"with no language restriction; file names code Chinese, English, French and others",2026-10-31,claude,current,No breakdown of languages is given
-asvpesd/license_spdx/02,asvpesd,license_spdx,CC-BY-4.0,asvpesd_page,Zenodo metadata license field (report §2),2026-10-11,claude,current,
+asvpesd/license_spdx/02,asvpesd,license_spdx,CC-BY-4.0,asvpesd_page,Zenodo metadata license field (report §2),2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-02b-01
 asvpesd/listening_test/01,asvpesd,listening_test,not_stated,asvpesd_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a listening or perception test, not read line by line."
 asvpesd/material_origin/01,asvpesd,material_origin,multiple,asvpesd_page,"recorded and collected from movies, tv show, youtube channel and other emotional sound websites",2026-10-31,claude,current,
 asvpesd/n_files_release/01,asvpesd,n_files_release,9092,,,2026-10-11,claude,superseded,Provisional:; superseded by asvpesd/n_files_release/02
@@ -312,7 +312,7 @@ audiospeechsentiment/emotion_categories.label_verification/01,audiospeechsentime
 audiospeechsentiment/hours_release/01,audiospeechsentiment,hours_release,0.27,audiospeechsentiment_readme,commit 155c3c176004; Size of the release,2026-11-01,claude,current,
 audiospeechsentiment/hours_reported/01,audiospeechsentiment,hours_reported,unknown,audiospeechsentiment_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the page text read was a script or bot-check shell.
 audiospeechsentiment/languages/01,audiospeechsentiment,languages,eng,,,2026-10-22,user,provisional,"Provisional: Light check only, no human verification. Confidence lowish. The uploader does not state the language"
-audiospeechsentiment/license_spdx/02,audiospeechsentiment,license_spdx,CC0-1.0,audiospeechsentiment_page,Kaggle API licenseName: CC0: Public Domain,2026-10-14,claude,current,
+audiospeechsentiment/license_spdx/02,audiospeechsentiment,license_spdx,CC0-1.0,audiospeechsentiment_page,Kaggle API licenseName: CC0: Public Domain,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-02b-01
 audiospeechsentiment/n_files_release/01,audiospeechsentiment,n_files_release,360,,,2026-10-14,claude,superseded,Provisional:; superseded by audiospeechsentiment/n_files_release/02
 audiospeechsentiment/n_files_release/02,audiospeechsentiment,n_files_release,360,audiospeechsentiment_readme,commit 155c3c176004; Size of the release,2026-11-01,claude,current,
 audiospeechsentiment/n_files_reported/01,audiospeechsentiment,n_files_reported,unknown,audiospeechsentiment_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the page text read was a script or bot-check shell.
@@ -348,7 +348,7 @@ banglamood/full_title/02,banglamood,full_title,BanglaMood: A Rich Audio Dataset 
 banglamood/hours_release/01,banglamood,hours_release,2.90,banglamood_readme,commit 07b611114c77; Size of the release,2026-11-01,claude,current,
 banglamood/hours_reported/01,banglamood,hours_reported,unknown,banglamood_page_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a statement of this field, not read line by line."
 banglamood/languages/01,banglamood,languages,ben,banglamood_page,dataset description names the language,2026-10-12,claude,current,
-banglamood/license_spdx/01,banglamood,license_spdx,CC-BY-4.0,banglamood_page,license field of Mendeley,2026-10-12,claude,current,
+banglamood/license_spdx/01,banglamood,license_spdx,CC-BY-4.0,banglamood_page,license field of Mendeley,2026-10-12,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-02b-01
 banglamood/listening_test/01,banglamood,listening_test,not_stated,banglamood_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a listening or perception test, not read line by line."
 banglamood/material_origin/01,banglamood,material_origin,web_video,banglamood_page,description: clips of randomly chosen YouTube videos labeled by 3 annotators,2026-10-12,claude,current,
 banglamood/n_files_release/01,banglamood,n_files_release,3220,,,2026-10-12,claude,superseded,Provisional:; superseded by banglamood/n_files_release/02
@@ -371,7 +371,7 @@ banglaser/full_title/01,banglaser,full_title,BanglaSER: A speech emotion recogni
 banglaser/full_title/02,banglaser,full_title,BanglaSER: A speech emotion recognition dataset for the Bangla language,banglaser_paper,title of the source contains the full title,2026-11-01,claude,current,
 banglaser/hours_release/01,banglaser,hours_release,1.37,banglaser_readme,commit c5a35d31f077; Size of the release,2026-11-01,claude,current,
 banglaser/languages/01,banglaser,languages,ben,banglaser_page,dataset description names the language,2026-10-11,claude,current,
-banglaser/license_spdx/01,banglaser,license_spdx,CC-BY-4.0,banglaser_page,Mendeley metadata,2026-10-11,claude,current,
+banglaser/license_spdx/01,banglaser,license_spdx,CC-BY-4.0,banglaser_page,Mendeley metadata,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-02b-01
 banglaser/listening_test/01,banglaser,listening_test,reported,banglaser_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 banglaser/n_files_release/01,banglaser,n_files_release,1467,,,2026-10-11,claude,superseded,Provisional:; superseded by banglaser/n_files_release/02
 banglaser/n_files_release/02,banglaser,n_files_release,1467,banglaser_readme,commit c5a35d31f077; Size of the release,2026-11-01,claude,current,
@@ -395,7 +395,7 @@ banspemo/full_title/02,banspemo,full_title,BanSpEmo: A Bangla Emotional Speech R
 banspemo/hours_release/01,banspemo,hours_release,1.39,banspemo_readme,commit b676f7fb18be; Size of the release,2026-11-01,claude,current,
 banspemo/hours_reported/01,banspemo,hours_reported,12,banspemo_paper,has 12 hours length of audio that was verified by six listeners,2026-11-01,claude,current,
 banspemo/languages/01,banspemo,languages,ben,banspemo_page,dataset description names the language,2026-10-11,claude,current,
-banspemo/license_spdx/01,banspemo,license_spdx,CC-BY-4.0,banspemo_page,Mendeley metadata,2026-10-11,claude,current,
+banspemo/license_spdx/01,banspemo,license_spdx,CC-BY-4.0,banspemo_page,Mendeley metadata,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-02b-01
 banspemo/listening_test/01,banspemo,listening_test,reported,banspemo_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 banspemo/n_files_release/01,banspemo,n_files_release,792,,,2026-10-11,claude,superseded,Provisional:; superseded by banspemo/n_files_release/02
 banspemo/n_files_release/02,banspemo,n_files_release,792,banspemo_readme,commit b676f7fb18be; Size of the release,2026-11-01,claude,current,
@@ -419,7 +419,7 @@ bari_emospeech/full_title/02,bari_emospeech,full_title,BARI-EmoSpeech: A Dialect
 bari_emospeech/hours_release/01,bari_emospeech,hours_release,2.12,bari_emospeech_readme,commit dd8974bef67c; Size of the release,2026-11-01,claude,current,
 bari_emospeech/hours_reported/01,bari_emospeech,hours_reported,1.67,bari_emospeech_page,"2,312 spontaneous audio utterances (1.67 hours total)",2026-10-14,claude,current,
 bari_emospeech/languages/01,bari_emospeech,languages,ben,bari_emospeech_page,speech emotion recognition in the Barishal dialect of Bangla,2026-10-14,claude,current,
-bari_emospeech/license_spdx/01,bari_emospeech,license_spdx,CC-BY-4.0,bari_emospeech_page,Mendeley Data licence: CC BY 4.0,2026-10-14,claude,current,
+bari_emospeech/license_spdx/01,bari_emospeech,license_spdx,CC-BY-4.0,bari_emospeech_page,Mendeley Data licence: CC BY 4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-02b-01
 bari_emospeech/listening_test/01,bari_emospeech,listening_test,not_stated,bari_emospeech_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a listening or perception test, not read line by line."
 bari_emospeech/n_files_release/01,bari_emospeech,n_files_release,2328,,,2026-10-23,claude,superseded,"Provisional: The description says WAV 16 kHz, but the release is mostly m4a (AAC). The recipe reads the 2,303 sequentially numbered m4a files; superseded by bari_emospeech/n_files_release/02"
 bari_emospeech/n_files_release/02,bari_emospeech,n_files_release,2312,bari_emospeech_readme,commit dd8974bef67c; Size of the release,2026-11-01,claude,current,
@@ -443,7 +443,7 @@ baser/full_title/02,baser,full_title,Bangla Adolescent Speech Emotion Recognitio
 baser/hours_release/01,baser,hours_release,0.61,baser_readme,commit 28e18504d539; Size of the release,2026-11-01,claude,current,
 baser/hours_reported/01,baser,hours_reported,unknown,baser_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a statement of this field, not read line by line."
 baser/languages/01,baser,languages,ben,baser_page,description: a new audio-only emotional speech corpus in Bengali,2026-10-14,claude,current,
-baser/license_spdx/01,baser,license_spdx,Apache-2.0,baser_page,Kaggle dataset license field: Apache 2.0,2026-10-14,claude,current,
+baser/license_spdx/01,baser,license_spdx,Apache-2.0,baser_page,Kaggle dataset license field: Apache 2.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-02b-01
 baser/n_files_release/01,baser,n_files_release,750,,,2026-10-14,claude,superseded,Provisional:; superseded by baser/n_files_release/02
 baser/n_files_release/02,baser,n_files_release,750,baser_readme,commit 28e18504d539; Size of the release,2026-11-01,claude,current,
 baser/n_files_reported/01,baser,n_files_reported,unknown,baser_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a statement of this field, not read line by line."
@@ -543,7 +543,7 @@ berst/full_title/02,berst,full_title,B(asic) E(motion) R(andom phrase) S(hou)t(s
 berst/hours_release/01,berst,hours_release,3.73,berst_readme,commit 9de780d2cf96; Size of the release,2026-11-01,claude,current,
 berst/hours_reported/01,berst,hours_reported,3.75,berst_card,card: 4526 single phrase recordings (~3.75h),2026-10-13,claude,current,
 berst/languages/01,berst,languages,eng,berst_card,"card: varying regional accents in English, including non-native speakers",2026-10-13,claude,current,
-berst/license_spdx/01,berst,license_spdx,CC-BY-4.0,berst_card,dataset card metadata: license cc-by-4.0,2026-10-13,claude,current,
+berst/license_spdx/01,berst,license_spdx,CC-BY-4.0,berst_card,dataset card metadata: license cc-by-4.0,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-02b-01
 berst/listening_test/01,berst,listening_test,not_stated,berst_card,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a listening or perception test, not read line by line."
 berst/n_files_release/01,berst,n_files_release,4523,,"file listing API: 4,523 .wav files, 2026-10-13",2026-10-13,claude,superseded,"Difference from the reported 4,526 unverified; superseded by berst/n_files_release_measured/02; Former source type: measured"
 berst/n_files_release/02,berst,n_files_release,4523,,,2026-10-23,claude,superseded,"Provisional: 3 fewer than the 4,526 on the Hugging Face card; reason unknown (as of 2026-10-23); independently re-measured from the release files by the DB maintainer on 2026-10-23: matches; superseded by berst/n_files_release/03"
@@ -601,7 +601,7 @@ brytserc/full_title/02,brytserc,full_title,BRYTSERC: Bangla Realistic YouTube Sp
 brytserc/hours_release/01,brytserc,hours_release,4.35,brytserc_readme,commit 26d2d461f69c; Size of the release,2026-11-01,claude,current,
 brytserc/hours_reported/01,brytserc,hours_reported,unknown,brytserc_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a statement of this field, not read line by line."
 brytserc/languages/01,brytserc,languages,ben,brytserc_page,a realistic Bangla speech emotion dataset,2026-10-14,claude,current,
-brytserc/license_spdx/01,brytserc,license_spdx,LicenseRef-custom-research-only,brytserc_page,CC BY 4.0 covers annotations only; source audio non-commercial academic research only,2026-10-14,claude,current,"The figshare license field says CC BY 4.0, but the description states it does not extend to the audio"
+brytserc/license_spdx/01,brytserc,license_spdx,LicenseRef-custom-research-only,brytserc_page,CC BY 4.0 covers annotations only; source audio non-commercial academic research only,2026-10-14,user,current,"The figshare license field says CC BY 4.0, but the description states it does not extend to the audio; Verified by the maintainer in the pull request of branch verify/2026-11-02b-01"
 brytserc/listening_test/01,brytserc,listening_test,not_stated,brytserc_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a listening or perception test, not read line by line."
 brytserc/material_origin/01,brytserc,material_origin,web_video,brytserc_page,collected from publicly available YouTube videos,2026-10-14,claude,current,
 brytserc/n_files_release/01,brytserc,n_files_release,5215,,,2026-10-23,claude,superseded,"Provisional: Matches figshare (5,215); independently re-measured from the release files by the DB maintainer on 2026-10-23: matches; superseded by brytserc/n_files_release/02"
@@ -638,7 +638,7 @@ cafe/full_title/02,cafe,full_title,Canadian French Emotional (CaFE) speech datas
 cafe/hours_release/01,cafe,hours_release,1.15,cafe_readme,commit 44dc11c763a8; Size of the release,2026-11-01,claude,current,
 cafe/hours_reported/01,cafe,hours_reported,unknown,cafe_page_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a statement of this field, not read line by line."
 cafe/languages/02,cafe,languages,fra,cafe_page,A Canadian French Emotional Speech Dataset; language: French,2026-10-31,claude,current,
-cafe/license_spdx/02,cafe,license_spdx,CC-BY-NC-SA-4.0,cafe_page,Zenodo license field and bundled License.txt,2026-10-11,claude,current,
+cafe/license_spdx/02,cafe,license_spdx,CC-BY-NC-SA-4.0,cafe_page,Zenodo license field and bundled License.txt,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-02b-01
 cafe/listening_test/01,cafe,listening_test,not_stated,cafe_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a listening or perception test, not read line by line."
 cafe/n_files_release/01,cafe,n_files_release,936,,,2026-10-11,claude,superseded,Provisional:; superseded by cafe/n_files_release/02
 cafe/n_files_release/02,cafe,n_files_release,936,cafe_readme,commit 44dc11c763a8; Size of the release,2026-11-01,claude,current,
@@ -686,7 +686,7 @@ casia/emotion_categories.label_verification/01,casia,emotion_categories.label_ve
 casia/hours_release/01,casia,hours_release,0.64,casia_readme,commit 30cd2cb0d32e; Size of the release,2026-11-01,claude,current,
 casia/hours_reported/02,casia,hours_reported,unknown,casia_page_3,The summary gives no total duration,2026-10-23,claude,current,"The spreadsheet's 0.6 is the duration of the 1,200-clip version (measured 0.6352), not of the whole corpus, so it is replaced. The sources give no total duration"
 casia/languages/02,casia,languages,cmn,casia_page_2,(1)资源名称 汉语情感语料库 (resource name: Chinese emotional speech corpus),2026-10-23,claude,current,"Checked by the DB maintainer against the archived copy (2026-10-23). A catalogue of the distributor ChineseLDC, not a document of the creators' lab"
-casia/license_spdx/02,casia,license_spdx,LicenseRef-proprietary-restricted,casia_page_3,授权费 field (license fees),2026-10-23,claude,current,"Checked by the DB maintainer against the archived copy (2026-10-23). A catalogue of the distributor ChineseLDC, not a document of the creators' lab"
+casia/license_spdx/02,casia,license_spdx,LicenseRef-proprietary-restricted,casia_page_3,授权费 field (license fees),2026-10-23,user,current,"Checked by the DB maintainer against the archived copy (2026-10-23). A catalogue of the distributor ChineseLDC, not a document of the creators' lab; Verified by the maintainer in the pull request of branch verify/2026-11-02b-01"
 casia/n_files_release/01,casia,n_files_release,1200,,,2026-10-23,claude,superseded,"Provisional: The count of the 1,200-clip version, not of the whole corpus. The DB maintainer re-counted the release files and it matches; superseded by casia/n_files_release/02"
 casia/n_files_release/02,casia,n_files_release,1200,casia_readme,commit 30cd2cb0d32e; Size of the release,2026-11-01,claude,current,
 casia/n_files_reported/02,casia,n_files_reported,9600,casia_page_3,Summary (updated 2010-10-09),2026-10-23,claude,conflicting,"Checked by the DB maintainer against the archived copy (2026-10-23). A catalogue of the distributor ChineseLDC, not a document of the creators' lab. 4 x 6 x 400"
@@ -725,7 +725,7 @@ cbesd/full_title/01,cbesd,full_title,Children-Bilingual Emotion Speech Dataset,,
 cbesd/hours_release/01,cbesd,hours_release,3.03,cbesd_readme,commit 454fad4bff89; Size of the release,2026-11-01,claude,current,
 cbesd/hours_reported/01,cbesd,hours_reported,2.5,cbesd_page,nearly 2.5 hours of speech recordings from 70 children,2026-10-14,claude,current,
 cbesd/languages/01,cbesd,languages,tel;eng,cbesd_page,description: utterances in Telugu and English,2026-10-14,claude,current,
-cbesd/license_spdx/01,cbesd,license_spdx,CC-BY-SA-4.0,cbesd_page,Kaggle dataset license field: CC BY-SA 4.0,2026-10-14,claude,current,
+cbesd/license_spdx/01,cbesd,license_spdx,CC-BY-SA-4.0,cbesd_page,Kaggle dataset license field: CC BY-SA 4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-02b-01
 cbesd/n_files_release/01,cbesd,n_files_release,4204,,,2026-10-14,claude,superseded,Provisional:; superseded by cbesd/n_files_release/02
 cbesd/n_files_release/02,cbesd,n_files_release,4204,cbesd_readme,commit 454fad4bff89; Size of the release,2026-11-01,claude,current,
 cbesd/n_files_reported/01,cbesd,n_files_reported,4320,cbesd_page,comprises 4320 utterances in Telugu and English,2026-10-14,claude,superseded,"The description also says 4,200 elsewhere; superseded by cbesd/n_utt_reported/02"
@@ -874,7 +874,7 @@ cremad/emotion_categories.label_verification/01,cremad,emotion_categories.label_
 cremad/hours_release/01,cremad,hours_release,5.3,cremad_readme,commit 76089aafdb7f; Size of the release,2026-11-01,claude,current,Readme cell: 5.3 (approx.)
 cremad/hours_reported/01,cremad,hours_reported,unknown,gh_cheyneycomputerscience_crema_d,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 cremad/languages/01,cremad,languages,unknown,gh_cheyneycomputerscience_crema_d,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a statement of this field, not read line by line."
-cremad/license_spdx/02,cremad,license_spdx,ODbL-1.0,gh_cheyneycomputerscience_crema_d,"README: database under ODbL 1.0, contents under DbCL 1.0",2026-10-12,claude,current,
+cremad/license_spdx/02,cremad,license_spdx,ODbL-1.0,gh_cheyneycomputerscience_crema_d,"README: database under ODbL 1.0, contents under DbCL 1.0",2026-10-12,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-02b-01
 cremad/listening_test/01,cremad,listening_test,reported,,,2026-11-01,claude,superseded,Provisional: a listening test was recorded earlier; the source is not public; superseded by cremad/listening_test/02
 cremad/listening_test/02,cremad,listening_test,reported,cremad_readme,commit 76089aafdb7f; Listening test ratings in the release,2026-11-01,claude,current,
 cremad/n_files_release/01,cremad,n_files_release,7442,cremad_readme,commit 76089aafdb7f; Size of the release,2026-11-01,claude,current,
@@ -914,7 +914,7 @@ csemotions/hours_release/01,csemotions,hours_release,10.20,csemotions_readme,com
 csemotions/hours_reported/01,csemotions,hours_reported,10,csemotions_card,card: Total Duration ~10 hours,2026-10-13,claude,current,Approximate
 csemotions/languages/01,csemotions,languages,cmn,csemotions_card,card: Language Mandarin Chinese; native Mandarin speakers,2026-10-13,claude,current,
 csemotions/license_spdx/01,csemotions,license_spdx,Apache-2.0,csemotions_card,dataset card metadata and NOTICE: Apache License 2.0,2026-10-13,claude,superseded,The NOTICE also states that ESD (research use only) is incorporated; superseded by csemotions/license_spdx/02
-csemotions/license_spdx/02,csemotions,license_spdx,Apache-2.0,csemotions_card_2,License field of the card (pinned commit 19498e62...),2026-10-23,claude,current,"The NOTICE (same commit) states that ESD (MIT, research use only) is incorporated. By the maintainer's decision the ESD condition in the NOTICE is not applied (no overlap in sound or sentences; reports/2026-10-23_csemotions_db_update.md)"
+csemotions/license_spdx/02,csemotions,license_spdx,Apache-2.0,csemotions_card_2,License field of the card (pinned commit 19498e62...),2026-10-23,user,current,"The NOTICE (same commit) states that ESD (MIT, research use only) is incorporated. By the maintainer's decision the ESD condition in the NOTICE is not applied (no overlap in sound or sentences; reports/2026-10-23_csemotions_db_update.md); Verified by the maintainer in the pull request of branch verify/2026-11-02b-01"
 csemotions/listening_test/01,csemotions,listening_test,not_stated,csemotions_card_2,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a listening or perception test, not read line by line."
 csemotions/n_files_release/01,csemotions,n_files_release,4160,,,2026-10-23,claude,superseded,Provisional: Re-measured by the DB maintainer from the release files: matches (2026-10-23); superseded by csemotions/n_files_release/02
 csemotions/n_files_release/02,csemotions,n_files_release,4160,csemotions_readme,commit 9af443fcd218; Size of the release,2026-11-01,claude,current,
@@ -952,7 +952,7 @@ dailytalk/hours_reported/01,dailytalk,hours_reported,20,dailytalk_paper_2,"§2.4
 dailytalk/hours_reported/02,dailytalk,hours_reported,21.67,dailytalk_paper_2,"Table 1: total duration 78,026 s",2026-10-24,claude,conflicting,"The text and abstract say ""20 hours in total"" (rounded). The seconds in Table 1 are used"
 dailytalk/hours_reported/03,dailytalk,hours_reported,20,dailytalk_paper_2,20 hours in total (Section 2.4),2026-10-24,claude,conflicting,"Rounded from the 78,026 s (21.67 h) of Table 1"
 dailytalk/languages/01,dailytalk,languages,eng,dailytalk_paper_2,§2.2: two English-fluent speakers as voice actors,2026-10-13,claude,current,
-dailytalk/license_spdx/01,dailytalk,license_spdx,CC-BY-SA-4.0,dailytalk_page,README abstract: freely available for academic use with CC-BY-SA 4.0 license,2026-10-13,claude,current,
+dailytalk/license_spdx/01,dailytalk,license_spdx,CC-BY-SA-4.0,dailytalk_page,README abstract: freely available for academic use with CC-BY-SA 4.0 license,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-02b-01
 dailytalk/listening_test/01,dailytalk,listening_test,not_stated,dailytalk_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a listening or perception test, not read line by line."
 dailytalk/n_files_release/01,dailytalk,n_files_release,23773,,,2026-10-24,claude,superseded,Provisional: Matches the report; superseded by dailytalk/n_files_release/02
 dailytalk/n_files_release/02,dailytalk,n_files_release,23773,dailytalk_readme,commit fe704640bae7; Size of the release,2026-11-01,claude,current,
