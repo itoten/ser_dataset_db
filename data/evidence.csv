@@ -1104,6 +1104,7 @@ eesc/full_title/02,eesc,full_title,Estonian Emotional Speech Corpus,doi_s_10_608
 eesc/hours_release/01,eesc,hours_release,1.08,eesc_readme,commit ab83a83d6075; Size of the release,2026-11-01,claude,current,
 eesc/languages/02,eesc,languages,est,eesc_page,"abstract: 1,234 Estonian sentences",2026-10-24,claude,current,
 eesc/license_spdx/02,eesc,license_spdx,CC-BY-4.0,doi_s_10_6084_m9_figshare_25249744,figshare license: CC BY 4.0,2026-10-14,claude,current,"META-SHARE says CC-BY (no version), Restricted Use"
+eesc/listening_test/01,eesc,listening_test,reported,eesc_page_2,"""The reliability of the corpus is ensured with perception tests.""",2026-11-02,claude,current,
 eesc/n_files_release/01,eesc,n_files_release,1164,,,2026-10-24,claude,superseded,"Provisional: The paper and figshare say 1,234 sentences; the 70 missing are not explained; superseded by eesc/n_files_release/02"
 eesc/n_files_release/02,eesc,n_files_release,1164,eesc_readme,commit ab83a83d6075; Size of the release,2026-11-01,claude,current,
 eesc/n_files_reported/02,eesc,n_files_reported,1234,doi_s_10_6084_m9_figshare_25249744,the corpus contains 1234 sentences,2026-10-14,claude,current,"Paper Table 2 gives the same total (ES3 2012, read 2026-10-24)"
