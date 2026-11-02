@@ -2071,6 +2071,7 @@ iitkgp_sesc/access_observed/01,iitkgp_sesc,access_observed,unavailable,,,2026-11
 iitkgp_sesc/full_title/01,iitkgp_sesc,full_title,IITKGP-SESC: Speech Database for Emotion Analysis,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by iitkgp_sesc/full_title/02
 iitkgp_sesc/full_title/02,iitkgp_sesc,full_title,IITKGP-SESC: Speech Database for Emotion Analysis,iitkgp_sesc_paper,title of the source contains the full title,2026-11-01,claude,current,
 iitkgp_sesc/languages/01,iitkgp_sesc,languages,tel,iieta_journals_ts_paper_10_18280_ts_380631_secondary,"Table 2: Telugu speech emotion databases, Koolagudi et al. (2009)",2026-10-14,claude,current,
+iitkgp_sesc/listening_test/01,iitkgp_sesc,listening_test,reported,iitkgp_sesc_paper,"Abstract: ""evaluated using subjective listening tests""",2026-11-02,claude,current,
 iitkgp_sesc/n_files_reported/01,iitkgp_sesc,n_files_reported,12000,iieta_journals_ts_paper_10_18280_ts_380631_secondary,"Table 2: total number of utterances are 12,000",2026-10-14,claude,current,
 iitkgp_sesc/n_speakers_reported/01,iitkgp_sesc,n_speakers_reported,10,iieta_journals_ts_paper_10_18280_ts_380631_secondary,Table 2: 10 professional artists (5 male and 5 female),2026-10-14,claude,current,
 iitkgp_sesc/name/01,iitkgp_sesc,name,IITKGP-SESC,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by iitkgp_sesc/name/02
@@ -4459,6 +4460,7 @@ visec/n_files_release/02,visec,n_files_release,5280,visec_readme,commit 1dd1cb51
 visec/n_files_reported/01,visec,n_files_reported,5280,visec_mirror,duplicate's card dataset_info: train num_examples 5280,2026-10-14,claude,current,
 visec/n_speakers_release/01,visec,n_speakers_release,147,,,2026-10-26,claude,superseded,Provisional: The paper's abstract also says 147 speakers; the correspondence of ids to people is assumed; superseded by visec/n_speakers_release/02
 visec/n_speakers_release/02,visec,n_speakers_release,147,visec_readme,commit 1dd1cb516d1b; Size of the release,2026-11-01,claude,current,
+visec/n_speakers_reported/01,visec,n_speakers_reported,147,visec_paper,"Abstract: ""5,280 utterances from 147 Vietnamese speakers""",2026-11-02,claude,current,
 visec/name/01,visec,name,ViSEC,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by visec/name/02
 visec/name/02,visec,name,ViSEC,visec_mirror,title of the source contains the name,2026-11-01,claude,current,
 visec/speech_production/01,visec,speech_production,unknown,visec_paper,abstract: collected from public media focusing on sources with rich and balanced emotional content; the kind of media is not named,2026-10-26,claude,current,
@@ -4539,6 +4541,7 @@ waxal_wolof_ser/access_observed/01,waxal_wolof_ser,access_observed,obtained,,,20
 waxal_wolof_ser/languages/01,waxal_wolof_ser,languages,wol,waxal_wolof_ser_card,card metadata: language wo,2026-10-14,claude,current,
 waxal_wolof_ser/license_spdx/01,waxal_wolof_ser,license_spdx,none_stated,waxal_wolof_ser_page,dataset card has no license field,2026-10-14,claude,current,
 waxal_wolof_ser/n_files_release/01,waxal_wolof_ser,n_files_release,3765,,,2026-10-14,claude,provisional,Provisional:
+waxal_wolof_ser/n_files_reported/01,waxal_wolof_ser,n_files_reported,3765,waxal_wolof_ser_card,"dataset page: ""Number of rows: 3,765""",2026-11-02,claude,current,
 waxal_wolof_ser/name/01,waxal_wolof_ser,name,Waxal_Multiling_4_SER-Wolof,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by waxal_wolof_ser/name/02
 waxal_wolof_ser/name/02,waxal_wolof_ser,name,Waxal_Multiling_4_SER-Wolof,waxal_wolof_ser_card,title of the source contains the name,2026-11-01,claude,current,
 werewolf_xl/access_method/01,werewolf_xl,access_method,unknown,werewolf_xl_page,README: Baidu Cloud download links with passwords,2026-10-23,claude,current,Whether a Baidu Netdisk account is required is unverified
