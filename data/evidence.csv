@@ -2013,6 +2013,7 @@ hindi_ser_vishlb/n_speakers_reported/01,hindi_ser_vishlb,n_speakers_reported,unk
 hindi_ser_vishlb/name/01,hindi_ser_vishlb,name,speech emotion recognition Hindi (Kaggle vishlb),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 hindi_ser_vishlb/speech_production/01,hindi_ser_vishlb,speech_production,acted,hindi_ser_vishlb_release,'Speak all the sentences in following emotions' and one folder per emotion and session,2026-10-25,claude,current,
 hindi_ser_vishlb/spoken_text_design/01,hindi_ser_vishlb,spoken_text_design,parallel,,,2026-10-25,claude,provisional,Provisional: Matches the docx instruction to speak all sentences in every emotion
+hume_reaction/access_method/01,hume_reaction,access_method,signed_agreement,arxiv_s_2207_05691,"""All challenge participants are required to complete the End User License Agreement (EULA)""",2026-11-02,claude,current,
 hume_reaction/hours_reported/01,hume_reaction,hours_reported,70,arxiv_s_2207_05691,§2.2: more than 70 hours of audio and video data,2026-10-14,claude,current,"""Over 70 hours"""
 hume_reaction/listening_test/01,hume_reaction,listening_test,not_stated,arxiv_s_2207_05691,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 hume_reaction/n_speakers_reported/01,hume_reaction,n_speakers_reported,2222,arxiv_s_2207_05691,"§2.2: 2,222 subjects",2026-10-14,claude,current,
@@ -2827,6 +2828,7 @@ mderma/name/01,mderma,name,MDER-MA,,,2026-11-01,claude,superseded,Provisional: c
 mderma/name/02,mderma,name,MDER-MA,mderma_page,title of the source contains the name,2026-11-01,claude,current,
 mderma/speech_production/01,mderma,speech_production,unknown,,,2026-10-26,claude,provisional,Provisional:
 mderma/vocal_content/01,mderma,vocal_content,speech,mderma_page,dataset described as speech recordings,2026-10-11,claude,current,
+mead/access_method/01,mead,access_method,direct_download,mead_page,"README: ""Download the dataset from here"" (project page link)",2026-11-02,claude,current,
 mead/hours_reported/01,mead,hours_reported,unknown,mead_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 mead/languages/01,mead,languages,unknown,mead_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 mead/license_spdx/02,mead,license_spdx,unknown,mead_page,"repository license MIT covers code; dataset terms are on the download page, now 404",2026-10-14,claude,current,Data terms unverified
@@ -3355,6 +3357,7 @@ paraspeechcaps/name/01,paraspeechcaps,name,ParaSpeechCaps,,,2026-11-01,claude,su
 paraspeechcaps/name/02,paraspeechcaps,name,ParaSpeechCaps,paraspeechcaps_card,title of the source contains the name,2026-11-01,claude,current,
 paraspeechcaps/speech_production/01,paraspeechcaps,speech_production,unknown,paraspeechcaps_card,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 paraspeechcaps/vocal_content/01,paraspeechcaps,vocal_content,speech,paraspeechcaps_paper,abstract: annotates speech utterances with rich style captions,2026-10-13,claude,current,
+passau_sfch/access_method/01,passau_sfch,access_method,signed_agreement,arxiv_s_2207_05691,"""All challenge participants are required to complete the End User License Agreement (EULA)""",2026-11-02,claude,current,
 passau_sfch/hours_reported/01,passau_sfch,hours_reported,18,arxiv_s_2207_05691,§2.1: about 18 hours of video; the challenge subset has 11 hours,2026-10-14,claude,current,
 passau_sfch/languages/01,passau_sfch,languages,deu,arxiv_s_2207_05691,§2.1: press conferences of 10 German Bundesliga football coaches,2026-10-14,claude,current,
 passau_sfch/listening_test/01,passau_sfch,listening_test,not_stated,arxiv_s_2207_05691,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
@@ -4346,6 +4349,7 @@ uftbesd/speech_production/01,uftbesd,speech_production,acted,uftbesd_page,each s
 uftbesd/spoken_text_design/01,uftbesd,spoken_text_design,parallel,uftbesd_page,each sentence recorded once under each of seven target emotional states,2026-10-24,claude,current,
 uftbesd/spoken_text_design/02,uftbesd,spoken_text_design,parallel,uftbesd_readme,"commit 6bb3ab504e8c; Not stated in the documentation; Every one of the 100 speakers reads both sentences in all seven emotions, and the two sentences (`Why aren't you saying anything?` and `I never though",2026-11-01,claude,current,
 uftbesd/vocal_content/01,uftbesd,vocal_content,speech,uftbesd_page,read sentences recorded on smartphones,2026-10-14,claude,current,
+ulm_tsst/access_method/01,ulm_tsst,access_method,signed_agreement,arxiv_s_2207_05691,"""All challenge participants are required to complete the End User License Agreement (EULA)""",2026-11-02,claude,current,
 ulm_tsst/hours_reported/01,ulm_tsst,hours_reported,6,arxiv_s_2207_05691,§2.3: Ulm-TSST includes about 6 hours of data,2026-10-14,claude,current,
 ulm_tsst/listening_test/01,ulm_tsst,listening_test,not_stated,arxiv_s_2207_05691,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 ulm_tsst/n_speakers_reported/01,ulm_tsst,n_speakers_reported,69,arxiv_s_2207_05691,§2.3: TSST presentations of 69 participants (49 of them female),2026-10-14,claude,current,
