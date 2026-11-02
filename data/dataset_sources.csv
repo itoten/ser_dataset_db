@@ -1,5 +1,6 @@
 dataset_id,source_id,role
 aesc_assamese,aesc_assamese_mirror,distribution
+aesc_assamese,aesc_assamese_paper,paper
 aesd_assamese,aesd_assamese_mirror,distribution
 aesd_assamese,aesd_assamese_paper,paper
 aesdd,aesdd_page,distribution
@@ -183,6 +184,7 @@ emogator,emogator_page,distribution
 emogator,emogator_paper,paper
 emogator,emogator_readme,readme
 emolah,emolah_mirror,distribution
+emolah,emolah_paper,paper
 emomatchspanishdb,emomatchspanishdb_page,distribution
 emomatchspanishdb,emomatchspanishdb_src,paper
 emonetvoice,emonetvoice_card,distribution

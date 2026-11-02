@@ -3,8 +3,10 @@ aesc_assamese/access_method/01,aesc_assamese,access_method,request_form_or_email
 aesc_assamese/languages/01,aesc_assamese,languages,asm,aesc_assamese_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
 aesc_assamese/n_files_reported/01,aesc_assamese,n_files_reported,800,aesc_assamese_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
 aesc_assamese/n_speakers_reported/01,aesc_assamese,n_speakers_reported,20,aesc_assamese_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
+aesc_assamese/n_speakers_reported/02,aesc_assamese,n_speakers_reported,20,aesc_assamese_paper,"""A total of 20 persons are recorded till now, among whom ten persons are male, and ten are female""",2026-11-02,claude,current,
 aesc_assamese/name/01,aesc_assamese,name,Assamese Emotional Speech Corpus (AESC),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 aesc_assamese/speech_production/01,aesc_assamese,speech_production,acted,aesc_assamese_mirror,KuralHub entry: Recording Environment field,2026-10-14,claude,current,
+aesc_assamese/speech_production/02,aesc_assamese,speech_production,acted,aesc_assamese_paper,"""This required emotional acting by the speakers.""",2026-11-02,claude,current,
 aesd_assamese/access_method/01,aesd_assamese,access_method,request_form_or_email,aesd_assamese_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
 aesd_assamese/languages/01,aesd_assamese,languages,asm,aesd_assamese_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
 aesd_assamese/n_files_reported/01,aesd_assamese,n_files_reported,1750,aesd_assamese_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
@@ -1262,6 +1264,7 @@ emolah/access_method/01,emolah,access_method,request_form_or_email,emolah_mirror
 emolah/hours_reported/01,emolah,hours_reported,4,emolah_mirror,KuralHub entry: Size field,2026-10-14,claude,current,Minutes converted to hours
 emolah/languages/01,emolah,languages,msa,emolah_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
 emolah/name/01,emolah,name,Emolah,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+emolah/speech_production/01,emolah,speech_production,spontaneous,emolah_paper,"Title: ""Emolah: A Malay Language Spontaneous Speech Emotion Recognition on iOS Platform""",2026-11-02,claude,current,
 emomatchspanishdb/access_method/01,emomatchspanishdb,access_method,signed_agreement,emomatchspanishdb_page,completing and signing the agreement file and sending it via email,2026-10-14,claude,current,
 emomatchspanishdb/access_observed/01,emomatchspanishdb,access_observed,obtained,emomatchspanishdb_page,access to the original raw audio files ... completing and signing the agreement,2026-10-14,claude,current,
 emomatchspanishdb/hours_reported/01,emomatchspanishdb,hours_reported,unknown,emomatchspanishdb_src,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
