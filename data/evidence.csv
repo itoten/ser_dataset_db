@@ -1989,7 +1989,8 @@ hikia/name/02,hikia,name,"Hi, KIA",hikia_page,title of the source contains the n
 hikia/speech_production/01,hikia,speech_production,acted,hikia_paper,voice actors uttered the wake-up words with an instructed emotion,2026-10-26,claude,current,
 hikia/vocal_content/01,hikia,vocal_content,speech,hikia_page,dataset described as speech recordings,2026-10-11,claude,current,
 hindi_bansal_dev/access_method/01,hindi_bansal_dev,access_method,request_form_or_email,hindi_bansal_dev_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
-hindi_bansal_dev/languages/01,hindi_bansal_dev,languages,hin,hindi_bansal_dev_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
+hindi_bansal_dev/languages/01,hindi_bansal_dev,languages,hin,hindi_bansal_dev_mirror,KuralHub entry: Language field,2026-10-14,claude,superseded,Superseded by a primary row.
+hindi_bansal_dev/languages/02,hindi_bansal_dev,languages,hin,hindi_bansal_dev_paper,"Abstract: ""Emotional Hindi Speech database developed at IPEC""",2026-11-02,claude,current,
 hindi_bansal_dev/n_files_reported/01,hindi_bansal_dev,n_files_reported,6048,hindi_bansal_dev_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
 hindi_bansal_dev/n_speakers_reported/01,hindi_bansal_dev,n_speakers_reported,28,hindi_bansal_dev_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
 hindi_bansal_dev/name/01,hindi_bansal_dev,name,Hindi emotional speech (Bansal and Dev),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -2671,7 +2672,8 @@ mahnobhci/name/01,mahnobhci,name,MAHNOB-HCI,,,2026-11-01,claude,superseded,Provi
 mahnobhci/name/02,mahnobhci,name,MAHNOB-HCI,mahnobhci_page,"the name appears in the source: ...er and smiles. HCI-Tagging Database The MAHNOB-HCI-Tagging database contains synchronised,...",2026-11-01,claude,current,
 mahnobhci/speech_production/01,mahnobhci,speech_production,elicited,mahnobhci_page,"The MAHNOB-HCI-Tagging database contains synchronised, high quality, multi-camera, multi-modal recordings of spontaneous elicited emotions",2026-10-31,claude,current,
 malayalam_ann2009/access_method/01,malayalam_ann2009,access_method,request_form_or_email,malayalam_ann2009_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
-malayalam_ann2009/languages/01,malayalam_ann2009,languages,mal,malayalam_ann2009_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
+malayalam_ann2009/languages/01,malayalam_ann2009,languages,mal,malayalam_ann2009_mirror,KuralHub entry: Language field,2026-10-14,claude,superseded,Superseded by a primary row.
+malayalam_ann2009/languages/02,malayalam_ann2009,languages,mal,malayalam_ann2009_paper,"Abstract: ""Malayalam (one of the South Indian languages) was chosen for the experiment.""",2026-11-02,claude,current,
 malayalam_ann2009/n_files_reported/01,malayalam_ann2009,n_files_reported,640,malayalam_ann2009_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
 malayalam_ann2009/n_speakers_reported/01,malayalam_ann2009,n_speakers_reported,18,malayalam_ann2009_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
 malayalam_ann2009/name/01,malayalam_ann2009,name,Malayalam speech emotion dataset (ANN),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -3703,9 +3705,11 @@ savee/name/02,savee,name,SAVEE,savee_page,title of the source contains the name,
 savee/speech_production/01,savee,speech_production,acted,,,2026-10-27,claude,provisional,Provisional: taken from the project review report; the paper was not re-read in this update
 savee/spoken_text_design/01,savee,spoken_text_design,parallel;emotion_specific_text,,,2026-10-27,claude,provisional,Provisional:
 sccesc/access_method/01,sccesc,access_method,request_form_or_email,sccesc_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
-sccesc/languages/01,sccesc,languages,ces,sccesc_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
+sccesc/languages/01,sccesc,languages,ces,sccesc_mirror,KuralHub entry: Language field,2026-10-14,claude,superseded,superseded by sccesc/languages/02
+sccesc/languages/02,sccesc,languages,ces;pol;rus;slk,sccesc_paper,"Abstract: ""four Slavic languages: Czech, Polish, Russian and Slovak""",2026-11-02,claude,current,
 sccesc/n_files_reported/01,sccesc,n_files_reported,600,sccesc_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
 sccesc/name/01,sccesc,name,Slavic Call Center Emotional Speech Corpus (SCCESC),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+sccesc/speech_production/01,sccesc,speech_production,spontaneous,sccesc_paper,"Abstract: ""emotional expressions from spontaneous Slavic speech ... real call center recordings""",2026-11-02,claude,current,
 secepdb/access_method/01,secepdb,access_method,request_form_or_email,secepdb_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
 secepdb/languages/01,secepdb,languages,cmn,secepdb_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
 secepdb/n_files_reported/01,secepdb,n_files_reported,810,secepdb_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
@@ -4101,8 +4105,10 @@ tamar_emodb/name/01,tamar_emodb,name,TaMaR-EmoDB,,,2026-11-01,claude,superseded,
 tamar_emodb/name/02,tamar_emodb,name,TaMaR-EmoDB,tamar_emodb_paper_2,"text: ""…ment of a Multi-lingual Speech Corpora (TaMaR-EmoDB) for Emotion Analysis Rajeev Rajan1, H…""",2026-11-02,claude,current,
 tamar_emodb/speech_production/01,tamar_emodb,speech_production,acted,tamar_emodb_mirror,KuralHub entry: Recording Environment field,2026-10-14,claude,current,
 tamil_ram/access_method/01,tamil_ram,access_method,request_form_or_email,tamil_ram_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
-tamil_ram/languages/01,tamil_ram,languages,tam,tamil_ram_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
-tamil_ram/n_files_reported/01,tamil_ram,n_files_reported,95,tamil_ram_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
+tamil_ram/languages/01,tamil_ram,languages,tam,tamil_ram_mirror,KuralHub entry: Language field,2026-10-14,claude,superseded,Superseded by a primary row.
+tamil_ram/languages/02,tamil_ram,languages,tam,tamil_ram_paper,"Abstract: ""we built a database of emotional speech in Tamil""",2026-11-02,claude,current,
+tamil_ram/n_files_reported/01,tamil_ram,n_files_reported,95,tamil_ram_mirror,KuralHub entry: Size field,2026-10-14,claude,superseded,superseded by tamil_ram/n_files_reported/02
+tamil_ram/n_files_reported/02,tamil_ram,n_files_reported,19,tamil_ram_paper,"Abstract: ""This database consists of 19 wave clips modulated with anger, joy, fear, neutral and sad.""",2026-11-02,claude,current,
 tamil_ram/name/01,tamil_ram,name,"Tamil emotional speech (Ram, Sunitha et al.)",,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 tamil_ram/speech_production/01,tamil_ram,speech_production,acted,tamil_ram_mirror,KuralHub entry: Recording Environment field,2026-10-14,claude,current,
 telugu_emotion_kaggle/access_method/01,telugu_emotion_kaggle,access_method,free_account_required,telugu_emotion_kaggle_page,Kaggle download requires signing in,2026-10-14,claude,current,
