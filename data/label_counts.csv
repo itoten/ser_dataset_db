@@ -354,6 +354,17 @@ lithuanian_emotion_db,emotion_categories,happy,260,lithuanian_emotion_db_readme,
 lithuanian_emotion_db,emotion_categories,neutral,245,lithuanian_emotion_db_readme,commit 10c627b8a545; Files per label,2026-11-01,
 lithuanian_emotion_db,emotion_categories,sad,342,lithuanian_emotion_db_readme,commit 10c627b8a545; Files per label,2026-11-01,
 lithuanian_emotion_db,emotion_categories,surprise,105,lithuanian_emotion_db_readme,commit 10c627b8a545; Files per label,2026-11-01,
+lssed,emotion_categories,anger,6490,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Angry",2026-11-02,
+lssed,emotion_categories,boredom,2916,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Bored",2026-11-02,
+lssed,emotion_categories,disappointment,8905,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Disappointed",2026-11-02,
+lssed,emotion_categories,disgust,3179,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Disgusted",2026-11-02,
+lssed,emotion_categories,excitement,5228,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Excited",2026-11-02,
+lssed,emotion_categories,fear,628,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Fear",2026-11-02,
+lssed,emotion_categories,happiness,27033,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Happy",2026-11-02,
+lssed,emotion_categories,normal,60461,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Neutral",2026-11-02,The paper calls this class Neutral
+lssed,emotion_categories,other,18478,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Other",2026-11-02,
+lssed,emotion_categories,sadness,12051,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Sad",2026-11-02,
+lssed,emotion_categories,surprise,1656,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Surprise",2026-11-02,
 maleo,emotion_categories,angry,100,maleo_readme,commit 4645ecc3d114; Files per label,2026-11-01,code Marah
 maleo,emotion_categories,disgust,100,maleo_readme,commit 4645ecc3d114; Files per label,2026-11-01,code Jijik
 maleo,emotion_categories,fear,100,maleo_readme,commit 4645ecc3d114; Files per label,2026-11-01,code Takut
@@ -560,6 +571,12 @@ sitb_osed,emotion_categories,fear,1990,sitb_osed_readme,commit 21118666a46f; Fil
 sitb_osed,emotion_categories,happy,1995,sitb_osed_readme,commit 21118666a46f; Files per label,2026-11-01,code 04
 sitb_osed,emotion_categories,sad,2118,sitb_osed_readme,commit 21118666a46f; Files per label,2026-11-01,code 05
 sitb_osed,emotion_categories,surprise,1967,sitb_osed_readme,commit 21118666a46f; Files per label,2026-11-01,code 06
+spanish_meacorpus,emotion_categories,anger,668,spanish_meacorpus_page,"README table ""Emotion | Train | Test | Total"": Total column",2026-11-02,
+spanish_meacorpus,emotion_categories,disgust,1200,spanish_meacorpus_page,"README table ""Emotion | Train | Test | Total"": Total column",2026-11-02,
+spanish_meacorpus,emotion_categories,fear,37,spanish_meacorpus_page,"README table ""Emotion | Train | Test | Total"": Total column",2026-11-02,
+spanish_meacorpus,emotion_categories,joy,643,spanish_meacorpus_page,"README table ""Emotion | Train | Test | Total"": Total column",2026-11-02,
+spanish_meacorpus,emotion_categories,neutral,1999,spanish_meacorpus_page,"README table ""Emotion | Train | Test | Total"": Total column",2026-11-02,
+spanish_meacorpus,emotion_categories,sadness,582,spanish_meacorpus_page,"README table ""Emotion | Train | Test | Total"": Total column",2026-11-02,
 subesco,emotion_categories,ANGRY,1000,subesco_readme,commit ba759cea1dda; Files per label,2026-11-01,
 subesco,emotion_categories,DISGUST,1000,subesco_readme,commit ba759cea1dda; Files per label,2026-11-01,
 subesco,emotion_categories,FEAR,1000,subesco_readme,commit ba759cea1dda; Files per label,2026-11-01,
