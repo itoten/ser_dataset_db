@@ -313,6 +313,7 @@ iesc,iesc_paper,paper
 iesc,iesc_readme,readme
 iiitsaint_emomdb,iiitsaint_emomdb_mirror,distribution
 iiitsaint_emomdb,iiitsaint_emomdb_paper,paper
+iitkgp_sehsc,iitkgp_sehsc_paper,paper
 iitkgp_sesc,iitkgp_sesc_paper,paper
 indemovis,indemovis_page,distribution
 indemovis,indemovis_page_2,distribution
@@ -665,6 +666,7 @@ uudb,uudb_paper,paper
 vam,vam_page,other
 vam,vam_paper,paper
 venec,venec_paper,paper
+venec,venec_paper_2,other
 verbo,verbo_page,other
 vesc,vesc_page,distribution
 vesc,vesc_paper,paper

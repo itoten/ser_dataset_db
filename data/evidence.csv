@@ -2112,10 +2112,12 @@ iiitsaint_emomdb/name/02,iiitsaint_emomdb,name,IIITSaint-EmoMDB,iiitsaint_emomdb
 iitkgp_sehsc/access_observed/01,iitkgp_sehsc,access_observed,unavailable,,,2026-11-01,claude,provisional,Provisional: from the earlier status notes (the audio could not be obtained or is not distributed)
 iitkgp_sehsc/full_title/01,iitkgp_sehsc,full_title,IIT Kharagpur Simulated Emotion Hindi Speech Corpus,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 iitkgp_sehsc/languages/01,iitkgp_sehsc,languages,hin,iieta_journals_ts_paper_10_18280_ts_380631_secondary,"Table 1: IIT-KGP-SEHSC (2011) Hindi, simulated",2026-10-14,claude,current,
+iitkgp_sehsc/listening_test/01,iitkgp_sehsc,listening_test,reported,iitkgp_sehsc_paper,"Abstract: ""The quality of the emotions expressed in the database is evaluated using subjective listening tests.""",2026-11-02,claude,current,
 iitkgp_sehsc/n_files_reported/01,iitkgp_sehsc,n_files_reported,12000,iieta_journals_ts_paper_10_18280_ts_380631_secondary,"Table 1: 10 speakers, 12000 utterances",2026-10-14,claude,current,
 iitkgp_sehsc/n_speakers_reported/01,iitkgp_sehsc,n_speakers_reported,10,iieta_journals_ts_paper_10_18280_ts_380631_secondary,"Table 1: 10 speakers, 12000 utterances",2026-10-14,claude,current,
 iitkgp_sehsc/name/01,iitkgp_sehsc,name,IITKGP-SEHSC,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 iitkgp_sehsc/speech_production/01,iitkgp_sehsc,speech_production,acted,iieta_journals_ts_paper_10_18280_ts_380631_secondary,Table 1: IIT-KGP-SEHSC simulated,2026-10-14,claude,current,
+iitkgp_sehsc/speech_production/02,iitkgp_sehsc,speech_production,acted,iitkgp_sehsc_paper,"Abstract: ""The speech corpus is collected by simulating eight different emotions using neutral (emotion free) text prompts.""",2026-11-02,claude,current,
 iitkgp_sesc/access_observed/01,iitkgp_sesc,access_observed,unavailable,,,2026-11-01,claude,provisional,Provisional: from the earlier status notes (the audio could not be obtained or is not distributed)
 iitkgp_sesc/full_title/01,iitkgp_sesc,full_title,IITKGP-SESC: Speech Database for Emotion Analysis,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by iitkgp_sesc/full_title/02
 iitkgp_sesc/full_title/02,iitkgp_sesc,full_title,IITKGP-SESC: Speech Database for Emotion Analysis,iitkgp_sesc_paper,title of the source contains the full title,2026-11-01,claude,current,
@@ -4506,7 +4508,9 @@ vam/name/01,vam,name,VAM,,,2026-11-01,claude,superseded,Provisional: carried ove
 vam/name/02,vam,name,VAM,vam_page,title of the source contains the name,2026-11-01,claude,current,
 vam/speech_production/01,vam,speech_production,spontaneous,vam_paper,"""database of spontaneous emotional speech in German""",2026-11-01,claude,current,
 venec/full_title/01,venec,full_title,Vocal Expressions of Nineteen Emotions across Cultures,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+venec/n_speakers_reported/01,venec,n_speakers_reported,100,venec_paper_2,"""VENEC corpus, which is a large cross-cultural database of vocal emotion expressions portrayed by 100 professional actors""",2026-11-02,claude,current,
 venec/name/01,venec,name,VENEC,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+venec/speech_production/01,venec,speech_production,acted,venec_paper_2,"""vocal emotion expressions portrayed by 100 professional actors ... instructed to convey""",2026-11-02,claude,current,
 verbo/access_method/01,verbo,access_method,request_form_or_email,verbo_page_2,request the database by filling out this form and sending it by e-mail,2026-10-14,claude,current,
 verbo/full_title/01,verbo,full_title,VERBO: Voice Emotion Recognition dataBase in Portuguese Language,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by verbo/full_title/02
 verbo/full_title/02,verbo,full_title,VERBO: Voice Emotion Recognition dataBase in Portuguese Language,verbo_page,"text: ""…Home…""",2026-11-02,claude,current,
