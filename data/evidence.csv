@@ -3368,6 +3368,7 @@ safe_corpus/hours_reported/01,safe_corpus,hours_reported,7,safe_corpus_paper,A t
 safe_corpus/languages/01,safe_corpus,languages,eng,safe_corpus_paper,§2: sequences extracted from a collection of 30 recent movies in English,2026-10-14,claude,current,
 safe_corpus/license_spdx/01,safe_corpus,license_spdx,none_stated,safe_corpus_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 safe_corpus/material_origin/01,safe_corpus,material_origin,film_tv,safe_corpus_paper,audio-visual sequences extracted from movie fictions,2026-10-14,claude,current,
+safe_corpus/n_files_reported/01,safe_corpus,n_files_reported,400,safe_corpus_paper,"""The SAFE Corpus consists of 400 audio-visual sequences""",2026-11-02,claude,current,
 safe_corpus/n_speakers_reported/01,safe_corpus,n_speakers_reported,unknown,safe_corpus_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 safe_corpus/name/01,safe_corpus,name,SAFE,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 saraiki_ser/access_method/01,saraiki_ser,access_method,free_account_required,saraiki_ser_page,Kaggle download requires signing in,2026-10-14,claude,current,
@@ -3548,6 +3549,7 @@ slue_hvb/hours_reported/01,slue_hvb,hours_reported,11.4,slue_hvb_paper,"Table 1 
 slue_hvb/languages/01,slue_hvb,languages,eng,slue_hvb_paper,SLUE-HVB: English call-centre conversations,2026-10-14,claude,current,
 slue_hvb/license_spdx/01,slue_hvb,license_spdx,CC-BY-4.0,arxiv_s_2010_13929,released under Creative Commons license (CC-BY),2026-10-14,claude,current,Terms of the original HVB. The Hugging Face card of SLUE-HVB has no license field
 slue_hvb/n_files_reported/01,slue_hvb,n_files_reported,19155,slue_hvb_paper,"Table 1 SLUE-HVB: 11,344 + 1,690 + 6,121 utterances; summed",2026-10-14,claude,current,
+slue_hvb/n_speakers_reported/01,slue_hvb,n_speakers_reported,59,slue_hvb_paper,"""scripted consumer banking dialogs, simulated ... by 59 speakers""",2026-11-02,claude,current,
 slue_hvb/name/01,slue_hvb,name,SLUE-HVB,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 slue_hvb/vocal_content/01,slue_hvb,vocal_content,speech,slue_hvb_card,"dataset features: audio, role, dialog_acts, intent",2026-10-14,claude,current,
 slue_voxceleb/access_method/01,slue_voxceleb,access_method,gated_click_through,slue_voxceleb_page,dataset API: gated auto,2026-10-14,claude,current,
@@ -4264,11 +4266,13 @@ voicestats/emotion_categories.label_basis/01,voicestats,emotion_categories.label
 voicestats/emotion_categories.label_verification/01,voicestats,emotion_categories.label_verification,NA,,,2026-10-28,claude,provisional,Provisional:
 voicestats/full_title/01,voicestats,full_title,Voice Actor Statistics Corpus (声優統計コーパス),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 voicestats/hours_release/01,voicestats,hours_release,2.28,voicestats_readme,commit f1fdb1988c54; Size of the release,2026-11-01,claude,current,
+voicestats/hours_reported/01,voicestats,hours_reported,2,voicestats_page,"""the total duration of the dataset is 2 hours""",2026-11-02,claude,current,
 voicestats/languages/02,voicestats,languages,jpn,voicestats_page,phoneme-balanced sentences built from the Japanese Wikipedia text; read aloud by voice actresses,2026-10-31,claude,current,The page is written in Japanese; the sentences come from the Japanese Wikipedia
 voicestats/license_spdx/01,voicestats,license_spdx,LicenseRef-custom-research-only,voicestats_page,site: free for personal research and analysis; redistribution prohibited,2026-10-11,claude,current,Only the text of the phoneme-balanced sentences is CC-BY-SA (report §2)
 voicestats/material_origin/01,voicestats,material_origin,recorded_for_dataset,,,2026-10-28,claude,provisional,Provisional: carried over from source_rights
 voicestats/n_files_release/01,voicestats,n_files_release,900,,,2026-10-11,claude,superseded,Provisional:; superseded by voicestats/n_files_release/02
 voicestats/n_files_release/02,voicestats,n_files_release,900,voicestats_readme,commit f1fdb1988c54; Size of the release,2026-11-01,claude,current,
+voicestats/n_files_reported/01,voicestats,n_files_reported,900,voicestats_page,"""It contains 900 files (48 kHz / 16-bit WAV format)""",2026-11-02,claude,current,
 voicestats/n_speakers_release/01,voicestats,n_speakers_release,3,,,2026-10-12,claude,superseded,Provisional:; superseded by voicestats/n_speakers_release/02
 voicestats/n_speakers_release/02,voicestats,n_speakers_release,3,voicestats_readme,commit f1fdb1988c54; Size of the release,2026-11-01,claude,current,
 voicestats/n_speakers_reported/02,voicestats,n_speakers_reported,3,voicestats_page,プロの女性声優3名が3パターンの感情で音素バランス文を読み上げたファイル,2026-10-31,claude,current,
@@ -4351,6 +4355,7 @@ ysed/emotion_categories.label_verification/01,ysed,emotion_categories.label_veri
 ysed/full_title/01,ysed,full_title,YSED: Yemeni speech emotion dataset,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by ysed/full_title/02
 ysed/full_title/02,ysed,full_title,YSED: Yemeni speech emotion dataset,ysed_paper,title of the source contains the full title,2026-11-01,claude,current,
 ysed/hours_release/01,ysed,hours_release,1.01,ysed_readme,commit 1a5f8dd6a19e; Size of the release,2026-11-01,claude,current,
+ysed/hours_reported/01,ysed,hours_reported,0.99,ysed_paper,"""a total of 1432 recordings were validated, with an overall duration of 59 min and 10 s""",2026-11-02,claude,current,
 ysed/languages/01,ysed,languages,ara,ysed_page,dataset description names the language,2026-10-11,claude,current,
 ysed/license_spdx/01,ysed,license_spdx,CC-BY-4.0,ysed_page,Zenodo record license,2026-10-11,claude,current,
 ysed/listening_test/01,ysed,listening_test,reported,ysed_readme,commit 1a5f8dd6a19e; Listening test ratings in the release,2026-11-01,claude,current,
