@@ -2,10 +2,10 @@ evidence_id,dataset_id,field,value,source_id,locator,checked_on,checked_by,statu
 aesc_assamese/access_method/01,aesc_assamese,access_method,request_form_or_email,aesc_assamese_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
 aesc_assamese/languages/01,aesc_assamese,languages,asm,aesc_assamese_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
 aesc_assamese/n_files_reported/01,aesc_assamese,n_files_reported,800,aesc_assamese_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
-aesc_assamese/n_speakers_reported/01,aesc_assamese,n_speakers_reported,20,aesc_assamese_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
+aesc_assamese/n_speakers_reported/01,aesc_assamese,n_speakers_reported,20,aesc_assamese_mirror,KuralHub entry: Size field,2026-10-14,claude,superseded,Superseded by a primary row with the same value.
 aesc_assamese/n_speakers_reported/02,aesc_assamese,n_speakers_reported,20,aesc_assamese_paper,"""A total of 20 persons are recorded till now, among whom ten persons are male, and ten are female""",2026-11-02,claude,current,
 aesc_assamese/name/01,aesc_assamese,name,Assamese Emotional Speech Corpus (AESC),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
-aesc_assamese/speech_production/01,aesc_assamese,speech_production,acted,aesc_assamese_mirror,KuralHub entry: Recording Environment field,2026-10-14,claude,current,
+aesc_assamese/speech_production/01,aesc_assamese,speech_production,acted,aesc_assamese_mirror,KuralHub entry: Recording Environment field,2026-10-14,claude,superseded,Superseded by a primary row with the same value.
 aesc_assamese/speech_production/02,aesc_assamese,speech_production,acted,aesc_assamese_paper,"""This required emotional acting by the speakers.""",2026-11-02,claude,current,
 aesd_assamese/access_method/01,aesd_assamese,access_method,request_form_or_email,aesd_assamese_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
 aesd_assamese/languages/01,aesd_assamese,languages,asm,aesd_assamese_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
@@ -2117,7 +2117,7 @@ iitkgp_sehsc/listening_test/01,iitkgp_sehsc,listening_test,reported,iitkgp_sehsc
 iitkgp_sehsc/n_files_reported/01,iitkgp_sehsc,n_files_reported,12000,iieta_journals_ts_paper_10_18280_ts_380631_secondary,"Table 1: 10 speakers, 12000 utterances",2026-10-14,claude,current,
 iitkgp_sehsc/n_speakers_reported/01,iitkgp_sehsc,n_speakers_reported,10,iieta_journals_ts_paper_10_18280_ts_380631_secondary,"Table 1: 10 speakers, 12000 utterances",2026-10-14,claude,current,
 iitkgp_sehsc/name/01,iitkgp_sehsc,name,IITKGP-SEHSC,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
-iitkgp_sehsc/speech_production/01,iitkgp_sehsc,speech_production,acted,iieta_journals_ts_paper_10_18280_ts_380631_secondary,Table 1: IIT-KGP-SEHSC simulated,2026-10-14,claude,current,
+iitkgp_sehsc/speech_production/01,iitkgp_sehsc,speech_production,acted,iieta_journals_ts_paper_10_18280_ts_380631_secondary,Table 1: IIT-KGP-SEHSC simulated,2026-10-14,claude,superseded,Superseded by a primary row with the same value.
 iitkgp_sehsc/speech_production/02,iitkgp_sehsc,speech_production,acted,iitkgp_sehsc_paper,"Abstract: ""The speech corpus is collected by simulating eight different emotions using neutral (emotion free) text prompts.""",2026-11-02,claude,current,
 iitkgp_sesc/access_observed/01,iitkgp_sesc,access_observed,unavailable,,,2026-11-01,claude,provisional,Provisional: from the earlier status notes (the audio could not be obtained or is not distributed)
 iitkgp_sesc/full_title/01,iitkgp_sesc,full_title,IITKGP-SESC: Speech Database for Emotion Analysis,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by iitkgp_sesc/full_title/02
