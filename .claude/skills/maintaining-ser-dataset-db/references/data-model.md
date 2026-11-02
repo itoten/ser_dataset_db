@@ -110,7 +110,8 @@ labels.
 
 - `annotator`: `human`, `automatic`, `mixed`, `synthesis_specified`.
 - `label_basis`: `intended` (the emotion the speaker was told to portray), `perceived`,
-  `self_reported`, `context_inferred`, `automatic`; several allowed.
+  `self_reported`, `context_inferred`, `automatic`; one per set (two only when a single label field
+  mixes them, as in DailyTalk and NonverbalTTS).
 - `label_verification`: `human_reviewed`, `listener_validated` (instructed labels confirmed by a
   listening test), `none`, `unknown`, `NA`.
 
