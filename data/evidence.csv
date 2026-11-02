@@ -2079,6 +2079,7 @@ humyn_indian_emotional/speech_production/01,humyn_indian_emotional,speech_produc
 humyn_indian_emotional/spoken_text_design/01,humyn_indian_emotional,spoken_text_design,emotion_specific_text,humyn_indian_emotional_card,"each sentence of the paragraph is written for one tone (happy, sad, surprised, angry)",2026-10-28,claude,current,
 hungarian_hesd/access_method/01,hungarian_hesd,access_method,request_form_or_email,hungarian_hesd_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
 hungarian_hesd/languages/01,hungarian_hesd,languages,hun,hungarian_hesd_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
+hungarian_hesd/listening_test/01,hungarian_hesd,listening_test,reported,hungarian_hesd_paper_doi,"Abstract: ""human emotion perception was examined ... Comparison of perception test results""",2026-11-02,claude,current,
 hungarian_hesd/n_files_reported/01,hungarian_hesd,n_files_reported,760,hungarian_hesd_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
 hungarian_hesd/n_speakers_reported/01,hungarian_hesd,n_speakers_reported,38,hungarian_hesd_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
 hungarian_hesd/name/01,hungarian_hesd,name,Hungarian Emotional Speech Database,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -2116,6 +2117,7 @@ iesc/full_title/02,iesc,full_title,Indian Emotional Speech Corpora,iesc_page,tit
 iesc/hours_release/01,iesc,hours_release,0.56,iesc_readme,commit c1c6a512502f; Size of the release,2026-11-01,claude,current,
 iesc/hours_reported/01,iesc,hours_reported,unknown,iesc_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a statement of this field, not read line by line."
 iesc/languages/01,iesc,languages,eng,iesc_page,"description: sentences such as Kids are talking by the door, by north Indian speakers",2026-10-14,claude,current,
+iesc/languages/02,iesc,languages,eng,iesc_paper,"Abstract: ""a new Indian Emotional Speech Corpora (IESC) in English language""",2026-11-02,claude,current,
 iesc/license_spdx/01,iesc,license_spdx,unknown,iesc_page,Kaggle dataset license field: Unknown,2026-10-14,claude,superseded,superseded by iesc/license_spdx/02
 iesc/license_spdx/02,iesc,license_spdx,LicenseRef-citation-request,,,2026-10-26,user,superseded,Provisional: Kaggle field: 'Unknown'; description: 'For using This Dataset Kindly Cite this Paper'. The authors were not asked; superseded by iesc/license_spdx/03
 iesc/license_spdx/03,iesc,license_spdx,unknown,iesc_page,Kaggle license field: Unknown,2026-11-01,claude,current,
@@ -2123,10 +2125,12 @@ iesc/listening_test/01,iesc,listening_test,reported,iesc_paper,a listening test 
 iesc/n_files_release/01,iesc,n_files_release,600,,,2026-10-14,claude,superseded,Provisional:; superseded by iesc/n_files_release/02
 iesc/n_files_release/02,iesc,n_files_release,600,iesc_readme,commit c1c6a512502f; Size of the release,2026-11-01,claude,current,
 iesc/n_files_reported/01,iesc,n_files_reported,600,iesc_page,600 emotional audio files,2026-10-14,claude,current,
+iesc/n_files_reported/02,iesc,n_files_reported,600,iesc_paper,"Abstract: ""600 speech samples recorded from 8 speakers using 2 sentences in 5 emotions""",2026-11-02,claude,current,
 iesc/n_speakers_release/01,iesc,n_speakers_release,8,,,2026-10-26,claude,superseded,Provisional:; superseded by iesc/n_speakers_release/02
 iesc/n_speakers_release/02,iesc,n_speakers_release,8,iesc_readme,commit c1c6a512502f; Size of the release,2026-11-01,claude,current,
 iesc/n_speakers_reported/01,iesc,n_speakers_reported,8,iesc_page,created by 8 north Indian people (5 males and 3 females),2026-10-14,claude,superseded,superseded by iesc/n_speakers_reported/02
 iesc/n_speakers_reported/02,iesc,n_speakers_reported,8,iesc_paper,Section 4.1: 600 samples recorded from 8 north Indian speakers (5 males and 3 females),2026-10-26,claude,current,
+iesc/n_speakers_reported/03,iesc,n_speakers_reported,8,iesc_paper,"Abstract: ""600 speech samples recorded from 8 speakers""",2026-11-02,claude,current,
 iesc/name/01,iesc,name,IESC,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by iesc/name/02
 iesc/name/02,iesc,name,IESC,iesc_page,title of the source contains the name,2026-11-01,claude,current,
 iesc/speech_production/01,iesc,speech_production,acted,iesc_paper,two fixed English sentences recorded in five emotions in a closed room with a phone recorder app,2026-10-26,claude,current,The paper does not say whether the speakers are actors
@@ -3464,9 +3468,11 @@ polish_cichosz2005/speech_production/01,polish_cichosz2005,speech_production,act
 polish_sapinski2019/access_method/01,polish_sapinski2019,access_method,request_form_or_email,polish_sapinski2019_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
 polish_sapinski2019/languages/01,polish_sapinski2019,languages,pol,polish_sapinski2019_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
 polish_sapinski2019/n_files_reported/01,polish_sapinski2019,n_files_reported,560,polish_sapinski2019_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
-polish_sapinski2019/n_speakers_reported/01,polish_sapinski2019,n_speakers_reported,16,polish_sapinski2019_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
+polish_sapinski2019/n_speakers_reported/01,polish_sapinski2019,n_speakers_reported,16,polish_sapinski2019_mirror,KuralHub entry: Size field,2026-10-14,claude,superseded,Superseded by a primary row.
+polish_sapinski2019/n_speakers_reported/02,polish_sapinski2019,n_speakers_reported,16,polish_sapinski2019_paper_doi,"Abstract: ""acted out by 16 professional actors (8 male and 8 female)""",2026-11-02,claude,current,
 polish_sapinski2019/name/01,polish_sapinski2019,name,Polish multimodal emotion database (Sapinski et al. 2019),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
-polish_sapinski2019/speech_production/01,polish_sapinski2019,speech_production,acted,polish_sapinski2019_mirror,KuralHub entry: Recording Environment field,2026-10-14,claude,current,
+polish_sapinski2019/speech_production/01,polish_sapinski2019,speech_production,acted,polish_sapinski2019_mirror,KuralHub entry: Recording Environment field,2026-10-14,claude,superseded,Superseded by a primary row.
+polish_sapinski2019/speech_production/02,polish_sapinski2019,speech_production,acted,polish_sapinski2019_paper_doi,"Abstract: ""recordings registered in studio conditions, acted out by 16 professional actors (8 male and 8 female)""",2026-11-02,claude,current,
 polishemo/access_method/01,polishemo,access_method,direct_download,,,2026-10-11,claude,provisional,Provisional:
 polishemo/access_observed/01,polishemo,access_observed,obtained,,,2026-10-11,claude,superseded,Provisional: carried over from raw_audio_available; superseded by polishemo/access_observed/02
 polishemo/access_observed/02,polishemo,access_observed,obtained,polishemo_readme,commit 74d0c70ba3f6; Access,2026-11-01,claude,current,

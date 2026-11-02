@@ -310,6 +310,7 @@ humevb,humevb_page,other
 humevb,humevb_paper,paper
 humyn_indian_emotional,humyn_indian_emotional_card,card
 hungarian_hesd,hungarian_hesd_mirror,distribution
+hungarian_hesd,hungarian_hesd_paper_doi,paper
 iemocap,iemocap_paper,paper
 iemocap,iemocap_readme,readme
 iemocap,iemocap_src,other
@@ -513,6 +514,7 @@ picka_nh,picka_nh_src_2,paper
 polish_cichosz2005,polish_cichosz2005_mirror,distribution
 polish_cichosz2005,polish_cichosz2005_paper,paper
 polish_sapinski2019,polish_sapinski2019_mirror,distribution
+polish_sapinski2019,polish_sapinski2019_paper_doi,paper
 polishemo,isca_interspeech_2024_ma24b_interspeech_pdf,paper
 polishemo,polishemo_paper,paper
 polishemo,polishemo_readme,readme
