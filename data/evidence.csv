@@ -183,7 +183,8 @@ albemo/n_speakers_reported/01,albemo,n_speakers_reported,10,albemo_page,bundled 
 albemo/name/01,albemo,name,AlbEmo,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by albemo/name/02
 albemo/name/02,albemo,name,AlbEmo,albemo_page,title of the source contains the name,2026-11-01,claude,current,
 albemo/speech_production/01,albemo,speech_production,acted,albemo_page,"speakers recorded alone in a quiet office, one utterance at a time, in seven emotional styles",2026-10-26,claude,current,
-albemo/spoken_text_design/01,albemo,spoken_text_design,parallel,,,2026-10-26,claude,provisional,Provisional: The six sentences are semantically neutral (record description)
+albemo/spoken_text_design/01,albemo,spoken_text_design,parallel,,,2026-10-26,claude,superseded,Provisional: The six sentences are semantically neutral (record description); superseded by albemo/spoken_text_design/02
+albemo/spoken_text_design/02,albemo,spoken_text_design,parallel;neutral_text,albemo_page,"""each produced six semantically neutral sentences in seven emotional styles""",2026-11-02,claude,current,
 albemo/vocal_content/01,albemo,vocal_content,speech,albemo_page,dataset described as speech recordings,2026-10-11,claude,current,
 allosat/full_title/01,allosat,full_title,AlloSat: A New Call Center French Corpus for Satisfaction and Frustration Analysis,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 allosat/languages/01,allosat,languages,fra,allosat_page,title: a new call center French corpus,2026-10-14,claude,current,
@@ -254,7 +255,8 @@ ased/n_speakers_reported/02,ased,n_speakers_reported,65,ased_page,65 (25 female 
 ased/name/01,ased,name,ASED,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by ased/name/02
 ased/name/02,ased,name,ASED,ased_page,title of the source contains the name,2026-11-01,claude,current,
 ased/speech_production/01,ased,speech_production,acted,ased_page,README: participants recorded sentences to be spoken in a required emotion (for example angry); a semi-supervised approach at a time and place of their choosing,2026-10-26,claude,current,
-ased/spoken_text_design/01,ased,spoken_text_design,parallel;emotion_specific_text,,,2026-10-26,claude,provisional,Provisional: README states 25 emotion-specific sentences (5 per emotion) and 2 common sentences
+ased/spoken_text_design/01,ased,spoken_text_design,parallel;emotion_specific_text,,,2026-10-26,claude,superseded,Provisional: README states 25 emotion-specific sentences (5 per emotion) and 2 common sentences; superseded by ased/spoken_text_design/02
+ased/spoken_text_design/02,ased,spoken_text_design,emotion_specific_text,ased_page,"""Each participant was first asked to record all 25 emotion-specific sentences.""",2026-11-02,claude,current,
 ased/vocal_content/01,ased,vocal_content,speech,ased_page,README: Amharic recordings of emotion-specific and common sentences,2026-10-11,claude,current,
 asvpesd/access_method/01,asvpesd,access_method,direct_download,,,2026-10-11,claude,superseded,Provisional:; superseded by asvpesd/access_method/02
 asvpesd/access_method/02,asvpesd,access_method,direct_download,asvpesd_page,Zenodo API: access_right open,2026-11-01,claude,current,
@@ -3316,7 +3318,8 @@ oreau/n_speakers_release/02,oreau,n_speakers_release,32,oreau_readme,commit 70b7
 oreau/n_speakers_reported/02,oreau,n_speakers_reported,32,oreau_page,written for each of the 7 emotions in French language by 32 non-professional speakers,2026-10-31,claude,current,
 oreau/name/01,oreau,name,Oreau,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 oreau/speech_production/01,oreau,speech_production,acted,,,2026-10-27,claude,provisional,Provisional: taken from the project review report; the paper was not re-read in this update
-oreau/spoken_text_design/01,oreau,spoken_text_design,emotion_specific_text,,,2026-10-27,claude,provisional,Provisional:
+oreau/spoken_text_design/01,oreau,spoken_text_design,emotion_specific_text,,,2026-10-27,claude,superseded,Provisional:; superseded by oreau/spoken_text_design/02
+oreau/spoken_text_design/02,oreau,spoken_text_design,emotion_specific_text,oreau_page,"""Between 10 and 13 utterances were written for each of the 7 emotions""",2026-11-02,claude,current,
 oreau/vocal_content/01,oreau,vocal_content,speech,oreau_page,dataset described as speech recordings,2026-10-11,claude,current,
 ov_merd/access_method/01,ov_merd,access_method,unknown,gh_zeroqiaoba_affectgpt,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 ov_merd/access_observed/01,ov_merd,access_observed,unavailable,ov_merd_paper,Annotations only. Audio and video from MER2023,2026-10-23,claude,current,
@@ -4173,7 +4176,8 @@ thaiser/name/01,thaiser,name,Thai SER,,,2026-11-01,claude,superseded,Provisional
 thaiser/name/02,thaiser,name,Thai SER,thaiser_page,title of the source contains the name,2026-11-01,claude,current,
 thaiser/speech_production/01,thaiser,speech_production,acted,thaiser_paper,"professional actors (200, aged 18-55) performed scripted sessions and improvisation scenes in the studio or over Zoom",2026-10-28,claude,superseded,taken from the project review report; the paper was not re-read in this update; superseded by thaiser/speech_production/02
 thaiser/speech_production/02,thaiser,speech_production,acted;improvised,thaiser_page,Each recording is separated into two sessions: Script Session and Improvisation Session,2026-11-01,claude,current,
-thaiser/spoken_text_design/01,thaiser,spoken_text_design,parallel;unscripted,,,2026-10-28,claude,provisional,Provisional:
+thaiser/spoken_text_design/01,thaiser,spoken_text_design,parallel;unscripted,,,2026-10-28,claude,superseded,Provisional:; superseded by thaiser/spoken_text_design/02
+thaiser/spoken_text_design/02,thaiser,spoken_text_design,parallel,thaiser_page,"""The actor was asked to speak each sentence two times for each emotion""",2026-11-02,claude,current,
 thaiser/vocal_content/01,thaiser,vocal_content,speech,thaiser_page,dataset described as speech recordings,2026-10-11,claude,current,
 thanushs25_tamil/access_method/01,thanushs25_tamil,access_method,direct_download,thanushs25_tamil_card,"Hugging Face dataset repository, public and not gated (Hugging Face API, checked 2026-11-02)",2026-11-02,claude,current,
 thanushs25_tamil/access_observed/01,thanushs25_tamil,access_observed,obtained,thanushs25_tamil_readme,commit 906c09addc96; Access,2026-11-01,claude,current,
