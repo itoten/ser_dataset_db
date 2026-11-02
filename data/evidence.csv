@@ -801,9 +801,11 @@ cmumosi/listening_test/01,cmumosi,listening_test,not_stated,cmumosi_paper,no lis
 cmumosi/n_files_reported/02,cmumosi,n_files_reported,2199,cmumosi_paper,The subjectivity annotation resulted in 2199 subjective segments and 1503 objective ones,2026-10-31,claude,current,Sentiment annotation covers the 2199 opinion segments
 cmumosi/n_speakers_reported/02,cmumosi,n_speakers_reported,89,cmumosi_paper,"The final set of videos contained 89 distinct speakers, including 41 female and 48 male speakers",2026-10-31,claude,current,
 cmumosi/name/01,cmumosi,name,CMU-MOSI,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+cnev/access_method/01,cnev,access_method,direct_download,cnev_paper,"""the CNEV corpus and database are freely available for download at https://osf.io/6gy4v/""",2026-11-02,claude,current,
 cnev/full_title/01,cnev,full_title,"CNEV: A corpus of Chinese nonverbal emotional vocalizations with a database of emotion category, valence, arousal, and gender",,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by cnev/full_title/02
 cnev/full_title/02,cnev,full_title,"CNEV: A corpus of Chinese nonverbal emotional vocalizations with a database of emotion category, valence, arousal, and gender",cnev_paper,title of the source contains the full title,2026-11-01,claude,current,
 cnev/languages/01,cnev,languages,zxx,cnev_paper,title: a corpus of Chinese nonverbal emotional vocalizations,2026-10-14,claude,current,
+cnev/n_speakers_reported/01,cnev,n_speakers_reported,164,cnev_paper,"""A total of 164 Chinese students (82 male, 82 female ...) participated"" in the recording phase",2026-11-02,claude,current,
 cnev/name/01,cnev,name,CNEV,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by cnev/name/02
 cnev/name/02,cnev,name,CNEV,cnev_paper,title of the source contains the name,2026-11-01,claude,current,
 cnev/vocal_content/01,cnev,vocal_content,nonverbal,cnev_paper,title: nonverbal emotional vocalizations,2026-10-14,claude,current,
@@ -1178,7 +1180,9 @@ emo_emilia/name/02,emo_emilia,name,Emo-Emilia,emo_emilia_card,title of the sourc
 emo_emilia/vocal_content/01,emo_emilia,vocal_content,speech,emo_emilia_card,card: test samples of speech,2026-10-23,claude,current,
 emochildru/full_title/01,emochildru,full_title,EmoChildRu: Emotional Child Russian Speech Corpus,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by emochildru/full_title/02
 emochildru/full_title/02,emochildru,full_title,EmoChildRu: Emotional Child Russian Speech Corpus,emochildru_paper,title of the source contains the full title,2026-11-01,claude,current,
+emochildru/hours_reported/01,emochildru,hours_reported,30,emochildru_paper,"""over 20 K recordings (approx. 30 h)""",2026-11-02,claude,current,
 emochildru/languages/01,emochildru,languages,rus,emochildru_paper,title: Emotional Child Russian Speech Corpus,2026-10-14,claude,current,
+emochildru/n_speakers_reported/01,emochildru,n_speakers_reported,100,emochildru_paper,"""collected from 100 children""",2026-11-02,claude,current,
 emochildru/name/01,emochildru,name,EmoChildRu,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by emochildru/name/02
 emochildru/name/02,emochildru,name,EmoChildRu,emochildru_paper,title of the source contains the name,2026-11-01,claude,current,
 emodb/access_method/01,emodb,access_method,direct_download,,,2026-10-12,claude,provisional,Provisional:
