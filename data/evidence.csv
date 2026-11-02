@@ -3120,6 +3120,7 @@ musecar/name/02,musecar,name,MuSe-CaR,musecar_paper,"the name appears in the sou
 narrative_dialogue/access_method/01,narrative_dialogue,access_method,direct_download,narrative_dialogue_page,Zenodo record metadata: access_right open,2026-10-14,claude,current,
 narrative_dialogue/access_observed/01,narrative_dialogue,access_observed,unavailable,,,2026-10-14,claude,provisional,Provisional: carried over from raw_audio_available
 narrative_dialogue/license_spdx/01,narrative_dialogue,license_spdx,CC-BY-4.0,narrative_dialogue_page,Zenodo record metadata: license cc-by-4.0,2026-10-14,claude,current,
+narrative_dialogue/n_files_reported/01,narrative_dialogue,n_files_reported,27074,narrative_dialogue_paper,"""2,588 stories containing 27,074 dialogue utterances""",2026-11-02,claude,current,
 narrative_dialogue/name/01,narrative_dialogue,name,Narrative Dialogue Dataset,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by narrative_dialogue/name/02
 narrative_dialogue/name/02,narrative_dialogue,name,Narrative Dialogue Dataset,narrative_dialogue_page,title of the source contains the name,2026-11-01,claude,current,
 naturalvoices/access_method/01,naturalvoices,access_method,direct_download,naturalvoices_card,card: download with huggingface-cli; dataset is not gated,2026-10-13,claude,current,
@@ -3324,8 +3325,10 @@ pemo_punjabi/speech_production/01,pemo_punjabi,speech_production,acted,pemo_punj
 persian_esd/full_title/01,persian_esd,full_title,Recognizing emotional speech in Persian: A validated database of Persian emotional speech (Persian ESD),,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by persian_esd/full_title/02
 persian_esd/full_title/02,persian_esd,full_title,Recognizing emotional speech in Persian: A validated database of Persian emotional speech (Persian ESD),persian_esd_paper,title of the source contains the full title,2026-11-01,claude,current,
 persian_esd/languages/01,persian_esd,languages,fas,persian_esd_paper,title: a validated database of Persian emotional speech,2026-10-14,claude,current,
+persian_esd/n_speakers_reported/01,persian_esd,n_speakers_reported,2,persian_esd_paper,"""articulated by two native Persian speakers (one male and one female)""",2026-11-02,claude,current,
 persian_esd/name/01,persian_esd,name,Persian ESD,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by persian_esd/name/02
 persian_esd/name/02,persian_esd,name,Persian ESD,persian_esd_paper,title of the source contains the name,2026-11-01,claude,current,
+persian_esd/speech_production/01,persian_esd,speech_production,acted,persian_esd_paper,"""design, creation, and validation a Persian database of acted emotional speech""",2026-11-02,claude,current,
 picka_nh/access_method/01,picka_nh,access_method,direct_download,picka_nh_page,"five public files (csv and txt), none restricted",2026-10-14,claude,current,
 picka_nh/access_observed/01,picka_nh,access_observed,unavailable,picka_nh_page,"files: Demographics.csv, emo_db_results.csv and README files",2026-10-14,claude,current,
 picka_nh/license_spdx/01,picka_nh,license_spdx,CC-BY-NC-SA-4.0,picka_nh_page,termsOfUse: provided under CC BY-NC-SA 4.0,2026-10-14,claude,current,
@@ -3593,6 +3596,7 @@ saraiki_ser/spoken_text_design/01,saraiki_ser,spoken_text_design,emotion_specifi
 saraiki_ser/vocal_content/01,saraiki_ser,vocal_content,speech,saraiki_ser_page,clips of about 4 to 5 seconds,2026-10-14,claude,current,
 saudi_ser_corpus/full_title/01,saudi_ser_corpus,full_title,Arabic Speech Emotion Recognition From Saudi Dialect Corpus,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by saudi_ser_corpus/full_title/02
 saudi_ser_corpus/full_title/02,saudi_ser_corpus,full_title,Arabic Speech Emotion Recognition From Saudi Dialect Corpus,saudi_ser_corpus_paper,title of the source contains the full title,2026-11-01,claude,current,
+saudi_ser_corpus/hours_reported/01,saudi_ser_corpus,hours_reported,0.18,saudi_ser_corpus_paper,"""The total duration of the dataset was about 11 minutes.""",2026-11-02,claude,current,
 saudi_ser_corpus/languages/01,saudi_ser_corpus,languages,ara,saudi_ser_corpus_paper,title: Arabic speech emotion recognition from Saudi dialect corpus,2026-10-14,claude,current,
 saudi_ser_corpus/name/01,saudi_ser_corpus,name,Saudi dialect speech emotion corpus,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 savee/access_method/01,savee,access_method,free_account_required,,readme: needs a free registration at cvssp.org/savee,2026-10-12,claude,superseded,superseded by savee/access_method/02; Former source type: project_doc
