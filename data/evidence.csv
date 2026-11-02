@@ -195,7 +195,8 @@ arabic_zenodo19687456/access_observed/01,arabic_zenodo19687456,access_observed,u
 arabic_zenodo19687456/languages/01,arabic_zenodo19687456,languages,ara,,,2026-10-12,claude,provisional,Provisional:
 arabic_zenodo19687456/license_spdx/01,arabic_zenodo19687456,license_spdx,CC-BY-4.0,arabic_zenodo19687456_page,"Rights: ""License Creative Commons Attribution 4.0 International""",2026-11-01,claude,current,
 arabic_zenodo19687456/name/01,arabic_zenodo19687456,name,Arabic (Zenodo 19687456),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
-ased/access_method/01,ased,access_method,direct_download,,,2026-10-11,claude,provisional,Provisional:
+ased/access_method/01,ased,access_method,direct_download,,,2026-10-11,claude,superseded,Provisional:; superseded by ased/access_method/02
+ased/access_method/02,ased,access_method,direct_download,ased_paper,"Abstract: ""The resulting dataset is freely available for download.""",2026-11-02,claude,current,
 ased/access_observed/01,ased,access_observed,obtained,,,2026-10-11,claude,superseded,Provisional: carried over from raw_audio_available; superseded by ased/access_observed/02
 ased/access_observed/02,ased,access_observed,obtained,ased_readme,commit 4a66ac0ebe72; Access,2026-11-01,claude,current,
 ased/emotion_categories.annotator/01,ased,emotion_categories.annotator,human,ased_page,README: participants were given the sentence and the required emotion; eight judges decided whether each recording expressed it,2026-10-26,claude,current,
@@ -526,7 +527,10 @@ buemodb/access_observed/01,buemodb,access_observed,unavailable,,,2026-11-01,clau
 buemodb/full_title/01,buemodb,full_title,Bogazici University Turkish Emotional Speech Corpus,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by buemodb/full_title/02
 buemodb/full_title/02,buemodb,full_title,Bogazici University Turkish Emotional Speech Corpus,buemodb_paper,title of the source contains the full title,2026-11-01,claude,current,
 buemodb/languages/01,buemodb,languages,tur,buemodb_paper,title: Bogazici University Turkish emotional speech corpus,2026-10-14,claude,current,
+buemodb/n_files_reported/01,buemodb,n_files_reported,484,buemodb_paper,"Abstract: ""484 speech utterances from 11 amateur actors""",2026-11-02,claude,current,
+buemodb/n_speakers_reported/01,buemodb,n_speakers_reported,11,buemodb_paper,"Abstract: ""484 speech utterances from 11 amateur actors""",2026-11-02,claude,current,
 buemodb/name/01,buemodb,name,BUEMODB,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+buemodb/speech_production/01,buemodb,speech_production,acted,buemodb_paper,"Abstract: ""11 amateur actors acting 11 emotionally undefined sentences with 4 emotions""",2026-11-02,claude,current,
 burmese_new2001/access_method/01,burmese_new2001,access_method,request_form_or_email,burmese_new2001_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
 burmese_new2001/languages/01,burmese_new2001,languages,mya,burmese_new2001_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
 burmese_new2001/name/01,burmese_new2001,name,Burmese emotional speech (New et al. 2001),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -645,6 +649,7 @@ cemo/languages/01,cemo,languages,fra,cemo_paper,French call center: APHP France 
 cemo/license_spdx/01,cemo,license_spdx,unknown,cemo_paper,§2: agreements ensure the non-diffusion of the corpus and annotations,2026-10-13,claude,current,"Not distributed, so there is no license"
 cemo/n_speakers_reported/01,cemo,n_speakers_reported,unknown,cemo_paper,"Table 1: 7 agents (3M, 4F); clients 688 dialogs (271M, 513F)",2026-10-13,claude,current,The total number of speakers is not given
 cemo/name/01,cemo,name,CEMO,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+cemo/speech_production/01,cemo,speech_production,spontaneous,cemo_paper_2,"Abstract: ""real agent-caller spoken dialogs from a medical emergency call center""",2026-11-02,claude,current,
 cemo/vocal_content/01,cemo,vocal_content,speech,cemo_paper,§2: transcribed agent-client spoken dialogs,2026-10-13,claude,current,
 cheavd/hours_reported/01,cheavd,hours_reported,2.33,cheavd_paper,"Abstract: ""140 min emotional segments extracted from films, TV plays and talk shows""",2026-11-02,claude,current,
 cheavd/n_speakers_reported/01,cheavd,n_speakers_reported,238,cheavd_paper,"Abstract: ""238 speakers, aging from child to elderly""",2026-11-02,claude,current,
