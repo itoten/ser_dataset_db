@@ -2849,6 +2849,7 @@ mspconversation/n_files_reported/02,mspconversation,n_files_reported,310,mspconv
 mspconversation/n_speakers_reported/01,mspconversation,n_speakers_reported,unknown,mspconversation_src,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 mspconversation/name/01,mspconversation,name,MSP-Conversation,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mspconversation/name/02
 mspconversation/name/02,mspconversation,name,MSP-Conversation,mspconversation_paper,title of the source contains the name,2026-11-01,claude,current,
+mspconversation/speech_production/01,mspconversation,speech_production,spontaneous,mspconversation_src,"""Spontaneous speech emotional data with emotional traces""",2026-11-02,claude,current,
 mspface/access_method/01,mspface,access_method,unavailable,mspface_page,we provide the link to the videos and the code to segment them,2026-10-13,claude,current,Links and code are public on GitHub
 mspface/access_observed/01,mspface,access_observed,unavailable,mspface_page,we provide the link to the videos and the code to segment the videos,2026-10-13,claude,current,
 mspface/emotion_categories.annotator/01,mspface,emotion_categories.annotator,human,mspface_page,"9,370 recordings (24 h 41 min) annotated with categorical labels and attributes (activation, dominance, valence) by crowd sourcing",2026-10-28,claude,current,
@@ -2931,6 +2932,7 @@ musecar/hours_reported/02,musecar,hours_reported,36,musecar_page_2,"MuSe-CAR is 
 musecar/languages/02,musecar,languages,eng,musecar_paper,"Most are native English speakers from the UK or the US, while a small minority are non-native, yet fluent English speakers",2026-10-31,claude,current,
 musecar/license_spdx/02,musecar,license_spdx,LicenseRef-custom-research-only,musecar_page,EULA: available for non-commercial research purposes only,2026-10-14,claude,current,
 musecar/material_origin/01,musecar,material_origin,web_video,musecar_paper,video data from 291 videos and 70 host speakers sourced from YouTube,2026-10-31,claude,current,
+musecar/n_speakers_reported/01,musecar,n_speakers_reported,70,musecar_paper,"""291 videos and 70 host speakers""",2026-11-02,claude,current,
 musecar/name/01,musecar,name,MuSe-CaR,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by musecar/name/02
 musecar/name/02,musecar,name,MuSe-CaR,musecar_paper,"the name appears in the source: ...per, we provide detailed information on MuSe-CaR, the first of its kind in-the-wild data...",2026-11-01,claude,current,
 narrative_dialogue/access_method/01,narrative_dialogue,access_method,direct_download,narrative_dialogue_page,Zenodo record metadata: access_right open,2026-10-14,claude,current,
