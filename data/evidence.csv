@@ -2632,6 +2632,7 @@ maleo/license_spdx/01,maleo,license_spdx,CC-BY-4.0,maleo_card,dataset card of th
 maleo/material_origin/01,maleo,material_origin,web_video,maleo_card,dataset card: clips cut from YouTube videos of spontaneous speech,2026-10-11,claude,current,
 maleo/n_files_release/01,maleo,n_files_release,700,,,2026-10-11,claude,superseded,Provisional:; superseded by maleo/n_files_release/02
 maleo/n_files_release/02,maleo,n_files_release,700,maleo_readme,commit 4645ecc3d114; Size of the release,2026-11-01,claude,current,
+maleo/n_files_reported/01,maleo,n_files_reported,700,maleo_card,"dataset viewer: ""train · 700 rows""",2026-11-02,claude,current,
 maleo/n_speakers_release/01,maleo,n_speakers_release,unknown,maleo_readme,commit 4645ecc3d114; Size of the release,2026-11-01,claude,current,Readme cell: unknown
 maleo/name/01,maleo,name,Maleo Emotion,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by maleo/name/02
 maleo/name/02,maleo,name,Maleo Emotion,maleo_card,the name appears in the source: ...ognition - word-timestamps pretty_name: Maleo Emotion Indonesian Audio Dataset with Word-Leve...,2026-11-01,claude,current,
