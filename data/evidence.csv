@@ -1242,6 +1242,7 @@ emodialogcn/full_title/01,emodialogcn,full_title,EmoDialogCN: A Multimodal Manda
 emodialogcn/hours_reported/01,emodialogcn,hours_reported,400,emodialogcn_page,"description: 21,800 spontaneous dialogues (over 400 hours)",2026-10-14,claude,current,"""Over 400 hours"""
 emodialogcn/languages/01,emodialogcn,languages,cmn,emodialogcn_page,description: a multimodal Mandarin dyadic dialogue dataset,2026-10-14,claude,current,
 emodialogcn/license_spdx/01,emodialogcn,license_spdx,CC-BY-NC-SA-4.0,emodialogcn_page,card metadata: license cc-by-nc-sa-4.0,2026-10-14,claude,current,
+emodialogcn/n_files_reported/01,emodialogcn,n_files_reported,21800,emodialogcn_card,"""21,800 spontaneous dialogues (over 400 hours)""",2026-11-02,claude,current,
 emodialogcn/n_speakers_reported/01,emodialogcn,n_speakers_reported,119,emodialogcn_page,description: 119 professional actors,2026-10-14,claude,current,
 emodialogcn/name/01,emodialogcn,name,EmoDialogCN,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 emodialogcn/speech_production/01,emodialogcn,speech_production,acted,emodialogcn_page,description: 119 professional actors; spontaneous dialogues,2026-10-14,claude,current,
