@@ -1254,7 +1254,7 @@ emodialogcn/license_spdx/01,emodialogcn,license_spdx,CC-BY-NC-SA-4.0,emodialogcn
 emodialogcn/n_files_reported/01,emodialogcn,n_files_reported,21800,emodialogcn_card,"""21,800 spontaneous dialogues (over 400 hours)""",2026-11-02,claude,current,
 emodialogcn/n_speakers_reported/01,emodialogcn,n_speakers_reported,119,emodialogcn_page,description: 119 professional actors,2026-10-14,claude,current,
 emodialogcn/name/01,emodialogcn,name,EmoDialogCN,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
-emodialogcn/speech_production/01,emodialogcn,speech_production,acted,emodialogcn_page,description: 119 professional actors; spontaneous dialogues,2026-10-14,claude,current,
+emodialogcn/speech_production/01,emodialogcn,speech_production,acted,emodialogcn_page,description: 119 professional actors; spontaneous dialogues,2026-10-14,claude,superseded,"Withdrawn in the review of 2026-11-02: ""spontaneous dialogues"" by professional actors does not say whether emotions were instructed or the dialogues unscripted; the value needs the paper."
 emodialogcn/vocal_content/01,emodialogcn,vocal_content,speech,emodialogcn_page,description: dialogues with synchronized video and audio,2026-10-14,claude,current,
 emofilm/access_method/01,emofilm,access_method,request_form_or_email,,§D verified: restricted / application required - EmoFilm (Zenodo restricted),2026-10-10,claude,superseded,superseded by emofilm/access_method/02; Former source type: project_doc
 emofilm/access_method/02,emofilm,access_method,signed_agreement,emofilm_page,"How to access: send the signed EULA, signed by a permanent university position",2026-10-14,claude,current,
