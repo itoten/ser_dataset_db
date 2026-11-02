@@ -4621,7 +4621,8 @@ voicestats/n_speakers_release/02,voicestats,n_speakers_release,3,voicestats_read
 voicestats/n_speakers_reported/02,voicestats,n_speakers_reported,3,voicestats_page,プロの女性声優3名が3パターンの感情で音素バランス文を読み上げたファイル,2026-10-31,claude,current,
 voicestats/name/01,voicestats,name,Voice Statistics,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by voicestats/name/02
 voicestats/name/02,voicestats,name,Voice Statistics,voicestats_page,"text: ""…日本声優統計学会…""",2026-11-02,claude,current,
-voicestats/speech_production/01,voicestats,speech_production,acted,,,2026-10-28,claude,provisional,Provisional: taken from the project review report; the paper was not re-read in this update
+voicestats/speech_production/01,voicestats,speech_production,acted,,,2026-10-28,claude,superseded,Provisional: taken from the project review report; the paper was not re-read in this update; superseded by voicestats/speech_production/02
+voicestats/speech_production/02,voicestats,speech_production,acted,voicestats_page,"""The Voice Actress Corpus is a free speech corpus of professional Japanese voice actresses""",2026-11-02,claude,current,
 voicestats/spoken_text_design/01,voicestats,spoken_text_design,parallel,,,2026-10-28,claude,provisional,Provisional:
 voicestats/vocal_content/01,voicestats,vocal_content,speech,voicestats_page,voice actors read phoneme-balanced sentences,2026-10-11,claude,current,
 waxal_wolof_ser/access_method/01,waxal_wolof_ser,access_method,direct_download,waxal_wolof_ser_page,dataset is not gated,2026-10-14,claude,current,
@@ -4718,7 +4719,8 @@ ysed/n_speakers_reported/02,ysed,n_speakers_reported,71,,,2026-10-28,claude,supe
 ysed/n_speakers_reported/03,ysed,n_speakers_reported,71,ysed_page,"1,432 audio recordings from 71 male and female participants aged between 15 and 40 years",2026-11-01,claude,current,
 ysed/name/01,ysed,name,YSED,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by ysed/name/02
 ysed/name/02,ysed,name,YSED,ysed_page,title of the source contains the name,2026-11-01,claude,current,
-ysed/speech_production/01,ysed,speech_production,acted,,,2026-10-28,claude,provisional,Provisional: taken from the project review report; the paper was not re-read in this update
+ysed/speech_production/01,ysed,speech_production,acted,,,2026-10-28,claude,superseded,Provisional: taken from the project review report; the paper was not re-read in this update; superseded by ysed/speech_production/02
+ysed/speech_production/02,ysed,speech_production,acted;elicited,ysed_paper,"""Recording duration ranged from 2 to 7 s using the simulated and induced approach""",2026-11-02,claude,current,
 ysed/spoken_text_design/01,ysed,spoken_text_design,parallel,,,2026-10-28,claude,provisional,Provisional:
 ysed/vocal_content/01,ysed,vocal_content,speech,ysed_page,dataset described as speech recordings,2026-10-11,claude,current,
 yue_emo_speech/access_method/01,yue_emo_speech,access_method,direct_download,yue_emo_speech_page,dataset is not gated; parquet files,2026-10-14,claude,current,
