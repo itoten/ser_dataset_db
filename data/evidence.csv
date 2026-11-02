@@ -646,6 +646,8 @@ cemo/license_spdx/01,cemo,license_spdx,unknown,cemo_paper,§2: agreements ensure
 cemo/n_speakers_reported/01,cemo,n_speakers_reported,unknown,cemo_paper,"Table 1: 7 agents (3M, 4F); clients 688 dialogs (271M, 513F)",2026-10-13,claude,current,The total number of speakers is not given
 cemo/name/01,cemo,name,CEMO,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 cemo/vocal_content/01,cemo,vocal_content,speech,cemo_paper,§2: transcribed agent-client spoken dialogs,2026-10-13,claude,current,
+cheavd/hours_reported/01,cheavd,hours_reported,2.33,cheavd_paper,"Abstract: ""140 min emotional segments extracted from films, TV plays and talk shows""",2026-11-02,claude,current,
+cheavd/n_speakers_reported/01,cheavd,n_speakers_reported,238,cheavd_paper,"Abstract: ""238 speakers, aging from child to elderly""",2026-11-02,claude,current,
 cheavd/name/01,cheavd,name,CHEAVD,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by cheavd/name/02
 cheavd/name/02,cheavd,name,CHEAVD,cheavd_paper,title of the source contains the name,2026-11-01,claude,current,
 chen_bimodal/access_observed/01,chen_bimodal,access_observed,unavailable,,,2026-11-01,claude,provisional,Provisional: from the earlier status notes (the audio could not be obtained or is not distributed)
