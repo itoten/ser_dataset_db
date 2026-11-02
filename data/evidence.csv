@@ -115,8 +115,8 @@ aihub_71631/hours_reported/01,aihub_71631,hours_reported,3000,aihub_71631_page,"
 aihub_71631/languages/01,aihub_71631,languages,kor,aihub_71631_page,field: Korean (한국어),2026-10-14,claude,current,
 aihub_71631/license_spdx/01,aihub_71631,license_spdx,unknown,aihub_71631_page,page gives no license name; AIHub usage policy applies,2026-10-14,claude,current,Terms of use not read
 aihub_71631/listening_test/01,aihub_71631,listening_test,not_stated,aihub_71631_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-aihub_71631/n_files_reported/01,aihub_71631,n_files_reported,unknown,aihub_71631_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-aihub_71631/n_speakers_reported/01,aihub_71631,n_speakers_reported,unknown,aihub_71631_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+aihub_71631/n_files_reported/01,aihub_71631,n_files_reported,unknown,aihub_71631_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
+aihub_71631/n_speakers_reported/01,aihub_71631,n_speakers_reported,unknown,aihub_71631_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 aihub_71631/name/01,aihub_71631,name,감정이 태깅된 자유대화 (성인),,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by aihub_71631/name/02
 aihub_71631/name/02,aihub_71631,name,감정이 태깅된 자유대화 (성인),aihub_71631_page,the name appears in the source: ... 데이터를 저장하고 있습니다 #한국어 # 자유대화 # 음성 # 일상대화 감정이 태깅된 자유대화 (성인) 분야 한국어 유형 오디오 구축년도 : 2022 갱신년월 : 2023-1...,2026-11-01,claude,current,
 aihub_71631/speech_production/01,aihub_71631,speech_production,unknown,aihub_71631_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
@@ -127,8 +127,8 @@ aihub_71632/hours_reported/01,aihub_71632,hours_reported,3000,aihub_71632_page,"
 aihub_71632/languages/01,aihub_71632,languages,kor,aihub_71632_page,field: Korean (한국어),2026-10-14,claude,current,
 aihub_71632/license_spdx/01,aihub_71632,license_spdx,unknown,aihub_71632_page,page gives no license name; AIHub usage policy applies,2026-10-14,claude,current,Terms of use not read
 aihub_71632/listening_test/01,aihub_71632,listening_test,not_stated,aihub_71632_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-aihub_71632/n_files_reported/01,aihub_71632,n_files_reported,unknown,aihub_71632_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-aihub_71632/n_speakers_reported/01,aihub_71632,n_speakers_reported,unknown,aihub_71632_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+aihub_71632/n_files_reported/01,aihub_71632,n_files_reported,unknown,aihub_71632_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
+aihub_71632/n_speakers_reported/01,aihub_71632,n_speakers_reported,unknown,aihub_71632_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 aihub_71632/name/01,aihub_71632,name,감정이 태깅된 자유대화 (청소년),,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by aihub_71632/name/02
 aihub_71632/name/02,aihub_71632,name,감정이 태깅된 자유대화 (청소년),aihub_71632_page,the name appears in the source: ... 데이터를 저장하고 있습니다 #한국어 # 자유대화 # 음성 # 일상대화 감정이 태깅된 자유대화 (청소년) 분야 한국어 유형 오디오 구축년도 : 2022 갱신년월 : 2023-1...,2026-11-01,claude,current,
 aihub_71632/speech_production/01,aihub_71632,speech_production,unknown,aihub_71632_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
@@ -170,7 +170,7 @@ albemo/emotion_categories.label_basis/02,albemo,emotion_categories.label_basis,i
 albemo/emotion_categories.label_verification/01,albemo,emotion_categories.label_verification,listener_validated,albemo_page,"every emotion label was validated in a blind forced-choice listening test: four native-Albanian evaluators contributed 1,260 judgements, three independent ratings per clip, never rating their own recordings; recognition 73% against a chance level of 14%, mean unbiased hit-rate (Wagner) 54%, Fleiss kappa 0.59",2026-10-26,claude,current,Every individual judgement is released (evaluations/); the labels stay the intended emotions and no clip was removed; the review's recount of 918 correct judgements (73%) agrees
 albemo/full_title/01,albemo,full_title,AlbEmo: an emotional speech corpus for Albanian,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 albemo/hours_release/01,albemo,hours_release,0.37,albemo_readme,commit 08308769a6a3; Size of the release,2026-11-01,claude,current,
-albemo/hours_reported/01,albemo,hours_reported,0.37,albemo_page,"""totalling 22.1 minutes""",2026-11-02,claude,current,
+albemo/hours_reported/01,albemo,hours_reported,0.37,albemo_page,"""totalling 22.1 minutes""",2026-11-02,claude,current,22.1 min written as hours (rounded to two decimals)
 albemo/languages/01,albemo,languages,sqi,albemo_page,dataset description names the language,2026-10-11,claude,current,
 albemo/license_spdx/01,albemo,license_spdx,CC-BY-4.0,albemo_page,bundled LICENSE file of albemo-v1.0.zip,2026-10-11,claude,current,
 albemo/listening_test/01,albemo,listening_test,reported,albemo_page,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
@@ -192,16 +192,16 @@ albemo/vocal_content/01,albemo,vocal_content,speech,albemo_page,dataset describe
 allosat/full_title/01,allosat,full_title,AlloSat: A New Call Center French Corpus for Satisfaction and Frustration Analysis,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 allosat/languages/01,allosat,languages,fra,allosat_page,title: a new call center French corpus,2026-10-14,claude,current,
 allosat/name/01,allosat,name,AlloSat,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
-amigos/access_method/01,amigos,access_method,unknown,amigos_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-amigos/hours_reported/01,amigos,hours_reported,unknown,amigos_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-amigos/languages/01,amigos,languages,unknown,amigos_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-amigos/license_spdx/01,amigos,license_spdx,none_stated,amigos_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-amigos/listening_test/01,amigos,listening_test,not_stated,amigos_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-amigos/n_files_reported/01,amigos,n_files_reported,unknown,amigos_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-amigos/n_speakers_reported/01,amigos,n_speakers_reported,unknown,amigos_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+amigos/access_method/01,amigos,access_method,unknown,amigos_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+amigos/hours_reported/01,amigos,hours_reported,unknown,amigos_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+amigos/languages/01,amigos,languages,unknown,amigos_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+amigos/license_spdx/01,amigos,license_spdx,none_stated,amigos_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+amigos/listening_test/01,amigos,listening_test,not_stated,amigos_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+amigos/n_files_reported/01,amigos,n_files_reported,unknown,amigos_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+amigos/n_speakers_reported/01,amigos,n_speakers_reported,unknown,amigos_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 amigos/name/01,amigos,name,AMIGOS,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by amigos/name/02
 amigos/name/02,amigos,name,AMIGOS,amigos_paper,title of the source contains the name,2026-11-01,claude,current,
-amigos/speech_production/01,amigos,speech_production,unknown,amigos_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+amigos/speech_production/01,amigos,speech_production,unknown,amigos_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 anad/access_method/01,anad,access_method,free_account_required,anad_page,Kaggle download requires signing in,2026-10-13,claude,current,
 anad/access_observed/01,anad,access_observed,obtained,,,2026-10-13,claude,superseded,Provisional: carried over from raw_audio_available; superseded by anad/access_observed/02
 anad/access_observed/02,anad,access_observed,free_account_required,anad_readme,commit 6cae0e200fff; Access,2026-11-01,claude,current,
@@ -226,7 +226,7 @@ anad/name/02,anad,name,ANAD,anad_page,"text: ""…the first Arabic Natural Audio
 anad/speech_production/01,anad,speech_production,spontaneous,anad_page,videos of live calls between an anchor and a human outside the studio,2026-10-24,claude,current,
 anad/spoken_text_design/01,anad,spoken_text_design,unscripted,anad_page,videos of live calls between an anchor and a human outside the studio,2026-10-24,claude,current,
 anad/vocal_content/01,anad,vocal_content,speech,anad_page,description: chunks divided into 1 sec speech units; silence and laughs removed,2026-10-13,claude,current,
-arabic_zenodo19687456/access_method/01,arabic_zenodo19687456,access_method,unknown,arabic_zenodo19687456_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+arabic_zenodo19687456/access_method/01,arabic_zenodo19687456,access_method,unknown,arabic_zenodo19687456_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 arabic_zenodo19687456/access_observed/01,arabic_zenodo19687456,access_observed,unavailable,arabic_zenodo19687456_page,only file (54).pdf in the record,2026-10-14,claude,current,
 arabic_zenodo19687456/hours_reported/01,arabic_zenodo19687456,hours_reported,unknown,arabic_zenodo19687456_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 arabic_zenodo19687456/languages/01,arabic_zenodo19687456,languages,ara,,,2026-10-12,claude,provisional,Provisional:
@@ -282,7 +282,7 @@ asvpesd/n_files_reported/02,asvpesd,n_files_reported,7812,asvpesd_page,7812 audi
 asvpesd/n_speakers_release/01,asvpesd,n_speakers_release,76,,distinct speaker token in utterance ids of the used utterances,2026-10-12,script,superseded,superseded by asvpesd/n_speakers_measured/02; Former source type: measured
 asvpesd/n_speakers_release/02,asvpesd,n_speakers_release,unknown,,,2026-10-26,claude,superseded,"Provisional: Odd folder numbers are female and even numbers male (record description); 78 folders in all, two of them babies' voices; superseded by asvpesd/n_speakers_release/03"
 asvpesd/n_speakers_release/03,asvpesd,n_speakers_release,unknown,asvpesd_readme,commit dc439736873f; Size of the release,2026-11-01,claude,current,Readme cell: unknown (76 source folders)
-asvpesd/n_speakers_reported/01,asvpesd,n_speakers_reported,unknown,asvpesd_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+asvpesd/n_speakers_reported/01,asvpesd,n_speakers_reported,unknown,asvpesd_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 asvpesd/name/01,asvpesd,name,ASVP-ESD,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by asvpesd/name/02
 asvpesd/name/02,asvpesd,name,ASVP-ESD,asvpesd_page,title of the source contains the name,2026-11-01,claude,current,
 asvpesd/speech_production/01,asvpesd,speech_production,unknown,asvpesd_page,"audio was recorded and collected from movies, TV shows, YouTube channels and other emotional-sound websites; the record calls it realistic and non-scripted",2026-10-26,claude,current,Which clips are acted (films) and which spontaneous is not stated
@@ -310,14 +310,14 @@ audiospeechsentiment/emotion_categories.annotator/01,audiospeechsentiment,emotio
 audiospeechsentiment/emotion_categories.label_basis/01,audiospeechsentiment,emotion_categories.label_basis,unknown,audiospeechsentiment_page,no description of how labels were made,2026-10-24,claude,current,Measured observations are in label_basis_note
 audiospeechsentiment/emotion_categories.label_verification/01,audiospeechsentiment,emotion_categories.label_verification,unknown,,,2026-10-22,user,provisional,Provisional:
 audiospeechsentiment/hours_release/01,audiospeechsentiment,hours_release,0.27,audiospeechsentiment_readme,commit 155c3c176004; Size of the release,2026-11-01,claude,current,
-audiospeechsentiment/hours_reported/01,audiospeechsentiment,hours_reported,unknown,audiospeechsentiment_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+audiospeechsentiment/hours_reported/01,audiospeechsentiment,hours_reported,unknown,audiospeechsentiment_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the page text read was a script or bot-check shell.
 audiospeechsentiment/languages/01,audiospeechsentiment,languages,eng,,,2026-10-22,user,provisional,"Provisional: Light check only, no human verification. Confidence lowish. The uploader does not state the language"
 audiospeechsentiment/license_spdx/02,audiospeechsentiment,license_spdx,CC0-1.0,audiospeechsentiment_page,Kaggle API licenseName: CC0: Public Domain,2026-10-14,claude,current,
 audiospeechsentiment/n_files_release/01,audiospeechsentiment,n_files_release,360,,,2026-10-14,claude,superseded,Provisional:; superseded by audiospeechsentiment/n_files_release/02
 audiospeechsentiment/n_files_release/02,audiospeechsentiment,n_files_release,360,audiospeechsentiment_readme,commit 155c3c176004; Size of the release,2026-11-01,claude,current,
-audiospeechsentiment/n_files_reported/01,audiospeechsentiment,n_files_reported,unknown,audiospeechsentiment_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+audiospeechsentiment/n_files_reported/01,audiospeechsentiment,n_files_reported,unknown,audiospeechsentiment_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the page text read was a script or bot-check shell.
 audiospeechsentiment/n_speakers_release/01,audiospeechsentiment,n_speakers_release,unknown,audiospeechsentiment_readme,commit 155c3c176004; Size of the release,2026-11-01,claude,current,Readme cell: unknown
-audiospeechsentiment/n_speakers_reported/01,audiospeechsentiment,n_speakers_reported,unknown,audiospeechsentiment_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+audiospeechsentiment/n_speakers_reported/01,audiospeechsentiment,n_speakers_reported,unknown,audiospeechsentiment_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the page text read was a script or bot-check shell.
 audiospeechsentiment/name/01,audiospeechsentiment,name,Audio Speech Sentiment,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by audiospeechsentiment/name/02
 audiospeechsentiment/name/02,audiospeechsentiment,name,Audio Speech Sentiment,audiospeechsentiment_page,title of the source contains the name,2026-11-01,claude,current,
 audiospeechsentiment/speech_production/01,audiospeechsentiment,speech_production,unknown,audiospeechsentiment_page,description lists only the three classes and files,2026-10-24,claude,current,
@@ -507,7 +507,7 @@ beat/license_spdx/01,beat,license_spdx,LicenseRef-other,gh_superkogito_ser_datas
 beat/license_spdx/02,beat,license_spdx,Apache-2.0,beat_card,dataset card metadata: license apache-2.0,2026-10-13,claude,current,
 beat/listening_test/01,beat,listening_test,not_stated,beat_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 beat/n_files_release/01,beat,n_files_release,1946,,,2026-10-13,claude,provisional,Provisional: English part only
-beat/n_files_reported/01,beat,n_files_reported,unknown,beat_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+beat/n_files_reported/01,beat,n_files_reported,unknown,beat_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 beat/n_speakers_reported/01,beat,n_speakers_reported,30,beat_page,30 Speakers with Self-Talk and Conversation Recording,2026-10-13,claude,current,
 beat/name/01,beat,name,BEAT,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by beat/name/02
 beat/name/02,beat,name,BEAT,beat_page,title of the source contains the name,2026-11-01,claude,current,
@@ -523,12 +523,12 @@ bedvibe/n_speakers_reported/01,bedvibe,n_speakers_reported,unknown,bedvibe_page,
 bedvibe/name/01,bedvibe,name,BedVibe Emotional Speech Datasets,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by bedvibe/name/02
 bedvibe/name/02,bedvibe,name,BedVibe Emotional Speech Datasets,bedvibe_page,the name appears in the source: ...BedVibe Emotional Speech Datasets Multilingual emotional speech datasets ...,2026-11-01,claude,current,
 bedvibe/speech_production/01,bedvibe,speech_production,unknown,bedvibe_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-belfast/access_method/01,belfast,access_method,unknown,belfast_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-belfast/hours_reported/01,belfast,hours_reported,unknown,belfast_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-belfast/languages/01,belfast,languages,unknown,belfast_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+belfast/access_method/01,belfast,access_method,unknown,belfast_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+belfast/hours_reported/01,belfast,hours_reported,unknown,belfast_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+belfast/languages/01,belfast,languages,unknown,belfast_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 belfast/license_spdx/02,belfast,license_spdx,unknown,belfast_paper,the paper states no licence or terms of distribution,2026-10-31,claude,current,"The paper was read; it describes the database design, not its terms"
-belfast/listening_test/01,belfast,listening_test,not_stated,belfast_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-belfast/n_files_reported/01,belfast,n_files_reported,unknown,belfast_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+belfast/listening_test/01,belfast,listening_test,not_stated,belfast_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+belfast/n_files_reported/01,belfast,n_files_reported,unknown,belfast_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 belfast/n_speakers_reported/02,belfast,n_speakers_reported,100,belfast_paper,The database currently contains material from a total of 100 people,2026-10-31,claude,current,Section 2.3; a total of 239 clips
 belfast/name/01,belfast,name,Belfast Database,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 berst/access_method/01,berst,access_method,direct_download,berst_card,dataset is not gated; wav files listed,2026-10-13,claude,current,
@@ -658,7 +658,7 @@ capspeech/full_title/01,capspeech,full_title,CapSpeech: Enabling Downstream Appl
 capspeech/full_title/02,capspeech,full_title,CapSpeech: Enabling Downstream Applications in Style-Captioned Text-to-Speech,arxiv_s_2506_02863,"text: ""…/arxiv.org/abs/2506.02863v2</id> <title>CapSpeech: Enabling Downstream Applications in Sty…""",2026-11-02,claude,current,
 capspeech/languages/01,capspeech,languages,eng,hf_opensound_capspeech,card metadata: language en,2026-10-23,claude,current,
 capspeech/license_spdx/01,capspeech,license_spdx,CC-BY-NC-4.0,hf_opensound_capspeech,card: All resources are under the CC BY-NC 4.0 license,2026-10-23,claude,current,
-capspeech/listening_test/01,capspeech,listening_test,not_stated,arxiv_s_2506_02863,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+capspeech/listening_test/01,capspeech,listening_test,not_stated,arxiv_s_2506_02863,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 capspeech/material_origin/01,capspeech,material_origin,multiple,arxiv_s_2506_02863,"Emilia, GigaSpeech, MLS, CommonVoice, LibriTTS-R, etc.",2026-10-23,claude,current,
 capspeech/n_files_reported/01,capspeech,n_files_reported,10000000,arxiv_s_2506_02863,abstract: over 10 million machine-annotated audio-caption pairs and nearly 0.36 million human-annotated,2026-10-23,claude,current,"358,783 human-annotated pairs"
 capspeech/name/01,capspeech,name,CapSpeech,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by capspeech/name/02
@@ -671,7 +671,7 @@ capspeech_agentdb/full_title/02,capspeech_agentdb,full_title,CapSpeech-AgentDB,c
 capspeech_agentdb/hours_reported/01,capspeech_agentdb,hours_reported,25.2,arxiv_s_2506_02863,§3: totaling approximately 25.2 hours,2026-10-23,claude,current,
 capspeech_agentdb/languages/01,capspeech_agentdb,languages,eng,hf_opensound_capspeech,card metadata: language en,2026-10-23,claude,current,
 capspeech_agentdb/license_spdx/01,capspeech_agentdb,license_spdx,CC-BY-NC-4.0,capspeech_agentdb_card,Hugging Face license tag cc-by-nc-4.0,2026-10-23,claude,current,
-capspeech_agentdb/listening_test/01,capspeech_agentdb,listening_test,not_stated,arxiv_s_2506_02863,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+capspeech_agentdb/listening_test/01,capspeech_agentdb,listening_test,not_stated,arxiv_s_2506_02863,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 capspeech_agentdb/n_files_reported/01,capspeech_agentdb,n_files_reported,10000,arxiv_s_2506_02863,"§3: 10,000 caption-speech pairs, approximately 25.2 hours, a single female speaker; 500 pairs held out for testing",2026-10-23,claude,current,
 capspeech_agentdb/n_speakers_reported/01,capspeech_agentdb,n_speakers_reported,1,arxiv_s_2506_02863,§3: a single female speaker,2026-10-23,claude,current,
 capspeech_agentdb/name/01,capspeech_agentdb,name,CapSpeech-AgentDB,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by capspeech_agentdb/name/02
@@ -703,7 +703,7 @@ caves/access_method/01,caves,access_method,request_form_or_email,caves_page,free
 caves/access_observed/01,caves,access_observed,obtained,caves_page,auditory and visual recordings; auditory-only stimuli,2026-10-14,claude,current,
 caves/emotion_categories.annotator/01,caves,emotion_categories.annotator,human,caves_paper,speakers produced the sentences in the instructed emotions,2026-10-28,claude,current,
 caves/emotion_categories.label_verification/01,caves,emotion_categories.label_verification,listener_validated,caves_paper,"validation study: 15 native Cantonese perceivers completed a forced-choice emotion identification task under auditory-visual, visual-only and auditory-only conditions",2026-10-28,claude,current,Overall accuracy figures were not read here
-caves/hours_reported/01,caves,hours_reported,unknown,caves_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+caves/hours_reported/01,caves,hours_reported,unknown,caves_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 caves/languages/01,caves,languages,yue,caves_page,ten native speakers of Cantonese uttering 50 sentences each,2026-10-14,claude,current,
 caves/license_spdx/01,caves,license_spdx,LicenseRef-custom-research-only,caves_page,The dataset is freely available for research purposes,2026-10-14,claude,current,Text of the terms of use not read
 caves/listening_test/01,caves,listening_test,reported,caves_page,15 native Cantonese perceivers completed a forced-choice emotion identification task,2026-11-01,claude,current,
@@ -748,12 +748,12 @@ cemo/hours_reported/01,cemo,hours_reported,20,cemo_paper,Table 1: 688 agent-clie
 cemo/languages/01,cemo,languages,fra,cemo_paper,French call center: APHP France and LIMSI-CNRS convention; fillers written as French euh,2026-10-13,claude,current,
 cemo/license_spdx/01,cemo,license_spdx,unknown,cemo_paper,§2: agreements ensure the non-diffusion of the corpus and annotations,2026-10-13,claude,current,"Not distributed, so there is no license"
 cemo/listening_test/01,cemo,listening_test,reported,cemo_paper_2,"""validate the presence of emotions via perceptual tests""",2026-11-02,claude,current,
-cemo/n_files_reported/01,cemo,n_files_reported,unknown,cemo_paper_3,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+cemo/n_files_reported/01,cemo,n_files_reported,unknown,cemo_paper_3,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 cemo/n_speakers_reported/01,cemo,n_speakers_reported,unknown,cemo_paper,"Table 1: 7 agents (3M, 4F); clients 688 dialogs (271M, 513F)",2026-10-13,claude,current,The total number of speakers is not given
 cemo/name/01,cemo,name,CEMO,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 cemo/speech_production/01,cemo,speech_production,spontaneous,cemo_paper_2,"Abstract: ""real agent-caller spoken dialogs from a medical emergency call center""",2026-11-02,claude,current,
 cemo/vocal_content/01,cemo,vocal_content,speech,cemo_paper,§2: transcribed agent-client spoken dialogs,2026-10-13,claude,current,
-cheavd/hours_reported/01,cheavd,hours_reported,2.33,cheavd_paper,"Abstract: ""140 min emotional segments extracted from films, TV plays and talk shows""",2026-11-02,claude,current,
+cheavd/hours_reported/01,cheavd,hours_reported,2.33,cheavd_paper,"Abstract: ""140 min emotional segments extracted from films, TV plays and talk shows""",2026-11-02,claude,current,140 min written as hours (rounded to two decimals)
 cheavd/n_speakers_reported/01,cheavd,n_speakers_reported,238,cheavd_paper,"Abstract: ""238 speakers, aging from child to elderly""",2026-11-02,claude,current,
 cheavd/name/01,cheavd,name,CHEAVD,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by cheavd/name/02
 cheavd/name/02,cheavd,name,CHEAVD,cheavd_paper,title of the source contains the name,2026-11-01,claude,current,
@@ -800,7 +800,7 @@ cmumoseas/name/01,cmumoseas,name,CMU-MOSEAS,,,2026-11-01,claude,superseded,Provi
 cmumoseas/name/02,cmumoseas,name,CMU-MOSEAS,cmumoseas_paper,title of the source contains the name,2026-11-01,claude,current,
 cmumoseas/speech_production/01,cmumoseas,speech_production,unknown,cmumoseas_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 cmumoseas/vocal_content/01,cmumoseas,vocal_content,speech,cmumoseas_paper,sentence utterances of monologue videos,2026-10-13,claude,current,
-cmumosei/access_method/01,cmumosei,access_method,unknown,cmumosei_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+cmumosei/access_method/01,cmumosei,access_method,unknown,cmumosei_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 cmumosei/access_observed/01,cmumosei,access_observed,unavailable,gh_cmu_multicomp_lab_cmu_multimodalsdk,README FAQ 4: Do you share raw data? No,2026-10-14,claude,current,
 cmumosei/hours_reported/01,cmumosei,hours_reported,unknown,cmumosei_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 cmumosei/languages/01,cmumosei,languages,unknown,cmumosei_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
@@ -842,7 +842,7 @@ coraa_ser/hours_reported/01,coraa_ser,hours_reported,0.83,coraa_ser_page,README:
 coraa_ser/languages/01,coraa_ser,languages,por,coraa_ser_page,README: Brazilian Portuguese informal spontaneous speech,2026-10-14,claude,current,
 coraa_ser/license_spdx/01,coraa_ser,license_spdx,none_stated,coraa_ser_page,repository has no license; README states no terms,2026-10-14,claude,current,
 coraa_ser/listening_test/01,coraa_ser,listening_test,not_stated,coraa_ser_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-coraa_ser/n_files_reported/01,coraa_ser,n_files_reported,unknown,coraa_ser_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+coraa_ser/n_files_reported/01,coraa_ser,n_files_reported,unknown,coraa_ser_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 coraa_ser/n_speakers_reported/01,coraa_ser,n_speakers_reported,unknown,coraa_ser_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 coraa_ser/name/01,coraa_ser,name,CORAA SER,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by coraa_ser/name/02
 coraa_ser/name/02,coraa_ser,name,CORAA SER,coraa_ser_page,the name appears in the source: ...ortuguese. We provide a dataset called [CORAA SER version 1.0](https://drive.google.com/d...,2026-11-01,claude,current,
@@ -872,7 +872,7 @@ cremad/emotion_categories.label_basis/01,cremad,emotion_categories.label_basis,i
 cremad/emotion_categories.label_basis/02,cremad,emotion_categories.label_basis,intended,gh_cheyneycomputerscience_crema_d,label = the emotion the actor was to portray (file name); per-clip crowd ratings are distributed,2026-11-02,claude,current,Split from a combined intended;perceived value: the perceived judgments are a separate set or are described in listener_ratings.
 cremad/emotion_categories.label_verification/01,cremad,emotion_categories.label_verification,listener_validated,gh_cheyneycomputerscience_crema_d,"README: 2,443 crowd participants each rated 90 unique clips, 30 audio, 30 visual and 30 audio-visual; 95% of the clips have more than 7 ratings",2026-10-26,claude,current,"The ratings are distributed (processedResults/) and the label stays the intended emotion. The audio-only majority matches the intended emotion for 3,099 of 7,442 clips with a strict single winner (41.6%) and 3,563 when a tie that contains it counts (47.9%); the report's 3,388 (45.5%) could not be reproduced with either rule"
 cremad/hours_release/01,cremad,hours_release,5.3,cremad_readme,commit 76089aafdb7f; Size of the release,2026-11-01,claude,current,Readme cell: 5.3 (approx.)
-cremad/hours_reported/01,cremad,hours_reported,unknown,gh_cheyneycomputerscience_crema_d,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+cremad/hours_reported/01,cremad,hours_reported,unknown,gh_cheyneycomputerscience_crema_d,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 cremad/languages/01,cremad,languages,unknown,gh_cheyneycomputerscience_crema_d,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 cremad/license_spdx/02,cremad,license_spdx,ODbL-1.0,gh_cheyneycomputerscience_crema_d,"README: database under ODbL 1.0, contents under DbCL 1.0",2026-10-12,claude,current,
 cremad/listening_test/01,cremad,listening_test,reported,,,2026-11-01,claude,superseded,Provisional: a listening test was recorded earlier; the source is not public; superseded by cremad/listening_test/02
@@ -1009,7 +1009,7 @@ des/access_method/01,des,access_method,unknown,des_paper,not stated in the sourc
 des/emotion_categories.annotator/01,des,emotion_categories.annotator,human,des_paper,actors portrayed the emotions,2026-10-28,claude,current,
 des/emotion_categories.label_basis/01,des,emotion_categories.label_basis,intended,des_paper,emotion the actors were asked to portray; verified by a listening test,2026-10-28,claude,current,
 des/emotion_categories.label_verification/01,des,emotion_categories.label_verification,listener_validated,des_paper,listening test with 20 listeners: emotions identified correctly in 67.3% of cases (95% interval 66.0-68.6),2026-10-28,claude,current,
-des/hours_reported/01,des,hours_reported,0.5,des_paper,"""The complete database comprises approximately 30 minutes of speech.""",2026-11-02,claude,current,
+des/hours_reported/01,des,hours_reported,0.5,des_paper,"""The complete database comprises approximately 30 minutes of speech.""",2026-11-02,claude,current,about 30 min written as hours (rounded to two decimals)
 des/languages/02,des,languages,dan,des_paper,"A database of recordings of Danish Emotional Speech, DES",2026-10-31,claude,current,
 des/license_spdx/02,des,license_spdx,unknown,des_page,Universal Catalogue entry ELRA-SD62 gives no licence,2026-10-14,claude,current,
 des/listening_test/01,des,listening_test,reported,des_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
@@ -1123,7 +1123,7 @@ em2ldl/access_method/01,em2ldl,access_method,signed_agreement,em2ldl_page,README
 em2ldl/access_method/02,em2ldl,access_method,signed_agreement,em2ldl_page,"README: ""download the User License Agreement (LA.pdf), complete the agreement and return it"" by e-mail",2026-11-02,claude,current,
 em2ldl/hours_reported/01,em2ldl,hours_reported,4.04,em2ldl_page,"README: 14,540.08 seconds (approximately 4.04 hours)",2026-10-14,claude,current,
 em2ldl/languages/01,em2ldl,languages,eng;cmn;yue,em2ldl_page,"""EM²LDL comprises expressive utterances in English, Mandarin, and Cantonese""",2026-11-02,claude,current,
-em2ldl/license_spdx/01,em2ldl,license_spdx,none_stated,em2ldl_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+em2ldl/license_spdx/01,em2ldl,license_spdx,none_stated,em2ldl_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 em2ldl/listening_test/01,em2ldl,listening_test,not_stated,em2ldl_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 em2ldl/n_files_reported/01,em2ldl,n_files_reported,3998,em2ldl_page,"README: a total of 3,998 audio utterances",2026-10-14,claude,current,
 em2ldl/n_speakers_reported/01,em2ldl,n_speakers_reported,unknown,em2ldl_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
@@ -1141,7 +1141,7 @@ emilia_emotion/license_spdx/02,emilia_emotion,license_spdx,CC-BY-4.0,emilia_emot
 emilia_emotion/license_spdx/03,emilia_emotion,license_spdx,CC-BY-NC-4.0,arxiv_s_2609_32016,§3: its Emilia portion is licensed CC-BY-NC-4.0 and its Emilia-YODAS portion CC-BY-4.0,2026-10-23,claude,conflicting,"Emilia part CC-BY-NC-4.0, Emilia-YODAS part CC-BY-4.0; derivatives inherit the source clips' license (Limitations). The original amphion/Emilia-Dataset terms likewise use Emilia under CC-BY-NC and Emilia-YODAS under CC-BY"
 emilia_emotion/listening_test/01,emilia_emotion,listening_test,not_stated,emilia_emotion_card_2,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 emilia_emotion/material_origin/01,emilia_emotion,material_origin,multiple,emilia_emotion_card,card: original Emilia audio plus a large portion of YODAS,2026-10-13,claude,current,
-emilia_emotion/n_files_reported/01,emilia_emotion,n_files_reported,unknown,emilia_emotion_card_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+emilia_emotion/n_files_reported/01,emilia_emotion,n_files_reported,unknown,emilia_emotion_card_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 emilia_emotion/n_speakers_reported/01,emilia_emotion,n_speakers_reported,unknown,emilia_emotion_card_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 emilia_emotion/name/01,emilia_emotion,name,Emilia with Emotion Annotations,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 emilia_emotion/speech_production/01,emilia_emotion,speech_production,unknown,emilia_emotion_card_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
@@ -1166,7 +1166,7 @@ emis/n_files_release/01,emis,n_files_release,1248,,,2026-10-24,claude,superseded
 emis/n_files_release/02,emis,n_files_release,1248,emis_readme,commit a8275e9d5304; Size of the release,2026-11-01,claude,current,
 emis/n_files_reported/01,emis,n_files_reported,1248,emis_page,1248 speech audio samples,2026-10-14,claude,current,
 emis/n_speakers_release/01,emis,n_speakers_release,0,emis_readme,commit a8275e9d5304; Size of the release,2026-11-01,claude,current,Readme cell: 0 (synthetic voices; see below)
-emis/n_speakers_reported/01,emis,n_speakers_reported,unknown,emis_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+emis/n_speakers_reported/01,emis,n_speakers_reported,unknown,emis_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 emis/name/01,emis,name,EMIS,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by emis/name/02
 emis/name/02,emis,name,EMIS,emis_page,title of the source contains the name,2026-11-01,claude,current,
 emis/speech_production/01,emis,speech_production,synthetic,emis_page,speech audio samples synthetically generated by Text-to-speech systems,2026-10-24,claude,current,
@@ -1280,7 +1280,7 @@ emogator/hours_release/01,emogator,hours_release,16.77,emogator_readme,commit 7f
 emogator/hours_reported/01,emogator,hours_reported,16.97,emogator_paper,"abstract: 32,130 samples from 357 speakers, 16.9654 hours",2026-10-13,claude,current,
 emogator/languages/01,emogator,languages,zxx,emogator_paper,"abstract: vocal bursts, short non-speech vocalizations",2026-10-13,claude,current,
 emogator/license_spdx/01,emogator,license_spdx,Apache-2.0,emogator_page,GitHub repository license field: Apache-2.0,2026-10-13,claude,current,
-emogator/listening_test/01,emogator,listening_test,not_stated,emogator_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+emogator/listening_test/01,emogator,listening_test,not_stated,emogator_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 emogator/n_files_release/01,emogator,n_files_release,32130,,,2026-10-13,claude,superseded,Provisional:; superseded by emogator/n_files_release/02
 emogator/n_files_release/02,emogator,n_files_release,32130,emogator_readme,commit 7f9e93062f3b; Size of the release,2026-11-01,claude,current,
 emogator/n_files_reported/01,emogator,n_files_reported,32130,emogator_paper,"abstract: 32,130 samples from 357 speakers, 16.9654 hours",2026-10-13,claude,current,
@@ -1324,7 +1324,7 @@ emonetvoice/listening_test/01,emonetvoice,listening_test,not_stated,emonetvoice_
 emonetvoice/material_origin/01,emonetvoice,material_origin,synthetic,emonetvoice_paper,abstract: state-of-the-art synthetic voice generation,2026-10-13,claude,current,
 emonetvoice/n_files_reported/01,emonetvoice,n_files_reported,4700,emonetvoice_paper,"abstract: benchmark of 4,7k samples",2026-10-13,claude,superseded,Count of Bench (approximate); superseded by emonetvoice/n_utt_reported/02
 emonetvoice/n_files_reported/02,emonetvoice,n_files_reported,12600,emonetvoice_paper,"§3.3: a subset of 12,600 unique audio files annotated for emotion; HF card num_examples 12600",2026-10-23,claude,current,"Count of EmoNet-Voice Bench. The old value 4,700 is the abstract's ""4,7k samples with unanimous expert consensus"", the unanimous part. Big's count is >1M in Table 1; also emonetvoice_card"
-emonetvoice/n_speakers_reported/01,emonetvoice,n_speakers_reported,unknown,emonetvoice_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+emonetvoice/n_speakers_reported/01,emonetvoice,n_speakers_reported,unknown,emonetvoice_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 emonetvoice/name/01,emonetvoice,name,EmoNet-Voice,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by emonetvoice/name/02
 emonetvoice/name/02,emonetvoice,name,EmoNet-Voice,emonetvoice_card,title of the source contains the name,2026-11-01,claude,current,
 emonetvoice/speech_production/01,emonetvoice,speech_production,synthetic,emonetvoice_paper,abstract: state-of-the-art synthetic voice generation,2026-10-13,claude,current,
@@ -1349,12 +1349,12 @@ emospeech_keywords/emotion_categories.annotator/01,emospeech_keywords,emotion_ca
 emospeech_keywords/emotion_categories.label_basis/01,emospeech_keywords,emotion_categories.label_basis,intended,emospeech_keywords_paper,Section 4.3: the emotion displayed on the screen is the one to be spoken,2026-10-25,claude,current,
 emospeech_keywords/emotion_categories.label_verification/01,emospeech_keywords,emotion_categories.label_verification,listener_validated,emospeech_keywords_paper,Section 4.4: each sample reviewed by two people; reviewers match the emotion in the audio against a set of quality samples,2026-10-25,claude,current,"The label stays the emotion the speaker was shown. Rejected samples are not marked in the release. The review is a peer check, not a listening test with ratings"
 emospeech_keywords/hours_release/01,emospeech_keywords,hours_release,6.55,emospeech_keywords_readme,commit 7f9c5e44b338; Size of the release,2026-11-01,claude,current,
-emospeech_keywords/hours_reported/01,emospeech_keywords,hours_reported,unknown,emospeech_keywords_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+emospeech_keywords/hours_reported/01,emospeech_keywords,hours_reported,unknown,emospeech_keywords_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 emospeech_keywords/languages/01,emospeech_keywords,languages,unknown,emospeech_keywords_page,"description lists keywords (help, bacho, stop, ...) but states no language",2026-10-14,claude,current,
 emospeech_keywords/license_spdx/01,emospeech_keywords,license_spdx,CC-BY-NC-SA-4.0,emospeech_keywords_page,Kaggle dataset license field: CC BY-NC-SA 4.0,2026-10-14,claude,current,
 emospeech_keywords/n_files_release/01,emospeech_keywords,n_files_release,7735,,,2026-10-14,claude,superseded,Provisional:; superseded by emospeech_keywords/n_files_release/02
 emospeech_keywords/n_files_release/02,emospeech_keywords,n_files_release,7735,emospeech_keywords_readme,commit 7f9c5e44b338; Size of the release,2026-11-01,claude,current,
-emospeech_keywords/n_files_reported/01,emospeech_keywords,n_files_reported,unknown,emospeech_keywords_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+emospeech_keywords/n_files_reported/01,emospeech_keywords,n_files_reported,unknown,emospeech_keywords_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 emospeech_keywords/n_speakers_release/01,emospeech_keywords,n_speakers_release,unknown,,,2026-10-25,claude,superseded,Provisional:; superseded by emospeech_keywords/n_speakers_release/02
 emospeech_keywords/n_speakers_release/02,emospeech_keywords,n_speakers_release,103,emospeech_keywords_readme,commit 7f9c5e44b338; Size of the release,2026-11-01,claude,current,Readme cell: 103 (see below)
 emospeech_keywords/n_speakers_reported/01,emospeech_keywords,n_speakers_reported,250,emospeech_keywords_paper,Section 3.3: number of speakers that participated in this crowd-sourcing dataset is 250,2026-10-25,claude,current,
@@ -1370,11 +1370,11 @@ emospeech_secap/full_title/01,emospeech_secap,full_title,EMOSpeech (SECap's in-h
 emospeech_secap/hours_reported/01,emospeech_secap,hours_reported,41.6,emospeech_secap_paper,§4: totaling 41.6 hours,2026-10-23,claude,current,Whole set (including the unreleased part)
 emospeech_secap/languages/01,emospeech_secap,languages,cmn,emospeech_secap_paper,§4: Chinese emotion captions; sentence similarity for Chinese captions,2026-10-23,claude,current,
 emospeech_secap/license_spdx/01,emospeech_secap,license_spdx,none_stated,emospeech_secap_page,"The repository states no license (GitHub API license null, 2026-10-23)",2026-10-23,claude,current,
-emospeech_secap/listening_test/01,emospeech_secap,listening_test,not_stated,emospeech_secap_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+emospeech_secap/listening_test/01,emospeech_secap,listening_test,not_stated,emospeech_secap_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 emospeech_secap/n_files_reported/01,emospeech_secap,n_files_reported,30526,emospeech_secap_paper,§4: covering 30526 sentences,2026-10-23,claude,current,Whole set. The public part is the 600 test items
 emospeech_secap/n_speakers_reported/01,emospeech_secap,n_speakers_reported,7,emospeech_secap_paper,§4: 5 female and 2 male speakers,2026-10-23,claude,current,
 emospeech_secap/name/01,emospeech_secap,name,EMOSpeech (SECap),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
-emospeech_secap/speech_production/01,emospeech_secap,speech_production,unknown,emospeech_secap_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+emospeech_secap/speech_production/01,emospeech_secap,speech_production,unknown,emospeech_secap_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 emospeech_secap/vocal_content/01,emospeech_secap,vocal_content,speech,emospeech_secap_paper,"§4: 5 female and 2 male speakers, 41.6 hours of speech",2026-10-23,claude,current,
 emosynth/access_method/01,emosynth,access_method,direct_download,emosynth_page,open record with emoSynth-DB-fix.zip,2026-10-14,claude,current,
 emosynth/access_observed/01,emosynth,access_observed,obtained,emosynth_page,"file emoSynth-DB-fix.zip (103,356,254 bytes)",2026-10-14,claude,current,
@@ -1393,7 +1393,7 @@ emota/access_method/01,emota,access_method,gated_click_through,emota_card,access
 emota/emotion_categories.annotator/01,emota,emotion_categories.annotator,human,emota_paper,speakers portrayed the five emotions,2026-10-28,claude,current,
 emota/emotion_categories.label_basis/01,emota,emotion_categories.label_basis,intended,emota_paper,"five emotions: anger, happiness, sadness, fear and neutral",2026-10-28,claude,current,
 emota/emotion_categories.label_verification/01,emota,emotion_categories.label_verification,listener_validated,emota_paper,inter-annotator agreement measured with Fleiss' kappa 0.74 (substantial),2026-10-28,claude,current,The number of annotators was not read
-emota/hours_reported/01,emota,hours_reported,0.72,emota_card,"""Total duration ~43 minutes""",2026-11-02,claude,current,
+emota/hours_reported/01,emota,hours_reported,0.72,emota_card,"""Total duration ~43 minutes""",2026-11-02,claude,current,~43 min written as hours (rounded to two decimals)
 emota/languages/01,emota,languages,tam,,,2026-10-12,claude,provisional,Provisional:
 emota/license_spdx/01,emota,license_spdx,CC-BY-NC-4.0,emota_card,EACL v1.0; academic use governed by CC BY-NC 4.0,2026-10-14,claude,current,
 emota/n_files_release/01,emota,n_files_release,936,,,2026-10-14,claude,provisional,Provisional:
@@ -1432,11 +1432,11 @@ emotale/perceived_emotion_categories.label_basis/01,emotale,perceived_emotion_ca
 emotale/speech_production/01,emotale,speech_production,acted,emotale_paper,"Section III-A: participants with acting experience enacted five emotions, self-inducing them by recalling a situation",2026-10-25,claude,current,
 emotale/spoken_text_design/01,emotale,spoken_text_design,parallel;neutral_text,emotale_paper,Section III-A: five sentences enacted in five emotions; sentences are emotionally neutral translations of Emo-DB sentences with minimal context,2026-10-25,claude,current,Each participant enacted all sentences for one emotion before the next; file names carry the sentence number 1-5
 emotale/vocal_content/01,emotale,vocal_content,speech,emotale_page,README: five sentences in Danish and English,2026-10-13,claude,current,
-emotion_origlia2010/access_method/01,emotion_origlia2010,access_method,unknown,emotion_origlia2010_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-emotion_origlia2010/hours_reported/01,emotion_origlia2010,hours_reported,unknown,emotion_origlia2010_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+emotion_origlia2010/access_method/01,emotion_origlia2010,access_method,unknown,emotion_origlia2010_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+emotion_origlia2010/hours_reported/01,emotion_origlia2010,hours_reported,unknown,emotion_origlia2010_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 emotion_origlia2010/languages/02,emotion_origlia2010,languages,ita;fra;eng;deu,emotion_origlia2010_paper,"emotional sentences elicited in four European languages: Italian, French, English and German",2026-10-31,claude,current,
 emotion_origlia2010/license_spdx/02,emotion_origlia2010,license_spdx,unknown,emotion_origlia2010_paper,the paper states no licence or terms of distribution,2026-10-31,claude,current,The paper was read; it describes collection and validation
-emotion_origlia2010/listening_test/01,emotion_origlia2010,listening_test,not_stated,emotion_origlia2010_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+emotion_origlia2010/listening_test/01,emotion_origlia2010,listening_test,not_stated,emotion_origlia2010_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 emotion_origlia2010/n_files_reported/02,emotion_origlia2010,n_files_reported,1560,emotion_origlia2010_paper,The collecting procedure produced a total of 1560 files,2026-10-31,claude,current,
 emotion_origlia2010/n_speakers_reported/02,emotion_origlia2010,n_speakers_reported,39,emotion_origlia2010_paper,"Table 2: total of 39 encoders (27 naive, 12 actors)",2026-10-31,claude,current,
 emotion_origlia2010/name/01,emotion_origlia2010,name,€motion,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by emotion_origlia2010/name/02
@@ -1453,7 +1453,7 @@ emotional_ema/emotion_categories.label_verification/02,emotional_ema,emotion_cat
 emotional_ema/full_title/01,emotional_ema,full_title,An articulatory study of emotional speech production,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by emotional_ema/full_title/02
 emotional_ema/full_title/02,emotional_ema,full_title,An articulatory study of emotional speech production,emotional_ema_page,title of the source contains the full title,2026-11-01,claude,current,
 emotional_ema/hours_release/01,emotional_ema,hours_release,1.63,emotional_ema_readme,commit 906c09addc96; Size of the release,2026-11-01,claude,current,
-emotional_ema/hours_reported/01,emotional_ema,hours_reported,unknown,emotional_ema_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+emotional_ema/hours_reported/01,emotional_ema,hours_reported,unknown,emotional_ema_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 emotional_ema/languages/01,emotional_ema,languages,eng,emotional_ema_page,three native speakers of American English,2026-10-14,claude,current,
 emotional_ema/license_spdx/01,emotional_ema,license_spdx,CC-BY-4.0,emotional_ema_page,Zenodo record metadata: license cc-by-4.0,2026-10-14,claude,current,
 emotional_ema/listening_test/01,emotional_ema,listening_test,reported,emotional_ema_page,"""emotional states evaluation (by listeners) files""",2026-11-02,claude,current,
@@ -1512,17 +1512,17 @@ emotiontts_open_db/n_speakers_reported/01,emotiontts_open_db,n_speakers_reported
 emotiontts_open_db/name/01,emotiontts_open_db,name,emotiontts open db (Emotional),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 emotiontts_open_db/speech_production/01,emotiontts_open_db,speech_production,acted,emotiontts_open_db_page,README: scripts read with an assigned emotion,2026-10-13,claude,current,
 emotiontts_open_db/vocal_content/01,emotiontts_open_db,vocal_content,speech,emotiontts_open_db_page,"README: 400 sentences per speaker, 100 per emotion",2026-10-13,claude,current,
-emotranscap/access_method/01,emotranscap,access_method,unknown,emotranscap_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+emotranscap/access_method/01,emotranscap,access_method,unknown,emotranscap_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 emotranscap/emotion_categories.annotator/01,emotranscap,emotion_categories.annotator,automatic,emotranscap_paper,Synthesised with the emotion of reference audio; each sentence's emotion checked with emotion2vec; descriptions generated with Gemma-3,2026-10-23,claude,current,
 emotranscap/emotion_categories.label_verification/01,emotranscap,emotion_categories.label_verification,unknown,emotranscap_paper,No human review beyond the automatic check (emotion2vec) is described,2026-10-23,claude,current,
 emotranscap/full_title/01,emotranscap,full_title,EmoTransCap(EmoTransSpeech),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 emotranscap/hours_reported/01,emotranscap,hours_reported,617,emotranscap_paper,§3: total duration exceeds 617 hours,2026-10-23,claude,current,
 emotranscap/languages/01,emotranscap,languages,cmn;eng,emotranscap_paper,bilingual,2026-10-23,claude,current,File names of the Hugging Face sample: Zh_speaker_1_...
 emotranscap/license_spdx/01,emotranscap,license_spdx,none_stated,emotranscap_paper,The paper states no license,2026-10-23,claude,current,"Shuhao-Xu/EmoTransCap on Hugging Face is tagged cc-by-sa-4.0, but whether it is official is unknown and it holds a single sample"
-emotranscap/listening_test/01,emotranscap,listening_test,not_stated,emotranscap_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+emotranscap/listening_test/01,emotranscap,listening_test,not_stated,emotranscap_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 emotranscap/material_origin/01,emotranscap,material_origin,synthetic,emotranscap_paper,§3: each sentence synthesized with CosyVoice2,2026-10-23,claude,current,
 emotranscap/n_files_reported/01,emotranscap,n_files_reported,144000,emotranscap_paper,"§3: 144,000 utterances featuring 1 to 3 emotional transitions",2026-10-23,claude,current,
-emotranscap/n_speakers_reported/01,emotranscap,n_speakers_reported,unknown,emotranscap_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+emotranscap/n_speakers_reported/01,emotranscap,n_speakers_reported,unknown,emotranscap_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 emotranscap/name/01,emotranscap,name,EmoTransCap,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by emotranscap/name/02
 emotranscap/name/02,emotranscap,name,EmoTransCap,emotranscap_paper,title of the source contains the name,2026-11-01,claude,current,
 emotranscap/speech_production/01,emotranscap,speech_production,synthetic,emotranscap_paper,§3: each sentence synthesized with CosyVoice2,2026-10-23,claude,current,
@@ -1586,10 +1586,10 @@ emovie/license_spdx/01,emovie,license_spdx,CC-BY-NC-SA-2.0,emovie_page,"License:
 emovie/listening_test/01,emovie,listening_test,not_stated,emovie_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 emovie/material_origin/01,emovie,material_origin,film_tv,emovie_paper,§2: speech samples from seven Mandarin movies,2026-10-13,claude,current,
 emovie/n_files_reported/01,emovie,n_files_reported,9724,emovie_paper,"§2: we get 9724 samples, 4.18 hours",2026-10-13,claude,current,
-emovie/n_speakers_reported/01,emovie,n_speakers_reported,unknown,emovie_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+emovie/n_speakers_reported/01,emovie,n_speakers_reported,unknown,emovie_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 emovie/name/01,emovie,name,EMOVIE,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by emovie/name/02
 emovie/name/02,emovie,name,EMOVIE,emovie_page,title of the source contains the name,2026-11-01,claude,current,
-emovie/speech_production/01,emovie,speech_production,unknown,emovie_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+emovie/speech_production/01,emovie,speech_production,unknown,emovie_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 emovie/vocal_content/01,emovie,vocal_content,speech,emovie_paper,"labels.csv holds file name, label and text content",2026-10-13,claude,current,
 emovo/access_method/01,emovo,access_method,direct_download,,,2026-10-11,claude,provisional,Provisional:
 emovo/access_observed/01,emovo,access_observed,obtained,,,2026-10-11,claude,superseded,Provisional: carried over from raw_audio_available; superseded by emovo/access_observed/02
@@ -1625,7 +1625,7 @@ emovoicedb/hours_release/01,emovoicedb,hours_release,40.44,emovoicedb_readme,com
 emovoicedb/hours_reported/01,emovoicedb,hours_reported,40.45,emovoicedb_card,"card statistics table: Sum 22100 samples, 40.45 hours",2026-10-13,claude,current,
 emovoicedb/languages/01,emovoicedb,languages,eng,emovoicedb_card,card: an English emotional speech dataset,2026-10-13,claude,current,
 emovoicedb/license_spdx/01,emovoicedb,license_spdx,MIT,emovoicedb_card,dataset card metadata: license mit,2026-10-13,claude,current,
-emovoicedb/listening_test/01,emovoicedb,listening_test,not_stated,emovoicedb_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+emovoicedb/listening_test/01,emovoicedb,listening_test,not_stated,emovoicedb_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 emovoicedb/material_origin/01,emovoicedb,material_origin,synthetic,emovoicedb_card,card: all emotional speech samples are synthesized using GPT-4o-audio,2026-10-13,claude,current,
 emovoicedb/n_files_release/01,emovoicedb,n_files_release,24923,,,2026-10-25,claude,superseded,"Provisional: 2,823 wav are not in any list (5.34 h); the recipe uses only the listed 22,100; superseded by emovoicedb/n_files_release/02"
 emovoicedb/n_files_release/02,emovoicedb,n_files_release,22100,emovoicedb_readme,commit e75cb431b282; Size of the release,2026-11-01,claude,current,"Readme cell: 22,100 (listed) / 24,923 (wav files)"
@@ -1742,7 +1742,7 @@ eseravd/emotion_categories.annotator/01,eseravd,emotion_categories.annotator,hum
 eseravd/emotion_categories.label_basis/01,eseravd,emotion_categories.label_basis,perceived,eseravd_release_3,evaluated by three independent raters ... dominant emotion ... agreement threshold (>= 0.67),2026-10-24,claude,current,
 eseravd/emotion_categories.label_verification/01,eseravd,emotion_categories.label_verification,NA,,,2026-10-22,user,provisional,"Provisional: Maintainer's decision (2026-10-22): having recorded the inconsistent origin of disgust and fear and the changes from version 1.1, trust the authors and use version 1.2 as is"
 eseravd/hours_release/01,eseravd,hours_release,2.0,eseravd_readme,commit c723dce8171e; Size of the release,2026-11-01,claude,current,
-eseravd/hours_reported/01,eseravd,hours_reported,unknown,eseravd_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+eseravd/hours_reported/01,eseravd,hours_reported,unknown,eseravd_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the page text read was a script or bot-check shell.
 eseravd/languages/01,eseravd,languages,ind,eseravd_page,description: an Indonesian speech emotion recognition dataset,2026-10-14,claude,current,
 eseravd/license_spdx/01,eseravd,license_spdx,CC-BY-4.0,eseravd_page,Kaggle dataset license field: Attribution 4.0 International (CC BY 4.0),2026-10-14,claude,superseded,superseded by eseravd/license_spdx/02
 eseravd/license_spdx/02,eseravd,license_spdx,CC-BY-4.0,eseravd_page,Kaggle license field,2026-10-22,claude,current,The Kaggle license field says CC BY 4.0
@@ -1750,9 +1750,9 @@ eseravd/material_origin/01,eseravd,material_origin,film_tv,eseravd_page,audio se
 eseravd/n_files_release/01,eseravd,n_files_release,5400,,"Kaggle file listing API: 5400 .wav files, 2026-10-14",2026-10-14,claude,superseded,superseded by eseravd/n_files_release_measured/02; Former source type: measured
 eseravd/n_files_release/02,eseravd,n_files_release,3000,,,2026-10-22,claude,superseded,"Provisional: The whole Kaggle release holds 5,400 wav files across 3 releases (versions 1 and 1.1 are the same 1,200 clips with 4 emotions). The old value 5400 was the total; superseded by eseravd/n_files_release/03"
 eseravd/n_files_release/03,eseravd,n_files_release,3000,eseravd_readme,commit c723dce8171e; Size of the release,2026-11-01,claude,current,
-eseravd/n_files_reported/01,eseravd,n_files_reported,unknown,eseravd_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+eseravd/n_files_reported/01,eseravd,n_files_reported,unknown,eseravd_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 eseravd/n_speakers_release/01,eseravd,n_speakers_release,unknown,eseravd_readme,commit c723dce8171e; Size of the release,2026-11-01,claude,current,Readme cell: unknown
-eseravd/n_speakers_reported/01,eseravd,n_speakers_reported,unknown,eseravd_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+eseravd/n_speakers_reported/01,eseravd,n_speakers_reported,unknown,eseravd_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the page text read was a script or bot-check shell.
 eseravd/name/01,eseravd,name,E-SERAVD,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by eseravd/name/02
 eseravd/name/02,eseravd,name,E-SERAVD,eseravd_page,title of the source contains the name,2026-11-01,claude,current,
 eseravd/speech_production/01,eseravd,speech_production,acted,eseravd_release_3,sourced from 11 Indonesian films (Annotation Process),2026-10-24,claude,current,"Film dialogue, hence acted"
@@ -1794,7 +1794,7 @@ expresso/languages/01,expresso,languages,unknown,expresso_page,not stated in the
 expresso/license_spdx/02,expresso,license_spdx,CC-BY-NC-4.0,expresso_page,the Expresso dataset is distributed under the CC BY-NC 4.0 license,2026-10-14,claude,superseded,superseded by expresso/license_spdx/03
 expresso/license_spdx/03,expresso,license_spdx,CC-BY-NC-4.0,expresso_page,The Expresso dataset is distributed under the CC BY-NC 4.0 license,2026-10-14,claude,current,
 expresso/listening_test/01,expresso,listening_test,not_stated,expresso_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-expresso/n_files_reported/01,expresso,n_files_reported,unknown,expresso_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+expresso/n_files_reported/01,expresso,n_files_reported,unknown,expresso_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 expresso/n_speakers_reported/02,expresso,n_speakers_reported,4,expresso_page,"the dataset includes 4 speakers (2 males, 2 females)",2026-10-14,claude,current,
 expresso/name/01,expresso,name,Expresso,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by expresso/name/02
 expresso/name/02,expresso,name,Expresso,expresso_paper,title of the source contains the name,2026-11-01,claude,current,
@@ -1872,13 +1872,13 @@ gaudie/full_title/02,gaudie,full_title,"GAUDIE: Development, validation, and exp
 gaudie/hours_reported/01,gaudie,hours_reported,1.53,gaudie_paper,total duration of 92 minutes,2026-10-13,claude,current,92 minutes converted
 gaudie/languages/01,gaudie,languages,deu,gaudie_paper,naturalistic affective German speech stimulus database,2026-10-13,claude,current,
 gaudie/license_spdx/01,gaudie,license_spdx,CC-BY-4.0,gaudie_page,OSF node license: CC-By Attribution 4.0 International,2026-10-13,claude,current,
-gaudie/listening_test/01,gaudie,listening_test,not_stated,gaudie_paper_2,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+gaudie/listening_test/01,gaudie,listening_test,not_stated,gaudie_paper_2,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 gaudie/material_origin/01,gaudie,material_origin,multiple,gaudie_paper,"comedian shows, weather forecasts, arguments from movies or TV series",2026-10-13,claude,current,
 gaudie/n_files_reported/01,gaudie,n_files_reported,37,gaudie_paper,37 audio speech sequences with a total duration of 92 minutes,2026-10-13,claude,current,
-gaudie/n_speakers_reported/01,gaudie,n_speakers_reported,unknown,gaudie_paper_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+gaudie/n_speakers_reported/01,gaudie,n_speakers_reported,unknown,gaudie_paper_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 gaudie/name/01,gaudie,name,GAUDIE,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by gaudie/name/02
 gaudie/name/02,gaudie,name,GAUDIE,gaudie_paper,title of the source contains the name,2026-11-01,claude,current,
-gaudie/speech_production/01,gaudie,speech_production,unknown,gaudie_paper_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+gaudie/speech_production/01,gaudie,speech_production,unknown,gaudie_paper_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 gaudie/vocal_content/01,gaudie,vocal_content,speech,gaudie_paper,37 audio speech sequences,2026-10-13,claude,current,
 gees/access_method/01,gees,access_method,signed_agreement,gees_page,Licence: Non Commercial Use - ELRA END USER; ordered through the ELRA catalogue,2026-10-14,claude,current,
 gees/access_observed/01,gees,access_observed,obtained,gees_page,audio corpus; 2790 recordings,2026-10-14,claude,current,
@@ -1909,7 +1909,7 @@ gemep/speech_production/01,gemep,speech_production,acted,gemep_page,10 actors po
 gemep/vocal_content/01,gemep,vocal_content,speech_and_nonverbal,gemep_survey,"Methods: two pseudolinguistic phoneme sequences, or a sustained vowel aaa",2026-10-13,claude,current,
 grethe/access_method/01,grethe,access_method,unknown,grethe_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 grethe/access_observed/01,grethe,access_observed,unavailable,grethe_page,README: utterances provided as pyAudioAnalysis feature .npy files,2026-10-14,claude,current,
-grethe/hours_reported/01,grethe,hours_reported,0.77,grethe_page,"Table: ""Total duration | 46 mins""",2026-11-02,claude,current,
+grethe/hours_reported/01,grethe,hours_reported,0.77,grethe_page,"Table: ""Total duration | 46 mins""",2026-11-02,claude,current,46 min written as hours (rounded to two decimals)
 grethe/languages/01,grethe,languages,ell,grethe_page,"title: ""Speech Emotion Recognition in Greek Theatrical Plays""",2026-11-01,claude,current,
 grethe/license_spdx/01,grethe,license_spdx,MIT,grethe_page,GitHub license field MIT,2026-10-14,claude,current,
 grethe/listening_test/01,grethe,listening_test,not_stated,grethe_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
@@ -1949,7 +1949,7 @@ harper_valley_bank/hours_reported/01,harper_valley_bank,hours_reported,23.7,arxi
 harper_valley_bank/languages/01,harper_valley_bank,languages,eng,arxiv_s_2010_13929,"banking interactions, containing about 23 hours of audio",2026-10-14,claude,current,
 harper_valley_bank/license_spdx/01,harper_valley_bank,license_spdx,CC-BY-4.0,arxiv_s_2010_13929,released under Creative Commons license (CC-BY) creativecommons.org/licenses/by/4.0,2026-10-14,claude,superseded,superseded by harper_valley_bank/license_spdx/02
 harper_valley_bank/license_spdx/02,harper_valley_bank,license_spdx,CC-BY-4.0,harper_valley_bank_page,LICENSE: Creative Commons Attribution 4.0 International (full text),2026-10-18,claude,current,Matches the paper. Checked the actual file in the repository; not the maintainer's visual check of the page
-harper_valley_bank/listening_test/01,harper_valley_bank,listening_test,not_stated,arxiv_s_2010_13929,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+harper_valley_bank/listening_test/01,harper_valley_bank,listening_test,not_stated,arxiv_s_2010_13929,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 harper_valley_bank/n_files_release/01,harper_valley_bank,n_files_release,2892,,,2026-10-18,claude,superseded,Provisional: Measured from the Harper Valley Bank release files; superseded by harper_valley_bank/n_files_release/02
 harper_valley_bank/n_files_release/02,harper_valley_bank,n_files_release,25730,harper_valley_bank_readme,commit 906c09addc96; Size of the release,2026-11-01,claude,current,
 harper_valley_bank/n_files_reported/01,harper_valley_bank,n_files_reported,25730,arxiv_s_2010_13929,"table: # of utterances 25,730",2026-10-14,claude,current,
@@ -2019,16 +2019,16 @@ hindi_ser_vishlb/emotion_categories.annotator/01,hindi_ser_vishlb,emotion_catego
 hindi_ser_vishlb/emotion_categories.label_basis/01,hindi_ser_vishlb,emotion_categories.label_basis,intended,hindi_ser_vishlb_release,the emotion is the one the actor was told to speak in (folder name),2026-10-25,claude,current,
 hindi_ser_vishlb/emotion_categories.label_verification/01,hindi_ser_vishlb,emotion_categories.label_verification,NA,hindi_ser_vishlb_page,the page has no description; the release holds no listening test or rating,2026-10-25,claude,current,Labels are the instructed emotions (folder names); nothing to review is described
 hindi_ser_vishlb/hours_release/01,hindi_ser_vishlb,hours_release,2.85,hindi_ser_vishlb_readme,commit 7d94f0606f53; Size of the release,2026-11-01,claude,current,
-hindi_ser_vishlb/hours_reported/01,hindi_ser_vishlb,hours_reported,unknown,hindi_ser_vishlb_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+hindi_ser_vishlb/hours_reported/01,hindi_ser_vishlb,hours_reported,unknown,hindi_ser_vishlb_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the page text read was a script or bot-check shell.
 hindi_ser_vishlb/languages/01,hindi_ser_vishlb,languages,hin,hindi_ser_vishlb_mirror,KuralHub entry: Language Hindi,2026-10-14,claude,superseded,superseded by hindi_ser_vishlb/languages/02
 hindi_ser_vishlb/languages/02,hindi_ser_vishlb,languages,hin,hindi_ser_vishlb_release,the ten sentences are written in Devanagari (Hindi),2026-10-25,claude,current,The Kaggle page has no description; the earlier value came from KuralHub (secondary)
 hindi_ser_vishlb/license_spdx/01,hindi_ser_vishlb,license_spdx,LicenseRef-other,hindi_ser_vishlb_page,"Kaggle license field: Database Open Database, Contents © Original Authors",2026-10-14,claude,current,
 hindi_ser_vishlb/n_files_release/01,hindi_ser_vishlb,n_files_release,3200,,,2026-10-14,claude,superseded,Provisional:; superseded by hindi_ser_vishlb/n_files_release/02
 hindi_ser_vishlb/n_files_release/02,hindi_ser_vishlb,n_files_release,3200,hindi_ser_vishlb_readme,commit 7d94f0606f53; Size of the release,2026-11-01,claude,current,
-hindi_ser_vishlb/n_files_reported/01,hindi_ser_vishlb,n_files_reported,unknown,hindi_ser_vishlb_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+hindi_ser_vishlb/n_files_reported/01,hindi_ser_vishlb,n_files_reported,unknown,hindi_ser_vishlb_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the page text read was a script or bot-check shell.
 hindi_ser_vishlb/n_speakers_release/01,hindi_ser_vishlb,n_speakers_release,8,,,2026-10-14,claude,superseded,Provisional:; superseded by hindi_ser_vishlb/n_speakers_release/02
 hindi_ser_vishlb/n_speakers_release/02,hindi_ser_vishlb,n_speakers_release,8,hindi_ser_vishlb_readme,commit 7d94f0606f53; Size of the release,2026-11-01,claude,current,
-hindi_ser_vishlb/n_speakers_reported/01,hindi_ser_vishlb,n_speakers_reported,unknown,hindi_ser_vishlb_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+hindi_ser_vishlb/n_speakers_reported/01,hindi_ser_vishlb,n_speakers_reported,unknown,hindi_ser_vishlb_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the page text read was a script or bot-check shell.
 hindi_ser_vishlb/name/01,hindi_ser_vishlb,name,speech emotion recognition Hindi (Kaggle vishlb),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 hindi_ser_vishlb/speech_production/01,hindi_ser_vishlb,speech_production,acted,hindi_ser_vishlb_release,'Speak all the sentences in following emotions' and one folder per emotion and session,2026-10-25,claude,current,
 hindi_ser_vishlb/spoken_text_design/01,hindi_ser_vishlb,spoken_text_design,parallel,,,2026-10-25,claude,provisional,Provisional: Matches the docx instruction to speak all sentences in every emotion
@@ -2060,9 +2060,9 @@ humyn_indian_emotional/emotion_categories.label_basis/01,humyn_indian_emotional,
 humyn_indian_emotional/hours_reported/01,humyn_indian_emotional,hours_reported,unknown,humyn_indian_emotional_card,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 humyn_indian_emotional/languages/01,humyn_indian_emotional,languages,eng,humyn_indian_emotional_card,card: Indian speakers reading a standardized English paragraph,2026-10-14,claude,current,
 humyn_indian_emotional/license_spdx/01,humyn_indian_emotional,license_spdx,CC-BY-4.0,humyn_indian_emotional_card,dataset card metadata: license cc-by-4.0,2026-10-14,claude,current,
-humyn_indian_emotional/listening_test/01,humyn_indian_emotional,listening_test,not_stated,humyn_indian_emotional_card,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+humyn_indian_emotional/listening_test/01,humyn_indian_emotional,listening_test,not_stated,humyn_indian_emotional_card,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 humyn_indian_emotional/n_files_release/01,humyn_indian_emotional,n_files_release,16,,,2026-10-14,claude,provisional,Provisional:
-humyn_indian_emotional/n_files_reported/01,humyn_indian_emotional,n_files_reported,unknown,humyn_indian_emotional_card,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+humyn_indian_emotional/n_files_reported/01,humyn_indian_emotional,n_files_reported,unknown,humyn_indian_emotional_card,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 humyn_indian_emotional/n_speakers_reported/01,humyn_indian_emotional,n_speakers_reported,unknown,humyn_indian_emotional_card,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 humyn_indian_emotional/name/01,humyn_indian_emotional,name,Indian Emotional Speech Corpus (humyn-labs),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 humyn_indian_emotional/speech_production/01,humyn_indian_emotional,speech_production,acted,humyn_indian_emotional_card,"Indian speakers read a standardized 50-word paragraph with tone shifts to happy, sad, surprised and angry at set points",2026-10-28,claude,current,
@@ -2152,7 +2152,7 @@ indemovis/full_title/02,indemovis,full_title,IndEmoVis: An Indian Multimodal Aud
 indemovis/hours_reported/01,indemovis,hours_reported,unknown,indemovis_page_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 indemovis/languages/01,indemovis,languages,eng,indemovis_page_2,"Zenodo record metadata: ""Languages English""",2026-11-02,claude,current,
 indemovis/license_spdx/01,indemovis,license_spdx,none_stated,indemovis_page,Zenodo record has no license field,2026-10-14,claude,current,
-indemovis/listening_test/01,indemovis,listening_test,not_stated,indemovis_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+indemovis/listening_test/01,indemovis,listening_test,not_stated,indemovis_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 indemovis/n_files_reported/01,indemovis,n_files_reported,122,indemovis_page,"""The dataset comprises a total of 122 videos, involving 61 participants""",2026-11-02,claude,current,
 indemovis/n_speakers_reported/01,indemovis,n_speakers_reported,61,indemovis_page,122 videos involving 61 participants,2026-10-14,claude,current,
 indemovis/name/01,indemovis,name,IndEmoVis,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by indemovis/name/02
@@ -2182,10 +2182,10 @@ indianenglish/speech_production/01,indianenglish,speech_production,unknown,,,202
 indianenglish/spoken_text_design/01,indianenglish,spoken_text_design,emotion_specific_text,,,2026-10-26,claude,provisional,Provisional:
 indianenglish/vocal_content/01,indianenglish,vocal_content,speech,indianenglish_page,dataset described as speech recordings,2026-10-11,claude,current,
 indonesian_fahmi2020/access_method/01,indonesian_fahmi2020,access_method,request_form_or_email,indonesian_fahmi2020_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
-indonesian_fahmi2020/hours_reported/01,indonesian_fahmi2020,hours_reported,1.73,indonesian_fahmi2020_paper,"""The audio data has 1 hour and 44 minutes duration""",2026-11-02,claude,current,
+indonesian_fahmi2020/hours_reported/01,indonesian_fahmi2020,hours_reported,1.73,indonesian_fahmi2020_paper,"""The audio data has 1 hour and 44 minutes duration""",2026-11-02,claude,current,1 h 44 min written as hours (rounded to two decimals)
 indonesian_fahmi2020/languages/01,indonesian_fahmi2020,languages,ind,indonesian_fahmi2020_mirror,KuralHub entry: Language field,2026-10-14,claude,superseded,Superseded by a primary row with the same value.
 indonesian_fahmi2020/languages/02,indonesian_fahmi2020,languages,ind,indonesian_fahmi2020_paper,"title: ""Speech-Emotion Detection in an Indonesian Movie""",2026-11-02,claude,current,
-indonesian_fahmi2020/license_spdx/01,indonesian_fahmi2020,license_spdx,none_stated,indonesian_fahmi2020_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+indonesian_fahmi2020/license_spdx/01,indonesian_fahmi2020,license_spdx,none_stated,indonesian_fahmi2020_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 indonesian_fahmi2020/listening_test/01,indonesian_fahmi2020,listening_test,not_stated,indonesian_fahmi2020_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 indonesian_fahmi2020/n_files_reported/01,indonesian_fahmi2020,n_files_reported,965,indonesian_fahmi2020_mirror,KuralHub entry: Size field,2026-10-14,claude,superseded,Superseded by a primary row with the same value.
 indonesian_fahmi2020/n_files_reported/02,indonesian_fahmi2020,n_files_reported,965,indonesian_fahmi2020_paper,"""965 speech data""",2026-11-02,claude,current,
@@ -2202,7 +2202,7 @@ indowavesentiment/emotion_categories.label_verification/01,indowavesentiment,emo
 indowavesentiment/full_title/01,indowavesentiment,full_title,IndoWaveSentiment: Indonesian Audio Dataset for Emotion Classification,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by indowavesentiment/full_title/02
 indowavesentiment/full_title/02,indowavesentiment,full_title,IndoWaveSentiment: Indonesian Audio Dataset for Emotion Classification,indowavesentiment_page,title of the source contains the full title,2026-11-01,claude,current,
 indowavesentiment/hours_release/01,indowavesentiment,hours_release,0.26,indowavesentiment_readme,commit 820198870b01; Size of the release,2026-11-01,claude,current,
-indowavesentiment/hours_reported/01,indowavesentiment,hours_reported,unknown,indowavesentiment_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+indowavesentiment/hours_reported/01,indowavesentiment,hours_reported,unknown,indowavesentiment_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 indowavesentiment/languages/01,indowavesentiment,languages,ind,indowavesentiment_page,dataset description names the language,2026-10-11,claude,current,
 indowavesentiment/license_spdx/01,indowavesentiment,license_spdx,CC-BY-4.0,indowavesentiment_page,license field of Mendeley,2026-10-11,claude,current,
 indowavesentiment/listening_test/01,indowavesentiment,listening_test,not_stated,indowavesentiment_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
@@ -2287,7 +2287,7 @@ javanese_ser_2black0/license_spdx/01,javanese_ser_2black0,license_spdx,MIT,javan
 javanese_ser_2black0/listening_test/01,javanese_ser_2black0,listening_test,not_stated,javanese_ser_2black0_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 javanese_ser_2black0/n_files_release/01,javanese_ser_2black0,n_files_release,1680,,,2026-10-26,claude,superseded,Provisional:; superseded by javanese_ser_2black0/n_files_release/02
 javanese_ser_2black0/n_files_release/02,javanese_ser_2black0,n_files_release,1680,javanese_ser_2black0_readme,commit 111528fbf2be; Size of the release,2026-11-01,claude,current,
-javanese_ser_2black0/n_files_reported/01,javanese_ser_2black0,n_files_reported,unknown,javanese_ser_2black0_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+javanese_ser_2black0/n_files_reported/01,javanese_ser_2black0,n_files_reported,unknown,javanese_ser_2black0_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 javanese_ser_2black0/n_speakers_release/01,javanese_ser_2black0,n_speakers_release,10,,,2026-10-26,claude,superseded,Provisional:; superseded by javanese_ser_2black0/n_speakers_release/02
 javanese_ser_2black0/n_speakers_release/02,javanese_ser_2black0,n_speakers_release,10,javanese_ser_2black0_readme,commit 111528fbf2be; Size of the release,2026-11-01,claude,current,
 javanese_ser_2black0/n_speakers_reported/01,javanese_ser_2black0,n_speakers_reported,10,javanese_ser_2black0_page,"README: Actor ID 01-10, 10 speakers",2026-10-14,claude,current,
@@ -2300,7 +2300,7 @@ javmeps/access_method/01,javmeps,access_method,direct_download,javmeps_paper,225
 javmeps/access_observed/01,javmeps,access_observed,obtained,javmeps_paper,auditory-only stimuli folders on OSF,2026-10-13,claude,current,
 javmeps/full_title/01,javmeps,full_title,The Jena Audiovisual Stimuli of Morphed Emotional Pseudospeech,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by javmeps/full_title/02
 javmeps/full_title/02,javmeps,full_title,The Jena Audiovisual Stimuli of Morphed Emotional Pseudospeech,javmeps_paper_2,title of the source contains the full title,2026-11-01,claude,current,
-javmeps/hours_reported/01,javmeps,hours_reported,unknown,javmeps_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+javmeps/hours_reported/01,javmeps,hours_reported,unknown,javmeps_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 javmeps/languages/01,javmeps,languages,zxx,javmeps_paper,speaking four bisyllabic pseudowords,2026-10-13,claude,current,
 javmeps/license_spdx/01,javmeps,license_spdx,none_stated,javmeps_page,OSF node license is null,2026-10-13,claude,current,
 javmeps/listening_test/01,javmeps,listening_test,reported,javmeps_paper,Participants performed a seven-alternative forced choice task to indicate the emotion,2026-11-01,claude,current,
@@ -2317,7 +2317,7 @@ jlcorpus/emotion_categories.annotator/01,jlcorpus,emotion_categories.annotator,h
 jlcorpus/emotion_categories.label_basis/01,jlcorpus,emotion_categories.label_basis,intended,jlcorpus_page,the emotion in the file name is the recorded emotion,2026-10-26,claude,current,
 jlcorpus/emotion_categories.label_verification/01,jlcorpus,emotion_categories.label_verification,NA,jlcorpus_page,README: the corpus was evaluated by a large scale human perception test with 120 participants; the survey is on a separate site and its results are not bundled,2026-10-26,claude,current,"A perception test exists but its results are not in the release, so nothing can be checked here"
 jlcorpus/hours_release/01,jlcorpus,hours_release,1.41,jlcorpus_readme,commit 987a1dccdf9e; Size of the release,2026-11-01,claude,current,
-jlcorpus/hours_reported/01,jlcorpus,hours_reported,unknown,jlcorpus_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+jlcorpus/hours_reported/01,jlcorpus,hours_reported,unknown,jlcorpus_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 jlcorpus/languages/02,jlcorpus,languages,eng,jlcorpus_paper,recorded from 4 speakers ... trained voice actors of New Zealand English,2026-10-31,claude,current,New Zealand English
 jlcorpus/license_spdx/02,jlcorpus,license_spdx,CC0-1.0,jlcorpus_page,Kaggle API licenseName: CC0: Public Domain,2026-10-14,claude,current,
 jlcorpus/listening_test/01,jlcorpus,listening_test,reported,jlcorpus_paper,A large scale perception test with 120 participants showed the corpus has approximately 70% accuracy,2026-11-01,claude,current,
@@ -2451,7 +2451,7 @@ kazemotts/hours_reported/01,kazemotts,hours_reported,74.85,kazemotts_card,"a tot
 kazemotts/languages/01,kazemotts,languages,kaz,kazemotts_card,dataset description names the language,2026-10-11,claude,current,
 kazemotts/license_spdx/01,kazemotts,license_spdx,CC-BY-4.0,kazemotts_card,Hugging Face dataset card,2026-10-11,claude,superseded,superseded by kazemotts/license_spdx/02
 kazemotts/license_spdx/02,kazemotts,license_spdx,CC-BY-4.0,kazemotts_page,"form text (re-read 2026-10-26): 'This dataset is provided under the Creative Commons Attribution 4.0 International Licence. To request access to the dataset, please complete the form.'",2026-10-26,claude,current,The Hugging Face dataset card (README and tags) states no license; the official access form linked from the card does. Replaces the earlier evidence row that pointed to the card
-kazemotts/listening_test/01,kazemotts,listening_test,not_stated,kazemotts_card,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+kazemotts/listening_test/01,kazemotts,listening_test,not_stated,kazemotts_card,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 kazemotts/n_files_release/01,kazemotts,n_files_release,54760,,,2026-10-11,claude,superseded,Provisional:; superseded by kazemotts/n_files_release/02
 kazemotts/n_files_release/02,kazemotts,n_files_release,54760,kazemotts_readme,commit 3d3f1a3ffe93; Size of the release,2026-11-01,claude,current,
 kazemotts/n_files_reported/01,kazemotts,n_files_reported,54760,kazemotts_card,"KazEmoTTS is a collection of 54,760 audio-text pairs",2026-11-01,claude,current,
@@ -2472,7 +2472,7 @@ kbes/emotion_categories.label_verification/01,kbes,emotion_categories.label_veri
 kbes/full_title/01,kbes,full_title,KBES: A dataset for realistic Bangla speech emotion recognition with intensity level,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by kbes/full_title/02
 kbes/full_title/02,kbes,full_title,KBES: A dataset for realistic Bangla speech emotion recognition with intensity level,kbes_paper,title of the source contains the full title,2026-11-01,claude,current,
 kbes/hours_release/01,kbes,hours_release,0.75,kbes_readme,commit d9e26d5cc616; Size of the release,2026-11-01,claude,current,
-kbes/hours_reported/01,kbes,hours_reported,unknown,kbes_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+kbes/hours_reported/01,kbes,hours_reported,unknown,kbes_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 kbes/languages/01,kbes,languages,ben,kbes_page,dataset description names the language,2026-10-11,claude,current,
 kbes/license_spdx/01,kbes,license_spdx,CC-BY-4.0,kbes_page,license field of Mendeley,2026-10-11,claude,current,
 kbes/listening_test/01,kbes,listening_test,not_stated,kbes_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
@@ -2588,7 +2588,7 @@ ldc_emotional_prosody/access_observed/01,ldc_emotional_prosody,access_observed,o
 ldc_emotional_prosody/hours_reported/01,ldc_emotional_prosody,hours_reported,9,ldc_emotional_prosody_page,"Data: 2,777 Mbytes or nine hours of sphere data",2026-10-13,claude,current,
 ldc_emotional_prosody/languages/01,ldc_emotional_prosody,languages,eng,ldc_emotional_prosody_page,actors reading semantically neutral utterances (dates and numbers),2026-10-13,claude,current,"The language is not named, but the content is English dates and numbers"
 ldc_emotional_prosody/license_spdx/01,ldc_emotional_prosody,license_spdx,LicenseRef-proprietary-restricted,ldc_emotional_prosody_page,"Licensing Instructions: Subscription & Standard Members, and Non-Members; fees apply",2026-10-13,claude,current,
-ldc_emotional_prosody/listening_test/01,ldc_emotional_prosody,listening_test,not_stated,ldc_emotional_prosody_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+ldc_emotional_prosody/listening_test/01,ldc_emotional_prosody,listening_test,not_stated,ldc_emotional_prosody_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 ldc_emotional_prosody/name/01,ldc_emotional_prosody,name,Emotional Prosody Speech and Transcripts,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by ldc_emotional_prosody/name/02
 ldc_emotional_prosody/name/02,ldc_emotional_prosody,name,Emotional Prosody Speech and Transcripts,ldc_emotional_prosody_page,title of the source contains the name,2026-11-01,claude,current,
 ldc_emotional_prosody/speech_production/01,ldc_emotional_prosody,speech_production,acted,ldc_emotional_prosody_page,professional actors reading semantically neutral utterances,2026-10-13,claude,current,
@@ -2602,12 +2602,12 @@ legov2/emotion_categories.label_basis/01,legov2,emotion_categories.label_basis,p
 legov2/emotion_categories.label_verification/01,legov2,emotion_categories.label_verification,NA,legov2_release,"one rater only, so agreement cannot be measured and nothing was checked",2026-10-26,claude,current,No second annotation is distributed for the emotion labels
 legov2/hours_release/01,legov2,hours_release,26.41,legov2_readme,commit a429f81bc2c5; Size of the release,2026-11-01,claude,current,
 legov2/hours_reported/01,legov2,hours_reported,unknown,legov2_page_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-legov2/languages/01,legov2,languages,unknown,legov2_page_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+legov2/languages/01,legov2,languages,unknown,legov2_page_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 legov2/license_spdx/02,legov2,license_spdx,LicenseRef-custom-research-only,legov2_page,"LEGOv2/license.txt (CMU and Ulm University): use this data for individual, education research purposes only",2026-10-14,claude,current,zip read via HTTP Range (2026-10-14)
 legov2/listening_test/01,legov2,listening_test,not_stated,legov2_page_2,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 legov2/n_files_release/01,legov2,n_files_release,4832,,,2026-10-26,claude,superseded,"Provisional: The recipe uses 4,243 of the 4,832 (the 589 garbage utterances are left out); superseded by legov2/n_files_release/02"
 legov2/n_files_release/02,legov2,n_files_release,7909,legov2_readme,commit a429f81bc2c5; Size of the release,2026-11-01,claude,current,
-legov2/n_files_reported/01,legov2,n_files_reported,unknown,legov2_page_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+legov2/n_files_reported/01,legov2,n_files_reported,unknown,legov2_page_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 legov2/n_speakers_release/01,legov2,n_speakers_release,unknown,legov2_readme,commit a429f81bc2c5; Size of the release,2026-11-01,claude,current,Readme cell: unknown (callers are anonymous)
 legov2/n_speakers_reported/01,legov2,n_speakers_reported,unknown,legov2_page_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 legov2/name/01,legov2,name,LEGOv2,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by legov2/name/02
@@ -2686,7 +2686,7 @@ mahnobhci/languages/01,mahnobhci,languages,unknown,mahnobhci_page,not stated in 
 mahnobhci/license_spdx/01,mahnobhci,license_spdx,none_stated,mahnobhci_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 mahnobhci/listening_test/01,mahnobhci,listening_test,not_stated,mahnobhci_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 mahnobhci/n_files_reported/01,mahnobhci,n_files_reported,unknown,mahnobhci_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-mahnobhci/n_speakers_reported/01,mahnobhci,n_speakers_reported,unknown,mahnobhci_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mahnobhci/n_speakers_reported/01,mahnobhci,n_speakers_reported,unknown,mahnobhci_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 mahnobhci/name/01,mahnobhci,name,MAHNOB-HCI,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mahnobhci/name/02
 mahnobhci/name/02,mahnobhci,name,MAHNOB-HCI,mahnobhci_page,"the name appears in the source: ...er and smiles. HCI-Tagging Database The MAHNOB-HCI-Tagging database contains synchronised,...",2026-11-01,claude,current,
 mahnobhci/speech_production/01,mahnobhci,speech_production,elicited,mahnobhci_page,"The MAHNOB-HCI-Tagging database contains synchronised, high quality, multi-camera, multi-modal recordings of spontaneous elicited emotions",2026-10-31,claude,current,
@@ -2782,7 +2782,7 @@ mavesdb/access_method/01,mavesdb,access_method,signed_agreement,,,2026-10-14,cla
 mavesdb/access_observed/01,mavesdb,access_observed,unavailable,,,2026-10-14,claude,provisional,Provisional: carried over from raw_audio_available
 mavesdb/full_title/01,mavesdb,full_title,Malayalam Audio-Visual Emotional Speech Data,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mavesdb/full_title/02
 mavesdb/full_title/02,mavesdb,full_title,Malayalam Audio-Visual Emotional Speech Data,mavesdb_page,"the full title appears in the source: ...ntributor : Shabina Bhaskar Description Malayalam Audio-Visual Emotional Speech Data-Suitable for speech recognition, emotio...",2026-11-01,claude,current,
-mavesdb/hours_reported/01,mavesdb,hours_reported,unknown,mavesdb_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mavesdb/hours_reported/01,mavesdb,hours_reported,unknown,mavesdb_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 mavesdb/languages/01,mavesdb,languages,mal,mavesdb_page,title: Malayalam Audio-Visual Emotional Speech Data,2026-10-14,claude,current,
 mavesdb/license_spdx/01,mavesdb,license_spdx,CC-BY-4.0,mavesdb_page,Mendeley Data licence: CC BY 4.0,2026-10-14,claude,current,Only the agreement is deposited
 mavesdb/listening_test/01,mavesdb,listening_test,not_stated,mavesdb_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
@@ -2839,7 +2839,7 @@ mderma/emotion_categories.label_verification/01,mderma,emotion_categories.label_
 mderma/full_title/01,mderma,full_title,MDER-MA: A multimodal dataset for emotion recognition in low-resource Moroccan Arabic language,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mderma/full_title/02
 mderma/full_title/02,mderma,full_title,MDER-MA: A multimodal dataset for emotion recognition in low-resource Moroccan Arabic language,mderma_paper_2,title of the source contains the full title,2026-11-01,claude,current,
 mderma/hours_release/01,mderma,hours_release,2.175,mderma_readme,commit a5e9f7e88d2a; Size of the release,2026-11-01,claude,current,
-mderma/hours_reported/01,mderma,hours_reported,unknown,mderma_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mderma/hours_reported/01,mderma,hours_reported,unknown,mderma_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 mderma/languages/01,mderma,languages,ary,mderma_page,dataset description names the language,2026-10-11,claude,current,
 mderma/license_spdx/01,mderma,license_spdx,CC-BY-4.0,mderma_page,license field of the Mendeley list,2026-10-11,claude,current,
 mderma/listening_test/01,mderma,listening_test,not_stated,mderma_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
@@ -2847,7 +2847,7 @@ mderma/n_files_release/01,mderma,n_files_release,1345,,,2026-10-11,claude,supers
 mderma/n_files_release/02,mderma,n_files_release,1345,mderma_readme,commit a5e9f7e88d2a; Size of the release,2026-11-01,claude,current,
 mderma/n_files_reported/01,mderma,n_files_reported,1322,mderma_page,"dataset description: 1,322 samples per format",2026-10-11,claude,current,
 mderma/n_speakers_release/01,mderma,n_speakers_release,unknown,mderma_readme,commit a5e9f7e88d2a; Size of the release,2026-11-01,claude,current,Readme cell: unknown (66 gender-age-ID combinations)
-mderma/n_speakers_reported/01,mderma,n_speakers_reported,unknown,mderma_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mderma/n_speakers_reported/01,mderma,n_speakers_reported,unknown,mderma_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 mderma/name/01,mderma,name,MDER-MA,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mderma/name/02
 mderma/name/02,mderma,name,MDER-MA,mderma_page,title of the source contains the name,2026-11-01,claude,current,
 mderma/speech_production/01,mderma,speech_production,unknown,,,2026-10-26,claude,provisional,Provisional:
@@ -2883,7 +2883,7 @@ meld/n_files_release/01,meld,n_files_release,13707,,,2026-10-26,claude,supersede
 meld/n_files_release/02,meld,n_files_release,13708,meld_readme,commit b6b321565c17; Size of the release,2026-11-01,claude,current,
 meld/n_files_reported/02,meld,n_files_reported,13000,meld_paper_2,"MELD contains about 13,000 utterances from 1,433 dialogues",2026-10-31,claude,current,Approximate figure from the abstract
 meld/n_speakers_release/01,meld,n_speakers_release,304,meld_readme,commit b6b321565c17; Size of the release,2026-11-01,claude,current,Readme cell: 304 (character names)
-meld/n_speakers_reported/01,meld,n_speakers_reported,unknown,meld_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+meld/n_speakers_reported/01,meld,n_speakers_reported,unknown,meld_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 meld/name/01,meld,name,MELD,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by meld/name/02
 meld/name/02,meld,name,MELD,meld_page,title of the source contains the name,2026-11-01,claude,current,
 meld/official_split/01,meld,official_split,true,meld_page,"""There are 3 folders (.tar.gz files)-train, dev and test""",2026-11-02,claude,current,
@@ -2893,26 +2893,26 @@ memor/access_method/01,memor,access_method,signed_agreement,memor_page,"README: 
 memor/access_observed/01,memor,access_observed,obtained,memor_page,README: datasets released on OneDrive with a password,2026-10-14,claude,current,
 memor/full_title/01,memor,full_title,MEmoR: A Dataset for Multimodal Emotion Reasoning in Videos,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by memor/full_title/02
 memor/full_title/02,memor,full_title,MEmoR: A Dataset for Multimodal Emotion Reasoning in Videos,memor_page,title of the source contains the full title,2026-11-01,claude,current,
-memor/hours_reported/01,memor,hours_reported,unknown,memor_paper_3,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+memor/hours_reported/01,memor,hours_reported,unknown,memor_paper_3,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 memor/languages/01,memor,languages,eng,memor_paper,§1: clips from the popular TV series The Big Bang Theory,2026-10-14,claude,current,
 memor/license_spdx/01,memor,license_spdx,LicenseRef-proprietary-restricted,memor_page,README: download the License Agreement and send it back to get the password,2026-10-14,claude,current,
-memor/listening_test/01,memor,listening_test,not_stated,memor_paper_3,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+memor/listening_test/01,memor,listening_test,not_stated,memor_paper_3,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 memor/material_origin/01,memor,material_origin,film_tv,memor_paper,"§1: 5,502 video clips from The Big Bang Theory",2026-10-14,claude,current,
 memor/n_files_reported/01,memor,n_files_reported,8536,memor_paper,"§1: 5,502 video clips and 8,536 data samples",2026-10-14,claude,current,Sample count per person
-memor/n_speakers_reported/01,memor,n_speakers_reported,unknown,memor_paper_3,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+memor/n_speakers_reported/01,memor,n_speakers_reported,unknown,memor_paper_3,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 memor/name/01,memor,name,MEmoR,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by memor/name/02
 memor/name/02,memor,name,MEmoR,memor_page,title of the source contains the name,2026-11-01,claude,current,
-memor/speech_production/01,memor,speech_production,unknown,memor_paper_3,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+memor/speech_production/01,memor,speech_production,unknown,memor_paper_3,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 memor/vocal_content/01,memor,vocal_content,speech,memor_page,"multimodal inputs: text, audio, visual",2026-10-14,claude,current,
 mer2023/access_method/01,mer2023,access_method,gated_click_through,mer2023_card,gated auto: agree to share contact information; no EULA mentioned,2026-10-14,claude,current,
 mer2023/emotion_categories.annotator/01,mer2023,emotion_categories.annotator,human,mer2023_paper,"reliable samples with high annotation consistency form the labelled subsets (Train&Val, MER-MULTI, MER-NOISE); unreliable samples are treated as unlabelled",2026-10-28,claude,current,
 mer2023/emotion_categories.label_basis/01,mer2023,emotion_categories.label_basis,perceived,mer2023_paper,multimodal video annotation (discrete and dimensional),2026-10-28,claude,current,
 mer2023/hours_reported/01,mer2023,hours_reported,unknown,mer2023_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-mer2023/languages/01,mer2023,languages,unknown,mer2023_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mer2023/languages/01,mer2023,languages,unknown,mer2023_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 mer2023/license_spdx/02,mer2023,license_spdx,CC-BY-NC-4.0,mer2023_card,card: Licensed under CC BY-NC 4.0,2026-10-14,claude,current,
-mer2023/listening_test/01,mer2023,listening_test,not_stated,mer2023_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mer2023/listening_test/01,mer2023,listening_test,not_stated,mer2023_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 mer2023/n_files_reported/02,mer2023,n_files_reported,5030,arxiv_s_2404_17113,"Table 1: MER2023 Train&Val 3373, MER-MULTI 411, MER-NOISE 412, MER-SEMI 834/73982",2026-10-23,claude,current,"Sum of labelled items (3,373+411+412+834), computed from a table in the MER2024 paper (same organisers). MER2024 merged these 5,030 into Train&Val (§2)"
-mer2023/n_speakers_reported/01,mer2023,n_speakers_reported,unknown,mer2023_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mer2023/n_speakers_reported/01,mer2023,n_speakers_reported,unknown,mer2023_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 mer2023/name/01,mer2023,name,MER2023,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mer2023/name/02
 mer2023/name/02,mer2023,name,MER2023,mer2023_card,title of the source contains the name,2026-11-01,claude,current,
 mer2023/speech_production/01,mer2023,speech_production,acted,mer2023_paper,clips from films and TV series,2026-10-28,claude,current,
@@ -2928,31 +2928,31 @@ mer2024/license_spdx/01,mer2024,license_spdx,LicenseRef-custom-research-only,mer
 mer2024/listening_test/01,mer2024,listening_test,not_stated,arxiv_s_2404_17113,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 mer2024/material_origin/01,mer2024,material_origin,film_tv,arxiv_s_2404_17113,§2.1: raw data in MER2024 comes from movies and TV series,2026-10-23,claude,current,Same value as mer2023
 mer2024/n_files_reported/01,mer2024,n_files_reported,7369,arxiv_s_2404_17113,"Table 1: Train&Val 5030, MER-SEMI 1169/115595, MER-NOISE 1170/115595",2026-10-23,claude,current,"Sum of labelled items (5,030+1,169+1,170). Unlabelled: 115,595"
-mer2024/n_speakers_reported/01,mer2024,n_speakers_reported,unknown,arxiv_s_2404_17113,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mer2024/n_speakers_reported/01,mer2024,n_speakers_reported,unknown,arxiv_s_2404_17113,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 mer2024/name/01,mer2024,name,MER2024,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mer2024/name/02
 mer2024/name/02,mer2024,name,MER2024,mer2024_card,title of the source contains the name,2026-11-01,claude,current,
 mer2024/speech_production/01,mer2024,speech_production,unknown,arxiv_s_2404_17113,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 mer2024/vocal_content/01,mer2024,vocal_content,speech,arxiv_s_2404_17113,video clips of one speaker,2026-10-23,claude,current,
 mer2025/access_method/01,mer2025,access_method,signed_agreement,mer2025_card,card: access requires signing an EULA; approval required,2026-10-14,claude,current,
-mer2025/hours_reported/01,mer2025,hours_reported,unknown,mer2025_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-mer2025/languages/01,mer2025,languages,unknown,mer2025_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mer2025/hours_reported/01,mer2025,hours_reported,unknown,mer2025_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+mer2025/languages/01,mer2025,languages,unknown,mer2025_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 mer2025/license_spdx/02,mer2025,license_spdx,LicenseRef-custom-research-only,mer2025_card,card: academic use only; no redistribution,2026-10-14,claude,current,
-mer2025/listening_test/01,mer2025,listening_test,not_stated,mer2025_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mer2025/listening_test/01,mer2025,listening_test,not_stated,mer2025_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 mer2025/n_files_reported/01,mer2025,n_files_reported,7369,mer2025_paper,"§3: comprising 7,369 labeled samples and 124,802 unlabeled samples",2026-10-23,claude,current,"Labelled Train&Val. Plus 124,802 unlabelled (2,026 of them annotated for evaluation); 132,171 in total"
-mer2025/n_speakers_reported/01,mer2025,n_speakers_reported,unknown,mer2025_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mer2025/n_speakers_reported/01,mer2025,n_speakers_reported,unknown,mer2025_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 mer2025/name/01,mer2025,name,MER2025,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mer2025/name/02
 mer2025/name/02,mer2025,name,MER2025,mer2025_card,title of the source contains the name,2026-11-01,claude,current,
-mer2025/speech_production/01,mer2025,speech_production,unknown,mer2025_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mer2025/speech_production/01,mer2025,speech_production,unknown,mer2025_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 mer2026/access_method/01,mer2026,access_method,request_form_or_email,mer2026_card,access granted only after manual review by the organizers,2026-10-14,claude,current,
-mer2026/hours_reported/01,mer2026,hours_reported,unknown,mer2026_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-mer2026/languages/01,mer2026,languages,unknown,mer2026_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mer2026/hours_reported/01,mer2026,hours_reported,unknown,mer2026_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+mer2026/languages/01,mer2026,languages,unknown,mer2026_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 mer2026/license_spdx/02,mer2026,license_spdx,LicenseRef-custom-research-only,mer2026_card,access form: no redistribution or commercial use without written permission,2026-10-14,claude,current,
-mer2026/listening_test/01,mer2026,listening_test,not_stated,mer2026_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-mer2026/n_files_reported/01,mer2026,n_files_reported,unknown,mer2026_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-mer2026/n_speakers_reported/01,mer2026,n_speakers_reported,unknown,mer2026_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mer2026/listening_test/01,mer2026,listening_test,not_stated,mer2026_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+mer2026/n_files_reported/01,mer2026,n_files_reported,unknown,mer2026_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+mer2026/n_speakers_reported/01,mer2026,n_speakers_reported,unknown,mer2026_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 mer2026/name/01,mer2026,name,MER2026,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mer2026/name/02
 mer2026/name/02,mer2026,name,MER2026,mer2026_card,title of the source contains the name,2026-11-01,claude,current,
-mer2026/speech_production/01,mer2026,speech_production,unknown,mer2026_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mer2026/speech_production/01,mer2026,speech_production,unknown,mer2026_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 mer_caption/access_method/01,mer_caption,access_method,unknown,gh_zeroqiaoba_affectgpt,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 mer_caption/access_observed/01,mer_caption,access_observed,unavailable,mer_caption_paper,Annotations only,2026-10-23,claude,current,
 mer_caption/emotion_categories.annotator/01,mer_caption,emotion_categories.annotator,automatic,mer_caption_paper,§3: SALMONN (audio) and Chat-UniVi (video) clues merged by GPT-3.5; no external annotators,2026-10-23,claude,current,
@@ -2992,13 +2992,13 @@ mesd/emotion_categories.label_verification/01,mesd,emotion_categories.label_veri
 mesd/full_title/01,mesd,full_title,Mexican Emotional Speech Database (MESD),,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mesd/full_title/02
 mesd/full_title/02,mesd,full_title,Mexican Emotional Speech Database (MESD),mesd_page,title of the source contains the full title,2026-11-01,claude,current,
 mesd/hours_release/01,mesd,hours_release,0.22,mesd_readme,commit 335de59c7787; Size of the release,2026-11-01,claude,current,
-mesd/hours_reported/01,mesd,hours_reported,unknown,mesd_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mesd/hours_reported/01,mesd,hours_reported,unknown,mesd_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 mesd/languages/01,mesd,languages,unknown,mesd_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 mesd/license_spdx/02,mesd,license_spdx,CC-BY-4.0,mesd_page,license field of Mendeley (version 5),2026-10-11,claude,current,
 mesd/listening_test/01,mesd,listening_test,not_stated,mesd_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 mesd/n_files_release/01,mesd,n_files_release,862,,,2026-10-11,claude,superseded,Provisional:; superseded by mesd/n_files_release/02
 mesd/n_files_release/02,mesd,n_files_release,1150,mesd_readme,commit 335de59c7787; Size of the release,2026-11-01,claude,current,
-mesd/n_files_reported/01,mesd,n_files_reported,unknown,mesd_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mesd/n_files_reported/01,mesd,n_files_reported,unknown,mesd_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 mesd/n_speakers_release/01,mesd,n_speakers_release,unknown,mesd_readme,commit 335de59c7787; Size of the release,2026-11-01,claude,current,Readme cell: unknown (see below)
 mesd/n_speakers_reported/02,mesd,n_speakers_reported,11,mesd_page,"3 female, 2 male, and 6 child voices are available",2026-10-31,claude,current,11 is the sum of the three groups
 mesd/name/01,mesd,name,MESD,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mesd/name/02
@@ -3063,7 +3063,7 @@ mikuemobench/n_files_reported/02,mikuemobench,n_files_reported,89428,mikuemobenc
 mikuemobench/n_speakers_reported/01,mikuemobench,n_speakers_reported,unknown,mikuemobench_card,README and paper give no speaker count,2026-10-13,claude,current,
 mikuemobench/name/01,mikuemobench,name,MIKU-EmoBench,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mikuemobench/name/02
 mikuemobench/name/02,mikuemobench,name,MIKU-EmoBench,mikuemobench_card,title of the source contains the name,2026-11-01,claude,current,
-mikuemobench/speech_production/01,mikuemobench,speech_production,unknown,mikuemobench_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mikuemobench/speech_production/01,mikuemobench,speech_production,unknown,mikuemobench_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 mikuemobench/vocal_content/01,mikuemobench,vocal_content,speech,mikuemobench_card,README: each utterance has a Whisper-large-v3 transcription,2026-10-13,claude,current,
 minds14/access_method/01,minds14,access_method,direct_download,minds14_card,dataset API gated: False; parquet files in the repository,2026-10-14,claude,current,
 minds14/access_observed/01,minds14,access_observed,obtained,minds14_paper,"release the MInDS-14 dataset, including the original speech data and ASR data",2026-10-14,claude,current,
@@ -3072,11 +3072,11 @@ minds14/hours_reported/01,minds14,hours_reported,unknown,minds14_paper,not state
 minds14/languages/01,minds14,languages,eng;fra;ita;spa;por;deu;nld;rus;pol;ces;kor;zho,minds14_card,card metadata: language en fr it es pt de nl ru pl cs ko zh,2026-10-14,claude,current,
 minds14/license_spdx/01,minds14,license_spdx,CC-BY-4.0,minds14_card,card metadata: license cc-by-4.0,2026-10-14,claude,current,
 minds14/listening_test/01,minds14,listening_test,not_stated,minds14_card,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-minds14/n_files_reported/01,minds14,n_files_reported,unknown,minds14_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+minds14/n_files_reported/01,minds14,n_files_reported,unknown,minds14_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 minds14/n_speakers_reported/01,minds14,n_speakers_reported,unknown,minds14_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 minds14/name/01,minds14,name,MInDS-14,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by minds14/name/02
 minds14/name/02,minds14,name,MInDS-14,minds14_paper,"the name appears in the source: ...resource put forth in this work, termed MInDS-14, a first training and evaluation resour...",2026-11-01,claude,current,
-minds14/speech_production/01,minds14,speech_production,unknown,minds14_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+minds14/speech_production/01,minds14,speech_production,unknown,minds14_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 minds14/vocal_content/01,minds14,vocal_content,speech,minds14_paper,14 intents in the banking domain with accompanying spoken utterances,2026-10-14,claude,current,
 mlend_numerals/access_method/01,mlend_numerals,access_method,free_account_required,mlend_numerals_page,Kaggle download requires signing in,2026-10-13,claude,current,
 mlend_numerals/access_observed/01,mlend_numerals,access_observed,obtained,mlend_numerals_page,collection of more than 32k audio recordings,2026-10-13,claude,current,
@@ -3106,7 +3106,7 @@ mspconversation/access_method/01,mspconversation,access_method,signed_agreement,
 mspconversation/hours_reported/02,mspconversation,hours_reported,77.43,mspconversation_page,"Release 2.0: 310 conversations, 77 hours 26 minutes total",2026-10-14,claude,current,Release 2.0
 mspconversation/languages/01,mspconversation,languages,unknown,mspconversation_src,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 mspconversation/license_spdx/02,mspconversation,license_spdx,LicenseRef-custom-research-only,mspconversation_page,"Academic License (free of cost), signed by the institution",2026-10-14,claude,current,
-mspconversation/listening_test/01,mspconversation,listening_test,not_stated,mspconversation_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mspconversation/listening_test/01,mspconversation,listening_test,not_stated,mspconversation_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 mspconversation/material_origin/01,mspconversation,material_origin,podcast,mspconversation_page,the recordings overlap with the recordings included in the MSP-Podcast database ... retrieved from podcasts,2026-10-31,claude,current,
 mspconversation/n_files_reported/02,mspconversation,n_files_reported,310,mspconversation_page,Release 2.0 contains 310 conversations with duration between 10-20 minutes,2026-10-31,claude,current,"Counted in conversations, not utterances"
 mspconversation/n_speakers_reported/01,mspconversation,n_speakers_reported,unknown,mspconversation_src,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
@@ -3122,7 +3122,7 @@ mspface/full_title/02,mspface,full_title,MSP-Face corpus: A natural audiovisual 
 mspface/hours_reported/01,mspface,hours_reported,24.68,mspface_page,"annotated set: 9,370 recordings (24 hrs, 41 mins)",2026-10-13,claude,current,Labelled part. Unlabelled: 38 h 3 min
 mspface/languages/01,mspface,languages,unknown,mspface_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 mspface/license_spdx/01,mspface,license_spdx,LicenseRef-custom-research-only,mspface_page,Release of the Corpus: Academic License,2026-10-13,claude,current,
-mspface/listening_test/01,mspface,listening_test,not_stated,mspface_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mspface/listening_test/01,mspface,listening_test,not_stated,mspface_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 mspface/material_origin/01,mspface,material_origin,web_video,mspface_page,natural emotional multimodal corpus collected from video-sharing websites,2026-10-13,claude,current,
 mspface/n_files_reported/01,mspface,n_files_reported,9370,mspface_page,"annotated set: 9,370 recordings (24 hrs, 41 mins)",2026-10-13,claude,superseded,"Unlabelled: 15,011 clips; superseded by mspface/n_utt_reported/02"
 mspface/n_files_reported/02,mspface,n_files_reported,9370,mspface_page,"labelled set of 9,370 recordings; an unlabelled set has 15,011 recordings (38 h 3 min)",2026-10-28,claude,current,
@@ -3138,7 +3138,7 @@ mspimprov/emotion_categories.label_basis/01,mspimprov,emotion_categories.label_b
 mspimprov/hours_reported/01,mspimprov,hours_reported,unknown,mspimprov_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 mspimprov/languages/01,mspimprov,languages,unknown,mspimprov_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 mspimprov/license_spdx/02,mspimprov,license_spdx,LicenseRef-custom-research-only,mspimprov_page,"Academic License; commercial license from UT Dallas for US$8,000",2026-10-14,claude,current,
-mspimprov/listening_test/01,mspimprov,listening_test,not_stated,mspimprov_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+mspimprov/listening_test/01,mspimprov,listening_test,not_stated,mspimprov_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 mspimprov/n_files_reported/02,mspimprov,n_files_reported,8438,arxiv_s_2402_13018,"all sessions are manually segmented into 8,438 clips",2026-10-28,claude,current,
 mspimprov/n_speakers_reported/02,mspimprov,n_speakers_reported,12,mspimprov_page,the corpus comprises data from six dyad sessions (12 actors),2026-10-31,claude,current,
 mspimprov/name/01,mspimprov,name,MSP-IMPROV,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by mspimprov/name/02
@@ -3156,9 +3156,9 @@ msppodcast/emotion_categories.label_basis/01,msppodcast,emotion_categories.label
 msppodcast/emotion_categories.label_verification/01,msppodcast,emotion_categories.label_verification,listener_validated,arxiv_s_2509_09791,"after corrections the corpus has 1,446,270 emotional annotations from 13,280 workers; the consensus class comes from the workers' votes",2026-10-26,claude,current,Per-class human accuracy is not reported. The annotation itself is the listening evaluation; the primary-emotion agreement 0.411 is called Cohen's kappa in Table III and Fleiss' kappa in section VI
 msppodcast/hours_release/01,msppodcast,hours_release,409.51,msppodcast_readme,commit ab2176a86ba4; Size of the release,2026-11-01,claude,current,
 msppodcast/hours_reported/02,msppodcast,hours_reported,409,msppodcast_page,"Version 2.0 of the corpus has 264,705 speaking turns (409 hours)",2026-10-31,claude,current,Release 2.0
-msppodcast/languages/01,msppodcast,languages,unknown,msppodcast_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+msppodcast/languages/01,msppodcast,languages,unknown,msppodcast_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 msppodcast/license_spdx/02,msppodcast,license_spdx,LicenseRef-custom-research-only,msppodcast_page,Release of the Corpus: Academic License (free of cost),2026-10-14,claude,current,A commercial license exists separately
-msppodcast/listening_test/01,msppodcast,listening_test,not_stated,arxiv_s_2509_09791,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+msppodcast/listening_test/01,msppodcast,listening_test,not_stated,arxiv_s_2509_09791,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 msppodcast/material_origin/01,msppodcast,material_origin,podcast,msppodcast_page,speech segments from podcast recordings that are perceptually annotated by crowdsourcing workers and student evaluators,2026-10-31,claude,current,
 msppodcast/n_files_release/01,msppodcast,n_files_release,267905,,,2026-10-23,claude,superseded,"Provisional: labels_consensus.csv has 264,705 rows (Train 169,190, Development 34,399, Test1 46,294, Test2 14,822). Partitions.txt adds Test3 (3,200) for 267,905; superseded by msppodcast/n_files_release/02"
 msppodcast/n_files_release/02,msppodcast,n_files_release,267905,msppodcast_readme,commit ab2176a86ba4; Size of the release,2026-11-01,claude,current,
@@ -3320,7 +3320,7 @@ ogvc/n_speakers_reported/01,ogvc,n_speakers_reported,17,ogvc_page_2,natural: 9 m
 ogvc/name/01,ogvc,name,OGVC,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by ogvc/name/02
 ogvc/name/02,ogvc,name,OGVC,ogvc_page,title of the source contains the name,2026-11-01,claude,current,
 ogvc/speech_production/01,ogvc,speech_production,spontaneous;acted,ogvc_page,"9,114 spontaneous utterances from online-game voice chat (13 speakers, 6 dialogues) plus 2,656 acted utterances by 4 professional actors",2026-10-28,claude,current,
-omgemotion/access_method/01,omgemotion,access_method,unknown,omgemotion_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+omgemotion/access_method/01,omgemotion,access_method,unknown,omgemotion_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 omgemotion/hours_reported/01,omgemotion,hours_reported,10,omgemotion_page,"a total of 420 videos, totaling around 10 hours of data",2026-10-14,claude,current,
 omgemotion/languages/01,omgemotion,languages,unknown,omgemotion_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 omgemotion/license_spdx/02,omgemotion,license_spdx,CC-BY-NC-SA-3.0-DE,omgemotion_page,Distribution and License: CC BY-NC-SA 3.0 DE,2026-10-14,claude,current,
@@ -3518,9 +3518,9 @@ ramas/full_title/01,ramas,full_title,The Russian Acted Multimodal Affective Set,
 ramas/full_title/02,ramas,full_title,The Russian Acted Multimodal Affective Set,ramas_paper,"text: ""…ology data are quite rare. We collected The Russian Acted Multimodal Affective Set (RAMAS)…""",2026-11-02,claude,current,
 ramas/hours_reported/01,ramas,hours_reported,7,ramas_paper,abstract: approximately 7 hours of high-quality closeup video recordings,2026-10-14,claude,current,
 ramas/languages/01,ramas,languages,rus,ramas_paper,abstract: the first multimodal corpus in Russian language,2026-10-14,claude,current,
-ramas/license_spdx/01,ramas,license_spdx,none_stated,ramas_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-ramas/listening_test/01,ramas,listening_test,not_stated,ramas_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-ramas/n_files_reported/01,ramas,n_files_reported,unknown,ramas_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+ramas/license_spdx/01,ramas,license_spdx,none_stated,ramas_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+ramas/listening_test/01,ramas,listening_test,not_stated,ramas_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+ramas/n_files_reported/01,ramas,n_files_reported,unknown,ramas_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 ramas/n_speakers_reported/01,ramas,n_speakers_reported,10,ramas_paper,abstract: the subjects were 10 actors,2026-10-14,claude,current,
 ramas/name/01,ramas,name,RAMAS,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by ramas/name/02
 ramas/name/02,ramas,name,RAMAS,ramas_paper,title of the source contains the name,2026-11-01,claude,current,
@@ -3543,7 +3543,7 @@ rasa/languages/02,rasa,languages,asm;ben;brx;doi;guj;hin;kan;kas;kok;mai;mal;mni
 rasa/license_spdx/01,rasa,license_spdx,CC-BY-4.0,rasa_card,dataset card metadata: license cc-by-4.0,2026-10-14,claude,superseded,superseded by rasa/license_spdx/02
 rasa/license_spdx/02,rasa,license_spdx,CC-BY-4.0,,,2026-10-29,user,superseded,"Provisional: Confirmed by the maintainer (2026-10-29): the license offered by the authors is trusted. An aggregator (AIKosh) lists CC BY-ND 4.0, which is not followed; superseded by rasa/license_spdx/03"
 rasa/license_spdx/03,rasa,license_spdx,CC-BY-4.0,rasa_card,card metadata: license cc-by-4.0,2026-11-01,claude,current,
-rasa/listening_test/01,rasa,listening_test,not_stated,rasa_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+rasa/listening_test/01,rasa,listening_test,not_stated,rasa_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 rasa/material_origin/01,rasa,material_origin,recorded_for_dataset,rasa_paper,"voice artists recorded for the dataset; consent, payment and ethics approval described for 3 of the 22 languages",2026-10-29,claude,current,
 rasa/n_files_release/01,rasa,n_files_release,640946,,,2026-10-29,claude,superseded,"Provisional: The card says 640,950 (Gujarati has 2 fewer files for each gender, reason unknown); 640,806 after dropping 140 files with a name collision; superseded by rasa/n_files_release/02"
 rasa/n_files_release/02,rasa,n_files_release,640946,rasa_readme,commit 0dc349618f51; Size of the release,2026-11-01,claude,current,
@@ -3658,18 +3658,18 @@ rml_emotion/name/02,rml_emotion,name,RML Emotion Database,rml_emotion_page_2,"te
 rml_emotion/speech_production/01,rml_emotion,speech_production,acted,rml_emotion_page_2,to ensure the correct expression of human emotion ... intended emotion,2026-10-24,claude,current,"Not explicitly called acted, but expressions of intended emotions"
 rml_emotion/spoken_text_design/01,rml_emotion,spoken_text_design,emotion_specific_text,rml_emotion_page,"ten different sentences were provided for each emotional class, e.g. 'I am so happy today' (Happiness)",2026-10-24,claude,current,
 rml_emotion/vocal_content/01,rml_emotion,vocal_content,speech,rml_emotion_page_2,audio-visual video samples of about 5 seconds,2026-10-14,claude,current,
-ruslana/access_method/01,ruslana,access_method,unknown,ruslana_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-ruslana/hours_reported/01,ruslana,hours_reported,unknown,ruslana_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+ruslana/access_method/01,ruslana,access_method,unknown,ruslana_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+ruslana/hours_reported/01,ruslana,hours_reported,unknown,ruslana_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 ruslana/languages/02,ruslana,languages,rus,ruslana_paper,a database of affective (emotional) utterances for the Russian language,2026-10-31,claude,current,
 ruslana/license_spdx/02,ruslana,license_spdx,unknown,ruslana_paper_2,paper states CD-ROM distribution but no licence,2026-10-14,claude,current,
-ruslana/listening_test/01,ruslana,listening_test,not_stated,ruslana_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-ruslana/n_files_reported/01,ruslana,n_files_reported,unknown,ruslana_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+ruslana/listening_test/01,ruslana,listening_test,not_stated,ruslana_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+ruslana/n_files_reported/01,ruslana,n_files_reported,unknown,ruslana_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 ruslana/n_speakers_reported/02,ruslana,n_speakers_reported,61,ruslana_paper,The database contains recordings of 61 speakers (12 male and 49 female),2026-10-31,claude,current,
 ruslana/name/01,ruslana,name,RUSLANA,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by ruslana/name/02
 ruslana/name/02,ruslana,name,RUSLANA,ruslana_paper,title of the source contains the name,2026-11-01,claude,current,
 ruslana/speech_production/01,ruslana,speech_production,acted,ruslana_paper,"61 speakers (12 male, 49 female) pronounced ten sentences neutrally and in five emotional states (surprise, happiness, anger, sadness, fear)",2026-10-28,claude,current,
 ruslana/spoken_text_design/01,ruslana,spoken_text_design,parallel,ruslana_paper,the same ten sentences in every emotional state,2026-10-28,claude,current,
-safe_corpus/access_method/01,safe_corpus,access_method,unknown,safe_corpus_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+safe_corpus/access_method/01,safe_corpus,access_method,unknown,safe_corpus_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 safe_corpus/full_title/01,safe_corpus,full_title,Situation Analysis in a Fictional and Emotional Database,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by safe_corpus/full_title/02
 safe_corpus/full_title/02,safe_corpus,full_title,Situation Analysis in a Fictional and Emotional Database,safe_corpus_paper,"text: ""…the previously collected SAFE Database (Situation Analysis in a Fictional and Emotional Da…""",2026-11-02,claude,current,
 safe_corpus/hours_reported/01,safe_corpus,hours_reported,7,safe_corpus_paper,A total of 7 hours of recordings was collected,2026-11-01,claude,current,
@@ -3681,7 +3681,7 @@ safe_corpus/n_files_reported/01,safe_corpus,n_files_reported,400,safe_corpus_pap
 safe_corpus/n_speakers_reported/01,safe_corpus,n_speakers_reported,unknown,safe_corpus_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 safe_corpus/name/01,safe_corpus,name,SAFE,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by safe_corpus/name/02
 safe_corpus/name/02,safe_corpus,name,SAFE,safe_corpus_paper,"text: ""…Ͱj���P�Q���� Fear-type emotions of the SAFE Corpus: annotation issues Chloé Clavel1…""",2026-11-02,claude,current,
-safe_corpus/speech_production/01,safe_corpus,speech_production,unknown,safe_corpus_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+safe_corpus/speech_production/01,safe_corpus,speech_production,unknown,safe_corpus_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 saraiki_ser/access_method/01,saraiki_ser,access_method,free_account_required,saraiki_ser_page,Kaggle download requires signing in,2026-10-14,claude,current,
 saraiki_ser/access_observed/01,saraiki_ser,access_observed,obtained,,,2026-10-14,claude,superseded,Provisional: carried over from raw_audio_available; superseded by saraiki_ser/access_observed/02
 saraiki_ser/access_observed/02,saraiki_ser,access_observed,free_account_required,saraiki_ser_readme,commit 227edd522040; Access,2026-11-01,claude,current,
@@ -3689,21 +3689,21 @@ saraiki_ser/emotion_categories.annotator/01,saraiki_ser,emotion_categories.annot
 saraiki_ser/emotion_categories.label_basis/01,saraiki_ser,emotion_categories.label_basis,intended,saraiki_ser_page,description: the recordings were organized into folders according to the emotion they were recorded for,2026-10-26,claude,current,
 saraiki_ser/emotion_categories.label_verification/01,saraiki_ser,emotion_categories.label_verification,NA,saraiki_ser_page,the description mentions no listening test or second rater,2026-10-26,claude,current,Labels are the folder names (the emotion recorded)
 saraiki_ser/hours_release/01,saraiki_ser,hours_release,1.08,saraiki_ser_readme,commit 227edd522040; Size of the release,2026-11-01,claude,current,
-saraiki_ser/hours_reported/01,saraiki_ser,hours_reported,unknown,saraiki_ser_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+saraiki_ser/hours_reported/01,saraiki_ser,hours_reported,unknown,saraiki_ser_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the page text read was a script or bot-check shell.
 saraiki_ser/languages/01,saraiki_ser,languages,skr,saraiki_ser_page,description: an original SER dataset in the Seraiki language,2026-10-14,claude,current,
 saraiki_ser/license_spdx/01,saraiki_ser,license_spdx,CC-BY-4.0,saraiki_ser_page,Kaggle dataset license field: Attribution 4.0 International (CC BY 4.0),2026-10-14,claude,current,
 saraiki_ser/n_files_release/01,saraiki_ser,n_files_release,1200,,,2026-10-14,claude,superseded,Provisional:; superseded by saraiki_ser/n_files_release/02
 saraiki_ser/n_files_release/02,saraiki_ser,n_files_release,1200,saraiki_ser_readme,commit 227edd522040; Size of the release,2026-11-01,claude,current,
 saraiki_ser/n_files_reported/01,saraiki_ser,n_files_reported,1200,saraiki_ser_page,Total Audio Files: 1200; 200 per emotion,2026-10-14,claude,current,
 saraiki_ser/n_speakers_release/01,saraiki_ser,n_speakers_release,unknown,saraiki_ser_readme,commit 227edd522040; Size of the release,2026-11-01,claude,current,Readme cell: unknown
-saraiki_ser/n_speakers_reported/01,saraiki_ser,n_speakers_reported,unknown,saraiki_ser_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+saraiki_ser/n_speakers_reported/01,saraiki_ser,n_speakers_reported,unknown,saraiki_ser_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the page text read was a script or bot-check shell.
 saraiki_ser/name/01,saraiki_ser,name,Saraiki Speech Emotion Recognition Dataset,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 saraiki_ser/speech_production/01,saraiki_ser,speech_production,acted,saraiki_ser_page,description: emotion-specific dialogues were prepared and then recorded in the corresponding emotional tone by a native Seraiki speaker,2026-10-26,claude,current,The description does not say that the speaker acted the emotion with voice; see paralinguistic_signal
 saraiki_ser/spoken_text_design/01,saraiki_ser,spoken_text_design,emotion_specific_text,saraiki_ser_page,description: emotion-specific dialogues were prepared and then recorded in the corresponding emotional tone,2026-10-26,claude,current,"No transcripts are distributed, so the wording could not be examined"
 saraiki_ser/vocal_content/01,saraiki_ser,vocal_content,speech,saraiki_ser_page,clips of about 4 to 5 seconds,2026-10-14,claude,current,
 saudi_ser_corpus/full_title/01,saudi_ser_corpus,full_title,Arabic Speech Emotion Recognition From Saudi Dialect Corpus,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by saudi_ser_corpus/full_title/02
 saudi_ser_corpus/full_title/02,saudi_ser_corpus,full_title,Arabic Speech Emotion Recognition From Saudi Dialect Corpus,saudi_ser_corpus_paper,title of the source contains the full title,2026-11-01,claude,current,
-saudi_ser_corpus/hours_reported/01,saudi_ser_corpus,hours_reported,0.18,saudi_ser_corpus_paper,"""The total duration of the dataset was about 11 minutes.""",2026-11-02,claude,current,
+saudi_ser_corpus/hours_reported/01,saudi_ser_corpus,hours_reported,0.18,saudi_ser_corpus_paper,"""The total duration of the dataset was about 11 minutes.""",2026-11-02,claude,current,about 11 min written as hours (rounded to two decimals)
 saudi_ser_corpus/languages/01,saudi_ser_corpus,languages,ara,saudi_ser_corpus_paper,title: Arabic speech emotion recognition from Saudi dialect corpus,2026-10-14,claude,current,
 saudi_ser_corpus/name/01,saudi_ser_corpus,name,Saudi dialect speech emotion corpus,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 savee/access_method/01,savee,access_method,free_account_required,,readme: needs a free registration at cvssp.org/savee,2026-10-12,claude,superseded,superseded by savee/access_method/02; Former source type: project_doc
@@ -3872,7 +3872,7 @@ slue_hvb/n_files_reported/01,slue_hvb,n_files_reported,19155,slue_hvb_paper,"Tab
 slue_hvb/n_speakers_reported/01,slue_hvb,n_speakers_reported,59,slue_hvb_paper,"""scripted consumer banking dialogs, simulated ... by 59 speakers""",2026-11-02,claude,current,
 slue_hvb/name/01,slue_hvb,name,SLUE-HVB,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by slue_hvb/name/02
 slue_hvb/name/02,slue_hvb,name,SLUE-HVB,slue_hvb_card,"text: ""…2.10525) ### Licensing Information #### SLUE-HVB SLUE-HVB dataset contains a subset of t…""",2026-11-02,claude,current,
-slue_hvb/speech_production/01,slue_hvb,speech_production,unknown,slue_hvb_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+slue_hvb/speech_production/01,slue_hvb,speech_production,unknown,slue_hvb_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 slue_hvb/vocal_content/01,slue_hvb,vocal_content,speech,slue_hvb_card,"dataset features: audio, role, dialog_acts, intent",2026-10-14,claude,current,
 slue_voxceleb/access_method/01,slue_voxceleb,access_method,gated_click_through,slue_voxceleb_page,dataset API: gated auto,2026-10-14,claude,current,
 slue_voxceleb/access_observed/01,slue_voxceleb,access_observed,obtained,slue_voxceleb_page,dataset tags: modality audio,2026-10-14,claude,current,
@@ -3892,12 +3892,12 @@ slurp/hours_reported/01,slurp,hours_reported,58,slurp_paper,SLURP comprises ~58 
 slurp/languages/01,slurp,languages,eng,slurp_paper,dataset in English spanning 18 domains,2026-10-14,claude,current,
 slurp/license_spdx/01,slurp,license_spdx,CC-BY-NC-4.0,slurp_page,LICENSE.txt: released under Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0),2026-10-14,claude,current,
 slurp/listening_test/01,slurp,listening_test,not_stated,slurp_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-slurp/n_files_reported/01,slurp,n_files_reported,unknown,slurp_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+slurp/n_files_reported/01,slurp,n_files_reported,unknown,slurp_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 slurp/n_speakers_reported/01,slurp,n_speakers_reported,177,slurp_paper,Table: Speakers 97 69 177 34; SLURP column,2026-10-14,claude,current,
 slurp/name/01,slurp,name,SLURP,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by slurp/name/02
 slurp/name/02,slurp,name,SLURP,slurp_page,title of the source contains the name,2026-11-01,claude,current,
 slurp/official_split/01,slurp,official_split,true,slurp_paper,"""Table 6: Data distribution of train, dev and test sets.""",2026-11-02,claude,current,
-slurp/speech_production/01,slurp,speech_production,unknown,slurp_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+slurp/speech_production/01,slurp,speech_production,unknown,slurp_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 slurp/vocal_content/01,slurp,vocal_content,speech,slurp_paper,collection of ~72k audio recordings of single turn user interactions,2026-10-14,claude,current,
 snips_slu/access_method/01,snips_slu,access_method,request_form_or_email,snips_slu_page,"To access the data, please fill the following form: link",2026-10-14,claude,current,
 snips_slu/access_observed/01,snips_slu,access_observed,obtained,snips_slu_page,one spoken utterance is collected for each text query; far-field recordings,2026-10-14,claude,current,
@@ -3906,10 +3906,10 @@ snips_slu/hours_reported/01,snips_slu,hours_reported,5.5,arxiv_s_2207_10643,Tabl
 snips_slu/languages/01,snips_slu,languages,eng;fra,snips_slu_page,SmartLights; two SmartSpeaker assistants in English and French,2026-10-14,claude,current,
 snips_slu/license_spdx/01,snips_slu,license_spdx,LicenseRef-custom-research-only,snips_slu_page,License summary: Use only for academic and/or research purposes. No commercial use.,2026-10-14,claude,current,
 snips_slu/listening_test/01,snips_slu,listening_test,not_stated,snips_slu_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-snips_slu/n_files_reported/01,snips_slu,n_files_reported,unknown,snips_slu_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-snips_slu/n_speakers_reported/01,snips_slu,n_speakers_reported,unknown,snips_slu_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+snips_slu/n_files_reported/01,snips_slu,n_files_reported,unknown,snips_slu_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
+snips_slu/n_speakers_reported/01,snips_slu,n_speakers_reported,unknown,snips_slu_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 snips_slu/name/01,snips_slu,name,Snips / Sonos SLU datasets,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
-snips_slu/speech_production/01,snips_slu,speech_production,unknown,snips_slu_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+snips_slu/speech_production/01,snips_slu,speech_production,unknown,snips_slu_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 snips_slu/vocal_content/01,snips_slu,vocal_content,speech,snips_slu_page,Recordings of these sentences are then crowdsourced,2026-10-14,claude,current,
 spanish_meacorpus/access_method/01,spanish_meacorpus,access_method,unavailable,spanish_meacorpus_page_2,audio and video files are not redistributed; code downloads from YouTube,2026-10-14,claude,current,
 spanish_meacorpus/access_observed/01,spanish_meacorpus,access_observed,unavailable,spanish_meacorpus_page_2,"due to copyright restrictions, audio and video files are not redistributed",2026-10-14,claude,current,
@@ -3935,7 +3935,7 @@ speech_massive/hours_reported/01,speech_massive,hours_reported,unknown,speech_ma
 speech_massive/languages/01,speech_massive,languages,ara;deu;spa;fra;hun;kor;nld;pol;por;rus;tur;vie,speech_massive_card,card metadata: language ar de es fr hu ko nl pl pt ru tr vi,2026-10-14,claude,current,
 speech_massive/license_spdx/01,speech_massive,license_spdx,CC-BY-NC-SA-4.0,speech_massive_card,card metadata: license cc-by-nc-sa-4.0,2026-10-14,claude,current,
 speech_massive/listening_test/01,speech_massive,listening_test,not_stated,speech_massive_card,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-speech_massive/n_files_reported/01,speech_massive,n_files_reported,unknown,speech_massive_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+speech_massive/n_files_reported/01,speech_massive,n_files_reported,unknown,speech_massive_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 speech_massive/n_speakers_reported/01,speech_massive,n_speakers_reported,unknown,speech_massive_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 speech_massive/name/01,speech_massive,name,Speech-MASSIVE,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by speech_massive/name/02
 speech_massive/name/02,speech_massive,name,Speech-MASSIVE,speech_massive_card,title of the source contains the name,2026-11-01,claude,current,
@@ -3971,7 +3971,7 @@ spokenwoz/n_speakers_reported/01,spokenwoz,n_speakers_reported,250,spokenwoz_pap
 spokenwoz/name/01,spokenwoz,name,SpokenWOZ,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by spokenwoz/name/02
 spokenwoz/name/02,spokenwoz,name,SpokenWOZ,spokenwoz_page,title of the source contains the name,2026-11-01,claude,current,
 spokenwoz/official_split/01,spokenwoz,official_split,true,spokenwoz_page,"""The data is split into training, dev, and test sets.""",2026-11-02,claude,current,
-spokenwoz/speech_production/01,spokenwoz,speech_production,unknown,spokenwoz_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+spokenwoz/speech_production/01,spokenwoz,speech_production,unknown,spokenwoz_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 spokenwoz/vocal_content/01,spokenwoz,vocal_content,speech,spokenwoz_page,249 hours audios from realistic human-to-human spoken conversations,2026-10-14,claude,current,
 srol/access_method/01,srol,access_method,direct_download,,,2026-10-14,claude,provisional,Provisional:
 srol/access_observed/01,srol,access_observed,obtained,srol_mirror,"KuralHub entry: file format .wav, about 900 recordings",2026-10-14,claude,current,
@@ -4004,8 +4004,8 @@ studies/hours_reported/02,studies,hours_reported,14.5,studies_page_2,8 hours (te
 studies/hours_reported/03,studies,hours_reported,14.5,studies_page,about 8 hours of teacher-student chat plus 6.5 hours of call-centre dialogue,2026-10-28,claude,current,
 studies/languages/02,studies,languages,jpn,studies_page_2,Japanese Empathetic Dialogue Speech Corpus (STUDIES),2026-10-31,claude,current,
 studies/license_spdx/02,studies,license_spdx,LicenseRef-custom-research-only,studies_page_2,Licensing: For research purpose only; Price: No fee,2026-10-14,claude,current,
-studies/listening_test/01,studies,listening_test,not_stated,studies_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-studies/n_files_reported/01,studies,n_files_reported,unknown,studies_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+studies/listening_test/01,studies,listening_test,not_stated,studies_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+studies/n_files_reported/01,studies,n_files_reported,unknown,studies_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 studies/n_speakers_reported/01,studies,n_speakers_reported,3,studies_page_2,one professional male speaker and two professional female speakers,2026-10-14,claude,superseded,superseded by studies/n_speakers_reported/02
 studies/n_speakers_reported/02,studies,n_speakers_reported,3,studies_page,1 professional male and 2 professional female speakers,2026-10-28,claude,current,
 studies/name/01,studies,name,STUDIES,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by studies/name/02
@@ -4045,7 +4045,7 @@ susas/n_files_reported/01,susas,n_files_reported,16000,susas_page,"in excess of 
 susas/n_speakers_reported/01,susas,n_speakers_reported,32,susas_page,"a total of 32 speakers (13 female, 19 male)",2026-10-13,claude,current,
 susas/name/01,susas,name,SUSAS,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by susas/name/02
 susas/name/02,susas,name,SUSAS,susas_page,title of the source contains the name,2026-11-01,claude,current,
-susas/speech_production/01,susas,speech_production,unknown,susas_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+susas/speech_production/01,susas,speech_production,unknown,susas_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 susas/vocal_content/01,susas,vocal_content,speech,susas_page,35 aircraft communication words,2026-10-13,claude,current,
 swedish_vpesc/access_method/01,swedish_vpesc,access_method,request_form_or_email,swedish_vpesc_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
 swedish_vpesc/languages/01,swedish_vpesc,languages,swe,swedish_vpesc_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
@@ -4061,7 +4061,7 @@ switchboard_sentiment/listening_test/01,switchboard_sentiment,listening_test,not
 switchboard_sentiment/n_files_reported/01,switchboard_sentiment,n_files_reported,49500,switchboard_sentiment_page,"approximately 49,500 utterances covering 140 hours of audio",2026-10-13,claude,current,Approximate
 switchboard_sentiment/n_speakers_reported/01,switchboard_sentiment,n_speakers_reported,543,switchboard_sentiment_page,approximately 260 hours of telephone speech from 543 speakers across the United States,2026-11-01,claude,current,
 switchboard_sentiment/name/01,switchboard_sentiment,name,Speech Sentiment Annotations (Switchboard),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
-switchboard_sentiment/speech_production/01,switchboard_sentiment,speech_production,unknown,switchboard_sentiment_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+switchboard_sentiment/speech_production/01,switchboard_sentiment,speech_production,unknown,switchboard_sentiment_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 switchboard_sentiment/vocal_content/01,switchboard_sentiment,vocal_content,speech,switchboard_sentiment_page,segments based on transcript turns,2026-10-13,claude,current,
 syntact/access_method/01,syntact,access_method,direct_download,syntact_page_2,Zenodo open record with file syntact_cat.zip,2026-10-13,claude,current,
 syntact/access_observed/01,syntact,access_observed,obtained,syntact_page_2,"file syntact_cat.zip (986,508,556 bytes) in the open record",2026-10-13,claude,current,
@@ -4143,15 +4143,15 @@ telugu_emotion_kaggle/emotion_categories.annotator/01,telugu_emotion_kaggle,emot
 telugu_emotion_kaggle/emotion_categories.label_basis/01,telugu_emotion_kaggle,emotion_categories.label_basis,unknown,telugu_emotion_kaggle_page,description is empty,2026-10-24,claude,current,The distributor does not describe how labels were made
 telugu_emotion_kaggle/emotion_categories.label_verification/01,telugu_emotion_kaggle,emotion_categories.label_verification,unknown,telugu_emotion_kaggle_page,The Kaggle page has no description,2026-10-20,claude,current,"The sources say nothing about a listening evaluation either (maintainer's decision, 2026-10-20)"
 telugu_emotion_kaggle/hours_release/01,telugu_emotion_kaggle,hours_release,0.53,telugu_emotion_kaggle_readme,commit 2d74cbae3a8e; Size of the release,2026-11-01,claude,current,
-telugu_emotion_kaggle/hours_reported/01,telugu_emotion_kaggle,hours_reported,unknown,telugu_emotion_kaggle_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+telugu_emotion_kaggle/hours_reported/01,telugu_emotion_kaggle,hours_reported,unknown,telugu_emotion_kaggle_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the page text read was a script or bot-check shell.
 telugu_emotion_kaggle/languages/01,telugu_emotion_kaggle,languages,tel,telugu_emotion_kaggle_page,dataset title: Telugu Emotion Speech,2026-10-20,claude,current,"KuralHub (secondary) also says Telugu. Whisper large-v3 language ID (all 456 clips, no human check): te 382, en 35, with English phrases mixed in. Adopts the report's proposal in §9-1"
 telugu_emotion_kaggle/license_spdx/01,telugu_emotion_kaggle,license_spdx,Apache-2.0,telugu_emotion_kaggle_page,Kaggle dataset license field: Apache 2.0,2026-10-14,claude,current,
 telugu_emotion_kaggle/n_files_release/01,telugu_emotion_kaggle,n_files_release,458,,,2026-10-14,claude,superseded,Provisional:; superseded by telugu_emotion_kaggle/n_files_release/02
 telugu_emotion_kaggle/n_files_release/02,telugu_emotion_kaggle,n_files_release,458,telugu_emotion_kaggle_readme,commit 2d74cbae3a8e; Size of the release,2026-11-01,claude,current,
-telugu_emotion_kaggle/n_files_reported/01,telugu_emotion_kaggle,n_files_reported,unknown,telugu_emotion_kaggle_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+telugu_emotion_kaggle/n_files_reported/01,telugu_emotion_kaggle,n_files_reported,unknown,telugu_emotion_kaggle_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the page text read was a script or bot-check shell.
 telugu_emotion_kaggle/n_speakers_release/01,telugu_emotion_kaggle,n_speakers_release,20,,,2026-10-20,claude,superseded,"Provisional: Counted from file names, since no source says this field is one person; superseded by telugu_emotion_kaggle/n_speakers_release/02"
 telugu_emotion_kaggle/n_speakers_release/02,telugu_emotion_kaggle,n_speakers_release,20,telugu_emotion_kaggle_readme,commit 2d74cbae3a8e; Size of the release,2026-11-01,claude,current,
-telugu_emotion_kaggle/n_speakers_reported/01,telugu_emotion_kaggle,n_speakers_reported,unknown,telugu_emotion_kaggle_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+telugu_emotion_kaggle/n_speakers_reported/01,telugu_emotion_kaggle,n_speakers_reported,unknown,telugu_emotion_kaggle_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the page text read was a script or bot-check shell.
 telugu_emotion_kaggle/name/01,telugu_emotion_kaggle,name,Telugu Emotion Speech (Kaggle jettysowmith),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 telugu_emotion_kaggle/speech_production/01,telugu_emotion_kaggle,speech_production,acted,telugu_emotion_kaggle_mirror,Recording Environment: Acted,2026-10-24,claude,current,The Kaggle description is empty (checked via the API)
 telugu_emotion_kaggle/spoken_text_design/01,telugu_emotion_kaggle,spoken_text_design,unknown,telugu_emotion_kaggle_page,"description, subtitle and tags are empty",2026-10-24,claude,current,
@@ -4189,7 +4189,7 @@ textrolspeech/languages/01,textrolspeech,languages,eng,textrolspeech_paper,"buil
 textrolspeech/license_spdx/01,textrolspeech,license_spdx,MIT,textrolspeech_page,GitHub repository license field: MIT,2026-10-13,claude,current,Audio follows the source corpora's terms
 textrolspeech/listening_test/01,textrolspeech,listening_test,not_stated,textrolspeech_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 textrolspeech/material_origin/01,textrolspeech,material_origin,multiple,textrolspeech_paper,"§2: LibriTTS and VCTK plus ESD, TESS, MEAD, SAVEE and MESS",2026-10-13,claude,current,
-textrolspeech/n_files_reported/01,textrolspeech,n_files_reported,unknown,textrolspeech_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+textrolspeech/n_files_reported/01,textrolspeech,n_files_reported,unknown,textrolspeech_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 textrolspeech/n_speakers_reported/01,textrolspeech,n_speakers_reported,1324,textrolspeech_paper,"Table 1: 1,324 speakers",2026-10-13,claude,current,
 textrolspeech/name/01,textrolspeech,name,TextrolSpeech,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by textrolspeech/name/02
 textrolspeech/name/02,textrolspeech,name,TextrolSpeech,textrolspeech_page,title of the source contains the name,2026-11-01,claude,current,
@@ -4286,21 +4286,21 @@ tumavic/n_speakers_reported/01,tumavic,n_speakers_reported,21,tumavic_paper,§2.
 tumavic/name/01,tumavic,name,TUM AVIC,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by tumavic/name/02
 tumavic/name/02,tumavic,name,TUM AVIC,tumavic_paper,"text: ""…on. To this end, corpora “aGender” and “TUM AVIC” and standard feature sets transcriptio…""",2026-11-02,claude,current,
 tumavic/official_split/01,tumavic,official_split,true,tumavic_paper,"Abstract: ""distinct definition of train, develop, and test partitions""",2026-11-02,claude,current,
-tumavic/speech_production/01,tumavic,speech_production,unknown,tumavic_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+tumavic/speech_production/01,tumavic,speech_production,unknown,tumavic_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 tumavic/vocal_content/01,tumavic,vocal_content,speech,tumavic_paper,§2.2: human conversational speech recordings,2026-10-13,claude,current,
 tures/access_method/01,tures,access_method,unknown,tures_paper,abstract has no statement on release,2026-10-14,claude,current,Text not read
 tures/access_observed/01,tures,access_observed,unavailable,,,2026-11-01,claude,provisional,Provisional: from the earlier status notes (the audio could not be obtained or is not distributed)
-tures/hours_reported/01,tures,hours_reported,unknown,tures_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+tures/hours_reported/01,tures,hours_reported,unknown,tures_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 tures/languages/01,tures,languages,tur,tures_paper,abstract: a new Turkish emotional speech database,2026-10-14,claude,current,
 tures/languages/02,tures,languages,tur,tures_paper_3,"Abstract: ""the new Turkish emotional speech database we created""",2026-11-02,claude,current,
-tures/license_spdx/01,tures,license_spdx,none_stated,tures_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-tures/listening_test/01,tures,listening_test,not_stated,tures_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+tures/license_spdx/01,tures,license_spdx,none_stated,tures_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+tures/listening_test/01,tures,listening_test,not_stated,tures_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 tures/material_origin/01,tures,material_origin,film_tv,tures_paper,"abstract: 5,100 utterances extracted from 55 Turkish movies",2026-10-14,claude,current,
 tures/n_files_reported/01,tures,n_files_reported,5100,tures_paper,"abstract: 5,100 utterances extracted from 55 Turkish movies",2026-10-14,claude,superseded,superseded by tures/n_files_reported/02
 tures/n_files_reported/02,tures,n_files_reported,5304,tures_paper_3,"Abstract: ""Our database consists of 5304 speech signal and their textual contents extracted from 55 Turkish movies""",2026-11-02,claude,current,
-tures/n_speakers_reported/01,tures,n_speakers_reported,unknown,tures_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+tures/n_speakers_reported/01,tures,n_speakers_reported,unknown,tures_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 tures/name/01,tures,name,Turkish Emotional Speech Database (TurES),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
-tures/speech_production/01,tures,speech_production,unknown,tures_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+tures/speech_production/01,tures,speech_production,unknown,tures_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 tures/vocal_content/01,tures,vocal_content,speech,tures_paper,abstract: utterances extracted from movies,2026-10-14,claude,current,
 turevdb/access_method/01,turevdb,access_method,direct_download,,,2026-10-11,claude,provisional,Provisional:
 turevdb/access_observed/01,turevdb,access_observed,obtained,,,2026-10-11,claude,superseded,Provisional: carried over from raw_audio_available; superseded by turevdb/access_observed/02
@@ -4445,7 +4445,9 @@ urduser/speech_production/01,urduser,speech_production,acted,,,2026-10-28,claude
 urduser/speech_production/02,urduser,speech_production,acted,urduser_page,"This comprehensive dataset includes 3500 Urdu speech signals sourced from 10 professional actors, with an equal representation of male and female speakers from diverse age ...",2026-11-01,claude,current,
 urduser/spoken_text_design/01,urduser,spoken_text_design,dialogue_script,,,2026-10-28,claude,provisional,Provisional:
 urduser/vocal_content/01,urduser,vocal_content,speech,urduser_page,dataset described as speech recordings,2026-10-11,claude,current,
-urdusindhi_zenodo3685274/access_method/01,urdusindhi_zenodo3685274,access_method,unknown,urdusindhi_zenodo3685274_page_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+urdusindhi_zenodo3685274/access_method/01,urdusindhi_zenodo3685274,access_method,unknown,urdusindhi_zenodo3685274_page_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
+urdusindhi_zenodo3685274/access_method/02,urdusindhi_zenodo3685274,access_method,direct_download,urdusindhi_zenodo3685274_page_2,"Zenodo files list: ""Feats - Sindhi.zip ... Preview Download""",2026-11-02,claude,superseded,superseded by urdusindhi_zenodo3685274/access_method/03
+urdusindhi_zenodo3685274/access_method/03,urdusindhi_zenodo3685274,access_method,unavailable,urdusindhi_zenodo3685274_page_2,"""Due to ethical restrictions we cannot release audio recordings at the moment and instead release five feature sets""",2026-11-02,claude,current,Only OpenSMILE feature sets are downloadable; the audio is not released.
 urdusindhi_zenodo3685274/access_observed/01,urdusindhi_zenodo3685274,access_observed,unavailable,urdusindhi_zenodo3685274_page,due to ethical restrictions we cannot release audio recordings,2026-10-14,claude,current,
 urdusindhi_zenodo3685274/hours_reported/01,urdusindhi_zenodo3685274,hours_reported,unknown,urdusindhi_zenodo3685274_page_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 urdusindhi_zenodo3685274/languages/01,urdusindhi_zenodo3685274,languages,urd;snd,urdusindhi_zenodo3685274_page,"two low-resource languages of South Asia, Urdu and Sindhi",2026-10-14,claude,current,
@@ -4472,7 +4474,7 @@ usc_emo_mri/license_spdx/01,usc_emo_mri,license_spdx,CC-BY-4.0,usc_emo_mri_page,
 usc_emo_mri/listening_test/01,usc_emo_mri,listening_test,reported,usc_emo_mri_paper_2,The emotion quality of the data was evaluated for each sentence-level utterance with perceptual tests,2026-11-01,claude,current,
 usc_emo_mri/n_files_release/01,usc_emo_mri,n_files_release,356,,,2026-10-19,claude,superseded,Provisional: Measured from the AVI files of the USC-EMO-MRI release (*/avi/**/*.avi); superseded by usc_emo_mri/n_files_release/02
 usc_emo_mri/n_files_release/02,usc_emo_mri,n_files_release,2363,usc_emo_mri_readme,commit 0dcb820c556a; Size of the release,2026-11-01,claude,current,
-usc_emo_mri/n_files_reported/01,usc_emo_mri,n_files_reported,unknown,usc_emo_mri_paper_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+usc_emo_mri/n_files_reported/01,usc_emo_mri,n_files_reported,unknown,usc_emo_mri_paper_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 usc_emo_mri/n_speakers_release/01,usc_emo_mri,n_speakers_release,10,,,2026-10-19,claude,superseded,Provisional: Measured from the USC-EMO-MRI release files; superseded by usc_emo_mri/n_speakers_release/02
 usc_emo_mri/n_speakers_release/02,usc_emo_mri,n_speakers_release,10,usc_emo_mri_readme,commit 0dcb820c556a; Size of the release,2026-11-01,claude,current,
 usc_emo_mri/n_speakers_reported/01,usc_emo_mri,n_speakers_reported,10,usc_emo_mri_page,five male and five female actors,2026-10-14,claude,current,
@@ -4481,15 +4483,15 @@ usc_emo_mri/name/02,usc_emo_mri,name,USC-EMO-MRI,usc_emo_mri_page,title of the s
 usc_emo_mri/speech_production/01,usc_emo_mri,speech_production,acted,usc_emo_mri_paper_2,professional actors ... while enacting four different target emotions,2026-10-24,claude,current,Zenodo 19325044 says the same
 usc_emo_mri/spoken_text_design/01,usc_emo_mri,spoken_text_design,parallel,usc_emo_mri_paper_2,"the passage and seven sentences were recorded with each target emotion (abstract; Section 2, Table 1)",2026-10-24,claude,current,
 usc_emo_mri/vocal_content/01,usc_emo_mri,vocal_content,speech,usc_emo_mri_page,synchronized speech audio of a passage and a set of sentences,2026-10-14,claude,current,
-usoms/access_method/01,usoms,access_method,unknown,usoms_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-usoms/hours_reported/01,usoms,hours_reported,unknown,usoms_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-usoms/languages/01,usoms,languages,unknown,usoms_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-usoms/license_spdx/01,usoms,license_spdx,none_stated,usoms_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
-usoms/listening_test/01,usoms,listening_test,not_stated,usoms_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+usoms/access_method/01,usoms,access_method,unknown,usoms_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+usoms/hours_reported/01,usoms,hours_reported,unknown,usoms_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+usoms/languages/01,usoms,languages,unknown,usoms_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+usoms/license_spdx/01,usoms,license_spdx,none_stated,usoms_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
+usoms/listening_test/01,usoms,listening_test,not_stated,usoms_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 usoms/n_files_reported/02,usoms,n_files_reported,2313,usoms_paper,Segments of 8 seconds each were selected from the cleaned recordings in a semi-automatic way. This resulted in 2 313 chunks,2026-10-31,claude,current,Chunks of 8 s; Table 1 total for USoMS
 usoms/n_speakers_reported/02,usoms,n_speakers_reported,100,usoms_paper,"From the 127 students recorded, due to technical reasons or subjects' withdrawal, 100 remained (85 f, 15 m)",2026-10-31,claude,current,
 usoms/name/01,usoms,name,USoMS,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
-usoms/speech_production/01,usoms,speech_production,unknown,usoms_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+usoms/speech_production/01,usoms,speech_production,unknown,usoms_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 utemo/access_method/01,utemo,access_method,direct_download,utemo_page,public Mendeley Data record with Utemo.zip,2026-10-14,claude,current,
 utemo/access_observed/01,utemo,access_observed,obtained,utemo_page,high fidelity audio (sampling rate of 48 kHz),2026-10-14,claude,current,
 utemo/access_observed/02,utemo,access_observed,obtained,utemo_readme,commit 39841da5cf4e; Access,2026-11-01,claude,current,
@@ -4642,16 +4644,16 @@ voicenet/access_observed/01,voicenet,access_observed,obtained,,,2026-10-23,claud
 voicenet/emotion_categories.annotator/01,voicenet,emotion_categories.annotator,human,arxiv_s_2609_32016,"§3: 7,984 pairs received three independent ratings from psychology experts",2026-10-23,claude,current,
 voicenet/emotion_categories.label_verification/01,voicenet,emotion_categories.label_verification,NA,arxiv_s_2609_32016,Human ratings,2026-10-23,claude,current,
 voicenet/full_title/01,voicenet,full_title,VoiceNet: Fine-Grained Voice Understanding Beyond Emotion at Scale(VoiceNet-Emo / VoiceNet-Ext),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
-voicenet/hours_reported/01,voicenet,hours_reported,unknown,arxiv_s_2609_32016,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+voicenet/hours_reported/01,voicenet,hours_reported,unknown,arxiv_s_2609_32016,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 voicenet/languages/01,voicenet,languages,mul,arxiv_s_2609_32016,§3: clips from the Emilia-YODAS and Emilia portions of Emilia-Large,2026-10-23,claude,current,The language breakdown is not given
 voicenet/license_spdx/01,voicenet,license_spdx,CC-BY-NC-4.0,arxiv_s_2609_32016,§3: clips come from the Emilia-YODAS (CC-BY-4.0) and Emilia (CC-BY-NC-4.0) portions; openly available under CC-BY and CC-BY-NC research licences,2026-10-23,claude,current,CC-BY-4.0 and CC-BY-NC-4.0 are mixed per clip; the stricter is used as the value. The GitHub repository itself is MIT
 voicenet/listening_test/01,voicenet,listening_test,not_stated,arxiv_s_2609_32016,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 voicenet/material_origin/01,voicenet,material_origin,multiple,arxiv_s_2609_32016,permissively-licensed in-the-wild speech,2026-10-23,claude,current,
 voicenet/n_files_reported/01,voicenet,n_files_reported,3944,arxiv_s_2609_32016,"§3: 7,988 (audio, emotion) pairs over 3,944 unique audio clips",2026-10-23,claude,current,Number of VoiceNet-Emo clips
-voicenet/n_speakers_reported/01,voicenet,n_speakers_reported,unknown,arxiv_s_2609_32016,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+voicenet/n_speakers_reported/01,voicenet,n_speakers_reported,unknown,arxiv_s_2609_32016,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 voicenet/name/01,voicenet,name,VoiceNet,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by voicenet/name/02
 voicenet/name/02,voicenet,name,VoiceNet,arxiv_s_2609_32016,the name appears in the source: ...0 1 0 http://arxiv.org/abs/2609.32016v1 VoiceNet: Fine-Grained Voice Understanding Beyon...,2026-11-01,claude,current,
-voicenet/speech_production/01,voicenet,speech_production,unknown,arxiv_s_2609_32016,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
+voicenet/speech_production/01,voicenet,speech_production,unknown,arxiv_s_2609_32016,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 voicenet/vocal_content/01,voicenet,vocal_content,speech,arxiv_s_2609_32016,in-the-wild human speech,2026-10-23,claude,current,
 voicestats/access_method/01,voicestats,access_method,direct_download,,,2026-10-11,claude,superseded,Provisional:; superseded by voicestats/access_method/02
 voicestats/access_method/02,voicestats,access_method,direct_download,voicestats_page,"page metadata: ""DataDownload contentUrl http://voice-statistics.github.com/""",2026-11-02,claude,current,
@@ -4760,7 +4762,7 @@ ysed/emotion_categories.label_verification/02,ysed,emotion_categories.label_veri
 ysed/full_title/01,ysed,full_title,YSED: Yemeni speech emotion dataset,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by ysed/full_title/02
 ysed/full_title/02,ysed,full_title,YSED: Yemeni speech emotion dataset,ysed_paper,title of the source contains the full title,2026-11-01,claude,current,
 ysed/hours_release/01,ysed,hours_release,1.01,ysed_readme,commit 1a5f8dd6a19e; Size of the release,2026-11-01,claude,current,
-ysed/hours_reported/01,ysed,hours_reported,0.99,ysed_paper,"""a total of 1432 recordings were validated, with an overall duration of 59 min and 10 s""",2026-11-02,claude,current,
+ysed/hours_reported/01,ysed,hours_reported,0.99,ysed_paper,"""a total of 1432 recordings were validated, with an overall duration of 59 min and 10 s""",2026-11-02,claude,current,59 min 10 s written as hours (rounded to two decimals)
 ysed/languages/01,ysed,languages,ara,ysed_page,dataset description names the language,2026-10-11,claude,current,
 ysed/license_spdx/01,ysed,license_spdx,CC-BY-4.0,ysed_page,Zenodo record license,2026-10-11,claude,current,
 ysed/listening_test/01,ysed,listening_test,reported,ysed_readme,commit 1a5f8dd6a19e; Listening test ratings in the release,2026-11-01,claude,current,
