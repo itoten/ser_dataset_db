@@ -804,7 +804,9 @@ cmumosi/name/01,cmumosi,name,CMU-MOSI,,,2026-11-01,claude,provisional,Provisiona
 cnev/access_method/01,cnev,access_method,direct_download,cnev_paper,"""the CNEV corpus and database are freely available for download at https://osf.io/6gy4v/""",2026-11-02,claude,current,
 cnev/full_title/01,cnev,full_title,"CNEV: A corpus of Chinese nonverbal emotional vocalizations with a database of emotion category, valence, arousal, and gender",,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by cnev/full_title/02
 cnev/full_title/02,cnev,full_title,"CNEV: A corpus of Chinese nonverbal emotional vocalizations with a database of emotion category, valence, arousal, and gender",cnev_paper,title of the source contains the full title,2026-11-01,claude,current,
+cnev/hours_reported/01,cnev,hours_reported,unknown,cnev_paper,not stated in the page or paper text read in the browser (checked 2026-11-02),2026-11-02,claude,current,
 cnev/languages/01,cnev,languages,zxx,cnev_paper,title: a corpus of Chinese nonverbal emotional vocalizations,2026-10-14,claude,current,
+cnev/license_spdx/01,cnev,license_spdx,none_stated,cnev_paper,not stated in the page or paper text read in the browser (checked 2026-11-02),2026-11-02,claude,current,
 cnev/n_speakers_reported/01,cnev,n_speakers_reported,164,cnev_paper,"""A total of 164 Chinese students (82 male, 82 female ...) participated"" in the recording phase",2026-11-02,claude,current,
 cnev/name/01,cnev,name,CNEV,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by cnev/name/02
 cnev/name/02,cnev,name,CNEV,cnev_paper,title of the source contains the name,2026-11-01,claude,current,
@@ -1772,7 +1774,9 @@ fcaps/name/02,fcaps,name,FCaps,fcaps_card,title of the source contains the name,
 fcaps/speech_production/01,fcaps,speech_production,unknown,fcaps_card,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 fcaps/vocal_content/01,fcaps,vocal_content,speech,fcaps_paper,speaking style captions,2026-10-23,claude,current,
 filmed/access_method/01,filmed,access_method,request_form_or_email,filmed_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
+filmed/hours_reported/01,filmed,hours_reported,unknown,filmed_paper,not stated in the page or paper text read in the browser (checked 2026-11-02),2026-11-02,claude,current,
 filmed/languages/01,filmed,languages,fil,filmed_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
+filmed/license_spdx/01,filmed,license_spdx,none_stated,filmed_paper,not stated in the page or paper text read in the browser (checked 2026-11-02),2026-11-02,claude,current,
 filmed/n_files_reported/01,filmed,n_files_reported,11430,filmed_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
 filmed/n_speakers_reported/01,filmed,n_speakers_reported,25,filmed_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
 filmed/name/01,filmed,name,Filipino Multimodal Emotion Database (FilMED),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -3325,7 +3329,9 @@ pemo_punjabi/name/01,pemo_punjabi,name,PEMO,,,2026-11-01,claude,provisional,Prov
 pemo_punjabi/speech_production/01,pemo_punjabi,speech_production,acted,pemo_punjabi_mirror,KuralHub entry: Recording Environment field,2026-10-14,claude,current,
 persian_esd/full_title/01,persian_esd,full_title,Recognizing emotional speech in Persian: A validated database of Persian emotional speech (Persian ESD),,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by persian_esd/full_title/02
 persian_esd/full_title/02,persian_esd,full_title,Recognizing emotional speech in Persian: A validated database of Persian emotional speech (Persian ESD),persian_esd_paper,title of the source contains the full title,2026-11-01,claude,current,
+persian_esd/hours_reported/01,persian_esd,hours_reported,unknown,persian_esd_paper,not stated in the page or paper text read in the browser (checked 2026-11-02),2026-11-02,claude,current,
 persian_esd/languages/01,persian_esd,languages,fas,persian_esd_paper,title: a validated database of Persian emotional speech,2026-10-14,claude,current,
+persian_esd/license_spdx/01,persian_esd,license_spdx,none_stated,persian_esd_paper,not stated in the page or paper text read in the browser (checked 2026-11-02),2026-11-02,claude,current,
 persian_esd/n_speakers_reported/01,persian_esd,n_speakers_reported,2,persian_esd_paper,"""articulated by two native Persian speakers (one male and one female)""",2026-11-02,claude,current,
 persian_esd/name/01,persian_esd,name,Persian ESD,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by persian_esd/name/02
 persian_esd/name/02,persian_esd,name,Persian ESD,persian_esd_paper,title of the source contains the name,2026-11-01,claude,current,
