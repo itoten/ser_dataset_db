@@ -12,6 +12,7 @@ affectspeech,affectspeech_page,distribution
 affectspeech,affectspeech_paper_2,paper
 affectspeech,affectspeech_paper_3,paper
 afrikaans_se,afrikaans_se_mirror,distribution
+afrikaans_se,afrikaans_se_paper_doi,paper
 aihub_263,aihub_263_page,other
 aihub_271,aihub_271_page,other
 aihub_286,aihub_286_page,other
@@ -80,6 +81,7 @@ berst,berst_readme,readme
 biicnnime,arxiv_s_2402_13018,paper
 biicpodcast,arxiv_s_2402_13018,paper
 bmisec,bmisec_paper,paper
+bmisec,bmisec_paper_doi,paper
 bmisec,bmisec_src,other
 brytserc,brytserc_page,distribution
 brytserc,brytserc_page_2,distribution
@@ -87,6 +89,7 @@ brytserc,brytserc_readme,readme
 buemodb,buemodb_paper,paper
 burmese_new2001,burmese_new2001_mirror,distribution
 burmese_new2001,burmese_new2001_paper,paper
+burmese_new2001,burmese_new2001_paper_doi,paper
 cafe,cafe_page,distribution
 cafe,cafe_page_2,distribution
 cafe,cafe_paper,paper
@@ -104,6 +107,7 @@ cbesd,cbesd_page,distribution
 cbesd,cbesd_readme,readme
 cdse_czech,cdse_czech_mirror,distribution
 cdse_czech,cdse_czech_paper,paper
+cdse_czech,cdse_czech_paper_doi,paper
 cemo,cemo_paper_2,paper
 cemo,cemo_paper_3,paper
 cheavd,cheavd_paper,paper
@@ -288,6 +292,7 @@ groupaffect4,groupaffect4_page,distribution
 groupaffect4,groupaffect4_page_2,distribution
 groupaffect4,groupaffect4_paper,paper
 gujarati_tank2020,gujarati_tank2020_mirror,distribution
+gujarati_tank2020,gujarati_tank2020_paper_doi,paper
 harper_valley_bank,arxiv_s_2010_13929,paper
 harper_valley_bank,harper_valley_bank_page,distribution
 harper_valley_bank,harper_valley_bank_readme,readme
@@ -330,6 +335,7 @@ inesco,inesco_page_2,distribution
 inesco,inesco_readme,readme
 interface,interface_paper,paper
 italic,italic_page,distribution
+java_sed,java_sed_paper_doi,paper
 java_sed,java_sed_src,other
 javanese_ser_2black0,javanese_ser_2black0_page,distribution
 javanese_ser_2black0,javanese_ser_2black0_readme,readme
@@ -375,6 +381,7 @@ ksuemotions,ksuemotions_page,distribution
 kurdish_esd,kurdish_esd_mirror,distribution
 kurdish_esd,kurdish_esd_paper,paper
 kurdish_nematullah2024,kurdish_nematullah2024_mirror,distribution
+kurdish_nematullah2024,kurdish_nematullah2024_paper_doi,paper
 kurdish_nematullah2024,kurdish_nematullah2024_src,paper
 laions_got_talent,laions_got_talent_card,card
 laions_got_talent,laions_got_talent_card,distribution
@@ -499,6 +506,7 @@ pavoque,pavoque_page,distribution
 pavoque,pavoque_readme,readme
 pemo_punjabi,pemo_punjabi_mirror,distribution
 pemo_punjabi,pemo_punjabi_paper,paper
+pemo_punjabi,pemo_punjabi_paper_doi,paper
 persian_esd,persian_esd_paper,paper
 picka_nh,picka_nh_src,other
 picka_nh,picka_nh_src_2,paper
@@ -545,6 +553,7 @@ savee,savee_readme,readme
 sccesc,sccesc_mirror,distribution
 sccesc,sccesc_paper,paper
 secepdb,secepdb_mirror,distribution
+secepdb,secepdb_paper_doi,paper
 semaine,semaine_paper,paper
 semaine,semaine_src,other
 semour,semour_paper,paper

@@ -60,8 +60,10 @@ affectspeech/name/02,affectspeech,name,AffectSpeech,affectspeech_page,title of t
 affectspeech/speech_production/01,affectspeech,speech_production,unknown,affectspeech_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a statement of this field, not read line by line."
 affectspeech/vocal_content/01,affectspeech,vocal_content,speech,affectspeech_page,"README: 16kHz, 16-bit PCM wav emotional speech",2026-10-14,claude,current,
 afrikaans_se/access_method/01,afrikaans_se,access_method,request_form_or_email,afrikaans_se_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
-afrikaans_se/languages/01,afrikaans_se,languages,afr,afrikaans_se_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
-afrikaans_se/material_origin/01,afrikaans_se,material_origin,web_video,afrikaans_se_mirror,KuralHub entry: Recording Environment field,2026-10-14,claude,current,
+afrikaans_se/languages/01,afrikaans_se,languages,afr,afrikaans_se_mirror,KuralHub entry: Language field,2026-10-14,claude,superseded,Superseded by a primary row.
+afrikaans_se/languages/02,afrikaans_se,languages,afr,afrikaans_se_paper_doi,"Abstract: ""an Afrikaans-based speech corpora""",2026-11-02,claude,current,
+afrikaans_se/material_origin/01,afrikaans_se,material_origin,web_video,afrikaans_se_mirror,KuralHub entry: Recording Environment field,2026-10-14,claude,superseded,Superseded by a primary row.
+afrikaans_se/material_origin/02,afrikaans_se,material_origin,web_video,afrikaans_se_paper_doi,"Abstract: ""A local Afrikaans Youtube channel is used.""",2026-11-02,claude,current,
 afrikaans_se/n_files_reported/01,afrikaans_se,n_files_reported,800,afrikaans_se_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
 afrikaans_se/name/01,afrikaans_se,name,Afrikaans speech emotion corpus,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 aihub_263/access_method/01,aihub_263,access_method,request_form_or_email,aihub_263_page,only Korean nationals can apply for the data (내국인만 데이터 신청이 가능합니다),2026-10-14,claude,current,
@@ -586,7 +588,8 @@ bmisec/access_method/01,bmisec,access_method,unknown,,,2026-10-14,claude,provisi
 bmisec/access_observed/01,bmisec,access_observed,unavailable,,,2026-11-01,claude,provisional,Provisional: from the earlier status notes (the audio could not be obtained or is not distributed)
 bmisec/full_title/01,bmisec,full_title,Burmese Movies Interviews Speech Emotion Corpus,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 bmisec/languages/01,bmisec,languages,mya,bmisec_mirror,KuralHub entry: Language Burmese (Myanmar),2026-10-14,claude,current,
-bmisec/material_origin/01,bmisec,material_origin,film_tv,bmisec_mirror,"KuralHub entry: spontaneous, Myanmar movies and interviews",2026-10-14,claude,current,
+bmisec/material_origin/01,bmisec,material_origin,film_tv,bmisec_mirror,"KuralHub entry: spontaneous, Myanmar movies and interviews",2026-10-14,claude,superseded,Superseded by a primary row.
+bmisec/material_origin/02,bmisec,material_origin,film_tv,bmisec_paper_doi,"Abstract: ""Emotion data are collected from Myanmar movies and interviews.""",2026-11-02,claude,current,
 bmisec/n_files_reported/01,bmisec,n_files_reported,1332,bmisec_mirror,"KuralHub entry: 1,332 utterances",2026-10-14,claude,current,
 bmisec/name/01,bmisec,name,BMISEC,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by bmisec/name/02
 bmisec/name/02,bmisec,name,BMISEC,bmisec_paper,"text: ""…BMISEC:Corpus Of Burmese Emotional Speech…""",2026-11-02,claude,current,
@@ -625,6 +628,7 @@ buemodb/name/01,buemodb,name,BUEMODB,,,2026-11-01,claude,provisional,Provisional
 buemodb/speech_production/01,buemodb,speech_production,acted,buemodb_paper,"Abstract: ""11 amateur actors acting 11 emotionally undefined sentences with 4 emotions""",2026-11-02,claude,current,
 burmese_new2001/access_method/01,burmese_new2001,access_method,request_form_or_email,burmese_new2001_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
 burmese_new2001/languages/01,burmese_new2001,languages,mya,burmese_new2001_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
+burmese_new2001/n_speakers_reported/01,burmese_new2001,n_speakers_reported,2,burmese_new2001_paper_doi,"Abstract: ""The databases consist of 90 emotional utterances each from two speakers.""",2026-11-02,claude,current,
 burmese_new2001/name/01,burmese_new2001,name,Burmese emotional speech (New et al. 2001),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 cafe/access_method/01,cafe,access_method,direct_download,,,2026-10-11,claude,superseded,Provisional:; superseded by cafe/access_method/02
 cafe/access_method/02,cafe,access_method,direct_download,cafe_page,Zenodo API: access_right open,2026-11-01,claude,current,
@@ -741,6 +745,7 @@ cbesd/spoken_text_design/01,cbesd,spoken_text_design,emotion_specific_text,,,202
 cbesd/vocal_content/01,cbesd,vocal_content,speech,cbesd_page,simple sentences in Telugu and English,2026-10-14,claude,current,
 cdse_czech/access_method/01,cdse_czech,access_method,request_form_or_email,cdse_czech_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
 cdse_czech/languages/01,cdse_czech,languages,ces,cdse_czech_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
+cdse_czech/material_origin/01,cdse_czech,material_origin,broadcast,cdse_czech_paper_doi,"Abstract: ""extract sound records of broadcasting from three radio and one television channel""",2026-11-02,claude,current,
 cdse_czech/name/01,cdse_czech,name,Czech Database of Speech Emotions (CDSE),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 cemo/access_method/01,cemo,access_method,unavailable,cemo_paper,§2: agreements ensure the non-diffusion of the corpus and annotations,2026-10-13,claude,current,
 cemo/access_observed/01,cemo,access_observed,unavailable,cemo_paper,§2: agreements ensure the non-diffusion of the corpus and annotations,2026-10-13,claude,current,
@@ -1935,7 +1940,8 @@ groupaffect4/name/01,groupaffect4,name,GroupAffect-4,,,2026-11-01,claude,superse
 groupaffect4/name/02,groupaffect4,name,GroupAffect-4,groupaffect4_page,title of the source contains the name,2026-11-01,claude,current,
 groupaffect4/speech_production/01,groupaffect4,speech_production,unknown,groupaffect4_page_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,"The whole text was searched for a statement of this field, not read line by line."
 gujarati_tank2020/access_method/01,gujarati_tank2020,access_method,request_form_or_email,gujarati_tank2020_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
-gujarati_tank2020/languages/01,gujarati_tank2020,languages,guj,gujarati_tank2020_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
+gujarati_tank2020/languages/01,gujarati_tank2020,languages,guj,gujarati_tank2020_mirror,KuralHub entry: Language field,2026-10-14,claude,superseded,Superseded by a primary row.
+gujarati_tank2020/languages/02,gujarati_tank2020,languages,guj,gujarati_tank2020_paper_doi,"Abstract: ""emotional database which is developed in Gujarati language""",2026-11-02,claude,current,
 gujarati_tank2020/n_files_reported/01,gujarati_tank2020,n_files_reported,1296,gujarati_tank2020_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
 gujarati_tank2020/n_speakers_reported/01,gujarati_tank2020,n_speakers_reported,9,gujarati_tank2020_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
 gujarati_tank2020/name/01,gujarati_tank2020,name,Gujarati emotional speech corpus (Tank et al. 2020),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
@@ -2275,11 +2281,14 @@ italic/speech_production/01,italic,speech_production,read,italic_page,participan
 italic/vocal_content/01,italic,vocal_content,speech,italic_page,audio recordings in .wav format,2026-10-14,claude,current,
 java_sed/access_method/01,java_sed,access_method,unknown,,,2026-10-14,claude,provisional,Provisional:
 java_sed/access_observed/01,java_sed,access_observed,unavailable,,,2026-11-01,claude,provisional,Provisional: from the earlier status notes (the audio could not be obtained or is not distributed)
-java_sed/languages/01,java_sed,languages,jav,java_sed_mirror,KuralHub entry: Language Javanese,2026-10-14,claude,current,
+java_sed/languages/01,java_sed,languages,jav,java_sed_mirror,KuralHub entry: Language Javanese,2026-10-14,claude,superseded,Superseded by a primary row.
+java_sed/languages/02,java_sed,languages,jav,java_sed_paper_doi,"Abstract: ""creation of a Javanese emotional speech database""",2026-11-02,claude,current,
 java_sed/n_files_reported/01,java_sed,n_files_reported,1680,java_sed_mirror,KuralHub entry: samples 1680,2026-10-14,claude,current,
-java_sed/n_speakers_reported/01,java_sed,n_speakers_reported,20,java_sed_mirror,KuralHub entry: speakers 20,2026-10-14,claude,current,
+java_sed/n_speakers_reported/01,java_sed,n_speakers_reported,20,java_sed_mirror,KuralHub entry: speakers 20,2026-10-14,claude,superseded,superseded by java_sed/n_speakers_reported/02
+java_sed/n_speakers_reported/02,java_sed,n_speakers_reported,10,java_sed_paper_doi,"Abstract: ""The cast consists of ten people between the ages of 20 and 30""",2026-11-02,claude,current,
 java_sed/name/01,java_sed,name,Java-SED,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
-java_sed/speech_production/01,java_sed,speech_production,acted,java_sed_mirror,KuralHub entry: Recording Environment Acted,2026-10-14,claude,current,
+java_sed/speech_production/01,java_sed,speech_production,acted,java_sed_mirror,KuralHub entry: Recording Environment Acted,2026-10-14,claude,superseded,Superseded by a primary row.
+java_sed/speech_production/02,java_sed,speech_production,acted,java_sed_paper_doi,"Abstract: ""The actors of Kamasetra have simulated six types of emotions""",2026-11-02,claude,current,
 javanese_ser_2black0/access_method/01,javanese_ser_2black0,access_method,direct_download,,,2026-10-14,claude,provisional,Provisional:
 javanese_ser_2black0/access_observed/01,javanese_ser_2black0,access_observed,obtained,javanese_ser_2black0_page,"README: dataset-person-01.zip ... dataset-person-10.zip, per-speaker WAV files",2026-10-14,claude,current,
 javanese_ser_2black0/access_observed/02,javanese_ser_2black0,access_observed,obtained,javanese_ser_2black0_readme,commit 111528fbf2be; Access,2026-11-01,claude,current,
@@ -2572,6 +2581,7 @@ kurdish_esd/speech_production/01,kurdish_esd,speech_production,acted,kurdish_esd
 kurdish_nematullah2024/access_method/01,kurdish_nematullah2024,access_method,request_form_or_email,kurdish_nematullah2024_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
 kurdish_nematullah2024/hours_reported/01,kurdish_nematullah2024,hours_reported,0.27,kurdish_nematullah2024_mirror,KuralHub entry: Size field,2026-10-14,claude,current,Minutes converted to hours
 kurdish_nematullah2024/languages/01,kurdish_nematullah2024,languages,kur,kurdish_nematullah2024_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
+kurdish_nematullah2024/material_origin/01,kurdish_nematullah2024,material_origin,web_video,kurdish_nematullah2024_paper_doi,"Abstract: ""speech data, which was carefully gathered from openly available videos from the YouTube platform""",2026-11-02,claude,current,
 kurdish_nematullah2024/n_files_reported/01,kurdish_nematullah2024,n_files_reported,287,kurdish_nematullah2024_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
 kurdish_nematullah2024/name/01,kurdish_nematullah2024,name,Kurdish emotional speech (Nematullah et al. 2024),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 laions_got_talent/access_method/01,laions_got_talent,access_method,direct_download,laions_got_talent_card,HF API gated=false,2026-10-23,claude,current,
@@ -3422,10 +3432,14 @@ pavoque/name/02,pavoque,name,PAVOQUE,pavoque_page,title of the source contains t
 pavoque/speech_production/01,pavoque,speech_production,acted,,,2026-10-27,claude,provisional,Provisional: taken from the project review report; the paper was not re-read in this update
 pavoque/vocal_content/01,pavoque,vocal_content,speech,pavoque_page,single German male speaker reading in speaking styles,2026-10-11,claude,current,
 pemo_punjabi/access_method/01,pemo_punjabi,access_method,request_form_or_email,pemo_punjabi_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
-pemo_punjabi/hours_reported/01,pemo_punjabi,hours_reported,12.58,pemo_punjabi_mirror,KuralHub entry: Size field,2026-10-14,claude,current,Minutes converted to hours
-pemo_punjabi/languages/01,pemo_punjabi,languages,pan,pemo_punjabi_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
-pemo_punjabi/n_files_reported/01,pemo_punjabi,n_files_reported,22000,pemo_punjabi_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
-pemo_punjabi/n_speakers_reported/01,pemo_punjabi,n_speakers_reported,60,pemo_punjabi_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
+pemo_punjabi/hours_reported/01,pemo_punjabi,hours_reported,12.58,pemo_punjabi_mirror,KuralHub entry: Size field,2026-10-14,claude,superseded,Minutes converted to hours Superseded by a primary row.
+pemo_punjabi/hours_reported/02,pemo_punjabi,hours_reported,12.58,pemo_punjabi_paper_doi,"Abstract: ""12 hours and 35 min of speech""",2026-11-02,claude,current,
+pemo_punjabi/languages/01,pemo_punjabi,languages,pan,pemo_punjabi_mirror,KuralHub entry: Language field,2026-10-14,claude,superseded,Superseded by a primary row.
+pemo_punjabi/languages/02,pemo_punjabi,languages,pan,pemo_punjabi_paper_doi,"Abstract: ""Punjabi Emotional Speech Database (PEMO)""",2026-11-02,claude,current,
+pemo_punjabi/n_files_reported/01,pemo_punjabi,n_files_reported,22000,pemo_punjabi_mirror,KuralHub entry: Size field,2026-10-14,claude,superseded,Superseded by a primary row.
+pemo_punjabi/n_files_reported/02,pemo_punjabi,n_files_reported,22000,pemo_punjabi_paper_doi,"Abstract: ""The database contains 22,000 natural utterances.""",2026-11-02,claude,current,
+pemo_punjabi/n_speakers_reported/01,pemo_punjabi,n_speakers_reported,60,pemo_punjabi_mirror,KuralHub entry: Size field,2026-10-14,claude,superseded,Superseded by a primary row.
+pemo_punjabi/n_speakers_reported/02,pemo_punjabi,n_speakers_reported,60,pemo_punjabi_paper_doi,"Abstract: ""speech samples from about 60 speakers""",2026-11-02,claude,current,
 pemo_punjabi/name/01,pemo_punjabi,name,PEMO,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 pemo_punjabi/speech_production/01,pemo_punjabi,speech_production,acted,pemo_punjabi_mirror,KuralHub entry: Recording Environment field,2026-10-14,claude,current,
 persian_esd/full_title/01,persian_esd,full_title,Recognizing emotional speech in Persian: A validated database of Persian emotional speech (Persian ESD),,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by persian_esd/full_title/02
@@ -3743,8 +3757,10 @@ sccesc/name/01,sccesc,name,Slavic Call Center Emotional Speech Corpus (SCCESC),,
 sccesc/speech_production/01,sccesc,speech_production,spontaneous,sccesc_paper,"Abstract: ""emotional expressions from spontaneous Slavic speech ... real call center recordings""",2026-11-02,claude,current,
 secepdb/access_method/01,secepdb,access_method,request_form_or_email,secepdb_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
 secepdb/languages/01,secepdb,languages,cmn,secepdb_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
-secepdb/n_files_reported/01,secepdb,n_files_reported,810,secepdb_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
-secepdb/n_speakers_reported/01,secepdb,n_speakers_reported,16,secepdb_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
+secepdb/n_files_reported/01,secepdb,n_files_reported,810,secepdb_mirror,KuralHub entry: Size field,2026-10-14,claude,superseded,Superseded by a primary row.
+secepdb/n_files_reported/02,secepdb,n_files_reported,810,secepdb_paper_doi,"Abstract: ""The database consists of 810 speech-video excerpts from 118 conversations.""",2026-11-02,claude,current,
+secepdb/n_speakers_reported/01,secepdb,n_speakers_reported,16,secepdb_mirror,KuralHub entry: Size field,2026-10-14,claude,superseded,Superseded by a primary row.
+secepdb/n_speakers_reported/02,secepdb,n_speakers_reported,16,secepdb_paper_doi,"Abstract: ""collected ... from sixteen actors (8 female and 8 male)""",2026-11-02,claude,current,
 secepdb/name/01,secepdb,name,A Database for Emotional Interactions of the Elderly (SECEPDB),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 semaine/access_observed/01,semaine,access_observed,unavailable,,,2026-11-01,claude,provisional,Provisional: from the earlier status notes (the audio could not be obtained or is not distributed)
 semaine/name/01,semaine,name,SEMAINE,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by semaine/name/02
