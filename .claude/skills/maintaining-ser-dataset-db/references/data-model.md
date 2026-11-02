@@ -158,7 +158,7 @@ what happened when the data was requested or downloaded (`obtained`, or one of t
   sentences with another dataset are linked by the `shares_sentences_with` relation, only when a
   source states it.
 - `listening_test`: `reported` or `not_stated`; results stay in the source.
-- `official_split`: whether the release comes with an official partition.
+- `official_split`: `true` when a source says the release comes with a partition into train/dev/test or similar, `false` when a source says it does not; empty when no source says. The split itself stays in the source.
 
 ## Issues
 

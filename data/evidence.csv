@@ -546,6 +546,7 @@ berst/n_speakers_release/02,berst,n_speakers_release,98,berst_readme,commit 9de7
 berst/n_speakers_reported/01,berst,n_speakers_reported,98,berst_card,card: 98 professional actors,2026-10-13,claude,current,
 berst/name/01,berst,name,BERSt,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by berst/name/02
 berst/name/02,berst,name,BERSt,berst_paper,the name appears in the source: ...) E(motion) R(andom phrase) S(hou)t(s) (BERSt) dataset. The dataset contains almost 4...,2026-11-01,claude,current,
+berst/official_split/01,berst,official_split,true,berst_card,"""We provide a test, train and validation split""",2026-11-02,claude,current,
 berst/speech_production/01,berst,speech_production,acted,berst_card,"professional actors ... prompted to speak, raise their voice and shout",2026-10-24,claude,current,
 berst/spoken_text_design/01,berst,spoken_text_design,parallel;neutral_text,,,2026-10-24,claude,provisional,Provisional: Phrases are nonsense sentences covering all phonemes (arXiv 2505.00059). Rare spelling variants of the phrases occur under only a few emotions
 berst/vocal_content/01,berst,vocal_content,speech,berst_card,card: nonsense phrases covering all English phonemes,2026-10-13,claude,current,
@@ -1629,6 +1630,7 @@ emozionalmente/n_speakers_release/02,emozionalmente,n_speakers_release,431,emozi
 emozionalmente/n_speakers_reported/02,emozionalmente,n_speakers_reported,431,emozionalmente_page_2,acted out by 431 amateur actors,2026-10-31,claude,current,
 emozionalmente/name/01,emozionalmente,name,Emozionalmente,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by emozionalmente/name/02
 emozionalmente/name/02,emozionalmente,name,Emozionalmente,emozionalmente_paper,title of the source contains the name,2026-11-01,claude,current,
+emozionalmente/official_split/01,emozionalmente,official_split,true,emozionalmente_page_3,"""Data splits: A speaker-independent train-dev-test split, stratified by emotion, gender, and age.""",2026-11-02,claude,current,
 emozionalmente/speech_production/01,emozionalmente,speech_production,acted,emozionalmente_page_2,crowdsourced non-professional actors acted 18 sentences in 7 emotions,2026-10-26,claude,current,
 emozionalmente/spoken_text_design/01,emozionalmente,spoken_text_design,parallel,,,2026-10-26,claude,provisional,Provisional: Counted from samples.csv
 enterface05/access_method/01,enterface05,access_method,direct_download,,,2026-10-12,claude,provisional,"Provisional: The site's certificate chain is incomplete, so it cannot be fetched by script"
@@ -1796,6 +1798,7 @@ fluent_speech_commands/n_files_reported/01,fluent_speech_commands,n_files_report
 fluent_speech_commands/n_speakers_reported/01,fluent_speech_commands,n_speakers_reported,97,fluent_speech_commands_page,"contains 30,043 utterances from 97 speakers",2026-10-14,claude,current,
 fluent_speech_commands/name/01,fluent_speech_commands,name,Fluent Speech Commands,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by fluent_speech_commands/name/02
 fluent_speech_commands/name/02,fluent_speech_commands,name,Fluent Speech Commands,fluent_speech_commands_page,title of the source contains the name,2026-11-01,claude,current,
+fluent_speech_commands/official_split/01,fluent_speech_commands,official_split,true,fluent_speech_commands_page,"""The utterances are randomly divided into train, valid, and test splits""",2026-11-02,claude,current,
 fluent_speech_commands/speech_production/01,fluent_speech_commands,speech_production,unknown,fluent_speech_commands_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 fluent_speech_commands/vocal_content/01,fluent_speech_commands,vocal_content,speech,fluent_speech_commands_page,each .wav file contains a single utterance,2026-10-14,claude,current,
 galgame_speech_ser/access_method/01,galgame_speech_ser,access_method,direct_download,,,2026-10-14,claude,superseded,Provisional:; superseded by galgame_speech_ser/access_method/02
@@ -1982,6 +1985,7 @@ hume_reaction/hours_reported/01,hume_reaction,hours_reported,70,arxiv_s_2207_056
 hume_reaction/listening_test/01,hume_reaction,listening_test,not_stated,arxiv_s_2207_05691,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 hume_reaction/n_speakers_reported/01,hume_reaction,n_speakers_reported,2222,arxiv_s_2207_05691,"§2.2: 2,222 subjects",2026-10-14,claude,current,
 hume_reaction/name/01,hume_reaction,name,Hume-Reaction,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+hume_reaction/official_split/01,hume_reaction,official_split,true,arxiv_s_2207_05691,"""The dataset is split into speaker independent partitions.""",2026-11-02,claude,current,
 hume_reaction/speech_production/01,hume_reaction,speech_production,elicited,arxiv_s_2207_05691,§2.2: subjects recording their own reactions to emotional stimuli,2026-10-14,claude,current,
 hume_reaction/vocal_content/01,hume_reaction,vocal_content,speech,arxiv_s_2207_05691,audio-visual recordings,2026-10-14,claude,current,
 humevb/access_method/01,humevb,access_method,signed_agreement,humevb_page,"register by e-mail, then sign an End User License Agreement",2026-10-13,claude,current,
@@ -2575,6 +2579,7 @@ lssed/n_files_reported/02,lssed,n_files_reported,147025,lssed_paper,"It contains
 lssed/n_speakers_reported/02,lssed,n_speakers_reported,820,lssed_paper,"147,025 utterances from 820 subjects",2026-10-28,claude,current,
 lssed/name/01,lssed,name,LSSED,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by lssed/name/02
 lssed/name/02,lssed,name,LSSED,lssed_page,title of the source contains the name,2026-11-01,claude,current,
+lssed/official_split/01,lssed,official_split,true,lssed_paper,"""we divided our LSSED dataset into training and test sets""",2026-11-02,claude,current,
 lssed/speech_production/01,lssed,speech_production,elicited,lssed_paper,"section 2.1: 820 subjects were recorded in indoor lab sessions of 10-20 minutes, induced by random questions",2026-10-28,claude,current,
 m3ed/access_method/01,m3ed,access_method,free_account_required,m3ed_page,README: audio clips on Baidu Netdisk with an extraction code,2026-10-14,claude,current,Requires a Baidu account
 m3ed/access_observed/01,m3ed,access_observed,obtained,m3ed_page,README: M3ED audio clips (Baidu Netdisk link),2026-10-14,claude,current,
@@ -2678,6 +2683,7 @@ maserc/n_speakers_release/01,maserc,n_speakers_release,unknown,maserc_readme,com
 maserc/n_speakers_reported/01,maserc,n_speakers_reported,unknown,maserc_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 maserc/name/01,maserc,name,MaSERC,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by maserc/name/02
 maserc/name/02,maserc,name,MaSERC,maserc_page,title of the source contains the name,2026-11-01,claude,current,
+maserc/official_split/01,maserc,official_split,true,maserc_page,"""Predefined train/validation/test splits, speaker metadata, and scenario labels are included in the release""",2026-11-02,claude,current,
 maserc/speech_production/01,maserc,speech_production,acted,maserc_page,"description: speakers deliver a carrier sentence once per emotion and a six-sentence monologue with one emotion per sentence, in a partially controlled indoor environment",2026-10-26,claude,current,
 maserc/spoken_text_design/01,maserc,spoken_text_design,parallel;emotion_specific_text,maserc_page,scenario 1: one carrier sentence once per emotion; scenario 2: a six-sentence monologue in which each sentence embeds one of the six emotions in sequence,2026-10-26,claude,current,"The release does not mark the scenario, so the share of each design is unknown"
 maserc/vocal_content/01,maserc,vocal_content,speech,maserc_page,audio recordings in two speaking scenarios,2026-10-14,claude,current,
@@ -2811,6 +2817,7 @@ meld/n_speakers_release/01,meld,n_speakers_release,304,meld_readme,commit b6b321
 meld/n_speakers_reported/01,meld,n_speakers_reported,unknown,meld_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 meld/name/01,meld,name,MELD,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by meld/name/02
 meld/name/02,meld,name,MELD,meld_page,title of the source contains the name,2026-11-01,claude,current,
+meld/official_split/01,meld,official_split,true,meld_page,"""There are 3 folders (.tar.gz files)-train, dev and test""",2026-11-02,claude,current,
 meld/speech_production/01,meld,speech_production,acted,meld_paper_2,utterances extracted from the TV series Friends (scripted dialogue performed by actors),2026-10-26,claude,current,
 meld/spoken_text_design/01,meld,spoken_text_design,dialogue_script,meld_paper_2,scripted dialogue of a TV series; utterances come from multi-party conversations,2026-10-26,claude,current,
 memor/access_method/01,memor,access_method,signed_agreement,memor_page,"README: send back the License Agreement, then you will get the password",2026-10-14,claude,current,
@@ -3089,6 +3096,7 @@ msppodcast/n_speakers_release/02,msppodcast,n_speakers_release,3714,msppodcast_r
 msppodcast/n_speakers_reported/02,msppodcast,n_speakers_reported,3641,arxiv_s_2509_09791,"§III-D: In total, we have 3,641 unique speakers, where 2,043 are females and 1,598 are males",2026-10-23,claude,current,"The old value 3,929 (spreadsheet) has no traceable source. The release's Speaker_id.txt has 3,913 Speaker_ headings (2,258 male, 1,644 female, 11 unknown), which does not match the paper"
 msppodcast/name/01,msppodcast,name,MSP-Podcast,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by msppodcast/name/02
 msppodcast/name/02,msppodcast,name,MSP-Podcast,arxiv_s_2509_09791,title of the source contains the name,2026-11-01,claude,current,
+msppodcast/official_split/01,msppodcast,official_split,true,msppodcast_page,"""The proposed partition attempts to create speaker-independent datasets for Train, Development, Test1, Test2, and Test3 sets.""",2026-11-02,claude,current,
 msppodcast/speech_production/01,msppodcast,speech_production,spontaneous,arxiv_s_2509_09791,audio taken from podcast recordings (naturalistic speech); emotions are not induced,2026-10-26,claude,current,
 msppodcast/spoken_text_design/01,msppodcast,spoken_text_design,unscripted,arxiv_s_2509_09791,"speech taken from podcasts, no script",2026-10-26,claude,current,
 multidialog/access_method/01,multidialog,access_method,direct_download,multidialog_card,dataset is not gated; audio archives in the repository,2026-10-14,claude,current,
@@ -3170,6 +3178,7 @@ nemo/n_speakers_release/02,nemo,n_speakers_release,9,nemo_readme,commit 103f4a22
 nemo/n_speakers_reported/02,nemo,n_speakers_reported,9,,,2026-10-27,claude,provisional,Provisional: The recipe readme said 9 actors; corrected to match the paper
 nemo/name/01,nemo,name,nEMO,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by nemo/name/02
 nemo/name/02,nemo,name,nEMO,nemo_card,title of the source contains the name,2026-11-01,claude,current,
+nemo/official_split/01,nemo,official_split,false,nemo_card,"""The nEMO dataset is provided as a whole, without predefined training and test splits.""",2026-11-02,claude,current,
 nemo/speech_production/01,nemo,speech_production,acted,,,2026-10-27,claude,superseded,Provisional: taken from the project review report; the paper was not re-read in this update; superseded by nemo/speech_production/02
 nemo/speech_production/02,nemo,speech_production,acted,nemo_card,"The corpus contains over 3 hours of samples recorded with the participation of nine actors portraying six emotional states: anger, fear, happiness, sadness, surprise, and ...",2026-11-01,claude,current,
 nemo/spoken_text_design/01,nemo,spoken_text_design,parallel,,,2026-10-27,claude,provisional,Provisional:
@@ -3303,6 +3312,7 @@ passau_sfch/languages/01,passau_sfch,languages,deu,arxiv_s_2207_05691,§2.1: pre
 passau_sfch/listening_test/01,passau_sfch,listening_test,not_stated,arxiv_s_2207_05691,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 passau_sfch/n_speakers_reported/01,passau_sfch,n_speakers_reported,10,arxiv_s_2207_05691,§2.1: 10 German Bundesliga football coaches,2026-10-14,claude,current,
 passau_sfch/name/01,passau_sfch,name,Passau-SFCH,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+passau_sfch/official_split/01,passau_sfch,official_split,true,arxiv_s_2207_05691,"""The dataset is split into speaker independent partitions.""",2026-11-02,claude,current,
 passau_sfch/vocal_content/01,passau_sfch,vocal_content,speech,arxiv_s_2207_05691,audio-visual recordings,2026-10-14,claude,current,
 pavoque/access_method/01,pavoque,access_method,direct_download,,,2026-10-11,claude,provisional,Provisional:
 pavoque/access_observed/01,pavoque,access_observed,obtained,,,2026-10-11,claude,superseded,Provisional: carried over from raw_audio_available; superseded by pavoque/access_observed/02
@@ -3793,6 +3803,7 @@ slurp/n_files_reported/01,slurp,n_files_reported,unknown,slurp_paper,not stated 
 slurp/n_speakers_reported/01,slurp,n_speakers_reported,177,slurp_paper,Table: Speakers 97 69 177 34; SLURP column,2026-10-14,claude,current,
 slurp/name/01,slurp,name,SLURP,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by slurp/name/02
 slurp/name/02,slurp,name,SLURP,slurp_page,title of the source contains the name,2026-11-01,claude,current,
+slurp/official_split/01,slurp,official_split,true,slurp_paper,"""Table 6: Data distribution of train, dev and test sets.""",2026-11-02,claude,current,
 slurp/speech_production/01,slurp,speech_production,unknown,slurp_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 slurp/vocal_content/01,slurp,vocal_content,speech,slurp_paper,collection of ~72k audio recordings of single turn user interactions,2026-10-14,claude,current,
 snips_slu/access_method/01,snips_slu,access_method,request_form_or_email,snips_slu_page,"To access the data, please fill the following form: link",2026-10-14,claude,current,
@@ -3819,6 +3830,7 @@ spanish_meacorpus/n_files_reported/01,spanish_meacorpus,n_files_reported,5129,sp
 spanish_meacorpus/n_speakers_reported/01,spanish_meacorpus,n_speakers_reported,unknown,spanish_meacorpus_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 spanish_meacorpus/name/01,spanish_meacorpus,name,Spanish MEACorpus 2023,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by spanish_meacorpus/name/02
 spanish_meacorpus/name/02,spanish_meacorpus,name,Spanish MEACorpus 2023,spanish_meacorpus_page,the name appears in the source: ...# Spanish MEACorpus 2023 ## A multi-modal speech-text corpus for...,2026-11-01,claude,current,
+spanish_meacorpus/official_split/01,spanish_meacorpus,official_split,true,spanish_meacorpus_page,"""distributed into training and test splits following speaker-independent criteria""",2026-11-02,claude,current,
 spanish_meacorpus/speech_production/01,spanish_meacorpus,speech_production,spontaneous,spanish_meacorpus_page,"""realistic emotional distributions in spontaneous speech""",2026-11-01,claude,current,
 spanish_meacorpus/vocal_content/01,spanish_meacorpus,vocal_content,speech,spanish_meacorpus_page_2,segmented speech excerpts with manually revised transcriptions,2026-10-14,claude,current,
 speech_massive/access_method/01,speech_massive,access_method,direct_download,speech_massive_card,dataset API gated: False for Speech-MASSIVE; the -test repository is gated auto,2026-10-14,claude,current,
@@ -3864,6 +3876,7 @@ spokenwoz/n_files_reported/01,spokenwoz,n_files_reported,203000,spokenwoz_page,"
 spokenwoz/n_speakers_reported/01,spokenwoz,n_speakers_reported,250,spokenwoz_paper,"we organize 250 participants to generate 5,700 dialogues via phone calls",2026-11-01,claude,current,
 spokenwoz/name/01,spokenwoz,name,SpokenWOZ,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by spokenwoz/name/02
 spokenwoz/name/02,spokenwoz,name,SpokenWOZ,spokenwoz_page,title of the source contains the name,2026-11-01,claude,current,
+spokenwoz/official_split/01,spokenwoz,official_split,true,spokenwoz_page,"""The data is split into training, dev, and test sets.""",2026-11-02,claude,current,
 spokenwoz/speech_production/01,spokenwoz,speech_production,unknown,spokenwoz_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 spokenwoz/vocal_content/01,spokenwoz,vocal_content,speech,spokenwoz_page,249 hours audios from realistic human-to-human spoken conversations,2026-10-14,claude,current,
 srol/access_method/01,srol,access_method,direct_download,,,2026-10-14,claude,provisional,Provisional:
@@ -4169,6 +4182,7 @@ tumavic/listening_test/01,tumavic,listening_test,not_stated,tumavic_paper,no lis
 tumavic/n_files_reported/01,tumavic,n_files_reported,3880,tumavic_paper,"§2.2: 21 speakers and 3,880 sub-speaker-turns partitioned into Train, Develop, Test",2026-10-13,claude,current,Number of units used in the challenge
 tumavic/n_speakers_reported/01,tumavic,n_speakers_reported,21,tumavic_paper,§2.2: 21 subjects took part in the recordings,2026-10-13,claude,current,
 tumavic/name/01,tumavic,name,TUM AVIC,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+tumavic/official_split/01,tumavic,official_split,true,tumavic_paper,"Abstract: ""distinct definition of train, develop, and test partitions""",2026-11-02,claude,current,
 tumavic/speech_production/01,tumavic,speech_production,unknown,tumavic_paper,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 tumavic/vocal_content/01,tumavic,vocal_content,speech,tumavic_paper,§2.2: human conversational speech recordings,2026-10-13,claude,current,
 tures/access_method/01,tures,access_method,unknown,tures_paper,abstract has no statement on release,2026-10-14,claude,current,Text not read
@@ -4234,6 +4248,7 @@ ua_ser/n_speakers_release/02,ua_ser,n_speakers_release,400,ua_ser_readme,commit 
 ua_ser/n_speakers_reported/01,ua_ser,n_speakers_reported,400,ua_ser_card,card: Speakers 400,2026-10-14,claude,current,
 ua_ser/name/01,ua_ser,name,UA-SER,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by ua_ser/name/02
 ua_ser/name/02,ua_ser,name,UA-SER,ua_ser_card,title of the source contains the name,2026-11-01,claude,current,
+ua_ser/official_split/01,ua_ser,official_split,true,ua_ser_card,"""Train / Test Split: The split is speaker-disjoint""",2026-11-02,claude,current,
 ua_ser/speech_production/01,ua_ser,speech_production,spontaneous,ua_ser_card,short naturalistic utterances,2026-10-24,claude,current,Origin not explained
 ua_ser/spoken_text_design/01,ua_ser,spoken_text_design,unknown,ua_ser_card,dataset card: short naturalistic utterances; the origin of the audio is not explained,2026-10-25,claude,current,Checked: the sources do not say. Not measured (the maintainer judged the cost too high)
 ua_ser/vocal_content/01,ua_ser,vocal_content,speech,ua_ser_card,card: short naturalistic utterances with transcripts,2026-10-14,claude,current,
@@ -4268,6 +4283,7 @@ ulm_tsst/hours_reported/01,ulm_tsst,hours_reported,6,arxiv_s_2207_05691,§2.3: U
 ulm_tsst/listening_test/01,ulm_tsst,listening_test,not_stated,arxiv_s_2207_05691,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,current,
 ulm_tsst/n_speakers_reported/01,ulm_tsst,n_speakers_reported,69,arxiv_s_2207_05691,§2.3: TSST presentations of 69 participants (49 of them female),2026-10-14,claude,current,
 ulm_tsst/name/01,ulm_tsst,name,Ulm-TSST,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+ulm_tsst/official_split/01,ulm_tsst,official_split,true,arxiv_s_2207_05691,"""The dataset is split into speaker independent partitions.""",2026-11-02,claude,current,
 ulm_tsst/speech_production/01,ulm_tsst,speech_production,elicited,arxiv_s_2207_05691,§2.3: stress-inducing scenario following the Trier Social Stress Test,2026-10-14,claude,current,
 ulm_tsst/vocal_content/01,ulm_tsst,vocal_content,speech,arxiv_s_2207_05691,audio-visual recordings,2026-10-14,claude,current,
 uq_schizophrenia_videos/languages/01,uq_schizophrenia_videos,languages,eng,gh_superkogito_ser_datasets_secondary,README table row: Language English,2026-10-13,claude,current,
@@ -4594,6 +4610,7 @@ whiser/n_speakers_release/02,whiser,n_speakers_release,unknown,whiser_readme,com
 whiser/n_speakers_reported/01,whiser,n_speakers_reported,unknown,whiser_page,Labels/labels_consensus.csv: SpkrID is Unknown for all files,2026-10-13,claude,current,
 whiser/name/01,whiser,name,WHiSER,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by whiser/name/02
 whiser/name/02,whiser,name,WHiSER,whiser_page,title of the source contains the name,2026-11-01,claude,current,
+whiser/official_split/01,whiser,official_split,false,whiser_paper,"""we do not provide train, development, and test sets for this corpus""",2026-11-02,claude,current,
 whiser/speech_production/01,whiser,speech_production,spontaneous,whiser_paper,"Section 3: recordings of President Nixon's conversations in the Oval Office and other places, 1971-1973",2026-10-26,claude,current,
 whiser/spoken_text_design/01,whiser,spoken_text_design,unscripted,whiser_paper,natural conversations of the Nixon tapes,2026-10-26,claude,current,
 whiser/vocal_content/01,whiser,vocal_content,speech,whiser_paper,"§3.2: 5,427 speech files",2026-10-13,claude,current,
