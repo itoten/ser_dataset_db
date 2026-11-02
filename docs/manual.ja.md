@@ -292,7 +292,7 @@ maintainer は値をまとめて(20 行ほど、まずライセンス)`verify/<�
 
 ## 8. 導出列
 
-`datasets.csv` の `emotion_categories`・`emotion_attributes`・`main_label_set_type`・`main_labels`・`label_source`・`label_basis`・`label_verification` は、主なラベルの組から `python3 tools/derive.py` が計算する。異なると validate が失敗する。主な組は、`emotion_categories`、なければ `emotion_attributes`、なければほかのラベルの組。
+`datasets.csv` の `emotion_categories`・`emotion_attributes`・`main_label_set_type`・`main_labels`・`label_source`・`label_basis`・`label_verification` は、主なラベルの組から `python3 tools/derive.py` が計算する。異なると validate が失敗する。主な組は、`emotion_categories`、なければ `emotion_attributes`、なければほかのラベルの組。1 つの組の `label_basis` は 1 つ。配布物に別の基準のラベル(演者の意図と聴取者の知覚など)もあるときは、`<基準>_<項目>`(例 `perceived_emotion_categories`)という名前の別の行にし、付け方・基準・確認を別々に書く。
 
 ## 9. 入手
 

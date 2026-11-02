@@ -22,6 +22,16 @@ def label_sets(db):
     return out
 
 
+def extra_sets(db):
+    """{dataset_id: {name: annotations row}} for further label sets of an item: the name is '<basis>_<item>'
+    (for example perceived_emotion_categories), used when a release has separate labels by another basis."""
+    out = {}
+    for a in db["annotations"][1]:
+        if a["item"] in LABEL_SETS and a["name"] == f"{a['label_basis'].split(';')[0]}_{a['item']}" and a["label_basis"]:
+            out.setdefault(a["dataset_id"], {})[a["name"]] = a
+    return out
+
+
 def main_set(sets):
     for item in LABEL_SETS:
         if item in sets:

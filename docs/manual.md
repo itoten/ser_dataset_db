@@ -289,7 +289,7 @@ Which of them a column accepts is in the `nulls` column of `schema/columns.csv`.
 
 ## 8. Derived columns
 
-`emotion_categories`, `emotion_attributes`, `main_label_set_type`, `main_labels`, `label_source`, `label_basis` and `label_verification` of `datasets.csv` are computed from the main label set by `python3 tools/derive.py`, and the validator fails if they differ. The main set is `emotion_categories`, else `emotion_attributes`, else another label set.
+`emotion_categories`, `emotion_attributes`, `main_label_set_type`, `main_labels`, `label_source`, `label_basis` and `label_verification` of `datasets.csv` are computed from the main label set by `python3 tools/derive.py`, and the validator fails if they differ. The main set is `emotion_categories`, else `emotion_attributes`, else another label set. A set has one `label_basis`; if a release also has labels of another basis (for example listeners' perceived emotion next to the actors' intended emotion), they form a further row named `<basis>_<item>` (such as `perceived_emotion_categories`) with its own annotator, basis and verification.
 
 ## 9. Access
 

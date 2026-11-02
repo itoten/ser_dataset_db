@@ -119,6 +119,12 @@ The datasets columns `emotion_categories`, `emotion_attributes`, `main_label_set
 (`emotion_categories`, else `emotion_attributes`, else another set) by `tools/derive.py`; do not
 edit them. `R.save()` recomputes them.
 
+Each label set has one `label_basis`. When a release has separate labels for another basis (for example
+the actors' intended emotion and the listeners' perceived emotion), the main set keeps one basis and the
+other is a further row with `name` = `<basis>_<item>` (`perceived_emotion_categories`) and its own
+`annotator`, `label_basis`, `label_verification`; its evidence fields are `<name>.<attribute>`. Perceived
+ratings that are not category labels stay `listener_ratings` rows.
+
 Other annotations use the fixed `item` vocabulary (`schema/enums.csv` annotation_item) and keep
 the release's own name in `name`: `speaker_id`, `speaker_gender`, `transcript`, `sentence_id`,
 `session_id`, `take`, `intensity`, `listener_ratings`, `listening_test`, `segmentation`,
