@@ -98,7 +98,9 @@ maintainer what disagrees and where, so the recipe author can check and correct 
   most). Note when the document comes from a distributor or consortium rather than from the
   authors.
 - A source you read that does not say: value `unknown`, `primary` row citing what you read,
-  "not stated" in `locator`.
+  "not stated" in `locator`. Only after reading the whole document: an abstract, a landing page,
+  a bot-check or script shell, or a pattern search that found nothing is not a reading, and the cell
+  stays empty.
 - The maintainer checked the source too: the same `primary` row with `checked_by=user` and the
   date in `note`.
 - Not checked: leave it out. Never put a file you did not open into `source_ref`.
