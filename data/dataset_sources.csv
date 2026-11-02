@@ -515,6 +515,7 @@ polish_cichosz2005,polish_cichosz2005_mirror,distribution
 polish_cichosz2005,polish_cichosz2005_paper,paper
 polish_sapinski2019,polish_sapinski2019_mirror,distribution
 polish_sapinski2019,polish_sapinski2019_paper_doi,paper
+polish_sapinski2019,polish_sapinski2019_paper_kural,paper
 polishemo,isca_interspeech_2024_ma24b_interspeech_pdf,paper
 polishemo,polishemo_paper,paper
 polishemo,polishemo_readme,readme
@@ -554,8 +555,10 @@ savee,savee_page,other
 savee,savee_readme,readme
 sccesc,sccesc_mirror,distribution
 sccesc,sccesc_paper,paper
+sccesc,sccesc_paper_kural,paper
 secepdb,secepdb_mirror,distribution
 secepdb,secepdb_paper_doi,paper
+secepdb,secepdb_paper_kural,paper
 semaine,semaine_paper,paper
 semaine,semaine_src,other
 semour,semour_paper,paper
