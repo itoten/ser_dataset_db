@@ -3064,7 +3064,7 @@ mess/full_title/01,mess,full_title,Morgan Emotional Speech Set (MESS),,,2026-11-
 mess/hours_release/01,mess,hours_release,1.33,mess_readme,commit 191554fbb4b5; Size of the release,2026-11-01,claude,current,
 mess/hours_reported/01,mess,hours_reported,unknown,mess_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,"The whole text was searched for a statement of this field, not read line by line. Withdrawn at the maintainer's instruction on 2026-11-03: the text was searched, not read in full, so the cell goes back to unchecked."
 mess/languages/01,mess,languages,unknown,mess_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,"The whole text was searched for a statement of this field, not read line by line. Withdrawn at the maintainer's instruction on 2026-11-03: the text was searched, not read in full, so the cell goes back to unchecked."
-mess/license_spdx/02,mess,license_spdx,CC-BY-4.0,mess_page,Zenodo license field (report §2),2026-10-11,claude,current,
+mess/license_spdx/02,mess,license_spdx,CC-BY-4.0,mess_page,Zenodo license field (report §2),2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 mess/listening_test/01,mess,listening_test,reported,mess_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 mess/n_files_release/01,mess,n_files_release,1800,,,2026-10-11,claude,superseded,Provisional:; superseded by mess/n_files_release/02
 mess/n_files_release/02,mess,n_files_release,1800,mess_readme,commit 191554fbb4b5; Size of the release,2026-11-01,claude,current,
@@ -3185,7 +3185,7 @@ msppodcast/emotion_categories.label_verification/01,msppodcast,emotion_categorie
 msppodcast/hours_release/01,msppodcast,hours_release,409.51,msppodcast_readme,commit ab2176a86ba4; Size of the release,2026-11-01,claude,current,
 msppodcast/hours_reported/02,msppodcast,hours_reported,409,msppodcast_page,"Version 2.0 of the corpus has 264,705 speaking turns (409 hours)",2026-10-31,claude,current,Release 2.0
 msppodcast/languages/01,msppodcast,languages,unknown,msppodcast_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
-msppodcast/license_spdx/02,msppodcast,license_spdx,LicenseRef-custom-research-only,msppodcast_page,Release of the Corpus: Academic License (free of cost),2026-10-14,claude,current,A commercial license exists separately
+msppodcast/license_spdx/02,msppodcast,license_spdx,LicenseRef-custom-research-only,msppodcast_page,Release of the Corpus: Academic License (free of cost),2026-10-14,user,current,A commercial license exists separately; Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 msppodcast/listening_test/01,msppodcast,listening_test,not_stated,arxiv_s_2509_09791,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: only the abstract or landing page of the paper was read.
 msppodcast/material_origin/01,msppodcast,material_origin,podcast,msppodcast_page,speech segments from podcast recordings that are perceptually annotated by crowdsourcing workers and student evaluators,2026-10-31,claude,current,
 msppodcast/n_files_release/01,msppodcast,n_files_release,267905,,,2026-10-23,claude,superseded,"Provisional: labels_consensus.csv has 264,705 rows (Train 169,190, Development 34,399, Test1 46,294, Test2 14,822). Partitions.txt adds Test3 (3,200) for 267,905; superseded by msppodcast/n_files_release/02"
@@ -3210,7 +3210,7 @@ multidialog/full_title/01,multidialog,full_title,Let's Go Real Talk: Spoken Dial
 multidialog/hours_release/01,multidialog,hours_release,325.45,multidialog_readme,commit 2b6650d5d8ec; Size of the release,2026-11-01,claude,current,
 multidialog/hours_reported/01,multidialog,hours_reported,339.71,multidialog_card,card statistics: total length 339.71 hours,2026-10-14,claude,current,
 multidialog/languages/01,multidialog,languages,eng,multidialog_card,card metadata: language en,2026-10-14,claude,current,
-multidialog/license_spdx/01,multidialog,license_spdx,unknown,multidialog_card,"dataset card metadata: license cc, with no type or version",2026-10-14,claude,current,
+multidialog/license_spdx/01,multidialog,license_spdx,unknown,multidialog_card,"dataset card metadata: license cc, with no type or version",2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 multidialog/listening_test/01,multidialog,listening_test,not_stated,multidialog_card,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,"The whole text was searched for a listening or perception test, not read line by line. Withdrawn at the maintainer's instruction on 2026-11-03: the text was searched, not read in full, so the cell goes back to unchecked."
 multidialog/material_origin/01,multidialog,material_origin,recorded_for_dataset,multidialog_paper,"the actors were recorded for the dataset (appendix A.2: consent forms and compensation); the script text comes from Topical-Chat, whose license was not checked",2026-10-29,claude,current,
 multidialog/n_files_release/01,multidialog,n_files_release,187854,,,2026-10-29,claude,superseded,"Provisional: The card and metadata say 187,859; recorded only, not resolved (maintainer, 2026-10-29); superseded by multidialog/n_files_release/02"
@@ -3269,7 +3269,7 @@ nemo/full_title/02,nemo,full_title,nEMO: Dataset of Emotional Speech in Polish,n
 nemo/hours_release/01,nemo,hours_release,3.0,nemo_readme,commit 103f4a22739e; Size of the release,2026-11-01,claude,current,Readme cell: 3.0 (approx.)
 nemo/hours_reported/02,nemo,hours_reported,3,nemo_card,The corpus contains over 3 hours of samples,2026-10-31,claude,current,Stated as over 3 hours
 nemo/languages/02,nemo,languages,pol,nemo_card,nEMO is a simulated dataset of emotional speech in the Polish language,2026-10-31,claude,current,
-nemo/license_spdx/02,nemo,license_spdx,CC-BY-NC-SA-4.0,nemo_card,license field of the dataset card,2026-10-11,claude,current,
+nemo/license_spdx/02,nemo,license_spdx,CC-BY-NC-SA-4.0,nemo_card,license field of the dataset card,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 nemo/listening_test/01,nemo,listening_test,not_stated,nemo_card,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,"The whole text was searched for a listening or perception test, not read line by line. Withdrawn at the maintainer's instruction on 2026-11-03: the text was searched, not read in full, so the cell goes back to unchecked."
 nemo/n_files_release/01,nemo,n_files_release,4481,,,2026-10-11,claude,superseded,Provisional:; superseded by nemo/n_files_release/02
 nemo/n_files_release/02,nemo,n_files_release,4481,nemo_readme,commit 103f4a22739e; Size of the release,2026-11-01,claude,current,
@@ -3371,7 +3371,7 @@ oreau/full_title/02,oreau,full_title,French Emotional Speech Database - Oréau,o
 oreau/hours_release/01,oreau,hours_release,0.34,oreau_readme,commit 70b7358c5b90; Size of the release,2026-11-01,claude,current,
 oreau/hours_reported/01,oreau,hours_reported,unknown,oreau_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,"The whole text was searched for a statement of this field, not read line by line. Withdrawn at the maintainer's instruction on 2026-11-03: the text was searched, not read in full, so the cell goes back to unchecked."
 oreau/languages/02,oreau,languages,fra,oreau_page,utterances written for each of the 7 emotions in French language by 32 non-professional speakers,2026-10-31,claude,current,
-oreau/license_spdx/02,oreau,license_spdx,CC-BY-4.0,oreau_page,Zenodo license field,2026-10-11,claude,current,
+oreau/license_spdx/02,oreau,license_spdx,CC-BY-4.0,oreau_page,Zenodo license field,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 oreau/listening_test/01,oreau,listening_test,reported,oreau_page,A perception test was performed to evaluate the recognition of emotions and their naturalness,2026-11-01,claude,current,
 oreau/n_files_release/01,oreau,n_files_release,434,,,2026-10-11,claude,superseded,Provisional:; superseded by oreau/n_files_release/02
 oreau/n_files_release/02,oreau,n_files_release,434,oreau_readme,commit 70b7358c5b90; Size of the release,2026-11-01,claude,current,
@@ -3434,7 +3434,7 @@ pavoque/full_title/01,pavoque,full_title,PAVOQUE,,,2026-11-01,claude,superseded,
 pavoque/full_title/02,pavoque,full_title,PAVOQUE,pavoque_page,title of the source contains the full title,2026-11-01,claude,current,
 pavoque/hours_release/01,pavoque,hours_release,8.6,pavoque_readme,commit db86daa28eef; Size of the release,2026-11-01,claude,current,
 pavoque/languages/02,pavoque,languages,deu,pavoque_page,"A single speaker, multi-style corpus of German speech",2026-10-31,claude,current,
-pavoque/license_spdx/02,pavoque,license_spdx,CC-BY-NC-SA-4.0,pavoque_page,README states CC BY-NC-SA 4.0,2026-10-11,claude,current,
+pavoque/license_spdx/02,pavoque,license_spdx,CC-BY-NC-SA-4.0,pavoque_page,README states CC BY-NC-SA 4.0,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 pavoque/n_files_release/01,pavoque,n_files_release,5442,,,2026-10-11,claude,superseded,Provisional:; superseded by pavoque/n_files_release/02
 pavoque/n_files_release/02,pavoque,n_files_release,5442,pavoque_readme,commit db86daa28eef; Size of the release,2026-11-01,claude,current,
 pavoque/n_speakers_release/01,pavoque,n_speakers_release,1,pavoque_readme,commit db86daa28eef; Size of the release,2026-11-01,claude,current,
@@ -3491,7 +3491,7 @@ polishemo/full_title/01,polishemo,full_title,Emotions in polish speech recording
 polishemo/full_title/02,polishemo,full_title,Emotions in polish speech recordings,polishemo_paper,title of the source contains the full title,2026-11-01,claude,current,
 polishemo/hours_release/01,polishemo,hours_release,0.11,polishemo_readme,commit 74d0c70ba3f6; Size of the release,2026-11-01,claude,current,
 polishemo/languages/02,polishemo,languages,pol,polishemo_paper,emotions recorded in sound files that are expressions of Polish speech,2026-10-31,claude,current,
-polishemo/license_spdx/02,polishemo,license_spdx,CC-BY-4.0,polishemo_paper,dataset page JSON-LD license field (report §2),2026-10-11,claude,current,
+polishemo/license_spdx/02,polishemo,license_spdx,CC-BY-4.0,polishemo_paper,dataset page JSON-LD license field (report §2),2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 polishemo/n_files_release/01,polishemo,n_files_release,450,,,2026-10-11,claude,superseded,Provisional:; superseded by polishemo/n_files_release/02
 polishemo/n_files_release/02,polishemo,n_files_release,450,polishemo_readme,commit 74d0c70ba3f6; Size of the release,2026-11-01,claude,current,
 polishemo/n_files_reported/02,polishemo,n_files_reported,450,polishemo_paper,"There were 5 speakers, so there are 450 files",2026-10-31,claude,current,
@@ -3535,7 +3535,7 @@ quechua/emotion_categories.label_verification/01,quechua,emotion_categories.labe
 quechua/hours_release/01,quechua,hours_release,15.24,quechua_readme,commit b442deb5d15b; Size of the release,2026-11-01,claude,current,
 quechua/hours_reported/02,quechua,hours_reported,15.25,quechua_paper,It contains 15 h 15 min of audio divided into 12420 segments of audio,2026-10-31,claude,current,
 quechua/languages/02,quechua,languages,que,quechua_paper,a 15 hours speech corpus in Quechua Collao,2026-10-31,claude,current,Quechua Collao variant
-quechua/license_spdx/02,quechua,license_spdx,CC-BY-4.0,quechua_page,figshare API article 20292516 license: CC BY 4.0,2026-10-14,claude,current,
+quechua/license_spdx/02,quechua,license_spdx,CC-BY-4.0,quechua_page,figshare API article 20292516 license: CC BY 4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 quechua/listening_test/01,quechua,listening_test,reported,quechua_readme,commit b442deb5d15b; Listening test ratings in the release,2026-11-01,claude,current,
 quechua/n_files_release/01,quechua,n_files_release,12420,quechua_readme,commit b442deb5d15b; Size of the release,2026-11-01,claude,current,
 quechua/n_files_reported/02,quechua,n_files_reported,12420,quechua_paper,It contains 15 h 15 min of audio divided into 12420 segments of audio,2026-10-31,claude,current,
@@ -3576,7 +3576,7 @@ rasa/languages/01,rasa,languages,asm;ben;kan;mal;mar;nep;tam;pan;tel;san;urd;kas
 rasa/languages/02,rasa,languages,asm;ben;brx;doi;guj;hin;kan;kas;kok;mai;mal;mni;mar;nep;ory;pan;san;sat;snd;tam;tel;urd,rasa_card,"the 22 language folders of the repository: Assamese, Bengali, Bodo, Dogri, Gujarati, Hindi, Kannada, Kashmiri, Konkani, Maithili, Malayalam, Manipuri, Marathi, Nepali, Odia, Punjabi, Sanskrit, Santali, Sindhi, Tamil, Telugu, Urdu",2026-10-29,claude,current,"The card's language tags list only 13; the paper covers 3 (Assamese, Bengali, Tamil)"
 rasa/license_spdx/01,rasa,license_spdx,CC-BY-4.0,rasa_card,dataset card metadata: license cc-by-4.0,2026-10-14,claude,superseded,superseded by rasa/license_spdx/02
 rasa/license_spdx/02,rasa,license_spdx,CC-BY-4.0,,,2026-10-29,user,superseded,"Provisional: Confirmed by the maintainer (2026-10-29): the license offered by the authors is trusted. An aggregator (AIKosh) lists CC BY-ND 4.0, which is not followed; superseded by rasa/license_spdx/03"
-rasa/license_spdx/03,rasa,license_spdx,CC-BY-4.0,rasa_card,card metadata: license cc-by-4.0,2026-11-01,claude,current,
+rasa/license_spdx/03,rasa,license_spdx,CC-BY-4.0,rasa_card,card metadata: license cc-by-4.0,2026-11-01,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 rasa/listening_test/01,rasa,listening_test,not_stated,rasa_paper,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the source text has a passage about this field that needs reading.
 rasa/material_origin/01,rasa,material_origin,recorded_for_dataset,rasa_paper,"voice artists recorded for the dataset; consent, payment and ethics approval described for 3 of the 22 languages",2026-10-29,claude,current,
 rasa/n_files_release/01,rasa,n_files_release,640946,,,2026-10-29,claude,superseded,"Provisional: The card says 640,950 (Gujarati has 2 fewer files for each gender, reason unknown); 640,806 after dropping 140 files with a name collision; superseded by rasa/n_files_release/02"
@@ -3601,7 +3601,7 @@ ravdess/emotion_categories.label_verification/01,ravdess,emotion_categories.labe
 ravdess/emotion_categories.label_verification/02,ravdess,emotion_categories.label_verification,listener_validated,ravdess_paper,"7356 recordings each rated 10 times on emotional validity, intensity and genuineness by 247 untrained raters from North America; 72 further raters gave test-retest data",2026-10-28,claude,current,Re-read 2026-10-28. Neutral and calm answers were accepted as correct for each other; per-recording values are in the supplementary material
 ravdess/hours_release/01,ravdess,hours_release,1.48,ravdess_readme,commit 23a0c910e1b3; Size of the release,2026-11-01,claude,current,
 ravdess/languages/02,ravdess,languages,eng,ravdess_paper,facial and vocal expressions in North American English (paper title),2026-10-31,claude,current,
-ravdess/license_spdx/02,ravdess,license_spdx,CC-BY-NC-SA-4.0,ravdess_page,Zenodo record metadata: license cc-by-nc-sa-4.0,2026-10-14,claude,current,
+ravdess/license_spdx/02,ravdess,license_spdx,CC-BY-NC-SA-4.0,ravdess_page,Zenodo record metadata: license cc-by-nc-sa-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 ravdess/listening_test/01,ravdess,listening_test,reported,ravdess_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 ravdess/n_files_release/01,ravdess,n_files_release,1440,,,2026-10-12,claude,superseded,Provisional:; superseded by ravdess/n_files_release/02
 ravdess/n_files_release/02,ravdess,n_files_release,1440,ravdess_readme,commit 23a0c910e1b3; Size of the release,2026-11-01,claude,current,
@@ -3658,7 +3658,7 @@ resd/full_title/01,resd,full_title,Russian Emotional Speech Dialogs (RESD),,,202
 resd/hours_release/01,resd,hours_release,2.3,resd_readme,commit 5021ed9da062; Size of the release,2026-11-01,claude,current,Readme cell: 2.3 (approx.)
 resd/hours_reported/02,resd,hours_reported,2.34,resd_card,"Splits table: train 1.88 hours, test 0.46 hours",2026-10-31,claude,current,Sum of the two splits
 resd/languages/02,resd,languages,rus,resd_card,card metadata: language ru; Russian Emotional Speech Dialogs,2026-10-31,claude,current,
-resd/license_spdx/02,resd,license_spdx,MIT,resd_card,license field of the dataset card,2026-10-11,claude,current,
+resd/license_spdx/02,resd,license_spdx,MIT,resd_card,license field of the dataset card,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 resd/listening_test/01,resd,listening_test,not_stated,resd_card,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,"The whole text was searched for a listening or perception test, not read line by line. Withdrawn at the maintainer's instruction on 2026-11-03: the text was searched, not read in full, so the cell goes back to unchecked."
 resd/n_files_release/01,resd,n_files_release,1396,,,2026-10-11,claude,superseded,Provisional:; superseded by resd/n_files_release/02
 resd/n_files_release/02,resd,n_files_release,1396,resd_readme,commit 5021ed9da062; Size of the release,2026-11-01,claude,current,
@@ -3680,7 +3680,7 @@ rml_emotion/emotion_categories.label_verification/02,rml_emotion,emotion_categor
 rml_emotion/hours_release/01,rml_emotion,hours_release,0.99,rml_emotion_readme,commit 79a71f9c2bf1; Size of the release,2026-11-01,claude,current,
 rml_emotion/hours_reported/01,rml_emotion,hours_reported,unknown,rml_emotion_page_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,"The whole text was searched for a statement of this field, not read line by line. Withdrawn at the maintainer's instruction on 2026-11-03: the text was searched, not read in full, so the cell goes back to unchecked."
 rml_emotion/languages/01,rml_emotion,languages,mul,rml_emotion_page_2,description: eight subjects speaking six languages,2026-10-14,claude,current,
-rml_emotion/license_spdx/01,rml_emotion,license_spdx,unknown,rml_emotion_page_2,Kaggle dataset license field: Unknown,2026-10-14,claude,current,
+rml_emotion/license_spdx/01,rml_emotion,license_spdx,unknown,rml_emotion_page_2,Kaggle dataset license field: Unknown,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 rml_emotion/listening_test/01,rml_emotion,listening_test,reported,rml_emotion_page_2,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 rml_emotion/n_files_release/01,rml_emotion,n_files_release,720,,,2026-10-14,claude,superseded,Provisional:; superseded by rml_emotion/n_files_release/02
 rml_emotion/n_files_release/02,rml_emotion,n_files_release,720,rml_emotion_readme,commit 79a71f9c2bf1; Size of the release,2026-11-01,claude,current,
@@ -3725,7 +3725,7 @@ saraiki_ser/emotion_categories.label_verification/01,saraiki_ser,emotion_categor
 saraiki_ser/hours_release/01,saraiki_ser,hours_release,1.08,saraiki_ser_readme,commit 227edd522040; Size of the release,2026-11-01,claude,current,
 saraiki_ser/hours_reported/01,saraiki_ser,hours_reported,unknown,saraiki_ser_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,Withdrawn in the review of 2026-11-02: the page text read was a script or bot-check shell.
 saraiki_ser/languages/01,saraiki_ser,languages,skr,saraiki_ser_page,description: an original SER dataset in the Seraiki language,2026-10-14,claude,current,
-saraiki_ser/license_spdx/01,saraiki_ser,license_spdx,CC-BY-4.0,saraiki_ser_page,Kaggle dataset license field: Attribution 4.0 International (CC BY 4.0),2026-10-14,claude,current,
+saraiki_ser/license_spdx/01,saraiki_ser,license_spdx,CC-BY-4.0,saraiki_ser_page,Kaggle dataset license field: Attribution 4.0 International (CC BY 4.0),2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 saraiki_ser/n_files_release/01,saraiki_ser,n_files_release,1200,,,2026-10-14,claude,superseded,Provisional:; superseded by saraiki_ser/n_files_release/02
 saraiki_ser/n_files_release/02,saraiki_ser,n_files_release,1200,saraiki_ser_readme,commit 227edd522040; Size of the release,2026-11-01,claude,current,
 saraiki_ser/n_files_reported/01,saraiki_ser,n_files_reported,1200,saraiki_ser_page,Total Audio Files: 1200; 200 per emotion,2026-10-14,claude,current,
@@ -3751,7 +3751,7 @@ savee/emotion_categories.label_verification/02,savee,emotion_categories.label_ve
 savee/hours_release/01,savee,hours_release,0.51,savee_readme,commit e12537897bd1; Size of the release,2026-11-01,claude,current,
 savee/hours_reported/01,savee,hours_reported,unknown,savee_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,"The whole text was searched for a statement of this field, not read line by line. Withdrawn at the maintainer's instruction on 2026-11-03: the text was searched, not read in full, so the cell goes back to unchecked."
 savee/languages/02,savee,languages,eng,savee_page_2,recorded from four native English male speakers,2026-10-31,claude,current,
-savee/license_spdx/02,savee,license_spdx,LicenseRef-custom-research-only,savee_page,available free of charge for research purposes,2026-10-14,claude,current,
+savee/license_spdx/02,savee,license_spdx,LicenseRef-custom-research-only,savee_page,available free of charge for research purposes,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 savee/listening_test/01,savee,listening_test,reported,savee_page_3,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 savee/n_files_release/01,savee,n_files_release,480,,,2026-10-12,claude,superseded,Provisional:; superseded by savee/n_files_release/02
 savee/n_files_release/02,savee,n_files_release,480,savee_readme,commit e12537897bd1; Size of the release,2026-11-01,claude,current,
@@ -3806,7 +3806,7 @@ ses_ed/full_title/02,ses_ed,full_title,Student Emotion Sentences in English Data
 ses_ed/hours_release/01,ses_ed,hours_release,2.13,ses_ed_readme,commit 8419943f91a5; Size of the release,2026-11-01,claude,current,
 ses_ed/hours_reported/01,ses_ed,hours_reported,unknown,ses_ed_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,"The whole text was searched for a statement of this field, not read line by line. Withdrawn at the maintainer's instruction on 2026-11-03: the text was searched, not read in full, so the cell goes back to unchecked."
 ses_ed/languages/01,ses_ed,languages,eng,ses_ed_page,description: sentences in English,2026-10-14,claude,current,
-ses_ed/license_spdx/01,ses_ed,license_spdx,ODC-By-1.0,ses_ed_page,Kaggle dataset license field: ODC Attribution License (ODC-By),2026-10-14,claude,current,
+ses_ed/license_spdx/01,ses_ed,license_spdx,ODC-By-1.0,ses_ed_page,Kaggle dataset license field: ODC Attribution License (ODC-By),2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 ses_ed/n_files_release/01,ses_ed,n_files_release,1586,,"Kaggle file listing API: 1586 .wav files, 2026-10-14",2026-10-14,claude,superseded,superseded by ses_ed/n_files_release_measured/02; Former source type: measured
 ses_ed/n_files_release/02,ses_ed,n_files_release,1586,,,2026-10-26,claude,superseded,Provisional:; superseded by ses_ed/n_files_release/03
 ses_ed/n_files_release/03,ses_ed,n_files_release,1586,ses_ed_readme,commit 8419943f91a5; Size of the release,2026-11-01,claude,current,
@@ -3830,7 +3830,7 @@ ses_sd/full_title/02,ses_sd,full_title,Student Emotion Sentences in Spanish Data
 ses_sd/hours_release/01,ses_sd,hours_release,2.14,ses_sd_readme,commit f683a5e1cce8; Size of the release,2026-11-01,claude,current,
 ses_sd/hours_reported/01,ses_sd,hours_reported,unknown,ses_sd_page,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,"The whole text was searched for a statement of this field, not read line by line. Withdrawn at the maintainer's instruction on 2026-11-03: the text was searched, not read in full, so the cell goes back to unchecked."
 ses_sd/languages/01,ses_sd,languages,spa,ses_sd_page,description: sentences in Spanish,2026-10-14,claude,current,
-ses_sd/license_spdx/01,ses_sd,license_spdx,ODC-By-1.0,ses_sd_page,Kaggle dataset license field: ODC Attribution License (ODC-By),2026-10-14,claude,current,
+ses_sd/license_spdx/01,ses_sd,license_spdx,ODC-By-1.0,ses_sd_page,Kaggle dataset license field: ODC Attribution License (ODC-By),2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 ses_sd/n_files_release/01,ses_sd,n_files_release,1588,,"Kaggle file listing API: 1588 .wav files, 2026-10-14",2026-10-14,claude,superseded,superseded by ses_sd/n_files_release_measured/02; Former source type: measured
 ses_sd/n_files_release/02,ses_sd,n_files_release,1588,,,2026-10-26,claude,superseded,Provisional:; superseded by ses_sd/n_files_release/03
 ses_sd/n_files_release/03,ses_sd,n_files_release,1588,ses_sd_readme,commit f683a5e1cce8; Size of the release,2026-11-01,claude,current,
@@ -3866,7 +3866,7 @@ shemo/full_title/02,shemo,full_title,Sharif Emotional Speech Database (ShEMO),sh
 shemo/hours_release/01,shemo,hours_release,3.43,shemo_readme,commit 134b9cb7a5bd; Size of the release,2026-11-01,claude,current,
 shemo/hours_reported/02,shemo,hours_reported,3.42,shemo_page,Overview table: Duration 3 hours and 25 minutes,2026-10-31,claude,current,3 h 25 min rounded to two decimals
 shemo/languages/02,shemo,languages,fas,shemo_page,Language: Persian,2026-10-31,claude,current,
-shemo/license_spdx/02,shemo,license_spdx,LicenseRef-custom-research-only,shemo_page,README: available for academic purposes free of charge; no license file,2026-10-11,claude,current,
+shemo/license_spdx/02,shemo,license_spdx,LicenseRef-custom-research-only,shemo_page,README: available for academic purposes free of charge; no license file,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 shemo/n_files_release/01,shemo,n_files_release,3000,,,2026-10-11,claude,superseded,Provisional:; superseded by shemo/n_files_release/02
 shemo/n_files_release/02,shemo,n_files_release,3000,shemo_readme,commit 134b9cb7a5bd; Size of the release,2026-11-01,claude,current,
 shemo/n_files_reported/02,shemo,n_files_reported,3000,shemo_page,Overview table: #Utterances 3000,2026-10-31,claude,current,
@@ -3888,7 +3888,7 @@ sitb_osed/full_title/01,sitb_osed,full_title,Indic-Odia Speech Emotion Data,sitb
 sitb_osed/hours_release/01,sitb_osed,hours_release,19.11,sitb_osed_readme,commit 21118666a46f; Size of the release,2026-11-01,claude,current,
 sitb_osed/hours_reported/01,sitb_osed,hours_reported,unknown,sitb_osed_page_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,"The whole text was searched for a statement of this field, not read line by line. Withdrawn at the maintainer's instruction on 2026-11-03: the text was searched, not read in full, so the cell goes back to unchecked."
 sitb_osed/languages/01,sitb_osed,languages,ory,sitb_osed_page,five major dialects spoken by 20 professional Odia native speakers,2026-10-14,claude,current,
-sitb_osed/license_spdx/01,sitb_osed,license_spdx,CC-BY-4.0,sitb_osed_page,Zenodo record metadata: license cc-by-4.0,2026-10-14,claude,current,
+sitb_osed/license_spdx/01,sitb_osed,license_spdx,CC-BY-4.0,sitb_osed_page,Zenodo record metadata: license cc-by-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 sitb_osed/listening_test/01,sitb_osed,listening_test,not_stated,sitb_osed_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,"The whole text was searched for a listening or perception test, not read line by line. Withdrawn at the maintainer's instruction on 2026-11-03: the text was searched, not read in full, so the cell goes back to unchecked."
 sitb_osed/n_files_release/01,sitb_osed,n_files_release,12110,,,2026-10-26,claude,superseded,Provisional:; superseded by sitb_osed/n_files_release/02
 sitb_osed/n_files_release/02,sitb_osed,n_files_release,12110,sitb_osed_readme,commit 21118666a46f; Size of the release,2026-11-01,claude,current,
@@ -4061,7 +4061,7 @@ subesco/emotion_categories.label_verification/01,subesco,emotion_categories.labe
 subesco/hours_release/01,subesco,hours_release,7.83,subesco_readme,commit ba759cea1dda; Size of the release,2026-11-01,claude,current,
 subesco/hours_reported/02,subesco,hours_reported,7.68,subesco_page,Total duration of the corpus is 7 hours 40 min 40 sec,2026-10-31,claude,current,7 h 40 min 40 s rounded to two decimals; the spreadsheet value 7.8 differed
 subesco/languages/02,subesco,languages,ben,subesco_page,7000 sentence-level utterances of the Bangla language,2026-10-31,claude,current,The record's language metadata field says ekl; the description says Bangla
-subesco/license_spdx/02,subesco,license_spdx,CC-BY-4.0,subesco_page,Zenodo record metadata: license cc-by-4.0,2026-10-14,claude,current,
+subesco/license_spdx/02,subesco,license_spdx,CC-BY-4.0,subesco_page,Zenodo record metadata: license cc-by-4.0,2026-10-14,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 subesco/listening_test/01,subesco,listening_test,reported,subesco_page,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 subesco/n_files_release/01,subesco,n_files_release,7000,subesco_readme,commit ba759cea1dda; Size of the release,2026-11-01,claude,current,
 subesco/n_files_reported/02,subesco,n_files_reported,7000,subesco_page,audio-only emotional speech corpus of 7000 sentence-level utterances,2026-10-31,claude,current,
@@ -4119,7 +4119,7 @@ syntact/hours_reported/01,syntact,hours_reported,unknown,syntact_paper,not state
 syntact/languages/01,syntact,languages,deu,syntact_paper,"§4.2: all six German voices (de1, de2, de3, de4, de6, de7)",2026-10-13,claude,current,
 syntact/license_spdx/01,syntact,license_spdx,CC-BY-SA-4.0,gh_superkogito_ser_datasets_secondary,README table row SyntAct: License CC BY-SA 4.0,2026-10-13,claude,superseded,superseded by syntact/license_spdx/02
 syntact/license_spdx/02,syntact,license_spdx,CC-BY-4.0,syntact_page_2,Zenodo record metadata: license cc-by-4.0,2026-10-13,claude,superseded,superseded by syntact/license_spdx/03
-syntact/license_spdx/03,syntact,license_spdx,CC-BY-4.0,syntact_page_2,License field of the Zenodo API and the web page (they agree),2026-10-20,claude,current,Re-confirmed on 2026-10-20 with the same value as the existing primary row
+syntact/license_spdx/03,syntact,license_spdx,CC-BY-4.0,syntact_page_2,License field of the Zenodo API and the web page (they agree),2026-10-20,user,current,Re-confirmed on 2026-10-20 with the same value as the existing primary row; Verified by the maintainer in the pull request of branch verify/2026-11-03-04
 syntact/listening_test/01,syntact,listening_test,reported,syntact_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
 syntact/material_origin/01,syntact,material_origin,synthetic,syntact_paper,abstract: synthesized database based on rule-based manipulation for a diphone synthesizer,2026-10-13,claude,current,
 syntact/n_files_release/01,syntact,n_files_release,6001,,,2026-10-20,claude,superseded,Provisional: Measured from the SynTact release files (measure.out); superseded by syntact/n_files_release/02
