@@ -69,6 +69,7 @@ dusha,Dusha: Large Raw Emotional Dataset with Aggregation Mechanism,official_nam
 dusha,dusha,recipe_dir,,
 ears,EARS,official_name,ears_page,
 ears,Expressive Anechoic Recordings of Speech,official_name,ears_page,
+eesc,EEKK,other_source_name,ut_repository_browse_estonian_emotional_speech_corpus_f5e5fc,Short form of the Estonian name; it was a second entry of the same corpus in the DB
 eesc,Eesti emotsionaalse kõne korpus,official_name,ut_repository_browse_estonian_emotional_speech_corpus_f5e5fc,Official Estonian name. Short name EEKK
 eesc,Estonian Emotional Speech Corpus,official_name,doi_s_10_6084_m9_figshare_25249744,
 eesdb_chinese,Chinese Elderly emotion database (EESDB),other_source_name,eesdb_chinese_mirror,

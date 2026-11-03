@@ -1,6 +1,5 @@
 dataset_id,relation,other_dataset_id,source_id,note
 capspeech_agentdb,subset_of,capspeech,arxiv_s_2506_02863,One of CapSpeech's new recordings
-eekk,possibly_same_as,eesc,ut_repository_browse_estonian_emotional_speech_corpus_f5e5fc,"Judged identical. The META-SHARE record (Estonian name Eesti emotsionaalse kõne korpus = EEKK) points to figshare 25249744 (Estonian Emotional Speech Corpus), and sentence count, speakers and labels match"
 emonetvoice,possibly_same_as,laions_got_talent,emonetvoice_card_2,The card of EmoNet-Voice Big (foundation) points to the extended LAION's Got Talent as the main data. Whether they are the same is unverified
 emosec,contains,esd,emosec_page,Captions for ESD audio
 emosec,contains,iemocap,emosec_page,Captions for IEMOCAP audio
