@@ -23,7 +23,7 @@ This guide explains the database from scratch. Terms are explained before they a
 ### 1.3 What makes it useful
 
 - **Every value has a source**: it does not just say "the license is CC-BY-4.0" but records, row by row, which document, which place in it, when and by whom it was checked.
-- **No guessing**: what is unknown is recorded as unknown (7). URLs and titles are never made up.
+- **No guessing**: what is unknown is recorded as unknown (7), and only after the whole source was read. URLs, titles, names and datasets are never made up: every dataset is linked to a source anyone can open, and its name is one a source prints.
 - **Disagreements stay visible**: when two sources disagree, both are kept and the value says `conflicting`; the DB does not pick one.
 - **Machine-checked**: `validate.py` checks format, sources and evidence automatically; a commit is refused if it fails.
 - **Release facts from the implementation**: the number of files, speakers and hours of each release, files per label and problems found while building the ESPnet recipes (experiment set-ups) are copied from the recipe readmes.
@@ -129,7 +129,7 @@ Dataset information is almost always on the web and open to anyone (papers, dist
 | **Primary source** | Published by the dataset's authors or their organisation (paper, official distribution page, LICENSE file, release files) |
 | **Implementation source** | The `## The data` section of a recipe readme: written by the recipe author after downloading and opening the release; a practical reference, not a research result |
 | **Secondary source** | Written by others (summary sites, re-upload pages, surveys); used only when the primary source cannot be accessed |
-| **Provisional** | A value kept from earlier records that has no public source yet |
+| **Provisional** | A value kept from earlier records that has no public source yet; to be resolved (source found or value removed) |
 | **Hugging Face (HF) / Kaggle / Zenodo / figshare / Mendeley Data** | Services where datasets are published |
 | **DOI** | A permanent identifier for papers and data |
 | **ISO 639-3** | Three-letter language codes: `eng` English, `jpn` Japanese, `cmn` Mandarin, `mul` several languages without a breakdown, `zxx` no linguistic content |
@@ -199,7 +199,7 @@ One row per original (first published) dataset. Plain re-uploads are not rows; t
 | `speech_production`, `material_origin`, `vocal_content` | how the voice was produced, where the audio comes from, speech or non-verbal | `acted` / `recorded_for_dataset` / `speech` |
 | `spoken_text_design` | how the spoken text relates to the labels | `parallel` |
 | `emotion_categories`, `emotion_attributes`, `main_label_set_type`, `main_labels`, `label_source`, `label_basis`, `label_verification` | the main label set and how it was made (derived from `annotations.csv`) | `angry;happy;sad` / `human` / `intended` |
-| `official_split`, `listening_test` | an official partition exists; a listening test is reported | `false` / `reported` |
+| `official_split`, `listening_test` | an official partition exists (`true`/`false` only when a source says so); a listening test is reported | `false` / `reported` |
 
 ### 5.2 Documentation versus release
 
@@ -269,7 +269,7 @@ A recipe readme is cited only for what the documentation does not state and only
 
 ### 6.5 Provisional values
 
-A `provisional` row is a value kept from earlier records that has no public source: names, titles, and values that once came from internal notes or the DB's own measurements. It is shown as such and is replaced as soon as a source is checked.
+A `provisional` row is a value kept from earlier records that has no public source, for example a value that once came from an internal note. It is a transitional state, not a final one: each one is resolved by finding a source (the primary source, or the catalogue that listed the value, as a `secondary` source) or by removing the value. No new provisional rows are added; an internal note is never a source.
 
 ### 6.6 Human verification
 
@@ -280,7 +280,7 @@ The maintainer checks batches of values (about 20 rows, starting with licenses) 
 | Written as | Means |
 |---|---|
 | (empty) | not checked yet |
-| `unknown` | checked, but the sources do not say or it cannot be decided |
+| `unknown` | the whole source was read and does not say, or it cannot be decided (not after a search, an abstract or a page that could not be opened: those cells stay empty) |
 | `NA` | does not apply |
 | `none` | checked, and there is none |
 | `conflicting` | sources disagree |

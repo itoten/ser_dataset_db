@@ -75,9 +75,10 @@ the others (the README explains them):
    judge ("each sentence is spoken in only one emotion") is written; the judgement ("may be
    confounded") is not.
 6. **Empty, `unknown`, `none`, `NA` mean different things.** Empty = not checked; `unknown` = a
-   source was read and does not say (cite the source you read, with "not stated" in `locator`);
-   `none` = checked, there is none; `NA` = does not apply. A failed attempt at one moment
-   (timeout, 404) is `unknown` with the date in the note.
+   whole source was read and does not say (cite the source you read, with "not stated" in `locator`;
+   a search, an abstract or a script shell is not a reading);
+   `none` = checked, there is none; `NA` = does not apply. A page that could not be opened
+   (timeout, 404, a bot check) leaves the cell empty.
 7. **Listening tests: record that one exists, not its result.** `listening_test` is `reported`
    when a source describes a human listening test of the recordings (or the release distributes
    ratings, a `listener_ratings` annotation) and `not_stated` when the sources read say nothing.
@@ -89,7 +90,7 @@ the others (the README explains them):
    source ([references/verifying-claims.md](references/verifying-claims.md)).
 9. **Never delete history.** A new value gets a new evidence row; the old one becomes
    `superseded`. A `provisional` row (a value without a public source) is superseded when a real
-   source is added.
+   source is added. Never add a new provisional row: a value with no source stays out of the DB.
 10. **Keep "the whole release" and "what the recipe uses" apart.** The DB records the release as
     distributed, before any filtering; splits, filters and results are the recipe's business.
 11. **Everything is public.** Files and commit messages are published worldwide. No personal
@@ -97,6 +98,10 @@ the others (the README explains them):
     environment variable names; machine settings go in the git-ignored `.env`).
 12. **Stay within the request.** Large sweeps (re-checking every license, re-probing every URL)
     and design changes are proposed, not started.
+13. **No dataset without a source.** Every dataset is linked to a source anyone can open, and its
+    `name` is a name a source prints (a short name in a title or text, a catalogue's name field as a
+    `secondary` source, a repository name, else the title). A name found only in an internal note
+    is not a dataset; check for a duplicate under another name before adding one.
 
 ## Choose the workflow
 
@@ -194,7 +199,7 @@ confirming, or it is a practical reference. Search outside only for empty, `unkn
 For `provisional` rows, `secondary` sources and sources without a publisher: open the source,
 confirm that it is about this dataset (`identity_basis`), fill `title`, `publisher`, `source_type`
 and `checked_on`, and replace provisional values by rows that cite it (`R.ev` supersedes the
-provisional row). Save a web-archive copy in `archive_url` when you can. Work in batches of about
+provisional row). If no source can be found, remove the value instead of keeping it provisional. Save a web-archive copy in `archive_url` when you can. Work in batches of about
 ten datasets and commit each batch.
 
 ## Finish

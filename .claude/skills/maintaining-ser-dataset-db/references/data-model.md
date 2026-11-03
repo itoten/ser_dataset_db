@@ -95,7 +95,7 @@ The cell of a `datasets` column is decided by the live rows of its field (`curre
 becomes `superseded` (`R.ev` does it). A disagreeing source: `R.conflicting` (it turns the
 `current` rows into `conflicting`). A dispute settled by a source: `R.resolve`, then `R.ev`.
 A `provisional` row has no source (`source_id` and `locator` empty) and a note starting with
-`Provisional:`; it is a value from earlier records, kept until a source replaces it. Never delete
+`Provisional:`; it is a value from earlier records without a source. It is resolved by a source or removed; never add a new one. Never delete
 rows; history is part of the record.
 
 ## Label sets and annotations

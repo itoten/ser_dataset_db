@@ -3,7 +3,7 @@
 How to check a claim before it goes into the DB. Use sources you opened. A web-search summary is
 not a source: it cannot be cited and has mixed up different corpora before. The DB does not count
 or measure by itself (SKILL.md rule 1): a value either has a source that states it, or
-stays empty (or provisional).
+stays empty.
 
 ## Contents
 - Sort the claims first
@@ -65,7 +65,7 @@ sources").
 - Pages that render with JavaScript return an empty shell to curl. Open them in a browser tool and
   read the rendered text (`document.body.innerText`).
 - Do not weaken TLS checks (`curl -k`) to read a page. If a page cannot be read, the value stays
-  empty, or `unknown` with the date of the attempt in the note.
+  empty.
 
 ## Papers
 

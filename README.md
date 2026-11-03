@@ -60,12 +60,12 @@ A database of speech emotion recognition (SER) datasets, kept as CSV files under
 - **Size**: the documentation's values `n_files_reported`, `hours_reported`, `n_speakers_reported`, and the values of the whole release as distributed, before any filtering, `n_files_release`, `hours_release`, `n_speakers_release`. The two sit side by side and may differ; the DB does not choose. Files per label are in `label_counts.csv`.
 - **How it was made**: `speech_production` (acted / improvised / elicited / spontaneous / read / synthetic), `material_origin` (recorded for the dataset, film or TV, web video, ...), `vocal_content` (speech / nonverbal / both), `spoken_text_design` (how the spoken text relates to the labels: the same sentences in every emotion, scripted dialogue, no script, ...).
 - **Labels**: the label sets are rows of `annotations.csv` (`item` = `emotion_categories`, `emotion_attributes`, `speaking_style`, `sentiment`, `intent`) with their `labels`, `scale`, who made them (`annotator`), on what basis (`label_basis`: intended / perceived / self-reported / context-inferred / automatic) and whether people checked them (`label_verification`). Never infer one of these from another. The columns `emotion_categories`, `emotion_attributes`, `main_label_set_type`, `main_labels`, `label_source`, `label_basis` and `label_verification` of `datasets.csv` are derived from the main label set by `tools/derive.py`; do not edit them. A set has one `label_basis`; labels of another basis in the same release (for example listeners' perceived emotion next to the actors' intended emotion) are a further row named `<basis>_<item>`.
-- **Other facts**: `official_split`, `listening_test` (`reported` / `not_stated`: only that a listening test exists; its result and design are in the source), `source_rights_note` (what sources say about the rights in third-party material, quoted), `language_note`, `notes`.
+- **Other facts**: `official_split` (`true`/`false` only when a source says so), `listening_test` (`reported` / `not_stated`: only that a listening test exists; its result and design are in the source), `source_rights_note` (what sources say about the rights in third-party material, quoted), `language_note`, `notes`.
 - **Checking**: `documents_checked` and `implementation_checked` in `views/datasets_wide.csv` say whether a primary source or a recipe readme backs the dataset's values.
 
 ## Conventions
 
-- **Missing values**: empty = not checked. `unknown` = checked, but the sources do not say; `NA` = does not apply; `none` = checked, there is none; `conflicting` = sources disagree. Which are allowed per column is in the `nulls` column of `schema/columns.csv`.
+- **Missing values**: empty = not checked. `unknown` = the whole source was read and does not say (a search, an abstract or a page that could not be opened is not enough: such cells stay empty); `NA` = does not apply; `none` = checked, there is none; `conflicting` = sources disagree. Which are allowed per column is in the `nulls` column of `schema/columns.csv`.
 - **Multiple values** are `;`-separated (`languages`, `speech_production`, `labels`, ...).
 - **IDs** match `^[a-z][a-z0-9]*(_[a-z0-9]+)*$`. A committed ID never changes (if it must, keep the old ID in `aliases` as `former_label`). Implemented datasets use the egs3 recipe name.
 - **CSV format**: UTF-8, no BOM, LF, rows in key order. After editing by hand, run `python3 tools/db.py fmt`.
@@ -98,7 +98,7 @@ python3 tools/db.py get|set|add|fmt   # view or edit one row
 - `git config core.hooksPath tools/hooks` makes `tools/validate.py` run before every commit. Do not use `--no-verify`.
 - Recipes are read from the recipe branch of the ESPnet repository (`tools/egs3.py`) only to find the commit of a readme. Machine-specific settings such as the location of that repository go in `.env` (git-ignored; copy `.env.example`).
 - Every value change needs an evidence row. Make one commit per dataset or per checking session, and write in the message what was wrong and what the evidence was.
-- Human verification: the maintainer opens the source of a batch of values in a pull request (`verify/<date>-<n>`) and merges it; the rows in it then have `checked_by=user`. **This is the only way `checked_by=user` is set**: a check that is not recorded through a merged pull request is not recorded, and the validator rejects a `user` row without the pull request number in its note. All license values are checked this way, including `none_stated`, `unknown` and `conflicting` ones.
+- Human verification: the maintainer opens the source of a batch of values in a pull request (`verify/<date>-<n>`) and merges it; the rows in it then have `checked_by=user`. Every dataset is linked to at least one source with a URL, and its `name` is a name a source prints; the validator rejects a dataset nobody can trace to a document. **This is the only way `checked_by=user` is set**: a check that is not recorded through a merged pull request is not recorded, and the validator rejects a `user` row without the pull request number in its note. All license values are checked this way, including `none_stated`, `unknown` and `conflicting` ones.
 
 ## What counts as one row
 
@@ -110,7 +110,7 @@ python3 tools/db.py get|set|add|fmt   # view or edit one row
 ## Known limits
 
 - Most values have the evidence of an AI investigation; a person has opened the source of few of them (`checked_by=user`). Check the primary source before relying on a value.
-- `provisional` rows (names, titles, and values from before sources were required) are not yet backed by a source. `views/datasets_wide.csv` shows the stage of every dataset.
+- `provisional` rows are values from before sources were required that have no source yet. They are being resolved: a source is found (the primary one, or the catalogue that listed the value as a `secondary` source) or the value is removed. No new `provisional` rows are added. `views/datasets_wide.csv` shows the stage of every dataset.
 - The recipe readmes were written by the recipe author; their numbers are as reliable as that author's counting.
 
 ## License
