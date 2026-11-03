@@ -766,7 +766,8 @@ chen_bimodal/access_observed/01,chen_bimodal,access_observed,unavailable,,,2026-
 chen_bimodal/hours_reported/01,chen_bimodal,hours_reported,5.6,arxiv_s_2509_09791_secondary,Table I row Chen Bimodal: Size 5h36m,2026-10-13,claude,current,
 chen_bimodal/languages/01,chen_bimodal,languages,eng,arxiv_s_2509_09791_secondary,Table I row Chen Bimodal: Lang. English,2026-10-13,claude,current,
 chen_bimodal/n_speakers_reported/01,chen_bimodal,n_speakers_reported,100,arxiv_s_2509_09791_secondary,Table I row Chen Bimodal: # Spkr 100,2026-10-13,claude,current,
-chen_bimodal/name/01,chen_bimodal,name,Chen Bimodal,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
+chen_bimodal/name/01,chen_bimodal,name,Chen Bimodal,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by chen_bimodal/name/02
+chen_bimodal/name/02,chen_bimodal,name,Chen Bimodal,arxiv_s_2509_09791_secondary,"Table I of the MSP-Podcast paper (in the PDF, not the abstract page): row ""Chen Bimodal [34]"": 5h36m, 100 speakers, Acted, English",2026-11-03,claude,current,
 chen_bimodal/speech_production/01,chen_bimodal,speech_production,acted,arxiv_s_2509_09791_secondary,Table I row Chen Bimodal: Type Acted,2026-10-13,claude,current,
 chsims/access_method/01,chsims,access_method,direct_download,github_sims_github_io_chsims,Download: raw video files and features; CH-SIMS [Google Drive] [Baiduyun Drive],2026-10-14,claude,current,
 chsims/access_observed/01,chsims,access_observed,obtained,github_sims_github_io_chsims,We provide raw video files as well as pre-extracted feature files,2026-10-14,claude,current,Audio is contained in the videos
@@ -1072,7 +1073,6 @@ dusha/name/02,dusha,name,Dusha,dusha_page_2,title of the source contains the nam
 dusha/speech_production/01,dusha,speech_production,acted,dusha_paper,section 3.1 (crowd): non-professional speakers on the crowdsourcing platform read phrases (real voice-assistant utterances) with an assigned emotion; the podcast part (spontaneous) is not used by the recipe,2026-10-26,claude,current,
 dusha/spoken_text_design/01,dusha,spoken_text_design,emotion_specific_text,dusha_paper,section 3.1: phrases were chosen from voice-assistant dialogue and each phrase was assigned two candidate emotions according to pseudo-labels,2026-10-26,claude,current,
 dusha/vocal_content/01,dusha,vocal_content,speech,dusha_paper,Russian speech recordings,2026-10-11,claude,current,
-dzafic/name/01,dzafic,name,dzafic,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 eaed/full_title/01,eaed,full_title,Building an Egyptian-Arabic Speech Corpus for Emotion Analysis Using Deep Learning,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by eaed/full_title/02
 eaed/full_title/02,eaed,full_title,Building an Egyptian-Arabic Speech Corpus for Emotion Analysis Using Deep Learning,eaed_paper,title of the source contains the full title,2026-11-01,claude,current,
 eaed/languages/01,eaed,languages,arz,eaed_paper,title: an Egyptian-Arabic speech corpus for emotion analysis,2026-10-14,claude,current,
@@ -1125,7 +1125,6 @@ eesdb_chinese/languages/01,eesdb_chinese,languages,cmn,eesdb_chinese_mirror,Kura
 eesdb_chinese/n_files_reported/01,eesdb_chinese,n_files_reported,400,eesdb_chinese_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
 eesdb_chinese/n_speakers_reported/01,eesdb_chinese,n_speakers_reported,16,eesdb_chinese_mirror,KuralHub entry: Size field,2026-10-14,claude,current,
 eesdb_chinese/name/01,eesdb_chinese,name,Chinese Elderly emotion database (EESDB),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
-egyptian_hf_unresolved/name/01,egyptian_hf_unresolved,name,Egyptian Hugging Face dataset (unidentified),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 em2ldl/access_method/01,em2ldl,access_method,signed_agreement,em2ldl_page,README: return the signed User License Agreement; instructions after approval,2026-10-14,claude,current,
 em2ldl/access_method/02,em2ldl,access_method,signed_agreement,em2ldl_page,"README: ""download the User License Agreement (LA.pdf), complete the agreement and return it"" by e-mail",2026-11-02,claude,current,
 em2ldl/hours_reported/01,em2ldl,hours_reported,4.04,em2ldl_page,"README: 14,540.08 seconds (approximately 4.04 hours)",2026-10-14,claude,current,
@@ -2566,9 +2565,6 @@ kesdy18/languages/01,kesdy18,languages,kor,kesdy18_mirror,KuralHub entry: Langua
 kesdy18/n_files_reported/01,kesdy18,n_files_reported,2880,kesdy18_mirror,KuralHub entry: samples 2880,2026-10-14,claude,current,
 kesdy18/n_speakers_reported/01,kesdy18,n_speakers_reported,30,kesdy18_mirror,KuralHub entry: speakers 30,2026-10-14,claude,current,
 kesdy18/name/01,kesdy18,name,KESDy18,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
-kite/access_observed/01,kite,access_observed,unavailable,,,2026-10-12,claude,provisional,Provisional: carried over from raw_audio_available
-kite/languages/01,kite,languages,kor,,,2026-10-12,claude,provisional,Provisional:
-kite/name/01,kite,name,KITE,,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source
 kmser/access_method/01,kmser,access_method,request_form_or_email,kmser_mirror,KuralHub entry: Access Request,2026-10-14,claude,current,
 kmser/languages/01,kmser,languages,mal,kmser_mirror,KuralHub entry: Language field,2026-10-14,claude,current,
 kmser/name/01,kmser,name,Kannur Malayalam Speech Emotion Recognition (KMSER),,,2026-11-01,claude,provisional,Provisional: carried over from earlier records; not yet checked against the source

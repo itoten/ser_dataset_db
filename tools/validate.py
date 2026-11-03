@@ -202,6 +202,20 @@ def set_targets(db):
     return out
 
 
+def check_traceability(db):
+    """Every dataset has a source with a URL, and every source an evidence row cites is linked to its dataset."""
+    srcs = {r["source_id"]: r for r in db["sources"][1]}
+    linked = {}
+    for r in db["dataset_sources"][1]:
+        linked.setdefault(r["dataset_id"], set()).add(r["source_id"])
+    for d in db["datasets"][1]:
+        if not any(srcs.get(s, {}).get("url") for s in linked.get(d["dataset_id"], ())):
+            err(f"datasets {d['dataset_id']}: no linked source with a URL; a dataset nobody can trace to a document does not belong in the DB")
+    for e in db["evidence"][1]:
+        if e["source_id"] and e["status"] in ("current", "conflicting") and e["source_id"] not in linked.get(e["dataset_id"], ()):
+            err(f"evidence {e['evidence_id']}: source {e['source_id']} is not linked to the dataset in dataset_sources.csv")
+
+
 def check_human_checks(db):
     """A person's check is recorded only through a merged verification pull request."""
     for r in db["evidence"][1]:
@@ -408,6 +422,7 @@ def main(argv):
     check_sources(db)
     check_derived(db)
     check_human_checks(db)
+    check_traceability(db)
     check_note_tags(db)
     check_paths(cols, tables, db)
     check_views(db)

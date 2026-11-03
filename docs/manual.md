@@ -12,7 +12,7 @@ This guide explains the database from scratch. Terms are explained before they a
 
 | Item | Value |
 |---|---|
-| Datasets registered | 322 |
+| Datasets registered | 319 |
 | Datasets with a primary source behind their values (`documents_checked`) | 276 |
 | Datasets with a recipe readme behind their release counts (`implementation_checked`) | 102 |
 | Evidence rows (sources of values) | 3,680 |
@@ -337,7 +337,7 @@ Changes are made with the maintenance skill (`.claude/skills/maintaining-ser-dat
 
 | Item | Value |
 |---|---|
-| Datasets | 322 |
+| Datasets | 319 |
 | Evidence rows: current | 2,543 |
 | Evidence rows: conflicting | 13 |
 | Evidence rows: provisional | 754 |
