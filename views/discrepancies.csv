@@ -16,8 +16,8 @@ dusha,n_files_reported vs n_files_release,reported_vs_release,303963,see evidenc
 eesc,n_files_reported vs n_files_release,reported_vs_release,1234,see evidence,1164,implementation,n_files_release,
 emilia_emotion,license_spdx,conflicting,conflicting,see evidence,CC-BY-4.0,primary,https://huggingface.co/datasets/laion/Emolia,Not stated in the earlier 5-way split repositories; conflicting because it disagrees with the paper and the original Emilia terms
 emilia_emotion,license_spdx,conflicting,conflicting,see evidence,CC-BY-NC-4.0,primary,https://arxiv.org/abs/2609.32016,"Emilia part CC-BY-NC-4.0, Emilia-YODAS part CC-BY-4.0; derivatives inherit the source clips' license (Limitations). The original amphion/Emilia-Dataset terms likewise use Emilia under CC-BY-NC and Emilia-YODAS under CC-BY"
-emodb,license_spdx,conflicting,conflicting,see evidence,CC-BY-4.0,primary,https://zenodo.org/records/17651657,Zenodo record of EmoDB 2.0; disagrees with the audEERING documentation (CC0-1.0)
-emodb,license_spdx,conflicting,conflicting,see evidence,CC0-1.0,primary,https://audeering.github.io/datasets/datasets/emodb.html,
+emodb,license_spdx,conflicting,conflicting,see evidence,CC-BY-4.0,primary,https://zenodo.org/records/17651657,Zenodo record of EmoDB 2.0; disagrees with the audEERING documentation (CC0-1.0); Verified by the maintainer in the pull request #67 (branch verify/2026-11-03b-02)
+emodb,license_spdx,conflicting,conflicting,see evidence,CC0-1.0,primary,https://audeering.github.io/datasets/datasets/emodb.html,Verified by the maintainer in the pull request #67 (branch verify/2026-11-03b-02)
 emospeech_keywords,n_speakers_reported vs n_speakers_release,reported_vs_release,250,see evidence,103,implementation,n_speakers_release,
 emotional_ema,n_files_reported vs n_files_release,reported_vs_release,680,see evidence,956,implementation,n_files_release,
 emotiontts_open_db,n_files_reported vs n_files_release,reported_vs_release,6000,see evidence,300,implementation,n_files_release,
@@ -34,15 +34,15 @@ meld,n_files_reported vs n_files_release,reported_vs_release,13000,see evidence,
 mlend_numerals,n_speakers_reported vs n_speakers_release,reported_vs_release,154,see evidence,151,implementation,n_speakers_release,
 msppodcast,n_speakers_reported vs n_speakers_release,reported_vs_release,3641,see evidence,3714,implementation,n_speakers_release,
 multidialog,n_files_reported vs n_files_release,reported_vs_release,187859,see evidence,187854,implementation,n_files_release,
-nonverbaltts,license_spdx,conflicting,conflicting,see evidence,Apache-2.0,primary,https://huggingface.co/datasets/deepvk/NonverbalTTS,
-nonverbaltts,license_spdx,conflicting,conflicting,see evidence,CC-BY-NC-SA-4.0,primary,https://huggingface.co/datasets/deepvk/NonverbalTTS,The card's text limits the license to the annotations and defers the audio to the original sources
+nonverbaltts,license_spdx,conflicting,conflicting,see evidence,Apache-2.0,primary,https://huggingface.co/datasets/deepvk/NonverbalTTS,Verified by the maintainer in the pull request #69 (branch verify/2026-11-03b-04)
+nonverbaltts,license_spdx,conflicting,conflicting,see evidence,CC-BY-NC-SA-4.0,primary,https://huggingface.co/datasets/deepvk/NonverbalTTS,The card's text limits the license to the annotations and defers the audio to the original sources; Verified by the maintainer in the pull request #69 (branch verify/2026-11-03b-04)
 rasa,n_files_reported vs n_files_release,reported_vs_release,640950,see evidence,640946,implementation,n_files_release,
 ravdess,n_files_reported vs n_files_release,reported_vs_release,7356,see evidence,1440,implementation,n_files_release,
 rml_emotion,n_files_reported vs n_files_release,reported_vs_release,500,see evidence,720,implementation,n_files_release,
 syntact,n_files_reported vs n_files_release,reported_vs_release,6000,see evidence,6001,implementation,n_files_release,
 talromur3,n_files_reported vs n_files_release,reported_vs_release,21528,see evidence,21516,implementation,n_files_release,
 thorsten,n_files_reported vs n_files_release,reported_vs_release,2400,see evidence,2399,implementation,n_files_release,
-turevdb,license_spdx,conflicting,conflicting,see evidence,CC-BY-NC-ND-4.0,primary,https://github.com/Xeonen/TurEV-DB,
-turevdb,license_spdx,conflicting,conflicting,see evidence,GPL-3.0-only,primary,https://github.com/Xeonen/TurEV-DB,
+turevdb,license_spdx,conflicting,conflicting,see evidence,CC-BY-NC-ND-4.0,primary,https://github.com/Xeonen/TurEV-DB,Verified by the maintainer in the pull request #70 (branch verify/2026-11-03b-05)
+turevdb,license_spdx,conflicting,conflicting,see evidence,GPL-3.0-only,primary,https://github.com/Xeonen/TurEV-DB,Verified by the maintainer in the pull request #70 (branch verify/2026-11-03b-05)
 urdu,n_speakers_reported vs n_speakers_release,reported_vs_release,38,see evidence,29,implementation,n_speakers_release,
 ysed,n_speakers_reported vs n_speakers_release,reported_vs_release,71,see evidence,67,implementation,n_speakers_release,
