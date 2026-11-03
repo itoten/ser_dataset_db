@@ -393,6 +393,7 @@ interface,interface_paper,paper
 italic,italic_page,distribution
 java_sed,java_sed_mirror,mirror
 java_sed,java_sed_paper_doi,paper
+java_sed,java_sed_paper_kural,paper
 java_sed,java_sed_src,other
 javanese_ser_2black0,javanese_ser_2black0_page,distribution
 javanese_ser_2black0,javanese_ser_2black0_readme,readme
@@ -419,6 +420,7 @@ kannada_kes,kannada_kes_mirror,distribution
 kannada_kes,kannada_kes_paper,paper
 kasdimerbah_arabic,kasdimerbah_arabic_page,distribution
 kazakh_russian_emotion,kazakh_russian_emotion_mirror,mirror
+kazakh_russian_emotion,kazakh_russian_emotion_paper_kural,paper
 kazakh_russian_emotion,kazakh_russian_emotion_src,paper
 kazemotts,kazemotts_card,card
 kazemotts,kazemotts_card_2,distribution
@@ -445,6 +447,7 @@ kesdy18,kesdy18_mirror,mirror
 kesdy18,kesdy18_paper,paper
 kesdy18,kesdy18_src,other
 kmser,kmser_mirror,distribution
+kmser,kmser_paper_kural,paper
 ksuemotions,ksuemotions_page,distribution
 kurdish_esd,kurdish_esd_mirror,distribution
 kurdish_esd,kurdish_esd_paper,paper
