@@ -12,7 +12,7 @@ Last updated: 2026-11-03
 
 ## Open
 
-None.
+- Remove the last `provisional` rows (values without any public source): find a primary source, else the secondary listing that named the value, else empty the cell. See [archive/2026-11-02.md](archive/2026-11-02.md).
 
 ## Postponed
 
