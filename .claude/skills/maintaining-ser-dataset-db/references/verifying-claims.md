@@ -101,6 +101,7 @@ maintainer what disagrees and where, so the recipe author can check and correct 
   "not stated" in `locator`. Only from the whole document: an abstract, a landing page or a bot-check or script shell is not
   the source, and the cell stays empty. When the whole text was searched for the statement rather
   than read, say so in `note`.
-- The maintainer checked the source too: the same `primary` row with `checked_by=user` and the
-  date in `note`.
+- The maintainer checked the source too: only through a merged verification pull request (see
+  SKILL.md, Human verification). Never write `checked_by=user` yourself, even when told the
+  maintainer looked at the page.
 - Not checked: leave it out. Never put a file you did not open into `source_ref`.

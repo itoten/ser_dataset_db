@@ -273,7 +273,7 @@ A `provisional` row is a value kept from earlier records that has no public sour
 
 ### 6.6 Human verification
 
-The maintainer checks batches of values (about 20 rows, starting with licenses) in a pull request named `verify/<date>-<n>`: open the link, compare the quoted words, merge. The rows of a merged pull request have `checked_by=user`.
+The maintainer checks batches of values (about 20 rows, starting with licenses) in a pull request named `verify/<date>-<n>`: open the link, compare the quoted words, merge. The rows of a merged pull request have `checked_by=user`; this is the only way that value is set (the validator rejects a `user` row whose note has no pull request number). The batches include the licenses that are `none_stated`, `unknown` or `conflicting`: a person checks those too.
 
 ## 7. Writing missing values
 

@@ -202,6 +202,13 @@ def set_targets(db):
     return out
 
 
+def check_human_checks(db):
+    """A person's check is recorded only through a merged verification pull request."""
+    for r in db["evidence"][1]:
+        if r["checked_by"] == "user" and not re.search(r"pull request (#\d+|of branch)", r["note"]):
+            err(f"evidence {r['evidence_id']}: checked_by=user needs a note 'Verified by the maintainer ... in pull request #<number>'")
+
+
 def check_evidence(cols, db):
     ev_cols = {c["column"] for c in cols["datasets"] if c["evidence"] != "no"}
     targets = [(d["dataset_id"], f, d[f]) for d in db["datasets"][1] for f in sorted(ev_cols)] + set_targets(db)
@@ -400,6 +407,7 @@ def main(argv):
     check_evidence(cols, db)
     check_sources(db)
     check_derived(db)
+    check_human_checks(db)
     check_note_tags(db)
     check_paths(cols, tables, db)
     check_views(db)

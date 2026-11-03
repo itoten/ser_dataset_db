@@ -216,7 +216,7 @@ manual (both languages, same commit) too.
 ## Human verification
 
 When the maintainer should confirm values, put them in a pull request named `verify/<date>-<n>`
-(about 20 rows, `license_spdx` first): change `checked_by` to `user` and add the PR number to the
+(about 20 rows, `license_spdx` first, including licenses that are `none_stated`, `unknown` or `conflicting`): change `checked_by` to `user` and add the PR number to the
 `note`, push the branch, and open the PR with a table of dataset, value, the link and the quoted
 words. You never merge; the maintainer merges, and the merge is the confirmation.
 

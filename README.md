@@ -98,7 +98,7 @@ python3 tools/db.py get|set|add|fmt   # view or edit one row
 - `git config core.hooksPath tools/hooks` makes `tools/validate.py` run before every commit. Do not use `--no-verify`.
 - Recipes are read from the recipe branch of the ESPnet repository (`tools/egs3.py`) only to find the commit of a readme. Machine-specific settings such as the location of that repository go in `.env` (git-ignored; copy `.env.example`).
 - Every value change needs an evidence row. Make one commit per dataset or per checking session, and write in the message what was wrong and what the evidence was.
-- Human verification: the maintainer opens the source of a batch of values in a pull request (`verify/<date>-<n>`) and merges it; the rows in it then have `checked_by=user`.
+- Human verification: the maintainer opens the source of a batch of values in a pull request (`verify/<date>-<n>`) and merges it; the rows in it then have `checked_by=user`. **This is the only way `checked_by=user` is set**: a check that is not recorded through a merged pull request is not recorded, and the validator rejects a `user` row without the pull request number in its note. All license values are checked this way, including `none_stated`, `unknown` and `conflicting` ones.
 
 ## What counts as one row
 
