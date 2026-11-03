@@ -4637,7 +4637,7 @@ visec/languages/01,visec,languages,vie,visec_mirror,"card: Vietnamese dataset; a
 visec/languages/02,visec,languages,vie,visec_paper,"Abstract: ""ViSEC, the first openly available resource for Vietnamese SER""",2026-11-02,claude,current,
 visec/license_spdx/01,visec,license_spdx,CC-BY-4.0,visec_mirror,duplicate's card metadata: license cc-by-4.0,2026-10-14,claude,superseded,Stated by the copy. The original repository cannot be viewed; superseded by visec/license_spdx/02
 visec/license_spdx/02,visec,license_spdx,unknown,,,2026-10-26,claude,superseded,"Provisional: The card of the re-publication Dennis290/ViSEC says cc-by-4.0 (Hugging Face API, 2026-10-26); that is the re-publisher's statement, not the authors'; superseded by visec/license_spdx/03 Reset on 2026-11-03: a person's check is recorded only through a merged verification pull request."
-visec/license_spdx/03,visec,license_spdx,CC-BY-4.0,visec_mirror,card metadata: license cc-by-4.0,2026-11-01,user,current,"Stated by a re-publication; the original repository hustep-lab/ViSEC answers HTTP 401, so the authors' terms cannot be read; Verified by the maintainer in the pull request of branch verify/2026-11-03b-06"
+visec/license_spdx/03,visec,license_spdx,CC-BY-4.0,visec_mirror,card metadata: license cc-by-4.0,2026-11-01,user,current,"Stated by a re-publication; the original repository hustep-lab/ViSEC answers HTTP 401, so the authors' terms cannot be read; Verified by the maintainer in the pull request #71 (branch verify/2026-11-03b-06)"
 visec/n_files_release/01,visec,n_files_release,5280,,,2026-10-14,claude,superseded,Provisional:; superseded by visec/n_files_release/02
 visec/n_files_release/02,visec,n_files_release,5280,visec_readme,commit 1dd1cb516d1b; Size of the release,2026-11-01,claude,current,
 visec/n_files_reported/01,visec,n_files_reported,5280,visec_mirror,duplicate's card dataset_info: train num_examples 5280,2026-10-14,claude,superseded,Superseded by a primary row with the same value.
@@ -4665,7 +4665,7 @@ vivae/full_title/02,vivae,full_title,The Variably Intense Vocalizations of Affec
 vivae/hours_release/01,vivae,hours_release,0.27,vivae_readme,commit 6134b1534f2f; Size of the release,2026-11-01,claude,current,
 vivae/hours_reported/01,vivae,hours_reported,unknown,vivae_page_2,not stated in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,"The whole text was searched for a statement of this field, not read line by line. Withdrawn at the maintainer's instruction on 2026-11-03: the text was searched, not read in full, so the cell goes back to unchecked."
 vivae/languages/02,vivae,languages,zxx,vivae_page,non-verbal vocalizations without linguistic content,2026-10-11,claude,current,
-vivae/license_spdx/02,vivae,license_spdx,CC-BY-NC-4.0,vivae_page,Zenodo metadata license field (report §2),2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03b-06
+vivae/license_spdx/02,vivae,license_spdx,CC-BY-NC-4.0,vivae_page,Zenodo metadata license field (report §2),2026-10-11,user,current,Verified by the maintainer in the pull request #71 (branch verify/2026-11-03b-06)
 vivae/listening_test/01,vivae,listening_test,reported,vivae_readme,commit 6134b1534f2f; Listening test ratings in the release,2026-11-01,claude,current,
 vivae/material_origin/01,vivae,material_origin,recorded_for_dataset,,,2026-10-28,claude,provisional,Provisional: carried over from source_rights
 vivae/n_files_release/01,vivae,n_files_release,1085,,,2026-10-11,claude,superseded,Provisional:; superseded by vivae/n_files_release/02
@@ -4712,7 +4712,7 @@ voicestats/full_title/01,voicestats,full_title,Voice Actor Statistics Corpus (�
 voicestats/hours_release/01,voicestats,hours_release,2.28,voicestats_readme,commit f1fdb1988c54; Size of the release,2026-11-01,claude,current,
 voicestats/hours_reported/01,voicestats,hours_reported,2,voicestats_page,"""the total duration of the dataset is 2 hours""",2026-11-02,claude,current,
 voicestats/languages/02,voicestats,languages,jpn,voicestats_page,phoneme-balanced sentences built from the Japanese Wikipedia text; read aloud by voice actresses,2026-10-31,claude,current,The page is written in Japanese; the sentences come from the Japanese Wikipedia
-voicestats/license_spdx/01,voicestats,license_spdx,LicenseRef-custom-research-only,voicestats_page,site: free for personal research and analysis; redistribution prohibited,2026-10-11,user,current,Only the text of the phoneme-balanced sentences is CC-BY-SA (report §2); Verified by the maintainer in the pull request of branch verify/2026-11-03b-06
+voicestats/license_spdx/01,voicestats,license_spdx,LicenseRef-custom-research-only,voicestats_page,site: free for personal research and analysis; redistribution prohibited,2026-10-11,user,current,Only the text of the phoneme-balanced sentences is CC-BY-SA (report §2); Verified by the maintainer in the pull request #71 (branch verify/2026-11-03b-06)
 voicestats/listening_test/01,voicestats,listening_test,not_stated,voicestats_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,"The whole text was searched for a listening or perception test, not read line by line. Withdrawn at the maintainer's instruction on 2026-11-03: the text was searched, not read in full, so the cell goes back to unchecked."
 voicestats/material_origin/01,voicestats,material_origin,recorded_for_dataset,,,2026-10-28,claude,provisional,Provisional: carried over from source_rights
 voicestats/n_files_release/01,voicestats,n_files_release,900,,,2026-10-11,claude,superseded,Provisional:; superseded by voicestats/n_files_release/02
@@ -4765,7 +4765,7 @@ whiser/full_title/02,whiser,full_title,WHiSER: White House Tapes Speech Emotion 
 whiser/hours_release/01,whiser,hours_release,6.35,whiser_readme,commit 2366a8d0b31e; Size of the release,2026-11-01,claude,current,
 whiser/hours_reported/01,whiser,hours_reported,6.35,whiser_paper,§3.2: total duration of 6 hours 21 minutes,2026-10-13,claude,current,
 whiser/languages/01,whiser,languages,eng,arxiv_s_2509_09791_secondary,Table I row WHiSER: Lang. English,2026-10-13,claude,current,The primary source does not state the language (Nixon tapes)
-whiser/license_spdx/01,whiser,license_spdx,none_stated,whiser_page,repository has no license file; README and paper state no terms,2026-10-13,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03b-06
+whiser/license_spdx/01,whiser,license_spdx,none_stated,whiser_page,repository has no license file; README and paper state no terms,2026-10-13,user,current,Verified by the maintainer in the pull request #71 (branch verify/2026-11-03b-06)
 whiser/listening_test/01,whiser,listening_test,reported,whiser_readme,commit 2366a8d0b31e; Listening test ratings in the release,2026-11-01,claude,current,
 whiser/n_files_release/01,whiser,n_files_release,5427,,,2026-10-13,claude,superseded,Provisional:; superseded by whiser/n_files_release/02
 whiser/n_files_release/02,whiser,n_files_release,5427,whiser_readme,commit 2366a8d0b31e; Size of the release,2026-11-01,claude,current,
@@ -4811,7 +4811,7 @@ ysed/full_title/02,ysed,full_title,YSED: Yemeni speech emotion dataset,ysed_pape
 ysed/hours_release/01,ysed,hours_release,1.01,ysed_readme,commit 1a5f8dd6a19e; Size of the release,2026-11-01,claude,current,
 ysed/hours_reported/01,ysed,hours_reported,0.99,ysed_paper,"""a total of 1432 recordings were validated, with an overall duration of 59 min and 10 s""",2026-11-02,claude,current,59 min 10 s written as hours (rounded to two decimals)
 ysed/languages/01,ysed,languages,ara,ysed_page,dataset description names the language,2026-10-11,claude,current,
-ysed/license_spdx/01,ysed,license_spdx,CC-BY-4.0,ysed_page,Zenodo record license,2026-10-11,user,current,Verified by the maintainer in the pull request of branch verify/2026-11-03b-06
+ysed/license_spdx/01,ysed,license_spdx,CC-BY-4.0,ysed_page,Zenodo record license,2026-10-11,user,current,Verified by the maintainer in the pull request #71 (branch verify/2026-11-03b-06)
 ysed/listening_test/01,ysed,listening_test,reported,ysed_readme,commit 1a5f8dd6a19e; Listening test ratings in the release,2026-11-01,claude,current,
 ysed/material_origin/01,ysed,material_origin,recorded_for_dataset,,,2026-10-28,claude,provisional,Provisional: carried over from source_rights
 ysed/n_files_release/01,ysed,n_files_release,1432,,,2026-10-11,claude,superseded,Provisional:; superseded by ysed/n_files_release/02
