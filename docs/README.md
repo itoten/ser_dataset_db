@@ -28,7 +28,9 @@
 
 ### 議論
 
-(未完了の議論は無い)
+| 番号 | 題 | 状態 |
+|---|---|---|
+| [0002](discussions/0002-separate-implementation-and-use.md) | `espnet_status` の分離: 実装の状況と、研究で使うかどうか | 議論中 |
 
 ### 計画
 
