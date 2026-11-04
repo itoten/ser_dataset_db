@@ -1,6 +1,6 @@
 # 0002 `espnet_status` の分離: 実装の状況と、研究で使うかどうか
 
-状態: 議論中(実装の状況は 2026-11-04 に決定。研究への利用状況は、条件による分類の案を検討中)
+状態: 決定(2026-11-04。実装の状況は 3 値に、研究への利用はデータセットの選別の道具に。経過は 8 節)
 関連: [plans/0001](../plans/0001-remaining-data-work.md)、[discussions/0001](0001-verification-pr-tool.md)
 最終更新: 2026-11-04
 
@@ -337,3 +337,52 @@ local/
 4. **`mixed` の例**: 実装済みでは 1 件だけ(人が確認した、とある)。
 5. **判定できない 10 件**は、DB で `speech_production`(発声のしかた)と、ラベルの付け手を調べれば決まる。DB の作業の優先にするか。
 6. **以前の `dataset_use.csv` と `license_class.csv`・`license_class.py` を消してよいか。** 保留の理由とメモは `on_hold.csv` に移した。未調査の 152 件のメモ(入手方法を調べた跡など)は `dataset_use.csv` にしか無いので、候補を決めるときの材料に残すかどうか。
+
+## 8. 結果: 最終的な形(2026-11-04、maintainer)
+
+6 節と 7 節は議論の途中の記録で、条件の名前(C0〜C4)や配置は最終ではない。最終的な形は次のとおり。
+
+### 8.1 実装の状況(4 節の決定どおり)
+
+`implemented` / `on_hold` / `not_investigated` の 3 値。DB の `implementation_checked`(レシピの readme が出典として登録されている)から、スクリプトで決める。研究に使うかどうかは含めない。
+
+### 8.2 研究への利用: データセットの選別の道具
+
+条件(C0〜C4)の名前と、ライセンスの区分への依存はやめた。代わりに、実験ごとの設定(config)で選ぶフィルタを順に掛ける道具 `local/dataset_filtering/`(git 管理外)を作った。
+
+| 項目 | 内容 |
+|---|---|
+| 使い方 | `python3 local/dataset_filtering/run.py config/<実験名>.yaml` |
+| 設定 | `config/<実験名>.yaml`: 説明、使うフィルタとその順、引数、除外リスト(理由つき) |
+| フィルタ | `DatasetFilter` のメソッド 1 つが 1 つのフィルタ。ESPnet3 のステージと同じく、設定にメソッド名を書く |
+| 出力 | `output/<実験名>/`: `summary.md`(段ごとの数、除外リストの詳細、外れたデータセット名)、`result.csv`(全件の結果)、`filter.log`(全判定の理由) |
+| 追加 | メソッドを 1 つ足し、設定に書く |
+
+### 8.3 決めたこと
+
+- **`implementation_checked` も選別の最初のフィルタに含める**(分かりやすさ優先)。
+- **明示的に外れるものだけを外す。** DB が言っていない(空欄・`unknown`・`conflicting`)ものは通し、`kept_unverified` と記録する。**例外はライセンス**: 区分が不明のもの(`none_stated`、`unknown`、引用の依頼だけ、未確認)は外す。
+- ライセンスの区分(`local/license/`)には、選別は依存しない。区分を学習・評価の役割に使う話は [議論 0003](0003-license-classes.md)。
+- **BARI-EmoSpeech は除外リストから外した。** 外した理由: 試聴 1 回の主観的な判断は根拠として弱く、資料にもパラ言語情報がないという記述はない。同じ疑いのあるデータセットが他にもあるので、いったん残す。除外リストには CASIA(非公式ミラー)だけが残った。
+- 除外リストの理由は、設定に書いて `summary.md` に出す。
+
+### 8.4 実験 `multidataset_ser_01` の結果(DB コミット 1a45d67 の時点)
+
+| 段 | 外れる | 残り | 判別不明のまま通す |
+|---|---|---|---|
+| (DB の全データセット) | | 318 | |
+| keep_implemented | 216 | 102 | 0 |
+| exclusion_list | 1 | 101 | 0 |
+| keep_emotion_categories | 2 | 99 | 0 |
+| remove_synthetic | 3 | 96 | 4 |
+| remove_automatic_labels | 0 | 96 | 8 |
+| remove_unclear_license | 9 | 87 | 0 |
+
+残るのは 87 件(確認済み 78、判別不明のまま通す 9)。判別不明の 9 件は BRYTSERC、EmoV-DB、eNTERFACE'05、IndianEnglish、KazEmoTTS、MaLeO、MDER-MA、Telugu Emotion(Kaggle)、ViSEC。判別不明を DB で埋めると、確認済みに変わるか外れる。
+
+### 8.5 7.7 の問いのその後
+
+1. NC-SA の扱い、2. `restricted` と `research_only`、3. `other` と引用の依頼 → 議論 0003 で決定または検討(`other` の 5 件は文言を読んでから)。
+4. `mixed` の付け手 → 選別では「完全に自動」だけを外すので通る(実装済みでは NonverbalTTS の 1 件)。
+5. 判別不明の件 → 上の 9 件。DB の作業の優先にするかは [計画 0003](../plans/0003-license-roles-and-cleanup.md)。
+6. 古い `dataset_use.csv` と `license_class.*` の削除 → 計画 0003。

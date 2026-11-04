@@ -30,7 +30,6 @@
 
 | 番号 | 題 | 状態 |
 |---|---|---|
-| [0002](discussions/0002-separate-implementation-and-use.md) | `espnet_status` の分離: 実装の状況と、研究で使うかどうか | 議論中 |
 | [0003](discussions/0003-license-classes.md) | ライセンスの区分: 何のために分けるのか | 議論中 |
 
 ### 計画
@@ -39,6 +38,7 @@
 |---|---|---|
 | [0001](plans/0001-remaining-data-work.md) | データの残りの作業 | 計画 |
 | [0002](plans/0002-verification-pr-tool.md) | 人の確認 PR を作る道具 | 計画(#77〜#81 の merge 待ち) |
+| [0003](plans/0003-license-roles-and-cleanup.md) | ライセンスによる役割の選択と、local の片づけ | 計画 |
 
 ## 完了の一覧
 
@@ -47,6 +47,7 @@
 | 番号 | 題 | 状態 |
 |---|---|---|
 | [0001](discussions/0001-verification-pr-tool.md) | 人の確認 PR を作る道具 | 決定(2026-11-04) |
+| [0002](discussions/0002-separate-implementation-and-use.md) | `espnet_status` の分離: 実装の状況と、研究で使うかどうか | 決定(2026-11-04) |
 
 2026-11-03 までの決定は [archive/](archive/) を見る。
 
