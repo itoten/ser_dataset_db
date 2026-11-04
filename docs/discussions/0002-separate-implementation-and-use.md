@@ -238,109 +238,98 @@ flowchart TD
   - そうでなく、1 つでも「判定できない」なら、判定できない。
   - 全部「満たす」なら、満たす。
 
-### 7.3 各条件の判定方法
+### 7.3 各ステップで外れるもの
 
-共通の決まり:
+「明示」は、そのステップの条件そのものが外すもの。「暗黙」は、条件には書いていないが、そのステップを通る時点で結果として外れているもの。
 
-- **使う値:** DB の値は `views/datasets_wide.csv` と `data/annotations.csv` の今の値(根拠の行が `current` または `conflicting` のもの)だけを使う。`provisional` や `superseded` の行は、views に出てこないので使わない。
-- **`;` で区切られた値:** 1 つずつに分けて見る。
-- **`conflicting`(資料が食い違う):** 判定できない、とする。DB は、どちらが正しいかを決めないため。
+| ステップ | 見るもの(DB と local) | 明示的に外れる | 暗黙に外れる | 判定できない |
+|---|---|---|---|---|
+| 1 実装の状況 | DB の `implementation_checked`(recipe の readme が資料として登録されている)、`local/implementation/on_hold.csv` | レシピの無いもの | 音声が配布されていない(テキスト・特徴量・リンクだけ、論文・コードだけ)、入手できない(地域の制限、配布されていない、配布元に繋がらない、有料・手続きが確認できない)、既存コーパスの再配布・重複。どれも実装できないので `on_hold` になる | — |
+| C0 除外リスト | `local/experiments/multidataset_ser_01/exclusion_list.csv` | リストにあるもの(理由はリストに書く) | パラ言語情報が無いもの、声ではなく文の意味でラベルが付いているもの、再配布のうち要らない方(どれもリストに書いて外す) | 無い |
+| C1 カテゴリカルな感情ラベル | `annotations.csv` の `item` が `emotion_categories`(主の組でなくてよい。`labels` が `none` なら無いとみなす) | ラベルの組が sentiment・intent・話し方・次元だけのもの | — | ラベルの組が DB に無い |
+| C2 合成音声でない | `speech_production`・`material_origin` に `synthetic`、`label_source` が `synthesis_specified` | 合成音声(一部だけ合成でも外す) | — | 両方とも空欄か `unknown`、または `conflicting` |
+| C3 自動ラベルでない | 主の組の付け手(`label_source`)と `label_verification` | 自動ラベルで、人の確認が無いもの | — | 付け手が空欄か `unknown`。**`mixed` は満たす。自動でも人が確認した(`human_reviewed`)ものは満たす** |
+| C4 ライセンスの区分 | `license_spdx` を `local/license/class_map.csv` で区分にした結果 | 認めない区分: `share_alike`、`noncommercial_share_alike`、`other`、`unclear` | — | `license_spdx` が空欄(今の実装済みには無い) |
 
-#### C0 除外リストにない
+- 共通: DB の値は views の今の値(`current` と `conflicting` の行)だけを使う。`;` 区切りは 1 つずつ見る。DB が `conflicting` の値は、どちらかに決めず「判定できない」にする(C4 だけは 7.6 の決まりで区分にする)。
+- すべての条件を評価し、どの条件で外れたかを結果に残す。
 
-- **見るもの:** `local/experiments/multidataset_ser/exclusion_list.csv` の `dataset_id`。
-- **満たす:** 載っていない。
-- **満たさない:** 載っている。結果に、リストの理由を写す。
-- **判定できない:** 無い。
-- **リストに書くもの:**
-  - パラ言語情報が含まれないもの。
-  - 試聴などで、声に感情の差が無いと判断したもの。
-  - 別のデータセットの再配布のうち、要らない方。
-  - 1 行ごとに、理由と、根拠の DB の行(`issues` の番号、`relations` の行など)を書く。
+### 7.3.1 今の数(2026-11-04、`local/experiments/multidataset_ser_01/summary.md` から)
 
-#### C1 カテゴリカルな感情ラベルがある
+| ステップ | 残り | ここで外れる | ここで判定できない(脇に置く) |
+|---|---|---|---|
+| DB のデータセット全体 | 318 | | |
+| 1 実装の状況 | 102 | 216(`on_hold` 64、`not_investigated` 152) | |
+| C0 除外リスト | 101 | 1 | 0 |
+| C1 カテゴリカルな感情ラベル | 101 | 0 | 0 |
+| C2 合成音声でない | 92 | 3 | 6 |
+| C3 自動ラベルでない | 85 | 1 | 6 |
+| C4 ライセンスの区分 | **61** | 24 | 0 |
 
-- **見るもの:** `data/annotations.csv` の、そのデータセットの行の `item`。
-- **満たす:** `item` が `emotion_categories` の行が 1 つ以上ある。主の組でなくてもよい(例: 主が `emotion_attributes` で、2 つ目にカテゴリがある)。
-- **満たさない:**
-  - ラベルの組の行はあるが、`emotion_categories` が 1 つも無い(sentiment、intent、話し方だけなど)。
-  - `emotion_categories` の行があっても、`labels` が `none`(資料を読んで、無いと分かった)。
-- **判定できない:** ラベルの組の行が無い(まだ登録していない)。
+- 全体(各条件を独立に評価): 満たす 61、満たさない 31、判定できない 10。
+- 1 で `on_hold` になった 64 件の理由の内訳: 音声が配布されていない 29、入手できない 15、入手手続きが確認できない・有料など 13、再配布・重複 6、ラベルの理由 1(以前の状態の値に研究の判断が混ざっていたもの)。
+- C4 で外れる 24 件の内訳: `share_alike` 8、`noncommercial_share_alike` 8、`unclear` 7、`other` 1(C2・C3 で先に外れたものや、判定できずに脇に置いたものは数えていない)。
 
-#### C2 合成音声でない
-
-- **見るもの:** `speech_production`、`material_origin`(どちらも `;` 区切り)と、`label_source`。
-- **満たさない:**
-  - `speech_production` か `material_origin` に `synthetic` がある。
-  - または `label_source` が `synthesis_specified`(合成のときに指定した感情がラベル)。
-  - 一部だけ合成のもの(`acted;synthetic` など)も、満たさない。今の実装済みには無い。
-- **満たす:** 上に当たらず、`speech_production` か `material_origin` の少なくとも一方に、`synthetic` 以外の具体的な値(`acted`、`spontaneous`、`film_tv` など)がある。
-- **判定できない:**
-  - 両方とも空欄か `unknown`。
-  - または、どちらかが `conflicting`。
-
-#### C3 感情ラベルが自動ラベルでない
-
-- **見るもの:** C1 で見つけた `emotion_categories` の組の `annotator`。
-  - 組が 2 つ以上あるとき(意図した感情と、聞き手が感じた感情など)は、レシピが使う組を見る。DB では主の組で、`datasets` の `label_source` と同じ値。
-- **満たす:** `human`。
-  - `synthesis_specified` もここでは満たす。合成かどうかは C2 で判定する。
-- **満たさない:** `automatic`。
-- **判定できない:**
-  - 空欄、`unknown`、`conflicting`。
-  - `mixed`(人と自動が混ざる)は、扱いが決まるまで判定できない(7.6-2)。
-
-#### C4 ライセンスの区分を、この実験で認める
-
-- **見るもの:** `license_spdx` を、ライセンスの区分の対応表(`local/`)に当てた区分。
-- **満たす:** 区分が、この実験で認める区分に入る(実験の README に書く)。
-- **満たさない:** 認めない区分。
-- **判定できない:** `license_spdx` が空欄(未確認)。
-- **未定のこと:** 区分の種類、`none_stated` / `unknown` / `conflicting` の扱い、この実験で認める区分。次の議論で決める(7.6-1)。
-
-### 7.4 置き場所(案)
+### 7.4 置き場所(2026-11-04 に作った)
 
 ```
 local/
   README.md
-  check_sync.py                 local の表と DB の対応を確かめる
+  dbread.py                     DB の表を読む共通の関数
+  check_sync.py                 local の一覧と DB の対応、未対応のライセンスの値を確かめる
   implementation/               1. 実装の状況
-    on_hold.csv                 保留の一覧(dataset_id、理由のコード、メモ、日付)
-    status.py                   DB と on_hold.csv から 3 つの値を出す
+    on_hold.csv                 保留の一覧(dataset_id、理由のコード、メモ、日付、以前の状態)
+    status.py → status.csv      3 つの値
   license/                      2. ライセンスの区分(研究に依る)
-    class_map.csv               license_spdx → 区分 の対応表
-    classify.py
+    classes.csv                 区分の定義と厳しさの順
+    class_map.csv               license_spdx → 区分
+    classify.py → result.csv
   experiments/
-    multidataset_ser/           3. この実験で使えるかどうか
-      README.md                 実験の目的、条件、認めるライセンスの区分
-      exclusion_list.csv        除外リスト(dataset_id、理由、根拠の DB の行)
-      classify.py               条件 C0〜C4
-      result.csv                結果(生成物。手で書かない)
+    multidataset_ser_01/        3. この実験で使えるかどうか
+      README.md                 目的、条件、認めるライセンスの区分、実行の手順
+      exclusion_list.csv        除外リスト(dataset_id、理由、根拠の DB の行、日付)
+      classify.py → result.csv、summary.md
   verification_tools/           道具ができたら消す(plans/0002)
 ```
 
-- ライセンスの区分は研究に依る。ただし、同じ研究の中で実験ごとに区分の付け方が変わることは少ないと考え、`license/` に置く。実験ごとに変わるのは、どの区分を認めるか(C4)だけとした。区分の付け方そのものが実験で変わるなら、実験のフォルダに移す。
-- 今の `dataset_use.csv` は、`on_hold.csv` と除外リストの材料にしたあと、消す。
-- 今の `license_class.csv` と `license_class.py` は、`license/` に作り直す。
+- ライセンスの区分は研究に依る。同じ研究の中で実験ごとに区分の付け方が変わることは少ないと考え、`license/` に置いた。実験ごとに変わるのは、どの区分を認めるか(C4)だけ。区分の付け方そのものが実験で変わるなら、実験のフォルダに移す。
+- `.csv` の結果(`status.csv`、`result.csv`、`summary.md`)は生成物。手で書かない。
+- 以前の `dataset_use.csv` と `license_class.*` は、まだ残している(7.7-6)。
 
-### 7.5 試しに数えた結果(実装済み 102 件。C0 は空、C4 は仮に「`none_stated` / `unknown` / `conflicting` は満たさない」)
+### 7.5 決定(2026-11-04、maintainer)
 
-| 条件 | 満たす | 満たさない | 判定できない |
-|---|---|---|---|
-| C1 カテゴリカルな感情ラベル | 102 | 0 | 0 |
-| C2 合成音声でない | 93 | 3 | 6 |
-| C3 自動ラベルでない | 89 | 1 | 12(うち `mixed` 1) |
-| C4 ライセンス(仮) | 91 | 11 | 0 |
-| **全体** | **77** | **15** | **10** |
+| 問い | 決定 |
+|---|---|
+| ライセンスの区分 | 一般にオープンライセンスと呼ばれるものだけを `open` にする。**SA(継承)系は除外する。** |
+| `conflicting` のライセンス | 厳しい方(NC など)の区分をとる。どちらも同じような区分なら問題ない |
+| `none_stated`、`unknown` | 除外する(区分 `unclear`) |
+| `mixed` の付け手 | 例を見てから決める。スクリプトでは、ひとまず満たすにする |
+| 自動ラベル | 人がラベルの品質を確認しているなら(`human_reviewed`)満たす。完全に自動のものだけ外す |
+| 実験のフォルダ名 | 番号を付けて `multidataset_ser_01`。どの研究も複数のデータセットを使うので良い名前ではないが、ひとまずこれで |
 
-### 7.6 次に決めること
+### 7.6 ライセンスの区分(`local/license/`)
 
-1. **ライセンスの区分を見直す(次の議題)。**
-   - 今の区分は、open かそれ以外か、の判定しかしていない。
-   - CC BY-SA を open にしてよいか(しない方がよいかもしれない)。
-   - `none_stated`、`unknown`、`conflicting` をどう扱うか。
-   - この実験で認める区分。
-2. **自動ラベルの細部。**
-   - `mixed` をどう扱うか。
-   - 自動ラベルを人が見直したもの(`label_verification` が `human_reviewed`)を、満たすとするか。
-3. **7.4 の置き場所と名前でよいか。**
+区分の定義は `classes.csv`、SPDX との対応は `class_map.csv`。`rank` が大きいほど厳しい。`conflicting` は、食い違う記述の区分のうち、`rank` の大きい方をとる(`none_stated` / `unknown` の記述は、他に記述があれば無視する)。
+
+| 区分 | rank | 意味 | 含まれる `license_spdx` | DB 全体 | 実装済み | この実験 |
+|---|---|---|---|---|---|---|
+| `open` | 0 | 目的を問わず使える。帰属表示まで(継承・非営利の条件なし) | CC0-1.0、CC-BY-3.0、CC-BY-3.0-US、CC-BY-4.0、MIT、Apache-2.0、ODC-By-1.0 | 89 | 57 | 認める |
+| `share_alike` | 1 | 目的を問わないが、改変物を同じ条件で公開する | CC-BY-SA-4.0、GPL-3.0-only、GPL-3.0-or-later、ODbL-1.0、LicenseRef-golos-public(DB の注記: CC BY-SA 4.0 の改変版) | 10 | 9 | 認めない |
+| `noncommercial` | 2 | 非営利のみ | CC-BY-NC-3.0、CC-BY-NC-4.0、CC-BY-NC-ND-4.0 | 23 | 5 | 認める |
+| `noncommercial_share_alike` | 3 | 非営利のみ、かつ継承 | CC-BY-NC-SA-2.0、CC-BY-NC-SA-3.0-DE、CC-BY-NC-SA-4.0 | 16 | 8 | 認めない(SA 系) |
+| `research_only` | 4 | 研究利用だけを認める独自の条件 | LicenseRef-custom-research-only | 49 | 12 | 認める |
+| `restricted` | 5 | さらに制限のある独自・有料の条件 | LicenseRef-proprietary-restricted | 11 | 1 | 認める |
+| `other` | 6 | 上に当てはまらない。注記を読んでから使う | LicenseRef-other | 5 | 1 | 認めない |
+| `unclear` | 7 | ライセンスの記述が無い、資料が言っていない | none_stated、unknown、LicenseRef-citation-request(ライセンスは与えず、引用だけを求める) | 51 | 9 | 認めない |
+| (未確認) | — | DB の `license_spdx` が空欄 | — | 64 | 0 | 判定できない |
+
+`conflicting` の 4 件(DB 全体)は、上の数に含めている: CC-BY-4.0 と CC0-1.0 → `open`、CC-BY-4.0 と CC-BY-NC-4.0 → `noncommercial`、CC-BY-NC-ND-4.0 と GPL-3.0-only → `noncommercial`、Apache-2.0 と CC-BY-NC-SA-4.0 → `noncommercial_share_alike`。
+
+### 7.7 確認してほしいこと
+
+1. **「SA 系は除外」に、NC-SA(`noncommercial_share_alike`)も入れてよいか。** 入れると実装済みの 8 件が外れ、よく使われるコーパスも含まれる。NC-SA を NC と同じに扱えば、この 7 件は残る。
+2. **`restricted`(有料・独自の条件)と `research_only` を認めてよいか。** 「明確ならなんでもよい」という前の方針に従って認めにした。
+3. **`other`(1 件)と `LicenseRef-citation-request` を `unclear` にした扱いでよいか。** どちらも条件の中身を読んで個別に決めることもできる。
+4. **`mixed` の例**: 実装済みでは 1 件だけ(人が確認した、とある)。
+5. **判定できない 10 件**は、DB で `speech_production`(発声のしかた)と、ラベルの付け手を調べれば決まる。DB の作業の優先にするか。
+6. **以前の `dataset_use.csv` と `license_class.csv`・`license_class.py` を消してよいか。** 保留の理由とメモは `on_hold.csv` に移した。未調査の 152 件のメモ(入手方法を調べた跡など)は `dataset_use.csv` にしか無いので、候補を決めるときの材料に残すかどうか。
