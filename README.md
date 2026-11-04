@@ -18,7 +18,7 @@ A database of speech emotion recognition (SER) datasets, kept as CSV files under
 
 **For readers**: check the primary source before relying on a value, and cite the primary source, not this DB. The DB is not legal advice.
 
-**Current position**: the DB is used for one researcher's work, and is designed for future public release. Background, challenges and the reasoning behind these principles are in `docs/manual.md` section 2; the discussion that led to them is in `docs/design/`.
+**Current position**: the DB is used for one researcher's work, and is designed for future public release. Background, challenges and the reasoning behind these principles are in `docs/manual.md` section 2; the discussions and plans are indexed in `docs/README.md`.
 
 - **`data/*.csv` is authoritative.** Everything in `views/` is generated from it.
 - It covers datasets that are (or may be) usable for speech emotion recognition (SER). Scope: the axis is SER; emotion is taken in a broad sense that includes sentiment, and data such as speaking style, intent and dialogue acts is collected as material for SER research. Datasets only for EEG or ASR are out of scope.
@@ -35,7 +35,7 @@ A database of speech emotion recognition (SER) datasets, kept as CSV files under
 | How many files each label has | `data/label_counts.csv` |
 | Meaning, type and allowed nulls of a column | `schema/columns.csv`; allowed values in `schema/enums.csv`; table keys in `schema/tables.csv` |
 | A beginner's guide with a glossary | `docs/manual.md` (English), `docs/manual.ja.md` (Japanese translation; always update both together) |
-| How the DB was designed: decisions with their reasons | `docs/design/agenda.md`, `docs/design/archive/` |
+| How the DB was designed: decisions with their reasons | `docs/README.md` (index of discussions and plans), `docs/archive/` |
 | How to maintain the DB (workflow for Claude Code) | `.claude/skills/maintaining-ser-dataset-db/SKILL.md` |
 | Your own decisions that build on the DB (which datasets you use, license groups, ...) | `local/` (git-ignored; see `local/README.md`) |
 

@@ -62,7 +62,7 @@ None ranks above the others.
 | **Transparency** | Show who checked what and when, and in particular whether a value was verified by a person or only investigated by AI. Within one DB, values differ in how certain they are; if this is invisible, readers cannot tell how far to trust each value. State what is unknown and the limits of the DB. |
 | **Neutrality** | Record facts only, and give no judgements such as "should this dataset be used" or "is this good data". Whether a dataset is usable depends on the purpose of the research, and a written judgement makes readers follow it without looking at the primary sources. When sources disagree, the DB does not decide which to trust; that is left to the reader. |
 
-These principles are the basis for the rules (this manual, `schema/`, `tools/validate.py`) and the procedures (the maintenance skill). The decisions that follow from them are recorded with their reasons in [design/](design/agenda.md).
+These principles are the basis for the rules (this manual, `schema/`, `tools/validate.py`) and the procedures (the maintenance skill). The decisions that follow from them are recorded with their reasons in [docs/README.md](README.md).
 
 ### 2.5 How
 
@@ -158,7 +158,7 @@ A license states how far data may be used. The explanations here are general, no
 | `views/` | Generated from `data/`: `datasets_wide.csv` (one row per dataset), `discrepancies.csv` |
 | `schema/` | Definitions: `columns.csv`, `enums.csv`, `tables.csv` |
 | `tools/` | Checking and editing tools (`validate.py`, `derive.py`, `views.py`, `db.py`) |
-| `docs/` | This guide (English and Japanese) and the design record in `docs/design/` |
+| `docs/` | This guide (English and Japanese) and the record of discussions and plans (`docs/README.md`) |
 | `local/` | Your own working space; git-ignored except its README |
 | `.claude/skills/` | The procedure for maintaining the DB with Claude Code |
 

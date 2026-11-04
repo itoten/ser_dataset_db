@@ -34,8 +34,10 @@ What you need to know about the surroundings:
   the public fork `itoten/espnet`; only commits that are on the fork can be cited.
 - **`local/`** is git-ignored and belongs to the user: which datasets they use and why, license
   groupings, label mappings. The DB's tools never read it, and you never write facts there.
-- **The design is recorded** in `docs/design/` (decisions with their reasons). Change rules,
-  columns or existing rows only when the project maintainer asks.
+- **Discussions and plans are recorded** in `docs/` (index: `docs/README.md`; discussions in
+  `docs/discussions/`, implementation plans in `docs/plans/`, written in Japanese; decisions made before
+  2026-11-04 are in `docs/archive/`, in English). Change rules, columns or existing rows only when the
+  project maintainer asks.
 
 ## Mission and principles
 
