@@ -53,8 +53,8 @@ have `none_stated` (no license statement found). Multi-valued cells use `;` as s
 ## Sources and evidence rows
 
 Columns with `evidence=yes` in `schema/columns.csv` need an evidence row for their value. The
-attributes `annotator`, `label_basis` and `label_verification` of the label sets
-`emotion_categories` and `emotion_attributes` have evidence rows whose `field` is
+attributes `annotator`, `label_basis` and `label_verification` of every label set
+(`emotion_categories`, `emotion_attributes`, `speaking_style`, `sentiment`, `intent`) have evidence rows whose `field` is
 `<item>.<attribute>` (for example `emotion_categories.label_basis`).
 
 A source (`sources.csv`) has a `kind` (paper, distribution_page, dataset_card, license_file,

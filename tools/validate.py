@@ -189,13 +189,13 @@ def set_targets(db):
     out = []
     for ds_id, sets in derive.label_sets(db).items():
         for item, row in sets.items():
-            if item not in ("emotion_categories", "emotion_attributes"):
+            if item not in derive.LABEL_SETS:
                 continue
             for attr in derive.SET_ATTRS:
                 out.append((ds_id, f"{item}.{attr}", row[attr]))
     for ds_id, sets in derive.extra_sets(db).items():
         for name, row in sets.items():
-            if row["item"] not in ("emotion_categories", "emotion_attributes"):
+            if row["item"] not in derive.LABEL_SETS:
                 continue
             for attr in derive.SET_ATTRS:
                 out.append((ds_id, f"{name}.{attr}", row[attr]))
