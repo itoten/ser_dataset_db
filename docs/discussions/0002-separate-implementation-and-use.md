@@ -192,60 +192,111 @@ DB には空欄(未確認)が多いので、条件ごとに **満たす / 満た
 | 手作業の入手手続き、規模の小ささ、演技かどうか | 条件にしない | 関係しない |
 | 除外リスト | 1 行ごとに、**理由を明確に書く** | 条件で決まらない判断なので、後で読む人が理由をたどれるようにする |
 | 順番 | **実装の状況 → ライセンスの区分 → 使えるかどうか** | 条件 3(ライセンス)は、ライセンスの区分が決まっていないと判断できない |
+| 対象(2026-11-04 改) | **いまは実装済みの 102 件だけを分類する。** `not_investigated` から候補を選ぶ流れは、いったん外す | 候補にするかどうかは、別の判断が要りそう |
+| 除外リストの位置(同) | **最初に見る** | 個別の判断で外すものは、他の条件を見るまでもない |
+| ライセンスの区分の性質(同) | **研究に依る。** だから区分は `local/` に置く | たとえば CC BY-SA を open として扱うかは、人によって違う。open かそれ以外か、だけでは足りない場合がある |
 | 置き場所 | `local/` の中を、いくつかのフォルダに分ける。この分類は特定の実験のためなので、**実験のフォルダ**(例 `multidataset_ser`)に置く | 実験ごとに条件が違いうる |
 
-### 7.2 流れ(案)
+### 7.2 流れ(案、2026-11-04 改)
 
 ```mermaid
 flowchart TD
-    DB[(公開 DB<br/>views/datasets_wide.csv)]
+    DB[(公開 DB<br/>views/datasets_wide.csv<br/>data/annotations.csv)]
 
-    subgraph S1[1. 実装の状況 — 研究に依らない]
-        A{recipe の readme が<br/>DB に登録されている?<br/>implementation_checked}
-        A -- true --> IMP[implemented]
-        A -- false --> H{保留の一覧に<br/>ある?}
-        H -- ある --> HOLD[on_hold<br/>理由つき]
-        H -- ない --> NI[not_investigated]
+    subgraph S1[1. 実装の状況]
+        A{implementation_checked<br/>= true ?}
+        A -- true --> IMP[implemented<br/>102 件]
+        A -- false --> REST[on_hold / not_investigated<br/>いまは分類しない]
     end
 
-    subgraph S2[2. ライセンスの区分 — 研究に依らない]
-        L{license_spdx を<br/>区分の対応表に当てる}
-        L --> LC[open / noncommercial /<br/>research_only / restricted /<br/>unclear / 未確認]
+    subgraph S2[2. ライセンスの区分 — 研究に依る、local に置く]
+        L[license_spdx を<br/>区分の対応表に当てる]
     end
 
     subgraph S3[3. 使えるかどうか — 実験 multidataset_ser]
-        C1{カテゴリカルな<br/>感情ラベルがある}
-        C2{合成音声でない}
-        C3{主のラベルが<br/>自動ラベルでない}
-        C4{ライセンスの区分が<br/>実験で認める区分}
-        C5{除外リストに<br/>ない}
-        R[満たす / 満たさない /<br/>判定できない]
+        C0{C0 除外リストに<br/>ない}
+        C1{C1 カテゴリカルな<br/>感情ラベルがある}
+        C2{C2 合成音声でない}
+        C3{C3 感情ラベルが<br/>自動ラベルでない}
+        C4{C4 ライセンスの区分を<br/>この実験で認める}
     end
 
     DB --> A
     DB --> L
-    IMP --> C1
-    NI --> C1
-    LC --> C4
-    C1 --> C2 --> C3 --> C4 --> C5 --> R
-    R --> OUT1[implemented で満たさない<br/>→ 除外の対象]
-    R --> OUT2[not_investigated で満たす<br/>→ 候補]
-    R --> OUT3[判定できない<br/>→ DB で調べる列が分かる]
+    IMP --> C0 --> C1 --> C2 --> C3 --> C4
+    L --> C4
+    C4 --> OUT[データセットごとに<br/>各条件の結果と全体の結果を出す]
+    OUT --> P[満たす → 使う]
+    OUT --> F[満たさない → 除外の対象<br/>どの条件で外れたかを残す]
+    OUT --> U[判定できない → DB で調べる列が分かる]
 ```
 
-- 3 の各条件は、満たす / 満たさない / 判定できない(DB が未確認)を返す(6.2 の考え方)。
-- `on_hold` は 3 に進まない(6.5)。
-- 2 は研究に依らないので、実験のフォルダではなく、共通の場所に置く。どの区分を認めるか(条件 C4)だけを、実験ごとに決める。
+- **すべての条件を評価する。** 途中で満たさないものが出ても止めず、条件ごとの結果を残す(どの条件で外れたかが分かるように)。順番は、表示と読む順のため。
+- **条件ごとの結果は 3 つ:** 満たす / 満たさない / 判定できない(DB が未確認)。
+- **全体の結果:**
+  - 1 つでも「満たさない」なら、満たさない。
+  - そうでなく、1 つでも「判定できない」なら、判定できない。
+  - 全部「満たす」なら、満たす。
 
-### 7.3 条件と DB の列(改訂)
+### 7.3 各条件の判定方法
 
-| 条件 | DB の列 | 満たす | 満たさない | 判定できない |
-|---|---|---|---|---|
-| C1 カテゴリカルな感情ラベル | `annotation_items` | `emotion_categories` を含む | 組はあるが含まない | 組が無い |
-| C2 合成音声でない | `speech_production`、`material_origin`、`label_source` | 値があり、合成を示さない | 合成を示す | すべて空欄か `unknown` |
-| C3 自動ラベルでない | `label_source` | `human` | `automatic` | 空欄、`unknown`。`mixed` は 7.5-2 |
-| C4 ライセンスの区分 | ライセンスの区分(2 の結果) | 実験で認める区分 | 認めない区分 | 未確認 |
-| C5 除外リスト | `local/` の除外リスト | 載っていない | 載っている | — |
+共通の決まり:
+
+- **使う値:** DB の値は `views/datasets_wide.csv` と `data/annotations.csv` の今の値(根拠の行が `current` または `conflicting` のもの)だけを使う。`provisional` や `superseded` の行は、views に出てこないので使わない。
+- **`;` で区切られた値:** 1 つずつに分けて見る。
+- **`conflicting`(資料が食い違う):** 判定できない、とする。DB は、どちらが正しいかを決めないため。
+
+#### C0 除外リストにない
+
+- **見るもの:** `local/experiments/multidataset_ser/exclusion_list.csv` の `dataset_id`。
+- **満たす:** 載っていない。
+- **満たさない:** 載っている。結果に、リストの理由を写す。
+- **判定できない:** 無い。
+- **リストに書くもの:**
+  - パラ言語情報が含まれないもの。
+  - 試聴などで、声に感情の差が無いと判断したもの。
+  - 別のデータセットの再配布のうち、要らない方。
+  - 1 行ごとに、理由と、根拠の DB の行(`issues` の番号、`relations` の行など)を書く。
+
+#### C1 カテゴリカルな感情ラベルがある
+
+- **見るもの:** `data/annotations.csv` の、そのデータセットの行の `item`。
+- **満たす:** `item` が `emotion_categories` の行が 1 つ以上ある。主の組でなくてもよい(例: 主が `emotion_attributes` で、2 つ目にカテゴリがある)。
+- **満たさない:**
+  - ラベルの組の行はあるが、`emotion_categories` が 1 つも無い(sentiment、intent、話し方だけなど)。
+  - `emotion_categories` の行があっても、`labels` が `none`(資料を読んで、無いと分かった)。
+- **判定できない:** ラベルの組の行が無い(まだ登録していない)。
+
+#### C2 合成音声でない
+
+- **見るもの:** `speech_production`、`material_origin`(どちらも `;` 区切り)と、`label_source`。
+- **満たさない:**
+  - `speech_production` か `material_origin` に `synthetic` がある。
+  - または `label_source` が `synthesis_specified`(合成のときに指定した感情がラベル)。
+  - 一部だけ合成のもの(`acted;synthetic` など)も、満たさない。今の実装済みには無い。
+- **満たす:** 上に当たらず、`speech_production` か `material_origin` の少なくとも一方に、`synthetic` 以外の具体的な値(`acted`、`spontaneous`、`film_tv` など)がある。
+- **判定できない:**
+  - 両方とも空欄か `unknown`。
+  - または、どちらかが `conflicting`。
+
+#### C3 感情ラベルが自動ラベルでない
+
+- **見るもの:** C1 で見つけた `emotion_categories` の組の `annotator`。
+  - 組が 2 つ以上あるとき(意図した感情と、聞き手が感じた感情など)は、レシピが使う組を見る。DB では主の組で、`datasets` の `label_source` と同じ値。
+- **満たす:** `human`。
+  - `synthesis_specified` もここでは満たす。合成かどうかは C2 で判定する。
+- **満たさない:** `automatic`。
+- **判定できない:**
+  - 空欄、`unknown`、`conflicting`。
+  - `mixed`(人と自動が混ざる)は、扱いが決まるまで判定できない(7.6-2)。
+
+#### C4 ライセンスの区分を、この実験で認める
+
+- **見るもの:** `license_spdx` を、ライセンスの区分の対応表(`local/`)に当てた区分。
+- **満たす:** 区分が、この実験で認める区分に入る(実験の README に書く)。
+- **満たさない:** 認めない区分。
+- **判定できない:** `license_spdx` が空欄(未確認)。
+- **未定のこと:** 区分の種類、`none_stated` / `unknown` / `conflicting` の扱い、この実験で認める区分。次の議論で決める(7.6-1)。
 
 ### 7.4 置き場所(案)
 
@@ -253,37 +304,43 @@ flowchart TD
 local/
   README.md
   check_sync.py                 local の表と DB の対応を確かめる
-  implementation/               1. 実装の状況(研究に依らない)
+  implementation/               1. 実装の状況
     on_hold.csv                 保留の一覧(dataset_id、理由のコード、メモ、日付)
     status.py                   DB と on_hold.csv から 3 つの値を出す
-  license/                      2. ライセンスの区分(研究に依らない)
+  license/                      2. ライセンスの区分(研究に依る)
     class_map.csv               license_spdx → 区分 の対応表
     classify.py
   experiments/
     multidataset_ser/           3. この実験で使えるかどうか
       README.md                 実験の目的、条件、認めるライセンスの区分
       exclusion_list.csv        除外リスト(dataset_id、理由、根拠の DB の行)
-      classify.py               条件 C1〜C5
+      classify.py               条件 C0〜C4
       result.csv                結果(生成物。手で書かない)
-      roles.csv                 学習・評価の役割(あとで)
   verification_tools/           道具ができたら消す(plans/0002)
 ```
 
+- ライセンスの区分は研究に依る。ただし、同じ研究の中で実験ごとに区分の付け方が変わることは少ないと考え、`license/` に置く。実験ごとに変わるのは、どの区分を認めるか(C4)だけとした。区分の付け方そのものが実験で変わるなら、実験のフォルダに移す。
 - 今の `dataset_use.csv` は、`on_hold.csv` と除外リストの材料にしたあと、消す。
 - 今の `license_class.csv` と `license_class.py` は、`license/` に作り直す。
 
-### 7.5 試しに数えた結果(条件 3 は今の仮の扱い: `none_stated` / `unknown` / `conflicting` は満たさない)
+### 7.5 試しに数えた結果(実装済み 102 件。C0 は空、C4 は仮に「`none_stated` / `unknown` / `conflicting` は満たさない」)
 
-| 実装の状況 | 件数 | 満たす | 満たさない | 判定できない |
-|---|---|---|---|---|
-| implemented | 102 | 77 | 15 | 10 |
-| not_investigated | 152 | 17 | 36 | 99 |
-| on_hold | 64 | (3 に進まない) | | |
+| 条件 | 満たす | 満たさない | 判定できない |
+|---|---|---|---|
+| C1 カテゴリカルな感情ラベル | 102 | 0 | 0 |
+| C2 合成音声でない | 93 | 3 | 6 |
+| C3 自動ラベルでない | 89 | 1 | 12(うち `mixed` 1) |
+| C4 ライセンス(仮) | 91 | 11 | 0 |
+| **全体** | **77** | **15** | **10** |
 
 ### 7.6 次に決めること
 
-1. **ライセンスの区分(2)を先に決める。** 区分の種類と、`none_stated`、`unknown`、`conflicting` をどの区分にするか。それから、この実験で認める区分。
+1. **ライセンスの区分を見直す(次の議題)。**
+   - 今の区分は、open かそれ以外か、の判定しかしていない。
+   - CC BY-SA を open にしてよいか(しない方がよいかもしれない)。
+   - `none_stated`、`unknown`、`conflicting` をどう扱うか。
+   - この実験で認める区分。
 2. **自動ラベルの細部。**
-   - `mixed`(人と自動が混ざる)をどう扱うか。
+   - `mixed` をどう扱うか。
    - 自動ラベルを人が見直したもの(`label_verification` が `human_reviewed`)を、満たすとするか。
 3. **7.4 の置き場所と名前でよいか。**
