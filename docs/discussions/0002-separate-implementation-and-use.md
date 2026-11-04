@@ -272,6 +272,8 @@ flowchart TD
 
 ### 7.4 置き場所(2026-11-04 に作った)
 
+> 2026-11-04 追記: 実験の分類は `local/dataset_filtering/` に作り直した(設定 `config/<実験名>.yaml`、除外リストも設定の中、結果は `output/<実験名>/`)。下の `local/experiments/` の配置と C0〜C4 の名前は当時のもの。
+
 ```
 local/
   README.md
