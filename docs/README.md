@@ -31,6 +31,7 @@
 | 番号 | 題 | 状態 |
 |---|---|---|
 | [0002](discussions/0002-separate-implementation-and-use.md) | `espnet_status` の分離: 実装の状況と、研究で使うかどうか | 議論中 |
+| [0003](discussions/0003-license-classes.md) | ライセンスの区分: 何のために分けるのか | 議論中 |
 
 ### 計画
 
