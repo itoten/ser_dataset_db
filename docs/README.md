@@ -78,4 +78,4 @@ DB を保守していて、何度も出会う問い。
 ### 残っている開いた項目
 
 - 仮の値(`provisional`、公開された出典のない値)を片づける。出典(一次資料、なければそれを載せたカタログ)を見つけるか、セルを空にする。[plans/0001](plans/0001-remaining-data-work.md) に進め方を書いた。
-- ラベルごとの時間(実測値)を DB にどう載せるか。recipe の readme の `## The data` 節に、ラベルごとの本数と並べて時間を書いてもらっている最中。今の `data/label_counts.csv` には本数 `n` の列しかなく、時間の列がない。readme が揃ってから、列を足すか別の表にするか、出典の持ち方(readme は `implementation` 区分)を議論する。決めるのは maintainer の指示があってから。
+- ラベルごとの時間: 2026-11-05 に `label_counts.csv` へ `hours` 列を足して、readme の実測値を入れた(maintainer の指示)。列にするか別の表にするかの議論は、この形(列)で進めた。空のままのもの: EmotionTalk の readme には時間が無い(7行)、ThaiSER の 2 行は readme が `unknown`。
