@@ -86,6 +86,7 @@ label_counts,dataset_id,slug,-,no,Foreign key to datasets
 label_counts,item,enum:annotation_item,-,no,The label set (item of annotations)
 label_counts,label,text,-,no,The label in the source's own words
 label_counts,n,int,-,no,Number of files with this label
+label_counts,hours,float,empty,no,"Total duration in hours of the files with this label, as the source states it (empty when the source does not give it)"
 label_counts,source_id,slug,-,no,The source that gives this number (documentation or recipe readme)
 label_counts,locator,text,empty,no,Location within the source
 label_counts,checked_on,date,-,no,Date checked

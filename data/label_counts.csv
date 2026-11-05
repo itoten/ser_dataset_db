@@ -1,698 +1,698 @@
-dataset_id,item,label,n,source_id,locator,checked_on,note
-aesdd,emotion_categories,anger,121,aesdd_readme,commit e987f57bdbf6; Files per label,2026-11-01,
-aesdd,emotion_categories,disgust,122,aesdd_readme,commit e987f57bdbf6; Files per label,2026-11-01,
-aesdd,emotion_categories,fear,120,aesdd_readme,commit e987f57bdbf6; Files per label,2026-11-01,
-aesdd,emotion_categories,happiness,119,aesdd_readme,commit e987f57bdbf6; Files per label,2026-11-01,
-aesdd,emotion_categories,sadness,123,aesdd_readme,commit e987f57bdbf6; Files per label,2026-11-01,
-akace,emotion_categories,Anger,1109,akace_readme,commit 906c09addc96; Files per label,2026-11-01,
-akace,emotion_categories,Confusion,1,akace_readme,commit 906c09addc96; Files per label,2026-11-01,
-akace,emotion_categories,Disgust,162,akace_readme,commit 906c09addc96; Files per label,2026-11-01,
-akace,emotion_categories,Fear,135,akace_readme,commit 906c09addc96; Files per label,2026-11-01,
-akace,emotion_categories,Frustration,1,akace_readme,commit 906c09addc96; Files per label,2026-11-01,
-akace,emotion_categories,Joy,569,akace_readme,commit 906c09addc96; Files per label,2026-11-01,
-akace,emotion_categories,Neutral,2984,akace_readme,commit 906c09addc96; Files per label,2026-11-01,
-akace,emotion_categories,Sadness,811,akace_readme,commit 906c09addc96; Files per label,2026-11-01,
-akace,emotion_categories,Surprise,390,akace_readme,commit 906c09addc96; Files per label,2026-11-01,
-albemo,emotion_categories,angry,60,albemo_readme,commit 08308769a6a3; Files per label,2026-11-01,code zemerim
-albemo,emotion_categories,disgust,60,albemo_readme,commit 08308769a6a3; Files per label,2026-11-01,code neveri
-albemo,emotion_categories,fear,60,albemo_readme,commit 08308769a6a3; Files per label,2026-11-01,code frike
-albemo,emotion_categories,happy,60,albemo_readme,commit 08308769a6a3; Files per label,2026-11-01,code gezim
-albemo,emotion_categories,neutral,60,albemo_readme,commit 08308769a6a3; Files per label,2026-11-01,code neutral
-albemo,emotion_categories,sad,60,albemo_readme,commit 08308769a6a3; Files per label,2026-11-01,code trishtim
-albemo,emotion_categories,surprise,60,albemo_readme,commit 08308769a6a3; Files per label,2026-11-01,code habi
-anad,emotion_categories,angry,741,anad_readme,commit 6cae0e200fff; Files per label,2026-11-01,
-anad,emotion_categories,happy,505,anad_readme,commit 6cae0e200fff; Files per label,2026-11-01,
-anad,emotion_categories,surprised,137,anad_readme,commit 6cae0e200fff; Files per label,2026-11-01,
-ased,emotion_categories,angry,486,ased_readme,commit 4a66ac0ebe72; Files per label,2026-11-01,code a
-ased,emotion_categories,fear,510,ased_readme,commit 4a66ac0ebe72; Files per label,2026-11-01,code f
-ased,emotion_categories,happy,486,ased_readme,commit 4a66ac0ebe72; Files per label,2026-11-01,code h
-ased,emotion_categories,neutral,522,ased_readme,commit 4a66ac0ebe72; Files per label,2026-11-01,code n
-ased,emotion_categories,sad,470,ased_readme,commit 4a66ac0ebe72; Files per label,2026-11-01,code s
-asvpesd,emotion_categories,01,15,asvpesd_readme,commit dc439736873f; Files per label,2026-11-01,
-asvpesd,emotion_categories,02,997,asvpesd_readme,commit dc439736873f; Files per label,2026-11-01,
-asvpesd,emotion_categories,03,459,asvpesd_readme,commit dc439736873f; Files per label,2026-11-01,
-asvpesd,emotion_categories,04,432,asvpesd_readme,commit dc439736873f; Files per label,2026-11-01,
-asvpesd,emotion_categories,05,935,asvpesd_readme,commit dc439736873f; Files per label,2026-11-01,
-asvpesd,emotion_categories,06,98,asvpesd_readme,commit dc439736873f; Files per label,2026-11-01,
-asvpesd,emotion_categories,07,76,asvpesd_readme,commit dc439736873f; Files per label,2026-11-01,
-asvpesd,emotion_categories,08,244,asvpesd_readme,commit dc439736873f; Files per label,2026-11-01,
-asvpesd,emotion_categories,09,62,asvpesd_readme,commit dc439736873f; Files per label,2026-11-01,
-asvpesd,emotion_categories,10,17,asvpesd_readme,commit dc439736873f; Files per label,2026-11-01,
-asvpesd,emotion_categories,11,26,asvpesd_readme,commit dc439736873f; Files per label,2026-11-01,
-asvpesd,emotion_categories,12,194,asvpesd_readme,commit dc439736873f; Files per label,2026-11-01,
-audiospeechsentiment,sentiment,(no label; `TEST/`),110,audiospeechsentiment_readme,commit 155c3c176004; Files per label,2026-11-01,
-audiospeechsentiment,sentiment,Negative,87,audiospeechsentiment_readme,commit 155c3c176004; Files per label,2026-11-01,
-audiospeechsentiment,sentiment,Neutral,81,audiospeechsentiment_readme,commit 155c3c176004; Files per label,2026-11-01,
-audiospeechsentiment,sentiment,Positive,82,audiospeechsentiment_readme,commit 155c3c176004; Files per label,2026-11-01,
-banglamood,emotion_categories,Angry,611,banglamood_readme,commit 07b611114c77; Files per label,2026-11-01,
-banglamood,emotion_categories,Disappointment,343,banglamood_readme,commit 07b611114c77; Files per label,2026-11-01,
-banglamood,emotion_categories,Excitement,267,banglamood_readme,commit 07b611114c77; Files per label,2026-11-01,
-banglamood,emotion_categories,Fear,449,banglamood_readme,commit 07b611114c77; Files per label,2026-11-01,
-banglamood,emotion_categories,Happy,300,banglamood_readme,commit 07b611114c77; Files per label,2026-11-01,
-banglamood,emotion_categories,Neutral,610,banglamood_readme,commit 07b611114c77; Files per label,2026-11-01,
-banglamood,emotion_categories,Sad,337,banglamood_readme,commit 07b611114c77; Files per label,2026-11-01,
-banglamood,emotion_categories,Surprised,303,banglamood_readme,commit 07b611114c77; Files per label,2026-11-01,
-banglaser,emotion_categories,angry,306,banglaser_readme,commit c5a35d31f077; Files per label,2026-11-01,code 03
-banglaser,emotion_categories,happy,306,banglaser_readme,commit c5a35d31f077; Files per label,2026-11-01,code 01
-banglaser,emotion_categories,neutral,243,banglaser_readme,commit c5a35d31f077; Files per label,2026-11-01,code 05
-banglaser,emotion_categories,sad,306,banglaser_readme,commit c5a35d31f077; Files per label,2026-11-01,code 02
-banglaser,emotion_categories,surprise,306,banglaser_readme,commit c5a35d31f077; Files per label,2026-11-01,code 04
-banspemo,emotion_categories,anger,132,banspemo_readme,commit b676f7fb18be; Files per label,2026-11-01,code 01
-banspemo,emotion_categories,disgust,132,banspemo_readme,commit b676f7fb18be; Files per label,2026-11-01,code 02
-banspemo,emotion_categories,fear,132,banspemo_readme,commit b676f7fb18be; Files per label,2026-11-01,code 03
-banspemo,emotion_categories,happy,132,banspemo_readme,commit b676f7fb18be; Files per label,2026-11-01,code 04
-banspemo,emotion_categories,sad,132,banspemo_readme,commit b676f7fb18be; Files per label,2026-11-01,code 05
-banspemo,emotion_categories,surprise,132,banspemo_readme,commit b676f7fb18be; Files per label,2026-11-01,code 06
-bari_emospeech,emotion_categories,Affection,500,bari_emospeech_readme,commit dd8974bef67c; Files per label,2026-11-01,
-bari_emospeech,emotion_categories,Happiness,407,bari_emospeech_readme,commit dd8974bef67c; Files per label,2026-11-01,
-bari_emospeech,emotion_categories,Jealousy,605,bari_emospeech_readme,commit dd8974bef67c; Files per label,2026-11-01,
-bari_emospeech,emotion_categories,Normal,500,bari_emospeech_readme,commit dd8974bef67c; Files per label,2026-11-01,
-bari_emospeech,emotion_categories,Sadness,300,bari_emospeech_readme,commit dd8974bef67c; Files per label,2026-11-01,
-baser,emotion_categories,ANGRY,150,baser_readme,commit 28e18504d539; Files per label,2026-11-01,
-baser,emotion_categories,FEAR,150,baser_readme,commit 28e18504d539; Files per label,2026-11-01,
-baser,emotion_categories,HAPPY,150,baser_readme,commit 28e18504d539; Files per label,2026-11-01,
-baser,emotion_categories,NEUTRAL,150,baser_readme,commit 28e18504d539; Files per label,2026-11-01,
-baser,emotion_categories,SAD,150,baser_readme,commit 28e18504d539; Files per label,2026-11-01,
-berst,emotion_categories,anger,651,berst_readme,commit 9de780d2cf96; Files per label,2026-11-01,
-berst,emotion_categories,disgust,677,berst_readme,commit 9de780d2cf96; Files per label,2026-11-01,
-berst,emotion_categories,fear,684,berst_readme,commit 9de780d2cf96; Files per label,2026-11-01,
-berst,emotion_categories,joy,657,berst_readme,commit 9de780d2cf96; Files per label,2026-11-01,
-berst,emotion_categories,neutral,657,berst_readme,commit 9de780d2cf96; Files per label,2026-11-01,
-berst,emotion_categories,sadness,584,berst_readme,commit 9de780d2cf96; Files per label,2026-11-01,
-berst,emotion_categories,surprise,613,berst_readme,commit 9de780d2cf96; Files per label,2026-11-01,
-brytserc,emotion_categories,Angry,745,brytserc_readme,commit 26d2d461f69c; Files per label,2026-11-01,
-brytserc,emotion_categories,Disgust,745,brytserc_readme,commit 26d2d461f69c; Files per label,2026-11-01,
-brytserc,emotion_categories,Fear,745,brytserc_readme,commit 26d2d461f69c; Files per label,2026-11-01,
-brytserc,emotion_categories,Happy,745,brytserc_readme,commit 26d2d461f69c; Files per label,2026-11-01,
-brytserc,emotion_categories,Neutral,745,brytserc_readme,commit 26d2d461f69c; Files per label,2026-11-01,
-brytserc,emotion_categories,Sad,745,brytserc_readme,commit 26d2d461f69c; Files per label,2026-11-01,
-brytserc,emotion_categories,Surprise,745,brytserc_readme,commit 26d2d461f69c; Files per label,2026-11-01,
-cafe,emotion_categories,Colère,144,cafe_readme,commit 44dc11c763a8; Files per label,2026-11-01,
-cafe,emotion_categories,Dégoût,144,cafe_readme,commit 44dc11c763a8; Files per label,2026-11-01,
-cafe,emotion_categories,Joie,144,cafe_readme,commit 44dc11c763a8; Files per label,2026-11-01,
-cafe,emotion_categories,Neutre,72,cafe_readme,commit 44dc11c763a8; Files per label,2026-11-01,
-cafe,emotion_categories,Peur,144,cafe_readme,commit 44dc11c763a8; Files per label,2026-11-01,
-cafe,emotion_categories,Surprise,144,cafe_readme,commit 44dc11c763a8; Files per label,2026-11-01,
-cafe,emotion_categories,Tristesse,144,cafe_readme,commit 44dc11c763a8; Files per label,2026-11-01,
-casia,emotion_categories,angry,200,casia_readme,commit 30cd2cb0d32e; Files per label,2026-11-01,
-casia,emotion_categories,fear,200,casia_readme,commit 30cd2cb0d32e; Files per label,2026-11-01,
-casia,emotion_categories,happy,200,casia_readme,commit 30cd2cb0d32e; Files per label,2026-11-01,
-casia,emotion_categories,neutral,200,casia_readme,commit 30cd2cb0d32e; Files per label,2026-11-01,
-casia,emotion_categories,sad,200,casia_readme,commit 30cd2cb0d32e; Files per label,2026-11-01,
-casia,emotion_categories,surprise,200,casia_readme,commit 30cd2cb0d32e; Files per label,2026-11-01,
-cbesd,emotion_categories,ANGER,699,cbesd_readme,commit 454fad4bff89; Files per label,2026-11-01,
-cbesd,emotion_categories,DISGUST,700,cbesd_readme,commit 454fad4bff89; Files per label,2026-11-01,
-cbesd,emotion_categories,FEAR,705,cbesd_readme,commit 454fad4bff89; Files per label,2026-11-01,
-cbesd,emotion_categories,HAPPY,700,cbesd_readme,commit 454fad4bff89; Files per label,2026-11-01,
-cbesd,emotion_categories,NEUTRAL,700,cbesd_readme,commit 454fad4bff89; Files per label,2026-11-01,
-cbesd,emotion_categories,SAD,700,cbesd_readme,commit 454fad4bff89; Files per label,2026-11-01,
-cremad,emotion_categories,ANG,1271,cremad_readme,commit 76089aafdb7f; Files per label,2026-11-01,
-cremad,emotion_categories,DIS,1271,cremad_readme,commit 76089aafdb7f; Files per label,2026-11-01,
-cremad,emotion_categories,FEA,1271,cremad_readme,commit 76089aafdb7f; Files per label,2026-11-01,
-cremad,emotion_categories,HAP,1271,cremad_readme,commit 76089aafdb7f; Files per label,2026-11-01,
-cremad,emotion_categories,NEU,1087,cremad_readme,commit 76089aafdb7f; Files per label,2026-11-01,
-cremad,emotion_categories,SAD,1271,cremad_readme,commit 76089aafdb7f; Files per label,2026-11-01,
-csemotions,emotion_categories,angry,769,csemotions_readme,commit 9af443fcd218; Files per label,2026-11-01,
-csemotions,emotion_categories,fearful,623,csemotions_readme,commit 9af443fcd218; Files per label,2026-11-01,
-csemotions,emotion_categories,happy,603,csemotions_readme,commit 9af443fcd218; Files per label,2026-11-01,
-csemotions,emotion_categories,neutral,490,csemotions_readme,commit 9af443fcd218; Files per label,2026-11-01,
-csemotions,emotion_categories,playfulness,621,csemotions_readme,commit 9af443fcd218; Files per label,2026-11-01,
-csemotions,emotion_categories,sad,546,csemotions_readme,commit 9af443fcd218; Files per label,2026-11-01,
-csemotions,emotion_categories,surprise,508,csemotions_readme,commit 9af443fcd218; Files per label,2026-11-01,
-dailytalk,emotion_categories,anger,159,dailytalk_readme,commit fe704640bae7; Files per label,2026-11-01,
-dailytalk,emotion_categories,disgust,66,dailytalk_readme,commit fe704640bae7; Files per label,2026-11-01,
-dailytalk,emotion_categories,fear,18,dailytalk_readme,commit fe704640bae7; Files per label,2026-11-01,
-dailytalk,emotion_categories,happiness,3856,dailytalk_readme,commit fe704640bae7; Files per label,2026-11-01,
-dailytalk,emotion_categories,no emotion,18966,dailytalk_readme,commit fe704640bae7; Files per label,2026-11-01,
-dailytalk,emotion_categories,sadness,301,dailytalk_readme,commit fe704640bae7; Files per label,2026-11-01,
-dailytalk,emotion_categories,surprise,407,dailytalk_readme,commit fe704640bae7; Files per label,2026-11-01,
-dusha,emotion_categories,angry,15719,dusha_readme,commit 0211bab9f7fa; Files per label,2026-11-01,
-dusha,emotion_categories,neutral,106065,dusha_readme,commit 0211bab9f7fa; Files per label,2026-11-01,
-dusha,emotion_categories,positive,15392,dusha_readme,commit 0211bab9f7fa; Files per label,2026-11-01,
-dusha,emotion_categories,sad,23190,dusha_readme,commit 0211bab9f7fa; Files per label,2026-11-01,
-eesc,emotion_categories,anger,306,eesc_readme,commit ab83a83d6075; Files per label,2026-11-01,
-eesc,emotion_categories,joy,271,eesc_readme,commit ab83a83d6075; Files per label,2026-11-01,
-eesc,emotion_categories,neutral,338,eesc_readme,commit ab83a83d6075; Files per label,2026-11-01,
-eesc,emotion_categories,sadness,249,eesc_readme,commit ab83a83d6075; Files per label,2026-11-01,
-emis,emotion_categories,angry,312,emis_readme,commit a8275e9d5304; Files per label,2026-11-01,
-emis,emotion_categories,happy,312,emis_readme,commit a8275e9d5304; Files per label,2026-11-01,
-emis,emotion_categories,neutral,312,emis_readme,commit a8275e9d5304; Files per label,2026-11-01,
-emis,emotion_categories,sad,312,emis_readme,commit a8275e9d5304; Files per label,2026-11-01,
-emns,emotion_categories,Angry,126,emns_readme,commit 07fd67062a2e; Files per label,2026-11-01,
-emns,emotion_categories,Disgust,162,emns_readme,commit 07fd67062a2e; Files per label,2026-11-01,
-emns,emotion_categories,Excited,150,emns_readme,commit 07fd67062a2e; Files per label,2026-11-01,
-emns,emotion_categories,Happy,157,emns_readme,commit 07fd67062a2e; Files per label,2026-11-01,
-emns,emotion_categories,Neutral,149,emns_readme,commit 07fd67062a2e; Files per label,2026-11-01,
-emns,emotion_categories,Sad,147,emns_readme,commit 07fd67062a2e; Files per label,2026-11-01,
-emns,emotion_categories,Sarcastic,139,emns_readme,commit 07fd67062a2e; Files per label,2026-11-01,
-emns,emotion_categories,Surprised,151,emns_readme,commit 07fd67062a2e; Files per label,2026-11-01,
-emodb,emotion_categories,anger,137,emodb_readme,commit 9fe72a9f62c1; Files per label,2026-11-01,
-emodb,emotion_categories,boredom,112,emodb_readme,commit 9fe72a9f62c1; Files per label,2026-11-01,
-emodb,emotion_categories,disgust,105,emodb_readme,commit 9fe72a9f62c1; Files per label,2026-11-01,
-emodb,emotion_categories,fear,122,emodb_readme,commit 9fe72a9f62c1; Files per label,2026-11-01,
-emodb,emotion_categories,happiness,115,emodb_readme,commit 9fe72a9f62c1; Files per label,2026-11-01,
-emodb,emotion_categories,neutral,104,emodb_readme,commit 9fe72a9f62c1; Files per label,2026-11-01,
-emodb,emotion_categories,sadness,121,emodb_readme,commit 9fe72a9f62c1; Files per label,2026-11-01,
-emogator,emotion_categories,01 adoration,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,02 amusement,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,03 anger,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,04 awe,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,05 confusion,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,06 contempt,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,07 contentment,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,08 desire,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,09 disappointment,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,10 disgust,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,11 distress,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,12 ecstasy,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,13 elation,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,14 embarrassment,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,15 fear,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,16 guilt,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,17 interest,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,18 neutral,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,19 pain,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,20 pride,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,21 realization,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,22 relief,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,23 romantic love,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,24 sadness,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,25 serenity,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,26 shame,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,27 surprise (negative),1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,28 surprise (positive),1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,29 sympathy,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emogator,emotion_categories,30 triumph,1071,emogator_readme,commit 7f9e93062f3b; Files per label,2026-11-01,
-emospeech_keywords,emotion_categories,Fearful,1625,emospeech_keywords_readme,commit 7f9c5e44b338; Files per label,2026-11-01,
-emospeech_keywords,emotion_categories,None,164,emospeech_keywords_readme,commit 7f9c5e44b338; Files per label,2026-11-01,
-emospeech_keywords,emotion_categories,angry,1133,emospeech_keywords_readme,commit 7f9c5e44b338; Files per label,2026-11-01,
-emospeech_keywords,emotion_categories,calm,3825,emospeech_keywords_readme,commit 7f9c5e44b338; Files per label,2026-11-01,
-emospeech_keywords,emotion_categories,happy,988,emospeech_keywords_readme,commit 7f9c5e44b338; Files per label,2026-11-01,
-emotale,emotion_categories,angry,160,emotale_readme,commit 3befdb138054; Files per label,2026-11-01,code A
-emotale,emotion_categories,boredom,160,emotale_readme,commit 3befdb138054; Files per label,2026-11-01,code B
-emotale,emotion_categories,happy,160,emotale_readme,commit 3befdb138054; Files per label,2026-11-01,code H
-emotale,emotion_categories,neutral,160,emotale_readme,commit 3befdb138054; Files per label,2026-11-01,code N
-emotale,emotion_categories,sad,160,emotale_readme,commit 3befdb138054; Files per label,2026-11-01,code S
-emotional_ema,emotion_categories,angry,182,emotional_ema_readme,commit 906c09addc96; Files per label,2026-11-01,code 2
-emotional_ema,emotion_categories,fear,159,emotional_ema_readme,commit 906c09addc96; Files per label,2026-11-01,code 5
-emotional_ema,emotion_categories,happy,160,emotional_ema_readme,commit 906c09addc96; Files per label,2026-11-01,code 3
-emotional_ema,emotion_categories,neutral,277,emotional_ema_readme,commit 906c09addc96; Files per label,2026-11-01,code 1
-emotional_ema,emotion_categories,sad,175,emotional_ema_readme,commit 906c09addc96; Files per label,2026-11-01,code 4
-emotiontalk,emotion_categories,angry,3820,emotiontalk_readme,commit 3cdb8dd2694b; Files per label,2026-11-01,
-emotiontalk,emotion_categories,disgusted,818,emotiontalk_readme,commit 3cdb8dd2694b; Files per label,2026-11-01,
-emotiontalk,emotion_categories,fearful,656,emotiontalk_readme,commit 3cdb8dd2694b; Files per label,2026-11-01,
-emotiontalk,emotion_categories,happy,2105,emotiontalk_readme,commit 3cdb8dd2694b; Files per label,2026-11-01,
-emotiontalk,emotion_categories,neutral,9378,emotiontalk_readme,commit 3cdb8dd2694b; Files per label,2026-11-01,
-emotiontalk,emotion_categories,sad,1110,emotiontalk_readme,commit 3cdb8dd2694b; Files per label,2026-11-01,
-emotiontalk,emotion_categories,surprised,1363,emotiontalk_readme,commit 3cdb8dd2694b; Files per label,2026-11-01,
-emouerj,emotion_categories,angry,94,emouerj_readme,commit fcf31f6797ed; Files per label,2026-11-01,code a
-emouerj,emotion_categories,happy,91,emouerj_readme,commit fcf31f6797ed; Files per label,2026-11-01,code h
-emouerj,emotion_categories,neutral,92,emouerj_readme,commit fcf31f6797ed; Files per label,2026-11-01,code n
-emouerj,emotion_categories,sad,100,emouerj_readme,commit fcf31f6797ed; Files per label,2026-11-01,code s
-emovdb,emotion_categories,Amused,1317,emovdb_readme,commit 74570d22b946; Files per label,2026-11-01,
-emovdb,emotion_categories,Angry,1268,emovdb_readme,commit 74570d22b946; Files per label,2026-11-01,
-emovdb,emotion_categories,Disgusted,1019,emovdb_readme,commit 74570d22b946; Files per label,2026-11-01,
-emovdb,emotion_categories,Neutral,1568,emovdb_readme,commit 74570d22b946; Files per label,2026-11-01,
-emovdb,emotion_categories,Sleepy,1721,emovdb_readme,commit 74570d22b946; Files per label,2026-11-01,
-emovo,emotion_categories,angry (rabbia),84,emovo_readme,commit 0c1277c27d67; Files per label,2026-11-01,code rab
-emovo,emotion_categories,disgust (disgusto),84,emovo_readme,commit 0c1277c27d67; Files per label,2026-11-01,code dis
-emovo,emotion_categories,fear (paura),84,emovo_readme,commit 0c1277c27d67; Files per label,2026-11-01,code pau
-emovo,emotion_categories,happy (gioia),84,emovo_readme,commit 0c1277c27d67; Files per label,2026-11-01,code gio
-emovo,emotion_categories,neutral (neutro),84,emovo_readme,commit 0c1277c27d67; Files per label,2026-11-01,code neu
-emovo,emotion_categories,sad (tristezza),84,emovo_readme,commit 0c1277c27d67; Files per label,2026-11-01,code tri
-emovo,emotion_categories,surprise (sorpresa),84,emovo_readme,commit 0c1277c27d67; Files per label,2026-11-01,code sor
-emovoicedb,emotion_categories,angry,3486,emovoicedb_readme,commit e75cb431b282; Files per label,2026-11-01,
-emovoicedb,emotion_categories,disgusted,2950,emovoicedb_readme,commit e75cb431b282; Files per label,2026-11-01,
-emovoicedb,emotion_categories,fearful,2961,emovoicedb_readme,commit e75cb431b282; Files per label,2026-11-01,
-emovoicedb,emotion_categories,happy,3269,emovoicedb_readme,commit e75cb431b282; Files per label,2026-11-01,
-emovoicedb,emotion_categories,neutral,3188,emovoicedb_readme,commit e75cb431b282; Files per label,2026-11-01,
-emovoicedb,emotion_categories,sad,3174,emovoicedb_readme,commit e75cb431b282; Files per label,2026-11-01,
-emovoicedb,emotion_categories,surprised,3072,emovoicedb_readme,commit e75cb431b282; Files per label,2026-11-01,
-emozionalmente,emotion_categories,anger,986,emozionalmente_readme,commit fb9b7cac7c1b; Files per label,2026-11-01,
-emozionalmente,emotion_categories,disgust,986,emozionalmente_readme,commit fb9b7cac7c1b; Files per label,2026-11-01,
-emozionalmente,emotion_categories,fear,986,emozionalmente_readme,commit fb9b7cac7c1b; Files per label,2026-11-01,
-emozionalmente,emotion_categories,joy,986,emozionalmente_readme,commit fb9b7cac7c1b; Files per label,2026-11-01,
-emozionalmente,emotion_categories,neutrality,986,emozionalmente_readme,commit fb9b7cac7c1b; Files per label,2026-11-01,
-emozionalmente,emotion_categories,sadness,986,emozionalmente_readme,commit fb9b7cac7c1b; Files per label,2026-11-01,
-emozionalmente,emotion_categories,surprise,986,emozionalmente_readme,commit fb9b7cac7c1b; Files per label,2026-11-01,
-enterface05,emotion_categories,anger,216,enterface05_readme,commit 48a6491e988e; Files per label,2026-11-01,
-enterface05,emotion_categories,disgust,216,enterface05_readme,commit 48a6491e988e; Files per label,2026-11-01,
-enterface05,emotion_categories,fear,216,enterface05_readme,commit 48a6491e988e; Files per label,2026-11-01,
-enterface05,emotion_categories,happiness,213,enterface05_readme,commit 48a6491e988e; Files per label,2026-11-01,
-enterface05,emotion_categories,sadness,216,enterface05_readme,commit 48a6491e988e; Files per label,2026-11-01,
-enterface05,emotion_categories,surprise,216,enterface05_readme,commit 48a6491e988e; Files per label,2026-11-01,
-esd,emotion_categories,Angry,7000,esd_readme,commit 100f147ab8cf; Files per label,2026-11-01,
-esd,emotion_categories,Happy,7000,esd_readme,commit 100f147ab8cf; Files per label,2026-11-01,
-esd,emotion_categories,Neutral,7000,esd_readme,commit 100f147ab8cf; Files per label,2026-11-01,
-esd,emotion_categories,Sad,7000,esd_readme,commit 100f147ab8cf; Files per label,2026-11-01,
-esd,emotion_categories,Surprise,7000,esd_readme,commit 100f147ab8cf; Files per label,2026-11-01,
-eseravd,emotion_categories,01_Angry,500,eseravd_readme,commit c723dce8171e; Files per label,2026-11-01,
-eseravd,emotion_categories,02_Sad,500,eseravd_readme,commit c723dce8171e; Files per label,2026-11-01,
-eseravd,emotion_categories,03_Neutral,500,eseravd_readme,commit c723dce8171e; Files per label,2026-11-01,
-eseravd,emotion_categories,04_Happy,500,eseravd_readme,commit c723dce8171e; Files per label,2026-11-01,
-eseravd,emotion_categories,05_Disgust,500,eseravd_readme,commit c723dce8171e; Files per label,2026-11-01,
-eseravd,emotion_categories,06_Fear,500,eseravd_readme,commit c723dce8171e; Files per label,2026-11-01,
-harper_valley_bank,sentiment,negative,433,harper_valley_bank_readme,commit 906c09addc96; Files per label,2026-11-01,
-harper_valley_bank,sentiment,neutral,17149,harper_valley_bank_readme,commit 906c09addc96; Files per label,2026-11-01,
-harper_valley_bank,sentiment,positive,8148,harper_valley_bank_readme,commit 906c09addc96; Files per label,2026-11-01,
-hikia,emotion_categories,angry,107,hikia_readme,commit 703fd9434c36; Files per label,2026-11-01,code a
-hikia,emotion_categories,happy,129,hikia_readme,commit 703fd9434c36; Files per label,2026-11-01,code h
-hikia,emotion_categories,neutral,119,hikia_readme,commit 703fd9434c36; Files per label,2026-11-01,code n
-hikia,emotion_categories,sad,133,hikia_readme,commit 703fd9434c36; Files per label,2026-11-01,code s
-hindi_ser_vishlb,emotion_categories,anger,400,hindi_ser_vishlb_readme,commit 7d94f0606f53; Files per label,2026-11-01,
-hindi_ser_vishlb,emotion_categories,disgust,400,hindi_ser_vishlb_readme,commit 7d94f0606f53; Files per label,2026-11-01,
-hindi_ser_vishlb,emotion_categories,fear,400,hindi_ser_vishlb_readme,commit 7d94f0606f53; Files per label,2026-11-01,
-hindi_ser_vishlb,emotion_categories,happy,400,hindi_ser_vishlb_readme,commit 7d94f0606f53; Files per label,2026-11-01,
-hindi_ser_vishlb,emotion_categories,neutral,400,hindi_ser_vishlb_readme,commit 7d94f0606f53; Files per label,2026-11-01,
-hindi_ser_vishlb,emotion_categories,sad,400,hindi_ser_vishlb_readme,commit 7d94f0606f53; Files per label,2026-11-01,
-hindi_ser_vishlb,emotion_categories,sarcastic,400,hindi_ser_vishlb_readme,commit 7d94f0606f53; Files per label,2026-11-01,
-hindi_ser_vishlb,emotion_categories,surprise,400,hindi_ser_vishlb_readme,commit 7d94f0606f53; Files per label,2026-11-01,
-iemocap,emotion_categories,angry,1103,iemocap_readme,commit 906c09addc96; Files per label,2026-11-01,code ang
-iemocap,emotion_categories,disgusted,2,iemocap_readme,commit 906c09addc96; Files per label,2026-11-01,code dis
-iemocap,emotion_categories,excited,1041,iemocap_readme,commit 906c09addc96; Files per label,2026-11-01,code exc
-iemocap,emotion_categories,fearful,40,iemocap_readme,commit 906c09addc96; Files per label,2026-11-01,code fea
-iemocap,emotion_categories,frustrated,1849,iemocap_readme,commit 906c09addc96; Files per label,2026-11-01,code fru
-iemocap,emotion_categories,happy,595,iemocap_readme,commit 906c09addc96; Files per label,2026-11-01,code hap
-iemocap,emotion_categories,neutral,1708,iemocap_readme,commit 906c09addc96; Files per label,2026-11-01,code neu
-iemocap,emotion_categories,no majority among the annotators,2507,iemocap_readme,commit 906c09addc96; Files per label,2026-11-01,code xxx
-iemocap,emotion_categories,other,3,iemocap_readme,commit 906c09addc96; Files per label,2026-11-01,code oth
-iemocap,emotion_categories,sad,1084,iemocap_readme,commit 906c09addc96; Files per label,2026-11-01,code sad
-iemocap,emotion_categories,surprised,107,iemocap_readme,commit 906c09addc96; Files per label,2026-11-01,code sur
-iesc,emotion_categories,Anger,120,iesc_readme,commit c1c6a512502f; Files per label,2026-11-01,
-iesc,emotion_categories,Fear,120,iesc_readme,commit c1c6a512502f; Files per label,2026-11-01,
-iesc,emotion_categories,Happy,120,iesc_readme,commit c1c6a512502f; Files per label,2026-11-01,
-iesc,emotion_categories,Neutral,120,iesc_readme,commit c1c6a512502f; Files per label,2026-11-01,
-iesc,emotion_categories,Sad,120,iesc_readme,commit c1c6a512502f; Files per label,2026-11-01,
-indianenglish,emotion_categories,Angry,170,indianenglish_readme,commit 25201a18519a; Files per label,2026-11-01,
-indianenglish,emotion_categories,Happy,226,indianenglish_readme,commit 25201a18519a; Files per label,2026-11-01,
-indianenglish,emotion_categories,Neutral,175,indianenglish_readme,commit 25201a18519a; Files per label,2026-11-01,
-indianenglish,emotion_categories,Sad,176,indianenglish_readme,commit 25201a18519a; Files per label,2026-11-01,
-indowavesentiment,emotion_categories,disappointed,60,indowavesentiment_readme,commit 820198870b01; Files per label,2026-11-01,code 05
-indowavesentiment,emotion_categories,disgust,60,indowavesentiment_readme,commit 820198870b01; Files per label,2026-11-01,code 04
-indowavesentiment,emotion_categories,happy,60,indowavesentiment_readme,commit 820198870b01; Files per label,2026-11-01,code 02
-indowavesentiment,emotion_categories,neutral,60,indowavesentiment_readme,commit 820198870b01; Files per label,2026-11-01,code 01
-indowavesentiment,emotion_categories,surprise,60,indowavesentiment_readme,commit 820198870b01; Files per label,2026-11-01,code 03
-inesco,emotion_categories,a (anger),759,inesco_readme,commit c3f1b82bcea1; Files per label,2026-11-01,
-inesco,emotion_categories,h (happiness),844,inesco_readme,commit c3f1b82bcea1; Files per label,2026-11-01,
-inesco,emotion_categories,s (sadness),796,inesco_readme,commit c3f1b82bcea1; Files per label,2026-11-01,
-javanese_ser_2black0,emotion_categories,angry,280,javanese_ser_2black0_readme,commit 111528fbf2be; Files per label,2026-11-01,code 06
-javanese_ser_2black0,emotion_categories,fear,280,javanese_ser_2black0_readme,commit 111528fbf2be; Files per label,2026-11-01,code 05
-javanese_ser_2black0,emotion_categories,happy,280,javanese_ser_2black0_readme,commit 111528fbf2be; Files per label,2026-11-01,code 03
-javanese_ser_2black0,emotion_categories,neutral,280,javanese_ser_2black0_readme,commit 111528fbf2be; Files per label,2026-11-01,code 01
-javanese_ser_2black0,emotion_categories,sad,280,javanese_ser_2black0_readme,commit 111528fbf2be; Files per label,2026-11-01,code 02
-javanese_ser_2black0,emotion_categories,surprise,280,javanese_ser_2black0_readme,commit 111528fbf2be; Files per label,2026-11-01,code 04
-jlcorpus,emotion_categories,angry,240,jlcorpus_readme,commit 987a1dccdf9e; Files per label,2026-11-01,
-jlcorpus,emotion_categories,anxious,240,jlcorpus_readme,commit 987a1dccdf9e; Files per label,2026-11-01,
-jlcorpus,emotion_categories,apologetic,240,jlcorpus_readme,commit 987a1dccdf9e; Files per label,2026-11-01,
-jlcorpus,emotion_categories,assertive,240,jlcorpus_readme,commit 987a1dccdf9e; Files per label,2026-11-01,
-jlcorpus,emotion_categories,concerned,240,jlcorpus_readme,commit 987a1dccdf9e; Files per label,2026-11-01,
-jlcorpus,emotion_categories,encouraging,240,jlcorpus_readme,commit 987a1dccdf9e; Files per label,2026-11-01,
-jlcorpus,emotion_categories,excited,240,jlcorpus_readme,commit 987a1dccdf9e; Files per label,2026-11-01,
-jlcorpus,emotion_categories,happy,240,jlcorpus_readme,commit 987a1dccdf9e; Files per label,2026-11-01,
-jlcorpus,emotion_categories,neutral,240,jlcorpus_readme,commit 987a1dccdf9e; Files per label,2026-11-01,
-jlcorpus,emotion_categories,sad,240,jlcorpus_readme,commit 987a1dccdf9e; Files per label,2026-11-01,
-jnv,emotion_categories,angry,68,jnv_readme,commit 00c840ff2900; Files per label,2026-11-01,
-jnv,emotion_categories,disgust,54,jnv_readme,commit 00c840ff2900; Files per label,2026-11-01,
-jnv,emotion_categories,fear,50,jnv_readme,commit 00c840ff2900; Files per label,2026-11-01,
-jnv,emotion_categories,happy,76,jnv_readme,commit 00c840ff2900; Files per label,2026-11-01,
-jnv,emotion_categories,sad,40,jnv_readme,commit 00c840ff2900; Files per label,2026-11-01,
-jnv,emotion_categories,surprise,132,jnv_readme,commit 00c840ff2900; Files per label,2026-11-01,
-jvnv,emotion_categories,anger,249,jvnv_readme,commit 778f3541b476; Files per label,2026-11-01,
-jvnv,emotion_categories,disgust,258,jvnv_readme,commit 778f3541b476; Files per label,2026-11-01,
-jvnv,emotion_categories,fear,265,jvnv_readme,commit 778f3541b476; Files per label,2026-11-01,
-jvnv,emotion_categories,happy,280,jvnv_readme,commit 778f3541b476; Files per label,2026-11-01,
-jvnv,emotion_categories,sad,257,jvnv_readme,commit 778f3541b476; Files per label,2026-11-01,
-jvnv,emotion_categories,surprise,306,jvnv_readme,commit 778f3541b476; Files per label,2026-11-01,
-kannada,emotion_categories,angry,78,kannada_readme,commit c69e31a00905; Files per label,2026-11-01,code 01
-kannada,emotion_categories,fear,78,kannada_readme,commit c69e31a00905; Files per label,2026-11-01,code 05
-kannada,emotion_categories,happy,78,kannada_readme,commit c69e31a00905; Files per label,2026-11-01,code 04
-kannada,emotion_categories,neutral,78,kannada_readme,commit c69e31a00905; Files per label,2026-11-01,code 06
-kannada,emotion_categories,sad,78,kannada_readme,commit c69e31a00905; Files per label,2026-11-01,code 02
-kannada,emotion_categories,surprise,78,kannada_readme,commit c69e31a00905; Files per label,2026-11-01,code 03
-kazemotts,emotion_categories,angry,9059,kazemotts_readme,commit 3d3f1a3ffe93; Files per label,2026-11-01,
-kazemotts,emotion_categories,fear,9098,kazemotts_readme,commit 3d3f1a3ffe93; Files per label,2026-11-01,
-kazemotts,emotion_categories,happy,9059,kazemotts_readme,commit 3d3f1a3ffe93; Files per label,2026-11-01,
-kazemotts,emotion_categories,neutral,9385,kazemotts_readme,commit 3d3f1a3ffe93; Files per label,2026-11-01,
-kazemotts,emotion_categories,sad,8980,kazemotts_readme,commit 3d3f1a3ffe93; Files per label,2026-11-01,
-kazemotts,emotion_categories,surprise,9179,kazemotts_readme,commit 3d3f1a3ffe93; Files per label,2026-11-01,
-kbes,emotion_categories,angry,200,kbes_readme,commit d9e26d5cc616; Files per label,2026-11-01,code 4
-kbes,emotion_categories,disgust,200,kbes_readme,commit d9e26d5cc616; Files per label,2026-11-01,code 5
-kbes,emotion_categories,happy,200,kbes_readme,commit d9e26d5cc616; Files per label,2026-11-01,code 2
-kbes,emotion_categories,neutral,100,kbes_readme,commit d9e26d5cc616; Files per label,2026-11-01,code 1
-kbes,emotion_categories,sad,200,kbes_readme,commit d9e26d5cc616; Files per label,2026-11-01,code 3
-legov2,emotion_categories,angry,137,legov2_readme,commit a429f81bc2c5; Files per label,2026-11-01,
-legov2,emotion_categories,friendly,4,legov2_readme,commit a429f81bc2c5; Files per label,2026-11-01,
-legov2,emotion_categories,garbage,589,legov2_readme,commit a429f81bc2c5; Files per label,2026-11-01,
-legov2,emotion_categories,neutral,3305,legov2_readme,commit a429f81bc2c5; Files per label,2026-11-01,
-legov2,emotion_categories,slightly angry,693,legov2_readme,commit a429f81bc2c5; Files per label,2026-11-01,
-legov2,emotion_categories,very angry,104,legov2_readme,commit a429f81bc2c5; Files per label,2026-11-01,
-lithuanian_emotion_db,emotion_categories,Ilgesys (longing),9,lithuanian_emotion_db_readme,commit 10c627b8a545; Files per label,2026-11-01,
-lithuanian_emotion_db,emotion_categories,angry,239,lithuanian_emotion_db_readme,commit 10c627b8a545; Files per label,2026-11-01,
-lithuanian_emotion_db,emotion_categories,disgust,150,lithuanian_emotion_db_readme,commit 10c627b8a545; Files per label,2026-11-01,
-lithuanian_emotion_db,emotion_categories,fear,103,lithuanian_emotion_db_readme,commit 10c627b8a545; Files per label,2026-11-01,
-lithuanian_emotion_db,emotion_categories,happy,260,lithuanian_emotion_db_readme,commit 10c627b8a545; Files per label,2026-11-01,
-lithuanian_emotion_db,emotion_categories,neutral,245,lithuanian_emotion_db_readme,commit 10c627b8a545; Files per label,2026-11-01,
-lithuanian_emotion_db,emotion_categories,sad,342,lithuanian_emotion_db_readme,commit 10c627b8a545; Files per label,2026-11-01,
-lithuanian_emotion_db,emotion_categories,surprise,105,lithuanian_emotion_db_readme,commit 10c627b8a545; Files per label,2026-11-01,
-lssed,emotion_categories,anger,6490,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Angry",2026-11-02,
-lssed,emotion_categories,boredom,2916,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Bored",2026-11-02,
-lssed,emotion_categories,disappointment,8905,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Disappointed",2026-11-02,
-lssed,emotion_categories,disgust,3179,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Disgusted",2026-11-02,
-lssed,emotion_categories,excitement,5228,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Excited",2026-11-02,
-lssed,emotion_categories,fear,628,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Fear",2026-11-02,
-lssed,emotion_categories,happiness,27033,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Happy",2026-11-02,
-lssed,emotion_categories,normal,60461,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Neutral",2026-11-02,The paper calls this class Neutral
-lssed,emotion_categories,other,18478,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Other",2026-11-02,
-lssed,emotion_categories,sadness,12051,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Sad",2026-11-02,
-lssed,emotion_categories,surprise,1656,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Surprise",2026-11-02,
-maleo,emotion_categories,angry,100,maleo_readme,commit 4645ecc3d114; Files per label,2026-11-01,code Marah
-maleo,emotion_categories,disgust,100,maleo_readme,commit 4645ecc3d114; Files per label,2026-11-01,code Jijik
-maleo,emotion_categories,fear,100,maleo_readme,commit 4645ecc3d114; Files per label,2026-11-01,code Takut
-maleo,emotion_categories,happy,100,maleo_readme,commit 4645ecc3d114; Files per label,2026-11-01,code Senang
-maleo,emotion_categories,neutral,100,maleo_readme,commit 4645ecc3d114; Files per label,2026-11-01,code Netral
-maleo,emotion_categories,sad,100,maleo_readme,commit 4645ecc3d114; Files per label,2026-11-01,code Sedih
-maleo,emotion_categories,surprise,100,maleo_readme,commit 4645ecc3d114; Files per label,2026-11-01,code Terkejut
-maserc,emotion_categories,angry,136,maserc_readme,commit 810d4ecfd6a6; Files per label,2026-11-01,
-maserc,emotion_categories,fear,135,maserc_readme,commit 810d4ecfd6a6; Files per label,2026-11-01,
-maserc,emotion_categories,happy,134,maserc_readme,commit 810d4ecfd6a6; Files per label,2026-11-01,
-maserc,emotion_categories,neutral,134,maserc_readme,commit 810d4ecfd6a6; Files per label,2026-11-01,
-maserc,emotion_categories,sad,134,maserc_readme,commit 810d4ecfd6a6; Files per label,2026-11-01,
-maserc,emotion_categories,surprise,135,maserc_readme,commit 810d4ecfd6a6; Files per label,2026-11-01,
-mav,emotion_categories,anger,10,mav_readme,commit 962fd8ddf22f; Files per label,2026-11-01,
-mav,emotion_categories,disgust,10,mav_readme,commit 962fd8ddf22f; Files per label,2026-11-01,
-mav,emotion_categories,fear,10,mav_readme,commit 962fd8ddf22f; Files per label,2026-11-01,
-mav,emotion_categories,happiness,10,mav_readme,commit 962fd8ddf22f; Files per label,2026-11-01,
-mav,emotion_categories,neutral,10,mav_readme,commit 962fd8ddf22f; Files per label,2026-11-01,
-mav,emotion_categories,pain,10,mav_readme,commit 962fd8ddf22f; Files per label,2026-11-01,
-mav,emotion_categories,pleasure,10,mav_readme,commit 962fd8ddf22f; Files per label,2026-11-01,
-mav,emotion_categories,sadness,10,mav_readme,commit 962fd8ddf22f; Files per label,2026-11-01,
-mav,emotion_categories,surprise,10,mav_readme,commit 962fd8ddf22f; Files per label,2026-11-01,
-mcaespps,emotion_categories,anger,1129,mcaespps_readme,commit 8893f059e459; Files per label,2026-11-01,
-mcaespps,emotion_categories,disgust,738,mcaespps_readme,commit 8893f059e459; Files per label,2026-11-01,
-mcaespps,emotion_categories,fear,671,mcaespps_readme,commit 8893f059e459; Files per label,2026-11-01,
-mcaespps,emotion_categories,happiness,785,mcaespps_readme,commit 8893f059e459; Files per label,2026-11-01,
-mcaespps,emotion_categories,neutral,1196,mcaespps_readme,commit 8893f059e459; Files per label,2026-11-01,
-mcaespps,emotion_categories,sadness,1187,mcaespps_readme,commit 8893f059e459; Files per label,2026-11-01,
-mcaespps,emotion_categories,surprise,969,mcaespps_readme,commit 8893f059e459; Files per label,2026-11-01,
-mderma,emotion_categories,angry,342,mderma_readme,commit a5e9f7e88d2a; Files per label,2026-11-01,
-mderma,emotion_categories,happy,307,mderma_readme,commit a5e9f7e88d2a; Files per label,2026-11-01,
-mderma,emotion_categories,neutral,312,mderma_readme,commit a5e9f7e88d2a; Files per label,2026-11-01,
-mderma,emotion_categories,sad,384,mderma_readme,commit a5e9f7e88d2a; Files per label,2026-11-01,
-meld,emotion_categories,anger,1607,meld_readme,commit b6b321565c17; Files per label,2026-11-01,
-meld,emotion_categories,disgust,361,meld_readme,commit b6b321565c17; Files per label,2026-11-01,
-meld,emotion_categories,fear,358,meld_readme,commit b6b321565c17; Files per label,2026-11-01,
-meld,emotion_categories,joy,2308,meld_readme,commit b6b321565c17; Files per label,2026-11-01,
-meld,emotion_categories,neutral,6436,meld_readme,commit b6b321565c17; Files per label,2026-11-01,
-meld,emotion_categories,sadness,1002,meld_readme,commit b6b321565c17; Files per label,2026-11-01,
-meld,emotion_categories,surprise,1636,meld_readme,commit b6b321565c17; Files per label,2026-11-01,
-mesd,emotion_categories,Anger,191,mesd_readme,commit 335de59c7787; Files per label,2026-11-01,human recordings plus naturalness-reduced copies
-mesd,emotion_categories,Disgust,192,mesd_readme,commit 335de59c7787; Files per label,2026-11-01,human recordings plus naturalness-reduced copies
-mesd,emotion_categories,Fear,192,mesd_readme,commit 335de59c7787; Files per label,2026-11-01,human recordings plus naturalness-reduced copies
-mesd,emotion_categories,Happiness,192,mesd_readme,commit 335de59c7787; Files per label,2026-11-01,human recordings plus naturalness-reduced copies
-mesd,emotion_categories,Neutral,191,mesd_readme,commit 335de59c7787; Files per label,2026-11-01,human recordings plus naturalness-reduced copies
-mesd,emotion_categories,Sadness,192,mesd_readme,commit 335de59c7787; Files per label,2026-11-01,human recordings plus naturalness-reduced copies
-mess,emotion_categories,angry,450,mess_readme,commit 191554fbb4b5; Files per label,2026-11-01,code A
-mess,emotion_categories,calm,450,mess_readme,commit 191554fbb4b5; Files per label,2026-11-01,code C
-mess,emotion_categories,happy,450,mess_readme,commit 191554fbb4b5; Files per label,2026-11-01,code H
-mess,emotion_categories,sad,450,mess_readme,commit 191554fbb4b5; Files per label,2026-11-01,code S
-msppodcast,emotion_categories,angry,35860,msppodcast_readme,commit ab2176a86ba4; Files per label,2026-11-01,code A
-msppodcast,emotion_categories,contempt,5585,msppodcast_readme,commit ab2176a86ba4; Files per label,2026-11-01,code C
-msppodcast,emotion_categories,disgust,2744,msppodcast_readme,commit ab2176a86ba4; Files per label,2026-11-01,code D
-msppodcast,emotion_categories,fear,1543,msppodcast_readme,commit ab2176a86ba4; Files per label,2026-11-01,code F
-msppodcast,emotion_categories,happy,58284,msppodcast_readme,commit ab2176a86ba4; Files per label,2026-11-01,code H
-msppodcast,emotion_categories,neutral,78718,msppodcast_readme,commit ab2176a86ba4; Files per label,2026-11-01,code N
-msppodcast,emotion_categories,no agreed label,48177,msppodcast_readme,commit ab2176a86ba4; Files per label,2026-11-01,code X
-msppodcast,emotion_categories,other (free text),3719,msppodcast_readme,commit ab2176a86ba4; Files per label,2026-11-01,code O
-msppodcast,emotion_categories,sad,24230,msppodcast_readme,commit ab2176a86ba4; Files per label,2026-11-01,code S
-msppodcast,emotion_categories,surprise,5845,msppodcast_readme,commit ab2176a86ba4; Files per label,2026-11-01,code U
-multidialog,emotion_categories,Angry,903,multidialog_readme,commit 2b6650d5d8ec; Files per label,2026-11-01,
-multidialog,emotion_categories,Curious to dive deeper,81096,multidialog_readme,commit 2b6650d5d8ec; Files per label,2026-11-01,
-multidialog,emotion_categories,Disgusted,1439,multidialog_readme,commit 2b6650d5d8ec; Files per label,2026-11-01,
-multidialog,emotion_categories,Fearful,923,multidialog_readme,commit 2b6650d5d8ec; Files per label,2026-11-01,
-multidialog,emotion_categories,Happy,29464,multidialog_readme,commit 2b6650d5d8ec; Files per label,2026-11-01,
-multidialog,emotion_categories,Neutral,41234,multidialog_readme,commit 2b6650d5d8ec; Files per label,2026-11-01,
-multidialog,emotion_categories,Sad,2488,multidialog_readme,commit 2b6650d5d8ec; Files per label,2026-11-01,
-multidialog,emotion_categories,Surprised,30307,multidialog_readme,commit 2b6650d5d8ec; Files per label,2026-11-01,
-nemo,emotion_categories,anger,749,nemo_readme,commit 103f4a22739e; Files per label,2026-11-01,
-nemo,emotion_categories,fear,736,nemo_readme,commit 103f4a22739e; Files per label,2026-11-01,
-nemo,emotion_categories,happiness,749,nemo_readme,commit 103f4a22739e; Files per label,2026-11-01,
-nemo,emotion_categories,neutral,809,nemo_readme,commit 103f4a22739e; Files per label,2026-11-01,
-nemo,emotion_categories,sadness,769,nemo_readme,commit 103f4a22739e; Files per label,2026-11-01,
-nemo,emotion_categories,surprised,669,nemo_readme,commit 103f4a22739e; Files per label,2026-11-01,
-nonverbaltts,emotion_categories,(no tag),534,nonverbaltts_readme,commit 8f9597d99262; Files per label,2026-11-01,
-nonverbaltts,emotion_categories,angry,25,nonverbaltts_readme,commit 8f9597d99262; Files per label,2026-11-01,
-nonverbaltts,emotion_categories,disgusted,78,nonverbaltts_readme,commit 8f9597d99262; Files per label,2026-11-01,
-nonverbaltts,emotion_categories,fearful,10,nonverbaltts_readme,commit 8f9597d99262; Files per label,2026-11-01,
-nonverbaltts,emotion_categories,happy,1605,nonverbaltts_readme,commit 8f9597d99262; Files per label,2026-11-01,
-nonverbaltts,emotion_categories,neutral,2406,nonverbaltts_readme,commit 8f9597d99262; Files per label,2026-11-01,
-nonverbaltts,emotion_categories,other,1177,nonverbaltts_readme,commit 8f9597d99262; Files per label,2026-11-01,
-nonverbaltts,emotion_categories,sad,387,nonverbaltts_readme,commit 8f9597d99262; Files per label,2026-11-01,
-nonverbaltts,emotion_categories,surprised,34,nonverbaltts_readme,commit 8f9597d99262; Files per label,2026-11-01,
-oreau,emotion_categories,angry (colère),67,oreau_readme,commit 70b7358c5b90; Files per label,2026-11-01,code C
-oreau,emotion_categories,disgust (dégoût),67,oreau_readme,commit 70b7358c5b90; Files per label,2026-11-01,code D
-oreau,emotion_categories,fear (peur),51,oreau_readme,commit 70b7358c5b90; Files per label,2026-11-01,code P
-oreau,emotion_categories,happy (joie),62,oreau_readme,commit 70b7358c5b90; Files per label,2026-11-01,code J
-oreau,emotion_categories,neutral (neutre),70,oreau_readme,commit 70b7358c5b90; Files per label,2026-11-01,code N
-oreau,emotion_categories,sad (tristesse),55,oreau_readme,commit 70b7358c5b90; Files per label,2026-11-01,code T
-oreau,emotion_categories,surprise,62,oreau_readme,commit 70b7358c5b90; Files per label,2026-11-01,code S
-pavoque,emotion_categories,angry,601,pavoque_readme,commit db86daa28eef; Files per label,2026-11-01,
-pavoque,emotion_categories,happy,584,pavoque_readme,commit db86daa28eef; Files per label,2026-11-01,
-pavoque,emotion_categories,neutral,3126,pavoque_readme,commit db86daa28eef; Files per label,2026-11-01,
-pavoque,emotion_categories,poker,575,pavoque_readme,commit db86daa28eef; Files per label,2026-11-01,
-pavoque,emotion_categories,sad,556,pavoque_readme,commit db86daa28eef; Files per label,2026-11-01,
-polishemo,emotion_categories,anger,150,polishemo_readme,commit 74d0c70ba3f6; Files per label,2026-11-01,code a
-polishemo,emotion_categories,fear,150,polishemo_readme,commit 74d0c70ba3f6; Files per label,2026-11-01,code s
-polishemo,emotion_categories,neutral,150,polishemo_readme,commit 74d0c70ba3f6; Files per label,2026-11-01,code n
-quechua,emotion_categories,anger,920,quechua_readme,commit b442deb5d15b; Files per label,2026-11-01,
-quechua,emotion_categories,angry,460,quechua_readme,commit b442deb5d15b; Files per label,2026-11-01,
-quechua,emotion_categories,bored,460,quechua_readme,commit b442deb5d15b; Files per label,2026-11-01,
-quechua,emotion_categories,boredom,920,quechua_readme,commit b442deb5d15b; Files per label,2026-11-01,
-quechua,emotion_categories,calm,1380,quechua_readme,commit b442deb5d15b; Files per label,2026-11-01,
-quechua,emotion_categories,excited,1380,quechua_readme,commit b442deb5d15b; Files per label,2026-11-01,
-quechua,emotion_categories,fear,1380,quechua_readme,commit b442deb5d15b; Files per label,2026-11-01,
-quechua,emotion_categories,happy,1380,quechua_readme,commit b442deb5d15b; Files per label,2026-11-01,
-quechua,emotion_categories,neutral,1380,quechua_readme,commit b442deb5d15b; Files per label,2026-11-01,
-quechua,emotion_categories,sadness,1380,quechua_readme,commit b442deb5d15b; Files per label,2026-11-01,
-quechua,emotion_categories,sleepy,1380,quechua_readme,commit b442deb5d15b; Files per label,2026-11-01,
-rasa,speaking_style,ALEXA,13292,rasa_readme,commit 0dc349618f51; Files per label,2026-11-01,
-rasa,speaking_style,ANGER,21467,rasa_readme,commit 0dc349618f51; Files per label,2026-11-01,
-rasa,speaking_style,BB,6769,rasa_readme,commit 0dc349618f51; Files per label,2026-11-01,
-rasa,speaking_style,BOOK,55788,rasa_readme,commit 0dc349618f51; Files per label,2026-11-01,
-rasa,speaking_style,CONV,124578,rasa_readme,commit 0dc349618f51; Files per label,2026-11-01,
-rasa,speaking_style,DIGI,5452,rasa_readme,commit 0dc349618f51; Files per label,2026-11-01,
-rasa,speaking_style,DISGUST,20134,rasa_readme,commit 0dc349618f51; Files per label,2026-11-01,
-rasa,speaking_style,FEAR,20712,rasa_readme,commit 0dc349618f51; Files per label,2026-11-01,
-rasa,speaking_style,HAPPY,21975,rasa_readme,commit 0dc349618f51; Files per label,2026-11-01,
-rasa,speaking_style,INDIC,12852,rasa_readme,commit 0dc349618f51; Files per label,2026-11-01,
-rasa,speaking_style,NEWS,41782,rasa_readme,commit 0dc349618f51; Files per label,2026-11-01,
-rasa,speaking_style,PROPER NOUN,104068,rasa_readme,commit 0dc349618f51; Files per label,2026-11-01,
-rasa,speaking_style,SAD,20070,rasa_readme,commit 0dc349618f51; Files per label,2026-11-01,
-rasa,speaking_style,SANGRAH,1837,rasa_readme,commit 0dc349618f51; Files per label,2026-11-01,
-rasa,speaking_style,SURPRISE,20484,rasa_readme,commit 0dc349618f51; Files per label,2026-11-01,
-rasa,speaking_style,UMANG,5436,rasa_readme,commit 0dc349618f51; Files per label,2026-11-01,
-rasa,speaking_style,WIKI,144250,rasa_readme,commit 0dc349618f51; Files per label,2026-11-01,
-ravdess,emotion_categories,angry,192,ravdess_readme,commit 23a0c910e1b3; Files per label,2026-11-01,code 05
-ravdess,emotion_categories,calm,192,ravdess_readme,commit 23a0c910e1b3; Files per label,2026-11-01,code 02
-ravdess,emotion_categories,disgust,192,ravdess_readme,commit 23a0c910e1b3; Files per label,2026-11-01,code 07
-ravdess,emotion_categories,fearful,192,ravdess_readme,commit 23a0c910e1b3; Files per label,2026-11-01,code 06
-ravdess,emotion_categories,happy,192,ravdess_readme,commit 23a0c910e1b3; Files per label,2026-11-01,code 03
-ravdess,emotion_categories,neutral,96,ravdess_readme,commit 23a0c910e1b3; Files per label,2026-11-01,code 01
-ravdess,emotion_categories,sad,192,ravdess_readme,commit 23a0c910e1b3; Files per label,2026-11-01,code 04
-ravdess,emotion_categories,surprised,192,ravdess_readme,commit 23a0c910e1b3; Files per label,2026-11-01,code 08
-recanvo,emotion_categories,affectionate,129,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,bathroom,20,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,delighted,1272,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,dysregulated,704,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,dysregulation-bathroom,18,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,dysregulation-sick,74,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,frustrated,1536,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,glee,8,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,greeting,3,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,happy,61,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,help,24,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,hunger,4,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,laugh,8,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,laughter,93,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,more,22,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,no,12,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,protest,21,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,request,419,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,selftalk,1885,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,social,634,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,tablet,7,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-recanvo,emotion_categories,yes,123,recanvo_readme,commit 906c09addc96; Files per label,2026-11-01,
-resd,emotion_categories,anger,219,resd_readme,commit 5021ed9da062; Files per label,2026-11-01,
-resd,emotion_categories,disgust,185,resd_readme,commit 5021ed9da062; Files per label,2026-11-01,
-resd,emotion_categories,enthusiasm,198,resd_readme,commit 5021ed9da062; Files per label,2026-11-01,
-resd,emotion_categories,fear,223,resd_readme,commit 5021ed9da062; Files per label,2026-11-01,
-resd,emotion_categories,happiness,218,resd_readme,commit 5021ed9da062; Files per label,2026-11-01,
-resd,emotion_categories,neutral,191,resd_readme,commit 5021ed9da062; Files per label,2026-11-01,
-resd,emotion_categories,sadness,162,resd_readme,commit 5021ed9da062; Files per label,2026-11-01,
-rml_emotion,emotion_categories,an,120,rml_emotion_readme,commit 79a71f9c2bf1; Files per label,2026-11-01,
-rml_emotion,emotion_categories,di,120,rml_emotion_readme,commit 79a71f9c2bf1; Files per label,2026-11-01,
-rml_emotion,emotion_categories,fe,120,rml_emotion_readme,commit 79a71f9c2bf1; Files per label,2026-11-01,
-rml_emotion,emotion_categories,ha,120,rml_emotion_readme,commit 79a71f9c2bf1; Files per label,2026-11-01,
-rml_emotion,emotion_categories,sa,120,rml_emotion_readme,commit 79a71f9c2bf1; Files per label,2026-11-01,
-rml_emotion,emotion_categories,su,120,rml_emotion_readme,commit 79a71f9c2bf1; Files per label,2026-11-01,
-saraiki_ser,emotion_categories,Angry,200,saraiki_ser_readme,commit 227edd522040; Files per label,2026-11-01,
-saraiki_ser,emotion_categories,Fear,200,saraiki_ser_readme,commit 227edd522040; Files per label,2026-11-01,
-saraiki_ser,emotion_categories,Happy,200,saraiki_ser_readme,commit 227edd522040; Files per label,2026-11-01,
-saraiki_ser,emotion_categories,Neutral,200,saraiki_ser_readme,commit 227edd522040; Files per label,2026-11-01,
-saraiki_ser,emotion_categories,Sad,200,saraiki_ser_readme,commit 227edd522040; Files per label,2026-11-01,
-saraiki_ser,emotion_categories,Shock,200,saraiki_ser_readme,commit 227edd522040; Files per label,2026-11-01,
-savee,emotion_categories,anger,60,savee_readme,commit e12537897bd1; Files per label,2026-11-01,code a
-savee,emotion_categories,disgust,60,savee_readme,commit e12537897bd1; Files per label,2026-11-01,code d
-savee,emotion_categories,fear,60,savee_readme,commit e12537897bd1; Files per label,2026-11-01,code f
-savee,emotion_categories,happiness,60,savee_readme,commit e12537897bd1; Files per label,2026-11-01,code h
-savee,emotion_categories,neutral,120,savee_readme,commit e12537897bd1; Files per label,2026-11-01,code n
-savee,emotion_categories,sadness,60,savee_readme,commit e12537897bd1; Files per label,2026-11-01,code sa
-savee,emotion_categories,surprise,60,savee_readme,commit e12537897bd1; Files per label,2026-11-01,code su
-ses_ed,emotion_categories,ANG,264,ses_ed_readme,commit 8419943f91a5; Files per label,2026-11-01,
-ses_ed,emotion_categories,DIS,265,ses_ed_readme,commit 8419943f91a5; Files per label,2026-11-01,
-ses_ed,emotion_categories,FEA,265,ses_ed_readme,commit 8419943f91a5; Files per label,2026-11-01,
-ses_ed,emotion_categories,HAP,264,ses_ed_readme,commit 8419943f91a5; Files per label,2026-11-01,
-ses_ed,emotion_categories,NEU,264,ses_ed_readme,commit 8419943f91a5; Files per label,2026-11-01,
-ses_ed,emotion_categories,SAD,264,ses_ed_readme,commit 8419943f91a5; Files per label,2026-11-01,
-ses_sd,emotion_categories,ANG,265,ses_sd_readme,commit f683a5e1cce8; Files per label,2026-11-01,
-ses_sd,emotion_categories,DIS,265,ses_sd_readme,commit f683a5e1cce8; Files per label,2026-11-01,
-ses_sd,emotion_categories,FEA,265,ses_sd_readme,commit f683a5e1cce8; Files per label,2026-11-01,
-ses_sd,emotion_categories,HAP,264,ses_sd_readme,commit f683a5e1cce8; Files per label,2026-11-01,
-ses_sd,emotion_categories,NEU,264,ses_sd_readme,commit f683a5e1cce8; Files per label,2026-11-01,
-ses_sd,emotion_categories,SAD,265,ses_sd_readme,commit f683a5e1cce8; Files per label,2026-11-01,
-shemo,emotion_categories,anger,1059,shemo_readme,commit 134b9cb7a5bd; Files per label,2026-11-01,code A
-shemo,emotion_categories,fear,38,shemo_readme,commit 134b9cb7a5bd; Files per label,2026-11-01,code F
-shemo,emotion_categories,happiness,201,shemo_readme,commit 134b9cb7a5bd; Files per label,2026-11-01,code H
-shemo,emotion_categories,neutral,1028,shemo_readme,commit 134b9cb7a5bd; Files per label,2026-11-01,code N
-shemo,emotion_categories,sadness,449,shemo_readme,commit 134b9cb7a5bd; Files per label,2026-11-01,code S
-shemo,emotion_categories,surprise,225,shemo_readme,commit 134b9cb7a5bd; Files per label,2026-11-01,code W
-sitb_osed,emotion_categories,angry,1997,sitb_osed_readme,commit 21118666a46f; Files per label,2026-11-01,code 01
-sitb_osed,emotion_categories,disgust,2043,sitb_osed_readme,commit 21118666a46f; Files per label,2026-11-01,code 02
-sitb_osed,emotion_categories,fear,1990,sitb_osed_readme,commit 21118666a46f; Files per label,2026-11-01,code 03
-sitb_osed,emotion_categories,happy,1995,sitb_osed_readme,commit 21118666a46f; Files per label,2026-11-01,code 04
-sitb_osed,emotion_categories,sad,2118,sitb_osed_readme,commit 21118666a46f; Files per label,2026-11-01,code 05
-sitb_osed,emotion_categories,surprise,1967,sitb_osed_readme,commit 21118666a46f; Files per label,2026-11-01,code 06
-spanish_meacorpus,emotion_categories,anger,668,spanish_meacorpus_page,"README table ""Emotion | Train | Test | Total"": Total column",2026-11-02,
-spanish_meacorpus,emotion_categories,disgust,1200,spanish_meacorpus_page,"README table ""Emotion | Train | Test | Total"": Total column",2026-11-02,
-spanish_meacorpus,emotion_categories,fear,37,spanish_meacorpus_page,"README table ""Emotion | Train | Test | Total"": Total column",2026-11-02,
-spanish_meacorpus,emotion_categories,joy,643,spanish_meacorpus_page,"README table ""Emotion | Train | Test | Total"": Total column",2026-11-02,
-spanish_meacorpus,emotion_categories,neutral,1999,spanish_meacorpus_page,"README table ""Emotion | Train | Test | Total"": Total column",2026-11-02,
-spanish_meacorpus,emotion_categories,sadness,582,spanish_meacorpus_page,"README table ""Emotion | Train | Test | Total"": Total column",2026-11-02,
-subesco,emotion_categories,ANGRY,1000,subesco_readme,commit ba759cea1dda; Files per label,2026-11-01,
-subesco,emotion_categories,DISGUST,1000,subesco_readme,commit ba759cea1dda; Files per label,2026-11-01,
-subesco,emotion_categories,FEAR,1000,subesco_readme,commit ba759cea1dda; Files per label,2026-11-01,
-subesco,emotion_categories,HAPPY,1000,subesco_readme,commit ba759cea1dda; Files per label,2026-11-01,
-subesco,emotion_categories,NEUTRAL,1000,subesco_readme,commit ba759cea1dda; Files per label,2026-11-01,
-subesco,emotion_categories,SAD,1000,subesco_readme,commit ba759cea1dda; Files per label,2026-11-01,
-subesco,emotion_categories,SURPRISE,1000,subesco_readme,commit ba759cea1dda; Files per label,2026-11-01,
-syntact,emotion_categories,anger,853,syntact_readme,commit 6b469f7b128c; Files per label,2026-11-01,
-syntact,emotion_categories,boredom,1112,syntact_readme,commit 6b469f7b128c; Files per label,2026-11-01,
-syntact,emotion_categories,fear,929,syntact_readme,commit 6b469f7b128c; Files per label,2026-11-01,
-syntact,emotion_categories,happiness,1075,syntact_readme,commit 6b469f7b128c; Files per label,2026-11-01,
-syntact,emotion_categories,neutral,1093,syntact_readme,commit 6b469f7b128c; Files per label,2026-11-01,
-syntact,emotion_categories,sadness,939,syntact_readme,commit 6b469f7b128c; Files per label,2026-11-01,
-talromur3,emotion_categories,addendum / addendum_style2,1140,talromur3_readme,commit 906c09addc96; Files per label,2026-11-01,
-talromur3,emotion_categories,angry,3396,talromur3_readme,commit 906c09addc96; Files per label,2026-11-01,
-talromur3,emotion_categories,happy,3396,talromur3_readme,commit 906c09addc96; Files per label,2026-11-01,
-talromur3,emotion_categories,helpful,3396,talromur3_readme,commit 906c09addc96; Files per label,2026-11-01,
-talromur3,emotion_categories,neutral,3396,talromur3_readme,commit 906c09addc96; Files per label,2026-11-01,
-talromur3,emotion_categories,sad,3396,talromur3_readme,commit 906c09addc96; Files per label,2026-11-01,
-talromur3,emotion_categories,surprised,3396,talromur3_readme,commit 906c09addc96; Files per label,2026-11-01,
-telugu_emotion_kaggle,emotion_categories,angry,96,telugu_emotion_kaggle_readme,commit 2d74cbae3a8e; Files per label,2026-11-01,
-telugu_emotion_kaggle,emotion_categories,happy,94,telugu_emotion_kaggle_readme,commit 2d74cbae3a8e; Files per label,2026-11-01,
-telugu_emotion_kaggle,emotion_categories,nuetral,103,telugu_emotion_kaggle_readme,commit 2d74cbae3a8e; Files per label,2026-11-01,
-telugu_emotion_kaggle,emotion_categories,sad,80,telugu_emotion_kaggle_readme,commit 2d74cbae3a8e; Files per label,2026-11-01,
-telugu_emotion_kaggle,emotion_categories,suprised,85,telugu_emotion_kaggle_readme,commit 2d74cbae3a8e; Files per label,2026-11-01,
-tess,emotion_categories,angry,400,tess_readme,commit 6208bb547c48; Files per label,2026-11-01,
-tess,emotion_categories,disgust,400,tess_readme,commit 6208bb547c48; Files per label,2026-11-01,
-tess,emotion_categories,fear,400,tess_readme,commit 6208bb547c48; Files per label,2026-11-01,
-tess,emotion_categories,happy,400,tess_readme,commit 6208bb547c48; Files per label,2026-11-01,
-tess,emotion_categories,neutral,400,tess_readme,commit 6208bb547c48; Files per label,2026-11-01,
-tess,emotion_categories,ps (pleasant surprise),400,tess_readme,commit 6208bb547c48; Files per label,2026-11-01,
-tess,emotion_categories,sad,400,tess_readme,commit 6208bb547c48; Files per label,2026-11-01,
-thaiser,emotion_categories,Angry,3111,thaiser_readme,commit 906c09addc96; Files per label,2026-11-01,
-thaiser,emotion_categories,Frustrated,7864,thaiser_readme,commit 906c09addc96; Files per label,2026-11-01,
-thaiser,emotion_categories,Happy,4070,thaiser_readme,commit 906c09addc96; Files per label,2026-11-01,
-thaiser,emotion_categories,Neutral,7359,thaiser_readme,commit 906c09addc96; Files per label,2026-11-01,
-thaiser,emotion_categories,None (no majority),2664,thaiser_readme,commit 906c09addc96; Files per label,2026-11-01,
-thaiser,emotion_categories,Sad,2781,thaiser_readme,commit 906c09addc96; Files per label,2026-11-01,
-thaiser,emotion_categories,other,5,thaiser_readme,commit 906c09addc96; Files per label,2026-11-01,
-thanushs25_tamil,emotion_categories,angry,49,thanushs25_tamil_readme,commit 906c09addc96; Files per label,2026-11-01,
-thanushs25_tamil,emotion_categories,fear,28,thanushs25_tamil_readme,commit 906c09addc96; Files per label,2026-11-01,
-thanushs25_tamil,emotion_categories,happy,41,thanushs25_tamil_readme,commit 906c09addc96; Files per label,2026-11-01,
-thanushs25_tamil,emotion_categories,neutral,28,thanushs25_tamil_readme,commit 906c09addc96; Files per label,2026-11-01,
-thanushs25_tamil,emotion_categories,sad,49,thanushs25_tamil_readme,commit 906c09addc96; Files per label,2026-11-01,
-thorsten,emotion_categories,amused,300,thorsten_readme,commit a533352780e4; Files per label,2026-11-01,
-thorsten,emotion_categories,angry,300,thorsten_readme,commit a533352780e4; Files per label,2026-11-01,
-thorsten,emotion_categories,disgusted,300,thorsten_readme,commit a533352780e4; Files per label,2026-11-01,
-thorsten,emotion_categories,drunk,300,thorsten_readme,commit a533352780e4; Files per label,2026-11-01,
-thorsten,emotion_categories,neutral,300,thorsten_readme,commit a533352780e4; Files per label,2026-11-01,
-thorsten,emotion_categories,sleepy,300,thorsten_readme,commit a533352780e4; Files per label,2026-11-01,
-thorsten,emotion_categories,surprised,300,thorsten_readme,commit a533352780e4; Files per label,2026-11-01,
-thorsten,emotion_categories,whisper,299,thorsten_readme,commit a533352780e4; Files per label,2026-11-01,
-turevdb,emotion_categories,Angry,487,turevdb_readme,commit 2a7aaca95e82; Files per label,2026-11-01,
-turevdb,emotion_categories,Calm,408,turevdb_readme,commit 2a7aaca95e82; Files per label,2026-11-01,
-turevdb,emotion_categories,Happy,357,turevdb_readme,commit 2a7aaca95e82; Files per label,2026-11-01,
-turevdb,emotion_categories,Sad,483,turevdb_readme,commit 2a7aaca95e82; Files per label,2026-11-01,
-ua_ser,emotion_categories,angry,259,ua_ser_readme,commit 1a0cbe9f86f0; Files per label,2026-11-01,
-ua_ser,emotion_categories,happy,244,ua_ser_readme,commit 1a0cbe9f86f0; Files per label,2026-11-01,
-ua_ser,emotion_categories,neutral,222,ua_ser_readme,commit 1a0cbe9f86f0; Files per label,2026-11-01,
-ua_ser,emotion_categories,sad,227,ua_ser_readme,commit 1a0cbe9f86f0; Files per label,2026-11-01,
-uftbesd,emotion_categories,Angry,200,uftbesd_readme,commit 6bb3ab504e8c; Files per label,2026-11-01,
-uftbesd,emotion_categories,Disgust,200,uftbesd_readme,commit 6bb3ab504e8c; Files per label,2026-11-01,
-uftbesd,emotion_categories,Fear,200,uftbesd_readme,commit 6bb3ab504e8c; Files per label,2026-11-01,
-uftbesd,emotion_categories,Happy,200,uftbesd_readme,commit 6bb3ab504e8c; Files per label,2026-11-01,
-uftbesd,emotion_categories,Neutral,200,uftbesd_readme,commit 6bb3ab504e8c; Files per label,2026-11-01,
-uftbesd,emotion_categories,Sad,200,uftbesd_readme,commit 6bb3ab504e8c; Files per label,2026-11-01,
-uftbesd,emotion_categories,Surprise,200,uftbesd_readme,commit 6bb3ab504e8c; Files per label,2026-11-01,
-urdu,emotion_categories,Angry (A),100,urdu_readme,commit ed746ef93a58; Files per label,2026-11-01,
-urdu,emotion_categories,Happy (H),100,urdu_readme,commit ed746ef93a58; Files per label,2026-11-01,
-urdu,emotion_categories,Neutral (N),100,urdu_readme,commit ed746ef93a58; Files per label,2026-11-01,
-urdu,emotion_categories,Sad (S),100,urdu_readme,commit ed746ef93a58; Files per label,2026-11-01,
-urduser,emotion_categories,angry,500,urduser_readme,commit 5e48d52daadc; Files per label,2026-11-01,code 1
-urduser,emotion_categories,boredom,500,urduser_readme,commit 5e48d52daadc; Files per label,2026-11-01,code 3
-urduser,emotion_categories,disgust,500,urduser_readme,commit 5e48d52daadc; Files per label,2026-11-01,code 4
-urduser,emotion_categories,fear,500,urduser_readme,commit 5e48d52daadc; Files per label,2026-11-01,code 2
-urduser,emotion_categories,happy,500,urduser_readme,commit 5e48d52daadc; Files per label,2026-11-01,code 5
-urduser,emotion_categories,neutral,500,urduser_readme,commit 5e48d52daadc; Files per label,2026-11-01,code 6
-urduser,emotion_categories,sad,500,urduser_readme,commit 5e48d52daadc; Files per label,2026-11-01,code 7
-usc_emo_mri,emotion_categories,-,29,usc_emo_mri_readme,commit 0dcb820c556a; Files per label,2026-11-01,code (no row in `meta`)
-usc_emo_mri,emotion_categories,angry,563,usc_emo_mri_readme,commit 0dcb820c556a; Files per label,2026-11-01,code 2
-usc_emo_mri,emotion_categories,happy,542,usc_emo_mri_readme,commit 0dcb820c556a; Files per label,2026-11-01,code 3
-usc_emo_mri,emotion_categories,neutral,656,usc_emo_mri_readme,commit 0dcb820c556a; Files per label,2026-11-01,code 1
-usc_emo_mri,emotion_categories,not described,29,usc_emo_mri_readme,commit 0dcb820c556a; Files per label,2026-11-01,code 5
-usc_emo_mri,emotion_categories,sad,544,usc_emo_mri_readme,commit 0dcb820c556a; Files per label,2026-11-01,code 4
-utemo,emotion_categories,Anger,249,utemo_readme,commit 39841da5cf4e; Files per label,2026-11-01,
-utemo,emotion_categories,Disgust,244,utemo_readme,commit 39841da5cf4e; Files per label,2026-11-01,
-utemo,emotion_categories,Fear,244,utemo_readme,commit 39841da5cf4e; Files per label,2026-11-01,
-utemo,emotion_categories,Happiness,242,utemo_readme,commit 39841da5cf4e; Files per label,2026-11-01,
-utemo,emotion_categories,Neutral,254,utemo_readme,commit 39841da5cf4e; Files per label,2026-11-01,
-utemo,emotion_categories,Sadness,289,utemo_readme,commit 39841da5cf4e; Files per label,2026-11-01,
-utemo,emotion_categories,Surprise,279,utemo_readme,commit 39841da5cf4e; Files per label,2026-11-01,
-visec,emotion_categories,angry,1466,visec_readme,commit 1dd1cb516d1b; Files per label,2026-11-01,
-visec,emotion_categories,happy,1228,visec_readme,commit 1dd1cb516d1b; Files per label,2026-11-01,
-visec,emotion_categories,neutral,1507,visec_readme,commit 1dd1cb516d1b; Files per label,2026-11-01,
-visec,emotion_categories,sad,1079,visec_readme,commit 1dd1cb516d1b; Files per label,2026-11-01,
-vivae,emotion_categories,achievement,161,vivae_readme,commit 6134b1534f2f; Files per label,2026-11-01,
-vivae,emotion_categories,anger,174,vivae_readme,commit 6134b1534f2f; Files per label,2026-11-01,
-vivae,emotion_categories,fear,176,vivae_readme,commit 6134b1534f2f; Files per label,2026-11-01,
-vivae,emotion_categories,pain,185,vivae_readme,commit 6134b1534f2f; Files per label,2026-11-01,
-vivae,emotion_categories,pleasure,202,vivae_readme,commit 6134b1534f2f; Files per label,2026-11-01,
-vivae,emotion_categories,surprise,187,vivae_readme,commit 6134b1534f2f; Files per label,2026-11-01,
-voicestats,emotion_categories,angry,300,voicestats_readme,commit f1fdb1988c54; Files per label,2026-11-01,
-voicestats,emotion_categories,happy,300,voicestats_readme,commit f1fdb1988c54; Files per label,2026-11-01,
-voicestats,emotion_categories,normal,300,voicestats_readme,commit f1fdb1988c54; Files per label,2026-11-01,
-whiser,emotion_categories,angry,293,whiser_readme,commit 2366a8d0b31e; Files per label,2026-11-01,code A
-whiser,emotion_categories,contempt,10,whiser_readme,commit 2366a8d0b31e; Files per label,2026-11-01,code C
-whiser,emotion_categories,disgust,1,whiser_readme,commit 2366a8d0b31e; Files per label,2026-11-01,code D
-whiser,emotion_categories,fear,6,whiser_readme,commit 2366a8d0b31e; Files per label,2026-11-01,code F
-whiser,emotion_categories,happy,345,whiser_readme,commit 2366a8d0b31e; Files per label,2026-11-01,code H
-whiser,emotion_categories,neutral,3492,whiser_readme,commit 2366a8d0b31e; Files per label,2026-11-01,code N
-whiser,emotion_categories,no agreed label,916,whiser_readme,commit 2366a8d0b31e; Files per label,2026-11-01,code X
-whiser,emotion_categories,other (free text),47,whiser_readme,commit 2366a8d0b31e; Files per label,2026-11-01,code O
-whiser,emotion_categories,sad,284,whiser_readme,commit 2366a8d0b31e; Files per label,2026-11-01,code S
-whiser,emotion_categories,surprise,33,whiser_readme,commit 2366a8d0b31e; Files per label,2026-11-01,code U
-ysed,emotion_categories,angry,286,ysed_readme,commit 1a5f8dd6a19e; Files per label,2026-11-01,
-ysed,emotion_categories,fearful,244,ysed_readme,commit 1a5f8dd6a19e; Files per label,2026-11-01,
-ysed,emotion_categories,happy,294,ysed_readme,commit 1a5f8dd6a19e; Files per label,2026-11-01,
-ysed,emotion_categories,neutral,305,ysed_readme,commit 1a5f8dd6a19e; Files per label,2026-11-01,
-ysed,emotion_categories,sad,303,ysed_readme,commit 1a5f8dd6a19e; Files per label,2026-11-01,
+dataset_id,item,label,n,hours,source_id,locator,checked_on,note
+aesdd,emotion_categories,anger,121,0.121,aesdd_readme,commit ec19c9038dbb; Files per label,2026-11-05,
+aesdd,emotion_categories,disgust,122,0.155,aesdd_readme,commit ec19c9038dbb; Files per label,2026-11-05,
+aesdd,emotion_categories,fear,120,0.125,aesdd_readme,commit ec19c9038dbb; Files per label,2026-11-05,
+aesdd,emotion_categories,happiness,119,0.133,aesdd_readme,commit ec19c9038dbb; Files per label,2026-11-05,
+aesdd,emotion_categories,sadness,123,0.156,aesdd_readme,commit ec19c9038dbb; Files per label,2026-11-05,
+akace,emotion_categories,Anger,1109,4.009,akace_readme,commit 7909306d3c16; Files per label,2026-11-05,
+akace,emotion_categories,Confusion,1,0.001,akace_readme,commit 7909306d3c16; Files per label,2026-11-05,
+akace,emotion_categories,Disgust,162,0.593,akace_readme,commit 7909306d3c16; Files per label,2026-11-05,
+akace,emotion_categories,Fear,135,0.242,akace_readme,commit 7909306d3c16; Files per label,2026-11-05,
+akace,emotion_categories,Frustration,1,0.002,akace_readme,commit 7909306d3c16; Files per label,2026-11-05,
+akace,emotion_categories,Joy,569,1.099,akace_readme,commit 7909306d3c16; Files per label,2026-11-05,
+akace,emotion_categories,Neutral,2984,6.597,akace_readme,commit 7909306d3c16; Files per label,2026-11-05,
+akace,emotion_categories,Sadness,811,1.956,akace_readme,commit 7909306d3c16; Files per label,2026-11-05,
+akace,emotion_categories,Surprise,390,0.868,akace_readme,commit 7909306d3c16; Files per label,2026-11-05,
+albemo,emotion_categories,angry,60,0.049,albemo_readme,commit 2ab6e28b037b; Files per label,2026-11-05,code zemerim
+albemo,emotion_categories,disgust,60,0.050,albemo_readme,commit 2ab6e28b037b; Files per label,2026-11-05,code neveri
+albemo,emotion_categories,fear,60,0.047,albemo_readme,commit 2ab6e28b037b; Files per label,2026-11-05,code frike
+albemo,emotion_categories,happy,60,0.049,albemo_readme,commit 2ab6e28b037b; Files per label,2026-11-05,code gezim
+albemo,emotion_categories,neutral,60,0.059,albemo_readme,commit 2ab6e28b037b; Files per label,2026-11-05,code neutral
+albemo,emotion_categories,sad,60,0.062,albemo_readme,commit 2ab6e28b037b; Files per label,2026-11-05,code trishtim
+albemo,emotion_categories,surprise,60,0.052,albemo_readme,commit 2ab6e28b037b; Files per label,2026-11-05,code habi
+anad,emotion_categories,angry,741,0.191,anad_readme,commit 45d7f2159aac; Files per label,2026-11-05,
+anad,emotion_categories,happy,505,0.114,anad_readme,commit 45d7f2159aac; Files per label,2026-11-05,
+anad,emotion_categories,surprised,137,0.036,anad_readme,commit 45d7f2159aac; Files per label,2026-11-05,
+ased,emotion_categories,angry,486,0.346,ased_readme,commit 49b1192fdace; Files per label,2026-11-05,code a
+ased,emotion_categories,fear,510,0.501,ased_readme,commit 49b1192fdace; Files per label,2026-11-05,code f
+ased,emotion_categories,happy,486,0.392,ased_readme,commit 49b1192fdace; Files per label,2026-11-05,code h
+ased,emotion_categories,neutral,522,0.452,ased_readme,commit 49b1192fdace; Files per label,2026-11-05,code n
+ased,emotion_categories,sad,470,0.416,ased_readme,commit 49b1192fdace; Files per label,2026-11-05,code s
+asvpesd,emotion_categories,01,15,0.018,asvpesd_readme,commit 7286dc978dce; Files per label,2026-11-05,
+asvpesd,emotion_categories,02,997,1.885,asvpesd_readme,commit 7286dc978dce; Files per label,2026-11-05,
+asvpesd,emotion_categories,03,459,0.715,asvpesd_readme,commit 7286dc978dce; Files per label,2026-11-05,
+asvpesd,emotion_categories,04,432,0.828,asvpesd_readme,commit 7286dc978dce; Files per label,2026-11-05,
+asvpesd,emotion_categories,05,935,1.669,asvpesd_readme,commit 7286dc978dce; Files per label,2026-11-05,
+asvpesd,emotion_categories,06,98,0.119,asvpesd_readme,commit 7286dc978dce; Files per label,2026-11-05,
+asvpesd,emotion_categories,07,76,0.073,asvpesd_readme,commit 7286dc978dce; Files per label,2026-11-05,
+asvpesd,emotion_categories,08,244,0.192,asvpesd_readme,commit 7286dc978dce; Files per label,2026-11-05,
+asvpesd,emotion_categories,09,62,0.086,asvpesd_readme,commit 7286dc978dce; Files per label,2026-11-05,
+asvpesd,emotion_categories,10,17,0.019,asvpesd_readme,commit 7286dc978dce; Files per label,2026-11-05,
+asvpesd,emotion_categories,11,26,0.045,asvpesd_readme,commit 7286dc978dce; Files per label,2026-11-05,
+asvpesd,emotion_categories,12,194,0.428,asvpesd_readme,commit 7286dc978dce; Files per label,2026-11-05,
+audiospeechsentiment,sentiment,(no label; `TEST/`),110,0.082,audiospeechsentiment_readme,commit 0d190b2574b7; Files per label,2026-11-05,
+audiospeechsentiment,sentiment,Negative,87,0.057,audiospeechsentiment_readme,commit 0d190b2574b7; Files per label,2026-11-05,
+audiospeechsentiment,sentiment,Neutral,81,0.066,audiospeechsentiment_readme,commit 0d190b2574b7; Files per label,2026-11-05,
+audiospeechsentiment,sentiment,Positive,82,0.061,audiospeechsentiment_readme,commit 0d190b2574b7; Files per label,2026-11-05,
+banglamood,emotion_categories,Angry,611,0.504,banglamood_readme,commit 483ebfa492f4; Files per label,2026-11-05,
+banglamood,emotion_categories,Disappointment,343,0.302,banglamood_readme,commit 483ebfa492f4; Files per label,2026-11-05,
+banglamood,emotion_categories,Excitement,267,0.257,banglamood_readme,commit 483ebfa492f4; Files per label,2026-11-05,
+banglamood,emotion_categories,Fear,449,0.416,banglamood_readme,commit 483ebfa492f4; Files per label,2026-11-05,
+banglamood,emotion_categories,Happy,300,0.283,banglamood_readme,commit 483ebfa492f4; Files per label,2026-11-05,
+banglamood,emotion_categories,Neutral,610,0.574,banglamood_readme,commit 483ebfa492f4; Files per label,2026-11-05,
+banglamood,emotion_categories,Sad,337,0.321,banglamood_readme,commit 483ebfa492f4; Files per label,2026-11-05,
+banglamood,emotion_categories,Surprised,303,0.244,banglamood_readme,commit 483ebfa492f4; Files per label,2026-11-05,
+banglaser,emotion_categories,angry,306,0.283,banglaser_readme,commit 07a1ab54b32b; Files per label,2026-11-05,code 03
+banglaser,emotion_categories,happy,306,0.285,banglaser_readme,commit 07a1ab54b32b; Files per label,2026-11-05,code 01
+banglaser,emotion_categories,neutral,243,0.228,banglaser_readme,commit 07a1ab54b32b; Files per label,2026-11-05,code 05
+banglaser,emotion_categories,sad,306,0.288,banglaser_readme,commit 07a1ab54b32b; Files per label,2026-11-05,code 02
+banglaser,emotion_categories,surprise,306,0.290,banglaser_readme,commit 07a1ab54b32b; Files per label,2026-11-05,code 04
+banspemo,emotion_categories,anger,132,0.211,banspemo_readme,commit d6436674a095; Files per label,2026-11-05,code 01
+banspemo,emotion_categories,disgust,132,0.230,banspemo_readme,commit d6436674a095; Files per label,2026-11-05,code 02
+banspemo,emotion_categories,fear,132,0.235,banspemo_readme,commit d6436674a095; Files per label,2026-11-05,code 03
+banspemo,emotion_categories,happy,132,0.238,banspemo_readme,commit d6436674a095; Files per label,2026-11-05,code 04
+banspemo,emotion_categories,sad,132,0.243,banspemo_readme,commit d6436674a095; Files per label,2026-11-05,code 05
+banspemo,emotion_categories,surprise,132,0.230,banspemo_readme,commit d6436674a095; Files per label,2026-11-05,code 06
+bari_emospeech,emotion_categories,Affection,500,0.299,bari_emospeech_readme,commit 30f1f693b01e; Files per label,2026-11-05,
+bari_emospeech,emotion_categories,Happiness,407,0.295,bari_emospeech_readme,commit 30f1f693b01e; Files per label,2026-11-05,
+bari_emospeech,emotion_categories,Jealousy,605,0.633,bari_emospeech_readme,commit 30f1f693b01e; Files per label,2026-11-05,
+bari_emospeech,emotion_categories,Normal,500,0.217,bari_emospeech_readme,commit 30f1f693b01e; Files per label,2026-11-05,
+bari_emospeech,emotion_categories,Sadness,300,0.227,bari_emospeech_readme,commit 30f1f693b01e; Files per label,2026-11-05,
+baser,emotion_categories,ANGRY,150,0.108,baser_readme,commit e80f4c9f946d; Files per label,2026-11-05,
+baser,emotion_categories,FEAR,150,0.140,baser_readme,commit e80f4c9f946d; Files per label,2026-11-05,
+baser,emotion_categories,HAPPY,150,0.112,baser_readme,commit e80f4c9f946d; Files per label,2026-11-05,
+baser,emotion_categories,NEUTRAL,150,0.111,baser_readme,commit e80f4c9f946d; Files per label,2026-11-05,
+baser,emotion_categories,SAD,150,0.135,baser_readme,commit e80f4c9f946d; Files per label,2026-11-05,
+berst,emotion_categories,anger,651,0.540,berst_readme,commit 52bf05440efd; Files per label,2026-11-05,
+berst,emotion_categories,disgust,677,0.578,berst_readme,commit 52bf05440efd; Files per label,2026-11-05,
+berst,emotion_categories,fear,684,0.550,berst_readme,commit 52bf05440efd; Files per label,2026-11-05,
+berst,emotion_categories,joy,657,0.554,berst_readme,commit 52bf05440efd; Files per label,2026-11-05,
+berst,emotion_categories,neutral,657,0.524,berst_readme,commit 52bf05440efd; Files per label,2026-11-05,
+berst,emotion_categories,sadness,584,0.490,berst_readme,commit 52bf05440efd; Files per label,2026-11-05,
+berst,emotion_categories,surprise,613,0.488,berst_readme,commit 52bf05440efd; Files per label,2026-11-05,
+brytserc,emotion_categories,Angry,745,0.621,brytserc_readme,commit 9b910fe461b2; Files per label,2026-11-05,
+brytserc,emotion_categories,Disgust,745,0.621,brytserc_readme,commit 9b910fe461b2; Files per label,2026-11-05,
+brytserc,emotion_categories,Fear,745,0.621,brytserc_readme,commit 9b910fe461b2; Files per label,2026-11-05,
+brytserc,emotion_categories,Happy,745,0.621,brytserc_readme,commit 9b910fe461b2; Files per label,2026-11-05,
+brytserc,emotion_categories,Neutral,745,0.621,brytserc_readme,commit 9b910fe461b2; Files per label,2026-11-05,
+brytserc,emotion_categories,Sad,745,0.621,brytserc_readme,commit 9b910fe461b2; Files per label,2026-11-05,
+brytserc,emotion_categories,Surprise,745,0.621,brytserc_readme,commit 9b910fe461b2; Files per label,2026-11-05,
+cafe,emotion_categories,Colère,144,0.180,cafe_readme,commit f65f30414551; Files per label,2026-11-05,
+cafe,emotion_categories,Dégoût,144,0.198,cafe_readme,commit f65f30414551; Files per label,2026-11-05,
+cafe,emotion_categories,Joie,144,0.173,cafe_readme,commit f65f30414551; Files per label,2026-11-05,
+cafe,emotion_categories,Neutre,72,0.082,cafe_readme,commit f65f30414551; Files per label,2026-11-05,
+cafe,emotion_categories,Peur,144,0.171,cafe_readme,commit f65f30414551; Files per label,2026-11-05,
+cafe,emotion_categories,Surprise,144,0.167,cafe_readme,commit f65f30414551; Files per label,2026-11-05,
+cafe,emotion_categories,Tristesse,144,0.184,cafe_readme,commit f65f30414551; Files per label,2026-11-05,
+casia,emotion_categories,angry,200,0.098,casia_readme,commit 5a340762e318; Files per label,2026-11-05,
+casia,emotion_categories,fear,200,0.117,casia_readme,commit 5a340762e318; Files per label,2026-11-05,
+casia,emotion_categories,happy,200,0.105,casia_readme,commit 5a340762e318; Files per label,2026-11-05,
+casia,emotion_categories,neutral,200,0.092,casia_readme,commit 5a340762e318; Files per label,2026-11-05,
+casia,emotion_categories,sad,200,0.129,casia_readme,commit 5a340762e318; Files per label,2026-11-05,
+casia,emotion_categories,surprise,200,0.094,casia_readme,commit 5a340762e318; Files per label,2026-11-05,
+cbesd,emotion_categories,ANGER,699,0.432,cbesd_readme,commit 434b578ebcb0; Files per label,2026-11-05,
+cbesd,emotion_categories,DISGUST,700,0.469,cbesd_readme,commit 434b578ebcb0; Files per label,2026-11-05,
+cbesd,emotion_categories,FEAR,705,0.555,cbesd_readme,commit 434b578ebcb0; Files per label,2026-11-05,
+cbesd,emotion_categories,HAPPY,700,0.526,cbesd_readme,commit 434b578ebcb0; Files per label,2026-11-05,
+cbesd,emotion_categories,NEUTRAL,700,0.525,cbesd_readme,commit 434b578ebcb0; Files per label,2026-11-05,
+cbesd,emotion_categories,SAD,700,0.526,cbesd_readme,commit 434b578ebcb0; Files per label,2026-11-05,
+cremad,emotion_categories,ANG,1271,0.912,cremad_readme,commit 9175c2d7cbc4; Files per label,2026-11-05,
+cremad,emotion_categories,DIS,1271,0.981,cremad_readme,commit 9175c2d7cbc4; Files per label,2026-11-05,
+cremad,emotion_categories,FEA,1271,0.887,cremad_readme,commit 9175c2d7cbc4; Files per label,2026-11-05,
+cremad,emotion_categories,HAP,1271,0.827,cremad_readme,commit 9175c2d7cbc4; Files per label,2026-11-05,
+cremad,emotion_categories,NEU,1087,0.734,cremad_readme,commit 9175c2d7cbc4; Files per label,2026-11-05,
+cremad,emotion_categories,SAD,1271,0.916,cremad_readme,commit 9175c2d7cbc4; Files per label,2026-11-05,
+csemotions,emotion_categories,angry,769,1.427,csemotions_readme,commit ed967f35d677; Files per label,2026-11-05,
+csemotions,emotion_categories,fearful,623,1.915,csemotions_readme,commit ed967f35d677; Files per label,2026-11-05,
+csemotions,emotion_categories,happy,603,1.508,csemotions_readme,commit ed967f35d677; Files per label,2026-11-05,
+csemotions,emotion_categories,neutral,490,1.135,csemotions_readme,commit ed967f35d677; Files per label,2026-11-05,
+csemotions,emotion_categories,playfulness,621,1.231,csemotions_readme,commit ed967f35d677; Files per label,2026-11-05,
+csemotions,emotion_categories,sad,546,1.731,csemotions_readme,commit ed967f35d677; Files per label,2026-11-05,
+csemotions,emotion_categories,surprise,508,1.252,csemotions_readme,commit ed967f35d677; Files per label,2026-11-05,
+dailytalk,emotion_categories,anger,159,0.187,dailytalk_readme,commit 94e3218e6df1; Files per label,2026-11-05,
+dailytalk,emotion_categories,disgust,66,0.071,dailytalk_readme,commit 94e3218e6df1; Files per label,2026-11-05,
+dailytalk,emotion_categories,fear,18,0.020,dailytalk_readme,commit 94e3218e6df1; Files per label,2026-11-05,
+dailytalk,emotion_categories,happiness,3856,3.532,dailytalk_readme,commit 94e3218e6df1; Files per label,2026-11-05,
+dailytalk,emotion_categories,no emotion,18966,17.142,dailytalk_readme,commit 94e3218e6df1; Files per label,2026-11-05,
+dailytalk,emotion_categories,sadness,301,0.349,dailytalk_readme,commit 94e3218e6df1; Files per label,2026-11-05,
+dailytalk,emotion_categories,surprise,407,0.374,dailytalk_readme,commit 94e3218e6df1; Files per label,2026-11-05,
+dusha,emotion_categories,angry,15719,21.133,dusha_readme,commit d4c6c639c6cb; Files per label,2026-11-05,
+dusha,emotion_categories,neutral,106065,128.296,dusha_readme,commit d4c6c639c6cb; Files per label,2026-11-05,
+dusha,emotion_categories,positive,15392,20.222,dusha_readme,commit d4c6c639c6cb; Files per label,2026-11-05,
+dusha,emotion_categories,sad,23190,32.837,dusha_readme,commit d4c6c639c6cb; Files per label,2026-11-05,
+eesc,emotion_categories,anger,306,0.295,eesc_readme,commit af65bbd26fbf; Files per label,2026-11-05,
+eesc,emotion_categories,joy,271,0.236,eesc_readme,commit af65bbd26fbf; Files per label,2026-11-05,
+eesc,emotion_categories,neutral,338,0.327,eesc_readme,commit af65bbd26fbf; Files per label,2026-11-05,
+eesc,emotion_categories,sadness,249,0.227,eesc_readme,commit af65bbd26fbf; Files per label,2026-11-05,
+emis,emotion_categories,angry,312,0.316,emis_readme,commit d5cb05b233ae; Files per label,2026-11-05,
+emis,emotion_categories,happy,312,0.288,emis_readme,commit d5cb05b233ae; Files per label,2026-11-05,
+emis,emotion_categories,neutral,312,0.319,emis_readme,commit d5cb05b233ae; Files per label,2026-11-05,
+emis,emotion_categories,sad,312,0.340,emis_readme,commit d5cb05b233ae; Files per label,2026-11-05,
+emns,emotion_categories,Angry,126,0.229,emns_readme,commit b9e406422c57; Files per label,2026-11-05,
+emns,emotion_categories,Disgust,162,0.351,emns_readme,commit b9e406422c57; Files per label,2026-11-05,
+emns,emotion_categories,Excited,150,0.264,emns_readme,commit b9e406422c57; Files per label,2026-11-05,
+emns,emotion_categories,Happy,157,0.292,emns_readme,commit b9e406422c57; Files per label,2026-11-05,
+emns,emotion_categories,Neutral,149,0.264,emns_readme,commit b9e406422c57; Files per label,2026-11-05,
+emns,emotion_categories,Sad,147,0.344,emns_readme,commit b9e406422c57; Files per label,2026-11-05,
+emns,emotion_categories,Sarcastic,139,0.269,emns_readme,commit b9e406422c57; Files per label,2026-11-05,
+emns,emotion_categories,Surprised,151,0.304,emns_readme,commit b9e406422c57; Files per label,2026-11-05,
+emodb,emotion_categories,anger,137,0.101,emodb_readme,commit c45a6329c95c; Files per label,2026-11-05,
+emodb,emotion_categories,boredom,112,0.082,emodb_readme,commit c45a6329c95c; Files per label,2026-11-05,
+emodb,emotion_categories,disgust,105,0.098,emodb_readme,commit c45a6329c95c; Files per label,2026-11-05,
+emodb,emotion_categories,fear,122,0.076,emodb_readme,commit c45a6329c95c; Files per label,2026-11-05,
+emodb,emotion_categories,happiness,115,0.080,emodb_readme,commit c45a6329c95c; Files per label,2026-11-05,
+emodb,emotion_categories,neutral,104,0.070,emodb_readme,commit c45a6329c95c; Files per label,2026-11-05,
+emodb,emotion_categories,sadness,121,0.118,emodb_readme,commit c45a6329c95c; Files per label,2026-11-05,
+emogator,emotion_categories,01 adoration,1071,0.557,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,02 amusement,1071,0.556,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,03 anger,1071,0.555,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,04 awe,1071,0.560,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,05 confusion,1071,0.557,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,06 contempt,1071,0.557,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,07 contentment,1071,0.562,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,08 desire,1071,0.562,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,09 disappointment,1071,0.560,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,10 disgust,1071,0.554,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,11 distress,1071,0.558,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,12 ecstasy,1071,0.565,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,13 elation,1071,0.559,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,14 embarrassment,1071,0.559,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,15 fear,1071,0.556,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,16 guilt,1071,0.560,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,17 interest,1071,0.559,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,18 neutral,1071,0.560,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,19 pain,1071,0.559,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,20 pride,1071,0.560,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,21 realization,1071,0.560,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,22 relief,1071,0.560,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,23 romantic love,1071,0.561,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,24 sadness,1071,0.561,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,25 serenity,1071,0.562,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,26 shame,1071,0.559,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,27 surprise (negative),1071,0.553,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,28 surprise (positive),1071,0.556,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,29 sympathy,1071,0.559,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emogator,emotion_categories,30 triumph,1071,0.560,emogator_readme,commit ed53cef10b49; Files per label,2026-11-05,
+emospeech_keywords,emotion_categories,Fearful,1625,1.377,emospeech_keywords_readme,commit f7398c466b81; Files per label,2026-11-05,
+emospeech_keywords,emotion_categories,None,164,0.137,emospeech_keywords_readme,commit f7398c466b81; Files per label,2026-11-05,
+emospeech_keywords,emotion_categories,angry,1133,0.967,emospeech_keywords_readme,commit f7398c466b81; Files per label,2026-11-05,
+emospeech_keywords,emotion_categories,calm,3825,3.224,emospeech_keywords_readme,commit f7398c466b81; Files per label,2026-11-05,
+emospeech_keywords,emotion_categories,happy,988,0.844,emospeech_keywords_readme,commit f7398c466b81; Files per label,2026-11-05,
+emotale,emotion_categories,angry,160,0.121,emotale_readme,commit 31e8401a5f25; Files per label,2026-11-05,code A
+emotale,emotion_categories,boredom,160,0.132,emotale_readme,commit 31e8401a5f25; Files per label,2026-11-05,code B
+emotale,emotion_categories,happy,160,0.110,emotale_readme,commit 31e8401a5f25; Files per label,2026-11-05,code H
+emotale,emotion_categories,neutral,160,0.121,emotale_readme,commit 31e8401a5f25; Files per label,2026-11-05,code N
+emotale,emotion_categories,sad,160,0.133,emotale_readme,commit 31e8401a5f25; Files per label,2026-11-05,code S
+emotional_ema,emotion_categories,angry,182,0.291,emotional_ema_readme,commit 04a2eb164bb6; Files per label,2026-11-05,code 2
+emotional_ema,emotion_categories,fear,159,0.285,emotional_ema_readme,commit 04a2eb164bb6; Files per label,2026-11-05,code 5
+emotional_ema,emotion_categories,happy,160,0.257,emotional_ema_readme,commit 04a2eb164bb6; Files per label,2026-11-05,code 3
+emotional_ema,emotion_categories,neutral,277,0.436,emotional_ema_readme,commit 04a2eb164bb6; Files per label,2026-11-05,code 1
+emotional_ema,emotion_categories,sad,175,0.359,emotional_ema_readme,commit 04a2eb164bb6; Files per label,2026-11-05,code 4
+emotiontalk,emotion_categories,angry,3820,,emotiontalk_readme,commit 3cdb8dd2694b; Files per label,2026-11-01,
+emotiontalk,emotion_categories,disgusted,818,,emotiontalk_readme,commit 3cdb8dd2694b; Files per label,2026-11-01,
+emotiontalk,emotion_categories,fearful,656,,emotiontalk_readme,commit 3cdb8dd2694b; Files per label,2026-11-01,
+emotiontalk,emotion_categories,happy,2105,,emotiontalk_readme,commit 3cdb8dd2694b; Files per label,2026-11-01,
+emotiontalk,emotion_categories,neutral,9378,,emotiontalk_readme,commit 3cdb8dd2694b; Files per label,2026-11-01,
+emotiontalk,emotion_categories,sad,1110,,emotiontalk_readme,commit 3cdb8dd2694b; Files per label,2026-11-01,
+emotiontalk,emotion_categories,surprised,1363,,emotiontalk_readme,commit 3cdb8dd2694b; Files per label,2026-11-01,
+emouerj,emotion_categories,angry,94,0.088,emouerj_readme,commit c00231d5ce5c; Files per label,2026-11-05,code a
+emouerj,emotion_categories,happy,91,0.071,emouerj_readme,commit c00231d5ce5c; Files per label,2026-11-05,code h
+emouerj,emotion_categories,neutral,92,0.057,emouerj_readme,commit c00231d5ce5c; Files per label,2026-11-05,code n
+emouerj,emotion_categories,sad,100,0.098,emouerj_readme,commit c00231d5ce5c; Files per label,2026-11-05,code s
+emovdb,emotion_categories,Amused,1317,1.889,emovdb_readme,commit 33a6e1fef019; Files per label,2026-11-05,
+emovdb,emotion_categories,Angry,1268,1.563,emovdb_readme,commit 33a6e1fef019; Files per label,2026-11-05,
+emovdb,emotion_categories,Disgusted,1019,1.632,emovdb_readme,commit 33a6e1fef019; Files per label,2026-11-05,
+emovdb,emotion_categories,Neutral,1568,1.694,emovdb_readme,commit 33a6e1fef019; Files per label,2026-11-05,
+emovdb,emotion_categories,Sleepy,1721,2.712,emovdb_readme,commit 33a6e1fef019; Files per label,2026-11-05,
+emovo,emotion_categories,angry (rabbia),84,0.068,emovo_readme,commit 283d68f984d9; Files per label,2026-11-05,code rab
+emovo,emotion_categories,disgust (disgusto),84,0.081,emovo_readme,commit 283d68f984d9; Files per label,2026-11-05,code dis
+emovo,emotion_categories,fear (paura),84,0.072,emovo_readme,commit 283d68f984d9; Files per label,2026-11-05,code pau
+emovo,emotion_categories,happy (gioia),84,0.068,emovo_readme,commit 283d68f984d9; Files per label,2026-11-05,code gio
+emovo,emotion_categories,neutral (neutro),84,0.067,emovo_readme,commit 283d68f984d9; Files per label,2026-11-05,code neu
+emovo,emotion_categories,sad (tristezza),84,0.080,emovo_readme,commit 283d68f984d9; Files per label,2026-11-05,code tri
+emovo,emotion_categories,surprise (sorpresa),84,0.073,emovo_readme,commit 283d68f984d9; Files per label,2026-11-05,code sor
+emovoicedb,emotion_categories,angry,3486,5.759,emovoicedb_readme,commit 6d9a15f14444; Files per label,2026-11-05,
+emovoicedb,emotion_categories,disgusted,2950,5.590,emovoicedb_readme,commit 6d9a15f14444; Files per label,2026-11-05,
+emovoicedb,emotion_categories,fearful,2961,5.516,emovoicedb_readme,commit 6d9a15f14444; Files per label,2026-11-05,
+emovoicedb,emotion_categories,happy,3269,6.021,emovoicedb_readme,commit 6d9a15f14444; Files per label,2026-11-05,
+emovoicedb,emotion_categories,neutral,3188,4.951,emovoicedb_readme,commit 6d9a15f14444; Files per label,2026-11-05,
+emovoicedb,emotion_categories,sad,3174,6.939,emovoicedb_readme,commit 6d9a15f14444; Files per label,2026-11-05,
+emovoicedb,emotion_categories,surprised,3072,5.667,emovoicedb_readme,commit 6d9a15f14444; Files per label,2026-11-05,
+emozionalmente,emotion_categories,anger,986,0.825,emozionalmente_readme,commit 0767f0b022de; Files per label,2026-11-05,
+emozionalmente,emotion_categories,disgust,986,0.994,emozionalmente_readme,commit 0767f0b022de; Files per label,2026-11-05,
+emozionalmente,emotion_categories,fear,986,0.968,emozionalmente_readme,commit 0767f0b022de; Files per label,2026-11-05,
+emozionalmente,emotion_categories,joy,986,0.789,emozionalmente_readme,commit 0767f0b022de; Files per label,2026-11-05,
+emozionalmente,emotion_categories,neutrality,986,0.869,emozionalmente_readme,commit 0767f0b022de; Files per label,2026-11-05,
+emozionalmente,emotion_categories,sadness,986,0.987,emozionalmente_readme,commit 0767f0b022de; Files per label,2026-11-05,
+emozionalmente,emotion_categories,surprise,986,0.874,emozionalmente_readme,commit 0767f0b022de; Files per label,2026-11-05,
+enterface05,emotion_categories,anger,216,0.224,enterface05_readme,commit ea833fe4ee55; Files per label,2026-11-05,
+enterface05,emotion_categories,disgust,216,0.186,enterface05_readme,commit ea833fe4ee55; Files per label,2026-11-05,
+enterface05,emotion_categories,fear,216,0.180,enterface05_readme,commit ea833fe4ee55; Files per label,2026-11-05,
+enterface05,emotion_categories,happiness,213,0.165,enterface05_readme,commit ea833fe4ee55; Files per label,2026-11-05,
+enterface05,emotion_categories,sadness,216,0.204,enterface05_readme,commit ea833fe4ee55; Files per label,2026-11-05,
+enterface05,emotion_categories,surprise,216,0.180,enterface05_readme,commit ea833fe4ee55; Files per label,2026-11-05,
+esd,emotion_categories,Angry,7000,5.328,esd_readme,commit 6f5c0c3490ad; Files per label,2026-11-05,
+esd,emotion_categories,Happy,7000,5.380,esd_readme,commit 6f5c0c3490ad; Files per label,2026-11-05,
+esd,emotion_categories,Neutral,7000,5.659,esd_readme,commit 6f5c0c3490ad; Files per label,2026-11-05,
+esd,emotion_categories,Sad,7000,6.826,esd_readme,commit 6f5c0c3490ad; Files per label,2026-11-05,
+esd,emotion_categories,Surprise,7000,5.878,esd_readme,commit 6f5c0c3490ad; Files per label,2026-11-05,
+eseravd,emotion_categories,01_Angry,500,0.322,eseravd_readme,commit b155a1df2bea; Files per label,2026-11-05,
+eseravd,emotion_categories,02_Sad,500,0.319,eseravd_readme,commit b155a1df2bea; Files per label,2026-11-05,
+eseravd,emotion_categories,03_Neutral,500,0.364,eseravd_readme,commit b155a1df2bea; Files per label,2026-11-05,
+eseravd,emotion_categories,04_Happy,500,0.328,eseravd_readme,commit b155a1df2bea; Files per label,2026-11-05,
+eseravd,emotion_categories,05_Disgust,500,0.328,eseravd_readme,commit b155a1df2bea; Files per label,2026-11-05,
+eseravd,emotion_categories,06_Fear,500,0.338,eseravd_readme,commit b155a1df2bea; Files per label,2026-11-05,
+harper_valley_bank,sentiment,negative,433,0.292,harper_valley_bank_readme,commit 8c002d6d2291; Files per label,2026-11-05,
+harper_valley_bank,sentiment,neutral,17149,5.813,harper_valley_bank_readme,commit 8c002d6d2291; Files per label,2026-11-05,
+harper_valley_bank,sentiment,positive,8148,5.919,harper_valley_bank_readme,commit 8c002d6d2291; Files per label,2026-11-05,
+hikia,emotion_categories,angry,107,0.018,hikia_readme,commit 70f3ed9e3caa; Files per label,2026-11-05,code a
+hikia,emotion_categories,happy,129,0.021,hikia_readme,commit 70f3ed9e3caa; Files per label,2026-11-05,code h
+hikia,emotion_categories,neutral,119,0.019,hikia_readme,commit 70f3ed9e3caa; Files per label,2026-11-05,code n
+hikia,emotion_categories,sad,133,0.029,hikia_readme,commit 70f3ed9e3caa; Files per label,2026-11-05,code s
+hindi_ser_vishlb,emotion_categories,anger,400,0.320,hindi_ser_vishlb_readme,commit 18f2a615703f; Files per label,2026-11-05,
+hindi_ser_vishlb,emotion_categories,disgust,400,0.365,hindi_ser_vishlb_readme,commit 18f2a615703f; Files per label,2026-11-05,
+hindi_ser_vishlb,emotion_categories,fear,400,0.405,hindi_ser_vishlb_readme,commit 18f2a615703f; Files per label,2026-11-05,
+hindi_ser_vishlb,emotion_categories,happy,400,0.342,hindi_ser_vishlb_readme,commit 18f2a615703f; Files per label,2026-11-05,
+hindi_ser_vishlb,emotion_categories,neutral,400,0.321,hindi_ser_vishlb_readme,commit 18f2a615703f; Files per label,2026-11-05,
+hindi_ser_vishlb,emotion_categories,sad,400,0.381,hindi_ser_vishlb_readme,commit 18f2a615703f; Files per label,2026-11-05,
+hindi_ser_vishlb,emotion_categories,sarcastic,400,0.355,hindi_ser_vishlb_readme,commit 18f2a615703f; Files per label,2026-11-05,
+hindi_ser_vishlb,emotion_categories,surprise,400,0.360,hindi_ser_vishlb_readme,commit 18f2a615703f; Files per label,2026-11-05,
+iemocap,emotion_categories,angry,1103,1.383,iemocap_readme,commit ffcb5253762f; Files per label,2026-11-05,code ang
+iemocap,emotion_categories,disgusted,2,0.001,iemocap_readme,commit ffcb5253762f; Files per label,2026-11-05,code dis
+iemocap,emotion_categories,excited,1041,1.382,iemocap_readme,commit ffcb5253762f; Files per label,2026-11-05,code exc
+iemocap,emotion_categories,fearful,40,0.030,iemocap_readme,commit ffcb5253762f; Files per label,2026-11-05,code fea
+iemocap,emotion_categories,frustrated,1849,2.419,iemocap_readme,commit ffcb5253762f; Files per label,2026-11-05,code fru
+iemocap,emotion_categories,happy,595,0.718,iemocap_readme,commit ffcb5253762f; Files per label,2026-11-05,code hap
+iemocap,emotion_categories,neutral,1708,1.851,iemocap_readme,commit ffcb5253762f; Files per label,2026-11-05,code neu
+iemocap,emotion_categories,no majority among the annotators,2507,2.901,iemocap_readme,commit ffcb5253762f; Files per label,2026-11-05,code xxx
+iemocap,emotion_categories,other,3,0.004,iemocap_readme,commit ffcb5253762f; Files per label,2026-11-05,code oth
+iemocap,emotion_categories,sad,1084,1.655,iemocap_readme,commit ffcb5253762f; Files per label,2026-11-05,code sad
+iemocap,emotion_categories,surprised,107,0.092,iemocap_readme,commit ffcb5253762f; Files per label,2026-11-05,code sur
+iesc,emotion_categories,Anger,120,0.101,iesc_readme,commit 7ce4b6e3be39; Files per label,2026-11-05,
+iesc,emotion_categories,Fear,120,0.119,iesc_readme,commit 7ce4b6e3be39; Files per label,2026-11-05,
+iesc,emotion_categories,Happy,120,0.114,iesc_readme,commit 7ce4b6e3be39; Files per label,2026-11-05,
+iesc,emotion_categories,Neutral,120,0.102,iesc_readme,commit 7ce4b6e3be39; Files per label,2026-11-05,
+iesc,emotion_categories,Sad,120,0.124,iesc_readme,commit 7ce4b6e3be39; Files per label,2026-11-05,
+indianenglish,emotion_categories,Angry,170,0.122,indianenglish_readme,commit 6c860b509be6; Files per label,2026-11-05,
+indianenglish,emotion_categories,Happy,226,0.189,indianenglish_readme,commit 6c860b509be6; Files per label,2026-11-05,
+indianenglish,emotion_categories,Neutral,175,0.133,indianenglish_readme,commit 6c860b509be6; Files per label,2026-11-05,
+indianenglish,emotion_categories,Sad,176,0.150,indianenglish_readme,commit 6c860b509be6; Files per label,2026-11-05,
+indowavesentiment,emotion_categories,disappointed,60,0.054,indowavesentiment_readme,commit 6c920c31a5d8; Files per label,2026-11-05,code 05
+indowavesentiment,emotion_categories,disgust,60,0.055,indowavesentiment_readme,commit 6c920c31a5d8; Files per label,2026-11-05,code 04
+indowavesentiment,emotion_categories,happy,60,0.050,indowavesentiment_readme,commit 6c920c31a5d8; Files per label,2026-11-05,code 02
+indowavesentiment,emotion_categories,neutral,60,0.050,indowavesentiment_readme,commit 6c920c31a5d8; Files per label,2026-11-05,code 01
+indowavesentiment,emotion_categories,surprise,60,0.050,indowavesentiment_readme,commit 6c920c31a5d8; Files per label,2026-11-05,code 03
+inesco,emotion_categories,a (anger),759,0.806,inesco_readme,commit 3ae703f2d63c; Files per label,2026-11-05,
+inesco,emotion_categories,h (happiness),844,1.035,inesco_readme,commit 3ae703f2d63c; Files per label,2026-11-05,
+inesco,emotion_categories,s (sadness),796,1.184,inesco_readme,commit 3ae703f2d63c; Files per label,2026-11-05,
+javanese_ser_2black0,emotion_categories,angry,280,0.248,javanese_ser_2black0_readme,commit d6b10c352188; Files per label,2026-11-05,code 06
+javanese_ser_2black0,emotion_categories,fear,280,0.277,javanese_ser_2black0_readme,commit d6b10c352188; Files per label,2026-11-05,code 05
+javanese_ser_2black0,emotion_categories,happy,280,0.238,javanese_ser_2black0_readme,commit d6b10c352188; Files per label,2026-11-05,code 03
+javanese_ser_2black0,emotion_categories,neutral,280,0.216,javanese_ser_2black0_readme,commit d6b10c352188; Files per label,2026-11-05,code 01
+javanese_ser_2black0,emotion_categories,sad,280,0.290,javanese_ser_2black0_readme,commit d6b10c352188; Files per label,2026-11-05,code 02
+javanese_ser_2black0,emotion_categories,surprise,280,0.216,javanese_ser_2black0_readme,commit d6b10c352188; Files per label,2026-11-05,code 04
+jlcorpus,emotion_categories,angry,240,0.136,jlcorpus_readme,commit 43017b4085dc; Files per label,2026-11-05,
+jlcorpus,emotion_categories,anxious,240,0.149,jlcorpus_readme,commit 43017b4085dc; Files per label,2026-11-05,
+jlcorpus,emotion_categories,apologetic,240,0.141,jlcorpus_readme,commit 43017b4085dc; Files per label,2026-11-05,
+jlcorpus,emotion_categories,assertive,240,0.140,jlcorpus_readme,commit 43017b4085dc; Files per label,2026-11-05,
+jlcorpus,emotion_categories,concerned,240,0.147,jlcorpus_readme,commit 43017b4085dc; Files per label,2026-11-05,
+jlcorpus,emotion_categories,encouraging,240,0.136,jlcorpus_readme,commit 43017b4085dc; Files per label,2026-11-05,
+jlcorpus,emotion_categories,excited,240,0.137,jlcorpus_readme,commit 43017b4085dc; Files per label,2026-11-05,
+jlcorpus,emotion_categories,happy,240,0.135,jlcorpus_readme,commit 43017b4085dc; Files per label,2026-11-05,
+jlcorpus,emotion_categories,neutral,240,0.140,jlcorpus_readme,commit 43017b4085dc; Files per label,2026-11-05,
+jlcorpus,emotion_categories,sad,240,0.150,jlcorpus_readme,commit 43017b4085dc; Files per label,2026-11-05,
+jnv,emotion_categories,angry,68,0.064,jnv_readme,commit 929b98661acf; Files per label,2026-11-05,
+jnv,emotion_categories,disgust,54,0.051,jnv_readme,commit 929b98661acf; Files per label,2026-11-05,
+jnv,emotion_categories,fear,50,0.047,jnv_readme,commit 929b98661acf; Files per label,2026-11-05,
+jnv,emotion_categories,happy,76,0.069,jnv_readme,commit 929b98661acf; Files per label,2026-11-05,
+jnv,emotion_categories,sad,40,0.046,jnv_readme,commit 929b98661acf; Files per label,2026-11-05,
+jnv,emotion_categories,surprise,132,0.118,jnv_readme,commit 929b98661acf; Files per label,2026-11-05,
+jvnv,emotion_categories,anger,249,0.528,jvnv_readme,commit 64760f130edf; Files per label,2026-11-05,
+jvnv,emotion_categories,disgust,258,0.590,jvnv_readme,commit 64760f130edf; Files per label,2026-11-05,
+jvnv,emotion_categories,fear,265,0.648,jvnv_readme,commit 64760f130edf; Files per label,2026-11-05,
+jvnv,emotion_categories,happy,280,0.746,jvnv_readme,commit 64760f130edf; Files per label,2026-11-05,
+jvnv,emotion_categories,sad,257,0.822,jvnv_readme,commit 64760f130edf; Files per label,2026-11-05,
+jvnv,emotion_categories,surprise,306,0.610,jvnv_readme,commit 64760f130edf; Files per label,2026-11-05,
+kannada,emotion_categories,angry,78,0.076,kannada_readme,commit 915752b0ea97; Files per label,2026-11-05,code 01
+kannada,emotion_categories,fear,78,0.092,kannada_readme,commit 915752b0ea97; Files per label,2026-11-05,code 05
+kannada,emotion_categories,happy,78,0.082,kannada_readme,commit 915752b0ea97; Files per label,2026-11-05,code 04
+kannada,emotion_categories,neutral,78,0.079,kannada_readme,commit 915752b0ea97; Files per label,2026-11-05,code 06
+kannada,emotion_categories,sad,78,0.092,kannada_readme,commit 915752b0ea97; Files per label,2026-11-05,code 02
+kannada,emotion_categories,surprise,78,0.081,kannada_readme,commit 915752b0ea97; Files per label,2026-11-05,code 03
+kazemotts,emotion_categories,angry,9059,12.021,kazemotts_readme,commit b21b215ab811; Files per label,2026-11-05,
+kazemotts,emotion_categories,fear,9098,12.127,kazemotts_readme,commit b21b215ab811; Files per label,2026-11-05,
+kazemotts,emotion_categories,happy,9059,12.426,kazemotts_readme,commit b21b215ab811; Files per label,2026-11-05,
+kazemotts,emotion_categories,neutral,9385,12.694,kazemotts_readme,commit b21b215ab811; Files per label,2026-11-05,
+kazemotts,emotion_categories,sad,8980,12.874,kazemotts_readme,commit b21b215ab811; Files per label,2026-11-05,
+kazemotts,emotion_categories,surprise,9179,12.717,kazemotts_readme,commit b21b215ab811; Files per label,2026-11-05,
+kbes,emotion_categories,angry,200,0.168,kbes_readme,commit 37715a6dcc32; Files per label,2026-11-05,code 4
+kbes,emotion_categories,disgust,200,0.168,kbes_readme,commit 37715a6dcc32; Files per label,2026-11-05,code 5
+kbes,emotion_categories,happy,200,0.168,kbes_readme,commit 37715a6dcc32; Files per label,2026-11-05,code 2
+kbes,emotion_categories,neutral,100,0.084,kbes_readme,commit 37715a6dcc32; Files per label,2026-11-05,code 1
+kbes,emotion_categories,sad,200,0.168,kbes_readme,commit 37715a6dcc32; Files per label,2026-11-05,code 3
+legov2,emotion_categories,angry,137,0.080,legov2_readme,commit fc35bbcf089c; Files per label,2026-11-05,
+legov2,emotion_categories,friendly,4,0.005,legov2_readme,commit fc35bbcf089c; Files per label,2026-11-05,
+legov2,emotion_categories,garbage,589,0.245,legov2_readme,commit fc35bbcf089c; Files per label,2026-11-05,
+legov2,emotion_categories,neutral,3305,1.410,legov2_readme,commit fc35bbcf089c; Files per label,2026-11-05,
+legov2,emotion_categories,slightly angry,693,0.413,legov2_readme,commit fc35bbcf089c; Files per label,2026-11-05,
+legov2,emotion_categories,very angry,104,0.063,legov2_readme,commit fc35bbcf089c; Files per label,2026-11-05,
+lithuanian_emotion_db,emotion_categories,Ilgesys (longing),9,0.009,lithuanian_emotion_db_readme,commit 47d55ddf2400; Files per label,2026-11-05,
+lithuanian_emotion_db,emotion_categories,angry,239,0.250,lithuanian_emotion_db_readme,commit 47d55ddf2400; Files per label,2026-11-05,
+lithuanian_emotion_db,emotion_categories,disgust,150,0.194,lithuanian_emotion_db_readme,commit 47d55ddf2400; Files per label,2026-11-05,
+lithuanian_emotion_db,emotion_categories,fear,103,0.117,lithuanian_emotion_db_readme,commit 47d55ddf2400; Files per label,2026-11-05,
+lithuanian_emotion_db,emotion_categories,happy,260,0.285,lithuanian_emotion_db_readme,commit 47d55ddf2400; Files per label,2026-11-05,
+lithuanian_emotion_db,emotion_categories,neutral,245,0.266,lithuanian_emotion_db_readme,commit 47d55ddf2400; Files per label,2026-11-05,
+lithuanian_emotion_db,emotion_categories,sad,342,0.403,lithuanian_emotion_db_readme,commit 47d55ddf2400; Files per label,2026-11-05,
+lithuanian_emotion_db,emotion_categories,surprise,105,0.135,lithuanian_emotion_db_readme,commit 47d55ddf2400; Files per label,2026-11-05,
+lssed,emotion_categories,anger,6490,,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Angry",2026-11-02,
+lssed,emotion_categories,boredom,2916,,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Bored",2026-11-02,
+lssed,emotion_categories,disappointment,8905,,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Disappointed",2026-11-02,
+lssed,emotion_categories,disgust,3179,,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Disgusted",2026-11-02,
+lssed,emotion_categories,excitement,5228,,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Excited",2026-11-02,
+lssed,emotion_categories,fear,628,,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Fear",2026-11-02,
+lssed,emotion_categories,happiness,27033,,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Happy",2026-11-02,
+lssed,emotion_categories,normal,60461,,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Neutral",2026-11-02,The paper calls this class Neutral
+lssed,emotion_categories,other,18478,,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Other",2026-11-02,
+lssed,emotion_categories,sadness,12051,,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Sad",2026-11-02,
+lssed,emotion_categories,surprise,1656,,lssed_paper,"Table 3 ""Distribution of data for emotion labels in the subsets"": Total column, row Surprise",2026-11-02,
+maleo,emotion_categories,angry,100,0.083,maleo_readme,commit 49079d8c3bc1; Files per label,2026-11-05,code Marah
+maleo,emotion_categories,disgust,100,0.084,maleo_readme,commit 49079d8c3bc1; Files per label,2026-11-05,code Jijik
+maleo,emotion_categories,fear,100,0.084,maleo_readme,commit 49079d8c3bc1; Files per label,2026-11-05,code Takut
+maleo,emotion_categories,happy,100,0.085,maleo_readme,commit 49079d8c3bc1; Files per label,2026-11-05,code Senang
+maleo,emotion_categories,neutral,100,0.068,maleo_readme,commit 49079d8c3bc1; Files per label,2026-11-05,code Netral
+maleo,emotion_categories,sad,100,0.086,maleo_readme,commit 49079d8c3bc1; Files per label,2026-11-05,code Sedih
+maleo,emotion_categories,surprise,100,0.084,maleo_readme,commit 49079d8c3bc1; Files per label,2026-11-05,code Terkejut
+maserc,emotion_categories,angry,136,0.143,maserc_readme,commit 45d2a11adb51; Files per label,2026-11-05,
+maserc,emotion_categories,fear,135,0.132,maserc_readme,commit 45d2a11adb51; Files per label,2026-11-05,
+maserc,emotion_categories,happy,134,0.146,maserc_readme,commit 45d2a11adb51; Files per label,2026-11-05,
+maserc,emotion_categories,neutral,134,0.143,maserc_readme,commit 45d2a11adb51; Files per label,2026-11-05,
+maserc,emotion_categories,sad,134,0.131,maserc_readme,commit 45d2a11adb51; Files per label,2026-11-05,
+maserc,emotion_categories,surprise,135,0.128,maserc_readme,commit 45d2a11adb51; Files per label,2026-11-05,
+mav,emotion_categories,anger,10,0.003,mav_readme,commit 247f1797f95b; Files per label,2026-11-05,
+mav,emotion_categories,disgust,10,0.003,mav_readme,commit 247f1797f95b; Files per label,2026-11-05,
+mav,emotion_categories,fear,10,0.002,mav_readme,commit 247f1797f95b; Files per label,2026-11-05,
+mav,emotion_categories,happiness,10,0.004,mav_readme,commit 247f1797f95b; Files per label,2026-11-05,
+mav,emotion_categories,neutral,10,0.003,mav_readme,commit 247f1797f95b; Files per label,2026-11-05,
+mav,emotion_categories,pain,10,0.002,mav_readme,commit 247f1797f95b; Files per label,2026-11-05,
+mav,emotion_categories,pleasure,10,0.004,mav_readme,commit 247f1797f95b; Files per label,2026-11-05,
+mav,emotion_categories,sadness,10,0.006,mav_readme,commit 247f1797f95b; Files per label,2026-11-05,
+mav,emotion_categories,surprise,10,0.001,mav_readme,commit 247f1797f95b; Files per label,2026-11-05,
+mcaespps,emotion_categories,anger,1129,0.337,mcaespps_readme,commit bf0a5a66251a; Files per label,2026-11-05,
+mcaespps,emotion_categories,disgust,738,0.246,mcaespps_readme,commit bf0a5a66251a; Files per label,2026-11-05,
+mcaespps,emotion_categories,fear,671,0.230,mcaespps_readme,commit bf0a5a66251a; Files per label,2026-11-05,
+mcaespps,emotion_categories,happiness,785,0.245,mcaespps_readme,commit bf0a5a66251a; Files per label,2026-11-05,
+mcaespps,emotion_categories,neutral,1196,0.387,mcaespps_readme,commit bf0a5a66251a; Files per label,2026-11-05,
+mcaespps,emotion_categories,sadness,1187,0.543,mcaespps_readme,commit bf0a5a66251a; Files per label,2026-11-05,
+mcaespps,emotion_categories,surprise,969,0.308,mcaespps_readme,commit bf0a5a66251a; Files per label,2026-11-05,
+mderma,emotion_categories,angry,342,0.459,mderma_readme,commit 1f2450d0c59a; Files per label,2026-11-05,
+mderma,emotion_categories,happy,307,0.542,mderma_readme,commit 1f2450d0c59a; Files per label,2026-11-05,
+mderma,emotion_categories,neutral,312,0.520,mderma_readme,commit 1f2450d0c59a; Files per label,2026-11-05,
+mderma,emotion_categories,sad,384,0.654,mderma_readme,commit 1f2450d0c59a; Files per label,2026-11-05,
+meld,emotion_categories,anger,1607,1.489,meld_readme,commit 908085cd0c00; Files per label,2026-11-05,
+meld,emotion_categories,disgust,361,0.442,meld_readme,commit 908085cd0c00; Files per label,2026-11-05,
+meld,emotion_categories,fear,358,0.328,meld_readme,commit 908085cd0c00; Files per label,2026-11-05,
+meld,emotion_categories,joy,2308,2.158,meld_readme,commit 908085cd0c00; Files per label,2026-11-05,
+meld,emotion_categories,neutral,6436,5.372,meld_readme,commit 908085cd0c00; Files per label,2026-11-05,
+meld,emotion_categories,sadness,1002,1.053,meld_readme,commit 908085cd0c00; Files per label,2026-11-05,
+meld,emotion_categories,surprise,1636,1.225,meld_readme,commit 908085cd0c00; Files per label,2026-11-05,
+mesd,emotion_categories,Anger,191,0.038,mesd_readme,commit 65426a0db723; Files per label,2026-11-05,"human recordings plus naturalness-reduced copies; hours = human recordings + naturalness-reduced copies (the two readme columns summed, as n is)"
+mesd,emotion_categories,Disgust,192,0.042,mesd_readme,commit 65426a0db723; Files per label,2026-11-05,"human recordings plus naturalness-reduced copies; hours = human recordings + naturalness-reduced copies (the two readme columns summed, as n is)"
+mesd,emotion_categories,Fear,192,0.033,mesd_readme,commit 65426a0db723; Files per label,2026-11-05,"human recordings plus naturalness-reduced copies; hours = human recordings + naturalness-reduced copies (the two readme columns summed, as n is)"
+mesd,emotion_categories,Happiness,192,0.046,mesd_readme,commit 65426a0db723; Files per label,2026-11-05,"human recordings plus naturalness-reduced copies; hours = human recordings + naturalness-reduced copies (the two readme columns summed, as n is)"
+mesd,emotion_categories,Neutral,191,0.027,mesd_readme,commit 65426a0db723; Files per label,2026-11-05,"human recordings plus naturalness-reduced copies; hours = human recordings + naturalness-reduced copies (the two readme columns summed, as n is)"
+mesd,emotion_categories,Sadness,192,0.036,mesd_readme,commit 65426a0db723; Files per label,2026-11-05,"human recordings plus naturalness-reduced copies; hours = human recordings + naturalness-reduced copies (the two readme columns summed, as n is)"
+mess,emotion_categories,angry,450,0.325,mess_readme,commit e01fc135842a; Files per label,2026-11-05,code A
+mess,emotion_categories,calm,450,0.350,mess_readme,commit e01fc135842a; Files per label,2026-11-05,code C
+mess,emotion_categories,happy,450,0.301,mess_readme,commit e01fc135842a; Files per label,2026-11-05,code H
+mess,emotion_categories,sad,450,0.353,mess_readme,commit e01fc135842a; Files per label,2026-11-05,code S
+msppodcast,emotion_categories,angry,35860,54.436,msppodcast_readme,commit 92eaa30425c4; Files per label,2026-11-05,code A
+msppodcast,emotion_categories,contempt,5585,9.462,msppodcast_readme,commit 92eaa30425c4; Files per label,2026-11-05,code C
+msppodcast,emotion_categories,disgust,2744,4.624,msppodcast_readme,commit 92eaa30425c4; Files per label,2026-11-05,code D
+msppodcast,emotion_categories,fear,1543,2.379,msppodcast_readme,commit 92eaa30425c4; Files per label,2026-11-05,code F
+msppodcast,emotion_categories,happy,58284,90.738,msppodcast_readme,commit 92eaa30425c4; Files per label,2026-11-05,code H
+msppodcast,emotion_categories,neutral,78718,117.068,msppodcast_readme,commit 92eaa30425c4; Files per label,2026-11-05,code N
+msppodcast,emotion_categories,no agreed label,48177,74.017,msppodcast_readme,commit 92eaa30425c4; Files per label,2026-11-05,code X
+msppodcast,emotion_categories,other (free text),3719,6.139,msppodcast_readme,commit 92eaa30425c4; Files per label,2026-11-05,code O
+msppodcast,emotion_categories,sad,24230,36.592,msppodcast_readme,commit 92eaa30425c4; Files per label,2026-11-05,code S
+msppodcast,emotion_categories,surprise,5845,8.826,msppodcast_readme,commit 92eaa30425c4; Files per label,2026-11-05,code U
+multidialog,emotion_categories,Angry,903,1.956,multidialog_readme,commit 59465c0d2928; Files per label,2026-11-05,
+multidialog,emotion_categories,Curious to dive deeper,81096,130.196,multidialog_readme,commit 59465c0d2928; Files per label,2026-11-05,
+multidialog,emotion_categories,Disgusted,1439,3.158,multidialog_readme,commit 59465c0d2928; Files per label,2026-11-05,
+multidialog,emotion_categories,Fearful,923,1.968,multidialog_readme,commit 59465c0d2928; Files per label,2026-11-05,
+multidialog,emotion_categories,Happy,29464,52.035,multidialog_readme,commit 59465c0d2928; Files per label,2026-11-05,
+multidialog,emotion_categories,Neutral,41234,69.741,multidialog_readme,commit 59465c0d2928; Files per label,2026-11-05,
+multidialog,emotion_categories,Sad,2488,5.302,multidialog_readme,commit 59465c0d2928; Files per label,2026-11-05,
+multidialog,emotion_categories,Surprised,30307,61.095,multidialog_readme,commit 59465c0d2928; Files per label,2026-11-05,
+nemo,emotion_categories,anger,749,0.470,nemo_readme,commit a90b73849987; Files per label,2026-11-05,
+nemo,emotion_categories,fear,736,0.509,nemo_readme,commit a90b73849987; Files per label,2026-11-05,
+nemo,emotion_categories,happiness,749,0.487,nemo_readme,commit a90b73849987; Files per label,2026-11-05,
+nemo,emotion_categories,neutral,809,0.575,nemo_readme,commit a90b73849987; Files per label,2026-11-05,
+nemo,emotion_categories,sadness,769,0.575,nemo_readme,commit a90b73849987; Files per label,2026-11-05,
+nemo,emotion_categories,surprised,669,0.457,nemo_readme,commit a90b73849987; Files per label,2026-11-05,
+nonverbaltts,emotion_categories,(no tag),534,1.855,nonverbaltts_readme,commit 66f8d4ec6d37; Files per label,2026-11-05,
+nonverbaltts,emotion_categories,angry,25,0.047,nonverbaltts_readme,commit 66f8d4ec6d37; Files per label,2026-11-05,
+nonverbaltts,emotion_categories,disgusted,78,0.145,nonverbaltts_readme,commit 66f8d4ec6d37; Files per label,2026-11-05,
+nonverbaltts,emotion_categories,fearful,10,0.023,nonverbaltts_readme,commit 66f8d4ec6d37; Files per label,2026-11-05,
+nonverbaltts,emotion_categories,happy,1605,4.316,nonverbaltts_readme,commit 66f8d4ec6d37; Files per label,2026-11-05,
+nonverbaltts,emotion_categories,neutral,2406,6.446,nonverbaltts_readme,commit 66f8d4ec6d37; Files per label,2026-11-05,
+nonverbaltts,emotion_categories,other,1177,3.702,nonverbaltts_readme,commit 66f8d4ec6d37; Files per label,2026-11-05,
+nonverbaltts,emotion_categories,sad,387,1.012,nonverbaltts_readme,commit 66f8d4ec6d37; Files per label,2026-11-05,
+nonverbaltts,emotion_categories,surprised,34,0.040,nonverbaltts_readme,commit 66f8d4ec6d37; Files per label,2026-11-05,
+oreau,emotion_categories,angry (colère),67,0.053,oreau_readme,commit b08d7f81963e; Files per label,2026-11-05,code C
+oreau,emotion_categories,disgust (dégoût),67,0.064,oreau_readme,commit b08d7f81963e; Files per label,2026-11-05,code D
+oreau,emotion_categories,fear (peur),51,0.041,oreau_readme,commit b08d7f81963e; Files per label,2026-11-05,code P
+oreau,emotion_categories,happy (joie),62,0.042,oreau_readme,commit b08d7f81963e; Files per label,2026-11-05,code J
+oreau,emotion_categories,neutral (neutre),70,0.044,oreau_readme,commit b08d7f81963e; Files per label,2026-11-05,code N
+oreau,emotion_categories,sad (tristesse),55,0.045,oreau_readme,commit b08d7f81963e; Files per label,2026-11-05,code T
+oreau,emotion_categories,surprise,62,0.047,oreau_readme,commit b08d7f81963e; Files per label,2026-11-05,code S
+pavoque,emotion_categories,angry,601,0.745,pavoque_readme,commit af173d1bfc60; Files per label,2026-11-05,
+pavoque,emotion_categories,happy,584,0.758,pavoque_readme,commit af173d1bfc60; Files per label,2026-11-05,
+pavoque,emotion_categories,neutral,3126,5.362,pavoque_readme,commit af173d1bfc60; Files per label,2026-11-05,
+pavoque,emotion_categories,poker,575,0.818,pavoque_readme,commit af173d1bfc60; Files per label,2026-11-05,
+pavoque,emotion_categories,sad,556,0.921,pavoque_readme,commit af173d1bfc60; Files per label,2026-11-05,
+polishemo,emotion_categories,anger,150,0.038,polishemo_readme,commit d969ea6d574c; Files per label,2026-11-05,code a
+polishemo,emotion_categories,fear,150,0.031,polishemo_readme,commit d969ea6d574c; Files per label,2026-11-05,code s
+polishemo,emotion_categories,neutral,150,0.037,polishemo_readme,commit d969ea6d574c; Files per label,2026-11-05,code n
+quechua,emotion_categories,anger,920,0.983,quechua_readme,commit 25cd077d68ed; Files per label,2026-11-05,
+quechua,emotion_categories,angry,460,0.495,quechua_readme,commit 25cd077d68ed; Files per label,2026-11-05,
+quechua,emotion_categories,bored,460,0.611,quechua_readme,commit 25cd077d68ed; Files per label,2026-11-05,
+quechua,emotion_categories,boredom,920,1.327,quechua_readme,commit 25cd077d68ed; Files per label,2026-11-05,
+quechua,emotion_categories,calm,1380,1.523,quechua_readme,commit 25cd077d68ed; Files per label,2026-11-05,
+quechua,emotion_categories,excited,1380,1.654,quechua_readme,commit 25cd077d68ed; Files per label,2026-11-05,
+quechua,emotion_categories,fear,1380,1.596,quechua_readme,commit 25cd077d68ed; Files per label,2026-11-05,
+quechua,emotion_categories,happy,1380,1.866,quechua_readme,commit 25cd077d68ed; Files per label,2026-11-05,
+quechua,emotion_categories,neutral,1380,1.735,quechua_readme,commit 25cd077d68ed; Files per label,2026-11-05,
+quechua,emotion_categories,sadness,1380,1.829,quechua_readme,commit 25cd077d68ed; Files per label,2026-11-05,
+quechua,emotion_categories,sleepy,1380,1.621,quechua_readme,commit 25cd077d68ed; Files per label,2026-11-05,
+rasa,speaking_style,ALEXA,13292,12.254,rasa_readme,commit af0ebe980b9e; Files per label,2026-11-05,
+rasa,speaking_style,ANGER,21467,46.692,rasa_readme,commit af0ebe980b9e; Files per label,2026-11-05,
+rasa,speaking_style,BB,6769,12.876,rasa_readme,commit af0ebe980b9e; Files per label,2026-11-05,
+rasa,speaking_style,BOOK,55788,91.377,rasa_readme,commit af0ebe980b9e; Files per label,2026-11-05,
+rasa,speaking_style,CONV,124578,139.395,rasa_readme,commit af0ebe980b9e; Files per label,2026-11-05,
+rasa,speaking_style,DIGI,5452,13.579,rasa_readme,commit af0ebe980b9e; Files per label,2026-11-05,
+rasa,speaking_style,DISGUST,20134,44.630,rasa_readme,commit af0ebe980b9e; Files per label,2026-11-05,
+rasa,speaking_style,FEAR,20712,46.495,rasa_readme,commit af0ebe980b9e; Files per label,2026-11-05,
+rasa,speaking_style,HAPPY,21975,48.120,rasa_readme,commit af0ebe980b9e; Files per label,2026-11-05,
+rasa,speaking_style,INDIC,12852,25.965,rasa_readme,commit af0ebe980b9e; Files per label,2026-11-05,
+rasa,speaking_style,NEWS,41782,92.092,rasa_readme,commit af0ebe980b9e; Files per label,2026-11-05,
+rasa,speaking_style,PROPER NOUN,104068,57.363,rasa_readme,commit af0ebe980b9e; Files per label,2026-11-05,
+rasa,speaking_style,SAD,20070,48.304,rasa_readme,commit af0ebe980b9e; Files per label,2026-11-05,
+rasa,speaking_style,SANGRAH,1837,4.306,rasa_readme,commit af0ebe980b9e; Files per label,2026-11-05,
+rasa,speaking_style,SURPRISE,20484,46.117,rasa_readme,commit af0ebe980b9e; Files per label,2026-11-05,
+rasa,speaking_style,UMANG,5436,14.866,rasa_readme,commit af0ebe980b9e; Files per label,2026-11-05,
+rasa,speaking_style,WIKI,144250,400.972,rasa_readme,commit af0ebe980b9e; Files per label,2026-11-05,
+ravdess,emotion_categories,angry,192,0.206,ravdess_readme,commit d005c8b3a129; Files per label,2026-11-05,code 05
+ravdess,emotion_categories,calm,192,0.202,ravdess_readme,commit d005c8b3a129; Files per label,2026-11-05,code 02
+ravdess,emotion_categories,disgust,192,0.210,ravdess_readme,commit d005c8b3a129; Files per label,2026-11-05,code 07
+ravdess,emotion_categories,fearful,192,0.191,ravdess_readme,commit d005c8b3a129; Files per label,2026-11-05,code 06
+ravdess,emotion_categories,happy,192,0.194,ravdess_readme,commit d005c8b3a129; Files per label,2026-11-05,code 03
+ravdess,emotion_categories,neutral,96,0.093,ravdess_readme,commit d005c8b3a129; Files per label,2026-11-05,code 01
+ravdess,emotion_categories,sad,192,0.197,ravdess_readme,commit d005c8b3a129; Files per label,2026-11-05,code 04
+ravdess,emotion_categories,surprised,192,0.186,ravdess_readme,commit d005c8b3a129; Files per label,2026-11-05,code 08
+recanvo,emotion_categories,affectionate,129,0.022,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,bathroom,20,0.009,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,delighted,1272,0.423,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,dysregulated,704,0.280,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,dysregulation-bathroom,18,0.007,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,dysregulation-sick,74,0.029,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,frustrated,1536,0.604,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,glee,8,0.002,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,greeting,3,0.001,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,happy,61,0.020,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,help,24,0.008,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,hunger,4,0.001,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,laugh,8,0.001,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,laughter,93,0.026,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,more,22,0.006,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,no,12,0.002,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,protest,21,0.008,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,request,419,0.118,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,selftalk,1885,0.695,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,social,634,0.173,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,tablet,7,0.001,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+recanvo,emotion_categories,yes,123,0.023,recanvo_readme,commit 93532170313d; Files per label,2026-11-05,
+resd,emotion_categories,anger,219,0.372,resd_readme,commit 758d778d8392; Files per label,2026-11-05,
+resd,emotion_categories,disgust,185,0.358,resd_readme,commit 758d778d8392; Files per label,2026-11-05,
+resd,emotion_categories,enthusiasm,198,0.312,resd_readme,commit 758d778d8392; Files per label,2026-11-05,
+resd,emotion_categories,fear,223,0.373,resd_readme,commit 758d778d8392; Files per label,2026-11-05,
+resd,emotion_categories,happiness,218,0.359,resd_readme,commit 758d778d8392; Files per label,2026-11-05,
+resd,emotion_categories,neutral,191,0.288,resd_readme,commit 758d778d8392; Files per label,2026-11-05,
+resd,emotion_categories,sadness,162,0.280,resd_readme,commit 758d778d8392; Files per label,2026-11-05,
+rml_emotion,emotion_categories,an,120,0.157,rml_emotion_readme,commit 472b5ed40535; Files per label,2026-11-05,
+rml_emotion,emotion_categories,di,120,0.177,rml_emotion_readme,commit 472b5ed40535; Files per label,2026-11-05,
+rml_emotion,emotion_categories,fe,120,0.162,rml_emotion_readme,commit 472b5ed40535; Files per label,2026-11-05,
+rml_emotion,emotion_categories,ha,120,0.161,rml_emotion_readme,commit 472b5ed40535; Files per label,2026-11-05,
+rml_emotion,emotion_categories,sa,120,0.175,rml_emotion_readme,commit 472b5ed40535; Files per label,2026-11-05,
+rml_emotion,emotion_categories,su,120,0.156,rml_emotion_readme,commit 472b5ed40535; Files per label,2026-11-05,
+saraiki_ser,emotion_categories,Angry,200,0.177,saraiki_ser_readme,commit 440aeb6c3000; Files per label,2026-11-05,
+saraiki_ser,emotion_categories,Fear,200,0.175,saraiki_ser_readme,commit 440aeb6c3000; Files per label,2026-11-05,
+saraiki_ser,emotion_categories,Happy,200,0.158,saraiki_ser_readme,commit 440aeb6c3000; Files per label,2026-11-05,
+saraiki_ser,emotion_categories,Neutral,200,0.192,saraiki_ser_readme,commit 440aeb6c3000; Files per label,2026-11-05,
+saraiki_ser,emotion_categories,Sad,200,0.143,saraiki_ser_readme,commit 440aeb6c3000; Files per label,2026-11-05,
+saraiki_ser,emotion_categories,Shock,200,0.233,saraiki_ser_readme,commit 440aeb6c3000; Files per label,2026-11-05,
+savee,emotion_categories,anger,60,0.062,savee_readme,commit 344e5fb727a2; Files per label,2026-11-05,code a
+savee,emotion_categories,disgust,60,0.066,savee_readme,commit 344e5fb727a2; Files per label,2026-11-05,code d
+savee,emotion_categories,fear,60,0.062,savee_readme,commit 344e5fb727a2; Files per label,2026-11-05,code f
+savee,emotion_categories,happiness,60,0.063,savee_readme,commit 344e5fb727a2; Files per label,2026-11-05,code h
+savee,emotion_categories,neutral,120,0.120,savee_readme,commit 344e5fb727a2; Files per label,2026-11-05,code n
+savee,emotion_categories,sadness,60,0.075,savee_readme,commit 344e5fb727a2; Files per label,2026-11-05,code sa
+savee,emotion_categories,surprise,60,0.063,savee_readme,commit 344e5fb727a2; Files per label,2026-11-05,code su
+ses_ed,emotion_categories,ANG,264,0.354,ses_ed_readme,commit 91aaa0b3ff86; Files per label,2026-11-05,
+ses_ed,emotion_categories,DIS,265,0.356,ses_ed_readme,commit 91aaa0b3ff86; Files per label,2026-11-05,
+ses_ed,emotion_categories,FEA,265,0.356,ses_ed_readme,commit 91aaa0b3ff86; Files per label,2026-11-05,
+ses_ed,emotion_categories,HAP,264,0.354,ses_ed_readme,commit 91aaa0b3ff86; Files per label,2026-11-05,
+ses_ed,emotion_categories,NEU,264,0.354,ses_ed_readme,commit 91aaa0b3ff86; Files per label,2026-11-05,
+ses_ed,emotion_categories,SAD,264,0.354,ses_ed_readme,commit 91aaa0b3ff86; Files per label,2026-11-05,
+ses_sd,emotion_categories,ANG,265,0.356,ses_sd_readme,commit 929bc3a700ec; Files per label,2026-11-05,
+ses_sd,emotion_categories,DIS,265,0.356,ses_sd_readme,commit 929bc3a700ec; Files per label,2026-11-05,
+ses_sd,emotion_categories,FEA,265,0.356,ses_sd_readme,commit 929bc3a700ec; Files per label,2026-11-05,
+ses_sd,emotion_categories,HAP,264,0.355,ses_sd_readme,commit 929bc3a700ec; Files per label,2026-11-05,
+ses_sd,emotion_categories,NEU,264,0.356,ses_sd_readme,commit 929bc3a700ec; Files per label,2026-11-05,
+ses_sd,emotion_categories,SAD,265,0.356,ses_sd_readme,commit 929bc3a700ec; Files per label,2026-11-05,
+shemo,emotion_categories,anger,1059,1.065,shemo_readme,commit 57064ef19ea5; Files per label,2026-11-05,code A
+shemo,emotion_categories,fear,38,0.034,shemo_readme,commit 57064ef19ea5; Files per label,2026-11-05,code F
+shemo,emotion_categories,happiness,201,0.213,shemo_readme,commit 57064ef19ea5; Files per label,2026-11-05,code H
+shemo,emotion_categories,neutral,1028,1.399,shemo_readme,commit 57064ef19ea5; Files per label,2026-11-05,code N
+shemo,emotion_categories,sadness,449,0.604,shemo_readme,commit 57064ef19ea5; Files per label,2026-11-05,code S
+shemo,emotion_categories,surprise,225,0.112,shemo_readme,commit 57064ef19ea5; Files per label,2026-11-05,code W
+sitb_osed,emotion_categories,angry,1997,2.966,sitb_osed_readme,commit 7a2c15fbe9c6; Files per label,2026-11-05,code 01
+sitb_osed,emotion_categories,disgust,2043,3.374,sitb_osed_readme,commit 7a2c15fbe9c6; Files per label,2026-11-05,code 02
+sitb_osed,emotion_categories,fear,1990,3.330,sitb_osed_readme,commit 7a2c15fbe9c6; Files per label,2026-11-05,code 03
+sitb_osed,emotion_categories,happy,1995,3.088,sitb_osed_readme,commit 7a2c15fbe9c6; Files per label,2026-11-05,code 04
+sitb_osed,emotion_categories,sad,2118,3.519,sitb_osed_readme,commit 7a2c15fbe9c6; Files per label,2026-11-05,code 05
+sitb_osed,emotion_categories,surprise,1967,2.837,sitb_osed_readme,commit 7a2c15fbe9c6; Files per label,2026-11-05,code 06
+spanish_meacorpus,emotion_categories,anger,668,,spanish_meacorpus_page,"README table ""Emotion | Train | Test | Total"": Total column",2026-11-02,
+spanish_meacorpus,emotion_categories,disgust,1200,,spanish_meacorpus_page,"README table ""Emotion | Train | Test | Total"": Total column",2026-11-02,
+spanish_meacorpus,emotion_categories,fear,37,,spanish_meacorpus_page,"README table ""Emotion | Train | Test | Total"": Total column",2026-11-02,
+spanish_meacorpus,emotion_categories,joy,643,,spanish_meacorpus_page,"README table ""Emotion | Train | Test | Total"": Total column",2026-11-02,
+spanish_meacorpus,emotion_categories,neutral,1999,,spanish_meacorpus_page,"README table ""Emotion | Train | Test | Total"": Total column",2026-11-02,
+spanish_meacorpus,emotion_categories,sadness,582,,spanish_meacorpus_page,"README table ""Emotion | Train | Test | Total"": Total column",2026-11-02,
+subesco,emotion_categories,ANGRY,1000,1.119,subesco_readme,commit 671ddc4aaa7c; Files per label,2026-11-05,
+subesco,emotion_categories,DISGUST,1000,1.118,subesco_readme,commit 671ddc4aaa7c; Files per label,2026-11-05,
+subesco,emotion_categories,FEAR,1000,1.123,subesco_readme,commit 671ddc4aaa7c; Files per label,2026-11-05,
+subesco,emotion_categories,HAPPY,1000,1.119,subesco_readme,commit 671ddc4aaa7c; Files per label,2026-11-05,
+subesco,emotion_categories,NEUTRAL,1000,1.117,subesco_readme,commit 671ddc4aaa7c; Files per label,2026-11-05,
+subesco,emotion_categories,SAD,1000,1.118,subesco_readme,commit 671ddc4aaa7c; Files per label,2026-11-05,
+subesco,emotion_categories,SURPRISE,1000,1.117,subesco_readme,commit 671ddc4aaa7c; Files per label,2026-11-05,
+syntact,emotion_categories,anger,853,0.977,syntact_readme,commit d6f33f8537c7; Files per label,2026-11-05,
+syntact,emotion_categories,boredom,1112,2.431,syntact_readme,commit d6f33f8537c7; Files per label,2026-11-05,
+syntact,emotion_categories,fear,929,1.174,syntact_readme,commit d6f33f8537c7; Files per label,2026-11-05,
+syntact,emotion_categories,happiness,1075,1.580,syntact_readme,commit d6f33f8537c7; Files per label,2026-11-05,
+syntact,emotion_categories,neutral,1093,2.134,syntact_readme,commit d6f33f8537c7; Files per label,2026-11-05,
+syntact,emotion_categories,sadness,939,2.849,syntact_readme,commit d6f33f8537c7; Files per label,2026-11-05,
+talromur3,emotion_categories,addendum / addendum_style2,1140,0.441,talromur3_readme,commit 1064c3ecd0a9; Files per label,2026-11-05,
+talromur3,emotion_categories,angry,3396,3.623,talromur3_readme,commit 1064c3ecd0a9; Files per label,2026-11-05,
+talromur3,emotion_categories,happy,3396,3.868,talromur3_readme,commit 1064c3ecd0a9; Files per label,2026-11-05,
+talromur3,emotion_categories,helpful,3396,4.248,talromur3_readme,commit 1064c3ecd0a9; Files per label,2026-11-05,
+talromur3,emotion_categories,neutral,3396,3.896,talromur3_readme,commit 1064c3ecd0a9; Files per label,2026-11-05,
+talromur3,emotion_categories,sad,3396,4.039,talromur3_readme,commit 1064c3ecd0a9; Files per label,2026-11-05,
+talromur3,emotion_categories,surprised,3396,4.102,talromur3_readme,commit 1064c3ecd0a9; Files per label,2026-11-05,
+telugu_emotion_kaggle,emotion_categories,angry,96,0.127,telugu_emotion_kaggle_readme,commit 42e171673a97; Files per label,2026-11-05,
+telugu_emotion_kaggle,emotion_categories,happy,94,0.107,telugu_emotion_kaggle_readme,commit 42e171673a97; Files per label,2026-11-05,
+telugu_emotion_kaggle,emotion_categories,nuetral,103,0.123,telugu_emotion_kaggle_readme,commit 42e171673a97; Files per label,2026-11-05,
+telugu_emotion_kaggle,emotion_categories,sad,80,0.116,telugu_emotion_kaggle_readme,commit 42e171673a97; Files per label,2026-11-05,
+telugu_emotion_kaggle,emotion_categories,suprised,85,0.056,telugu_emotion_kaggle_readme,commit 42e171673a97; Files per label,2026-11-05,
+tess,emotion_categories,angry,400,0.205,tess_readme,commit fa4cd5823ce7; Files per label,2026-11-05,
+tess,emotion_categories,disgust,400,0.272,tess_readme,commit fa4cd5823ce7; Files per label,2026-11-05,
+tess,emotion_categories,fear,400,0.184,tess_readme,commit fa4cd5823ce7; Files per label,2026-11-05,
+tess,emotion_categories,happy,400,0.219,tess_readme,commit fa4cd5823ce7; Files per label,2026-11-05,
+tess,emotion_categories,neutral,400,0.228,tess_readme,commit fa4cd5823ce7; Files per label,2026-11-05,
+tess,emotion_categories,ps (pleasant surprise),400,0.223,tess_readme,commit fa4cd5823ce7; Files per label,2026-11-05,
+tess,emotion_categories,sad,400,0.267,tess_readme,commit fa4cd5823ce7; Files per label,2026-11-05,
+thaiser,emotion_categories,Angry,3111,4.180,thaiser_readme,commit 595d39c61e59; Files per label,2026-11-05,
+thaiser,emotion_categories,Frustrated,7864,12.699,thaiser_readme,commit 595d39c61e59; Files per label,2026-11-05,
+thaiser,emotion_categories,Happy,4070,5.542,thaiser_readme,commit 595d39c61e59; Files per label,2026-11-05,
+thaiser,emotion_categories,Neutral,7359,9.695,thaiser_readme,commit 595d39c61e59; Files per label,2026-11-05,
+thaiser,emotion_categories,None (no majority),2664,,thaiser_readme,commit 906c09addc96; Files per label,2026-11-01,
+thaiser,emotion_categories,Sad,2781,5.546,thaiser_readme,commit 595d39c61e59; Files per label,2026-11-05,
+thaiser,emotion_categories,other,5,,thaiser_readme,commit 906c09addc96; Files per label,2026-11-01,
+thanushs25_tamil,emotion_categories,angry,49,0.325,thanushs25_tamil_readme,commit a78f76dc43df; Files per label,2026-11-05,
+thanushs25_tamil,emotion_categories,fear,28,0.196,thanushs25_tamil_readme,commit a78f76dc43df; Files per label,2026-11-05,
+thanushs25_tamil,emotion_categories,happy,41,0.151,thanushs25_tamil_readme,commit a78f76dc43df; Files per label,2026-11-05,
+thanushs25_tamil,emotion_categories,neutral,28,0.182,thanushs25_tamil_readme,commit a78f76dc43df; Files per label,2026-11-05,
+thanushs25_tamil,emotion_categories,sad,49,0.259,thanushs25_tamil_readme,commit a78f76dc43df; Files per label,2026-11-05,
+thorsten,emotion_categories,amused,300,0.306,thorsten_readme,commit 613b3a196a55; Files per label,2026-11-05,
+thorsten,emotion_categories,angry,300,0.339,thorsten_readme,commit 613b3a196a55; Files per label,2026-11-05,
+thorsten,emotion_categories,disgusted,300,0.384,thorsten_readme,commit 613b3a196a55; Files per label,2026-11-05,
+thorsten,emotion_categories,drunk,300,0.422,thorsten_readme,commit 613b3a196a55; Files per label,2026-11-05,
+thorsten,emotion_categories,neutral,300,0.309,thorsten_readme,commit 613b3a196a55; Files per label,2026-11-05,
+thorsten,emotion_categories,sleepy,300,0.507,thorsten_readme,commit 613b3a196a55; Files per label,2026-11-05,
+thorsten,emotion_categories,surprised,300,0.301,thorsten_readme,commit 613b3a196a55; Files per label,2026-11-05,
+thorsten,emotion_categories,whisper,299,0.365,thorsten_readme,commit 613b3a196a55; Files per label,2026-11-05,
+turevdb,emotion_categories,Angry,487,0.126,turevdb_readme,commit 3f2186d3b7c3; Files per label,2026-11-05,
+turevdb,emotion_categories,Calm,408,0.111,turevdb_readme,commit 3f2186d3b7c3; Files per label,2026-11-05,
+turevdb,emotion_categories,Happy,357,0.097,turevdb_readme,commit 3f2186d3b7c3; Files per label,2026-11-05,
+turevdb,emotion_categories,Sad,483,0.129,turevdb_readme,commit 3f2186d3b7c3; Files per label,2026-11-05,
+ua_ser,emotion_categories,angry,259,0.136,ua_ser_readme,commit bb9f52d36ce1; Files per label,2026-11-05,
+ua_ser,emotion_categories,happy,244,0.130,ua_ser_readme,commit bb9f52d36ce1; Files per label,2026-11-05,
+ua_ser,emotion_categories,neutral,222,0.136,ua_ser_readme,commit bb9f52d36ce1; Files per label,2026-11-05,
+ua_ser,emotion_categories,sad,227,0.144,ua_ser_readme,commit bb9f52d36ce1; Files per label,2026-11-05,
+uftbesd,emotion_categories,Angry,200,0.132,uftbesd_readme,commit 2494b6a0e814; Files per label,2026-11-05,
+uftbesd,emotion_categories,Disgust,200,0.145,uftbesd_readme,commit 2494b6a0e814; Files per label,2026-11-05,
+uftbesd,emotion_categories,Fear,200,0.162,uftbesd_readme,commit 2494b6a0e814; Files per label,2026-11-05,
+uftbesd,emotion_categories,Happy,200,0.143,uftbesd_readme,commit 2494b6a0e814; Files per label,2026-11-05,
+uftbesd,emotion_categories,Neutral,200,0.143,uftbesd_readme,commit 2494b6a0e814; Files per label,2026-11-05,
+uftbesd,emotion_categories,Sad,200,0.165,uftbesd_readme,commit 2494b6a0e814; Files per label,2026-11-05,
+uftbesd,emotion_categories,Surprise,200,0.152,uftbesd_readme,commit 2494b6a0e814; Files per label,2026-11-05,
+urdu,emotion_categories,Angry (A),100,0.069,urdu_readme,commit 2af80e1625fc; Files per label,2026-11-05,
+urdu,emotion_categories,Happy (H),100,0.069,urdu_readme,commit 2af80e1625fc; Files per label,2026-11-05,
+urdu,emotion_categories,Neutral (N),100,0.069,urdu_readme,commit 2af80e1625fc; Files per label,2026-11-05,
+urdu,emotion_categories,Sad (S),100,0.069,urdu_readme,commit 2af80e1625fc; Files per label,2026-11-05,
+urduser,emotion_categories,angry,500,0.398,urduser_readme,commit 5d21d868e0a4; Files per label,2026-11-05,code 1
+urduser,emotion_categories,boredom,500,0.399,urduser_readme,commit 5d21d868e0a4; Files per label,2026-11-05,code 3
+urduser,emotion_categories,disgust,500,0.446,urduser_readme,commit 5d21d868e0a4; Files per label,2026-11-05,code 4
+urduser,emotion_categories,fear,500,0.450,urduser_readme,commit 5d21d868e0a4; Files per label,2026-11-05,code 2
+urduser,emotion_categories,happy,500,0.385,urduser_readme,commit 5d21d868e0a4; Files per label,2026-11-05,code 5
+urduser,emotion_categories,neutral,500,0.442,urduser_readme,commit 5d21d868e0a4; Files per label,2026-11-05,code 6
+urduser,emotion_categories,sad,500,0.522,urduser_readme,commit 5d21d868e0a4; Files per label,2026-11-05,code 7
+usc_emo_mri,emotion_categories,-,29,0.024,usc_emo_mri_readme,commit 29f52439df52; Files per label,2026-11-05,code (no row in `meta`)
+usc_emo_mri,emotion_categories,angry,563,0.559,usc_emo_mri_readme,commit 29f52439df52; Files per label,2026-11-05,code 2
+usc_emo_mri,emotion_categories,happy,542,0.544,usc_emo_mri_readme,commit 29f52439df52; Files per label,2026-11-05,code 3
+usc_emo_mri,emotion_categories,neutral,656,0.650,usc_emo_mri_readme,commit 29f52439df52; Files per label,2026-11-05,code 1
+usc_emo_mri,emotion_categories,not described,29,0.031,usc_emo_mri_readme,commit 29f52439df52; Files per label,2026-11-05,code 5
+usc_emo_mri,emotion_categories,sad,544,0.610,usc_emo_mri_readme,commit 29f52439df52; Files per label,2026-11-05,code 4
+utemo,emotion_categories,Anger,249,0.246,utemo_readme,commit a67b304ebf48; Files per label,2026-11-05,
+utemo,emotion_categories,Disgust,244,0.269,utemo_readme,commit a67b304ebf48; Files per label,2026-11-05,
+utemo,emotion_categories,Fear,244,0.273,utemo_readme,commit a67b304ebf48; Files per label,2026-11-05,
+utemo,emotion_categories,Happiness,242,0.248,utemo_readme,commit a67b304ebf48; Files per label,2026-11-05,
+utemo,emotion_categories,Neutral,254,0.271,utemo_readme,commit a67b304ebf48; Files per label,2026-11-05,
+utemo,emotion_categories,Sadness,289,0.391,utemo_readme,commit a67b304ebf48; Files per label,2026-11-05,
+utemo,emotion_categories,Surprise,279,0.313,utemo_readme,commit a67b304ebf48; Files per label,2026-11-05,
+visec,emotion_categories,angry,1466,0.806,visec_readme,commit a74e1c8bc96b; Files per label,2026-11-05,
+visec,emotion_categories,happy,1228,0.844,visec_readme,commit a74e1c8bc96b; Files per label,2026-11-05,
+visec,emotion_categories,neutral,1507,0.924,visec_readme,commit a74e1c8bc96b; Files per label,2026-11-05,
+visec,emotion_categories,sad,1079,0.602,visec_readme,commit a74e1c8bc96b; Files per label,2026-11-05,
+vivae,emotion_categories,achievement,161,0.041,vivae_readme,commit 42efc38c532e; Files per label,2026-11-05,
+vivae,emotion_categories,anger,174,0.045,vivae_readme,commit 42efc38c532e; Files per label,2026-11-05,
+vivae,emotion_categories,fear,176,0.040,vivae_readme,commit 42efc38c532e; Files per label,2026-11-05,
+vivae,emotion_categories,pain,185,0.048,vivae_readme,commit 42efc38c532e; Files per label,2026-11-05,
+vivae,emotion_categories,pleasure,202,0.051,vivae_readme,commit 42efc38c532e; Files per label,2026-11-05,
+vivae,emotion_categories,surprise,187,0.047,vivae_readme,commit 42efc38c532e; Files per label,2026-11-05,
+voicestats,emotion_categories,angry,300,0.827,voicestats_readme,commit 9e29c005460c; Files per label,2026-11-05,
+voicestats,emotion_categories,happy,300,0.714,voicestats_readme,commit 9e29c005460c; Files per label,2026-11-05,
+voicestats,emotion_categories,normal,300,0.743,voicestats_readme,commit 9e29c005460c; Files per label,2026-11-05,
+whiser,emotion_categories,angry,293,0.308,whiser_readme,commit 3ea5a830cdca; Files per label,2026-11-05,code A
+whiser,emotion_categories,contempt,10,0.017,whiser_readme,commit 3ea5a830cdca; Files per label,2026-11-05,code C
+whiser,emotion_categories,disgust,1,0.001,whiser_readme,commit 3ea5a830cdca; Files per label,2026-11-05,code D
+whiser,emotion_categories,fear,6,0.006,whiser_readme,commit 3ea5a830cdca; Files per label,2026-11-05,code F
+whiser,emotion_categories,happy,345,0.407,whiser_readme,commit 3ea5a830cdca; Files per label,2026-11-05,code H
+whiser,emotion_categories,neutral,3492,4.105,whiser_readme,commit 3ea5a830cdca; Files per label,2026-11-05,code N
+whiser,emotion_categories,no agreed label,916,1.089,whiser_readme,commit 3ea5a830cdca; Files per label,2026-11-05,code X
+whiser,emotion_categories,other (free text),47,0.065,whiser_readme,commit 3ea5a830cdca; Files per label,2026-11-05,code O
+whiser,emotion_categories,sad,284,0.319,whiser_readme,commit 3ea5a830cdca; Files per label,2026-11-05,code S
+whiser,emotion_categories,surprise,33,0.038,whiser_readme,commit 3ea5a830cdca; Files per label,2026-11-05,code U
+ysed,emotion_categories,angry,286,0.169,ysed_readme,commit 3f64390dee94; Files per label,2026-11-05,
+ysed,emotion_categories,fearful,244,0.179,ysed_readme,commit 3f64390dee94; Files per label,2026-11-05,
+ysed,emotion_categories,happy,294,0.192,ysed_readme,commit 3f64390dee94; Files per label,2026-11-05,
+ysed,emotion_categories,neutral,305,0.201,ysed_readme,commit 3f64390dee94; Files per label,2026-11-05,
+ysed,emotion_categories,sad,303,0.266,ysed_readme,commit 3f64390dee94; Files per label,2026-11-05,

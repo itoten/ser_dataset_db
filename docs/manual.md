@@ -171,7 +171,7 @@ A license states how far data may be used. The explanations here are general, no
 | `sources.csv` | one source document |
 | `dataset_sources.csv` | a source that introduces a dataset (paper, distribution, card, mirror, readme) |
 | `annotations.csv` | a label set or another annotation of a dataset |
-| `label_counts.csv` | files per label of a label set, as a source states it |
+| `label_counts.csv` | files and hours per label of a label set, as a source states it |
 | `issues.csv` | one problem of a release as distributed |
 | `aliases.csv` | another name of a dataset |
 | `relations.csv` | a relation between datasets (version, subset, different dataset, suspected identity, shared sentences) |
@@ -223,7 +223,7 @@ Never infer one attribute from another: acted speech can carry perceived labels.
 
 ### 5.5 Files per label
 
-`label_counts.csv` has the number of files for each label of a label set, in the source's own label words. A paper's table and the recipe readme can both give counts for the same label. They do not have to agree, and both stay. `label_normalization.csv` maps only spelling (case, spaces) and word forms (angry/anger); a mapping that changes the meaning (joy to happy) is a project decision and does not belong in the DB.
+`label_counts.csv` has the number of files (`n`) and, when the source gives it, the hours (`hours`, empty otherwise) for each label of a label set, in the source's own label words. A paper's table and the recipe readme can both give counts for the same label. They do not have to agree, and both stay. `label_normalization.csv` maps only spelling (case, spaces) and word forms (angry/anger); a mapping that changes the meaning (joy to happy) is a project decision and does not belong in the DB.
 
 ### 5.6 Other annotations
 

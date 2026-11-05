@@ -32,7 +32,7 @@ A database of speech emotion recognition (SER) datasets, kept as CSV files under
 | Disagreements between sources | `views/discrepancies.csv` (generated) |
 | Where a value comes from | `data/evidence.csv` (filter by `dataset_id` and `field`), then `data/sources.csv` by `source_id` |
 | Problems found in a release | `data/issues.csv` |
-| How many files each label has | `data/label_counts.csv` |
+| How many files, and how many hours, each label has | `data/label_counts.csv` |
 | Meaning, type and allowed nulls of a column | `schema/columns.csv`; allowed values in `schema/enums.csv`; table keys in `schema/tables.csv` |
 | A beginner's guide with a glossary | `docs/manual.md` (English), `docs/manual.ja.md` (Japanese translation; always update both together) |
 | How the DB was designed: decisions with their reasons | `docs/README.md` (index of discussions and plans), `docs/archive/` |
@@ -48,7 +48,7 @@ A database of speech emotion recognition (SER) datasets, kept as CSV files under
 | `data/sources.csv` | one source document: paper, page, card, license file, release files, recipe readme | `source_id` |
 | `data/dataset_sources.csv` | a source that introduces a dataset (paper, distribution, card, mirror, readme) | `dataset_id`, `source_id`, `role` |
 | `data/annotations.csv` | a label set (emotion categories, emotion attributes, speaking style, ...) or another annotation (transcript, speaker, ratings, ...) of a dataset | `dataset_id`, `item`, `name` |
-| `data/label_counts.csv` | the number of files of one label of a label set, as a source states it | `dataset_id`, `item`, `label`, `source_id` |
+| `data/label_counts.csv` | the number of files (and the hours, when the source gives them) of one label of a label set, as a source states it | `dataset_id`, `item`, `label`, `source_id` |
 | `data/issues.csv` | one problem of a release as distributed | `dataset_id`, `issue_no` |
 | `data/aliases.csv` | another name of a dataset | `dataset_id`, `alias` |
 | `data/relations.csv` | a relation between datasets (version, subset, different dataset, suspected identity, shared sentences) | `dataset_id`, `relation`, `other_dataset_id` |
