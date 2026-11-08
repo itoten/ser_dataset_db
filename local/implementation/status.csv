@@ -1,0 +1,319 @@
+dataset_id,status,reason_codes,note
+aesc_assamese,not_investigated,,
+aesd_assamese,not_investigated,,
+aesdd,implemented,,
+afew,not_investigated,,
+affectspeech,on_hold,redistribution_of_existing_corpus;access_signed_agreement,"First review 2026-10-28: the audio is a re-aggregation of existing public corpora (SAVEE, RAVDESS, eNTERFACE, TESS, CREMA-D, ESD, MEAD, MESS) plus subsets of VCTK and LibriTTS, converted to 16 kHz mono; the added value is the text descriptions. The categorical labels of the original corpora are not new data, so the dataset is treated as a redistribution (excluded like TextrolSpeech); the 253,799 count includes the VCTK / LibriTTS subsets. Access needs a signed EULA. Research-only."
+afrikaans_se,not_investigated,,
+aihub_263,on_hold,access_restricted_region,AIHub states that only Korean nationals may apply. Requires membership registration and approval of an application.
+aihub_271,on_hold,text_only;access_restricted_region,AIHub states that only Korean nationals may apply. Requires membership registration and approval of an application.
+aihub_286,on_hold,access_restricted_region,AIHub states that only Korean nationals may apply. Requires membership registration and approval of an application.
+aihub_466,on_hold,access_restricted_region,AIHub states that only Korean nationals may apply. Requires membership registration and approval of an application.
+aihub_637,on_hold,access_restricted_region,AIHub states that only Korean nationals may apply. Requires membership registration and approval of an application.
+aihub_71631,on_hold,access_restricted_region,AIHub states that only Korean nationals may apply. Requires membership registration and approval of an application.
+aihub_71632,on_hold,access_restricted_region,AIHub states that only Korean nationals may apply. Requires membership registration and approval of an application.
+akace,implemented,,
+albemo,implemented,,
+allosat,not_investigated,,
+amigos,not_investigated,,
+anad,implemented,,
+arabic_zenodo19687456,on_hold,no_audio_paper_only,"Second look 2026-10-28: the Zenodo record (CC BY 4.0, open) only archives the 2016 Asian Journal of Science and Technology paper PDF about a five-emotion Arabic corpus; it contains no audio, so it is not a data source."
+ased,implemented,,
+asvpesd,implemented,,
+atthack,not_investigated,,
+audiospeechsentiment,implemented,,
+avcaffe,not_investigated,,
+banglamood,implemented,,
+banglaser,implemented,,
+banspemo,implemented,,
+bari_emospeech,implemented,,
+baser,implemented,,
+basis_global_emotions,not_investigated,,
+baum1,not_investigated,,
+baum2,not_investigated,,
+baved,not_investigated,,
+beat,not_investigated,,
+bedvibe,on_hold,access_paid_or_membership,"Commercial data from BedVibe Studio. GitHub only introduces it. Moved to needs_decision on 2026-10-14 under the revised policy (maintainer's decision: manual access steps, label types and automatic labels are not reasons to exclude)."
+belfast,on_hold,access_no_direct_download,"Second look 2026-10-28: Belfast natural database: clips of 10-60 s from 100 speakers (recorded discussions and TV programme extracts) with FEELTRACE continuous interpretation files; the labels are continuous traces, not categories. Distribution was not confirmed."
+berst,implemented,,
+biicnnime,not_investigated,,
+biicpodcast,not_investigated,,
+bmisec,on_hold,host_unreachable,"KuralHub lists it as Open and points to the UCSY institutional repository (onlineresource.ucsy.edu.mm), which did not respond on 2026-10-14 (timeout). Deferred on 2026-10-14 under the revised policy (access method and distributor not confirmed) (maintainer's decision: manual access steps, label types and automatic labels are not reasons to exclude)."
+brytserc,implemented,,
+buemodb,on_hold,no_audio_paper_only,Only the paper's bibliography (SIU 2014) was checked. No statement of distribution or distributor was found.
+burmese_new2001,not_investigated,,
+cafe,implemented,,
+capspeech,not_investigated,,
+capspeech_agentdb,not_investigated,,
+casia,implemented,,
+caves,not_investigated,,
+cbesd,implemented,,
+cdse_czech,not_investigated,,
+cemo,on_hold,not_distributable,The paper states that corpus and annotations are not distributed outside (non-diffusion agreement) to protect callers' anonymity and privacy.
+cheavd,not_investigated,,
+chen_bimodal,on_hold,no_audio_paper_only,"The only source is a 2000 PhD thesis; its text could not be obtained and no distributor was found. Values from Table I of the MSP-Podcast paper (its Avail column shows ✗, but the paper does not define the column)."
+chsims,not_investigated,,
+chsims2,not_investigated,,
+clesc,on_hold,text_only;redistribution_of_existing_corpus,"A small crowd-sourced annotation set of emotion and speaking style for 500 clips (100 Common Voice, 400 VoxCeleb). The Hugging Face release is a single parquet file (modality: text only) without audio. Excluded because there is no audio (not because of size)."
+cmumoseas,on_hold,no_raw_audio_features_only,"No raw audio or video is distributed; only non-invertible features are public. Labels require an EULA (paper, Privacy and Ethics)."
+cmumosei,on_hold,no_raw_audio_features_only;host_unreachable,"The official SDK distributes only anonymised features (its README says raw videos cannot be shared). The hosts said to serve raw data were unreachable on 2026-10-12. Of the 3,227 IDs in the SDK's standard split file cmu_mosei_std_folds.py, 2,768 are YouTube-style (11 characters) and 459 are numeric only; what the numeric IDs refer to is unverified. Second look 2026-10-28: the official acoustic data are COVAREP features; no official raw-WAV release was found. Web search results point to community WAV copies on Hugging Face whose owners warn about copyright and YouTube terms (not checked). Re-extracting audio from the YouTube videos is the only route to full 23,453 segments."
+cmumosi,on_hold,labels_not_discrete_emotion;no_raw_audio_features_only,"The official SDK distributes only anonymised features, and its FAQ says raw videos cannot be shared. Labels are sentiment polarity, not emotion categories."
+cnev,not_investigated,,
+codaco_german,on_hold,text_only,"The Hugging Face files are only csv and json, no audio (modality: text). Card: ""Created using codaco.app""."
+coraa_ser,not_investigated,,
+cped,on_hold,no_raw_audio_features_only,"Only text and audio/visual features are released because of copyright, privacy and video-site terms (paper abstract)."
+cremad,implemented,,
+crowdsourcing_smith2018,on_hold,no_audio_paper_only,"The paper does not describe distribution, and a search on 2026-10-13 found no distributor. The corpus has no name of its own."
+csemotions,implemented,,
+daicwoz,not_investigated,,
+dailytalk,implemented,,
+deeply_korean_read,not_investigated,,
+deeply_nonverbal,not_investigated,,
+demos,not_investigated,,
+des,on_hold,access_no_direct_download,"Second look 2026-10-28: Danish Emotional Speech database: four actors, five emotions, about 30 minutes (DB count 419 utterances); a 20-listener test gave 67.3% recognition. Where and how it is distributed was not found in the sources read (the 1997 paper only)."
+dfew,not_investigated,,
+dihana,not_investigated,,
+dusha,implemented,,
+eaed,not_investigated,,
+ears,not_investigated,,
+eesc,implemented,,
+eesdb_chinese,not_investigated,,
+em2ldl,not_investigated,,
+emilia_emotion,not_investigated,,
+emis,implemented,,
+emns,implemented,,
+emo_emilia,not_investigated,,
+emochildru,not_investigated,,
+emodb,implemented,,
+emodialogcn,not_investigated,,
+emofilm,not_investigated,,
+emogator,implemented,,
+emolah,not_investigated,,
+emomatchspanishdb,not_investigated,,
+emonetvoice,not_investigated,,
+emoreact,not_investigated,,
+emosec,on_hold,text_only;redistribution_of_existing_corpus,Only emotion captions (JSON) for ESD and IEMOCAP audio. No audio included.
+emospeech_keywords,implemented,,
+emospeech_secap,not_investigated,,
+emosynth,not_investigated,,
+emota,not_investigated,,
+emotale,implemented,,
+emotion_origlia2010,on_hold,access_no_direct_download,"Second look 2026-10-28: '€motion' database: emotional sentences elicited in four languages (Italian, French, English, German), used for global/local prosodic feature classification (Speech Prosody 2010 abstract); distribution and license not found."
+emotional_ema,implemented,,
+emotiontalk,implemented,,
+emotiontts_open_db,not_investigated,,
+emotranscap,not_investigated,,
+emouerj,implemented,,
+emouerj_sed,on_hold,redistribution_of_existing_corpus,emoUERJ (Zenodo 5427549) reorganised for Speech Emotion Diarization (card). The original emoUERJ is a separate row (candidate).
+emovdb,implemented,,
+emovie,not_investigated,,
+emovo,implemented,,
+emovoicedb,implemented,,
+emovome,not_investigated,,
+emozionalmente,implemented,,
+enterface05,implemented,,
+escorpuspe,not_investigated,,
+esd,implemented,,
+eseravd,implemented,,
+esmbs,not_investigated,,
+euemotion_voice,not_investigated,,
+expressivespeech,on_hold,redistribution_of_existing_corpus,"Utterances with high expressiveness scores (DeEAR) selected from Expresso, NCSSD, M3ED, MultiDialog and IEMOCAP. No categorical emotion labels."
+expresso,not_investigated,,
+eyase,on_hold,access_no_direct_download,"Distribution not confirmed in a primary source. A third-party paper (arXiv 2604.07357) says it is publicly available but gives no location. The current reasons are from old sources. Deferred on 2026-10-14 under the revised policy (access method and distributor not confirmed) (maintainer's decision: manual access steps, label types and automatic labels are not reasons to exclude)."
+fauaibo,on_hold,access_no_direct_download,"Second look 2026-10-28: FAU Aibo Emotion Corpus (LREC 2008 workshop paper): 51 German children, about 48k words, 9.2 hours, five labellers with word-level annotation of emotional user states. The paper says the database would be made available for scientific use under a licensing agreement; the current route was not confirmed."
+fcaps,not_investigated,,
+filmed,not_investigated,,
+fluent_speech_commands,not_investigated,,
+galgame_speech_ser,not_investigated,,
+gaudie,not_investigated,,
+gees,not_investigated,,
+gemep,not_investigated,,
+grethe,on_hold,no_raw_audio_features_only,"Second look 2026-10-28: Greek theatre speech, 500 samples (46 min) labelled for arousal (weak / neutral / strong) and valence (negative / neutral / positive) by four annotators, so there are no categorical emotion classes; only mel-spectrograms and pyAudioAnalysis features are released (8 kHz mono needed for new audio). MIT license on the repository."
+groupaffect4,not_investigated,,
+gujarati_tank2020,not_investigated,,
+harper_valley_bank,implemented,,
+hesd,not_investigated,,
+hikia,implemented,,
+hindi_bansal_dev,not_investigated,,
+hindi_ser_vishlb,implemented,,
+hume_reaction,not_investigated,,
+humevb,not_investigated,,
+humyn_indian_emotional,not_investigated,,
+hungarian_hesd,not_investigated,,
+iemocap,implemented,,
+iesc,implemented,,
+iiitsaint_emomdb,not_investigated,,
+iitkgp_sehsc,on_hold,no_audio_paper_only,Confirmed only through a third-party survey. No statement of distribution or distributor was found.
+iitkgp_sesc,on_hold,no_audio_paper_only,Only the bibliography of the paper (IC3 2009) and a third-party survey were checked. No statement of distribution or distributor was found.
+indemovis,not_investigated,,
+indianenglish,implemented,,
+indonesian_fahmi2020,not_investigated,,
+indowavesentiment,implemented,,
+inesco,implemented,,
+interface,not_investigated,,
+italic,not_investigated,,
+java_sed,on_hold,host_unreachable,"KuralHub says access is on request and gives beais-uny.id/dataset as the distributor, which could not be reached on 2026-10-14. Deferred on 2026-10-14 under the revised policy (access method and distributor not confirmed) (maintainer's decision: manual access steps, label types and automatic labels are not reasons to exclude)."
+javanese_ser_2black0,implemented,,
+javmeps,not_investigated,,
+jlcorpus,implemented,,
+jnv,implemented,,
+jtes,not_investigated,,
+jvnv,implemented,,
+kannada,implemented,,
+kannada_kes,not_investigated,,
+kasdimerbah_arabic,not_investigated,,
+kazakh_russian_emotion,not_investigated,,
+kazemotts,implemented,,
+kbes,implemented,,
+keg_croatian,on_hold,no_audio_paper_only,"The abstract does not describe distribution, and no distributor was found. About 40 minutes in total."
+keioesd,not_investigated,,
+kemdy19,on_hold,access_request_form_or_email,"Second look 2026-10-28 (ETRI page itself unreachable; facts from search snippets of the ETRI pages): recordings by voice actors, 2 per session over 20 sessions, seven categorical labels (angry, sad, happy, disgust, fear, surprise, neutral) assigned by annotators; about 1.8 GB package. A license agreement and the data manager's approval are required. Utterance count and hours not found."
+kemdy20,on_hold,access_request_form_or_email,"Second look 2026-10-28 (ETRI page unreachable; facts from search snippets): free conversation of 80 adults aged 19-39 in 40 pairs with speech, transcripts and bio-signals; about 1.9 GB (version 1.2, 2023). A license agreement and approval are required. Categorical labels and counts not confirmed."
+kemocon,not_investigated,,
+kenyan_swahili_ser,on_hold,no_audio_code_only,The GitHub repository is model and app code; the README asks users to prepare the dataset themselves (no distribution location given).
+kesdy18,not_investigated,,
+kmser,not_investigated,,
+ksuemotions,not_investigated,,
+kurdish_esd,not_investigated,,
+kurdish_nematullah2024,not_investigated,,
+laions_got_talent,not_investigated,,
+ldc_emotional_prosody,not_investigated,,
+legov2,implemented,,
+lithuanian_emotion_db,implemented,,
+lssed,not_investigated,,
+m3ed,not_investigated,,
+mafw,not_investigated,,
+mahnobhci,on_hold,host_unreachable,"The top page of mahnob-db.eu introduces HCI-Tagging, but the linked mahnob-db.eu/hci-tagging/ returned HTTP 404 on 2026-10-14. Procedure unverified. Deferred on 2026-10-14 under the revised policy (access method and distributor not confirmed) (maintainer's decision: manual access steps, label types and automatic labels are not reasons to exclude)."
+malayalam_ann2009,not_investigated,,
+maleo,implemented,,
+masc,not_investigated,,
+maserc,implemented,,
+mav,implemented,,
+mavesdb,not_investigated,,
+mcaespps,implemented,,
+mceiu,not_investigated,,
+mderma,implemented,,
+mead,not_investigated,,
+meghana007_tamil,on_hold,duplicate_entry,A copy of Thanushs25/tamil-audio-emotion-classification: the oids (git hashes) of all 198 files in the Hugging Face listing match (measured 2026-10-14). Content is kept in the thanushs25_tamil row.
+meld,implemented,,
+memor,not_investigated,,
+mer2023,not_investigated,,
+mer2024,not_investigated,,
+mer2025,not_investigated,,
+mer2026,on_hold,access_request_form_or_email,"The Hugging Face API gated value is auto (2026-10-14), so access is probably granted immediately after agreeing. However, the application form says ""academic research and MER2026 challenge participation only"" and ""manually reviewed by the organisers"", and asks for team name, leader and affiliation. The Hugging Face license tag is CC BY-NC 4.0, which disagrees with the text (redistribution and commercial use need written permission). Whether non-participants may use it cannot be settled from the sources; the organisers must be asked. Moved to needs_decision on 2026-10-14 under the revised policy (maintainer's decision: manual access steps, label types and automatic labels are not reasons to exclude)."
+mer_caption,on_hold,text_only;redistribution_of_existing_corpus,Emotion descriptions added automatically to the unlabelled part of MER2024 (annotations only). Added at the request of the literature database (2026-10-23).
+merr,on_hold,text_only;redistribution_of_existing_corpus,Emotion labels and descriptions for unlabelled video segments of MER2023 (annotations only). No video or audio included. Added at the request of the literature database (2026-10-23).
+mesd,implemented,,
+mesp,on_hold,no_audio_paper_only,"Second look 2026-10-28: Mandarin Chinese Emotional Speech Dataset - Portrayed (MES-P): portrayed speech with distal (intended) and proximal (perceived) labels, tonal variation matched to real Mandarin and moderate / intense versions of joy, anger and sadness plus neutral, rated in valence-arousal space. No download location is given in the paper (arXiv 1808.10095)."
+mess,implemented,,
+mikuemobench,on_hold,not_distributable;labels_automatic,"The audio is not distributed because of copyright; only annotations (YouTube video IDs and times) are public. Labels are assigned automatically by a multimodal LLM. Moved to needs_decision on 2026-10-14 under the revised policy (maintainer's decision: manual access steps, label types and automatic labels are not reasons to exclude)."
+minds14,not_investigated,,
+mlend_numerals,not_investigated,,
+mmeld,on_hold,text_only,Text of MELD utterances translated by hand into 4 languages from foreign-language subtitles. No new audio.
+mspconversation,not_investigated,,
+mspface,on_hold,audio_links_only,"Second look 2026-10-28: labelled set of 9,370 recordings (24.7 h) with categorical labels (anger, happiness, sadness, disgust, surprised, fear, contempt, neutral, other) and dimensions from crowd annotation, plus 15,011 unlabelled recordings. The lab shares links to the videos and the code to segment the speaking turns, not the audio; academic license."
+mspimprov,not_investigated,,
+msppodcast,implemented,,
+multidialog,implemented,,
+musecar,not_investigated,,
+narrative_dialogue,on_hold,text_only;labels_automatic,"Text-only data. The Zenodo file is a single jsonl (about 3.9 MB) without audio. Speakers and emotions were assigned automatically with LLMs etc. The paper shows narration made with ElevenLabs TTS as an example, but no audio is distributed."
+naturalvoices,not_investigated,,
+nemo,implemented,,
+nexdata_en_emotional_20p,on_hold,access_paid_or_membership,"Commercial data from the data company Nexdata. GitHub only introduces it; the data is sold. Moved to needs_decision on 2026-10-14 under the revised policy (maintainer's decision: manual access steps, label types and automatic labels are not reasons to exclude)."
+nonverbaltts,implemented,,
+nvs38k,not_investigated,,
+ogvc,not_investigated,,
+omgemotion,on_hold,access_no_direct_download,"Only references to YouTube; no audio is distributed (per the source). Moved to needs_decision on 2026-10-14 under the revised policy (maintainer's decision: manual access steps, label types and automatic labels are not reasons to exclude)."
+oreau,implemented,,
+ov_merd,on_hold,text_only;redistribution_of_existing_corpus,Annotation-only data: open-vocabulary emotion labels re-assigned to part of MER2023. Audio and video come from MER2023. Added at the request of the literature database (2026-10-23).
+paraspeechcaps,not_investigated,,
+passau_sfch,not_investigated,,
+pavoque,implemented,,
+pemo_punjabi,not_investigated,,
+persian_esd,not_investigated,,
+picka_nh,on_hold,text_only,"The DataverseNL release contains only children's and adults' responses to the EmoHI test (CSV) and demographics, no audio."
+polish_cichosz2005,not_investigated,,
+polish_sapinski2019,not_investigated,,
+polishemo,implemented,,
+prahalabs_malayalam,on_hold,redistribution_of_existing_corpus,"Not synthetic speech. The rows' wav_path points to rasa_hf/data/Malayalam/..., so it appears to be a rearrangement of the Malayalam part of Rasa (AI4Bharat). The card explains neither license nor origin."
+promptspeech,not_investigated,,
+qlean_japanese_emotional,not_investigated,,
+quechua,implemented,,
+ramas,on_hold,host_unreachable,"The paper calls it an open database, but the distributor Neurodata Lab's domain (neurodatalab.com) showed unrelated content on 2026-10-14 and /datasets/ramas returns 404. Deferred on 2026-10-14 under the revised policy (access method and distributor not confirmed) (maintainer's decision: manual access steps, label types and automatic labels are not reasons to exclude)."
+rasa,implemented,,
+ravdess,implemented,,
+recanvo,implemented,,
+recola,not_investigated,,
+resd,implemented,,
+rml_emotion,implemented,,
+ruslana,on_hold,access_no_direct_download,"Second look 2026-10-28: RUSLANA: 61 speakers (12 male, 49 female) x 10 sentences x 6 states (neutral, surprise, happiness, anger, sadness, fear) = 3,660 utterances (ICSLP 2002 abstract); distribution not found in the sources read."
+safe_corpus,not_investigated,,
+saraiki_ser,implemented,,
+saudi_ser_corpus,not_investigated,,
+savee,implemented,,
+sccesc,not_investigated,,
+secepdb,not_investigated,,
+semaine,on_hold,host_unreachable,"Both official sites, www.semaine-db.eu and semaine-db.eu, returned HTTP 404 on 2026-10-14. Procedure unverified. Deferred on 2026-10-14 under the revised policy (access method and distributor not confirmed) (maintainer's decision: manual access steps, label types and automatic labels are not reasons to exclude)."
+semour,on_hold,host_unreachable,"Second look 2026-10-28: SEMOUR, the first scripted emotion-tagged Urdu database: 15,040 instances by 8 professional actors on a phonetically balanced script, validated by human raters (kappa > 0.4 per actor). The paper points to acoustics-lab.itu.edu.pk/semour, which was unreachable when checked; license unknown."
+ses_ed,implemented,,
+ses_sd,implemented,,
+sewa,on_hold,host_unreachable,"The distribution page says it is released for research at http://db.sewaproject.eu/, but that page returned HTTP 404 on 2026-10-14. Deferred on 2026-10-14 under the revised policy (access method and distributor not confirmed) (maintainer's decision: manual access steps, label types and automatic labels are not reasons to exclude)."
+shemo,implemented,,
+sitb_osed,implemented,,
+slue_hvb,not_investigated,,
+slue_voxceleb,not_investigated,,
+slurp,not_investigated,,
+snips_slu,not_investigated,,
+spanish_meacorpus,on_hold,audio_links_only,"Audio and video are not redistributed because of copyright; only YouTube video IDs and times, transcripts and download scripts are published. Moved to needs_decision on 2026-10-14 under the revised policy (maintainer's decision: manual access steps, label types and automatic labels are not reasons to exclude)."
+speech_massive,not_investigated,,
+speechcraft,not_investigated,,
+spokenwoz,not_investigated,,
+srol,not_investigated,,
+stop,not_investigated,,
+studies,not_investigated,,
+subesco,implemented,,
+susas,not_investigated,,
+swedish_vpesc,not_investigated,,
+switchboard_sentiment,not_investigated,,
+syntact,implemented,,
+talromur3,implemented,,
+tamar_emodb,not_investigated,,
+tamil_ram,not_investigated,,
+telugu_emotion_kaggle,implemented,,
+tess,implemented,,
+textrolspeech,on_hold,redistribution_of_existing_corpus,"LibriTTS, VCTK and existing emotional corpora (ESD, TESS, MEAD, SAVEE, MESS) collected and given style descriptions. The emotional audio is the same as in the source corpora."
+thaiser,implemented,,
+thanushs25_tamil,implemented,,
+thorsten,implemented,,
+timers_and_such,not_investigated,,
+tumavic,on_hold,access_no_direct_download,"Labels are the level of interest (5 levels), not emotion categories. None of the sources found describes how to obtain it. Deferred on 2026-10-14 under the revised policy (access method and distributor not confirmed) (maintainer's decision: manual access steps, label types and automatic labels are not reasons to exclude)."
+tures,on_hold,no_audio_paper_only,The paper's abstract does not describe distribution (the text could not be read because of the publisher's bot protection). No distributor found.
+turevdb,implemented,,
+ua_ser,implemented,,
+uftbesd,implemented,,
+ulm_tsst,not_investigated,,
+uq_schizophrenia_videos,not_investigated,,
+urdu,implemented,,
+urduser,implemented,,
+urdusindhi_zenodo3685274,on_hold,no_raw_audio_features_only,Because of ethical constraints the audio is not public; only 5 sets of OpenSmile features. States that the creators will compute and return features on request.
+usc_emo_mri,implemented,,
+usoms,not_investigated,,
+utemo,implemented,,
+uudb,not_investigated,,
+vam,not_investigated,,
+venec,not_investigated,,
+verbo,not_investigated,,
+vesc,not_investigated,,
+vesus,not_investigated,,
+visec,implemented,,
+vivae,implemented,,
+vnemos,not_investigated,,
+voicenet,not_investigated,,
+voicestats,implemented,,
+waxal_wolof_ser,on_hold,labels_not_discrete_emotion,"Second look 2026-10-28: the Hugging Face repository holds 3,765 wav files in SER_WOLOF/<speaker id> folders with no metadata or label file; the folder names are numeric ids, apparently speakers, so there are no usable emotion labels. The card has no license."
+werewolf_xl,not_investigated,,
+whiser,implemented,,
+yodasspeakerpool,not_investigated,,
+ysed,implemented,,
+yue_emo_speech,not_investigated,,
+zamai_pashto,on_hold,text_only,"The Hugging Face files are only json, csv and py, with no audio (modality: text)."

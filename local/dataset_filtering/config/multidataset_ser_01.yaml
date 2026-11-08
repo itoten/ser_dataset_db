@@ -1,0 +1,123 @@
+description: |
+  Experiment multidataset_ser_01 (conditions given by the maintainer, 2026-11-04).
+
+  - The trained model is released under an open license that allows commercial use, so datasets that
+    forbid commercial use cannot be used for training.
+  - The datasets are not redistributed (each user downloads them through the ESPnet recipes).
+  - These steps only decide which datasets can be used at all. Training/evaluation roles by license are
+    decided later (discussion 0003 in docs/discussions/).
+  - A step removes a dataset only when the DB says it fails. When the DB does not say, the dataset is kept
+    as "kept_unverified". The license step is the exception: an unknown license is removed.
+
+# DB values that mean "the DB does not say".
+unknown_values: ["", unknown, conflicting]
+
+# Run in this order. `filter` is a method of DatasetFilter (src/dataset_filter.py); `params` are its
+# arguments. `note` is shown in summary.md. `name` labels the step (default: the filter name).
+filters:
+  - filter: keep_implemented
+
+  - filter: remove_listed
+    name: exclusion_list
+    note: Case-by-case exclusions decided by the maintainer. Each entry gives the reason and the DB rows it rests on.
+    params:
+      datasets:
+        # bari_emospeech is kept on purpose (maintainer, 2026-11-04). It was excluded on 2026-10-23 because
+        # the recipe author heard no difference in vocal expression between emotions (issues bari_emospeech #4),
+        # but a single informal listening is too weak a ground for the experiment, and no source says the
+        # corpus lacks paralinguistic information. Other datasets may have the same doubt, so it stays for now.
+        # - dataset_id: bari_emospeech
+        #   reason: No difference in vocal expression between emotions could be heard (informal listening)
+        #   db_rows: "issues bari_emospeech #4"
+        #   decided_on: 2026-10-23
+        - dataset_id: casia
+          reason: >-
+            The recipe's audio is an unofficial Hugging Face mirror of a corpus sold by ChineseLDC;
+            no permission to redistribute the copy was found
+          db_rows: "issues casia #2"
+          decided_on: 2026-11-04
+        - dataset_id: hindi_ser_vishlb
+          reason: >-
+            The database is under ODbL 1.0, but the Kaggle licence field says the contents (the recordings) remain
+            the copyright of the original authors, and what they allow is not stated; the recipe readme says the
+            terms still have to be confirmed with the author (not done yet)
+          db_rows: "hindi_ser_vishlb license_spdx; license_note"
+          decided_on: 2026-11-05
+        - dataset_id: anad
+          reason: >-
+            Not used (maintainer): every chunk of the corpus has the same female voice, the cause is unknown,
+            and the license is non-commercial
+          db_rows: "recipe readme (The data) anad"
+          decided_on: 2026-11-05
+        - dataset_id: voicestats
+          reason: >-
+            Not used (meeting 2026-11-06): the terms only say free for mainly personal research and analysis; no license
+          db_rows: "voicestats license_note"
+          decided_on: 2026-11-06
+        - dataset_id: visec
+          reason: >-
+            Possibly an unofficial mirror; excluded until the creator has been contacted (meeting 2026-11-06)
+          db_rows: "issues visec"
+          decided_on: 2026-11-06
+        - dataset_id: asvpesd
+          reason: >-
+            Source recordings come from third parties (YouTube, films, TV, radio) and the rights of the original recordings are not stated; rejected for now (meeting 2026-11-06)
+          db_rows: "asvpesd material_origin; license_note"
+          decided_on: 2026-11-06
+        - dataset_id: kbes
+          reason: >-
+            Source recordings come from third parties (YouTube, films, TV, radio) and the rights of the original recordings are not stated; rejected for now (meeting 2026-11-06)
+          db_rows: "kbes material_origin; license_note"
+          decided_on: 2026-11-06
+        - dataset_id: maleo
+          reason: >-
+            Source recordings come from third parties (YouTube, films, TV, radio) and the rights of the original recordings are not stated; rejected for now (meeting 2026-11-06)
+          db_rows: "maleo material_origin; license_note"
+          decided_on: 2026-11-06
+        - dataset_id: urdu
+          reason: >-
+            Source recordings come from third parties (YouTube, films, TV, radio) and the rights of the original recordings are not stated; rejected for now (meeting 2026-11-06)
+          db_rows: "urdu material_origin; license_note"
+          decided_on: 2026-11-06
+        - dataset_id: banglamood
+          reason: >-
+            Source recordings come from third parties (YouTube, films, TV, radio) and the rights of the original recordings are not stated; rejected for now (meeting 2026-11-06)
+          db_rows: "banglamood material_origin; license_note"
+          decided_on: 2026-11-06
+        - dataset_id: urduser
+          reason: >-
+            Source recordings come from third parties (YouTube, films, TV, radio) and the rights of the original recordings are not stated; rejected for now (meeting 2026-11-06)
+          db_rows: "urduser material_origin; license_note"
+          decided_on: 2026-11-06
+        - dataset_id: mderma
+          reason: >-
+            Source recordings come from third parties (YouTube, films, TV, radio) and the rights of the original recordings are not stated; rejected for now (meeting 2026-11-06)
+          db_rows: "mderma material_origin; license_note"
+          decided_on: 2026-11-06
+        - dataset_id: akace
+          reason: >-
+            Source recordings come from third parties (YouTube, films, TV, radio) and the rights of the original recordings are not stated; rejected for now (meeting 2026-11-06)
+          db_rows: "akace material_origin; license_note"
+          decided_on: 2026-11-06
+
+  - filter: keep_with_label_set
+    name: keep_emotion_categories
+    note: The experiment trains on categorical emotion labels.
+    params:
+      label_set: emotion_categories
+
+  - filter: remove_synthetic
+    params:
+      synthetic_values: [synthetic]
+      synthetic_label_source: synthesis_specified
+
+  - filter: remove_automatic_labels
+    note: Automatic labels reviewed by people are kept.
+    params:
+      automatic_label_source: automatic
+      human_checked_verification: human_reviewed
+
+  - filter: remove_unclear_license
+    note: Only datasets with no clear license are removed here; how each license is used is decided later.
+    params:
+      unclear_licenses: [none_stated, unknown, LicenseRef-citation-request]

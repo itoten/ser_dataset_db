@@ -1,0 +1,97 @@
+label,language,share_samples_percent
+all 7 labels,eng,4.5
+neutral,eng,9.7
+happiness,eng,3.9
+anger,eng,4.9
+sadness,eng,5.0
+surprise,eng,2.3
+fear,eng,3.2
+disgust,eng,4.6
+all 7 labels,multilingual,44.5
+neutral,multilingual,0.0
+happiness,multilingual,47.0
+anger,multilingual,43.6
+sadness,multilingual,42.4
+surprise,multilingual,48.4
+fear,multilingual,50.3
+disgust,multilingual,70.3
+all 7 labels,rus,0.4
+neutral,rus,0.8
+happiness,rus,0.5
+anger,rus,0.4
+sadness,rus,0.3
+surprise,rus,0.0
+fear,rus,0.5
+disgust,rus,0.6
+all 7 labels,kaz,19.5
+neutral,kaz,37.6
+happiness,kaz,19.4
+anger,kaz,18.4
+sadness,kaz,19.0
+surprise,kaz,21.7
+fear,kaz,22.1
+disgust,kaz,0.0
+all 7 labels,cmn,1.3
+neutral,cmn,2.0
+happiness,cmn,1.3
+anger,cmn,1.6
+sadness,cmn,1.2
+surprise,cmn,1.2
+fear,cmn,1.5
+disgust,cmn,0.0
+all 7 labels,ben,4.5
+neutral,ben,8.4
+happiness,ben,4.7
+anger,ben,3.6
+sadness,ben,4.4
+surprise,ben,3.9
+fear,ben,3.6
+disgust,ben,4.7
+all 7 labels,isl,6.1
+neutral,isl,13.6
+happiness,isl,7.3
+anger,isl,6.9
+sadness,isl,7.2
+surprise,isl,8.0
+fear,isl,0.0
+disgust,isl,0.0
+all 7 labels,ory,4.3
+neutral,ory,0.0
+happiness,ory,4.3
+anger,ory,4.1
+sadness,ory,4.5
+surprise,ory,4.6
+fear,ory,4.8
+disgust,ory,7.1
+all 7 labels,zxx,2.7
+neutral,zxx,4.3
+happiness,zxx,0.2
+anger,zxx,2.2
+sadness,zxx,2.3
+surprise,zxx,5.1
+fear,zxx,2.6
+disgust,zxx,3.8
+all 7 labels,que,2.5
+neutral,que,5.5
+happiness,que,2.9
+anger,que,2.8
+sadness,que,2.9
+surprise,que,0.0
+fear,que,3.4
+disgust,que,0.0
+all 7 labels,ita,2.1
+neutral,ita,3.9
+happiness,ita,0.0
+anger,ita,2.0
+sadness,ita,2.1
+surprise,ita,2.3
+fear,ita,2.4
+disgust,ita,3.4
+all 7 labels,other,7.7
+neutral,other,14.3
+happiness,other,8.7
+anger,other,9.6
+sadness,other,8.9
+surprise,other,2.5
+fear,other,5.5
+disgust,other,5.4

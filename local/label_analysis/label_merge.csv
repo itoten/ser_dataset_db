@@ -1,0 +1,56 @@
+dataset_id,label,merged_label,reason
+*,ang,anger,abbreviation
+*,dis,disgust,abbreviation
+*,fea,fear,abbreviation
+*,hap,happiness,abbreviation
+*,neu,neutral,abbreviation
+inesco,a_(anger),anger,abbreviation with its full word
+inesco,h_(happiness),happiness,abbreviation with its full word
+inesco,s_(sadness),sadness,abbreviation with its full word
+urdu,angry_(a),anger,abbreviation
+urdu,happy_(h),happiness,abbreviation
+urdu,neutral_(n),neutral,abbreviation
+urdu,sad_(s),sadness,abbreviation
+oreau,neutral_(neutre),neutral,translation
+oreau,angry_(colère),anger,translation
+oreau,disgust_(dégoût),disgust,translation
+oreau,happy_(joie),happiness,translation
+oreau,sad_(tristesse),sadness,translation
+oreau,fear_(peur),fear,translation
+cafe,colère,anger,translation (French)
+cafe,dégoût,disgust,translation (French)
+cafe,joie,happiness,translation (French)
+cafe,peur,fear,translation (French)
+cafe,tristesse,sadness,translation (French)
+cafe,neutre,neutral,translation (French)
+*,nuetral,neutral,typo
+*,suprised,surprise,typo
+*,excited,excitement,word form (adjective to the noun the DB uses)
+*,frustrated,frustration,word form (adjective to the noun the DB uses)
+*,bored,boredom,word form (adjective to the noun the DB uses)
+*,disappointed,disappointment,word form (adjective to the noun the DB uses)
+*,amused,amusement,word form (adjective to the noun the DB uses)
+*,laugh,laughter,word form (adjective to the noun the DB uses)
+*,normal,neutral,synonym used as the neutral class
+asvpesd,02,neutral,"code of the label in the file name (emotion codes of the Zenodo record, from the recipe readme)"
+asvpesd,03,happiness,"code of the label in the file name (emotion codes of the Zenodo record, from the recipe readme)"
+asvpesd,04,sadness,"code of the label in the file name (emotion codes of the Zenodo record, from the recipe readme)"
+asvpesd,05,anger,"code of the label in the file name (emotion codes of the Zenodo record, from the recipe readme)"
+asvpesd,06,fear,"code of the label in the file name (emotion codes of the Zenodo record, from the recipe readme)"
+asvpesd,07,disgust,"code of the label in the file name (emotion codes of the Zenodo record, from the recipe readme)"
+asvpesd,08,surprise,"code of the label in the file name (emotion codes of the Zenodo record, from the recipe readme)"
+asvpesd,01,asvpesd_code_01,code whose emotion is not documented in the DB
+asvpesd,09,asvpesd_code_09,code whose emotion is not documented in the DB
+asvpesd,10,asvpesd_code_10,code whose emotion is not documented in the DB
+asvpesd,11,asvpesd_code_11,code whose emotion is not documented in the DB
+asvpesd,12,asvpesd_code_12,code whose emotion is not documented in the DB
+*,surprise_(negative),surprise,subtype: the parent label plus an intensity or valence qualifier (other datasets' parent label is not split this way)
+*,surprise_(positive),surprise,subtype: the parent label plus an intensity or valence qualifier (other datasets' parent label is not split this way)
+*,ps_(pleasant_surprise),surprise,subtype: the parent label plus an intensity or valence qualifier (other datasets' parent label is not split this way)
+*,slightly_angry,anger,subtype: the parent label plus an intensity or valence qualifier (other datasets' parent label is not split this way)
+*,very_angry,anger,subtype: the parent label plus an intensity or valence qualifier (other datasets' parent label is not split this way)
+*,other_(free_text),other,subtype: the parent label plus a qualifier (other datasets' parent label is not split this way)
+*,affectionate,affection,word form (adjective to the noun)
+msppodcast,no_agreed_label,no_majority,same state in other words: the annotators did not agree on one label (code X in the recipe readme)
+thaiser,none_(no_majority),no_majority,same state in other words: no majority among the annotators
+iemocap,no_majority_among_the_annotators,no_majority,same state in other words: no majority among the annotators (code xxx in the recipe readme)

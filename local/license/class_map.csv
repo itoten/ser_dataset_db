@@ -1,0 +1,25 @@
+license_spdx,class,note
+CC0-1.0,open,
+CC-BY-3.0,open,
+CC-BY-3.0-US,open,
+CC-BY-4.0,open,
+MIT,open,
+Apache-2.0,open,
+ODC-By-1.0,open,
+CC-BY-SA-4.0,open,"share-alike, put in open (discussion 0003, option A)"
+GPL-3.0-only,open,provisional: treated like share-alike (open) until the GPL text is decided in discussion 0003
+GPL-3.0-or-later,open,provisional: same as GPL-3.0-only
+ODbL-1.0,open,provisional: treated like share-alike (open) until the ODbL text is decided in discussion 0003
+LicenseRef-golos-public,open,"CC BY-SA 4.0 variant without a non-commercial clause; share-alike, put in open"
+CC-BY-NC-3.0,nc,
+CC-BY-NC-4.0,nc,
+CC-BY-NC-ND-4.0,nc,
+CC-BY-NC-SA-2.0,nc,
+CC-BY-NC-SA-3.0-DE,nc,
+CC-BY-NC-SA-4.0,nc,
+LicenseRef-custom-research-only,nc,
+LicenseRef-proprietary-restricted,nc,
+LicenseRef-other,other,terms read one by one; not decided yet (class other = pending)
+LicenseRef-citation-request,unclear,No license is granted; the authors only ask to be cited
+none_stated,unclear,
+unknown,unclear,

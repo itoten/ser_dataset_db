@@ -1,0 +1,9 @@
+label,n_datasets,top1,top1_share_files,top3_share_files,effective_n_files,top1_hours,top1_share_hours,effective_n_hours
+all 7 labels,75,msppodcast,0.263,0.604,7.3,msppodcast,0.280,5.8
+neutral,63,dusha,0.410,0.751,3.8,dusha,0.392,3.5
+happiness,68,msppodcast,0.441,0.676,4.3,msppodcast,0.458,3.6
+anger,72,msppodcast,0.277,0.564,7.7,msppodcast,0.302,5.6
+sadness,67,msppodcast,0.209,0.581,7.9,rasa,0.273,6.2
+surprise,45,rasa,0.325,0.581,6.4,rasa,0.490,3.6
+fear,55,rasa,0.404,0.621,4.9,rasa,0.569,2.9
+disgust,46,rasa,0.521,0.645,3.5,rasa,0.673,2.2

@@ -1,0 +1,5 @@
+class,rank,meaning
+open,0,"Clearly licensed; the license does not forbid commercial use (includes share-alike licenses, provisionally)"
+nc,1,"Clearly licensed, but commercial use is not allowed or the terms limit use to research (CC BY-NC variants, research-only, restricted)"
+unclear,2,"No license stated, or the sources do not say (none_stated, unknown, citation request only)"
+other,3,"Pending: custom terms to be read one by one and put in open, nc or unclear (not a final class)"

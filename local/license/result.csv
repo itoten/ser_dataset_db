@@ -1,0 +1,319 @@
+dataset_id,license_spdx,class,decided_by
+aesc_assamese,,,license not checked in the DB
+aesd_assamese,,,license not checked in the DB
+aesdd,LicenseRef-custom-research-only,nc,class_map
+afew,LicenseRef-custom-research-only,nc,class_map
+affectspeech,LicenseRef-custom-research-only,nc,class_map
+afrikaans_se,,,license not checked in the DB
+aihub_263,unknown,unclear,class_map
+aihub_271,unknown,unclear,class_map
+aihub_286,unknown,unclear,class_map
+aihub_466,unknown,unclear,class_map
+aihub_637,unknown,unclear,class_map
+aihub_71631,unknown,unclear,class_map
+aihub_71632,unknown,unclear,class_map
+akace,LicenseRef-custom-research-only,nc,class_map
+albemo,CC-BY-4.0,open,class_map
+allosat,,,license not checked in the DB
+amigos,,,license not checked in the DB
+anad,CC-BY-NC-SA-4.0,nc,class_map
+arabic_zenodo19687456,CC-BY-4.0,open,class_map
+ased,none_stated,unclear,class_map
+asvpesd,CC-BY-4.0,open,class_map
+atthack,LicenseRef-other,other,class_map
+audiospeechsentiment,CC0-1.0,open,class_map
+avcaffe,LicenseRef-custom-research-only,nc,class_map
+banglamood,CC-BY-4.0,open,class_map
+banglaser,CC-BY-4.0,open,class_map
+banspemo,CC-BY-4.0,open,class_map
+bari_emospeech,CC-BY-4.0,open,class_map
+baser,Apache-2.0,open,class_map
+basis_global_emotions,LicenseRef-other,other,class_map
+baum1,CC-BY-4.0,open,class_map
+baum2,CC-BY-4.0,open,class_map
+baved,none_stated,unclear,class_map
+beat,Apache-2.0,open,class_map
+bedvibe,LicenseRef-proprietary-restricted,nc,class_map
+belfast,unknown,unclear,class_map
+berst,CC-BY-4.0,open,class_map
+biicnnime,LicenseRef-custom-research-only,nc,class_map
+biicpodcast,LicenseRef-custom-research-only,nc,class_map
+bmisec,,,license not checked in the DB
+brytserc,LicenseRef-custom-research-only,nc,class_map
+buemodb,,,license not checked in the DB
+burmese_new2001,,,license not checked in the DB
+cafe,CC-BY-NC-SA-4.0,nc,class_map
+capspeech,CC-BY-NC-4.0,nc,class_map
+capspeech_agentdb,CC-BY-NC-4.0,nc,class_map
+casia,LicenseRef-proprietary-restricted,nc,class_map
+caves,LicenseRef-custom-research-only,nc,class_map
+cbesd,CC-BY-SA-4.0,open,class_map
+cdse_czech,,,license not checked in the DB
+cemo,unknown,unclear,class_map
+cheavd,,,license not checked in the DB
+chen_bimodal,,,license not checked in the DB
+chsims,none_stated,unclear,class_map
+chsims2,none_stated,unclear,class_map
+clesc,CC-BY-4.0,open,class_map
+cmumoseas,unknown,unclear,class_map
+cmumosei,unknown,unclear,class_map
+cmumosi,unknown,unclear,class_map
+cnev,,,license not checked in the DB
+codaco_german,CC-BY-4.0,open,class_map
+coraa_ser,none_stated,unclear,class_map
+cped,Apache-2.0,open,class_map
+cremad,ODbL-1.0,open,class_map
+crowdsourcing_smith2018,,,license not checked in the DB
+csemotions,Apache-2.0,open,class_map
+daicwoz,LicenseRef-custom-research-only,nc,class_map
+dailytalk,CC-BY-SA-4.0,open,class_map
+deeply_korean_read,CC-BY-NC-ND-4.0,nc,class_map
+deeply_nonverbal,CC-BY-NC-ND-4.0,nc,class_map
+demos,LicenseRef-custom-research-only,nc,class_map
+des,unknown,unclear,class_map
+dfew,LicenseRef-custom-research-only,nc,class_map
+dihana,CC-BY-4.0,open,class_map
+dusha,LicenseRef-golos-public,open,class_map
+eaed,,,license not checked in the DB
+ears,CC-BY-NC-4.0,nc,class_map
+eesc,CC-BY-4.0,open,class_map
+eesdb_chinese,,,license not checked in the DB
+em2ldl,,,license not checked in the DB
+emilia_emotion,conflicting,nc,conflicting: CC-BY-4.0 vs CC-BY-NC-4.0 -> strictest
+emis,GPL-3.0-or-later,open,class_map
+emns,Apache-2.0,open,class_map
+emo_emilia,CC-BY-NC-4.0,nc,class_map
+emochildru,,,license not checked in the DB
+emodb,conflicting,open,conflicting: CC-BY-4.0 vs CC0-1.0 -> strictest
+emodialogcn,CC-BY-NC-SA-4.0,nc,class_map
+emofilm,LicenseRef-custom-research-only,nc,class_map
+emogator,Apache-2.0,open,class_map
+emolah,,,license not checked in the DB
+emomatchspanishdb,LicenseRef-custom-research-only,nc,class_map
+emonetvoice,CC-BY-4.0,open,class_map
+emoreact,LicenseRef-custom-research-only,nc,class_map
+emosec,CC-BY-4.0,open,class_map
+emospeech_keywords,CC-BY-NC-SA-4.0,nc,class_map
+emospeech_secap,none_stated,unclear,class_map
+emosynth,CC-BY-4.0,open,class_map
+emota,CC-BY-NC-4.0,nc,class_map
+emotale,LicenseRef-citation-request,unclear,class_map
+emotion_origlia2010,unknown,unclear,class_map
+emotional_ema,CC-BY-4.0,open,class_map
+emotiontalk,CC-BY-NC-SA-4.0,nc,class_map
+emotiontts_open_db,CC-BY-NC-SA-4.0,nc,class_map
+emotranscap,none_stated,unclear,class_map
+emouerj,CC-BY-4.0,open,class_map
+emouerj_sed,Apache-2.0,open,class_map
+emovdb,LicenseRef-custom-research-only,nc,class_map
+emovie,CC-BY-NC-SA-2.0,nc,class_map
+emovo,none_stated,unclear,class_map
+emovoicedb,MIT,open,class_map
+emovome,CC-BY-4.0,open,class_map
+emozionalmente,CC-BY-4.0,open,class_map
+enterface05,MIT,open,class_map
+escorpuspe,CC-BY-4.0,open,class_map
+esd,LicenseRef-custom-research-only,nc,class_map
+eseravd,CC-BY-4.0,open,class_map
+esmbs,,,license not checked in the DB
+euemotion_voice,LicenseRef-custom-research-only,nc,class_map
+expressivespeech,none_stated,unclear,class_map
+expresso,CC-BY-NC-4.0,nc,class_map
+eyase,,,license not checked in the DB
+fauaibo,LicenseRef-custom-research-only,nc,class_map
+fcaps,CC-BY-NC-SA-4.0,nc,class_map
+filmed,,,license not checked in the DB
+fluent_speech_commands,CC-BY-NC-ND-4.0,nc,class_map
+galgame_speech_ser,LicenseRef-other,other,class_map
+gaudie,CC-BY-4.0,open,class_map
+gees,LicenseRef-custom-research-only,nc,class_map
+gemep,LicenseRef-custom-research-only,nc,class_map
+grethe,MIT,open,class_map
+groupaffect4,CC-BY-4.0,open,class_map
+gujarati_tank2020,,,license not checked in the DB
+harper_valley_bank,CC-BY-4.0,open,class_map
+hesd,CC-BY-4.0,open,class_map
+hikia,CC-BY-4.0,open,class_map
+hindi_bansal_dev,,,license not checked in the DB
+hindi_ser_vishlb,LicenseRef-other,other,class_map
+hume_reaction,,,license not checked in the DB
+humevb,LicenseRef-proprietary-restricted,nc,class_map
+humyn_indian_emotional,CC-BY-4.0,open,class_map
+hungarian_hesd,,,license not checked in the DB
+iemocap,LicenseRef-custom-research-only,nc,class_map
+iesc,unknown,unclear,class_map
+iiitsaint_emomdb,,,license not checked in the DB
+iitkgp_sehsc,,,license not checked in the DB
+iitkgp_sesc,,,license not checked in the DB
+indemovis,none_stated,unclear,class_map
+indianenglish,CC-BY-4.0,open,class_map
+indonesian_fahmi2020,,,license not checked in the DB
+indowavesentiment,CC-BY-4.0,open,class_map
+inesco,CC-BY-4.0,open,class_map
+interface,LicenseRef-custom-research-only,nc,class_map
+italic,CC-BY-4.0,open,class_map
+java_sed,,,license not checked in the DB
+javanese_ser_2black0,MIT,open,class_map
+javmeps,none_stated,unclear,class_map
+jlcorpus,CC0-1.0,open,class_map
+jnv,CC-BY-SA-4.0,open,class_map
+jtes,unknown,unclear,class_map
+jvnv,CC-BY-SA-4.0,open,class_map
+kannada,CC-BY-4.0,open,class_map
+kannada_kes,,,license not checked in the DB
+kasdimerbah_arabic,LicenseRef-proprietary-restricted,nc,class_map
+kazakh_russian_emotion,,,license not checked in the DB
+kazemotts,CC-BY-4.0,open,class_map
+kbes,CC-BY-4.0,open,class_map
+keg_croatian,,,license not checked in the DB
+keioesd,LicenseRef-custom-research-only,nc,class_map
+kemdy19,,,license not checked in the DB
+kemdy20,,,license not checked in the DB
+kemocon,,,license not checked in the DB
+kenyan_swahili_ser,GPL-3.0-only,open,class_map
+kesdy18,,,license not checked in the DB
+kmser,,,license not checked in the DB
+ksuemotions,LicenseRef-proprietary-restricted,nc,class_map
+kurdish_esd,,,license not checked in the DB
+kurdish_nematullah2024,,,license not checked in the DB
+laions_got_talent,none_stated,unclear,class_map
+ldc_emotional_prosody,LicenseRef-proprietary-restricted,nc,class_map
+legov2,LicenseRef-custom-research-only,nc,class_map
+lithuanian_emotion_db,none_stated,unclear,class_map
+lssed,LicenseRef-custom-research-only,nc,class_map
+m3ed,none_stated,unclear,class_map
+mafw,LicenseRef-custom-research-only,nc,class_map
+mahnobhci,,,license not checked in the DB
+malayalam_ann2009,,,license not checked in the DB
+maleo,CC-BY-4.0,open,class_map
+masc,LicenseRef-proprietary-restricted,nc,class_map
+maserc,CC-BY-4.0,open,class_map
+mav,CC-BY-4.0,open,class_map
+mavesdb,CC-BY-4.0,open,class_map
+mcaespps,CC-BY-NC-4.0,nc,class_map
+mceiu,CC-BY-NC-4.0,nc,class_map
+mderma,CC-BY-4.0,open,class_map
+mead,unknown,unclear,class_map
+meghana007_tamil,none_stated,unclear,class_map
+meld,GPL-3.0-only,open,class_map
+memor,LicenseRef-proprietary-restricted,nc,class_map
+mer2023,CC-BY-NC-4.0,nc,class_map
+mer2024,LicenseRef-custom-research-only,nc,class_map
+mer2025,LicenseRef-custom-research-only,nc,class_map
+mer2026,LicenseRef-custom-research-only,nc,class_map
+mer_caption,CC-BY-NC-4.0,nc,class_map
+merr,LicenseRef-custom-research-only,nc,class_map
+mesd,CC-BY-4.0,open,class_map
+mesp,,,license not checked in the DB
+mess,CC-BY-4.0,open,class_map
+mikuemobench,CC-BY-3.0,open,class_map
+minds14,CC-BY-4.0,open,class_map
+mlend_numerals,unknown,unclear,class_map
+mmeld,,,license not checked in the DB
+mspconversation,LicenseRef-custom-research-only,nc,class_map
+mspface,LicenseRef-custom-research-only,nc,class_map
+mspimprov,LicenseRef-custom-research-only,nc,class_map
+msppodcast,LicenseRef-custom-research-only,nc,class_map
+multidialog,unknown,unclear,class_map
+musecar,LicenseRef-custom-research-only,nc,class_map
+narrative_dialogue,CC-BY-4.0,open,class_map
+naturalvoices,none_stated,unclear,class_map
+nemo,CC-BY-NC-SA-4.0,nc,class_map
+nexdata_en_emotional_20p,LicenseRef-proprietary-restricted,nc,class_map
+nonverbaltts,conflicting,nc,conflicting: Apache-2.0 vs CC-BY-NC-SA-4.0 -> strictest
+nvs38k,CC-BY-NC-4.0,nc,class_map
+ogvc,LicenseRef-custom-research-only,nc,class_map
+omgemotion,CC-BY-NC-SA-3.0-DE,nc,class_map
+oreau,CC-BY-4.0,open,class_map
+ov_merd,CC-BY-NC-4.0,nc,class_map
+paraspeechcaps,CC-BY-NC-SA-4.0,nc,class_map
+passau_sfch,,,license not checked in the DB
+pavoque,CC-BY-NC-SA-4.0,nc,class_map
+pemo_punjabi,,,license not checked in the DB
+persian_esd,,,license not checked in the DB
+picka_nh,CC-BY-NC-SA-4.0,nc,class_map
+polish_cichosz2005,,,license not checked in the DB
+polish_sapinski2019,,,license not checked in the DB
+polishemo,CC-BY-4.0,open,class_map
+prahalabs_malayalam,none_stated,unclear,class_map
+promptspeech,none_stated,unclear,class_map
+qlean_japanese_emotional,LicenseRef-other,other,class_map
+quechua,CC-BY-4.0,open,class_map
+ramas,,,license not checked in the DB
+rasa,CC-BY-4.0,open,class_map
+ravdess,CC-BY-NC-SA-4.0,nc,class_map
+recanvo,CC-BY-3.0-US,open,class_map
+recola,LicenseRef-custom-research-only,nc,class_map
+resd,MIT,open,class_map
+rml_emotion,unknown,unclear,class_map
+ruslana,unknown,unclear,class_map
+safe_corpus,,,license not checked in the DB
+saraiki_ser,CC-BY-4.0,open,class_map
+saudi_ser_corpus,,,license not checked in the DB
+savee,LicenseRef-custom-research-only,nc,class_map
+sccesc,,,license not checked in the DB
+secepdb,,,license not checked in the DB
+semaine,,,license not checked in the DB
+semour,unknown,unclear,class_map
+ses_ed,ODC-By-1.0,open,class_map
+ses_sd,ODC-By-1.0,open,class_map
+sewa,LicenseRef-custom-research-only,nc,class_map
+shemo,LicenseRef-custom-research-only,nc,class_map
+sitb_osed,CC-BY-4.0,open,class_map
+slue_hvb,CC-BY-4.0,open,class_map
+slue_voxceleb,CC-BY-4.0,open,class_map
+slurp,CC-BY-NC-4.0,nc,class_map
+snips_slu,LicenseRef-custom-research-only,nc,class_map
+spanish_meacorpus,CC-BY-4.0,open,class_map
+speech_massive,CC-BY-NC-SA-4.0,nc,class_map
+speechcraft,none_stated,unclear,class_map
+spokenwoz,CC-BY-NC-4.0,nc,class_map
+srol,unknown,unclear,class_map
+stop,unknown,unclear,class_map
+studies,LicenseRef-custom-research-only,nc,class_map
+subesco,CC-BY-4.0,open,class_map
+susas,LicenseRef-proprietary-restricted,nc,class_map
+swedish_vpesc,,,license not checked in the DB
+switchboard_sentiment,LicenseRef-proprietary-restricted,nc,class_map
+syntact,CC-BY-4.0,open,class_map
+talromur3,CC-BY-4.0,open,class_map
+tamar_emodb,,,license not checked in the DB
+tamil_ram,,,license not checked in the DB
+telugu_emotion_kaggle,Apache-2.0,open,class_map
+tess,CC-BY-NC-4.0,nc,class_map
+textrolspeech,MIT,open,class_map
+thaiser,CC-BY-SA-4.0,open,class_map
+thanushs25_tamil,none_stated,unclear,class_map
+thorsten,CC0-1.0,open,class_map
+timers_and_such,CC0-1.0,open,class_map
+tumavic,unknown,unclear,class_map
+tures,,,license not checked in the DB
+turevdb,conflicting,nc,conflicting: CC-BY-NC-ND-4.0 vs GPL-3.0-only -> strictest
+ua_ser,CC-BY-4.0,open,class_map
+uftbesd,CC-BY-4.0,open,class_map
+ulm_tsst,,,license not checked in the DB
+uq_schizophrenia_videos,LicenseRef-custom-research-only,nc,class_map
+urdu,LicenseRef-custom-research-only,nc,class_map
+urduser,CC-BY-4.0,open,class_map
+urdusindhi_zenodo3685274,CC-BY-4.0,open,class_map
+usc_emo_mri,CC-BY-4.0,open,class_map
+usoms,,,license not checked in the DB
+utemo,CC-BY-NC-3.0,nc,class_map
+uudb,LicenseRef-custom-research-only,nc,class_map
+vam,LicenseRef-custom-research-only,nc,class_map
+venec,,,license not checked in the DB
+verbo,,,license not checked in the DB
+vesc,none_stated,unclear,class_map
+vesus,LicenseRef-custom-research-only,nc,class_map
+visec,CC-BY-4.0,open,class_map
+vivae,CC-BY-NC-4.0,nc,class_map
+vnemos,,,license not checked in the DB
+voicenet,CC-BY-NC-4.0,nc,class_map
+voicestats,LicenseRef-custom-research-only,nc,class_map
+waxal_wolof_ser,none_stated,unclear,class_map
+werewolf_xl,none_stated,unclear,class_map
+whiser,none_stated,unclear,class_map
+yodasspeakerpool,CC-BY-4.0,open,class_map
+ysed,CC-BY-4.0,open,class_map
+yue_emo_speech,none_stated,unclear,class_map
+zamai_pashto,Apache-2.0,open,class_map

@@ -1,0 +1,17 @@
+label,group,n_datasets,n_files,hours
+all 7 labels,open,46,280582,467.4
+all 7 labels,nc,29,508653,658.1
+neutral,open,39,24990,28.3
+neutral,nc,22,233576,299.4
+happiness,open,40,46785,78.8
+happiness,nc,24,85408,119.3
+anger,open,43,49275,78.2
+anger,nc,29,80136,102.3
+sadness,open,42,47376,83.0
+sadness,nc,25,68750,94.2
+surprise,open,23,42350,72.7
+surprise,nc,19,20700,21.3
+fear,open,29,41176,72.2
+fear,nc,22,10067,9.5
+disgust,open,21,28630,54.3
+disgust,nc,19,10016,12.0

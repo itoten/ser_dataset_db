@@ -1,0 +1,9 @@
+label,n_datasets,top1,top1_share_files,top3_share_files,effective_n_files,top1_hours,top1_share_hours,effective_n_hours
+all 7 labels,46,rasa,0.445,0.701,4.1,rasa,0.600,2.6
+neutral,41,kazemotts,0.376,0.567,5.8,kazemotts,0.448,4.3
+happiness,43,rasa,0.470,0.736,3.7,rasa,0.611,2.5
+anger,43,rasa,0.436,0.688,4.3,rasa,0.597,2.6
+sadness,42,rasa,0.424,0.685,4.4,rasa,0.582,2.7
+surprise,24,rasa,0.484,0.781,3.4,rasa,0.634,2.3
+fear,30,rasa,0.503,0.772,3.2,rasa,0.644,2.2
+disgust,24,rasa,0.703,0.812,2.0,rasa,0.823,1.5

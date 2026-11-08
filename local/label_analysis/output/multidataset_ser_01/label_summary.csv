@@ -1,0 +1,83 @@
+label,n_datasets,n_files,hours,source_spellings,datasets
+anger,72,129411,180.5,01_Angry;03 anger;ANG;ANGER;ANGRY;Anger;Angry;Colère;a (anger);anger;angry;angry (colère);slightly angry;very angry,aesdd;albemo;banglaser;banspemo;baser;berst;brytserc;cafe;cbesd;cremad;csemotions;dailytalk;dusha;eesc;emns;emodb;emogator;emospeech_keywords;emotional_ema;emotiontalk;emouerj;emovdb;emozionalmente;enterface05;esd;eseravd;hikia;iemocap;indianenglish;inesco;javanese_ser_2black0;jlcorpus;jnv;jvnv;kannada;kazemotts;legov2;maserc;mav;mcaespps;meld;mesd;mess;msppodcast;nemo;nonverbaltts;oreau;pavoque;polishemo;quechua;rasa;ravdess;resd;saraiki_ser;savee;ses_ed;ses_sd;shemo;sitb_osed;subesco;talromur3;telugu_emotion_kaggle;tess;thaiser;thorsten;turevdb;ua_ser;uftbesd;usc_emo_mri;utemo;vivae;ysed
+sadness,67,116126,177.2,02_Sad;24 sadness;SAD;Sad;Sadness;Tristesse;s (sadness);sad;sad (tristesse);sadness,aesdd;albemo;banglaser;banspemo;bari_emospeech;baser;berst;brytserc;cafe;cbesd;cremad;csemotions;dailytalk;dusha;eesc;emns;emodb;emogator;emotional_ema;emotiontalk;emouerj;emozionalmente;enterface05;esd;eseravd;hikia;iemocap;indianenglish;inesco;javanese_ser_2black0;jlcorpus;jnv;jvnv;kannada;kazemotts;maserc;mav;mcaespps;meld;mesd;mess;msppodcast;nemo;nonverbaltts;oreau;pavoque;quechua;rasa;ravdess;resd;saraiki_ser;savee;ses_ed;ses_sd;shemo;sitb_osed;subesco;talromur3;telugu_emotion_kaggle;tess;thaiser;turevdb;ua_ser;uftbesd;usc_emo_mri;utemo;ysed
+happiness,64,132193,198.1,04_Happy;HAP;HAPPY;Happiness;Happy;Joie;h (happiness);happiness;happy;happy (joie),aesdd;albemo;banglaser;banspemo;bari_emospeech;baser;brytserc;cafe;cbesd;cremad;csemotions;dailytalk;emns;emodb;emospeech_keywords;emotional_ema;emotiontalk;emouerj;enterface05;esd;eseravd;hikia;iemocap;indianenglish;indowavesentiment;inesco;javanese_ser_2black0;jlcorpus;jnv;jvnv;kannada;kazemotts;maserc;mav;mcaespps;mesd;mess;msppodcast;nemo;nonverbaltts;oreau;pavoque;quechua;rasa;ravdess;recanvo;resd;saraiki_ser;savee;ses_ed;ses_sd;shemo;sitb_osed;subesco;talromur3;telugu_emotion_kaggle;tess;thaiser;turevdb;ua_ser;uftbesd;usc_emo_mri;utemo;ysed
+neutral,61,258566,327.7,03_Neutral;18 neutral;NEU;NEUTRAL;Neutral;Neutre;Normal;neutral;neutral (neutre);neutrality;nuetral,albemo;banglaser;bari_emospeech;baser;berst;brytserc;cafe;cbesd;cremad;csemotions;dusha;eesc;emns;emodb;emogator;emotional_ema;emotiontalk;emouerj;emovdb;emozionalmente;esd;eseravd;hikia;iemocap;indianenglish;indowavesentiment;javanese_ser_2black0;jlcorpus;kannada;kazemotts;legov2;maserc;mav;mcaespps;meld;mesd;msppodcast;nemo;nonverbaltts;oreau;pavoque;polishemo;quechua;ravdess;resd;saraiki_ser;savee;ses_ed;ses_sd;shemo;subesco;talromur3;telugu_emotion_kaggle;tess;thaiser;thorsten;ua_ser;uftbesd;usc_emo_mri;utemo;ysed
+fear,51,51243,81.7,06_Fear;15 fear;FEA;FEAR;Fear;Fearful;Peur;fear;fear (peur);fearful,aesdd;albemo;banspemo;baser;berst;brytserc;cafe;cbesd;cremad;csemotions;dailytalk;emodb;emogator;emospeech_keywords;emotional_ema;emotiontalk;emozionalmente;enterface05;eseravd;iemocap;javanese_ser_2black0;jnv;jvnv;kannada;kazemotts;maserc;mav;mcaespps;meld;mesd;msppodcast;nemo;nonverbaltts;oreau;polishemo;quechua;rasa;ravdess;resd;saraiki_ser;savee;ses_ed;ses_sd;shemo;sitb_osed;subesco;tess;uftbesd;utemo;vivae;ysed
+surprise,42,63050,94.0,27 surprise (negative);28 surprise (positive);SURPRISE;Surprise;Surprised;ps (pleasant surprise);suprised;surprise;surprised,albemo;banglaser;banspemo;berst;brytserc;cafe;csemotions;dailytalk;emns;emogator;emotiontalk;emozionalmente;enterface05;esd;iemocap;indowavesentiment;javanese_ser_2black0;jnv;jvnv;kannada;kazemotts;maserc;mav;mcaespps;meld;msppodcast;nemo;nonverbaltts;oreau;rasa;ravdess;savee;shemo;sitb_osed;subesco;talromur3;telugu_emotion_kaggle;tess;thorsten;uftbesd;utemo;vivae
+disgust,40,38646,66.3,05_Disgust;10 disgust;DIS;DISGUST;Disgust;Disgusted;Dégoût;disgust;disgust (dégoût);disgusted,aesdd;albemo;banspemo;berst;brytserc;cafe;cbesd;cremad;dailytalk;emns;emodb;emogator;emotiontalk;emovdb;emozionalmente;enterface05;eseravd;iemocap;indowavesentiment;jnv;jvnv;mav;mcaespps;meld;mesd;msppodcast;nonverbaltts;oreau;rasa;ravdess;resd;savee;ses_ed;ses_sd;sitb_osed;subesco;tess;thorsten;uftbesd;utemo
+calm,5,6255,5.4,Calm;calm,emospeech_keywords;mess;quechua;ravdess;turevdb
+other,4,4904,9.9,other;other (free text),iemocap;msppodcast;nonverbaltts;thaiser
+joy,4,4222,3.7,joy,berst;eesc;emozionalmente;meld
+excitement,4,2811,3.4,Excited;excited,emns;iemocap;jlcorpus;quechua
+no_majority,3,53348,80.8,None (no majority);no agreed label;no majority among the annotators,iemocap;msppodcast;thaiser
+frustration,3,11249,15.7,Frustrated;frustrated,iemocap;recanvo;thaiser
+sleepy,3,3401,4.8,Sleepy;sleepy,emovdb;quechua;thorsten
+amusement,3,2688,2.8,02 amusement;Amused;amused,emogator;emovdb;thorsten
+pain,3,1266,0.6,19 pain;pain,emogator;mav;vivae
+contempt,2,6656,10.0,06 contempt;contempt,emogator;msppodcast
+boredom,2,1492,2.0,bored;boredom,emodb;quechua
+disappointment,2,1131,0.6,09 disappointment;disappointed,emogator;indowavesentiment
+affection,2,629,0.3,Affection;affectionate,bari_emospeech;recanvo
+pleasure,2,212,0.1,pleasure,mav;vivae
+no_emotion,1,18966,17.1,no emotion,dailytalk
+positive,1,15392,20.2,positive,dusha
+helpful,1,3396,4.2,helpful,talromur3
+selftalk,1,1885,0.7,selftalk,recanvo
+delighted,1,1272,0.4,delighted,recanvo
+addendum_/_addendum_style2,1,1140,0.4,addendum / addendum_style2,talromur3
+adoration,1,1071,0.6,01 adoration,emogator
+awe,1,1071,0.6,04 awe,emogator
+confusion,1,1071,0.6,05 confusion,emogator
+contentment,1,1071,0.6,07 contentment,emogator
+desire,1,1071,0.6,08 desire,emogator
+distress,1,1071,0.6,11 distress,emogator
+ecstasy,1,1071,0.6,12 ecstasy,emogator
+elation,1,1071,0.6,13 elation,emogator
+embarrassment,1,1071,0.6,14 embarrassment,emogator
+guilt,1,1071,0.6,16 guilt,emogator
+interest,1,1071,0.6,17 interest,emogator
+pride,1,1071,0.6,20 pride,emogator
+realization,1,1071,0.6,21 realization,emogator
+relief,1,1071,0.6,22 relief,emogator
+romantic_love,1,1071,0.6,23 romantic love,emogator
+serenity,1,1071,0.6,25 serenity,emogator
+shame,1,1071,0.6,26 shame,emogator
+sympathy,1,1071,0.6,29 sympathy,emogator
+triumph,1,1071,0.6,30 triumph,emogator
+dysregulated,1,704,0.3,dysregulated,recanvo
+social,1,634,0.2,social,recanvo
+playfulness,1,621,1.2,playfulness,csemotions
+jealousy,1,605,0.6,Jealousy,bari_emospeech
+garbage,1,589,0.2,garbage,legov2
+poker,1,575,0.8,poker,pavoque
+(no_tag),1,534,1.9,(no tag),nonverbaltts
+request,1,419,0.1,request,recanvo
+drunk,1,300,0.4,drunk,thorsten
+whisper,1,299,0.4,whisper,thorsten
+anxious,1,240,0.1,anxious,jlcorpus
+apologetic,1,240,0.1,apologetic,jlcorpus
+assertive,1,240,0.1,assertive,jlcorpus
+concerned,1,240,0.1,concerned,jlcorpus
+encouraging,1,240,0.1,encouraging,jlcorpus
+shock,1,200,0.2,Shock,saraiki_ser
+enthusiasm,1,198,0.3,enthusiasm,resd
+none,1,164,0.1,None,emospeech_keywords
+achievement,1,161,0.0,achievement,vivae
+sarcastic,1,139,0.3,Sarcastic,emns
+yes,1,123,0.0,yes,recanvo
+laughter,1,101,0.0,laugh;laughter,recanvo
+dysregulation-sick,1,74,0.0,dysregulation-sick,recanvo
+-,1,29,0.0,-,usc_emo_mri
+not_described,1,29,0.0,not described,usc_emo_mri
+help,1,24,0.0,help,recanvo
+more,1,22,0.0,more,recanvo
+protest,1,21,0.0,protest,recanvo
+bathroom,1,20,0.0,bathroom,recanvo
+dysregulation-bathroom,1,18,0.0,dysregulation-bathroom,recanvo
+no,1,12,0.0,no,recanvo
+glee,1,8,0.0,glee,recanvo
+tablet,1,7,0.0,tablet,recanvo
+friendly,1,4,0.0,friendly,legov2
+hunger,1,4,0.0,hunger,recanvo
+greeting,1,3,0.0,greeting,recanvo

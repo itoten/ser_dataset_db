@@ -1,0 +1,765 @@
+dataset_id	step	verdict	reason
+aesc_assamese	keep_implemented	remove	no recipe
+aesd_assamese	keep_implemented	remove	no recipe
+aesdd	keep_implemented	keep	recipe readme registered as a source
+aesdd	exclusion_list	keep	
+aesdd	keep_emotion_categories	keep	has emotion_categories
+aesdd	remove_synthetic	keep	speech_production=acted / material_origin=empty
+aesdd	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+aesdd	remove_unclear_license	keep	license_spdx=LicenseRef-custom-research-only
+afew	keep_implemented	remove	no recipe
+affectspeech	keep_implemented	remove	no recipe
+afrikaans_se	keep_implemented	remove	no recipe
+aihub_263	keep_implemented	remove	no recipe
+aihub_271	keep_implemented	remove	no recipe
+aihub_286	keep_implemented	remove	no recipe
+aihub_466	keep_implemented	remove	no recipe
+aihub_637	keep_implemented	remove	no recipe
+aihub_71631	keep_implemented	remove	no recipe
+aihub_71632	keep_implemented	remove	no recipe
+akace	keep_implemented	keep	recipe readme registered as a source
+akace	exclusion_list	remove	Source recordings come from third parties (YouTube, films, TV, radio) and the rights of the original recordings are not stated; rejected for now (meeting 2026-11-06)
+albemo	keep_implemented	keep	recipe readme registered as a source
+albemo	exclusion_list	keep	
+albemo	keep_emotion_categories	keep	has emotion_categories
+albemo	remove_synthetic	keep	speech_production=acted / material_origin=empty
+albemo	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+albemo	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+allosat	keep_implemented	remove	no recipe
+amigos	keep_implemented	remove	no recipe
+anad	keep_implemented	keep	recipe readme registered as a source
+anad	exclusion_list	remove	Not used (maintainer): every chunk of the corpus has the same female voice, the cause is unknown, and the license is non-commercial
+arabic_zenodo19687456	keep_implemented	remove	no recipe
+ased	keep_implemented	keep	recipe readme registered as a source
+ased	exclusion_list	keep	
+ased	keep_emotion_categories	keep	has emotion_categories
+ased	remove_synthetic	keep	speech_production=acted / material_origin=empty
+ased	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+ased	remove_unclear_license	remove	license_spdx=none_stated
+asvpesd	keep_implemented	keep	recipe readme registered as a source
+asvpesd	exclusion_list	remove	Source recordings come from third parties (YouTube, films, TV, radio) and the rights of the original recordings are not stated; rejected for now (meeting 2026-11-06)
+atthack	keep_implemented	remove	no recipe
+audiospeechsentiment	keep_implemented	keep	recipe readme registered as a source
+audiospeechsentiment	exclusion_list	keep	
+audiospeechsentiment	keep_emotion_categories	remove	no emotion_categories; annotations: acoustic_features;sentiment
+avcaffe	keep_implemented	remove	no recipe
+banglamood	keep_implemented	keep	recipe readme registered as a source
+banglamood	exclusion_list	remove	Source recordings come from third parties (YouTube, films, TV, radio) and the rights of the original recordings are not stated; rejected for now (meeting 2026-11-06)
+banglaser	keep_implemented	keep	recipe readme registered as a source
+banglaser	exclusion_list	keep	
+banglaser	keep_emotion_categories	keep	has emotion_categories
+banglaser	remove_synthetic	keep	speech_production=acted / material_origin=empty
+banglaser	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+banglaser	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+banspemo	keep_implemented	keep	recipe readme registered as a source
+banspemo	exclusion_list	keep	
+banspemo	keep_emotion_categories	keep	has emotion_categories
+banspemo	remove_synthetic	keep	speech_production=acted / material_origin=empty
+banspemo	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+banspemo	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+bari_emospeech	keep_implemented	keep	recipe readme registered as a source
+bari_emospeech	exclusion_list	keep	
+bari_emospeech	keep_emotion_categories	keep	has emotion_categories
+bari_emospeech	remove_synthetic	keep	speech_production=elicited / material_origin=empty
+bari_emospeech	remove_automatic_labels	keep	label_source=human / label_verification=NA
+bari_emospeech	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+baser	keep_implemented	keep	recipe readme registered as a source
+baser	exclusion_list	keep	
+baser	keep_emotion_categories	keep	has emotion_categories
+baser	remove_synthetic	keep	speech_production=acted / material_origin=empty
+baser	remove_automatic_labels	keep	label_source=human / label_verification=unknown
+baser	remove_unclear_license	keep	license_spdx=Apache-2.0
+basis_global_emotions	keep_implemented	remove	no recipe
+baum1	keep_implemented	remove	no recipe
+baum2	keep_implemented	remove	no recipe
+baved	keep_implemented	remove	no recipe
+beat	keep_implemented	remove	no recipe
+bedvibe	keep_implemented	remove	no recipe
+belfast	keep_implemented	remove	no recipe
+berst	keep_implemented	keep	recipe readme registered as a source
+berst	exclusion_list	keep	
+berst	keep_emotion_categories	keep	has emotion_categories
+berst	remove_synthetic	keep	speech_production=acted / material_origin=empty
+berst	remove_automatic_labels	keep	label_source=human / label_verification=none
+berst	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+biicnnime	keep_implemented	remove	no recipe
+biicpodcast	keep_implemented	remove	no recipe
+bmisec	keep_implemented	remove	no recipe
+brytserc	keep_implemented	keep	recipe readme registered as a source
+brytserc	exclusion_list	keep	
+brytserc	keep_emotion_categories	keep	has emotion_categories
+brytserc	remove_synthetic	keep	speech_production=spontaneous / material_origin=web_video
+brytserc	remove_automatic_labels	unverified	label_source=unknown / label_verification=unknown
+brytserc	remove_unclear_license	keep	license_spdx=LicenseRef-custom-research-only
+buemodb	keep_implemented	remove	no recipe
+burmese_new2001	keep_implemented	remove	no recipe
+cafe	keep_implemented	keep	recipe readme registered as a source
+cafe	exclusion_list	keep	
+cafe	keep_emotion_categories	keep	has emotion_categories
+cafe	remove_synthetic	keep	speech_production=acted / material_origin=empty
+cafe	remove_automatic_labels	keep	label_source=human / label_verification=NA
+cafe	remove_unclear_license	keep	license_spdx=CC-BY-NC-SA-4.0
+capspeech	keep_implemented	remove	no recipe
+capspeech_agentdb	keep_implemented	remove	no recipe
+casia	keep_implemented	keep	recipe readme registered as a source
+casia	exclusion_list	remove	The recipe's audio is an unofficial Hugging Face mirror of a corpus sold by ChineseLDC; no permission to redistribute the copy was found
+caves	keep_implemented	remove	no recipe
+cbesd	keep_implemented	keep	recipe readme registered as a source
+cbesd	exclusion_list	keep	
+cbesd	keep_emotion_categories	keep	has emotion_categories
+cbesd	remove_synthetic	keep	speech_production=acted / material_origin=empty
+cbesd	remove_automatic_labels	keep	label_source=human / label_verification=unknown
+cbesd	remove_unclear_license	keep	license_spdx=CC-BY-SA-4.0
+cdse_czech	keep_implemented	remove	no recipe
+cemo	keep_implemented	remove	no recipe
+cheavd	keep_implemented	remove	no recipe
+chen_bimodal	keep_implemented	remove	no recipe
+chsims	keep_implemented	remove	no recipe
+chsims2	keep_implemented	remove	no recipe
+clesc	keep_implemented	remove	no recipe
+cmumoseas	keep_implemented	remove	no recipe
+cmumosei	keep_implemented	remove	no recipe
+cmumosi	keep_implemented	remove	no recipe
+cnev	keep_implemented	remove	no recipe
+codaco_german	keep_implemented	remove	no recipe
+coraa_ser	keep_implemented	remove	no recipe
+cped	keep_implemented	remove	no recipe
+cremad	keep_implemented	keep	recipe readme registered as a source
+cremad	exclusion_list	keep	
+cremad	keep_emotion_categories	keep	has emotion_categories
+cremad	remove_synthetic	keep	speech_production=acted / material_origin=empty
+cremad	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+cremad	remove_unclear_license	keep	license_spdx=ODbL-1.0
+crowdsourcing_smith2018	keep_implemented	remove	no recipe
+csemotions	keep_implemented	keep	recipe readme registered as a source
+csemotions	exclusion_list	keep	
+csemotions	keep_emotion_categories	keep	has emotion_categories
+csemotions	remove_synthetic	keep	speech_production=acted / material_origin=empty
+csemotions	remove_automatic_labels	keep	label_source=human / label_verification=unknown
+csemotions	remove_unclear_license	keep	license_spdx=Apache-2.0
+daicwoz	keep_implemented	remove	no recipe
+dailytalk	keep_implemented	keep	recipe readme registered as a source
+dailytalk	exclusion_list	keep	
+dailytalk	keep_emotion_categories	keep	has emotion_categories
+dailytalk	remove_synthetic	keep	speech_production=acted / material_origin=empty
+dailytalk	remove_automatic_labels	keep	label_source=human / label_verification=unknown
+dailytalk	remove_unclear_license	keep	license_spdx=CC-BY-SA-4.0
+deeply_korean_read	keep_implemented	remove	no recipe
+deeply_nonverbal	keep_implemented	remove	no recipe
+demos	keep_implemented	remove	no recipe
+des	keep_implemented	remove	no recipe
+dfew	keep_implemented	remove	no recipe
+dihana	keep_implemented	remove	no recipe
+dusha	keep_implemented	keep	recipe readme registered as a source
+dusha	exclusion_list	keep	
+dusha	keep_emotion_categories	keep	has emotion_categories
+dusha	remove_synthetic	keep	speech_production=acted / material_origin=recorded_for_dataset
+dusha	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+dusha	remove_unclear_license	keep	license_spdx=LicenseRef-golos-public
+eaed	keep_implemented	remove	no recipe
+ears	keep_implemented	remove	no recipe
+eesc	keep_implemented	keep	recipe readme registered as a source
+eesc	exclusion_list	keep	
+eesc	keep_emotion_categories	keep	has emotion_categories
+eesc	remove_synthetic	keep	speech_production=read;elicited / material_origin=empty
+eesc	remove_automatic_labels	keep	label_source=human / label_verification=NA
+eesc	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+eesdb_chinese	keep_implemented	remove	no recipe
+em2ldl	keep_implemented	remove	no recipe
+emilia_emotion	keep_implemented	remove	no recipe
+emis	keep_implemented	keep	recipe readme registered as a source
+emis	exclusion_list	keep	
+emis	keep_emotion_categories	keep	has emotion_categories
+emis	remove_synthetic	remove	speech_production=synthetic / material_origin=synthetic
+emns	keep_implemented	keep	recipe readme registered as a source
+emns	exclusion_list	keep	
+emns	keep_emotion_categories	keep	has emotion_categories
+emns	remove_synthetic	keep	speech_production=acted / material_origin=empty
+emns	remove_automatic_labels	keep	label_source=human / label_verification=NA
+emns	remove_unclear_license	keep	license_spdx=Apache-2.0
+emo_emilia	keep_implemented	remove	no recipe
+emochildru	keep_implemented	remove	no recipe
+emodb	keep_implemented	keep	recipe readme registered as a source
+emodb	exclusion_list	keep	
+emodb	keep_emotion_categories	keep	has emotion_categories
+emodb	remove_synthetic	keep	speech_production=acted / material_origin=empty
+emodb	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+emodb	remove_unclear_license	keep	license_spdx=conflicting
+emodialogcn	keep_implemented	remove	no recipe
+emofilm	keep_implemented	remove	no recipe
+emogator	keep_implemented	keep	recipe readme registered as a source
+emogator	exclusion_list	keep	
+emogator	keep_emotion_categories	keep	has emotion_categories
+emogator	remove_synthetic	keep	speech_production=elicited / material_origin=empty
+emogator	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+emogator	remove_unclear_license	keep	license_spdx=Apache-2.0
+emolah	keep_implemented	remove	no recipe
+emomatchspanishdb	keep_implemented	remove	no recipe
+emonetvoice	keep_implemented	remove	no recipe
+emoreact	keep_implemented	remove	no recipe
+emosec	keep_implemented	remove	no recipe
+emospeech_keywords	keep_implemented	keep	recipe readme registered as a source
+emospeech_keywords	exclusion_list	keep	
+emospeech_keywords	keep_emotion_categories	keep	has emotion_categories
+emospeech_keywords	remove_synthetic	keep	speech_production=acted / material_origin=empty
+emospeech_keywords	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+emospeech_keywords	remove_unclear_license	keep	license_spdx=CC-BY-NC-SA-4.0
+emospeech_secap	keep_implemented	remove	no recipe
+emosynth	keep_implemented	remove	no recipe
+emota	keep_implemented	remove	no recipe
+emotale	keep_implemented	keep	recipe readme registered as a source
+emotale	exclusion_list	keep	
+emotale	keep_emotion_categories	keep	has emotion_categories
+emotale	remove_synthetic	keep	speech_production=acted / material_origin=empty
+emotale	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+emotale	remove_unclear_license	remove	license_spdx=LicenseRef-citation-request
+emotion_origlia2010	keep_implemented	remove	no recipe
+emotional_ema	keep_implemented	keep	recipe readme registered as a source
+emotional_ema	exclusion_list	keep	
+emotional_ema	keep_emotion_categories	keep	has emotion_categories
+emotional_ema	remove_synthetic	keep	speech_production=acted / material_origin=empty
+emotional_ema	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+emotional_ema	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+emotiontalk	keep_implemented	keep	recipe readme registered as a source
+emotiontalk	exclusion_list	keep	
+emotiontalk	keep_emotion_categories	keep	has emotion_categories
+emotiontalk	remove_synthetic	keep	speech_production=acted / material_origin=recorded_for_dataset
+emotiontalk	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+emotiontalk	remove_unclear_license	keep	license_spdx=CC-BY-NC-SA-4.0
+emotiontts_open_db	keep_implemented	remove	no recipe
+emotranscap	keep_implemented	remove	no recipe
+emouerj	keep_implemented	keep	recipe readme registered as a source
+emouerj	exclusion_list	keep	
+emouerj	keep_emotion_categories	keep	has emotion_categories
+emouerj	remove_synthetic	keep	speech_production=acted / material_origin=empty
+emouerj	remove_automatic_labels	keep	label_source=human / label_verification=unknown
+emouerj	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+emouerj_sed	keep_implemented	remove	no recipe
+emovdb	keep_implemented	keep	recipe readme registered as a source
+emovdb	exclusion_list	keep	
+emovdb	keep_emotion_categories	keep	has emotion_categories
+emovdb	remove_synthetic	keep	speech_production=acted / material_origin=empty
+emovdb	remove_automatic_labels	unverified	label_source=empty / label_verification=empty
+emovdb	remove_unclear_license	keep	license_spdx=LicenseRef-custom-research-only
+emovie	keep_implemented	remove	no recipe
+emovo	keep_implemented	keep	recipe readme registered as a source
+emovo	exclusion_list	keep	
+emovo	keep_emotion_categories	keep	has emotion_categories
+emovo	remove_synthetic	keep	speech_production=acted / material_origin=empty
+emovo	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+emovo	remove_unclear_license	remove	license_spdx=none_stated
+emovoicedb	keep_implemented	keep	recipe readme registered as a source
+emovoicedb	exclusion_list	keep	
+emovoicedb	keep_emotion_categories	keep	has emotion_categories
+emovoicedb	remove_synthetic	remove	speech_production=synthetic / material_origin=synthetic
+emovome	keep_implemented	remove	no recipe
+emozionalmente	keep_implemented	keep	recipe readme registered as a source
+emozionalmente	exclusion_list	keep	
+emozionalmente	keep_emotion_categories	keep	has emotion_categories
+emozionalmente	remove_synthetic	keep	speech_production=acted / material_origin=empty
+emozionalmente	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+emozionalmente	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+enterface05	keep_implemented	keep	recipe readme registered as a source
+enterface05	exclusion_list	keep	
+enterface05	keep_emotion_categories	keep	has emotion_categories
+enterface05	remove_synthetic	unverified	speech_production=unknown / material_origin=empty
+enterface05	remove_automatic_labels	unverified	label_source=unknown / label_verification=NA
+enterface05	remove_unclear_license	keep	license_spdx=MIT
+escorpuspe	keep_implemented	remove	no recipe
+esd	keep_implemented	keep	recipe readme registered as a source
+esd	exclusion_list	keep	
+esd	keep_emotion_categories	keep	has emotion_categories
+esd	remove_synthetic	keep	speech_production=acted / material_origin=empty
+esd	remove_automatic_labels	keep	label_source=human / label_verification=NA
+esd	remove_unclear_license	keep	license_spdx=LicenseRef-custom-research-only
+eseravd	keep_implemented	keep	recipe readme registered as a source
+eseravd	exclusion_list	keep	
+eseravd	keep_emotion_categories	keep	has emotion_categories
+eseravd	remove_synthetic	keep	speech_production=acted / material_origin=film_tv
+eseravd	remove_automatic_labels	keep	label_source=human / label_verification=NA
+eseravd	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+esmbs	keep_implemented	remove	no recipe
+euemotion_voice	keep_implemented	remove	no recipe
+expressivespeech	keep_implemented	remove	no recipe
+expresso	keep_implemented	remove	no recipe
+eyase	keep_implemented	remove	no recipe
+fauaibo	keep_implemented	remove	no recipe
+fcaps	keep_implemented	remove	no recipe
+filmed	keep_implemented	remove	no recipe
+fluent_speech_commands	keep_implemented	remove	no recipe
+galgame_speech_ser	keep_implemented	remove	no recipe
+gaudie	keep_implemented	remove	no recipe
+gees	keep_implemented	remove	no recipe
+gemep	keep_implemented	remove	no recipe
+grethe	keep_implemented	remove	no recipe
+groupaffect4	keep_implemented	remove	no recipe
+gujarati_tank2020	keep_implemented	remove	no recipe
+harper_valley_bank	keep_implemented	keep	recipe readme registered as a source
+harper_valley_bank	exclusion_list	keep	
+harper_valley_bank	keep_emotion_categories	remove	no emotion_categories; annotations: dialogue_act;intent;listener_ratings;other;segmentation;sentiment;session_id;speaker_attributes;speaker_id;transcript
+hesd	keep_implemented	remove	no recipe
+hikia	keep_implemented	keep	recipe readme registered as a source
+hikia	exclusion_list	keep	
+hikia	keep_emotion_categories	keep	has emotion_categories
+hikia	remove_synthetic	keep	speech_production=acted / material_origin=empty
+hikia	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+hikia	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+hindi_bansal_dev	keep_implemented	remove	no recipe
+hindi_ser_vishlb	keep_implemented	keep	recipe readme registered as a source
+hindi_ser_vishlb	exclusion_list	remove	The database is under ODbL 1.0, but the Kaggle licence field says the contents (the recordings) remain the copyright of the original authors, and what they allow is not stated; the recipe readme says the terms still have to be confirmed with the author (not done yet)
+hume_reaction	keep_implemented	remove	no recipe
+humevb	keep_implemented	remove	no recipe
+humyn_indian_emotional	keep_implemented	remove	no recipe
+hungarian_hesd	keep_implemented	remove	no recipe
+iemocap	keep_implemented	keep	recipe readme registered as a source
+iemocap	exclusion_list	keep	
+iemocap	keep_emotion_categories	keep	has emotion_categories
+iemocap	remove_synthetic	keep	speech_production=acted;improvised / material_origin=empty
+iemocap	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+iemocap	remove_unclear_license	keep	license_spdx=LicenseRef-custom-research-only
+iesc	keep_implemented	keep	recipe readme registered as a source
+iesc	exclusion_list	keep	
+iesc	keep_emotion_categories	keep	has emotion_categories
+iesc	remove_synthetic	keep	speech_production=acted / material_origin=empty
+iesc	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+iesc	remove_unclear_license	remove	license_spdx=unknown
+iiitsaint_emomdb	keep_implemented	remove	no recipe
+iitkgp_sehsc	keep_implemented	remove	no recipe
+iitkgp_sesc	keep_implemented	remove	no recipe
+indemovis	keep_implemented	remove	no recipe
+indianenglish	keep_implemented	keep	recipe readme registered as a source
+indianenglish	exclusion_list	keep	
+indianenglish	keep_emotion_categories	keep	has emotion_categories
+indianenglish	remove_synthetic	unverified	speech_production=unknown / material_origin=empty
+indianenglish	remove_automatic_labels	unverified	label_source=unknown / label_verification=NA
+indianenglish	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+indonesian_fahmi2020	keep_implemented	remove	no recipe
+indowavesentiment	keep_implemented	keep	recipe readme registered as a source
+indowavesentiment	exclusion_list	keep	
+indowavesentiment	keep_emotion_categories	keep	has emotion_categories
+indowavesentiment	remove_synthetic	keep	speech_production=acted / material_origin=empty
+indowavesentiment	remove_automatic_labels	keep	label_source=human / label_verification=NA
+indowavesentiment	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+inesco	keep_implemented	keep	recipe readme registered as a source
+inesco	exclusion_list	keep	
+inesco	keep_emotion_categories	keep	has emotion_categories
+inesco	remove_synthetic	keep	speech_production=acted / material_origin=recorded_for_dataset
+inesco	remove_automatic_labels	keep	label_source=human / label_verification=NA
+inesco	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+interface	keep_implemented	remove	no recipe
+italic	keep_implemented	remove	no recipe
+java_sed	keep_implemented	remove	no recipe
+javanese_ser_2black0	keep_implemented	keep	recipe readme registered as a source
+javanese_ser_2black0	exclusion_list	keep	
+javanese_ser_2black0	keep_emotion_categories	keep	has emotion_categories
+javanese_ser_2black0	remove_synthetic	keep	speech_production=acted / material_origin=empty
+javanese_ser_2black0	remove_automatic_labels	keep	label_source=human / label_verification=NA
+javanese_ser_2black0	remove_unclear_license	keep	license_spdx=MIT
+javmeps	keep_implemented	remove	no recipe
+jlcorpus	keep_implemented	keep	recipe readme registered as a source
+jlcorpus	exclusion_list	keep	
+jlcorpus	keep_emotion_categories	keep	has emotion_categories
+jlcorpus	remove_synthetic	keep	speech_production=acted / material_origin=empty
+jlcorpus	remove_automatic_labels	keep	label_source=human / label_verification=NA
+jlcorpus	remove_unclear_license	keep	license_spdx=CC0-1.0
+jnv	keep_implemented	keep	recipe readme registered as a source
+jnv	exclusion_list	keep	
+jnv	keep_emotion_categories	keep	has emotion_categories
+jnv	remove_synthetic	keep	speech_production=acted / material_origin=empty
+jnv	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+jnv	remove_unclear_license	keep	license_spdx=CC-BY-SA-4.0
+jtes	keep_implemented	remove	no recipe
+jvnv	keep_implemented	keep	recipe readme registered as a source
+jvnv	exclusion_list	keep	
+jvnv	keep_emotion_categories	keep	has emotion_categories
+jvnv	remove_synthetic	keep	speech_production=acted / material_origin=empty
+jvnv	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+jvnv	remove_unclear_license	keep	license_spdx=CC-BY-SA-4.0
+kannada	keep_implemented	keep	recipe readme registered as a source
+kannada	exclusion_list	keep	
+kannada	keep_emotion_categories	keep	has emotion_categories
+kannada	remove_synthetic	keep	speech_production=acted / material_origin=empty
+kannada	remove_automatic_labels	keep	label_source=human / label_verification=NA
+kannada	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+kannada_kes	keep_implemented	remove	no recipe
+kasdimerbah_arabic	keep_implemented	remove	no recipe
+kazakh_russian_emotion	keep_implemented	remove	no recipe
+kazemotts	keep_implemented	keep	recipe readme registered as a source
+kazemotts	exclusion_list	keep	
+kazemotts	keep_emotion_categories	keep	has emotion_categories
+kazemotts	remove_synthetic	keep	speech_production=acted / material_origin=empty
+kazemotts	remove_automatic_labels	unverified	label_source=empty / label_verification=empty
+kazemotts	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+kbes	keep_implemented	keep	recipe readme registered as a source
+kbes	exclusion_list	remove	Source recordings come from third parties (YouTube, films, TV, radio) and the rights of the original recordings are not stated; rejected for now (meeting 2026-11-06)
+keg_croatian	keep_implemented	remove	no recipe
+keioesd	keep_implemented	remove	no recipe
+kemdy19	keep_implemented	remove	no recipe
+kemdy20	keep_implemented	remove	no recipe
+kemocon	keep_implemented	remove	no recipe
+kenyan_swahili_ser	keep_implemented	remove	no recipe
+kesdy18	keep_implemented	remove	no recipe
+kmser	keep_implemented	remove	no recipe
+ksuemotions	keep_implemented	remove	no recipe
+kurdish_esd	keep_implemented	remove	no recipe
+kurdish_nematullah2024	keep_implemented	remove	no recipe
+laions_got_talent	keep_implemented	remove	no recipe
+ldc_emotional_prosody	keep_implemented	remove	no recipe
+legov2	keep_implemented	keep	recipe readme registered as a source
+legov2	exclusion_list	keep	
+legov2	keep_emotion_categories	keep	has emotion_categories
+legov2	remove_synthetic	keep	speech_production=spontaneous / material_origin=empty
+legov2	remove_automatic_labels	keep	label_source=human / label_verification=NA
+legov2	remove_unclear_license	keep	license_spdx=LicenseRef-custom-research-only
+lithuanian_emotion_db	keep_implemented	keep	recipe readme registered as a source
+lithuanian_emotion_db	exclusion_list	keep	
+lithuanian_emotion_db	keep_emotion_categories	keep	has emotion_categories
+lithuanian_emotion_db	remove_synthetic	keep	speech_production=acted / material_origin=empty
+lithuanian_emotion_db	remove_automatic_labels	keep	label_source=human / label_verification=NA
+lithuanian_emotion_db	remove_unclear_license	remove	license_spdx=none_stated
+lssed	keep_implemented	remove	no recipe
+m3ed	keep_implemented	remove	no recipe
+mafw	keep_implemented	remove	no recipe
+mahnobhci	keep_implemented	remove	no recipe
+malayalam_ann2009	keep_implemented	remove	no recipe
+maleo	keep_implemented	keep	recipe readme registered as a source
+maleo	exclusion_list	remove	Source recordings come from third parties (YouTube, films, TV, radio) and the rights of the original recordings are not stated; rejected for now (meeting 2026-11-06)
+masc	keep_implemented	remove	no recipe
+maserc	keep_implemented	keep	recipe readme registered as a source
+maserc	exclusion_list	keep	
+maserc	keep_emotion_categories	keep	has emotion_categories
+maserc	remove_synthetic	keep	speech_production=acted / material_origin=empty
+maserc	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+maserc	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+mav	keep_implemented	keep	recipe readme registered as a source
+mav	exclusion_list	keep	
+mav	keep_emotion_categories	keep	has emotion_categories
+mav	remove_synthetic	keep	speech_production=acted / material_origin=empty
+mav	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+mav	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+mavesdb	keep_implemented	remove	no recipe
+mcaespps	keep_implemented	keep	recipe readme registered as a source
+mcaespps	exclusion_list	keep	
+mcaespps	keep_emotion_categories	keep	has emotion_categories
+mcaespps	remove_synthetic	keep	speech_production=acted / material_origin=empty
+mcaespps	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+mcaespps	remove_unclear_license	keep	license_spdx=CC-BY-NC-4.0
+mceiu	keep_implemented	remove	no recipe
+mderma	keep_implemented	keep	recipe readme registered as a source
+mderma	exclusion_list	remove	Source recordings come from third parties (YouTube, films, TV, radio) and the rights of the original recordings are not stated; rejected for now (meeting 2026-11-06)
+mead	keep_implemented	remove	no recipe
+meghana007_tamil	keep_implemented	remove	no recipe
+meld	keep_implemented	keep	recipe readme registered as a source
+meld	exclusion_list	keep	
+meld	keep_emotion_categories	keep	has emotion_categories
+meld	remove_synthetic	keep	speech_production=acted / material_origin=film_tv
+meld	remove_automatic_labels	keep	label_source=human / label_verification=NA
+meld	remove_unclear_license	keep	license_spdx=GPL-3.0-only
+memor	keep_implemented	remove	no recipe
+mer2023	keep_implemented	remove	no recipe
+mer2024	keep_implemented	remove	no recipe
+mer2025	keep_implemented	remove	no recipe
+mer2026	keep_implemented	remove	no recipe
+mer_caption	keep_implemented	remove	no recipe
+merr	keep_implemented	remove	no recipe
+mesd	keep_implemented	keep	recipe readme registered as a source
+mesd	exclusion_list	keep	
+mesd	keep_emotion_categories	keep	has emotion_categories
+mesd	remove_synthetic	keep	speech_production=acted / material_origin=empty
+mesd	remove_automatic_labels	keep	label_source=human / label_verification=NA
+mesd	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+mesp	keep_implemented	remove	no recipe
+mess	keep_implemented	keep	recipe readme registered as a source
+mess	exclusion_list	keep	
+mess	keep_emotion_categories	keep	has emotion_categories
+mess	remove_synthetic	keep	speech_production=acted / material_origin=empty
+mess	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+mess	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+mikuemobench	keep_implemented	remove	no recipe
+minds14	keep_implemented	remove	no recipe
+mlend_numerals	keep_implemented	remove	no recipe
+mmeld	keep_implemented	remove	no recipe
+mspconversation	keep_implemented	remove	no recipe
+mspface	keep_implemented	remove	no recipe
+mspimprov	keep_implemented	remove	no recipe
+msppodcast	keep_implemented	keep	recipe readme registered as a source
+msppodcast	exclusion_list	keep	
+msppodcast	keep_emotion_categories	keep	has emotion_categories
+msppodcast	remove_synthetic	keep	speech_production=spontaneous / material_origin=podcast
+msppodcast	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+msppodcast	remove_unclear_license	keep	license_spdx=LicenseRef-custom-research-only
+multidialog	keep_implemented	keep	recipe readme registered as a source
+multidialog	exclusion_list	keep	
+multidialog	keep_emotion_categories	keep	has emotion_categories
+multidialog	remove_synthetic	keep	speech_production=acted / material_origin=recorded_for_dataset
+multidialog	remove_automatic_labels	unverified	label_source=unknown / label_verification=listener_validated
+multidialog	remove_unclear_license	remove	license_spdx=unknown
+musecar	keep_implemented	remove	no recipe
+narrative_dialogue	keep_implemented	remove	no recipe
+naturalvoices	keep_implemented	remove	no recipe
+nemo	keep_implemented	keep	recipe readme registered as a source
+nemo	exclusion_list	keep	
+nemo	keep_emotion_categories	keep	has emotion_categories
+nemo	remove_synthetic	keep	speech_production=acted / material_origin=empty
+nemo	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+nemo	remove_unclear_license	keep	license_spdx=CC-BY-NC-SA-4.0
+nexdata_en_emotional_20p	keep_implemented	remove	no recipe
+nonverbaltts	keep_implemented	keep	recipe readme registered as a source
+nonverbaltts	exclusion_list	keep	
+nonverbaltts	keep_emotion_categories	keep	has emotion_categories
+nonverbaltts	remove_synthetic	keep	speech_production=spontaneous;acted / material_origin=multiple
+nonverbaltts	remove_automatic_labels	keep	label_source=mixed / label_verification=human_reviewed
+nonverbaltts	remove_unclear_license	keep	license_spdx=conflicting
+nvs38k	keep_implemented	remove	no recipe
+ogvc	keep_implemented	remove	no recipe
+omgemotion	keep_implemented	remove	no recipe
+oreau	keep_implemented	keep	recipe readme registered as a source
+oreau	exclusion_list	keep	
+oreau	keep_emotion_categories	keep	has emotion_categories
+oreau	remove_synthetic	keep	speech_production=acted / material_origin=empty
+oreau	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+oreau	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+ov_merd	keep_implemented	remove	no recipe
+paraspeechcaps	keep_implemented	remove	no recipe
+passau_sfch	keep_implemented	remove	no recipe
+pavoque	keep_implemented	keep	recipe readme registered as a source
+pavoque	exclusion_list	keep	
+pavoque	keep_emotion_categories	keep	has emotion_categories
+pavoque	remove_synthetic	keep	speech_production=acted / material_origin=empty
+pavoque	remove_automatic_labels	keep	label_source=human / label_verification=NA
+pavoque	remove_unclear_license	keep	license_spdx=CC-BY-NC-SA-4.0
+pemo_punjabi	keep_implemented	remove	no recipe
+persian_esd	keep_implemented	remove	no recipe
+picka_nh	keep_implemented	remove	no recipe
+polish_cichosz2005	keep_implemented	remove	no recipe
+polish_sapinski2019	keep_implemented	remove	no recipe
+polishemo	keep_implemented	keep	recipe readme registered as a source
+polishemo	exclusion_list	keep	
+polishemo	keep_emotion_categories	keep	has emotion_categories
+polishemo	remove_synthetic	keep	speech_production=acted / material_origin=empty
+polishemo	remove_automatic_labels	keep	label_source=human / label_verification=NA
+polishemo	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+prahalabs_malayalam	keep_implemented	remove	no recipe
+promptspeech	keep_implemented	remove	no recipe
+qlean_japanese_emotional	keep_implemented	remove	no recipe
+quechua	keep_implemented	keep	recipe readme registered as a source
+quechua	exclusion_list	keep	
+quechua	keep_emotion_categories	keep	has emotion_categories
+quechua	remove_synthetic	keep	speech_production=acted / material_origin=empty
+quechua	remove_automatic_labels	keep	label_source=human / label_verification=NA
+quechua	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+ramas	keep_implemented	remove	no recipe
+rasa	keep_implemented	keep	recipe readme registered as a source
+rasa	exclusion_list	keep	
+rasa	keep_emotion_categories	keep	has emotion_categories
+rasa	remove_synthetic	keep	speech_production=acted;read / material_origin=recorded_for_dataset
+rasa	remove_automatic_labels	keep	label_source=human / label_verification=unknown
+rasa	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+ravdess	keep_implemented	keep	recipe readme registered as a source
+ravdess	exclusion_list	keep	
+ravdess	keep_emotion_categories	keep	has emotion_categories
+ravdess	remove_synthetic	keep	speech_production=acted / material_origin=empty
+ravdess	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+ravdess	remove_unclear_license	keep	license_spdx=CC-BY-NC-SA-4.0
+recanvo	keep_implemented	keep	recipe readme registered as a source
+recanvo	exclusion_list	keep	
+recanvo	keep_emotion_categories	keep	has emotion_categories
+recanvo	remove_synthetic	keep	speech_production=spontaneous / material_origin=empty
+recanvo	remove_automatic_labels	keep	label_source=human / label_verification=NA
+recanvo	remove_unclear_license	keep	license_spdx=CC-BY-3.0-US
+recola	keep_implemented	remove	no recipe
+resd	keep_implemented	keep	recipe readme registered as a source
+resd	exclusion_list	keep	
+resd	keep_emotion_categories	keep	has emotion_categories
+resd	remove_synthetic	keep	speech_production=acted / material_origin=empty
+resd	remove_automatic_labels	keep	label_source=human / label_verification=NA
+resd	remove_unclear_license	keep	license_spdx=MIT
+rml_emotion	keep_implemented	keep	recipe readme registered as a source
+rml_emotion	exclusion_list	keep	
+rml_emotion	keep_emotion_categories	keep	has emotion_categories
+rml_emotion	remove_synthetic	keep	speech_production=acted / material_origin=empty
+rml_emotion	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+rml_emotion	remove_unclear_license	remove	license_spdx=unknown
+ruslana	keep_implemented	remove	no recipe
+safe_corpus	keep_implemented	remove	no recipe
+saraiki_ser	keep_implemented	keep	recipe readme registered as a source
+saraiki_ser	exclusion_list	keep	
+saraiki_ser	keep_emotion_categories	keep	has emotion_categories
+saraiki_ser	remove_synthetic	keep	speech_production=acted / material_origin=empty
+saraiki_ser	remove_automatic_labels	keep	label_source=human / label_verification=NA
+saraiki_ser	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+saudi_ser_corpus	keep_implemented	remove	no recipe
+savee	keep_implemented	keep	recipe readme registered as a source
+savee	exclusion_list	keep	
+savee	keep_emotion_categories	keep	has emotion_categories
+savee	remove_synthetic	keep	speech_production=acted / material_origin=empty
+savee	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+savee	remove_unclear_license	keep	license_spdx=LicenseRef-custom-research-only
+sccesc	keep_implemented	remove	no recipe
+secepdb	keep_implemented	remove	no recipe
+semaine	keep_implemented	remove	no recipe
+semour	keep_implemented	remove	no recipe
+ses_ed	keep_implemented	keep	recipe readme registered as a source
+ses_ed	exclusion_list	keep	
+ses_ed	keep_emotion_categories	keep	has emotion_categories
+ses_ed	remove_synthetic	keep	speech_production=acted / material_origin=empty
+ses_ed	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+ses_ed	remove_unclear_license	keep	license_spdx=ODC-By-1.0
+ses_sd	keep_implemented	keep	recipe readme registered as a source
+ses_sd	exclusion_list	keep	
+ses_sd	keep_emotion_categories	keep	has emotion_categories
+ses_sd	remove_synthetic	keep	speech_production=acted / material_origin=empty
+ses_sd	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+ses_sd	remove_unclear_license	keep	license_spdx=ODC-By-1.0
+sewa	keep_implemented	remove	no recipe
+shemo	keep_implemented	keep	recipe readme registered as a source
+shemo	exclusion_list	keep	
+shemo	keep_emotion_categories	keep	has emotion_categories
+shemo	remove_synthetic	keep	speech_production=acted / material_origin=empty
+shemo	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+shemo	remove_unclear_license	keep	license_spdx=LicenseRef-custom-research-only
+sitb_osed	keep_implemented	keep	recipe readme registered as a source
+sitb_osed	exclusion_list	keep	
+sitb_osed	keep_emotion_categories	keep	has emotion_categories
+sitb_osed	remove_synthetic	keep	speech_production=acted / material_origin=empty
+sitb_osed	remove_automatic_labels	keep	label_source=human / label_verification=NA
+sitb_osed	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+slue_hvb	keep_implemented	remove	no recipe
+slue_voxceleb	keep_implemented	remove	no recipe
+slurp	keep_implemented	remove	no recipe
+snips_slu	keep_implemented	remove	no recipe
+spanish_meacorpus	keep_implemented	remove	no recipe
+speech_massive	keep_implemented	remove	no recipe
+speechcraft	keep_implemented	remove	no recipe
+spokenwoz	keep_implemented	remove	no recipe
+srol	keep_implemented	remove	no recipe
+stop	keep_implemented	remove	no recipe
+studies	keep_implemented	remove	no recipe
+subesco	keep_implemented	keep	recipe readme registered as a source
+subesco	exclusion_list	keep	
+subesco	keep_emotion_categories	keep	has emotion_categories
+subesco	remove_synthetic	keep	speech_production=acted / material_origin=empty
+subesco	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+subesco	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+susas	keep_implemented	remove	no recipe
+swedish_vpesc	keep_implemented	remove	no recipe
+switchboard_sentiment	keep_implemented	remove	no recipe
+syntact	keep_implemented	keep	recipe readme registered as a source
+syntact	exclusion_list	keep	
+syntact	keep_emotion_categories	keep	has emotion_categories
+syntact	remove_synthetic	remove	speech_production=synthetic / material_origin=synthetic
+talromur3	keep_implemented	keep	recipe readme registered as a source
+talromur3	exclusion_list	keep	
+talromur3	keep_emotion_categories	keep	has emotion_categories
+talromur3	remove_synthetic	keep	speech_production=acted / material_origin=empty
+talromur3	remove_automatic_labels	keep	label_source=human / label_verification=NA
+talromur3	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+tamar_emodb	keep_implemented	remove	no recipe
+tamil_ram	keep_implemented	remove	no recipe
+telugu_emotion_kaggle	keep_implemented	keep	recipe readme registered as a source
+telugu_emotion_kaggle	exclusion_list	keep	
+telugu_emotion_kaggle	keep_emotion_categories	keep	has emotion_categories
+telugu_emotion_kaggle	remove_synthetic	keep	speech_production=acted / material_origin=empty
+telugu_emotion_kaggle	remove_automatic_labels	unverified	label_source=unknown / label_verification=unknown
+telugu_emotion_kaggle	remove_unclear_license	keep	license_spdx=Apache-2.0
+tess	keep_implemented	keep	recipe readme registered as a source
+tess	exclusion_list	keep	
+tess	keep_emotion_categories	keep	has emotion_categories
+tess	remove_synthetic	keep	speech_production=acted / material_origin=recorded_for_dataset
+tess	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+tess	remove_unclear_license	keep	license_spdx=CC-BY-NC-4.0
+textrolspeech	keep_implemented	remove	no recipe
+thaiser	keep_implemented	keep	recipe readme registered as a source
+thaiser	exclusion_list	keep	
+thaiser	keep_emotion_categories	keep	has emotion_categories
+thaiser	remove_synthetic	keep	speech_production=acted;improvised / material_origin=recorded_for_dataset
+thaiser	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+thaiser	remove_unclear_license	keep	license_spdx=CC-BY-SA-4.0
+thanushs25_tamil	keep_implemented	keep	recipe readme registered as a source
+thanushs25_tamil	exclusion_list	keep	
+thanushs25_tamil	keep_emotion_categories	keep	has emotion_categories
+thanushs25_tamil	remove_synthetic	unverified	speech_production=unknown / material_origin=empty
+thanushs25_tamil	remove_automatic_labels	unverified	label_source=unknown / label_verification=unknown
+thanushs25_tamil	remove_unclear_license	remove	license_spdx=none_stated
+thorsten	keep_implemented	keep	recipe readme registered as a source
+thorsten	exclusion_list	keep	
+thorsten	keep_emotion_categories	keep	has emotion_categories
+thorsten	remove_synthetic	keep	speech_production=acted / material_origin=empty
+thorsten	remove_automatic_labels	keep	label_source=human / label_verification=NA
+thorsten	remove_unclear_license	keep	license_spdx=CC0-1.0
+timers_and_such	keep_implemented	remove	no recipe
+tumavic	keep_implemented	remove	no recipe
+tures	keep_implemented	remove	no recipe
+turevdb	keep_implemented	keep	recipe readme registered as a source
+turevdb	exclusion_list	keep	
+turevdb	keep_emotion_categories	keep	has emotion_categories
+turevdb	remove_synthetic	keep	speech_production=acted / material_origin=recorded_for_dataset
+turevdb	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+turevdb	remove_unclear_license	keep	license_spdx=conflicting
+ua_ser	keep_implemented	keep	recipe readme registered as a source
+ua_ser	exclusion_list	keep	
+ua_ser	keep_emotion_categories	keep	has emotion_categories
+ua_ser	remove_synthetic	keep	speech_production=spontaneous / material_origin=empty
+ua_ser	remove_automatic_labels	keep	label_source=human / label_verification=NA
+ua_ser	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+uftbesd	keep_implemented	keep	recipe readme registered as a source
+uftbesd	exclusion_list	keep	
+uftbesd	keep_emotion_categories	keep	has emotion_categories
+uftbesd	remove_synthetic	keep	speech_production=acted / material_origin=empty
+uftbesd	remove_automatic_labels	keep	label_source=human / label_verification=unknown
+uftbesd	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+ulm_tsst	keep_implemented	remove	no recipe
+uq_schizophrenia_videos	keep_implemented	remove	no recipe
+urdu	keep_implemented	keep	recipe readme registered as a source
+urdu	exclusion_list	remove	Source recordings come from third parties (YouTube, films, TV, radio) and the rights of the original recordings are not stated; rejected for now (meeting 2026-11-06)
+urduser	keep_implemented	keep	recipe readme registered as a source
+urduser	exclusion_list	remove	Source recordings come from third parties (YouTube, films, TV, radio) and the rights of the original recordings are not stated; rejected for now (meeting 2026-11-06)
+urdusindhi_zenodo3685274	keep_implemented	remove	no recipe
+usc_emo_mri	keep_implemented	keep	recipe readme registered as a source
+usc_emo_mri	exclusion_list	keep	
+usc_emo_mri	keep_emotion_categories	keep	has emotion_categories
+usc_emo_mri	remove_synthetic	keep	speech_production=acted / material_origin=empty
+usc_emo_mri	remove_automatic_labels	keep	label_source=human / label_verification=NA
+usc_emo_mri	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+usoms	keep_implemented	remove	no recipe
+utemo	keep_implemented	keep	recipe readme registered as a source
+utemo	exclusion_list	keep	
+utemo	keep_emotion_categories	keep	has emotion_categories
+utemo	remove_synthetic	keep	speech_production=acted / material_origin=empty
+utemo	remove_automatic_labels	keep	label_source=human / label_verification=unknown
+utemo	remove_unclear_license	keep	license_spdx=CC-BY-NC-3.0
+uudb	keep_implemented	remove	no recipe
+vam	keep_implemented	remove	no recipe
+venec	keep_implemented	remove	no recipe
+verbo	keep_implemented	remove	no recipe
+vesc	keep_implemented	remove	no recipe
+vesus	keep_implemented	remove	no recipe
+visec	keep_implemented	keep	recipe readme registered as a source
+visec	exclusion_list	remove	Possibly an unofficial mirror; excluded until the creator has been contacted (meeting 2026-11-06)
+vivae	keep_implemented	keep	recipe readme registered as a source
+vivae	exclusion_list	keep	
+vivae	keep_emotion_categories	keep	has emotion_categories
+vivae	remove_synthetic	keep	speech_production=acted / material_origin=recorded_for_dataset
+vivae	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+vivae	remove_unclear_license	keep	license_spdx=CC-BY-NC-4.0
+vnemos	keep_implemented	remove	no recipe
+voicenet	keep_implemented	remove	no recipe
+voicestats	keep_implemented	keep	recipe readme registered as a source
+voicestats	exclusion_list	remove	Not used (meeting 2026-11-06): the terms only say free for mainly personal research and analysis; no license
+waxal_wolof_ser	keep_implemented	remove	no recipe
+werewolf_xl	keep_implemented	remove	no recipe
+whiser	keep_implemented	keep	recipe readme registered as a source
+whiser	exclusion_list	keep	
+whiser	keep_emotion_categories	keep	has emotion_categories
+whiser	remove_synthetic	keep	speech_production=spontaneous / material_origin=empty
+whiser	remove_automatic_labels	keep	label_source=human / label_verification=NA
+whiser	remove_unclear_license	remove	license_spdx=none_stated
+yodasspeakerpool	keep_implemented	remove	no recipe
+ysed	keep_implemented	keep	recipe readme registered as a source
+ysed	exclusion_list	keep	
+ysed	keep_emotion_categories	keep	has emotion_categories
+ysed	remove_synthetic	keep	speech_production=acted;elicited / material_origin=recorded_for_dataset
+ysed	remove_automatic_labels	keep	label_source=human / label_verification=listener_validated
+ysed	remove_unclear_license	keep	license_spdx=CC-BY-4.0
+yue_emo_speech	keep_implemented	remove	no recipe
+zamai_pashto	keep_implemented	remove	no recipe
