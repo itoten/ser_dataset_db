@@ -89,5 +89,17 @@ class DatasetFilter:
             return remove(f"license_spdx={spdx}")
         return keep(f"license_spdx={spdx}")
 
+    def keep_automatic_download(self, dataset, access_methods, not_automatic):
+        """Keeps datasets a script can download; `not_automatic` lists exceptions the DB's access_method does not show."""
+        method = dataset.value("access_method")
+        entry = next((e for e in not_automatic if e["dataset_id"] == dataset.id), None)
+        if entry:
+            return remove(entry["reason"])
+        if dataset.is_unknown(method):
+            return unverified("access_method=" + (method or "empty"))
+        if method in access_methods:
+            return keep(f"access_method={method}")
+        return remove(f"access_method={method}")
+
 
 FILTER_NAMES = sorted(name for name in vars(DatasetFilter) if not name.startswith("_"))

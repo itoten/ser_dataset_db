@@ -121,3 +121,17 @@ filters:
     note: Only datasets with no clear license are removed here; how each license is used is decided later.
     params:
       unclear_licenses: [none_stated, unknown, LicenseRef-citation-request]
+
+  - filter: keep_automatic_download
+    note: >-
+      The first experiment uses only datasets that a script can download: direct download, a consent click,
+      or a free account (maintainer, 2026-11-09).
+    params:
+      access_methods: [direct_download, gated_click_through, free_account_required]
+      not_automatic:
+        - dataset_id: savee
+          reason: >-
+            Registration at the distribution site is needed before the files can be downloaded, so a script cannot
+            fetch it (recipe readme, Download)
+          db_rows: "savee access_method; recipe readme (Download)"
+          decided_on: 2026-11-09
