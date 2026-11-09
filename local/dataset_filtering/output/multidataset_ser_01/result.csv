@@ -214,7 +214,7 @@ mspconversation,MSP-Conversation,removed,keep_implemented,no recipe,
 mspface,MSP-Face,removed,keep_implemented,no recipe,
 mspimprov,MSP-IMPROV,removed,keep_implemented,no recipe,
 msppodcast,MSP-Podcast,kept,,,
-multidialog,MultiDialog,removed,remove_unclear_license,license_spdx=unknown,remove_automatic_labels: label_source=unknown / label_verification=listener_validated
+multidialog,MultiDialog,kept_unverified,,,remove_automatic_labels: label_source=unknown / label_verification=listener_validated
 musecar,MuSe-CaR,removed,keep_implemented,no recipe,
 narrative_dialogue,Narrative Dialogue Dataset,removed,keep_implemented,no recipe,
 naturalvoices,NaturalVoices,removed,keep_implemented,no recipe,

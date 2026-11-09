@@ -493,7 +493,7 @@ multidialog	exclusion_list	keep
 multidialog	keep_emotion_categories	keep	has emotion_categories
 multidialog	remove_synthetic	keep	speech_production=acted / material_origin=recorded_for_dataset
 multidialog	remove_automatic_labels	unverified	label_source=unknown / label_verification=listener_validated
-multidialog	remove_unclear_license	remove	license_spdx=unknown
+multidialog	remove_unclear_license	keep	license_spdx=CC-BY-NC-4.0
 musecar	keep_implemented	remove	no recipe
 narrative_dialogue	keep_implemented	remove	no recipe
 naturalvoices	keep_implemented	remove	no recipe
