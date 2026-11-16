@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 .env
-# Each user's own working space; only its README is published.
+# Each user's own working space. New files are ignored; the project maintainer's files are tracked
+# on purpose (see local/README.md).
 local/*
 !local/README.md

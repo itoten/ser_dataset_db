@@ -162,7 +162,7 @@
 | `schema/` | 定義: `columns.csv`、`enums.csv`、`tables.csv` |
 | `tools/` | 検査・編集のツール(`validate.py`、`derive.py`、`views.py`、`db.py`) |
 | `docs/` | このガイド(英語と日本語)と、議論・実装計画の記録(`docs/README.md`) |
-| `local/` | 各自の作業用の場所。README 以外は git で無視される |
+| `local/` | 各自の作業用の場所。新しいファイルは git で無視される(project maintainer のファイルは追跡されている。その README を見る) |
 | `.claude/skills/` | Claude Code で DB を保守する手順 |
 
 ### 4.2 表(`data/`)
@@ -330,7 +330,7 @@ DB は AI を通して読まれることを想定している。まず `README.m
 
 ### 12.3 `local/`
 
-`local/` は git で無視される作業用の場所(その README を見る): どのデータセットを使うか、なぜか、ライセンスをどうまとめるか、ラベルをどう対応づけるか。自分のファイルは `dataset_id` で DB と結ぶ。DB のツールは `local/` を読まない。
+`local/` は、新しいファイルを git が無視する作業用の場所(その README を見る。このリポジトリでは project maintainer 自身のファイルが追跡され、公開されている): どのデータセットを使うか、なぜか、ライセンスをどうまとめるか、ラベルをどう対応づけるか。自分のファイルは `dataset_id` で DB と結ぶ。DB のツールは `local/` を読まない。
 
 ## 13. データの追加と変更
 

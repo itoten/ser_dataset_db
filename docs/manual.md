@@ -159,7 +159,7 @@ A license states how far data may be used. The explanations here are general, no
 | `schema/` | Definitions: `columns.csv`, `enums.csv`, `tables.csv` |
 | `tools/` | Checking and editing tools (`validate.py`, `derive.py`, `views.py`, `db.py`) |
 | `docs/` | This guide (English and Japanese) and the record of discussions and plans (`docs/README.md`) |
-| `local/` | Your own working space; git-ignored except its README |
+| `local/` | Your own working space; new files are git-ignored (the project maintainer's files are tracked; see its README) |
 | `.claude/skills/` | The procedure for maintaining the DB with Claude Code |
 
 ### 4.2 The tables (`data/`)
@@ -327,7 +327,7 @@ The DB is meant to be read through AI. Read `README.md` first, then the rows you
 
 ### 12.3 `local/`
 
-`local/` is a git-ignored working space (see its README): which datasets you use and why, how you group licenses, how you map labels. Join your files to the DB by `dataset_id`. The DB's tools never read it.
+`local/` is a working space where git ignores new files (see its README; in this repository the project maintainer's own files there are tracked and public): which datasets you use and why, how you group licenses, how you map labels. Join your files to the DB by `dataset_id`. The DB's tools never read it.
 
 ## 13. Adding and changing data
 

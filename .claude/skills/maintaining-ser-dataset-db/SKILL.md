@@ -32,7 +32,8 @@ What you need to know about the surroundings:
   read. Read recipe files from the branch, not the working tree:
   `git -C <recipe repo> show <branch>:egs3/<recipe>/cls/readme.md`. The branch is published on
   the public fork `itoten/espnet`; only commits that are on the fork can be cited.
-- **`local/`** is git-ignored and belongs to the user: which datasets they use and why, license
+- **`local/`** belongs to the user (new files are git-ignored; the project maintainer's own files
+  there are tracked on purpose, see `local/README.md`): which datasets they use and why, license
   groupings, label mappings. The DB's tools never read it, and you never write facts there.
 - **Discussions and plans are recorded** in `docs/` (index: `docs/README.md`; discussions in
   `docs/discussions/`, implementation plans in `docs/plans/`, written in Japanese; decisions made before

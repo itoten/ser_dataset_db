@@ -37,7 +37,7 @@ A database of speech emotion recognition (SER) datasets, kept as CSV files under
 | A beginner's guide with a glossary | `docs/manual.md` (English), `docs/manual.ja.md` (Japanese translation; always update both together) |
 | How the DB was designed: decisions with their reasons | `docs/README.md` (index of discussions and plans), `docs/archive/` |
 | How to maintain the DB (workflow for Claude Code) | `.claude/skills/maintaining-ser-dataset-db/SKILL.md` |
-| Your own decisions that build on the DB (which datasets you use, license groups, ...) | `local/` (git-ignored; see `local/README.md`) |
+| Your own decisions that build on the DB (which datasets you use, license groups, ...) | `local/` (git-ignored for new files; the project maintainer's own files there are tracked and public, see `local/README.md`) |
 
 ## Tables
 
