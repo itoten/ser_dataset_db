@@ -399,7 +399,8 @@ banspemo/emotion_categories.label_verification/01,banspemo,emotion_categories.la
 banspemo/full_title/01,banspemo,full_title,BanSpEmo: A Bangla Emotional Speech Recognition Dataset,,,2026-11-01,claude,superseded,Provisional: carried over from earlier records; not yet checked against the source; superseded by banspemo/full_title/02
 banspemo/full_title/02,banspemo,full_title,BanSpEmo: A Bangla Emotional Speech Recognition Dataset,banspemo_paper,title of the source contains the full title,2026-11-01,claude,current,
 banspemo/hours_release/01,banspemo,hours_release,1.39,banspemo_readme,commit b676f7fb18be; Size of the release,2026-11-01,claude,current,
-banspemo/hours_reported/01,banspemo,hours_reported,12,banspemo_paper,has 12 hours length of audio that was verified by six listeners,2026-11-01,claude,current,
+banspemo/hours_reported/01,banspemo,hours_reported,12,banspemo_paper,has 12 hours length of audio that was verified by six listeners,2026-11-01,claude,superseded,"The quoted sentence describes IEMOCAP in the related-work section (§1.4), not BANSpEmo (issue #83); superseded by banspemo/hours_reported/02"
+banspemo/hours_reported/02,banspemo,hours_reported,1.39,banspemo_paper,"§1: ""The total duration of the audio dataset is 1 hour 23 minutes and 12 seconds"" (also Table 4)",2026-11-16,claude,current,
 banspemo/languages/01,banspemo,languages,ben,banspemo_page,dataset description names the language,2026-10-11,claude,current,
 banspemo/license_spdx/01,banspemo,license_spdx,CC-BY-4.0,banspemo_page,Mendeley metadata,2026-10-11,user,current,Verified by the maintainer in the pull request #66 (branch verify/2026-11-03b-01)
 banspemo/listening_test/01,banspemo,listening_test,reported,banspemo_paper,a listening test is described here,2026-11-01,claude,current,From the earlier human_accuracy record
@@ -1586,13 +1587,13 @@ emovdb/access_observed/01,emovdb,access_observed,obtained,,,2026-10-12,claude,su
 emovdb/access_observed/02,emovdb,access_observed,obtained,emovdb_readme,commit 74570d22b946; Access,2026-11-01,claude,current,
 emovdb/emotion_categories.label_basis/01,emovdb,emotion_categories.label_basis,intended,emovdb_paper,the emotion is the style the actor was asked to produce; stored as speaker x emotion archive names,2026-10-26,claude,current,
 emovdb/hours_release/01,emovdb,hours_release,9.49,emovdb_readme,commit 74570d22b946; Size of the release,2026-11-01,claude,current,
-emovdb/hours_reported/01,emovdb,hours_reported,12,emovdb_paper,"""In total it contains 10 speakers and 12 hours of data.""",2026-11-01,claude,current,
+emovdb/hours_reported/01,emovdb,hours_reported,12,emovdb_paper,"""In total it contains 10 speakers and 12 hours of data.""",2026-11-01,claude,superseded,"Withdrawn: the quoted sentence describes IEMOCAP in the related-work section (§2.2), not EmoV-DB; the paper states no total for EmoV-DB (issue #82)"
 emovdb/languages/02,emovdb,languages,eng;fra,emovdb_paper,data for male and female actors in English and a male actor in French,2026-10-31,claude,current,
 emovdb/license_spdx/02,emovdb,license_spdx,LicenseRef-custom-research-only,emovdb_license,LICENSE.md: agreeing to the Non-commercial Purposes condition,2026-10-14,user,current,The License field of OpenSLR 115 points to this file; Verified by the maintainer in the pull request #67 (branch verify/2026-11-03b-02)
 emovdb/listening_test/01,emovdb,listening_test,not_stated,emovdb_page,no listening or perception test mentioned in the source text read (checked 2026-11-02),2026-11-02,claude,superseded,"The whole text was searched for a listening or perception test, not read line by line. Withdrawn at the maintainer's instruction on 2026-11-03: the text was searched, not read in full, so the cell goes back to unchecked."
 emovdb/n_files_release/01,emovdb,n_files_release,6893,,,2026-10-26,claude,superseded,Provisional:; superseded by emovdb/n_files_release/02
 emovdb/n_files_release/02,emovdb,n_files_release,6893,emovdb_readme,commit 74570d22b946; Size of the release,2026-11-01,claude,current,
-emovdb/n_files_reported/01,emovdb,n_files_reported,1260,emovdb_paper,"""This database counts a total of 1260 audio files.""",2026-11-02,claude,current,
+emovdb/n_files_reported/01,emovdb,n_files_reported,1260,emovdb_paper,"""This database counts a total of 1260 audio files.""",2026-11-02,claude,superseded,"Withdrawn: the quoted sentence describes GEMEP in the related-work section (§2.2), not EmoV-DB; the paper states no total for EmoV-DB (issue #82)"
 emovdb/n_speakers_release/01,emovdb,n_speakers_release,4,,,2026-10-12,claude,superseded,Provisional:; superseded by emovdb/n_speakers_release/02
 emovdb/n_speakers_release/02,emovdb,n_speakers_release,4,emovdb_readme,commit 74570d22b946; Size of the release,2026-11-01,claude,current,
 emovdb/n_speakers_reported/01,emovdb,n_speakers_reported,5,emovdb_paper,an open-source multi-speaker (5 different speakers) and multilingual database of emotional speech,2026-11-01,claude,current,
