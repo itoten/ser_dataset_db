@@ -1,0 +1,603 @@
+<meta charset="utf-8">
+<title>SER Dataset Catalogue</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+JP:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,650&display=swap">
+<style>
+/* Layout: a property-search app. Header, toolbar with chips, filter column + results (totals, table/cards), detail drawer. */
+:root {
+  --bg: #f6f5f8; --panel: #ffffff; --fg: #1d1a24; --muted: #625d6e; --line: #e0dce6; --grid: #ece9f0;
+  --accent: #5a3e8c; --accent-soft: #ece6f6; --mark: #b4492f;
+  --warn: #93530a; --warn-bg: #fbefdc; --bad: #a3343f;
+  --f-display: "Fraunces", "IBM Plex Sans JP", Georgia, serif;
+  --f-body: "IBM Plex Sans", "IBM Plex Sans JP", system-ui, -apple-system, "Segoe UI", "Hiragino Sans", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #15131a; --panel: #1d1a23; --fg: #e8e4ee; --muted: #a59fb0; --line: #332e3c; --grid: #221f29;
+  --accent: #b9a2e6; --accent-soft: #2b2438; --mark: #ee8d72;
+  --warn: #efb365; --warn-bg: #3a2c16; --bad: #ef8790; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #15131a; --panel: #1d1a23; --fg: #e8e4ee; --muted: #a59fb0; --line: #332e3c; --grid: #221f29;
+  --accent: #b9a2e6; --accent-soft: #2b2438; --mark: #ee8d72;
+  --warn: #efb365; --warn-bg: #3a2c16; --bad: #ef8790; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 14px/1.55 var(--f-body); }
+[hidden] { display: none !important; }
+.wrap { max-width: 1440px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 24px 48px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; }
+.head { display: grid; gap: 8px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+.top { display: flex; gap: 12px; align-items: start; justify-content: space-between; flex-wrap: wrap; }
+h1 { font: 650 clamp(26px, 4vw, 38px)/1.15 var(--f-display); margin: 0; text-wrap: balance; word-break: auto-phrase; letter-spacing: -0.01em; }
+.lang { display: inline-flex; border: 1px solid var(--line); border-radius: 5px; overflow: hidden; background: var(--panel); }
+.lang button { all: unset; cursor: pointer; font: 500 12px var(--f-body); padding: 5px 10px; color: var(--muted); }
+.lang button[aria-pressed="true"] { background: var(--accent-soft); color: var(--fg); }
+.lang button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.quote { margin: 2px 0 0; padding: 2px 0 2px 14px; border-left: 3px solid var(--mark); max-width: 72ch; }
+.quote p { margin: 0; font: 500 20px/1.4 var(--f-display); }
+.quote .src { font-size: 12px; margin-top: 2px; }
+.lede { margin: 0; max-width: 72ch; color: var(--muted); }
+.lede b { color: var(--fg); font-weight: 600; }
+.meta { font: 12px var(--f-mono); color: var(--muted); }
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.toolbar input, .toolbar select, .rng select { font: 14px var(--f-body); color: var(--fg); background: var(--panel); border: 1px solid var(--line); border-radius: 5px; padding: 7px 10px; min-width: 0; }
+.toolbar input { flex: 1 1 260px; }
+.fbtn { display: none; align-items: center; gap: 6px; font: 600 14px var(--f-body); color: var(--fg); background: var(--panel); border: 1px solid var(--accent); border-radius: 5px; padding: 7px 12px; cursor: pointer; }
+.badge { font: 600 11px var(--f-mono); background: var(--accent); color: var(--panel); border-radius: 9px; padding: 1px 7px; }
+.count { font: 13px var(--f-mono); color: var(--muted); margin-left: auto; }
+.active { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.achip { display: inline-flex; align-items: center; gap: 6px; font: 12px var(--f-body); background: var(--accent-soft); border: 1px solid var(--accent); color: var(--fg); border-radius: 14px; padding: 3px 6px 3px 10px; cursor: pointer; max-width: 100%; text-align: left; }
+.achip b { font-weight: 600; } .achip .xx { font: 700 13px var(--f-body); color: var(--accent); padding: 0 3px; }
+.link { all: unset; cursor: pointer; font-size: 12px; color: var(--accent); text-decoration: underline; }
+.link:focus-visible, .achip:focus-visible, .fbtn:focus-visible, .fset summary:focus-visible, tr:focus-visible, .card:focus-visible, .x:focus-visible, th:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.browse { display: grid; grid-template-columns: 290px minmax(0, 1fr); gap: 16px; align-items: start; }
+.results { min-width: 0; display: grid; gap: 8px; }
+.facets { box-sizing: border-box; position: sticky; top: 12px; max-height: calc(100vh - 24px); display: grid; grid-template-rows: auto minmax(0, 1fr) auto; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; min-width: 0; }
+.fhead { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+.fhead h2 { font: 650 15px var(--f-display); margin: 0; flex: 1; }
+.fbody { overflow-y: auto; padding: 4px 0 10px; overscroll-behavior: contain; }
+.fset { border-bottom: 1px solid var(--grid); padding: 0 14px; }
+.fset summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 8px; padding: 10px 0; font: 600 13px var(--f-body); }
+.fset summary::-webkit-details-marker { display: none; }
+.fset summary::before { content: "▸"; color: var(--muted); font-size: 11px; transition: transform .15s; }
+.fset[open] summary::before { transform: rotate(90deg); }
+.fset summary .sel { margin-left: auto; font: 600 11px var(--f-mono); color: var(--accent); }
+.hint { font-size: 11px; color: var(--muted); margin: 2px 0 8px; }
+.opts { display: grid; gap: 1px; padding-bottom: 10px; }
+.opt { display: flex; align-items: center; gap: 8px; font-size: 13px; padding: 3px 4px; border-radius: 4px; cursor: pointer; }
+.opt:hover { background: var(--accent-soft); }
+.opt input { margin: 0; accent-color: var(--accent); flex: none; }
+.opt .lb { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.opt .ids { display: block; font: 10.5px/1.35 var(--f-mono); color: var(--muted); margin-top: 1px; }
+.opt .n { font: 12px var(--f-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.opt.zero { color: var(--muted); opacity: .55; }
+.rng { display: flex; align-items: center; gap: 6px; padding-bottom: 6px; } .rng select { flex: 1 1 0; padding: 6px 8px; font-size: 13px; }
+.ffoot { padding: 10px 14px calc(10px + env(safe-area-inset-bottom, 0px)); border-top: 1px solid var(--line); }
+.primary { width: 100%; font: 650 15px var(--f-body); color: var(--panel); background: var(--accent); border: 0; border-radius: 6px; padding: 12px; cursor: pointer; }
+.only-m { display: none !important; }
+.sumbar { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.sumbar .tile { background: var(--panel); padding: 10px 12px; display: grid; gap: 2px; min-width: 0; }
+.sumbar .k { font: 600 11px var(--f-body); letter-spacing: 0.04em; color: var(--muted); }
+.sumbar .v { font: 600 20px var(--f-mono); font-variant-numeric: tabular-nums; }
+.sumbar .v small { font: 12px var(--f-body); color: var(--muted); margin-left: 3px; }
+.sumbar .c { font-size: 11px; color: var(--muted); }
+.sumnote { font-size: 11px; color: var(--muted); grid-column: 1 / -1; background: var(--panel); padding: 6px 12px; }
+.tablebox { min-width: 0; overflow: auto; max-height: 78vh; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+.tablebox table { border-collapse: separate; border-spacing: 0; font-size: 13px; width: max-content; min-width: 100%; }
+.tablebox th, .tablebox td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.tablebox th { font: 600 11px var(--f-body); letter-spacing: 0.04em; color: var(--muted); position: sticky; top: 0; background: var(--panel); white-space: nowrap; cursor: pointer; user-select: none; z-index: 2; }
+.tablebox th[aria-sort="ascending"]::after { content: " ↑"; } .tablebox th[aria-sort="descending"]::after { content: " ↓"; }
+.tablebox th.grp { cursor: default; text-align: center; border-bottom: none; color: var(--fg); }
+.tablebox thead tr.cols th { top: 26px; }
+.tablebox .fx { position: sticky; background: var(--panel); z-index: 1; box-sizing: border-box; white-space: normal; overflow-wrap: anywhere; }
+.tablebox th.fx { z-index: 3; }
+.tablebox .fx.edge { box-shadow: inset -1px 0 0 var(--line); }
+.tablebox tbody tr { cursor: pointer; }
+.tablebox tbody tr:hover td { background: var(--accent-soft); }
+.tablebox td { max-width: 260px; }
+td.wrapc { white-space: normal; min-width: 150px; }
+td.num { font-family: var(--f-mono); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+td.mono { font-family: var(--f-mono); font-size: 12px; white-space: nowrap; }
+.nm { font-weight: 500; }
+.sub { color: var(--muted); font-size: 12px; }
+.tag { display: inline-block; font: 11px var(--f-mono); padding: 1px 6px; border: 1px solid var(--line); border-radius: 3px; margin: 1px 3px 1px 0; color: var(--muted); white-space: nowrap; }
+.none { color: var(--line); }
+.more { text-align: center; padding: 10px; }
+.more button, .x { font: 500 13px var(--f-body); color: var(--accent); background: none; border: 1px solid var(--line); border-radius: 5px; padding: 6px 14px; cursor: pointer; }
+.scrim { position: fixed; inset: 0; background: rgb(0 0 0 / 0.3); z-index: 20; }
+.drawer { box-sizing: border-box; position: fixed; top: 0; right: 0; bottom: 0; width: min(760px, 100%); max-width: 100%; background: var(--bg); border-left: 1px solid var(--line); z-index: 21; overflow-y: auto; overflow-x: hidden;
+  padding: calc(18px + env(safe-area-inset-top, 0px)) max(18px, env(safe-area-inset-right, 0px)) calc(32px + env(safe-area-inset-bottom, 0px)) 18px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; align-content: start; }
+.drawer h3 { font: 650 22px/1.25 var(--f-display); margin: 0; text-wrap: balance; overflow-wrap: anywhere; }
+.dhead { display: flex; gap: 12px; align-items: start; justify-content: space-between; }
+.dhead > div { min-width: 0; }
+.panel { box-sizing: border-box; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; display: grid; gap: 8px; min-width: 0; }
+.panel h2 { font: 600 12px var(--f-body); letter-spacing: 0.06em; color: var(--muted); margin: 0; }
+.panel dl { display: grid; grid-template-columns: minmax(120px, max-content) minmax(0, 1fr); gap: 4px 14px; margin: 0; }
+.panel dt { color: var(--muted); font-size: 12px; padding-top: 1px; }
+.panel dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.mono { font-family: var(--f-mono); font-size: 12px; }
+.ev { font-size: 12px; border-collapse: collapse; width: 100%; table-layout: auto; }
+.ev th { text-align: left; font: 600 11px var(--f-body); color: var(--muted); padding: 4px 6px; border-bottom: 1px solid var(--line); }
+.ev td { padding: 5px 6px; border-bottom: 1px solid var(--line); vertical-align: top; overflow-wrap: anywhere; }
+.ev td.k { font-family: var(--f-mono); color: var(--muted); }
+.ev td.r { text-align: right; font-family: var(--f-mono); white-space: nowrap; }
+.st { display: inline-block; font: 600 10.5px var(--f-mono); padding: 0 5px; border-radius: 3px; border: 1px solid var(--line); color: var(--muted); }
+.st.conflicting { color: var(--bad); border-color: var(--bad); } .st.provisional { color: var(--warn); border-color: var(--warn); background: var(--warn-bg); }
+a { color: var(--accent); }
+.inner { overflow-x: auto; min-width: 0; }
+.note { font-size: 12px; color: var(--muted); max-width: 70ch; }
+.foot { color: var(--muted); font-size: 12px; display: grid; gap: 4px; max-width: 90ch; }
+.cards { display: none; gap: 8px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; display: grid; gap: 4px; cursor: pointer; min-width: 0; }
+.card .nm { overflow-wrap: anywhere; }
+.card .kv { display: flex; flex-wrap: wrap; gap: 2px 12px; font-size: 12px; color: var(--muted); }
+.card .kv b { color: var(--fg); font-weight: 500; font-family: var(--f-mono); overflow-wrap: anywhere; }
+.more-cards { display: none; }
+@media (max-width: 900px) {
+  .browse { grid-template-columns: minmax(0, 1fr); }
+  .fbtn { display: inline-flex; }
+  .facets { display: none; position: fixed; inset: 0; max-height: none; z-index: 30; border-radius: 0; border: 0;
+    padding-top: env(safe-area-inset-top, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); }
+  .facets.open { display: grid; }
+  .only-m { display: block !important; } .fhead .only-m { display: inline-block !important; }
+  .toolbar select { flex: 1 1 auto; }
+}
+@media (max-width: 720px) {
+  .panel dl { grid-template-columns: minmax(0, 1fr); } .panel dt { padding-top: 6px; }
+  .ev thead { display: none; }
+  .ev, .ev tbody, .ev tr, .ev td { display: block; width: auto; }
+  .ev tr { padding: 6px 0; border-bottom: 1px solid var(--line); }
+  .ev td { border: 0; padding: 1px 0; }
+  .ev td.r { text-align: left; }
+  .panel { padding: 10px 12px; } .drawer { padding-left: 14px; }
+  .tablebox { display: none; } .cards { display: grid; } .more-cards:not([hidden]) { display: block; }
+  h1 { font-size: 26px; } .quote p { font-size: 17px; }
+  .toolbar input { flex: 1 1 100%; }
+  .count { margin-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <div class="head">
+    <div class="top">
+      <h1 data-i="title"></h1>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="ja" aria-pressed="true">日本語</button>
+        <button type="button" data-lang="en" aria-pressed="false">English</button>
+      </div>
+    </div>
+    <blockquote class="quote"><p data-i="quote"></p><div class="src"><a href="https://ja.wikipedia.org/wiki/Trust,_but_verify" target="_blank" rel="noopener" data-i="quote_src"></a></div></blockquote>
+    <p class="lede" data-i="lede" data-html="1"></p>
+    <div class="meta" id="meta"></div>
+  </div>
+
+  <section class="toolbar">
+    <input id="q" type="search" autocomplete="off" aria-label="Search">
+    <button id="open-f" class="fbtn" type="button"><span id="open-f-l"></span><span class="badge" id="nf" hidden></span></button>
+    <select id="sort" aria-label="Sort"></select>
+    <span class="count" id="count"></span>
+  </section>
+  <div class="active" id="active" hidden></div>
+
+  <div class="browse">
+    <div class="facets" id="facets" aria-labelledby="fh">
+      <div class="fhead"><h2 id="fh"></h2><button type="button" class="link" id="f-clear"></button><button type="button" class="x only-m" id="f-close"></button></div>
+      <div class="fbody" id="fbody"></div>
+      <div class="ffoot only-m"><button type="button" class="primary" id="f-done"></button></div>
+    </div>
+    <div class="results">
+      <div class="sumbar" id="sumbar"></div>
+      <div class="cards" id="cards"></div>
+      <div class="more more-cards" id="more2" hidden><button id="more-b2" type="button" data-i="more"></button></div>
+      <div class="tablebox" id="tablebox">
+        <table>
+          <thead id="thead"></thead>
+          <tbody id="rows"></tbody>
+        </table>
+        <div class="more" id="more" hidden><button id="more-b" type="button" data-i="more"></button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div data-i="foot1" data-html="1"></div>
+    <div data-i="foot2"></div>
+  </div>
+</div>
+
+<div class="scrim" id="scrim" hidden></div>
+<div class="drawer" id="drawer" hidden aria-modal="true" role="dialog" aria-labelledby="d-title"></div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(() => {
+const DATA = JSON.parse(document.getElementById("data").textContent);
+const S = DATA.S, D = DATA.D;
+
+const LANG_NAMES = {
+  afr: ["アフリカーンス語", "Afrikaans"], aka: ["アカン語", "Akan"], amh: ["アムハラ語", "Amharic"], ara: ["アラビア語", "Arabic"], arb: ["現代標準アラビア語", "Standard Arabic"],
+  ary: ["モロッコ・アラビア語", "Moroccan Arabic"], arz: ["エジプト・アラビア語", "Egyptian Arabic"], asm: ["アッサム語", "Assamese"], ben: ["ベンガル語", "Bengali"], brx: ["ボド語", "Bodo"],
+  ces: ["チェコ語", "Czech"], cmn: ["中国語(標準中国語)", "Mandarin Chinese"], dan: ["デンマーク語", "Danish"], deu: ["ドイツ語", "German"], doi: ["ドーグリー語", "Dogri"],
+  ell: ["ギリシャ語", "Greek"], eng: ["英語", "English"], est: ["エストニア語", "Estonian"], fas: ["ペルシア語", "Persian"], fil: ["フィリピノ語", "Filipino"], fra: ["フランス語", "French"],
+  guj: ["グジャラート語", "Gujarati"], heb: ["ヘブライ語", "Hebrew"], hin: ["ヒンディー語", "Hindi"], hrv: ["クロアチア語", "Croatian"], hun: ["ハンガリー語", "Hungarian"],
+  ind: ["インドネシア語", "Indonesian"], isl: ["アイスランド語", "Icelandic"], ita: ["イタリア語", "Italian"], jav: ["ジャワ語", "Javanese"], jpn: ["日本語", "Japanese"],
+  kan: ["カンナダ語", "Kannada"], kas: ["カシミール語", "Kashmiri"], kaz: ["カザフ語", "Kazakh"], kok: ["コンカニ語", "Konkani"], kor: ["韓国語", "Korean"], kur: ["クルド語", "Kurdish"],
+  lit: ["リトアニア語", "Lithuanian"], mai: ["マイティリー語", "Maithili"], mal: ["マラヤーラム語", "Malayalam"], mar: ["マラーティー語", "Marathi"], mni: ["マニプリ語", "Manipuri"],
+  msa: ["マレー語", "Malay"], mul: ["多言語(個別の言語の記載なし)", "Multiple languages (not listed)"], mya: ["ビルマ語", "Burmese"], nep: ["ネパール語", "Nepali"], nld: ["オランダ語", "Dutch"],
+  ory: ["オディア語", "Odia"], pan: ["パンジャーブ語", "Punjabi"], pol: ["ポーランド語", "Polish"], por: ["ポルトガル語", "Portuguese"], pus: ["パシュトー語", "Pashto"],
+  que: ["ケチュア語", "Quechua"], ron: ["ルーマニア語", "Romanian"], rus: ["ロシア語", "Russian"], san: ["サンスクリット語", "Sanskrit"], sat: ["サンタル語", "Santali"],
+  skr: ["サラーイキー語", "Saraiki"], slk: ["スロバキア語", "Slovak"], slv: ["スロベニア語", "Slovenian"], snd: ["シンド語", "Sindhi"], spa: ["スペイン語", "Spanish"],
+  sqi: ["アルバニア語", "Albanian"], srp: ["セルビア語", "Serbian"], swa: ["スワヒリ語", "Swahili"], swe: ["スウェーデン語", "Swedish"], tam: ["タミル語", "Tamil"],
+  tel: ["テルグ語", "Telugu"], tha: ["タイ語", "Thai"], tur: ["トルコ語", "Turkish"], ukr: ["ウクライナ語", "Ukrainian"], urd: ["ウルドゥー語", "Urdu"], vie: ["ベトナム語", "Vietnamese"],
+  wol: ["ウォロフ語", "Wolof"], yue: ["広東語", "Cantonese"], zho: ["中国語", "Chinese"], zxx: ["言語の内容なし(非言語の発声など)", "No linguistic content (non-verbal sounds etc.)"],
+  unknown: ["資料に記載なし", "Not stated in the sources"],
+};
+const EMO_JA = { anger: "怒り", sadness: "悲しみ", happiness: "喜び(happiness)", neutral: "中立", fear: "恐れ", surprise: "驚き", disgust: "嫌悪", joy: "喜び(joy)", contempt: "軽蔑",
+  boredom: "退屈", calm: "落ち着き", anxiety: "不安", disappointment: "失望", excitement: "興奮", worried: "心配", amusement: "おかしさ", other: "その他", pain: "痛み", relief: "安堵",
+  confusion: "困惑", adoration: "崇拝", interest: "興味", excited: "興奮(excited)", pleasure: "快", normal: "普通(normal)", guilt: "罪悪感", pride: "誇り", distress: "苦痛", awe: "畏怖",
+  shame: "恥", love: "愛", frustration: "欲求不満", sarcasm: "皮肉", embarrassment: "当惑", disgusted: "嫌悪(disgusted)", annoyance: "いらだち", sympathy: "同情", hate: "憎しみ" };
+
+const L = {
+  ja: {
+    title: "SER データセット・カタログ",
+    quote: "「信頼せよ、されど検証せよ」", quote_src: "出典: Wikipedia「Trust, but verify」",
+    lede: "音声感情認識(SER)の研究に使える、または使えるかもしれない音声データセットの一覧です。すべての値は、読んだ<b>一次資料</b>と結びついています。このページは資料への案内で、資料の代わりではありません。値を使う前に出典を確かめてください。",
+    meta: (n, s, b, c) => `${n} データセット · 出典 ${s} 件 · ${b} 作成(commit ${c})`,
+    search: "名前・ID・別名・ラベルで検索…",
+    filter_btn: "絞り込み", filter_h: "条件で絞り込む", clear: "すべてクリア", show_n: n => `${n} 件を表示`, more_opts: n => `ほかの ${n} 件を表示`, fewer: "閉じる",
+    lic_hint: "ライセンスの表記(SPDX の識別子と CC の記号)だけで分けています。条件の中身は読んでいません。独自ライセンスの条件は各データセットの資料で確かめてください。",
+    ids_show: "含まれるライセンスを見る", ids_hide: "ライセンス名を隠す",
+    any_min: "下限なし", any_max: "上限なし", range_hint: "範囲を選ぶと、値が書かれていないデータセットは除きます",
+    hints: { am: "配布元の資料に書かれている入手方法。", ao: "レシピの作者が実際に入手を試したときの結果。", labs: "感情カテゴリのラベル名。表記ゆれ(Angry と anger など)は DB の対応表でそろえています。",
+      rh: "レシピの readme が配布物を数えた値(資料の値ではありません)。", lv: "ラベルを人が確かめたかどうか。資料の記述を DB の分類に当てはめた値です。", ns: "資料に書かれた値。", nf: "資料に書かれた値。", h: "資料に書かれた値。" },
+    fac: { am: "入手方法(資料の記載)", ao: "入手を試した結果", lang: "言語", labs: "感情のラベル", ann: "付いている注釈の種類", sp: "発話のしかた", mo: "音声の出どころ", vc: "声の種類",
+      std: "話す文の決め方", lb: "ラベルの付け方", lv: "ラベルの確認", ls: "ラベルを付けたもの", lt: "聴取テスト", split: "公式の分割", ns: "話者数", nf: "ファイル数", h: "時間 (h)", rh: "配布物の時間 (h)",
+      licfam: "ライセンスの種類", licx: "ライセンスの条件で除く", lic: "ライセンス(個別)", iss: "配布物について報告された問題", feat: "記載のあるもの" },
+    sorts: { ns: "話者数が多い順", h: "時間が長い順", nf: "ファイル数が多い順", rh: "配布物の時間が長い順", upd: "更新が新しい順", name: "名前順" },
+    val: {
+      am: { direct_download: "そのままダウンロードできる", free_account_required: "無料アカウントが要る", gated_click_through: "同意のクリックが要る", request_form_or_email: "申請(フォーム・メール)が要る",
+        signed_agreement: "署名した契約が要る", paid_or_membership: "有料・会員制", unofficial_mirror_only: "非公式のミラーだけ", unavailable: "入手できない", unknown: "資料に記載なし", obtained: "入手できた", "": "未確認" },
+      sp: { acted: "演技(指示された感情を演じる)", improvised: "即興の演技", elicited: "誘発(刺激・課題・会話の設定で感情を引き出す)", spontaneous: "自然な発話(感情の指示も誘発もない)", read: "感情の指示なしの朗読", synthetic: "合成音声", unknown: "資料に記載なし", "": "未確認" },
+      mo: { recorded_for_dataset: "データセットのために収録", film_tv: "映画・テレビから", web_video: "ウェブ動画から", podcast: "ポッドキャストから", broadcast: "ラジオ・テレビ放送から", synthetic: "合成", multiple: "複数の出どころ", other: "その他", "": "未確認" },
+      vc: { speech: "発話", nonverbal: "非言語の発声だけ(笑い・泣きなど)", speech_and_nonverbal: "発話と非言語の発声", unknown: "資料に記載なし", "": "未確認" },
+      std: { parallel: "どの感情でも同じ文を話す", neutral_text: "意味が中立な文(日付・数字など)", emotion_specific_text: "感情に合わせて書いた・選んだ文", unscripted: "台本なし(会話・即興・放送)",
+        dialogue_script: "映画・ドラマ・対話の台詞", unrelated_text: "感情と関係なく割り当てた別々の文", unknown: "資料に記載なし", "": "未確認" },
+      lb: { intended: "話者に指示した感情", perceived: "聞き手が知覚した感情", self_reported: "話者が自己申告した感情", context_inferred: "場面や文の意味から付けた感情", automatic: "モデルなどによる自動推定", unknown: "資料に記載なし", "": "未確認" },
+      lv: { listener_validated: "聴取テストで確かめた(または一致したものだけ残した)", human_reviewed: "自動のラベルを人が確かめた", none: "確かめていない", NA: "該当しない", unknown: "資料に記載なし", "": "未確認" },
+      ls: { human: "人だけ", automatic: "自動だけ(モデルなど)", mixed: "人と自動の両方", synthesis_specified: "合成器に指定した感情", unknown: "資料に記載なし", "": "未確認" },
+      lt: { reported: "聴取テストの記載あり", not_stated: "読んだ資料に記載なし", "": "未確認" },
+      split: { true: "公式の分割あり", false: "公式の分割なし", "": "記載を確認していない" },
+      ann: { emotion_categories: "感情カテゴリ", emotion_attributes: "感情の次元(覚醒度・快不快など)", speaking_style: "話し方のスタイル", sentiment: "感情極性(ポジ・ネガ)", intent: "意図", dialogue_act: "対話行為",
+        speaker_id: "話者 ID", speaker_gender: "話者の性別", speaker_age: "話者の年齢", speaker_attributes: "その他の話者の属性", speaker_language: "話者の母語・方言", transcript: "書き起こし・文",
+        sentence_id: "文・プロンプトの ID", session_id: "セッション・対話の ID", take: "テイク・繰り返しの番号", intensity: "感情の強さ", listener_ratings: "聞き手の評定・投票",
+        listening_test: "聴取テスト", segmentation: "時間の区切り", acoustic_features: "音響特徴量", split: "分割の割り当て", video: "映像", physiological: "生体信号・調音の信号", other: "その他" },
+      iss: { corrupt_or_unreadable: "壊れた・空・読めないファイル", duplicate: "同じ中身のファイルや行", missing_or_mismatched_label: "ラベルの欠け・ファイルとの食い違い", differs_from_documentation: "配布物が資料の記載と違う",
+        silent_or_non_speech: "無音・発話のないファイル", unusual_audio: "変わった音声の形式や中身", listening_observation: "レシピの作者が聞いて気づいたこと", other: "その他" },
+      licfam: { pd: "パブリックドメイン(CC0)", attr: "表示のみ(CC BY・MIT・Apache・ODC-By)", sa: "継承(SA・ODbL・GPL)", nc: "非営利(NC)", nd: "改変禁止(ND)", custom: "独自・制限つき(LicenseRef-…)",
+        nolic: "ライセンスの記載なし", conf: "資料が食い違う", unk: "未確認" },
+      licx: { nc: "非営利(NC)を除く", sa: "継承(SA・ODbL・GPL)を除く", nd: "改変禁止(ND)を除く", other: "独自・記載なし・食い違い・未確認を除く" },
+      feat: { paper: "論文", doc: "一次資料で確認した値", impl: "ESPnet のレシピ(readme)", lc: "ラベルごとの本数", rel: "関係するデータセット", note: "出典の権利についての記述" } },
+    sum: { ds: "データセット", ns: "話者数の合計", h: "時間の合計", nf: "ファイル数の合計", stated: (n, m) => `記載あり ${n} / ${m} 件の合計`, u_ds: "件", u_ns: "人", u_h: "時間", u_nf: "本",
+      note: "合計は、資料に書かれている値(各データセットの「資料の値」)を足したものです。値のないデータセットは入りません。同じデータの別の版や一部を別のデータセットとして載せていることがあり、その分は重複して数えています。" },
+    count: (a, b) => `${a} / ${b} 件`, more: "さらに表示", close: "閉じる",
+    foot1: "空欄 = まだ確認していない。「資料に記載なし」(<span class=\"mono\">unknown</span>)= 資料の全文を読んだが書いていない。「資料が食い違う」(<span class=\"mono\">conflicting</span>)= 出典どうしが食い違う(両方が各データセットの根拠に出ます)。「仮の値」= 公開の出典がまだない値。表は横にスクロールできます。",
+    foot2: "ライセンスは記載された条件の分類で、法的助言ではありません。",
+    groups: { key: "要点", id: "データセット", lab: "ラベル", how: "音声の作り方", rel: "配布物を数えた値(レシピの readme)", rights: "入手・確認" },
+    cols: { name: "名前 / ID", ns: "話者数", h: "時間 (h)", lic: "ライセンス", lang: "言語", nf: "ファイル数", labs: "感情のラベル", mlt: "主なラベルの種類", lb: "ラベルの付け方", lv: "ラベルの確認", lt: "聴取テスト",
+      sp: "発話のしかた", mo: "音声の出どころ", vc: "声の種類", std: "話す文の決め方", rf: "ファイル数", rs: "話者数", rh: "時間 (h)", am: "入手方法", iss: "報告された問題", chk: "確認した資料" },
+    sec: { summary: "概要", size: "規模", how: "音声とラベルの作り方", rights: "ライセンス・入手", ann: "ラベル・注釈", lc: "ラベルごとの本数", iss: "配布物について報告された問題", rel: "関係するデータセット", docs: "資料", ev: "各値の出典", notes: "メモ" },
+    f: { lang: "言語", langn: "言語の注記", ns: "話者数", nf: "ファイル数", h: "時間", rep: "資料の値", rel_: "配布物を数えた値", am: "入手方法(資料)", ao: "入手を試した結果", lic: "ライセンス", licn: "ライセンスの注記", srn: "出典の権利",
+      sp: "発話のしかた", mo: "音声の出どころ", vc: "声の種類", std: "話す文の決め方", lb: "ラベルの付け方", lv: "ラベルの確認", ls: "ラベルを付けたもの", lt: "聴取テスト", split: "公式の分割",
+      checked: "確認した資料", alias: "別名", notes: "メモ", upd: "更新日", prim: "一次資料", readme: "ESPnet レシピの readme", labels: "ラベル", scale: "尺度", annotator: "付けた人", unit: "単位",
+      field: "項目", value: "値", source: "出典", label: "ラベル", n: "本数", hours: "時間 (h)", status: { current: "確認済み", conflicting: "食い違い", provisional: "仮の値(出典なし)" },
+      by_ai: "AI", by_script: "スクリプト", by_user: "maintainer", checked_on: (d, b) => `${d} に ${b} が確認`, on: d => `(${d})` },
+    rel: { subset_of: "の一部", possibly_same_as: "と同じ可能性", version_of: "の別の版", contains: "を含む", distinct_from: "とは別物(名前が似ている)", shares_sentences_with: "と話す文が一部共通" },
+    role: { paper: "論文", distribution: "配布元", card: "データセットカード", mirror: "ミラー", readme: "レシピの readme", other: "その他" },
+  },
+  en: {
+    title: "SER Dataset Catalogue",
+    quote: "“Trust, but verify.”", quote_src: "Source: Wikipedia (Japanese), “Trust, but verify”",
+    lede: "Speech datasets that are, or may be, usable for speech emotion recognition (SER) research, each value tied to the <b>primary source</b> it was read from. This page is a guide to those sources, not a substitute for them: check the source before relying on a value.",
+    meta: (n, s, b, c) => `${n} datasets · ${s} source documents · built ${b} from commit ${c}`,
+    search: "Search name, ID, other names, labels…",
+    filter_btn: "Filters", filter_h: "Filter", clear: "Clear all", show_n: n => `Show ${n} datasets`, more_opts: n => `Show ${n} more`, fewer: "Show fewer",
+    lic_hint: "Grouped only by the license identifier (SPDX and the CC elements); the terms themselves were not read. Check custom licenses in each dataset's documents.",
+    ids_show: "Show the licenses in each group", ids_hide: "Hide license names",
+    any_min: "No minimum", any_max: "No maximum", range_hint: "Once a range is chosen, datasets that do not state the value are left out",
+    hints: { am: "How the distributor's documents say the data is obtained.", ao: "What happened when the recipe author tried to obtain it.", labs: "Categorical emotion label names; spelling variants (Angry, anger) are merged with the DB's normalisation table.",
+      rh: "Counted from the release by the recipe readme, not a documented value.", lv: "Whether people checked the labels: the DB's classification of what the sources say.", ns: "As the documents state it.", nf: "As the documents state it.", h: "As the documents state it." },
+    fac: { am: "How to obtain (documents)", ao: "Result of trying to obtain", lang: "Language", labs: "Emotion labels", ann: "Annotations present", sp: "How the speech was produced", mo: "Where the audio comes from", vc: "Kind of vocalisation",
+      std: "How the spoken text was chosen", lb: "What the label means", lv: "Label checking", ls: "Who or what labelled", lt: "Listening test", split: "Official split", ns: "Speakers", nf: "Files", h: "Hours", rh: "Hours in the release",
+      licfam: "License family", licx: "Leave out by license terms", lic: "License (exact)", iss: "Problems reported in the release", feat: "Has" },
+    sorts: { ns: "Most speakers", h: "Most hours", nf: "Most files", rh: "Most hours in the release", upd: "Recently updated", name: "Name" },
+    val: {
+      am: { direct_download: "Direct download", free_account_required: "Free account required", gated_click_through: "Consent click required", request_form_or_email: "Request (form or e-mail)",
+        signed_agreement: "Signed agreement", paid_or_membership: "Paid or membership", unofficial_mirror_only: "Unofficial mirrors only", unavailable: "Not obtainable", unknown: "Not stated in the sources", obtained: "Obtained", "": "Not checked" },
+      sp: { acted: "Acted (an instructed emotion portrayed)", improvised: "Improvised acting", elicited: "Elicited (stimuli, tasks or a conversation set-up)", spontaneous: "Spontaneous (no instruction or induction)", read: "Read without an emotion instruction", synthetic: "Synthetic speech", unknown: "Not stated in the sources", "": "Not checked" },
+      mo: { recorded_for_dataset: "Recorded for the dataset", film_tv: "From films or TV", web_video: "From web videos", podcast: "From podcasts", broadcast: "From radio or TV broadcasts", synthetic: "Synthesised", multiple: "Several origins", other: "Other", "": "Not checked" },
+      vc: { speech: "Speech", nonverbal: "Non-verbal vocalisations only (laughs, cries…)", speech_and_nonverbal: "Speech and non-verbal vocalisations", unknown: "Not stated in the sources", "": "Not checked" },
+      std: { parallel: "The same sentences in every emotion", neutral_text: "Semantically neutral sentences (dates, numbers…)", emotion_specific_text: "Sentences written or chosen to match the emotion", unscripted: "No script (conversations, improvisation, broadcasts)",
+        dialogue_script: "Lines of films, dramas or written dialogue", unrelated_text: "Different sentences assigned without regard to the emotion", unknown: "Not stated in the sources", "": "Not checked" },
+      lb: { intended: "The emotion the speaker was told to portray", perceived: "The emotion listeners perceived", self_reported: "The emotion the speaker reported", context_inferred: "Assigned from the scene or the meaning of the words", automatic: "Automatic estimate (a model etc.)", unknown: "Not stated in the sources", "": "Not checked" },
+      lv: { listener_validated: "Confirmed by a listening test (or only agreeing clips kept)", human_reviewed: "Automatic labels reviewed by people", none: "Not checked by anyone", NA: "Does not apply", unknown: "Not stated in the sources", "": "Not checked" },
+      ls: { human: "People only", automatic: "Automatic only (models etc.)", mixed: "People and automatic", synthesis_specified: "Emotion given to the synthesiser", unknown: "Not stated in the sources", "": "Not checked" },
+      lt: { reported: "A listening test is described", not_stated: "Not mentioned in the sources read", "": "Not checked" },
+      split: { true: "Official split exists", false: "No official split", "": "Not checked" },
+      ann: { emotion_categories: "Emotion categories", emotion_attributes: "Emotion dimensions (arousal, valence…)", speaking_style: "Speaking style", sentiment: "Sentiment", intent: "Intent", dialogue_act: "Dialogue acts",
+        speaker_id: "Speaker ID", speaker_gender: "Speaker gender", speaker_age: "Speaker age", speaker_attributes: "Other speaker traits", speaker_language: "Speaker's native language or dialect", transcript: "Transcript or text",
+        sentence_id: "Sentence or prompt ID", session_id: "Session or dialogue ID", take: "Take or repetition number", intensity: "Emotion intensity", listener_ratings: "Listener ratings or votes",
+        listening_test: "Listening test", segmentation: "Time segmentation", acoustic_features: "Acoustic features", split: "Partition membership", video: "Video", physiological: "Physiological or articulatory signal", other: "Other" },
+      iss: { corrupt_or_unreadable: "Broken, empty or unreadable files", duplicate: "Files or rows with the same content", missing_or_mismatched_label: "Missing labels or labels not matching files", differs_from_documentation: "The release differs from the documents",
+        silent_or_non_speech: "Silent or non-speech files", unusual_audio: "Unusual audio format or content", listening_observation: "Noticed by the recipe author when listening", other: "Other" },
+      licfam: { pd: "Public domain (CC0)", attr: "Attribution only (CC BY, MIT, Apache, ODC-By)", sa: "Share-alike (SA, ODbL, GPL)", nc: "Non-commercial (NC)", nd: "No derivatives (ND)", custom: "Custom or restricted (LicenseRef-…)",
+        nolic: "No license stated", conf: "Sources disagree", unk: "Not checked" },
+      licx: { nc: "Leave out NC", sa: "Leave out share-alike (SA, ODbL, GPL)", nd: "Leave out ND", other: "Leave out custom, none stated, disputed or unchecked" },
+      feat: { paper: "A paper", doc: "Values checked in a primary source", impl: "An ESPnet recipe (readme)", lc: "Counts per label", rel: "Related datasets", note: "A statement on the rights of the source material" } },
+    sum: { ds: "Datasets", ns: "Speakers in total", h: "Hours in total", nf: "Files in total", stated: (n, m) => `sum of ${n} of ${m} that state it`, u_ds: "", u_ns: "", u_h: "h", u_nf: "",
+      note: "Totals add the values the documents state (each dataset's documented value); datasets without a value are left out. Other versions or parts of the same data can be listed as separate datasets, and are then counted twice." },
+    count: (a, b) => `${a} of ${b}`, more: "Show more", close: "Close",
+    foot1: "Empty cell = not checked yet. “Not stated in the sources” (<span class=\"mono\">unknown</span>) = the whole source was read and does not say. “Sources disagree” (<span class=\"mono\">conflicting</span>) = both values are listed in the dataset's evidence. “Provisional” = a value without a public source yet. The table scrolls sideways.",
+    foot2: "Licenses are a classification of the stated terms, not legal advice.",
+    groups: { key: "Key facts", id: "Dataset", lab: "Labels", how: "How the audio was made", rel: "Counted in the release (recipe readme)", rights: "Access and checking" },
+    cols: { name: "Name / ID", ns: "Speakers", h: "Hours", lic: "License", lang: "Language", nf: "Files", labs: "Emotion labels", mlt: "Main label set", lb: "Label meaning", lv: "Label checking", lt: "Listening test",
+      sp: "Production", mo: "Origin", vc: "Vocalisation", std: "Spoken text", rf: "Files", rs: "Speakers", rh: "Hours", am: "How to obtain", iss: "Problems reported", chk: "Checked against" },
+    sec: { summary: "Summary", size: "Size", how: "How the audio and labels were made", rights: "License and access", ann: "Labels and annotations", lc: "Files per label", iss: "Problems reported in the release", rel: "Related datasets", docs: "Documents", ev: "Where each value comes from", notes: "Notes" },
+    f: { lang: "Language", langn: "Language note", ns: "Speakers", nf: "Files", h: "Hours", rep: "Documented", rel_: "Counted in the release", am: "How to obtain (documents)", ao: "Result of trying", lic: "License", licn: "License note", srn: "Rights of the source material",
+      sp: "Production", mo: "Origin", vc: "Vocalisation", std: "Spoken text", lb: "Label meaning", lv: "Label checking", ls: "Who labelled", lt: "Listening test", split: "Official split",
+      checked: "Checked against", alias: "Other names", notes: "Notes", upd: "Updated", prim: "primary sources", readme: "an ESPnet recipe readme", labels: "Labels", scale: "Scale", annotator: "Annotator", unit: "Unit",
+      field: "Field", value: "Value", source: "Source", label: "Label", n: "Files", hours: "Hours", status: { current: "checked", conflicting: "conflicting", provisional: "provisional (no source)" },
+      by_ai: "AI", by_script: "a script", by_user: "the maintainer", checked_on: (d, b) => `checked ${d} by ${b}`, on: d => `(${d})` },
+    rel: { subset_of: "part of", possibly_same_as: "possibly the same as", version_of: "a version of", contains: "contains", distinct_from: "distinct from (similar name)", shares_sentences_with: "shares spoken sentences with" },
+    role: { paper: "Paper", distribution: "Distribution", card: "Dataset card", mirror: "Mirror", readme: "Recipe readme", other: "Other" },
+  },
+};
+let lang = "ja";
+try { const v = localStorage.getItem("lang"); if (v === "en" || v === "ja") lang = v; } catch (e) {}
+const T = () => L[lang];
+
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const semi = s => (s || "").split(";").filter(Boolean);
+const num = s => { const v = parseFloat(s); return isNaN(v) ? null : v; };
+const dash = '<span class="none">—</span>';
+const byId = Object.fromEntries(D.map(d => [d.id, d]));
+const langName = c => (LANG_NAMES[c] || [c, c])[lang === "ja" ? 0 : 1];
+const emo = l => lang === "ja" && EMO_JA[l] ? `${EMO_JA[l]}` : l;
+const vt = (k, v) => { const m = T().val[k] || {}; return m[v] ?? (v === "" ? m[""] : v); };
+
+// ---- license family, from the identifier only ----
+const licTags = l => { if (!l) return ["unk"]; if (l === "conflicting") return ["conf"]; if (l === "none_stated" || l === "unknown") return ["nolic"];
+  if (l.startsWith("LicenseRef-")) return ["custom"]; if (/^(CC0|PDDL)/.test(l)) return ["pd"]; const t = [];
+  if (/-NC/.test(l)) t.push("nc"); if (/-SA|ODbL|^GPL|^AGPL|^LGPL/.test(l)) t.push("sa"); if (/-ND/.test(l)) t.push("nd"); return t.length ? t : ["attr"]; };
+const LICX = { nc: d => d._lt.includes("nc"), sa: d => d._lt.includes("sa"), nd: d => d._lt.includes("nd"), other: d => d._lt.some(t => ["custom", "nolic", "conf", "unk"].includes(t)) };
+const LICS = {}; D.forEach(d => { if (d.lic && d.lic !== "conflicting") licTags(d.lic).forEach(t => (LICS[t] ??= new Set()).add(d.lic)); });
+
+D.forEach(d => {
+  d._lang = semi(d.lang); d._ann = [...new Set(d.ann.map(a => a[0]))]; d._iss = [...new Set(d.iss.map(x => x[0]))]; d._lt = licTags(d.lic);
+  d._feat = [d.links.some(l => l[0] === "paper") && "paper", d.doc && "doc", d.impl && "impl", d.lc.length && "lc", d.rel.length && "rel", d.srn && "note"].filter(Boolean);
+  d._r = { ns: num(d.ns), nf: num(d.nf), h: num(d.h), rh: num(d.rh) };
+});
+
+const lbls = d => d.labs.length ? d.labs.map(l => `<span class="tag">${esc(emo(l))}</span>`).join("") : "";
+const COLS = [
+  { k: "name", g: "key", fx: 0, w: 240, cls: "", v: d => `<div class="nm">${esc(d.name || d.id)}</div><div class="sub mono">${esc(d.id)}</div>`, s: d => (d.name || d.id).toLowerCase() },
+  { k: "ns", g: "key", fx: 240, w: 78, cls: "num", v: d => esc(d.ns) || dash, s: d => d._r.ns },
+  { k: "h", g: "key", fx: 318, w: 82, cls: "num", v: d => esc(d.h) || dash, s: d => d._r.h },
+  { k: "lic", g: "key", fx: 400, w: 170, edge: 1, cls: "mono", v: d => esc(d.lic) || dash, s: d => d.lic },
+  { k: "lang", g: "id", cls: "wrapc", v: d => esc(d._lang.map(langName).join(", ")) || dash, s: d => d.lang },
+  { k: "nf", g: "id", cls: "num", v: d => esc(d.nf) || dash, s: d => d._r.nf },
+  { k: "labs", g: "lab", cls: "wrapc", v: d => lbls(d) || dash, s: d => d.labs.length },
+  { k: "mlt", g: "lab", cls: "", v: d => d.mlt ? esc(vt("ann", d.mlt)) : dash, s: d => d.mlt },
+  { k: "lb", g: "lab", cls: "wrapc", v: d => d.lb ? esc(vt("lb", d.lb)) : dash, s: d => d.lb },
+  { k: "lv", g: "lab", cls: "wrapc", v: d => d.lv ? esc(vt("lv", d.lv)) : dash, s: d => d.lv },
+  { k: "lt", g: "lab", cls: "", v: d => d.lt ? esc(vt("lt", d.lt)) : dash, s: d => d.lt },
+  { k: "sp", g: "how", cls: "wrapc", v: d => semi(d.sp).map(x => esc(vt("sp", x))).join(", ") || dash, s: d => d.sp },
+  { k: "mo", g: "how", cls: "wrapc", v: d => d.mo ? esc(vt("mo", d.mo)) : dash, s: d => d.mo },
+  { k: "vc", g: "how", cls: "", v: d => d.vc ? esc(vt("vc", d.vc)) : dash, s: d => d.vc },
+  { k: "std", g: "how", cls: "wrapc", v: d => semi(d.std).map(x => esc(vt("std", x))).join(", ") || dash, s: d => d.std },
+  { k: "rf", g: "rel", cls: "num", v: d => esc(d.rf) || dash, s: d => num(d.rf) },
+  { k: "rs", g: "rel", cls: "num", v: d => esc(d.rs) || dash, s: d => num(d.rs) },
+  { k: "rh", g: "rel", cls: "num", v: d => esc(d.rh) || dash, s: d => d._r.rh },
+  { k: "am", g: "rights", cls: "wrapc", v: d => esc(vt("am", d.am)), s: d => d.am },
+  { k: "iss", g: "rights", cls: "num", v: d => d.iss.length ? String(d.iss.length) : dash, s: d => d.iss.length },
+  { k: "chk", g: "rights", cls: "wrapc", v: d => [d.doc && T().f.prim, d.impl && T().f.readme].filter(Boolean).map(esc).join(", ") || dash, s: d => (d.doc ? 2 : 0) + (d.impl ? 1 : 0) },
+];
+const SORTK = { ns: "ns", h: "h", nf: "nf", rh: "rh", name: "name", upd: "upd" };
+
+const state = { q: "", f: {}, r: {}, sort: ["ns", -1], shown: 100, open: null, more: {}, licIds: false };
+
+function applyLang() {
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i]").forEach(el => { const v = T()[el.dataset.i]; if (el.dataset.html) el.innerHTML = v; else el.textContent = v; });
+  document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
+  document.getElementById("meta").textContent = T().meta(D.length, S.length, DATA.meta.built, DATA.meta.commit);
+  document.getElementById("q").placeholder = T().search;
+  document.getElementById("open-f-l").textContent = T().filter_btn; document.getElementById("fh").textContent = T().filter_h;
+  document.getElementById("f-clear").textContent = T().clear; document.getElementById("f-close").textContent = T().close;
+  document.getElementById("sort").innerHTML = Object.entries(T().sorts).map(([k, v]) => `<option value="${k}">${esc(v)}</option>`).join("");
+  document.getElementById("sort").value = state.sort[0] in T().sorts ? state.sort[0] : "ns";
+  const groups = []; COLS.forEach(c => { const last = groups[groups.length - 1]; if (last && last[0] === c.g) last[1]++; else groups.push([c.g, 1]); });
+  const fxs = c => c.fx !== undefined ? ` style="left:${c.fx}px;width:${c.w}px;min-width:${c.w}px;max-width:${c.w}px"` : "";
+  document.getElementById("thead").innerHTML = `<tr>${groups.map(([g, n]) => `<th class="grp${g === "key" ? " fx edge" : ""}" colspan="${n}"${g === "key" ? ` style="left:0"` : ""}>${esc(T().groups[g])}</th>`).join("")}</tr>
+    <tr class="cols">${COLS.map(c => `<th data-k="${c.k}" tabindex="0" class="${c.fx !== undefined ? `fx${c.edge ? " edge" : ""}` : ""}"${fxs(c)}>${esc(T().cols[c.k])}</th>`).join("")}</tr>`;
+  render();
+  if (state.open) openD(state.open);
+}
+document.querySelector(".lang").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return;
+  lang = b.dataset.lang; try { localStorage.setItem("lang", lang); } catch (err) {} applyLang(); });
+
+document.getElementById("q").addEventListener("input", e => { state.q = e.target.value; state.shown = 100; render(); });
+document.getElementById("sort").addEventListener("input", e => { const k = e.target.value; state.sort = [k, k === "name" ? 1 : -1]; render(); });
+const sortBy = k => { const textual = !["ns", "h", "nf", "rf", "rs", "rh", "labs", "iss", "chk"].includes(k);
+  state.sort = [k, state.sort[0] === k ? -state.sort[1] : (textual ? 1 : -1)]; render(); };
+document.getElementById("thead").addEventListener("click", e => { const th = e.target.closest("th[data-k]"); if (th) sortBy(th.dataset.k); });
+document.getElementById("thead").addEventListener("keydown", e => { const th = e.target.closest("th[data-k]"); if (th && e.key === "Enter") sortBy(th.dataset.k); });
+document.getElementById("more-b").addEventListener("click", () => { state.shown += 200; render(); });
+document.getElementById("more-b2").addEventListener("click", () => { state.shown += 200; render(); });
+
+// ---- faceted search: OR within a facet, AND across facets; a facet's counts leave out its own choice ----
+const one = v => [v || ""];
+const CHECK = {
+  am: { get: d => one(d.am), open: true, order: v => ["direct_download", "free_account_required", "gated_click_through", "request_form_or_email", "signed_agreement", "paid_or_membership", "unofficial_mirror_only", "unavailable", "unknown", ""].indexOf(v) },
+  lang: { get: d => d._lang.length ? d._lang : [""], label: v => v ? langName(v) : T().val.am[""], open: true, top: 10 },
+  labs: { get: d => d.labs, label: v => lang === "ja" && EMO_JA[v] ? `${EMO_JA[v]} (${v})` : v, open: true, top: 12 },
+  ann: { get: d => d._ann, top: 8 },
+  sp: { get: d => semi(d.sp).length ? semi(d.sp) : [""], open: true }, mo: { get: d => one(d.mo) }, vc: { get: d => one(d.vc) }, std: { get: d => semi(d.std).length ? semi(d.std) : [""] },
+  lb: { get: d => one(d.lb) }, ls: { get: d => one(d.ls) }, lv: { get: d => one(d.lv) }, lt: { get: d => one(d.lt) }, split: { get: d => one(d.split) },
+  ao: { get: d => one(d.ao), label: v => vt("am", v), order: v => ["obtained", "direct_download", "free_account_required", "gated_click_through", "request_form_or_email", "signed_agreement", "paid_or_membership", "unofficial_mirror_only", "unavailable", "unknown", ""].indexOf(v) },
+  licfam: { get: d => d._lt, order: v => ["pd", "attr", "sa", "nc", "nd", "custom", "nolic", "conf", "unk"].indexOf(v), open: true },
+  lic: { get: d => one(d.lic), label: v => v || T().val.licfam.unk, top: 8 },
+  iss: { get: d => d._iss }, feat: { get: d => d._feat, open: true },
+};
+const RANGE = { ns: [2, 5, 10, 20, 50, 100, 500, 1000, 5000], nf: [100, 500, 1000, 5000, 10000, 50000, 100000], h: [0.5, 1, 2, 5, 10, 20, 50, 100, 500, 1000], rh: [0.5, 1, 2, 5, 10, 20, 50, 100, 500] };
+const ORDER = ["am", "lang", "labs", "ns", "nf", "h", "sp", "mo", "vc", "std", "lb", "ls", "lv", "lt", "ann", "split", "licfam", "licx", "lic", "rh", "ao", "iss", "feat"];
+const vlabel = (k, v) => CHECK[k] && CHECK[k].label ? CHECK[k].label(v) : vt(k, v);
+const passCheck = (d, k) => { const sel = state.f[k]; return !sel || !sel.size || CHECK[k].get(d).some(v => sel.has(v)); };
+const passRange = (d, k) => { const r = state.r[k]; if (!r || (r[0] === "" && r[1] === "")) return true; const x = d._r[k]; if (x === null || x === undefined) return false;
+  return (r[0] === "" || x >= +r[0]) && (r[1] === "" || x <= +r[1]); };
+const hay = d => (d._hay ??= [d.id, d.name, d.full, d.lang, d._lang.map(c => (LANG_NAMES[c] || []).join(" ")).join(" "), d.cats.join(" "), d.labs.join(" "), d.labs.map(l => EMO_JA[l] || "").join(" "), d.alias.map(a => a[0]).join(" ")].join(" ").toLowerCase());
+const qWords = () => state.q.trim().toLowerCase().split(/\s+/).filter(Boolean);
+const passAll = (d, skip) => { const q = qWords(); if (!q.every(w => hay(d).includes(w))) return false;
+  for (const k in CHECK) if (k !== skip && !passCheck(d, k)) return false;
+  for (const k in RANGE) if (k !== skip && !passRange(d, k)) return false;
+  if (skip !== "licx" && state.f.licx) for (const v of state.f.licx) if (LICX[v](d)) return false; return true; };
+const nActive = () => Object.values(state.f).reduce((a, s) => a + s.size, 0) + Object.values(state.r).filter(r => r && (r[0] !== "" || r[1] !== "")).length;
+function toggle(k, v) { const s = (state.f[k] ??= new Set()); s.has(v) ? s.delete(v) : s.add(v); state.shown = 100; render(); }
+const fmtN = x => x >= 1000 ? (x / 1000) + "k" : String(x);
+function renderFacets() {
+  const t = T(), body = [];
+  for (const k of ORDER) {
+    const hint = t.hints[k] ? `<div class="hint">${esc(t.hints[k])}</div>` : "";
+    if (RANGE[k]) { const r = state.r[k] || ["", ""]; const o = (sel, first) => `<option value="">${esc(first)}</option>` + RANGE[k].map(v => `<option value="${v}" ${String(sel) === String(v) ? "selected" : ""}>${fmtN(v)}</option>`).join("");
+      const on = r[0] !== "" || r[1] !== "";
+      body.push(`<details class="fset" data-k="${k}" ${on || ["ns", "h"].includes(k) ? "open" : ""}><summary>${esc(t.fac[k])}${on ? `<span class="sel">●</span>` : ""}</summary>${hint}
+        <div class="rng"><select id="r-${k}-0" data-r="${k}" data-i0="0" aria-label="${esc(t.fac[k])} min">${o(r[0], t.any_min)}</select><span>〜</span><select id="r-${k}-1" data-r="${k}" data-i0="1" aria-label="${esc(t.fac[k])} max">${o(r[1], t.any_max)}</select></div>
+        <div class="hint">${esc(t.range_hint)}</div></details>`); continue; }
+    if (k === "licx") { const sel = state.f.licx || new Set(); const base = D.filter(d => passAll(d, "licx"));
+      body.push(`<details class="fset" data-k="licx" open><summary>${esc(t.fac.licx)}${sel.size ? `<span class="sel">${sel.size}</span>` : ""}</summary><div class="opts">
+        ${Object.keys(LICX).map(v => { const n = base.filter(d => !LICX[v](d) && [...sel].every(x => x === v || !LICX[x](d))).length;
+          return `<label class="opt"><input type="checkbox" data-k="licx" value="${v}" ${sel.has(v) ? "checked" : ""}><span class="lb">${esc(t.val.licx[v])}</span><span class="n">${n}</span></label>`; }).join("")}
+        <div class="hint">${esc(t.lic_hint)}</div></div></details>`); continue; }
+    const c = CHECK[k], sel = state.f[k] || new Set(), cnt = {};
+    D.forEach(d => { if (passAll(d, k)) c.get(d).forEach(v => cnt[v] = (cnt[v] || 0) + 1); });
+    const all = new Set([...D.flatMap(d => c.get(d)), ...sel]);
+    let vals = [...all].sort((a, b) => c.order ? c.order(a) - c.order(b) : ((cnt[b] || 0) - (cnt[a] || 0)) || String(a).localeCompare(String(b)));
+    if (!vals.length) continue;
+    const top = c.top && !state.more[k] ? c.top : Infinity, hiddenN = Math.max(0, vals.length - top);
+    vals = vals.filter((v, i) => i < top || sel.has(v));
+    body.push(`<details class="fset" data-k="${k}" ${c.open || sel.size ? "open" : ""}><summary>${esc(t.fac[k])}${sel.size ? `<span class="sel">${sel.size}</span>` : ""}</summary>${hint}<div class="opts">
+      ${vals.map(v => `<label class="opt${cnt[v] || sel.has(v) ? "" : " zero"}"><input type="checkbox" data-k="${k}" value="${esc(v)}" ${sel.has(v) ? "checked" : ""} ${cnt[v] || sel.has(v) ? "" : "disabled"}><span class="lb">${esc(vlabel(k, v))}${k === "licfam" && state.licIds && LICS[v] ? `<span class="ids">${[...LICS[v]].sort().map(esc).join(" · ")}</span>` : ""}</span><span class="n">${cnt[v] || 0}</span></label>`).join("")}
+      ${k === "licfam" ? `<button type="button" class="link" data-ids="1">${esc(state.licIds ? t.ids_hide : t.ids_show)}</button><div class="hint">${esc(t.lic_hint)}</div>` : ""}
+      ${c.top && vals.length + hiddenN > c.top ? `<button type="button" class="link" data-more="${k}">${esc(state.more[k] ? t.fewer : t.more_opts(hiddenN))}</button>` : ""}</div></details>`);
+  }
+  const fb = document.getElementById("fbody"), sc = fb.scrollTop;
+  const openNow = new Set([...fb.querySelectorAll("details.fset[open]")].map(x => x.dataset.k));
+  const closedNow = new Set([...fb.querySelectorAll("details.fset:not([open])")].map(x => x.dataset.k));
+  fb.innerHTML = body.join("");
+  fb.querySelectorAll("details.fset[data-k]").forEach(x => { if (openNow.has(x.dataset.k)) x.open = true; else if (closedNow.has(x.dataset.k)) x.open = false; });
+  fb.scrollTop = sc;
+  const chips = [];
+  for (const k of ORDER) {
+    if (RANGE[k]) { const r = state.r[k]; if (r && (r[0] !== "" || r[1] !== "")) chips.push(`<button type="button" class="achip" data-x="r:${k}"><span><b>${esc(t.fac[k])}</b> ${r[0] !== "" ? fmtN(+r[0]) : ""}〜${r[1] !== "" ? fmtN(+r[1]) : ""}</span><span class="xx">×</span></button>`); continue; }
+    (state.f[k] || new Set()).forEach(v => chips.push(`<button type="button" class="achip" data-x="f:${k}:${esc(v)}"><span><b>${esc(t.fac[k])}</b> ${esc(k === "licx" ? t.val.licx[v] : vlabel(k, v))}</span><span class="xx">×</span></button>`));
+  }
+  const n = nActive(), act = document.getElementById("active");
+  act.innerHTML = chips.join("") + (n ? `<button type="button" class="link" data-x="clear">${esc(t.clear)}</button>` : ""); act.hidden = !n;
+  const nf = document.getElementById("nf"); nf.textContent = n; nf.hidden = !n;
+}
+document.getElementById("fbody").addEventListener("change", e => { const el = e.target;
+  if (el.dataset.r) { const r = (state.r[el.dataset.r] ??= ["", ""]); r[+el.dataset.i0] = el.value;
+    if (r[0] !== "" && r[1] !== "" && +r[0] > +r[1]) r[el.dataset.i0 === "0" ? 1 : 0] = el.value; state.shown = 100; render(); return; }
+  if (el.dataset.k) toggle(el.dataset.k, el.value); });
+document.getElementById("fbody").addEventListener("click", e => { if (e.target.closest("[data-ids]")) { state.licIds = !state.licIds; renderFacets(); return; }
+  const b = e.target.closest("[data-more]"); if (!b) return; state.more[b.dataset.more] = !state.more[b.dataset.more]; renderFacets(); });
+const clearAll = () => { state.f = {}; state.r = {}; state.shown = 100; render(); };
+document.getElementById("f-clear").addEventListener("click", clearAll);
+document.getElementById("active").addEventListener("click", e => { const b = e.target.closest("[data-x]"); if (!b) return; const x = b.dataset.x;
+  if (x === "clear") return clearAll();
+  if (x.startsWith("r:")) delete state.r[x.slice(2)]; else { const [, k, ...v] = x.split(":"); state.f[k]?.delete(v.join(":")); }
+  state.shown = 100; render(); });
+const facetsEl = document.getElementById("facets");
+const openF = on => { facetsEl.classList.toggle("open", on); document.body.style.overflow = on ? "hidden" : ""; };
+document.getElementById("open-f").addEventListener("click", () => openF(true));
+document.getElementById("f-close").addEventListener("click", () => openF(false));
+document.getElementById("f-done").addEventListener("click", () => openF(false));
+
+function render() {
+  const list = D.filter(d => passAll(d, null));
+  const [k, dir] = state.sort;
+  const sk = k === "upd" ? (d => d.upd) : (COLS.find(c => c.k === k) || COLS[1]).s;
+  list.sort((a, b) => { const x = sk(a), y = sk(b);
+    const ex = x === null || x === "" || x === undefined, ey = y === null || y === "" || y === undefined;
+    if (ex && ey) return 0; if (ex) return 1; if (ey) return -1; return x < y ? -dir : x > y ? dir : 0; });
+  document.querySelectorAll("th[data-k]").forEach(th => th.setAttribute("aria-sort", th.dataset.k === k ? (dir > 0 ? "ascending" : "descending") : "none"));
+  document.getElementById("count").textContent = T().count(list.length, D.length);
+  document.getElementById("f-done").textContent = T().show_n(list.length);
+  { const t = T().sum, fmt = x => x >= 100 ? Math.round(x).toLocaleString() : (Math.round(x * 10) / 10).toLocaleString();
+    const tot = k => { const v = list.map(d => d._r[k]).filter(x => x !== null); return [v.reduce((a, b) => a + b, 0), v.length]; };
+    const tile = (k, [v, n], u) => `<div class="tile"><span class="k">${esc(t[k])}</span><span class="v">${n ? fmt(v) : "—"}<small>${esc(u)}</small></span><span class="c">${esc(t.stated(n.toLocaleString(), list.length.toLocaleString()))}</span></div>`;
+    document.getElementById("sumbar").innerHTML = `<div class="tile"><span class="k">${esc(t.ds)}</span><span class="v">${list.length.toLocaleString()}<small>${esc(t.u_ds)}</small></span><span class="c">${esc(T().count(list.length, D.length))}</span></div>`
+      + tile("ns", tot("ns"), t.u_ns) + tile("h", tot("h"), t.u_h) + tile("nf", tot("nf"), t.u_nf) + `<div class="sumnote">${esc(t.note)}</div>`; }
+  renderFacets();
+  const fxs = c => c.fx !== undefined ? ` style="left:${c.fx}px;width:${c.w}px;min-width:${c.w}px;max-width:${c.w}px"` : "";
+  document.getElementById("rows").innerHTML = list.slice(0, state.shown).map(d =>
+    `<tr tabindex="0" data-id="${esc(d.id)}">${COLS.map(c => `<td class="${c.cls}${c.fx !== undefined ? ` fx${c.edge ? " edge" : ""}` : ""}"${fxs(c)}>${c.v(d)}</td>`).join("")}</tr>`).join("");
+  document.getElementById("more").hidden = list.length <= state.shown;
+  document.getElementById("more2").hidden = list.length <= state.shown;
+  const f = T().cols;
+  const kv = (k, v) => v ? `<span>${esc(k)} <b>${esc(v)}</b></span>` : "";
+  document.getElementById("cards").innerHTML = list.slice(0, state.shown).map(d =>
+    `<div class="card" tabindex="0" data-id="${esc(d.id)}"><div class="nm">${esc(d.name || d.id)}</div>
+     <div class="sub mono">${esc(d.id)}</div>
+     <div class="kv">${kv(f.ns, d.ns)}${kv(f.h, d.h)}${kv(f.lic, d.lic)}</div>
+     <div class="kv">${kv(f.lang, d._lang.map(langName).join(", "))}${kv(f.am, d.am ? vt("am", d.am) : "")}</div>
+     <div>${lbls(d)}</div></div>`).join("");
+}
+const cardsEl = document.getElementById("cards");
+cardsEl.addEventListener("click", e => { const c = e.target.closest(".card"); if (c) openD(c.dataset.id); });
+cardsEl.addEventListener("keydown", e => { if (e.key === "Enter") { const c = e.target.closest(".card"); if (c) openD(c.dataset.id); } });
+const rowsEl = document.getElementById("rows");
+rowsEl.addEventListener("click", e => { const tr = e.target.closest("tr"); if (tr) openD(tr.dataset.id); });
+rowsEl.addEventListener("keydown", e => { if (e.key === "Enter") { const tr = e.target.closest("tr"); if (tr) openD(tr.dataset.id); } });
+
+// ---- detail drawer ----
+const drawer = document.getElementById("drawer"), scrim = document.getElementById("scrim");
+const srcLink = i => { if (i < 0 || !S[i]) return ""; const [id, url, title, kind, type] = S[i];
+  return (url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(title || id)}</a>` : esc(title || id)) + ` <span class="sub">${esc(kind)}${type ? " · " + esc(type) : ""}</span>`; };
+const row = (k, v) => v ? `<dt>${esc(k)}</dt><dd>${v}</dd>` : "";
+const sec = (title, body) => body ? `<section class="panel"><h2>${esc(title)}</h2>${body}</section>` : "";
+const tagged = s => esc(s).replace(/\[([a-z0-9_]+)\]/g, (m, id) => { const i = S.findIndex(x => x[0] === id); return i < 0 ? m : `[${S[i][1] ? `<a href="${esc(S[i][1])}" target="_blank" rel="noopener">${esc(id)}</a>` : esc(id)}]`; });
+function openD(id) {
+  const d = byId[id]; if (!d) return; state.open = id;
+  const t = T(), f = t.f, who = b => b === "claude" ? f.by_ai : b === "script" ? f.by_script : f.by_user;
+  const v = (k, x) => x ? esc(semi(x).map(y => vt(k, y)).join(", ")) + ` <span class="sub mono">${esc(x)}</span>` : "";
+  const pair = (a, b) => [a ? `${esc(f.rep)}: <b class="mono">${esc(a)}</b>` : "", b ? `${esc(f.rel_)}: <b class="mono">${esc(b)}</b>` : ""].filter(Boolean).join(" · ");
+  const summary = `<dl>${row(f.lang, esc(d._lang.map(c => `${langName(c)} (${c})`).join(", ")))}${row(f.langn, tagged(d.langn))}
+    ${row(f.checked, [d.doc ? f.prim : "", d.impl ? f.readme : ""].filter(Boolean).join(", "))}${row(f.alias, esc(d.alias.map(a => a[0]).join(", ")))}${row(f.upd, esc(d.upd))}</dl>`;
+  const size = `<dl>${row(f.ns, pair(d.ns, d.rs))}${row(f.nf, pair(d.nf, d.rf))}${row(f.h, pair(d.h, d.rh))}</dl>`;
+  const how = `<dl>${row(f.sp, v("sp", d.sp))}${row(f.mo, v("mo", d.mo))}${row(f.vc, v("vc", d.vc))}${row(f.std, v("std", d.std))}
+    ${row(f.lb, v("lb", d.lb))}${row(f.ls, v("ls", d.ls))}${row(f.lv, v("lv", d.lv))}${row(f.lt, v("lt", d.lt))}${row(f.split, v("split", d.split))}</dl>`;
+  const rights = `<dl>${row(f.lic, `<span class="mono">${esc(d.lic)}</span>`)}${row(f.licn, tagged(d.licn))}${row(f.srn, tagged(d.srn))}
+    ${row(f.am, v("am", d.am))}${row(f.ao, d.ao ? v("am", d.ao) + (d.aoo ? ` <span class="sub">${esc(f.on(d.aoo))}</span>` : "") : "")}</dl>`;
+  const ann = d.ann.map(a => `<div><b>${esc(a[1])}</b> <span class="tag">${esc(vt("ann", a[0]))}</span>${a[2] ? `<div>${esc(f.labels)}: ${esc(semi(a[2]).join(", "))}</div>` : ""}
+    <div class="sub">${[a[3] && `${f.scale}: ${a[3]}`, a[4] && `${f.annotator}: ${a[4]}`, a[5] && `${t.fac.lb}: ${vt("lb", a[5])}`, a[6] && `${t.fac.lv}: ${vt("lv", a[6])}`, a[7] && `${f.unit}: ${a[7]}`].filter(Boolean).map(esc).join(" · ")}</div>
+    ${a[8] ? `<div class="note">${esc(a[8])}</div>` : ""}${a[9] >= 0 ? `<div class="sub">${srcLink(a[9])}${a[10] ? " — “" + esc(a[10]) + "”" : ""}</div>` : ""}</div>`).join("");
+  const lc = d.lc.length ? `<div class="inner"><table class="ev"><thead><tr><th>${esc(f.label)}</th><th>${esc(f.n)}</th><th>${esc(f.hours)}</th><th>${esc(f.source)}</th></tr></thead><tbody>${d.lc.map(c => `<tr><td>${esc(c[1])} <span class="sub">${esc(c[0])}</span></td><td class="r">${esc(c[2])}</td><td class="r">${esc(c[3])}</td><td>${srcLink(c[4])}</td></tr>`).join("")}</tbody></table></div>` : "";
+  const iss = d.iss.map(x => `<div><span class="tag">${esc(vt("iss", x[0]))}</span> ${esc(x[1])}${x[2] ? ` <span class="sub">(n = ${esc(x[2])})</span>` : ""}${x[3] >= 0 ? `<div class="sub">${srcLink(x[3])}${x[4] ? " — “" + esc(x[4]) + "”" : ""}</div>` : ""}</div>`).join("");
+  const rel = d.rel.map(r => { const other = `<a href="#${esc(r[1])}" data-open="${esc(r[1])}">${esc((byId[r[1]] || {}).name || r[1])}</a>`;
+    return `<div>${lang === "ja" ? `${other} ${esc(t.rel[r[0]] || r[0])}` : `${esc(t.rel[r[0]] || r[0])} ${other}`}${r[2] ? `<div class="note">${esc(r[2])}</div>` : ""}</div>`; }).join("");
+  const docs = d.links.map(l => `<div><span class="tag">${esc(t.role[l[0]] || l[0])}</span> ${srcLink(l[1])}</div>`).join("");
+  const ev = d.ev.length ? `<div class="inner"><table class="ev"><thead><tr><th>${esc(f.field)}</th><th>${esc(f.value)} / ${esc(f.source)}</th></tr></thead><tbody>${d.ev.map(e => `<tr><td class="k">${esc(e[0])}</td><td><b class="mono">${esc(e[1])}</b>${e[6] !== "current" ? ` <span class="st ${esc(e[6])}">${esc(f.status[e[6]] || e[6])}</span>` : ""}
+    <div class="sub">${e[2] >= 0 ? srcLink(e[2]) : ""}${e[3] ? " — “" + esc(e[3]) + "”" : ""}</div><div class="sub">${esc(f.checked_on(e[4], who(e[5])))}</div>${e[6] === "provisional" && e[7] ? `<div class="note">${esc(e[7])}</div>` : ""}</td></tr>`).join("")}</tbody></table></div>` : "";
+  drawer.innerHTML = `<div class="dhead"><div><div class="sub mono">${esc(d.id)}</div><h3 id="d-title">${esc(d.name || d.id)}</h3>${d.full && d.full !== d.name ? `<div class="sub">${esc(d.full)}</div>` : ""}</div><button class="x" type="button" id="close">${esc(t.close)}</button></div>
+    ${sec(t.sec.summary, summary)}${sec(t.sec.size, size)}${sec(t.sec.how, how)}${sec(t.sec.rights, rights)}${sec(t.sec.ann, ann)}${sec(t.sec.lc, lc)}${sec(t.sec.iss, iss)}
+    ${sec(t.sec.notes, d.notes ? `<div class="note">${tagged(d.notes)}</div>` : "")}${sec(t.sec.rel, rel)}${sec(t.sec.docs, docs)}${sec(t.sec.ev, ev)}`;
+  if (drawer.hidden) { drawer.hidden = false; scrim.hidden = false; drawer.scrollTop = 0; document.getElementById("close").focus(); }
+}
+function closeD() { drawer.hidden = true; scrim.hidden = true; state.open = null; }
+drawer.addEventListener("click", e => { if (e.target.id === "close") closeD(); const a = e.target.closest("[data-open]"); if (a) { e.preventDefault(); drawer.scrollTop = 0; openD(a.dataset.open); } });
+scrim.addEventListener("click", closeD);
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !drawer.hidden) closeD(); });
+
+applyLang();
+const h = decodeURIComponent(location.hash.slice(1)); if (h && byId[h]) openD(h);
+})();
+</script>

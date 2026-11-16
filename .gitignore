@@ -5,3 +5,4 @@ __pycache__/
 # on purpose (see local/README.md).
 local/*
 !local/README.md
+cache/

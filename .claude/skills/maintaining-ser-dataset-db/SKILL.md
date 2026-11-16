@@ -212,6 +212,9 @@ python3 tools/views.py
 python3 tools/validate.py          # fix every error, then run again
 ```
 
+When the maintainer asks to update the shared page, run `python3 tools/site/build.py` and publish
+`cache/site/index.html` to its existing Artifact (the page does not update itself).
+
 Commit one dataset (or one checking session) per commit. Stage files by name, never with
 `git add -A` or `git add .`. Write the message in English: what was wrong or uncertain, what the
 evidence was, what changed. If the pre-commit hook fails, nothing was committed: fix, stage again

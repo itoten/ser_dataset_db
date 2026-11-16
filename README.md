@@ -92,7 +92,10 @@ python3 tools/validate.py     # format, types, keys, evidence, sources, derived 
 python3 tools/derive.py       # recompute the derived columns of datasets.csv from annotations.csv
 python3 tools/views.py        # regenerate views/
 python3 tools/db.py get|set|add|fmt   # view or edit one row
+python3 tools/site/build.py   # rebuild the browsable page (cache/site/index.html, git-ignored)
 ```
+
+- The browsable page is a published Artifact built from `data/` by `tools/site/build.py` (layout and text in `tools/site/template.html`). It does not update itself: after the DB changes, rebuild it and publish `cache/site/index.html` again to the same Artifact.
 
 - Run with the system Python 3 (with PyYAML). pandas is not used.
 - `git config core.hooksPath tools/hooks` makes `tools/validate.py` run before every commit. Do not use `--no-verify`.
