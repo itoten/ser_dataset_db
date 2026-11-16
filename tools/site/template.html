@@ -64,6 +64,7 @@ h1 { font: 650 clamp(26px, 4vw, 38px)/1.15 var(--f-display); margin: 0; text-wra
 .opts { display: grid; gap: 1px; padding-bottom: 10px; }
 .opt { display: flex; align-items: center; gap: 8px; font-size: 13px; padding: 3px 4px; border-radius: 4px; cursor: pointer; }
 .opt:hover { background: var(--accent-soft); }
+.allsel { padding: 0 4px 4px; }
 .opt input { margin: 0; accent-color: var(--accent); flex: none; }
 .opt .lb { flex: 1; min-width: 0; overflow-wrap: anywhere; }
 .opt .ids { display: block; font: 10.5px/1.35 var(--f-mono); color: var(--muted); margin-top: 1px; }
@@ -243,7 +244,7 @@ const L = {
     lede: "音声感情認識(SER)の研究に使える、または使えるかもしれない音声データセットの一覧です。すべての値は、読んだ<b>一次資料</b>と結びついています。このページは資料への案内で、資料の代わりではありません。値を使う前に出典を確かめてください。",
     meta: (n, s, b, c) => `${n} データセット · 出典 ${s} 件 · ${b} 作成(commit ${c})`,
     search: "名前・ID・別名・ラベルで検索…",
-    filter_btn: "絞り込み", filter_h: "条件で絞り込む", clear: "すべてクリア", show_n: n => `${n} 件を表示`, more_opts: n => `ほかの ${n} 件を表示`, fewer: "閉じる",
+    filter_btn: "絞り込み", filter_h: "条件で絞り込む", clear: "すべてクリア", all_sel: "すべて選択", none_sel: "選択をすべて外す", show_n: n => `${n} 件を表示`, more_opts: n => `ほかの ${n} 件を表示`, fewer: "閉じる",
     lic_hint: "ライセンスの表記(SPDX の識別子と CC の記号)だけで分けています。条件の中身は読んでいません。独自ライセンスの条件は各データセットの資料で確かめてください。",
     ids_show: "含まれるライセンスを見る", ids_hide: "ライセンス名を隠す",
     any_min: "下限なし", any_max: "上限なし", range_hint: "範囲を選ぶと、値が書かれていないデータセットは除きます",
@@ -299,7 +300,7 @@ const L = {
     lede: "Speech datasets that are, or may be, usable for speech emotion recognition (SER) research, each value tied to the <b>primary source</b> it was read from. This page is a guide to those sources, not a substitute for them: check the source before relying on a value.",
     meta: (n, s, b, c) => `${n} datasets · ${s} source documents · built ${b} from commit ${c}`,
     search: "Search name, ID, other names, labels…",
-    filter_btn: "Filters", filter_h: "Filter", clear: "Clear all", show_n: n => `Show ${n} datasets`, more_opts: n => `Show ${n} more`, fewer: "Show fewer",
+    filter_btn: "Filters", filter_h: "Filter", clear: "Clear all", all_sel: "Select all", none_sel: "Deselect all", show_n: n => `Show ${n} datasets`, more_opts: n => `Show ${n} more`, fewer: "Show fewer",
     lic_hint: "Grouped only by the license identifier (SPDX and the CC elements); the terms themselves were not read. Check custom licenses in each dataset's documents.",
     ids_show: "Show the licenses in each group", ids_hide: "Hide license names",
     any_min: "No minimum", any_max: "No maximum", range_hint: "Once a range is chosen, datasets that do not state the value are left out",
@@ -459,9 +460,11 @@ const passAll = (d, skip) => { const q = qWords(); if (!q.every(w => hay(d).incl
   for (const k in CHECK) if (k !== skip && !passCheck(d, k)) return false;
   for (const k in RANGE) if (k !== skip && !passRange(d, k)) return false;
   if (skip !== "licx" && state.f.licx) for (const v of state.f.licx) if (LICX[v](d)) return false; return true; };
-const nActive = () => Object.values(state.f).reduce((a, s) => a + s.size, 0) + Object.values(state.r).filter(r => r && (r[0] !== "" || r[1] !== "")).length;
+const nActive = () => Object.entries(state.f).reduce((a, [k, s]) => a + (s.size > 1 && ALLV[k] && s.size >= ALLV[k].length ? 1 : s.size), 0) + Object.values(state.r).filter(r => r && (r[0] !== "" || r[1] !== "")).length;
 function toggle(k, v) { const s = (state.f[k] ??= new Set()); s.has(v) ? s.delete(v) : s.add(v); state.shown = 100; render(); }
 const fmtN = x => x >= 1000 ? (x / 1000) + "k" : String(x);
+const ALLV = {};
+const allBtn = (k, n, sel) => `<div class="allsel"><button type="button" class="link" data-all="${k}">${esc(sel.size >= n ? T().none_sel : T().all_sel)}</button></div>`;
 function renderFacets() {
   const t = T(), body = [];
   for (const k of ORDER) {
@@ -472,7 +475,9 @@ function renderFacets() {
         <div class="rng"><select id="r-${k}-0" data-r="${k}" data-i0="0" aria-label="${esc(t.fac[k])} min">${o(r[0], t.any_min)}</select><span>〜</span><select id="r-${k}-1" data-r="${k}" data-i0="1" aria-label="${esc(t.fac[k])} max">${o(r[1], t.any_max)}</select></div>
         <div class="hint">${esc(t.range_hint)}</div></details>`); continue; }
     if (k === "licx") { const sel = state.f.licx || new Set(); const base = D.filter(d => passAll(d, "licx"));
+      ALLV.licx = Object.keys(LICX);
       body.push(`<details class="fset" data-k="licx" open><summary>${esc(t.fac.licx)}${sel.size ? `<span class="sel">${sel.size}</span>` : ""}</summary><div class="opts">
+        ${allBtn("licx", ALLV.licx.length, sel)}
         ${Object.keys(LICX).map(v => { const n = base.filter(d => !LICX[v](d) && [...sel].every(x => x === v || !LICX[x](d))).length;
           return `<label class="opt"><input type="checkbox" data-k="licx" value="${v}" ${sel.has(v) ? "checked" : ""}><span class="lb">${esc(t.val.licx[v])}</span><span class="n">${n}</span></label>`; }).join("")}
         <div class="hint">${esc(t.lic_hint)}</div></div></details>`); continue; }
@@ -481,9 +486,11 @@ function renderFacets() {
     const all = new Set([...D.flatMap(d => c.get(d)), ...sel]);
     let vals = [...all].sort((a, b) => c.order ? c.order(a) - c.order(b) : ((cnt[b] || 0) - (cnt[a] || 0)) || String(a).localeCompare(String(b)));
     if (!vals.length) continue;
+    ALLV[k] = vals;
     const top = c.top && !state.more[k] ? c.top : Infinity, hiddenN = Math.max(0, vals.length - top);
     vals = vals.filter((v, i) => i < top || sel.has(v));
     body.push(`<details class="fset" data-k="${k}" ${c.open || sel.size ? "open" : ""}><summary>${esc(t.fac[k])}${sel.size ? `<span class="sel">${sel.size}</span>` : ""}</summary>${hint}<div class="opts">
+      ${allBtn(k, ALLV[k].length, sel)}
       ${vals.map(v => `<label class="opt${cnt[v] || sel.has(v) ? "" : " zero"}"><input type="checkbox" data-k="${k}" value="${esc(v)}" ${sel.has(v) ? "checked" : ""} ${cnt[v] || sel.has(v) ? "" : "disabled"}><span class="lb">${esc(vlabel(k, v))}${k === "licfam" && state.licIds && LICS[v] ? `<span class="ids">${[...LICS[v]].sort().map(esc).join(" · ")}</span>` : ""}</span><span class="n">${cnt[v] || 0}</span></label>`).join("")}
       ${k === "licfam" ? `<button type="button" class="link" data-ids="1">${esc(state.licIds ? t.ids_hide : t.ids_show)}</button><div class="hint">${esc(t.lic_hint)}</div>` : ""}
       ${c.top && vals.length + hiddenN > c.top ? `<button type="button" class="link" data-more="${k}">${esc(state.more[k] ? t.fewer : t.more_opts(hiddenN))}</button>` : ""}</div></details>`);
@@ -497,7 +504,9 @@ function renderFacets() {
   const chips = [];
   for (const k of ORDER) {
     if (RANGE[k]) { const r = state.r[k]; if (r && (r[0] !== "" || r[1] !== "")) chips.push(`<button type="button" class="achip" data-x="r:${k}"><span><b>${esc(t.fac[k])}</b> ${r[0] !== "" ? fmtN(+r[0]) : ""}〜${r[1] !== "" ? fmtN(+r[1]) : ""}</span><span class="xx">×</span></button>`); continue; }
-    (state.f[k] || new Set()).forEach(v => chips.push(`<button type="button" class="achip" data-x="f:${k}:${esc(v)}"><span><b>${esc(t.fac[k])}</b> ${esc(k === "licx" ? t.val.licx[v] : vlabel(k, v))}</span><span class="xx">×</span></button>`));
+    const fs = state.f[k] || new Set();
+    if (fs.size > 1 && ALLV[k] && fs.size >= ALLV[k].length) { chips.push(`<button type="button" class="achip" data-x="a:${k}"><span><b>${esc(t.fac[k])}</b> ${esc(t.all_sel)}</span><span class="xx">×</span></button>`); continue; }
+    fs.forEach(v => chips.push(`<button type="button" class="achip" data-x="f:${k}:${esc(v)}"><span><b>${esc(t.fac[k])}</b> ${esc(k === "licx" ? t.val.licx[v] : vlabel(k, v))}</span><span class="xx">×</span></button>`));
   }
   const n = nActive(), act = document.getElementById("active");
   act.innerHTML = chips.join("") + (n ? `<button type="button" class="link" data-x="clear">${esc(t.clear)}</button>` : ""); act.hidden = !n;
@@ -508,12 +517,14 @@ document.getElementById("fbody").addEventListener("change", e => { const el = e.
     if (r[0] !== "" && r[1] !== "" && +r[0] > +r[1]) r[el.dataset.i0 === "0" ? 1 : 0] = el.value; state.shown = 100; render(); return; }
   if (el.dataset.k) toggle(el.dataset.k, el.value); });
 document.getElementById("fbody").addEventListener("click", e => { if (e.target.closest("[data-ids]")) { state.licIds = !state.licIds; renderFacets(); return; }
+  const a = e.target.closest("[data-all]"); if (a) { const k = a.dataset.all, vals = ALLV[k] || [], sel = state.f[k] || new Set();
+    state.f[k] = sel.size >= vals.length ? new Set() : new Set(vals); state.shown = 100; render(); return; }
   const b = e.target.closest("[data-more]"); if (!b) return; state.more[b.dataset.more] = !state.more[b.dataset.more]; renderFacets(); });
 const clearAll = () => { state.f = {}; state.r = {}; state.shown = 100; render(); };
 document.getElementById("f-clear").addEventListener("click", clearAll);
 document.getElementById("active").addEventListener("click", e => { const b = e.target.closest("[data-x]"); if (!b) return; const x = b.dataset.x;
   if (x === "clear") return clearAll();
-  if (x.startsWith("r:")) delete state.r[x.slice(2)]; else { const [, k, ...v] = x.split(":"); state.f[k]?.delete(v.join(":")); }
+  if (x.startsWith("r:")) delete state.r[x.slice(2)]; else if (x.startsWith("a:")) delete state.f[x.slice(2)]; else { const [, k, ...v] = x.split(":"); state.f[k]?.delete(v.join(":")); }
   state.shown = 100; render(); });
 const facetsEl = document.getElementById("facets");
 const openF = on => { facetsEl.classList.toggle("open", on); document.body.style.overflow = on ? "hidden" : ""; };
